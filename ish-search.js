@@ -7,7 +7,7 @@
  */
 (function (root, factory) {
   if (typeof module === 'object' && module.exports) module.exports = factory();
-  else root.createSearch = factory().createSearch;
+  else { var f = factory(); root.createSearch = f.createSearch; root.ishQuickCats = f.quickCats; }
 })(typeof self !== 'undefined' ? self : this, function () {
   'use strict';
 
@@ -468,8 +468,24 @@
       return out + esc(text.slice(pos));
     }
 
+    function hexOf(b) { b = b.replace(/-/g, '+').replace(/_/g, '/'); while (b.length % 4) b += '='; var r = atob(b), o = '', i, h; for (i = 0; i < r.length; i++) { h = r.charCodeAt(i).toString(16); o += h.length < 2 ? '0' + h : h; } return o; }
+    function unpackPhoto(ph) {   // индекс с флагом E=2: тип(s|t|S|T) + папка 19 знаков base64url + (хеш 22 знака | '/имя'); иначе путь как есть
+      var k = ph.charAt(0), hashForm = idx.E === 2 && (k === 's' || k === 't') && ph.indexOf('/') < 0 && ph.length === 42,
+          nameForm = idx.E === 2 && (k === 'S' || k === 'T') && ph.charAt(20) === '/';
+      if (hashForm || nameForm) {
+        var f = hexOf(ph.slice(1, 20)).slice(0, 28), pre = k.toLowerCase() === 's' ? 'stor' : 'tild', rest = hashForm ? hexOf(ph.slice(20)) : ph.slice(21);
+        return pre + f.slice(0, 4) + '-' + f.slice(4, 8) + '-' + f.slice(8, 12) + '-' + f.slice(12, 16) + '-' + f.slice(16) + '/' + rest;
+      }
+      return ph;
+    }
+    function uidOf(dx) {
+      var u = idx.I ? idx.I[dx] : null;
+      if (u == null || !idx.E) return u;   // E>=1: uid в base36
+      return u.charAt(0) === '!' ? u.slice(1) : String(parseInt(u, 36));
+    }
     function photoUrls(ph) {
       if (!ph) return { photo: '', thumb: '' };
+      ph = unpackPhoto(ph);
       var full = idx.U + ph + (/\.[a-z0-9]{3,4}$/i.test(ph) ? '' : '.jpg');
       var cut = full.lastIndexOf('/');
       return { photo: full, thumb: full.slice(0, cut) + '/-/resize/160x/' + full.slice(cut + 1) };
@@ -492,7 +508,7 @@
     function skuOf(pr) { var m = pr[6] && /^is[0-9a-f]{10}$/.exec(pr[6].split(' ')[0]); return m ? m[0].toUpperCase() : ''; }
     // адрес карточки: /<сегмент раздела>/tproduct/<uid>-<слог>; без сегмента (индекс v1) адреса нет
     function productUrl(dx) {
-      var pr = P[dx], c = C[pr[2]], uid = idx.I ? idx.I[dx] : null;
+      var pr = P[dx], c = C[pr[2]], uid = uidOf(dx);
       if (!uid || !c || !c[3]) return '';
       return '/' + c[3] + '/tproduct/' + uid + '-' + (pr[8] || slugOf(pr[0]));
     }
@@ -587,7 +603,7 @@
       var out = list.slice(offset, offset + limit);
       res.products = out.map(function (dx) {
         var pr = P[dx], ph = photoUrls(pr[5]);
-        return { i: dx, id: idx.I ? idx.I[dx] : null, title: pr[0], html: highlight(pr[0], ctx), brand: pr[1] >= 0 ? B[pr[1]] : '', brandIdx: pr[1],
+        return { i: dx, id: uidOf(dx), title: pr[0], html: highlight(pr[0], ctx), brand: pr[1] >= 0 ? B[pr[1]] : '', brandIdx: pr[1],
           cat: C[pr[2]][0], catIdx: pr[2], price: pr[3], qty: pr[4], photo: ph.photo, thumb: ph.thumb, score: Math.round(score[dx] * 100) / 100,
           sku: skuOf(pr), url: productUrl(dx) };
       });
@@ -648,7 +664,36 @@
     }
     return { query: query, stats: { products: N, vocabulary: V }, _baseTokens: baseTokens, _prep: prep, _slugOf: slugOf };
   }
-  return { createSearch: createSearch };
+  // Быстрые подсказки разделов БЕЗ индекса товаров: list = [[имя, адрес, число товаров], …] (маленький список, зашит в ish-search.js).
+  // Слова запроса — начала слов названия раздела; раскладка («yjen»), синонимы («ноут»), хвост слова («мониторы» -> «монитор»).
+  function quickCats(list, q, limit) {
+    var t = String(q || '').toLowerCase().replace(/ё/g, 'е').trim();
+    if (t.length < 2) return [];
+    var vars = [t];
+    if (/^[a-z0-9 \[\];',.`-]+$/.test(t)) { var sw = swapLayout(t).replace(/ё/g, 'е'); if (sw !== t) vars.push(sw); }
+    var out = [];
+    list.forEach(function (c) {
+      var nw = c[0].toLowerCase().replace(/ё/g, 'е').split(/[^a-zа-я0-9]+/).filter(Boolean), best = 0;
+      vars.forEach(function (v) {
+        var ws = v.split(/\s+/).filter(Boolean), ok = ws.length > 0, sc = 0;
+        ws.forEach(function (w) {
+          var alts = [w].concat((SYN_RAW[w] || []).map(function (x) { return x.replace('*', ''); })), m = false;
+          alts.forEach(function (a) {
+            nw.forEach(function (n) {
+              if (n.lastIndexOf(a, 0) === 0) m = true;
+              else if (a.length >= 5) { for (var k = 1; k <= 2 && a.length - k >= 4; k++) if (n.lastIndexOf(a.slice(0, a.length - k), 0) === 0) m = true; }
+            });
+          });
+          if (m) sc += w.length; else ok = false;
+        });
+        if (ok && sc > best) best = sc;
+      });
+      if (best) out.push({ name: c[0], url: c[1], n: c[2], score: best });
+    });
+    out.sort(function (a, b) { return b.score - a.score || b.n - a.n; });
+    return out.slice(0, limit || 3);
+  }
+  return { createSearch: createSearch, quickCats: quickCats };
 });
 ;
 /* iSoft B2B — слой подсказок поиска в шапке (13.10.2026). Склеивается с search.js (движок) сборщиком пакет_собрать.py
@@ -665,7 +710,8 @@
   'use strict';
   /* подставляет пакет_собрать.py: версия индекса и режим. Режим меняется выкладкой нового файла на хостинг, блок Tilda не трогается:
    *   off  — слой не включается (мгновенный откат);  flag — только у тех, кто открыл сайт с ?ishsearch=1 (запоминается в браузере);  all — у всех */
-  var VER = 'dfff554f', MODE = 'flag';
+  var VER = '90566f4e', MODE = 'flag';
+  var SECTIONS = [["Мини-ПК","/mini-pk-i-rabochie-stancii",15],["Моноблоки","/monobloki",55],["Ноутбуки","/noutbuki",312],["Системные блоки","/sistemnye-bloki",38],["Кронштейны для мониторов и ТВ","/kronshteyny-i-krepleniya",54],["Мониторы","/monitory",394],["Проекторы","/proektory-i-paneli",24],["Телевизоры","/televizory",48],["Блоки питания","/bloki-pitaniya",275],["Видеокарты","/videokarty",78],["Корпуса","/korpusa-i-bloki-pitaniya",354],["Материнские платы","/materinskie-platy",230],["Оперативная память","/operativnaya-pamyat",138],["Охлаждение","/ohlazhdenie",277],["Процессоры","/processory",110],["SSD-накопители","/ssd-nakopiteli",164],["USB-флешки","/fleshki-i-karty-pamyati",64],["Жёсткие диски","/zhestkie-diski",73],["Карты памяти","/karty-pamyati",44],["ИБП","/ibp-i-zashchita-pitaniya",249],["Серверы","/servery",8],["Системы хранения","/servery-i-shd",42],["Шкафы и стойки","/shkafy-i-stoyki",25],["IP-телефоны","/konferenc-svyaz",25],["Маршрутизаторы (роутеры)","/marshrutizatory",207],["Межсетевые экраны","/mezhsetevye-ekrany",5],["Сетевое оборудование","/setevoe-oborudovanie",474],["Сетевые карты и адаптеры","/setevye-karty",71],["Точки доступа Wi-Fi","/tochki-dostupa",156],["МФУ лазерные цветные","/mfu-lazernye-cvetnye",28],["МФУ струйные цветные","/mfu-struynye-cvetnye",17],["Плоттеры","/plottery",11],["Принтеры и МФУ","/printery-i-mfu",48],["Принтеры лазерные цветные","/printery-lazernye-cvetnye",14],["Принтеры лазерные ч/б","/printery-lazernye-chb",18],["Сканеры документов","/skanery-dokumentov",24],["Гарнитуры для конференц-связи","/garnitury",19],["Клавиатуры","/klaviatury",174],["Мыши","/klaviatury-i-myshi",343],["Наушники","/naushniki",64],["Видеорегистраторы","/videoregistratory",96],["Домофоны","/domofony",47],["Камеры видеонаблюдения","/videonablyudenie",228],["СКУД и турникеты","/skud-i-turnikety",77],["Принтеры этикеток","/printery-etiketok",11],["Сканеры штрихкода","/skanery-shtrihkoda",15],["Терминалы сбора данных","/terminaly-sbora-dannyh",8]];   // [[имя, адрес, число товаров], …] из индекса: разделы показываются сразу, пока грузится индекс товаров
   var SRC = (document.currentScript && document.currentScript.src) || '';
   var BASE = SRC.replace(/[^\/]*(\?.*)?$/, '');
   function включён() {
@@ -677,6 +723,10 @@
       return localStorage.getItem('ishsearch') === '1';
     } catch (e) { return /[?&]ishsearch=1(&|$)/.test(location.search); }
   }
+  /* прежний предпоиск Tilda (блок 3584163803, меню .ishsg, position:fixed, z-index 9600) цепляется к полю по тексту подсказки и рисует поверх
+     нашего списка свой «Загружаем список товаров» и «Показать все результаты — ещё N». Пока работает наш слой — прячем его целиком;
+     не загрузился индекс — стиль снимается, и прежние подсказки возвращаются. */
+  var HIDE_OLD = '.ishsg{display:none!important}';
   var CSS = '' +
     '.нш-подсказки.нш-умный{max-height:min(72vh,560px)}' +
     '.нш-гр{padding:8px 10px 4px;font-size:11.5px;letter-spacing:.04em;text-transform:uppercase;color:var(--mut,#6b7080);font-weight:600}' +
@@ -693,6 +743,18 @@
     '.нш-товар .нш-ц{flex:none;font-weight:700;font-size:14px;white-space:nowrap}' +
     '.нш-пусто{padding:12px 10px;font-size:13.5px;color:var(--mut,#6b7080)}';
 
+  // индекс начинает грузиться сразу при выполнении скрипта (а не на первой букве); attach берёт тот же запрос
+  var INDEX_URL = BASE + 'search_index2.json?v=' + VER, prefetch = null;
+  function preload(url) {
+    if (!prefetch || prefetch.url !== (url || INDEX_URL)) {
+      var u = url || INDEX_URL;
+      prefetch = { url: u, p: fetch(u, { credentials: 'omit' }).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }) };
+      prefetch.p.catch(function () {});
+    }
+    return prefetch.p;
+  }
+  try { if (SRC && включён()) preload(); } catch (e) {}
+
   function esc(s) { return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;'); }
   function money(n) { return String(Math.round(n)).replace(/\B(?=(\d{3})+(?!\d))/g, ' ') + ' ₸'; }
 
@@ -703,7 +765,8 @@
     input.__ishSearch = true;
     if (!opts.index && !opts.indexData) opts.index = BASE + 'search_index2.json?v=' + VER;
     var S = null, log = opts.log ? function () { try { console.log.apply(console, arguments); } catch (e) {} } : function () {};
-    var st = document.createElement('style'); st.textContent = CSS; document.head.appendChild(st);
+    var st = document.createElement('style'); st.textContent = CSS + HIDE_OLD; document.head.appendChild(st);
+    var failed = false;
 
     function ready(idx) {
       try { S = root.createSearch(idx); } catch (e) { log('ish-search: движок не поднялся', e); return; }
@@ -713,16 +776,31 @@
     }
     if (opts.indexData) ready(opts.indexData);
     else if (opts.index) {
-      fetch(opts.index, { credentials: 'omit' }).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
-        .then(ready).catch(function (e) { log('ish-search: индекс не загрузился, работают прежние подсказки', e); });
+      preload(opts.index).then(ready).catch(function (e) {
+        failed = true; st.textContent = CSS;   // индекс не загрузился: возвращаем прежние подсказки
+        log('ish-search: индекс не загрузился, работают прежние подсказки', e);
+      });
     }
 
     function allUrl(q) { return opts.all ? opts.all(q) : '/katalog?q=' + encodeURIComponent(q); }
 
+    function quick(q) {   // индекс ещё грузится: разделы из встроенного списка, строка про загрузку, ссылка «искать в каталоге»
+      var cs = []; try { cs = root.ishQuickCats ? root.ishQuickCats(SECTIONS, q, 3) : []; } catch (e) {}
+      var h = '';
+      if (cs.length) {
+        h += '<div class="нш-гр">Разделы</div>';
+        cs.forEach(function (c) { h += '<a class="нш-подсказка нш-раздел" href="' + esc(c.url) + '"><b>' + esc(c.name) + '</b><span>' + c.n + '</span></a>'; });
+      }
+      h += '<div class="нш-пусто">Подбираем товары…</div>';
+      h += '<a class="нш-подсказки-низ" href="' + esc(allUrl(q)) + '">Искать «' + esc(q) + '» в каталоге</a>';
+      list.innerHTML = h;
+      list.classList.add('нш-видно', 'нш-умный');
+    }
+
     function render() {
-      if (!S) return;
       var q = input.value.trim();
       if (q.length < 2) return;
+      if (!S) { if (!failed) quick(q); return; }
       var r;
       try { r = S.query(q, { limit: 6 }); } catch (e) { log('ish-search: ошибка запроса', e); return; }
       var h = '', shown = (r.corrected && r.corrected.to) || '';

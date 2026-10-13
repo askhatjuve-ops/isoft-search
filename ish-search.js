@@ -613,6 +613,16 @@
           return ((P[b][4] > 0) - (P[a][4] > 0)) || score[b] - score[a] || a - b;
         });
       } else list.sort(function (a, b) { return score[b] - score[a] || a - b; });
+      // страница результатов (13.10): явная сортировка по цене поверх уровней; цена 0 / нет — всегда в конце
+      if ((opts.sort === 'price_asc' || opts.sort === 'price_desc') && list.length > 1) {
+        var dsc = opts.sort === 'price_desc';
+        list.sort(function (a, b) {
+          var pa = P[a][3] > 0 ? P[a][3] : null, pb3 = P[b][3] > 0 ? P[b][3] : null;
+          if (pa === null || pb3 === null) { if (pa === pb3) return score[b] - score[a] || a - b; return pa === null ? 1 : -1; }
+          if (pa !== pb3) return dsc ? pb3 - pa : pa - pb3;
+          return score[b] - score[a] || a - b;
+        });
+      }
       res.total = fcount;
       res.facets = {
         total: fcount,
@@ -735,10 +745,11 @@
  */
 (function (root) {
   'use strict';
+  if (root.ISHSearch) return;   // файл подключён дважды (загрузчик шапки и загрузчик страницы /katalog) — второй раз молчим
   /* подставляет пакет_собрать.py: версия индекса и режим. Режим меняется выкладкой нового файла на хостинг, блок Tilda не трогается:
    *   off  — слой не включается (мгновенный откат);  flag — только у тех, кто открыл сайт с ?ishsearch=1 (запоминается в браузере);  all — у всех */
-  var VER = '534f2a04', MODE = 'all';
-  var SECTIONS = [["Мини-ПК","/mini-pk-i-rabochie-stancii",15],["Моноблоки","/monobloki",55],["Ноутбуки","/noutbuki",312],["Системные блоки","/sistemnye-bloki",38],["Кронштейны для мониторов и ТВ","/kronshteyny-i-krepleniya",54],["Мониторы","/monitory",394],["Проекторы","/proektory-i-paneli",24],["Телевизоры","/televizory",48],["Блоки питания","/bloki-pitaniya",275],["Видеокарты","/videokarty",78],["Корпуса","/korpusa-i-bloki-pitaniya",354],["Материнские платы","/materinskie-platy",230],["Оперативная память","/operativnaya-pamyat",138],["Охлаждение","/ohlazhdenie",277],["Процессоры","/processory",110],["SSD-накопители","/ssd-nakopiteli",164],["USB-флешки","/fleshki-i-karty-pamyati",64],["Жёсткие диски","/zhestkie-diski",73],["Карты памяти","/karty-pamyati",44],["ИБП","/ibp-i-zashchita-pitaniya",249],["Серверы","/servery",8],["Системы хранения","/servery-i-shd",42],["Шкафы и стойки","/shkafy-i-stoyki",25],["IP-телефоны","/konferenc-svyaz",25],["Маршрутизаторы (роутеры)","/marshrutizatory",207],["Межсетевые экраны","/mezhsetevye-ekrany",5],["Сетевое оборудование","/setevoe-oborudovanie",474],["Сетевые карты и адаптеры","/setevye-karty",71],["Точки доступа Wi-Fi","/tochki-dostupa",156],["МФУ лазерные цветные","/mfu-lazernye-cvetnye",28],["МФУ струйные цветные","/mfu-struynye-cvetnye",17],["Плоттеры","/plottery",11],["Принтеры и МФУ","/printery-i-mfu",48],["Принтеры лазерные цветные","/printery-lazernye-cvetnye",14],["Принтеры лазерные ч/б","/printery-lazernye-chb",18],["Сканеры документов","/skanery-dokumentov",24],["Гарнитуры для конференц-связи","/garnitury",19],["Клавиатуры","/klaviatury",174],["Мыши","/klaviatury-i-myshi",343],["Наушники","/naushniki",64],["Видеорегистраторы","/videoregistratory",96],["Домофоны","/domofony",47],["Камеры видеонаблюдения","/videonablyudenie",228],["СКУД и турникеты","/skud-i-turnikety",77],["Принтеры этикеток","/printery-etiketok",11],["Сканеры штрихкода","/skanery-shtrihkoda",15],["Терминалы сбора данных","/terminaly-sbora-dannyh",8]];   // [[имя, адрес, число товаров], …] из индекса: разделы показываются сразу, пока грузится индекс товаров
+  var VER = '056b14de', MODE = 'all';
+  var SECTIONS = [["Мини-ПК","/mini-pk-i-rabochie-stancii",14],["Моноблоки","/monobloki",55],["Ноутбуки","/noutbuki",307],["Системные блоки","/sistemnye-bloki",36],["Кронштейны для мониторов и ТВ","/kronshteyny-i-krepleniya",53],["Мониторы","/monitory",393],["Проекторы","/proektory-i-paneli",24],["Телевизоры","/televizory",48],["Блоки питания","/bloki-pitaniya",274],["Видеокарты","/videokarty",78],["Корпуса","/korpusa-i-bloki-pitaniya",354],["Материнские платы","/materinskie-platy",230],["Оперативная память","/operativnaya-pamyat",137],["Охлаждение","/ohlazhdenie",251],["Процессоры","/processory",110],["SSD-накопители","/ssd-nakopiteli",164],["USB-флешки","/fleshki-i-karty-pamyati",64],["Жёсткие диски","/zhestkie-diski",72],["Карты памяти","/karty-pamyati",44],["ИБП","/ibp-i-zashchita-pitaniya",237],["Серверы","/servery",8],["Системы хранения","/servery-i-shd",41],["Шкафы и стойки","/shkafy-i-stoyki",25],["IP-телефоны","/konferenc-svyaz",25],["Маршрутизаторы (роутеры)","/marshrutizatory",207],["Межсетевые экраны","/mezhsetevye-ekrany",5],["Сетевое оборудование","/setevoe-oborudovanie",464],["Сетевые карты и адаптеры","/setevye-karty",71],["Точки доступа Wi-Fi","/tochki-dostupa",153],["МФУ лазерные цветные","/mfu-lazernye-cvetnye",29],["МФУ струйные цветные","/mfu-struynye-cvetnye",18],["Плоттеры","/plottery",11],["Принтеры и МФУ","/printery-i-mfu",49],["Принтеры лазерные цветные","/printery-lazernye-cvetnye",14],["Принтеры лазерные ч/б","/printery-lazernye-chb",17],["Сканеры документов","/skanery-dokumentov",24],["Гарнитуры для конференц-связи","/garnitury",19],["Клавиатуры","/klaviatury",149],["Мыши","/klaviatury-i-myshi",303],["Наушники","/naushniki",62],["Видеорегистраторы","/videoregistratory",96],["Домофоны","/domofony",47],["Камеры видеонаблюдения","/videonablyudenie",227],["СКУД и турникеты","/skud-i-turnikety",77],["Принтеры этикеток","/printery-etiketok",11],["Сканеры штрихкода","/skanery-shtrihkoda",15],["Терминалы сбора данных","/terminaly-sbora-dannyh",8]];   // [[имя, адрес, число товаров], …] из индекса: разделы показываются сразу, пока грузится индекс товаров
   var SRC = (document.currentScript && document.currentScript.src) || '';
   var BASE = SRC.replace(/[^\/]*(\?.*)?$/, '');
   function включён() {
@@ -812,7 +823,7 @@
     // «Показать все» и Enter: каталог сразу «сначала дешёвые» (tfc_sort Tilda); адрес собирает блок шапки (opts.all), сортировку дописываем здесь
     var SORT = 'tfc_sort%5B4204437703%5D=price:asc';
     function allUrl(q) {
-      var u = opts.all ? opts.all(q) : '/katalog?q=' + encodeURIComponent(q);
+      var u = opts.all ? opts.all(q) : '/katalog?tfc_query%5B4204437703%5D=' + encodeURIComponent(q) + '&tfc_div=:::';
       if (typeof u !== 'string' || u.indexOf('tfc_sort') >= 0 || u.indexOf('?') < 0) return u;
       return u + '&' + SORT;
     }
@@ -870,16 +881,426 @@
     // после прежнего обработчика input: он выставил свой список, мы его заменяем
     input.addEventListener('input', render);
     input.addEventListener('focus', function () { if (input.value.trim().length > 1) render(); });
+    // уйти в каталог с исправленным запросом; false — движок ещё не готов, пусть работает прежний путь
+    input.__ishGo = function () {
+      if (!S) return false;
+      var q = input.value.trim(); if (!q) return false;
+      var r; try { r = S.query(q, { limit: 1 }); } catch (err) { return false; }
+      var to = (r.corrected && r.corrected.to) || q;
+      window.location.assign(allUrl(to));
+      return true;
+    };
     // Enter без выбранной строки: уходим с исправленным запросом
     input.addEventListener('keydown', function (e) {
       if (e.key !== 'Enter' || !S) return;
       if (list.querySelector('.нш-вкл')) return;          // выбрана строка — прежний обработчик перейдёт по ссылке
-      var q = input.value.trim(); if (!q) return;
-      var r; try { r = S.query(q, { limit: 1 }); } catch (err) { return; }
-      var to = (r.corrected && r.corrected.to) || q;
-      e.preventDefault(); e.stopImmediatePropagation();
-      window.location.assign(allUrl(to));
+      if (!input.value.trim()) return;
+      if (input.__ishGo()) { e.preventDefault(); e.stopImmediatePropagation(); }
+    }, true);
+    input.__ishRender = render;
+  }
+
+  /* ── поля СТАРОЙ оболочки сайта (13.10): #ishМобQ (телефон, рисуется заново при смене экрана оболочки) и #ishQ (761–980 px) ──
+     Блок шапки грузит этот файл при первом фокусе в такое поле и зовёт watch(). Список — отдельный fixed-узел в body (форма оболочки
+     overflow:hidden, внутри неё список обрезался бы). Enter и кнопку «искать» перехватываем на window в фазе захвата — раньше обработчиков
+     оболочки (go()) и прежнего предпоиска (.ishsg); пока индекс не готов, их работа не нарушается. */
+  var SHELL_IDS = { 'ishМобQ': 1, 'ishQ': 1 }, shellN = 0;
+  var SHELL_CSS = '.нш-мс{display:none;position:fixed;z-index:9650;left:8px;right:8px;top:0;max-height:60vh;overflow:auto;-webkit-overflow-scrolling:touch;' +
+    'background:#fff;border:1px solid #E3DFD6;border-radius:12px;box-shadow:0 12px 32px rgba(23,25,35,.18);padding:6px;font-family:TildaSans,Arial,sans-serif;color:#171923;box-sizing:border-box}' +
+    '.нш-мс *{box-sizing:border-box}.нш-мс.нш-видно{display:block}' +
+    '.нш-мс .нш-гр{padding:8px 10px 4px;font-size:11.5px;letter-spacing:.04em;text-transform:uppercase;color:#6b7080;font-weight:600}' +
+    '.нш-мс .нш-подсказка{display:flex;justify-content:space-between;gap:12px;padding:10px;border-radius:8px;font-size:14px;text-decoration:none;color:#171923}' +
+    '.нш-мс .нш-подсказка span{color:#646B7D;font-size:12.5px;white-space:nowrap}' +
+    '.нш-мс .нш-подсказки-низ{display:block;padding:12px 10px;border-radius:8px;color:#2B44C7;font-size:14px;font-weight:600;text-decoration:none}';
+  function attachShell(input) {
+    if (!input || input.__ishSearch || !включён()) return;
+    var list = document.createElement('div');
+    list.className = 'нш-мс'; list.id = 'ish-мс-' + (++shellN); list.setAttribute('role', 'listbox');
+    document.body.appendChild(list);
+    if (!document.getElementById('ish-мс-css')) { var st = document.createElement('style'); st.id = 'ish-мс-css'; st.textContent = SHELL_CSS; document.head.appendChild(st); }
+    function place() {
+      var f = input.closest ? (input.closest('form') || input) : input, r = f.getBoundingClientRect(), vv = window.visualViewport;
+      var vh = vv ? vv.height : window.innerHeight, w = window.innerWidth;
+      list.style.top = Math.round(r.bottom + 6) + 'px';
+      list.style.maxHeight = Math.max(160, Math.round(vh - r.bottom - 14)) + 'px';
+      if (w > 760) { list.style.left = Math.max(8, Math.round(r.left)) + 'px'; list.style.right = 'auto'; list.style.width = Math.min(560, w - 16) + 'px'; }
+      else { list.style.left = '8px'; list.style.right = '8px'; list.style.width = 'auto'; }
+    }
+    attach(input, list, {});
+    if (!input.__ishSearch) { if (list.parentNode) list.parentNode.removeChild(list); return; }
+    input.__ishShell = list;
+    var obs = new MutationObserver(function () { if (list.classList.contains('нш-видно')) place(); });
+    obs.observe(list, { attributes: true, attributeFilter: ['class'] });
+    function hide() { list.classList.remove('нш-видно'); }
+    input.addEventListener('blur', function () { setTimeout(hide, 250); });
+    input.addEventListener('keydown', function (e) { if (e.key === 'Escape') hide(); });
+    list.addEventListener('mousedown', function (e) { e.preventDefault(); });
+    window.addEventListener('resize', function () { if (list.classList.contains('нш-видно')) place(); });
+    if (window.visualViewport) window.visualViewport.addEventListener('resize', function () { if (list.classList.contains('нш-видно')) place(); });
+    window.addEventListener('scroll', function () { if (list.classList.contains('нш-видно')) place(); }, { passive: true });
+    if (document.activeElement === input && input.__ishRender) input.__ishRender();
+  }
+  var watching = false;
+  function watch() {
+    if (!включён()) return;
+    function tryAttach(t) { if (t && t.tagName === 'INPUT' && SHELL_IDS[t.id] && !t.__ishSearch) attachShell(t); }
+    tryAttach(document.activeElement);                     // скрипт догрузился, когда поле уже в фокусе
+    if (watching) return;
+    watching = true;
+    document.addEventListener('focusin', function (e) { tryAttach(e.target); }, true);
+    function shellInput(el) { return el && el.tagName === 'INPUT' && SHELL_IDS[el.id] && el.__ishGo ? el : null; }
+    window.addEventListener('keydown', function (e) {
+      var i = shellInput(e.target);
+      if (!i || e.key !== 'Enter' || !i.value.trim()) return;
+      if (i.__ishGo()) { e.preventDefault(); e.stopImmediatePropagation(); }
+    }, true);
+    window.addEventListener('submit', function (e) {         // кнопка «искать» / отправка формы оболочки
+      var f = e.target, i = f && f.querySelector ? (f.querySelector('#ishМобQ') || f.querySelector('#ishQ')) : null;
+      if (!shellInput(i) || !i.value.trim()) return;
+      if (i.__ishGo()) { e.preventDefault(); e.stopImmediatePropagation(); }
     }, true);
   }
-  root.ISHSearch = { attach: attach };
+  root.ISHSearch = { attach: attach, watch: watch, enabled: включён, preload: preload, base: BASE, version: VER, indexUrl: function () { return INDEX_URL; } };
+})(typeof window !== 'undefined' ? window : this);
+;
+/* iSoft B2B — страница результатов поиска /katalog на нашем движке (13.10.2026). Склеивается сборщиком пакет_собрать.py
+ * в ish-search.js после search.js (движок) и ish-search-ui.js (подсказки); отдельно не подключается.
+ *
+ * Включается ТОЛЬКО на адресе /katalog с запросом tfc_query[4204437703]=… и только когда слой поиска включён для посетителя
+ * (режим all, либо flag + ?ishsearch=1) — те же off/flag/all, что и у подсказок. /katalog без запроса не трогается.
+ * Родной каталог магазина (#rec4204437703) не удаляется: пока наш слой работает, он скрыт классом html.ish-res-on;
+ * не загрузился индекс / ошибка / таймаут 8 с — класс снимается и виден родной каталог (как раньше).
+ *
+ * Выдача: те же правила, что в подсказках (search.js: уровни релевантности, внутри уровня дешёвые сначала, точный артикул первым,
+ * исправление запроса), разделы со счётчиками (клик фильтрует), фильтры Цена от–до и Бренд, сортировка, карточки списком,
+ * «показать ещё» по 30. «В корзину» — тот же путь, что у кода каталога на этой странице (блок 4204439103): родной
+ * tcart__addProduct из tilda-cart-1.1.min.js, заглушка .t706, проверка по localStorage и запись в формате Tilda, если родной не положил.
+ */
+(function (root) {
+  'use strict';
+  if (root.ISHResults) return;                       // файл подключён дважды (шапкой и страницей) — второй раз молчим
+  var REC = '4204437703', STEP = 30, WAIT_MS = 8000;
+  var CART_JS = 'https://static.tildacdn.pro/js/tilda-cart-1.1.min.js';
+  var CURRENCY = { 'data-project-currency': 'тг.', 'data-project-currency-side': 'r', 'data-project-currency-sep': ',', 'data-project-currency-dec': '' };
+
+  function esc(s) { return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;'); }
+  function money(n) { return String(Math.round(n)).replace(/\B(?=(\d{3})+(?!\d))/g, ' ') + ' ₸'; }
+  function plural(n, a, b, c) { var m = n % 100, d = n % 10; return (m > 10 && m < 15) ? c : d === 1 ? a : (d >= 2 && d <= 4) ? b : c; }
+  function queryFromUrl(search) {
+    var s = search == null ? (root.location && root.location.search) || '' : search, m = /[?&]tfc_query(?:%5B|\[)4204437703(?:%5D|\])=([^&]*)/i.exec(s);
+    if (!m) return '';
+    try { return decodeURIComponent(m[1].replace(/\+/g, ' ')).trim(); } catch (e) { return m[1].trim(); }
+  }
+  function katalogUrl(q) { return '/katalog?tfc_query%5B' + REC + '%5D=' + encodeURIComponent(q) + '&tfc_div=:::'; }
+
+  var CSS = '' +
+    'html.ish-res-on #rec' + REC + '{display:none!important}' +
+    '.ir{--kb:#2B44C7;--kbh:#2036A8;--kbs:#E9ECFC;--ink:#171923;--tih:#646B7D;--lin:#E3DFD6;--ctl:#928A79;--por:#F5F3EE;--ok:#14704A;' +
+    'font-family:TildaSans,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);font-size:15px;line-height:1.45;max-width:1240px;margin:0 auto;padding:18px 20px 48px;-webkit-font-smoothing:antialiased}' +
+    '.ir *{box-sizing:border-box}.ir a{color:inherit}' +
+    '.ir-wait{display:flex;align-items:center;gap:12px;padding:40px 4px;color:var(--tih);font-size:15px}' +
+    '.ir-wait i{width:18px;height:18px;border-radius:50%;border:2px solid var(--lin);border-top-color:var(--kb);animation:ir-spin .7s linear infinite}' +
+    '@keyframes ir-spin{to{transform:rotate(360deg)}}@media(prefers-reduced-motion:reduce){.ir-wait i{animation:none}}' +
+    '.ir-count{margin:0;font-size:20px;font-weight:700;line-height:1.25}' +
+    '.ir-note{margin:6px 0 0;color:var(--tih);font-size:14px}.ir-note b{color:var(--ink)}' +
+    '.ir-chips{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 0}' +
+    '.ir-chip{display:inline-flex;align-items:center;gap:7px;min-height:38px;padding:0 14px;border:1px solid var(--lin);border-radius:19px;background:#fff;color:var(--ink);font-weight:500;font-size:14px;line-height:1;font-family:inherit;cursor:pointer}' +
+    '.ir-chip:hover{border-color:var(--ctl)}.ir-chip span{color:var(--tih);font-weight:400}' +
+    '.ir-chip[aria-pressed=true]{background:var(--kb);border-color:var(--kb);color:#fff}.ir-chip[aria-pressed=true] span{color:rgba(255,255,255,.8)}' +
+    '.ir-chip:focus-visible,.ir-add:focus-visible,.ir-more:focus-visible,.ir-sum:focus-visible,.ir select:focus-visible,.ir input:focus-visible{outline:2px solid var(--kb);outline-offset:2px}' +
+    '.ir-tools{display:flex;flex-wrap:wrap;gap:10px 14px;align-items:flex-end;margin:16px 0 4px;padding:14px;background:var(--por);border:1px solid var(--lin);border-radius:12px}' +
+    '.ir-f{display:flex;flex-direction:column;gap:4px;min-width:0}.ir-f>label,.ir-f>.ir-lab{font-size:12px;color:var(--tih);font-weight:600;letter-spacing:.02em}' +
+    '.ir-pr{display:flex;align-items:center;gap:6px}.ir-pr em{font-style:normal;color:var(--tih)}' +
+    '.ir input[type=text],.ir select,.ir-sum{height:42px;border:1px solid var(--lin);border-radius:9px;background:#fff;color:var(--ink);font-weight:400;font-size:14.5px;line-height:1;font-family:inherit;padding:0 12px}' +
+    '.ir input[type=text]{width:118px}.ir select{padding-right:8px;min-width:210px}' +
+    '.ir-br{position:relative}.ir-sum{display:flex;align-items:center;gap:8px;cursor:pointer;list-style:none;min-width:170px}.ir-sum::-webkit-details-marker{display:none}' +
+    '.ir-sum:after{content:"";margin-left:auto;width:7px;height:7px;border-right:1.6px solid var(--tih);border-bottom:1.6px solid var(--tih);transform:rotate(45deg) translateY(-2px)}' +
+    '.ir-sum b{background:var(--kb);color:#fff;border-radius:10px;min-width:20px;height:20px;padding:0 6px;font-size:12px;line-height:20px;text-align:center;font-weight:600}' +
+    '.ir-bl{position:absolute;z-index:5;top:calc(100% + 6px);left:0;width:290px;max-height:320px;overflow:auto;background:#fff;border:1px solid var(--lin);border-radius:12px;box-shadow:0 12px 32px rgba(23,25,35,.14);padding:6px}' +
+    '.ir-bl label{display:flex;align-items:center;gap:10px;padding:9px 10px;border-radius:8px;cursor:pointer;font-size:14px}.ir-bl label:hover{background:var(--kbs)}' +
+    '.ir-bl input{width:17px;height:17px;accent-color:var(--kb);flex:none;margin:0}.ir-bl span{margin-left:auto;color:var(--tih);font-size:12.5px}' +
+    '.ir-bl p{margin:0;padding:10px;color:var(--tih);font-size:13.5px}' +
+    '.ir-reset{margin-left:auto;height:42px;padding:0 4px;border:0;background:none;color:var(--kb);font-weight:500;font-size:14px;line-height:1;font-family:inherit;cursor:pointer;text-decoration:underline;text-underline-offset:3px}' +
+    '.ir-list{list-style:none;margin:14px 0 0;padding:0;display:flex;flex-direction:column;gap:10px}' +
+    '.ir-card{display:grid;grid-template-columns:104px minmax(0,1fr) auto;gap:6px 18px;align-items:center;padding:14px;background:#fff;border:1px solid var(--lin);border-radius:12px}' +
+    '.ir-card:hover{border-color:var(--ctl)}' +
+    '.ir-ph{display:flex;align-items:center;justify-content:center;width:104px;height:104px;border-radius:8px;background:#fff;overflow:hidden}' +
+    '.ir-ph img{max-width:100%;max-height:100%;object-fit:contain}.ir-ph i{width:100%;height:100%;background:var(--por);border-radius:8px}' +
+    '.ir-name{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;font-size:15.5px;font-weight:500;line-height:1.35;text-decoration:none;color:var(--ink)}' +
+    '.ir-name:hover{color:var(--kb)}.ir-name mark{background:rgba(255,196,0,.35);color:inherit;border-radius:3px;padding:0 1px}' +
+    '.ir-meta{margin-top:6px;font-size:13px;color:var(--tih);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}' +
+    '.ir-meta b{font-weight:600;color:var(--ink);letter-spacing:.01em}' +
+    '.ir-buy{display:flex;flex-direction:column;align-items:flex-end;gap:8px;min-width:170px}' +
+    '.ir-price{font-size:20px;font-weight:700;white-space:nowrap}.ir-price small{font-size:13px;font-weight:500;color:var(--tih)}' +
+    '.ir-add,.ir-ask{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;min-width:150px;padding:0 20px;border:1px solid var(--ctl);border-radius:9px;background:transparent;' +
+    'color:var(--kb);font-weight:600;font-size:14.5px;line-height:1;font-family:inherit;cursor:pointer;text-decoration:none}' +
+    '.ir-add:hover,.ir-ask:hover{background:var(--kbs)}.ir-add[data-s=ok]{background:#E5F3EC;border-color:#9BCDB4;color:var(--ok)}.ir-add[data-s=err]{background:#FDEAE4;border-color:#E9A793;color:#B43A36}' +
+    '.ir-add[disabled]{opacity:.7;cursor:default}' +
+    '.ir-moreb{display:flex;justify-content:center;margin:20px 0 0}' +
+    '.ir-more{min-height:48px;padding:0 28px;border:1px solid var(--ctl);border-radius:9px;background:#fff;color:var(--kb);font-weight:600;font-size:15px;line-height:1;font-family:inherit;cursor:pointer}.ir-more:hover{background:var(--kbs)}' +
+    '.ir-empty{margin:24px 0 0;padding:22px;background:var(--por);border:1px solid var(--lin);border-radius:12px}.ir-empty h3{margin:0 0 8px;font-size:18px}' +
+    '.ir-empty p{margin:0 0 10px;color:var(--tih)}.ir-empty a{color:var(--kb)}.ir-sug{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0 12px}' +
+    '.ir-sug a{display:inline-flex;align-items:center;min-height:38px;padding:0 14px;border:1px solid var(--lin);border-radius:19px;background:#fff;text-decoration:none;color:var(--ink);font-size:14px}' +
+    '.ir-toast{position:fixed;z-index:9700;left:50%;bottom:22px;transform:translateX(-50%) translateY(20px);opacity:0;pointer-events:none;display:flex;gap:14px;align-items:center;padding:12px 18px;' +
+    'background:var(--ink);color:#fff;border-radius:12px;font-size:14px;box-shadow:0 12px 32px rgba(23,25,35,.3);transition:opacity .2s,transform .2s;max-width:calc(100vw - 24px)}' +
+    '.ir-toast.on{opacity:1;transform:translateX(-50%);pointer-events:auto}.ir-toast a{color:#B9C4FF;font-weight:600;white-space:nowrap}' +
+    '.ir-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}' +
+    '@media(max-width:760px){.ir{padding:14px 12px 40px}.ir-count{font-size:18px}' +
+    '.ir-chips{flex-wrap:nowrap;overflow-x:auto;margin:14px -12px 0;padding:0 12px 6px;-webkit-overflow-scrolling:touch;scrollbar-width:none}.ir-chips::-webkit-scrollbar{display:none}.ir-chip{flex:none}' +
+    '.ir-tools{padding:12px;gap:10px}.ir-f{flex:1 1 calc(50% - 6px)}.ir-f.ir-fp{flex:1 1 100%}.ir input[type=text]{width:100%}.ir-pr{width:100%}.ir-pr input{flex:1 1 0;min-width:0}' +
+    '.ir select{min-width:0;width:100%}.ir-sum{min-width:0;width:100%}.ir-bl{width:min(290px,calc(100vw - 48px))}.ir-reset{margin:0;height:34px}' +
+    '.ir-card{grid-template-columns:84px minmax(0,1fr);padding:12px;gap:4px 12px}.ir-ph{width:84px;height:84px}.ir-name{font-size:14.5px}' +
+    '.ir-buy{grid-column:1/-1;flex-direction:row;align-items:center;justify-content:space-between;min-width:0;margin-top:6px}.ir-price{font-size:18px}.ir-add,.ir-ask{min-width:140px}' +
+    '.ir-meta{white-space:normal}}';
+
+  var st = null;      // состояние текущей выдачи
+  var S = null, box = null, started = false, cartLoading = null, toastEl = null, toastT = 0, items = {};
+
+  /* ───────────── корзина (тот же путь, что у кода каталога на странице, блок 4204439103) ───────────── */
+  function stored() { try { return JSON.parse(root.localStorage.getItem('tcart') || 'null'); } catch (e) { return null; } }
+  function inCart(uid) { var c = stored(), n = 0; ((c && c.products) || []).forEach(function (p) { if (p && String(p.uid) === String(uid)) n += parseInt(p.quantity, 10) || 0; }); return n; }
+  function cartScript() {
+    if (typeof root.tcart__addProduct === 'function') return Promise.resolve();
+    if (cartLoading) return cartLoading;
+    cartLoading = new Promise(function (ok) {
+      var s = document.createElement('script'); s.src = CART_JS; s.async = true; s.onload = function () { ok(); }; s.onerror = function () { ok(); };
+      (document.head || document.documentElement).appendChild(s); setTimeout(ok, WAIT_MS);
+    });
+    return cartLoading;
+  }
+  function cartPrepare() {
+    var stub = false;
+    if (document.body && !document.querySelector('.t706')) {
+      var z = document.createElement('div'); z.className = 't706 ish-t706-stub'; z.setAttribute('data-opencart-onorder', 'no');
+      for (var k in CURRENCY) z.setAttribute(k, CURRENCY[k]);
+      z.style.cssText = 'display:none!important'; z.setAttribute('aria-hidden', 'true'); document.body.appendChild(z); stub = true;
+    }
+    if (!root.tcart || typeof root.tcart !== 'object' || !root.tcart.products) {
+      try { if (typeof root.t_cart__loadCartData === 'function') root.tcart = root.t_cart__loadCartData(); } catch (e) {}
+    }
+    if (!root.tcart || !root.tcart.products) {
+      root.tcart = { products: [], prodamount: 0, amount: 0, total: 0, system: 'none', settings: {}, currency: 'тг.', currency_txt: 'тг.', currency_txt_l: '', currency_txt_r: ' тг.', currency_side: 'r', currency_sep: ',', currency_dec: '' };
+    }
+    return stub;
+  }
+  // возвращает Promise<boolean>: лежит ли товар в корзине после вызова (проверка по хранилищу, а не по коду возврата)
+  function addToCart(p, qty) {
+    qty = qty || 1;
+    return cartScript().then(function () {
+      cartPrepare();
+      var was = inCart(p.id), abs = (root.location && root.location.origin) || '';
+      var item = { uid: String(p.id), gen_uid: String(p.id), lid: '', sku: p.sku || '', name: esc(p.title), price: p.price, img: p.photo || '', url: p.url ? abs + p.url : abs + '/katalog',
+                   recid: REC, part_uids: [], pack_label: 'lwh', pack_m: '0', pack_x: '0', pack_y: '0', pack_z: '0', quantity: qty };
+      var bubble = root.tcart__showBubble;
+      if (typeof bubble === 'function') root.tcart__showBubble = function () {};
+      try { if (typeof root.tcart__addProduct === 'function') root.tcart__addProduct(item); }
+      catch (e) { if (root.console) console.warn('[ish] корзина Tilda споткнулась:', e && e.message); }
+      if (typeof bubble === 'function') root.tcart__showBubble = bubble;
+      if (inCart(p.id) <= was) {                       // родной не положил — пишем сами, в формате Tilda (как код каталога на странице)
+        var total = was + qty, rest = (root.tcart.products || []).filter(function (x) { return x && String(x.uid) !== String(p.id); });
+        rest.push({ uid: String(p.id), id: String(p.id), name: item.name, price: String(p.price), quantity: total, sku: item.sku, url: item.url, img: item.img,
+                    amount: Math.round(p.price * total * 100) / 100, ts: Math.floor(Date.now() / 1000) });
+        var sh = 0, sum = 0; rest.forEach(function (x) { sh += parseInt(x.quantity, 10) || 0; sum += parseFloat(x.amount) || 0; });
+        root.tcart.products = rest; root.tcart.total = sh; root.tcart.prodamount = root.tcart.amount = Math.round(sum * 100) / 100;
+        try { root.localStorage.setItem('tcart', JSON.stringify(root.tcart)); } catch (e) {}
+      }
+      try { if (typeof root.tcart__reDrawCartIcon === 'function') root.tcart__reDrawCartIcon(); } catch (e) {}
+      return inCart(p.id) > was;
+    });
+  }
+  function toast(html) {
+    if (!toastEl) { toastEl = document.createElement('div'); toastEl.className = 'ir-toast'; toastEl.setAttribute('role', 'status'); document.body.appendChild(toastEl); }
+    toastEl.innerHTML = html; toastEl.classList.add('on'); clearTimeout(toastT);
+    toastT = setTimeout(function () { toastEl.classList.remove('on'); }, 3200);
+  }
+
+  /* ───────────── запрос и отрисовка ───────────── */
+  function run(offset, limit) {
+    return S.query(st.q, { limit: limit, offset: offset, brands: st.brands, cats: st.cat >= 0 ? [st.cat] : [], priceMin: st.pmin, priceMax: st.pmax, sort: st.sort === 'rel' ? undefined : st.sort });
+  }
+  function $(sel) { return box.querySelector(sel); }
+  function saveState() { try { root.sessionStorage.setItem('ish_res', JSON.stringify({ q: st.q, cat: st.cat, brands: st.brands, pmin: st.pmin, pmax: st.pmax, sort: st.sort, shown: st.shown, y: root.pageYOffset || 0 })); } catch (e) {} }
+  function loadState(q) { try { var o = JSON.parse(root.sessionStorage.getItem('ish_res') || 'null'); return o && o.q === q ? o : null; } catch (e) { return null; } }
+  function numOrNull(v) { v = String(v == null ? '' : v).replace(/[^\d.,]/g, '').replace(',', '.'); if (!v) return null; var n = parseFloat(v); return isFinite(n) ? n : null; }
+
+  function skeleton() {
+    box.innerHTML = '<div class="ir-wait" role="status"><i></i>Ищем по каталогу…</div>';
+  }
+  function frame() {
+    box.innerHTML = '<div class="ir-head" aria-live="polite"><h2 class="ir-count" id="ir-count"></h2><p class="ir-note" id="ir-note"></p></div>' +
+      '<div class="ir-chips" id="ir-chips" role="group" aria-label="Разделы"></div>' +
+      '<div class="ir-tools" id="ir-tools">' +
+        '<div class="ir-f ir-fp"><span class="ir-lab">Цена, ₸</span><div class="ir-pr"><input type="text" inputmode="numeric" id="ir-p1" aria-label="Цена от" autocomplete="off"><em>—</em><input type="text" inputmode="numeric" id="ir-p2" aria-label="Цена до" autocomplete="off"></div></div>' +
+        '<div class="ir-f"><span class="ir-lab">Бренд</span><details class="ir-br" id="ir-br"><summary class="ir-sum" id="ir-sum">Все бренды</summary><div class="ir-bl" id="ir-bl"></div></details></div>' +
+        '<div class="ir-f"><label for="ir-sort">Сортировка</label><select id="ir-sort"><option value="rel">По релевантности (дешёвые выше)</option><option value="price_asc">Сначала дешёвые</option><option value="price_desc">Сначала дорогие</option></select></div>' +
+        '<button type="button" class="ir-reset" id="ir-reset" hidden>Сбросить</button>' +
+      '</div>' +
+      '<ul class="ir-list" id="ir-list"></ul><div class="ir-moreb" id="ir-moreb"></div><div id="ir-empty"></div>';
+    $('#ir-sort').value = st.sort;
+    $('#ir-p1').value = st.pmin == null ? '' : String(st.pmin); $('#ir-p2').value = st.pmax == null ? '' : String(st.pmax);
+  }
+  function cardHtml(p) {
+    var url = p.url || katalogUrl(p.title), ph = p.thumb ? '<img loading="lazy" alt="" src="' + esc(p.thumb) + '" onerror="this.onerror=null;this.src=\'' + esc(p.photo) + '\'">' : '<i></i>';
+    var meta = (p.sku ? 'Артикул <b>' + esc(p.sku) + '</b> · ' : '') + esc(p.brand ? p.brand + ' · ' + p.cat : p.cat);
+    var buy = p.price > 0
+      ? '<div class="ir-price">' + money(p.price) + '</div><button type="button" class="ir-add" data-i="' + p.i + '">В корзину</button>'
+      : '<div class="ir-price"><small>Цена по запросу</small></div><a class="ir-ask" href="' + esc(url) + '">Уточнить цену</a>';
+    return '<li class="ir-card"><a class="ir-ph" href="' + esc(url) + '" tabindex="-1" aria-hidden="true">' + ph + '</a>' +
+      '<div class="ir-mid"><a class="ir-name" href="' + esc(url) + '">' + p.html + '</a><div class="ir-meta">' + meta + '</div></div>' +
+      '<div class="ir-buy">' + buy + '</div></li>';
+  }
+  function fillChips(r) {
+    var cats = (r.facets && r.facets.cats) || [], all = 0, h = '';
+    cats.forEach(function (c) { all += c.n; });
+    var has = false; cats.forEach(function (c) { if (c.i === st.cat) has = true; });
+    if (st.cat >= 0 && !has) cats = cats.concat([{ i: st.cat, name: st.catName || 'Раздел', n: 0 }]);
+    h += '<button type="button" class="ir-chip" data-cat="-1" aria-pressed="' + (st.cat < 0) + '">Все <span>' + all + '</span></button>';
+    cats.forEach(function (c) { if (c.n > 0 || c.i === st.cat) h += '<button type="button" class="ir-chip" data-cat="' + c.i + '" data-name="' + esc(c.name) + '" aria-pressed="' + (st.cat === c.i) + '">' + esc(c.name) + ' <span>' + c.n + '</span></button>'; });
+    $('#ir-chips').innerHTML = h;
+  }
+  function fillBrands(r) {
+    var bs = ((r.facets && r.facets.brands) || []).slice(), names = {};
+    bs.forEach(function (b) { names[b.i] = 1; });
+    st.brandNames = st.brandNames || {};
+    bs.forEach(function (b) { st.brandNames[b.i] = b.name; });
+    st.brands.forEach(function (i) { if (!names[i]) bs.push({ i: i, name: st.brandNames[i] || 'Бренд', n: 0 }); });
+    var h = '';
+    bs.forEach(function (b) { h += '<label><input type="checkbox" value="' + b.i + '"' + (st.brands.indexOf(b.i) >= 0 ? ' checked' : '') + '>' + esc(b.name) + '<span>' + b.n + '</span></label>'; });
+    $('#ir-bl').innerHTML = h || '<p>Брендов нет</p>';
+    $('#ir-sum').innerHTML = st.brands.length ? 'Бренд <b>' + st.brands.length + '</b>' : 'Все бренды';
+    var pr = r.facets && r.facets.price;
+    if (pr && pr.max > 0) { $('#ir-p1').placeholder = 'от ' + Math.round(pr.min); $('#ir-p2').placeholder = 'до ' + Math.round(pr.max); }
+  }
+  function head(r) {
+    var n = r.total || 0, t = n ? 'Найдено ' + n + ' ' + plural(n, 'товар', 'товара', 'товаров') : 'Ничего не найдено';
+    $('#ir-count').textContent = t;
+    var note = '';
+    if (r.corrected && r.corrected.to) note += 'Показано для «<b>' + esc(r.corrected.to) + '</b>». ';
+    if (r.relaxed && r.relaxed.dropped && r.relaxed.dropped.length) note += 'Нет товаров со словами «' + r.relaxed.dropped.map(esc).join(' ') + '» — показано по «<b>' + r.relaxed.kept.map(esc).join(' ') + '</b>». ';
+    $('#ir-note').innerHTML = note; $('#ir-note').style.display = note ? '' : 'none';
+    $('#ir-reset').hidden = !(st.cat >= 0 || st.brands.length || st.pmin != null || st.pmax != null || st.sort !== 'rel');
+  }
+  function empty(r) {
+    var h = '<div class="ir-empty"><h3>По запросу «' + esc(st.q) + '» ничего не нашли</h3>';
+    if (st.cat >= 0 || st.brands.length || st.pmin != null || st.pmax != null) h += '<p>Попробуйте снять фильтры.</p>';
+    var w = (r.fallback && r.fallback.words) || [];
+    if (w.length) { h += '<p>Возможно, вы искали:</p><div class="ir-sug">' + w.map(function (x) { return '<a href="' + esc(katalogUrl(x)) + '">' + esc(x) + '</a>'; }).join('') + '</div>'; }
+    var cs = ((r.fallback && r.fallback.categories) || []).filter(function (c) { return c.url; }).slice(0, 6);
+    if (cs.length) { h += '<p>Разделы каталога:</p><div class="ir-sug">' + cs.map(function (c) { return '<a href="' + esc(c.url) + '">' + esc(c.name) + '</a>'; }).join('') + '</div>'; }
+    h += '<p>Не нашли нужное? Пришлите список — подберём. <a href="/podbor">Оставить запрос на подбор</a></p></div>';
+    $('#ir-empty').innerHTML = h;
+  }
+  function more(r) {
+    var left = (r.total || 0) - st.shown;
+    $('#ir-moreb').innerHTML = left > 0 ? '<button type="button" class="ir-more" id="ir-more">Показать ещё ' + Math.min(STEP, left) + ' <span class="ir-sr">из ' + left + '</span></button>' : '';
+  }
+  // полная перерисовка выдачи (смена запроса, фильтра, сортировки); shown — сколько карточек показать сразу
+  function renderAll(shown) {
+    var lim = Math.max(STEP, shown || STEP), r = run(0, lim);
+    items = {}; r.products.forEach(function (p) { items[p.i] = p; });
+    st.shown = r.products.length;
+    $('#ir-empty').innerHTML = '';
+    head(r); fillChips(r); fillBrands(r);
+    $('#ir-list').innerHTML = r.products.map(cardHtml).join('');
+    more(r);
+    if (!r.total) empty(r);
+    return r;
+  }
+  function renderMore() {
+    var r = run(st.shown, STEP);
+    r.products.forEach(function (p) { items[p.i] = p; });
+    $('#ir-list').insertAdjacentHTML('beforeend', r.products.map(cardHtml).join(''));
+    st.shown += r.products.length;
+    more(r);
+  }
+
+  function onClick(e) {
+    var t = e.target && e.target.closest ? e.target : null;
+    if (!t) return;
+    var chip = t.closest('.ir-chip');
+    if (chip) { st.cat = parseInt(chip.getAttribute('data-cat'), 10); st.catName = chip.getAttribute('data-name') || ''; renderAll(STEP); saveState(); return; }
+    var add = t.closest('.ir-add');
+    if (add) {
+      var p = items[add.getAttribute('data-i')]; if (!p || add.disabled) return;
+      add.disabled = true; add.textContent = 'Добавляем…';
+      addToCart(p, 1).then(function (okk) {
+        add.disabled = false;
+        if (okk) { add.setAttribute('data-s', 'ok'); add.textContent = 'В корзине ✓'; toast('Товар добавлен в корзину <a href="/spec">Перейти в корзину</a>'); }
+        else { add.setAttribute('data-s', 'err'); add.textContent = 'Не удалось'; toast('Не удалось добавить. <a href="' + esc(p.url || '/katalog') + '">Открыть карточку</a>'); }
+        setTimeout(function () { add.removeAttribute('data-s'); add.textContent = 'В корзину'; }, 2200);
+      });
+      return;
+    }
+    if (t.closest('#ir-more')) { renderMore(); saveState(); return; }
+    if (t.closest('#ir-reset')) { st.cat = -1; st.brands = []; st.pmin = st.pmax = null; st.sort = 'rel'; $('#ir-p1').value = $('#ir-p2').value = ''; $('#ir-sort').value = 'rel'; renderAll(STEP); saveState(); return; }
+    if (t.closest('.ir-card a')) saveState();                // уходим на карточку: запомнить фильтры и прокрутку для «назад»
+  }
+  function onChange(e) {
+    var t = e.target;
+    if (t.id === 'ir-sort') { st.sort = t.value; renderAll(STEP); saveState(); }
+    else if (t.closest && t.closest('#ir-bl')) {
+      st.brands = [].slice.call($('#ir-bl').querySelectorAll('input:checked')).map(function (x) { return parseInt(x.value, 10); });
+      renderAll(STEP); saveState();
+    } else if (t.id === 'ir-p1' || t.id === 'ir-p2') {
+      st.pmin = numOrNull($('#ir-p1').value); st.pmax = numOrNull($('#ir-p2').value);
+      if (st.pmin != null && st.pmax != null && st.pmin > st.pmax) { var x = st.pmin; st.pmin = st.pmax; st.pmax = x; $('#ir-p1').value = st.pmin; $('#ir-p2').value = st.pmax; }
+      renderAll(STEP); saveState();
+    }
+  }
+  function onKey(e) { if (e.key === 'Enter' && (e.target.id === 'ir-p1' || e.target.id === 'ir-p2')) { e.preventDefault(); onChange(e); } }
+
+  function place() {
+    var native = document.getElementById('rec' + REC), host = native && native.parentNode;
+    if (!host) { var t123 = document.getElementById('rec4304542303'); if (t123) { host = t123.parentNode; native = t123.nextSibling; } }
+    if (!host) { host = document.getElementById('allrecords') || document.body; native = host.firstChild; }
+    host.insertBefore(box, native || null);
+  }
+  function fail(why) {
+    document.documentElement.classList.remove('ish-res-on');
+    if (box && box.parentNode) box.parentNode.removeChild(box);
+    started = false;
+    if (root.console) console.warn('[ish] выдача на нашем движке не поднялась, показан родной каталог:', why);
+  }
+
+  function start(o) {
+    o = o || {};
+    var q = o.q != null ? o.q : queryFromUrl();
+    if (!q || started) return false;
+    if (!o.force && !(root.ISHSearch && root.ISHSearch.enabled && root.ISHSearch.enabled())) return false;
+    started = true;
+    var s = document.createElement('style'); s.id = 'ir-css'; s.textContent = CSS; document.head.appendChild(s);
+    box = document.createElement('section'); box.className = 'ir'; box.id = 'ish-results'; box.setAttribute('aria-label', 'Результаты поиска');
+    var prev = loadState(q);
+    st = { q: q, cat: prev ? prev.cat : -1, catName: '', brands: prev ? prev.brands : [], pmin: prev ? prev.pmin : null, pmax: prev ? prev.pmax : null, sort: prev ? prev.sort : 'rel', shown: 0 };
+    document.documentElement.classList.add('ish-res-on');
+    skeleton();
+    var tries = 0;
+    (function put() { if (document.getElementById('rec' + REC) || tries++ > 12 || document.readyState === 'complete') place(); else setTimeout(put, 250); })();
+    var timer = setTimeout(function () { fail('таймаут ' + WAIT_MS + ' мс'); }, o.timeout || WAIT_MS);
+    var idxP = o.indexData ? Promise.resolve(o.indexData) : (root.ISHSearch && root.ISHSearch.preload ? root.ISHSearch.preload() : Promise.reject(new Error('нет загрузчика индекса')));
+    idxP.then(function (idx) {
+      if (!started) return;
+      clearTimeout(timer);
+      S = root.createSearch(idx);
+      frame();
+      if (!box.parentNode) place();
+      box.addEventListener('click', onClick); box.addEventListener('change', onChange); box.addEventListener('keydown', onKey);
+      document.addEventListener('click', function (e) { var d = $('#ir-br'); if (d && d.open && !d.contains(e.target)) d.open = false; });   // список брендов закрывается кликом вне и Esc
+      box.addEventListener('keydown', function (e) { var d = $('#ir-br'); if (e.key === 'Escape' && d && d.open) { d.open = false; var s = $('#ir-sum'); if (s) s.focus(); } });
+      renderAll(prev && prev.shown ? prev.shown : STEP);
+      root.ISH_RESULTS_READY = true;
+      if (prev && prev.y) setTimeout(function () { root.scrollTo(0, prev.y); }, 60);
+      root.addEventListener('pagehide', saveState);
+    }).catch(function (e) { clearTimeout(timer); fail(e && e.message || e); });
+    return true;
+  }
+
+  root.ISHResults = { start: start, queryFromUrl: queryFromUrl, _addToCart: addToCart, _cssText: CSS };
+  // автозапуск: страница результатов поиска (/katalog с запросом) — ТОЛЬКО когда файл подтянул загрузчик страницы (script#ish-search-js из T123).
+  // Файл, загруженный шапкой по фокусу в поле поиска, страницу не подменяет: выдача не должна меняться на глазах у человека.
+  try {
+    if (document.currentScript && document.currentScript.id === 'ish-search-js' && /^\/katalog\/?$/.test(root.location.pathname) && queryFromUrl()) {
+      if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', function () { start(); }); else start();
+    }
+  } catch (e) {}
 })(typeof window !== 'undefined' ? window : this);

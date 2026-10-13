@@ -737,7 +737,7 @@
   'use strict';
   /* подставляет пакет_собрать.py: версия индекса и режим. Режим меняется выкладкой нового файла на хостинг, блок Tilda не трогается:
    *   off  — слой не включается (мгновенный откат);  flag — только у тех, кто открыл сайт с ?ishsearch=1 (запоминается в браузере);  all — у всех */
-  var VER = '021ba7fe', MODE = 'all';
+  var VER = '534f2a04', MODE = 'all';
   var SECTIONS = [["Мини-ПК","/mini-pk-i-rabochie-stancii",15],["Моноблоки","/monobloki",55],["Ноутбуки","/noutbuki",312],["Системные блоки","/sistemnye-bloki",38],["Кронштейны для мониторов и ТВ","/kronshteyny-i-krepleniya",54],["Мониторы","/monitory",394],["Проекторы","/proektory-i-paneli",24],["Телевизоры","/televizory",48],["Блоки питания","/bloki-pitaniya",275],["Видеокарты","/videokarty",78],["Корпуса","/korpusa-i-bloki-pitaniya",354],["Материнские платы","/materinskie-platy",230],["Оперативная память","/operativnaya-pamyat",138],["Охлаждение","/ohlazhdenie",277],["Процессоры","/processory",110],["SSD-накопители","/ssd-nakopiteli",164],["USB-флешки","/fleshki-i-karty-pamyati",64],["Жёсткие диски","/zhestkie-diski",73],["Карты памяти","/karty-pamyati",44],["ИБП","/ibp-i-zashchita-pitaniya",249],["Серверы","/servery",8],["Системы хранения","/servery-i-shd",42],["Шкафы и стойки","/shkafy-i-stoyki",25],["IP-телефоны","/konferenc-svyaz",25],["Маршрутизаторы (роутеры)","/marshrutizatory",207],["Межсетевые экраны","/mezhsetevye-ekrany",5],["Сетевое оборудование","/setevoe-oborudovanie",474],["Сетевые карты и адаптеры","/setevye-karty",71],["Точки доступа Wi-Fi","/tochki-dostupa",156],["МФУ лазерные цветные","/mfu-lazernye-cvetnye",28],["МФУ струйные цветные","/mfu-struynye-cvetnye",17],["Плоттеры","/plottery",11],["Принтеры и МФУ","/printery-i-mfu",48],["Принтеры лазерные цветные","/printery-lazernye-cvetnye",14],["Принтеры лазерные ч/б","/printery-lazernye-chb",18],["Сканеры документов","/skanery-dokumentov",24],["Гарнитуры для конференц-связи","/garnitury",19],["Клавиатуры","/klaviatury",174],["Мыши","/klaviatury-i-myshi",343],["Наушники","/naushniki",64],["Видеорегистраторы","/videoregistratory",96],["Домофоны","/domofony",47],["Камеры видеонаблюдения","/videonablyudenie",228],["СКУД и турникеты","/skud-i-turnikety",77],["Принтеры этикеток","/printery-etiketok",11],["Сканеры штрихкода","/skanery-shtrihkoda",15],["Терминалы сбора данных","/terminaly-sbora-dannyh",8]];   // [[имя, адрес, число товаров], …] из индекса: разделы показываются сразу, пока грузится индекс товаров
   var SRC = (document.currentScript && document.currentScript.src) || '';
   var BASE = SRC.replace(/[^\/]*(\?.*)?$/, '');
@@ -809,7 +809,13 @@
       });
     }
 
-    function allUrl(q) { return opts.all ? opts.all(q) : '/katalog?q=' + encodeURIComponent(q); }
+    // «Показать все» и Enter: каталог сразу «сначала дешёвые» (tfc_sort Tilda); адрес собирает блок шапки (opts.all), сортировку дописываем здесь
+    var SORT = 'tfc_sort%5B4204437703%5D=price:asc';
+    function allUrl(q) {
+      var u = opts.all ? opts.all(q) : '/katalog?q=' + encodeURIComponent(q);
+      if (typeof u !== 'string' || u.indexOf('tfc_sort') >= 0 || u.indexOf('?') < 0) return u;
+      return u + '&' + SORT;
+    }
 
     function quick(q) {   // индекс ещё грузится: разделы из встроенного списка, строка про загрузку, ссылка «искать в каталоге»
       var cs = []; try { cs = root.ishQuickCats ? root.ishQuickCats(SECTIONS, q, 3) : []; } catch (e) {}

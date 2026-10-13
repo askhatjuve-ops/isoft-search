@@ -11,6 +11,9 @@
 })(typeof self !== 'undefined' ? self : this, function () {
   'use strict';
 
+  // Порядок выдачи: true — внутри уровня релевантности сначала дешёвые (Асхат 13.10); false — прежний (по баллам). Откат одной правкой.
+  var SORT_CHEAP_FIRST = true;
+
   // ---------- нормализация ----------
   var UNITS = { 'гбайт': 'gb', 'гб': 'gb', 'gb': 'gb', 'тб': 'tb', 'tb': 'tb', 'мб': 'mb', 'mb': 'mb', 'мгц': 'mhz', 'mhz': 'mhz',
     'ггц': 'ghz', 'ghz': 'ghz', 'гц': 'hz', 'hz': 'hz', 'вт': 'w', 'w': 'w', 'мп': 'mp', 'mp': 'mp' };
@@ -585,7 +588,31 @@
         if (b1 && c1) { var bi2 = 0; while (bi2 + 1 < PRICE_EDGES.length && pr[3] >= PRICE_EDGES[bi2 + 1]) bi2++; buckets[bi2]++; if (pr[3] < pmn) pmn = pr[3]; if (pr[3] > pmx) pmx = pr[3]; }
         if (b1 && c1 && p1) { list.push(dx); fcount++; }
       }
-      list.sort(function (a, b) { return score[b] - score[a] || a - b; });
+      if (SORT_CHEAP_FIRST && list.length > 1) {
+        // «сначала дешёвые» внутри уровня релевантности (13.10). Уровни: 0 точный артикул; 1 раздел совпал с запросом
+        // (если такой есть, иначе — балл >= 85% лучшего); 2 сильное совпадение (балл >= 50% лучшего); 3 слабое.
+        var idS = new Set(); actTerms.forEach(function (t) { collectIds(t, idS); });
+        var cHit = C.map(function (c, ci) { var h = 0; catIds[ci].forEach(function (id) { if (idS.has(id)) h++; }); return catIds[ci].length ? h / catIds[ci].length : 0; });
+        var topHit = 0, topSc = 0, li;
+        for (li = 0; li < list.length; li++) { var ch = cHit[P[list[li]][2]]; if (ch > topHit) topHit = ch; if (score[list[li]] > topSc) topSc = score[list[li]]; }
+        var qc = compact(q), isArt = /^[a-z0-9]{6,}$/.test(qc) && /[0-9]/.test(qc) && /[a-z]/.test(qc);
+        var tier = new Map();
+        list.forEach(function (dx) {
+          var pr = P[dx], t;
+          if (isArt && (pr[6] ? pr[6].split(' ') : []).concat(pr[0].split(/\s+/)).some(function (w) { return compact(w) === qc; })) t = 0;
+          else if (topHit > 0 ? cHit[pr[2]] >= topHit : score[dx] >= 0.85 * topSc) t = 1;
+          else t = score[dx] >= 0.5 * topSc ? 2 : 3;
+          tier.set(dx, t);
+        });
+        list.sort(function (a, b) {
+          var ta = tier.get(a), tb = tier.get(b);
+          if (ta !== tb) return ta - tb;
+          if (ta === 0) return score[b] - score[a] || a - b;
+          var pa = P[a][3] > 0 ? P[a][3] : Infinity, pb2 = P[b][3] > 0 ? P[b][3] : Infinity;
+          if (pa !== pb2) return pa < pb2 ? -1 : 1;
+          return ((P[b][4] > 0) - (P[a][4] > 0)) || score[b] - score[a] || a - b;
+        });
+      } else list.sort(function (a, b) { return score[b] - score[a] || a - b; });
       res.total = fcount;
       res.facets = {
         total: fcount,
@@ -710,7 +737,7 @@
   'use strict';
   /* подставляет пакет_собрать.py: версия индекса и режим. Режим меняется выкладкой нового файла на хостинг, блок Tilda не трогается:
    *   off  — слой не включается (мгновенный откат);  flag — только у тех, кто открыл сайт с ?ishsearch=1 (запоминается в браузере);  all — у всех */
-  var VER = '90566f4e', MODE = 'all';
+  var VER = '021ba7fe', MODE = 'all';
   var SECTIONS = [["Мини-ПК","/mini-pk-i-rabochie-stancii",15],["Моноблоки","/monobloki",55],["Ноутбуки","/noutbuki",312],["Системные блоки","/sistemnye-bloki",38],["Кронштейны для мониторов и ТВ","/kronshteyny-i-krepleniya",54],["Мониторы","/monitory",394],["Проекторы","/proektory-i-paneli",24],["Телевизоры","/televizory",48],["Блоки питания","/bloki-pitaniya",275],["Видеокарты","/videokarty",78],["Корпуса","/korpusa-i-bloki-pitaniya",354],["Материнские платы","/materinskie-platy",230],["Оперативная память","/operativnaya-pamyat",138],["Охлаждение","/ohlazhdenie",277],["Процессоры","/processory",110],["SSD-накопители","/ssd-nakopiteli",164],["USB-флешки","/fleshki-i-karty-pamyati",64],["Жёсткие диски","/zhestkie-diski",73],["Карты памяти","/karty-pamyati",44],["ИБП","/ibp-i-zashchita-pitaniya",249],["Серверы","/servery",8],["Системы хранения","/servery-i-shd",42],["Шкафы и стойки","/shkafy-i-stoyki",25],["IP-телефоны","/konferenc-svyaz",25],["Маршрутизаторы (роутеры)","/marshrutizatory",207],["Межсетевые экраны","/mezhsetevye-ekrany",5],["Сетевое оборудование","/setevoe-oborudovanie",474],["Сетевые карты и адаптеры","/setevye-karty",71],["Точки доступа Wi-Fi","/tochki-dostupa",156],["МФУ лазерные цветные","/mfu-lazernye-cvetnye",28],["МФУ струйные цветные","/mfu-struynye-cvetnye",17],["Плоттеры","/plottery",11],["Принтеры и МФУ","/printery-i-mfu",48],["Принтеры лазерные цветные","/printery-lazernye-cvetnye",14],["Принтеры лазерные ч/б","/printery-lazernye-chb",18],["Сканеры документов","/skanery-dokumentov",24],["Гарнитуры для конференц-связи","/garnitury",19],["Клавиатуры","/klaviatury",174],["Мыши","/klaviatury-i-myshi",343],["Наушники","/naushniki",64],["Видеорегистраторы","/videoregistratory",96],["Домофоны","/domofony",47],["Камеры видеонаблюдения","/videonablyudenie",228],["СКУД и турникеты","/skud-i-turnikety",77],["Принтеры этикеток","/printery-etiketok",11],["Сканеры штрихкода","/skanery-shtrihkoda",15],["Терминалы сбора данных","/terminaly-sbora-dannyh",8]];   // [[имя, адрес, число товаров], …] из индекса: разделы показываются сразу, пока грузится индекс товаров
   var SRC = (document.currentScript && document.currentScript.src) || '';
   var BASE = SRC.replace(/[^\/]*(\?.*)?$/, '');

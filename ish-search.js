@@ -907,7 +907,7 @@
   if (root.ISHSearch) return;   // файл подключён дважды (загрузчик шапки и загрузчик страницы /katalog) — второй раз молчим
   /* подставляет пакет_собрать.py: версия индекса и режим. Режим меняется выкладкой нового файла на хостинг, блок Tilda не трогается:
    *   off  — слой не включается (мгновенный откат);  flag — только у тех, кто открыл сайт с ?ishsearch=1 (запоминается в браузере);  all — у всех */
-  var VER = '1664f2c1', MODE = 'all';
+  var VER = '8df078c2', MODE = 'all';
   var SECTIONS = [["Мини-ПК","/mini-pk-i-rabochie-stancii",15],["Моноблоки","/monobloki",54],["Ноутбуки","/noutbuki",306],["Системные блоки","/sistemnye-bloki",35],["Кронштейны для мониторов и ТВ","/kronshteyny-i-krepleniya",54],["Мониторы","/monitory",389],["Проекторы","/proektory-i-paneli",24],["Телевизоры","/televizory",48],["Блоки питания","/bloki-pitaniya",268],["Видеокарты","/videokarty",78],["Корпуса","/korpusa-i-bloki-pitaniya",294],["Материнские платы","/materinskie-platy",229],["Оперативная память","/operativnaya-pamyat",134],["Охлаждение","/ohlazhdenie",203],["Процессоры","/processory",108],["SSD-накопители","/ssd-nakopiteli",162],["USB-флешки","/fleshki-i-karty-pamyati",65],["Жёсткие диски","/zhestkie-diski",72],["Карты памяти","/karty-pamyati",44],["ИБП","/ibp-i-zashchita-pitaniya",236],["Серверы","/servery",7],["Системы хранения","/servery-i-shd",41],["Шкафы и стойки","/shkafy-i-stoyki",25],["IP-телефоны","/konferenc-svyaz",25],["Маршрутизаторы (роутеры)","/marshrutizatory",207],["Межсетевые экраны","/mezhsetevye-ekrany",5],["Сетевое оборудование","/setevoe-oborudovanie",462],["Сетевые карты и адаптеры","/setevye-karty",71],["Точки доступа Wi-Fi","/tochki-dostupa",149],["МФУ лазерные цветные","/mfu-lazernye-cvetnye",27],["МФУ струйные цветные","/mfu-struynye-cvetnye",17],["Плоттеры","/plottery",11],["Принтеры и МФУ","/printery-i-mfu",49],["Принтеры лазерные цветные","/printery-lazernye-cvetnye",14],["Принтеры лазерные ч/б","/printery-lazernye-chb",17],["Сканеры документов","/skanery-dokumentov",23],["Гарнитуры для конференц-связи","/garnitury",19],["Клавиатуры","/klaviatury",143],["Мыши","/klaviatury-i-myshi",303],["Наушники","/naushniki",62],["Видеорегистраторы","/videoregistratory",96],["Домофоны","/domofony",47],["Камеры видеонаблюдения","/videonablyudenie",226],["СКУД и турникеты","/skud-i-turnikety",77],["Принтеры этикеток","/printery-etiketok",11],["Сканеры штрихкода","/skanery-shtrihkoda",15],["Терминалы сбора данных","/terminaly-sbora-dannyh",7]];   // [[имя, адрес, число товаров], …] из индекса: разделы показываются сразу, пока грузится индекс товаров
   var SRC = (document.currentScript && document.currentScript.src) || '';
   var BASE = SRC.replace(/[^\/]*(\?.*)?$/, '');
@@ -1020,6 +1020,13 @@
       if (typeof root.gtag === 'function') root.gtag('event', name, p);
       else if (root.dataLayer && typeof root.dataLayer.push === 'function') root.dataLayer.push((function () { return arguments; })('event', name, p));
     } catch (e) {}
+  }
+  // «Искали и не нашли» на ВСТРОЕННЫХ измерениях GA4: событие search с search_term = «НЕТ · <запрос>» (одно на запрос за открытую страницу); обычные запросы — просто запрос
+  var NO_PREFIX = 'НЕТ · ', zeroSent = {};
+  function trackZero(term, source) {
+    var k = String(term).toLowerCase(); if (zeroSent[k]) return; zeroSent[k] = 1;
+    track('search', { search_term: NO_PREFIX + term, results: 0, source: source });
+    track('ish_search_zero', { ish_term: term, source: source });
   }
   function itemOf(p, pos, list) {
     return { item_id: p.sku || String(p.id || ''), item_name: p.title, item_brand: p.brand || undefined, item_category: p.cat, price: p.price, index: pos, item_list_name: list };
@@ -1221,14 +1228,13 @@
       idleT = setTimeout(function () {
         if (q === lastIdle || input.value.trim() !== q) return;
         lastIdle = q;
-        if (total === 0) { zeroNote(q); track('ish_search_zero', { ish_term: q, source: 'suggest' }); }
+        if (total === 0) { zeroNote(q); trackZero(q, 'suggest'); }
         else track('ish_suggest', { ish_term: q, results: total });
       }, 1200);
     }
     function commit(q, source, total, hq) {
       history.add(hq || q);                       // в историю — то, что реально искали (с исправлением), в GA4 — то, что ввели
-      track('search', { search_term: q, results: total, source: source });
-      if (total === 0) { zeroNote(q); track('ish_search_zero', { ish_term: q, source: source }); }
+      if (total === 0) { zeroNote(q); trackZero(q, source); } else track('search', { search_term: q, results: total, source: source });
     }
 
     // после прежнего обработчика input: он выставил свой список, мы его заменяем
@@ -1418,7 +1424,7 @@
   root.ISHSearch = {
     attach: attach, watch: watch, enabled: включён, preload: preload, base: BASE, version: VER, indexUrl: function () { return INDEX_URL; },
     // 14.10 — для страницы результатов и расширенного каталога
-    engine: engine, engineFor: engineFor, assortHint: assortHint, track: track, trackLog: function () { return TRACK_LOG.slice(); }, itemOf: itemOf,
+    engine: engine, engineFor: engineFor, assortHint: assortHint, track: track, trackZero: trackZero, trackLog: function () { return TRACK_LOG.slice(); }, itemOf: itemOf,
     history: history, voice: voice, zeroLog: function () { return lsGet(ZK); }, popular: POPULAR.slice(),
     parsePrice: function (q) { return root.ishParsePrice ? root.ishParsePrice(q) : { text: String(q || ''), price: null }; },
     rawParam: RAW_PARAM, esc: esc, money: money
@@ -1721,8 +1727,8 @@
     } catch (e) {}
     if (!st.tracked) {          // один раз за открытие страницы: запрос, а если ничего — «искали и не нашли»
       st.tracked = true;
-      track('search', { search_term: st.q0 || st.q, results: r.total, source: 'results' });
-      if (!r.total) { track('ish_search_zero', { ish_term: st.q0 || st.q, source: 'results' }); }
+      if (!r.total && root.ISHSearch && root.ISHSearch.trackZero) root.ISHSearch.trackZero(st.q0 || st.q, 'results');   // search_term «НЕТ · запрос» (встроенное измерение GA4)
+      else track('search', { search_term: st.q0 || st.q, results: r.total, source: 'results' });
       try { if (root.ISHSearch && root.ISHSearch.history) root.ISHSearch.history.add(st.q0 || st.q); } catch (e) {}
     }
     return r;

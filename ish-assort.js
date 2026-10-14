@@ -132,6 +132,16 @@
     '.ia-sug{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;justify-content:center}',
     '.ia-sug button{border:1px solid var(--line);border-radius:999px;background:var(--paper);padding:6px 12px;color:var(--blue)}',
     '.category.ia-zero{opacity:.45}',
+    '.search-panel{display:flex;flex-wrap:wrap;align-items:center;gap:8px;padding:8px}',
+    '.search-panel .main-search{flex:1 1 100%;min-width:0;width:auto}',
+    '.search-panel .filter-row{display:flex;flex:1 1 100%;flex-wrap:wrap;align-items:center;gap:8px;margin:0;min-width:0}',
+    '.search-panel .filter-row select{width:auto;flex:1 1 140px;min-width:0;min-height:40px;font-size:13px}',
+    '.search-panel .filter-row .ia-price{flex:1.6 1 270px;min-width:0}',
+    '.ia-price .ia-lbl{flex:none}',
+    '.ia-price input{flex:1 1 0;min-width:0;width:auto;font-size:13px}',
+    '.search-panel #downloadCatalogXlsx{flex:0 0 auto;margin-left:auto;min-height:40px;padding:0 20px;border:0;border-radius:10px;background:var(--blue);color:#fff;font-size:14px;font-weight:700;white-space:nowrap;cursor:pointer}',
+    '.search-panel #downloadCatalogXlsx:hover{background:var(--blue);color:#fff;filter:brightness(1.12)}',
+    '@media(max-width:680px){.search-panel .filter-row select{flex:1 1 45%}.search-panel .filter-row .ia-price{flex:1 1 100%}.search-panel #downloadCatalogXlsx{flex:1 1 100%;min-height:44px;margin-left:0}}',
     '@media(max-width:680px){.ia-price{display:flex;width:100%}.ia-price input{flex:1;min-width:0;width:auto}.ia-dd{left:8px;right:8px}}'
   ].join('\n');
 

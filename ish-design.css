@@ -375,6 +375,13 @@ html body .ish-meta::before,
 html body .ishpg-extra li span {
   color: var(--ishd-text-2) !important;              /* !important: в блоках те же цвета заданы с ID и !important */
 }
+/* Тп9 · приёмка 16.10: подписи брендов 390 (в блоке стоит #allrecords #rec4204120903 .тбренд{font-size:10.5px!important} в @media 640) */
+@media screen and (max-width: 640px) {
+  html body #allrecords#allrecords #rec4204120903 .тбренд {
+    font-size: 12px !important;
+    line-height: 15px !important;
+  }
+}
 
 
 /* ---------------------------------------------------------------------------

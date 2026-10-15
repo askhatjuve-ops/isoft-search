@@ -1,0 +1,32 @@
+/* ish-design-p7.css - П7 «шаблон карточки товара», 15.10.2026. Дополнение к фрагменту 4055071703 (метка v8p7).
+   Хостинг как у ish-design.css: репозиторий askhatjuve-ops/isoft-search, GitHub Pages; подключает сам фрагмент
+   (<link id="ishd-p7">, версия ?v=1). Выложенный ish-design.css НЕ меняется.
+   Слой только оформляет разметку, которую строит фрагмент. Не загрузился - карточка читается и без него
+   (цена и НДС в строку, заголовок над характеристиками, ссылка и кнопка запроса обычного вида).
+   Шрифт TildaSans; цвета и токены те же, что во фрагменте (--k кобальт, --ink чернила); новых цветов нет.
+   Не трогает: два столбца основных характеристик, кнопку «В корзину» (в обычном состоянии). */
+
+/* Т2: «Цена с НДС» 15/600 и «в т.ч. НДС 16%: N ₸» 13 px; рядом с ценой, на узком экране под ней */
+html.ishpg-on .ishpg3-vat{display:flex;flex-direction:column;gap:2px;font:600 15px/1.25 var(--f,TildaSans,Arial,sans-serif);color:#171923}
+html.ishpg-on .ishpg3-vat small{font:400 13px/1.3 var(--f,TildaSans,Arial,sans-serif);color:#3F465A}
+html.ishpg-on .ishpg3-panel .js-store-price-wrapper{flex-wrap:wrap;gap:4px 12px}
+
+/* Т12: заголовок над двумя столбцами характеристик */
+html.ishpg-on .ishpg-hh{display:block;margin:0 0 10px;font:700 14px/1.4 var(--f,TildaSans,Arial,sans-serif);color:#171923}
+
+/* Т4: ссылка под кнопкой, цель касания 44 px */
+html.ishpg-on .ishpg3-ask{flex:none;display:inline-flex;align-items:center;min-height:44px;color:#2B44C7!important;font:600 14px/1.3 var(--f,TildaSans,Arial,sans-serif);text-decoration:none!important}
+html.ishpg-on .ishpg3-ask:hover{text-decoration:underline!important}
+html.ishpg-on .ishpg3-ask:focus-visible{outline:3px solid #B9C3F5;outline-offset:2px;border-radius:4px}
+
+/* Т3: товар без цены (html.ishpg-nopr ставит фрагмент). Проверить на живом, когда такой товар появится */
+html.ishpg-on .ishpg3-askp{flex:1 1 100%;display:flex;flex-direction:column;gap:2px}
+html.ishpg-on .ishpg3-askp b{font:700 26px/1.2 var(--f,TildaSans,Arial,sans-serif);color:#171923;letter-spacing:-.01em}
+html.ishpg-on .ishpg3-askp span{font:400 14px/1.4 var(--f,TildaSans,Arial,sans-serif);color:#3F465A}
+html.ishpg-nopr .ishpg-qty{display:none}
+html.ishpg-nopr .ishpg-add{flex:1 1 100%;background:#fff;color:#2B44C7;border:1.5px solid #2B44C7;box-shadow:none}
+html.ishpg-nopr .ishpg-add svg{stroke:#2B44C7}
+@media (hover:hover){html.ishpg-nopr .ishpg-add:hover{background:#E9ECFC;border-color:#2B44C7;transform:none;box-shadow:none}}
+
+/* Т1/Т5 тонкая доводка (основное уже во фрагменте): на широком экране доверие в два столбца, значок 20 px */
+html.ishpg-on .ishpg3-trust svg{width:20px;height:20px}

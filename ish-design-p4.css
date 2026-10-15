@@ -1,0 +1,90 @@
+/* ish-design-p4.css  v1  (15.10.2026)  П4 «шапка и меню» + Г1 «кнопки в hero» b2b.isoft-shop.kz
+   Лежит рядом с ish-design.css (тот НЕ трогается). Подключается строкой <link> из блока шапки 3263300503.
+   Шрифт TildaSans (решение 16.10). Всё под html body ..., чтобы перебить собственные правила блоков (.нш-к, #rec...).
+   Не загрузился файл - сайт как был. Откат: пустой файл на Pages или убрать строку из блока.
+   Живые узлы (замер по снимкам 15.10): десктоп >=981 - .нш-шапка в блоке 4204502203; телефон <981 - #ishВерх и #ishТаб
+   в блоке подвала 3263288403; блок 3263300503 (.ish) на экране не виден нигде (уведён за край). */
+:root{--ishp-cobalt:#2B44C7;--ishp-cobalt-h:#2036A8;--ishp-soft:#E9ECFC;--ishp-ink:#171923;--ishp-graphite:#272B36;--ishp-coral:#D33D1B;--ishp-strip:30px}
+
+/* ---- Ш14: полоса «Безнал · НДС 16% · Счёт» (создаёт ish-design-p4.js) ---- */
+.ishp-strip{display:none;box-sizing:border-box;height:var(--ishp-strip);align-items:center;justify-content:center;
+  background:var(--ishp-graphite);color:#fff;font:500 13px/1 TildaSans,Arial,sans-serif;letter-spacing:.01em;white-space:nowrap;overflow:hidden}
+.ishp-strip span{padding:0 14px}
+.ishp-strip span+span{border-left:1px solid rgba(255,255,255,.38)}
+@media (min-width:981px){
+  /* десктоп: полоса над шапкой на самой странице, уезжает вместе с ней; шапка (fixed) стоит под ней, пока страница наверху,
+     дальше js ведёт --ishp-top от 30 к 0 (ровно по прокрутке: пустой щели нет) */
+  .ishp-strip--d{display:flex;position:absolute;top:0;left:0;right:0;z-index:989}
+  html.ishp-on body .нш-шапка{top:var(--ishp-top,30px)}
+  html.ishp-on body #allrecords#allrecords{padding-top:calc(69px + var(--ishp-strip))!important}
+}
+@media (max-width:980px){
+  /* телефон: полоса в потоке сразу под фиксированной верхней строкой (56 px), уезжает при первой прокрутке */
+  .ishp-strip--m{display:flex;font-size:12px;height:28px}
+  .ishp-strip--m span{padding:0 9px}
+}
+
+/* ---- Ш5: кнопка «Запросить КП/счёт» (десктоп, между телефоном и корзиной) ---- */
+html body .нш-к .ishp-btn{display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;box-sizing:border-box;height:42px;padding:0 16px;
+  border:1px solid var(--ishp-cobalt);border-radius:10px;background:var(--ishp-cobalt);color:#fff;
+  font:600 14px/1 TildaSans,Arial,sans-serif;white-space:nowrap;text-decoration:none;cursor:pointer;
+  transition:background .15s,border-color .15s,box-shadow .15s}
+html body .нш-к .ishp-btn:hover{background:var(--ishp-cobalt-h);border-color:var(--ishp-cobalt-h);color:#fff;box-shadow:0 2px 10px rgba(43,68,199,.32)}
+html body .нш-к .ishp-btn:focus-visible{outline:2px solid var(--ishp-cobalt);outline-offset:2px}
+
+/* ---- Ш3: корзина заметнее: 44 px, при товарах залита кобальтом (счётчик .нш-счёт показывает родная логика блока) ---- */
+html body .нш-корзина{width:44px;height:44px;border-width:1.5px;transition:background .15s,border-color .15s,color .15s}
+html body .нш-корзина svg{width:20px;height:20px}
+html body .нш-корзина:hover{background:var(--ishp-soft)}
+html body .нш-корзина:has(.нш-счёт:not([style*="none"])){background:var(--ishp-cobalt);border-color:var(--ishp-cobalt);color:#fff}
+html body .нш-корзина:has(.нш-счёт:not([style*="none"])):hover{background:var(--ishp-cobalt-h);border-color:var(--ishp-cobalt-h);color:#fff}
+html body .нш-корзина i{box-sizing:content-box;min-width:12px;height:14px;padding:0 3px;line-height:14px;top:-9px;right:-9px;border:2px solid #fff;border-radius:11px}
+
+/* длинная подсказка поиска при сузившемся поле обрезается многоточием, а не посреди слова */
+html body .нш-поиск input{text-overflow:ellipsis}
+
+/* ---- Ш8: заметный hover у кнопок связи и телефона ---- */
+html body .нш-связь a{transition:background .15s,border-color .15s,transform .15s}
+html body .нш-связь a:hover{background:var(--ishp-soft);transform:translateY(-1px)}
+html body .нш-телефон b{transition:color .15s}
+html body .нш-телефон:hover b{color:var(--ishp-cobalt)}
+@media (min-width:981px) and (max-width:1180px){
+  /* узко: место нужно кнопке и телефону, значки мессенджеров уходят (они же в окне «Контакты» и в подвале) */
+  html body .нш-связь{display:none}
+}
+
+/* ---- Ш6 / Ик1: иконки пунктов меню одного цвета (кобальт на светлой плашке), вместо пяти цветов; Ш8 hover ---- */
+html body .группа .гз{background:var(--ishp-soft)!important;color:var(--ishp-cobalt)!important;transition:background .14s,color .14s,transform .14s}
+html body .группа:hover,html body .группа.вх-вкл{background:var(--ishp-soft);color:var(--ishp-cobalt)}
+html body .группа:hover .гз,html body .группа.вх-вкл .гз{background:var(--ishp-cobalt)!important;color:#fff!important;transform:none}
+html body .группа .нз{opacity:.85;color:#646B7D;transition:transform .14s,color .14s}
+html body .группа .нз svg{width:7px;height:12px;stroke-width:1.9}
+html body .группа:hover .нз,html body .группа.вх-вкл .нз{opacity:1;color:var(--ishp-cobalt);transform:translateX(2px)}
+
+/* ---- Ш13: трубка на телефоне (в #ishВерх, создаёт js) ---- */
+@media (max-width:980px){
+  html body #ishВерх.ishp-call-on{grid-template-columns:auto minmax(0,1fr) 44px}
+  html body .ishp-call{display:grid;place-items:center;width:44px;height:44px;border-radius:10px;background:var(--ishp-soft);color:var(--ishp-cobalt);
+    text-decoration:none;-webkit-tap-highlight-color:transparent}
+  html body .ishp-call svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+  html body .ishp-call:active{background:var(--ishp-cobalt);color:#fff}
+}
+@media (min-width:981px){.ishp-call{display:none!important}}
+
+/* ---- Г1: две кнопки в hero главной (js кладёт их в штатное место .слайд .кнопки каждого слайда; фото и тезис не трогаются) ---- */
+html body #карусель .слайд .кнопки .ishp-cta{display:inline-flex;align-items:center;justify-content:center;gap:8px;box-sizing:border-box;height:48px;padding:0 24px;
+  border-radius:10px;font:600 14.5px/1 TildaSans,Arial,sans-serif;white-space:nowrap;text-decoration:none;cursor:pointer;transition:background .15s,color .15s,border-color .15s}
+html body #карусель .слайд .кнопки .ishp-cta--main{background:var(--ishp-cobalt);color:#fff;border:1.5px solid var(--ishp-cobalt)}
+html body #карусель .слайд .кнопки .ishp-cta--main:hover{background:var(--ishp-cobalt-h);border-color:var(--ishp-cobalt-h);color:#fff}
+html body #карусель .слайд .кнопки .ishp-cta--alt{background:rgba(23,25,35,.38);color:#fff;border:1.5px solid rgba(255,255,255,.8)}
+html body #карусель .слайд .кнопки .ishp-cta--alt:hover{background:#fff;color:var(--ishp-ink);border-color:#fff}
+html body #карусель .слайд .кнопки .ishp-cta:focus-visible{outline:2px solid #fff;outline-offset:2px}
+html body #карусель .слайд .кнопки .ishp-cta svg{width:14px;height:14px;stroke-width:1.8}
+@media (max-width:480px){
+  html body #карусель .слайд .кнопки{flex-wrap:nowrap;gap:8px}
+  html body #карусель .слайд .кнопки .ishp-cta{flex:1 1 0;min-width:0;height:44px;padding:0 10px;font-size:13.5px}
+  html body #карусель .слайд .кнопки .ishp-cta svg{display:none}
+}
+@media (prefers-reduced-motion:reduce){
+  html body .нш-связь a,html body .нш-корзина,html body .группа .гз,html body .группа .нз,html body .нш-к .ishp-btn{transition:none}
+}

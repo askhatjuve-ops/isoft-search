@@ -492,7 +492,7 @@
     if (off) return;
     root.__ishAssortCart = 1;
     var FRAME = 'isoft-catalog-frame', REC = '4465413003', NOTE = 1400;
-    var CSSX = '#headerRequest,.request-bar{display:none!important}.add-button{min-width:104px}.add-button.ishk-done{background:#14704A!important;border-color:#14704A!important;color:#fff!important}';
+    var CSSX = '#headerRequest,.request-bar{display:none!important}.add-button{min-width:104px}.add-button.ishk-done,.add-button.ishk-done:hover{background:#DCEFE6!important;border-color:#BFE0D0!important;color:#14704A!important}';
     var added = {}, W = null, D = null, obs = null;
 
     function byId() {
@@ -505,12 +505,20 @@
       return { uid: m && site ? m[1] : String(p.id), name: p.name, sku: p.article || '', price: Number(p.price) > 0 ? Number(p.price) : 0, img: '',
                url: site ? p.product_url : root.location.origin + '/assortiment', recid: REC, code: p.source_code || '' };
     }
+    function inCart(uid) {                // состав общей корзины: localStorage 'tcart' (окно страницы, тот же origin), products[].uid
+      var c = null, n = 0;
+      try { c = JSON.parse(root.localStorage.getItem('tcart') || 'null'); } catch (e) {}
+      ((c && c.products) || []).forEach(function (x) { if (x && String(x.uid) === String(uid)) n += parseInt(x.quantity, 10) || 0; });
+      return n;
+    }
     function relabel() {
       if (!D) return;
+      var idx = byId();
       [].forEach.call(D.querySelectorAll('button[data-add]'), function (b) {
-        var row = b.closest('[data-id]'), id = row && row.getAttribute('data-id');
-        var done = id && added[id] && Date.now() - added[id] < NOTE;
-        var want = done ? 'Добавлено ✓' : 'В корзину';
+        var row = b.closest('[data-id]'), id = row && row.getAttribute('data-id'), p = id && idx[id];
+        if (b.__busy) return;
+        var done = !!p && inCart(itemOf(p).uid) > 0;      // «✓ В корзине» держится, пока позиция лежит в корзине (не по таймеру)
+        var want = done ? '✓ В корзине' : 'В корзину';
         b.classList.remove('added');
         b.classList.toggle('ishk-done', !!done);
         if (b.textContent !== want) b.textContent = want;
@@ -526,11 +534,12 @@
       if (!p || !root.ishKorzina) return;
       e.preventDefault(); e.stopPropagation(); e.stopImmediatePropagation();
       var o = row.querySelector('.qty output'), q = Math.max(1, parseInt(o && o.textContent, 10) || 1), it = itemOf(p);
+      if (inCart(it.uid) > 0) { if (typeof root.ishKorzina.open === 'function') root.ishKorzina.open(); relabel(); return; }   // уже в корзине: второй раз не кладём
       if (b.__busy) return; b.__busy = 1;
       root.ishKorzina.add(it, q).then(function (ok) {
         b.__busy = 0;
-        if (ok) { added[id] = Date.now(); resetRow(id); relabel(); setTimeout(relabel, NOTE + 60); root.ishKorzina.added(it); }
-        else { b.textContent = 'Не удалось'; setTimeout(relabel, 1800); }
+        if (ok) { added[id] = Date.now(); resetRow(id); relabel(); root.ishKorzina.added(it); }
+        else { b.__busy = 1; b.textContent = 'Не удалось'; setTimeout(function () { b.__busy = 0; relabel(); }, 1800); }
       });
     }
     function start() {
@@ -543,6 +552,9 @@
       var box = D.getElementById('tableBox');
       if (box && root.MutationObserver) { obs = new MutationObserver(relabel); obs.observe(box, { childList: true, subtree: true }); }
       relabel();
+      var lastCart = null; try { lastCart = root.localStorage.getItem('tcart'); } catch (e) {}
+      root.addEventListener('storage', function (e) { if (!e.key || e.key === 'tcart') relabel(); });
+      setInterval(function () { var c = null; try { c = root.localStorage.getItem('tcart'); } catch (e) {} if (c !== lastCart) { lastCart = c; relabel(); } }, 1000);   // корзину правят и в модуле (в этом же окне storage не приходит)
       try { W.eval('renderCatalog()'); } catch (e) {}
       var ar = root.document.querySelector('textarea[name="Список позиций *"]'), rec = ar && ar.closest('.r');
       if (rec && rec.id !== 'rec' + REC) rec.style.setProperty('display', 'none', 'important');   // форма запроса страницы

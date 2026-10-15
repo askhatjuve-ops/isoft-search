@@ -907,7 +907,7 @@
   if (root.ISHSearch) return;   // файл подключён дважды (загрузчик шапки и загрузчик страницы /katalog) — второй раз молчим
   /* подставляет пакет_собрать.py: версия индекса и режим. Режим меняется выкладкой нового файла на хостинг, блок Tilda не трогается:
    *   off  — слой не включается (мгновенный откат);  flag — только у тех, кто открыл сайт с ?ishsearch=1 (запоминается в браузере);  all — у всех */
-  var VER = 'a4f0f29d', MODE = 'all';
+  var VER = '07e182ad', MODE = 'all';
   var SECTIONS = [["Мини-ПК","/mini-pk-i-rabochie-stancii",14],["Моноблоки","/monobloki",54],["Ноутбуки","/noutbuki",289],["Системные блоки","/sistemnye-bloki",32],["Кронштейны для мониторов и ТВ","/kronshteyny-i-krepleniya",40],["Мониторы","/monitory",382],["Проекторы","/proektory-i-paneli",23],["Телевизоры","/televizory",48],["Блоки питания","/bloki-pitaniya",265],["Видеокарты","/videokarty",81],["Корпуса","/korpusa-i-bloki-pitaniya",291],["Материнские платы","/materinskie-platy",228],["Оперативная память","/operativnaya-pamyat",135],["Охлаждение","/ohlazhdenie",297],["Процессоры","/processory",104],["SSD-накопители","/ssd-nakopiteli",160],["USB-флешки","/fleshki-i-karty-pamyati",65],["Жёсткие диски","/zhestkie-diski",70],["Карты памяти","/karty-pamyati",45],["ИБП","/ibp-i-zashchita-pitaniya",281],["Серверы","/servery",6],["Системы хранения","/servery-i-shd",37],["Шкафы и стойки","/shkafy-i-stoyki",25],["IP-телефоны","/konferenc-svyaz",25],["Маршрутизаторы (роутеры)","/marshrutizatory",218],["Межсетевые экраны","/mezhsetevye-ekrany",4],["Сетевое оборудование","/setevoe-oborudovanie",500],["Сетевые карты и адаптеры","/setevye-karty",71],["Точки доступа Wi-Fi","/tochki-dostupa",164],["МФУ лазерные цветные","/mfu-lazernye-cvetnye",27],["МФУ струйные цветные","/mfu-struynye-cvetnye",17],["Плоттеры","/plottery",11],["Принтеры и МФУ","/printery-i-mfu",45],["Принтеры лазерные цветные","/printery-lazernye-cvetnye",14],["Принтеры лазерные ч/б","/printery-lazernye-chb",16],["Сканеры документов","/skanery-dokumentov",23],["Гарнитуры для конференц-связи","/garnitury",19],["Клавиатуры","/klaviatury",233],["Мыши","/klaviatury-i-myshi",488],["Наушники","/naushniki",64],["Видеорегистраторы","/videoregistratory",97],["Домофоны","/domofony",47],["Камеры видеонаблюдения","/videonablyudenie",225],["СКУД и турникеты","/skud-i-turnikety",77],["Принтеры этикеток","/printery-etiketok",11],["Сканеры штрихкода","/skanery-shtrihkoda",15],["Терминалы сбора данных","/terminaly-sbora-dannyh",7]];   // [[имя, адрес, число товаров], …] из индекса: разделы показываются сразу, пока грузится индекс товаров
   var SRC = (document.currentScript && document.currentScript.src) || '';
   var BASE = SRC.replace(/[^\/]*(\?.*)?$/, '');
@@ -1508,7 +1508,7 @@
     '.ir-price{font-size:20px;font-weight:700;white-space:nowrap}.ir-price small{font-size:13px;font-weight:500;color:var(--tih)}' +
     '.ir-add,.ir-ask{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;min-width:150px;padding:0 20px;border:1px solid var(--ctl);border-radius:9px;background:transparent;' +
     'color:var(--kb);font-weight:600;font-size:14.5px;line-height:1;font-family:inherit;cursor:pointer;text-decoration:none}' +
-    '.ir-add:hover,.ir-ask:hover{background:var(--kbs)}.ir-add[data-s=ok]{background:#E5F3EC;border-color:#9BCDB4;color:var(--ok)}.ir-add[data-s=err]{background:#FDEAE4;border-color:#E9A793;color:#B43A36}' +
+    '.ir-add:hover,.ir-ask:hover{background:var(--kbs)}.ir-add[data-s=ok]{background:#E5F3EC;border-color:#9BCDB4;color:var(--ok)}.ir-add[data-s=err]{background:#FDEAE4;border-color:#E9A793;color:#B43A36}.ir-add[data-s=in],.ir-add[data-s=in]:hover{background:#DCEFE6;border-color:#BFE0D0;color:#14704A}' +
     '.ir-add[disabled]{opacity:.7;cursor:default}' +
     '.ir-moreb{display:flex;justify-content:center;margin:20px 0 0}' +
     '.ir-more{min-height:48px;padding:0 28px;border:1px solid var(--ctl);border-radius:9px;background:#fff;color:var(--kb);font-weight:600;font-size:15px;line-height:1;font-family:inherit;cursor:pointer}.ir-more:hover{background:var(--kbs)}' +
@@ -1543,6 +1543,17 @@
   var S = null, box = null, started = false, cartLoading = null, toastEl = null, toastT = 0, items = {};
 
   /* ───────────── корзина (тот же путь, что у кода каталога на странице, блок 4204439103) ───────────── */
+  function onCartMark(b, on) {          // «✓ В корзине» ⇄ «В корзину» по составу корзины (tcart.products[].uid = String(p.id))
+    if (on) { if (b.getAttribute('data-s') !== 'in') b.setAttribute('data-s', 'in'); if (b.textContent !== '✓ В корзине') b.textContent = '✓ В корзине'; }
+    else if (b.getAttribute('data-s') === 'in') { b.removeAttribute('data-s'); b.textContent = 'В корзину'; }
+  }
+  function markCart() {
+    if (!box) return;
+    [].forEach.call(box.querySelectorAll('.ir-add'), function (b) {
+      if (b.disabled || b.getAttribute('data-s') === 'err') return;
+      var p = items[b.getAttribute('data-i')]; onCartMark(b, !!p && inCart(p.id) > 0);
+    });
+  }
   function stored() { try { return JSON.parse(root.localStorage.getItem('tcart') || 'null'); } catch (e) { return null; } }
   function inCart(uid) { var c = stored(), n = 0; ((c && c.products) || []).forEach(function (p) { if (p && String(p.uid) === String(uid)) n += parseInt(p.quantity, 10) || 0; }); return n; }
   function cartScript() {
@@ -1635,7 +1646,7 @@
     var url = p.url || katalogUrl(p.title), ph = p.thumb ? '<img loading="lazy" alt="" src="' + esc(p.thumb) + '" onerror="this.onerror=null;this.src=\'' + esc(p.photo) + '\'">' : '<i></i>';
     var meta = (p.sku ? 'Артикул <b>' + esc(p.sku) + '</b> · ' : '') + esc(p.brand ? p.brand + ' · ' + p.cat : p.cat);
     var buy = p.price > 0
-      ? '<div class="ir-price">' + money(p.price) + '</div><button type="button" class="ir-add" data-i="' + p.i + '">В корзину</button>'
+      ? '<div class="ir-price">' + money(p.price) + '</div><button type="button" class="ir-add" data-i="' + p.i + '"' + (inCart(p.id) > 0 ? ' data-s="in">✓ В корзине' : '>В корзину') + '</button>'
       : '<div class="ir-price"><small>Цена по запросу</small></div><a class="ir-ask" href="' + esc(url) + '">Уточнить цену</a>';
     return '<li class="ir-card" data-i="' + p.i + '"><a class="ir-ph" href="' + esc(url) + '" tabindex="-1" aria-hidden="true">' + ph + '</a>' +
       '<div class="ir-mid"><a class="ir-name" href="' + esc(url) + '">' + p.html + '</a><div class="ir-meta">' + meta + '</div></div>' +
@@ -1758,13 +1769,17 @@
     var add = t.closest('.ir-add');
     if (add) {
       var p = items[add.getAttribute('data-i')]; if (!p || add.disabled) return;
+      if (add.getAttribute('data-s') === 'in' || inCart(p.id) > 0) {   // уже в корзине: второй раз не кладём, открываем корзину
+        if (root.ishKorzina && typeof root.ishKorzina.open === 'function') root.ishKorzina.open(); else root.location.href = '/spec';
+        markCart(); return;
+      }
       add.disabled = true; add.textContent = 'Добавляем…';
       try { track('ish_search_add', { search_term: st.q0 || st.q, items: [root.ISHSearch.itemOf(p, 0, 'Поиск: выдача')] }); } catch (e) {}
       addToCart(p, 1).then(function (okk) {
         add.disabled = false;
-        if (okk) { add.setAttribute('data-s', 'ok'); add.textContent = 'В корзине ✓'; if (root.ishKorzina && typeof root.ishKorzina.added === 'function') root.ishKorzina.added({ uid: String(p.id), name: p.title, price: p.price, img: p.photo || '' }); else toast('Товар добавлен в корзину <a href="/spec">Перейти в корзину</a>'); }
+        if (okk) { add.removeAttribute('data-s'); markCart(); if (root.ishKorzina && typeof root.ishKorzina.added === 'function') root.ishKorzina.added({ uid: String(p.id), name: p.title, price: p.price, img: p.photo || '' }); else toast('Товар добавлен в корзину <a href="/spec">Перейти в корзину</a>'); }
         else { add.setAttribute('data-s', 'err'); add.textContent = 'Не удалось'; toast('Не удалось добавить. <a href="' + esc(p.url || '/katalog') + '">Открыть карточку</a>'); }
-        setTimeout(function () { add.removeAttribute('data-s'); add.textContent = 'В корзину'; }, 2200);
+        if (!okk) setTimeout(function () { if (add.getAttribute('data-s') === 'err') { add.removeAttribute('data-s'); add.textContent = 'В корзину'; markCart(); } }, 2200);
       });
       return;
     }
@@ -1857,6 +1872,9 @@
       root.ISH_RESULTS_READY = true;
       if (prev && prev.y) setTimeout(function () { root.scrollTo(0, prev.y); }, 60);
       root.addEventListener('pagehide', saveState);
+      var lastCart = null; try { lastCart = root.localStorage.getItem('tcart'); } catch (e) {}
+      root.addEventListener('storage', function (e) { if (!e.key || e.key === 'tcart') markCart(); });
+      setInterval(function () { var c = null; try { c = root.localStorage.getItem('tcart'); } catch (e) {} if (c !== lastCart) { lastCart = c; markCart(); } }, 1000);   // корзину правят и в модуле (в этом же окне storage не приходит)
     }).catch(function (e) { clearTimeout(timer); fail(e && e.message || e); });
     return true;
   }

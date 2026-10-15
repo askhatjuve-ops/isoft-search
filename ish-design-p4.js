@@ -1,6 +1,7 @@
-/* ish-design-p4.js  v1  (15.10.2026)  П4 «шапка и меню» + Г1 «кнопки в hero» b2b.isoft-shop.kz
+/* ish-design-p4.js  v2  (16.10.2026)  П4 «шапка и меню» + Г1 «кнопки в hero» b2b.isoft-shop.kz
    Подключается из блока шапки 3263300503 строкой <script src=... defer data-m="header,hero">. Не загрузился - сайт как был.
-   Модули (атрибут data-m, по умолчанию оба): header - Ш14 полоса, Ш5 кнопка, Ш13 трубка; hero - Г1 две кнопки.
+   Модули (атрибут data-m, по умолчанию оба): header - Ш14 полоса, Ш5 кнопка, Ш13 трубка; hero - Г1 две кнопки (с v2 включается и при data-m="header").
+   v2: + подгрузка ish-design-p6.js на страницах каталога. Выключатели: window.ISH_P4_NO_HERO, window.ISH_P4_NO_P6.
    Ничего не переписывает в чужих блоках: только ДОБАВЛЯЕТ узлы с префиксом ishp-, каждый раз проверяя, что такого ещё нет.
    Оболочка телефона перерисовывает #ishВерх целиком - трубку возвращает MutationObserver. Ошибка в одном модуле другой не останавливает. */
 (function () {
@@ -104,10 +105,32 @@
     return true;
   }
 
+  /* ───────── П6: фильтры и «Список / Плитка» на страницах каталога (грузит ish-design-p6.js с того же адреса, один раз) ───────── */
+  var P6V = '1';
+  function p6() {
+    if (W.ISH_P4_NO_P6 || W.ISH_P6 || D.getElementById('ishp-p6-js')) return true;
+    if (!D.querySelector('.t-store__card[data-ish13], .t-store__filter__item, .t-store__filter')) return false;
+    var src = tag && tag.src;
+    if (!src) return true;
+    var s = D.createElement('script');
+    s.id = 'ishp-p6-js'; s.defer = true;
+    s.src = src.replace(/ish-design-p4\.js.*$/, 'ish-design-p6.js?v=' + P6V);
+    D.head.appendChild(s);
+    return true;
+  }
+  /* опрос дольше обычного (~20 с): список Tilda рисуется после загрузки; ждём только если на странице есть контейнер .t-store */
+  function p6wait() {
+    if (W.ISH_P4_NO_P6 || !D.querySelector('.t-store')) return;
+    var n = 0;
+    (function step() { var ok = false; try { ok = p6(); } catch (e) {} if (!ok && ++n < 80) setTimeout(step, 250); })();
+  }
+
   if (has('header')) {
     until(desktop);
     until(mobileStrip);
     until(call);
   }
-  if (has('hero')) until(hero);
+  /* Г1: и при data-m="header" (решение владельца 16.10); выключатель window.ISH_P4_NO_HERO; на странице без слайдера hero() ничего не делает */
+  if ((has('hero') || has('header')) && !W.ISH_P4_NO_HERO) until(hero);
+  p6wait();
 })();

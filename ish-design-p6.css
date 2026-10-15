@@ -81,6 +81,15 @@ html body #allrecords #ишфаЕщё{display:flex!important;align-items:center;
   background:none!important;color:var(--p6-k)!important;font:600 13px/1.2 var(--p6-f)!important;cursor:pointer}
 html body #allrecords #ишфаЕщё:hover{background:var(--p6-mist)!important}
 
+/* «Показать ещё N» / «Свернуть» (кнопка ishpe-1410): текстовая ссылка кобальтом слева, зона касания 44 px.
+   Без привязки к .вн-бок: в шторке телефона колонки .вн-бок нет, правило ishpe не срабатывает и кнопка была серой плашкой браузера */
+html body #allrecords .ishpe-ещё{-webkit-appearance:none;appearance:none;display:flex!important;align-items:center;justify-content:flex-start;
+  box-sizing:border-box;flex:1 1 100%;align-self:flex-start;width:auto;min-width:0;min-height:44px;margin:0!important;padding:0 8px!important;
+  border:0!important;border-radius:0!important;background:none!important;box-shadow:none!important;color:var(--p6-k)!important;
+  font:600 14px/1.2 var(--p6-f)!important;text-align:left;text-decoration:none;cursor:pointer;-webkit-tap-highlight-color:transparent}
+html body #allrecords .ishpe-ещё:hover{color:var(--p6-kh)!important;background:none!important}
+html body #allrecords .ishpe-ещё:focus-visible{outline:2px solid var(--p6-ink);outline-offset:-2px}
+
 /* Ф8 · запасные чипы (только если штатные ishpe-чипы пусты, см. js) */
 .ishd-chips{display:none;flex-wrap:wrap;gap:8px;align-items:center;margin:0 0 14px}
 .ishd-chips.ishd-on{display:flex}
@@ -112,6 +121,12 @@ html body #allrecords #ишфаЕщё:hover{background:var(--p6-mist)!important}
   html body #allrecords .t-store__filter .t-store__filter__item-title{min-height:52px;font-size:15px!important}
   html body #allrecords .t-store__filter .t-store__filter__item_price .t-store__filter__input{height:46px!important;font-size:16px!important}
   html body #allrecords .t-store__filter .t-store__filter__item_price .t-store__filter__btn.js-store-filter-price-btn{height:46px!important}
+}
+
+/* Шторка фильтров на телефоне: трубка шапки (ishp-call, a[href^=tel:], 44x44 у правого края) лежит ровно под крестиком закрытия
+   (356,28); пока шторка открыта, она не должна принимать касания, иначе тап «сквозь» закрывающийся слой звонит/уводит со страницы */
+@media screen and (max-width:960px){
+  body.вн-моб-ф .ishp-call,body.вн-моб-ф #ishВерх a,html.ishd-hold .ishp-call,html.ishd-hold #ishВерх a{pointer-events:none!important}
 }
 
 /* ══════════ К1 · переключатель «Список / Плитка» ══════════ */
@@ -167,6 +182,10 @@ html.ishd-tile body #allrecords .t-store__card-list:has(> .t-store__card[data-is
 html.ishd-tile body #allrecords .t-store__card-list:has(> .t-store__card[data-ish13]) > .t-store__card .ish13-buy{grid-row:auto!important;flex:none;
   width:100%!important;height:44px!important;padding:0 12px!important;gap:6px!important;font-size:14px!important;font-weight:600;border-radius:8px!important}
 html.ishd-tile body #allrecords .t-store__card-list:has(> .t-store__card[data-ish13]) > .t-store__card .ish13-buy svg{width:16px!important;height:16px!important}
+
+/* разделители рядов Tilda (div.t-store__grid-separator, margin-bottom до 60 px) в сетке становятся лишней строкой: ряды нумерует grid */
+html.ishd-tile body #allrecords .t-store__card-list:has(> .t-store__card[data-ish13]) > :is(.t-store__grid-separator,.t-clear){display:none!important;margin:0!important;height:0!important}
+html.ishd-tile body #allrecords .t-store__card-list:has(> .t-store__card[data-ish13]) > .t-store__card{align-self:stretch;margin-bottom:0!important}
 
 /* clearfix Tilda (::before/::after у контейнера) в сетке занимал бы первую ячейку */
 html.ishd-tile body #allrecords .t-store__card-list:has(> .t-store__card[data-ish13])::before,

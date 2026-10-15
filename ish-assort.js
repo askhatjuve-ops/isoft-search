@@ -470,3 +470,94 @@
     }
   } catch (e) {}
 })(typeof window !== 'undefined' ? window : this);
+
+/* ───────────── 15.10.2026 · ОДНА КОРЗИНА В РАСШИРЕННОМ КАТАЛОГЕ (/assortiment) ─────────────
+ * Отдельный слой, от поиска не зависит (MODE/enabled() не смотрит). Нужен window.ishKorzina из служебного подвала сайта (блок 4204513403):
+ * нет его на странице — слой ничего не меняет, остаётся прежний «В запрос» / «Мой запрос».
+ * Что делает в окне приложения (iframe#isoft-catalog-frame, тот же origin; код приложения в Tilda НЕ меняется):
+ *   — кнопка строки «В запрос» → «В корзину»: кладёт позицию в общую корзину Tilda (ishKorzina.add → tcart__addProduct) с выбранным
+ *     количеством (минимум 1), показывает общее подтверждение (мини-корзина / нижняя панель) и сбрасывает счётчик строки;
+ *   — «Мой запрос» в шапке приложения и полоса «Выбрано: … Оформить запрос» прячутся; ссылка «Уже есть готовый список?» (/podbor) остаётся;
+ *   — форма запроса страницы (#rec4465413003 → блок формы с textarea «Список позиций *») прячется;
+ *   — позиция без цены: price 0, в корзине помечается «цена по запросу» и в итог не входит.
+ * Выключатель: ?ishassortcart=0 в адресе или localStorage.ishassortcart = '0'. Откат всем: убрать этот кусок из файла и выложить.
+ */
+(function (root) {
+  'use strict';
+  try {
+    if (root.__ishAssortCart) return;
+    if (!/^\/assortiment\/?$/.test(root.location.pathname)) return;
+    var off = false;
+    try { off = new URL(root.location.href).searchParams.get('ishassortcart') === '0' || root.localStorage.getItem('ishassortcart') === '0'; } catch (e) {}
+    if (off) return;
+    root.__ishAssortCart = 1;
+    var FRAME = 'isoft-catalog-frame', REC = '4465413003', NOTE = 1400;
+    var CSSX = '#headerRequest,.request-bar{display:none!important}.add-button{min-width:104px}.add-button.ishk-done{background:#14704A!important;border-color:#14704A!important;color:#fff!important}';
+    var added = {}, W = null, D = null, obs = null;
+
+    function byId() {
+      if (!W.__ishkIdx) { var m = {}; try { W.eval('PRODUCTS').forEach(function (p) { m[p.id] = p; }); } catch (e) {} W.__ishkIdx = m; }
+      return W.__ishkIdx;
+    }
+    function itemOf(p) {
+      var m = /\/tproduct\/(\d+)/.exec(p.product_url || '');
+      var site = !!(p.on_site && p.product_url);
+      return { uid: m && site ? m[1] : String(p.id), name: p.name, sku: p.article || '', price: Number(p.price) > 0 ? Number(p.price) : 0, img: '',
+               url: site ? p.product_url : root.location.origin + '/assortiment', recid: REC, code: p.source_code || '' };
+    }
+    function relabel() {
+      if (!D) return;
+      [].forEach.call(D.querySelectorAll('button[data-add]'), function (b) {
+        var row = b.closest('[data-id]'), id = row && row.getAttribute('data-id');
+        var done = id && added[id] && Date.now() - added[id] < NOTE;
+        var want = done ? 'Добавлено ✓' : 'В корзину';
+        b.classList.remove('added');
+        b.classList.toggle('ishk-done', !!done);
+        if (b.textContent !== want) b.textContent = want;
+      });
+    }
+    function resetRow(id) {
+      try { W.eval('(function(){delete state.cart[' + JSON.stringify(id) + '];save();renderCatalog();})()'); } catch (e) {}
+    }
+    function onClick(e) {
+      var t = e.target; if (!t || !t.closest) return;
+      var b = t.closest('button[data-add]'); if (!b) return;
+      var row = b.closest('[data-id]'), id = row && row.getAttribute('data-id'), p = id && byId()[id];
+      if (!p || !root.ishKorzina) return;
+      e.preventDefault(); e.stopPropagation(); e.stopImmediatePropagation();
+      var o = row.querySelector('.qty output'), q = Math.max(1, parseInt(o && o.textContent, 10) || 1), it = itemOf(p);
+      if (b.__busy) return; b.__busy = 1;
+      root.ishKorzina.add(it, q).then(function (ok) {
+        b.__busy = 0;
+        if (ok) { added[id] = Date.now(); resetRow(id); relabel(); setTimeout(relabel, NOTE + 60); root.ishKorzina.added(it); }
+        else { b.textContent = 'Не удалось'; setTimeout(relabel, 1800); }
+      });
+    }
+    function start() {
+      var f = D0();
+      if (!f) return false;
+      W = f.contentWindow; D = W.document;
+      var st = D.createElement('style'); st.id = 'ishk-assort-css'; st.textContent = CSSX; D.head.appendChild(st);
+      try { W.eval('state.cart={};save();'); } catch (e) {}            // прежний «Мой запрос» больше не живёт: счётчики строк с нуля
+      D.addEventListener('click', onClick, true);
+      var box = D.getElementById('tableBox');
+      if (box && root.MutationObserver) { obs = new MutationObserver(relabel); obs.observe(box, { childList: true, subtree: true }); }
+      relabel();
+      try { W.eval('renderCatalog()'); } catch (e) {}
+      var ar = root.document.querySelector('textarea[name="Список позиций *"]'), rec = ar && ar.closest('.r');
+      if (rec && rec.id !== 'rec' + REC) rec.style.setProperty('display', 'none', 'important');   // форма запроса страницы
+      root.document.documentElement.classList.add('ishk-assort');
+      return true;
+    }
+    function D0() {
+      var f = root.document.getElementById(FRAME);
+      try { if (f && f.contentWindow && f.contentWindow.document.getElementById('tableBox') && f.contentWindow.eval('typeof PRODUCTS!=="undefined"&&PRODUCTS.length>0&&typeof state!=="undefined"&&typeof changeQty==="function"')) return f; } catch (e) {}
+      return null;
+    }
+    var n = 0, iv = setInterval(function () {
+      if (++n > 280) { clearInterval(iv); return; }
+      if (!root.ishKorzina) return;
+      if (start()) clearInterval(iv);
+    }, 250);
+  } catch (e) { /* ничего не ломаем */ }
+})(typeof window !== 'undefined' ? window : this);

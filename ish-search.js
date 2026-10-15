@@ -1762,7 +1762,7 @@
       try { track('ish_search_add', { search_term: st.q0 || st.q, items: [root.ISHSearch.itemOf(p, 0, 'Поиск: выдача')] }); } catch (e) {}
       addToCart(p, 1).then(function (okk) {
         add.disabled = false;
-        if (okk) { add.setAttribute('data-s', 'ok'); add.textContent = 'В корзине ✓'; toast('Товар добавлен в корзину <a href="/spec">Перейти в корзину</a>'); }
+        if (okk) { add.setAttribute('data-s', 'ok'); add.textContent = 'В корзине ✓'; if (root.ishKorzina && typeof root.ishKorzina.added === 'function') root.ishKorzina.added({ uid: String(p.id), name: p.title, price: p.price, img: p.photo || '' }); else toast('Товар добавлен в корзину <a href="/spec">Перейти в корзину</a>'); }
         else { add.setAttribute('data-s', 'err'); add.textContent = 'Не удалось'; toast('Не удалось добавить. <a href="' + esc(p.url || '/katalog') + '">Открыть карточку</a>'); }
         setTimeout(function () { add.removeAttribute('data-s'); add.textContent = 'В корзину'; }, 2200);
       });

@@ -1,0 +1,422 @@
+/* ============================================================================
+   ish-design.css  -  общий слой дизайна b2b.isoft-shop.kz (пакет П1, версия 1, 15.10.2026)
+   ПОДГОТОВЛЕН, НЕ ПОДКЛЮЧЁН: на сайте и на Pages этого файла пока нет.
+
+   Принципы (решения владельца 14-15.10, закон):
+   1. Слой только ПЕРЕКРЫВАЕТ. Ничего не удаляет и не переписывает в блоках Tilda.
+      Убрать файл (одну строку подключения) = сайт как был.
+   2. Не трогаем: первый экран главной; фон страницы #F5F3EE; кнопку «В корзину»
+      в списке (.ish13-buy: белая, синяя рамка, цвет и вид не меняются); столбик
+      характеристик в списке; раскладку списка; фото в списке. Без пилюль на карточках.
+   3. Новые переменные живут под префиксом --ishd-*. Существующие --cobalt, --k, --mut
+      и т.д. не переопределяются, КРОМЕ двух серых (--mut, --muted) и --warn (раздел Ц2/Ц5).
+   4. Приоритет. Файл стоит в HEAD, блоки Tilda - в BODY, поэтому при равной силе
+      выигрывают блоки (грабли 38, 363 в КАК_РАБОТАТЬ.md). Здесь:
+        - для узлов внутри блоков берём приставку  html body #allrecords#allrecords
+          (два id = сильнее любого `html body #recNNN ...` из блоков);
+        - для узлов вне блоков или там, где в блоке уже стоит !important,
+          берём  html body ...  с !important.
+      !important стоит только там, где он нужен (inline-стили Tilda, чужие !important),
+      и помечен в комментарии.
+   5. Каждое правило подписано кодом пункта из Дизайн_2026\00_ИТОГ_предложения.md.
+   ============================================================================ */
+
+
+/* ---------------------------------------------------------------------------
+   ТОКЕНЫ  (Ц2 Ц3 Ц4 Ц5 Ц8 Тп3 Тп5 Т27-часть Кн5)
+   Единый набор. Старые имена не трогаем: блоки их читают.
+   --------------------------------------------------------------------------- */
+:root {
+  /* Ц8: кобальт - единственный акцент, остальное нейтрально; цвета только для статусов */
+  --ishd-cobalt:        #2B44C7;   /* 6,9:1 на #F5F3EE */
+  --ishd-cobalt-hover:  #2036A8;
+  --ishd-cobalt-soft:   #E9ECFC;   /* Ц4: один мягкий синий вместо четырёх */
+
+  /* нейтрали */
+  --ishd-bg:            #F5F3EE;   /* тёплый фон: решение 15.10 (Ц6 отказ), не менять */
+  --ishd-paper:         #FFFFFF;
+  --ishd-ink:           #171923;   /* основной текст */
+  --ishd-text-2:        #565D70;   /* Ц2: вторичный текст, 5,9:1 на #F5F3EE, 5,6:1 на #E9ECFC; светлее нельзя */
+  --ishd-placeholder:   #626879;   /* Ц2: подсказка в поле, 5,3:1 на #FAF9F6 */
+  --ishd-line:          #E3DFD6;   /* только РАЗДЕЛИТЕЛИ (1,2:1), не рамки полей */
+  --ishd-control:       #928A79;   /* Ц3: рамки полей и чекбоксов, 3,1:1 к фону и 3,4:1 к белому */
+
+  /* Ц4, Ц5: статусы, по одному на смысл */
+  --ishd-ok:            #14704A;
+  --ishd-ok-soft:       #DCEFE6;
+  --ishd-err:           #B43A36;
+  --ishd-err-soft:      #FDEAE4;
+  --ishd-warn:          #8A5A12;   /* Ц5: был #9A6417 = 4,5:1 на грани; теперь 5,3:1 */
+  --ishd-warn-soft:     #FBF1DD;
+
+  /* Тп3 / Тп9: шкала шрифта, минимум 12px. Дробных нет */
+  --ishd-fs-xs:  12px;
+  --ishd-fs-sm:  14px;
+  --ishd-fs-md:  16px;
+  --ishd-fs-lg:  20px;
+  --ishd-fs-xl:  28px;
+  --ishd-fs-2xl: 40px;
+
+  /* Тп5: три веса, тонких нет */
+  --ishd-fw-regular: 400;
+  --ishd-fw-semi:    600;
+  --ishd-fw-bold:    700;
+
+  /* Тп6 + Тп1/С5 (решение 16.10): один шрифт на весь сайт - TildaSans. Manrope из стека убран (в нём нет Ә Ғ Қ Ң Ұ) */
+  --ishd-font: TildaSans, Arial, sans-serif;
+
+  /* форма: радиусы по шкале 14.10 (8 кнопки/поля, 12 карточки). Пилюль 999 здесь нет */
+  --ishd-r-sm: 8px;
+  --ishd-r-md: 12px;
+
+  /* Кн5: спокойное движение */
+  --ishd-dur:  .16s;
+  --ishd-ease: cubic-bezier(.2, 0, 0, 1);
+
+  /* Кн7: зона касания */
+  --ishd-tap: 44px;
+}
+
+/* Ц2 + Ц5: два существующих серых и «предупреждение» ведём в новые значения одной строкой.
+   html:root сильнее обычного :root из блоков Tilda (0,1,1 против 0,1,0), порядок неважен.
+   Чем рискуем: тексты, которые брали --mut/--muted (#646B7D, 4,8:1), станут чуть темнее. Контраст растёт. */
+html:root {
+  --mut:   var(--ishd-text-2);
+  --muted: var(--ishd-text-2);
+  --warn:  var(--ishd-warn);
+}
+
+
+/* ---------------------------------------------------------------------------
+   Тп6  На служебных страницах у body Times New Roman (05-36)
+   Только запасной шрифт для текста, у которого нет собственного font-family.
+   Блоки со своим семейством через --f переводятся на TildaSans правилом Тп1/С5 ниже.
+   --------------------------------------------------------------------------- */
+html body.t-body {
+  font-family: var(--ishd-font);
+}
+
+
+/* ---------------------------------------------------------------------------
+   Тп1 / С5  Один шрифт на весь сайт: TildaSans (решение владельца 16.10)
+   Источник Manrope в живом коде (снимки\*.html от 15.10): переменная --f:Manrope,TildaSans,Arial,Helvetica,sans-serif
+   в наших блоках: .нш-к (шапка десктоп), .нш-моб (шапка телефон), :root (общий блок главной), .нп-к (подвал/панель).
+   Все остальные места берут шрифт через var(--f), поэтому достаточно переопределить саму переменную.
+   html body + повтор класса: сильнее объявления в блоках Tilda (грабли 38/363).
+   Чем рискуем: TildaSans шире/уже Manrope - меняются ширины строк (цена, кнопки, меню); смотреть на 1440 и 390.
+   --------------------------------------------------------------------------- */
+html:root,
+html body .нш-к.нш-к,
+html body .нш-моб.нш-моб,
+html body .нп-к.нп-к {
+  --f: TildaSans, Arial, sans-serif;
+}
+
+
+/* ---------------------------------------------------------------------------
+   Фр1 / М5  Поля 13-15px: iOS приближает страницу при фокусе (05-26)
+   Поля форм Tilda (.t-input), подписи 14px, высота 48px.
+   У полей inline-стиль `border:1px solid #000` и свои !important в блоках, поэтому !important здесь нужен.
+   --------------------------------------------------------------------------- */
+html body #allrecords#allrecords input.t-input,
+html body #allrecords#allrecords textarea.t-input,
+html body #allrecords#allrecords select.t-select {
+  font-size: var(--ishd-fs-md) !important;          /* Фр1/М5: !important - в блоках font: 13px/15px !important */
+  line-height: 1.4 !important;
+}
+html body #allrecords#allrecords input.t-input,
+html body #allrecords#allrecords select.t-select {
+  min-height: 48px !important;                       /* Фр1: !important - в /spec height:42px !important */
+  height: auto !important;
+}
+html body #allrecords#allrecords textarea.t-input {
+  min-height: 96px !important;
+}
+html body #allrecords#allrecords .t-input-title {
+  font-size: var(--ishd-fs-sm) !important;           /* Фр1: подписи 14px (было 12px !important в /spec) */
+  line-height: 1.4 !important;
+}
+/* Телефон с маской: рамку держит обёртка, поле внутри */
+html body #allrecords#allrecords .t-input-phonemask__wrap {
+  min-height: 48px !important;                       /* Фр1: !important - в /spec height:42px !important */
+  height: auto !important;
+}
+html body #allrecords#allrecords .t-input-phonemask__wrap input.t-input-phonemask {
+  font-size: var(--ishd-fs-md) !important;           /* М5 */
+  min-height: 44px !important;
+  height: auto !important;
+}
+
+/* М5: на телефоне и планшете ВСЕ поля ввода 16px, включая поиск и наши окна.
+   Исключены флажки, переключатели, файлы и кнопки. */
+@media (max-width: 960px) {
+  html body :is(input, textarea, select):not([type="checkbox"]):not([type="radio"]):not([type="hidden"]):not([type="file"]):not([type="submit"]):not([type="button"]):not([type="range"]) {
+    font-size: 16px !important;                      /* М5: !important - в блоках размеры 13-15px заданы тоже !important */
+  }
+}
+
+
+/* ---------------------------------------------------------------------------
+   Фр2 / Ц3  Рамки полей #DED9D0 и #E3DFD6 (1,3:1) и чёрные inline-рамки Tilda (05-27, 05-38)
+   Видимая рамка #928A79 у полей, чекбоксов и телефонной обёртки.
+   Состояние ошибки и фокуса ниже перекрывает это правило (идёт позже).
+   --------------------------------------------------------------------------- */
+html body #allrecords#allrecords input.t-input,
+html body #allrecords#allrecords textarea.t-input,
+html body #allrecords#allrecords select.t-select,
+html body #allrecords#allrecords .t-input-phonemask__wrap {
+  border: 1px solid var(--ishd-control) !important;  /* Фр2: !important - inline style="border:1px solid #000" */
+  border-radius: var(--ishd-r-sm) !important;
+  background-color: var(--ishd-paper) !important;
+  color: var(--ishd-ink) !important;                 /* inline style="color:#000" -> единый чернильный */
+}
+/* поле внутри обёртки телефона без своей рамки (рамка у обёртки) */
+html body #allrecords#allrecords .t-input-phonemask__wrap input.t-input-phonemask {
+  border: 0 !important;
+  background: transparent !important;
+}
+/* Ц2: подсказка в поле светлее допустимого (#8A8F9C = 2,9:1) */
+html body #allrecords#allrecords .t-input::placeholder {
+  color: var(--ishd-placeholder) !important;
+  opacity: 1 !important;
+}
+/* Фр2: чекбокс форм и фильтров - рамка #928A79 в нерабочем состоянии. Включённый (:checked) не трогаем:
+   его кобальтовую заливку задают блоки каталога. */
+html body #allrecords#allrecords input.t-checkbox:not(:checked) + .t-checkbox__indicator {
+  border-color: var(--ishd-control) !important;      /* Ц3: !important - в блоках border-color !important */
+}
+html body #allrecords#allrecords .t-checkbox__indicator {
+  min-width: 20px;                                   /* Фр2/Кн7: видимый флажок не меньше 20px */
+  min-height: 20px;
+}
+/* Кн7 для флажка ФОРМ (согласие и т.п.): вся строка - зона касания не меньше 44px.
+   Строки фильтров каталога (.t-catalog__filter__*) этим правилом не затронуты: у них свой ритм. */
+html body #allrecords#allrecords .t-input-group_cb .t-checkbox__control {
+  min-height: var(--ishd-tap);
+}
+/* Фокус полей (клавиатура и касание) - кобальтовая обводка 2px */
+html body #allrecords#allrecords input.t-input:focus-visible,
+html body #allrecords#allrecords textarea.t-input:focus-visible,
+html body #allrecords#allrecords select.t-select:focus-visible {
+  outline: 2px solid var(--ishd-cobalt) !important;
+  outline-offset: 1px !important;
+  border-color: var(--ishd-cobalt) !important;
+}
+html body #allrecords#allrecords .t-input-phonemask__wrap:focus-within {
+  outline: 2px solid var(--ishd-cobalt) !important;
+  outline-offset: 1px !important;
+  border-color: var(--ishd-cobalt) !important;
+}
+/* Ошибка - ПОСЛЕДНЕЙ в разделе, чтобы перебить рамку выше (та же сила, позже по порядку).
+   Значения те же, что уже стоят в блоках форм: красная рамка 2px. */
+html body #allrecords#allrecords .t-input-group_error .t-input,
+html body #allrecords#allrecords .js-error-control-box .t-input,
+html body #allrecords#allrecords .t-input.t-input_error,
+html body #allrecords#allrecords .t-input_error,
+html body #allrecords#allrecords .t-input-group_error .t-input-phonemask__wrap {
+  border: 2px solid var(--ishd-err) !important;
+}
+html body #allrecords#allrecords .t-input-error {
+  color: var(--ishd-err) !important;
+  font-size: 13px !important;                        /* Тп9: не меньше 12px; 13px как в блоках */
+}
+
+
+/* ---------------------------------------------------------------------------
+   Кн1 / Кн2  Три вида кнопки; обводка только у действий (04-51, 04-3, 05-12)
+   Классы для НОВЫХ и переделываемых блоков. Существующие кнопки не перекрашиваются:
+   .ish13-buy (список: белая с синей рамкой - решение 15.10), .ishpg-add (карточка: залитая),
+   .t-submit (корзина: залитая) уже соответствуют правилу.
+     primary   залитая  = ГЛАВНОЕ действие экрана (одна на экран)
+     secondary контур   = второстепенное ДЕЙСТВИЕ (белая, кобальтовая рамка)
+     tertiary  ссылка   = третичное; БЕЗ рамки и без заливки
+   Кнопки не пилюли: радиус 8px.
+   --------------------------------------------------------------------------- */
+.ishd-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  box-sizing: border-box;
+  min-height: var(--ishd-tap);                       /* Кн7 */
+  padding: 0 20px;
+  border: 1px solid transparent;
+  border-radius: var(--ishd-r-sm);
+  font: var(--ishd-fw-semi) var(--ishd-fs-sm)/1.2 var(--ishd-font);
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color var(--ishd-dur) var(--ishd-ease),
+              border-color var(--ishd-dur) var(--ishd-ease),
+              color var(--ishd-dur) var(--ishd-ease);   /* Кн5: только цвет, без подъёма и теней */
+}
+.ishd-btn:focus-visible {
+  outline: 2px solid var(--ishd-cobalt);
+  outline-offset: 2px;
+}
+.ishd-btn--primary {
+  background: var(--ishd-cobalt);
+  border-color: var(--ishd-cobalt);
+  color: #fff;
+}
+.ishd-btn--primary:hover { background: var(--ishd-cobalt-hover); border-color: var(--ishd-cobalt-hover); }
+.ishd-btn--secondary {
+  background: var(--ishd-paper);
+  border-color: var(--ishd-cobalt);
+  color: var(--ishd-cobalt);
+}
+.ishd-btn--secondary:hover { background: var(--ishd-cobalt-soft); }
+.ishd-btn--tertiary {
+  background: transparent;
+  border-color: transparent;                          /* Кн2: у третичного рамки нет */
+  color: var(--ishd-cobalt);
+  padding: 0 8px;
+}
+.ishd-btn--tertiary:hover { text-decoration: underline; }
+.ishd-btn[disabled], .ishd-btn[aria-disabled="true"] {
+  opacity: .55;
+  cursor: not-allowed;
+}
+/* Кн2: «чип» (ярлык, подсказка, выбранный фильтр) - НЕ кнопка: без рамки, мягкая заливка */
+.ishd-chip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 0 10px;
+  border: 0;
+  border-radius: var(--ishd-r-sm);
+  background: var(--ishd-cobalt-soft);
+  color: var(--ishd-cobalt-hover);
+  font: var(--ishd-fw-semi) var(--ishd-fs-xs)/1.2 var(--ishd-font);
+}
+
+/* Видимый фокус у уже существующих кнопок действия, цвет и вид не меняем */
+html body .ish13-buy:focus-visible,
+html body .ishpg-add:focus-visible {
+  outline: 2px solid var(--ishd-cobalt);
+  outline-offset: 2px;
+}
+
+
+/* ---------------------------------------------------------------------------
+   Кн7 / М2  Зоны касания 44px (04-54): круглая кнопка корзины, иконки связи, удалить, степпер
+   Вид и размер значков НЕ меняются: зону расширяет прозрачный ::after.
+   Только сенсорные экраны и узкие окна, чтобы на десктопе соседние зоны не перекрывались.
+   У перечисленных узлов ::before/::after в CSS страниц не заняты (проверено по живому HTML 15.10).
+   --------------------------------------------------------------------------- */
+@media (max-width: 960px), (pointer: coarse) {
+  /* узлы без своей позиции: делаем relative (на их раскладку это не влияет) */
+  html body .нш-связь a,
+  html body .нп-подвал-связь a,
+  html body .ishk-del,
+  html body .ishk-st button,
+  html body .ish__msgs a,
+  html body .isoft-foot__msgs a {
+    position: relative;
+  }
+  html body .нш-связь a::after,
+  html body .нп-подвал-связь a::after,
+  html body .ishk-del::after,
+  html body .ish__msgs a::after,
+  html body .isoft-foot__msgs a::after,
+  html body .нш-поиск-кн::after,
+  html body .нш-корзина::after,
+  html body .корзина::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: max(100%, var(--ishd-tap));
+    height: max(100%, var(--ishd-tap));
+    transform: translate(-50%, -50%);
+  }
+  /* степпер количества: кнопки стоят вплотную друг к другу, расширяем только по высоте */
+  html body .ishk-st button::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    height: var(--ishd-tap);
+    transform: translateY(-50%);
+  }
+}
+
+
+/* ---------------------------------------------------------------------------
+   Тп9 / Ц2  Мелкий текст 10-11,5px (04-1, 04-13, 04-18, 04-20, 04-43)
+   Узкие селекторы по живому CSS (замер 15.10: главная, /noutbuki, карточка, /spec).
+   !important: часть правил в блоках стоит с ID (#recNNN), обычным выбором их не перебить.
+   Чем рискуем: подписи вырастают на 0,5-2px, возможен перенос строки в узких счётчиках
+   (.ish__cnt, .таб .знач) - см. README, проверка 390.
+   --------------------------------------------------------------------------- */
+html body .таб .знач,
+html body .таб button,
+html body .нш-мт .нш-счёт,
+html body .нш-мт a,
+html body .тбренд,
+html body .тхар li,
+html body .ish__cnt,
+html body .ишФильтр .шт,
+html body .нш-корзина i,
+html body .корзина i,
+html body .ishpg-б,
+html body .ishpg-ч li,
+html body .нш-гт i,
+html body .нш-телефон span,
+html body .телефон span,
+html body .гт i,
+html body .вх-метка {
+  font-size: var(--ishd-fs-xs) !important;           /* Тп9: минимум 12px */
+}
+/* Ц2: серые подписи светлее #565D70 (#928A79 = 3,1:1, #7A8093 = 3,5:1) */
+html body .isoft-inner th,
+html body .isoft-nav__ghead,
+html body .ish-meta::before,
+html body .ishpg-extra li span {
+  color: var(--ishd-text-2) !important;              /* !important: в блоках те же цвета заданы с ID и !important */
+}
+
+
+/* ---------------------------------------------------------------------------
+   С2  У картинок нет width/height, страница «прыгает» при загрузке (04-47)
+   Живой HTML 15.10: фото товаров рисуются фоном или в рамках с фиксированной высотой
+   (прыжка нет), собственных <img> всего логотипы. Закрываем их и дальше подстраховку для новых.
+   --------------------------------------------------------------------------- */
+/* логотип (SVG 2924x873): место под него резервируется до загрузки */
+html body img[src*="isoft_wordmark"] {
+  aspect-ratio: 2924 / 873;
+  width: auto;
+}
+/* новые <img width height> без фиксированной высоты: браузер вычислит пропорцию сам.
+   :where() обнуляет силу правила, любое существующее правило с высотой его перебьёт. */
+html body :where(img[width][height]) {
+  max-width: 100%;
+  height: auto;
+}
+/* миниатюры корзины (.ishk-th, .sp-фото) и фото списка уже лежат в рамках фиксированного размера - не трогаем */
+
+
+/* ---------------------------------------------------------------------------
+   Кн5  Анимации: только спокойные; для тех, кто просит без движения - выключены (01-28, 02-29)
+   --------------------------------------------------------------------------- */
+/* появление блока: мягко, 0,2 с, без сдвигов (использовать как класс в новых блоках) */
+@keyframes ishd-fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+.ishd-fade-in {
+  animation: ishd-fade-in .2s var(--ishd-ease) both;
+}
+/* prefers-reduced-motion: на сайте было 3 правила, теперь одно на всё.
+   .001ms (а не 0), чтобы события transitionend/animationend у скриптов Tilda всё равно приходили.
+   Чем рискуем: зацикленные индикаторы (крутилки загрузки) перестанут вращаться. */
+@media (prefers-reduced-motion: reduce) {
+  html body *,
+  html body *::before,
+  html body *::after {
+    animation-duration: .001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

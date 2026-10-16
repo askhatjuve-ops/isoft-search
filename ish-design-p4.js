@@ -41,7 +41,7 @@
   }
   function el(html) { var d = D.createElement('div'); d.innerHTML = html; return d.firstChild; }
   var PIN = '<svg class="ishp-pin" viewBox="0 0 14 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M7 15s5.5-5 5.5-9A5.5 5.5 0 0 0 1.5 6c0 4 5.5 9 5.5 9Z"/><circle cx="7" cy="6" r="2"/></svg>';
-  var STRIP = '<span>Доставка бесплатно</span><span class="ishp-city">' + PIN + 'Астана · пн–вс 9:00–18:00</span>';  /* 17.10: полоса = доставка + город и часы (город убран из шапки, см. p4.css) */
+  var STRIP = '<span>Доставка бесплатно</span><span class="ishp-city">' + PIN + 'Астана · пн–вс 9:00–18:00</span><span class="ishp-telw"><a class="ishp-tel" href="tel:' + TEL + '">+7 775 881 85 31</a></span>';  /* 17.10: полоса = доставка + город и часы (город убран из шапки, см. p4.css) */
 
   /* ───────── Ш14 + Ш5 (десктоп) ───────── */
   function desktop() {

@@ -78,7 +78,7 @@
 
   function placeOf(a) {
     if (closest(a, '#ishp22, #ishp22t')) return 'float';
-    if (closest(a, '.нш-шапка, .нш-мт, .таб, header')) return 'header';
+    if (closest(a, '.нш-шапка, .нш-мт, .таб, header, .ishp-strip')) return 'header';
     if (closest(a, '.isoft-foot, .нп-подвал-тел, footer')) return 'footer';
     if (closest(a, '.isoft-order, .t706, .sp-итоги, #spec')) return 'order';
     return 'page';

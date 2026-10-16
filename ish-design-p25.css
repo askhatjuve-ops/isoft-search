@@ -1,4 +1,4 @@
-/* ish-design-p25.css · П25 «Сравнение моделей» (К19) + «Таблица однотипных товаров» (К21) · 16.10.2026
+/* ish-design-p25.css v3 · П25 «Сравнение моделей» (К19) + «Таблица однотипных товаров» (К21) · 16.10.2026
    Внешний файл на Pages, подключается ish-design-p25.js. Все классы с префиксом ishp25-; родные узлы Tilda не переписываются.
    Кобальт только на действии (чекбокс, активный вид, кнопки); «В корзину» в списке не перекрашивается (это .ish13-buy, здесь его нет);
    двойник «В корзину» в окне и таблице - контур кобальт, как .ish13-buy. Радиусы 8/10, пилюль нет. Откат: пустой файл. */
@@ -187,3 +187,6 @@ html body .ishp25-tbl tbody th,html body .ishp25-tbl tbody th *{text-transform:n
 html body .ishp25-tbl .ishp25-tb__t b{font-weight:600;color:var(--p25-k)}
 html body .ishp25-tbl .ishp25-tb__t small{font-weight:400;color:var(--p25-mut)}
 @media (max-width:640px){.ishp25-tb{width:auto;margin-left:12px;margin-right:12px}}
+
+/* v3: запас под нижнюю панель телефона, пока JS не измерил (панель .таб = 56px + safe-area); потом JS ставит точное значение inline */
+@media (max-width:960px){.ishp25-tb{margin-bottom:calc(56px + env(safe-area-inset-bottom,0px) + 16px)}}

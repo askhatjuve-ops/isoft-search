@@ -1,8 +1,8 @@
-/* ish-design-p22.css  v1  (16.10.2026)  П22 «WhatsApp-консультант». Только #ishp22 / .ishp22*; чужих правил не трогает. */
-.ishp22{position:fixed;right:20px;bottom:var(--p22-b,20px);z-index:9000;width:56px;height:56px;box-sizing:border-box;border-radius:50%;
+/* ish-design-p22.css  v2  (16.10.2026)  П22 «WhatsApp-консультант». Только #ishp22 / .ishp22*; чужих правил не трогает. */
+.ishp22{position:fixed;right:var(--p22-r,20px);bottom:var(--p22-b,20px);z-index:9000;width:56px;height:56px;box-sizing:border-box;border-radius:50%;
   display:flex;align-items:center;justify-content:center;background:#17904B;color:#fff;text-decoration:none;
   box-shadow:0 6px 20px rgba(19,23,34,.28);-webkit-tap-highlight-color:transparent;
-  transition:bottom .2s ease,opacity .15s ease,transform .15s ease,background-color .15s ease}
+  transition:bottom .2s ease,right .2s ease,opacity .15s ease,transform .15s ease,background-color .15s ease}
 .ishp22 svg{display:block;width:30px;height:30px;flex:none}
 .ishp22:hover{background:#0F7A3E;transform:translateY(-2px)}
 .ishp22:focus-visible{outline:3px solid #171923;outline-offset:3px}
@@ -16,7 +16,7 @@
 .ishp22.ishp22-off{background:#3F7F5C}
 .ishp22.ishp22-off:hover{background:#2F6A49}
 @media (max-width:760px){
-  .ishp22{right:14px;width:48px;height:48px}
+  .ishp22{right:var(--p22-r,14px);width:48px;height:48px}
   .ishp22 svg{width:26px;height:26px}
 }
 @media (prefers-reduced-motion:reduce){.ishp22,.ishp22-tip{transition:none!important}.ishp22:hover{transform:none}}

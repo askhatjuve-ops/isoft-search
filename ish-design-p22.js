@@ -1,9 +1,10 @@
-/* ish-design-p22.js  v2  (16.10.2026)  П22 «WhatsApp-консультант» (Д16) b2b.isoft-shop.kz
+/* ish-design-p22.js  v3  (16.10.2026)  П22 «WhatsApp-консультант» (Д16) b2b.isoft-shop.kz
    Плавающая круглая кнопка WhatsApp справа внизу на всех страницах. Номер тот же, что в шапке (wa.me/77758818531).
    Подключается из ish-design-p4.js (функция p22, строка описана в README); сам подтягивает ish-design-p22.css с того же адреса.
    Текст сообщения: карточка товара - название, артикул, адрес; раздел каталога - название раздела; прочее - «Вопрос по сайту iSoft».
    Не перекрывает: плашку мини-корзины (.ishk-bar), нижнюю панель телефона (.таб), липкие панели карточки (.ishp10-sticky, .ishpg3-sticky), плашку сравнения П25 (.ishp25-bar; v2) -
    поднимается над ними; при открытой мини-корзине/шторке, окне Tilda, замке меню, открытой форме на /spec - прячется.
+   v3: боковая панель .вн-бок (fixed/sticky у правого края) - если перекрывает кнопку, кнопка сдвигается ЛЕВЕЕ панели (--p22-r); панель, стоящая слева, кнопку не касается.
    Ничего в чужих блоках не меняет: добавляет один узел #ishp22 в body. Вне часов 9-18 (Asia/Almaty) в подписи «Ответим утром».
    Выключатель: window.ISH_P22_OFF = true (до загрузки). Не загрузился CSS или нет адреса скрипта - кнопки нет, сайт как был. */
 (function () {
@@ -80,6 +81,21 @@
     return m;
   }
 
+  /* v3: боковая панель у правого края: кнопка уходит левее неё (поднять нельзя - панель тянется до низа окна) */
+  function shiftR(b, mob) {
+    var vw = W.innerWidth, vh = W.innerHeight, sz = mob ? 48 : 56, base = mob ? 14 : 20, x = base;
+    var l = D.querySelectorAll('.вн-бок');
+    for (var i = 0; i < l.length; i++) {
+      var r = shown(l[i]); if (!r) continue;
+      var pos = W.getComputedStyle(l[i]).position;
+      if (pos !== 'fixed' && pos !== 'sticky') continue;
+      if (r.top >= vh - b || r.bottom <= vh - b - sz) continue;           /* по вертикали не касается кнопки */
+      if (r.right <= vw - base - sz || r.left >= vw - base) continue;      /* по горизонтали не касается */
+      x = Math.max(x, vw - r.left + 12);
+    }
+    return x;
+  }
+
   /* ───────── узел ───────── */
   var el, tip, last = {};
   var SVG = '<svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true" focusable="false" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round">' +
@@ -123,6 +139,8 @@
       var mob = W.innerWidth <= 760;
       var b = Math.max(mob ? 14 : 20, hide ? 0 : (function () { var l = lift(); return l ? l + 12 : 0; })());
       if (b !== last.b) { last.b = b; el.style.setProperty('--p22-b', b + 'px'); }
+      var x = shiftR(b, mob);
+      if (x !== last.x) { last.x = x; el.style.setProperty('--p22-r', x + 'px'); }
     } catch (e) {}
   }
 
@@ -130,7 +148,7 @@
   function start() {
     if (D.getElementById('ishp22-css')) { build(); return; }
     var l = D.createElement('link');
-    l.id = 'ishp22-css'; l.rel = 'stylesheet'; l.href = base + 'ish-design-p22.css?v=1';
+    l.id = 'ishp22-css'; l.rel = 'stylesheet'; l.href = base + 'ish-design-p22.css?v=2';
     l.onload = function () { if (D.body) build(); else D.addEventListener('DOMContentLoaded', build); };
     D.head.appendChild(l);
   }

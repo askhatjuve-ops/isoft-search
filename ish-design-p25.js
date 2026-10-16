@@ -1,4 +1,4 @@
-/* ish-design-p25.js  v2  (16.10.2026)  П25 «Сравнение моделей» (К19) + «Таблица однотипных товаров» (К21), b2b.isoft-shop.kz
+/* ish-design-p25.js  v3  (16.10.2026)  П25 «Сравнение моделей» (К19) + «Таблица однотипных товаров» (К21), b2b.isoft-shop.kz
    Внешний файл на Pages. Грузится из ish-design-p4.js (строка в README) на страницах со списком товаров (.t-store__card[data-ish13])
    и на карточке товара (/tproduct/). Сам подключает ish-design-p25.css рядом с собой. Не загрузился - сайт как был.
    Не пишет в Tilda, не правит родные узлы: добавляет свои с префиксом ishp25-. «В корзину» не перекрашивает и не подменяет:
@@ -7,6 +7,7 @@
    (только для 2-4 сравниваемых товаров, только по клику «Сравнить», с кэшем в sessionStorage) - из того же getproduct,
    что читает сам виджет Tilda. Нет ответа - сравниваем по тем пяти, что есть в карточке, и пишем об этом.
    v2: плашка «Сравнить (N)» поднимается над нижней панелью телефона (.таб, .нш-мт), мини-корзиной (.ishk-bar) и липкими панелями карточки (.ishp10-sticky, .ishpg3-sticky), если они пересекаются с ней по горизонтали.
+   v3: таблица (К21) получает нижний отступ = высоте видимой нижней панели телефона (.таб, .нш-мт) + 16 px, чтобы последние строки и липкий первый столбец не оставались под панелью (пересчёт при resize).
    Выключатели: window.ISH_P25_OFF=1 (всё) · window.ISH_P25={сравнение:false, таблица:false} (по частям; латиницей: compare, table). */
 (function () {
   'use strict';
@@ -468,6 +469,21 @@
       '<div class="ishp25-tb__scr" tabindex="0" role="region" aria-label="Таблица товаров раздела"><table class="ishp25-tbl"><thead></thead><tbody></tbody></table></div>');
     wrap.hidden = true;
     таб = q('table', wrap); обёртка = wrap;
+    function подушка() {                         /* v3: отступ снизу = высота нижней панели телефона */
+      var vh = W.innerHeight, m = 0;
+      ['.таб', '.нш-мт'].forEach(function (s) {
+        var l = D.querySelectorAll(s);
+        for (var i = 0; i < l.length; i++) {
+          var cs = W.getComputedStyle(l[i]);
+          if (cs.display === 'none' || cs.visibility === 'hidden' || cs.position !== 'fixed') continue;
+          var r = l[i].getBoundingClientRect();
+          if (r.width <= 0 || r.height <= 0 || r.top >= vh - 1 || r.bottom < vh - 40) continue;
+          m = Math.max(m, vh - r.top);
+        }
+      });
+      wrap.style.marginBottom = m ? (m + 16) + 'px' : '';
+    }
+    подушка(); W.addEventListener('resize', подушка); W.addEventListener('orientationchange', подушка); setTimeout(подушка, 600);
     q('.ishp25-tb__q', wrap).addEventListener('input', function (e) { поиск = norm2(e.target.value); рисоватьТаблицу(); });
     wrap.addEventListener('click', function (e) {
       var th = e.target.closest ? e.target.closest('th[data-k]') : null;

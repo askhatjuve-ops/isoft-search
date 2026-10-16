@@ -1,0 +1,29 @@
+/* ish-design-p19.css  v1  (16.10.2026)  П19 «формы и корзина». Только новые узлы с префиксом ishp19-; чужие правила не перекрываются.
+   Грузится из ish-design-p19.js (тот же адрес). Пустой файл на Pages = остаются тексты, без оформления. */
+html.ishp19-on{--p19-k:#2B44C7;--p19-ink:#171923;--p19-mut:#565D70;--p19-line:#D9D3C5;--p19-err:#B42318;--p19-f:var(--f,TildaSans,Arial,sans-serif)}
+
+/* Кр4: вторичные кнопки под итогом корзины (контур = действие) */
+.ishp19-sec{display:grid;gap:8px;margin-top:12px;padding-top:12px;border-top:1px solid var(--p19-line,#D9D3C5)}
+.ishp19-sec__t{font:600 12px/1.3 var(--p19-f,TildaSans,Arial,sans-serif);color:var(--p19-mut,#565D70);letter-spacing:.02em}
+.ishp19-sec button{display:flex;align-items:center;justify-content:center;width:100%;min-height:44px;padding:0 14px;box-sizing:border-box;
+  border:1px solid var(--p19-line,#D9D3C5);border-radius:8px;background:#fff;color:var(--p19-ink,#171923);cursor:pointer;
+  font:600 14px/1.2 var(--p19-f,TildaSans,Arial,sans-serif);transition:border-color .16s,color .16s}
+.ishp19-sec button:hover{border-color:var(--p19-k,#2B44C7);color:var(--p19-k,#2B44C7)}
+.ishp19-sec button:focus-visible{outline:2px solid var(--p19-k,#2B44C7);outline-offset:2px}
+
+/* Кр5: подпись к переключателю документа */
+.ishp19-cap{margin:8px 0 0;font:600 14px/1.4 var(--p19-f,TildaSans,Arial,sans-serif);color:var(--p19-ink,#171923)}
+
+/* Кр6: срок цен в печатной форме - виден только в печати (родная .sp-печать скрыта на экране) */
+.ishp19-prn{font-weight:400}
+
+/* Т26: сноска под сеткой */
+.ishp19-note{max-width:min(1400px,calc(100% - 40px));margin:12px auto 0;box-sizing:border-box;
+  font:400 13px/1.45 var(--p19-f,TildaSans,Arial,sans-serif);color:var(--p19-mut,#565D70)}
+@media screen and (max-width:700px){.ishp19-note{padding:0 16px;max-width:100%}}
+
+/* Фр3: значок ошибки там, где не подключён css П10 (главная и др.); на /spec и /podbor его даёт П10 */
+html.ishp19-on:not(.ishp10-on) .t-input-error:not(:empty){display:flex;align-items:flex-start;gap:6px;margin-top:6px;color:var(--p19-err)!important;font:500 13px/1.35 var(--p19-f)}
+html.ishp19-on:not(.ishp10-on) .t-input-error:not(:empty)::before{content:"";flex:none;width:16px;height:16px;margin-top:1px;background:currentColor;
+  -webkit-mask:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill-rule='evenodd' d='M8 1.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13zM7.25 4.5h1.5v4.5h-1.5zM7.25 10h1.5v1.5h-1.5z'/></svg>") center/contain no-repeat;
+  mask:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill-rule='evenodd' d='M8 1.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13zM7.25 4.5h1.5v4.5h-1.5zM7.25 10h1.5v1.5h-1.5z'/></svg>") center/contain no-repeat}

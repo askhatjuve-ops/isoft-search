@@ -1,9 +1,10 @@
-/* ish-design-p4.js  v4  (16.10.2026)  П4 «шапка и меню» + Г1 «кнопки в hero» b2b.isoft-shop.kz
+/* ish-design-p4.js  v5  (16.10.2026)  П4 «шапка и меню» + Г1 «кнопки в hero» b2b.isoft-shop.kz
    Подключается из блока шапки 3263300503 строкой <script src=... defer data-m="header,hero">. Не загрузился - сайт как был.
    Модули (атрибут data-m, по умолчанию оба): header - Ш14 полоса, Ш5 кнопка, Ш13 трубка; hero - Г1 две кнопки (с v2 включается и при data-m="header").
    v2: + подгрузка ish-design-p6.js на страницах каталога. Выключатели: window.ISH_P4_NO_HERO, window.ISH_P4_NO_P6.
    v3: + подгрузка ish-design-p8.js (блоки главной ниже первого экрана) только на главной, по признаку #лента .слайд. Выключатель: window.ISH_P4_NO_P8.
    v4: + подгрузка ish-design-p9.js (списки, карточка, ряды главной; выключатель window.ISH_P9_OFF) и ish-design-p10.js (/tproduct/, /spec, /podbor; выключатель window.ISH_P10_OFF); текст полосы с «Доставка бесплатно».
+   v5: + подгрузка ish-design-p19.js (формы Tilda, /spec, сетка товаров; выключатель window.ISH_P19_OFF) и ish-design-p20.js (короткие подписи меню, «Смежные разделы»; выключатель window.ISH_P20_OFF).
    Ничего не переписывает в чужих блоках: только ДОБАВЛЯЕТ узлы с префиксом ishp-, каждый раз проверяя, что такого ещё нет.
    Оболочка телефона перерисовывает #ishВерх целиком - трубку возвращает MutationObserver. Ошибка в одном модуле другой не останавливает. */
 (function () {
@@ -166,6 +167,48 @@
     (function step() { var ok = false; try { ok = p9(); } catch (e) {} if (!ok && ++n < 80) setTimeout(step, 250); })();
   }
 
+  /* ───────── П19: формы и корзина (ish-design-p19.js с того же адреса, один раз) ─────────
+     Грузим там, где есть форма Tilda, корзина /spec или сетка товаров: сам p19 в пустой странице ничего не делает.
+     Выключатель: window.ISH_P19_OFF = 1 (до загрузки p4). Кэш: поменять P19V. */
+  var P19V = '1';
+  function p19() {
+    if (W.ISH_P19_OFF || W.ISH_P19 || D.getElementById('ishp-p19-js')) return true;
+    if (!(D.querySelector('.t-form') || D.getElementById('specRoot') || D.querySelector('.js-store-grid-cont'))) return false;
+    var src = tag && tag.src;
+    if (!src) return true;
+    var s = D.createElement('script');
+    s.id = 'ishp-p19-js'; s.defer = true;
+    s.src = src.replace(/ish-design-p4\.js.*$/, 'ish-design-p19.js?v=' + P19V);
+    D.head.appendChild(s);
+    return true;
+  }
+  function p19wait() {
+    var n = 0;
+    (function step() { var ok = false; try { ok = p19(); } catch (e) {} if (!ok && ++n < 80) setTimeout(step, 250); })();
+  }
+
+  /* ───────── П20: короткие подписи меню и «Смежные разделы» (ish-design-p20.js, один раз) ─────────
+     Признак: на странице есть меню/лента разделов (ish-nav, подвал, боковая колонка раздела, рубрикатор/панель главной, лента Tilda).
+     p20 сам опрашивает DOM и наблюдает за ним, от порядка загрузки с ish-nav.js не зависит. Выключатель: window.ISH_P20_OFF = 1
+     (собственные выключатели p20: window.ISH_P20 = {короткие:false, низ:false} читаются самим p20). Кэш: поменять P20V. */
+  var P20V = '1';
+  function p20() {
+    if (W.ISH_P20_OFF || W.__ishP20 || D.getElementById('ishp-p20-js')) return true;
+    if (!D.querySelector('.isoft-nav, .isoft-foot, #вн-бок, .рубрикатор, .панель-сетка, .t-catalog__parts-above-item')) return false;
+    var src = tag && tag.src;
+    if (!src) return true;
+    var s = D.createElement('script');
+    s.id = 'ishp-p20-js'; s.defer = true;
+    s.src = src.replace(/ish-design-p4\.js.*$/, 'ish-design-p20.js?v=' + P20V);
+    D.head.appendChild(s);
+    return true;
+  }
+  function p20wait() {
+    if (W.ISH_P20_OFF) return;
+    var n = 0;
+    (function step() { var ok = false; try { ok = p20(); } catch (e) {} if (!ok && ++n < 80) setTimeout(step, 250); })();
+  }
+
   /* ───────── П10: карточка товара (/tproduct/), а на /spec и /podbor - только css и выбор «КП» ───────── */
   var P10V = '1';
   function p10() {
@@ -190,5 +233,7 @@
   p6wait();
   p8wait();
   p9wait();
+  p19wait();
+  p20wait();
   try { p10(); } catch (e) {}
 })();

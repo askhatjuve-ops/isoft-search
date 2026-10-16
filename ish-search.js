@@ -62,10 +62,32 @@
     else if ((m = /^(\d{3,4})x(\d{3,4})$/.exec(tok))) f.push(m[1], m[2]);      // 14.10: разрешение «2560x1440» -> 2560 и 1440 (как из характеристики «2560×1440»)
     return f;
   }
-  // склейки «wi-fi» -> wifi, «tp-link» -> tplink, «m.2» -> m2
+  // склейки «wi-fi» -> wifi, «tp-link» -> tplink, «m.2» -> m2; 16.10: цепочка из трёх букв-частей «plug-and-play» -> plugandplay (и plugand, как было у пары)
   function joins(p) {
-    var re = /(^|[^a-zа-я0-9])([a-z]{1,5})[-.]([a-z0-9]{1,5})(?![a-zа-я0-9])/g, m, out = [];
-    while ((m = re.exec(p))) out.push(m[2] + m[3]);
+    var re = /(^|[^a-zа-я0-9])([a-z]{1,5})(?:[-.]([a-z]{1,6}))?[-.]([a-z0-9]{1,5})(?![a-zа-я0-9])/g, m, out = [];
+    while ((m = re.exec(p))) {
+      if (m[3] !== undefined) { out.push(m[2] + m[3]); out.push(m[2] + m[3] + m[4]); }
+      else out.push(m[2] + m[4]);
+    }
+    return out;
+  }
+  // 16.10: слитное написание из РАЗДЕЛЬНЫХ слов («wi fi» -> wifi, «type c» -> typec, «plug and play»): возвращает склейки соседних токенов 2-3 шт.,
+  // которые есть в словаре как самостоятельное слово (known). Части - латинские буквы (последняя может быть 1-2 цифры: «rj 45»), длина склейки от 4:
+  // «hp e» не даёт hpe, а «usb c» даёт usbc, только если usbc где-то в каталоге уже есть словом.
+  function spaceJoins(toks, known) {
+    var out = [], n = toks.length, i, k, j, w, ok;
+    for (i = 0; i + 1 < n; i++) {
+      if (!/^[a-z]+$/.test(toks[i])) continue;
+      w = toks[i];
+      for (k = 1; k <= 2 && i + k < n; k++) {
+        var t = toks[i + k];
+        ok = /^[a-z]+$/.test(t) || (k === 1 && /^\d{1,2}$/.test(t));
+        if (!ok) break;
+        w += t;
+        if (w.length >= 4 && known.has(w)) out.push(w);
+        if (!/^[a-z]+$/.test(t)) break;
+      }
+    }
     return out;
   }
   function unitLike(c) { return /^\d+(p\d+)?(gb|tb|mb|mhz|ghz|hz|w|mp|in)$/.test(c); }
@@ -137,7 +159,7 @@
     'принтер': ['мфу'], 'мфу': ['принтер'],
     'уши': ['наушник'], 'гарнитура': ['наушник'], 'проц': ['процессор', 'cpu'], 'цп': ['процессор', 'cpu'], 'cpu': ['процессор'],
     'материнка': ['материнск'], 'мамка': ['материнск'], 'мать': ['материнск'], 'кейс': ['корпус'], 'вайфай': ['wifi', 'wi'],
-    'нвме': ['nvme', 'm2'], 'интернет': []
+    'нвме': ['nvme', 'm2'], 'usbc': ['typec'], 'typec': ['usbc'], 'интернет': []
   };
   var STOP = {};
   ('для и в на с по от к у из the a for купить цена цены цену недорого дешево магазин алматы астана казахстан интернет заказать оптом kz or of').split(' ')
@@ -234,9 +256,17 @@
     var brandIds = B.map(function (b) { return Array.from(fieldIds(b).ids); });
     var catIds = C.map(function (c) { return Array.from(fieldIds(c[0]).ids); });
 
+    // 16.10: слова, которые встречаются в каталоге самостоятельно (токены названий и склейки через дефис) - по ним решаем, склеивать ли «wi fi» в wifi
+    var known = new Set(), ppAll = new Array(N), tokAll = new Array(N);
+    for (var kd = 0; kd < N; kd++) {
+      var kp = prep(P[kd][0]), kt = tokenize(kp), kj = joins(kp), ki;
+      ppAll[kd] = kp; tokAll[kd] = kt;
+      for (ki = 0; ki < kt.length; ki++) known.add(kt[ki]);
+      for (ki = 0; ki < kj.length; ki++) known.add(kj[ki]);
+    }
     var lnorm = new Float32Array(N), pnList = new Array(N);
     for (var d = 0; d < N; d++) {
-      var p = P[d], pp = prep(p[0]), toks = tokenize(pp), seen = new Set(), first = new Set(), seenAll = new Set(), i, j;
+      var p = P[d], pp = ppAll[d], toks = tokAll[d], seen = new Set(), first = new Set(), seenAll = new Set(), i, j;
       for (i = 0; i < toks.length; i++) {
         var fs = forms(toks[i]);
         for (j = 0; j < fs.length; j++) {
@@ -245,12 +275,13 @@
           if (i < 3 && !first.has(id)) { first.add(id); push(pf, id, d); }
         }
       }
-      var jn = joins(pp);
+      var jn = joins(pp).concat(spaceJoins(toks, known));
       for (i = 0; i < jn.length; i++) { var jid = wid(jn[i]); if (!seen.has(jid)) { seen.add(jid); push(pt, jid, d); seenAll.add(jid); } }
       if (p[1] >= 0) brandIds[p[1]].forEach(function (id) { push(pb, id, d); seenAll.add(id); });
       catIds[p[2]].forEach(function (id) { push(pc, id, d); seenAll.add(id); });
       if (p[7]) {
         var sp = p[7].split(' '), sseen = new Set();
+        sp = sp.concat(spaceJoins(sp, known));      // 16.10: «wi fi» в характеристиках -> и wifi
         for (i = 0; i < sp.length; i++) {
           var sf = forms(sp[i]);
           for (j = 0; j < sf.length; j++) { var sid = wid(sf[j]); if (!sseen.has(sid)) { sseen.add(sid); push(ps, sid, d); seenAll.add(sid); } }
@@ -435,7 +466,45 @@
           if (a2.ok) chosen = a2;
           else if (swapped) { var b2 = chunkResult(swapped, last, true); if (b2.ok && b2.parts.length) { chosen = b2; chosen.layout = ch; } }
         }
-        cr.push(chosen);
+        chosen.lastChunk = last; cr.push(chosen);
+      }
+      // 16.10 (составное слово): «wi-fi», «wi fi» и «wifi» - одно слово. Кусок с дефисом/точкой и соседние слова из букв получают вторую форму - слитную
+      // (wifi, typec, plugandplay, rj45), если она есть в словаре; выдача = части вместе ИЛИ слитное слово (объединение, а не пересечение).
+      function plainParts(c) { return c.parts.filter(function (x) { return !x.stop; }); }
+      for (i = 0; i < cr.length; i++) {
+        var cc0 = cr[i];
+        if (cc0.layout || cc0.merged || cc0.alt || !/^[a-z]+(?:[-.][a-z]+)*[-.][a-z0-9]+$/.test(cc0.ch)) continue;
+        var jw = cc0.ch.replace(/[-.]/g, '');
+        if (jw.length >= 2 && plainParts(cc0).length > 1) { var jr = resolveToken(jw, !!cc0.lastChunk, false); if (jr && jr.exact) cc0.alt = { text: jw, res: jr }; }
+      }
+      for (i = 0; i + 1 < cr.length; i++) {
+        for (var jspan = 3; jspan >= 2; jspan--) {
+          if (i + jspan > cr.length) continue;
+          var seg = cr.slice(i, i + jspan), okSeg = true, jw2 = '';
+          seg.forEach(function (x, ix) {
+            var one = !x.layout && !x.merged && !x.alt && !x.pn && x.parts.length === 1 && !x.parts[0].stop;
+            if (!(one && (/^[a-z]+$/.test(x.ch) || (ix === 1 && jspan === 2 && /^\d{1,2}$/.test(x.ch))))) okSeg = false;
+            jw2 += x.ch;
+          });
+          if (!okSeg || jw2.length < 4) continue;
+          var jr2 = resolveToken(jw2, !!seg[seg.length - 1].lastChunk, false);
+          if (jr2 && jr2.exact) {
+            var parts2 = []; seg.forEach(function (x) { parts2 = parts2.concat(x.parts); });
+            cr.splice(i, jspan, { ch: seg.map(function (x) { return x.ch; }).join(' '), parts: parts2, pn: null, ok: true, alt: { text: jw2, res: jr2 }, exactAll: false, lastChunk: seg[seg.length - 1].lastChunk });
+            break;
+          }
+        }
+      }
+      // 16.10 (аудит, поиск с дефисом): «i7 14650HX» и «i7-14650HX» - один запрос. Дефис держал два слова одним куском, и этот кусок получал
+      // партномерный балл (compact = i714650hx) у карточек, где в названии модель с дефисом; с пробелом баллом обделялись ровно они, и порядок
+      // выдачи расходился. Теперь два соседних куска запроса, в каждом из которых есть цифра, склеиваются так же, как склеил бы дефис, - но только
+      // если такой партномер есть в индексе (pnArr), так что «16 гб 512 гб» и подобное не затрагивается.
+      for (i = 0; i + 1 < cr.length; i++) {
+        if (cr[i].merged || cr[i + 1].merged || !/\d/.test(cr[i].ch) || !/\d/.test(cr[i + 1].ch)) continue;
+        var c2 = compact(cr[i].ch + cr[i + 1].ch);
+        if (/[a-z]/.test(c2) && pnEligible(c2) && pnArr(c2)) {
+          cr.splice(i, 2, { ch: cr[i].ch + ' ' + cr[i + 1].ch, parts: cr[i].parts.concat(cr[i + 1].parts), pn: c2, ok: true, merged: true, exactAll: false });
+        }
       }
       // склейка соседних кусков в партномер: «kf552 c40»
       for (i = 0; i < cr.length; i++) {
@@ -459,7 +528,8 @@
           else if (disp) changes.push({ from: x.tk, to: disp, type: x.res.how });
         });
         if (!subs.length) return;
-        if (c.pn && (subs.length > 1 || !subs[0].res)) terms.push({ text: c.ch, parts: subs, pn: c.pn });
+        if (c.alt && subs.length > 1) terms.push({ text: c.ch, parts: subs, pn: c.pn || undefined, alt: c.alt });
+        else if (c.pn && (subs.length > 1 || !subs[0].res)) terms.push({ text: c.ch, parts: subs, pn: c.pn });
         else if (subs.length > 1) subs.forEach(function (x) { terms.push(x); });
         else { if (c.pn) subs[0].pn = c.pn; terms.push(subs[0]); }
       });
@@ -490,15 +560,21 @@
         if (ok) for (var d = 0; d < N; d++) { var sum = 0; for (var k = 0; k < subs.length; k++) { var v = subs[k][d]; if (!v) { sum = 0; break; } sum += v; } arr[d] = sum; }
       } else if (t.res) arr = altArr(t.res.alts);
       else arr = new Float32Array(N);
+      if (t.alt) {      // слитное написание: балл выравниваем под сумму частей, чтобы «WIFI» не проигрывал «Wi-Fi» только из-за числа слов
+        var aa = altArr(t.alt.res.alts), pi = 0, ai2 = termIdf({ res: t.alt.res }), f = 1, ee;
+        t.parts.forEach(function (x) { pi += Math.max(0, termIdf(x)); });
+        if (ai2 > 0 && pi > ai2) f = Math.min(3, 0.95 * pi / ai2);
+        for (ee = 0; ee < N; ee++) { var av = aa[ee] * f; if (av > arr[ee]) arr[ee] = av; }
+      }
       if (t.pn) { var pa = pnArr(t.pn); if (pa) for (var e = 0; e < N; e++) if (pa[e] > arr[e]) arr[e] = pa[e]; }
       return arr;
     }
     function termIdf(t) {
-      if (t.parts) { var m = 0; t.parts.forEach(function (x) { m = Math.max(m, termIdf(x)); }); return m; }
+      if (t.parts) { var m = 0; t.parts.forEach(function (x) { m = Math.max(m, termIdf(x)); }); if (t.alt) m = Math.max(m, termIdf({ res: t.alt.res })); return m; }
       if (!t.res) return -1;
       var mx = 0; t.res.alts.forEach(function (a) { var v = idfArr[a.id] * a.w; if (v > mx) mx = v; }); return mx;
     }
-    function collectIds(t, set) { if (t.parts) t.parts.forEach(function (x) { collectIds(x, set); }); else if (t.res) t.res.alts.forEach(function (a) { set.add(a.id); }); }
+    function collectIds(t, set) { if (t.alt) t.alt.res.alts.forEach(function (a) { set.add(a.id); }); if (t.parts) t.parts.forEach(function (x) { collectIds(x, set); }); else if (t.res) t.res.alts.forEach(function (a) { set.add(a.id); }); }
     function collectWords(t, set) { var s = new Set(); collectIds(t, s); s.forEach(function (id) { set.add(words[id]); }); }
 
     // ---- подсветка ----
@@ -907,8 +983,8 @@
   if (root.ISHSearch) return;   // файл подключён дважды (загрузчик шапки и загрузчик страницы /katalog) — второй раз молчим
   /* подставляет пакет_собрать.py: версия индекса и режим. Режим меняется выкладкой нового файла на хостинг, блок Tilda не трогается:
    *   off  — слой не включается (мгновенный откат);  flag — только у тех, кто открыл сайт с ?ishsearch=1 (запоминается в браузере);  all — у всех */
-  var VER = '07e182ad', MODE = 'all';
-  var SECTIONS = [["Мини-ПК","/mini-pk-i-rabochie-stancii",14],["Моноблоки","/monobloki",54],["Ноутбуки","/noutbuki",289],["Системные блоки","/sistemnye-bloki",32],["Кронштейны для мониторов и ТВ","/kronshteyny-i-krepleniya",40],["Мониторы","/monitory",382],["Проекторы","/proektory-i-paneli",23],["Телевизоры","/televizory",48],["Блоки питания","/bloki-pitaniya",265],["Видеокарты","/videokarty",81],["Корпуса","/korpusa-i-bloki-pitaniya",291],["Материнские платы","/materinskie-platy",228],["Оперативная память","/operativnaya-pamyat",135],["Охлаждение","/ohlazhdenie",297],["Процессоры","/processory",104],["SSD-накопители","/ssd-nakopiteli",160],["USB-флешки","/fleshki-i-karty-pamyati",65],["Жёсткие диски","/zhestkie-diski",70],["Карты памяти","/karty-pamyati",45],["ИБП","/ibp-i-zashchita-pitaniya",281],["Серверы","/servery",6],["Системы хранения","/servery-i-shd",37],["Шкафы и стойки","/shkafy-i-stoyki",25],["IP-телефоны","/konferenc-svyaz",25],["Маршрутизаторы (роутеры)","/marshrutizatory",218],["Межсетевые экраны","/mezhsetevye-ekrany",4],["Сетевое оборудование","/setevoe-oborudovanie",500],["Сетевые карты и адаптеры","/setevye-karty",71],["Точки доступа Wi-Fi","/tochki-dostupa",164],["МФУ лазерные цветные","/mfu-lazernye-cvetnye",27],["МФУ струйные цветные","/mfu-struynye-cvetnye",17],["Плоттеры","/plottery",11],["Принтеры и МФУ","/printery-i-mfu",45],["Принтеры лазерные цветные","/printery-lazernye-cvetnye",14],["Принтеры лазерные ч/б","/printery-lazernye-chb",16],["Сканеры документов","/skanery-dokumentov",23],["Гарнитуры для конференц-связи","/garnitury",19],["Клавиатуры","/klaviatury",233],["Мыши","/klaviatury-i-myshi",488],["Наушники","/naushniki",64],["Видеорегистраторы","/videoregistratory",97],["Домофоны","/domofony",47],["Камеры видеонаблюдения","/videonablyudenie",225],["СКУД и турникеты","/skud-i-turnikety",77],["Принтеры этикеток","/printery-etiketok",11],["Сканеры штрихкода","/skanery-shtrihkoda",15],["Терминалы сбора данных","/terminaly-sbora-dannyh",7]];   // [[имя, адрес, число товаров], …] из индекса: разделы показываются сразу, пока грузится индекс товаров
+  var VER = '3fda5b5e', MODE = 'all';
+  var SECTIONS = [["Мини-ПК","/mini-pk-i-rabochie-stancii",15],["Моноблоки","/monobloki",53],["Ноутбуки","/noutbuki",279],["Системные блоки","/sistemnye-bloki",32],["Кронштейны для мониторов и ТВ","/kronshteyny-i-krepleniya",29],["Мониторы","/monitory",383],["Проекторы","/proektory-i-paneli",23],["Телевизоры","/televizory",48],["Блоки питания","/bloki-pitaniya",269],["Видеокарты","/videokarty",80],["Корпуса","/korpusa-i-bloki-pitaniya",290],["Материнские платы","/materinskie-platy",230],["Оперативная память","/operativnaya-pamyat",128],["Охлаждение","/ohlazhdenie",296],["Процессоры","/processory",104],["SSD-накопители","/ssd-nakopiteli",159],["USB-флешки","/fleshki-i-karty-pamyati",65],["Жёсткие диски","/zhestkie-diski",69],["Карты памяти","/karty-pamyati",45],["ИБП","/ibp-i-zashchita-pitaniya",273],["Серверы","/servery",6],["Системы хранения","/servery-i-shd",36],["Шкафы и стойки","/shkafy-i-stoyki",24],["IP-телефоны","/konferenc-svyaz",25],["Маршрутизаторы (роутеры)","/marshrutizatory",218],["Межсетевые экраны","/mezhsetevye-ekrany",5],["Сетевое оборудование","/setevoe-oborudovanie",496],["Сетевые карты и адаптеры","/setevye-karty",71],["Точки доступа Wi-Fi","/tochki-dostupa",161],["МФУ лазерные цветные","/mfu-lazernye-cvetnye",27],["МФУ струйные цветные","/mfu-struynye-cvetnye",17],["Плоттеры","/plottery",12],["Принтеры и МФУ","/printery-i-mfu",47],["Принтеры лазерные цветные","/printery-lazernye-cvetnye",11],["Принтеры лазерные ч/б","/printery-lazernye-chb",14],["Сканеры документов","/skanery-dokumentov",22],["Гарнитуры для конференц-связи","/garnitury",18],["Клавиатуры","/klaviatury",235],["Мыши","/klaviatury-i-myshi",500],["Наушники","/naushniki",69],["Видеорегистраторы","/videoregistratory",96],["Домофоны","/domofony",49],["Камеры видеонаблюдения","/videonablyudenie",228],["СКУД и турникеты","/skud-i-turnikety",77],["Принтеры этикеток","/printery-etiketok",11],["Сканеры штрихкода","/skanery-shtrihkoda",15],["Терминалы сбора данных","/terminaly-sbora-dannyh",7]];   // [[имя, адрес, число товаров], …] из индекса: разделы показываются сразу, пока грузится индекс товаров
   var SRC = (document.currentScript && document.currentScript.src) || '';
   var BASE = SRC.replace(/[^\/]*(\?.*)?$/, '');
   var RAW_PARAM = 'ish_raw=1';    // «искать как ввели»: выдача без исправлений и без разбора цены

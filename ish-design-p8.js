@@ -243,6 +243,14 @@
     з.classList.add('ishp8-zl');
     з.innerHTML = лого('ishp8-zlg', '#272B36', '#2B44C7');
   }
+  /* заголовок «Не нашли нужное?» короче (Tilda-текст; охранник: только родная формулировка) */
+  function заголовок_запроса() {
+    var h = D.querySelector('#запросБлок .зб-текст h3');
+    if (!h || h.getAttribute('data-p8h')) return;
+    if (h.textContent.indexOf('Напишите, что ищете') < 0) return;
+    h.setAttribute('data-p8h', '1');
+    h.textContent = 'Не нашли нужное? Пришлите список';
+  }
   /* главная кнопка «Написать, что нужно» - в обёртку: свечение висит на ней и центрировано по кнопке */
   function кнопка_запроса() {
     var к = D.querySelector('#запросБлок .зб-кнопки .кн-к:not(.конт)');
@@ -328,6 +336,7 @@
     D.documentElement.classList.add('ishp8-on');
     подпись_кнопки();
     знак_запроса();
+    try { заголовок_запроса(); } catch (e) {}
     кнопка_запроса();
     until(полки, 90);
     return true;

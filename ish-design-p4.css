@@ -88,3 +88,19 @@ html body #карусель .слайд .кнопки .ishp-cta svg{width:14px;h
 @media (prefers-reduced-motion:reduce){
   html body .нш-связь a,html body .нш-корзина,html body .группа .гз,html body .группа .нз,html body .нш-к .ishp-btn{transition:none}
 }
+
+/* ---- 17.10: «Астана · часы» переехали в чёрную полосу (js выше); в шапке город скрыт, «Каталог» встаёт вплотную к логотипу, поиск занимает освободившееся место ---- */
+.ishp-city{display:inline-flex;align-items:center;gap:6px}
+.ishp-pin{width:12px;height:13px;flex:0 0 auto}
+@media (min-width:981px){
+  html body .нш-шапка-лево .нш-город{display:none!important}
+  html body .нш-к.нш-сетка .нш-шапка-строка{grid-template-columns:auto minmax(0,1fr);column-gap:18px}
+  html body .нш-сетка .нш-шапка-лево.нш-л-черта{gap:0}
+  html body .нш-шапка-лево{flex:0 0 auto}
+  html body .нш-шапка-право{flex:1 1 auto;min-width:0;margin-left:0}
+  html body .нш-шапка-право .ishp24{margin-left:0}
+}
+@media (max-width:980px){
+  .ishp-strip--m .ishp-city{white-space:nowrap}
+  .ishp-strip--m .ishp-pin{width:11px;height:12px}
+}

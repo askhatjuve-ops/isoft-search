@@ -129,7 +129,7 @@ a.ishp8-num:focus-visible{outline:2px solid var(--p8-cobalt);outline-offset:3px}
 .ishp8-bc--big b{font:800 clamp(28px,3.4vw,42px)/1.08 var(--p8-f);letter-spacing:-.02em;max-width:420px}
 .ishp8-bc--big span{color:#DCE2FF;font-size:16px}
 .ishp8-deco{position:absolute;right:0;top:0;width:min(300px,70%);height:auto;opacity:.9}
-.ishp8-bento>.c-w .ishp8-bc{background:var(--p8-graph);color:#fff;display:flex;gap:32px;align-items:center;justify-content:space-between}
+.ishp8-bento>.c-w .ishp8-bc{background:linear-gradient(135deg,#3A4566 0%,#1E2430 100%);color:#fff;display:flex;gap:32px;align-items:center;justify-content:space-between}
 .ishp8-bento>.c-w .ishp8-bc span{color:#C9CFE6;margin-top:6px;max-width:640px}
 .ishp8-bento>.c-w .ishp8-bc>div{min-width:0}
 .ishp8-go2{flex:none;position:relative;z-index:4;background:var(--p8-cobalt);color:#fff;border-radius:12px;padding:14px 22px;font:700 15px/1 var(--p8-f);text-decoration:none;white-space:nowrap;transition:background .15s}
@@ -345,6 +345,12 @@ html.ishp8-on .зб-знак.ishp8-zl{justify-self:start}
   .ishp8-lg{height:28px}
       .ishp8-nums>.k1 .ishp8-lg{right:18px;top:22px}
 }
+
+/* плитка iSoft в брендах: знак в потоке, не поверх подписи (общий .ishp8-lg выше абсолютный - для карточек с цифрами) */
+.ishp8-bi .ishp8-bil{width:100%}
+.ishp8-bi .ishp8-lg{position:static;display:block;width:80%;max-width:190px;height:auto;opacity:1}
+.ishp8-bi .ishp8-bic{margin-top:4px}
+@media (max-width:640px){.ishp8-bi .ishp8-lg{height:auto;width:min(150px,60%);margin:0 auto}.ishp8-bi .ishp8-bil{display:flex;justify-content:center}}
 
 /* шахматка (десктоп): широкая -> Бизнес справа -> 25 слева -> «Цены видны» справа */
 @media (min-width:901px){

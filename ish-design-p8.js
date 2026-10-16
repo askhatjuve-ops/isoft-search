@@ -76,10 +76,10 @@
   var ДЕКО = '<svg class="ishp8-deco" viewBox="0 0 340 340" aria-hidden="true"><circle cx="170" cy="170" r="150" fill="none" stroke="rgba(255,255,255,.14)" stroke-width="2"/><circle cx="170" cy="170" r="110" fill="none" stroke="rgba(255,255,255,.18)" stroke-width="2"/><circle cx="170" cy="170" r="70" fill="rgba(255,255,255,.1)"/><svg x="70" y="141" width="200" height="60" viewBox="0 0 2924 873" fill="#fff">' + ЛОГО_ВНУТРИ.replace('{{D}}', '#fff') + '</svg></svg>';
   /* малые двухцветные значки 32 для «Почему мы» */
   var ИК = {
-    clock: '<circle class="tn ln" cx="16" cy="16" r="12"/><path class="acs" d="M16 9v7l5 3"/>',
-    doc: '<path class="tn ln" d="M7 3h13l6 6v20H7z"/><path class="ln" d="M20 3v6h6"/><path class="acs" d="M11 16h11M11 21h11M11 26h6"/>'
+    clock: '<circle cx="14" cy="14" r="10"/><path d="M14 8v6l4 3"/>',
+    doc: '<path d="M9 6.5V3.5h9.5l4 4V18"/><path d="M5 8.5h10.5l4 4V24.5H5z"/><path d="M15.5 8.5v4h4M9 17h6M9 21h4"/>'
   };
-  function ик(k) { return '<svg class="ishp8-ic" viewBox="0 0 32 32" aria-hidden="true">' + ИК[k] + '</svg>'; }
+  function ик(k) { return '<svg class="ishp8-ic" viewBox="0 0 28 28" aria-hidden="true">' + ИК[k] + '</svg>'; }
   /* номер «NN /» ставит ish-design-p9.css (счётчик по порядку .ishp8-eb); здесь только подпись */
   function шапка(n, т, з) { return '<div class="ishp8-eb">' + т + '</div><h2 class="ishp8-h">' + з + '</h2>'; }
   /* обёртка с перспективой (.ishp8-tw) + наклоняемый узел (.ishp8-ti) + блик */
@@ -139,7 +139,7 @@
   /* ───────── Г21 цифры (bento 5/4/3) ───────── */
   function html_nums() {
     return шапка('03', 'В цифрах', 'Коротко о нас') + '<div class="ishp8-nums">' +
-      обёртка('k1', '<b>25</b><span>лет на рынке техники</span>', 6, 'div', 'ishp8-num') +
+      обёртка('k1', лого('ishp8-lg', '#fff') + '<b>25</b><span>лет на рынке техники</span>', 6, 'div', 'ishp8-num') +
       обёртка('k2', '<b>14 000+</b><span>позиций в расширенном ассортименте</span>', 6, 'a', 'ishp8-num ishp8-num--a', '/assortiment') +
       обёртка('k3', '<b>3</b><span>города самовывоза: Астана, Алматы, Актобе</span>', 6, 'div', 'ishp8-num') + '</div>';
   }

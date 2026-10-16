@@ -1,0 +1,5 @@
+/* ish-design-p28.css  v1  (16.10.2026)  П28: подсказка и мягкая ошибка поля БИН/ИИН. Только .ishp28-*; чужих правил не трогает. */
+.ishp28-hint{margin:6px 0 0;font:400 12px/1.35 TildaSans,Arial,sans-serif;color:#6B7080}
+.ishp28-err{margin:6px 0 0;font:500 13px/1.35 TildaSans,Arial,sans-serif;color:#B3261E}
+.ishp28-hint[hidden],.ishp28-err[hidden]{display:none}
+.ishp28-bad input.t-input{border-color:#B3261E!important}

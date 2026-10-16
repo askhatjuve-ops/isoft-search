@@ -1,4 +1,4 @@
-/* ish-design-p4.js  v6  (16.10.2026)  П4 «шапка и меню» + Г1 «кнопки в hero» b2b.isoft-shop.kz
+/* ish-design-p4.js  v6.2  (16.10.2026)  П4 «шапка и меню» + Г1 «кнопки в hero» b2b.isoft-shop.kz
    Подключается из блока шапки 3263300503 строкой <script src=... defer data-m="header,hero">. Не загрузился - сайт как был.
    Модули (атрибут data-m, по умолчанию оба): header - Ш14 полоса, Ш5 кнопка, Ш13 трубка; hero - Г1 две кнопки (с v2 включается и при data-m="header").
    v2: + подгрузка ish-design-p6.js на страницах каталога. Выключатели: window.ISH_P4_NO_HERO, window.ISH_P4_NO_P6.
@@ -6,7 +6,7 @@
    v4: + подгрузка ish-design-p9.js (списки, карточка, ряды главной; выключатель window.ISH_P9_OFF) и ish-design-p10.js (/tproduct/, /spec, /podbor; выключатель window.ISH_P10_OFF); текст полосы с «Доставка бесплатно».
    v5: + подгрузка ish-design-p19.js (формы Tilda, /spec, сетка товаров; выключатель window.ISH_P19_OFF) и ish-design-p20.js (короткие подписи меню, «Смежные разделы»; выключатель window.ISH_P20_OFF).
    v5.1: + подключается и из общего HEAD проекта (страницы карточек /tproduct/ не содержат блок шапки 3263300503). Охранник window.__ishP4 стоит первой строкой кода: второй запуск (HEAD + блок шапки) сразу выходит, ничего не вставляет. + если на странице нет <link> на ish-design-p4.css (карточка), модуль добавляет его сам с того же адреса. + над скрытой шапкой (карточка v8: #t-header скрыт) полоса и кнопка «Запросить КП/счёт» не вставляются.
-   v6: + подгрузки ish-design-p21.js (номер заявки, список из Excel; ISH_P21_OFF), p22.js (кнопка WhatsApp; ISH_P22_OFF), p23.js (квиз «Подбор техники»; ISH_P23_OFF), p24.js (мега-меню «Каталог»; ISH_P24_OFF), p25.js (сравнение и таблица; ISH_P25_OFF). P9V=1.2, P10V=2, P22V=2, P24V=2, P25V=2.
+   v6: + подгрузки ish-design-p21.js (номер заявки, список из Excel; ISH_P21_OFF), p22.js (кнопка WhatsApp; ISH_P22_OFF), p23.js (квиз «Подбор техники»; ISH_P23_OFF), p24.js (мега-меню «Каталог»; ISH_P24_OFF), p25.js (сравнение и таблица; ISH_P25_OFF). P9V=1.2, P10V=2, P22V=2, P24V=2, P25V=2. v6.1 (П27): P8V=2, P23V=2 (тексты главной и приглашения квиза). v6.2: + подгрузка ish-design-p28.js (события GA4/Метрика, БИН/ИИН; ISH_P28_OFF), p22 -> v4 (Telegram).
    Ничего не переписывает в чужих блоках: только ДОБАВЛЯЕТ узлы с префиксом ishp-, каждый раз проверяя, что такого ещё нет.
    Оболочка телефона перерисовывает #ishВерх целиком - трубку возвращает MutationObserver. Ошибка в одном модуле другой не останавливает. */
 (function () {
@@ -147,7 +147,7 @@
   }
 
   /* ───────── П8: блоки главной ниже первого экрана (грузит ish-design-p8.js с того же адреса, один раз; только где есть слайдер главной) ───────── */
-  var P8V = '1';
+  var P8V = '2';
   function p8() {
     if (W.ISH_P4_NO_P8 || W.ISH_P8 || D.getElementById('ishp-p8-js')) return true;
     if (!D.querySelector('#лента .слайд')) return false;
@@ -250,7 +250,7 @@
   /* ───────── П23: квиз «Подбор техники» (Г17) (ish-design-p23.js/.css с того же адреса, один раз) ─────────
      Грузим там, где есть форма «Отправить готовый список» (поле «Список позиций…» + Комментарий + Phone) - квиз отправляет заявку через неё.
      Выключатель: window.ISH_P23_OFF = 1 (до загрузки p4). Кэш: поменять P23V. */
-  var P23V = '1';
+  var P23V = '2';
   function p23() {
     if (W.ISH_P23_OFF || W.ISH_P23 || D.getElementById('ishp-p23-js')) return true;
     if (!D.querySelector('form [name^="Список позиций"]')) return false;
@@ -307,7 +307,7 @@
   }
 
   /* ───────── П22: кнопка WhatsApp (грузит ish-design-p22.js с того же адреса; она сама подтянет ish-design-p22.css; выключатель window.ISH_P22_OFF) ───────── */
-  var P22V = '3';
+  var P22V = '4';
   (function () {
     if (W.ISH_P22_OFF || W.__ishP22 || D.getElementById('ishp-p22-js')) return;
     var src = tag && tag.src;
@@ -315,6 +315,18 @@
     var s = D.createElement('script');
     s.id = 'ishp-p22-js'; s.defer = true;
     s.src = src.replace(/ish-design-p4\.js.*$/, 'ish-design-p22.js?v=' + P22V);
+    D.head.appendChild(s);
+  })();
+
+  /* ───────── П28: события аналитики (GA4 + Метрика) и проверка БИН/ИИН (ish-design-p28.js/.css с того же адреса, один раз; выключатель window.ISH_P28_OFF) ───────── */
+  var P28V = '1';
+  (function () {
+    if (W.ISH_P28_OFF || W.__ishP28 || D.getElementById('ishp-p28-js')) return;
+    var src = tag && tag.src;
+    if (!src) return;
+    var s = D.createElement('script');
+    s.id = 'ishp-p28-js'; s.defer = true;
+    s.src = src.replace(/ish-design-p4\.js.*$/, 'ish-design-p28.js?v=' + P28V);
     D.head.appendChild(s);
   })();
 

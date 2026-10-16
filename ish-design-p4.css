@@ -122,3 +122,9 @@ html body #карусель .слайд .кнопки .ishp-cta svg{width:14px;h
 .ishp-strip a.ishp-tel:hover{text-decoration:underline}
 @media (min-width:981px){html body .нш-телефон{display:none!important}}
 @media (max-width:640px){.ishp-strip .ishp-telw{display:none}}
+
+/* ---- 17.10 КАНДИДАТ: живая точка логотипа в шапке (раз в ~7 с мягкий прыжок + сжатие при «приземлении»); --hy = 3 px в долях диаметра точки (знак 22 px высотой) ---- */
+.ish__mark circle{transform-box:fill-box;transform-origin:50% 100%;--hy:58%;animation:ish-dot-hop 7s ease-in-out infinite;animation-delay:-.5s}
+@media (max-width:900px){.ish__mark circle{--hy:41%}}
+@keyframes ish-dot-hop{0%,82%{transform:none}87%{transform:translateY(calc(var(--hy) * -1)) scale(.94,1.07)}93%{transform:translateY(0) scale(1.16,.8)}96.5%{transform:scale(.97,1.05)}100%{transform:none}}
+@media (prefers-reduced-motion:reduce){.ish__mark circle{animation:none}}

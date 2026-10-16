@@ -1,130 +1,310 @@
-/* ish-design-p8.css  v1  (16.10.2026)  П8 «блоки главной ниже первого экрана»
-   Подключает ish-design-p8.js (рядом с собой). Откат: пустой файл на Pages. Шрифт TildaSans (решение 16.10), фон страницы #F5F3EE, единственный акцент - кобальт #2B44C7,
-   пилюль нет (радиус 12 / 10). Всё под .ishp8-* или html.ishp8-on - чужие правила блока 4204120903 не затрагиваются, кроме названных ниже (Г9/Г10, Г13/Г14/М10). */
-:root{--p8-cobalt:#2B44C7;--p8-cobalt-h:#2036A8;--p8-soft:#E9ECFC;--p8-ink:#171923;--p8-mut:#565D70;--p8-line:#E3DFD6;--p8-mist:#F1EEE7;--p8-sand:#EFE9DB;--p8-f:TildaSans,Arial,sans-serif}
+/* ish-design-p8.css  v2.0  (C2 «Витрина, другой ритм», подготовка 16.10.2026; НЕ выложено)  П8 «блоки главной ниже первого экрана»
+   Подключает ish-design-p8.js (рядом с собой). Откат: пустой файл на Pages. Шрифт TildaSans, фон страницы #F5F3EE, акцент - кобальт #2B44C7, графит #1E2430.
+   Всё под .ishp8-* или html.ishp8-on - верх сайта (шапка, поиск, «Каталог», слайдер) не затрагивается. Чужие правила блока 4204120903 перекрываются только
+   в разделах «ШАГИ» и «ПОЛКИ». Размеры текста не меньше 12px. На 390 горизонтальной прокрутки нет. */
+:root{--p8-cobalt:#2B44C7;--p8-cobalt-h:#2036A8;--p8-cb2:#5B73F0;--p8-soft:#E7EAFB;--p8-ink:#171923;--p8-mut:#5A5F70;--p8-line:#E1DDD2;--p8-mist:#F1EEE7;--p8-graph:#1E2430;--p8-f:TildaSans,Arial,sans-serif;
+  --p8-sh:0 1px 0 #fff inset,0 14px 30px -18px rgba(23,25,35,.4),0 2px 6px rgba(23,25,35,.05);--p8-sh2:0 18px 40px -22px rgba(23,25,35,.4)}
 
 .ishp8-sec,.ishp8-sec *{box-sizing:border-box}
-.ishp8-sec{margin:56px 0 0;font-family:var(--p8-f);color:var(--p8-ink)}
-.ishp8-sec--strip{margin-top:20px}
-.ishp8-eb{font:700 12.5px/1 var(--p8-f);letter-spacing:.08em;text-transform:uppercase;color:var(--p8-mut);margin:0 0 8px}
-.ishp8-h{margin:0 0 20px;font:700 28px/1.2 var(--p8-f);color:var(--p8-ink);letter-spacing:0}
+.ishp8-sec{margin:44px 0 0;font-family:var(--p8-f);color:var(--p8-ink);overflow-x:clip}
+.ishp8-sec--strip{margin-top:24px;position:relative;z-index:3}
+.ishp8-eb{font:700 12px/1.2 var(--p8-f);letter-spacing:.12em;text-transform:uppercase;color:var(--p8-mut);margin:0}
 
-/* Г12 полоса преимуществ */
-.ishp8-strip{display:grid;grid-template-columns:repeat(4,1fr);background:#fff;border:1px solid var(--p8-line);border-radius:12px}
-.ishp8-strip__i{display:flex;gap:12px;align-items:center;padding:16px 18px;border-left:1px solid var(--p8-line)}
+.ishp8-h{margin:6px 0 22px;font:800 clamp(26px,3.4vw,38px)/1.1 var(--p8-f);letter-spacing:-.02em;color:var(--p8-ink)}
+
+/* появление при прокрутке (включается только если сработал IntersectionObserver; без движения - сразу видно) */
+html.ishp8-js .ishp8-rv{opacity:0;transform:translateY(22px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1)}
+html.ishp8-js .ishp8-rv.in{opacity:1;transform:none}
+
+/* наклон и блик (из варианта 1) */
+.ishp8-tw{perspective:900px;min-width:0}
+.ishp8-ti{display:block;position:relative;height:100%;color:inherit;text-decoration:none;transform:rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg));transition:transform .35s cubic-bezier(.2,.7,.2,1),box-shadow .35s;will-change:transform}
+.ishp8-ti.on{transition:transform .08s linear}
+.ishp8-gl{margin:0!important;position:absolute;inset:0;border-radius:inherit;pointer-events:none;background:radial-gradient(260px circle at var(--gx,50%) var(--gy,0%),rgba(255,255,255,.95),rgba(255,255,255,0) 60%);opacity:0;transition:opacity .3s;mix-blend-mode:soft-light;z-index:3}
+.ishp8-ti.on .ishp8-gl{opacity:1}
+.ishp8-ic{width:28px;height:28px}
+.ishp8-ic .ln{fill:none;stroke:#171923;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;vector-effect:non-scaling-stroke}
+.ishp8-ic .tn{fill:#E7EAFB}
+.ishp8-ic .acs{fill:none;stroke:#2B44C7;stroke-width:3;stroke-linecap:round}
+
+/* Г12 полоса фактов: одна белая плашка, «наезжает» на первый экран */
+.ishp8-strip{display:grid;grid-template-columns:repeat(4,1fr);background:#fff;border-radius:26px;box-shadow:0 22px 50px -26px rgba(23,25,35,.35);padding:10px}
+.ishp8-strip__i{display:flex;gap:14px;align-items:center;padding:14px 18px;border-left:1px solid var(--p8-line)}
 .ishp8-strip__i:first-child{border-left:0}
-.ishp8-strip__i svg{flex:0 0 28px;width:28px;height:28px;stroke:var(--p8-cobalt);fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
-.ishp8-strip__i p{margin:0}
-.ishp8-strip__i b{display:block;font:700 14.5px/1.25 var(--p8-f)}
-.ishp8-strip__i span{display:block;margin-top:2px;font:400 13px/1.35 var(--p8-f);color:var(--p8-mut)}
+.ishp8-strip__i svg{flex:0 0 46px;width:46px;height:46px;box-sizing:border-box;padding:9px;border-radius:14px;background:linear-gradient(145deg,var(--p8-cb2),var(--p8-cobalt));box-shadow:0 8px 16px -6px rgba(43,68,199,.6);
+  stroke:#fff;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.ishp8-strip__i p{margin:0;min-width:0}
+.ishp8-strip__i{min-height:74px}
+.ishp8-strip__i b{display:block;font:700 15px/1.25 var(--p8-f)}
 
-/* Г8 плитки разделов */
-.ishp8-tiles{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
-.ishp8-tile{display:block;background:#fff;border:1px solid var(--p8-line);border-radius:12px;overflow:hidden;color:var(--p8-ink);text-decoration:none;
-  transition:border-color .15s,box-shadow .15s}
-.ishp8-tile:hover{border-color:var(--p8-cobalt);box-shadow:0 4px 16px rgba(43,68,199,.14)}
-.ishp8-tile:focus-visible{outline:2px solid var(--p8-cobalt);outline-offset:2px}
-.ishp8-tile__im{display:flex;align-items:center;justify-content:center;height:104px;background:var(--p8-mist)}
-.ishp8-tile__im svg{width:48px;height:48px;stroke:var(--p8-cobalt);fill:none;stroke-width:1.1;stroke-linecap:round;stroke-linejoin:round}
-.ishp8-tile__tt{display:block;padding:12px 14px 14px}
-.ishp8-tile__tt b{display:block;font:700 15px/1.25 var(--p8-f);min-height:38px}
-.ishp8-tile__tt span{display:block;margin-top:4px;font:500 13px/1.35 var(--p8-f);color:var(--p8-mut)}
+/* Г8 плитки разделов: «Компьютеры» 2x2, «Торговое оборудование» широкая */
+.ishp8-tiles{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:minmax(228px,auto);gap:16px}
+.ishp8-tiles>.ishp8-tw{height:100%}
+.ishp8-tile{border-radius:26px;background:#fff;padding:14px 16px 18px;box-shadow:var(--p8-sh);overflow:hidden}
+.ishp8-ix{position:absolute;left:16px;top:14px;z-index:2;font:700 12px/1 var(--p8-f);letter-spacing:.08em;color:var(--p8-cobalt)}
+.ishp8-stage{position:relative;display:grid;place-items:center;height:150px}
+.ishp8-pod{position:absolute;left:14%;right:14%;bottom:10px;height:22px;background:radial-gradient(closest-side,rgba(23,25,35,.28),transparent);filter:blur(3px);transition:transform .35s,opacity .35s}
+.ishp8-tile:hover .ishp8-pod,.ishp8-ti.on .ishp8-pod{transform:scale(.85);opacity:.7}
+.ishp8-stage img{position:relative;max-width:78%;max-height:128px;object-fit:contain;mix-blend-mode:multiply;transition:transform .35s}
+.ishp8-fb{position:absolute;width:56px;height:56px;stroke:var(--p8-cobalt);fill:none;stroke-width:1.1;stroke-linecap:round;stroke-linejoin:round;opacity:0}
+.ishp8-noimg .ishp8-fb{opacity:1}
+.ishp8-tt{display:block;margin-top:6px}
+.ishp8-tt b{display:block;font:700 16px/1.2 var(--p8-f)}
+.ishp8-tt span{display:block;margin-top:6px;font:400 13px/1.35 var(--p8-f);color:var(--p8-mut)}
+.ishp8-tile:focus-visible{outline:2px solid var(--p8-cobalt);outline-offset:3px}
+.ishp8-tiles .t-big{grid-column:span 2;grid-row:span 2}
+.ishp8-tiles .t-big .ishp8-tile{background:linear-gradient(160deg,#EEF1FF,#DDE3FB);padding:20px 24px 26px;display:flex;flex-direction:column}
+.ishp8-tiles .t-big .ishp8-stage{height:auto;flex:1;min-height:300px}
+.ishp8-tiles .t-big img{max-height:300px;max-width:84%}
+.ishp8-tiles .t-big .ishp8-tt b{font-size:28px;letter-spacing:-.01em}
+.ishp8-tiles .t-big .ishp8-tt span{font-size:15px}
+.ishp8-tiles .t-wide{grid-column:span 4}
+.ishp8-tiles .t-wide .ishp8-tile{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:12px;background:var(--p8-cobalt);color:#fff;padding:14px 32px}
+.ishp8-tiles .t-wide .ishp8-stage{order:2;height:170px}
+.ishp8-tiles .t-wide .ishp8-tt b{font-size:24px}
+.ishp8-tiles .t-wide .ishp8-tt span{color:#DCE2FF;font-size:15px}
+.ishp8-tiles .t-wide .ishp8-ix{color:#DCE2FF}
+.ishp8-tiles .t-wide .ishp8-fb{stroke:#fff}
 
-/* Г11 для кого */
+/* Г11 «Для кого» - в тон: крупные скругления, тени */
 .ishp8-who{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.ishp8-wc{display:flex;flex-direction:column;gap:10px;background:#fff;border:1px solid var(--p8-line);border-radius:12px;padding:24px}
+.ishp8-wc{display:flex;flex-direction:column;gap:10px;background:#fff;border-radius:26px;box-shadow:var(--p8-sh);padding:26px}
 .ishp8-wc svg{width:34px;height:34px;stroke:var(--p8-cobalt);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
 .ishp8-wc b{font:700 20px/1.25 var(--p8-f)}
 .ishp8-wc p{margin:0 0 6px;color:var(--p8-mut);font:400 14.5px/1.5 var(--p8-f)}
-.ishp8-go{display:flex;align-items:center;justify-content:center;margin-top:auto;height:44px;padding:0 16px;border:1.5px solid var(--p8-cobalt);border-radius:10px;
+.ishp8-go{display:flex;align-items:center;justify-content:center;margin-top:auto;height:44px;padding:0 16px;border:1.5px solid var(--p8-cobalt);border-radius:12px;
   background:#fff;color:var(--p8-cobalt);font:700 14px/1 var(--p8-f);text-decoration:none;transition:background .15s,color .15s}
 .ishp8-go:hover{background:var(--p8-cobalt);color:#fff}
-.ishp8-go:focus-visible{outline:2px solid var(--p8-cobalt);outline-offset:2px}
+.ishp8-go:focus-visible,.ishp8-go2:focus-visible{outline:2px solid var(--p8-cobalt);outline-offset:2px}
 
-/* Г21 цифры */
-.ishp8-nums{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.ishp8-num{display:block;background:#fff;border:1px solid var(--p8-line);border-radius:12px;padding:20px 22px;color:var(--p8-ink);text-decoration:none}
-.ishp8-num b{display:block;font:800 48px/1 var(--p8-f);letter-spacing:-.02em}
-.ishp8-num span{display:block;margin-top:8px;font:500 14px/1.35 var(--p8-f);color:var(--p8-mut)}
-a.ishp8-num:hover{border-color:var(--p8-cobalt)}
-a.ishp8-num:focus-visible{outline:2px solid var(--p8-cobalt);outline-offset:2px}
+/* Г21 цифры: bento 5/4/3 - кобальт, белая, светлая */
+.ishp8-nums{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
+.ishp8-nums>.k1{grid-column:span 5}.ishp8-nums>.k2{grid-column:span 4}.ishp8-nums>.k3{grid-column:span 3}
+.ishp8-num{border-radius:28px;padding:30px 30px 28px;background:#fff;box-shadow:var(--p8-sh2);overflow:hidden}
+.ishp8-num b{display:block;font:900 clamp(54px,7vw,88px)/1 var(--p8-f);letter-spacing:-.04em;background:linear-gradient(160deg,var(--p8-cb2),var(--p8-cobalt) 55%,#18278A);-webkit-background-clip:text;background-clip:text;color:transparent}
+.ishp8-num span{display:block;margin-top:12px;color:#3F4558;font:400 14px/1.4 var(--p8-f)}
+.ishp8-nums>.k1 .ishp8-num{background:var(--p8-cobalt)}
+.ishp8-nums>.k1 .ishp8-num b{background:none;-webkit-text-fill-color:#fff;color:#fff}
+.ishp8-nums>.k1 .ishp8-num span{color:#E0E5FF}
+.ishp8-nums>.k3 .ishp8-num{background:var(--p8-soft)}
+a.ishp8-num:hover span{color:var(--p8-cobalt)}
+a.ishp8-num:focus-visible{outline:2px solid var(--p8-cobalt);outline-offset:3px}
 
-/* Г18 bento */
-.ishp8-bento{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:150px;gap:16px}
-.ishp8-bc{display:flex;flex-direction:column;justify-content:flex-end;background:#fff;border:1px solid var(--p8-line);border-radius:12px;padding:20px 22px}
-.ishp8-bc b{font:700 20px/1.25 var(--p8-f)}
-.ishp8-bc span{margin-top:6px;font:400 14px/1.4 var(--p8-f);color:var(--p8-mut)}
-.ishp8-bc--big{grid-column:span 2;grid-row:span 2;background:var(--p8-cobalt);border-color:var(--p8-cobalt);color:#fff}
-.ishp8-bc--big b{font:800 36px/1.15 var(--p8-f)}
-.ishp8-bc--big span{color:rgba(255,255,255,.9);font-size:15px}
-.ishp8-bc--wide{grid-column:span 2}
+/* Г18 «Почему мы»: bento 7/5/5, широкая графитовая внизу */
+.ishp8-bento{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
+.ishp8-bento>.c-big{grid-column:span 7;grid-row:span 2}
+.ishp8-bento>.c-a,.ishp8-bento>.c-b{grid-column:span 5}
+.ishp8-bento>.c-w{grid-column:span 12}
+.ishp8-bc{position:relative;overflow:hidden;border-radius:28px;padding:26px;background:#fff;box-shadow:var(--p8-sh2)}
+.ishp8-bc b{display:block;font:700 19px/1.2 var(--p8-f)}
+.ishp8-bc span{display:block;margin-top:8px;font:400 14px/1.4 var(--p8-f);color:var(--p8-mut)}
+.ishp8-bx{width:44px;height:44px;border-radius:13px;display:grid!important;place-items:center;margin:0 0 34px!important;background:#fff}
+.ishp8-bento>.c-a .ishp8-bc{background:var(--p8-soft)}
+.ishp8-bento>.c-b .ishp8-bx{background:var(--p8-soft)}
+.ishp8-bc--big{background:linear-gradient(150deg,#4A63E6,var(--p8-cobalt) 55%,#1A2A8C)!important;color:#fff;display:flex;flex-direction:column;justify-content:flex-end;min-height:300px}
+.ishp8-bc--big b{font:800 clamp(28px,3.4vw,42px)/1.08 var(--p8-f);letter-spacing:-.02em;max-width:420px}
+.ishp8-bc--big span{color:#DCE2FF;font-size:16px}
+.ishp8-deco{position:absolute;right:0;top:0;width:min(300px,70%);height:auto;opacity:.9}
+.ishp8-bento>.c-w .ishp8-bc{background:var(--p8-graph);color:#fff;display:flex;gap:32px;align-items:center;justify-content:space-between}
+.ishp8-bento>.c-w .ishp8-bc span{color:#C9CFE6;margin-top:6px;max-width:640px}
+.ishp8-bento>.c-w .ishp8-bc>div{min-width:0}
+.ishp8-go2{flex:none;position:relative;z-index:4;background:var(--p8-cobalt);color:#fff;border-radius:12px;padding:14px 22px;font:700 15px/1 var(--p8-f);text-decoration:none;white-space:nowrap;transition:background .15s}
+.ishp8-go2:hover{background:var(--p8-cb2)}
 
-/* Г20 бренды текстом */
-.ishp8-brands{display:grid;grid-template-columns:repeat(6,1fr);margin:0;padding:0;list-style:none;background:#fff;border:1px solid var(--p8-line);border-radius:12px;overflow:hidden}
-.ishp8-brands li{height:76px;display:flex;align-items:center;justify-content:center;margin:0;padding:0 8px;text-align:center;border-left:1px solid var(--p8-line);border-top:1px solid var(--p8-line);
-  font:800 19px/1 var(--p8-f);letter-spacing:.01em;color:#5B6070}
-.ishp8-brands li:nth-child(-n+6){border-top:0}
-.ishp8-brands li:nth-child(6n+1){border-left:0}
-.ishp8-note{margin:10px 0 0;font:400 13px/1.4 var(--p8-f);color:var(--p8-mut)}
+/* Г20 бренды: кобальтовые плитки с белыми знаками, раз в несколько секунд волна */
+.ishp8-bt{display:grid;grid-template-columns:repeat(8,1fr);grid-auto-rows:124px;gap:12px;margin:0;padding:0;list-style:none}
+.ishp8-bt ul{margin:0;padding:0;list-style:none}
+.ishp8-bi{grid-column:span 2;grid-row:span 2;margin:0;border-radius:24px;background:linear-gradient(150deg,#4A63E6,var(--p8-cobalt) 55%,#1A2A8C);color:#fff;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:14px;padding:24px 26px;box-sizing:border-box}
+.ishp8-bil{display:block}
+.ishp8-lg{display:block;width:min(190px,100%);height:auto}
+.ishp8-bic{display:block;font:500 13px/1.35 var(--p8-f);color:#DCE2FF;max-width:190px}
+.ishp8-bk{height:auto;border-radius:18px;background:var(--p8-cobalt);color:#fff;margin:0;padding:0;display:block;transition:background-color .55s ease,color .55s ease,transform .55s cubic-bezier(.3,1.6,.5,1)}
+.ishp8-bk.lg{grid-column:span 2}
+.ishp8-pair{margin:0;display:block}
+.ishp8-pair:last-child{grid-column:span 2}
+.ishp8-more.sm{border-radius:12px;font-size:13px}
+.ishp8-pair>ul{display:grid;grid-template-rows:1fr 1fr;gap:8px;height:100%}
+.ishp8-bk.sm{border-radius:12px}
+.ishp8-bk.wv{background:var(--p8-soft);color:var(--p8-cobalt);transform:translateY(-4px) scale(1.03)}
+.ishp8-bk:hover{background:var(--p8-soft);color:var(--p8-cobalt)}
+.ishp8-more{margin:0;border-radius:18px;background:var(--p8-soft);color:var(--p8-cobalt);display:flex;align-items:center;justify-content:center;font:700 14px/1.2 var(--p8-f);text-align:center}
+.ishp8-bm{display:flex;align-items:center;justify-content:center;height:100%;color:inherit}
+.ishp8-bm svg{width:76px;height:28px;fill:currentColor;stroke:currentColor;stroke-width:.7px}
+.ishp8-bm svg path{vector-effect:non-scaling-stroke}
+.ishp8-bm .tm{font:800 19px/1 var(--p8-f);letter-spacing:0}
+.ishp8-bm .tm.w{letter-spacing:.12em;font-size:15px;font-weight:700}
+.ishp8-bm .tm.i{font-style:italic;letter-spacing:-.02em;font-size:20px}
+.ishp8-bm .tm.r{letter-spacing:.02em;font-size:21px}
+.ishp8-bm .tm.b{letter-spacing:.02em;font-size:18px}
+.ishp8-bk.lg .ishp8-bm svg{width:112px;height:40px}
+.ishp8-bk.sm .ishp8-bm svg{width:64px;height:22px}
+.ishp8-bk.sm .ishp8-bm .tm{font-size:14px}.ishp8-bk.sm .ishp8-bm .tm.w{font-size:11px}.ishp8-bk.sm .ishp8-bm .tm.i{font-size:14px}.ishp8-bk.sm .ishp8-bm .tm.r{font-size:15px}.ishp8-bk.sm .ishp8-bm .tm.b{font-size:13px}
+/* логотип iSoft: «Почему мы» и «Не нашли нужное?» */
+html.ishp8-on .зб-знак.ishp8-zl{width:auto;min-width:48px;padding:0 16px;box-sizing:border-box;border-radius:12px}
+html.ishp8-on .зб-знак.ishp8-zl svg.ishp8-zlg{width:auto;height:19px;display:block}
+.ishp8-note{margin:14px 0 0;font:400 13px/1.4 var(--p8-f);color:var(--p8-mut)}
 
-/* Г13/Г14/М10: один призыв «Не нашли нужное?» - остаётся родной #запросБлок; повторная строка в «Как оформить заказ» скрыта.
-   (Строки «Не нашли» в блоках 3204331703 / #isoftOrder на главной уже скрыты правилами самих блоков; окно при уходе - штатное, один раз за визит, это не повтор на странице.) */
+/* ───────── ШАГИ «Как оформить заказ» (родной блок 4204120903): подпись слева, три ступени справа ─────────
+   Меняем только вид; текст, вкладки «По запросу / Из каталога» и их переключение родные.
+   Префикс «html.ishp8-on body #allrecords» и !important - потому что слой ish-design.css («Тп3»/«Ц4») задаёт размеры и цвета этих узлов через html body … !important. */
+html.ishp8-on #полоса{margin:44px 0 0}
+html.ishp8-on body #allrecords .в73.в73{display:grid;grid-template-columns:270px repeat(3,1fr);grid-template-rows:auto;gap:18px;align-items:end;margin:0;padding:0;background:none;border:0;border-radius:0;font-family:var(--p8-f)}
+html.ishp8-on body #allrecords .в73 .линия,html.ishp8-on body #allrecords .в73::before,html.ishp8-on body #allrecords .в73::after{display:none!important}
+/* один призыв «Не нашли нужное?» остаётся родным #запросБлок; повторная строка под шагами скрыта (как в v1) */
 html.ishp8-on #полоса .полоса-доп,html.ishp8-on #isoftOrder{display:none!important}
-html.ishp8-on .запрос-блок{margin-top:56px;font-family:var(--p8-f)}
-html.ishp8-on .зб-текст h3{font-size:22px}
-html.ishp8-on .зб-текст p{font-size:15px;color:var(--p8-mut)}
+html.ishp8-on body #allrecords .в73.в73 .подпись-слева{display:flex;grid-column:1;grid-row:1;flex-direction:column;align-items:flex-start;justify-content:flex-end;text-align:left;padding:0}
+html.ishp8-on body #allrecords .в73 .подпись-слева::before{content:"00 / ТРИ ШАГА";font:700 12px/1.2 var(--p8-f);letter-spacing:.12em;font-variant-numeric:tabular-nums;color:transparent;
+  background:linear-gradient(90deg,var(--p8-cobalt) calc(2ch + .26em),var(--p8-mut) 0);-webkit-background-clip:text;background-clip:text}
+html.ishp8-on body #allrecords .в73.в73 .подпись-слева b{align-self:flex-start;text-align:left;margin:6px 0 18px;font-family:var(--p8-f);font-weight:800;font-size:clamp(28px,3vw,38px)!important;line-height:1.1;letter-spacing:-.02em;color:var(--p8-ink)!important}
+html.ishp8-on body #allrecords .в73 .подпись-слева>span{display:none!important}
+html.ishp8-on body #allrecords .в73 .вкладки{display:inline-flex;gap:2px;margin:0!important;padding:4px;background:#fff;border:1px solid var(--p8-line);border-radius:14px;align-self:flex-start}
+html.ishp8-on body #allrecords .в73 .вкладка{padding:9px 14px;border-radius:10px;font-family:var(--p8-f);font-weight:600;font-size:14px!important;line-height:1.2;color:#3A3F52!important;background:none}
+html.ishp8-on body #allrecords .в73 .вкладка.вх-вкл{background:var(--p8-soft);color:var(--p8-cobalt)!important}
+html.ishp8-on body #allrecords .в73.в73 .шаг{display:flex;flex-direction:column;grid-row:1;position:relative;margin:0;padding:22px 24px;border-radius:24px;border:1px solid transparent}
+html.ishp8-on body #allrecords .в73 .шаг.ш1{grid-column:2;min-height:170px;background:var(--p8-cobalt);color:#fff}
+html.ishp8-on body #allrecords .в73 .шаг.ш2{grid-column:3;min-height:210px;background:#fff;border-color:var(--p8-line)}
+html.ishp8-on body #allrecords .в73 .шаг.ш3{grid-column:4;min-height:250px;background:var(--p8-soft)}
+html.ishp8-on body #allrecords .в73.в73 .шаг .у{order:-1;display:block;grid-row:auto;width:auto;height:auto;margin:0;padding:0;border-radius:0;background:none!important;box-shadow:none!important;justify-self:start;text-align:left;place-items:start}
+html.ishp8-on body #allrecords .в73 .шаг .у svg{display:none}
+html.ishp8-on body #allrecords .в73 .шаг .у::after{display:block;text-align:left;font:900 64px/1 var(--p8-f);letter-spacing:-.04em;color:var(--p8-cobalt)}
+html.ishp8-on body #allrecords .в73 .шаг.ш1 .у::after{color:#fff}
+html.ishp8-on body #allrecords .в73 .у.ш1::after{content:"01"}
+html.ishp8-on body #allrecords .в73 .у.ш2::after{content:"02"}
+html.ishp8-on body #allrecords .в73 .у.ш3::after{content:"03"}
+html.ishp8-on body #allrecords .в73.в73 .шаг .вх-верх{grid-row:auto;align-self:flex-start!important;margin:10px 0 0;padding:0;text-align:left;font-family:var(--p8-f);font-weight:700;font-size:20px;line-height:1.25;color:inherit}
+html.ishp8-on body #allrecords .в73.в73 .шаг .низ{grid-row:auto;align-self:flex-start!important;margin:6px 0 0;padding:0;text-align:left;font-family:var(--p8-f);font-weight:400;font-size:14px!important;line-height:1.4;color:var(--p8-mut)!important}
+html.ishp8-on body #allrecords .в73 .шаг.ш1 .низ{color:#E0E5FF!important}
+html.ishp8-on body #allrecords .в73 .шаг.ш3 .низ{color:#3F4558!important}
 
-/* Г9/Г10: существующие три шага «Как оформить заказ» - крупные цифры 01 02 03 вместо кружков со значками; текст, вкладки и переключение родные */
-html.ishp8-on .в73 .линия,html.ishp8-on .в73.ф-линии:after{display:none}
-html.ishp8-on .в73 .у,html.ishp8-on .в73.у-квадрат .у{width:auto;height:auto;margin:0;padding:0 14px;border-radius:0;background:none!important;box-shadow:none!important;
-  color:var(--p8-cobalt);justify-self:start;align-self:end;grid-row:1}
-html.ishp8-on .в73 .у svg{display:none}
-html.ishp8-on .в73 .у::after{display:block;font:800 52px/1 var(--p8-f);letter-spacing:-.02em;color:var(--p8-cobalt)}
-html.ishp8-on .в73 .у.ш1::after{content:"01"}
-html.ishp8-on .в73 .у.ш2::after{content:"02"}
-html.ishp8-on .в73 .у.ш3::after{content:"03"}
-html.ishp8-on .в73.р-имя .вх-верх{grid-row:2;align-self:start;margin:10px 0 0;padding:0 14px;text-align:left;font:700 18px/1.25 var(--p8-f)}
-html.ishp8-on .в73.р-имя .низ{grid-row:3;align-self:start;margin:4px 0 0;padding:0 14px;text-align:left;font:400 14px/1.45 var(--p8-f);color:var(--p8-mut)}
+/* ───────── ПОЛКИ «Ноутбуки», «Мониторы» (#ряды): подпись «NN / РАЗДЕЛ», скругления, тени. Товары, цены, кнопки - родные ───────── */
+html.ishp8-on body #allrecords #ряды .раздел-загол{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin:44px 0 18px;font-family:var(--p8-f)}
+html.ishp8-on body #allrecords #ряды .раздел-загол h3{position:static;padding:0;margin:0;font-family:var(--p8-f);font-weight:800;font-size:clamp(26px,3.4vw,38px)!important;line-height:1.1;letter-spacing:-.02em;color:var(--p8-ink)}
+html.ishp8-on body #allrecords #ряды .раздел-загол h3::before{counter-increment:ishp9eb;content:counter(ishp9eb,decimal-leading-zero) "\00a0/\00a0ТОВАРЫ";display:block;position:static;width:auto;height:auto;margin:0 0 6px;border-radius:0;background:linear-gradient(90deg,var(--p8-cobalt) calc(2ch + .26em),var(--p8-mut) 0);
+  -webkit-background-clip:text;background-clip:text;color:transparent;font:700 12px/1.2 var(--p8-f);letter-spacing:.12em;font-variant-numeric:tabular-nums}
+html.ishp8-on body #allrecords #ряды .раздел-загол a{flex:none;min-height:0;padding:11px 16px;border:0!important;border-radius:12px;background:var(--p8-soft)!important;color:var(--p8-cobalt)!important;font:700 14px/1.2 var(--p8-f)!important}
+html.ishp8-on body #allrecords #ряды .раздел-загол a:hover{background:var(--p8-cobalt)!important;color:#fff!important}
+html.ishp8-on body #allrecords #ряды .ряд{gap:16px}
+html.ishp8-on body #allrecords #ряды .ткарта.ткарта{border:1px solid #fff;border-radius:22px;background:#fff;box-shadow:var(--p8-sh)!important}
+html.ishp8-on body #allrecords #ряды .ткарта.ткарта:hover{border-color:#fff;box-shadow:0 22px 40px -22px rgba(43,68,199,.45)!important;transform:translateY(-4px)}
+html.ishp8-on body #allrecords #ряды .тфото{border-radius:16px;background:linear-gradient(160deg,#F3F5FF,#E7EAFB);overflow:hidden}
+html.ishp8-on body #allrecords #ряды .тфото img{mix-blend-mode:multiply}
 
-@media (max-width:1180px){
-  .ishp8-tiles{grid-template-columns:repeat(4,1fr)}
+/* «Не нашли нужное?» - в тон (крупное скругление), состав не меняется */
+html.ishp8-on .запрос-блок{margin-top:44px;border-radius:26px;font-family:var(--p8-f)}
+
+@media (max-width:1100px){
+  .ishp8-tiles{grid-template-columns:repeat(3,1fr)}
+  .ishp8-tiles .t-wide{grid-column:span 3}
+  .ishp8-bt{grid-template-columns:repeat(6,1fr);grid-auto-rows:110px}
+  .ishp8-bk.lg{grid-column:span 2}
+  .ishp8-pair:last-child{grid-column:span 4}
+  html.ishp8-on body #allrecords .в73.в73{grid-template-columns:repeat(3,1fr);row-gap:20px}
+  html.ishp8-on body #allrecords .в73.в73 .подпись-слева{grid-column:1/-1;grid-row:1;align-items:flex-start}
+  html.ishp8-on body #allrecords .в73 .шаг.ш1{grid-column:1;grid-row:2}
+  html.ishp8-on body #allrecords .в73 .шаг.ш2{grid-column:2;grid-row:2}
+  html.ishp8-on body #allrecords .в73 .шаг.ш3{grid-column:3;grid-row:2}
 }
-@media (max-width:980px){
-  .ishp8-sec{margin-top:40px}
-  .ishp8-sec--strip{margin-top:16px}
-  .ishp8-h{font-size:22px;margin-bottom:14px}
-  .ishp8-strip{grid-template-columns:1fr 1fr}
-  .ishp8-strip__i{padding:12px;gap:8px}
+@media (max-width:900px){
+  .ishp8-strip{grid-template-columns:repeat(2,1fr)}
   .ishp8-strip__i:nth-child(3){border-left:0}
   .ishp8-strip__i:nth-child(n+3){border-top:1px solid var(--p8-line)}
-  .ishp8-strip__i b{font-size:13px}
-  .ishp8-strip__i span{font-size:12px}
-  .ishp8-tiles{grid-template-columns:1fr 1fr;gap:12px}
-  .ishp8-tile__tt{padding:10px 12px 12px}
-  .ishp8-tile__tt b{font-size:13.5px;min-height:34px}
-  .ishp8-tile__tt span{font-size:12px}
-  .ishp8-tile__im{height:84px}
   .ishp8-who{grid-template-columns:1fr}
-  .ishp8-wc{padding:20px}
-  .ishp8-nums{grid-template-columns:1fr 1fr;gap:12px}
-  .ishp8-num{padding:14px}
-  .ishp8-num--a{grid-column:1/-1;order:-1}
-  .ishp8-num b{font-size:34px}
-  .ishp8-num span{font-size:12.5px}
-  .ishp8-bento{grid-template-columns:1fr 1fr;grid-auto-rows:auto;gap:12px}
-  .ishp8-bc{padding:16px;min-height:120px}
-  .ishp8-bc b{font-size:15px}
-  .ishp8-bc span{font-size:12.5px}
-  .ishp8-bc--big{grid-row:auto;min-height:150px}
-  .ishp8-bc--big b{font-size:24px}
-  .ishp8-brands{grid-template-columns:repeat(3,1fr)}
-  .ishp8-brands li{height:60px;font-size:15px}
-  .ishp8-brands li:nth-child(-n+6){border-top:1px solid var(--p8-line)}
-  .ishp8-brands li:nth-child(-n+3){border-top:0}
-  .ishp8-brands li:nth-child(6n+1){border-left:1px solid var(--p8-line)}
-  .ishp8-brands li:nth-child(3n+1){border-left:0}
-  html.ishp8-on .запрос-блок{margin-top:40px}
-  /* шаги на телефоне: цифра, имя и пояснение слева в столбик */
-  html.ishp8-on .в73 .у,html.ishp8-on .в73.р-имя .вх-верх,html.ishp8-on .в73.р-имя .низ{justify-self:start;align-self:start;text-align:left!important}
-  html.ishp8-on .в73 .у::after{font-size:40px}
+  .ishp8-nums>.k1,.ishp8-nums>.k2,.ishp8-nums>.k3{grid-column:span 12}
+  .ishp8-bento>.c-big,.ishp8-bento>.c-a,.ishp8-bento>.c-b,.ishp8-bento>.c-w{grid-column:span 12}
+  .ishp8-bento>.c-w .ishp8-bc{flex-direction:column;align-items:flex-start}
+  .ishp8-bc--big{min-height:240px}
+  .ishp8-deco{width:min(170px,48%)}
 }
+@media (max-width:640px){
+  html.ishp8-on .зб-кнопки{flex-direction:column;flex-wrap:nowrap;gap:10px;width:100%}
+  html.ishp8-on .зб-кнопки .кн-к{width:100%;box-sizing:border-box;height:48px;padding:0 8px;border-radius:var(--r);justify-content:center;text-align:center;white-space:nowrap;font-size:13.5px;line-height:1.2}
+  html.ishp8-on .зб-кнопки .кн-к.конт{background:#fff;color:var(--cobalt);border:1px solid var(--cobalt)}
+  .ishp8-deco{width:min(190px,52%)}
+  .ishp8-sec{margin-top:36px}
+  .ishp8-sec--strip{margin-top:20px}
+  .ishp8-strip{border-radius:20px;grid-template-columns:1fr}
+  .ishp8-strip__i,.ishp8-strip__i:nth-child(3){border-left:0}
+  .ishp8-strip__i+.ishp8-strip__i{border-top:1px solid var(--p8-line)}
+  .ishp8-tiles{grid-template-columns:repeat(2,1fr);grid-auto-rows:auto;gap:10px}
+  .ishp8-tiles .t-big,.ishp8-tiles .t-wide{grid-column:span 2;grid-row:auto}
+  .ishp8-tiles .t-big .ishp8-stage{min-height:200px}
+  .ishp8-tiles .t-big img{max-height:200px}
+  .ishp8-tiles .t-big .ishp8-tt b{font-size:22px}
+  .ishp8-tiles .t-wide .ishp8-tile{grid-template-columns:1fr;padding:14px 16px 18px}
+  .ishp8-tiles .t-wide .ishp8-stage{order:0;height:130px}
+  .ishp8-tile{border-radius:20px}
+  .ishp8-stage{height:120px}
+  .ishp8-stage img{max-height:100px}
+  .ishp8-tt b{font-size:15px}
+  .ishp8-num{padding:22px;border-radius:22px}
+  .ishp8-bc{padding:22px;border-radius:22px}
+  .ishp8-wc{border-radius:22px;padding:22px}
+  .ishp8-bt{grid-template-columns:repeat(6,1fr);grid-auto-rows:auto;gap:8px}
+  .ishp8-bt>.ishp8-bk,.ishp8-bt>.ishp8-pair,.ishp8-bt>.ishp8-more{height:84px}
+  .ishp8-bi{grid-column:1/-1;grid-row:auto;height:auto;min-height:116px;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:16px;gap:8px;border-radius:20px}
+  .ishp8-lg{width:150px}
+  .ishp8-bic{max-width:none;font-size:12.5px}
+  .ishp8-bk{border-radius:14px}
+  .ishp8-bk.lg{grid-column:span 3}
+  .ishp8-bk.md{grid-column:span 2}
+  .ishp8-bk.md .ishp8-bm svg{width:56px;height:21px}
+  .ishp8-bk.lg .ishp8-bm svg{width:88px;height:32px}
+  .ishp8-bk.md .ishp8-bm .tm{font-size:15px}
+  .ishp8-pair{grid-column:span 2}
+  .ishp8-pair>ul{gap:6px}
+  .ishp8-bk.sm{border-radius:10px}
+  .ishp8-bk.sm .ishp8-bm svg{width:50px;height:18px}
+  .ishp8-bk.sm .ishp8-bm .tm{font-size:12px}.ishp8-bk.sm .ishp8-bm .tm.w{font-size:9.5px}.ishp8-bk.sm .ishp8-bm .tm.i{font-size:12px}.ishp8-bk.sm .ishp8-bm .tm.r{font-size:13px}.ishp8-bk.sm .ishp8-bm .tm.b{font-size:11px}
+  .ishp8-pair:last-child{grid-column:1/-1}
+  .ishp8-more.sm{border-radius:10px;font-size:12px}
+  html.ishp8-on body #allrecords .в73.в73{grid-template-columns:1fr;row-gap:12px;align-items:stretch}
+  html.ishp8-on body #allrecords .в73 .шаг.ш1,html.ishp8-on body #allrecords .в73 .шаг.ш2,html.ishp8-on body #allrecords .в73 .шаг.ш3{grid-column:1;min-height:0}
+  html.ishp8-on body #allrecords .в73 .шаг.ш1{grid-row:2}html.ishp8-on body #allrecords .в73 .шаг.ш2{grid-row:3}html.ishp8-on body #allrecords .в73 .шаг.ш3{grid-row:4}
+  html.ishp8-on body #allrecords .в73 .шаг .у::after{font-size:48px}
+  html.ishp8-on body #allrecords .в73.в73 .шаг{border-radius:20px}
+  html.ishp8-on body #allrecords #ряды .раздел-загол{margin-top:36px;align-items:flex-end}
+  html.ishp8-on body #allrecords #ряды .раздел-загол h3{font-size:26px!important}
+  html.ishp8-on body #allrecords #ряды .раздел-загол a{padding:8px 12px;font-size:13px!important}
+  html.ishp8-on body #allrecords #ряды .ряд{gap:10px}
+  html.ishp8-on .запрос-блок{margin-top:36px}
+}
+@media (prefers-reduced-motion:reduce){
+  .ishp8-ti,.ishp8-gl,.ishp8-pod,.ishp8-stage img,.ishp8-bk,.ishp8-go,.ishp8-go2{transition:none!important}
+  html.ishp8-js .ishp8-rv{opacity:1;transform:none;transition:none}
+  .ishp8-bk.wv{transform:none}
+}
+
+/* ───────── вариант D: единая полка (#ishp8-g) с вкладками «Ноутбуки / Мониторы»; сам узел #ряды перенесён внутрь ───────── */
+.ishp8-sec--shelf{overflow-x:visible}
+html.ishp8-on body #allrecords #ishp8-g #ряды .раздел-загол{display:none}
+html.ishp8-on body #allrecords #ishp8-g #ряды .ishp8-off{display:none!important}
+html.ishp8-on #ishp8-g .ishp8-h{margin-bottom:16px}
+.ishp8-shbar{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:0 0 18px}
+.ishp8-tabs{display:inline-flex;gap:2px;padding:4px;background:#fff;border:1px solid var(--p8-line);border-radius:14px}
+.ishp8-tabs button{padding:9px 16px;border:0;border-radius:10px;background:none;font:600 14px/1.2 var(--p8-f);color:#3A3F52;cursor:pointer;transition:background .15s,color .15s}
+.ishp8-tabs button.on{background:var(--p8-soft);color:var(--p8-cobalt)}
+.ishp8-tabs button:focus-visible,.ishp8-all:focus-visible{outline:2px solid var(--p8-cobalt);outline-offset:2px}
+.ishp8-all{flex:none;padding:11px 16px;border-radius:12px;background:var(--p8-soft);color:var(--p8-cobalt);font:700 14px/1.2 var(--p8-f);text-decoration:none;transition:background .15s,color .15s}
+.ishp8-all:hover{background:var(--p8-cobalt);color:#fff}
+@media (max-width:640px){
+  .ishp8-tabs button{padding:9px 12px}
+  .ishp8-all{padding:9px 12px;font-size:13px}
+  /* лента: карточка ~72% ширины, видна часть следующей, листаем пальцем; страница вбок не едет */
+  html.ishp8-on body #allrecords #ishp8-g #ряды .ряд{display:flex!important;grid-template-columns:none!important;gap:12px!important;overflow-x:auto;overscroll-behavior-x:contain;
+    scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;margin:0 -16px;padding:6px 16px 14px;scroll-padding:0 16px;scrollbar-width:none}
+  html.ishp8-on body #allrecords #ishp8-g #ряды .ряд::-webkit-scrollbar{display:none}
+  html.ishp8-on body #allrecords #ishp8-g #ряды .ткарта.ткарта{display:flex!important;flex-direction:column;flex:0 0 72%;max-width:290px;min-width:0;scroll-snap-align:start;align-self:stretch!important;padding:14px!important}
+  html.ishp8-on body #allrecords #ishp8-g #ряды .тфото{grid-column:auto;width:auto;height:150px!important;margin:0 0 12px!important;display:grid!important;place-items:center;align-self:auto}
+  html.ishp8-on body #allrecords #ishp8-g #ряды .тфото img{width:auto!important;height:auto!important;max-width:100%!important;max-height:150px!important}
+  html.ishp8-on body #allrecords #ishp8-g #ряды .тбренд{grid-column:auto;margin:0 0 5px!important;font-size:11px!important}
+  html.ishp8-on body #allrecords #ishp8-g #ряды .тимя{grid-column:auto;font-size:14px!important;line-height:1.3!important;min-height:36px!important;margin:0 0 10px!important}
+  html.ishp8-on body #allrecords #ishp8-g #ряды .тхар{grid-column:auto;display:flex!important;flex-wrap:wrap;gap:5px;white-space:normal;overflow:visible;margin:0 0 14px!important}
+  html.ishp8-on body #allrecords #ishp8-g #ряды .тхар li{display:block!important;background:#EEF0F7!important;padding:3px 8px!important;border-radius:5px!important;font-size:11.5px!important;line-height:1.5!important}
+  html.ishp8-on body #allrecords #ishp8-g #ряды .тхар li+li::before{content:none}
+  html.ishp8-on body #allrecords #ishp8-g #ряды .тцена{grid-column:auto;grid-row:auto;margin:auto 0 12px!important;justify-self:auto;text-align:center!important;font-size:22px!important;font-weight:500!important}
+  html.ishp8-on body #allrecords #ishp8-g #ряды .ткупить{grid-column:auto;grid-row:auto;width:100%!important;height:40px!important;margin:0!important;padding:0 12px!important;gap:8px!important;justify-self:auto;align-self:auto}
+  html.ishp8-on body #allrecords #ishp8-g #ряды .ткупить span{position:static!important;width:auto;height:auto;overflow:visible;clip:auto;white-space:nowrap}
+  html.ishp8-on body #allrecords #ishp8-g #ряды .ткупить svg{width:16px!important;height:16px!important}
+}
+@media (prefers-reduced-motion:reduce){.ishp8-tabs button,.ishp8-all{transition:none}.ishp8-g #ряды .ряд{scroll-behavior:auto}}
+html.ishp8-on .зб-знак.ishp8-zl{justify-self:start}

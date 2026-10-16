@@ -1,0 +1,64 @@
+/* ish-design-p31.css  v1.0  (подготовка 17.10.2026; НЕ выложено)  П31 «внутренние страницы в духе главной C2»
+   Подключает ish-design-p31.js (рядом с собой). Откат: пустой файл на Pages или window.ISH_P31_OFF / ISH_P4_NO_P31.
+   Что: только текстовые страницы (.вн) (шаги-ступени, цифры, кобальтовая плита, крупные заголовки).
+   НЕ трогаем: фильтры и «Список/Плитка» (p6), «В корзину» в списке (.ish13-buy), столбик характеристик (.ish13-крат), окно-попап Tilda.
+   Всё под html.ishp31-on (ставит js). Шрифт TildaSans, фон #F5F3EE, кобальт #2B44C7. Текст не меньше 12px, без горизонтальной прокрутки на 390. */
+:root{--p31-cobalt:#2B44C7;--p31-cobalt-h:#2036A8;--p31-cb2:#5B73F0;--p31-soft:#E7EAFB;--p31-ink:#171923;--p31-mut:#5A5F70;--p31-line:#E1DDD2;--p31-mist:#F1EEE7;--p31-graph:#1E2430;--p31-f:TildaSans,Arial,sans-serif;
+  --p31-sh:0 1px 0 #fff inset,0 14px 30px -18px rgba(23,25,35,.4),0 2px 6px rgba(23,25,35,.05);--p31-sh2:0 22px 44px -22px rgba(23,25,35,.45),0 2px 6px rgba(23,25,35,.06)}
+
+/* ═══ общее: появление при прокрутке (только если сработал IntersectionObserver; при reduced-motion js класса не ставит) ═══ */
+html.ishp31-js .ishp31-rv{opacity:0;translate:0 22px;transition:opacity .7s cubic-bezier(.2,.7,.2,1),translate .7s cubic-bezier(.2,.7,.2,1),transform .25s,box-shadow .25s}
+html.ishp31-js .ishp31-rv.in{opacity:1;translate:none}
+
+/* подпись «NN / РАЗДЕЛ»: NN кобальтовым, остальное серым (приём главной) */
+html.ishp31-on .вн-над{
+  font:700 12px/1.2 var(--p31-f);letter-spacing:.12em;text-transform:uppercase;font-variant-numeric:tabular-nums;
+  color:transparent;background:linear-gradient(90deg,var(--p31-cobalt) calc(2ch + .34em),var(--p31-mut) 0);-webkit-background-clip:text;background-clip:text}
+html.ishp31-on .вн-над{display:inline-block;margin:0 0 10px}
+html.ishp31-on .вн-над::before{content:"01\00a0/\00a0"}
+
+/* заголовки страниц - как на главной */
+html.ishp31-on .вн-верх h1{font:800 clamp(30px,3.6vw,42px)/1.1 var(--p31-f)!important;letter-spacing:-.02em;color:var(--p31-ink)}
+html.ishp31-on .вн-верх{background:none;border-bottom:0;padding:34px 0 8px}
+html.ishp31-on .вн-лид{font-size:17px;line-height:1.55;max-width:66ch}
+
+/* ═══ ТЕКСТОВЫЕ СТРАНИЦЫ (.вн) ═══ */
+html.ishp31-text .вн-карта{border-radius:22px;border:1px solid var(--p31-line);box-shadow:var(--p31-sh);padding:28px}
+html.ishp31-text .вн-карта+.вн-карта{margin-top:18px}
+html.ishp31-text .вн h2{font:800 clamp(22px,2.4vw,28px)/1.2 var(--p31-f);letter-spacing:-.015em}
+html.ishp31-text .вн-карта__шапка .вн-тихо{font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:12px;color:var(--p31-cobalt)}
+html.ishp31-text .вн-табл,html.ishp31-text .вн-пары{border-radius:18px;overflow:hidden}
+/* шаги-ступени */
+html.ishp31-text .вн-шаги{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(0,1fr);gap:14px;align-items:end}
+html.ishp31-text .вн-шаг{display:flex;flex-direction:column;gap:6px;padding:22px 22px 24px;border-radius:24px;border:1px solid transparent;background:#fff;box-shadow:var(--p31-sh);min-height:170px}
+html.ishp31-text .вн-шаг:nth-child(2){min-height:205px;border-color:var(--p31-line)}
+html.ishp31-text .вн-шаг:nth-child(3){min-height:240px;background:var(--p31-soft)}
+html.ishp31-text .вн-шаг:nth-child(4){min-height:275px;background:var(--p31-graph);color:#fff}
+html.ishp31-text .вн-шаг:nth-child(1){background:var(--p31-cobalt);color:#fff}
+html.ishp31-text .вн-шаг__н{width:auto;height:auto;border-radius:0;background:none;justify-content:flex-start;font:900 56px/1 var(--p31-f);letter-spacing:-.04em;color:var(--p31-cobalt);margin-bottom:8px}
+html.ishp31-text .вн-шаг:nth-child(1) .вн-шаг__н,html.ishp31-text .вн-шаг:nth-child(4) .вн-шаг__н{color:#fff}
+html.ishp31-text .вн-шаг h3{font:700 20px/1.25 var(--p31-f);margin:0;color:inherit}
+html.ishp31-text .вн-шаг p{color:inherit;opacity:.82;font-size:14.5px}
+html.ishp31-text .вн-шаг:nth-child(2) p,html.ishp31-text .вн-шаг:nth-child(3) p{color:var(--p31-mut);opacity:1}
+/* призыв - кобальтовая плита */
+html.ishp31-text .вн-карта.ishp31-cta{background:var(--p31-cobalt);border-color:var(--p31-cobalt);color:#fff;box-shadow:var(--p31-sh2);position:relative;overflow:hidden;isolation:isolate}
+html.ishp31-text .вн-карта.ishp31-cta::after{content:"";position:absolute;right:-30px;bottom:-26px;width:70%;aspect-ratio:2924/873;background:var(--ishp31-logo-w,none) no-repeat right bottom/contain;opacity:.14;z-index:-1;pointer-events:none}
+html.ishp31-text .вн-карта.ishp31-cta h2,html.ishp31-text .вн-карта.ishp31-cta h3,html.ishp31-text .вн-карта.ishp31-cta p{color:#fff}
+html.ishp31-text .вн-карта.ishp31-cta p{opacity:.86}
+html.ishp31-text .вн-карта.ishp31-cta a.вн-кноп_гл{background:#fff;color:var(--p31-cobalt)}
+html.ishp31-text .вн-карта.ishp31-cta a.вн-кноп_гл:hover{background:var(--p31-soft);color:var(--p31-cobalt-h)}
+html.ishp31-text .вн-карта.ishp31-cta a.вн-кноп_вт{background:transparent;color:#fff;border-color:rgba(255,255,255,.5)}
+html.ishp31-text .вн-карта.ishp31-cta a.вн-кноп_вт:hover{background:rgba(255,255,255,.14);border-color:#fff;color:#fff}
+html.ishp31-text .вн-кноп{border-radius:14px}
+
+/* ═══ телефон / планшет ═══ */
+@media screen and (max-width:900px){
+  html.ishp31-text .вн-шаги{grid-auto-flow:row;grid-auto-columns:auto;align-items:stretch}
+  html.ishp31-text .вн-шаг,html.ishp31-text .вн-шаг:nth-child(n){min-height:0}
+  html.ishp31-text .вн-карта{padding:20px;border-radius:20px}
+}
+@media screen and (max-width:520px){
+}
+@media (prefers-reduced-motion:reduce){
+  html.ishp31-on *{transition:none!important}
+}

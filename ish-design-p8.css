@@ -95,7 +95,7 @@ html.ishp8-js .ishp8-rv.in{opacity:1;transform:none}
 /* плашка «Подбор техники» (П23) в стиле C2 */
 html .ishp23-cta{margin-top:44px}
 html .ishp23-cta .ishp23-cta__in{background:linear-gradient(135deg,#2B2F6B,#15173A);position:relative;overflow:hidden;border:0;border-radius:28px;box-shadow:var(--p8-sh2);padding:30px 34px}
-html .ishp23-cta .ishp23-cta__in::before{content:'';position:absolute;right:-40px;top:50%;width:620px;height:300px;transform:translateY(-50%);background:radial-gradient(closest-side,rgba(132,116,255,.9) 0%,rgba(108,92,231,.55) 50%,rgba(108,92,231,.12) 75%,transparent);pointer-events:none}
+html .ishp23-cta .ishp23-cta__in::before{content:'';position:absolute;right:-118px;top:50%;width:620px;height:300px;transform:translateY(-50%);background:radial-gradient(closest-side,rgba(132,116,255,.9) 0%,rgba(108,92,231,.55) 50%,rgba(108,92,231,.12) 75%,transparent);pointer-events:none}
 html .ishp23-cta .ishp23-cta__t,html .ishp23-cta .ishp23-cta__b{position:relative;z-index:1}
 html .ishp23-cta .ishp23-cta__h{color:#fff}
 html .ishp23-cta .ishp23-cta__p{color:#D3D7F3}

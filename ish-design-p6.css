@@ -88,6 +88,13 @@ html body #allrecords .ishpe-ещё{-webkit-appearance:none;appearance:none;disp
   border:0!important;border-radius:0!important;background:none!important;box-shadow:none!important;color:var(--p6-k)!important;
   font:600 14px/1.2 var(--p6-f)!important;text-align:left;text-decoration:none;cursor:pointer;-webkit-tap-highlight-color:transparent}
 html body #allrecords .ishpe-ещё:hover{color:var(--p6-kh)!important;background:none!important}
+/* Шторка телефона: «Показать ещё» живёт в .t-store__filter__item-controls-wrap рядом с контейнером значений, а wrap у Tilda — flex в ряд:
+   кнопка вставала правее первого значения. Переносим: контейнер на всю строку, кнопка отдельной строкой под ним слева (на 1440 — колонка .вн-бок, не трогаем) */
+@media screen and (max-width:960px){
+  html body #allrecords .t-store__filter .t-store__filter__item-controls-wrap:has(> .ishpe-ещё){display:flex!important;flex-wrap:wrap!important;align-items:flex-start}
+  html body #allrecords .t-store__filter .t-store__filter__item-controls-wrap:has(> .ishpe-ещё) > .t-store__filter__item-controls-container{flex:0 0 100%!important;width:100%!important;max-width:100%!important;order:1}
+  html body #allrecords .t-store__filter .t-store__filter__item-controls-wrap > .ishpe-ещё{order:2;flex:0 0 100%!important;width:100%!important;max-width:100%;margin:0!important;padding-left:0!important;justify-content:flex-start}
+}
 html body #allrecords .ishpe-ещё:focus-visible{outline:2px solid var(--p6-ink);outline-offset:-2px}
 
 /* Ф8 · запасные чипы (только если штатные ishpe-чипы пусты, см. js) */
@@ -127,6 +134,8 @@ html body #allrecords .ishpe-ещё:focus-visible{outline:2px solid var(--p6-ink
    (356,28); пока шторка открыта, она не должна принимать касания, иначе тап «сквозь» закрывающийся слой звонит/уводит со страницы */
 @media screen and (max-width:960px){
   body.вн-моб-ф .ishp-call,body.вн-моб-ф #ishВерх a,html.ishd-hold .ishp-call,html.ishd-hold #ishВерх a{pointer-events:none!important}
+  /* трубка полностью скрыта, пока шторка открыта и ~0,7 с после закрытия: «клик сквозь» на tel: невозможен */
+  body.вн-моб-ф .ishp-call,html.ishd-hold .ishp-call{visibility:hidden!important}
 }
 
 /* ══════════ К1 · переключатель «Список / Плитка» ══════════ */
@@ -191,6 +200,11 @@ html.ishd-tile body #allrecords .t-store__card-list:has(> .t-store__card[data-is
 html.ishd-tile body #allrecords .t-store__card-list:has(> .t-store__card[data-ish13])::before,
 html.ishd-tile body #allrecords .t-store__card-list:has(> .t-store__card[data-ish13])::after{content:none!important;display:none!important}
 
+/* Tilda даёт .t-store__card-list gap 60px 10px: ряды плитки далеко друг от друга. Строки 16 px (телефон) / 20 px (>=768), колонки 10-16 */
+html.ishd-tile body #allrecords .t-store__card-list:has(> .t-store__card[data-ish13]){row-gap:16px!important;column-gap:12px!important}
+@media screen and (min-width:768px){
+  html.ishd-tile body #allrecords .t-store__card-list:has(> .t-store__card[data-ish13]){row-gap:20px!important;column-gap:16px!important}
+}
 @media screen and (min-width:641px) and (max-width:1100px){
   html.ishd-tile body #allrecords .t-store__card-list:has(> .t-store__card[data-ish13]){grid-template-columns:repeat(2,minmax(0,1fr))}
 }

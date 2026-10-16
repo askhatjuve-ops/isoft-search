@@ -218,14 +218,14 @@
       document.addEventListener('change', function (e) {
         if (e.target && e.target.classList && e.target.classList.contains('js-store-filter-opt-chb')) запуск();
       }, true);
-      /* тап по крестику/«Показать товары» шторки: на 0,5 с шапка (трубка tel: под крестиком) не принимает касаний — защита от «клика сквозь» закрывающийся слой */
+      /* тап по крестику/«Показать товары» шторки: на 0,7 с трубка tel: под крестиком скрыта (visibility:hidden, см. css) — защита от «клика сквозь» закрывающийся слой */
       var держим = 0;
       function держать(e) {
         var ц = e.target && e.target.closest ? e.target : null;
         if (!ц || !ц.closest('.вн-моб-закр, .вн-моб-пок')) return;
         document.documentElement.classList.add('ishd-hold');
         clearTimeout(держим);
-        держим = setTimeout(function () { document.documentElement.classList.remove('ishd-hold'); }, 500);
+        держим = setTimeout(function () { document.documentElement.classList.remove('ishd-hold'); }, 700);
       }
       document.addEventListener('pointerdown', держать, true);
       document.addEventListener('touchstart', держать, true);

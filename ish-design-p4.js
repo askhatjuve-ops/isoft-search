@@ -1,4 +1,4 @@
-/* ish-design-p4.js  v5.1  (16.10.2026)  П4 «шапка и меню» + Г1 «кнопки в hero» b2b.isoft-shop.kz
+/* ish-design-p4.js  v6  (16.10.2026)  П4 «шапка и меню» + Г1 «кнопки в hero» b2b.isoft-shop.kz
    Подключается из блока шапки 3263300503 строкой <script src=... defer data-m="header,hero">. Не загрузился - сайт как был.
    Модули (атрибут data-m, по умолчанию оба): header - Ш14 полоса, Ш5 кнопка, Ш13 трубка; hero - Г1 две кнопки (с v2 включается и при data-m="header").
    v2: + подгрузка ish-design-p6.js на страницах каталога. Выключатели: window.ISH_P4_NO_HERO, window.ISH_P4_NO_P6.
@@ -6,6 +6,7 @@
    v4: + подгрузка ish-design-p9.js (списки, карточка, ряды главной; выключатель window.ISH_P9_OFF) и ish-design-p10.js (/tproduct/, /spec, /podbor; выключатель window.ISH_P10_OFF); текст полосы с «Доставка бесплатно».
    v5: + подгрузка ish-design-p19.js (формы Tilda, /spec, сетка товаров; выключатель window.ISH_P19_OFF) и ish-design-p20.js (короткие подписи меню, «Смежные разделы»; выключатель window.ISH_P20_OFF).
    v5.1: + подключается и из общего HEAD проекта (страницы карточек /tproduct/ не содержат блок шапки 3263300503). Охранник window.__ishP4 стоит первой строкой кода: второй запуск (HEAD + блок шапки) сразу выходит, ничего не вставляет. + если на странице нет <link> на ish-design-p4.css (карточка), модуль добавляет его сам с того же адреса. + над скрытой шапкой (карточка v8: #t-header скрыт) полоса и кнопка «Запросить КП/счёт» не вставляются.
+   v6: + подгрузки ish-design-p21.js (номер заявки, список из Excel; ISH_P21_OFF), p22.js (кнопка WhatsApp; ISH_P22_OFF), p23.js (квиз «Подбор техники»; ISH_P23_OFF), p24.js (мега-меню «Каталог»; ISH_P24_OFF), p25.js (сравнение и таблица; ISH_P25_OFF). P9V=1.2, P10V=2, P22V=2, P24V=2, P25V=2.
    Ничего не переписывает в чужих блоках: только ДОБАВЛЯЕТ узлы с префиксом ishp-, каждый раз проверяя, что такого ещё нет.
    Оболочка телефона перерисовывает #ishВерх целиком - трубку возвращает MutationObserver. Ошибка в одном модуле другой не останавливает. */
 (function () {
@@ -166,7 +167,7 @@
   }
 
   /* ───────── П9: списки разделов, карточка, ряды главной (ish-design-p9.js с того же адреса, один раз) ───────── */
-  var P9V = '1.1';
+  var P9V = '1.2';
   function p9() {
     if (W.ISH_P9_OFF || W.ISH_P9 || D.getElementById('ishp-p9-js')) return true;
     if (!D.querySelector('.t-store__card-list, .js-store-product, .раздел-загол')) return false;
@@ -226,8 +227,99 @@
     (function step() { var ok = false; try { ok = p20(); } catch (e) {} if (!ok && ++n < 80) setTimeout(step, 250); })();
   }
 
+  /* ───────── П21: номер заявки (Кр3) и загрузка списка из Excel (Кр8) (ish-design-p21.js/.css с того же адреса, один раз) ─────────
+     Грузим там, где есть форма корзины Tilda (form3238938703) или корзина /spec (#specRoot). В остальных страницах p21 не нужен.
+     Выключатель: window.ISH_P21_OFF = 1 (до загрузки p4); по частям: window.ISH_P21_SKIP = 'num' или 'xls'. Кэш: поменять P21V. */
+  var P21V = '1';
+  function p21() {
+    if (W.ISH_P21_OFF || W.ISH_P21 || D.getElementById('ishp-p21-js')) return true;
+    if (!(D.getElementById('form3238938703') || D.getElementById('specRoot'))) return false;
+    var src = tag && tag.src;
+    if (!src) return true;
+    var s = D.createElement('script');
+    s.id = 'ishp-p21-js'; s.defer = true;
+    s.src = src.replace(/ish-design-p4\.js.*$/, 'ish-design-p21.js?v=' + P21V);
+    D.head.appendChild(s);
+    return true;
+  }
+  function p21wait() {
+    var n = 0;
+    (function step() { var ok = false; try { ok = p21(); } catch (e) {} if (!ok && ++n < 80) setTimeout(step, 250); })();
+  }
+
+  /* ───────── П23: квиз «Подбор техники» (Г17) (ish-design-p23.js/.css с того же адреса, один раз) ─────────
+     Грузим там, где есть форма «Отправить готовый список» (поле «Список позиций…» + Комментарий + Phone) - квиз отправляет заявку через неё.
+     Выключатель: window.ISH_P23_OFF = 1 (до загрузки p4). Кэш: поменять P23V. */
+  var P23V = '1';
+  function p23() {
+    if (W.ISH_P23_OFF || W.ISH_P23 || D.getElementById('ishp-p23-js')) return true;
+    if (!D.querySelector('form [name^="Список позиций"]')) return false;
+    var src = tag && tag.src;
+    if (!src) return true;
+    var s = D.createElement('script');
+    s.id = 'ishp-p23-js'; s.defer = true;
+    s.src = src.replace(/ish-design-p4\.js.*$/, 'ish-design-p23.js?v=' + P23V);
+    D.head.appendChild(s);
+    return true;
+  }
+  function p23wait() {
+    var n = 0;
+    (function step() { var ok = false; try { ok = p23(); } catch (e) {} if (!ok && ++n < 80) setTimeout(step, 250); })();
+  }
+
+  /* ───────── П24: мега-меню «Каталог» (Ш9): ish-design-p24.js (+ .css рядом), один раз ─────────
+     Признак: десктоп (>=981) и есть блок шапки .нш-шапка с .нш-шапка-право; на телефоне и на карточке v8 (html.ishpg-on) не грузим.
+     p24 сам строит кнопку и панель. Выключатель: window.ISH_P24_OFF = 1. Кэш: поменять P24V. */
+  var P24V = '2';
+  function p24() {
+    if (W.ISH_P24_OFF || W.__ishP24 || D.getElementById('ishp-p24-js')) return true;
+    if (!(W.matchMedia && W.matchMedia('(min-width:981px)').matches)) return true;
+    if (D.documentElement.classList.contains('ishpg-on')) return true;
+    if (!D.querySelector('.нш-шапка .нш-шапка-право')) return false;
+    var src = tag && tag.src;
+    if (!src) return true;
+    var s = D.createElement('script');
+    s.id = 'ishp-p24-js'; s.defer = true;
+    s.src = src.replace(/ish-design-p4\.js.*$/, 'ish-design-p24.js?v=' + P24V);
+    D.head.appendChild(s);
+    return true;
+  }
+  function p24wait() {
+    if (W.ISH_P24_OFF) return;
+    var n = 0;
+    (function step() { var ok = false; try { ok = p24(); } catch (e) {} if (!ok && ++n < 32) setTimeout(step, 250); })();
+  }
+
+  /* ───────── П25: сравнение моделей (К19) и таблица однотипных товаров (К21) (ish-design-p25.js/.css с того же адреса, один раз) ─────────
+     Признак: список товаров (.t-store__card[data-ish13]) или карточка товара (/tproduct/). Выключатель: window.ISH_P25_OFF = 1. Кэш: поменять P25V. */
+  var P25V = '2';
+  function p25() {
+    if (W.ISH_P25_OFF || W.__ishP25 || D.getElementById('ishp-p25-js')) return true;
+    var карт = /\/tproduct\//.test(location.pathname);
+    if (!карт && !D.querySelector('.t-store__card[data-ish13]')) return false;
+    var src = tag && tag.src; if (!src) return true;
+    var s = D.createElement('script'); s.id = 'ishp-p25-js'; s.defer = true;
+    s.src = src.replace(/ish-design-p4\.js.*$/, 'ish-design-p25.js?v=' + P25V); D.head.appendChild(s); return true;
+  }
+  function p25wait() {
+    if (W.ISH_P25_OFF || !(D.querySelector('.t-store') || /\/tproduct\//.test(location.pathname))) return;
+    var n = 0; (function step() { var ok = false; try { ok = p25(); } catch (e) {} if (!ok && ++n < 80) setTimeout(step, 250); })();
+  }
+
+  /* ───────── П22: кнопка WhatsApp (грузит ish-design-p22.js с того же адреса; она сама подтянет ish-design-p22.css; выключатель window.ISH_P22_OFF) ───────── */
+  var P22V = '2';
+  (function () {
+    if (W.ISH_P22_OFF || W.__ishP22 || D.getElementById('ishp-p22-js')) return;
+    var src = tag && tag.src;
+    if (!src) return;
+    var s = D.createElement('script');
+    s.id = 'ishp-p22-js'; s.defer = true;
+    s.src = src.replace(/ish-design-p4\.js.*$/, 'ish-design-p22.js?v=' + P22V);
+    D.head.appendChild(s);
+  })();
+
   /* ───────── П10: карточка товара (/tproduct/), а на /spec и /podbor - только css и выбор «КП» ───────── */
-  var P10V = '1';
+  var P10V = '2';
   function p10() {
     if (W.ISH_P10_OFF || D.getElementById('ishp-p10-js')) return;
     var p = location.pathname;
@@ -252,5 +344,9 @@
   p9wait();
   p19wait();
   p20wait();
+  p21wait();
+  p23wait();
+  p24wait();
+  p25wait();
   try { p10(); } catch (e) {}
 })();

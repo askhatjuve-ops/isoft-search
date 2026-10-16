@@ -1,0 +1,50 @@
+/* ish-design-p21.css  v1  (16.10.2026)  П21: блок загрузки списка (/spec) и строка «Заявка № …» на экране успеха.
+   Только классы .ishp21-*. Цвета и скругления - как у корзины /spec (кобальт #2B44C7, рамка #E3DFD6). */
+.ishp21-bar{box-sizing:border-box;width:calc(100% - 80px);max-width:1360px;margin:16px auto;padding:16px 20px;background:#fff;border:1px solid #E3DFD6;border-radius:12px;
+  font-family:'TildaSans','Inter',Arial,sans-serif;color:#171923}
+.ishp21-bar[hidden]{display:none}
+.ishp21-bar *{box-sizing:border-box}
+.ishp21-bar.ishp21-drop{border-color:#2B44C7;background:#F3F5FE}
+.ishp21-bar.ishp21-busy{opacity:.85}
+.ishp21-bar.ishp21-busy [data-p21="pick"]{pointer-events:none}
+.ishp21-row{display:flex;gap:16px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.ishp21-txt{display:flex;flex-direction:column;gap:2px;min-width:0;flex:1 1 320px}
+.ishp21-txt b{font-size:16px;font-weight:600;line-height:1.3}
+.ishp21-txt span{font-size:14px;line-height:1.4;color:#565D70}
+.ishp21-btns{display:flex;gap:8px;flex-wrap:wrap}
+.ishp21-btn{all:unset;box-sizing:border-box;cursor:pointer;min-height:44px;padding:0 16px;display:inline-flex;align-items:center;justify-content:center;text-align:center;
+  border:1px solid #CFCABD;border-radius:8px;background:#fff;color:#171923;font:600 14px/1.2 'TildaSans','Inter',Arial,sans-serif}
+.ishp21-btn:hover{background:#E9ECFC;border-color:#2B44C7;color:#2B44C7}
+.ishp21-btn_main{background:#2B44C7;border-color:#2B44C7;color:#fff}
+.ishp21-btn_main:hover{background:#2036A8;border-color:#2036A8;color:#fff}
+.ishp21-btn:focus-visible{outline:2px solid #2B44C7;outline-offset:2px}
+.ishp21-file{position:absolute;width:1px;height:1px;opacity:0;pointer-events:none}
+.ishp21-st{margin:0;font-size:14px;line-height:1.4;color:#565D70}
+.ishp21-st:not(:empty){margin-top:12px}
+.ishp21-st_ok{color:#14704A}
+.ishp21-st_bad{color:#B3261E}
+.ishp21-res{display:flex;flex-direction:column;gap:12px}
+.ishp21-res:not(:empty){margin-top:12px}
+.ishp21-ok,.ishp21-miss{padding:12px 14px;border-radius:8px;font-size:14px;line-height:1.4}
+.ishp21-ok{background:#E8F4EE;border:1px solid #BFE0D0}
+.ishp21-miss{background:#FFF6E5;border:1px solid #F0D9A8}
+.ishp21-ok b,.ishp21-miss b{display:block;font-weight:600;margin-bottom:6px}
+.ishp21-res ul{list-style:none;margin:0;padding:0;max-height:260px;overflow:auto}
+.ishp21-res li{display:flex;gap:12px;justify-content:space-between;padding:5px 0;border-top:1px solid rgba(23,25,35,.08)}
+.ishp21-res li:first-child{border-top:0}
+.ishp21-res li span{min-width:0;overflow-wrap:anywhere}
+.ishp21-res li i{font-style:normal;color:#565D70}
+.ishp21-res li em{font-style:normal;color:#565D70;white-space:nowrap;flex:none}
+.ishp21-miss .ishp21-btns{margin-top:10px}
+.ishp21-note{margin:8px 0 0;font-size:14px;line-height:1.4;color:#565D70}
+.ishp21-note a{color:#2B44C7;text-decoration:underline}
+.ishp21-num{margin:10px 0 0;padding:10px 12px;background:#E9ECFC;border-radius:8px;font-size:15px;line-height:1.45;color:#171923!important}
+.ishp21-num b{font-weight:600;color:#171923!important}
+@media screen and (max-width:900px){
+  .ishp21-bar{width:auto;margin:12px 16px;padding:14px}
+  .ishp21-btns{width:100%}
+  .ishp21-btn{flex:1 1 100%}
+  .ishp21-res li{flex-direction:column;gap:2px}
+  .ishp21-res li em{white-space:normal}
+}
+@media print{.ishp21-bar{display:none!important}}

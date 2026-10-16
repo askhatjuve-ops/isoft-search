@@ -1,0 +1,189 @@
+/* ish-design-p25.css · П25 «Сравнение моделей» (К19) + «Таблица однотипных товаров» (К21) · 16.10.2026
+   Внешний файл на Pages, подключается ish-design-p25.js. Все классы с префиксом ishp25-; родные узлы Tilda не переписываются.
+   Кобальт только на действии (чекбокс, активный вид, кнопки); «В корзину» в списке не перекрашивается (это .ish13-buy, здесь его нет);
+   двойник «В корзину» в окне и таблице - контур кобальт, как .ish13-buy. Радиусы 8/10, пилюль нет. Откат: пустой файл. */
+:root{--p25-k:#2B44C7;--p25-kh:#2036A8;--p25-soft:#E9ECFC;--p25-ink:#171923;--p25-mut:#565D70;--p25-line:#E3DFD6;--p25-ui:#928A79;
+  --p25-mist:#F1EEE7;--p25-bg:#F5F3EE;--p25-diff:#FFF3C9;--p25-f:TildaSans,Arial,sans-serif}
+.ishp25-vh{position:absolute;left:0;top:0;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* ══════════ К19 · чекбокс «Сравнить» на карточке списка ══════════ */
+html body #allrecords .t-store__card[data-ish13]{position:relative}
+.ishp25-cmp{display:inline-flex;align-items:center;gap:8px;min-height:36px;margin:0;padding:0 10px 0 0;cursor:pointer;
+  font:500 13px/1.2 var(--p25-f);color:var(--p25-ink);-webkit-tap-highlight-color:transparent;user-select:none;box-sizing:border-box}
+.ishp25-cmp input{position:absolute;opacity:0;width:20px;height:20px;margin:0;cursor:pointer}
+.ishp25-cmp__box{flex:none;width:20px;height:20px;border:1.5px solid var(--p25-ui);border-radius:5px;background:#fff;box-sizing:border-box;position:relative;transition:background .15s,border-color .15s}
+.ishp25-cmp input:checked + .ishp25-cmp__box{background:var(--p25-k);border-color:var(--p25-k)}
+.ishp25-cmp input:checked + .ishp25-cmp__box::after{content:"";position:absolute;left:5.5px;top:2px;width:5px;height:9px;border:solid #fff;border-width:0 2px 2px 0;transform:rotate(45deg)}
+.ishp25-cmp:hover .ishp25-cmp__box{border-color:var(--p25-k)}
+.ishp25-cmp input:focus-visible + .ishp25-cmp__box{outline:2px solid var(--p25-ink);outline-offset:2px}
+.ishp25-cmp_on .ishp25-cmp__t{color:var(--p25-k);font-weight:600}
+.ishp25-cmp_dis{opacity:.5;cursor:not-allowed}.ishp25-cmp_dis input,.ishp25-cmp_dis .ishp25-cmp__t{cursor:not-allowed}
+/* список, десктоп: свободный низ текстовой колонки (строка 5 сетки карточки) */
+@media (min-width:641px){
+  html body #allrecords .t-store__card[data-ish13] > .ishp25-cmp{grid-column:2;grid-row:5;align-self:end;justify-self:start;margin-top:8px}
+}
+/* список, телефон: под всем содержимым карточки на всю ширину */
+@media (max-width:640px){
+  html body #allrecords .t-store__card[data-ish13] > .ishp25-cmp{grid-column:1/-1;grid-row:auto;justify-self:start;min-height:44px;margin-top:4px}
+  .ishp25-cmp input{width:44px;height:44px;left:-12px}
+}
+/* плитка (П6, html.ishd-tile): в углу фото */
+html.ishd-tile body #allrecords .t-store__card[data-ish13] > .ishp25-cmp{position:absolute;left:12px;top:12px;z-index:3;grid-column:auto;grid-row:auto;
+  background:#fff;border:1px solid var(--p25-line);border-radius:8px;padding:0 10px;min-height:36px;margin:0}
+
+/* ══════════ плашка внизу ══════════ */
+.ishp25-bar{position:fixed;left:50%;bottom:var(--p25-b,calc(14px + env(safe-area-inset-bottom,0px)));z-index:9000;display:none;align-items:center;gap:6px;
+  transform:translateX(-50%);padding:6px;background:var(--p25-ink);border-radius:12px;box-shadow:0 8px 28px rgba(23,25,35,.28);max-width:calc(100vw - 24px);box-sizing:border-box;font-family:var(--p25-f)}
+.ishp25-bar_on{display:flex}
+.ishp25-bar button{margin:0;border:0;cursor:pointer;font:600 14px/1 var(--p25-f);height:44px;border-radius:8px;padding:0 16px;white-space:nowrap}
+.ishp25-bar__go{display:inline-flex;align-items:center;gap:8px;background:#fff;color:var(--p25-k)}
+.ishp25-bar__go svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}
+.ishp25-bar__go:hover{background:var(--p25-soft)}
+.ishp25-bar__go[aria-disabled="true"]{background:#fff;color:#8B90A3}
+.ishp25-bar__clr{background:transparent;color:#fff;text-decoration:underline;text-underline-offset:3px}
+.ishp25-bar button:focus-visible{outline:2px solid #fff;outline-offset:2px}
+.ishp25-toast{position:fixed;left:50%;bottom:calc(76px + env(safe-area-inset-bottom,0px));z-index:100001;transform:translate(-50%,12px);opacity:0;pointer-events:none;
+  background:var(--p25-ink);color:#fff;border-radius:8px;padding:10px 14px;font:500 14px/1.3 var(--p25-f);max-width:calc(100vw - 32px);transition:opacity .2s,transform .2s}
+.ishp25-toast_on{opacity:1;transform:translate(-50%,0)}
+
+/* ══════════ окно сравнения ══════════ */
+html.ishp25-lock,html.ishp25-lock body{overflow:hidden}
+.ishp25-ov{position:fixed;inset:0;z-index:100000;background:rgba(23,25,35,.55);display:flex;align-items:center;justify-content:center;padding:20px;box-sizing:border-box;font-family:var(--p25-f)}
+.ishp25-win{background:#fff;border-radius:12px;width:100%;max-width:1120px;max-height:100%;display:flex;flex-direction:column;box-sizing:border-box;outline:0;box-shadow:0 20px 60px rgba(0,0,0,.3);color:var(--p25-ink)}
+.ishp25-hd{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 16px;border-bottom:1px solid var(--p25-line);flex:none}
+.ishp25-hd h2{margin:0;font:700 20px/1.2 var(--p25-f);color:var(--p25-ink);display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.ishp25-hd small{font:500 13px/1.2 var(--p25-f);color:var(--p25-mut)}
+.ishp25-hd__t{display:flex;align-items:center;gap:8px;flex:none}
+.ishp25-btn{margin:0;height:40px;padding:0 14px;border:1.5px solid var(--p25-k);border-radius:8px;background:#fff;color:var(--p25-k);font:600 14px/1 var(--p25-f);cursor:pointer;white-space:nowrap}
+.ishp25-btn:hover{background:var(--p25-soft)}
+.ishp25-btn[aria-pressed="true"]{background:var(--p25-k);color:#fff}
+.ishp25-x{margin:0;width:40px;height:40px;padding:0;border:1px solid var(--p25-line);border-radius:8px;background:#fff;cursor:pointer;display:inline-flex;align-items:center;justify-content:center}
+.ishp25-x svg,.ishp25-ct__rm svg{width:16px;height:16px;fill:none;stroke:var(--p25-ink);stroke-width:1.75;stroke-linecap:round}
+.ishp25-x:hover{background:var(--p25-mist)}
+.ishp25-btn:focus-visible,.ishp25-x:focus-visible,.ishp25-buy:focus-visible,.ishp25-ct__rm:focus-visible,.ishp25-vbtn:focus-visible{outline:2px solid var(--p25-ink);outline-offset:2px}
+.ishp25-note{margin:0;padding:8px 16px;background:var(--p25-diff);font:500 13px/1.4 var(--p25-f);color:#6B4F0E;flex:none}
+.ishp25-note[hidden]{display:none}
+.ishp25-scr{overflow:auto;-webkit-overflow-scrolling:touch;flex:1 1 auto;min-height:0}
+.ishp25-ct{border-collapse:separate;border-spacing:0;width:100%;table-layout:fixed;font:400 14px/1.4 var(--p25-f);--n:3}
+.ishp25-ct th,.ishp25-ct td{text-transform:none;letter-spacing:0;color:var(--p25-ink);border-bottom:1px solid var(--p25-line);padding:10px 14px;text-align:left;vertical-align:top;background:#fff;box-sizing:border-box;overflow-wrap:anywhere}
+.ishp25-ct thead th{position:sticky;top:0;z-index:3;background:#fff;vertical-align:top;border-bottom:1.5px solid var(--p25-ui)}
+.ishp25-ct th[scope=row],.ishp25-ct__c0{position:sticky;left:0;z-index:2;width:150px;min-width:150px;max-width:150px;background:var(--p25-mist);font-weight:600;color:var(--p25-mut)!important;font-size:13px}
+.ishp25-ct thead .ishp25-ct__c0{z-index:4;font-size:12px;text-transform:uppercase;letter-spacing:.05em;color:var(--p25-mut)}
+.ishp25-ct tbody tr.ishp25-d th[scope=row]{color:var(--p25-ink)}
+.ishp25-ct td.ishp25-d{background:var(--p25-diff);font-weight:700}
+.ishp25-ct__p{min-width:200px;padding-top:12px}
+.ishp25-ct__img{display:block;width:100%;height:90px;margin:0 0 8px;background:#F3F1EB center/contain no-repeat;border-radius:8px;mix-blend-mode:multiply}
+.ishp25-ct__n{display:block;font:600 14px/1.3 var(--p25-f);color:var(--p25-k);text-decoration:none;margin-bottom:4px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.ishp25-ct__n:hover{text-decoration:underline}
+.ishp25-ct__sku{display:block;font:400 11.5px/1.3 Cascadia Mono,Consolas,monospace;color:var(--p25-mut);margin-bottom:6px}
+.ishp25-ct__price{display:block;font:800 17px/1.2 var(--p25-f);margin:4px 0 10px;font-variant-numeric:tabular-nums}
+.ishp25-ct__rm{position:absolute;z-index:3;right:6px;top:6px;width:32px;height:32px;margin:0;padding:0;border:0;border-radius:8px;background:rgba(255,255,255,.9);cursor:pointer;display:inline-flex;align-items:center;justify-content:center}
+.ishp25-ct__rm:hover{background:var(--p25-mist)}
+.ishp25-nil,.ishp25-same{color:var(--p25-mut);font-weight:400}
+.ishp25-same{text-align:center;padding:24px 14px!important}
+/* двойник «В корзину» */
+.ishp25-buy{display:inline-flex;align-items:center;justify-content:center;gap:6px;box-sizing:border-box;min-height:40px;margin:0;padding:0 14px;border:1.5px solid var(--p25-k);border-radius:8px;
+  background:#fff;color:var(--p25-k);font:500 14px/1 var(--p25-f);text-decoration:none;cursor:pointer;white-space:nowrap}
+.ishp25-buy svg{width:16px;height:16px;flex:none;fill:none;stroke:currentColor;stroke-width:1.63;stroke-linecap:round;stroke-linejoin:round}
+.ishp25-buy:hover{background:var(--p25-k);color:#fff}
+.ishp25-buy_in{background:var(--p25-soft)}
+.ishp25-ct__p .ishp25-buy{width:100%}
+@media (max-width:720px){
+  .ishp25-ov{padding:0}
+  .ishp25-win{max-width:none;height:100%;border-radius:0}
+  .ishp25-hd{flex-wrap:wrap;padding:12px}
+  .ishp25-hd h2{font-size:18px}
+  .ishp25-hd__t{width:100%}.ishp25-btn{flex:1 1 auto;height:44px}.ishp25-x{width:44px;height:44px}
+  .ishp25-ct{width:max-content;min-width:100%;table-layout:auto}
+  .ishp25-ct th[scope=row],.ishp25-ct__c0{width:104px;min-width:104px;max-width:104px;padding:8px 10px}
+  .ishp25-ct__p{min-width:170px;width:170px}
+  .ishp25-ct td{min-width:170px;width:170px}
+  .ishp25-ct__rm{width:44px;height:44px;right:2px;top:2px}
+  .ishp25-buy{min-height:44px}
+}
+
+/* карточка товара: «Добавить к сравнению» */
+.ishp25-addcmp{display:inline-flex;align-items:center;justify-content:center;gap:8px;box-sizing:border-box;min-height:44px;margin:8px 0 0;padding:0 16px;border:1.5px solid var(--p25-ui);border-radius:8px;
+  background:#fff;color:var(--p25-ink);font:600 14px/1 var(--p25-f);cursor:pointer;width:100%}
+.ishp25-addcmp svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}
+.ishp25-addcmp:hover{border-color:var(--p25-k);color:var(--p25-k)}
+.ishp25-addcmp_on{border-color:var(--p25-k);color:var(--p25-k);background:var(--p25-soft)}
+.ishp25-addcmp:focus-visible{outline:2px solid var(--p25-ink);outline-offset:2px}
+
+/* ══════════ К21 · переключатель «Таблица» (рядом со «Список / Плитка» П6) ══════════ */
+.ishd-seg button.ishp25-vbtn{border-left:1px solid var(--p25-k)}
+.ishp25-vbtn svg{width:16px;height:16px;flex:none;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}
+.ishd-seg button.ishp25-vbtn[aria-pressed="true"]{background:var(--p25-k);color:#fff}
+/* пока включена таблица, П6 мог оставить «Плитка/Список» нажатой: гасим подсветку у них (состояние ведёт html-класс) */
+html.ishp25-on .ishd-seg button[data-v]:not(.ishp25-vbtn){background:#fff!important;color:var(--p25-ink)!important}
+/* собственный переключатель - только если П6 не загружен */
+.ishp25-own{display:flex;align-items:center;justify-content:flex-end;gap:10px;margin:0 0 12px;font-family:var(--p25-f)}
+.ishp25-own__l{font:500 13px/1 var(--p25-f);color:var(--p25-mut)}
+.ishp25-own__seg{display:inline-flex;border:1px solid var(--p25-k);border-radius:8px;overflow:hidden;background:#fff}
+.ishp25-own__seg button{display:inline-flex;align-items:center;gap:7px;height:40px;margin:0;padding:0 16px;border:0;border-radius:0;background:#fff;color:var(--p25-ink);font:600 14px/1 var(--p25-f);cursor:pointer}
+.ishp25-own__seg button + button{border-left:1px solid var(--p25-k)}
+.ishp25-own__seg svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}
+.ishp25-own__seg button[aria-pressed="true"]{background:var(--p25-k);color:#fff}
+html.ishp25-on .ishp25-own__seg [data-o=list]{background:#fff!important;color:var(--p25-ink)!important}
+@media (max-width:640px){.ishp25-own{padding:0 12px}.ishp25-own__l{display:none}.ishp25-own__seg{width:100%}.ishp25-own__seg button{flex:1 1 0;justify-content:center;height:44px}}
+
+/* таблица: карточки списка скрыты, но остаются в DOM (по ним идёт родная корзина) */
+html.ishp25-on body #allrecords .t-store__card[data-product-uid]{display:none!important}
+.ishp25-tb{width:100%;min-width:0;margin:0 0 16px;font-family:var(--p25-f);color:var(--p25-ink);max-width:100%;box-sizing:border-box}
+.ishp25-tb[hidden]{display:none}
+.ishp25-tb__bar{display:flex;align-items:center;gap:14px;margin:0 0 10px;flex-wrap:wrap}
+.ishp25-tb__q{flex:1 1 280px;max-width:460px;box-sizing:border-box;height:44px;margin:0;border:1.5px solid var(--p25-ui);border-radius:8px;background:#fff;padding:0 12px;font:500 15px/1 var(--p25-f);color:var(--p25-ink)}
+.ishp25-tb__q:focus{outline:2px solid var(--p25-k);outline-offset:0;border-color:var(--p25-k)}
+.ishp25-tb__cnt{font:500 13px/1 var(--p25-f);color:var(--p25-mut);font-variant-numeric:tabular-nums}
+.ishp25-tb__scr{position:relative;overflow-x:auto;-webkit-overflow-scrolling:touch;background:#fff;border:1px solid var(--p25-line);border-radius:12px;max-width:100%}
+.ishp25-tb__scr:focus-visible{outline:2px solid var(--p25-ink);outline-offset:2px}
+.ishp25-tbl{border-collapse:separate;border-spacing:0;width:100%;font:400 14px/1.4 var(--p25-f);min-width:760px}
+.ishp25-tbl th,.ishp25-tbl td{padding:8px 12px;text-align:left;vertical-align:middle;border-bottom:1px solid var(--p25-line);background:#fff;box-sizing:border-box}
+.ishp25-tbl tbody tr:last-child > *{border-bottom:0}
+.ishp25-tbl tbody tr:hover > *{background:#FAF9F5}
+.ishp25-tbl thead th{background:var(--p25-mist);border-bottom:1.5px solid var(--p25-ui);padding:0;white-space:nowrap}
+.ishp25-tbl thead th button{display:flex;align-items:center;gap:6px;width:100%;height:44px;margin:0;padding:0 14px;border:0;background:none;cursor:pointer;
+  font:700 12px/1.1 var(--p25-f);letter-spacing:.04em;text-transform:uppercase;color:var(--p25-mut);text-align:left}
+.ishp25-tbl thead th button:hover{color:var(--p25-k)}
+.ishp25-tbl thead th button:focus-visible{outline:2px solid var(--p25-ink);outline-offset:-3px}
+.ishp25-tbl thead th[aria-sort="ascending"] button,.ishp25-tbl thead th[aria-sort="descending"] button{color:var(--p25-k)}
+.ishp25-tbl thead th i{font-style:normal;font-size:10px;min-width:10px}
+.ishp25-tb__name{min-width:230px;max-width:300px;position:sticky;left:0;z-index:1}
+.ishp25-tbl thead .ishp25-tb__name{z-index:2}
+.ishp25-tbl tbody .ishp25-tb__name{font-weight:400}
+.ishp25-tb__name a{display:flex;align-items:center;gap:12px;color:inherit;text-decoration:none}
+.ishp25-tb__img{flex:none;width:48px;height:48px;border-radius:8px;background:#F3F1EB center/contain no-repeat;mix-blend-mode:multiply}
+.ishp25-tb__t{min-width:0}
+.ishp25-tb__t b{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;font:600 14px/1.3 var(--p25-f);color:var(--p25-k)}
+.ishp25-tb__name a:hover b{text-decoration:underline}
+.ishp25-tb__t small{display:block;margin-top:2px;font:400 11.5px/1.3 Cascadia Mono,Consolas,monospace;color:var(--p25-mut)}
+.ishp25-tbl td{font-variant-numeric:tabular-nums}
+.ishp25-tb__num,.ishp25-tb__act{white-space:nowrap}
+.ishp25-tb__num{text-align:right!important}
+.ishp25-tbl thead .ishp25-tb__num button{justify-content:flex-end}
+.ishp25-tb__num b{font:800 15px/1.2 var(--p25-f)}
+.ishp25-tb__act{width:1%;text-align:right!important}
+@media (max-width:640px){
+  .ishp25-tb{padding:0}
+  .ishp25-tb__q{flex-basis:100%;max-width:none}
+  .ishp25-tb__name{min-width:200px;max-width:240px}
+  .ishp25-tbl td,.ishp25-tbl th{padding:8px 10px}
+  .ishp25-tbl thead th button{padding:0 10px}
+  .ishp25-tb__img{width:40px;height:40px}
+  .ishp25-buy{min-height:44px}
+}
+@media (prefers-reduced-motion:reduce){.ishp25-toast,.ishp25-cmp__box{transition:none}}
+
+/* перебить общий стиль th сайта (капс, серый): в окне сравнения названия и цены обычным регистром */
+html body .ishp25-ct th,html body .ishp25-ct th *{text-transform:none!important;letter-spacing:0!important}
+html body .ishp25-ct thead .ishp25-ct__c0,html body .ishp25-ct thead .ishp25-ct__c0 *{text-transform:uppercase!important;letter-spacing:.05em!important}
+html body .ishp25-ct .ishp25-ct__n{color:var(--p25-k);font-weight:600}
+html body .ishp25-ct .ishp25-ct__price{color:var(--p25-ink);font-weight:800}
+html body .ishp25-ct .ishp25-ct__sku{color:var(--p25-mut);font-weight:400}
+html body .ishp25-ct .ishp25-buy{color:var(--p25-k);font-weight:500}
+html body .ishp25-ct .ishp25-buy:hover{color:#fff}
+@media (max-width:720px){html body .ishp25-ct th[scope=row]{font-size:12px;hyphens:auto}}
+html body .ishp25-tbl tbody th,html body .ishp25-tbl tbody th *{text-transform:none!important;letter-spacing:0!important;font-weight:inherit}
+html body .ishp25-tbl .ishp25-tb__t b{font-weight:600;color:var(--p25-k)}
+html body .ishp25-tbl .ishp25-tb__t small{font-weight:400;color:var(--p25-mut)}
+@media (max-width:640px){.ishp25-tb{width:auto;margin-left:12px;margin-right:12px}}

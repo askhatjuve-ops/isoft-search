@@ -1,0 +1,55 @@
+/* ish-design-p24.css v2 · П24 «Мега-меню» (Ш9). Кобальт только на действии; тень уровня 2 из ish-design.css (--ishd-sh-2). */
+.ishp24{flex:0 0 auto;position:static}
+html body .нш-к .ishp24-btn{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:7px;box-sizing:border-box;height:42px;margin:0;padding:0 11px;
+  border:1px solid var(--ishd-control,#928A79);border-radius:10px;background:#fff;color:#171923;font:600 14px/1 TildaSans,Manrope,Arial,sans-serif;white-space:nowrap;cursor:pointer;
+  transition:border-color .15s,background .15s,color .15s}
+html body .нш-к .ishp24-btn:hover,html body .нш-к .ishp24--open .ishp24-btn{border-color:var(--ishd-cobalt,#2B44C7);background:var(--ishd-cobalt-soft,#E9ECFC);color:var(--ishd-cobalt,#2B44C7)}
+html body .нш-к .ishp24-btn:focus-visible{outline:2px solid var(--ishd-cobalt,#2B44C7);outline-offset:2px}
+html body .нш-к .ishp24-btn svg{flex:0 0 auto;display:block}
+html body .нш-к .ishp24-btn .ishp24-chev{display:none;transition:transform .15s}   /* v2: стрелки нет: слово «Каталог» и так читается как меню, а поле поиска не съёживается */
+html body .нш-к .ishp24--open .ishp24-chev{transform:rotate(180deg)}
+/* мост над зазором между кнопкой и панелью: курсор не теряет наведение по дороге вниз */
+html body .нш-к .ishp24--open .ishp24-btn::after{content:"";position:absolute;left:-6px;right:-6px;top:100%;height:24px}
+
+html body .нш-к .ishp24-panel{position:absolute;left:0;right:0;top:100%;z-index:70;box-sizing:border-box;max-height:calc(100vh - 80px);overflow:auto;
+  background:#fff;border-top:1px solid var(--ishd-line,#E3DFD6);border-bottom:1px solid var(--ishd-line,#E3DFD6);box-shadow:var(--ishd-sh-2,0 6px 18px rgba(23,25,35,.10));
+  font-family:TildaSans,Manrope,Arial,sans-serif;color:#171923}
+html body .нш-к .ishp24-panel[hidden]{display:none}
+html body .нш-к .ishp24-in{box-sizing:border-box;max-width:1280px;margin:0 auto;padding:22px 20px 14px}
+html body .нш-к .ishp24-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:22px 24px}
+html body .нш-к .ishp24-g{min-width:0}
+html body .нш-к .ishp24-panel a.ishp24-gh{display:flex;align-items:center;gap:10px;margin:0 0 6px;padding:2px 0;color:#171923!important;font:700 14px/1.25 TildaSans,Manrope,Arial,sans-serif;text-decoration:none}
+html body .нш-к .ishp24-panel a.ishp24-gh:hover{color:var(--ishd-cobalt,#2B44C7)!important}
+html body .нш-к .ishp24-ic{flex:0 0 auto;width:30px;height:30px;border-radius:8px;display:grid;place-items:center}
+html body .нш-к .ishp24-ic svg{display:block}
+html body .нш-к .ishp24-g ul{list-style:none;margin:0;padding:0}
+html body .нш-к .ishp24-g li{margin:0;padding:0;list-style:none}
+html body .нш-к .ishp24-panel a{border:0!important;box-shadow:none!important;background:none;text-decoration:none!important}
+html body .нш-к .ishp24-panel a.ishp24-l{display:block;padding:4px 0 4px 40px;color:#3A3F4F!important;font:400 14px/1.3 TildaSans,Manrope,Arial,sans-serif}
+html body .нш-к .ishp24-panel a.ishp24-l:hover{color:var(--ishd-cobalt,#2B44C7)!important;text-decoration:underline!important}
+html body .нш-к .ishp24-gh:focus-visible,html body .нш-к .ishp24-l:focus-visible,html body .нш-к .ishp24-f:focus-visible{outline:2px solid var(--ishd-cobalt,#2B44C7);outline-offset:2px;border-radius:4px}
+html body .нш-к .ishp24-foot{display:flex;flex-wrap:wrap;gap:6px 28px;margin-top:16px;padding-top:12px;border-top:1px solid var(--ishd-line,#E3DFD6)}
+html body .нш-к .ishp24-panel a.ishp24-f{padding:4px 0;color:#565D70!important;font:500 14px/1.3 TildaSans,Manrope,Arial,sans-serif;text-decoration:none}
+html body .нш-к .ishp24-panel a.ishp24-f:hover{color:var(--ishd-cobalt,#2B44C7)!important;text-decoration:underline!important}
+html body .нш-к .ishp24-panel a.ishp24-f--main{color:var(--ishd-cobalt,#2B44C7)!important;font-weight:700}
+
+/* узкий десктоп: кнопка без стрелки и с меньшими полями, чтобы поле поиска не съёживалось */
+@media (max-width:1180px){
+  html body .нш-к .ishp24-btn{padding:0 12px;gap:7px}
+  html body .нш-к .ishp24-chev{display:none}
+  html body .нш-к .ishp24-grid{gap:20px 16px}
+  html body .нш-к .ishp24-panel a.ishp24-l{padding-left:0}
+}
+/* v2: ширина 981-1279 - кнопка только значок (слово скрыто визуально, aria-label «Каталог» на кнопке), поле поиска не съёживается; >=1280 значок + слово */
+@media (max-width:1279px){
+  html body .нш-к .ishp24-btn{width:42px;padding:0;gap:0}
+  html body .нш-к .ishp24-bt{position:absolute!important;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap;border:0}
+  html body .нш-к .ishp24-chev{display:none}
+}
+/* телефон и планшет: мега-меню не показываем (там нижняя панель «Каталог» оболочки) */
+@media (max-width:980px){
+  .ishp24{display:none!important}
+}
+@media (prefers-reduced-motion:reduce){
+  html body .нш-к .ishp24-btn,html body .нш-к .ishp24-chev{transition:none}
+}

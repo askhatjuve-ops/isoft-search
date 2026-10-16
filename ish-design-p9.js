@@ -1,4 +1,4 @@
-/* ish-design-p9.js  v1.1  (16.10.2026)  П9 «доводка списка товаров и главной» b2b.isoft-shop.kz
+/* ish-design-p9.js  v1.2  (16.10.2026)  П9 «доводка списка товаров и главной» b2b.isoft-shop.kz
    Внешний файл на Pages. Сам подключает ish-design-p9.css рядом с собой. Не загрузился / ошибка - сайт как был.
    Выключатели: window.ISH_P9_OFF (до загрузки) · пустой файл на Pages.
    Что делает (идемпотентно; родные узлы Tilda не переносит и не переписывает; в сеть не ходит; в Tilda не пишет):
@@ -12,7 +12,7 @@
   'use strict';
   var W = window, D = document;
   if (W.ISH_P9_OFF || W.ISH_P9) return;
-  W.ISH_P9 = { версия: 'ishp9-1610-v1.1' };
+  W.ISH_P9 = { версия: 'ishp9-1610-v1.2' };
   var tag = D.currentScript || D.querySelector('script[src*="ish-design-p9.js"]');
 
   /* стили: рядом с собой, один раз */
@@ -90,6 +90,8 @@
       v.setAttribute('data-ishp9', '1');
       var lab = el('<span class="ishp9-lab">Арт. iSoft</span>');
       p.insertBefore(lab, v);
+      /* на карточке товара (/tproduct/) кнопку копирования ставит П10 (Т16): одна иконка */
+      if (v.closest('.t-store__prod-popup__sku') && /\/tproduct\//.test(W.location.pathname) && !W.ISH_P10_OFF && !/(^|,)copy(,|$)/.test(String(W.ISH_P10_SKIP || ''))) return;
       var b = el('<span class="ishp9-cp" role="button" tabindex="0" title="Скопировать артикул" aria-label="Скопировать артикул ' + esc(текст) + '">' + ИК_КОПИЯ + '</span>');
       v.parentNode.insertBefore(b, v.nextSibling);
       function жми(e) {

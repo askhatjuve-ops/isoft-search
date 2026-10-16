@@ -1,4 +1,4 @@
-/* ish-design-p10.js  v1  (16.10.2026)  П10 «карточка товара: внешний слой» b2b.isoft-shop.kz
+/* ish-design-p10.js  v2  (16.10.2026)  П10 «карточка товара: внешний слой» b2b.isoft-shop.kz
    Подключается строкой в HEAD/подвале ТОЛЬКО для страниц карточки (/tproduct/...). Блок 4055071703 (запас 251 знак) не правится.
    Ждёт, пока фрагмент v8p7 соберёт карточку (html.ishpg-on), и ДОБАВЛЯЕТ узлы с префиксом ishp10-. Чужих узлов не переписывает,
    «В корзину» не перекрашивает и не подменяет: все кнопки-двойники кликают ЧЕРЕЗ родную .ishpg-add (одно место добавления в корзину).
@@ -112,6 +112,7 @@
   function copy() {
     var wrap = q('.t-store__prod-popup__sku'), sp = wrap && q('.js-store-prod-sku', wrap);
     if (!sp || q('.ishp10-copy', wrap)) return;
+    qa('.ishp9-cp', wrap).forEach(function (n) { n.parentNode.removeChild(n); });   /* одна иконка: кнопку П9 убираем */
     var sku = txt(sp); if (!sku) return;
     var b = mk('button', 'ishp10-copy', IC.copy); b.type = 'button';
     b.setAttribute('aria-label', 'Скопировать артикул ' + sku); b.title = 'Скопировать артикул';
@@ -171,7 +172,9 @@
     if (q('.ishp10-sticky')) return;
     var main = q('.ishpg-add'); if (!main) return;
     var nopr = H.classList.contains('ishpg-nopr'), pr = priceOf();
-    if (!nopr && !(pr > 0)) return;                      /* с ценой на телефоне работает своя панель v8p7 */
+    if (!nopr && !(pr > 0)) return;
+    /* на телефоне (<=700) у товара С ЦЕНОЙ работает родная панель v8p7 (.ishpg3-sticky): наша там не показывается. Без цены - наша, если родная не видна. */
+    function nativeOn() { var n = q('.ishpg3-sticky'); return !!n && (n.classList.contains('ishpg3-show') || (getComputedStyle(n).visibility !== 'hidden' && n.getBoundingClientRect().top < W.innerHeight - 1)); }
     var label = txt(q('span', main)) || (nopr ? 'Запросить цену' : 'В корзину');
     var name = txt(q('.t-store__prod-popup__info .js-store-prod-name'));
     var el = mk('div', 'ishp10-sticky' + (nopr ? ' ishp10-nopr' : ''),
@@ -187,7 +190,7 @@
     function upd() {
       raf = 0;
       var r = main.getBoundingClientRect(), gone = isWide() ? r.bottom < 64 : (r.bottom <= 0 || r.top >= W.innerHeight);
-      var show = (nopr || isWide()) && gone && !q('.ishp10-lb');
+      var show = (isWide() || (nopr && !(priceOf() > 0) && !nativeOn())) && gone && !q('.ishp10-lb');
       el.classList.toggle('ishp10-show', show); el.setAttribute('aria-hidden', show ? 'false' : 'true'); btn.tabIndex = show ? 0 : -1;
       H.classList.toggle('ishp10-pad', nopr || isWide());
       var t = q('.нш-мт'), off = 0;
@@ -196,6 +199,11 @@
     }
     function sched() { if (!raf) raf = W.requestAnimationFrame ? W.requestAnimationFrame(upd) : setTimeout(upd, 16); }
     W.addEventListener('scroll', sched, { passive: true }); W.addEventListener('resize', sched);
+    try {
+      var mo = new MutationObserver(sched);
+      mo.observe(D.body, { childList: true });
+      (function watch() { var n = q('.ishpg3-sticky'); if (n) mo.observe(n, { attributes: true, attributeFilter: ['class', 'style'] }); else setTimeout(watch, 600); })();
+    } catch (e) {}
     if (wide) { if (wide.addEventListener) wide.addEventListener('change', sched); else if (wide.addListener) wide.addListener(sched); }
     btn.addEventListener('click', function (e) {
       e.preventDefault(); var n0 = cartQ(), t0 = Date.now(); main.click();

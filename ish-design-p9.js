@@ -1,4 +1,4 @@
-/* ish-design-p9.js  v1  (16.10.2026)  П9 «доводка списка товаров и главной» b2b.isoft-shop.kz
+/* ish-design-p9.js  v1.1  (16.10.2026)  П9 «доводка списка товаров и главной» b2b.isoft-shop.kz
    Внешний файл на Pages. Сам подключает ish-design-p9.css рядом с собой. Не загрузился / ошибка - сайт как был.
    Выключатели: window.ISH_P9_OFF (до загрузки) · пустой файл на Pages.
    Что делает (идемпотентно; родные узлы Tilda не переносит и не переписывает; в сеть не ходит; в Tilda не пишет):
@@ -6,13 +6,13 @@
      К15      вместо нативного select сортировки - свой список (select остаётся в DOM скрытым; выбор = select.value + событие change)
      К18      чипы брендов над сеткой из значений фильтра «Бренд» (клик = клик по галке фильтра); «Ещё бренды» открывает группу
      К16      если на странице есть крошки - html.ishp9-crumbs (CSS прячет «Вернуться в каталог»); window.ISH_P9_HIDE_BACK=1 - прятать всегда
-     К2       название товара кобальтовое по умолчанию (решение владельца 29.09); window.ISH_P9_TITLE_DARK=1 - тёмное (чернила, кобальт на hover)
+     К2       window.ISH_P9_TITLE_COBALT=1 - вернуть кобальтовое название (по умолчанию чернила, кобальт на hover)
    Всё остальное (К2, К6, К12, К23, Г15, Г22, Тп4, М9) делает CSS. */
 (function () {
   'use strict';
   var W = window, D = document;
   if (W.ISH_P9_OFF || W.ISH_P9) return;
-  W.ISH_P9 = { версия: 'ishp9-1610' };
+  W.ISH_P9 = { версия: 'ishp9-1610-v1.1' };
   var tag = D.currentScript || D.querySelector('script[src*="ish-design-p9.js"]');
 
   /* стили: рядом с собой, один раз */
@@ -33,7 +33,7 @@
 
   var root = D.documentElement;
   root.classList.add('ishp9-on');
-  if (W.ISH_P9_TITLE_DARK) root.classList.add('ishp9-title-d');
+  if (W.ISH_P9_TITLE_COBALT) root.classList.add('ishp9-title-k');
 
   function q(s, r) { return (r || D).querySelector(s); }
   function qa(s, r) { return Array.prototype.slice.call((r || D).querySelectorAll(s)); }

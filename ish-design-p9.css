@@ -23,13 +23,13 @@ html body #allrecords .t-store__card:hover{
   border-color:var(--p9-line2)!important;box-shadow:0 8px 22px rgba(23,25,35,.08)}
 
 /* ═══ К2 · название товара: читаемее. 15/22, цвет чернил, кобальт при наведении на карточку ═══
-   По умолчанию кобальт (решение владельца 29.09 №75-5), вес 600, 15/22.
-   Тёмное (чернила, кобальт на hover): window.ISH_P9_TITLE_DARK=1 до загрузки (скрипт поставит html.ishp9-title-d). */
+   Было: кобальт 600 15px (решение 29.09 №75-5). Сохранён вес 600 и размер; цвет переехал на hover.
+   Вернуть кобальт: window.ISH_P9_TITLE_COBALT=1 до загрузки (скрипт поставит html.ishp9-title-k). */
 html body #allrecords .t-store__card .t-store__card__title{
-  font:600 15px/22px TildaSans,Arial,sans-serif!important;color:var(--p9-k)!important;
+  font:600 15px/22px TildaSans,Arial,sans-serif!important;color:var(--p9-ink)!important;
   letter-spacing:0;text-decoration:none;overflow-wrap:anywhere}
-html.ishp9-title-d body #allrecords .t-store__card .t-store__card__title{color:var(--p9-ink)!important}
-html.ishp9-title-d body #allrecords .t-store__card:hover .t-store__card__title{color:var(--p9-k)!important}
+html body #allrecords .t-store__card:hover .t-store__card__title{color:var(--p9-k)!important}
+html.ishp9-title-k body #allrecords .t-store__card .t-store__card__title{color:var(--p9-k)!important}
 
 /* ═══ К6 · бренд читаемее: 12px, 600, капс, разрядка, серый ≥4.5:1 ═══
    В списке разделов отдельной строки бренда нет (бренд в названии); правило работает там, где бренд есть:
@@ -157,7 +157,10 @@ html.ishp9-on .ishp8-eb::before{content:counter(ishp9eb,decimal-leading-zero) "\
   .ishp9-sort__btn{width:100%;min-width:0}
   .ishp9-sort__list{left:0;right:0;width:auto;max-width:none}
   .ishp9-brands{flex-wrap:nowrap;overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;scrollbar-width:none;
-    margin:0 0 12px;padding:2px 0 4px}
+    margin:0 0 12px;padding:2px 12px 4px;scroll-padding:0 12px} /* v1.1: поля ленты 12px = первая плашка на x=22, как карточки сетки Tilda на 390 */
+  .ishp9-brands::after{content:"";flex:none;width:1px}
+  /* v1.1: родная лупа Tilda (search-mob-btn) рядом с «Фильтры» не нужна - поиск в шапке сайта */
+  html body #allrecords [class*="filter__search-mob-btn"],html body #allrecords [class*="filter__search-mob"]{display:none!important}
   .ishp9-brands::-webkit-scrollbar{display:none}
   .ishp9-brands__cap{display:none}
   .ishp9-bc{min-height:40px;flex:none}

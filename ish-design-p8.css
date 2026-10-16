@@ -389,3 +389,56 @@ html .ishp8-nums>.k1 .ishp8-num::before{right:-50px;top:60px;width:380px;height:
   html .ishp8-bi .ishp8-bil::before{left:50%;width:300px;height:150px}
   html .ishp8-nums>.k1 .ishp8-num::before{right:-70px;top:36px;width:280px;height:140px}
 }
+
+/* ───────── C2 правка: свечение висит на обёртке знака/кнопки - центр всегда в центре (псевдоэлемент 50%/50%) ───────── */
+html .ishp8-nums>.k1 .ishp8-num::before,html .ishp8-bento>.c-w .ishp8-bc::before{content:none}
+html .ishp8-lgw,html .ishp8-bi .ishp8-bil,html .ishp8-gw{position:relative}
+html .ishp8-lgw::before,html .ishp8-bi .ishp8-bil::before,html .ishp8-gw::before{content:'';position:absolute;left:50%;top:50%;right:auto;bottom:auto;transform:translate(-50%,-50%);z-index:-1;background:var(--p8-ind-glow);pointer-events:none}
+html .ishp8-lgw::before,html .ishp8-bi .ishp8-bil::before{width:220%;height:300%}
+html .ishp8-gw::before{width:320%;height:520%}
+html .ishp8-lgw{position:absolute;z-index:1;right:30px;top:36px;display:block;line-height:0}
+html .ishp8-nums>.k1 .ishp8-lgw .ishp8-lg{position:static;display:block;right:auto;top:auto}
+html .ishp8-gw{flex:none;display:block;z-index:4;isolation:isolate}
+html .ishp8-bi .ishp8-bil{width:min(190px,80%)}
+html .ishp8-bi .ishp8-bil .ishp8-lg{width:100%;max-width:none}
+@media (max-width:640px){
+  html .ishp8-lgw{right:18px;top:22px}
+  html .ishp8-bi .ishp8-bil{width:min(150px,60%);margin:0 auto}
+  html .ishp8-bi .ishp8-bil .ishp8-lg{width:100%;margin:0}
+}
+
+/* ───────── C2 правка: «Не нашли нужное?» - светлый вариант приёмов «Подбора» (градиент + свечение + 28 + тень), без рамок ───────── */
+html.ishp8-on #запросБлок.запрос-блок{position:relative;overflow:hidden;isolation:isolate;border:0;border-radius:28px;padding:30px 34px;
+  background:linear-gradient(135deg,#fff 0%,var(--p8-soft) 55%,#DCE1FA 100%);box-shadow:0 26px 54px -28px rgba(43,68,199,.45),0 2px 6px rgba(23,25,35,.05)}
+html.ishp8-on #запросБлок .зб-знак.ishp8-zl{background:#fff;border-radius:16px;width:auto;min-width:64px;height:64px;padding:0 20px;box-shadow:0 12px 24px -12px rgba(43,68,199,.45),0 2px 5px rgba(23,25,35,.06)}
+html.ishp8-on #запросБлок .зб-знак.ishp8-zl svg.ishp8-zlg{height:22px}
+html.ishp8-on #запросБлок .зб-текст h3{color:var(--p8-ink);font-family:var(--p8-f);font-weight:800;font-size:clamp(19px,1.9vw,24px);line-height:1.2;letter-spacing:-.015em}
+html.ishp8-on #запросБлок .зб-текст p{color:#5A5F70;font-size:14.5px;line-height:1.45}
+html.ishp8-on #запросБлок .зб-кнопки{align-items:center;gap:14px}
+html.ishp8-on #запросБлок .ishp8-zbw{position:relative;display:block;flex:none}
+html.ishp8-on #запросБлок .ishp8-zbw::before{content:'';position:absolute;left:50%;top:50%;width:330%;height:520%;transform:translate(-50%,-50%);z-index:-1;pointer-events:none;
+  background:radial-gradient(closest-side,rgba(43,68,199,.25) 0%,rgba(43,68,199,.14) 50%,rgba(43,68,199,.05) 75%,transparent)}
+html.ishp8-on #запросБлок .кн-к{height:50px;padding:0 24px;border:0;border-radius:14px;font:700 15px/1.2 var(--p8-f);box-sizing:border-box}
+html.ishp8-on #запросБлок .кн-к:not(.конт){background:var(--p8-cobalt);color:#fff;box-shadow:0 14px 26px -14px rgba(43,68,199,.8)}
+html.ishp8-on #запросБлок .кн-к:not(.конт):hover{background:var(--p8-cobalt-h)}
+html.ishp8-on #запросБлок .кн-к.конт{background:#fff;color:var(--p8-cobalt);border:0;box-shadow:0 12px 24px -14px rgba(43,68,199,.55),0 1px 4px rgba(23,25,35,.06)}
+html.ishp8-on #запросБлок .кн-к.конт:hover{background:#F4F6FF;color:var(--p8-cobalt)}
+@media (max-width:980px){
+  html.ishp8-on #запросБлок.запрос-блок{padding:26px 24px;gap:18px}
+}
+@media (max-width:640px){
+  html.ishp8-on #запросБлок.запрос-блок{border-radius:24px;padding:24px 20px}
+  html.ishp8-on #запросБлок .зб-кнопки{flex-direction:column;align-items:stretch;gap:12px;width:100%}
+  html.ishp8-on #запросБлок .ishp8-zbw{width:100%}
+  html.ishp8-on #запросБлок .ishp8-zbw::before{width:130%;height:300%}
+  html.ishp8-on #запросБлок .зб-кнопки .кн-к{width:100%;height:50px;border:0;font-size:14px;border-radius:14px}
+  html.ishp8-on #запросБлок .зб-кнопки .кн-к.конт{border:0;background:#fff;color:var(--p8-cobalt)}
+}
+
+/* C2 правка 2: свечение на «25 лет» и плитке iSoft убрано (индиго-фон остаётся); плитка iSoft - знак и подпись по центру */
+html .ishp8-lgw::before,html .ishp8-bi .ishp8-bil::before{content:none!important}
+html .ishp8-bi{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+html .ishp8-bi .ishp8-bil{margin:0 auto}
+html .ishp8-bi .ishp8-bic{margin-top:4px;text-align:center}
+@media (max-width:980px){html.ishp8-on #запросБлок.запрос-блок{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:640px){html.ishp8-on #запросБлок .зб-кнопки .кн-к{padding:0 8px;font-size:13.5px;white-space:nowrap}}

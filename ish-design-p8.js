@@ -139,7 +139,7 @@
   /* ───────── Г21 цифры (bento 5/4/3) ───────── */
   function html_nums() {
     return шапка('03', 'В цифрах', 'Коротко о нас') + '<div class="ishp8-nums">' +
-      обёртка('k1', лого('ishp8-lg', '#fff') + '<b>25</b><span>лет на рынке техники</span>', 6, 'div', 'ishp8-num') +
+      обёртка('k1', '<span class="ishp8-lgw">' + лого('ishp8-lg', '#fff') + '</span><b>25</b><span>лет на рынке техники</span>', 6, 'div', 'ishp8-num') +
       обёртка('k2', '<b>14 000+</b><span>позиций в расширенном ассортименте</span>', 6, 'a', 'ishp8-num ishp8-num--a', '/assortiment') +
       обёртка('k3', '<b>3</b><span>города самовывоза: Астана, Алматы, Актобе</span>', 6, 'div', 'ishp8-num') + '</div>';
   }
@@ -151,7 +151,7 @@
       обёртка('c-a', '<span class="ishp8-bx">' + ик('clock') + '</span><b>Ответ в день обращения</b><span>Наличие, срок, цена, аналог</span>', 8, 'div', 'ishp8-bc') +
       обёртка('c-b', '<span class="ishp8-bx">' + ик('doc') + '</span><b>Весь пакет документов</b><span>Счёт, договор, накладная, счёт-фактура</span>', 8, 'div', 'ishp8-bc') +
       обёртка('c-w', '<div><b>Пришлите список — мы подберём позиции</b><span>Ответ придёт на почту с ценами и сроками.</span></div>' +
-        '<a class="ishp8-go2" href="/podbor" data-д="запрос">Запросить цену</a>', 3, 'div', 'ishp8-bc') + '</div>';
+        '<span class="ishp8-gw"><a class="ishp8-go2" href="/podbor" data-д="запрос">Запросить цену</a></span>', 3, 'div', 'ishp8-bc') + '</div>';
   }
 
   /* ───────── Г20 бренды: кобальтовые плитки с белыми знаками ───────── */
@@ -243,6 +243,15 @@
     з.classList.add('ishp8-zl');
     з.innerHTML = лого('ishp8-zlg', '#272B36', '#2B44C7');
   }
+  /* главная кнопка «Написать, что нужно» - в обёртку: свечение висит на ней и центрировано по кнопке */
+  function кнопка_запроса() {
+    var к = D.querySelector('#запросБлок .зб-кнопки .кн-к:not(.конт)');
+    if (!к || к.parentNode.classList.contains('ishp8-zbw')) return;
+    var w = D.createElement('span');
+    w.className = 'ishp8-zbw';
+    к.parentNode.insertBefore(w, к);
+    w.appendChild(к);
+  }
   /* мобильная подпись второй кнопки «Не нашли нужное?» (Tilda-текст, меняем только в JS, ≤640px) */
   function подпись_кнопки() {
     var к = D.querySelector('#запросБлок .кн-к.конт');
@@ -319,6 +328,7 @@
     D.documentElement.classList.add('ishp8-on');
     подпись_кнопки();
     знак_запроса();
+    кнопка_запроса();
     until(полки, 90);
     return true;
   }

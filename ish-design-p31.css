@@ -1,0 +1,128 @@
+/* ish-design-p31.css  v1.0  (подготовка 17.10.2026; НЕ выложено)  П31 «внутренние страницы в духе главной C2»
+   Подключает ish-design-p31.js (рядом с собой). Откат: пустой файл на Pages или window.ISH_P31_OFF / ISH_P4_NO_P31.
+   Что: список (строки 22, тень, подъём, фото на подиуме), карточка (подиум с наклоном, плашка цены с водяным знаком, плитки характеристик,
+   «Вам может подойти» в геометрии главной), текстовые страницы (шаги-ступени, цифры, кобальтовая плита, крупные заголовки).
+   НЕ трогаем: фильтры и «Список/Плитка» (p6), «В корзину» в списке (.ish13-buy), столбик характеристик (.ish13-крат), окно-попап Tilda.
+   Всё под html.ishp31-on (ставит js). Шрифт TildaSans, фон #F5F3EE, кобальт #2B44C7. Текст не меньше 12px, без горизонтальной прокрутки на 390. */
+:root{--p31-cobalt:#2B44C7;--p31-cobalt-h:#2036A8;--p31-cb2:#5B73F0;--p31-soft:#E7EAFB;--p31-ink:#171923;--p31-mut:#5A5F70;--p31-line:#E1DDD2;--p31-mist:#F1EEE7;--p31-graph:#1E2430;--p31-f:TildaSans,Arial,sans-serif;
+  --p31-sh:0 1px 0 #fff inset,0 14px 30px -18px rgba(23,25,35,.4),0 2px 6px rgba(23,25,35,.05);--p31-sh2:0 22px 44px -22px rgba(23,25,35,.45),0 2px 6px rgba(23,25,35,.06)}
+
+/* ═══ общее: появление при прокрутке (только если сработал IntersectionObserver; при reduced-motion js класса не ставит) ═══ */
+html.ishp31-js .ishp31-rv{opacity:0;translate:0 22px;transition:opacity .7s cubic-bezier(.2,.7,.2,1),translate .7s cubic-bezier(.2,.7,.2,1),transform .25s,box-shadow .25s}
+html.ishp31-js .ishp31-rv.in{opacity:1;translate:none}
+
+/* подпись «NN / РАЗДЕЛ»: NN кобальтовым, остальное серым (приём главной) */
+html.ishp31-on .вн-над,html.ishp31-on .вн-а__об h1::before,html.ishp31-on body .ishpg-hd h3::before{
+  font:700 12px/1.2 var(--p31-f);letter-spacing:.12em;text-transform:uppercase;font-variant-numeric:tabular-nums;
+  color:transparent;background:linear-gradient(90deg,var(--p31-cobalt) calc(2ch + .34em),var(--p31-mut) 0);-webkit-background-clip:text;background-clip:text}
+html.ishp31-on .вн-над{display:inline-block;margin:0 0 10px}
+html.ishp31-on .вн-над::before{content:"01\00a0/\00a0"}
+html.ishp31-on body .вн-а__об h1::before{content:"01\00a0/\00a0КАТАЛОГ";display:block;margin:0 0 8px}
+html.ishp31-on body .ishpg-hd h3::before{content:"02\00a0/\00a0ПОХОЖИЕ ТОВАРЫ";display:block;margin:0 0 8px;left:auto;top:auto;bottom:auto;width:auto;height:auto;border-radius:0;position:static}
+
+/* заголовки страниц - как на главной */
+html.ishp31-on .вн-а__об h1,html.ishp31-on .вн-верх h1{font:800 clamp(30px,3.6vw,42px)/1.1 var(--p31-f)!important;letter-spacing:-.02em;color:var(--p31-ink)}
+html.ishp31-on .вн-верх{background:none;border-bottom:0;padding:34px 0 8px}
+html.ishp31-on .вн-лид{font-size:17px;line-height:1.55;max-width:66ch}
+
+/* ═══ СПИСОК: строки 22, тень, подъём; фото на подиуме. Фильтры и «Список/Плитка» не трогаем ═══ */
+html.ishp31-list body #allrecords .t-store__card-list>.t-store__card[data-ish13]{
+  border-radius:22px!important;border:1px solid var(--p31-line)!important;background:#fff!important;box-shadow:var(--p31-sh)!important;
+  transition:opacity .7s cubic-bezier(.2,.7,.2,1),translate .7s cubic-bezier(.2,.7,.2,1),transform .25s cubic-bezier(.2,.7,.2,1),box-shadow .25s,border-color .2s}
+html.ishp31-list body #allrecords .t-store__card-list>.t-store__card[data-ish13]:hover{transform:translateY(-3px);box-shadow:var(--p31-sh2)!important;border-color:#CFCABD!important}
+html.ishp31-list:not(.ishd-tile) body #allrecords .t-store__card-list>.t-store__card[data-ish13] .t-store__card__imgwrapper{position:relative;background:none!important}
+html.ishp31-list:not(.ishd-tile) body #allrecords .t-store__card-list>.t-store__card[data-ish13] .t-store__card__imgwrapper::before{content:"";position:absolute;inset:7%;border-radius:50%;
+  background:radial-gradient(circle at 50% 36%,#fff 0,#F4F1EA 66%,#EDE9DF 100%);box-shadow:inset 0 0 0 1px rgba(255,255,255,.9),0 10px 22px -16px rgba(23,25,35,.35)}
+html.ishp31-list:not(.ishd-tile) body #allrecords .t-store__card-list>.t-store__card[data-ish13] .t-store__card__imgwrapper::after{content:"";position:absolute;left:20%;right:20%;bottom:5%;height:12px;
+  background:radial-gradient(closest-side,rgba(23,25,35,.26),transparent);filter:blur(2px);transition:transform .3s,opacity .3s}
+html.ishp31-list:not(.ishd-tile) body #allrecords .t-store__card-list>.t-store__card[data-ish13] .t-store__card__bgimg{mix-blend-mode:multiply;transform:scale(.84);transition:transform .3s}
+html.ishp31-list:not(.ishd-tile) body #allrecords .t-store__card-list>.t-store__card[data-ish13]:hover .t-store__card__bgimg{transform:scale(.9)}
+html.ishp31-list:not(.ishd-tile) body #allrecords .t-store__card-list>.t-store__card[data-ish13]:hover .t-store__card__imgwrapper::after{transform:scale(.85);opacity:.7}
+
+/* ═══ КАРТОЧКА ═══ */
+html.ishp31-card body .ishpg-product-rec .js-store-product{border-radius:26px!important;border-color:var(--p31-line)!important;box-shadow:var(--p31-sh2)!important}
+html.ishp31-card body .ishpg-row .t-store__prod-popup__name{font:800 clamp(24px,2.4vw,30px)/1.2 var(--p31-f)!important;letter-spacing:-.02em!important}
+html.ishp31-card body .ishpg-row .t-store__prod-popup__brand{background:var(--p31-soft)!important;border-radius:8px!important}
+/* большой подиум: светлая сцена, тень-эллипс под товаром, наклон и блик (js ставит --rx --ry --gx --gy на .t-slds__main, только pointer:fine) */
+html.ishp31-card body .ishpg-row .t-slds__main{position:relative;border-radius:26px!important;overflow:hidden;
+  background:radial-gradient(ellipse 62% 54% at 50% 46%,#fff 0,#F7F5F0 55%,#EDEAF6 100%)!important;box-shadow:0 1px 0 #fff inset,0 20px 44px -26px rgba(23,25,35,.4)!important;
+  transform:perspective(900px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg));transition:transform .35s cubic-bezier(.2,.7,.2,1);will-change:transform}
+html.ishp31-card body .ishpg-row .t-slds__main.ishp31-on{transition:transform .08s linear}
+html.ishp31-card body .ishpg-row .t-slds__main::before{content:"";position:absolute;left:20%;right:20%;bottom:6%;height:26px;background:radial-gradient(closest-side,rgba(23,25,35,.28),transparent);filter:blur(4px);z-index:0;pointer-events:none}
+html.ishp31-card body .ishpg-row .t-slds__main::after{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;z-index:3;opacity:0;transition:opacity .3s;mix-blend-mode:soft-light;
+  background:radial-gradient(300px circle at var(--gx,50%) var(--gy,0%),rgba(255,255,255,.95),rgba(255,255,255,0) 60%)}
+html.ishp31-card body .ishpg-row .t-slds__main.ishp31-on::after{opacity:1}
+html.ishp31-card body .ishpg-row .t-slds__container{position:relative;z-index:1;background:none!important;box-shadow:none!important}
+html.ishp31-card body .ishpg-row .t-slds__bgimg{mix-blend-mode:multiply}
+/* плашка цены: мягкая кобальтовая заливка, логотип iSoft водяным знаком */
+html.ishp31-card body .ishpg3-panel{position:relative;border-radius:22px!important;border:0!important;padding:20px 22px!important;overflow:hidden;isolation:isolate;
+  background:linear-gradient(160deg,#EEF1FF,#DDE3FB)!important;box-shadow:var(--p31-sh)}
+html.ishp31-card body .ishpg3-panel::before{content:"";position:absolute;right:-18px;bottom:-12px;width:62%;max-width:300px;aspect-ratio:2924/873;z-index:-1;pointer-events:none;
+  background:var(--ishp31-logo,none) no-repeat right bottom/contain;opacity:.09}
+/* характеристики: плитки */
+html.ishp31-card body .ishpg-hh{display:block;margin:0 0 12px;font:800 20px/1.2 var(--p31-f);letter-spacing:-.01em;color:var(--p31-ink)}
+html.ishp31-card body .ishpg-grid{gap:10px!important}
+html.ishp31-card body .ishpg-pair,html.ishp31-card body .ishpg-pair:nth-child(n){background:#fff!important;border:1px solid var(--p31-line)!important;border-radius:16px;padding:12px 16px!important;
+  box-shadow:0 8px 18px -14px rgba(23,25,35,.35);align-items:baseline}
+html.ishp31-card body .ishpg-pair .v{font-weight:800}
+html.ishp31-card body .ishpg-extra{margin-top:18px!important;padding:18px 20px!important;border:0!important;border-radius:20px;background:var(--p31-mist)}
+html.ishp31-card body .ishpg-extra b{font:800 16px/1.3 var(--p31-f)!important}
+/* «Вам может подойти» в геометрии главной */
+html.ishp31-card body .ishpg-p2{background:none!important;border:0!important;box-shadow:none!important;padding:34px 0 8px!important;margin-top:8px}
+html.ishp31-card body .ishpg-hd{align-items:flex-end}
+html.ishp31-card body .ishpg-hd h3{font:800 clamp(26px,3vw,36px)/1.1 var(--p31-f)!important;letter-spacing:-.02em;padding:0!important}
+html.ishp31-card body .ishpg-hd a{padding:11px 16px;border-radius:12px;background:var(--p31-soft);color:var(--p31-cobalt)!important;font-weight:700}
+html.ishp31-card body .ishpg-к{border-radius:22px!important;border:1px solid var(--p31-line)!important;box-shadow:var(--p31-sh)!important;padding:16px!important;
+  transition:opacity .7s cubic-bezier(.2,.7,.2,1),translate .7s cubic-bezier(.2,.7,.2,1),transform .25s,box-shadow .25s}
+html.ishp31-card body .ishpg-к:hover{transform:translateY(-4px)!important;box-shadow:var(--p31-sh2)!important;border-color:#CFCABD!important}
+html.ishp31-card body .ishpg-ф{position:relative;background:none!important;overflow:visible}
+html.ishp31-card body .ishpg-ф::before{content:"";position:absolute;inset:4% 6%;border-radius:50%;background:radial-gradient(circle at 50% 36%,#fff 0,#F4F1EA 66%,#EDE9DF 100%)}
+html.ishp31-card body .ishpg-ф::after{content:"";position:absolute;left:22%;right:22%;bottom:2px;height:10px;background:radial-gradient(closest-side,rgba(23,25,35,.24),transparent);filter:blur(2px)}
+html.ishp31-card body .ishpg-ф img{position:relative;z-index:1;mix-blend-mode:multiply}
+html.ishp31-card body .ishpg-ц{font-weight:800;font-size:20px}
+
+/* ═══ ТЕКСТОВЫЕ СТРАНИЦЫ (.вн) ═══ */
+html.ishp31-text .вн-карта{border-radius:22px;border:1px solid var(--p31-line);box-shadow:var(--p31-sh);padding:28px}
+html.ishp31-text .вн-карта+.вн-карта{margin-top:18px}
+html.ishp31-text .вн h2{font:800 clamp(22px,2.4vw,28px)/1.2 var(--p31-f);letter-spacing:-.015em}
+html.ishp31-text .вн-карта__шапка .вн-тихо{font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:12px;color:var(--p31-cobalt)}
+html.ishp31-text .вн-табл,html.ishp31-text .вн-пары{border-radius:18px;overflow:hidden}
+/* шаги-ступени */
+html.ishp31-text .вн-шаги{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(0,1fr);gap:14px;align-items:end}
+html.ishp31-text .вн-шаг{display:flex;flex-direction:column;gap:6px;padding:22px 22px 24px;border-radius:24px;border:1px solid transparent;background:#fff;box-shadow:var(--p31-sh);min-height:170px}
+html.ishp31-text .вн-шаг:nth-child(2){min-height:205px;border-color:var(--p31-line)}
+html.ishp31-text .вн-шаг:nth-child(3){min-height:240px;background:var(--p31-soft)}
+html.ishp31-text .вн-шаг:nth-child(4){min-height:275px;background:var(--p31-graph);color:#fff}
+html.ishp31-text .вн-шаг:nth-child(1){background:var(--p31-cobalt);color:#fff}
+html.ishp31-text .вн-шаг__н{width:auto;height:auto;border-radius:0;background:none;justify-content:flex-start;font:900 56px/1 var(--p31-f);letter-spacing:-.04em;color:var(--p31-cobalt);margin-bottom:8px}
+html.ishp31-text .вн-шаг:nth-child(1) .вн-шаг__н,html.ishp31-text .вн-шаг:nth-child(4) .вн-шаг__н{color:#fff}
+html.ishp31-text .вн-шаг h3{font:700 20px/1.25 var(--p31-f);margin:0;color:inherit}
+html.ishp31-text .вн-шаг p{color:inherit;opacity:.82;font-size:14.5px}
+html.ishp31-text .вн-шаг:nth-child(2) p,html.ishp31-text .вн-шаг:nth-child(3) p{color:var(--p31-mut);opacity:1}
+/* призыв - кобальтовая плита */
+html.ishp31-text .вн-карта.ishp31-cta{background:var(--p31-cobalt);border-color:var(--p31-cobalt);color:#fff;box-shadow:var(--p31-sh2);position:relative;overflow:hidden;isolation:isolate}
+html.ishp31-text .вн-карта.ishp31-cta::after{content:"";position:absolute;right:-30px;bottom:-26px;width:70%;aspect-ratio:2924/873;background:var(--ishp31-logo-w,none) no-repeat right bottom/contain;opacity:.14;z-index:-1;pointer-events:none}
+html.ishp31-text .вн-карта.ishp31-cta h2,html.ishp31-text .вн-карта.ishp31-cta h3,html.ishp31-text .вн-карта.ishp31-cta p{color:#fff}
+html.ishp31-text .вн-карта.ishp31-cta p{opacity:.86}
+html.ishp31-text .вн-карта.ishp31-cta a.вн-кноп_гл{background:#fff;color:var(--p31-cobalt)}
+html.ishp31-text .вн-карта.ishp31-cta a.вн-кноп_гл:hover{background:var(--p31-soft);color:var(--p31-cobalt-h)}
+html.ishp31-text .вн-карта.ishp31-cta a.вн-кноп_вт{background:transparent;color:#fff;border-color:rgba(255,255,255,.5)}
+html.ishp31-text .вн-карта.ishp31-cta a.вн-кноп_вт:hover{background:rgba(255,255,255,.14);border-color:#fff;color:#fff}
+html.ishp31-text .вн-кноп{border-radius:14px}
+
+/* ═══ телефон / планшет ═══ */
+@media screen and (max-width:900px){
+  html.ishp31-text .вн-шаги{grid-auto-flow:row;grid-auto-columns:auto;align-items:stretch}
+  html.ishp31-text .вн-шаг,html.ishp31-text .вн-шаг:nth-child(n){min-height:0}
+  html.ishp31-text .вн-карта{padding:20px;border-radius:20px}
+  html.ishp31-card body .ishpg3-panel{padding:16px!important}
+  html.ishp31-card body .ishpg-p2{padding:26px 16px 8px!important}
+}
+@media screen and (max-width:520px){
+  html.ishp31-list body #allrecords .t-store__card-list>.t-store__card[data-ish13]{border-radius:20px!important}
+}
+@media (prefers-reduced-motion:reduce){
+  html.ishp31-on *{transition:none!important}
+  html.ishp31-card body .ishpg-row .t-slds__main{transform:none!important}
+  html.ishp31-list body #allrecords .t-store__card-list>.t-store__card[data-ish13]:hover,html.ishp31-card body .ishpg-к:hover{transform:none!important}
+}

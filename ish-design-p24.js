@@ -39,7 +39,7 @@
   /* нижняя строка панели: [адрес, подпись, главная?] - адреса уже есть в шапке сайта */
   var ЕЩЁ = [['/katalog', 'Весь каталог', 1], ['/assortiment', 'Расширенный ассортимент', 0], ['/podbor', 'Запросить КП/счёт', 0]];
 
-  var BURGER = '<svg class="ishp24-brg" viewBox="0 0 18 18" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M3 5h12M3 9h12M3 13h12"/></svg>';
+  var BURGER = '<svg class="ishp24-brg" viewBox="0 0 18 18" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path class="l1" d="M3 5h12"/><path class="l2" d="M3 9h12"/><path class="l3" d="M3 13h12"/></svg>';
   var CHEV = '<svg class="ishp24-chev" viewBox="0 0 12 12" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m2.5 4.5 3.5 3.5 3.5-3.5"/></svg>';
   var DELAY = 150;
 

@@ -1,12 +1,17 @@
 /* ish-design-p24.css v2 · П24 «Мега-меню» (Ш9). Кобальт только на действии; тень уровня 2 из ish-design.css (--ishd-sh-2). */
 .ishp24{flex:0 0 auto;position:static}
-html body .нш-к .ishp24-btn{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:7px;box-sizing:border-box;height:42px;margin:0;padding:0 11px;
-  border:1px solid var(--ishd-control,#928A79);border-radius:10px;background:#fff;color:#171923;font:600 14px/1 TildaSans,Manrope,Arial,sans-serif;white-space:nowrap;cursor:pointer;
-  transition:border-color .15s,background .15s,color .15s}
-html body .нш-к .ishp24-btn:hover,html body .нш-к .ishp24--open .ishp24-btn{border-color:var(--ishd-cobalt,#2B44C7);background:var(--ishd-cobalt-soft,#E9ECFC);color:var(--ishd-cobalt,#2B44C7)}
-html body .нш-к .ishp24-btn:focus-visible{outline:2px solid var(--ishd-cobalt,#2B44C7);outline-offset:2px}
+html body .нш-к .ishp24-btn{position:relative;display:inline-flex;align-items:center;justify-content:flex-start;gap:10px;box-sizing:border-box;height:42px;margin:0;padding:0 16px;
+  border:0;border-radius:10px;background:var(--p8-cobalt,#2B44C7);color:#fff;font:700 16px/1 TildaSans,Manrope,Arial,sans-serif;white-space:nowrap;cursor:pointer;
+  box-shadow:0 8px 18px -10px rgba(43,68,199,.55);transition:background .15s,box-shadow .15s}
+html body .нш-к .ishp24-btn:hover,html body .нш-к .ishp24--open .ishp24-btn{background:#2036A8;color:#fff}
+html body .нш-к .ishp24-btn .ishp24-bt{flex:1 1 auto;text-align:left}
+html body .нш-к .ishp24-brg path{transform-box:view-box;transform-origin:9px 9px;transition:transform .2s,opacity .15s}
+html body .нш-к .ishp24--open .ishp24-brg .l1{transform:translateY(4px) rotate(45deg)}
+html body .нш-к .ishp24--open .ishp24-brg .l2{opacity:0}
+html body .нш-к .ishp24--open .ishp24-brg .l3{transform:translateY(-4px) rotate(-45deg)}
+html body .нш-к .ishp24-btn:focus-visible{outline:2px solid #171923;outline-offset:2px}
 html body .нш-к .ishp24-btn svg{flex:0 0 auto;display:block}
-html body .нш-к .ishp24-btn .ishp24-chev{display:none;transition:transform .15s}   /* v2: стрелки нет: слово «Каталог» и так читается как меню, а поле поиска не съёживается */
+html body .нш-к .ishp24-btn .ishp24-chev{display:block;flex:0 0 auto;margin-left:auto;transition:transform .15s}   /* v2: стрелки нет: слово «Каталог» и так читается как меню, а поле поиска не съёживается */
 html body .нш-к .ishp24--open .ishp24-chev{transform:rotate(180deg)}
 /* мост над зазором между кнопкой и панелью: курсор не теряет наведение по дороге вниз */
 html body .нш-к .ishp24--open .ishp24-btn::after{content:"";position:absolute;left:-6px;right:-6px;top:100%;height:24px}
@@ -35,16 +40,15 @@ html body .нш-к .ishp24-panel a.ishp24-f--main{color:var(--ishd-cobalt,#2B44C
 
 /* узкий десктоп: кнопка без стрелки и с меньшими полями, чтобы поле поиска не съёживалось */
 @media (max-width:1180px){
-  html body .нш-к .ishp24-btn{padding:0 12px;gap:7px}
-  html body .нш-к .ishp24-chev{display:none}
   html body .нш-к .ishp24-grid{gap:20px 16px}
   html body .нш-к .ishp24-panel a.ishp24-l{padding-left:0}
 }
 /* v2: ширина 981-1279 - кнопка только значок (слово скрыто визуально, aria-label «Каталог» на кнопке), поле поиска не съёживается; >=1280 значок + слово */
-@media (max-width:1279px){
-  html body .нш-к .ishp24-btn{width:42px;padding:0;gap:0}
+@media (max-width:1100px){
+  html body .нш-к .ishp24-btn{width:42px;padding:0;gap:0;justify-content:center}
+  html body .нш-к .ishp24-btn .ishp24-chev{display:none}
   html body .нш-к .ishp24-bt{position:absolute!important;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap;border:0}
-  html body .нш-к .ishp24-chev{display:none}
+
 }
 /* телефон и планшет: мега-меню не показываем (там нижняя панель «Каталог» оболочки) */
 @media (max-width:980px){

@@ -1,0 +1,121 @@
+/* ish-design-p10.css  v1  (16.10.2026)  П10 «карточка товара: внешний слой». Подключает ish-design-p10.js (<link id="ishd-p10">).
+   Всё под html.ishp10-on (класс ставит js) — без js файл ничего не меняет. Исключение: Ик5 (ошибки полей) на любой странице, куда подгружен файл — тоже под html.ishp10-on.
+   Откат: пустой файл на Pages (js увидит, что переменной --ishp10 нет, и ничего не построит).
+   Шрифт TildaSans (--f из фрагмента), цвета те же: кобальт #2B44C7, чернила #171923, серый #565D70. «В корзину» не перекрашивается. Минимум 12 px. */
+html.ishp10-on{--ishp10:1;--p10-k:#2B44C7;--p10-kh:#2036A8;--p10-ink:#171923;--p10-mut:#565D70;--p10-err:#B42318;--p10-f:var(--f,TildaSans,Arial,sans-serif)}
+html.ishp10-lock,html.ishp10-lock body{overflow:hidden}
+
+/* Т11/М6: кнопки «−/+» 40×44, поле 44×44 шрифт 16 (iOS не увеличивает страницу); рамка через inset-тень, чтобы высота осталась 44 */
+html.ishp10-on .ishpg-qty,html.ishp10-on .ishpg3-panel .ishpg-qty{width:auto;height:44px;padding:0;border:0;overflow:hidden;box-shadow:inset 0 0 0 1px #DAD6CC}
+html.ishp10-on .ishpg3-panel .ishpg-qty{box-shadow:inset 0 0 0 1px #C9CFE8}
+html.ishp10-on .ishpg-qty button{width:40px;height:44px;font-size:20px;touch-action:manipulation;border-radius:0}
+html.ishp10-on .ishpg-qty input{width:44px;height:44px;font-size:16px;touch-action:manipulation}
+html.ishp10-on .ishpg-qty button:disabled{opacity:.35;cursor:default}
+html.ishp10-on .ishpg-qty button:focus-visible{outline:3px solid #B9C3F5;outline-offset:-3px}
+@media (hover:hover){html.ishp10-on .ishpg-qty button:not(:disabled):hover{background:#EEF0FB;color:var(--p10-k)}}
+
+/* Т9: вторичное «Запросить КП» (текстовая ссылка с значком; цель касания 44 px) */
+html.ishp10-on .ishp10-kp{flex:none;display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:0 4px;color:var(--p10-k)!important;font:600 14px/1.3 var(--p10-f);text-decoration:none!important;border:0!important;background:none}
+html.ishp10-on .ishp10-kp svg{flex:none;width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}
+html.ishp10-on .ishp10-kp:hover span{text-decoration:underline}
+html.ishp10-on .ishp10-kp:focus-visible{outline:3px solid #B9C3F5;outline-offset:2px;border-radius:4px}
+html.ishp10-on .ishpg3-panel .ishp10-kp+.ishpg3-ask{margin-left:6px}
+
+/* Т16/Ик7: копирование артикула (значок 20 px, область касания 44×44; в строку артикула не добавляет высоты) */
+html.ishp10-on .t-store__prod-popup__sku.ishp10-skuw{display:flex;align-items:center;gap:2px;min-height:20px}
+html.ishp10-on .ishp10-copy{flex:none;display:inline-grid;place-items:center;width:44px;height:44px;margin:-12px -10px -12px -2px;padding:0;border:0;border-radius:8px;background:none;color:var(--p10-mut);cursor:pointer;touch-action:manipulation}
+html.ishp10-on .ishp10-copy svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}
+html.ishp10-on .ishp10-copy.ishp10-done{color:#17663A}
+@media (hover:hover){html.ishp10-on .ishp10-copy:hover{color:var(--p10-k);background:#EEF0FB}}
+html.ishp10-on .ishp10-copy:focus-visible{outline:3px solid #B9C3F5;outline-offset:-2px}
+
+/* Т17: бренд — обычная ссылка, без капсулы и капса */
+html.ishp10-on.ishpg3-on .ishpg-row .t-store__prod-popup__brand{display:block;align-self:flex-start;background:none!important;border-radius:0;padding:0!important;text-transform:none;letter-spacing:0;font:600 14px/1.3 var(--p10-f)!important;color:var(--p10-k)!important}
+html.ishp10-on .ishp10-brand{display:inline-block;padding:7px 0;margin:-7px 0;color:var(--p10-k)!important;text-decoration:none!important;border:0!important}
+html.ishp10-on .ishp10-brand .js-product-brand{color:inherit!important}
+html.ishp10-on .ishp10-brand:hover{text-decoration:underline!important}
+html.ishp10-on .ishp10-brand:focus-visible{outline:3px solid #B9C3F5;outline-offset:2px;border-radius:4px}
+
+/* Т19: «К разделу» скромнее (было 30 px и значок 40) + Т18: крошки в одной строке с ней */
+html.ishp10-on .ishpg-top{flex-wrap:wrap;align-items:center;gap:0 16px;margin:0 0 10px}
+html.ishp10-on .ishpg-back{gap:2px;min-height:44px;padding:0 8px 0 0;font:600 16px/1.2 var(--p10-f);font-size:16px!important;color:var(--p10-mut)!important}
+/* ish-design.css (П1) задаёт .ishpg-back 28/20 px с !important (шкала Тп3) — здесь перебиваем сознательно: «К разделу» скромнее */
+html.ishp10-on .ishpg-back svg{width:20px;height:20px}
+html.ishp10-on .ishpg-back:hover{color:var(--p10-k)!important}
+html.ishp10-on .ishp10-crumbs{flex:1 1 0;min-width:0}
+html.ishp10-on .ishp10-crumbs ol{display:flex;flex-wrap:wrap;align-items:center;list-style:none;margin:0;padding:0;font:400 13px/1.5 var(--p10-f);color:var(--p10-mut)}
+html.ishp10-on .ishp10-crumbs li{display:inline-flex;align-items:center;min-width:0;margin:0;padding:0;list-style:none;font:inherit!important}
+html.ishp10-on .ishp10-crumbs li::before{content:none}
+html.ishp10-on .ishp10-crumbs li+li::before{content:"\203A";display:inline;margin:0 7px;color:#8A90A3}
+html.ishp10-on .ishp10-crumbs a{color:var(--p10-mut)!important;text-decoration:none!important;border:0!important;padding:6px 0}
+html.ishp10-on .ishp10-crumbs a:hover{color:var(--p10-k)!important;text-decoration:underline!important}
+html.ishp10-on .ishp10-crumbs [aria-current]{color:var(--p10-ink);max-width:min(44ch,60vw);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+
+/* Т13/М7: зебра характеристик на телефоне (нечётные строки), плотнее строка */
+@media screen and (max-width:700px){
+  html.ishp10-on.ishpg-on.ishliv-on .ishpg-grid .ishpg-pair,html.ishp10-on.ishpg-on .ishpg-grid .ishpg-pair{background:none;padding:10px 12px;font-size:14px}
+  html.ishp10-on.ishpg-on.ishliv-on .ishpg-grid .ishpg-pair:nth-child(odd),html.ishp10-on.ishpg-on .ishpg-grid .ishpg-pair:nth-child(odd){background:#F3F0E8}
+  html.ishp10-on .ishp10-crumbs{flex:1 1 100%}
+}
+
+/* Фт4: место под фото занято сразу (каталог Tilda: ratio 1_1), страница не прыгает, когда слайдер дорисуется. Мягкое правило: выше квадрата — растёт */
+html.ishp10-on .ishpg-row>.t-store__prod-popup__slider{position:relative;aspect-ratio:1/1;background:#F7F5F0;border-radius:12px}
+
+/* Ик6: лупа на фото */
+html.ishp10-on .ishp10-zoom{box-sizing:border-box;position:absolute;top:10px;right:10px;z-index:6;display:grid;place-items:center;width:44px;height:44px;padding:0;border:1px solid #DAD6CC;border-radius:10px;background:rgba(255,255,255,.94);color:var(--p10-ink);cursor:zoom-in;touch-action:manipulation}
+html.ishp10-on .ishp10-zoom svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}
+html.ishp10-on.ishpg-ph .ishp10-zoom{display:none}
+@media (hover:hover){html.ishp10-on .ishp10-zoom:hover{border-color:var(--p10-k);color:var(--p10-k)}}
+html.ishp10-on .ishp10-zoom:focus-visible{outline:3px solid #B9C3F5;outline-offset:2px}
+.ishp10-lb{position:fixed;inset:0;z-index:10000010;display:flex;align-items:center;justify-content:center;background:rgba(23,25,35,.9);font-family:var(--p10-f,TildaSans,Arial,sans-serif)}
+.ishp10-lbi{max-width:min(1200px,calc(100vw - 24px));max-height:calc(100vh - 96px);max-height:calc(100dvh - 96px);object-fit:contain;background:#fff;border-radius:8px}
+.ishp10-lb button{position:absolute;display:grid;place-items:center;width:48px;height:48px;padding:0;border:0;border-radius:12px;background:rgba(255,255,255,.14);color:#fff;cursor:pointer}
+.ishp10-lb button svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.ishp10-lb button:hover{background:rgba(255,255,255,.26)}
+.ishp10-lb button:focus-visible{outline:3px solid #B9C3F5;outline-offset:2px}
+.ishp10-lbx{top:12px;right:12px}
+.ishp10-lbp{left:12px;top:50%;margin-top:-24px}
+.ishp10-lbn{right:12px;top:50%;margin-top:-24px}
+.ishp10-lbc{position:absolute;bottom:14px;left:0;right:0;text-align:center;color:#fff;font:400 14px/1.3 var(--p10-f,TildaSans,Arial,sans-serif)}
+.ishp10-lbc:empty{display:none}
+
+/* Т20: липкая панель покупки. Десктоп и товар без цены (на телефоне с ценой работает панель v8p7). Справа оставлено место под плашку корзины (она у края, 16 px) */
+.ishp10-sticky{display:none}
+html.ishp10-on .ishp10-sticky{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:91;align-items:center;justify-content:space-between;gap:16px;box-sizing:border-box;padding:10px 24px 10px max(20px,calc((100% - 1440px)/2 + 20px));padding-right:340px;background:#fff;border-top:1px solid #D5DBF7;box-shadow:0 -8px 24px rgba(23,25,35,.10);font-family:var(--p10-f);transform:translateY(110%);visibility:hidden;transition:transform .2s,visibility 0s .2s}
+html.ishp10-on .ishp10-sticky.ishp10-show{transform:none;visibility:visible;transition:transform .2s}
+html.ishp10-on .ishp10-sn{display:flex;align-items:center;gap:20px;min-width:0;flex:1 1 auto}
+html.ishp10-on .ishp10-sname{flex:1 1 auto;min-width:0;font:600 15px/1.3 var(--p10-f);color:var(--p10-ink);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+html.ishp10-on .ishp10-sp{display:flex;flex-direction:column;flex:none}
+html.ishp10-on .ishp10-sp b{font:700 22px/1.15 var(--p10-f);color:var(--p10-ink);white-space:nowrap}
+html.ishp10-on .ishp10-sp small{font:400 13px/1.3 var(--p10-f);color:var(--p10-mut)}
+html.ishp10-on .ishp10-sbtn{flex:none;white-space:nowrap;display:flex;align-items:center;justify-content:center;gap:8px;height:48px;padding:0 24px;border:1px solid var(--p10-k);border-radius:8px;background:var(--p10-k);color:#fff;font:600 15px/1 var(--p10-f);cursor:pointer;box-shadow:0 6px 14px rgba(43,68,199,.28);transition:background .15s,transform .15s;touch-action:manipulation}
+html.ishp10-on .ishp10-sbtn svg{width:20px;height:20px;fill:none;stroke:#fff;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}
+html.ishp10-on .ishp10-sbtn:active{background:#1B2C8A;transform:scale(.98)}
+html.ishp10-on .ishp10-sbtn:focus-visible{outline:3px solid #B9C3F5;outline-offset:2px}
+html.ishp10-on .ishp10-sbtn.ishp10-ok{background:#1B2C8A;border-color:#1B2C8A}
+html.ishp10-on .ishp10-nopr .ishp10-sbtn{background:#fff;color:var(--p10-k);box-shadow:none}
+html.ishp10-on .ishp10-nopr .ishp10-sbtn svg{stroke:var(--p10-k)}
+html.ishp10-on.ishp10-pad .t-store__prod-snippet__container{padding-bottom:88px!important}
+@media screen and (max-width:1100px){html.ishp10-on .ishp10-sname{display:none}}
+@media screen and (max-width:700px){
+  html.ishp10-on .ishp10-sticky{padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));gap:12px}
+  html.ishp10-on .ishp10-sn{flex:1 1 0;min-width:0}
+  html.ishp10-on .ishp10-sp{min-width:0}
+  html.ishp10-on .ishp10-sp b,html.ishp10-on .ishp10-sp small{overflow:hidden;text-overflow:ellipsis}
+  html.ishp10-on .ishp10-sp b{font-size:18px}
+  html.ishp10-on .ishp10-sbtn{flex:none;padding:0 16px;white-space:nowrap}
+  html.ishp10-on .ishp10-nopr .ishp10-sbtn svg{display:none}
+  html.ishp10-on.ishp10-pad .t-store__prod-snippet__container{padding-bottom:calc(32px + 80px + env(safe-area-inset-bottom,0px))!important}
+}
+
+/* уведомление (копирование, предел количества) */
+.ishp10-toast{position:fixed;left:50%;bottom:96px;z-index:10000020;max-width:calc(100vw - 32px);box-sizing:border-box;padding:12px 18px;border-radius:10px;background:#171923;color:#fff;font:500 14px/1.35 var(--p10-f,TildaSans,Arial,sans-serif);text-align:center;box-shadow:0 10px 28px rgba(19,23,34,.3);opacity:0;visibility:hidden;transform:translate(-50%,8px);transition:opacity .18s,transform .18s,visibility 0s .18s;pointer-events:none}
+.ishp10-toast.ishp10-on{opacity:1;visibility:visible;transform:translate(-50%,0);transition:opacity .18s,transform .18s}
+
+/* Ик5: иконка ошибки у поля формы (Tilda кладёт текст в .t-input-error, пока пусто — скрыт). Значок слева от сообщения, красная рамка поля */
+html.ishp10-on .t-input-error:not(:empty){display:flex;align-items:flex-start;gap:6px;margin-top:6px;color:var(--p10-err)!important;font:500 13px/1.35 var(--p10-f)}
+html.ishp10-on .t-input-error:not(:empty)::before{content:"";flex:none;width:16px;height:16px;margin-top:1px;background:currentColor;-webkit-mask:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill-rule='evenodd' d='M8 1.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13zM7.2 4.5h1.6v4.3H7.2zm0 5.6h1.6v1.6H7.2z'/></svg>") center/contain no-repeat;mask:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill-rule='evenodd' d='M8 1.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13zM7.2 4.5h1.6v4.3H7.2zm0 5.6h1.6v1.6H7.2z'/></svg>") center/contain no-repeat}
+html.ishp10-on .t-input-group:has(.t-input-error:not(:empty)) .t-input{border-color:var(--p10-err)!important}
+html.ishp10-on .t-input[aria-invalid="true"]{border-color:var(--p10-err)!important}
+
+@media (prefers-reduced-motion:reduce){.ishp10-sticky,.ishp10-sbtn,.ishp10-toast{transition:none!important}.ishp10-sbtn:active{transform:none!important}}

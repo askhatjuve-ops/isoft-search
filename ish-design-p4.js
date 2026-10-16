@@ -1,8 +1,9 @@
-/* ish-design-p4.js  v3  (16.10.2026)  П4 «шапка и меню» + Г1 «кнопки в hero» b2b.isoft-shop.kz
+/* ish-design-p4.js  v4  (16.10.2026)  П4 «шапка и меню» + Г1 «кнопки в hero» b2b.isoft-shop.kz
    Подключается из блока шапки 3263300503 строкой <script src=... defer data-m="header,hero">. Не загрузился - сайт как был.
    Модули (атрибут data-m, по умолчанию оба): header - Ш14 полоса, Ш5 кнопка, Ш13 трубка; hero - Г1 две кнопки (с v2 включается и при data-m="header").
    v2: + подгрузка ish-design-p6.js на страницах каталога. Выключатели: window.ISH_P4_NO_HERO, window.ISH_P4_NO_P6.
    v3: + подгрузка ish-design-p8.js (блоки главной ниже первого экрана) только на главной, по признаку #лента .слайд. Выключатель: window.ISH_P4_NO_P8.
+   v4: + подгрузка ish-design-p9.js (списки, карточка, ряды главной; выключатель window.ISH_P9_OFF) и ish-design-p10.js (/tproduct/, /spec, /podbor; выключатель window.ISH_P10_OFF); текст полосы с «Доставка бесплатно».
    Ничего не переписывает в чужих блоках: только ДОБАВЛЯЕТ узлы с префиксом ishp-, каждый раз проверяя, что такого ещё нет.
    Оболочка телефона перерисовывает #ishВерх целиком - трубку возвращает MutationObserver. Ошибка в одном модуле другой не останавливает. */
 (function () {
@@ -22,7 +23,7 @@
     (function step() { var ok = false; try { ok = fn(); } catch (e) {} if (!ok && ++n < 32) setTimeout(step, 250); })();
   }
   function el(html) { var d = D.createElement('div'); d.innerHTML = html; return d.firstChild; }
-  var STRIP = '<span>Безнал</span><span>НДС 16%</span><span>Счёт</span>';
+  var STRIP = '<span>Доставка бесплатно</span><span>Безнал</span><span>НДС 16%</span><span>Счёт</span>';
 
   /* ───────── Ш14 + Ш5 (десктоп) ───────── */
   function desktop() {
@@ -146,6 +147,39 @@
     (function step() { var ok = false; try { ok = p8(); } catch (e) {} if (!ok && ++n < 80) setTimeout(step, 250); })();
   }
 
+  /* ───────── П9: списки разделов, карточка, ряды главной (ish-design-p9.js с того же адреса, один раз) ───────── */
+  var P9V = '1';
+  function p9() {
+    if (W.ISH_P9_OFF || W.ISH_P9 || D.getElementById('ishp-p9-js')) return true;
+    if (!D.querySelector('.t-store__card-list, .js-store-product, .раздел-загол')) return false;
+    var src = tag && tag.src;
+    if (!src) return true;
+    var s = D.createElement('script');
+    s.id = 'ishp-p9-js'; s.defer = true;
+    s.src = src.replace(/ish-design-p4\.js.*$/, 'ish-design-p9.js?v=' + P9V);
+    D.head.appendChild(s);
+    return true;
+  }
+  function p9wait() {
+    if (W.ISH_P9_OFF) return;
+    var n = 0;
+    (function step() { var ok = false; try { ok = p9(); } catch (e) {} if (!ok && ++n < 80) setTimeout(step, 250); })();
+  }
+
+  /* ───────── П10: карточка товара (/tproduct/), а на /spec и /podbor - только css и выбор «КП» ───────── */
+  var P10V = '1';
+  function p10() {
+    if (W.ISH_P10_OFF || D.getElementById('ishp-p10-js')) return;
+    var p = location.pathname;
+    if (!(p.indexOf('/tproduct/') > -1 || p === '/spec' || p === '/podbor')) return;
+    var src = tag && tag.src;
+    if (!src) return;
+    var s = D.createElement('script');
+    s.id = 'ishp-p10-js'; s.defer = true;
+    s.src = src.replace(/ish-design-p4\.js.*$/, 'ish-design-p10.js?v=' + P10V);
+    D.head.appendChild(s);
+  }
+
   if (has('header')) {
     until(desktop);
     until(mobileStrip);
@@ -155,4 +189,6 @@
   if ((has('hero') || has('header')) && !W.ISH_P4_NO_HERO) until(hero);
   p6wait();
   p8wait();
+  p9wait();
+  try { p10(); } catch (e) {}
 })();

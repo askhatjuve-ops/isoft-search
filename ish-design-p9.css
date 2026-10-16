@@ -1,0 +1,169 @@
+/* ish-design-p9.css · П9 «доводка списка товаров и главной» · 16.10.2026
+   Подключается скриптом ish-design-p9.js (рядом с ним). Откат: пустой файл или window.ISH_P9_OFF.
+   Закон 09_РЕШЕНИЯ_15.10: список по умолчанию; столбик характеристик (десктоп) / строка через «·» (телефон) НЕ ТРОГАЕМ;
+   «В корзину» в списке (.ish13-buy и родственные) НЕ ПЕРЕКРАШИВАЕМ; без пилюль (радиусы 8/12); фон #F5F3EE;
+   кобальт #2B44C7 - единственный акцент; шрифт TildaSans.
+   Приоритет: в блоках Tilda правила вида `html body #recNNN .x{...!important}` (один id). Здесь `html body #allrecords .x`
+   (тоже один id, но больше классов) и !important там, где он уже стоит в блоке; где нужно перебить два id - id названы. */
+
+:root{
+  --p9-ink:#171923; --p9-mut:#565D70; --p9-k:#2B44C7; --p9-kh:#2036A8; --p9-ks:#E9ECFC;
+  --p9-line:#D9D3C5; --p9-line2:#B9B2A1; --p9-ctrl:#928A79; --p9-bg:#F5F3EE;
+  --p9-f:TildaSans,Arial,sans-serif;
+  /* Тп4: артикул. Одна строка переключает на моно (пример: ui-monospace,Menlo,Consolas,monospace) */
+  --p9-sku-font:TildaSans,Arial,sans-serif;
+}
+
+/* ═══ К12 · рамка и фон карточки списка (белая, рамка #D9D3C5, тень на hover; кобальт не используем) ═══ */
+html body #allrecords .t-store__card{
+  background:#fff!important;border:1px solid var(--p9-line)!important;border-radius:12px!important;
+  box-shadow:0 1px 2px rgba(23,25,35,.04);
+  transition:border-color .16s,box-shadow .16s}
+html body #allrecords .t-store__card:hover{
+  border-color:var(--p9-line2)!important;box-shadow:0 8px 22px rgba(23,25,35,.08)}
+
+/* ═══ К2 · название товара: читаемее. 15/22, цвет чернил, кобальт при наведении на карточку ═══
+   По умолчанию кобальт (решение владельца 29.09 №75-5), вес 600, 15/22.
+   Тёмное (чернила, кобальт на hover): window.ISH_P9_TITLE_DARK=1 до загрузки (скрипт поставит html.ishp9-title-d). */
+html body #allrecords .t-store__card .t-store__card__title{
+  font:600 15px/22px TildaSans,Arial,sans-serif!important;color:var(--p9-k)!important;
+  letter-spacing:0;text-decoration:none;overflow-wrap:anywhere}
+html.ishp9-title-d body #allrecords .t-store__card .t-store__card__title{color:var(--p9-ink)!important}
+html.ishp9-title-d body #allrecords .t-store__card:hover .t-store__card__title{color:var(--p9-k)!important}
+
+/* ═══ К6 · бренд читаемее: 12px, 600, капс, разрядка, серый ≥4.5:1 ═══
+   В списке разделов отдельной строки бренда нет (бренд в названии); правило работает там, где бренд есть:
+   главная (.тбренд), «Вам может подойти» (.ishpg-б), карточка товара (.t-store__prod-popup__brand), штатный бренд Tilda. */
+html body #allrecords #rec4204120903 .тбренд.тбренд,
+html body #allrecords .ishpg-к .ishpg-б,
+html body #allrecords .t-store__card__brand,
+html body #allrecords .t-store__prod-popup__brand,
+html body #allrecords .t-store__prod-popup__brand .js-product-brand{
+  font:600 12px/1.35 TildaSans,Arial,sans-serif!important;letter-spacing:.06em!important;
+  text-transform:uppercase;color:var(--p9-mut)!important}
+
+/* ═══ К14 · артикул подписан («Арт. iSoft») и копируется (иконка Ик7), Тп4 · артикул ═══ */
+html body #allrecords .t-store__card .t-store__card__sku,
+html body #allrecords .t-store__prod-popup__sku{
+  display:flex!important;align-items:center;flex-wrap:wrap;gap:0 6px;
+  font-size:13px!important;line-height:18px!important;margin-top:6px!important}
+html body #allrecords .t-store__card .t-store__card__sku>span:not(.js-store-prod-sku):not(.ishp9-lab):not(.ishp9-cp),
+html body #allrecords .t-store__prod-popup__sku>span:not(.js-store-prod-sku):not(.ishp9-lab):not(.ishp9-cp){display:none!important}
+html body #allrecords .ishp9-lab{font:400 12px/18px TildaSans,Arial,sans-serif;color:var(--p9-mut);letter-spacing:.02em;white-space:nowrap}
+html body #allrecords .t-store__card .t-store__card__sku .js-store-prod-sku,
+html body #allrecords .t-store__prod-popup__sku .js-store-prod-sku{
+  display:inline-block;font:600 13px/18px var(--p9-sku-font)!important;letter-spacing:.02em!important;
+  color:#3A4052!important;font-variant-numeric:tabular-nums lining-nums;font-feature-settings:"tnum" 1,"lnum" 1}
+.ishp9-cp{position:relative;display:inline-flex;align-items:center;justify-content:center;flex:none;
+  width:28px;height:28px;margin:-5px 0 -5px -2px;padding:0;border:0;border-radius:8px;background:none;
+  color:var(--p9-mut);cursor:pointer;-webkit-tap-highlight-color:transparent;transition:background .16s,color .16s}
+.ishp9-cp::after{content:"";position:absolute;left:-8px;right:-8px;top:-8px;bottom:-8px} /* зона касания 44px, не меняя строку */
+.ishp9-cp:hover{background:var(--p9-ks);color:var(--p9-k)}
+.ishp9-cp:focus-visible{outline:2px solid var(--p9-k);outline-offset:1px}
+.ishp9-cp svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;pointer-events:none}
+.ishp9-cp.is-ok{color:#14704A;background:#E4F3EB}
+.ishp9-toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,12px);z-index:2147483000;
+  display:flex;align-items:center;gap:8px;max-width:calc(100vw - 32px);padding:11px 16px;border-radius:10px;
+  background:#171923;color:#fff;font:600 14px/1.3 TildaSans,Arial,sans-serif;
+  box-shadow:0 8px 24px rgba(23,25,35,.28);opacity:0;pointer-events:none;transition:opacity .16s,transform .16s}
+.ishp9-toast.is-on{opacity:1;transform:translate(-50%,0)}
+.ishp9-toast svg{width:16px;height:16px;flex:none;fill:none;stroke:#7BE0AE;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+
+/* ═══ Тп4 · цены: табличные цифры (колонка цен ровная) ═══ */
+html body #allrecords .t-store__card__price-value,
+html body #allrecords .js-store-prod-price-val,
+html body #allrecords .t-store__prod-popup__price,
+html body #allrecords .t-store__prod-popup__price-value,
+html body #allrecords #rec4204120903 .тцена,
+html body #allrecords .ishpg-ц{
+  font-variant-numeric:tabular-nums lining-nums;font-feature-settings:"tnum" 1,"lnum" 1}
+
+/* ═══ К15 · своя сортировка (родной select остаётся в DOM, скрыт; Tilda слушает его) ═══ */
+html.ishp9-sort-on body #allrecords .t-store__filter__sort .t-store__sort-select-wrapper{
+  position:absolute!important;width:1px!important;height:1px!important;overflow:hidden!important;
+  opacity:0!important;pointer-events:none!important;margin:0!important;padding:0!important}
+.ishp9-sort{position:relative;display:inline-block;font-family:var(--p9-f)}
+.ishp9-sort__btn{display:inline-flex;align-items:center;justify-content:space-between;gap:10px;
+  min-width:220px;height:44px;box-sizing:border-box;padding:0 12px 0 14px;
+  border:1px solid var(--p9-ctrl);border-radius:8px;background:#fff;color:var(--p9-ink);
+  font:400 15px/1 TildaSans,Arial,sans-serif;cursor:pointer;text-align:left;transition:border-color .16s,box-shadow .16s}
+.ishp9-sort__btn:hover{border-color:var(--p9-k)}
+.ishp9-sort__btn:focus-visible,.ishp9-sort.is-open .ishp9-sort__btn{outline:0;border-color:var(--p9-k);box-shadow:0 0 0 3px var(--p9-ks)}
+.ishp9-sort__cap{font-size:12px;color:var(--p9-mut);display:block;line-height:1;margin-bottom:3px}
+.ishp9-sort__val{display:block;line-height:1.1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ishp9-sort__txt{min-width:0;display:block}
+.ishp9-sort__chev{width:16px;height:16px;flex:none;fill:none;stroke:var(--p9-mut);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;transition:transform .16s}
+.ishp9-sort.is-open .ishp9-sort__chev{transform:rotate(180deg)}
+.ishp9-sort__list{position:absolute;z-index:60;right:0;top:calc(100% + 6px);min-width:100%;width:max-content;max-width:min(320px,calc(100vw - 32px));
+  margin:0;padding:6px;list-style:none;background:#fff;border:1px solid var(--p9-line);border-radius:10px;
+  box-shadow:0 12px 30px rgba(23,25,35,.14);display:none}
+.ishp9-sort.is-open .ishp9-sort__list{display:block}
+.ishp9-sort__opt{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:44px;box-sizing:border-box;padding:0 12px;border-radius:8px;
+  font:400 15px/1.2 TildaSans,Arial,sans-serif;color:var(--p9-ink);cursor:pointer}
+.ishp9-sort__opt:hover,.ishp9-sort__opt.is-cur{background:#F1EEE7}
+.ishp9-sort__opt[aria-selected="true"]{color:var(--p9-k);font-weight:600}
+.ishp9-sort__opt svg{width:16px;height:16px;flex:none;fill:none;stroke:var(--p9-k);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;opacity:0}
+.ishp9-sort__opt[aria-selected="true"] svg{opacity:1}
+
+/* ═══ К16 · «Вернуться в каталог» убираем только там, где на странице есть крошки (скрипт ставит html.ishp9-crumbs) ═══ */
+html.ishp9-crumbs body .t-store.вн-сетка .вн-верх .вн-назад{display:none!important}
+
+/* ═══ К18 · чипы брендов над сеткой (из значений фильтра «Бренд»; клик = выбор в фильтре) ═══ */
+.ishp9-brands{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:0 0 14px;padding:0;font-family:var(--p9-f)}
+.ishp9-brands__cap{font:600 12px/1 TildaSans,Arial,sans-serif;letter-spacing:.06em;text-transform:uppercase;color:var(--p9-mut);margin-right:2px}
+.ishp9-bc{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:36px;box-sizing:border-box;padding:0 14px;
+  border:1px solid var(--p9-line);border-radius:8px;background:#fff;color:var(--p9-ink);
+  font:500 14px/1 TildaSans,Arial,sans-serif;cursor:pointer;white-space:nowrap;-webkit-tap-highlight-color:transparent;
+  transition:border-color .16s,background .16s,color .16s}
+.ishp9-bc:hover{border-color:var(--p9-k);color:var(--p9-k)}
+.ishp9-bc:focus-visible{outline:2px solid var(--p9-k);outline-offset:2px}
+.ishp9-bc[aria-pressed="true"]{border-color:var(--p9-k);background:var(--p9-ks);color:var(--p9-k);font-weight:600}
+.ishp9-bc[aria-pressed="true"]::before{content:"";width:6px;height:6px;border-radius:2px;background:var(--p9-k);flex:none}
+.ishp9-bc--more{border-style:dashed;border-color:var(--p9-ctrl);color:var(--p9-mut)}
+
+/* ═══ Г15 · чип «Все 289 →» как кнопка (контур кобальт, 14px) - главная и «Вам может подойти» ═══ */
+html body #allrecords .раздел-загол a,
+html body #allrecords .ishpg-hd a{
+  display:inline-flex!important;align-items:center;gap:6px;min-height:36px;box-sizing:border-box;padding:0 14px;
+  border:1px solid var(--p9-k)!important;border-radius:8px;background:#fff!important;color:var(--p9-k)!important;
+  font:600 14px/1 TildaSans,Arial,sans-serif!important;text-decoration:none!important;white-space:nowrap;
+  transition:background .16s,color .16s}
+html body #allrecords .раздел-загол a:hover,
+html body #allrecords .ishpg-hd a:hover{background:var(--p9-k)!important;color:#fff!important}
+html body #allrecords .раздел-загол a:focus-visible,
+html body #allrecords .ishpg-hd a:focus-visible{outline:2px solid var(--p9-k);outline-offset:2px}
+
+/* ═══ К12 + М9 · карточки главной (.ткарта): тот же вид, чипы характеристик 12px ═══ */
+html body #allrecords .ткарта.ткарта{background:#fff;border:1px solid var(--p9-line);border-radius:12px;box-shadow:0 1px 2px rgba(23,25,35,.04)}
+html body #allrecords .ткарта.ткарта:hover{border-color:var(--p9-line2);box-shadow:0 8px 22px rgba(23,25,35,.08)}
+html body #allrecords .ткарта .тхар li{font-size:12px!important;line-height:1.45!important}
+
+/* ═══ К23 + М9 · «Вам может подойти» единым видом: рамка как у списка, цена слева, чипы 12px ═══ */
+html body #allrecords .ishpg-к{border:1px solid var(--p9-line);border-radius:12px;background:#fff;box-shadow:0 1px 2px rgba(23,25,35,.04);transform:none}
+html body #allrecords .ishpg-к:hover{border-color:var(--p9-line2);box-shadow:0 8px 22px rgba(23,25,35,.08);transform:none}
+html body #allrecords .ishpg-к .ishpg-и{font-size:14px;line-height:1.35;color:var(--p9-ink)!important;min-height:38px}
+html body #allrecords .ishpg-к:hover .ishpg-и{color:var(--p9-k)!important}
+html body #allrecords .ishpg-ч li{font-size:12px!important;line-height:1.45!important;padding:3px 8px}
+html body #allrecords .ishpg-ц{text-align:left;font-size:19px;font-weight:600;letter-spacing:0}
+
+/* ═══ Г22 · eyebrow-подписи секций главной: «01 / КАТАЛОГ» (нумерация по порядку на странице; сами подписи рисует П8) ═══ */
+html.ishp9-on body{counter-reset:ishp9eb}
+html.ishp9-on .ishp8-eb{counter-increment:ishp9eb;display:flex;align-items:center;gap:0;color:var(--p9-mut);letter-spacing:.08em}
+html.ishp9-on .ishp8-eb::before{content:counter(ishp9eb,decimal-leading-zero) "\00a0/\00a0";color:var(--p9-k);font-variant-numeric:tabular-nums}
+
+/* ═══ телефон ═══ */
+@media (max-width:960px){
+  .ishp9-sort{display:block;width:100%}
+  .ishp9-sort__btn{width:100%;min-width:0}
+  .ishp9-sort__list{left:0;right:0;width:auto;max-width:none}
+  .ishp9-brands{flex-wrap:nowrap;overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;scrollbar-width:none;
+    margin:0 0 12px;padding:2px 0 4px}
+  .ishp9-brands::-webkit-scrollbar{display:none}
+  .ishp9-brands__cap{display:none}
+  .ishp9-bc{min-height:40px;flex:none}
+  html body #allrecords .раздел-загол a,html body #allrecords .ishpg-hd a{min-height:40px}
+  .ishp9-toast{bottom:84px}
+}
+@media (prefers-reduced-motion:reduce){
+  .ishp9-cp,.ishp9-sort__btn,.ishp9-sort__chev,.ishp9-bc,.ishp9-toast,html body #allrecords .t-store__card{transition:none!important}
+}

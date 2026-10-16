@@ -427,3 +427,904 @@ html body :where(img[width][height]) {
     scroll-behavior: auto !important;
   }
 }
+
+
+/* ============================================================================
+   П11  (16.10.2026)  Доводка общего слоя: Ц4 Тп3 Тп5 Кн1 Кн2 Кн6 Т27 Ш1 Ш4 Фр9
+   Прежняя версия файла: ish-design.до_p11.css. Не трогаем: первый экран главной,
+   кнопку списка (.ish13-buy / .ткупить / .вн-т__кн: бледно-голубая как есть), фон #F5F3EE,
+   TildaSans. Селекторы - копии селекторов блоков с приставкой html body (+ #allrecords#allrecords
+   у правил с #recNNN): на 0,0,2 сильнее источника, !important как у источника.
+   ============================================================================ */
+
+/* ---------------------------------------------------------------------------
+   Ц4  Единый набор цветов: четыре почти одинаковых мягких фона -> один, дубли серых -> два
+   Мягкие тёплые: #F1EEE7 / #EFE9DC / #F7F5F0 / #FBFAF7 / #F0F1F7 (холодный) -> --ishd-soft #F1EEE7.
+   Серые рамок управления: #9B9284 (--line-ui) и #928A79 (--ctrl, --control) -> --ishd-control.
+   Серые текста: #646B7D #5A6174 #5B6274 -> --ishd-text-2; #3A3F4F #3D4350 #3A4152 #4A5163 #4F5668 -> --ishd-text-1.
+   Мягкий синий: #F0F2FD #F2F4FD #DFE4FA #DDE2F7 -> --ishd-cobalt-soft #E9ECFC.
+   Чем рискуем: заливки сдвигаются на 1-3 пункта яркости, холодный --mist на главной становится тёплым.
+   --------------------------------------------------------------------------- */
+:root {
+  --ishd-soft:   #F1EEE7;   /* Ц4: единый мягкий фон плашек и подложек */
+  --ishd-text-1: #3A3F4F;   /* Ц4: тёмный вторичный (было 6 близких оттенков) */
+}
+html:root:root {            /* Ц4: html:root:root = 0,2,1, сильнее html.ishliv-on (0,1,1), где живой слой объявляет свои --lv-* */
+  --mist:     var(--ishd-soft);     /* Ц4: был #F0F1F7 на главной и #F1EEE7 в шапке */
+  --sand:     var(--ishd-soft);     /* Ц4: был #EFE9DC */
+  --lv-plate: var(--ishd-soft);
+  --lv-sand:  var(--ishd-soft);
+  --line-ui:  var(--ishd-control);  /* Ц4: был #9B9284 */
+  --ctrl:     var(--ishd-control);
+  --control:  var(--ishd-control);
+  --lv-sh:    var(--ishd-sh-1);     /* Т27: покой карточки списка */
+  --lv-shh:   var(--ishd-sh-2);     /* Т27: наведение на карточку списка */
+}
+/* Ц4: те же переменные у наших блоков, где они заданы локально (.нш-к{--mut:#646B7D} перебивал html:root, серый шапки и подвала не доезжал до --ishd-text-2) */
+html body .нш-к.нш-к,
+html body .нш-моб.нш-моб,
+html body .нп-к.нп-к {
+  --mut:      var(--ishd-text-2);   /* Ц4/Ц2: было #646B7D */
+  --mist:     var(--ishd-soft);
+  --sand:     var(--ishd-soft);
+  --line-ui:  var(--ishd-control);
+}
+
+/* ---------------------------------------------------------------------------
+   Т27  Единая шкала теней: три уровня (+ вариант «вверх» для нижней шторки)
+   1 - карточка в покое, плашка; 2 - наведение, выпадашки, подсказки, всплывашки; 3 - окна, панели, модальные.
+   Фокус-кольца (0 0 0 3px ...) и inset-акценты не относятся к шкале и не меняются.
+   --------------------------------------------------------------------------- */
+:root {
+  --ishd-sh-1:    0 1px 2px rgba(23, 25, 35, .06);
+  --ishd-sh-2:    0 6px 18px rgba(23, 25, 35, .10);
+  --ishd-sh-3:    0 16px 44px rgba(23, 25, 35, .22);
+  --ishd-sh-3-up: 0 -12px 30px rgba(23, 25, 35, .22);
+}
+
+/* Т27: уровень 3 */
+html body #allrecords#allrecords #rec3523869303 .t678,
+html body .ish-toast,
+html body .ishk-bar,
+html body .ishk-mini,
+html body .ishk-sheet,
+html body .ishp-toast,
+html body .окно {
+  box-shadow: var(--ishd-sh-3) !important;
+}
+
+/* Т27: уровень 2 */
+html body #allrecords#allrecords #rec3586791503 .t-popup .ткарта:hover,
+html body .ish__ctsdrop,
+html body .ishc-toast,
+html body .ishpg-к:hover,
+html body .ishsg,
+html body .isoft-terms__card:hover,
+html body .sp-дроп,
+html body .нш-подсказки,
+html body .панель,
+html body .подсказки,
+html body .ткарта:hover {
+  box-shadow: var(--ishd-sh-2) !important;
+}
+
+/* Т27: уровень 1 */
+html body #allrecords#allrecords #rec3586791503 .t-popup .ткарта,
+html body .ishpg-add:active,
+html body .ishpg-к,
+html body .рубрикатор,
+html body .ткарта {
+  box-shadow: var(--ishd-sh-1) !important;
+}
+
+/* Т27: уровень 3 вверх */
+html body .ishk-sheet {
+  box-shadow: var(--ishd-sh-3-up) !important;
+}
+
+/* Т27: уровень 2 вверх */
+@media screen and (max-width:700px) {
+html body .ishpg3-sticky {
+  box-shadow: var(--ishd-sh-2) !important;
+}
+}
+
+/* Т27: уровень 2 */
+@media screen and (max-width:700px) {
+html body .ishpg3-sbtn {
+  box-shadow: var(--ishd-sh-2) !important;
+}
+}
+
+/* Т27: уровень 2 вверх */
+@media screen and (max-width:900px) {
+html body .sp-полоса {
+  box-shadow: var(--ishd-sh-2) !important;
+}
+}
+
+
+/* Т27: кнопка карточки (в блоке две кобальтовые тени) -> уровни 2 и 3 */
+html body .ishpg-add.ishpg-add { box-shadow: var(--ishd-sh-2) !important; }
+@media (hover: hover) {
+  html body .ishpg-add.ishpg-add:hover { box-shadow: var(--ishd-sh-3) !important; }
+}
+
+
+/* ---------------------------------------------------------------------------
+   Ц4  Литеральные цвета блоков (заданы не через переменные) -> токены. Список построен по живому CSS 15.10.
+   --------------------------------------------------------------------------- */
+/* Ц4: мягкий фон -> --ishd-cobalt-soft */
+html body .ishp-tag,
+html body .ishpg3-panel,
+html body .в73.у-светлый .у.ш2 {
+  background-color: var(--ishd-cobalt-soft) !important;
+}
+
+/* Ц4: мягкий фон -> --ishd-soft */
+html body #allrecords#allrecords #rec3204219503 .t-cover__carrier,
+html body #allrecords#allrecords #rec3586791503 .t-popup .тхар li,
+html body .ishk-th,
+html body .ishpg-ч li,
+html body .ishsg__all,
+html body .sp-док,
+html body .вн .sp-поз:nth-child(even),
+html body .вн .sp-шапка {
+  background-color: var(--ishd-soft) !important;
+}
+
+/* Ц4: мягкий фон -> --ishd-soft */
+@media screen and (min-width:961px) {
+html body .вн-бренд-чип {
+  background-color: var(--ishd-soft) !important;
+}
+}
+
+/* Ц4: серый текст -> --ishd-text-2 */
+html body #allrecords#allrecords #rec3204279103 .ish-meta,
+html body #allrecords#allrecords #rec3204279103 .ish13-крат i b,
+html body #allrecords#allrecords #rec3204279103 .t-catalog__card__descr,
+html body #allrecords#allrecords #rec3523869303 .t-section__descr,
+html body #allrecords#allrecords #rec3523869303 .t678__descr,
+html body #allrecords#allrecords #rec3586791503 .ish13-крат i b,
+html body #allrecords#allrecords #rec3586791503 .t-store__card__sku .js-store-prod-sku,
+html body .ish-popnote,
+html body .ish13-свод i b,
+html body .ish15-почта,
+html body .ish15-успех p.ish15-вт,
+html body .ish15м__x,
+html body .ishc-ask i,
+html body .ishc-count,
+html body .ishc-map__ask i,
+html body .ishp-note,
+html body .ishpg3-avail.ishpg3-no,
+html body .ishsg__msg,
+html body .ishsg__sku,
+html body .isoft-inner .тк-кр a,
+html body .в73 .подпись-слева span,
+html body .в73.ф-линии .низ,
+html body .вн .вн-тело_одна .вн-тихо,
+html body .вн details.кат-все > summary span,
+html body .вн-а .вн-крошки,
+html body .вн-а .вн-крошки a,
+html body .вн-текст__рядом,
+html body .тк-кр,
+html body .тк-кр a {
+  color: var(--ishd-text-2) !important;
+}
+
+/* Ц4: серый текст -> --ishd-text-1 */
+html body #allrecords#allrecords #rec3204219503 .t950__descr,
+html body .в73 .вкладка,
+html body .вн .кат-список a,
+html body .вн-текст p,
+html body .вн-текст__карта,
+html body ; правила на «html body …» с !important перебивают слой колонки ═══ */
+  function стильКнопок() {
+  color: var(--ishd-text-1) !important;
+}
+
+/* Ц4: серый текст -> --ishd-text-1 */
+@media screen and (min-width:961px) {
+html body #allrecords#allrecords #rec3204279103 .t-catalog-parts-above__container .isoft-nav .isoft-nav__group .t-catalog__parts-above-item a,
+html body #allrecords#allrecords #rec3204279103 .t-catalog-parts-above__container .isoft-side .t-catalog__filter__item-title,
+html body #allrecords#allrecords #rec3204279103#rec3204279103 .t-catalog-parts-above__container .isoft-nav .isoft-nav__group .t-catalog__parts-above-item a,
+html body #allrecords#allrecords #rec3204279103#rec3204279103 .t-catalog-parts-above__container .isoft-side .t-catalog__filter__checkbox,
+html body #allrecords#allrecords #rec3204279103#rec3204279103 .t-catalog-parts-above__container .isoft-side .t-catalog__filter__input,
+html body #allrecords#allrecords #rec3204279103#rec3204279103 .t-catalog-parts-above__container .isoft-side .t-catalog__filter__item-title,
+html body .вн-бок .t-store__filter__checkbox,
+html body .вн-бок .t-store__filter__item-title,
+html body .вн-бок__п,
+html body .вн-бренд-чип {
+  color: var(--ishd-text-1) !important;
+}
+}
+
+/* Ц4: серый текст -> --ishd-text-2 */
+@media screen and (min-width:961px) {
+html body #allrecords#allrecords #rec3204279103 .t-catalog-parts-above__container .isoft-side__title,
+html body #allrecords#allrecords #rec3204279103 .t-catalog__card__descr,
+html body .вн-бок .t-store__filter__reset,
+html body .вн-помощь__текст {
+  color: var(--ishd-text-2) !important;
+}
+}
+
+/* Ц4: серый текст -> --ishd-text-2 */
+@media screen and (max-width:760px) {
+html body #allrecords#allrecords .ish-вкл #rec3204279103 .ishc-cathead.ish17-есть > .ishc-count {
+  color: var(--ishd-text-2) !important;
+}
+}
+
+/* Ц4: серый текст -> --ishd-text-2 */
+@media screen and (max-width:960px) {
+html body .вн-моб-низ .вн-моб-сброс {
+  color: var(--ishd-text-2) !important;
+}
+}
+
+/* Ц4: серый текст -> --ishd-text-1 */
+@media screen and (max-width:960px) {
+html body .вн-моб-откр .t-store__filter__checkbox,
+html body .вн-моб-откр .t-store__filter__custom-sel .t-store__filter__title {
+  color: var(--ishd-text-1) !important;
+}
+}
+
+
+/* ---------------------------------------------------------------------------
+   Тп3  Шкала шрифта 12 / 14 / 16 / 20 / 28 / 40: реальные размеры -> ближайшая ступень
+   10-12,5 -> 12; 13-14,5 -> 14; 15-17,5 и 18 -> 16; 19-22 -> 20; 24-32 -> 28; 36 -> 40.
+   Не тронуты: первый экран главной (.вх-*, .слайд), кнопка списка. Список построен по живому CSS 15.10.
+   Чем рискуем: 13 -> 14 и 15 -> 16 прибавляют 1px; в узких местах возможен перенос (стенд 1440/390 проверил, места с переносом исключены из списка).
+   --------------------------------------------------------------------------- */
+/* Тп3: -> 20px */
+html body #allrecords#allrecords #rec3523869303 .t-section__title,
+html body #allrecords#allrecords #rec3523869303 .t678__title,
+html body #allrecords#allrecords #rec3586791503 .t-popup .ish2-загол h3,
+html body #allrecords#allrecords #rec3586791503 .t-popup .тцена,
+html body #allrecords#allrecords #spFormHead h2,
+html body .ish15-успех__h,
+html body .ish__ctsdrop .tel,
+html body .ishc-cathead__t,
+html body .ishpg-hd h3,
+html body .ishpg-ц,
+html body .isoft-inner h2,
+html body .вн h2,
+html body .вн-чтение h2,
+html body .окно h3,
+html body .раздел-загол h3,
+html body .тцена {
+  font-size: 20px !important;
+}
+
+/* Тп3: -> 16px */
+html body #allrecords#allrecords #rec3204219503 .t-btn,
+html body #allrecords#allrecords #rec3204219503 .t-descr,
+html body #allrecords#allrecords #rec3204219503 .t950__descr,
+html body #allrecords#allrecords #rec3204279103 .ish53-back,
+html body #allrecords#allrecords #rec3204279103 .t-catalog__card__price-currency,
+html body #allrecords#allrecords #rec3204279103 .t-catalog__card__title,
+html body #allrecords#allrecords #rec3204279103 .t-catalog__parts-above-item,
+html body #allrecords#allrecords #rec3204279103 .t-catalog__parts-above-item *,
+html body #allrecords#allrecords #rec3204279103 .t-popup .ishc-lead,
+html body #allrecords#allrecords #rec3204279103 .t-popup .t-btnflex.t-catalog__prod-popup__btn,
+html body #allrecords#allrecords #rec3204279103 > .isoft-loading,
+html body #allrecords#allrecords #rec3204279103 [class*="card__price-val"],
+html body #allrecords#allrecords #rec3523869303 .t-input,
+html body #allrecords#allrecords #rec3523869303 .t-section__descr,
+html body #allrecords#allrecords #rec3523869303 .t678__descr,
+html body #allrecords#allrecords #rec3586791503 .t-store__card__price-wrapper .t-store__card__price,
+html body .ish15-успех a.ish15-btn,
+html body .ish15-успех p,
+html body .ish__cart,
+html body .ish__catbtn,
+html body .ish__ctsbtn,
+html body .ish__search input,
+html body .ishc-allbtn,
+html body .ishc-ask b,
+html body .ishc-btn,
+html body .ishc-map .isoft-nav__ghead,
+html body .ishc-map__ask b,
+html body .ishk-bm,
+html body .ishk-st button,
+html body .ishp-add,
+html body .ishp-qty input,
+html body .ishpg-add,
+html body .ishpg-qty button,
+html body .ishpg3-sticky .ishk-sgo,
+html body .ishr__t,
+html body .isoft-empty h3,
+html body .isoft-empty__reset,
+html body .isoft-foot__tel,
+html body .isoft-inner h3,
+html body .isoft-inner li,
+html body .isoft-inner p,
+html body .isoft-order h3,
+html body .isoft-order__cts a,
+html body .isoft-order__go,
+html body .isoft-terms__t,
+html body .в73 .вкладка,
+html body .в73 .подпись-слева b,
+html body .вн,
+html body .вн .sp-всего,
+html body .вн .вн-тело_одна h2,
+html body .вн details.кат-все > summary,
+html body .вн-текст p,
+html body .выдача h2,
+html body .зб-текст h3,
+html body .нп-к,
+html body .нп-подвал-тел,
+html body .нш-к,
+html body .нш-телефон b,
+html body .подвал-тел,
+html body .телефон b {
+  font-size: 16px !important;
+}
+
+/* Тп3: -> 28px */
+@media(max-width:760px) {
+html body #allrecords#allrecords #rec3204219503 .t-title,
+html body .isoft-inner h1 {
+  font-size: 28px !important;
+}
+}
+
+/* Тп3: -> 20px */
+@media(max-width:760px) {
+html body .isoft-inner h2 {
+  font-size: 20px !important;
+}
+}
+
+/* Тп3: -> 14px */
+html body #allrecords#allrecords #rec3204279103 .ish13-крат i,
+html body #allrecords#allrecords #rec3204279103 .js-catalog-prod-sku,
+html body #allrecords#allrecords #rec3204279103 .t-btnflex_type_button2 .t-btnflex__text,
+html body #allrecords#allrecords #rec3204279103 .t-popup .ishc-grp__ttl,
+html body #allrecords#allrecords #rec3204279103 .t-popup .ishc-line,
+html body #allrecords#allrecords #rec3204279103 .t-popup .ishc-pay,
+html body #allrecords#allrecords #rec3204279103 .t-popup .ishc-status,
+html body #allrecords#allrecords #rec3204279103 .t-popup .ishc-vat,
+html body #allrecords#allrecords #rec3204283303 .t-input-error,
+html body #allrecords#allrecords #rec3523869303 .t-input-error,
+html body #allrecords#allrecords #rec3586791503 .ish13-крат i,
+html body #allrecords#allrecords #rec3586791503 .t-popup .ish2-notice__btn,
+html body #allrecords#allrecords #rec3586791503 .t-popup .ish2-notice__txt,
+html body #allrecords#allrecords #rec3586791503 .t-popup .ish2-pair,
+html body #allrecords#allrecords #rec3586791503 .t-popup .ish2-panel2__пусто,
+html body #allrecords#allrecords #rec3586791503 .t-popup .ish2-загол a,
+html body #allrecords#allrecords #rec3586791503 .t-popup .t-store__prod-popup__btn,
+html body #allrecords#allrecords #rec3586791503 .t-popup .тимя,
+html body #allrecords#allrecords #rec3586791503 .t-store__card__sku .js-store-prod-sku,
+html body #allrecords#allrecords #spFormHead p,
+html body .ish-popnote,
+html body .ish15-почта,
+html body .ish__msgs a,
+html body .ishc-ask i,
+html body .ishk-badge,
+html body .ishk-nm,
+html body .ishp-note,
+html body .ishpg-hd a,
+html body .ishpg-nb,
+html body .ishpg-note p,
+html body .ishpg-pair,
+html body .ishpg-и,
+html body .ishpg-к a.ishpg-кк,
+html body .ishpg3-trust li,
+html body .ishr__n,
+html body .ishsg__all,
+html body .ishsg__msg,
+html body .isoft-foot h4,
+html body .isoft-foot__cat li a,
+html body .isoft-foot__msgs a,
+html body .isoft-order__mail,
+html body .isoft-order__more,
+html body .isoft-order__more2,
+html body .isoft-shelf__d,
+html body .isoft-terms__d,
+html body .sp-back,
+html body .sp-чип,
+html body .t706__cartwin .t-input-error,
+html body .t706__cartwin input.t-input,
+html body .t706__cartwin textarea.t-input,
+html body .вн .sp-имя,
+html body .вн .sp-строка,
+html body .вн .sp-счёт b,
+html body .вн .вн-тело_одна .вн-тихо,
+html body .вн .кат-список,
+html body .вн-а .вн-крошки,
+html body .вн-имя,
+html body .вн-кноп,
+html body .вн-крошки,
+html body .вн-текст summary,
+html body .вн-тихо,
+html body .вн-чтение .вн-дата,
+html body .вн-шаг p,
+html body .выдача .пояснение,
+html body .город,
+html body .группа,
+html body .зб-текст p,
+html body .кн-каталог,
+html body .крошки,
+html body .нп-подвал,
+html body .нш-город,
+html body .нш-подсказки-низ,
+html body .нш-часы-слева .нш-шапка-лево .нш-город .нш-гт b,
+html body .окно-ошибка,
+html body .окно-под,
+html body .окно-спасибо p,
+html body .панель a,
+html body .под,
+html body .подвал,
+html body .подсказки-низ,
+html body .полоса-доп,
+html body .пункты li,
+html body .раздел-загол a,
+html body .сноска,
+html body .тк-кр,
+html body .уход-остаться,
+html body .файл-текст b,
+html body ; правила на «html body …» с !important перебивают слой колонки ═══ */
+  function стильКнопок() {
+  font-size: 14px !important;
+}
+
+/* Тп3: -> 12px */
+html body #allrecords#allrecords #rec3586791503 .t-popup .t-store__prod-popup__sku,
+html body #allrecords#allrecords #rec3586791503 .t-popup .тбренд,
+html body #allrecords#allrecords #rec3586791503 .t-popup .тхар li,
+html body .ish__cnt,
+html body .ishpg-on .ishpg-row .t-store__prod-popup__sku,
+html body .ishpg-б,
+html body .ishpg-ч li,
+html body .в73 .низ,
+html body .в73 .подпись-слева span,
+html body .корзина i,
+html body .нп-подвал-низ,
+html body .нш-корзина i,
+html body .нш-мт a,
+html body .нш-подсказка span,
+html body .нш-телефон span,
+html body .нш-часы-слева .нш-шапка-лево .нш-город .нш-гт i,
+html body .окно-связь,
+html body .подвал-низ,
+html body .подсказка span,
+html body .поле-п,
+html body .таб .знач,
+html body .таб button,
+html body .тбренд,
+html body .телефон span,
+html body .тхар li,
+html body .файл-чип {
+  font-size: 12px !important;
+}
+
+/* Тп3: -> 28px */
+html body #allrecords#allrecords #rec3204279103 .t-popup .js-catalog-prod-name,
+html body #allrecords#allrecords #rec3586791503 .t-popup .ish2-back,
+html body #allrecords#allrecords #rec3586791503 .t-popup .t-store__prod-popup__price,
+html body .ish15-успех__h,
+html body .ishk-x,
+html body .ishpg-back,
+html body .ishpg-on .ishpg-row .t-store__prod-popup__price,
+html body .вн-а h1,
+html body .ишУзел h1 {
+  font-size: 28px !important;
+}
+
+/* Тп3: -> 20px */
+@media (max-width:760px) {
+html body .ишВыд h1 {
+  font-size: 20px !important;
+}
+}
+
+/* Тп3: -> 14px */
+@media (max-width:760px) {
+html body .ишАкт .сброс,
+html body .ишВыд .счёт {
+  font-size: 14px !important;
+}
+}
+
+/* Тп3: -> 12px */
+@media (max-width:760px) {
+html body .ишФильтр .шт {
+  font-size: 12px !important;
+}
+}
+
+/* Тп3: -> 16px */
+@media (max-width:960px) {
+html body .ишСлой .js-catalog-filter-opt,
+html body .ишСлой .t-catalog__filter__item-title,
+html body .ишСлой__верх b {
+  font-size: 16px !important;
+}
+}
+
+/* Тп3: -> 14px */
+@media (min-width:981px) {
+html body .в73 .вкладка,
+html body .в73 .подпись-слева b {
+  font-size: 14px !important;
+}
+}
+
+/* Тп3: -> 12px */
+@media (min-width:981px) {
+html body .в73 .подпись-слева span {
+  font-size: 12px !important;
+}
+}
+
+/* Тп3: -> 28px */
+@media screen and (max-width:960px) {
+html body #allrecords#allrecords #rec3204219503 .t950__title {
+  font-size: 28px !important;
+}
+}
+
+/* Тп3: -> 16px */
+@media screen and (max-width:960px) {
+html body #allrecords#allrecords #rec3204219503 .t950__descr,
+html body .вн-бок .ishpe-ещё,
+html body .вн-гр.is-ф .вн-гр__бок .вн-ф__заг,
+html body .вн-моб-низ button,
+html body .вн-моб-откр .t-store__filter__item-title {
+  font-size: 16px !important;
+}
+}
+
+/* Тп3: -> 20px */
+@media screen and (max-width:960px) {
+html body .ishc-cathead__t {
+  font-size: 20px !important;
+}
+}
+
+/* Тп3: -> 14px */
+@media screen and (max-width:960px) {
+html body .ishc-count {
+  font-size: 14px !important;
+}
+}
+
+/* Тп3: -> 16px */
+@media screen and (min-width:961px) {
+html body #allrecords#allrecords #rec3204279103#rec3204279103 .t-catalog-parts-above__container .isoft-side__title,
+html body .ishc-tools .t-catalog__sort-select,
+html body .t-store.вн-сетка .вн-верх .t-store__sort-select,
+html body .вн-бок__заг,
+html body .вн-помощь__заг {
+  font-size: 16px !important;
+}
+}
+
+/* Тп3: -> 14px */
+@media(max-width:760px) {
+html body .isoft-shelf__t {
+  font-size: 14px !important;
+}
+}
+
+/* Тп3: -> 12px */
+@media(max-width:760px) {
+html body .isoft-shelf__d {
+  font-size: 12px !important;
+}
+}
+
+/* Тп3: -> 16px */
+@media(max-width:760px) {
+html body #allrecords#allrecords #rec3204279103 .t-catalog__card__title {
+  font-size: 16px !important;
+}
+}
+
+/* Тп3: -> 40px */
+html body #allrecords#allrecords #rec3204219503 .t-title {
+  font-size: 40px !important;
+}
+
+/* Тп3: -> 14px */
+@media(max-width:960px) {
+html body #allrecords#allrecords #rec3204279103 .ish__reset,
+html body #allrecords#allrecords #rec3204279103 .t-catalog__parts-above-item,
+html body #allrecords#allrecords #rec3204279103 .t-catalog__parts-above-item * {
+  font-size: 14px !important;
+}
+}
+
+/* Тп3: -> 16px */
+@media(max-width:960px) {
+html body #allrecords#allrecords #rec3204279103 .t-catalog__card__price-buttons .t-catalog__card__btn {
+  font-size: 16px !important;
+}
+}
+
+/* Тп3: -> 14px */
+@media screen and (max-width:700px) {
+html body #allrecords#allrecords #rec3204279103 .t-popup .ishc-tbl td,
+html body #allrecords#allrecords #rec3204279103 .t-popup .ishc-tbl td:first-child,
+html body .ish13-свод i {
+  font-size: 14px !important;
+}
+}
+
+/* Тп3: -> 28px */
+@media screen and (max-width:700px) {
+html body #allrecords#allrecords #rec3204279103 .t-popup .t-catalog__prod-popup__price,
+html body #allrecords#allrecords #rec3204279103 .t-popup .t-catalog__prod-popup__price-currency,
+html body #allrecords#allrecords #rec3204279103 .t-popup .t-catalog__prod-popup__price-value,
+html body .ishpg3-sp b {
+  font-size: 28px !important;
+}
+}
+
+/* Тп3: -> 14px */
+@media screen and (min-width:961px) {
+html body #allrecords#allrecords #rec3204279103 .t-catalog-parts-above__container .isoft-nav .isoft-nav__all-slot .t-catalog__parts-above-item a,
+html body #allrecords#allrecords #rec3204279103 .t-catalog-parts-above__container .isoft-nav .isoft-nav__group .t-catalog__parts-above-item a,
+html body #allrecords#allrecords #rec3204279103 .t-catalog-parts-above__container .isoft-nav__ghead,
+html body #allrecords#allrecords #rec3204279103 .t-catalog-parts-above__container .isoft-side .t-catalog__filter__item-title,
+html body .вн-бок .t-store__filter__btn,
+html body .вн-бок .t-store__filter__reset,
+html body .вн-бренд-чип,
+html body .вн-помощь__текст {
+  font-size: 14px !important;
+}
+}
+
+/* Тп3: -> 16px */
+@media screen and (max-width:640px) {
+html body #allrecords#allrecords #rec4204120903 .тцена,
+html body .t-store__card-list:has(> .t-store__card[data-ish13]) > .t-store__card .t-store__card__price-wrapper .t-store__card__price,
+html body .вн-текст h2 {
+  font-size: 16px !important;
+}
+}
+
+/* Тп3: -> 12px */
+@media screen and (max-width:640px) {
+html body #allrecords#allrecords #rec4204120903 .тбренд {
+  font-size: 12px !important;
+}
+}
+
+/* Тп3: -> 28px */
+@media screen and (max-width:640px) {
+html body .вн-а h1 {
+  font-size: 28px !important;
+}
+}
+
+/* Тп3: -> 14px */
+@media screen and (max-width:640px) {
+html body .вн-текст p {
+  font-size: 14px !important;
+}
+}
+
+/* Тп3: -> 20px */
+@media screen and (max-width:700px) {
+html body #allrecords#allrecords #rec3586791503 .t-popup .ish2-back,
+html body .ishpg-back {
+  font-size: 20px !important;
+}
+}
+
+/* Тп3: -> 16px */
+@media screen and (max-width:700px) {
+html body #allrecords#allrecords #rec3586791503 .t-popup .ряд .тцена,
+html body .ishpg-ряд .ishpg-ц,
+html body .ishpg3-sbtn {
+  font-size: 16px !important;
+}
+}
+
+/* Тп3: -> 28px */
+@media screen and (max-width:900px) {
+html body .вн h1 {
+  font-size: 28px !important;
+}
+}
+
+/* Тп3: -> 14px */
+@media screen and (max-width:900px) {
+html body .вн .sp-кол,
+html body .вн .sp-снять,
+html body .вн .sp-сумма,
+html body .вн .sp-цена {
+  font-size: 14px !important;
+}
+}
+
+/* Тп3: -> 16px */
+@media screen and (max-width:900px) {
+html body .sp-полоса__сум b {
+  font-size: 16px !important;
+}
+}
+
+
+/* Тп3: цена в панели карточки и во всплывающей карточке: 34px вне шкалы.
+   40px на десктопе (цена крупнее заголовка 28px), 28px на планшете и телефоне (40px там переносит «Цена с НДС» под цифру). */
+html.ishpg3-on body .ishpg-row .ishpg3-panel .t-store__prod-popup__price,
+html body #allrecords#allrecords #rec3204279103 .t-popup .t-catalog__prod-popup__price,
+html body #allrecords#allrecords #rec3204279103 .t-popup .t-catalog__prod-popup__price-value,
+html body #allrecords#allrecords #rec3204279103 .t-popup .t-catalog__prod-popup__price-currency {
+  font-size: 40px !important;
+}
+@media (max-width: 960px) {
+  html.ishpg3-on body .ishpg-row .ishpg3-panel .t-store__prod-popup__price,
+  html body #allrecords#allrecords #rec3204279103 .t-popup .t-catalog__prod-popup__price,
+  html body #allrecords#allrecords #rec3204279103 .t-popup .t-catalog__prod-popup__price-value,
+  html body #allrecords#allrecords #rec3204279103 .t-popup .t-catalog__prod-popup__price-currency {
+    font-size: 28px !important;
+  }
+}
+/* Тп3: заголовки h1 служебных страниц 34px -> 28px (шкала; заголовок страницы не крупнее цены) */
+html body .isoft-inner h1,
+html body .вн h1 {
+  font-size: 28px !important;
+}
+
+/* ---------------------------------------------------------------------------
+   Тп5  Три веса: 400 / 600 / 700. 500 -> 600; 800/900 -> 700 (в живом CSS 15.10 весов 800/900 нет, 500 есть)
+   --------------------------------------------------------------------------- */
+/* Тп5: -> 600 */
+html body #allrecords#allrecords #rec3204279103 .ish53-back,
+html body #allrecords#allrecords #rec3204279103 .t-catalog__card .t-catalog__card__title.t-typography__title.t-name,
+html body #allrecords#allrecords #rec3586791503 .t-popup .ish2-back,
+html body #allrecords#allrecords #rec3586791503 .t-popup .t-store__prod-popup__btn,
+html body #allrecords#allrecords #rec3586791503 .t-popup .тцена,
+html body #allrecords#allrecords #rec3586791503 .t-store__card__price-wrapper .t-store__card__price,
+html body .ish-toast,
+html body .ishp-toast,
+html body .ishpg-back,
+html body .ishpg-ц,
+html body .sp-дроп .sp-чип,
+html body .вн-текст summary,
+html body .город .гт b,
+html body .группа,
+html body .нш-город .нш-гт b,
+html body .окно-ошибка,
+html body .тцена,
+html body .уход-остаться,
+html body ; правила на «html body …» с !important перебивают слой колонки ═══ */
+  function стильКнопок() {
+  font-weight: 600 !important;
+}
+
+/* Тп5: -> 600 */
+@media screen and (min-width:961px) {
+html body .вн-бок .t-store__filter__btn,
+html body .вн-бренд-чип {
+  font-weight: 600 !important;
+}
+}
+
+/* Тп5: -> 600 */
+@media screen and (max-width:700px) {
+html body .ishpg3-sp b i {
+  font-weight: 600 !important;
+}
+}
+
+
+/* ---------------------------------------------------------------------------
+   Кн1 / Кн2  Три вида кнопки для СУЩЕСТВУЮЩИХ кнопок. Залитая = главное действие, контур = второстепенное действие,
+   текстовая = третичное. Большинство уже так и сделано (.кн-к, .ishk-btn, .ishpg-add, .ishp-add, .t-submit - залитые;
+   .кн-каталог, .ishk-ghost - контур). Здесь доводится единая форма: радиус 8px, рамка 1px (не 1,5px), видимый фокус.
+   НЕ трогаются: .ish13-buy, .ткупить, .вн-т__кн (кнопка списка: бледно-голубая, решение 16.10).
+   --------------------------------------------------------------------------- */
+html body .кн-к.кн-к,
+html body .кн-каталог.кн-каталог {
+  border-radius: var(--ishd-r-sm) !important;        /* Кн1: было 10px и 9px */
+  border-width: 1px !important;                      /* Кн1: было 1,5px; высота у кнопок фиксирована, раскладка не едет */
+}
+html body .ishp-add.ishp-add {
+  border-radius: var(--ishd-r-sm) !important;        /* Кн1: было 4px */
+}
+html body .кн-к.кн-к:focus-visible,
+html body .кн-каталог.кн-каталог:focus-visible,
+html body .ishp-add.ishp-add:focus-visible,
+html body .ishk-btn.ishk-btn:focus-visible,
+html body #allrecords#allrecords .t-submit:focus-visible {
+  outline: 2px solid var(--ishd-cobalt);             /* Кн1: у всех кнопок одинаковый видимый фокус */
+  outline-offset: 2px;
+}
+
+/* ---------------------------------------------------------------------------
+   Ш4 / Кн2  Контур только у действий: информационные плашки уже имеют свою заливку, рамка у них лишняя
+   (рамка прозрачная, размер плашки не меняется). Поля, карточки, выпадашки и иконки-кнопки остаются с рамкой.
+   --------------------------------------------------------------------------- */
+html body .ishpg-note.ishpg-note,
+html body .ishpg3-panel.ishpg3-panel,
+html body .запрос-блок.запрос-блок,
+html body .sp-док.sp-док,
+html body #allrecords#allrecords #rec3586791503 .t-popup .ish2-notice {
+  border-color: transparent !important;              /* Ш4: плашка с заливкой - без видимой рамки */
+}
+
+/* ---------------------------------------------------------------------------
+   Кн6  Неактивная кнопка с причиной
+   Состояние: приглушена, курсор «нельзя», без тени и подъёма. Причина - в title кнопки: показывается при
+   наведении и фокусе подсказкой над кнопкой; строка .ishd-why - для новых блоков (под кнопкой, видна на телефоне).
+   Чем рискуем: ::after у этих кнопок не занят (проверено по живому CSS 15.10). Текст причины задаёт блок (title=""): ЖДЁТ_ЛИНИЮ.
+   --------------------------------------------------------------------------- */
+html body :is(.ishd-btn, .ishk-btn, .ishpg-add, .ishp-add, .кн-к, .t-submit, .ishpg3-sbtn)[disabled],
+html body :is(.ishd-btn, .ishk-btn, .ishpg-add, .ishp-add, .кн-к, .t-submit, .ishpg3-sbtn)[aria-disabled="true"] {
+  position: relative;
+  opacity: .55 !important;
+  cursor: not-allowed !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+html body :is(.ishd-btn, .ishk-btn, .ishpg-add, .ishp-add, .кн-к, .t-submit, .ishpg3-sbtn)[disabled][title]:is(:hover, :focus-visible)::after,
+html body :is(.ishd-btn, .ishk-btn, .ishpg-add, .ishp-add, .кн-к, .t-submit, .ishpg3-sbtn)[aria-disabled="true"][title]:is(:hover, :focus-visible)::after {
+  content: attr(title);
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 8px);
+  transform: translateX(-50%);
+  width: max-content;
+  max-width: 260px;
+  padding: 8px 12px;
+  border-radius: var(--ishd-r-sm);
+  background: var(--ishd-ink);
+  color: #fff;
+  font: var(--ishd-fw-regular) var(--ishd-fs-xs)/1.35 var(--ishd-font);
+  white-space: normal;
+  text-align: left;
+  box-shadow: var(--ishd-sh-2);
+  z-index: 30;
+  pointer-events: none;
+}
+.ishd-why {                                          /* Кн6: строка причины под неактивной кнопкой (для новых блоков) */
+  margin: 6px 0 0;
+  font: var(--ishd-fw-regular) var(--ishd-fs-xs)/1.35 var(--ishd-font);
+  color: var(--ishd-text-2);
+}
+
+/* ---------------------------------------------------------------------------
+   Ш1  Подпись города и времени в шапке (оформление того, что уже выводится: «Астана» и «пн-вс 9:00-18:00»)
+   Город 14px/600 тёмным, часы 12px/400 вторичным серым, плотная межстрочная. Данные и ссылки не менялись.
+   --------------------------------------------------------------------------- */
+html body .нш-город .нш-гт b,
+html body .город .гт b {
+  font-size: var(--ishd-fs-sm) !important;
+  font-weight: var(--ishd-fw-semi) !important;
+  color: var(--ishd-ink) !important;
+}
+html body .нш-город .нш-гт i,
+html body .город .гт i {
+  font-size: var(--ishd-fs-xs) !important;
+  font-weight: var(--ishd-fw-regular) !important;
+  color: var(--ishd-text-2) !important;
+  line-height: 1.25 !important;
+}
+
+/* ---------------------------------------------------------------------------
+   Фр9  Без «сырых» подписей Tilda в формах
+   (а) пустая подпись поля (в живом HTML 15.10 у одной формы осталась `<label class="t-input-title"> </label>`) не занимает место;
+   (б) звёздочка «*» стоит в подписях текстом, пояснения нет ни в одной форме -> над полями строка «* - обязательные поля»
+       (только в формах, где есть обязательное поле data-tilda-req);
+   (в) цвет подсказки в поле приведён к #626879 выше (Ц2).
+   Не сделано CSS-ом: убрать «*» из текста подписей и добавить «(необязательно)» - правка блока формы (ЖДЁТ_ЛИНИЮ).
+   `{{li_title}}` в живом HTML лежит только в шаблонах карточек (не виден), снаружи не показывается.
+   --------------------------------------------------------------------------- */
+html body #allrecords#allrecords .t-input-title:empty {
+  display: none !important;
+}
+html body #allrecords#allrecords .t-form__inputsbox:has(.t-input[data-tilda-req="1"])::before {
+  content: "* \2014  обязательные поля";
+  flex: 0 0 100%;
+  width: 100%;
+  margin: 0 0 12px;
+  font: var(--ishd-fw-regular) var(--ishd-fs-xs)/1.35 var(--ishd-font);
+  color: var(--ishd-text-2);
+}

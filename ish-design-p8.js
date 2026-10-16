@@ -70,10 +70,36 @@
   /* настоящий знак iSoft из шапки сайта (та же геометрия, viewBox 2924x873); цвет точки задаётся отдельно */
   var ЛОГО_ВНУТРИ = "<g transform=\"translate(48 825) scale(1 -1)\"><path d=\"M151 0Q129 0 114.5 14.5Q100 29 100 51V496Q100 519 114.5 533.0Q129 547 151 547Q174 547 188.0 533.0Q202 519 202 496V51Q202 29 188.0 14.5Q174 0 151 0ZM151 636Q124 636 104.5 655.5Q85 675 85 702Q85 729 104.5 748.5Q124 768 151 768Q178 768 197.5 748.5Q217 729 217 702Q217 675 197.5 655.5Q178 636 151 636Z\"/></g> <g transform=\"translate(710 825) scale(1 -1)\"><path d=\"M289 -4Q219 -4 159.5 17.5Q100 39 67 72Q52 88 54.5 108.5Q57 129 74 142Q94 158 113.5 155.5Q133 153 147 138Q164 119 201.5 102.5Q239 86 285 86Q343 86 373.5 105.0Q404 124 405 154Q406 184 376.5 206.0Q347 228 269 242Q168 262 122.5 302.0Q77 342 77 400Q77 451 107.0 484.5Q137 518 184.0 534.5Q231 551 282 551Q348 551 399.0 530.0Q450 509 480 472Q494 456 493.0 438.5Q492 421 476 409Q460 398 438.0 402.0Q416 406 401 420Q376 444 347.0 453.0Q318 462 280 462Q236 462 205.5 447.0Q175 432 175 403Q175 385 184.5 370.5Q194 356 222.0 344.5Q250 333 304 322Q379 307 422.5 284.0Q466 261 485.0 230.5Q504 200 504 160Q504 114 479.5 77.0Q455 40 407.5 18.0Q360 -4 289 -4Z\"/></g> <g transform=\"translate(1313 825) scale(1 -1)\"><path d=\"M338 -4Q257 -4 194.95454545454544 31.636363636363633Q132.9090909090909 67.27272727272727 97.45454545454545 129.63636363636363Q62 192 62 272.99378881987576Q62 355 97.45454545454545 417.3636363636364Q132.9090909090909 479.72727272727275 194.95454545454544 515.3636363636364Q257 551 337.5 551Q418 551 479.8654822335025 515.3636363636364Q541.730964467005 479.72727272727275 577.3654822335025 417.3636363636364Q613 355 613 272.99378881987576Q613 192 578.0 129.5Q543 67 481.0 31.5Q419 -4 338 -4ZM338 86Q390 86 429.93055555555554 110.08108108108108Q469.8611111111111 134.16216216216216 492.43055555555554 176.0810810810811Q515 218 515 273Q515 328 492.43055555555554 370.3993288590604Q469.8611111111111 412.7986577181208 429.93055555555554 436.8993288590604Q390 461 338 461Q286 461 246.02758620689656 436.8993288590604Q206.05517241379312 412.7986577181208 183.02758620689656 370.3993288590604Q160 328 160 273Q160 218 183.02758620689656 176.0810810810811Q206.05517241379312 134.16216216216216 246.02758620689656 110.08108108108108Q286 86 338 86Z\"/></g> <g transform=\"translate(2048 825) scale(1 -1)\"><path d=\"M149 0Q130 0 115.0 14.0Q100 28 100 51V544Q100 616 128.5 669.0Q157 722 208.0 751.5Q259 781 326 781Q348 781 362.5 768.0Q377 755 377 735Q377 716 362.5 702.5Q348 689 326 689Q289 689 261.0 672.0Q233 655 217.5 625.0Q202 595 202 554V51Q202 28 188.0 14.0Q174 0 149 0ZM57 441Q36 441 23.0 453.0Q10 465 10 483Q10 503 23.0 515.0Q36 527 57 527H304Q325 527 338.0 515.0Q351 503 351 483Q351 465 338.0 453.0Q325 441 304 441Z\"/></g> <g transform=\"translate(2475 825) scale(1 -1)\"><path d=\"M289 0Q239 0 199.0 25.5Q159 51 136.0 95.0Q113 139 113 194V671Q113 693 127.0 707.0Q141 721 163 721Q185 721 199.0 707.0Q213 693 213 671V194Q213 154 235.0 127.0Q257 100 289 100H323Q341 100 353.5 86.0Q366 72 366 50Q366 28 349.5 14.0Q333 0 307 0ZM67 441Q46 441 33.0 453.0Q20 465 20 483Q20 503 33.0 515.0Q46 527 67 527H298Q319 527 332.0 515.0Q345 503 345 483Q345 465 332.0 453.0Q319 441 298 441Z\"/></g> <rect x=\"2351\" y=\"298\" width=\"192\" height=\"86\"/> <circle cx=\"514.57\" cy=\"538.48\" r=\"101.94\" fill=\"{{D}}\"/>";
   function лого(кл, цвет, точка) {
-    return '<svg class="' + кл + '" viewBox="0 0 2924 873" role="img" aria-label="iSoft" fill="' + цвет + '">' + ЛОГО_ВНУТРИ.replace('{{D}}', точка || цвет) + '</svg>';
+    return '<svg class="' + кл + '" viewBox="0 0 2924 873" role="img" aria-label="iSoft" fill="' + цвет + '">' + ЛОГО_ВНУТРИ.replace('<circle ', '<circle class="ishp8-dot" ').replace('{{D}}', точка || цвет) + '</svg>';
   }
 
-  var ДЕКО = '<svg class="ishp8-deco" viewBox="0 0 340 340" aria-hidden="true"><circle cx="170" cy="170" r="150" fill="none" stroke="rgba(255,255,255,.14)" stroke-width="2"/><circle cx="170" cy="170" r="110" fill="none" stroke="rgba(255,255,255,.18)" stroke-width="2"/><circle cx="170" cy="170" r="70" fill="rgba(255,255,255,.1)"/><svg x="70" y="141" width="200" height="60" viewBox="0 0 2924 873" fill="#fff">' + ЛОГО_ВНУТРИ.replace('{{D}}', '#fff') + '</svg></svg>';
+  /* ───── анимации (C2, 17.10): лазер сканера, бренды раздела при наведении, листок в плашке, маршрут заказа ───── */
+  var ЛАЗЕР = '<span class="ishp8-lz" aria-hidden="true"><svg class="ishp8-lzc" viewBox="0 0 56 40"><rect width="56" height="40" rx="5" fill="#fff"/>' +
+    [4, 7, 9, 13, 15, 19, 22, 24, 28, 30, 34, 37, 39, 43, 46, 49].map(function (x, i) { return '<rect x="' + x + '" y="6" width="' + (i % 3 === 0 ? 2.4 : 1.4) + '" height="28" fill="#1B1F2B"/>'; }).join('') +
+    '</svg><span class="ishp8-lzb"></span><span class="ishp8-lzh"></span></span>';
+  /* бренды раздела (адрес раздела -> [[имя, ключ знака | t]]); нет знака в _si.json - мелкий текст; брендов нет - ничего не выезжает */
+  var БРЕНДЫ_РАЗДЕЛА = {
+    '/kompyutery': [['Lenovo', 'lenovo'], ['HP', 'hp'], ['Dell', 'dell'], ['ASUS', 'asus'], ['Acer', 'acer']],
+    '/monitory-i-ekrany': [['LG', 't']],
+    '/set-i-servery': [['TP-Link', 'tplink'], ['MikroTik', 'mikrotik']],
+    '/videonablyudenie': [['Dahua', 't'], ['Hikvision', 't']],
+    '/nakopiteli': [['Kingston', 't']],
+    '/komplektuyushchie': [['Gigabyte', 't'], ['ASUS', 'asus']],
+    '/svyaz-i-videonablyudenie': [['Logitech', 'logitech']]
+  };
+  function ряд_брендов(адрес) {
+    var л = БРЕНДЫ_РАЗДЕЛА[адрес];
+    if (!л || !FINE || RM) return '';
+    return '<span class="ishp8-br" aria-hidden="true">' + л.map(function (б, i) {
+      return '<span class="ishp8-brm" style="--i:' + i + '">' + (б[1] === 't' ? '<i>' + б[0].toUpperCase() + '</i>' : '<svg viewBox="0 0 24 24"><path d="' + SI[б[1]] + '"/></svg>') + '</span>';
+    }).join('') + '</span>';
+  }
+  var ЛИСТ = [['Ноутбук 15.6"', '10 шт'], ['Монитор 24"', '10 шт'], ['МФУ A4', '2 шт']];
+  function html_лист() {
+    return '<div class="ishp8-ls" aria-hidden="true">' + ЛИСТ.map(function (с) { return '<div class="ishp8-lr" data-t="' + с[0].replace(/"/g, '&quot;') + ' — ' + с[1] + '"><span></span></div>'; }).join('') +
+      '<div class="ishp8-ok"><svg viewBox="0 0 20 20"><circle cx="10" cy="10" r="10" fill="#1FA971"/><path d="m5.6 10.4 3 3 5.8-6.4" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>КП готово</div></div>';
+  }
+  var ДЕКО = '<svg class="ishp8-deco" viewBox="0 0 340 340" aria-hidden="true"><circle cx="170" cy="170" r="150" fill="none" stroke="rgba(255,255,255,.14)" stroke-width="2"/><circle cx="170" cy="170" r="110" fill="none" stroke="rgba(255,255,255,.18)" stroke-width="2"/><circle cx="170" cy="170" r="70" fill="rgba(255,255,255,.1)"/><svg x="70" y="141" width="200" height="60" viewBox="0 0 2924 873" fill="#fff">' + ЛОГО_ВНУТРИ.replace('<circle ', '<circle class="ishp8-dot" ').replace('{{D}}', '#fff') + '</svg></svg>';
   /* малые двухцветные значки 32 для «Почему мы» */
   var ИК = {
     clock: '<circle cx="14" cy="14" r="10"/><path d="M14 8v6l4 3"/>',
@@ -109,8 +135,8 @@
         return обёртка(КЛАСС_ПЛИТКИ[i],
           '<span class="ishp8-ix">' + ('0' + (i + 1)).slice(-2) + '</span>' +
           '<span class="ishp8-stage"><span class="ishp8-pod"></span><svg class="ishp8-fb" viewBox="0 0 18 18" aria-hidden="true">' + ЗНАЧКИ[р[3]] + '</svg>' +
-          '<img src="' + T + р[4] + '" alt="" loading="lazy" decoding="async"></span>' +
-          '<span class="ishp8-tt"><b>' + р[0] + '</b><span>' + р[2] + '</span></span>',
+          '<img src="' + T + р[4] + '" alt="" loading="lazy" decoding="async">' + (р[1] === '/torgovoe-oborudovanie' ? ЛАЗЕР : '') + '</span>' +
+          '<span class="ishp8-tt"><b>' + р[0] + '</b><span>' + р[2] + '</span></span>' + ряд_брендов(р[1]),
           9, 'a', 'ishp8-tile', р[1]);
       }).join('') + '</div>';
   }
@@ -150,7 +176,7 @@
       обёртка('c-big', ДЕКО + '<b>Цены видны сразу, без регистрации</b><span>Каталог открыт: смотрите цену до звонка и заявки.</span>', 5, 'div', 'ishp8-bc ishp8-bc--big') +
       обёртка('c-a', '<span class="ishp8-bx">' + ик('clock') + '</span><b>Ответ в день обращения</b><span>Наличие, срок, цена, аналог</span>', 8, 'div', 'ishp8-bc') +
       обёртка('c-b', '<span class="ishp8-bx">' + ик('doc') + '</span><b>Весь пакет документов</b><span>Счёт, договор, накладная, счёт-фактура</span>', 8, 'div', 'ishp8-bc') +
-      обёртка('c-w', '<div><b>Пришлите список — мы подберём позиции</b><span>Ответ придёт на почту с ценами и сроками.</span></div>' +
+      обёртка('c-w', '<div><b>Пришлите список — мы подберём позиции</b><span>Ответ придёт на почту с ценами и сроками.</span></div>' + html_лист() +
         '<span class="ishp8-gw"><a class="ishp8-go2" href="/podbor" data-д="запрос">Запросить цену</a></span>', 3, 'div', 'ishp8-bc') + '</div>';
   }
 
@@ -251,6 +277,14 @@
     h.setAttribute('data-p8h', '1');
     h.textContent = 'Не нашли нужное? Пришлите список';
   }
+  /* описание под заголовком «Не нашли нужное?» короче (охранник: только родная формулировка) */
+  function описание_запроса() {
+    var p = D.querySelector('#запросБлок .зб-текст p');
+    if (!p || p.getAttribute('data-p8p')) return;
+    if (p.textContent.indexOf('Берёмся за то') < 0) return;
+    p.setAttribute('data-p8p', '1');
+    p.textContent = 'Проработаем и ответим в день обращения.';
+  }
   /* главная кнопка «Написать, что нужно» - в обёртку: свечение висит на ней и центрировано по кнопке */
   function кнопка_запроса() {
     var к = D.querySelector('#запросБлок .зб-кнопки .кн-к:not(.конт)');
@@ -334,11 +368,125 @@
     }
     новые.forEach(подогнать);
     D.documentElement.classList.add('ishp8-on');
+    try { анимации(); } catch (e) {}
     подпись_кнопки();
     знак_запроса();
     try { заголовок_запроса(); } catch (e) {}
+    try { описание_запроса(); } catch (e) {}
     кнопка_запроса();
     until(полки, 90);
+    return true;
+  }
+  /* ───── запуск анимаций ───── */
+  function виден(el, fn, порог) {
+    if (!('IntersectionObserver' in W)) { fn(true); return; }
+    new IntersectionObserver(function (es) { fn(es[es.length - 1].isIntersecting); }, { threshold: порог || .3 }).observe(el);
+  }
+  function анимации() {
+    if (RM) return;
+    /* 1. листок: печатается список, потом «КП готово» */
+    var ls = D.querySelector('#ishp8-e .ishp8-ls');
+    if (ls) {
+      var рр = [].slice.call(ls.querySelectorAll('.ishp8-lr')), tk = 0, tm = [];
+      var cur = D.createElement('i'); cur.className = 'ishp8-cur';
+      var стоп = function () { tk++; tm.forEach(clearTimeout); tm = []; };
+      var ждать = function (ms, f, my) { tm.push(setTimeout(function () { if (my === tk) f(); }, ms)); };
+      var цикл = function () {
+        var my = ++tk; tm.forEach(clearTimeout); tm = [];
+        ls.className = 'ishp8-ls'; рр.forEach(function (r) { r.firstChild.textContent = ''; r.className = 'ishp8-lr'; });
+        if (cur.parentNode) cur.parentNode.removeChild(cur);
+        var t0 = 500;
+        рр.forEach(function (r) {
+          var s = r.getAttribute('data-t'), sp = r.firstChild;
+          ждать(t0, function () { r.classList.add('on'); r.appendChild(cur); }, my);
+          for (var k = 1; k <= s.length; k++) (function (k) { ждать(t0 + 150 + k * 52, function () { sp.textContent = s.slice(0, k); }, my); })(k);
+          t0 += 150 + s.length * 52 + 350;
+        });
+        ждать(t0 + 300, function () { if (cur.parentNode) cur.parentNode.removeChild(cur); ls.classList.add('fold'); }, my);
+        ждать(t0 + 1000, function () { ls.classList.add('done'); }, my);
+        ждать(t0 + 4400, function () { ls.classList.remove('done'); }, my);
+        ждать(t0 + 4900, function () { ls.classList.remove('fold'); }, my);
+        ждать(t0 + 5400, цикл, my);
+      };
+      виден(ls, function (v) { if (v) цикл(); else стоп(); }, .35);
+    }
+    /* 2. лазер сканера: раз в ~6 с и при наведении */
+    var lz = D.querySelector('.ishp8-lz');
+    if (lz) {
+      var стрелять = function () { lz.classList.remove('go'); void lz.offsetWidth; lz.classList.add('go'); };
+      var тм = 0, пуск = 0;
+      виден(lz, function (v) { clearInterval(тм); clearTimeout(пуск); if (v) { пуск = setTimeout(стрелять, 700); тм = setInterval(стрелять, 6000); } }, .3);
+      var пл = lz.closest('.ishp8-tile');
+      if (пл && FINE) пл.addEventListener('pointerenter', function () { if (!lz.classList.contains('go')) стрелять(); });
+      lz.addEventListener('animationend', function (e) { if (e.target === lz || e.target.className === 'ishp8-lzb') lz.classList.remove('go'); });
+    }
+    /* 6. знаки брендов: viewBox по габариту */
+    [].forEach.call(D.querySelectorAll('.ishp8-brm svg'), function (s) {
+      try { var b = s.querySelector('path').getBBox(); if (b.width && b.height) s.setAttribute('viewBox', b.x + ' ' + b.y + ' ' + b.width + ' ' + b.height); } catch (e) {}
+    });
+    /* 4. маршрут заказа */
+    until(маршрут, 60);
+  }
+  function маршрут() {
+    var б = D.querySelector('#allrecords .в73');
+    if (!б || !б.querySelector('.шаг.ш3')) return false;
+    if (б.querySelector('.ishp8-rt')) return true;
+    var NS = 'http://www.w3.org/2000/svg';
+    var svg = D.createElementNS(NS, 'svg'); svg.setAttribute('class', 'ishp8-rt'); svg.setAttribute('aria-hidden', 'true');
+    svg.innerHTML = '<defs><mask id="ishp8-rm" maskUnits="userSpaceOnUse" x="-200" y="-200" width="4000" height="4000"><path class="m" fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/></mask></defs>' +
+      '<path class="ln" fill="none" stroke="#2B44C7" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 8" mask="url(#ishp8-rm)"/>' +
+      '<g class="tr"><circle r="13" fill="#2B44C7" stroke="#fff" stroke-width="2.5"/><g transform="translate(-7 -6.5) scale(.5)" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round"><path d="M2.5 7h14v11h-14zM16.5 11h5l4 4v3h-9z"/></g></g>' +
+      '<circle class="rg" r="10" fill="none" stroke="#2B44C7" stroke-width="3"/>';
+    б.appendChild(svg);
+    var ln = svg.querySelector('.ln'), m = svg.querySelector('.m'), tr = svg.querySelector('.tr'), rg = svg.querySelector('.rg'), raf = 0, L = 0, ш3 = б.querySelector('.шаг.ш3');
+    function геом() {
+      var R = б.getBoundingClientRect(), ш = ['.ш1', '.ш2', '.ш3'].map(function (s) { var e = б.querySelector('.шаг' + s); return e ? e.getBoundingClientRect() : null; });
+      if (!ш[0] || !ш[1] || !ш[2]) return null;
+      var o = function (r) { return { l: r.left - R.left, r: r.right - R.left, t: r.top - R.top, b: r.bottom - R.top, cx: (r.left + r.right) / 2 - R.left }; };
+      var a = o(ш[0]), c = o(ш[1]), d = o(ш[2]), p;
+      svg.setAttribute('width', R.width); svg.setAttribute('height', R.height);
+      if (c.t >= a.b - 1) {                                   /* ступени столбиком: вертикаль слева */
+        var x = Math.max(14, R.left - 6) - R.left;
+        return { p: 'M' + x + ' ' + (a.t + 34) + ' V' + (d.t + 34), ex: x, ey: d.t + 34 };
+      }
+      var y1 = a.t - 14, y2 = c.t - 14, y3 = d.t - 14, g1 = (a.r + c.l) / 2, g2 = (c.r + d.l) / 2, q = 10;
+      p = 'M' + (a.l + 26) + ' ' + y1 + ' H' + (g1 - q) + ' Q' + g1 + ' ' + y1 + ' ' + g1 + ' ' + (y1 - q) + ' V' + (y2 + q) + ' Q' + g1 + ' ' + y2 + ' ' + (g1 + q) + ' ' + y2 +
+        ' H' + (g2 - q) + ' Q' + g2 + ' ' + y2 + ' ' + g2 + ' ' + (y2 - q) + ' V' + (y3 + q) + ' Q' + g2 + ' ' + y3 + ' ' + (g2 + q) + ' ' + y3 + ' H' + d.cx;
+      return { p: p, ex: d.cx, ey: y3 };
+    }
+    function нарисовать(пр) {
+      var g = геом(); if (!g) return null;
+      ln.setAttribute('d', g.p); m.setAttribute('d', g.p);
+      L = m.getTotalLength(); m.style.strokeDasharray = L; m.style.strokeDashoffset = L * (1 - пр);
+      return g;
+    }
+    function кадр(пр) {
+      m.style.strokeDashoffset = L * (1 - пр);
+      var pt = m.getPointAtLength(L * пр); tr.setAttribute('transform', 'translate(' + pt.x.toFixed(1) + ' ' + pt.y.toFixed(1) + ')');
+    }
+    var играет = false;
+    function играть() {
+      cancelAnimationFrame(raf);
+      var g = нарисовать(0); if (!g) return;
+      tr.style.opacity = 1; rg.style.opacity = 0; кадр(0);
+      var t0 = 0, T = 2300;
+      играет = true;
+      (function ш(ts) {
+        if (!t0) t0 = ts;
+        var x = Math.min(1, (ts - t0) / T), e = x < .5 ? 2 * x * x : 1 - Math.pow(-2 * x + 2, 2) / 2;
+        кадр(e);
+        if (x < 1) { raf = requestAnimationFrame(ш); return; }
+        играет = false;
+        rg.setAttribute('transform', 'translate(' + g.ex.toFixed(1) + ' ' + g.ey.toFixed(1) + ')');
+        rg.classList.remove('pop'); void rg.getBoundingClientRect(); rg.classList.add('pop');
+        ш3.classList.remove('ishp8-flash'); void ш3.offsetWidth; ш3.classList.add('ishp8-flash');
+      })(performance.now());
+    }
+    var vis = false, был = false;
+    виден(б, function (v) { vis = v; if (v && !был) { был = true; играть(); } }, .45);
+    б.addEventListener('click', function (e) { if (e.target.closest && e.target.closest('.вкладка')) setTimeout(function () { if (vis) играть(); }, 160); });
+    var rt = 0;
+    W.addEventListener('resize', function () { clearTimeout(rt); rt = setTimeout(function () { if (!играет && был) { нарисовать(1); tr.style.opacity = 0; } }, 250); });
     return true;
   }
   until(вставить, 80);

@@ -128,10 +128,11 @@
        'Компьютеры, мониторы и печать для школ и вузов.',
        'Для школ и вузов', '/obrazovanie', '']
     ];
-    return '<div class="ishp8-eb">Для кого</div><h2 class="ishp8-h">Покупателям по-разному: выберите свой путь</h2><div class="ishp8-who">' +
-      к.map(function (c) {
-        return '<div class="ishp8-wc"><svg viewBox="0 0 34 34" aria-hidden="true">' + c[0] + '</svg><b>' + c[1] + '</b><p>' + c[2] + '</p>' +
-               '<a class="ishp8-go" href="' + c[4] + '"' + c[5] + '>' + c[3] + '</a></div>';
+    var кл = ['w1', 'w2', 'w3'];
+    return '<div class="ishp8-eb">Для кого</div><h2 class="ishp8-h">Разным покупателям</h2><div class="ishp8-who">' +
+      к.map(function (c, i) {
+        return обёртка(кл[i], '<svg class="ishp8-wi" viewBox="0 0 34 34" aria-hidden="true">' + c[0] + '</svg><b>' + c[1] + '</b><p>' + c[2] + '</p>' +
+               '<a class="ishp8-go" href="' + c[4] + '"' + c[5] + '>' + c[3] + '</a>', 6, 'div', 'ishp8-wc');
       }).join('') + '</div>';
   }
 

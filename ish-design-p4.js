@@ -306,28 +306,6 @@
     var n = 0; (function step() { var ok = false; try { ok = p25(); } catch (e) {} if (!ok && ++n < 80) setTimeout(step, 250); })();
   }
 
-  /* ───────── П31: внутренние страницы в духе главной C2 (ish-design-p31.js/.css с того же адреса, один раз) ─────────
-     Признак: список товаров (.t-store__card-list), карточка (.ishpg-row) или текстовая страница (.вн-верх/.вн-тело). На главной (#лента) не грузим - там П8.
-     Выключатель: window.ISH_P31_OFF = 1 или window.ISH_P4_NO_P31 = 1 (до загрузки p4). Кэш: поменять P31V. */
-  var P31V = '1';
-  function p31() {
-    if (W.ISH_P4_NO_P31 || W.ISH_P31_OFF || W.ISH_P31 || D.getElementById('ishp-p31-js')) return true;
-    if (D.getElementById('лента')) return true;
-    if (!D.querySelector('.t-store__card-list, .ishpg-row, .вн-верх, .вн-тело')) return false;
-    var src = tag && tag.src;
-    if (!src) return true;
-    var s = D.createElement('script');
-    s.id = 'ishp-p31-js'; s.defer = true;
-    s.src = src.replace(/ish-design-p4\.js.*$/, 'ish-design-p31.js?v=' + P31V);
-    D.head.appendChild(s);
-    return true;
-  }
-  function p31wait() {
-    if (W.ISH_P4_NO_P31 || W.ISH_P31_OFF) return;
-    var n = 0;
-    (function step() { var ok = false; try { ok = p31(); } catch (e) {} if (!ok && ++n < 80) setTimeout(step, 250); })();
-  }
-
   /* ───────── П22: кнопка WhatsApp (грузит ish-design-p22.js с того же адреса; она сама подтянет ish-design-p22.css; выключатель window.ISH_P22_OFF) ───────── */
   var P22V = '4';
   (function () {
@@ -382,6 +360,5 @@
   p23wait();
   p24wait();
   p25wait();
-  p31wait();
   try { p10(); } catch (e) {}
 })();

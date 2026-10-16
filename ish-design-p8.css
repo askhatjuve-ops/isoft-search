@@ -94,8 +94,8 @@ html.ishp8-js .ishp8-rv.in{opacity:1;transform:none}
 .ishp8-who>.w2 .ishp8-wc:hover .ishp8-go::after,.ishp8-who>.w3 .ishp8-wc:hover .ishp8-go::after{transform:translateX(4px)}
 /* плашка «Подбор техники» (П23) в стиле C2 */
 html .ishp23-cta{margin-top:44px}
-html .ishp23-cta .ishp23-cta__in{background:linear-gradient(135deg,#2B2F6B,#15173A);position:relative;overflow:hidden;border:0;border-radius:28px;box-shadow:var(--p8-sh2);padding:30px 34px}
-html .ishp23-cta .ishp23-cta__in::before{content:'';position:absolute;right:-118px;top:50%;width:620px;height:300px;transform:translateY(-50%);background:radial-gradient(closest-side,rgba(132,116,255,.9) 0%,rgba(108,92,231,.55) 50%,rgba(108,92,231,.12) 75%,transparent);pointer-events:none}
+html .ishp23-cta .ishp23-cta__in{background:var(--p8-ind-bg);position:relative;overflow:hidden;border:0;border-radius:28px;box-shadow:var(--p8-sh2);padding:30px 34px}
+html .ishp23-cta .ishp23-cta__in::before{content:'';position:absolute;right:-118px;top:50%;width:620px;height:300px;transform:translateY(-50%);background:var(--p8-ind-glow);pointer-events:none}
 html .ishp23-cta .ishp23-cta__t,html .ishp23-cta .ishp23-cta__b{position:relative;z-index:1}
 html .ishp23-cta .ishp23-cta__h{color:#fff}
 html .ishp23-cta .ishp23-cta__p{color:#D3D7F3}
@@ -369,4 +369,23 @@ html.ishp8-on .зб-знак.ishp8-zl{justify-self:start}
   .ishp8-bento>.c-big{grid-column:6/13;grid-row:1/3}
   .ishp8-bento>.c-a{grid-column:1/6;grid-row:1}
   .ishp8-bento>.c-b{grid-column:1/6;grid-row:2}
+}
+
+/* ───────── общая расцветка «индиго + свечение» (эталон - плашка «Подбор техники»): плитка iSoft, «Пришлите список», «25 лет» ───────── */
+:root{--p8-ind-bg:linear-gradient(135deg,#2B2F6B,#15173A);--p8-ind-glow:radial-gradient(closest-side,rgba(132,116,255,.9) 0%,rgba(108,92,231,.55) 50%,rgba(108,92,231,.12) 75%,transparent)}
+html .ishp8-bi,html .ishp8-bento>.c-w .ishp8-bc,html .ishp8-nums>.k1 .ishp8-num{background:var(--p8-ind-bg);position:relative;overflow:hidden;isolation:isolate}
+html .ishp8-bi::before,html .ishp8-bento>.c-w .ishp8-bc::before,html .ishp8-nums>.k1 .ishp8-num::before,html .ishp8-bi .ishp8-bil::before{content:'';position:absolute;z-index:-1;background:var(--p8-ind-glow);pointer-events:none}
+html .ishp8-bi::before{content:none}
+html .ishp8-bi .ishp8-bil{position:relative}
+html .ishp8-bi .ishp8-bil::before{left:min(40%,95px);top:50%;width:340px;height:170px;transform:translate(-50%,-50%)}
+html .ishp8-bi .ishp8-bic,html .ishp8-bento>.c-w .ishp8-bc span,html .ishp8-nums>.k1 .ishp8-num span{color:#D3D7F3}
+html .ishp8-bento>.c-w .ishp8-bc::before{right:-120px;top:50%;width:480px;height:260px;transform:translateY(-50%)}
+html .ishp8-nums>.k1 .ishp8-num::before{right:-50px;top:60px;width:380px;height:200px;transform:translateY(-50%)}
+@media (max-width:900px){
+  html .ishp8-bento>.c-w .ishp8-bc{background:var(--p8-ind-bg)}
+  html .ishp8-bento>.c-w .ishp8-bc::before{right:auto;left:-60px;top:auto;bottom:-50px;transform:none;width:380px;height:200px}
+}
+@media (max-width:640px){
+  html .ishp8-bi .ishp8-bil::before{left:50%;width:300px;height:150px}
+  html .ishp8-nums>.k1 .ishp8-num::before{right:-70px;top:36px;width:280px;height:140px}
 }

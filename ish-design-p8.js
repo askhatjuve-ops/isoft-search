@@ -92,13 +92,13 @@
   /* ───────── Г12: полоса преимуществ (одна плашка) ───────── */
   function html_strip() {
     var пункты = [
-      ['<path d="M14 3 5 6.5v7c0 5.5 3.8 9.4 9 11.5 5.2-2.1 9-6 9-11.5v-7z"/><path d="m10 14 3 3 5-6"/>', 'Гарантия не меньше 12 месяцев'],
-      ['<path d="M2.5 7h14v11h-14zM16.5 11h5l4 4v3h-9z"/><circle cx="7" cy="20" r="2"/><circle cx="21" cy="20" r="2"/>', 'Бесплатная доставка по всему Казахстану'],
+      ['<path d="M14 3 5 6.5v7c0 5.5 3.8 9.4 9 11.5 5.2-2.1 9-6 9-11.5v-7z"/><path d="m10 14 3 3 5-6"/>', 'Гарантия от производителя'],
+      ['<path d="M2.5 7h14v11h-14zM16.5 11h5l4 4v3h-9z"/><circle cx="7" cy="20" r="2"/><circle cx="21" cy="20" r="2"/>', 'Бесплатная доставка'],
       ['<path d="M6 3.5h12l4 4V24.5H6z"/><path d="M18 3.5v4h4M10 13h8M10 17h8M10 21h5"/>', 'Безнал, счёт с НДС'],
-      ['<path d="M14 25s-8-7-8-13a8 8 0 0 1 16 0c0 6-8 13-8 13z"/><circle cx="14" cy="12" r="3"/>', 'Самовывоз: Астана, Алматы, Актобе']
+      ['<path d="M14 25s-8-7-8-13a8 8 0 0 1 16 0c0 6-8 13-8 13z"/><circle cx="14" cy="12" r="3"/>', 'Самовывоз', 'Астана, Алматы, Актобе']
     ];
     return '<div class="ishp8-strip" role="list">' + пункты.map(function (п) {
-      return '<div class="ishp8-strip__i" role="listitem"><svg viewBox="0 0 28 28" aria-hidden="true">' + п[0] + '</svg><p><b>' + п[1] + '</b></p></div>';
+      return '<div class="ishp8-strip__i" role="listitem"><svg viewBox="0 0 28 28" aria-hidden="true">' + п[0] + '</svg><p><b>' + п[1] + '</b>' + (п[2] ? '<span class="ishp8-strip__s">' + п[2] + '</span>' : '') + '</p></div>';
     }).join('') + '</div>';
   }
 

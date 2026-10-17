@@ -185,7 +185,7 @@
           pr.appendChild(D.createElement('br'));
           pr.appendChild(sp);
         }
-        var т = 'Цены указаны с НДС 16% на дату формирования: ' + ДАТА() + '. ' + СРОК_КП + '.';
+        var т = 'Цены указаны с НДС на дату формирования: ' + ДАТА() + '. ' + СРОК_КП + '.';
         if (sp.textContent !== т) sp.textContent = т;     /* без записи «то же самое»: иначе наблюдатель зациклится */
       }
     }
@@ -198,7 +198,7 @@
       if (typeof o !== 'function') return;
       c.writeText = function (t) {
         if (typeof t === 'string' && t.indexOf('Спецификация iSoft B2B') === 0 && t.indexOf('действительно') < 0)
-          t += '\nЦены указаны с НДС 16% на дату формирования. ' + СРОК_КП + '.';
+          t += '\nЦены указаны с НДС на дату формирования. ' + СРОК_КП + '.';
         return o.call(c, t);
       };
       c.__ishp19 = 1;
@@ -213,7 +213,7 @@
     if (!q('.ishp19-note')) {
       var p = D.createElement('p');
       p.className = 'ishp19-note';
-      p.textContent = 'Цены указаны с НДС 16%. Доставка бесплатная в любую точку Казахстана.';
+      p.textContent = 'Цены указаны с НДС. Доставка бесплатная в любую точку Казахстана.';
       g.parentNode.insertBefore(p, g.nextSibling);
     }
     return true;

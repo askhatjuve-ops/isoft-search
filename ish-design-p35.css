@@ -1,0 +1,260 @@
+/* ish-design-p35.css  v2.0  (кандидат 17.10.2026; НЕ выложено)  П35 «раздел каталога: компоненты главной»
+   Подключает ish-design-p35.js. Откат: пустой файл на Pages или window.ISH_P35_OFF / ISH_P4_NO_P35.
+   Что: голубая палитра главной (#E7EAFB / #EEF1FD, кобальт на активном), шапка раздела с градиентом, полоса «кто мы», две индиго-плиты,
+   экран «ничего не найдено», светлый низ, сегмент «Список / Плитка», цена и характеристики контрастнее, телефон: круги не на «В корзину».
+   НЕ ДЕЛАЕМ: подиумы под фото, тяжёлые тени строк, скругление строк больше 20, заливку «В корзину», hero.
+   Всё под html.ishp35-on (ставит js на странице со списком). Шрифт TildaSans. Текст не меньше 12px, без горизонтальной прокрутки на 390. */
+:root{--p35-k:#2B44C7;--p35-kh:#2036A8;--p35-cb2:#5B73F0;--p35-soft:#E7EAFB;--p35-soft2:#EEF1FD;--p35-line:#D5DCF7;--p35-ink:#171923;--p35-mut:#5A5F70;
+  --p35-ind:linear-gradient(135deg,#2B2F6B,#15173A);--p35-glow:radial-gradient(closest-side,rgba(132,116,255,.9) 0%,rgba(108,92,231,.55) 50%,rgba(108,92,231,.12) 75%,transparent);
+  --p35-f:TildaSans,Arial,sans-serif}
+
+/* ═══ общее: подпись «NN / РАЗДЕЛ», контейнер, кнопки ═══ */
+html.ishp35-on .ishp35-eb{font:700 12px/1.2 var(--p35-f);letter-spacing:.12em;text-transform:uppercase;color:var(--p35-mut);margin:0 0 8px}
+html.ishp35-on .ishp35-eb b{color:var(--p35-k);font-weight:700}
+html.ishp35-on .ishp35-wrap{max-width:min(1440px,calc(100% - 40px));margin:0 auto;padding:0 40px;box-sizing:border-box;font-family:var(--p35-f)}
+html.ishp35-on .ishp35-sec .ishp35-eb{margin:0 0 16px}
+
+/* ═══ шапка раздела: тёмная карточка как «Торговое оборудование» главной + отдельная белая полоса фактов ═══ */
+html.ishp35-on .вн-а{background:none;border:0;padding:24px 0 0;margin:0 0 20px}
+html.ishp35-on .вн-а .вн-крошки{margin:0 0 16px}
+html.ishp35-on .ishp35-hero{position:relative;overflow:hidden;isolation:isolate;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);align-items:center;gap:16px;
+  min-height:188px;box-sizing:border-box;padding:24px 40px 52px;border-radius:28px;background:var(--p35-ind);color:#fff}
+html.ishp35-on .ishp35-hero .ishp35-eb{color:#C9CFE6;margin:0 0 8px}
+html.ishp35-on .ishp35-hero .ishp35-eb b{color:#B4BDFF}
+html.ishp35-on body .ishp35-hero h1{margin:0!important;padding:0;border:0;white-space:normal!important;overflow:visible!important;text-overflow:clip!important;color:#fff!important;
+  font:800 clamp(32px,3.4vw,42px)/1.1 var(--p35-f)!important;letter-spacing:-.02em}
+html.ishp35-on .ishp35-hero h1::after,html.ishp35-on .ishp35-hero h1::before{display:none!important;content:none!important}
+html.ishp35-on .ishp35-hero__s{margin:12px 0 0;font:400 15px/1.4 var(--p35-f);color:#C9CFE6}
+html.ishp35-on .ishp35-hero__p{position:relative;height:112px;display:grid;place-items:center;align-self:center}
+html.ishp35-on .ishp35-hero__p::before{content:"";position:absolute;inset:-28px -10px -28px -10px;background:radial-gradient(closest-side,#3B52CC 0%,#34499F 45%,rgba(43,68,199,.3) 75%,transparent);pointer-events:none}
+html.ishp35-on .ishp35-hero__p img{position:relative;max-width:78%;max-height:112px;object-fit:contain;mix-blend-mode:multiply;transform:translateY(8px) scale(1.5)}
+html.ishp35-on .ishp35-strip{position:relative;z-index:2;margin:-32px 24px 0;grid-template-columns:repeat(4,minmax(0,1fr))}
+html.ishp35-on .ishp35-strip .ishp8-strip__i b{font:700 17px/1.25 var(--p35-f)}
+html.ishp35-on .ishp35-strip .ishp8-strip__i{min-height:72px;padding:12px 16px}
+
+/* ═══ единая строка-панель над списком: панель-фон + «Найдено N» и сортировка (.вн-верх) + «Список/Плитка» (.ishd-view) в одной ячейке сетки ═══ */
+html.ishp35-on body #allrecords .t-store.вн-сетка > .ishp35-bar,html.ishp35-on body #allrecords .t-store.вн-сетка > .вн-верх,html.ishp35-on body #allrecords .t-store.вн-сетка > .ishd-view{grid-column:2;grid-row:1}
+html.ishp35-on .ishp35-bar{min-height:64px;box-sizing:border-box;margin:0 0 16px;background:#fff;border:1px solid var(--p35-line);border-radius:18px}
+html.ishp35-on body #allrecords .t-store.вн-сетка > .вн-верх{justify-self:start;align-self:center;margin:0 0 16px!important;padding:0 0 0 24px;position:relative;z-index:1;height:64px;gap:16px;justify-content:flex-start}
+html.ishp35-on body #allrecords .t-store.вн-сетка > .вн-верх::before{content:var(--p35-n,"");flex:none;font:700 15px/1.2 var(--p35-f);color:var(--p35-ink);white-space:nowrap}
+html.ishp35-on body #allrecords .t-store.вн-сетка .вн-верх .t-store__sort-select{height:44px!important;min-width:224px;border:1px solid var(--p35-line)!important;border-radius:12px!important;background-color:var(--p35-soft2)!important;font-size:15px!important}
+html.ishp35-on body #allrecords .t-store.вн-сетка > .ishd-view{justify-self:end;align-self:center;margin:0 8px 16px 0;padding:0;position:relative;z-index:1;height:64px}
+html.ishp35-on .ishd-view__lbl{display:none}
+html.ishp35-on .ishd-view .ishd-seg{background:var(--p35-soft2);border:0;border-radius:14px;padding:4px}
+html.ishp35-on .ishd-view .ishd-seg button{height:44px;border-radius:10px;padding:0 20px}
+html.ishp35-on .ishd-view .ishd-seg button{background:transparent;color:#3A3F52;border-left:0!important}
+html.ishp35-on .ishd-view .ishd-seg button[aria-pressed="true"]{background:#fff;color:var(--p35-k)}
+html.ishp35-on .ishd-view .ishd-seg button:hover:not([aria-pressed="true"]){background:var(--p35-soft)}
+html.ishp35-on .ishp9-brands{flex-wrap:nowrap;overflow-x:auto;overflow-y:hidden;scrollbar-width:none;margin:0 0 16px;padding:0}
+html.ishp35-on .ishp9-brands::-webkit-scrollbar{display:none}
+html.ishp35-on .ishp9-bc,html.ishp35-on .ishp9-brands__cap{flex:none}
+html.ishp35-on .ishp9-bc{background:#fff;border:1px solid var(--p35-line);color:var(--p35-ink);border-radius:12px;min-height:40px}
+html.ishp35-on .ishp9-bc:hover{background:var(--p35-soft);border-color:var(--p35-k);color:var(--p35-k)}
+html.ishp35-on .ishp9-bc[aria-pressed="true"]{background:var(--p35-k);border-color:var(--p35-k);color:#fff}
+html.ishp35-on .ishp9-bc[aria-pressed="true"]::before{background:#fff}
+html.ishp35-on .ishp9-bc--more{background:var(--p35-soft2);border:1px dashed #9FAEE8;color:var(--p35-k)}
+html.ishp35-on .ishp9-brands__cap{color:var(--p35-mut)}
+html.ishp35-on .ishd-chips .ishd-chip{background:var(--p35-k);color:#fff;height:36px;border-radius:12px}
+html.ishp35-on .ishd-chips .ishd-rs{color:var(--p35-k)}
+
+/* ═══ панель фильтров: кобальтовая шапка, тонкие разделители, счётчики-бейджи, «Применить» залита ═══ */
+html.ishp35-on body #allrecords .вн-бок__карта{background:var(--p35-soft2);border:1px solid var(--p35-line);border-radius:18px;box-shadow:none;overflow:hidden}
+html.ishp35-on body #allrecords .вн-бок__фильтры{padding:0!important}
+html.ishp35-on body #allrecords .вн-бок__фильтры > .вн-бок__заг{background:var(--p35-k)!important;color:#fff!important;margin:0!important;padding:12px 16px!important;min-height:56px;box-sizing:border-box;gap:12px;font:800 17px/1.2 var(--p35-f)!important;justify-content:flex-start}
+html.ishp35-on body #allrecords .вн-бок__фильтры > .вн-бок__заг::before{content:"";flex:none;width:32px;height:32px;border-radius:10px;background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%232B44C7' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M2 3h12l-4.6 5.4V13l-2.8-1.4V8.4z'/%3E%3C/svg%3E") center/18px no-repeat}
+html.ishp35-on body #allrecords .вн-бок__фильтры .ishd-reset{margin:0 0 0 auto;color:#fff;font-weight:600}
+html.ishp35-on body #allrecords .вн-бок__фильтры > .t-store__filter{padding:4px 16px 16px!important;box-sizing:border-box!important;width:100%!important;max-width:100%!important}
+html.ishp35-on body #allrecords .t-store__filter .t-store__filter__item + .t-store__filter__item{border-top:1px solid var(--p35-line)}
+html.ishp35-on body #allrecords .t-store__filter .t-store__filter__item-title[data-ishd-n]::before{min-width:22px;height:22px;box-sizing:border-box;padding:0 7px!important;border-radius:999px;background:var(--p35-k);color:#fff!important;font:700 12px/22px var(--p35-f)!important;text-align:center}
+html.ishp35-on body #allrecords .t-store__filter .t-store__filter__btn.js-store-filter-price-btn{background:var(--p35-k)!important;color:#fff!important;border:0!important;border-radius:12px!important;height:44px!important;font-weight:700!important;box-shadow:none!important}
+html.ishp35-on body #allrecords .t-store__filter .t-store__filter__btn.js-store-filter-price-btn:hover{background:var(--p35-kh)!important}
+html.ishp35-on .t-store__filter input[type=text]{background:#fff;border-color:var(--p35-line);border-radius:12px}
+html.ishp35-on .js-store-filter-mob-btn{background:var(--p35-soft2)!important;border:1px solid var(--p35-line)!important;color:var(--p35-k)!important;border-radius:14px!important}
+
+/* ═══ строка товара: цена крупнее и темнее, характеристики контрастнее; без подиумов и теней ═══ */
+html.ishp35-on body #allrecords .t-store__card[data-ish13]{border-radius:18px;border-color:var(--p35-line);box-shadow:none}
+html.ishp35-on body #allrecords .t-store__card[data-ish13]:hover{border-color:#B7C2F0}
+html.ishp35-on body #allrecords .t-store__card__price-value,html.ishp35-on body #allrecords .t-store__card__price-currency{font-family:var(--p35-f);font-weight:800;color:#0B0E1A}
+html.ishp35-on body #allrecords .t-store__card__price .t-store__card__price-value{font-size:24px;line-height:1.1;letter-spacing:-.01em}
+html.ishp35-on body #allrecords .t-store__card__price .t-store__card__price-currency{font-size:20px}
+html.ishp35-on .ish13-крат i{color:#1F2433}
+html.ishp35-on .ish13-крат b{color:#5E647A;font-weight:500}
+html.ishp35-on body #allrecords .t-store__card__sku,html.ishp35-on body #allrecords .t-store__card__sku .ishp9-lab{color:#7A8094}
+
+/* «Загрузить ещё»: белая с кобальтовым текстом (Tilda красит кнопку своим #rec…-правилом с !important - перебиваем по id) */
+html.ishp35-on body #allrecords .t-store__load-more-btn-wrap .t-btnflex.t-btnflex_type_button{background:#fff!important;background-color:#fff!important;border:1px solid #AEBBEF!important;box-shadow:none!important;color:var(--p35-k)!important;border-radius:12px!important}
+html.ishp35-on body #allrecords .t-store__load-more-btn-wrap .t-btnflex__text{color:var(--p35-k)!important}
+html.ishp35-on body #allrecords .t-store__load-more-btn-wrap .t-btnflex.t-btnflex_type_button:hover{background:var(--p35-soft2)!important;background-color:var(--p35-soft2)!important;border-color:var(--p35-k)!important}
+html.ishp35-on .ishp19-note{color:var(--p35-mut);margin-bottom:0}
+html.ishp35-on body #allrecords .t-store__load-more-btn-wrap{margin:0!important;padding:12px 0 0!important}
+html.ishp35-on body #allrecords .t-store__load-more-btn-wrap .t-btnflex.t-btnflex_type_button{margin:0 auto!important}
+
+/* ═══ индиго-плиты «Пришлите список» ═══ */
+html.ishp35-on .ishp35-plate{flex:0 0 100%;width:100%;max-width:100%;box-sizing:border-box;position:relative;overflow:hidden;isolation:isolate;display:flex;align-items:center;justify-content:space-between;gap:24px;
+  margin:16px 0;padding:28px 34px;border-radius:24px;background:var(--p35-ind);color:#fff;font-family:var(--p35-f);clear:both}
+html.ishp35-on .ishp35-plate[hidden]{display:none}
+html.ishp35-on .ishp35-plate::before{content:"";position:absolute;z-index:-1;right:-70px;top:50%;width:520px;height:300px;translate:0 -50%;background:var(--p35-glow);pointer-events:none}
+html.ishp35-on .ishp35-plate__h{display:block;font:800 clamp(20px,2.2vw,28px)/1.2 var(--p35-f);letter-spacing:-.02em;color:#fff}
+html.ishp35-on .ishp35-plate__t p{margin:8px 0 0;font:400 15px/1.5 var(--p35-f);color:#D3D7F3;max-width:52ch}
+html.ishp35-on .ishp35-plate__b{flex:none;box-sizing:border-box;display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 24px;border-radius:12px;background:#fff;color:var(--p35-k);
+  font:700 15px/1 var(--p35-f);text-decoration:none;box-shadow:0 10px 24px -12px rgba(23,25,35,.35);transition:transform .2s,box-shadow .2s}
+html.ishp35-on .ishp35-plate__b:hover{transform:translateY(-2px);box-shadow:0 14px 26px -12px rgba(23,25,35,.4);color:var(--p35-kh)}
+html.ishp35-on .ishp35-plate__b:focus-visible{outline:2px solid #fff;outline-offset:3px}
+html.ishp35-on .t-store__card-list > .ishp35-plate{grid-column:1/-1}
+html.ishp35-on body #allrecords .t-store__load-more-btn-wrap .t-btnflex.t-btnflex_type_button{height:44px!important}
+
+/* ═══ экран «ничего не найдено» ═══ */
+html.ishp35-on .ishp35-empty{display:flex;align-items:center;gap:20px;flex-wrap:wrap;box-sizing:border-box;margin:8px 0 20px;padding:30px 32px;border-radius:22px;background:linear-gradient(120deg,#fff 0%,var(--p35-soft) 100%);border:1px solid var(--p35-line);font-family:var(--p35-f)}
+html.ishp35-on .ishp35-empty[hidden]{display:none}
+html.ishp35-on .ishp35-empty__i{flex:0 0 52px;width:52px;height:52px;border-radius:16px;background:linear-gradient(145deg,var(--p35-cb2),var(--p35-k));display:flex;align-items:center;justify-content:center}
+html.ishp35-on .ishp35-empty__i svg{width:28px;height:28px;stroke:#fff;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+html.ishp35-on .ishp35-empty__t{flex:1 1 320px;min-width:0}
+html.ishp35-on .ishp35-empty__t b{display:block;font:800 22px/1.2 var(--p35-f);letter-spacing:-.015em;color:var(--p35-ink)}
+html.ishp35-on .ishp35-empty__t p{margin:6px 0 0;font:400 15px/1.5 var(--p35-f);color:var(--p35-mut)}
+html.ishp35-on .ishp35-empty__b{display:flex;gap:10px;flex-wrap:wrap}
+html.ishp35-on .ishp35-btn{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:0 22px;border-radius:12px;background:#fff;border:1px solid var(--p35-k);color:var(--p35-k);font:700 15px/1 var(--p35-f);text-decoration:none;cursor:pointer}
+html.ishp35-on .ishp35-btn:hover{background:var(--p35-soft2)}
+html.ishp35-on .ishp35-btn--2{border-color:var(--p35-line);background:var(--p35-soft2)}
+html.ishp35-on .ishp35-btn:focus-visible{outline:2px solid var(--p35-k);outline-offset:2px}
+html.ishp35-empty-on body #allrecords .t-store__card-list,html.ishp35-empty-on body #allrecords .ishp9-brands,html.ishp35-empty-on body #allrecords .t-store__load-more-btn-wrap,html.ishp35-empty-on body #allrecords .ishp19-note{display:none!important}
+
+/* ═══ низ страницы: смежные разделы (плитки главной), «Подбор техники», «О разделе», бренды, «Не нашли нужное?» ═══ */
+html.ishp35-on .ishp35-low *,html.ishp35-on .ishp35-end *{box-sizing:border-box}
+html.ishp35-on .ishp35-bk,html.ishp35-on .ishp35-bk .ishp8-bm{color:#fff!important}
+html.ishp35-on .ishp8-bk:hover .ishp35-bk,html.ishp35-on .ishp8-bk:hover .ishp35-bk .ishp8-bm{color:var(--p35-k)!important}
+html.ishp35-on .ishp23-eb{font:700 12px/1.2 var(--p35-f);letter-spacing:.12em;text-transform:uppercase;margin:0 0 8px}
+html.ishp35-on .ishp35-cta .ishp23-cta__h{margin:0 0 8px;font:800 clamp(22px,2.4vw,30px)/1.2 var(--p35-f)}
+html.ishp35-on .ishp35-cta .ishp23-cta__p{margin:0;max-width:640px;font:400 15px/1.5 var(--p35-f)}
+/* «Все товары раздела» - внутри карточки «О разделе», внизу, разделитель сверху */
+html.ishp35-on .ishp35-gone{display:none!important}
+html.ishp35-on .вн-текст__карта details.кат-все{margin:16px 0 0!important;padding:16px 0 0!important;border:0!important;border-top:1px solid var(--p35-line)!important;border-radius:0!important;background:none!important}
+html.ishp35-on .вн-текст__карта details.кат-все > summary{padding:0!important;min-height:44px;color:var(--p35-k);font:700 15px/1.3 var(--p35-f)}
+html.ishp35-on .вн-текст__карта details.кат-все > summary span{color:var(--p35-mut);font-weight:500}
+html.ishp35-on .вн-текст__карта details.кат-все > summary svg{margin-left:8px}
+html.ishp35-on .ishp20-низ{display:none!important}
+html.ishp35-on .ishp35-low,html.ishp35-on .ishp35-end{margin:48px 0 0}
+html.ishp35-on .ishp35-end{margin-bottom:48px}
+html.ishp35-on .ishp35-tiles{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-auto-rows:216px;gap:16px}
+html.ishp35-on .ishp35-tiles>.ishp8-tw{height:100%}
+html.ishp35-on .ishp35-tiles .ishp8-tile{box-shadow:none;border:1px solid var(--p35-line)}
+html.ishp35-on .ishp35-tiles .ishp8-tile:hover{border-color:var(--p35-k)}
+html.ishp35-on .ishp35-tiles .ishp8-stage{height:144px}
+html.ishp35-on .ishp35-tiles .ishp8-tt b{font:700 17px/1.25 var(--p35-f)}
+html.ishp35-on .ishp35-cta.ishp23-cta{margin:48px 0 0}
+html.ishp35-on .ishp35-cta .ishp23-cta__in{display:flex;align-items:center;justify-content:space-between;gap:24px}
+html.ishp35-on .ishp35-cta .ishp23-cta__b{min-height:44px;border-radius:12px;padding:0 24px;cursor:pointer;flex:none}
+
+/* «О разделе» - светлая карточка той же ширины, текст в 2 колонки, ссылки чипами */
+html.ishp35-on .вн-текст{max-width:min(1440px,calc(100% - 40px))!important;margin:48px auto 0!important;padding:0 40px!important;box-sizing:border-box}
+html.ishp35-on .вн-текст__карта{background:#fff;border:1px solid var(--p35-line);border-radius:24px;padding:32px;box-shadow:none}
+html.ishp35-on .ishp35-eb--seo{margin:0 0 16px}
+html.ishp35-on .вн-текст__в{max-width:none;columns:2;column-gap:48px}
+html.ishp35-on .вн-текст h2{column-span:all;margin:0 0 16px;font:800 clamp(22px,2.4vw,28px)/1.2 var(--p35-f);letter-spacing:-.015em;color:var(--p35-ink)}
+html.ishp35-on .вн-текст p{break-inside:avoid;color:#3D4350}
+html.ishp35-on .вн-текст details{break-inside:avoid;column-span:all}
+html.ishp35-on .вн-текст summary{color:var(--p35-k)}
+html.ishp35-on .вн-текст__рядом{margin:16px 0 0;display:flex;flex-wrap:wrap;align-items:center;gap:8px;color:var(--p35-mut)}
+html.ishp35-on .вн-текст__рядом a{display:inline-flex;align-items:center;min-height:36px;padding:0 14px;border-radius:12px;background:var(--p35-soft2);border:1px solid var(--p35-line);color:var(--p35-k);font-weight:600;text-decoration:none}
+html.ishp35-on .вн-текст__рядом a:hover{background:var(--p35-soft);border-color:var(--p35-k)}
+
+/* бренды раздела: кобальтовые плитки как «Бренды на сайте» */
+html.ishp35-on .ishp35-bt{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));grid-auto-rows:96px;gap:16px}
+html.ishp35-on .ishp35-bt .ishp8-bk{height:100%}
+html.ishp35-on .ishp35-bk{display:block;height:100%;color:inherit;text-decoration:none;border:0!important;box-shadow:none!important}
+html.ishp35-on .ishp35-bo{margin:16px 0 0;font:400 14px/1.5 var(--p35-f);color:var(--p35-mut)}
+
+/* финальный блок «Не нашли нужное? Пришлите список» (как на главной) */
+html.ishp35-on .ishp35-nf{display:grid;grid-template-columns:auto minmax(0,1fr) auto auto;align-items:center;gap:24px;margin:48px 0 0;box-sizing:border-box;padding:32px;border-radius:28px;background:#fff;border:1px solid var(--p35-line)}
+html.ishp35-on .ishp35-nf__l{display:flex;align-items:center;justify-content:center;height:64px;padding:0 20px;border-radius:16px;background:var(--p35-soft);box-sizing:border-box}
+html.ishp35-on .ishp35-nf__lg{height:22px;width:auto}
+html.ishp35-on .ishp35-nf__t h3{margin:0;font:800 clamp(19px,1.9vw,24px)/1.2 var(--p35-f);letter-spacing:-.015em;color:var(--p35-ink)}
+html.ishp35-on .ishp35-nf__t p{margin:6px 0 0;font:400 15px/1.45 var(--p35-f);color:var(--p35-mut)}
+html.ishp35-on .ishp35-ls{position:relative;width:272px;box-sizing:border-box;padding:12px 16px;min-height:88px;border-radius:16px;background:rgba(43,68,199,.07);border:1px solid rgba(43,68,199,.2);font:500 14px/22px var(--p35-f);color:var(--p35-ink)}
+html.ishp35-on .ishp35-ls span{display:block;white-space:nowrap}
+html.ishp35-on .ishp35-ok{position:absolute;right:12px;bottom:10px;display:inline-flex;align-items:center;gap:6px;font:700 12px/1 var(--p35-f);color:#1A8F60;font-style:normal;background:#fff;border-radius:999px;padding:5px 10px 5px 6px}
+html.ishp35-on .ishp35-ok svg{width:16px;height:16px}
+html.ishp35-on .ishp35-nf__b{display:flex;flex-direction:column;gap:12px;min-width:304px}
+html.ishp35-on .ishp35-nf__w{position:relative;display:block}
+html.ishp35-on .ishp35-nf__w::before{content:"";position:absolute;left:50%;top:50%;width:330%;height:520%;transform:translate(-50%,-50%);z-index:-1;pointer-events:none;background:radial-gradient(closest-side,rgba(132,116,255,.28) 0%,rgba(43,68,199,.12) 55%,transparent)}
+html.ishp35-on .ishp35-nf{position:relative;isolation:isolate;overflow:hidden}
+html.ishp35-on .ishp35-b{display:flex;align-items:center;justify-content:center;min-height:44px;box-sizing:border-box;padding:0 20px;border-radius:12px;background:#fff;border:1px solid #AEBBEF;color:var(--p35-k);font:700 14px/1.2 var(--p35-f);text-decoration:none;white-space:nowrap;cursor:pointer}
+html.ishp35-on .ishp35-b:hover{background:var(--p35-soft2);border-color:var(--p35-k)}
+html.ishp35-on .ishp35-b--main{background:var(--p35-k);border-color:var(--p35-k);color:#fff;box-shadow:0 14px 26px -14px rgba(43,68,199,.8)}
+html.ishp35-on .ishp35-b--main:hover{background:var(--p35-kh);border-color:var(--p35-kh)}
+
+/* ═══ планшет / телефон ═══ */
+@media screen and (max-width:1100px){
+  html.ishp35-on .ishp35-nf{grid-template-columns:auto minmax(0,1fr) auto}
+  html.ishp35-on .ishp35-ls{display:none}
+  html.ishp35-on .ishp35-tiles{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media screen and (max-width:900px){
+  html.ishp35-on .ishp35-strip{grid-template-columns:repeat(2,minmax(0,1fr))}
+  html.ishp35-on .ishp35-strip .ishp8-strip__i:nth-child(3){border-left:0}
+  html.ishp35-on .вн-текст__в{columns:1}
+}
+@media screen and (max-width:760px){
+  html.ishp35-on .вн-а{padding:16px 0 0;margin:0 0 16px}
+  html.ishp35-on .вн-а .вн-крошки{margin:0 0 12px}
+  html.ishp35-on .ishp35-hero{grid-template-columns:minmax(0,1fr) 120px;min-height:152px;padding:20px 16px 48px;border-radius:24px;gap:8px}
+  html.ishp35-on body .ishp35-hero h1{font-size:30px!important}
+  html.ishp35-on .ishp35-hero__s{font-size:13px;margin-top:8px}
+  html.ishp35-on .ishp35-hero__p{height:96px}
+  html.ishp35-on .ishp35-hero__p img{max-width:100%;max-height:96px}
+  html.ishp35-on .ishp35-strip{margin:-28px 8px 0}
+  html.ishp35-on .ishp35-strip .ishp8-strip__i{padding:8px;gap:8px;min-height:56px;border-top:0!important}
+  html.ishp35-on .ishp35-strip .ishp8-strip__i:nth-child(n+3){border-top:1px solid var(--p35-line)!important}
+  html.ishp35-on .ishp35-strip .ishp8-strip__i svg{flex-basis:32px;width:32px;height:32px;padding:6px;border-radius:10px}
+  html.ishp35-on .ishp35-strip .ishp8-strip__i b{font-size:13px}
+  html.ishp35-on .ishp35-bar{display:none}
+  html.ishp35-on body #allrecords .t-store.вн-сетка > .ishd-view,html.ishp35-on body .t-store > .ishd-view{height:auto;min-height:56px;margin:0 20px 12px;padding:8px 8px 8px 16px;box-sizing:border-box;justify-self:stretch;display:flex;align-items:center;justify-content:space-between;background:#fff;border:1px solid var(--p35-line);border-radius:18px;grid-row:auto}
+  html.ishp35-on .ishd-view::before{content:var(--p35-n,"");font:700 15px/1.2 var(--p35-f);color:var(--p35-ink)}
+  html.ishp35-on .ishd-view .ishd-seg{width:auto}
+  html.ishp35-on .ishd-view .ishd-seg button{height:40px;padding:0 14px;flex:none}
+  html.ishp35-on body #allrecords .t-store.вн-сетка > .вн-верх{display:none!important}
+  html.ishp35-on .ishp35-plate{flex-direction:column;align-items:stretch;gap:16px;padding:24px 16px;border-radius:22px;margin:16px 0;width:100%}
+  html.ishp35-on .ishp35-plate::before{right:-90px;top:auto;bottom:-70px;translate:none;width:340px;height:200px}
+  html.ishp35-on .ishp35-plate__b{width:100%}
+  html.ishp35-on .ishp35-empty{padding:24px 16px;border-radius:20px}
+  html.ishp35-on .ishp35-empty__b{width:100%}
+  html.ishp35-on .ishp35-btn{flex:1 1 100%}
+  html.ishp35-on .ishp35-wrap{padding:0 16px;max-width:100%}
+  html.ishp35-on .вн-текст{padding:0 16px!important;max-width:100%!important;margin-top:32px!important}
+  html.ishp35-on .вн-текст__карта{padding:24px 16px;border-radius:20px}
+  html.ishp35-on .ishp35-low,html.ishp35-on .ishp35-end{margin-top:32px}
+  html.ishp35-on .ishp35-tiles{gap:8px;grid-auto-rows:184px}
+  html.ishp35-on .ishp35-tiles .ishp8-stage{height:104px}
+  html.ishp35-on .ishp35-tiles .ishp8-stage img{max-height:88px}
+  html.ishp35-on .ishp35-tiles .ishp8-tt b{font-size:14px}
+  html.ishp35-on .ishp35-cta .ishp23-cta__in{flex-direction:column;align-items:stretch;gap:16px;padding:24px 16px;border-radius:22px}
+  html.ishp35-on .ishp35-cta .ishp23-cta__b{width:100%}
+  html.ishp35-on .ishp35-cta.ishp23-cta{margin-top:32px}
+  html.ishp35-on .ishp35-bt{grid-template-columns:repeat(3,minmax(0,1fr));grid-auto-rows:72px;gap:8px}
+  html.ishp35-on .ishp35-bt .ishp8-bm svg{width:56px;height:21px}
+  html.ishp35-on .ishp35-bt .ishp8-bk{grid-column:auto!important}
+  html.ishp35-on .ishp35-hide-m{display:none}
+  html.ishp35-on body #allrecords .t-store__load-more-btn-wrap{padding-top:8px!important}
+  html.ishp35-on .ishp35-nf{grid-template-columns:1fr;gap:16px;padding:24px 16px;border-radius:24px;margin-top:32px}
+  html.ishp35-on .ishp35-nf__l{justify-self:start}
+  html.ishp35-on .ishp35-nf__b{min-width:0}
+  html.ishp35-on .ishp35-b{white-space:normal;text-align:center}
+  html.ishp35-on body #allrecords .t-store__card__price .t-store__card__price-value{font-size:21px}
+  html.ishp35-on body #allrecords .t-store__card__price .t-store__card__price-currency{font-size:18px}
+  /* круги мессенджеров: не лежат на «В корзину» - прячутся при прокрутке вниз, возвращаются при прокрутке вверх; поменьше и выше нижней навигации */
+  html.ishp35-on{--p22-r:10px;--p22-b:84px;--p25-b:78px}
+  html.ishp35-on .ishp22{width:48px;height:48px}
+  html.ishp35-on .ishp22t{width:38px;height:38px;bottom:calc(var(--p22-b,84px) + 56px)}
+  html.ishp35-on .ishp22,html.ishp35-on .ishp22t{transition:translate .25s ease,opacity .2s ease,bottom .2s ease,right .2s ease,background-color .15s ease}
+  html.ishp35-on.ishp35-fab-hide .ishp22,html.ishp35-on.ishp35-fab-hide .ishp22t{translate:80px 0;opacity:0;pointer-events:none}
+}
+@media (prefers-reduced-motion:reduce){html.ishp35-on .ishp22,html.ishp35-on .ishp22t,html.ishp35-on .ishp35-plate__b{transition:none!important}}
+/* ═══ панель «Сравнить (N)»: светлая, не залитая ═══ */
+html.ishp35-on .ishp25-bar{background:#fff;border:1px solid #AEBBEF;border-radius:16px;box-shadow:0 10px 28px -14px rgba(43,68,199,.45)}
+html.ishp35-on .ishp25-bar__go{background:var(--p35-soft);color:var(--p35-k);border-radius:11px}
+html.ishp35-on .ishp25-bar__go:hover{background:#DCE1FA}
+html.ishp35-on .ishp25-bar__go[aria-disabled="true"]{background:var(--p35-soft2);color:#7A8094}
+html.ishp35-on .ishp25-bar__clr{color:var(--p35-mut)}
+html.ishp35-on .ishp25-bar button:focus-visible{outline-color:var(--p35-k)}
+
+/* низ списка: родной отступ записи (135 px) уменьшаем, чтобы между списком и «Смежными разделами» не зияла пустота */
+html.ishp35-on .t-rec:has(.t-store__card-list){padding-bottom:24px!important}

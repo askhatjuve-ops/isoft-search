@@ -329,6 +329,27 @@
     (function step() { var ok = false; try { ok = p31(); } catch (e) {} if (!ok && ++n < 80) setTimeout(step, 250); })();
   }
 
+  /* ───────── П35: раздел каталога в палитре главной (ish-design-p35.js/.css с того же адреса, один раз) ─────────
+     Признак: страница со списком товаров (.t-store__card-list). Выключатель: window.ISH_P35_OFF = 1 или window.ISH_P4_NO_P35 = 1 (до загрузки p4). Кэш: поменять P35V. */
+  var P35V = '1';
+  function p35() {
+    if (W.ISH_P4_NO_P35 || W.ISH_P35_OFF || W.ISH_P35 || D.getElementById('ishp-p35-js')) return true;
+    if (D.getElementById('лента')) return true;
+    if (!D.querySelector('.t-store__card-list')) return false;
+    var src = tag && tag.src;
+    if (!src) return true;
+    var s = D.createElement('script');
+    s.id = 'ishp-p35-js'; s.defer = true;
+    s.src = src.replace(/ish-design-p4\.js.*$/, 'ish-design-p35.js?v=' + P35V);
+    D.head.appendChild(s);
+    return true;
+  }
+  function p35wait() {
+    if (W.ISH_P4_NO_P35 || W.ISH_P35_OFF || !D.querySelector('.t-store')) return;
+    var n = 0;
+    (function step() { var ok = false; try { ok = p35(); } catch (e) {} if (!ok && ++n < 80) setTimeout(step, 250); })();
+  }
+
   /* ───────── П22: кнопка WhatsApp (грузит ish-design-p22.js с того же адреса; она сама подтянет ish-design-p22.css; выключатель window.ISH_P22_OFF) ───────── */
   var P22V = '4';
   (function () {
@@ -384,5 +405,6 @@
   p24wait();
   p25wait();
   p31wait();
+  p35wait();
   try { p10(); } catch (e) {}
 })();

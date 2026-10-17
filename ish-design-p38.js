@@ -1,4 +1,4 @@
-/* ish-design-p38.js  v1.2  (18.10.2026, кандидат)  П38 «мелочи показа: цена, alt, дата цен, наличие, название в списке»  b2b.isoft-shop.kz
+/* ish-design-p38.js  v1.3  (18.10.2026, кандидат)  П38 «мелочи показа: цена, alt, дата цен, наличие, название в списке»  b2b.isoft-shop.kz
    Внешний слой. Блоки Tilda не пишет, в сеть не ходит (дата берётся из индекса поиска, который страница уже грузит). Подключает ish-design-p38.css рядом с собой.
    Выключатели: window.ISH_P38_OFF = 1 - весь модуль; window.ISH_P38_SKIP = 'price,alt,date,stock,name,variants' (любая подстрока) - только названные функции. Всё - до загрузки файла.
    Что делает (идемпотентно, метки data-p38; нет элементов - молчит; ошибка в одной функции другую не останавливает):
@@ -328,7 +328,7 @@
       if (!f || f.nodeType !== 3) return;
       var u = QTY[uidOfCard(card)];
       if (!u || u[1] !== sl) return;                                           /* товар не из этого раздела по индексу */
-      var v = f.nodeValue, lead = /^\s*/.exec(v)[0].length, pl = t.p;
+      var v = f.nodeValue, pre = /^\s*(?:\d+(?:[.,]\d+)?-inch\s+)?/i.exec(v)[0], lead = pre.length, pl = t.p;   /* перед типом может стоять «15.6-inch » - оно остаётся */
       if (v.toLowerCase().indexOf(pl, lead) !== lead) return;
       var after = v.slice(lead + pl.length);
       if (!/^\s+\S/.test(after)) return;
@@ -336,9 +336,10 @@
       if (rest.length < 4 || /^[а-яё]/.test(rest)) return;                      /* «Монитор игровой …» - тип остаётся */
       if (!el.getAttribute('title')) el.setAttribute('title', txt(el));
       var sp = D.createElement('span'); sp.className = 'ishp38-tw'; sp.setAttribute('data-p38', 'n');
-      sp.textContent = v.slice(0, v.length - rest.length);
+      sp.textContent = v.slice(lead, v.length - rest.length);
       var tn = D.createTextNode(rest);
       el.replaceChild(tn, f); el.insertBefore(sp, tn);
+      if (lead) el.insertBefore(D.createTextNode(pre), sp);
       el.setAttribute('data-p38n', '1');
     });
   }

@@ -140,6 +140,8 @@ html.ishp35-on .ishp35-tiles .ishp8-tile{box-shadow:none;border:1px solid var(--
 html.ishp35-on .ishp35-tiles .ishp8-tile:hover{border-color:var(--p35-k)}
 html.ishp35-on .ishp35-tiles .ishp8-stage{height:144px}
 html.ishp35-on .ishp35-tiles .ishp8-tt b{font:700 17px/1.25 var(--p35-f)}
+html.ishp35-on .ishp35-tiles .ishp8-tt{text-align:center;align-items:center;justify-content:center;width:100%}
+html.ishp35-on .ishp35-tiles .ishp8-tt b,html.ishp35-on .ishp35-tiles .ishp8-tt span{display:block;width:100%;text-align:center}
 html.ishp35-on .ishp35-cta.ishp23-cta{margin:48px 0 0}
 html.ishp35-on .ishp35-cta .ishp23-cta__in{display:flex;align-items:center;justify-content:space-between;gap:24px}
 html.ishp35-on .ishp35-cta .ishp23-cta__b{min-height:44px;border-radius:12px;padding:0 24px;cursor:pointer;flex:none}

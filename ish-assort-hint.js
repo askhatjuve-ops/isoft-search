@@ -43,6 +43,7 @@
   // приставочный поиск у него уже, чем у полного индекса страницы, поэтому число — НИЖНЯЯ граница (на странице будет столько же
   // или больше): в тексте оно выдаётся как «N+». null — в запросе есть слово, которого словарь не знает (модель, артикул).
   function known(w) { var r = S.query(w, { limit: 1 }); return r.matched > 0; }
+  function tokensRaw(s) { return S._baseTokens ? S._baseTokens(s) : String(s).toLowerCase().split(/\s+/); }
   function tokensOf(s) { return (S._baseTokens ? S._baseTokens(s) : String(s).toLowerCase().split(/\s+/)).filter(function (w, i, a) { return w.length > 1 && a.indexOf(w) === i; }); }
   function count(q) {
     q = String(q || '').trim();
@@ -51,7 +52,15 @@
     if (ch.some(function (c) { return c.type !== 'layout'; })) return null;      // исправление опечатки/транслита по малому словарю ненадёжно
     var ws = tokensOf(ch.length ? r.corrected.to : q);                            // раскладку движок уже перевёл
     if (!ws.length) return 0;
-    for (var i = 0; i < ws.length; i++) if (!known(ws[i])) return null;          // слово вне словаря — числа нет
+    if (ch.length && S._hasWord && tokensRaw(q).some(function (w) { return /\d/.test(w) && !S._hasWord(w); })) return null;   // 17.10: «45х45» движок переводит раскладкой в «45[45» и рвёт на части
+    var all = tokensRaw(ch.length ? r.corrected.to : q), lastW = all.length ? all[all.length - 1] : '';
+    for (var i = 0; i < ws.length; i++) {
+      if (!known(ws[i])) return null;                                             // слово вне словаря — числа нет
+      // 17.10: не последнее слово малый словарь растягивает приставкой («gam» -> «gaming»), а полный индекс держит точным -> число
+      // выходило бы выше истины; такое слово должно быть в словаре целиком, иначе числа нет
+      if (ws[i] !== lastW && S._hasWord && !S._hasWord(ws[i])) return null;
+      if (ws[i] === lastW && S._hasWord && !S._hasWord(ws[i]) && /\d/.test(ws[i])) return null;   // последнее слово с цифрой, которого нет целиком («45х45»), словарь рвёт на части
+    }
     if (!r.matched || !r.products.length) return 0;
     if (r.relaxed && r.relaxed.dropped && r.relaxed.dropped.length) return null;
     var n = 0; r.products.forEach(function (p) { n += p.qty || 0; });

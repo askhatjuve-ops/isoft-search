@@ -487,7 +487,7 @@
   function listLine() {
     var parts = lastNotFound.map(function (x) { return (x.name + (x.art ? ' [' + x.art + ']' : '') + ' × ' + x.qty).replace(/\s+/g, ' '); }), line = 'Список от клиента (не нашли в каталоге): ', i;
     for (i = 0; i < parts.length; i++) {
-      if ((line + parts[i]).length > 1300) { line += '…и ещё ' + (parts.length - i) + ' поз.'; break; }
+      if ((line + parts[i]).length > 1300) { line += '…и ещё ' + (parts.length - i) + ' ' + plural(parts.length - i, 'позиция', 'позиции', 'позиций'); break; }
       line += (i ? '; ' : '') + parts[i];
     }
     return line;

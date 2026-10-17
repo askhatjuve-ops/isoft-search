@@ -922,7 +922,9 @@
       cand = cand.filter(function (w) { var k = stem(w); if (seenSt[k] || k === own) return false; seenSt[k] = 1; return true; });   // падежи одного слова не предлагаем: «ноутбук», а не «ноутбуки», «ноутбука»
       return cand.slice(0, 4).map(function (w) { return { q: (head ? head + ' ' : '') + w, html: esc(head ? head + ' ' : '') + esc(last) + '<b>' + esc(w.slice(last.length)) + '</b>' }; });
     }
-    return { query: query, stats: { products: N, vocabulary: V }, _baseTokens: baseTokens, _prep: prep, _slugOf: slugOf,
+    // 17.10 — слово есть в словаре индекса как отдельное (после основы), без приставочного поиска; для оценки числа по малому словарю
+    function hasWord(w) { w = String(w || ''); return vocab.has(isCyr(w) ? stem(w) : w); }
+    return { query: query, stats: { products: N, vocabulary: V }, _baseTokens: baseTokens, _hasWord: hasWord, _prep: prep, _slugOf: slugOf,
       // 14.10 — справка для страниц, которые строят свой интерфейс на движке (расширенный каталог): разделы, бренды, признаки, разбор цены
       parsePrice: parsePriceQuery,
       meta: function () {
@@ -983,7 +985,7 @@
   if (root.ISHSearch) return;   // файл подключён дважды (загрузчик шапки и загрузчик страницы /katalog) — второй раз молчим
   /* подставляет пакет_собрать.py: версия индекса и режим. Режим меняется выкладкой нового файла на хостинг, блок Tilda не трогается:
    *   off  — слой не включается (мгновенный откат);  flag — только у тех, кто открыл сайт с ?ishsearch=1 (запоминается в браузере);  all — у всех */
-  var VER = '8b920181', MODE = 'all';
+  var VER = '7551c0ab', MODE = 'all';
   var SECTIONS = [["Мини-ПК","/mini-pk-i-rabochie-stancii",15],["Моноблоки","/monobloki",54],["Ноутбуки","/noutbuki",288],["Системные блоки","/sistemnye-bloki",34],["Кронштейны для мониторов и ТВ","/kronshteyny-i-krepleniya",29],["Мониторы","/monitory",383],["Проекторы","/proektory-i-paneli",23],["Телевизоры","/televizory",48],["Блоки питания","/bloki-pitaniya",269],["Видеокарты","/videokarty",82],["Корпуса","/korpusa-i-bloki-pitaniya",291],["Материнские платы","/materinskie-platy",233],["Оперативная память","/operativnaya-pamyat",128],["Охлаждение","/ohlazhdenie",297],["Процессоры","/processory",104],["SSD-накопители","/ssd-nakopiteli",159],["USB-флешки","/fleshki-i-karty-pamyati",65],["Жёсткие диски","/zhestkie-diski",69],["Карты памяти","/karty-pamyati",45],["ИБП","/ibp-i-zashchita-pitaniya",274],["Серверы","/servery",6],["Системы хранения","/servery-i-shd",36],["Шкафы и стойки","/shkafy-i-stoyki",24],["IP-телефоны","/konferenc-svyaz",25],["Маршрутизаторы (роутеры)","/marshrutizatory",218],["Межсетевые экраны","/mezhsetevye-ekrany",5],["Сетевое оборудование","/setevoe-oborudovanie",496],["Сетевые карты и адаптеры","/setevye-karty",71],["Точки доступа Wi-Fi","/tochki-dostupa",161],["МФУ лазерные цветные","/mfu-lazernye-cvetnye",27],["МФУ струйные цветные","/mfu-struynye-cvetnye",17],["Плоттеры","/plottery",12],["Принтеры и МФУ","/printery-i-mfu",48],["Принтеры лазерные цветные","/printery-lazernye-cvetnye",13],["Принтеры лазерные ч/б","/printery-lazernye-chb",15],["Сканеры документов","/skanery-dokumentov",22],["Гарнитуры для конференц-связи","/garnitury",18],["Клавиатуры","/klaviatury",235],["Мыши","/klaviatury-i-myshi",501],["Наушники","/naushniki",69],["Видеорегистраторы","/videoregistratory",96],["Домофоны","/domofony",49],["Камеры видеонаблюдения","/videonablyudenie",229],["СКУД и турникеты","/skud-i-turnikety",77],["Принтеры этикеток","/printery-etiketok",11],["Сканеры штрихкода","/skanery-shtrihkoda",15],["Терминалы сбора данных","/terminaly-sbora-dannyh",7]];   // [[имя, адрес, число товаров], …] из индекса: разделы показываются сразу, пока грузится индекс товаров
   var SRC = (document.currentScript && document.currentScript.src) || '';
   var BASE = SRC.replace(/[^\/]*(\?.*)?$/, '');

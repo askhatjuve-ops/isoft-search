@@ -6,6 +6,11 @@
          включает класс ishd-tile на <html>, остальное делает CSS. Только где есть карточки .t-store__card[data-ish13].
      Ф2  пишет число вариантов группы в data-ishd-n заголовка (рисует CSS).
      Ф3  счётчики у значений ТОЛЬКО если страница дала window.ISH_P6_COUNTS = {"Бренд":{"ASUS":44}} (в DOM Tilda чисел нет).
+         18.10: не дала — считаем сами по индексу поиска (ISHSearch.preload(): тот же файл и тот же запрос, второго скачивания нет)
+         и только «Бренд» текущего раздела: число = товаров с этим брендом в разделе, значение должно совпасть с индексом буква в букву.
+         Бренды, которые индекс склеил (DELL / Dell / Dell Technologies), и всё без точного числа — без цифры. Нулей не рисуем.
+         Характеристики (память, диагональ…) по индексу НЕ считаем: у индекса свои, укрупнённые значения, числа расходятся с Tilda.
+         Выключатель: window.ISH_P6_NO_COUNTS = true.
      Ф5  кнопка цены «OK» → «Применить», подписи полей для экранного диктора.
      Ф6  счётчик выбранного на кнопке «Фильтры» (телефон).
      Ф8  «Сбросить всё» в шапке панели + запасные чипы, если ishpe-1410 чипов не нарисовал (телефон). Не дублирует ishpe.
@@ -14,7 +19,7 @@
   'use strict';
   try {
     if (window.ISH_P6) return;
-    window.ISH_P6 = { версия: 'ishp6-1510' };
+    window.ISH_P6 = { версия: 'ishp6-1810' };
 
     /* ── подключаем CSS рядом со скриптом ── */
     (function css() {
@@ -102,9 +107,68 @@
       }
     }
 
+    /* Ф3 сама: бренды раздела по индексу поиска. Ничего не качаем сами — берём промис ISHSearch.preload() (файл уже качает ish-search.js) */
+    var авто = null, запросили = false, ждали = 0;
+    function ключБренда(т) { return String(т).toLowerCase().replace(/[^a-zа-яё0-9]+/g, ' ').replace(/^\s+|\s+$/g, '').split(' ')[0]; }
+
+    function брендыРаздела(idx) {                                          // {бренд из индекса: число товаров} для раздела по адресу страницы
+      var путь = location.pathname.replace(/\/+$/, '').toLowerCase(), c = -1, n = {};
+      for (var i = 0; i < (idx.C || []).length; i++) if (String(idx.C[i][2]).toLowerCase() === путь) { c = i; break; }
+      if (c < 0 || !idx.P || !idx.B) return null;                          // не страница раздела (главная, поиск, «для организаций») — чисел нет
+      for (var j = 0; j < idx.P.length; j++) {
+        if (idx.P[j][2] !== c) continue;
+        var б = idx.B[idx.P[j][1]];
+        if (б) n[б] = (n[б] || 0) + 1;
+      }
+      return n;
+    }
+
+    function бренд() {                                                     // группа «Бренд» в панели Tilda
+      var эл = qa('.t-store .t-store__filter__item_checkbox');
+      for (var i = 0; i < эл.length; i++) {
+        var з = q('.t-store__filter__item-title', эл[i]);
+        if (з && з.textContent.replace(/\s+/g, ' ').trim() === 'Бренд') return { эл: эл[i], з: з };
+      }
+      return null;
+    }
+
+    function данныеАвто() {
+      if (!авто) return null;
+      var г = бренд();
+      if (!г) return null;
+      var я = qa('label.t-store__filter__checkbox input', г.эл), зн = [], кл = {}, гр = {}, есть = false;
+      for (var i = 0; i < я.length; i++) {
+        var v = я[i].getAttribute('data-filter-value');
+        if (v == null || v === '') continue;
+        зн.push(v); кл[ключБренда(v)] = (кл[ключБренда(v)] || 0) + 1;
+      }
+      for (var k = 0; k < зн.length; k++) {
+        if (кл[ключБренда(зн[k])] > 1) continue;                           // DELL / Dell / Dell Technologies: индекс склеил — точного числа нет
+        if (Object.prototype.hasOwnProperty.call(авто, зн[k]) && авто[зн[k]] > 0) { гр[зн[k]] = авто[зн[k]]; есть = true; }
+      }
+      return есть ? { 'Бренд': гр } : null;
+    }
+
+    function запроситьИндекс() {                                           // лениво: только когда панель с брендами реально на экране
+      if (авто || запросили) return;
+      var г = бренд();
+      if (!г || !(г.з.offsetWidth || г.з.offsetHeight || (г.з.getClientRects && г.з.getClientRects().length))) return;
+      var S = window.ISHSearch;
+      if (!S || typeof S.preload !== 'function') {                         // ish-search.js ещё не подгрузился — подождём немного (до ~15 с), сами индекс не качаем
+        if (++ждали < 10) setTimeout(запуск, 1500);
+        return;
+      }
+      запросили = true;
+      try {
+        S.preload().then(function (idx) { try { авто = брендыРаздела(idx) || {}; } catch (e) { авто = {}; } запуск(); }, function () {});
+      } catch (e) {}
+    }
+
     function счётчики() {                                                  // Ф3: только при наличии данных
+      if (window.ISH_P6_NO_COUNTS) return;
       var D = window.ISH_P6_COUNTS;
-      if (!D || typeof D !== 'object') return;
+      if (!D || typeof D !== 'object') { запроситьИндекс(); D = данныеАвто(); }
+      if (!D) return;
       var эл = qa('.t-store .t-store__filter__item_checkbox');
       for (var i = 0; i < эл.length; i++) {
         var з = q('.t-store__filter__item-title', эл[i]);
@@ -186,7 +250,8 @@
       var ч = '', КР = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>';
       for (var i = 0; i < выбр.length; i++) {
         var я = выбр[i].closest ? выбр[i].closest('label') : null;
-        var т = (я ? я.textContent : выбр[i].getAttribute('data-filter-value')) || '';
+        var нз = я && q('.t-store__filter__title', я);
+        var т = (нз ? нз.textContent : я ? я.textContent : выбр[i].getAttribute('data-filter-value')) || '';   // подпись без нашего числа .ishd-ct
         т = т.replace(/\s+/g, ' ').trim();
         if (!т) continue;
         ч += '<span class="ishd-chip">' + экр(т) + '<button type="button" data-i="' + i + '" aria-label="Убрать: ' + экр(т) + '">' + КР + '</button></span>';

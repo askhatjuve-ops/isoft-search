@@ -1,4 +1,4 @@
-/* ish-design-p4.js  v6.3  (18.10.2026)  П4 «шапка и меню» + Г1 «кнопки в hero» b2b.isoft-shop.kz
+/* ish-design-p4.js  v6.4  (18.10.2026)  П4 «шапка и меню» + Г1 «кнопки в hero» b2b.isoft-shop.kz
    Подключается из блока шапки 3263300503 строкой <script src=... defer data-m="header,hero">. Не загрузился - сайт как был.
    Модули (атрибут data-m, по умолчанию оба): header - Ш14 полоса, Ш5 кнопка, Ш13 трубка; hero - Г1 две кнопки (с v2 включается и при data-m="header").
    v2: + подгрузка ish-design-p6.js на страницах каталога. Выключатели: window.ISH_P4_NO_HERO, window.ISH_P4_NO_P6.
@@ -7,6 +7,7 @@
    v5: + подгрузка ish-design-p19.js (формы Tilda, /spec, сетка товаров; выключатель window.ISH_P19_OFF) и ish-design-p20.js (короткие подписи меню, «Смежные разделы»; выключатель window.ISH_P20_OFF).
    v5.1: + подключается и из общего HEAD проекта (страницы карточек /tproduct/ не содержат блок шапки 3263300503). Охранник window.__ishP4 стоит первой строкой кода: второй запуск (HEAD + блок шапки) сразу выходит, ничего не вставляет. + если на странице нет <link> на ish-design-p4.css (карточка), модуль добавляет его сам с того же адреса. + над скрытой шапкой (карточка v8: #t-header скрыт) полоса и кнопка «Запросить КП/счёт» не вставляются.
    v6: + подгрузки ish-design-p21.js (номер заявки, список из Excel; ISH_P21_OFF), p22.js (кнопка WhatsApp; ISH_P22_OFF), p23.js (квиз «Подбор техники»; ISH_P23_OFF), p24.js (мега-меню «Каталог»; ISH_P24_OFF), p25.js (сравнение и таблица; ISH_P25_OFF). P9V=1.2, P10V=2, P22V=2, P24V=2, P25V=2. v6.1 (П27): P8V=2, P23V=2 (тексты главной и приглашения квиза). v6.2: + подгрузка ish-design-p28.js (события GA4/Метрика, БИН/ИИН; ISH_P28_OFF), p22 -> v4 (Telegram). v6.3 (Т4): P10V=3 (p10 v3: данные товара из «Уточнить по этому товару» заполняют форму /podbor).
+   v6.4 (П38): + подгрузка ish-design-p38.js/.css (единый формат цены, alt у фото товаров, «Цены обновлены сегодня»; ISH_P38_OFF, ISH_P38_SKIP). P38V=1.
    Ничего не переписывает в чужих блоках: только ДОБАВЛЯЕТ узлы с префиксом ishp-, каждый раз проверяя, что такого ещё нет.
    Оболочка телефона перерисовывает #ishВерх целиком - трубку возвращает MutationObserver. Ошибка в одном модуле другой не останавливает. */
 (function () {
@@ -128,7 +129,7 @@
   }
 
   /* ───────── П6: фильтры и «Список / Плитка» на страницах каталога (грузит ish-design-p6.js с того же адреса, один раз) ───────── */
-  var P6V = '3';
+  var P6V = '4';
   function p6() {
     if (W.ISH_P4_NO_P6 || W.ISH_P6 || D.getElementById('ishp-p6-js')) return true;
     if (!D.querySelector('.t-store__card[data-ish13], .t-store__filter__item, .t-store__filter')) return false;
@@ -410,6 +411,19 @@
     var s = D.createElement('script');
     s.id = 'ishp-p37-js'; s.defer = true;
     s.src = src.replace(/ish-design-p4\.js.*$/, 'ish-design-p37.js?v=' + P37V);
+    D.head.appendChild(s);
+  })();
+
+  /* ───────── П38: мелочи показа - единый формат цены «471 000 ₸», alt у фото товаров, «Цены обновлены сегодня» (ish-design-p38.js/.css с того же адреса, на всех страницах; сам молчит, если нечего править)
+     Выключатели: window.ISH_P38_OFF = 1 или window.ISH_P4_NO_P38 = 1 (до загрузки p4); по частям - window.ISH_P38_SKIP = 'price,alt,date'. Кэш: поменять P38V. */
+  var P38V = '1';
+  (function () {
+    if (W.ISH_P4_NO_P38 || W.ISH_P38_OFF || W.__ishP38 || D.getElementById('ishp-p38-js')) return;
+    var src = tag && tag.src;
+    if (!src) return;
+    var s = D.createElement('script');
+    s.id = 'ishp-p38-js'; s.defer = true;
+    s.src = src.replace(/ish-design-p4\.js.*$/, 'ish-design-p38.js?v=' + P38V);
     D.head.appendChild(s);
   })();
 

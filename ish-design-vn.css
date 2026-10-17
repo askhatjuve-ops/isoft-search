@@ -1,0 +1,164 @@
+/* ish-design-vn.css  v1.0  (кандидат 18.10.2026, П40/С1; НЕ выложено)  Общий каркас текстовых страниц «.вн» b2b.isoft-shop.kz.
+   ЕДИНЫЙ ИСТОЧНИК: правка стиля текстовых страниц (/goszakupki, /obrazovanie, /delivery, /s-nds, /po-schetu, /dlya-organizacij, /details) делается ТОЛЬКО здесь.
+   Подключает ish-design-p4.js (переменная VNV, ссылка в head) на страницах, где есть .вн. Кэш: поменять VNV в p4.
+   В самих блоках Tilda осталась копия первого экрана в @layer ishvn_crit (слой слабее любого правила вне слоя): пока файл не пришёл, страница выглядит как раньше; пришёл - побеждает он.
+   Источник до П40: tilda\страницы\_общий.css + г10_сборка.py (устарели: там --vtor другой и нет правил П14; для этих блоков больше не использовать).
+   Всё под классом .вн (кроме фона #allrecords); за пределы текстовых страниц не выходит; шапку, подвал, каталог и корзину не задевает. */
+
+.вн{
+  --kb:#2B44C7; --kbh:#2036A8; --kbs:#E9ECFC;
+  --krl:#D33D1B; --krlf:#FDEAE4;
+  --fon:#F5F3EE; --kart:#fff; --zebra:#FBFAF7; --vtor:#EFE9DC;
+  --ink:#171923; --tih:#646B7D; --tmn:#272B36; --lin:#E3DFD6; --ctl:#928A79;
+  --ok:#14704A; --net:#B43A36;
+  --f:'TildaSans',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+  font-family:var(--f); color:var(--ink); font-size:15px; line-height:1.5;
+  background:var(--fon); -webkit-font-smoothing:antialiased;
+  min-height:52vh;
+}
+.вн *{box-sizing:border-box}
+/* фон страницы целиком: у шапки свой `--paper:#fff`, у подвала свой графит,
+   поэтому общий фон под записями их не задевает, но убирает белый шов между
+   блоком страницы и подвалом на коротких экранах */
+#allrecords{background:#F5F3EE}
+.вн a{color:var(--kb);text-decoration:none}
+.вн a:hover{color:var(--kbh)}
+.вн :focus-visible{outline:2px solid var(--kb);outline-offset:2px}
+.вн h1,.вн h2,.вн h3{margin:0;font-weight:600;letter-spacing:-.01em;color:var(--ink)}
+.вн h1{font-size:34px;line-height:1.18}
+.вн h2{font-size:21px;line-height:1.25}
+.вн h3{font-size:16px;line-height:1.3}
+.вн p{margin:0 0 12px}
+.вн table{border-collapse:collapse;width:100%}
+.вн-об{max-width:1240px;margin:0 auto;padding:0 20px}
+
+/* ── верхняя полоса страницы ────────────────────────────────────────── */
+.вн-верх{background:var(--vtor);border-bottom:1px solid var(--lin);padding:26px 0 24px}
+.вн-крошки{font-size:13px;color:var(--tih);margin-bottom:10px;
+  display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.вн-крошки a{color:var(--tih)}
+.вн-крошки a:hover{color:var(--kb)}
+.вн-над{font-size:12px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;
+  color:var(--kb);margin-bottom:8px}
+.вн-лид{color:var(--tih);max-width:62ch;margin:10px 0 0;font-size:15.5px}
+
+/* ── тело: содержание слева, боковая колонка справа ─────────────────── */
+.вн-тело{max-width:1240px;margin:0 auto;padding:26px 20px 56px;
+  display:grid;grid-template-columns:minmax(0,1fr) 316px;gap:26px;align-items:start}
+.вн-тело_одна{grid-template-columns:minmax(0,1fr)}
+.вн-карта{background:var(--kart);border:1px solid var(--lin);border-radius:12px;padding:22px}
+.вн-карта+.вн-карта{margin-top:16px}
+.вн-карта__шапка{display:flex;align-items:baseline;gap:12px;margin-bottom:14px;flex-wrap:wrap}
+.вн-бок{position:sticky;top:calc(var(--ish-h,96px) + 12px);display:grid;gap:14px}
+.вн-бок .вн-карта{padding:18px}
+.вн-тихо{color:var(--tih);font-size:13.5px}
+
+/* ── кнопки ─────────────────────────────────────────────────────────── */
+.вн-кноп{display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  min-height:46px;padding:0 18px;border-radius:9px;border:1px solid transparent;
+  font-family:var(--f);font-weight:600;font-size:14.5px;cursor:pointer;
+  white-space:nowrap;text-decoration:none;line-height:1.2}
+/* ⚠ Приставка `.вн a` у каждого правила цвета — не описка. Общее правило
+   `.вн a{color:var(--kb)}` весит (0,1,1), а `.вн-кноп_гл` — (0,1,0), и ссылка
+   в виде кнопки получала кобальтовый текст на кобальтовом фоне: надпись
+   «Написать на почту» исчезала целиком. Поймано снимком стенда, замером
+   ширины и прокрутки такое не ловится. */
+.вн-кноп_гл,.вн a.вн-кноп_гл{background:var(--kb);color:#fff}
+.вн-кноп_гл:hover,.вн a.вн-кноп_гл:hover{background:var(--kbh);color:#fff}
+.вн-кноп_вт,.вн a.вн-кноп_вт{background:#fff;color:var(--ink);border-color:var(--ctl)}
+.вн-кноп_вт:hover,.вн a.вн-кноп_вт:hover{background:var(--kbs);border-color:var(--kb);color:var(--ink)}
+.вн-кноп_шир{width:100%}
+.вн-ряд{display:flex;gap:10px;flex-wrap:wrap}
+
+/* ── пары «название — значение» ─────────────────────────────────────── */
+.вн-пары{display:grid;grid-template-columns:230px minmax(0,1fr);
+  border-top:1px solid var(--lin)}
+.вн-пары>div{padding:11px 8px;border-bottom:1px solid var(--lin);min-width:0}
+.вн-пары>div:nth-child(4n+1),.вн-пары>div:nth-child(4n+2){background:var(--zebra)}
+.вн-имя{color:var(--tih);font-size:13.5px}
+.вн-знач{font-weight:600;overflow-wrap:anywhere}
+.вн-копи{margin-left:8px;border:1px solid var(--lin);background:#fff;border-radius:6px;
+  font-family:var(--f);font-size:12px;color:var(--tih);padding:3px 8px;cursor:pointer;
+  vertical-align:middle;white-space:nowrap}
+.вн-копи:hover{border-color:var(--kb);color:var(--kb)}
+.вн-копи:focus-visible{outline:2px solid var(--kb);outline-offset:2px}
+.вн-копи[data-готово="1"]{border-color:var(--ok);color:var(--ok)}
+
+/* ── шаги маршрута ──────────────────────────────────────────────────── */
+.вн-шаги{display:grid;gap:12px}
+.вн-шаг{display:grid;grid-template-columns:40px minmax(0,1fr);gap:14px;
+  padding:14px;border:1px solid var(--lin);border-radius:10px;background:var(--kart)}
+.вн-шаг__н{width:40px;height:40px;border-radius:50%;background:var(--kbs);
+  color:var(--kb);font-weight:700;display:flex;align-items:center;
+  justify-content:center;font-size:14px;letter-spacing:.01em}
+.вн-шаг h3{margin-bottom:3px}
+.вн-шаг p{margin:0;color:var(--tih);font-size:14.5px}
+.вн-шаг p+p{margin-top:7px}
+
+/* ── таблица городов ────────────────────────────────────────────────── */
+.вн-табл{border:1px solid var(--lin);border-radius:10px;overflow:hidden}
+.вн-табл th{text-align:left;font-size:12px;letter-spacing:.07em;text-transform:uppercase;
+  color:var(--tih);font-weight:600;padding:10px 14px;background:var(--vtor);
+  border-bottom:1px solid var(--lin)}
+.вн-табл td{padding:11px 14px;border-bottom:1px solid var(--lin);vertical-align:top}
+.вн-табл tr:nth-child(even) td{background:var(--zebra)}
+.вн-табл tr:last-child td{border-bottom:0}
+.вн-табл td:first-child{font-weight:600}
+
+/* ── пустое состояние ───────────────────────────────────────────────── */
+.вн-пусто{text-align:center;padding:46px 20px}
+.вн-пусто__знак{width:56px;height:56px;margin:0 auto 14px;border-radius:50%;
+  background:var(--vtor);display:flex;align-items:center;justify-content:center;
+  color:var(--tih)}
+.вн-пусто h2{margin-bottom:6px}
+.вн-пусто p{color:var(--tih);max-width:46ch;margin:0 auto 18px}
+.вн-пусто .вн-ряд{justify-content:center}
+
+/* ── чтение (политика) ──────────────────────────────────────────────── */
+.вн-чтение{max-width:74ch}
+.вн-чтение h2{margin:26px 0 10px;font-size:19px;
+  scroll-margin-top:calc(var(--ish-h,96px) + 16px)}
+.вн-чтение h2:first-of-type{margin-top:0}
+.вн-чтение p{margin:0 0 12px;color:#22252F}
+.вн-чтение ul,.вн-чтение ol{margin:0 0 14px;padding-left:20px;color:#22252F}
+.вн-чтение li{margin-bottom:5px}
+.вн-чтение .вн-дата{color:var(--tih);font-size:13.5px;margin-bottom:20px}
+.вн-огл{font-size:14px}
+.вн-огл a{display:block;padding:6px 10px;border-radius:7px;color:var(--tih);line-height:1.3}
+.вн-огл a:hover{background:var(--kbs);color:var(--kb)}
+.вн-огл a[aria-current="true"]{background:var(--kbs);color:var(--kb);font-weight:600}
+
+/* ── узкие экраны ───────────────────────────────────────────────────── */
+@media screen and (max-width:900px){
+  .вн-тело{grid-template-columns:minmax(0,1fr);padding:20px 16px 40px;gap:18px}
+  .вн-бок{position:static}
+  .вн-об{padding:0 16px}
+  .вн h1{font-size:26px}
+  .вн-верх{padding:20px 0 18px}
+  .вн-карта{padding:18px}
+  .вн-пары{grid-template-columns:minmax(0,1fr)}
+  .вн-пары>div{padding:8px 2px;border-bottom:0}
+  .вн-пары>div:nth-child(4n+1),.вн-пары>div:nth-child(4n+2){background:none}
+  .вн-имя{padding-bottom:0}
+  .вн-знач{padding-top:2px;border-bottom:1px solid var(--lin);padding-bottom:10px}
+  .вн-чтение{max-width:none}
+}
+@media screen and (max-width:1100px) and (min-width:901px){
+  .вн-тело{grid-template-columns:minmax(0,1fr) 272px;gap:20px}
+}
+@media screen and (max-width:520px){
+  .вн-ряд .вн-кноп{width:100%}
+}
+/* ── П14 (16.10): якорь #garantiya, «Гарантия и возврат» ── */
+.вн-карта[id]{scroll-margin-top:calc(var(--ish-h,96px) + 16px)}
+.вн-два{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.вн-плашка{border:1px solid var(--lin);border-radius:10px;background:var(--zebra);padding:16px}
+.вн-плашка h3{margin-bottom:4px}
+.вн-плашка p{margin:0;color:var(--tih);font-size:14.5px}
+.вн-крупно{font-size:28px;line-height:1.1;font-weight:700;color:var(--kb);margin:0 0 6px}
+.вн-ссылки a{display:block;padding:8px 10px;border-radius:7px;color:var(--ink);font-size:14.5px;line-height:1.3}
+.вн-ссылки a:hover{background:var(--kbs);color:var(--kb)}
+@media screen and (max-width:640px){.вн-два{grid-template-columns:minmax(0,1fr)}}
+.вн-пары_один{grid-template-columns:200px minmax(0,1fr)}
+@media screen and (max-width:640px){.вн-пары_один{grid-template-columns:minmax(0,1fr)}
+  .вн-пары_один>div:nth-child(odd){padding-bottom:0;border-bottom:0}}

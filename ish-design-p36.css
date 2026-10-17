@@ -1,4 +1,4 @@
-/* ish-design-p36.css  v1.0  (кандидат 17.10.2026; НЕ выложено)  П36 «карточка товара в духе главной C2»
+/* ish-design-p36.css  v1.1  (кандидат 17.10.2026; НЕ выложено)  П36 «карточка товара в духе главной C2»
    Подключает ish-design-p36.js (рядом с собой). Откат: пустой файл на Pages или window.ISH_P36_OFF / ISH_P4_NO_P36.
    Окно Tilda (крестик, «К разделу», крошки) ОСТАЁТСЯ, меняется всё внутри. Всё под html.ishp36-on (ставит js).
    Перебивает правила блока 4055071703 и ish-design.css (там !important) через ID #allrecords; сам блок не правится.
@@ -220,3 +220,10 @@ html.ishp36-on #allrecords .ishp36-bb .ishp36-cmp__open:hover{color:var(--linkh)
 html.ishp36-on #allrecords .ishp36-bb .ishpg3-avail.ishpg3-no{color:#5A5F70!important}
 html.ishp36-on #allrecords .ishp36-bb .ishpg3-avail.ishpg3-no i{background:#9AA0B2;box-shadow:none}
 html.ishp36-on #allrecords .ishp36-bb .ishpg3-avail i{box-shadow:0 0 0 4px rgba(31,157,85,.15)}
+
+/* v1.1 (17.10.2026): плавающая плашка корзины .ishk-bar («1 товар · сумма · Оформить», fixed right/bottom 16, рисует блок ishKorzina)
+   перекрывала правый край «Основных характеристик» в окне карточки (десктоп). Пока окно открыто - плашка скрыта: в карточке уже есть «В корзине».
+   Только десктоп; телефон/планшет и остальные страницы не затронуты. Откат: удалить этот блок. */
+@media (min-width:1025px){
+html.ishp36-on:has(.t-popup_show) .ishk-bar{opacity:0!important;visibility:hidden!important;pointer-events:none!important;transform:translateY(12px)}
+}

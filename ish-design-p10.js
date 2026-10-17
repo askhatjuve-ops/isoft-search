@@ -1,10 +1,11 @@
-/* ish-design-p10.js  v2  (16.10.2026)  П10 «карточка товара: внешний слой» b2b.isoft-shop.kz
+/* ish-design-p10.js  v3  (18.10.2026)  П10 «карточка товара: внешний слой» b2b.isoft-shop.kz
    Подключается строкой в HEAD/подвале ТОЛЬКО для страниц карточки (/tproduct/...). Блок 4055071703 (запас 251 знак) не правится.
    Ждёт, пока фрагмент v8p7 соберёт карточку (html.ishpg-on), и ДОБАВЛЯЕТ узлы с префиксом ishp10-. Чужих узлов не переписывает,
    «В корзину» не перекрашивает и не подменяет: все кнопки-двойники кликают ЧЕРЕЗ родную .ishpg-add (одно место добавления в корзину).
    Пункты: Т9 «Запросить КП» · Т10 предел и цифровая клавиатура · Т11/М6 кнопки −/+ 40×44 · Т13/М7 зебра (css) · Т16/Ик7 копирование артикула
            Т17 бренд ссылкой · Т18 умные крошки · Т19 «К разделу» скромнее · Т20 липкая панель на десктопе и для товара без цены
            Ик5 иконка ошибки у поля (css) · Ик6 лупа и просмотр фото · Фт4 без прыжка при загрузке фото (css).
+   v3 (Т4): «Уточнить по этому товару» / «Запросить КП» (запасной путь на /podbor) кладут название, артикул и цену в sessionStorage 'ishp10_ask'; на /podbor пустое поле «Список позиций» (иначе «Комментарий») получает «Уточнить по товару: <название>, Арт. iSoft <арт>, <цена>». Нет данных или формы - ничего не делает. Частично: SKIP 'ask'.
    Откат: пустой файл на Pages (ничего не делает) или window.ISH_P10_OFF=1 до загрузки. Пустой/недоступный .css: интерфейс не строится.
    Частично: window.ISH_P10_SKIP='kp,qty,copy,brand,crumbs,back,bar,zoom' (без пробелов). Страница /spec#kp (если файл подгружен и там): выбирает «КП». */
 (function () {
@@ -78,6 +79,56 @@
   function cartQ() {
     try { var c = JSON.parse(localStorage.getItem('tcart') || '{}'), n = 0; (c.products || []).forEach(function (p) { n += parseFloat(p.quantity) || 1; }); return n; } catch (e) { return 0; }
   }
+  /* ── Т4: данные товара для формы /podbor (sessionStorage 'ishp10_ask', живёт 1 час; запасной источник - ?model=&art= из ссылки) ── */
+  var ASK_KEY = 'ishp10_ask', ASK_TTL = 3600 * 1000;
+  function askSave() {
+    try {
+      var n = txt(q('.js-store-prod-name')), a = txt(q('.t-store__prod-popup__sku .js-store-prod-sku') || q('.js-store-prod-sku'));
+      if (!n && !a) return;
+      sessionStorage.setItem(ASK_KEY, JSON.stringify({ n: n, a: a, p: priceOf(), t: Date.now() }));
+    } catch (e) {}
+  }
+  function askLine(d) {
+    var parts = [];
+    if (d.n) parts.push(d.n);
+    if (d.a) parts.push(/^арт/i.test(d.a) ? d.a : 'Арт. iSoft ' + d.a);
+    if (d.p > 0) parts.push(money(d.p));
+    return parts.length ? 'Уточнить по товару: ' + parts.join(', ') : '';
+  }
+  function askRead() {
+    var d = null;
+    try { d = JSON.parse(sessionStorage.getItem(ASK_KEY) || 'null'); } catch (e) {}
+    if (d && d.t && Date.now() - d.t < ASK_TTL) return d;
+    try {
+      var m = /[?&]model=([^&]*)/.exec(location.search), a = /[?&]art=([^&]*)/.exec(location.search);
+      if (m || a) return { n: m ? decodeURIComponent(m[1].replace(/\+/g, ' ')) : '', a: a ? decodeURIComponent(a[1].replace(/\+/g, ' ')) : '', p: 0 };
+    } catch (e) {}
+    return null;
+  }
+  function askSetVal(el, v) {
+    var proto = el.tagName === 'TEXTAREA' ? W.HTMLTextAreaElement.prototype : W.HTMLInputElement.prototype;
+    var ds = Object.getOwnPropertyDescriptor(proto, 'value');
+    if (ds && ds.set) ds.set.call(el, v); else el.value = v;
+    try { el.dispatchEvent(new Event('input', { bubbles: true })); el.dispatchEvent(new Event('change', { bubbles: true })); } catch (e) {}
+  }
+  function askFill() {
+    var d = askRead(), line = d && askLine(d); if (!line) return;
+    until(function () {
+      var f = q('form.t-form, form.js-form-proccess'); if (!f) return false;
+      var el = q('[name^="Список позиций"]', f) || q('[name^="Комментарий"]', f);
+      if (!el) return false;
+      if (String(el.value || '').trim() === '') askSetVal(el, line);      /* чужой текст не затираем */
+      try { sessionStorage.removeItem(ASK_KEY); } catch (e) {}
+      return true;
+    }, 40, 250);
+  }
+  function askBind() {
+    D.addEventListener('click', function (e) {
+      var t = e.target && e.target.closest ? e.target.closest('.ishpg3-ask') : null;
+      if (t) askSave();
+    }, true);
+  }
+
   /* ── Т9: вторичное «Запросить КП» ── */
   function kp() {
     if (q('.ishp10-kp') || H.classList.contains('ishpg-nopr')) return;
@@ -93,7 +144,7 @@
       try { sessionStorage.setItem('ishp10_doc', 'kp'); } catch (x) {}
       (function wait() {                               /* общая корзина кладёт асинхронно: ждём прирост до 1,5 с */
         if (cartQ() > n0) { setTimeout(function () { location.href = '/spec#kp'; }, 200); return; }
-        if (Date.now() - t0 > 1500) { location.href = ask ? ask.getAttribute('href') : '/podbor'; return; }
+        if (Date.now() - t0 > 1500) { askSave(); location.href = ask ? ask.getAttribute('href') : '/podbor'; return; }
         setTimeout(wait, 100);
       })();
     });
@@ -290,7 +341,8 @@
     var href = src ? src.replace(/ish-design-p10(\.src)?\.js/, 'ish-design-p10.css') : 'https://askhatjuve-ops.github.io/isoft-search/ish-design-p10.css?v=1';
     function go() {
       if (!cssOk()) { H.classList.remove('ishp10-on'); return; }    /* css пуст или недоступен: ничего не строим */
-      if (!isCard) { if (isSpec) step('spec', specKp); return; }
+      if (!isCard) { if (isSpec) step('spec', specKp); else if (!off('ask')) step('ask', askFill); return; }
+      if (!off('ask')) step('askbind', askBind);
       function mods() {
         if (!off('qty')) step('qty', qty);
         if (!off('kp')) step('kp', kp);

@@ -119,3 +119,14 @@ html.ishp10-on .t-input-group:has(.t-input-error:not(:empty)) .t-input{border-co
 html.ishp10-on .t-input[aria-invalid="true"]{border-color:var(--p10-err)!important}
 
 @media (prefers-reduced-motion:reduce){.ishp10-sticky,.ishp10-sbtn,.ishp10-toast{transition:none!important}.ishp10-sbtn:active{transform:none!important}}
+
+/* Фр6/Фр8: /podbor — «Тема запроса» чипами (не залитые: залитая кнопка на экране одна — «Отправить») */
+html.ishp10-on .ishp10-topic{margin:0 0 20px}
+html.ishp10-on .ishp10-topic__t{font:500 16px/1.3 var(--p10-f);color:var(--p10-ink);margin:0 0 10px}
+html.ishp10-on .ishp10-topic__t span{font-weight:400;font-size:14px;color:var(--p10-mut);margin-left:6px}
+html.ishp10-on .ishp10-topic__r{display:flex;flex-wrap:wrap;gap:8px}
+html.ishp10-on .ishp10-chip{appearance:none;-webkit-appearance:none;cursor:pointer;min-height:44px;padding:0 16px;border:1px solid #C9CEDC;border-radius:22px;background:#fff;color:var(--p10-ink);font:500 15px/1.2 var(--p10-f);transition:border-color .15s,background .15s,color .15s}
+html.ishp10-on .ishp10-chip:hover{border-color:var(--p10-k)}
+html.ishp10-on .ishp10-chip:focus-visible{outline:2px solid var(--p10-k);outline-offset:2px}
+html.ishp10-on .ishp10-chip.is-on{border-color:var(--p10-k);background:#EEF1FC;color:var(--p10-k);box-shadow:inset 0 0 0 1px var(--p10-k)}
+@media (max-width:480px){html.ishp10-on .ishp10-chip{flex:1 1 calc(50% - 8px);padding:0 10px}}

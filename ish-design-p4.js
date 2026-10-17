@@ -452,7 +452,7 @@
   })();
 
   /* ───────── П10: карточка товара (/tproduct/), а на /spec и /podbor - только css и выбор «КП» ───────── */
-  var P10V = '4';
+  var P10V = '5';
   function p10() {
     if (W.ISH_P10_OFF || D.getElementById('ishp-p10-js')) return;
     var p = location.pathname;

@@ -1,10 +1,11 @@
-/* ish-design-p10.js  v3  (18.10.2026)  П10 «карточка товара: внешний слой» b2b.isoft-shop.kz
+/* ish-design-p10.js  v4  (18.10.2026)  П10 «карточка товара: внешний слой» b2b.isoft-shop.kz
    Подключается строкой в HEAD/подвале ТОЛЬКО для страниц карточки (/tproduct/...). Блок 4055071703 (запас 251 знак) не правится.
    Ждёт, пока фрагмент v8p7 соберёт карточку (html.ishpg-on), и ДОБАВЛЯЕТ узлы с префиксом ishp10-. Чужих узлов не переписывает,
    «В корзину» не перекрашивает и не подменяет: все кнопки-двойники кликают ЧЕРЕЗ родную .ishpg-add (одно место добавления в корзину).
    Пункты: Т9 «Запросить КП» · Т10 предел и цифровая клавиатура · Т11/М6 кнопки −/+ 40×44 · Т13/М7 зебра (css) · Т16/Ик7 копирование артикула
            Т17 бренд ссылкой · Т18 умные крошки · Т19 «К разделу» скромнее · Т20 липкая панель на десктопе и для товара без цены
            Ик5 иконка ошибки у поля (css) · Ик6 лупа и просмотр фото · Фт4 без прыжка при загрузке фото (css).
+   v4 (Фр6/Фр8): на /podbor БИН необязателен (с поля снимаются data-tilda-req / aria-required, подпись «БИН/ИИН — 12 цифр (необязательно)»; имя поля li_nm и маска/правило «только цифры» остаются) и «Тема запроса» чипами («Подбор техники», «Счёт по списку», «Госзакупка», «Другое»): выбор пишется ОДНОЙ строкой в НАЧАЛО поля «Комментарий» («Тема запроса: X · текст»), нового поля Tilda нет. Выключатели: window.ISH_P10_SKIP='form' (оба), 'bin' (только БИН), 'topic' (только тема).
    v3 (Т4): «Уточнить по этому товару» / «Запросить КП» (запасной путь на /podbor) кладут название, артикул и цену в sessionStorage 'ishp10_ask'; на /podbor пустое поле «Список позиций» (иначе «Комментарий») получает «Уточнить по товару: <название>, Арт. iSoft <арт>, <цена>». Нет данных или формы - ничего не делает. Частично: SKIP 'ask'.
    Откат: пустой файл на Pages (ничего не делает) или window.ISH_P10_OFF=1 до загрузки. Пустой/недоступный .css: интерфейс не строится.
    Частично: window.ISH_P10_SKIP='kp,qty,copy,brand,crumbs,back,bar,zoom' (без пробелов). Страница /spec#kp (если файл подгружен и там): выбирает «КП». */
@@ -127,6 +128,61 @@
       var t = e.target && e.target.closest ? e.target.closest('.ishpg3-ask') : null;
       if (t) askSave();
     }, true);
+  }
+
+  /* ── Фр6/Фр8: форма /podbor — БИН необязателен + тема запроса чипами ── */
+  var TOPICS = ['Подбор техники', 'Счёт по списку', 'Госзакупка', 'Другое'];
+  var TOPIC_PRE = 'Тема запроса: ';
+  var TOPIC_RE = /^Тема запроса:[^·\n]*(?:\s*·\s*|\s*\n\s*)?/;
+  function topicSplit(v) {                          /* → {t: тема|'', rest: текст без метки} */
+    v = String(v || '');
+    var m = TOPIC_RE.exec(v), t = '';
+    if (m) { t = m[0].replace(/^Тема запроса:\s*/, '').replace(/\s*(?:·|\n)\s*$/, '').trim(); v = v.slice(m[0].length); }
+    return { t: t, rest: v.replace(/^\s+/, '') };
+  }
+  function topicJoin(t, rest) { return t ? (TOPIC_PRE + t + (rest ? ' · ' + rest.replace(/\s*\n+\s*/g, ' ') : '')) : rest; }
+  function binOptional(f) {
+    var inp = q('[name^="БИН"]', f); if (!inp) return;
+    ['data-tilda-req', 'aria-required'].forEach(function (a) { if (inp.hasAttribute(a)) inp.removeAttribute(a); });
+    if (!inp.hasAttribute('data-tilda-rule-minlength')) inp.setAttribute('data-tilda-rule-minlength', '12');   /* без req пустое поле проходит, а короткое (1-11 цифр) штатный валидатор Tilda по-прежнему останавливает */
+    var g = inp.closest ? inp.closest('.t-input-group') : null;
+    var lab = g && q('.t-input-title, label', g);
+    if (lab && !lab.children.length) { lab.textContent = 'БИН/ИИН — 12 цифр (необязательно)'; lab.__ishp28 = 1; }   /* __ishp28: п28 больше не вернёт звёздочку */
+    if (!inp.getAttribute('data-ishp10-ph')) { inp.setAttribute('placeholder', '12 цифр, если нужен счёт'); inp.setAttribute('data-ishp10-ph', '1'); }
+  }
+  function topicChips(f) {
+    if (q('.ishp10-topic', f)) return;
+    var com = q('[name^="Комментарий"]', f) || q('[name^="Список позиций"]', f); if (!com) return;
+    var first = q('.t-input-group', f); if (!first || !first.parentNode) return;
+    var box = mk('div'); box.className = 'ishp10-topic';
+    box.innerHTML = '<div class="ishp10-topic__t" id="ishp10-topic-t">Тема запроса <span>необязательно</span></div><div class="ishp10-topic__r" role="radiogroup" aria-labelledby="ishp10-topic-t"></div>';
+    var row = q('.ishp10-topic__r', box), btns = [];
+    TOPICS.forEach(function (name) {
+      var b = mk('button'); b.type = 'button'; b.className = 'ishp10-chip'; b.setAttribute('role', 'radio'); b.setAttribute('aria-checked', 'false');
+      b.setAttribute('data-topic', name); b.textContent = name; row.appendChild(b); btns.push(b);
+    });
+    function mark(t) { btns.forEach(function (b) { var on = b.getAttribute('data-topic') === t; b.setAttribute('aria-checked', on ? 'true' : 'false'); b.classList.toggle('is-on', on); }); }
+    function apply(t) {
+      var cur = topicSplit(com.value), nv = topicJoin(t, cur.rest);
+      if (nv !== com.value) askSetVal(com, nv);
+      mark(t);
+    }
+    box.addEventListener('click', function (e) {
+      var b = e.target && e.target.closest ? e.target.closest('.ishp10-chip') : null; if (!b) return;
+      var t = b.getAttribute('data-topic'), cur = topicSplit(com.value).t;
+      apply(cur === t ? '' : t);                        /* повторный клик снимает выбор */
+    });
+    first.parentNode.insertBefore(box, first);
+    mark(topicSplit(com.value).t);
+    ['input', 'change'].forEach(function (ev) { com.addEventListener(ev, function () { mark(topicSplit(com.value).t); }); });   /* чип следует за полем: стёр метку - выбор снят */
+  }
+  function podborForm() {
+    until(function () {
+      var f = q('form.t-form, form.js-form-proccess'); if (!f || !q('[name^="Комментарий"], [name^="Список позиций"]', f)) return false;
+      if (!off('bin')) step('bin', function () { binOptional(f); });
+      if (!off('topic')) step('topic', function () { topicChips(f); });
+      return true;
+    }, 40, 250);
   }
 
   /* ── Т9: вторичное «Запросить КП» ── */
@@ -341,7 +397,7 @@
     var href = src ? src.replace(/ish-design-p10(\.src)?\.js/, 'ish-design-p10.css') : 'https://askhatjuve-ops.github.io/isoft-search/ish-design-p10.css?v=1';
     function go() {
       if (!cssOk()) { H.classList.remove('ishp10-on'); return; }    /* css пуст или недоступен: ничего не строим */
-      if (!isCard) { if (isSpec) step('spec', specKp); else if (!off('ask')) step('ask', askFill); return; }
+      if (!isCard) { if (isSpec) step('spec', specKp); else { if (!off('ask')) step('ask', askFill); if (!off('form')) step('form', podborForm); } return; }
       if (!off('ask')) step('askbind', askBind);
       function mods() {
         if (!off('qty')) step('qty', qty);

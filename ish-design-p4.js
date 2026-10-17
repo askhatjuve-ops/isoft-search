@@ -331,11 +331,11 @@
 
   /* ───────── П35: раздел каталога в палитре главной (ish-design-p35.js/.css с того же адреса, один раз) ─────────
      Признак: страница со списком товаров (.t-store__card-list). Выключатель: window.ISH_P35_OFF = 1 или window.ISH_P4_NO_P35 = 1 (до загрузки p4). Кэш: поменять P35V. */
-  var P35V = '1';
+  var P35V = '2';
   function p35() {
     if (W.ISH_P4_NO_P35 || W.ISH_P35_OFF || W.ISH_P35 || D.getElementById('ishp-p35-js')) return true;
     if (D.getElementById('лента')) return true;
-    if (!D.querySelector('.t-store__card-list')) return false;
+    if (!D.querySelector('.t-store__card-list, .вн-гр[data-gruppa]')) return false;   /* v3: раздел (список Tilda) или группа (свой список .вн-гр) */
     var src = tag && tag.src;
     if (!src) return true;
     var s = D.createElement('script');
@@ -345,7 +345,7 @@
     return true;
   }
   function p35wait() {
-    if (W.ISH_P4_NO_P35 || W.ISH_P35_OFF || !D.querySelector('.t-store')) return;
+    if (W.ISH_P4_NO_P35 || W.ISH_P35_OFF || !D.querySelector('.t-store, .вн-гр[data-gruppa]')) return;
     var n = 0;
     (function step() { var ok = false; try { ok = p35(); } catch (e) {} if (!ok && ++n < 80) setTimeout(step, 250); })();
   }

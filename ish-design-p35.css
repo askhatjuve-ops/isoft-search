@@ -1,4 +1,4 @@
-/* ish-design-p35.css  v2.0  (кандидат 17.10.2026; НЕ выложено)  П35 «раздел каталога: компоненты главной»
+/* ish-design-p35.css  v3.0  (кандидат 17.10.2026; НЕ выложено; v3 дописан в конце файла: шапка без фото/длинное слово, плитки без картинки, бренды текстом, режим группы html.ishp35-grp)  П35 «раздел каталога: компоненты главной»
    Подключает ish-design-p35.js. Откат: пустой файл на Pages или window.ISH_P35_OFF / ISH_P4_NO_P35.
    Что: голубая палитра главной (#E7EAFB / #EEF1FD, кобальт на активном), шапка раздела с градиентом, полоса «кто мы», две индиго-плиты,
    экран «ничего не найдено», светлый низ, сегмент «Список / Плитка», цена и характеристики контрастнее, телефон: круги не на «В корзину».
@@ -258,3 +258,97 @@ html.ishp35-on .ishp25-bar button:focus-visible{outline-color:var(--p35-k)}
 
 /* низ списка: родной отступ записи (135 px) уменьшаем, чтобы между списком и «Смежными разделами» не зияла пустота */
 html.ishp35-on .t-rec:has(.t-store__card-list){padding-bottom:24px!important}
+
+/* ═══════════════ v3 (17.10) ═══════════════ */
+/* шапка: нет фото - одна колонка; длинное слово H1 не режется */
+html.ishp35-on .ishp35-hero--nop{grid-template-columns:minmax(0,1fr)}
+html.ishp35-on body .ishp35-hero h1{overflow-wrap:anywhere}
+/* плитка без картинки (нет фото / не загрузилось): мягкая подложка, высота та же */
+html.ishp35-on .ishp35-tiles .ishp8-stage.ishp35-noimg{background:var(--p35-soft2);border-radius:16px}
+/* бренды без знака: название на такой же кобальтовой плитке */
+html.ishp35-on .ishp35-bkt .ishp35-bk{display:flex;align-items:center;justify-content:center;padding:0 12px;text-align:center}
+html.ishp35-on .ishp35-bn{display:block;font:700 18px/1.15 var(--p35-f);overflow-wrap:anywhere;color:inherit}
+html.ishp35-on .ishp35-brands[hidden]{display:none}
+@media screen and (max-width:760px){
+  html.ishp35-on .ishp35-hero--long{grid-template-columns:minmax(0,1fr)}
+  html.ishp35-on .ishp35-hero--long .ishp35-hero__p{display:none}
+  html.ishp35-on body .ishp35-hero h1{font-size:var(--p35-hf,30px)!important}
+  html.ishp35-on body .ishp35-hero--long h1{font-size:var(--p35-hm,26px)!important}
+  html.ishp35-on .ishp35-bn{font-size:14px}
+}
+
+/* ═══ группа (родительская страница): html.ishp35-grp ═══ */
+html.ishp35-grp .ishp35-subs{margin:32px 0 0}
+html.ishp35-grp .ishp35-subs[hidden]{display:none}
+html.ishp35-grp .вн-гр{gap:24px;padding-top:24px}
+/* боковая колонка = только фильтры (как в разделе): «Смежные группы», «Популярные бренды», «Нужна помощь» заменены блоками внизу страницы */
+html.ishp35-grp .вн-гр .вн-смежн,html.ishp35-grp .вн-гр .вн-бренды,html.ishp35-grp .вн-гр .вн-помощь{display:none!important}
+html.ishp35-grp .вн-гр .вн-ф{background:var(--p35-soft2);border:1px solid var(--p35-line);border-radius:18px;padding:0 0 10px;overflow:hidden}
+html.ishp35-grp .вн-гр .вн-ф > .вн-бок__заг{background:var(--p35-k);color:#fff;margin:0 0 6px;padding:14px 16px;min-height:56px;box-sizing:border-box;display:flex;align-items:center;font:800 17px/1.2 var(--p35-f)}
+html.ishp35-grp .вн-ф__заг{padding:12px 16px;border-radius:0;color:var(--p35-ink);font:600 15px/20px var(--p35-f)}
+html.ishp35-grp .вн-ф__заг + .вн-ф__тело{border-bottom:0}
+html.ishp35-grp .вн-ф__тело{padding:0 16px 12px}
+html.ishp35-grp .вн-ф__заг i{color:var(--p35-k)}
+html.ishp35-grp .вн-ф label{min-height:32px;color:#3A3F52}
+html.ishp35-grp .вн-ф label em{color:#7A8094}
+html.ishp35-grp .вн-ф__цена input{height:40px;border-radius:12px;border-color:var(--p35-line)}
+html.ishp35-grp .вн-ф__ок{height:40px;border-radius:12px;background:var(--p35-k);border-color:var(--p35-k);color:#fff;font-weight:700}
+html.ishp35-grp .вн-ф__сброс{margin:6px 16px 0;width:calc(100% - 32px);border-top-color:var(--p35-line)}
+/* верхняя строка списка: «Товаров: N» (живое число), порядок, «Список / Плитка» */
+html.ishp35-grp .вн-гр__верх{flex-wrap:nowrap;gap:16px;min-height:64px;box-sizing:border-box;margin:0 0 16px;padding:8px 8px 8px 24px;background:#fff;border:1px solid var(--p35-line);border-radius:18px}
+html.ishp35-grp .вн-гр__счёт{order:-1;margin-right:auto;white-space:nowrap;font:700 15px/1.2 var(--p35-f);color:var(--p35-ink)}
+html.ishp35-grp .вн-гр__порядок{height:44px;min-width:224px;border:1px solid var(--p35-line);border-radius:12px;background-color:var(--p35-soft2);font-family:var(--p35-f)}
+html.ishp35-grp .вн-гр__фкн{order:-2;border:1px solid var(--p35-line);border-radius:12px;background:var(--p35-soft2);color:var(--p35-k);font-family:var(--p35-f);font-weight:700}
+html.ishp35-grp .ishp35-gv .ishd-seg{display:inline-flex;gap:0;padding:4px;border-radius:14px;background:var(--p35-soft2)}
+html.ishp35-grp .ishp35-gv button{height:44px;margin:0;padding:0 20px;border:0;border-radius:10px;background:transparent;color:#3A3F52;font:600 14px/1 var(--p35-f);cursor:pointer}
+html.ishp35-grp .ishp35-gv button[aria-pressed="true"]{background:#fff;color:var(--p35-k);box-shadow:0 1px 3px rgba(23,25,35,.12)}
+html.ishp35-grp .ishp35-gv button:hover:not([aria-pressed="true"]){background:var(--p35-soft)}
+html.ishp35-grp .ishp35-gv button:focus-visible{outline:2px solid var(--p35-k);outline-offset:2px}
+/* строка товара - как строка раздела: радиус 18, рамка #D5DCF7, цена 24/800 */
+html.ishp35-grp .вн-т{border-radius:18px;border-color:var(--p35-line);box-shadow:none}
+@media (hover:hover){html.ishp35-grp .вн-т:hover{border-color:#B7C2F0}}
+html.ishp35-grp .вн-т__цена b{font:800 24px/1.1 var(--p35-f);letter-spacing:-.01em;color:#0B0E1A}
+html.ishp35-grp .вн-т__кн{border-radius:12px;border-color:var(--p35-k);color:var(--p35-k);font-weight:700}
+html.ishp35-grp .вн-т:hover .вн-т__кн{background:var(--p35-k);color:#fff}
+html.ishp35-grp .вн-т .ish13-крат i{color:#1F2433}
+html.ishp35-grp .вн-т .ish13-крат i b{color:#5E647A;font-weight:500}
+html.ishp35-grp .вн-т__арт,html.ishp35-grp .вн-т__раздел{color:#7A8094}
+html.ishp35-grp #вн-гр-список > .ishp35-plate{grid-column:1/-1}
+html.ishp35-grp .вн-гр__ещё{max-width:360px;margin:12px auto 0;height:44px;border:1px solid #AEBBEF;border-radius:12px;background:#fff;color:var(--p35-k);font:700 15px/1 var(--p35-f)}
+html.ishp35-grp .вн-гр__ещё:hover{background:var(--p35-soft2);border-color:var(--p35-k)}
+html.ishp35-grp .ishp35-note{margin:12px 0 0;font:400 13px/1.45 var(--p35-f);color:var(--p35-mut)}
+html.ishp35-grp .вн-гр__пусто{padding:30px 32px;border-radius:22px;border-color:var(--p35-line);background:linear-gradient(120deg,#fff 0%,var(--p35-soft) 100%);font:400 15px/1.5 var(--p35-f);color:var(--p35-mut)}
+/* «Плитка»: 3 колонки справа от панели (2 на планшете и телефоне) */
+html.ishd-tile.ishp35-grp #вн-гр-список{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+html.ishd-tile.ishp35-grp .вн-т{display:flex;flex-direction:column;margin:0;padding:16px}
+html.ishd-tile.ishp35-grp .вн-т__фото{width:100%;height:auto;aspect-ratio:1/1}
+html.ishd-tile.ishp35-grp .вн-т__текст{flex:1 1 auto;margin-top:12px}
+html.ishd-tile.ishp35-grp .вн-т__цена{align-items:flex-start;min-width:0;margin-top:12px}
+html.ishd-tile.ishp35-grp .вн-т__кн{width:100%}
+html.ishd-tile.ishp35-grp .вн-гр__пусто{grid-column:1/-1}
+@media screen and (max-width:1200px){html.ishd-tile.ishp35-grp #вн-гр-список{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media screen and (max-width:960px){
+  html.ishp35-grp .вн-гр{padding-top:12px}
+  html.ishp35-grp .вн-гр__верх{flex-wrap:wrap;padding:12px 12px 12px 16px}
+  html.ishp35-grp .вн-гр__счёт{flex:1 1 100%;margin:0}
+  html.ishp35-grp .вн-гр__порядок{flex:1 1 160px;min-width:0}
+  html.ishp35-grp .вн-гр.is-ф .вн-гр__бок .вн-ф{background:none}
+}
+@media screen and (max-width:640px){
+  html.ishd-tile.ishp35-grp #вн-гр-список{gap:8px}
+  html.ishd-tile.ishp35-grp .вн-т{grid-template-columns:none;padding:10px}
+  html.ishd-tile.ishp35-grp .вн-т__цена{grid-column:auto;flex-direction:column;align-items:flex-start;justify-content:flex-start;margin-top:8px}
+  html.ishd-tile.ishp35-grp .вн-т__цена b{font-size:18px}
+  html.ishd-tile.ishp35-grp .вн-т__кн{width:100%;height:40px}
+  html.ishd-tile.ishp35-grp .вн-т__имя{font-size:14px;line-height:18px}
+  html.ishd-tile.ishp35-grp .ish13-крат{display:none}
+  html.ishp35-grp .ishp35-gv{flex:1 1 100%}
+  html.ishp35-grp .ishp35-gv .ishd-seg{display:flex;width:100%}
+  html.ishp35-grp .ishp35-gv button{flex:1 1 0}
+}
+@media screen and (min-width:761px) and (max-width:1100px){
+  html.ishp35-on body .ishp35-hero h1{font-size:min(var(--p35-hf2,42px),clamp(32px,3.4vw,42px))!important}
+}
+/* плитки: высота строки не меньше прежней, но растёт, если название в 2-3 строки (иначе в «Разделах группы» на телефоне плитки наезжали друг на друга) */
+html.ishp35-on .ishp35-tiles{grid-auto-rows:minmax(216px,auto)}
+@media screen and (max-width:760px){html.ishp35-on .ishp35-tiles{grid-auto-rows:minmax(184px,auto)}}

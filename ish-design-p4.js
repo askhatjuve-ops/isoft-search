@@ -129,7 +129,7 @@
   }
 
   /* ───────── П6: фильтры и «Список / Плитка» на страницах каталога (грузит ish-design-p6.js с того же адреса, один раз) ───────── */
-  var P6V = '4';
+  var P6V = '5';
   function p6() {
     if (W.ISH_P4_NO_P6 || W.ISH_P6 || D.getElementById('ishp-p6-js')) return true;
     if (!D.querySelector('.t-store__card[data-ish13], .t-store__filter__item, .t-store__filter')) return false;
@@ -416,7 +416,7 @@
 
   /* ───────── П38: мелочи показа - единый формат цены «471 000 ₸», alt у фото товаров, «Цены обновлены сегодня» (ish-design-p38.js/.css с того же адреса, на всех страницах; сам молчит, если нечего править)
      Выключатели: window.ISH_P38_OFF = 1 или window.ISH_P4_NO_P38 = 1 (до загрузки p4); по частям - window.ISH_P38_SKIP = 'price,alt,date'. Кэш: поменять P38V. */
-  var P38V = '1';
+  var P38V = '2';
   (function () {
     if (W.ISH_P4_NO_P38 || W.ISH_P38_OFF || W.__ishP38 || D.getElementById('ishp-p38-js')) return;
     var src = tag && tag.src;
@@ -452,7 +452,7 @@
   })();
 
   /* ───────── П10: карточка товара (/tproduct/), а на /spec и /podbor - только css и выбор «КП» ───────── */
-  var P10V = '3';
+  var P10V = '4';
   function p10() {
     if (W.ISH_P10_OFF || D.getElementById('ishp-p10-js')) return;
     var p = location.pathname;

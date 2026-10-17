@@ -11,6 +11,7 @@
          Бренды, которые индекс склеил (DELL / Dell / Dell Technologies), и всё без точного числа — без цифры. Нулей не рисуем.
          Характеристики (память, диагональ…) по индексу НЕ считаем: у индекса свои, укрупнённые значения, числа расходятся с Tilda.
          Выключатель: window.ISH_P6_NO_COUNTS = true.
+         v5: характеристики — из ish-p6-counts.js (секционный формат по slug), см. ниже.
      Ф5  кнопка цены «OK» → «Применить», подписи полей для экранного диктора.
      Ф6  счётчик выбранного на кнопке «Фильтры» (телефон).
      Ф8  «Сбросить всё» в шапке панели + запасные чипы, если ishpe-1410 чипов не нарисовал (телефон). Не дублирует ishpe.
@@ -19,7 +20,7 @@
   'use strict';
   try {
     if (window.ISH_P6) return;
-    window.ISH_P6 = { версия: 'ishp6-1810' };
+    window.ISH_P6 = { версия: 'ishp6-1810b' };
 
     /* ── подключаем CSS рядом со скриптом ── */
     (function css() {
@@ -107,7 +108,7 @@
       }
     }
 
-    /* Ф3 сама: бренды раздела по индексу поиска. Ничего не качаем сами — берём промис ISHSearch.preload() (файл уже качает ish-search.js) */
+    /* Ф3 сама: бренды раздела по индексу поиска. Берём промис ISHSearch.preload(); нет ISHSearch / выключен / не ответил — свойИндекс() грузит тот же файл сам */
     var авто = null, запросили = false, ждали = 0;
     function ключБренда(т) { return String(т).toLowerCase().replace(/[^a-zа-яё0-9]+/g, ' ').replace(/^\s+|\s+$/g, '').split(' ')[0]; }
 
@@ -150,24 +151,99 @@
     }
 
     function запроситьИндекс() {                                           // лениво: только когда панель с брендами реально на экране
-      if (авто || запросили) return;
+      if (авто || запросили === true || запросили === 2) return;
       var г = бренд();
       if (!г || !(г.з.offsetWidth || г.з.offsetHeight || (г.з.getClientRects && г.з.getClientRects().length))) return;
-      var S = window.ISHSearch;
-      if (!S || typeof S.preload !== 'function') {                         // ish-search.js ещё не подгрузился — подождём немного (до ~15 с), сами индекс не качаем
-        if (++ждали < 10) setTimeout(запуск, 1500);
+      var S = window.ISHSearch, годен = false;
+      try { годен = !!(S && typeof S.preload === 'function' && (typeof S.enabled !== 'function' || S.enabled())); } catch (e) {}
+      if (!годен) {
+        /* 18.10 (v5b): ish-search.js грузит шапка лениво (при фокусе в поиск) — на разделе ISHSearch может не быть совсем, быть выключен
+           или ISH_NO_PRELOAD. Ждём его ~3 с (общий кэш лучше), потом сами грузим тот же search_index2.json, один раз. */
+        if (S && typeof S.preload === 'function') { свойИндекс(); return; }   // есть, но выключен — ждать нечего
+        if (++ждали < 3) setTimeout(запуск, 1500); else свойИндекс();
         return;
       }
       запросили = true;
       try {
-        S.preload().then(function (idx) { try { авто = брендыРаздела(idx) || {}; } catch (e) { авто = {}; } запуск(); }, function () {});
+        var гот = false, таймер = setTimeout(function () { if (!гот) свойИндекс(); }, 6000);   // ISHSearch есть, но индекс не отдал за 6 с
+        S.preload().then(function (idx) { if (гот) return; гот = true; clearTimeout(таймер); try { авто = брендыРаздела(idx) || {}; } catch (e) { авто = {}; } запуск(); },
+                         function () { if (!гот) { гот = true; clearTimeout(таймер); свойИндекс(); } });
+      } catch (e) { свойИндекс(); }
+    }
+
+    var P6_IDX_V = '7551c0ab';                                             // версия в ?v= как у ish-search.js (нужна только для общего кэша; содержимое от неё не зависит)
+    function свойИндекс() {                                                // один раз на страницу; тот же адрес, что у ISHSearch.preload() -> тот же кэш браузера
+      if (запросили === 2 || window.ISH_P6_NO_OWN_INDEX) return;
+      запросили = 2;
+      try {
+        var S = window.ISHSearch, url = '';
+        try { if (S && typeof S.indexUrl === 'function') url = S.indexUrl(); } catch (e) {}
+        if (!url) {
+          var base = '', sc = document.getElementsByTagName('script');
+          for (var i = 0; i < sc.length && !base; i++) if (/\/ish-search\.js(\?|$)/.test(sc[i].src || '')) base = sc[i].src.replace(/[^\/]*(\?.*)?$/, '');
+          for (var i2 = 0; i2 < sc.length && !base; i2++) if (/\/ish-design-p6\.js(\?|$)/.test(sc[i2].src || '')) base = sc[i2].src.replace(/[^\/]*(\?.*)?$/, '');
+          if (!base) { запросили = false; return; }
+          url = base + 'search_index2.json?v=' + P6_IDX_V;
+        }
+        var p = window.__ishP6Idx || window.__ishP38idx || (window.__ishP6Idx = fetch(url, { credentials: 'omit' }).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }));
+        p.then(function (idx) { try { авто = брендыРаздела(idx) || {}; } catch (e) { авто = {}; } запуск(); }, function () {});
       } catch (e) {}
+    }
+
+    /* 18.10 (v5): характеристики из ish-p6-counts.js (window.ISH_P6_COUNTS = {slug раздела: {фильтр: {значение: число}}}).
+       Файл пересобирает круг каждый день; подгружаем лениво, рядом с собой, с ?d=ГГГГММДД (Астана) — раз в сутки сброс кэша.
+       Совместимость: плоский формат {фильтр:{значение:число}} работает как раньше. Бренд: из файла, если есть, иначе по индексу. */
+    var файлЗапросили = false;
+    function датаАстана() {
+      var d = new Date(Date.now() + 5 * 3600000), p = function (n) { return (n < 10 ? '0' : '') + n; };
+      return d.getUTCFullYear() + p(d.getUTCMonth() + 1) + p(d.getUTCDate());
+    }
+    function этоСекции(G) {                                                // секционный: значения первого уровня — объекты объектов
+      for (var k in G) {
+        if (!Object.prototype.hasOwnProperty.call(G, k)) continue;
+        var v = G[k];
+        if (!v || typeof v !== 'object') continue;
+        for (var k2 in v) {
+          if (!Object.prototype.hasOwnProperty.call(v, k2)) continue;
+          return !!v[k2] && typeof v[k2] === 'object';
+        }
+      }
+      return false;
+    }
+    function разделИзФайла(G) {
+      if (!G || typeof G !== 'object') return null;
+      if (!этоСекции(G)) return G;                                         // плоский (старый) формат
+      var сег = location.pathname.replace(/^\/+/, '').split('/')[0].toLowerCase();
+      var r = сег && Object.prototype.hasOwnProperty.call(G, сег) ? G[сег] : null;
+      return r && typeof r === 'object' ? r : null;
+    }
+    function запроситьФайл() {                                             // лениво: только когда панель фильтров на экране
+      if (файлЗапросили || window.ISH_P6_COUNTS) return;
+      var пп = qa('.t-store .t-store__filter__item_checkbox .t-store__filter__item-title'), вид1 = false;
+      for (var m = 0; m < пп.length && !вид1; m++) if (пп[m].offsetWidth || пп[m].offsetHeight || (пп[m].getClientRects && пп[m].getClientRects().length)) вид1 = true;
+      if (!вид1) return;                                                   // панель не на экране — не качаем
+      var src = '';
+      var all = document.getElementsByTagName('script');
+      for (var i = 0; i < all.length; i++) if (/ish-design-p6\.js/.test(all[i].src || '')) { src = all[i].src; break; }
+      if (!src) return;
+      файлЗапросили = true;
+      var sc = document.createElement('script');
+      sc.async = true;
+      sc.src = src.replace(/ish-design-p6\.js.*$/, 'ish-p6-counts.js?d=' + датаАстана());
+      sc.onload = function () { запуск(); };
+      sc.onerror = function () {};
+      document.head.appendChild(sc);
     }
 
     function счётчики() {                                                  // Ф3: только при наличии данных
       if (window.ISH_P6_NO_COUNTS) return;
-      var D = window.ISH_P6_COUNTS;
-      if (!D || typeof D !== 'object') { запроситьИндекс(); D = данныеАвто(); }
+      запроситьФайл();
+      var D = разделИзФайла(window.ISH_P6_COUNTS);
+      if (!D || !D['Бренд']) {                                             // бренда в файле нет — по индексу, как раньше
+        запроситьИндекс();
+        var A = данныеАвто();
+        if (A) { var M = {}; for (var kk in (D || {})) if (Object.prototype.hasOwnProperty.call(D, kk)) M[kk] = D[kk]; M['Бренд'] = A['Бренд']; D = M; }
+      }
       if (!D) return;
       var эл = qa('.t-store .t-store__filter__item_checkbox');
       for (var i = 0; i < эл.length; i++) {
@@ -178,6 +254,7 @@
         for (var j = 0; j < я.length; j++) {
           var инп = q('input', я[j]), знач = инп && инп.getAttribute('data-filter-value');
           if (знач == null || !Object.prototype.hasOwnProperty.call(гр, знач)) continue;
+          if (!(+гр[знач] > 0)) { var c0 = q('.ishd-ct', я[j]); if (c0) c0.parentNode.removeChild(c0); continue; }   // ноль — без числа
           var c = q('.ishd-ct', я[j]);
           if (!c) { c = document.createElement('span'); c.className = 'ishd-ct'; я[j].appendChild(c); }
           if (c.textContent !== String(гр[знач])) c.textContent = String(гр[знач]);

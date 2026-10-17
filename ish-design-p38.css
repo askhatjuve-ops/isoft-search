@@ -1,7 +1,12 @@
-/* ish-design-p38.css  v1.0  (18.10.2026, кандидат)  П38: мелочи показа цены и даты цен. Подключает ish-design-p38.js. */
+/* ish-design-p38.css  v1.1  (18.10.2026, кандидат)  П38: мелочи показа цены, даты цен, наличия и названия. Подключает ish-design-p38.js. */
 /* цена и знак валюты в разных узлах Tilda не разъезжаются по строкам */
 .t-store__card__price,.t-store__prod-popup__price,.вн-т__цена{white-space:nowrap}
 /* «Цены обновлены …» в подписи под списком - продолжение строки, цвет и размер родные */
 .ishp19-note .ishp38-date{white-space:normal}
 /* в карточке под «Цена с НДС» - стили берёт .ishpg3-vat small (p7/p36), здесь только страховка от переноса */
 .ishpg3-vat .ishp38-date{display:block}
+/* stock (К7): бейдж наличия в карточке списка - вид как .ishpg3-avail (зелёная точка + текст), мельче */
+.ishp38-stock{display:flex;align-items:center;gap:6px;margin:6px 0 0;color:#17663A;font:600 12.5px/1.3 TildaSans,Arial,sans-serif}
+.ishp38-stock i{width:8px;height:8px;border-radius:50%;background:#1F9D55;display:block;flex:none}
+/* name (К5): слово типа скрыто визуально, но остаётся в тексте (читатели названия, поиск по странице, скринридер) */
+.ishp38-tw{font-size:0!important;line-height:0!important}

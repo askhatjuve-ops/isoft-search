@@ -103,7 +103,8 @@
   /* малые двухцветные значки 32 для «Почему мы» */
   var ИК = {
     clock: '<circle cx="14" cy="14" r="10"/><path d="M14 8v6l4 3"/>',
-    doc: '<path d="M9 6.5V3.5h9.5l4 4V18"/><path d="M5 8.5h10.5l4 4V24.5H5z"/><path d="M15.5 8.5v4h4M9 17h6M9 21h4"/>'
+    doc: '<path d="M9 6.5V3.5h9.5l4 4V18"/><path d="M5 8.5h10.5l4 4V24.5H5z"/><path d="M15.5 8.5v4h4M9 17h6M9 21h4"/>',
+    gov: '<path d="M3.5 11.5 14 5l10.5 6.5z"/><path d="M5 23h18M7 23V12.5M12 23V12.5M16 23V12.5M21 23V12.5"/>'
   };
   function ик(k) { return '<svg class="ishp8-ic" viewBox="0 0 28 28" aria-hidden="true">' + ИК[k] + '</svg>'; }
   /* номер «NN /» ставит ish-design-p9.css (счётчик по порядку .ishp8-eb); здесь только подпись */
@@ -175,9 +176,7 @@
     return шапка('04', 'Почему мы', 'Как мы работаем с юридическими лицами и ИП') + '<div class="ishp8-bento">' +
       обёртка('c-big', ДЕКО + '<b>Цены видны сразу, без регистрации</b><span>Каталог открыт: смотрите цену до звонка и заявки.</span>', 5, 'div', 'ishp8-bc ishp8-bc--big') +
       обёртка('c-a', '<span class="ishp8-bx">' + ик('clock') + '</span><b>Ответ в день обращения</b><span>Наличие, срок, цена, аналог</span>', 8, 'div', 'ishp8-bc') +
-      обёртка('c-b', '<span class="ishp8-bx">' + ик('doc') + '</span><b>Весь пакет документов</b><span>Счёт, договор, накладная, счёт-фактура</span>', 8, 'div', 'ishp8-bc') +
-      обёртка('c-w', '<div><b>Пришлите список — мы подберём позиции</b><span>Ответ придёт на почту с ценами и сроками.</span></div>' + html_лист() +
-        '<span class="ishp8-gw"><a class="ishp8-go2" href="/podbor" data-д="запрос">Запросить цену</a></span>', 3, 'div', 'ishp8-bc') + '</div>';
+      обёртка('c-b', '<span class="ishp8-bx">' + ик('gov') + '</span><b>Госзакупки и тендеры</b><span>КП под тендер, договор поставки</span>', 8, 'div', 'ishp8-bc') + '</div>';
   }
 
   /* ───────── Г20 бренды: кобальтовые плитки с белыми знаками ───────── */
@@ -269,6 +268,17 @@
     з.classList.add('ishp8-zl');
     з.innerHTML = лого('ishp8-zlg', '#272B36', '#2B44C7');
   }
+  /* «Не нашли нужное? Пришлите список» = один финальный блок: листок со списком между текстом и кнопками (раньше жил плашкой в «Почему мы») */
+  function слить_запрос() {
+    var з = D.getElementById('запросБлок');
+    var кн = з && з.querySelector('.зб-кнопки');
+    if (!з || !кн || з.querySelector('.ishp8-ls')) return;
+    var w = D.createElement('div');
+    w.className = 'ishp8-zls';
+    w.innerHTML = html_лист();
+    з.insertBefore(w, кн);
+    з.classList.add('ishp8-merged');
+  }
   /* заголовок «Не нашли нужное?» короче (Tilda-текст; охранник: только родная формулировка) */
   function заголовок_запроса() {
     var h = D.querySelector('#запросБлок .зб-текст h3');
@@ -358,7 +368,7 @@
     var новые = [];
     /* Г12 - перед «Как оформить заказ»; Г8 - сразу после него */
     if (!D.getElementById('ishp8-a')) { var a = sec('ishp8-a', 'ishp8-sec--strip', html_strip()); родитель.insertBefore(a, полоса); новые.push(a); }
-    if (!D.getElementById('ishp8-b')) { var b = sec('ishp8-b', 'ishp8-sec--tiles', html_tiles()); родитель.insertBefore(b, полоса.nextSibling); новые.push(b); }
+    if (!D.getElementById('ishp8-b')) { var b = sec('ishp8-b', 'ishp8-sec--tiles', html_tiles()); родитель.insertBefore(b, полоса); новые.push(b); }
     /* остальное - после рядов товаров, перед «Не нашли нужное?» */
     if (!D.getElementById('ishp8-c')) {
       [['ishp8-c', 'ishp8-sec--who', html_who], ['ishp8-d', 'ishp8-sec--nums', html_nums],
@@ -367,6 +377,7 @@
       });
     }
     новые.forEach(подогнать);
+    try { слить_запрос(); } catch (e) {}
     D.documentElement.classList.add('ishp8-on');
     try { анимации(); } catch (e) {}
     подпись_кнопки();
@@ -385,7 +396,7 @@
   function анимации() {
     if (RM) return;
     /* 1. листок: печатается список, потом «КП готово» */
-    var ls = D.querySelector('#ishp8-e .ishp8-ls');
+    var ls = D.querySelector('#запросБлок .ishp8-ls');
     if (ls) {
       var рр = [].slice.call(ls.querySelectorAll('.ishp8-lr')), tk = 0, tm = [];
       var cur = D.createElement('i'); cur.className = 'ishp8-cur';

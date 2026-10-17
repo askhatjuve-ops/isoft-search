@@ -190,3 +190,8 @@ html body .ishp25-tbl .ishp25-tb__t small{font-weight:400;color:var(--p25-mut)}
 
 /* v3: запас под нижнюю панель телефона, пока JS не измерил (панель .таб = 56px + safe-area); потом JS ставит точное значение inline */
 @media (max-width:960px){.ishp25-tb{margin-bottom:calc(56px + env(safe-area-inset-bottom,0px) + 16px)}}
+
+/* кандидат: чекбокс «Сравнить» в строке родительской (.вн-т: сетка 200px | текст | цена) - под текстом, во втором столбце */
+.вн-т{position:relative}
+.вн-т > .ishp25-cmp{grid-column:2;grid-row:2;align-self:end;justify-self:start;margin-top:8px}
+@media screen and (max-width:640px){.вн-т > .ishp25-cmp{grid-column:1/-1;grid-row:auto;min-height:44px}}

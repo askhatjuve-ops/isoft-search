@@ -1,0 +1,60 @@
+/* ish-design-p37a.css  v2.0  (кандидат 17.10.2026, волна 3; НЕ выложено)  Оформление /assortiment внутри iframe#isoft-catalog-frame: компоненты раздела П35 и главной C2, без своих цветов.
+   Шапка-карточка = шапка раздела (индиго #2B2F6B→#15173A, 28); строка поиска = как в шапке сайта; категории = белые плитки «Разделы каталога» с фото, подпись по центру.
+   Подключается из ish-design-p37.js (ссылка в head документа iframe). Приложение (Tilda T123 4776961803) и ish-assort.js не меняются. Откат: пустой файл.
+   Только вид: id, data-атрибуты и классы приложения не трогаются; поиск, «Мой запрос», «В запрос», «Показать ещё» работают как раньше. */
+:root{--k:#2B44C7;--kh:#2036A8;--soft:#E7EAFB;--line:#D5DCF7;--blue:#2B44C7;--blue2:#E7EAFB;
+  --sh:0 1px 0 #fff inset,0 14px 30px -18px rgba(23,25,35,.4),0 2px 6px rgba(23,25,35,.05)}
+body{font-family:TildaSans,Manrope,Arial,sans-serif}
+
+/* шапка-карточка раздела */
+html body .header{position:relative;overflow:hidden;isolation:isolate;width:min(1440px,calc(100% - 36px));min-height:112px;margin:12px auto 14px;padding:22px 40px;border-radius:28px;background:linear-gradient(135deg,#2B2F6B,#15173A);color:#fff;gap:18px}
+html body .header::before{content:"";position:absolute;z-index:-1;right:-120px;top:50%;width:620px;height:300px;transform:translateY(-50%);background:radial-gradient(closest-side,rgba(132,116,255,.9) 0%,rgba(108,92,231,.55) 50%,rgba(108,92,231,.12) 75%,transparent)}
+html body .brand{display:flex;flex-direction:column;gap:8px;font:800 clamp(30px,3.4vw,42px)/1.1 TildaSans,Manrope,Arial,sans-serif;letter-spacing:-.02em;color:#fff;white-space:normal}
+html body .brand::before{content:"ПОД ЗАКАЗ";font:700 12px/1.2 TildaSans,Manrope,Arial,sans-serif;letter-spacing:.12em;color:#B4BDFF}
+html body .header .direct-list-link{margin-left:auto;display:inline-flex;align-items:center;min-height:46px;padding:0 20px;border-radius:14px;background:#fff;color:var(--k);font:700 14px/1.2 TildaSans,Manrope,Arial,sans-serif;text-decoration:none}
+html body .header .direct-list-link:hover{text-decoration:none;background:#F4F6FF}
+html body .header-button{margin-left:0;padding:0 16px;min-height:46px;border:1px solid rgba(255,255,255,.5);border-radius:14px;background:transparent;color:#fff;font-weight:600}
+html body .header-button:hover{background:rgba(255,255,255,.14)}
+html body .count-dot{background:#fff;color:var(--k);font-weight:700}
+
+/* раскладка: плитки категорий сверху одной полосой, ниже поиск и результаты */
+html body .catalog-layout{display:flex;flex-direction:column;gap:12px;grid-template-columns:none}
+html body .categories{flex:0 0 auto;display:flex;gap:12px;width:auto;height:auto;max-height:none;overflow-x:auto;overflow-y:hidden;padding:2px 2px 10px;border:0;border-radius:0;background:none;box-shadow:none}
+html body .categories-title{display:none}
+html body .category-group{flex:0 0 auto;display:block}
+html body .categories>.category,html body .category-group>.category{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:2px;flex:0 0 auto;width:158px;height:132px;padding:8px 10px 12px;border:0;border-radius:22px;background:#fff;box-shadow:var(--sh);color:#171923;text-align:center;transition:transform .25s}
+html body .category:hover{background:#fff;transform:translateY(-3px)}
+html body .category::before{content:"";display:block;flex:1 1 auto;width:100%;min-height:0;background:center/contain no-repeat;mix-blend-mode:multiply}
+html body .category .cat-name{display:block;font:700 14px/1.2 TildaSans,Manrope,Arial,sans-serif;text-align:center;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+html body .category .cat-icon{display:none}
+html body .category b{font:400 12px/1.2 TildaSans,Manrope,Arial,sans-serif;color:#5A5F70}
+html body .category.active{background:var(--soft);box-shadow:inset 0 0 0 2px var(--k),var(--sh);color:#171923}
+html body .category.active *{color:inherit!important}
+html body .category[data-category="Все товары"]::before{background-image:none;display:grid;place-items:center;content:"14 000+";white-space:nowrap;font:800 20px/1 TildaSans,Manrope,Arial,sans-serif;color:var(--k);mix-blend-mode:normal}
+
+/* поиск: как в шапке сайта (белое поле 12, рамка 1px, без своей подложки) */
+html body .search-panel{margin:0 0 12px;padding:0;border:0;border-radius:0;background:none;box-shadow:none}
+html body .search-panel .main-search{min-height:46px;border:1px solid #928A79;border-radius:12px;background:#fff;font-size:15px}
+html body .search-panel .main-search:focus,html body .search-panel .main-search:focus-within{outline:2px solid var(--k);outline-offset:0;border-color:var(--k)}
+html body .search-panel .filter-row select,html body .ia-price input{min-height:42px;border:1px solid #928A79;border-radius:12px;background:#fff}
+html body .search-panel #downloadCatalogXlsx{border-radius:12px;background:var(--k);color:#fff}
+html body .search-panel #downloadCatalogXlsx:hover{background:var(--kh);filter:none}
+
+html body .request-bar{border:0;border-radius:20px;background:#fff;box-shadow:var(--sh)}
+html body .primary-button,html body #openRequest{border-radius:14px;background:var(--k)}
+
+@media(max-width:680px){
+  html body .header{min-height:0;margin:8px auto 10px;padding:20px;border-radius:24px;flex-wrap:wrap;gap:12px}
+  html body .header .direct-list-link{margin-left:0;width:100%;justify-content:center}
+  html body .header-button{margin-left:auto}
+  html body .categories>.category,html body .category-group>.category{width:132px;height:116px}
+}
+/* фото категорий: те же, что у плиток «Разделы каталога» главной (p8) */
+html body .category[data-group="Компьютеры"]::before{background-image:url(https://static.tildacdn.com/stor3761-6264-4162-b266-646337356566/f1e622a0312466f3ef1b71f3fde3f412.jpg)}
+html body .category[data-group="Мониторы и экраны"]::before{background-image:url(https://static.tildacdn.com/tild3963-3338-4962-a232-386664663531/ISE6D646CEC2.jpg)}
+html body .category[data-group="Комплектующие"]::before{background-image:url(https://static.tildacdn.com/stor3961-3939-4130-b931-623231306631/a0c21314158e83e4ac85cef31a89717d.jpg)}
+html body .category[data-group="Накопители"]::before{background-image:url(https://static.tildacdn.com/stor3135-3663-4731-a231-303731623939/58e82550701e3940898516e57992dd1f.jpg)}
+html body .category[data-group="Сеть и серверы"]::before{background-image:url(https://static.tildacdn.com/stor6164-3733-4538-b233-613239663964/141a321f108a700000b476634e76e701.jpg)}
+html body .category[data-group="Печать и сканирование"]::before{background-image:url(https://static.tildacdn.com/tild3234-6165-4262-b837-666635633064/298696424884.jpg)}
+html body .category[data-group="Рабочее место и видеонаблюдение"]::before{background-image:url(https://static.tildacdn.com/stor3166-6566-4338-b031-313337613233/2fec9b0bf204f7fb214c097139a06de0.jpg)}
+html body .category[data-group="Электропитание"]::before{background-image:url(https://static.tildacdn.com/tild6365-3034-4766-b337-343265306465/827211892244.jpg)}

@@ -1,37 +1,90 @@
-/* ish-design-p31.css  v1.0  (подготовка 17.10.2026; НЕ выложено)  П31 «внутренние страницы в духе главной C2»
+/* ish-design-p31.css  v2.0  (кандидат 17.10.2026; НЕ выложено)  П31 v2 «текстовые страницы в стиле главной C2 и раздела П35»
    Подключает ish-design-p31.js (рядом с собой). Откат: пустой файл на Pages или window.ISH_P31_OFF / ISH_P4_NO_P31.
-   Что: только текстовые страницы (.вн) (шаги-ступени, цифры, кобальтовая плита, крупные заголовки).
-   НЕ трогаем: фильтры и «Список/Плитка» (p6), «В корзину» в списке (.ish13-buy), столбик характеристик (.ish13-крат), окно-попап Tilda.
+   Что: тёмная индиго-шапка-карточка + полоса фактов, белые карточки, шаги-ступени, таблицы условий, плита-призыв, низ «Подбор техники» + «Не нашли нужное?».
+   НЕ трогаем: фильтры и «Список/Плитка» (p6), «В корзину» (.ish13-buy), характеристики (.ish13-крат), окно-попап Tilda, шапку и подвал сайта.
    Всё под html.ishp31-on (ставит js). Шрифт TildaSans, фон #F5F3EE, кобальт #2B44C7. Текст не меньше 12px, без горизонтальной прокрутки на 390. */
-:root{--p31-cobalt:#2B44C7;--p31-cobalt-h:#2036A8;--p31-cb2:#5B73F0;--p31-soft:#E7EAFB;--p31-ink:#171923;--p31-mut:#5A5F70;--p31-line:#E1DDD2;--p31-mist:#F1EEE7;--p31-graph:#1E2430;--p31-f:TildaSans,Arial,sans-serif;
+:root{--p31-cobalt:#2B44C7;--p31-cobalt-h:#2036A8;--p31-cb2:#5B73F0;--p31-soft:#E7EAFB;--p31-soft2:#EEF1FD;--p31-bl:#D5DCF7;--p31-ink:#171923;--p31-mut:#5A5F70;--p31-line:#E1DDD2;--p31-graph:#1E2430;
+  --p31-ind:linear-gradient(135deg,#2B2F6B,#15173A);--p31-f:TildaSans,Arial,sans-serif;
   --p31-sh:0 1px 0 #fff inset,0 14px 30px -18px rgba(23,25,35,.4),0 2px 6px rgba(23,25,35,.05);--p31-sh2:0 22px 44px -22px rgba(23,25,35,.45),0 2px 6px rgba(23,25,35,.06)}
 
-/* ═══ общее: появление при прокрутке (только если сработал IntersectionObserver; при reduced-motion js класса не ставит) ═══ */
+/* появление при прокрутке (только если сработал IntersectionObserver; при reduced-motion js класса не ставит) */
 html.ishp31-js .ishp31-rv{opacity:0;translate:0 22px;transition:opacity .7s cubic-bezier(.2,.7,.2,1),translate .7s cubic-bezier(.2,.7,.2,1),transform .25s,box-shadow .25s}
 html.ishp31-js .ishp31-rv.in{opacity:1;translate:none}
 
-/* подпись «NN / РАЗДЕЛ»: NN кобальтовым, остальное серым (приём главной) */
-html.ishp31-on .вн-над{
-  font:700 12px/1.2 var(--p31-f);letter-spacing:.12em;text-transform:uppercase;font-variant-numeric:tabular-nums;
-  color:transparent;background:linear-gradient(90deg,var(--p31-cobalt) calc(2ch + .34em),var(--p31-mut) 0);-webkit-background-clip:text;background-clip:text}
-html.ishp31-on .вн-над{display:inline-block;margin:0 0 10px}
-html.ishp31-on .вн-над::before{content:"01\00a0/\00a0"}
+/* ═══ верх: тёмная карточка-шапка (как «Торговое оборудование» главной и шапка раздела П35) + белая полоса фактов внахлёст ═══ */
+html.ishp31-on .вн-верх{background:none;border-bottom:0;padding:24px 0 0}
+html.ishp31-on .вн-верх .вн-крошки{margin:0 0 16px}
+html.ishp31-on .ishp31-hero{position:relative;overflow:hidden;isolation:isolate;display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);align-items:center;gap:24px;
+  min-height:188px;box-sizing:border-box;padding:28px 40px 30px;border-radius:28px;background:var(--p31-ind);color:#fff;margin:0 0 20px}
+html.ishp31-on .ishp31-hero--strip{padding-bottom:62px;margin-bottom:0}
+html.ishp31-on .ishp31-hero__t{min-width:0;position:relative;z-index:1}
+html.ishp31-on .ishp31-hero .вн-над{display:block;margin:0 0 10px;font:700 12px/1.2 var(--p31-f);letter-spacing:.12em;text-transform:uppercase;color:#C9CFE6;background:none;-webkit-background-clip:border-box;background-clip:border-box}
+html.ishp31-on .ishp31-hero .вн-над::before{content:attr(data-n) "\00a0/\00a0";color:#B4BDFF;font-variant-numeric:tabular-nums}
+html.ishp31-on body .ishp31-hero h1{margin:0!important;padding:0;border:0;color:#fff!important;font:800 clamp(30px,3.4vw,42px)/1.1 var(--p31-f)!important;letter-spacing:-.02em;max-width:22ch;text-wrap:balance}
+html.ishp31-on .ishp31-hero--strip h1{max-width:26ch}
+html.ishp31-on .ishp31-hero .ishp31-hero__s{margin:14px 0 0;max-width:62ch;font:400 15px/1.5 var(--p31-f);color:#D3D7F3}
+/* та же кнопка («Запросить КП») стоит в плите и в теле страницы: в шапке скрыта - одна залитая кнопка на экран */
+html.ishp31-on .ishp31-hero .ishp31-hero__r{display:none}
+html.ishp31-on .ishp31-hero .ishp31-hero__r a.вн-кноп_гл{background:#fff;color:var(--p31-cobalt)}
+html.ishp31-on .ishp31-hero .ishp31-hero__r a.вн-кноп_гл:hover{background:var(--p31-soft)}
+/* правая часть: стеклянная плитка со знаком и свечение */
+html.ishp31-on .ishp31-hero__p{position:relative;align-self:stretch;min-height:132px;display:grid;place-items:center}
+html.ishp31-on .ishp31-hero__p::before{content:"";position:absolute;inset:-60px -40px -60px -20px;background:radial-gradient(closest-side,rgba(132,116,255,.75) 0%,rgba(108,92,231,.38) 50%,rgba(108,92,231,.1) 75%,transparent);pointer-events:none;z-index:-1}
+html.ishp31-on .ishp31-ring{position:absolute;left:50%;top:50%;border-radius:50%;border:1px solid rgba(255,255,255,.16);translate:-50% -50%;pointer-events:none}
+html.ishp31-on .ishp31-ring--a{width:190px;height:190px}
+html.ishp31-on .ishp31-ring--b{width:270px;height:270px;border-color:rgba(255,255,255,.09)}
+html.ishp31-on .ishp31-tile{position:relative;display:grid;place-items:center;width:124px;height:124px;border-radius:32px;background:linear-gradient(145deg,rgba(255,255,255,.22),rgba(255,255,255,.06));border:1px solid rgba(255,255,255,.3);box-shadow:0 24px 40px -20px rgba(8,10,40,.8),0 1px 0 rgba(255,255,255,.35) inset;backdrop-filter:blur(2px);rotate:-6deg}
+html.ishp31-on .ishp31-tile svg{width:68px;height:68px;fill:none;stroke:#fff;stroke-width:1.15;stroke-linecap:round;stroke-linejoin:round;rotate:6deg}
+/* полоса фактов: компонент главной */
+html.ishp31-on .ishp31-strip{position:relative;z-index:2;margin:-34px 24px 0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));background:linear-gradient(90deg,var(--p31-soft) 0%,#fff 100%);border-radius:26px;box-shadow:0 22px 50px -26px rgba(23,25,35,.35);padding:10px;font-family:var(--p31-f)}
+html.ishp31-on .ishp31-strip__i{display:flex;gap:14px;align-items:center;padding:12px 16px;min-height:72px;border-left:1px solid var(--p31-bl);min-width:0}
+html.ishp31-on .ishp31-strip__i:first-child{border-left:0}
+html.ishp31-on .ishp31-strip__i svg{flex:0 0 46px;width:46px;height:46px;box-sizing:border-box;padding:9px;border-radius:14px;background:linear-gradient(145deg,var(--p31-cb2),var(--p31-cobalt));box-shadow:0 8px 16px -6px rgba(43,68,199,.6);stroke:#fff;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+html.ishp31-on .ishp31-strip__i p{margin:0;min-width:0}
+html.ishp31-on .ishp31-strip__i b{display:block;font:700 17px/1.25 var(--p31-f);color:#17181f}
+html.ishp31-on .вн-верх+.вн-тело{padding-top:28px}
 
-/* заголовки страниц - как на главной */
-html.ishp31-on .вн-верх h1{font:800 clamp(30px,3.6vw,42px)/1.1 var(--p31-f)!important;letter-spacing:-.02em;color:var(--p31-ink)}
-html.ishp31-on .вн-верх{background:none;border-bottom:0;padding:34px 0 8px}
-html.ishp31-on .вн-лид{font-size:17px;line-height:1.55;max-width:66ch}
-
-/* ═══ ТЕКСТОВЫЕ СТРАНИЦЫ (.вн) ═══ */
-html.ishp31-text .вн-карта{border-radius:22px;border:1px solid var(--p31-line);box-shadow:var(--p31-sh);padding:28px}
+/* ═══ тело: белые карточки ═══ */
+html.ishp31-text .вн-карта{border-radius:22px;border:1px solid var(--p31-bl);box-shadow:var(--p31-sh);padding:28px;background:#fff}
 html.ishp31-text .вн-карта+.вн-карта{margin-top:18px}
 html.ishp31-text .вн h2{font:800 clamp(22px,2.4vw,28px)/1.2 var(--p31-f);letter-spacing:-.015em}
+html.ishp31-text .вн-карта__шапка{align-items:baseline}
 html.ishp31-text .вн-карта__шапка .вн-тихо{font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:12px;color:var(--p31-cobalt)}
-html.ishp31-text .вн-табл,html.ishp31-text .вн-пары{border-radius:18px;overflow:hidden}
+html.ishp31-text .вн-кноп{border-radius:14px}
+html.ishp31-text .вн-бок .вн-карта{border-radius:22px}
+html.ishp31-text .вн-ссылки a{border-radius:10px}
+html.ishp31-text .вн-ссылки a:hover{background:var(--p31-soft2)}
+html.ishp31-text .вн-карта ul li::marker{color:var(--p31-cobalt)}
+
+/* таблицы условий: «Город — как» и «название — значение» */
+html.ishp31-text .вн-табл{border:1px solid var(--p31-bl);border-radius:18px;overflow:hidden;border-collapse:separate;border-spacing:0}
+html.ishp31-text .вн-табл th{background:var(--p31-soft2);color:var(--p31-cobalt);border-bottom:1px solid var(--p31-bl);padding:12px 18px}
+html.ishp31-text .вн-табл td{padding:13px 18px;border-bottom:1px solid #E6EAF9}
+html.ishp31-text .вн-табл tr:nth-child(even) td{background:#F8F9FE}
+html.ishp31-text .вн-табл td:first-child{color:var(--p31-ink);width:34%}
+html.ishp31-text .вн-пары{border:1px solid var(--p31-bl);border-radius:18px;overflow:hidden;border-top:1px solid var(--p31-bl)}
+html.ishp31-text .вн-пары>div{padding:13px 18px;border-bottom:1px solid #E6EAF9}
+html.ishp31-text .вн-пары>div:nth-last-child(-n+2){border-bottom:0}
+html.ishp31-text .вн-пары>div:nth-child(4n+1),html.ishp31-text .вн-пары>div:nth-child(4n+2){background:#F8F9FE}
+html.ishp31-text .вн-имя{color:var(--p31-mut)}
+html.ishp31-text .вн-копи{border-radius:10px;border-color:var(--p31-bl);background:var(--p31-soft2);color:var(--p31-cobalt);font-weight:600}
+html.ishp31-text .вн-копи:hover{background:var(--p31-soft)}
+/* плашки «Гарантия / Возврат» */
+html.ishp31-text .вн-плашка{border-radius:18px;border:1px solid var(--p31-bl);background:#fff;padding:20px}
+html.ishp31-text .вн-плашка:first-child{background:var(--p31-soft);border-color:var(--p31-soft)}
+html.ishp31-text .вн-крупно{font:800 28px/1.1 var(--p31-f);letter-spacing:-.02em}
+/* чтение (политика) */
+html.ishp31-text .вн-чтение{max-width:none;background:#fff;border:1px solid var(--p31-bl);border-radius:22px;box-shadow:var(--p31-sh);padding:32px 36px}
+html.ishp31-text .вн-чтение>*{max-width:76ch}
+html.ishp31-text .вн-чтение .вн-табл{max-width:none}
+html.ishp31-text .вн-чтение .вн-табл td:first-child{width:auto}
+html.ishp31-text .вн-чтение .вн-дата{display:inline-block;padding:6px 12px;border-radius:999px;background:var(--p31-soft2);color:var(--p31-cobalt);font-weight:600;font-size:13px}
+html.ishp31-text .вн-огл a{border-radius:10px}
+
 /* шаги-ступени */
 html.ishp31-text .вн-шаги{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(0,1fr);gap:14px;align-items:end}
 html.ishp31-text .вн-шаг{display:flex;flex-direction:column;gap:6px;padding:22px 22px 24px;border-radius:24px;border:1px solid transparent;background:#fff;box-shadow:var(--p31-sh);min-height:170px}
-html.ishp31-text .вн-шаг:nth-child(2){min-height:205px;border-color:var(--p31-line)}
+html.ishp31-text .вн-шаг:nth-child(2){min-height:205px;border-color:var(--p31-bl)}
 html.ishp31-text .вн-шаг:nth-child(3){min-height:240px;background:var(--p31-soft)}
 html.ishp31-text .вн-шаг:nth-child(4){min-height:275px;background:var(--p31-graph);color:#fff}
 html.ishp31-text .вн-шаг:nth-child(1){background:var(--p31-cobalt);color:#fff}
@@ -40,7 +93,8 @@ html.ishp31-text .вн-шаг:nth-child(1) .вн-шаг__н,html.ishp31-text .в
 html.ishp31-text .вн-шаг h3{font:700 20px/1.25 var(--p31-f);margin:0;color:inherit}
 html.ishp31-text .вн-шаг p{color:inherit;opacity:.82;font-size:14.5px}
 html.ishp31-text .вн-шаг:nth-child(2) p,html.ishp31-text .вн-шаг:nth-child(3) p{color:var(--p31-mut);opacity:1}
-/* призыв - кобальтовая плита */
+
+/* призыв - кобальтовая плита (боковая колонка): единственная залитая кнопка экрана, белая */
 html.ishp31-text .вн-карта.ishp31-cta{background:var(--p31-cobalt);border-color:var(--p31-cobalt);color:#fff;box-shadow:var(--p31-sh2);position:relative;overflow:hidden;isolation:isolate}
 html.ishp31-text .вн-карта.ishp31-cta::after{content:"";position:absolute;right:-30px;bottom:-26px;width:70%;aspect-ratio:2924/873;background:var(--ishp31-logo-w,none) no-repeat right bottom/contain;opacity:.14;z-index:-1;pointer-events:none}
 html.ishp31-text .вн-карта.ishp31-cta h2,html.ishp31-text .вн-карта.ishp31-cta h3,html.ishp31-text .вн-карта.ishp31-cta p{color:#fff}
@@ -49,15 +103,76 @@ html.ishp31-text .вн-карта.ishp31-cta a.вн-кноп_гл{background:#ff
 html.ishp31-text .вн-карта.ishp31-cta a.вн-кноп_гл:hover{background:var(--p31-soft);color:var(--p31-cobalt-h)}
 html.ishp31-text .вн-карта.ishp31-cta a.вн-кноп_вт{background:transparent;color:#fff;border-color:rgba(255,255,255,.5)}
 html.ishp31-text .вн-карта.ishp31-cta a.вн-кноп_вт:hover{background:rgba(255,255,255,.14);border-color:#fff;color:#fff}
-html.ishp31-text .вн-кноп{border-radius:14px}
 
-/* ═══ телефон / планшет ═══ */
+/* вторая и дальше карточки боковой колонки: кнопка не залита (залитая - только в плите) */
+html.ishp31-text .вн-бок .вн-карта:not(.ishp31-cta) a.вн-кноп_гл,html.ishp31-text .вн-бок .вн-карта:not(.ishp31-cta) a.вн-кноп_гл:hover{background:#fff;color:var(--p31-cobalt);border:1px solid #AEBBEF}
+html.ishp31-text .вн-бок .вн-карта:not(.ishp31-cta) a.вн-кноп_гл:hover{background:var(--p31-soft2);border-color:var(--p31-cobalt)}
+
+/* ═══ низ: «Подбор техники» (индиго) и «Не нашли нужное? Пришлите список» ═══ */
+html.ishp31-on .ishp31-low{grid-column:1/-1;margin-top:22px;font-family:var(--p31-f)}
+html.ishp31-on .ishp31-low *{box-sizing:border-box}
+html.ishp31-on .ishp31-pod{position:relative;overflow:hidden;isolation:isolate;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:30px 34px;border-radius:28px;background:var(--p31-ind);box-shadow:var(--p31-sh2);color:#fff}
+html.ishp31-on .ishp31-pod::before{content:"";position:absolute;right:-118px;top:50%;width:620px;height:300px;translate:0 -50%;background:radial-gradient(closest-side,rgba(132,116,255,.9) 0%,rgba(108,92,231,.55) 50%,rgba(108,92,231,.12) 75%,transparent);pointer-events:none;z-index:-1}
+html.ishp31-on .ishp31-pod__eb{font:700 12px/1.2 var(--p31-f);letter-spacing:.12em;text-transform:uppercase;color:#B4BDFF;margin:0 0 8px}
+html.ishp31-on .ishp31-pod h2{margin:0 0 8px;color:#fff;font:800 clamp(22px,2.4vw,30px)/1.2 var(--p31-f);letter-spacing:-.02em}
+html.ishp31-on .ishp31-pod p{margin:0;max-width:640px;font:400 15px/1.5 var(--p31-f);color:#D3D7F3}
+html.ishp31-on .ishp31-pod__b{flex:none;display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 24px;border-radius:12px;background:#fff;color:var(--p31-cobalt)!important;font:700 15px/1.2 var(--p31-f);text-decoration:none;box-shadow:0 10px 24px -12px rgba(23,25,35,.35);transition:transform .2s,box-shadow .2s}
+html.ishp31-on .ishp31-pod__b:hover{transform:translateY(-2px);box-shadow:0 14px 26px -12px rgba(23,25,35,.4)}
+html.ishp31-on .ishp31-nf{position:relative;isolation:isolate;overflow:hidden;display:grid;grid-template-columns:auto minmax(0,1fr) auto auto;align-items:center;gap:24px;margin:22px 0 0;padding:32px;border-radius:28px;background:#fff;border:1px solid var(--p31-bl)}
+html.ishp31-on .ishp31-nf__l{display:flex;align-items:center;justify-content:center;height:64px;padding:0 20px;border-radius:16px;background:var(--p31-soft)}
+html.ishp31-on .ishp31-nf__lg{height:22px;width:auto}
+html.ishp31-on .ishp31-nf__t h3{margin:0;font:800 clamp(19px,1.9vw,24px)/1.2 var(--p31-f);letter-spacing:-.015em;color:var(--p31-ink)}
+html.ishp31-on .ishp31-nf__t p{margin:6px 0 0;font:400 15px/1.45 var(--p31-f);color:var(--p31-mut)}
+html.ishp31-on .ishp31-ls{position:relative;width:272px;padding:12px 16px;min-height:88px;border-radius:16px;background:rgba(43,68,199,.07);border:1px solid rgba(43,68,199,.2);font:500 14px/22px var(--p31-f);color:var(--p31-ink)}
+html.ishp31-on .ishp31-ls span{display:block;white-space:nowrap}
+html.ishp31-on .ishp31-ok{position:absolute;right:12px;bottom:10px;display:inline-flex;align-items:center;gap:6px;font:700 12px/1 var(--p31-f);color:#1A8F60;font-style:normal;background:#fff;border-radius:999px;padding:5px 10px 5px 6px}
+html.ishp31-on .ishp31-ok svg{width:16px;height:16px}
+html.ishp31-on .ishp31-nf__b{display:flex;flex-direction:column;gap:12px;min-width:304px}
+html.ishp31-on .ishp31-nf__w{position:relative;display:block}
+html.ishp31-on .ishp31-nf__w::before{content:"";position:absolute;left:50%;top:50%;width:330%;height:520%;translate:-50% -50%;z-index:-1;pointer-events:none;background:radial-gradient(closest-side,rgba(132,116,255,.28) 0%,rgba(43,68,199,.12) 55%,transparent)}
+html.ishp31-on .ishp31-b{display:flex;align-items:center;justify-content:center;min-height:44px;padding:0 20px;border-radius:12px;background:#fff;border:1px solid #AEBBEF;color:var(--p31-cobalt)!important;font:700 14px/1.2 var(--p31-f);text-decoration:none;white-space:nowrap;cursor:pointer}
+html.ishp31-on .ishp31-b:hover{background:var(--p31-soft2);border-color:var(--p31-cobalt)}
+html.ishp31-on .ishp31-b--main{background:var(--p31-cobalt);border-color:var(--p31-cobalt);color:#fff!important;box-shadow:0 14px 26px -14px rgba(43,68,199,.8)}
+html.ishp31-on .ishp31-b--main:hover{background:var(--p31-cobalt-h);border-color:var(--p31-cobalt-h)}
+
+/* ═══ планшет / телефон ═══ */
+@media screen and (max-width:1100px){
+  html.ishp31-on .ishp31-nf{grid-template-columns:auto minmax(0,1fr) auto}
+  html.ishp31-on .ishp31-ls{display:none}
+  html.ishp31-on .ishp31-hero{grid-template-columns:minmax(0,1.4fr) minmax(0,.6fr)}
+  html.ishp31-on .ishp31-ring--b{display:none}
+}
 @media screen and (max-width:900px){
   html.ishp31-text .вн-шаги{grid-auto-flow:row;grid-auto-columns:auto;align-items:stretch}
   html.ishp31-text .вн-шаг,html.ishp31-text .вн-шаг:nth-child(n){min-height:0}
   html.ishp31-text .вн-карта{padding:20px;border-radius:20px}
+  html.ishp31-text .вн-чтение{padding:22px 18px;border-radius:20px}
+  html.ishp31-on .ishp31-strip{grid-template-columns:repeat(2,minmax(0,1fr))}
+  html.ishp31-on .ishp31-strip__i:nth-child(3){border-left:0}
+  html.ishp31-on .ishp31-strip__i:nth-child(n+3){border-top:1px solid var(--p31-bl)}
 }
-@media screen and (max-width:520px){
+@media screen and (max-width:760px){
+  html.ishp31-on .вн-верх{padding:16px 0 0}
+  html.ishp31-on .вн-верх .вн-крошки{margin:0 0 12px}
+  html.ishp31-on .ishp31-hero{grid-template-columns:minmax(0,1fr) 92px;min-height:152px;padding:20px 16px 24px;border-radius:24px;gap:8px}
+  html.ishp31-on .ishp31-hero--strip{padding-bottom:50px}
+  html.ishp31-on body .ishp31-hero h1{font-size:28px!important}
+  html.ishp31-on .ishp31-hero .ishp31-hero__s{font-size:13.5px;margin-top:10px}
+  html.ishp31-on .ishp31-hero__p{min-height:92px}
+  html.ishp31-on .ishp31-ring{display:none}
+  html.ishp31-on .ishp31-tile{width:84px;height:84px;border-radius:24px}
+  html.ishp31-on .ishp31-tile svg{width:46px;height:46px}
+  html.ishp31-on .ishp31-strip{margin:-28px 8px 0}
+  html.ishp31-on .ishp31-strip__i{padding:8px;gap:8px;min-height:56px}
+  html.ishp31-on .ishp31-strip__i svg{flex-basis:32px;width:32px;height:32px;padding:6px;border-radius:10px}
+  html.ishp31-on .ishp31-strip__i b{font-size:13px}
+  html.ishp31-on .ishp31-pod{flex-direction:column;align-items:stretch;gap:16px;padding:24px 18px;border-radius:22px}
+  html.ishp31-on .ishp31-pod__b{width:100%}
+  html.ishp31-on .ishp31-nf{grid-template-columns:minmax(0,1fr);gap:16px;padding:22px 16px;border-radius:22px}
+  html.ishp31-on .ishp31-nf__l{width:max-content}
+  html.ishp31-on .ishp31-nf__b{min-width:0}
+  html.ishp31-on .ishp31-b{white-space:normal;text-align:center;padding:10px 16px}
+  html.ishp31-on .ishp31-low{margin-top:8px}
 }
 @media (prefers-reduced-motion:reduce){
   html.ishp31-on *{transition:none!important}

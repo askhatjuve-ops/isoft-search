@@ -1,11 +1,12 @@
-/* ish-design-p19.js  v1  (16.10.2026)  П19 «формы и корзина» b2b.isoft-shop.kz
+/* ish-design-p19.js  v2-кандидат (17.10.2026, волна 1 В: + модуль cart)  [v1 16.10.2026]  П19 «формы и корзина» b2b.isoft-shop.kz
    Внешний слой. Грузится из ish-design-p4.js (строка в README). Ничего не пишет в Tilda, блоки не правит.
-   Модули (выключатели: window.ISH_P19_OFF = 1 - всё; window.ISH_P19_SKIP = 'forms,doc,sec,print,names,notes' - по частям):
+   Модули (выключатели: window.ISH_P19_OFF = 1 - всё; window.ISH_P19_SKIP = 'forms,doc,sec,print,names,cart,notes' - по частям):
      forms  Фр3  свои тексты ошибок форм вместо «Обязательное поле» (после того как Tilda сама показала ошибку; её проверку не трогаем)
      sec    Кр4  вторичные кнопки рядом с итогом корзины (/spec): Скачать / Печать / Скопировать (нажимают родные кнопки блока)
      doc    Кр5  подпись под переключателем «Счёт на оплату / Коммерческое предложение» (/spec)
      print  Кр6  срок действия цен в печатной форме и в тексте «Скопировать для согласования» (/spec)
      names  Кр9  единые слова: кнопка отправки «Отправить заявку» (вместо «Отправить спецификацию»)
+     cart   В1  корзина и форма заявки в стиле главной C2: ступени 01/02/03, доверие, итог у кнопки отправки, пустая корзина, «спасибо» (17.10)
      notes  Т26  сноска про НДС и бесплатную доставку под сеткой товаров в разделе
    Имена полей (li_nm), подписи, атрибуты data-tilda-*, обработчики отправки НЕ меняются: меняется только ТЕКСТ внутри .t-input-error и .t-form__errorbox-item.
    Фр4 («* - обязательные поля») здесь НЕ делается: строку уже даёт ish-design.css (П1/Фр9); дубль не нужен. */
@@ -219,6 +220,134 @@
     return true;
   }
 
+  /* ───────── cart (волна 1 В, 17.10): корзина и форма заявки в стиле главной C2 ─────────
+     Только ДОБАВЛЯЕТ свои узлы (.ishp19c-*) и классы; поля формы, name, data-field-name, data-tilda-*, кнопку отправки и обработчики не трогает.
+     Что делает: ступени 01/02/03 вверху; блок доверия под итогом; «Итого» внутри индиго-карточки у кнопки отправки;
+     плитки разделов на пустой корзине; экран «спасибо» (галочка, 01-02-03, «В каталог» + WhatsApp).
+     Выключатель: window.ISH_P19_SKIP = 'cart'. Всё остальное - css (раздел «волна 1 В» в ish-design-p19.css). */
+  var WA_PHONE = '77758818531';
+  var ICO = {
+    doc: '<path d="M5 2.5h6l3 3v10H5z"/><path d="M11 2.5v3h3M7.5 9h5M7.5 12h5"/>',
+    truck: '<path d="M2 5.5h9v7H2zM11 8.5h3l2 2.2v1.8h-5"/><circle cx="5.2" cy="14" r="1.3"/><circle cx="13" cy="14" r="1.3"/>',
+    shield: '<path d="M9 2l6 2v5c0 3.4-2.5 5.9-6 7-3.5-1.1-6-3.6-6-7V4z"/><path d="M6.4 9l2 2 3.4-4"/>',
+    clock: '<circle cx="9" cy="9" r="6.5"/><path d="M9 5.2V9l2.6 1.6"/>'
+  };
+  function svg18(k) { return '<svg viewBox="0 0 18 18" aria-hidden="true">' + ICO[k] + '</svg>'; }
+  function node(html) { var t = D.createElement('div'); t.innerHTML = html; return t.firstElementChild; }
+  function видно(e) {
+    if (!e) return false;
+    var cs = W.getComputedStyle(e);
+    return cs.display !== 'none' && cs.visibility !== 'hidden';
+  }
+  function успехВиден() {
+    if (q('.ish15-успех')) return true;
+    var sb = q('.t706__cartwin .js-successbox');
+    return !!(sb && видно(sb) && tx(sb));
+  }
+  function формаВидна() {
+    var f = q('.t706__cartwin');
+    if (f && f.contains(D.activeElement) && D.activeElement.tagName !== 'BODY') return true;
+    var h = q('#spFormHead');
+    if (!h || !видно(h)) return false;
+    var r = h.getBoundingClientRect();
+    return r.top < W.innerHeight * 0.6 && r.bottom > 0;
+  }
+  function ступени() {
+    var wrap = q('.вн-верх .вн-об');
+    if (!wrap) return;
+    var ol = q('.ishp19c-steps', wrap);
+    if (!ol) {
+      ol = node('<ol class="ishp19c-steps" aria-label="Путь заявки">' +
+        '<li><span class="n">01</span><span class="t"><b>Товары</b><i>проверьте позиции</i></span></li>' +
+        '<li><span class="n">02</span><span class="t"><b>Реквизиты</b><i>компания и БИН</i></span></li>' +
+        '<li><span class="n">03</span><span class="t"><b>Готово</b><i>счёт придёт на почту</i></span></li></ol>');
+      wrap.appendChild(ol);
+    }
+    var s = успехВиден() ? 3 : (формаВидна() ? 2 : 1);
+    D.body.classList.toggle('ishp19c-step2', s === 2);        /* на шаге 02 нижняя полоса «Заполнить реквизиты» телефона не нужна */
+    qa('li', ol).forEach(function (li, i) {
+      var n = i + 1, c = n === s ? 'is-on' : (n < s ? 'is-done' : '');
+      if (li.className !== c) li.className = c;
+      if (n === s) { if (li.getAttribute('aria-current') !== 'step') li.setAttribute('aria-current', 'step'); }
+      else if (li.hasAttribute('aria-current')) li.removeAttribute('aria-current');
+    });
+  }
+  function доверие() {
+    var бок = q('.вн-бок');
+    if (!бок) return;
+    qa('.вн-карта', бок).forEach(function (c) {              /* «Как дальше» теперь говорят ступени 01/02/03 вверху */
+      var h = q('h3', c);
+      if (h && tx(h) === 'Как дальше' && !c.classList.contains('ishp19c-hide')) c.classList.add('ishp19c-hide');
+    });
+    if (q('.ishp19c-trust', бок)) return;
+    var ит = [['doc', 'Счёт с НДС', 'для юрлиц и ИП, безналично'], ['truck', 'Бесплатная доставка', 'в любую точку Казахстана'],
+              ['shield', 'Гарантия от производителя', ''], ['clock', 'Ответ в день обращения', 'наличие, срок, цена']];
+    бок.appendChild(node('<div class="ishp19c-trust" role="list">' + ит.map(function (x) {
+      return '<div class="ishp19c-trust__i" role="listitem"><span class="ishp19c-sq">' + svg18(x[0]) + '</span><p><b>' + x[1] + '</b>' + (x[2] ? '<span>' + x[2] + '</span>' : '') + '</p></div>';
+    }).join('') + '</div>'));
+  }
+  function итогФормы() {                                       /* «Итого» рядом с кнопкой отправки: число берём из своей нижней полосы, форму не трогаем */
+    var sb = q('.t706__cartwin .t-form__submit');
+    if (!sb) return;
+    var sum = tx(q('#spBarSum')), sub = tx(q('#spBarSub')) || 'Итого';
+    var ft = q('.ishp19c-ft', sb);
+    if (!ft) { ft = node('<div class="ishp19c-ft"><span></span><b></b></div>'); sb.insertBefore(ft, sb.firstChild); }
+    var a = q('span', ft), b = q('b', ft);
+    if (a.textContent !== sub) a.textContent = sub;
+    if (b.textContent !== sum) b.textContent = sum;
+    ft.hidden = !sum || sum === '—';
+  }
+  var ПЛИТКИ = [
+    ['Компьютеры', '/kompyutery', 'stor3761-6264-4162-b266-646337356566/f1e622a0312466f3ef1b71f3fde3f412.jpg'],
+    ['Мониторы и экраны', '/monitory-i-ekrany', 'tild3963-3338-4962-a232-386664663531/ISE6D646CEC2.jpg'],
+    ['Комплектующие', '/komplektuyushchie', 'stor3961-3939-4130-b931-623231306631/a0c21314158e83e4ac85cef31a89717d.jpg'],
+    ['Накопители', '/nakopiteli', 'stor3135-3663-4731-a231-303731623939/58e82550701e3940898516e57992dd1f.jpg'],
+    ['Сетевое оборудование', '/set-i-servery', 'stor6164-3733-4538-b233-613239663964/141a321f108a700000b476634e76e701.jpg'],
+    ['Печать и сканирование', '/ofis-i-rabochee-mesto', 'tild3234-6165-4262-b837-666635633064/298696424884.jpg']
+  ];
+  function пустая() {
+    var п = q('.вн-пусто');
+    if (!п || q('.ishp19c-tiles', п)) return;
+    п.appendChild(node('<div class="ishp19c-tiles"><p class="ishp19c-tiles__t">Или начните с раздела</p><div class="ishp19c-grid">' +
+      ПЛИТКИ.map(function (x) {
+        return '<a class="ishp19c-tile" href="' + x[1] + '"><span class="ishp19c-ph"><img src="https://static.tildacdn.com/' + x[2] + '" alt="" loading="lazy" decoding="async"></span><b>' + x[0] + '</b></a>';
+      }).join('') + '</div></div>'));
+  }
+  function спасибо() {
+    var у = q('.ish15-успех');
+    if (!у || у.getAttribute('data-ishp19c')) return;
+    у.setAttribute('data-ishp19c', '1');
+    var ok = node('<div class="ishp19c-ok" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5.5 12.8l4.2 4.2L18.5 8"/></svg></div>');
+    у.insertBefore(ok, у.firstChild);
+    var нт = node('<ol class="ishp19c-next" aria-label="Что будет дальше">' +
+      '<li><span class="n">01</span><b>Проверим позиции</b><i>наличие и цены по заявке</i></li>' +
+      '<li><span class="n">02</span><b>Пришлём счёт или КП</b><i>на почту, которую вы указали</i></li>' +
+      '<li><span class="n">03</span><b>Оплата и доставка</b><i>безналично, доставка бесплатная</i></li></ol>');
+    var кн = q('a.ish15-btn', у);
+    var ряд = node('<div class="ishp19c-acts"></div>');
+    if (кн) {
+      кн.textContent = 'В каталог';
+      кн.parentNode.insertBefore(нт, кн);
+      кн.parentNode.insertBefore(ряд, кн);
+      ряд.appendChild(кн);
+    } else { у.appendChild(нт); у.appendChild(ряд); }
+    var wa = node('<a class="ishp19c-wa" target="_blank" rel="noopener" href="https://wa.me/' + WA_PHONE + '"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2a8.7 8.7 0 0 0-7.5 13.1L3.3 20.7l4.5-1.2A8.7 8.7 0 1 0 12 3.2z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M9 8.3c-.3.6-.4 1.3.2 2.4.9 1.7 2.3 2.9 4 3.5.8.3 1.5.1 1.9-.5l.3-.6-1.7-.9-.6.6c-.8-.3-1.9-1.4-2.2-2.2l.6-.6-.8-1.7z" fill="currentColor"/></svg>Написать в WhatsApp</a>');
+    ряд.appendChild(wa);
+    wa.addEventListener('click', function () {              /* номер заявки приходит от П21 чуть позже карточки - читаем в момент нажатия */
+      var n = q('.ishp21-num__n'), m = n && /ISH-\d{4}-\d{4}/.exec(n.textContent || '');
+      wa.href = 'https://wa.me/' + WA_PHONE + '?text=' + encodeURIComponent('Здравствуйте! ' + (m ? 'Моя заявка ' + m[0] + '.' : 'Отправил(а) заявку на сайте.'));
+    });
+  }
+  function корзинаC2() {
+    ступени(); доверие(); итогФормы(); пустая(); спасибо();
+  }
+  function стартКорзины() {
+    корзинаC2();
+    setInterval(function () { try { корзинаC2(); } catch (e) {} }, 800);
+    W.addEventListener('scroll', function () { try { ступени(); } catch (e) {} }, {passive: true});
+    D.addEventListener('focusin', function () { try { ступени(); } catch (e) {} });
+  }
+
   /* ───────── запуск ───────── */
   function старт() {
     if (on('forms')) { формы(); until(function () { формы(); return false; }, 60, 500); D.addEventListener('click', формы, true); }
@@ -231,6 +360,7 @@
         пл = true;
         (W.requestAnimationFrame || setTimeout)(function () { пл = false; try { спец(); } catch (e) {} });
       };
+      if (on('cart')) стартКорзины();
       спец();
       new MutationObserver(пуск).observe(D.body, {childList: true, subtree: true});
       W.addEventListener('beforeprint', function () { try { спец(); } catch (e) {} });

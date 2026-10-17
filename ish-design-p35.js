@@ -518,3 +518,58 @@
     if (++tries < 110) setTimeout(step, 250);
   })();
 })();
+
+/* ═══════════════ П35-строки v1: бренд капсом и «в наличии» в строке товара (волна 1, задача А, 17.10.2026) ═══════════════
+   Чистая надстройка: ничего не пишет на сайт, только добавляет в карточку списка <div class="ishp35r-br"> (бренд + точка «в наличии»).
+   Бренд берётся из значений фильтра «Бренд» этой страницы (совпадение со словом названия), запасной список - ниже. Наличие - data-product-inv > 0.
+   Откат: window.ISH_P35R_OFF=1 до загрузки - скрипт ничего не делает (без блока .ishp35r-br CSS строки остаётся рабочим). */
+(function () {
+  'use strict';
+  if (window.ISH_P35R_OFF || window.ISH_P35R) return; window.ISH_P35R = 1;
+  var D = document;
+  var ЗАПАС = ['ASUS','Acer','Lenovo','HP','Dell','MSI','Apple','Huawei','Tecno','Infinix','Xiaomi','Honor','Gigabyte','Samsung','Chuwi','Machenike','Realme','Haier','Thunderobot','LG','Philips','AOC','ViewSonic','BenQ','Dream Machines','Aorus','Razer'];
+  function бренды() {
+    var сп = [], seen = {};
+    var эл = D.querySelectorAll('.t-store__filter__item');
+    for (var i = 0; i < эл.length; i++) {
+      var t = эл[i].querySelector('.t-store__filter__item-title');
+      if (!t || !/^\s*(бренд|brand)\s*$/i.test(t.textContent.replace(/\d+/g, '').trim())) continue;
+      var т = эл[i].querySelectorAll('.t-store__filter__title');
+      for (var j = 0; j < т.length; j++) { var s = т[j].textContent.replace(/\s*\(\d+\)\s*$/, '').trim(); if (s && !seen[s.toLowerCase()]) { seen[s.toLowerCase()] = 1; сп.push(s); } }
+    }
+    ЗАПАС.forEach(function (s) { if (!seen[s.toLowerCase()]) { seen[s.toLowerCase()] = 1; сп.push(s); } });
+    сп.sort(function (a, b) { return b.length - a.length; });   // длинные раньше: «Dream Machines» до «Dell»
+    return сп;
+  }
+  function норм(s) { return ' ' + s.toLowerCase().replace(/[^a-zа-я0-9]+/g, ' ').trim() + ' '; }
+  function найти(имя, сп) {
+    var n = норм(имя);
+    for (var i = 0; i < сп.length; i++) { var b = норм(сп[i]); if (b.length > 3 && n.indexOf(b) > -1) return сп[i]; }
+    return '';
+  }
+  function проход() {
+    var к = D.querySelectorAll('.t-store__card[data-ish13]:not([data-ishp35r])');
+    if (!к.length) return;
+    var сп = бренды();
+    for (var i = 0; i < к.length; i++) {
+      var c = к[i], tw = c.querySelector('.t-store__card__textwrapper'), ti = c.querySelector('.t-store__card__title');
+      c.setAttribute('data-ishp35r', '1');
+      if (!tw || !ti) continue;
+      var имя = ti.getAttribute('data-ish13-имя') || ti.textContent || '';
+      var бр = найти(имя, сп), нал = parseFloat(c.getAttribute('data-product-inv')) > 0;
+      if (!бр && !нал) continue;
+      var d = D.createElement('div'); d.className = 'ishp35r-br';
+      if (бр) { var s = D.createElement('span'); s.textContent = бр; d.appendChild(s); }
+      if (нал) { var a = D.createElement('span'); a.className = 'ishp35r-av'; a.textContent = 'в наличии'; d.appendChild(a); }
+      tw.insertBefore(d, ti);
+    }
+  }
+  var t = 0;
+  function отл() { clearTimeout(t); t = setTimeout(проход, 120); }
+  function старт() {
+    проход();
+    var корень = D.getElementById('allrecords') || D.body;
+    try { new MutationObserver(отл).observe(корень, { childList: true, subtree: true }); } catch (e) { setInterval(проход, 1500); }
+  }
+  if (D.readyState === 'loading') D.addEventListener('DOMContentLoaded', старт); else старт();
+})();

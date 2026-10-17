@@ -1,0 +1,105 @@
+/* ish-design-p37.css  v1.0  (кандидат 17.10.2026, волна 3 «хвосты» C2; НЕ выложено)  П37: мега-меню каталога (p24), мобильное меню-шторка (оболочка), кнопки WhatsApp/Telegram (p22), шторка фильтров на телефоне (p6).
+   Подключает ish-design-p37.js (рядом с собой). Откат: пустой файл на Pages или window.ISH_P37_OFF = 1.
+   Стиль главной C2 (p8): TildaSans, фон #F5F3EE, кобальт #2B44C7, светло-голубые #E7EAFB/#EEF1FD, скругление 28/22/18/14, мягкая тень, индиго только для карточек-призывов.
+   Чужие файлы не правятся: только перекрытие по специфичности (html body ... и лишний класс у !important-правил страницы). Текст не меньше 12px, на 390 без горизонтальной прокрутки. */
+:root{--p37-k:#2B44C7;--p37-kh:#2036A8;--p37-cb2:#5B73F0;--p37-soft:#E7EAFB;--p37-soft2:#EEF1FD;--p37-line:#D5DCF7;--p37-ink:#171923;--p37-mut:#5A5F70;--p37-bg:#F5F3EE;--p37-mist:#F1EEE7;
+  --p37-f:TildaSans,Arial,sans-serif;--p37-sh:0 1px 0 #fff inset,0 14px 30px -18px rgba(23,25,35,.4),0 2px 6px rgba(23,25,35,.05);--p37-sh2:0 24px 50px -24px rgba(23,25,35,.45),0 2px 8px rgba(23,25,35,.06)}
+
+/* ═══════════ 1. МЕГА-МЕНЮ КАТАЛОГА (десктоп, p24): белая панель 18 как выпадашка поиска; слева группы как левое меню главной, справа разделы мини-плитками с фото как «Разделы группы» П35 ═══════════ */
+html body #ishp24-panel{background:transparent;border:0;box-shadow:none;padding:10px 20px 44px}
+html body #ishp24-panel .ishp24-in{max-width:1240px;padding:0;background:#fff;border:1px solid #E3DFD6;border-radius:18px;box-shadow:0 18px 40px -22px rgba(23,25,35,.4),0 2px 8px rgba(23,25,35,.08);overflow:hidden}
+html body #ishp24-panel .ishp24-in.ishp37-on .ishp24-grid{display:none}
+.ishp37-mm{display:grid;grid-template-columns:300px minmax(0,1fr);min-height:400px;font-family:var(--p37-f)}
+.ishp37-l{display:grid;gap:2px;align-content:start;padding:12px;border-right:1px solid #E3DFD6}
+html body #ishp24-panel a.ishp37-r{display:grid;grid-template-columns:30px minmax(0,1fr) 14px;align-items:center;gap:12px;padding:8px 10px;border-radius:12px;color:var(--p37-ink)!important;font:500 14px/1.25 var(--p37-f);transition:background .15s}
+html body #ishp24-panel a.ishp37-r.ishp37-on{background:var(--p37-soft)}
+.ishp37-ri .ishp24-ic{display:grid}
+.ishp37-rn{min-width:0}
+.ishp37-rc{display:grid;place-items:center;color:#928A79}
+.ishp37-rc svg{width:12px;height:12px}
+.ishp37-rt{padding:18px 22px 22px;min-width:0}
+.ishp37-p{display:none}
+.ishp37-p.ishp37-on{display:block}
+.ishp37-ph{display:flex;align-items:baseline;justify-content:space-between;gap:16px;margin:0 0 14px}
+.ishp37-ph h3{margin:0;font:800 22px/1.2 var(--p37-f);letter-spacing:-.015em;color:var(--p37-ink)}
+html body #ishp24-panel .ishp37-ph a{color:var(--p37-k)!important;font:600 14px/1.2 var(--p37-f)}
+.ishp37-tg{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+html body #ishp24-panel a.ishp37-t{display:flex;flex-direction:column;align-items:center;gap:8px;padding:10px 10px 14px;border:1px solid var(--p37-line)!important;border-radius:18px;background:#fff;color:var(--p37-ink)!important;text-align:center;transition:border-color .15s,transform .15s}
+html body #ishp24-panel a.ishp37-t:hover{border-color:var(--p37-k)!important;transform:translateY(-2px)}
+.ishp37-ts{display:grid;place-items:center;width:100%;height:84px}
+.ishp37-ts img{max-width:84%;max-height:76px;object-fit:contain;mix-blend-mode:multiply}
+.ishp37-ts.ishp37-noimg{background:var(--p37-soft2);border-radius:14px}
+.ishp37-t b{display:block;font:700 14px/1.25 var(--p37-f)}
+html body #ishp24-panel .ishp24-in.ishp37-on .ishp24-foot{margin:0;padding:12px 22px;gap:6px 26px;border-top:1px solid #E3DFD6}
+html body #ishp24-panel .ishp24-in.ishp37-on a.ishp24-f{padding:4px 0;color:#565D70!important;font:500 14px/1.3 var(--p37-f)}
+html body #ishp24-panel .ishp24-in.ishp37-on a.ishp24-f:hover{color:var(--p37-k)!important;text-decoration:underline!important}
+html body #ishp24-panel .ishp24-in.ishp37-on a.ishp24-f--main{color:var(--p37-k)!important;font-weight:700}
+@media(max-width:1180px){.ishp37-mm{grid-template-columns:250px minmax(0,1fr)}.ishp37-tg{grid-template-columns:repeat(3,minmax(0,1fr))}}
+
+/* ═══════════ 2. МОБИЛЬНОЕ МЕНЮ (оболочка, экран «Каталог товаров»): строки-карточки, фото-миниатюры, быстрые пункты со значками, телефон внизу ═══════════ */
+html body #ishЭкран{background:var(--p37-bg);padding-bottom:28px}
+html body #ishЭкран .крошки{padding:14px 18px 0}
+html body #ishЭкран h1{margin:8px 18px 2px;font:800 30px/1.08 var(--p37-f);letter-spacing:-.02em}
+html body #ishЭкран .подзаг{margin:0 18px 14px;font:400 14px/1.4 var(--p37-f);color:var(--p37-mut)}
+html body #ishЭкран .список{background:transparent;border-top:0;display:grid;gap:10px;padding:0 14px 6px}
+html body #ishЭкран .строка{grid-template-columns:68px minmax(0,1fr) 32px;gap:14px;min-height:84px;padding:8px 14px 8px 8px;border:0;border-radius:20px;background:#fff;box-shadow:var(--p37-sh);transition:transform .15s,box-shadow .15s}
+html body #ishЭкран .строка:active{background:var(--p37-soft2);transform:scale(.99)}
+html body #ishЭкран .плитка{width:68px;height:68px;border-radius:14px;background:linear-gradient(160deg,#EEF1FF,#E2E7FB)}
+html body #ishЭкран .плитка img{width:84%;height:84%}
+html body #ishЭкран .имя{font:700 16px/1.25 var(--p37-f);color:var(--p37-ink)}
+html body #ishЭкран .под{margin-top:3px;font:400 13px/1.3 var(--p37-f);color:var(--p37-mut)}
+html body #ishЭкран .шев{width:32px;height:32px;border-radius:50%;background:var(--p37-soft2);color:var(--p37-k)}
+html body #ishЭкран .шев svg{width:15px;height:15px}
+/* быстрые пункты: значок в кобальтовом квадрате (добавляет ish-design-p37.js) */
+.ishp37-q{display:grid;gap:10px;margin:0 14px 18px}
+.ishp37-q a,.ishp37-q a:visited{display:grid;grid-template-columns:44px minmax(0,1fr) 32px;align-items:center;gap:14px;min-height:68px;padding:10px 14px 10px 12px;border-radius:20px;background:var(--p37-soft2);border:1px solid var(--p37-line);color:var(--p37-ink);text-decoration:none;font-family:var(--p37-f)}
+.ishp37-q a:active{background:var(--p37-soft)}
+.ishp37-qi{display:grid;place-items:center;width:44px;height:44px;border-radius:14px;background:linear-gradient(160deg,#4B63E8,#2B44C7 60%,#2036A8);color:#fff;box-shadow:0 12px 20px -12px rgba(43,68,199,.9)}
+.ishp37-qi svg{width:22px;height:22px;display:block}
+.ishp37-q b{display:block;font:700 16px/1.25 var(--p37-f)}
+.ishp37-q em{display:block;margin-top:2px;font:400 13px/1.3 var(--p37-f);font-style:normal;color:var(--p37-mut)}
+.ishp37-qs{display:grid;place-items:center;width:32px;height:32px;border-radius:50%;background:#fff;color:var(--p37-k)}
+.ishp37-qs svg{width:15px;height:15px}
+.ishp37-sub{margin:4px 18px 10px;font:700 12px/1.2 var(--p37-f);letter-spacing:.12em;text-transform:uppercase;color:var(--p37-mut)}
+.ishp37-sub b{color:var(--p37-k);font-weight:700}
+/* внизу: телефон и мессенджеры */
+.ishp37-ct{display:grid;grid-template-columns:minmax(0,1fr) auto auto;align-items:center;gap:10px;margin:16px 14px 0;padding:14px 14px 14px 18px;border-radius:22px;background:#fff;box-shadow:var(--p37-sh);font-family:var(--p37-f)}
+.ishp37-ct a.ishp37-tel,.ishp37-ct a.ishp37-tel:visited{display:block;color:var(--p37-ink);text-decoration:none}
+.ishp37-tel b{display:block;font:800 19px/1.2 var(--p37-f);letter-spacing:-.01em}
+.ishp37-tel span{display:block;margin-top:2px;font:400 12.5px/1.3 var(--p37-f);color:var(--p37-mut)}
+.ishp37-ct a.ishp37-m,.ishp37-ct a.ishp37-m:visited{display:grid;place-items:center;width:46px;height:46px;border-radius:50%;background:var(--p37-soft);color:var(--p37-k);box-shadow:0 8px 16px -10px rgba(43,68,199,.6)}
+.ishp37-m svg{width:22px;height:22px;display:block}
+/* нижняя панель: активный раздел на светло-голубой подложке */
+html body #ishТаб button.вкл .обёртка{display:grid;place-items:center;width:52px;height:30px;border-radius:15px;background:var(--p37-soft);color:var(--p37-k)}
+
+/* ═══════════ 3. КНОПКИ WhatsApp / Telegram (p22): цвета как сейчас на главной (WhatsApp зелёный, Telegram голубой, белый значок). Правим только тень и подпись; размер (56/44, на телефоне 48/40) и положение (--p22-b/--p22-r: подъём над «В корзину», панелями) остаются за p22 ═══════════ */
+html body .ishp22,html body .ishp22t{box-shadow:0 10px 22px -10px rgba(23,25,35,.45),0 2px 6px rgba(23,25,35,.12)}
+html body .ishp22:hover,html body .ishp22t:hover{box-shadow:0 14px 26px -10px rgba(23,25,35,.5),0 2px 6px rgba(23,25,35,.12)}
+html body .ishp22-tip{border-radius:12px;padding:8px 14px}
+
+/* ═══════════ 4. ШТОРКА ФИЛЬТРОВ НА ТЕЛЕФОНЕ (p6 + страница): светло-голубые группы, кобальтовые чипы, липкая кнопка «Показать N» ═══════════ */
+@media screen and (max-width:960px){
+  html body.вн-моб-ф .вн-моб-шап{height:60px;padding:0 12px 0 20px;background:#fff;border-bottom:0;font:800 20px/1 var(--p37-f);letter-spacing:-.01em;color:var(--p37-ink);box-shadow:0 10px 20px -18px rgba(23,25,35,.5)}
+  html body.вн-моб-ф .вн-моб-шап button{width:44px;height:44px;border-radius:50%;background:var(--p37-soft2);color:var(--p37-k)}
+  html body.вн-моб-ф .вн-моб-откр.t-store__filter__options,html body.вн-моб-ф .вн-гр.is-ф .вн-гр__бок{top:60px!important;bottom:84px!important;padding:14px 14px 26px!important;background:var(--p37-bg)!important}
+  html body.вн-моб-ф .вн-моб-откр .t-store__filter__item{margin:0 0 10px!important;padding:2px 16px 8px!important;background:var(--p37-soft2)!important;border:1px solid var(--p37-line)!important;border-radius:18px!important}
+  html body.вн-моб-ф .вн-моб-откр .t-store__filter__item-title{padding:14px 0 12px!important;font:700 15px/20px var(--p37-f)!important;color:var(--p37-ink)!important}
+  html body.вн-моб-ф .вн-моб-откр .t-store__filter__item.active > .t-store__filter__item-title{color:var(--p37-k)!important}
+  /* значения: чипы */
+  html body.вн-моб-ф .вн-моб-откр .t-store__filter__item-controls-container{display:flex!important;flex-wrap:wrap;gap:8px;padding:0 0 8px}
+  html body.вн-моб-ф .вн-моб-откр .t-store__filter__item-controls-container > input[type=hidden]{display:none}
+  html body.вн-моб-ф #allrecords .вн-моб-откр .t-store__filter__item .t-store__filter__checkbox.t-checkbox__control,html body.вн-моб-ф #allrecords .вн-моб-откр .t-store__filter__item .t-store__filter__custom-sel{position:relative;display:inline-flex!important;align-items:center;width:max-content!important;min-width:0!important;max-width:100%!important;flex:0 0 auto!important;min-height:42px;margin:0!important;padding:0 16px!important;border:1px solid var(--p37-line)!important;border-radius:12px!important;background:#fff!important;cursor:pointer;box-sizing:border-box;transition:background .15s,border-color .15s}
+  html body.вн-моб-ф #allrecords .вн-моб-откр .t-store__filter__item .t-store__filter__checkbox .t-checkbox__indicator{display:none!important}
+  html body.вн-моб-ф #allrecords .вн-моб-откр .t-store__filter__item .t-store__filter__checkbox input{position:absolute;opacity:0;width:100%;height:100%;left:0;top:0;margin:0;cursor:pointer}
+  html body.вн-моб-ф #allrecords .вн-моб-откр .t-store__filter__item .t-store__filter__checkbox .t-store__filter__title,html body.вн-моб-ф #allrecords .вн-моб-откр .t-store__filter__item .t-store__filter__custom-sel .t-store__filter__title{width:auto!important;flex:none!important;padding:0!important;font:600 14px/20px var(--p37-f)!important;color:var(--p37-ink)!important}
+  html body.вн-моб-ф #allrecords .вн-моб-откр .t-store__filter__item .t-store__filter__checkbox.t-checkbox__control:has(input:checked),html body.вн-моб-ф #allrecords .вн-моб-откр .t-store__filter__item .t-store__filter__custom-sel.active{background:var(--p37-k)!important;border-color:var(--p37-k)!important;box-shadow:0 10px 18px -12px rgba(43,68,199,.9)}
+  html body.вн-моб-ф #allrecords .вн-моб-откр .t-store__filter__item .t-store__filter__checkbox.t-checkbox__control:has(input:checked) .t-store__filter__title,html body.вн-моб-ф #allrecords .вн-моб-откр .t-store__filter__item .t-store__filter__custom-sel.active .t-store__filter__title{color:#fff!important}
+  /* поля цены */
+  html body.вн-моб-ф .вн-моб-откр input[type=text],html body.вн-моб-ф .вн-моб-откр input[type=number],html body.вн-моб-ф .вн-моб-откр input[type=search]{min-height:44px;border:1px solid var(--p37-line)!important;border-radius:12px!important;background:#fff!important;font:500 15px/1.2 var(--p37-f)}
+  /* липкая нижняя панель */
+  html body.вн-моб-ф .вн-моб-низ{height:84px;gap:10px;padding:14px 16px 18px;background:#fff;border-top:0;border-radius:22px 22px 0 0;box-shadow:0 -16px 30px -20px rgba(23,25,35,.5)}
+  html body.вн-моб-ф .вн-моб-низ button{height:52px;border-radius:14px;font:700 15px/1 var(--p37-f)}
+  html body.вн-моб-ф .вн-моб-низ .вн-моб-сброс{flex:0 0 38%;border:1px solid var(--p37-line);background:#fff;color:var(--p37-k)}
+  html body.вн-моб-ф .вн-моб-низ .вн-моб-пок{flex:1 1 0;background:var(--p37-k);border-color:var(--p37-k);box-shadow:0 14px 24px -14px rgba(43,68,199,.95)}
+}
+@media(prefers-reduced-motion:reduce){html body #ishЭкран .строка,html body #ishp24-panel a.ishp24-gh::before,html body .ishp22,html body .ishp22t{transition:none}}

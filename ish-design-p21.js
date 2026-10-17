@@ -1,4 +1,4 @@
-/* ish-design-p21.js  v1  (16.10.2026)  П21 «номер заявки» и «список из Excel в корзину»  b2b.isoft-shop.kz
+/* ish-design-p21.js  v2-кандидат (17.10.2026, волна 1 В: номер заявки крупно)  [v1 16.10.2026]  П21 «номер заявки» и «список из Excel в корзину»  b2b.isoft-shop.kz
    Внешний слой. Грузится из ish-design-p4.js (строка в README). Ничего не пишет в Tilda, блоки не правит.
    Модули (выключатели: window.ISH_P21_OFF = 1 - всё; window.ISH_P21_SKIP = 'num,xls' - по частям):
      num  Кр3  номер заявки ISH-ДДММ-NNNN: делается в браузере при отправке корзины, дописывается В НАЧАЛО поля «Комментарий»
@@ -127,9 +127,10 @@
     var p = D.createElement('p');
     p.className = 'ishp21-num';
     p.setAttribute('role', 'status');
-    p.innerHTML = '<b>Заявка № ' + esc(sent.n) + ' принята.</b> ' +
-      (sent.email ? 'Счёт или КП придёт на ' + esc(sent.email) + '. ' : 'Счёт или КП придёт на указанную почту. ') +
-      'Назовите этот номер, если позвоните или напишете нам.';
+    /* v2 (волна 1 В, 17.10): номер крупно отдельной строкой; текст тот же, слово «принята» убрано - его говорит заголовок экрана */
+    p.innerHTML = '<b class="ishp21-num__n"><small>Заявка №</small> ' + esc(sent.n) + '</b>' +
+      '<span class="ishp21-num__t">' + (sent.email ? 'Счёт или КП придёт на ' + esc(sent.email) + '. ' : 'Счёт или КП придёт на указанную почту. ') +
+      'Назовите этот номер, если позвоните или напишете нам.</span>';
     var h = q('.ish15-успех__h', host);
     if (h && h.nextSibling) h.parentNode.insertBefore(p, h.nextSibling); else host.insertBefore(p, host.firstChild);
   }

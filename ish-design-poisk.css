@@ -1,0 +1,170 @@
+/* ish-design-poisk.css v1 · КАНДИДАТ (волна 1, задача Г, 17.10.2026) · НЕ выложено
+   Поиск (выпадашка и страница /katalog), плашка и таблица сравнения (p25), мини-корзина (ishk) и счётчик у корзины в шапке - в стиле главной C2.
+   Подключать ПОСЛЕ ish-search.js, ish-design-p25.css и блока ishKorzina; сам ничего не рисует без них. Откат: убрать строку подключения.
+   Тут только визуал. Разметка допиливается ish-poisk-decor.js (чипы разделов, бренд капсом, «Все результаты →», «Пришлите список», «Поиск: …»). */
+:root{--ps-k:#2B44C7;--ps-kh:#2036A8;--ps-soft:#E7EAFB;--ps-soft2:#EEF1FD;--ps-line:#D5DCF7;--ps-ink:#171923;--ps-mut:#5A5F70;--ps-img:#F3F5FD;
+  --ps-ind:linear-gradient(135deg,#2B2F6B,#15173A);--ps-sh:0 24px 56px -20px rgba(23,25,35,.32),0 4px 14px rgba(23,25,35,.07);--ps-f:TildaSans,Arial,sans-serif}
+
+/* ═════════ 1. Выпадашка поиска (десктоп .нш-подсказки / телефон .нш-мс) ═════════ */
+html body .нш-подсказки,html body .нш-мс{background:#fff!important;border:1px solid var(--ps-line)!important;border-radius:18px!important;box-shadow:var(--ps-sh)!important;
+  padding:8px!important;font-family:var(--ps-f)!important;color:var(--ps-ink)!important;box-sizing:border-box}
+html body .нш-подсказки.нш-умный{max-height:min(74vh,600px)}
+html body .нш-гр{padding:12px 12px 6px;font:700 11.5px/1.2 var(--ps-f);letter-spacing:.12em;text-transform:uppercase;color:var(--ps-mut)}
+html body .нш-мс .нш-гр{padding:12px 12px 6px;font-size:11.5px;color:var(--ps-mut)}
+html body .нш-испр{padding:8px 12px;color:var(--ps-mut)}
+html body .нш-испр a{color:var(--ps-k)}
+/* подсветка совпадения: кобальтом, без жёлтого маркера */
+html body .нш-подсказка mark,html body .нш-товар mark,html body .ir-name mark{background:none!important;color:var(--ps-k)!important;font-weight:700;padding:0;border-radius:0}
+/* разделы - светло-голубые чипы (js собирает их в .ishps-chips; без js остаются строками) */
+html body .ishps-chips{display:flex;flex-wrap:wrap;gap:8px;padding:2px 12px 10px}
+html body .ishps-chips .нш-подсказка.нш-раздел{display:inline-flex;align-items:center;gap:8px;min-height:36px;padding:0 14px;border-radius:12px;background:var(--ps-soft);
+  color:var(--ps-ink);font:600 13.5px/1.2 var(--ps-f);text-decoration:none;border:1px solid transparent;transition:background .15s,border-color .15s}
+html body .ishps-chips .нш-подсказка.нш-раздел b{font-weight:600}
+html body .ishps-chips .нш-подсказка.нш-раздел span{color:var(--ps-k);font-weight:700;font-size:12px}
+html body .ishps-chips .нш-подсказка.нш-раздел:hover,html body .ishps-chips .нш-подсказка.нш-раздел.нш-вкл{background:#fff;border-color:var(--ps-k)}
+html body .нш-мс .ishps-chips .нш-подсказка.нш-раздел{padding:0 14px;display:inline-flex;justify-content:flex-start}
+html body .нш-чипы{padding:2px 12px 10px}
+html body .нш-чипы a{min-height:34px;border:1px solid var(--ps-line);border-radius:12px;background:#fff;font-weight:500}
+html body .нш-чипы a:hover,html body .нш-чипы a.нш-вкл{background:var(--ps-soft);border-color:var(--ps-k)}
+/* товары: фото на #F3F5FD, бренд кобальтовым капсом, название, цена */
+html body .нш-товар{display:flex;align-items:center;gap:14px;padding:8px 10px;border-radius:14px;color:var(--ps-ink)}
+html body .нш-товар:hover,html body .нш-товар.нш-вкл{background:var(--ps-soft2)}
+html body .нш-товар img,html body .нш-товар .нш-фото-нет{width:56px;height:56px;border-radius:12px;background:var(--ps-img);object-fit:contain;padding:4px;box-sizing:border-box;mix-blend-mode:multiply}
+html body .нш-товар .нш-фото-нет{padding:0;mix-blend-mode:normal}
+html body .нш-товар .нш-т{gap:3px}
+html body .нш-товар .нш-т b{font:500 14px/1.3 var(--ps-f);color:var(--ps-ink)}
+html body .нш-товар .нш-т i{font-style:normal;font:400 12px/1.2 var(--ps-f);color:var(--ps-mut)}
+html body .нш-товар .нш-т i.ishps-br{order:-1;font:800 11px/1.2 var(--ps-f);letter-spacing:.1em;text-transform:uppercase;color:var(--ps-k)}
+html body .нш-товар .нш-т s{text-decoration:none;font:400 11.5px/1.2 Cascadia Mono,Consolas,monospace;color:var(--ps-mut);order:3}
+html body .нш-товар .нш-ц{font:800 15px/1.2 var(--ps-f);font-variant-numeric:tabular-nums;color:var(--ps-ink)}
+/* низ: «Все результаты →» и ссылка «Не нашли? Пришлите список» */
+html body .ishps-foot{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin:6px 0 0;padding:8px 4px 2px;border-top:1px solid var(--ps-line)}
+html body .ishps-foot .нш-подсказки-низ{display:inline-flex;align-items:center;gap:6px;padding:10px 14px;border-radius:12px;background:var(--ps-soft);color:var(--ps-k)!important;font:700 14px/1.2 var(--ps-f)}
+html body .ishps-foot .нш-подсказки-низ:hover,html body .ishps-foot .нш-подсказки-низ.нш-вкл{background:var(--ps-k);color:#fff!important}
+html body .ishps-foot .ishps-list{color:var(--ps-mut);font:500 13px/1.3 var(--ps-f);text-decoration:underline;text-underline-offset:3px;padding:8px 6px}
+html body .ishps-foot .ishps-list:hover{color:var(--ps-k)}
+html body .нш-подсказки-низ.ish-assort-row{background:none;padding:10px 12px;color:var(--ps-k)}
+/* пустой результат: понятный текст + кнопка */
+html body .нш-пусто{padding:18px 14px 6px;font:400 14.5px/1.45 var(--ps-f);color:var(--ps-mut)}
+html body .нш-пусто b{color:var(--ps-ink)}
+html body .ishps-ask{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;margin:8px 4px 4px;padding:14px 16px;border-radius:14px;background:var(--ps-soft2);border:1px solid var(--ps-line)}
+html body .ishps-ask p{margin:0;flex:1 1 200px;font:500 14px/1.4 var(--ps-f);color:var(--ps-ink)}
+html body .ishps-ask p span{display:block;margin-top:2px;font-weight:400;font-size:13px;color:var(--ps-mut)}
+html body .ishps-ask a{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 20px;border-radius:12px;background:var(--ps-k);color:#fff;font:700 14px/1 var(--ps-f);text-decoration:none;white-space:nowrap}
+html body .ishps-ask a:hover{background:var(--ps-kh)}
+@media (max-width:640px){
+  html body .нш-мс{left:8px;right:8px}
+  html body .нш-товар{gap:12px;padding:8px 6px}
+  html body .нш-товар img,html body .нш-товар .нш-фото-нет{width:52px;height:52px}
+  html body .ishps-foot{flex-direction:column;align-items:stretch}
+  html body .ishps-foot .нш-подсказки-низ{justify-content:center;min-height:46px}
+  html body .ishps-foot .ishps-list{text-align:center;min-height:44px;display:flex;align-items:center;justify-content:center}
+  html body .ishps-ask a{width:100%}
+}
+
+/* ═════════ 2. Страница /katalog (#ish-results, .ir) ═════════ */
+html body .ir{--kb:#2B44C7;--kbh:#2036A8;--kbs:#E7EAFB;--lin:#D5DCF7;--por:#EEF1FD}
+html body .ir-sform input[type=search]{height:50px;border:1px solid var(--ps-line);border-radius:14px;background:#fff;padding:0 18px}
+html body .ir-sform button{height:50px;border-radius:14px;border-color:var(--ps-line)}
+html body .ir-sform button[type=submit]{background:var(--ps-k);border-color:var(--ps-k)}
+/* шапка-карточка как в разделе: индиго, «Поиск: …», счётчик */
+html body .ir-head{position:relative;overflow:hidden;isolation:isolate;margin:6px 0 0;padding:28px 36px;border-radius:28px;background:var(--ps-ind);color:#fff;min-height:132px;box-sizing:border-box}
+html body .ir-head::after{content:"";position:absolute;z-index:-1;right:-60px;top:-70px;width:340px;height:340px;background:radial-gradient(closest-side,rgba(132,116,255,.55),rgba(108,92,231,.18) 60%,transparent)}
+html body .ir-head .ishps-h1{margin:0 0 8px;font:800 clamp(28px,3vw,38px)/1.12 var(--ps-f);letter-spacing:-.02em;color:#fff;overflow-wrap:anywhere}
+html body .ir-head .ishps-h1 span{color:#B4BDFF}
+html body .ir-count{font:600 15px/1.3 var(--ps-f);color:#C9CFE6}
+html body .ir-head.ishps-no .ir-count{display:block}
+html body .ir-note{color:#C9CFE6}html body .ir-note b{color:#fff}html body .ir-note a{color:#B4BDFF}
+html body .ir-chips{margin-top:16px}
+html body .ir-chip{border-radius:14px;border-color:var(--ps-line);min-height:40px}
+html body .ir-chip:hover{border-color:var(--ps-k)}
+html body .ir-chip[aria-pressed=true]{background:var(--ps-k);border-color:var(--ps-k)}
+html body .ir-tools{background:#fff;border:1px solid var(--ps-line);border-radius:18px}
+html body .ir-list{gap:12px}
+html body .ir-card{border:1px solid var(--ps-line);border-radius:20px;padding:14px 18px 14px 14px;box-shadow:0 14px 30px -24px rgba(23,25,35,.5)}
+html body .ir-card:hover{border-color:var(--ps-k)}
+html body .ir-ph{background:var(--ps-img);border-radius:14px}
+html body .ir-ph img{mix-blend-mode:multiply;padding:6px;box-sizing:border-box}
+html body .ir-meta b{color:var(--ps-ink)}
+html body .ir-meta .ishps-br{color:var(--ps-k);font-weight:800;letter-spacing:.1em;text-transform:uppercase;font-size:11.5px;margin-right:6px}
+html body .ir-add,html body .ir-ask{border-radius:12px;border-color:var(--ps-k)}
+html body .ir-add:hover,html body .ir-ask:hover{background:var(--ps-k);color:#fff}
+html body .ir-empty{background:var(--ps-soft2);border:1px solid var(--ps-line);border-radius:20px;padding:26px}
+html body .ir-empty a.ishps-btn,html body .ir-empty .ishps-btn{display:inline-flex;align-items:center;min-height:46px;padding:0 22px;border-radius:12px;background:var(--ps-k);color:#fff;font-weight:700;text-decoration:none}
+html body .ir-sug a{border-radius:12px;border-color:var(--ps-line)}
+html body .ir-more{border-radius:14px;border-color:var(--ps-k)}
+html body .ir-toast{border-radius:16px}
+@media (max-width:640px){
+  html body .ir{padding:12px 12px 40px}
+  html body .ir-head{padding:22px 20px;border-radius:22px;min-height:0}
+  html body .ir-card{grid-template-columns:84px minmax(0,1fr);border-radius:18px}
+  html body .ir-ph{width:84px;height:84px}
+  html body .ir-buy{grid-column:1/-1;flex-direction:row;justify-content:space-between;align-items:center;min-width:0}
+}
+
+/* ═════════ 3. Сравнение (p25) ═════════ */
+html body .ishp25-bar{background:linear-gradient(135deg,#fff,#E7EAFB);border-radius:18px;padding:8px 8px 8px 12px;gap:10px;color:var(--ps-ink);
+  box-shadow:0 18px 44px -14px rgba(43,68,199,.18),0 4px 14px rgba(23,25,35,.08);border:1px solid var(--ps-line)}
+html body .ishp25-bar__th{display:flex;align-items:center}
+html body .ishp25-bar__th:empty{display:none}
+html body .ishp25-bar__th i{width:44px;height:44px;border-radius:12px;background:#F3F5FD center/contain no-repeat;border:2px solid #fff;margin-left:-10px;box-sizing:border-box;box-shadow:0 2px 6px rgba(23,25,35,.12)}
+html body .ishp25-bar__th i:first-child{margin-left:0}
+html body .ishp25-bar button{height:46px;border-radius:12px}
+html body .ishp25-bar__go{background:var(--ps-k);color:#fff;font-weight:700;box-shadow:0 0 0 5px rgba(43,68,199,.18)}
+html body .ishp25-bar__go:hover{background:var(--ps-kh)}
+html body .ishp25-bar__go[aria-disabled="true"]{background:var(--ps-k);color:#fff;opacity:.55;box-shadow:none}
+html body .ishp25-bar__clr{background:#fff;color:var(--ps-k);border:1px solid var(--ps-k);font-weight:600;text-decoration:none}
+html body .ishp25-bar button:focus-visible{outline:2px solid var(--ps-k)}
+html body .ishp25-win{border-radius:24px;box-shadow:0 30px 80px rgba(21,23,58,.45)}
+html body .ishp25-hd{padding:18px 24px;border-bottom:1px solid var(--ps-line)}
+html body .ishp25-btn{border-radius:12px;border-color:var(--ps-k)}
+html body .ishp25-btn[aria-pressed="true"]{background:var(--ps-k)}
+html body .ishp25-x{border-radius:12px;border-color:var(--ps-line)}
+html body .ishp25-note{background:var(--ps-soft);color:var(--ps-ink)}
+html body .ishp25-ct thead th{background:#fff;border-bottom:1px solid var(--ps-line)}
+html body .ishp25-ct th[scope=row],html body .ishp25-ct__c0{background:var(--ps-soft2);color:var(--ps-mut)!important;border-bottom-color:var(--ps-line)}
+html body .ishp25-ct th,html body .ishp25-ct td{border-bottom-color:var(--ps-line)}
+html body .ishp25-ct__img{height:112px;background-color:var(--ps-img);border-radius:14px;mix-blend-mode:normal;background-origin:content-box;padding:8px}
+html body .ishp25-ct td.ishp25-d{background:var(--ps-soft);color:var(--ps-ink);font-weight:700}
+html body .ishp25-ct tbody tr.ishp25-d th[scope=row]{color:var(--ps-ink)!important}
+html body .ishp25-ct .ishp25-buy,html body .ishp25-tbl .ishp25-buy{border-radius:12px;background:var(--ps-k);border-color:var(--ps-k);color:#fff;font-weight:600}
+html body .ishp25-ct .ishp25-buy:hover,html body .ishp25-tbl .ishp25-buy:hover{background:var(--ps-kh);border-color:var(--ps-kh)}
+html body .ishp25-buy_in{background:var(--ps-soft)!important;color:var(--ps-k)!important}
+html body .ishp25-tb__scr{border-color:var(--ps-line);border-radius:20px}
+html body .ishp25-tbl thead th{background:var(--ps-soft2);border-bottom-color:var(--ps-line)}
+html body .ishp25-tb__img{border-radius:12px;background-color:var(--ps-img)}
+@media (max-width:720px){
+  html body .ishp25-bar{left:12px;right:12px;transform:none;max-width:none;justify-content:space-between;padding:8px}
+  html body .ishp25-bar__th i{width:40px;height:40px}
+  html body .ishp25-win{border-radius:0}
+  html body .ishp25-hd{padding:12px}
+}
+
+/* ═════════ 4. Мини-корзина (ishk) и счётчик у корзины в шапке ═════════ */
+html body .ishk-bar{border:1px solid var(--ps-line);border-radius:18px;box-shadow:var(--ps-sh)!important;padding:8px 8px 8px 10px}
+html body .ishk-ic{background:var(--ps-soft);color:var(--ps-k)}
+html body .ishk-bar .ishk-btn,html body .ishk-btn{background:var(--ps-k);border-color:var(--ps-k);border-radius:12px;font-weight:700}
+html body .ishk-btn:hover{background:var(--ps-kh);border-color:var(--ps-kh)}
+html body .ishk-btn.ishk-ghost{background:#fff;color:var(--ps-k)!important}
+html body .ishk-mini,html body .ishk-sheet{border:1px solid var(--ps-line);border-radius:22px;box-shadow:var(--ps-sh)!important}
+html body .ishk-sheet{border-radius:24px 24px 0 0}
+html body .ishk-th{background:var(--ps-img);border-radius:12px;width:56px;height:56px}
+html body .ishk-th img{mix-blend-mode:multiply;padding:4px;box-sizing:border-box}
+html body .ishk-row.ishk-new{background:var(--ps-soft2);border-radius:14px}
+html body .ishk-st{border-color:var(--ps-line);border-radius:12px}
+html body .ishk-tot{border-top-color:var(--ps-line)}
+/* всплывашка «Добавлено» (шторка с одним товаром): белая карточка с фото, названием и «Оформить» */
+html body .ishk-sheet.ishps-added{display:block}
+html body .ishk-sheet .ishps-add{display:flex;align-items:center;gap:14px;margin:0 0 14px;padding:10px;border-radius:16px;background:linear-gradient(135deg,#fff,#E7EAFB);border:1px solid var(--ps-line)}
+html body .ishk-sheet .ishps-add .ishk-th{width:64px;height:64px}
+html body .ishk-sheet .ishps-add b{display:block;font:700 14px/1.3 var(--ps-f);color:var(--ps-ink)}
+html body .ishk-sheet .ishps-add span{display:block;margin-top:3px;font:600 13px/1.2 var(--ps-f);color:var(--ps-k)}
+/* счётчик на кнопке корзины в шапке: кобальтовый бейдж */
+html body .t706__carticon-counter,html body .t706__carticon-wrapper .t706__carticon-counter{background:var(--ps-k)!important;color:#fff!important;border:2px solid #fff;box-sizing:content-box;
+  min-width:18px;height:18px;line-height:18px;padding:0 3px;border-radius:99px;font:700 11px/18px var(--ps-f)!important;text-align:center;top:-8px;right:-8px}
+html body .t706__carticon-counter:empty,html body .t706__carticon_empty .t706__carticon-counter{display:none!important}
+html body .ishps-cart{position:relative;display:inline-flex}
+html body .ishps-cart .ishps-n{position:absolute;top:-7px;right:-7px;min-width:18px;height:18px;padding:0 4px;box-sizing:border-box;border-radius:99px;background:var(--ps-k);color:#fff;border:2px solid #fff;font:700 10.5px/14px var(--ps-f);text-align:center}
+@media (prefers-reduced-motion:reduce){html body .нш-подсказка{transition:none}}
+/* низ выпадашки всегда виден при прокрутке длинного списка */
+html body .ishps-foot{position:sticky;bottom:-8px;background:#fff;z-index:1;margin-bottom:-4px}

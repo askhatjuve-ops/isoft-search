@@ -80,10 +80,10 @@
   /* ══ данные карточки списка ══ */
   function inPopup(e) { return !!(e.closest && e.closest('.t-store__prod-popup, .t-popup, .t-catalog__product-popup')); }
   function карточки() {
-    return qa('.t-store__card[data-product-uid]').filter(function (c) { return !inPopup(c); });
+    return qa('.t-store__card[data-product-uid], .вн-т[data-product-uid]').filter(function (c) { return !inPopup(c); });   /* кандидат: + строки родительской (.вн-т) */
   }
   function числоЦены(c) {
-    var e = q('.js-store-prod-price-val, .js-product-price', c);
+    var e = q('.js-store-prod-price-val, .js-product-price, .вн-т__цена b', c);
     var v = e ? (e.getAttribute('data-product-price-def') || txt(e)) : '';
     return parseFloat(String(v).replace(/[^\d.]/g, '')) || 0;
   }
@@ -95,6 +95,7 @@
     }).filter(function (p) { return p[0] && p[1]; });
   }
   function картинка(c) {
+    var im = q('.вн-т__фото img', c); if (im) return im.getAttribute('src') || '';
     var b = q('.t-store__card__bgimg, [data-original]', c), u = '';
     if (b) {
       u = b.getAttribute('data-original') || '';
@@ -103,14 +104,14 @@
     return u;
   }
   function снять(c) {
-    var ne = q('.js-store-prod-name, .t-store__card__title', c), a = q('a[href]', c);
+    var ne = q('.js-store-prod-name, .t-store__card__title, .вн-т__имя', c), a = q('a[href]', c);
     return {
       u: c.getAttribute('data-product-uid'),
       n: ne ? txt(ne) : '',
       p: числоЦены(c),
       l: c.getAttribute('data-product-url') || (a ? a.getAttribute('href') : '') || '',
       i: картинка(c),
-      a: txt(q('.js-store-prod-sku, .t-store__card__sku', c)).replace(/^Артикул:?\s*/i, ''),
+      a: txt(q('.js-store-prod-sku, .t-store__card__sku, .вн-т__арт', c)).replace(/^Артикул:?\s*/i, ''),
       c: парыИзКарточки(c)
     };
   }
@@ -143,7 +144,7 @@
     if (!ON_CMP) return;
     var s = выбор(), полно = s.length >= MAX;
     карточки().forEach(function (c) {
-      if (!c.hasAttribute('data-ish13')) return;
+      if (!c.hasAttribute('data-ish13') && !c.classList.contains('вн-т')) return;
       var uid = c.getAttribute('data-product-uid'), л = q(':scope > .ishp25-cmp', c);
       if (!л) {
         л = mk('label', 'ishp25-cmp', '<input type="checkbox"><span class="ishp25-cmp__box"></span><span class="ishp25-cmp__t">Сравнить</span>');
@@ -160,7 +161,7 @@
       л.classList.toggle('ishp25-cmp_on', on);
       л.classList.toggle('ishp25-cmp_dis', inp.disabled);
       л.setAttribute('title', inp.disabled ? 'Уже ' + MAX + ' товара: уберите один, чтобы добавить этот' : 'Добавить к сравнению');
-      var nm = q('.js-store-prod-name, .t-store__card__title', c);
+      var nm = q('.js-store-prod-name, .t-store__card__title, .вн-т__имя', c);
       inp.setAttribute('aria-label', 'Сравнить: ' + txt(nm));
     });
   }
@@ -194,7 +195,7 @@
     if (!ON_CMP) return;
     var n = выбор().length;
     if (!плашка) {
-      плашка = mk('div', 'ishp25-bar', '<button type="button" class="ishp25-bar__go" data-a="open">' + ICON.cmp + '<span></span></button>' +
+      плашка = mk('div', 'ishp25-bar', '<span class="ishp25-bar__th" aria-hidden="true"></span><button type="button" class="ishp25-bar__go" data-a="open">' + ICON.cmp + '<span></span></button>' +
         '<button type="button" class="ishp25-bar__clr" data-a="clear">Очистить</button>');
       плашка.setAttribute('role', 'region'); плашка.setAttribute('aria-label', 'Сравнение товаров');
       плашка.addEventListener('click', function (e) {
@@ -208,6 +209,7 @@
       setInterval(function () { if (!D.hidden) подъём(); }, 400);
     }
     q('.ishp25-bar__go span', плашка).textContent = 'Сравнить (' + n + ')';
+    var тх = q('.ishp25-bar__th', плашка); if (тх) тх.innerHTML = выбор().slice(0, 4).map(function (it) { return '<i style="' + (it.i ? 'background-image:url(\'' + esc(it.i).replace(/'/g, '%27') + '\')' : '') + '"></i>'; }).join('');   /* волна1: миниатюры выбранных */
     q('.ishp25-bar__go', плашка).setAttribute('aria-disabled', n < 2 ? 'true' : 'false');
     плашка.classList.toggle('ishp25-bar_on', n > 0 && !окно);
     подъём();
@@ -563,9 +565,9 @@
   function старт() {
     if (!ЭТО_КАРТОЧКА) {
       until(function () {
-        if (!q('.t-store__card[data-ish13]')) return false;
+        if (!q('.t-store__card[data-ish13], .вн-т[data-product-uid]')) return false;
         цикл();
-        var с = карточки()[0], список = с && с.parentNode;
+        var с = карточки()[0], список = document.getElementById('вн-гр-список') || (с && с.parentNode);
         if (список && W.MutationObserver && !наблюдатель) {
           наблюдатель = new MutationObserver(позже); наблюдатель.observe(список, { childList: true, subtree: true });
         }

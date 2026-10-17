@@ -1,4 +1,4 @@
-/* ish-design-p23.js  v1.1  (16.10.2026; П27: тексты приглашения)  П23 «Квиз Подбор техники» (Г17)  b2b.isoft-shop.kz
+/* ish-design-p23.js  v1.2  (кандидат 17.10.2026, волна 3: ступени 01-05 вместо полосы, финал на индиго-карточке; логика и поля формы НЕ менялись; v1.1: П27 тексты приглашения)  П23 «Квиз Подбор техники» (Г17)  b2b.isoft-shop.kz
    Внешний слой. Грузится из ish-design-p4.js (строка в README). Ничего не пишет в Tilda, блоки не правит.
    Выключатель: window.ISH_P23_OFF = 1.   Открыть из любого места: window.ISHP23.open()  или  ссылка/кнопка с  data-ishp23-open  или  адрес  #kviz.
    Что делает:
@@ -212,7 +212,7 @@
     root = D.createElement('div');
     root.className = 'ishp23-ov'; root.id = 'ishp23-ov'; root.hidden = true;
     root.innerHTML = '<div class="ishp23-dlg" role="dialog" aria-modal="true" aria-labelledby="ishp23-ttl" tabindex="-1">' +
-      '<div class="ishp23-top"><div class="ishp23-brand" id="ishp23-ttl">Подбор техники</div>' +
+      '<div class="ishp23-top"><div class="ishp23-brand" id="ishp23-ttl">Подбор техники<span>около минуты</span></div>' +
       '<button type="button" class="ishp23-x" data-p23="close" aria-label="Закрыть">×</button></div>' +
       '<div class="ishp23-main" data-p23-main></div></div>';
     D.body.appendChild(root);
@@ -271,11 +271,20 @@
       '<p class="ishp23-hint">Подберём 2–3 варианта и пришлём КП на ' + esc(done.email) + '. Назовите этот номер, если позвоните или напишете нам: ' + esc(PHONE_TXT) + '.</p>' +
       '<div class="ishp23-nav"><span></span><button type="button" class="ishp23-btn" data-p23="finish">Готово</button></div></div>';
   }
+  function stairs() {                    /* ступени 01..05, как «Три шага» главной: пройденные светлые, текущая кобальтовая и выше, дальние белые */
+    var h = '';
+    for (var i = 0; i < N; i++) {
+      h += '<li class="' + (i < step ? 'ishp23-sd' : i === step ? 'ishp23-sc' : '') + '"><b>' + pad(i + 1) + '</b><i>' + esc(i === N - 1 ? 'связь' : STEPS[i].short) + '</i></li>';
+    }
+    return h;
+  }
   function render(msg) {
     var m = q('[data-p23-main]', root), h;
     if (done) { m.innerHTML = doneHtml(); focusMain(); return; }
-    var last = step === N - 1, pct = Math.round((step + 1) / N * 100);
-    h = '<div class="ishp23-prog"><span class="ishp23-st">Шаг ' + (step + 1) + ' из ' + N + '</span><div class="ishp23-bar" role="progressbar" aria-valuemin="1" aria-valuemax="' + N + '" aria-valuenow="' + (step + 1) + '"><i style="width:' + pct + '%"></i></div></div>' +
+    var last = step === N - 1;
+    h = '<div class="ishp23-prog" role="progressbar" aria-label="Шаг ' + (step + 1) + ' из ' + N + '" aria-valuemin="1" aria-valuemax="' + N + '" aria-valuenow="' + (step + 1) + '">' +
+      '<span class="ishp23-st"><b>' + pad(step + 1) + '</b> / ' + esc(String(last ? 'контакты' : STEPS[step].short).toUpperCase()) + '</span>' +
+      '<ol class="ishp23-stairs" aria-hidden="true">' + stairs() + '</ol></div>' +
       '<div class="ishp23-body">' + (last ? contactHtml(msg) : stepHtml(STEPS[step])) + '</div>' +
       '<div class="ishp23-nav"><button type="button" class="ishp23-btn ishp23-btn_ghost" data-p23="back"' + (step && !sending ? '' : ' disabled') + '>Назад</button>' +
       (last ? '<button type="button" class="ishp23-btn" data-p23="send"' + (sending ? ' disabled' : '') + '>' + (sending ? 'Отправляем…' : 'Отправить заявку') + '</button>'

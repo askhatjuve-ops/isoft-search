@@ -189,7 +189,7 @@
   /* ───────── П19: формы и корзина (ish-design-p19.js с того же адреса, один раз) ─────────
      Грузим там, где есть форма Tilda, корзина /spec или сетка товаров: сам p19 в пустой странице ничего не делает.
      Выключатель: window.ISH_P19_OFF = 1 (до загрузки p4). Кэш: поменять P19V. */
-  var P19V = '1';
+  var P19V = '2';
   function p19() {
     if (W.ISH_P19_OFF || W.ISH_P19 || D.getElementById('ishp-p19-js')) return true;
     if (!(D.querySelector('.t-form') || D.getElementById('specRoot') || D.querySelector('.js-store-grid-cont'))) return false;
@@ -231,7 +231,7 @@
   /* ───────── П21: номер заявки (Кр3) и загрузка списка из Excel (Кр8) (ish-design-p21.js/.css с того же адреса, один раз) ─────────
      Грузим там, где есть форма корзины Tilda (form3238938703) или корзина /spec (#specRoot). В остальных страницах p21 не нужен.
      Выключатель: window.ISH_P21_OFF = 1 (до загрузки p4); по частям: window.ISH_P21_SKIP = 'num' или 'xls'. Кэш: поменять P21V. */
-  var P21V = '1';
+  var P21V = '2';
   function p21() {
     if (W.ISH_P21_OFF || W.ISH_P21 || D.getElementById('ishp-p21-js')) return true;
     if (!(D.getElementById('form3238938703') || D.getElementById('specRoot'))) return false;
@@ -251,7 +251,7 @@
   /* ───────── П23: квиз «Подбор техники» (Г17) (ish-design-p23.js/.css с того же адреса, один раз) ─────────
      Грузим там, где есть форма «Отправить готовый список» (поле «Список позиций…» + Комментарий + Phone) - квиз отправляет заявку через неё.
      Выключатель: window.ISH_P23_OFF = 1 (до загрузки p4). Кэш: поменять P23V. */
-  var P23V = '2';
+  var P23V = '3';
   function p23() {
     if (W.ISH_P23_OFF || W.ISH_P23 || D.getElementById('ishp-p23-js')) return true;
     if (!D.querySelector('form [name^="Список позиций"]')) return false;
@@ -293,24 +293,24 @@
 
   /* ───────── П25: сравнение моделей (К19) и таблица однотипных товаров (К21) (ish-design-p25.js/.css с того же адреса, один раз) ─────────
      Признак: список товаров (.t-store__card[data-ish13]) или карточка товара (/tproduct/). Выключатель: window.ISH_P25_OFF = 1. Кэш: поменять P25V. */
-  var P25V = '3';
+  var P25V = '4';
   function p25() {
     if (W.ISH_P25_OFF || W.__ishP25 || D.getElementById('ishp-p25-js')) return true;
     var карт = /\/tproduct\//.test(location.pathname);
-    if (!карт && !D.querySelector('.t-store__card[data-ish13]')) return false;
+    if (!карт && !D.querySelector('.t-store__card[data-ish13], .вн-т[data-product-uid]')) return false;   /* + родительская */
     var src = tag && tag.src; if (!src) return true;
     var s = D.createElement('script'); s.id = 'ishp-p25-js'; s.defer = true;
     s.src = src.replace(/ish-design-p4\.js.*$/, 'ish-design-p25.js?v=' + P25V); D.head.appendChild(s); return true;
   }
   function p25wait() {
-    if (W.ISH_P25_OFF || !(D.querySelector('.t-store') || /\/tproduct\//.test(location.pathname))) return;
+    if (W.ISH_P25_OFF || !(D.querySelector('.t-store, .вн-гр[data-gruppa]') || /\/tproduct\//.test(location.pathname))) return;
     var n = 0; (function step() { var ok = false; try { ok = p25(); } catch (e) {} if (!ok && ++n < 80) setTimeout(step, 250); })();
   }
 
   /* ───────── П31: внутренние страницы в духе главной C2 (ish-design-p31.js/.css с того же адреса, один раз) ─────────
      Признак: только текстовая страница (.вн-верх/.вн-тело); список и карточка не затрагиваются. На главной (#лента) не грузим - там П8.
      Выключатель: window.ISH_P31_OFF = 1 или window.ISH_P4_NO_P31 = 1 (до загрузки p4). Кэш: поменять P31V. */
-  var P31V = '1';
+  var P31V = '2';
   function p31() {
     if (W.ISH_P4_NO_P31 || W.ISH_P31_OFF || W.ISH_P31 || D.getElementById('ishp-p31-js')) return true;
     if (D.getElementById('лента')) return true;
@@ -331,7 +331,7 @@
 
   /* ───────── П35: раздел каталога в палитре главной (ish-design-p35.js/.css с того же адреса, один раз) ─────────
      Признак: страница со списком товаров (.t-store__card-list). Выключатель: window.ISH_P35_OFF = 1 или window.ISH_P4_NO_P35 = 1 (до загрузки p4). Кэш: поменять P35V. */
-  var P35V = '3';
+  var P35V = '4';
   function p35() {
     if (W.ISH_P4_NO_P35 || W.ISH_P35_OFF || W.ISH_P35 || D.getElementById('ishp-p35-js')) return true;
     if (D.getElementById('лента')) return true;
@@ -349,6 +349,69 @@
     var n = 0;
     (function step() { var ok = false; try { ok = p35(); } catch (e) {} if (!ok && ++n < 80) setTimeout(step, 250); })();
   }
+
+  /* ───────── П36: карточка товара в духе главной C2 (ish-design-p36.js/.css с того же адреса, один раз) ─────────
+     Признак: блок покупки карточки (.ishpg-row, его строят p9/p10, поэтому ждём). Выключатель: window.ISH_P36_OFF = 1 или window.ISH_P4_NO_P36 = 1 (до загрузки p4). Кэш: поменять P36V. */
+  var P36V = '1';
+  function p36() {
+    if (W.ISH_P4_NO_P36 || W.ISH_P36_OFF || W.ISH_P36 || D.getElementById('ishp-p36-js')) return true;
+    if (!D.querySelector('.ishpg-row')) return false;
+    var src = tag && tag.src;
+    if (!src) return true;
+    var s = D.createElement('script');
+    s.id = 'ishp-p36-js'; s.defer = true;
+    s.src = src.replace(/ish-design-p4\.js.*$/, 'ish-design-p36.js?v=' + P36V);
+    D.head.appendChild(s);
+    return true;
+  }
+  function p36wait() {
+    if (W.ISH_P4_NO_P36 || W.ISH_P36_OFF) return;
+    var n = 0;
+    (function step() { var ok = false; try { ok = p36(); } catch (e) {} if (!ok && ++n < 80) setTimeout(step, 250); })();
+  }
+
+  /* ───────── Поиск и сравнение в стиле главной (ish-design-poisk.css + ish-poisk-decor.js с того же адреса, на всех страницах) ─────────
+     Идут ПОСЛЕ ish-search.js, p25.css и мини-корзины: подключаем на событии load (и не раньше). Выключатель: window.ISH_POISK_OFF = 1. Кэш: поменять POISKV. */
+  var POISKV = '1';
+  (function () {
+    if (W.ISH_POISK_OFF || D.getElementById('ishp-poisk-js')) return;
+    var src = tag && tag.src;
+    if (!src) return;
+    function go() {
+      if (W.ISH_POISK_OFF || D.getElementById('ishp-poisk-js')) return;
+      var l = D.createElement('link');
+      l.id = 'ishp-poisk-css'; l.rel = 'stylesheet';
+      l.href = src.replace(/ish-design-p4\.js.*$/, 'ish-design-poisk.css?v=' + POISKV);
+      D.head.appendChild(l);
+      /* p25.css подгружает p25.js позже (по признаку страницы): наш css должен остаться ПОСЛЕ него в каскаде (равная специфичность) */
+      if (W.MutationObserver) {
+        var mo = new MutationObserver(function () {
+          var p = D.getElementById('ishp25-css'), me = D.getElementById('ishp-poisk-css');
+          if (p && me && (p.compareDocumentPosition(me) & 2)) D.head.appendChild(me);
+        });
+        mo.observe(D.head, { childList: true });
+        setTimeout(function () { mo.disconnect(); }, 30000);
+      }
+      var s = D.createElement('script');
+      s.id = 'ishp-poisk-js'; s.defer = true;
+      s.src = src.replace(/ish-design-p4\.js.*$/, 'ish-poisk-decor.js?v=' + POISKV);
+      D.head.appendChild(s);
+    }
+    if (D.readyState === 'complete') setTimeout(go, 0); else W.addEventListener('load', function () { setTimeout(go, 0); });
+  })();
+
+  /* ───────── П37: хвосты в стиле главной - мега-меню, мобильное меню, мессенджеры, шторка фильтров, /assortiment (ish-design-p37.js/.css/p37a.css с того же адреса, на всех страницах) ─────────
+     Выключатель: window.ISH_P37_OFF = 1 или window.ISH_P4_NO_P37 = 1 (до загрузки p4). Кэш: поменять P37V. */
+  var P37V = '1';
+  (function () {
+    if (W.ISH_P4_NO_P37 || W.ISH_P37_OFF || W.__ishP37 || D.getElementById('ishp-p37-js')) return;
+    var src = tag && tag.src;
+    if (!src) return;
+    var s = D.createElement('script');
+    s.id = 'ishp-p37-js'; s.defer = true;
+    s.src = src.replace(/ish-design-p4\.js.*$/, 'ish-design-p37.js?v=' + P37V);
+    D.head.appendChild(s);
+  })();
 
   /* ───────── П22: кнопка WhatsApp (грузит ish-design-p22.js с того же адреса; она сама подтянет ish-design-p22.css; выключатель window.ISH_P22_OFF) ───────── */
   var P22V = '4';
@@ -406,5 +469,6 @@
   p25wait();
   p31wait();
   p35wait();
+  p36wait();
   try { p10(); } catch (e) {}
 })();

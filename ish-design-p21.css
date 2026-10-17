@@ -1,6 +1,6 @@
-/* ish-design-p21.css  v1  (16.10.2026)  П21: блок загрузки списка (/spec) и строка «Заявка № …» на экране успеха.
+/* ish-design-p21.css  v2-кандидат (17.10.2026, волна 1 В: стиль C2 - блок Excel вторичный, номер заявки крупно)  [v1 16.10.2026]  П21: блок загрузки списка (/spec) и строка «Заявка № …» на экране успеха.
    Только классы .ishp21-*. Цвета и скругления - как у корзины /spec (кобальт #2B44C7, рамка #E3DFD6). */
-.ishp21-bar{box-sizing:border-box;width:calc(100% - 80px);max-width:1360px;margin:16px auto;padding:16px 20px;background:#fff;border:1px solid #E3DFD6;border-radius:12px;
+.ishp21-bar{box-sizing:border-box;width:calc(100% - 40px);max-width:1200px;margin:18px auto 0;padding:16px 20px;background:#F6F7FE;border:1.5px dashed #B9C2F0;border-radius:20px;
   font-family:'TildaSans','Inter',Arial,sans-serif;color:#171923}
 .ishp21-bar[hidden]{display:none}
 .ishp21-bar *{box-sizing:border-box}
@@ -9,14 +9,18 @@
 .ishp21-bar.ishp21-busy [data-p21="pick"]{pointer-events:none}
 .ishp21-row{display:flex;gap:16px;align-items:center;justify-content:space-between;flex-wrap:wrap}
 .ishp21-txt{display:flex;flex-direction:column;gap:2px;min-width:0;flex:1 1 320px}
-.ishp21-txt b{font-size:16px;font-weight:600;line-height:1.3}
-.ishp21-txt span{font-size:14px;line-height:1.4;color:#565D70}
+.ishp21-txt b{display:flex;align-items:center;gap:12px;font-size:16px;font-weight:700;line-height:1.3}
+.ishp21-txt b::before{content:'';flex:none;width:36px;height:36px;border-radius:12px;box-shadow:0 8px 16px -8px rgba(43,68,199,.7);
+  background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='white' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'><path d='M10 13V3.5M6.5 7L10 3.5 13.5 7M3.5 12.5v3a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1v-3'/></svg>") center/20px no-repeat,linear-gradient(145deg,#5B73F0,#2B44C7)}
+.ishp21-txt span{padding-left:48px;font-size:14px;line-height:1.4;color:#565D70}
 .ishp21-btns{display:flex;gap:8px;flex-wrap:wrap}
-.ishp21-btn{all:unset;box-sizing:border-box;cursor:pointer;min-height:44px;padding:0 16px;display:inline-flex;align-items:center;justify-content:center;text-align:center;
-  border:1px solid #CFCABD;border-radius:8px;background:#fff;color:#171923;font:600 14px/1.2 'TildaSans','Inter',Arial,sans-serif}
+.ishp21-btn{all:unset;box-sizing:border-box;cursor:pointer;min-height:46px;padding:0 18px;display:inline-flex;align-items:center;justify-content:center;text-align:center;
+  border:1px solid #CFCABD;border-radius:12px;background:#fff;color:#171923;font:600 14px/1.2 'TildaSans','Inter',Arial,sans-serif}
 .ishp21-btn:hover{background:#E9ECFC;border-color:#2B44C7;color:#2B44C7}
-.ishp21-btn_main{background:#2B44C7;border-color:#2B44C7;color:#fff}
-.ishp21-btn_main:hover{background:#2036A8;border-color:#2036A8;color:#fff}
+/* вторичная: контур кобальтом (залитая кнопка на экране одна - «Заполнить реквизиты» / «Отправить заявку») */
+.ishp21-btn_main{background:#fff;border-color:#2B44C7;color:#2B44C7}
+.ishp21-btn_main:hover{background:#E7EAFB;border-color:#2036A8;color:#2036A8}
+.ishp21-btn[data-p21="tpl"]{border-color:transparent;background:none;color:#4A5272;text-decoration:underline;text-underline-offset:3px;padding:0 10px}
 .ishp21-btn:focus-visible{outline:2px solid #2B44C7;outline-offset:2px}
 .ishp21-file{position:absolute;width:1px;height:1px;opacity:0;pointer-events:none}
 .ishp21-st{margin:0;font-size:14px;line-height:1.4;color:#565D70}
@@ -38,10 +42,17 @@
 .ishp21-miss .ishp21-btns{margin-top:10px}
 .ishp21-note{margin:8px 0 0;font-size:14px;line-height:1.4;color:#565D70}
 .ishp21-note a{color:#2B44C7;text-decoration:underline}
-.ishp21-num{margin:10px 0 0;padding:10px 12px;background:#E9ECFC;border-radius:8px;font-size:15px;line-height:1.45;color:#171923!important}
+.ishp21-num{margin:18px auto 4px;max-width:520px;padding:18px 22px 16px;background:#E7EAFB;border-radius:20px;text-align:center;font-size:15px;line-height:1.45;color:#171923!important}
 .ishp21-num b{font-weight:600;color:#171923!important}
+.ishp21-num__n{display:block;font:900 34px/1.1 'TildaSans','Inter',Arial,sans-serif;letter-spacing:-.02em}
+html .ishp21-num .ishp21-num__n{color:#2B44C7!important}
+.ishp21-num__n small{display:block;margin-bottom:4px;font:700 12px/1.2 'TildaSans','Inter',Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#4A5272}
+html .ishp21-num .ishp21-num__n small{color:#4A5272!important}
+.ishp21-num__t{display:block;margin-top:10px;font-size:14px;color:#3F4558}
 @media screen and (max-width:900px){
-  .ishp21-bar{width:auto;margin:12px 16px;padding:14px}
+  .ishp21-bar{width:auto;margin:14px 16px 0;padding:14px}
+  .ishp21-txt span{padding-left:0}
+  .ishp21-num__n{font-size:28px}
   .ishp21-btns{width:100%}
   .ishp21-btn{flex:1 1 100%}
   .ishp21-res li{flex-direction:column;gap:2px}

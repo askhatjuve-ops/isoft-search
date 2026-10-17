@@ -1,6 +1,6 @@
-/* ish-design-p38.js  v1.1  (18.10.2026, кандидат)  П38 «мелочи показа: цена, alt, дата цен, наличие, название в списке»  b2b.isoft-shop.kz
+/* ish-design-p38.js  v1.2  (18.10.2026, кандидат)  П38 «мелочи показа: цена, alt, дата цен, наличие, название в списке»  b2b.isoft-shop.kz
    Внешний слой. Блоки Tilda не пишет, в сеть не ходит (дата берётся из индекса поиска, который страница уже грузит). Подключает ish-design-p38.css рядом с собой.
-   Выключатели: window.ISH_P38_OFF = 1 - весь модуль; window.ISH_P38_SKIP = 'price,alt,date,stock,name' (любая подстрока) - только названные функции. Всё - до загрузки файла.
+   Выключатели: window.ISH_P38_OFF = 1 - весь модуль; window.ISH_P38_SKIP = 'price,alt,date,stock,name,variants' (любая подстрока) - только названные функции. Всё - до загрузки файла.
    Что делает (идемпотентно, метки data-p38; нет элементов - молчит; ошибка в одной функции другую не останавливает):
      price  К9   единый показ цены «471 000 ₸»: тысячи и ₸ через неразрывный пробел (U+00A0), без «,00», «тг.», «тенге», «KZT».
                 Правит ТОЛЬКО видимые текстовые узлы: число+знак валюты в любом месте страницы (список, карточка, похожие, .ishk-bar, /spec, сравнение, поиск)
@@ -16,12 +16,17 @@
      name   К5   в списке РАЗДЕЛА (адрес вида /noutbuki, одна часть пути; смешанные группы и 'katalog' не трогаем) слово типа («Ноутбук», «Монитор», «ИБП»…) скрывается визуально
                 (<span class="ishp38-tw"> внутри названия: textContent и data-ish13-имя целы, читатели названия получают полный текст), полный текст - в title. Словарь «раздел -> слово типа»
                 строится из индекса на лету: первое слово названий >=60% товаров раздела (если и второе слово у >=60% из них - тип из двух слов: «Блок питания», «Материнская плата»).
-                Не трогаем: названия, где после типа идёт слово с маленькой буквы («Монитор игровой …»), карточку товара, поиск, сравнение, корзину. */
+                Не трогаем: названия, где после типа идёт слово с маленькой буквы («Монитор игровой …»), карточку товара, поиск, сравнение, корзину.
+     variants К22 варианты товара (цвет / объём). Данные - ish-variants.js рядом с этим файлом (его делает соседняя линия), грузится лениво тегом script
+                с ?d=ГГГГММДД по Астане (как p6 грузит ish-p6-counts.js), только если на странице есть карточка товара или список; нет файла / 404 / не тот формат - молча ничего.
+                Формат: window.ISH_VARIANTS = { g: { "<id группы>": { ось: "Цвет"|"Объём", v: [[uid, значение, путь /...tproduct/...], ...] } }, u: { "<uid>": "<id группы>" } }.
+                Карточка товара (страница /tproduct/ и окно): под названием строка «Цвет: Чёрный» и чипы-ссылки по значениям группы, текущий - в обводке кобальт (span, не ссылка);
+                цвет из словаря - кружок, иначе текст. Список (.t-store__card): под названием мелкая подпись «Ещё 2 цвета» / «Ещё 3 варианта» (только подпись, не ссылка). */
 (function () {
   'use strict';
   var W = window, D = document;
   if (W.ISH_P38_OFF || W.__ishP38) return;
-  W.__ishP38 = 'v1.1';
+  W.__ishP38 = 'v1.2';
   var SKIP = String(W.ISH_P38_SKIP || '');
   function on(n) { return SKIP.indexOf(n) < 0; }
   var SELF_BASE = '';                            /* каталог, из которого загружен этот файл */
@@ -338,6 +343,111 @@
     });
   }
 
+  /* ═══════════════ variants ═══════════════ */
+  var VAR = null, varAsked = false;
+  var COLORS = {
+    'чёрный': '#1B1C20', 'черный': '#1B1C20', 'графитовый': '#3A3D45', 'графит': '#3A3D45', 'антрацитовый': '#2E3138', 'космический серый': '#6B6E76',
+    'белый': '#FFFFFF', 'молочный': '#F4F1E8', 'бежевый': '#E3D5B8', 'кремовый': '#F1E7CF', 'серый': '#8A8D96', 'серебристый': '#C5C8CE', 'серебряный': '#C5C8CE', 'стальной': '#9AA0AA',
+    'синий': '#2B5FD9', 'голубой': '#7BB6F0', 'тёмно-синий': '#1C2F6B', 'темно-синий': '#1C2F6B', 'бирюзовый': '#26B5B0', 'красный': '#D62F3A', 'бордовый': '#7A1F2B', 'вишнёвый': '#8E1B34',
+    'розовый': '#F2A3BE', 'фиолетовый': '#7A4CC2', 'сиреневый': '#B9A0DB', 'лавандовый': '#B9A0DB', 'зелёный': '#2E9E5B', 'зеленый': '#2E9E5B', 'мятный': '#A8E0C8', 'оливковый': '#6F7A3A',
+    'жёлтый': '#F2C230', 'желтый': '#F2C230', 'оранжевый': '#EE8A2B', 'коричневый': '#7A5236', 'золотой': '#D4AF37', 'золотистый': '#D4AF37', 'бронзовый': '#A9743F',
+    'black': '#1B1C20', 'white': '#FFFFFF', 'gray': '#8A8D96', 'grey': '#8A8D96', 'silver': '#C5C8CE', 'blue': '#2B5FD9', 'red': '#D62F3A', 'pink': '#F2A3BE', 'green': '#2E9E5B', 'gold': '#D4AF37'
+  };
+  function stem(w) { return w.replace(/(ый|ий|ой|ая|яя|ое|ее)$/, '').replace(/ё/g, 'е'); }
+  function colorHex(v) {
+    var s = String(v || '').toLowerCase().replace(/\s+/g, ' ').trim();
+    if (COLORS[s]) return COLORS[s];
+    var w = s.split(/[\s\/,]+/);
+    for (var i = w.length - 1; i >= 0; i--) {
+      var k = stem(w[i]);
+      if (!k) continue;
+      for (var c in COLORS) if (COLORS.hasOwnProperty(c) && c.indexOf(' ') < 0 && stem(c) === k) return COLORS[c];
+    }
+    return '';
+  }
+  function dateAst() {
+    var d = new Date(Date.now() + 5 * 3600000), p = function (n) { return (n < 10 ? '0' : '') + n; };
+    return d.getUTCFullYear() + p(d.getUTCMonth() + 1) + p(d.getUTCDate());
+  }
+  function varLoad() {
+    if (varAsked || !SELF_BASE) return;
+    varAsked = true;
+    if (W.ISH_VARIANTS) { varReady(); return; }
+    var sc = D.createElement('script');
+    sc.async = true;
+    sc.src = SELF_BASE + 'ish-variants.js?d=' + dateAst();
+    sc.onload = function () { varReady(); };
+    sc.onerror = function () {};
+    (D.head || D.documentElement).appendChild(sc);
+  }
+  function varReady() {
+    var d = W.ISH_VARIANTS;
+    if (VAR || !d || typeof d !== 'object' || !d.g || !d.u) return;
+    VAR = d;
+    runAll([D.body]);
+  }
+  function plural(n, a, b, c) { var m = n % 100, k = n % 10; return (m > 10 && m < 15) ? c : k === 1 ? a : (k > 1 && k < 5) ? b : c; }
+  function vgroup(uid) {
+    var gid = uid && VAR.u[uid], g = gid != null && VAR.g[gid];
+    return g && g.v && g.v.length > 1 ? g : null;
+  }
+  var VNAME = 'h1.js-store-prod-name, .t-store__prod-popup__name';
+  function varCard() {
+    var h = D.querySelector(VNAME);
+    if (!h) return;
+    var host = closest(h, '.t-store__prod-popup__title-wrapper') || h.parentNode;
+    var par = host.parentNode, old = par.querySelector(':scope > .ishp38-var');
+    var b0 = closest(h, '[data-product-uid]') || (closest(h, '.t-popup, .t-store__prod-snippet__container, .t-store') || D).querySelector('.js-store-product[data-product-uid], [data-product-uid]:not(.t-store__card)');
+    var uid = b0 ? b0.getAttribute('data-product-uid') : '', g = vgroup(uid);
+    if (!g) { if (old) par.removeChild(old); return; }
+    if (old && old.getAttribute('data-uid') === uid) return;
+    if (old) par.removeChild(old);
+    var ax = g['ось'] || 'Вариант', cur = '';
+    g.v.forEach(function (x) { if (String(x[0]) === uid) cur = x[1]; });
+    var box = D.createElement('div'); box.className = 'ishp38-var'; box.setAttribute('data-uid', uid); box.setAttribute('data-p38', 'v');
+    var lab = D.createElement('div'); lab.className = 'ishp38-var__l';
+    lab.appendChild(D.createTextNode(ax + ': '));
+    var b = D.createElement('b'); b.textContent = cur; lab.appendChild(b);
+    box.appendChild(lab);
+    var row = D.createElement('div'); row.className = 'ishp38-var__r';
+    g.v.forEach(function (x) {
+      var isCur = String(x[0]) === uid, hex = ax === 'Цвет' ? colorHex(x[1]) : '';
+      var e = D.createElement(isCur || !x[2] ? 'span' : 'a');
+      e.className = 'ishp38-chip' + (isCur ? ' ishp38-chip_cur' : '') + (hex ? ' ishp38-chip_dot' : '');
+      if (e.tagName === 'A') e.setAttribute('href', x[2]);
+      if (isCur) e.setAttribute('aria-current', 'true');
+      if (hex) {
+        var i = D.createElement('i'); i.style.background = hex;
+        e.appendChild(i); e.setAttribute('title', x[1]); e.setAttribute('aria-label', ax + ': ' + x[1]);
+      } else e.textContent = x[1];
+      row.appendChild(e);
+    });
+    box.appendChild(row);
+    par.insertBefore(box, host.nextSibling);
+  }
+  function varList(root) {
+    cardsIn(root, '.t-store__card').forEach(function (c) {
+      var mine = c.querySelector('.ishp38-more'), g = vgroup(uidOfCard(c));
+      if (!g) { if (mine) mine.parentNode.removeChild(mine); return; }
+      var n = g.v.length - 1, ax = g['ось'] || 'Вариант';
+      var t = 'Ещё ' + n + ' ' + (ax === 'Цвет' ? plural(n, 'цвет', 'цвета', 'цветов') : plural(n, 'вариант', 'варианта', 'вариантов'));
+      if (mine) { if (mine.textContent !== t) mine.textContent = t; return; }
+      var ti = c.querySelector('.t-store__card__title');
+      if (!ti || !ti.parentNode) return;
+      var d = D.createElement('div'); d.className = 'ishp38-more'; d.setAttribute('data-p38', 'm'); d.textContent = t;
+      ti.parentNode.insertBefore(d, ti.nextSibling);
+    });
+  }
+  function varScan(root) {
+    if (!VAR) {
+      if (!varAsked && D.querySelector('.t-store__card[data-product-uid], ' + VNAME)) varLoad();
+      return;
+    }
+    varCard();
+    varList(root && root.nodeType ? root : D.body);
+  }
+
+
   /* ═══════════════ запуск и наблюдатель ═══════════════ */
   var pending = [], timer = 0, mo = null, busy = false;
   function runAll(roots) {
@@ -351,6 +461,7 @@
       roots.forEach(function (r) {
         if (on('stock')) safe(function () { stockScan(r); });
         if (on('name')) safe(function () { nameScan(r); });
+        if (on('variants')) safe(function () { varScan(r); });
       });
     } finally {
       busy = false;

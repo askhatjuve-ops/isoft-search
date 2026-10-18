@@ -130,3 +130,9 @@ html.ishp10-on .ishp10-chip:hover{border-color:var(--p10-k)}
 html.ishp10-on .ishp10-chip:focus-visible{outline:2px solid var(--p10-k);outline-offset:2px}
 html.ishp10-on .ishp10-chip.is-on{border-color:var(--p10-k);background:#EEF1FC;color:var(--p10-k);box-shadow:inset 0 0 0 1px var(--p10-k)}
 @media (max-width:480px){html.ishp10-on .ishp10-chip{flex:1 1 calc(50% - 8px);padding:0 10px}}
+
+/* v6 (18.10): телефон: область нажатия >= 44 px у бренда и крошек карточки (padding + компенсирующий margin, вид не меняется) */
+@media screen and (max-width:640px){
+  html.ishp10-on .ishp10-brand{padding:15px 1px;margin:-15px -1px}
+  html.ishp10-on .ishp10-crumbs a{padding:13px 0;margin:-7px 0}
+}

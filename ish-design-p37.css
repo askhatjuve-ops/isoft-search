@@ -103,3 +103,11 @@ html body .ishp22-tip{border-radius:12px;padding:8px 14px}
   html body.вн-моб-ф .вн-моб-низ .вн-моб-пок{flex:1 1 0;background:var(--p37-k);border-color:var(--p37-k);box-shadow:0 14px 24px -14px rgba(43,68,199,.95)}
 }
 @media(prefers-reduced-motion:reduce){html body #ishЭкран .строка,html body #ishp24-panel a.ishp24-gh::before,html body .ishp22,html body .ishp22t{transition:none}}
+
+/* v1.1 (18.10): телефон: поле поиска шапки наследует TildaSans; область нажатия >= 44 px у стрелок и точек слайдера главной (вид не меняется: расширяем псевдоэлементом) */
+@media (max-width:640px){
+  html body #ishМобQ,html body #ishМобQ::placeholder,html body #ishВерх input,html body #ishВерх button{font-family:inherit}
+  html body button.точка{position:relative}
+  html body #влево::after,html body #вправо::after{content:"";position:absolute;left:50%;top:50%;width:44px;height:44px;transform:translate(-50%,-50%)}
+  html body button.точка::after{content:"";position:absolute;left:50%;top:50%;width:44px;height:44px;transform:translate(-50%,-50%)}
+}

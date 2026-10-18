@@ -233,3 +233,8 @@ html.ishp36-on:has(.t-popup_show) .ishk-bar,html.ishp36-on:has(.t-store__prod-sn
   html.ishp36-on #allrecords .ishpg-к a.ishpg-кк{height:44px;min-height:44px;box-sizing:border-box}
   html.ishp36-on body .ishpg3-sticky,html.ishp36-on body .ishp10-sticky{padding-bottom:max(12px,env(safe-area-inset-bottom,0px))}
 }
+
+/* v1.3 (18.10): телефон: крестик окна >= 44 px (псевдоэлемент) */
+@media (max-width:640px){
+  html.ishp36-on #allrecords a.ishpg-close.ishpg-m::after{content:"";position:absolute;left:50%;top:50%;width:44px;height:44px;transform:translate(-50%,-50%)}
+}

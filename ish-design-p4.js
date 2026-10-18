@@ -32,7 +32,7 @@
      Признак: на странице есть элемент .вн (/goszakupki, /obrazovanie, /delivery, /s-nds, /po-schetu, /dlya-organizacij, /details). На остальных страницах файл не грузится.
      В блоках Tilda осталась копия правил в @layer ishvn_crit: пока файл не пришёл, страница выглядит как раньше; пришёл - его правила сильнее копии.
      Выключатель: window.ISH_VN_OFF = 1 или window.ISH_P4_NO_VN = 1 (до загрузки p4). Кэш: поменять VNV. */
-  var VNV = '1';
+  var VNV = '2';
   (function () {
     function vn() {
       if (W.ISH_P4_NO_VN || W.ISH_VN_OFF || D.getElementById('ishp-vn-css') || D.querySelector('link[href*="ish-design-vn.css"]')) return true;
@@ -373,7 +373,7 @@
 
   /* ───────── П36: карточка товара в духе главной C2 (ish-design-p36.js/.css с того же адреса, один раз) ─────────
      Признак: блок покупки карточки (.ishpg-row, его строят p9/p10, поэтому ждём). Выключатель: window.ISH_P36_OFF = 1 или window.ISH_P4_NO_P36 = 1 (до загрузки p4). Кэш: поменять P36V. */
-  var P36V = '4';
+  var P36V = '5';
   function p36() {
     if (W.ISH_P4_NO_P36 || W.ISH_P36_OFF || W.ISH_P36 || D.getElementById('ishp-p36-js')) return true;
     if (!D.querySelector('.ishpg-row')) return false;
@@ -423,7 +423,7 @@
 
   /* ───────── П37: хвосты в стиле главной - мега-меню, мобильное меню, мессенджеры, шторка фильтров, /assortiment (ish-design-p37.js/.css/p37a.css с того же адреса, на всех страницах) ─────────
      Выключатель: window.ISH_P37_OFF = 1 или window.ISH_P4_NO_P37 = 1 (до загрузки p4). Кэш: поменять P37V. */
-  var P37V = '1';
+  var P37V = '2';
   (function () {
     if (W.ISH_P4_NO_P37 || W.ISH_P37_OFF || W.__ishP37 || D.getElementById('ishp-p37-js')) return;
     var src = tag && tag.src;
@@ -472,7 +472,7 @@
   })();
 
   /* ───────── П10: карточка товара (/tproduct/), а на /spec и /podbor - только css и выбор «КП» ───────── */
-  var P10V = '5';
+  var P10V = '7';
   function p10() {
     if (W.ISH_P10_OFF || D.getElementById('ishp-p10-js')) return;
     var p = location.pathname;

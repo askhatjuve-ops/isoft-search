@@ -162,3 +162,12 @@
 .вн-пары_один{grid-template-columns:200px minmax(0,1fr)}
 @media screen and (max-width:640px){.вн-пары_один{grid-template-columns:minmax(0,1fr)}
   .вн-пары_один>div:nth-child(odd){padding-bottom:0;border-bottom:0}}
+
+/* v2 (18.10): телефон: область нажатия >= 44 px у крошек, «копировать», «Открыть в 2ГИС» (вид не меняется) */
+@media screen and (max-width:640px){
+  .вн-крошки a{display:inline-block;padding:13px 0;margin:-13px 0;min-width:44px}
+  .вн-копи{position:relative}
+  .вн-копи::after{content:"";position:absolute;left:0;right:0;top:50%;height:44px;transform:translateY(-50%)}
+  .вн-оф__2гис a{position:relative}
+  .вн-оф__2гис a::after{content:"";position:absolute;left:0;right:0;top:50%;height:44px;transform:translateY(-50%)}
+}

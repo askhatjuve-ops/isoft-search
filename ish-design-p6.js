@@ -121,6 +121,7 @@
         var б = idx.B[idx.P[j][1]];
         if (б) n[б] = (n[б] || 0) + 1;
       }
+      for (var к in n) if (Object.prototype.hasOwnProperty.call(n, к) && к.charAt(0) !== ' ') n[' ' + к.toLowerCase()] = (n[' ' + к.toLowerCase()] || 0) + n[к];   /* ключи без регистра - с пробелом впереди, не пересекаются с настоящими */
       return n;
     }
 
@@ -145,7 +146,8 @@
       }
       for (var k = 0; k < зн.length; k++) {
         if (кл[ключБренда(зн[k])] > 1) continue;                           // DELL / Dell / Dell Technologies: индекс склеил — точного числа нет
-        if (Object.prototype.hasOwnProperty.call(авто, зн[k]) && авто[зн[k]] > 0) { гр[зн[k]] = авто[зн[k]]; есть = true; }
+        var ч = Object.prototype.hasOwnProperty.call(авто, зн[k]) ? авто[зн[k]] : авто[' ' + String(зн[k]).toLowerCase()];   // регистр: в индексе «DELL», в панели «Dell» (после Ф4)
+        if (ч > 0) { гр[зн[k]] = ч; есть = true; }
       }
       return есть ? { 'Бренд': гр } : null;
     }

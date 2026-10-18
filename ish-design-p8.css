@@ -541,3 +541,13 @@ html.ishp8-on #запросБлок .ishp8-cur{background:var(--p8-cobalt)}
 }
 @media (max-width:640px){html.ishp8-on #полоса{margin-top:36px}}
 @media (max-width:980px){html.ishp8-on #запросБлок.запрос-блок{margin-bottom:36px}}
+
+/* v2.1 (18.10): зоны касания на телефоне >= 44 px (веб-проверка Safari iPhone 14, 390 px). Только <=640; десктоп не затронут. */
+@media (max-width:640px){
+  .ishp8-tabs button{min-height:44px}
+  .ishp8-all{display:inline-flex;align-items:center;min-height:44px;box-sizing:border-box}
+  html.ishp8-on body #allrecords .в73 .вкладка{display:inline-flex;align-items:center;justify-content:center;min-height:44px;box-sizing:border-box}
+  /* ссылки «Для госорганов / Для школ и вузов»: вид тот же, область касания 44 px (запас внизу берём из поля карточки) */
+  .ishp8-who>.w2 .ishp8-go,.ishp8-who>.w3 .ishp8-go{display:inline-flex;align-items:center;min-height:44px;margin-bottom:-8px}
+  html.ishp8-on body #allrecords #ishp8-g #ряды .ткупить{height:44px!important;min-height:44px}
+}

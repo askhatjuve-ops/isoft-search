@@ -170,3 +170,8 @@ html.ishp9-on .ishp8-eb::before{content:counter(ishp9eb,decimal-leading-zero) "\
 @media (prefers-reduced-motion:reduce){
   .ishp9-cp,.ishp9-sort__btn,.ishp9-sort__chev,.ishp9-bc,.ishp9-toast,html body #allrecords .t-store__card{transition:none!important}
 }
+
+/* v1.3 (18.10): чипы брендов >= 44 px на телефоне (Safari iPhone 14, 390 px) */
+@media (max-width:640px){
+  .ishp9-bc{min-height:44px}
+}

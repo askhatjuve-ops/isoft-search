@@ -25,7 +25,7 @@
     if (!src || D.querySelector('link[href*="ish-design-p4.css"]')) return;
     var l = D.createElement('link');
     l.rel = 'stylesheet'; l.id = 'ishp-p4-css';
-    l.href = src.replace(/ish-design-p4\.js.*$/, 'ish-design-p4.css?v=1');
+    l.href = src.replace(/ish-design-p4\.js.*$/, 'ish-design-p4.css?v=2');
     D.head.appendChild(l);
   })();
   /* ───────── П40: общий каркас текстовых страниц .вн (ish-design-vn.css с того же адреса, один раз) ─────────
@@ -169,7 +169,7 @@
   }
 
   /* ───────── П8: блоки главной ниже первого экрана (грузит ish-design-p8.js с того же адреса, один раз; только где есть слайдер главной) ───────── */
-  var P8V = '20';
+  var P8V = '21';
   function p8() {
     if (W.ISH_P4_NO_P8 || W.ISH_P8 || D.getElementById('ishp-p8-js')) return true;
     if (!D.querySelector('#лента .слайд')) return false;
@@ -189,7 +189,7 @@
   }
 
   /* ───────── П9: списки разделов, карточка, ряды главной (ish-design-p9.js с того же адреса, один раз) ───────── */
-  var P9V = '1.2';
+  var P9V = '2';
   function p9() {
     if (W.ISH_P9_OFF || W.ISH_P9 || D.getElementById('ishp-p9-js')) return true;
     if (!D.querySelector('.t-store__card-list, .js-store-product, .раздел-загол')) return false;
@@ -352,7 +352,7 @@
 
   /* ───────── П35: раздел каталога в палитре главной (ish-design-p35.js/.css с того же адреса, один раз) ─────────
      Признак: страница со списком товаров (.t-store__card-list). Выключатель: window.ISH_P35_OFF = 1 или window.ISH_P4_NO_P35 = 1 (до загрузки p4). Кэш: поменять P35V. */
-  var P35V = '5';
+  var P35V = '6';
   function p35() {
     if (W.ISH_P4_NO_P35 || W.ISH_P35_OFF || W.ISH_P35 || D.getElementById('ishp-p35-js')) return true;
     if (D.getElementById('лента')) return true;
@@ -373,7 +373,7 @@
 
   /* ───────── П36: карточка товара в духе главной C2 (ish-design-p36.js/.css с того же адреса, один раз) ─────────
      Признак: блок покупки карточки (.ishpg-row, его строят p9/p10, поэтому ждём). Выключатель: window.ISH_P36_OFF = 1 или window.ISH_P4_NO_P36 = 1 (до загрузки p4). Кэш: поменять P36V. */
-  var P36V = '3';
+  var P36V = '4';
   function p36() {
     if (W.ISH_P4_NO_P36 || W.ISH_P36_OFF || W.ISH_P36 || D.getElementById('ishp-p36-js')) return true;
     if (!D.querySelector('.ishpg-row')) return false;
@@ -448,7 +448,7 @@
   })();
 
   /* ───────── П22: кнопка WhatsApp (грузит ish-design-p22.js с того же адреса; она сама подтянет ish-design-p22.css; выключатель window.ISH_P22_OFF) ───────── */
-  var P22V = '4';
+  var P22V = '5';
   (function () {
     if (W.ISH_P22_OFF || W.__ishP22 || D.getElementById('ishp-p22-js')) return;
     var src = tag && tag.src;

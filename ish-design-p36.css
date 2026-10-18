@@ -227,3 +227,9 @@ html.ishp36-on #allrecords .ishp36-bb .ishpg3-avail i{box-shadow:0 0 0 4px rgba(
 @media (min-width:1025px){
 html.ishp36-on:has(.t-popup_show) .ishk-bar,html.ishp36-on:has(.t-store__prod-snippet__container .ishpg-row) .ishk-bar{opacity:0!important;visibility:hidden!important;pointer-events:none!important;transform:translateY(12px)}
 }
+
+/* v1.2 (18.10): телефон: «В корзину» в «Похожих» >= 44 px; липкая панель покупки с запасом под жест-полосу iPhone (safe-area); внизу карточки Telegram прячем, WhatsApp остаётся (p22) */
+@media (max-width:640px){
+  html.ishp36-on #allrecords .ishpg-к a.ishpg-кк{height:44px;min-height:44px;box-sizing:border-box}
+  html.ishp36-on body .ishpg3-sticky,html.ishp36-on body .ishp10-sticky{padding-bottom:max(12px,env(safe-area-inset-bottom,0px))}
+}

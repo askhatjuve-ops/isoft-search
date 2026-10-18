@@ -128,3 +128,11 @@ html body #карусель .слайд .кнопки .ishp-cta svg{width:14px;h
 @media (max-width:900px){.ish__mark circle{--hy:41%}}
 @keyframes ish-dot-hop{0%,82%{transform:none}87%{transform:translateY(calc(var(--hy) * -1)) scale(.94,1.07)}93%{transform:translateY(0) scale(1.16,.8)}96.5%{transform:scale(.97,1.05)}100%{transform:none}}
 @media (prefers-reduced-motion:reduce){.ish__mark circle{animation:none}}
+
+/* v1.1 (18.10): телефон: «Каталог» в шапке и нижняя панель - зона касания и safe-area (Safari iPhone 14, 390 px) */
+@media (max-width:640px){
+  html body .ish__catbtn{min-height:44px;box-sizing:border-box}
+}
+@media (max-width:980px){
+  html body #ishТаб{box-sizing:border-box;height:calc(56px + env(safe-area-inset-bottom,0px));padding-bottom:env(safe-area-inset-bottom,0px)}
+}

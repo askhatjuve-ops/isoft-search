@@ -32,3 +32,11 @@
 }
 @media (prefers-reduced-motion:reduce){.ishp22,.ishp22t,.ishp22-tip{transition:none!important}.ishp22:hover,.ishp22t:hover{transform:none}}
 @media print{.ishp22,.ishp22t{display:none!important}}
+/* v5 (18.10): телефон <=640. На /podbor и /spec (формы) кнопки прячем: перекрывали переключатель «КП» и край поля, там есть контакты и «Отправить».
+   В карточке товара прячем Telegram (WhatsApp с названием товара остаётся, поднят над липкой панелью покупки p22.js), WhatsApp 44 px. Классы ставит p22.js. */
+@media (max-width:640px){
+  html.ishp22-form #ishp22,html.ishp22-form #ishp22t{display:none!important}
+  html.ishp22-card #ishp22t{display:none!important}
+  html.ishp22-card .ishp22{width:44px;height:44px}
+  html.ishp22-card .ishp22 svg{width:24px;height:24px}
+}

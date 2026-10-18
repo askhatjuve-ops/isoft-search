@@ -1,6 +1,6 @@
-/* ish-design-p38.js  v1.3  (18.10.2026, кандидат)  П38 «мелочи показа: цена, alt, дата цен, наличие, название в списке»  b2b.isoft-shop.kz
+/* ish-design-p38.js  v1.4  (18.10.2026, кандидат)  П38 «мелочи показа: цена, alt, дата цен, наличие, название в списке»  b2b.isoft-shop.kz
    Внешний слой. Блоки Tilda не пишет, в сеть не ходит (дата берётся из индекса поиска, который страница уже грузит). Подключает ish-design-p38.css рядом с собой.
-   Выключатели: window.ISH_P38_OFF = 1 - весь модуль; window.ISH_P38_SKIP = 'price,alt,date,stock,name,variants' (любая подстрока) - только названные функции. Всё - до загрузки файла.
+   Выключатели: window.ISH_P38_OFF = 1 - весь модуль; window.ISH_P38_SKIP = 'price,alt,date,stock,name,variants,hover2' (любая подстрока) - только названные функции. Всё - до загрузки файла.
    Что делает (идемпотентно, метки data-p38; нет элементов - молчит; ошибка в одной функции другую не останавливает):
      price  К9   единый показ цены «471 000 ₸»: тысячи и ₸ через неразрывный пробел (U+00A0), без «,00», «тг.», «тенге», «KZT».
                 Правит ТОЛЬКО видимые текстовые узлы: число+знак валюты в любом месте страницы (список, карточка, похожие, .ishk-bar, /spec, сравнение, поиск)
@@ -26,7 +26,7 @@
   'use strict';
   var W = window, D = document;
   if (W.ISH_P38_OFF || W.__ishP38) return;
-  W.__ishP38 = 'v1.2';
+  W.__ishP38 = 'v1.4';
   var SKIP = String(W.ISH_P38_SKIP || '');
   function on(n) { return SKIP.indexOf(n) < 0; }
   var SELF_BASE = '';                            /* каталог, из которого загружен этот файл */
@@ -485,8 +485,29 @@
     if (pending.length > 400) pending = [D.body];
     if (!timer && pending.length) timer = setTimeout(flush, 150);
   }
+
+  /* hover2 (К20/Фт7): второе фото в списке при наведении. Источник - штатное Tilda: у товара с галереей >=2 фото карточка содержит
+     .t-store__card__bgimg_second (data-original = gallery[1]) рядом с первым .t-store__card__bgimg_hover; Tilda сама показывает его по :hover.
+     Но p35/p6 кладут фото прозрачным (multiply) - первое просвечивало сквозь второе. Здесь: класс на html (только устройства с hover) и в CSS
+     первое гаснет за 200 мс. JS добавляет страховку: если второе фото ещё не подгружено ленивой загрузкой - ставим его при первом наведении. Нет второго - ничего. */
+  function hover2() {
+    if (!W.matchMedia || !W.matchMedia('(hover:hover)').matches) return;
+    D.documentElement.classList.add('ishp38-h2');
+    D.addEventListener('mouseover', function (ev) {
+      safe(function () {
+        var w = closest(ev.target, '.t-store__card__imgwrapper');
+        if (!w || w.__ishH2) return;
+        w.__ishH2 = 1;
+        var s2 = w.querySelector('.t-store__card__bgimg_second');
+        if (!s2 || !closest(w, '.t-store__card-list')) return;
+        var u = s2.getAttribute('data-original');
+        if (u && !/url\(/.test(s2.style.backgroundImage || '')) s2.style.backgroundImage = 'url("' + u + '")';
+      });
+    }, true);
+  }
   function start() {
     if (!D.body) return;
+    if (on('hover2')) safe(hover2);
     runAll([D.body]);
     if (on('date')) safe(findDate);
     if (on('date') || on('stock') || on('name')) safe(findIndex);

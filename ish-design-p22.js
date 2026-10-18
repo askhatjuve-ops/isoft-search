@@ -12,7 +12,7 @@
   'use strict';
   var W = window, D = document;
   if (W.ISH_P22_OFF || W.__ishP22) return;
-  W.__ishP22 = 5;
+  W.__ishP22 = 6;
   var NUM = '77758818531';
   var TXT = 'Написать в WhatsApp';
   var TG_HREF = 'https://t.me/+77758818531', TG_TXT = 'Написать в Telegram';
@@ -168,7 +168,7 @@
     } catch (e) {}
     if (D.getElementById('ishp22-css')) { build(); return; }
     var l = D.createElement('link');
-    l.id = 'ishp22-css'; l.rel = 'stylesheet'; l.href = base + 'ish-design-p22.css?v=5';
+    l.id = 'ishp22-css'; l.rel = 'stylesheet'; l.href = base + 'ish-design-p22.css?v=6';
     l.onload = function () { if (D.body) build(); else D.addEventListener('DOMContentLoaded', build); };
     D.head.appendChild(l);
   }

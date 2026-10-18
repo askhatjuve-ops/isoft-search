@@ -27,8 +27,8 @@
 @media (max-width:760px){
   .ishp22{right:var(--p22-r,14px);width:48px;height:48px}
   .ishp22 svg{width:26px;height:26px}
-  .ishp22t{right:calc(var(--p22-r,14px) + 4px);bottom:calc(var(--p22-b,14px) + 60px);width:40px;height:40px}
-  .ishp22t svg{width:22px;height:22px}
+  .ishp22t{right:calc(var(--p22-r,14px) + 2px);bottom:calc(var(--p22-b,14px) + 60px);width:44px;height:44px} /* v6: 44 px касания */
+  .ishp22t svg{width:24px;height:24px}
 }
 @media (prefers-reduced-motion:reduce){.ishp22,.ishp22t,.ishp22-tip{transition:none!important}.ishp22:hover,.ishp22t:hover{transform:none}}
 @media print{.ishp22,.ishp22t{display:none!important}}

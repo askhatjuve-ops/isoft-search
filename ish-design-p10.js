@@ -412,8 +412,16 @@
     H.classList.add('ishp10-on');
     var me = ME || q('script[src*="ish-design-p10"]'), src = me && me.src ? me.src : '';
     var href = src ? src.replace(/ish-design-p10(\.src)?\.js/, 'ish-design-p10.css') : 'https://askhatjuve-ops.github.io/isoft-search/ish-design-p10.css?v=1';
+    /* 18.10: Safari на onload иногда ещё не применил css (--ishp10 пуст) — ждём до 3 с, только потом сдаёмся */
     function go() {
-      if (!cssOk()) { H.classList.remove('ishp10-on'); return; }    /* css пуст или недоступен: ничего не строим */
+      var n = 0;
+      (function wait() {
+        if (cssOk()) { run(); return; }
+        if (++n < 30) { setTimeout(wait, 100); return; }
+        H.classList.remove('ishp10-on');                           /* css пуст или недоступен: ничего не строим */
+      })();
+    }
+    function run() {
       if (!isCard) { if (isSpec) step('spec', specKp); else { if (!off('ask')) step('ask', askFill); if (!off('form')) step('form', podborForm); } return; }
       if (!off('ask')) step('askbind', askBind);
       function mods() {

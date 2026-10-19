@@ -1,4 +1,4 @@
-/* ish-design-p10.css  v9.1 (кандидат 19.10.2026, v9.1 колонки по верху и низу, согласие под обеими колонками: /podbor в два столбца, без пустой полосы, без дубля подсказки БИН/ИИН; p4: P10V 8 -> 9)  v1  (16.10.2026)  П10 «карточка товара: внешний слой». Подключает ish-design-p10.js (<link id="ishd-p10">).
+/* ish-design-p10.css  v9.2 (19.10: на компьютере /podbor целиком на экране 1440x900 - сжата плашка и зазоры формы) v9.1 (кандидат 19.10.2026, v9.1 колонки по верху и низу, согласие под обеими колонками: /podbor в два столбца, без пустой полосы, без дубля подсказки БИН/ИИН; p4: P10V 8 -> 9)  v1  (16.10.2026)  П10 «карточка товара: внешний слой». Подключает ish-design-p10.js (<link id="ishd-p10">).
    Всё под html.ishp10-on (класс ставит js) — без js файл ничего не меняет. Исключение: Ик5 (ошибки полей) на любой странице, куда подгружен файл — тоже под html.ishp10-on.
    Откат: пустой файл на Pages (js увидит, что переменной --ishp10 нет, и ничего не построит).
    Шрифт TildaSans (--f из фрагмента), цвета те же: кобальт #2B44C7, чернила #171923, серый #565D70. «В корзину» не перекрашивается. Минимум 12 px. */
@@ -161,4 +161,32 @@ html.ishp10-on .ishp10-chip.is-on{border-color:var(--p10-k);background:#EEF1FC;c
   #rec3729382103 .t-input-group_cb{column-span:all;margin:6px 0 10px!important}
   #rec3729382103 .t-form__errorbox-middle,#rec3729382103 .t-form__errorbox-bottom,#rec3729382103 .t-form__submit{column-span:all}
   #rec3729382103 .t-form__submit{margin-top:6px}
+}
+
+/* v9.2 (19.10): компьютер >=981 - плашка и форма /podbor помещаются в один экран 1440x900 (телефон не тронут) */
+@media (min-width:981px){
+  html #rec4304430103 .вн-верх{padding:14px 0 0!important}
+  html #rec4304430103 .вн-крошки{margin:0 0 8px!important}
+  html #rec4304430103 .ishp31-hero{min-height:0!important;padding:16px 36px 18px!important;margin-bottom:0!important;grid-template-columns:1fr!important}
+  html #rec4304430103 .ishp31-hero__p{display:none!important}
+  html #rec4304430103 .вн-над{margin:0 0 4px!important}
+  html #rec4304430103 .ishp31-hero h1{font-size:30px!important;line-height:1.15!important;margin:0!important}
+  html #rec4304430103 .ishp31-hero__s{margin:6px 0 0!important;font-size:14px!important;line-height:1.4!important;max-width:none!important}
+  #rec3729382103.t-rec_pt_105{padding-top:14px!important}
+  #rec3729382103.t-rec_pb_105{padding-bottom:24px!important}
+  #rec3729382103 form.t-form{padding:14px 28px 16px;margin:-12px auto 0}
+  #rec3729382103 .t-input-group{margin-bottom:8px!important}
+  html body #rec3729382103 .t-input-block:not(.t-input-block_ta) input.t-input,html body #rec3729382103 .t-input-group:not(.t-input-group_ta):not(.t-input-group_cb) .t-input-block{height:40px!important;min-height:40px!important}
+  html body #allrecords#allrecords #rec3729382103 form.t-form .t-input-group .t-input-block input.t-input:not([type=checkbox]):not([type=hidden]){height:40px!important;min-height:40px!important;box-sizing:border-box!important}
+  html body #allrecords#allrecords #rec3729382103 form.t-form .t-input-group_ta textarea.t-input{min-height:0!important}
+  html body #allrecords#allrecords #rec3729382103 .t-input-phonemask__wrap{height:40px!important;min-height:0!important;box-sizing:border-box!important}
+  #rec3729382103 .t-input-group_cb .t-checkbox__control{padding-top:0!important;padding-bottom:0!important;min-height:0!important}
+  #rec3729382103 .t-input-title{padding-bottom:3px!important}
+  #rec3729382103 .pb-док button{min-height:38px}
+  #rec3729382103 .pb-прим{margin:8px 0 8px;padding:6px 12px}
+  #rec3729382103 .ishp10-topic{margin-bottom:8px}
+  #rec3729382103 .t-input-group_ta textarea{height:70px!important}
+  #rec3729382103 .t-input-group_ta+.t-input-group_ta textarea{height:234px!important}
+  #rec3729382103 .t-input-group_cb{margin:2px 0 6px!important}
+  #rec3729382103 .t-form__submit{margin-top:2px}
 }

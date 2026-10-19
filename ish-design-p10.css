@@ -196,3 +196,8 @@ html.ishp10-on .ishp10-chip.is-on{border-color:var(--p10-k);background:#EEF1FC;c
   html #rec4304430103 .ishp31-hero{box-sizing:border-box!important;width:min(1240px,calc(100vw - 40px))!important;max-width:none!important;margin-left:calc(50% - min(620px,50vw - 20px))!important;margin-right:0!important}
   html body #allrecords#allrecords #rec3729382103 form.t-form{box-sizing:border-box!important;width:min(1240px,calc(100vw - 40px))!important;max-width:none!important;margin-left:calc(50% - min(620px,50vw - 20px))!important;margin-right:0!important}
 }
+
+/* v9.4 (19.10): крошки /podbor на левый край плашки и шапки (тот же расчёт, что у плашки; .вн-об даёт отступ 40, поэтому 50% = половина её содержимого) */
+@media (min-width:981px){
+  html #rec4304430103 .вн-крошки{margin-left:calc(50% - min(620px,50vw - 20px))!important}
+}

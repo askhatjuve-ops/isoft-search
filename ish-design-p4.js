@@ -272,7 +272,7 @@
   /* ───────── П23: квиз «Подбор техники» (Г17) (ish-design-p23.js/.css с того же адреса, один раз) ─────────
      Грузим там, где есть форма «Отправить готовый список» (поле «Список позиций…» + Комментарий + Phone) - квиз отправляет заявку через неё.
      Выключатель: window.ISH_P23_OFF = 1 (до загрузки p4). Кэш: поменять P23V. */
-  var P23V = '6';
+  var P23V = '7';
   function p23() {
     if (W.ISH_P23_OFF || W.ISH_P23 || D.getElementById('ishp-p23-js')) return true;
     if (!D.querySelector('form [name^="Список позиций"]')) return false;
@@ -331,7 +331,7 @@
   /* ───────── П31: внутренние страницы в духе главной C2 (ish-design-p31.js/.css с того же адреса, один раз) ─────────
      Признак: только текстовая страница (.вн-верх/.вн-тело); список и карточка не затрагиваются. На главной (#лента) не грузим - там П8.
      Выключатель: window.ISH_P31_OFF = 1 или window.ISH_P4_NO_P31 = 1 (до загрузки p4). Кэш: поменять P31V. */
-  var P31V = '6';
+  var P31V = '8';
   function p31() {
     if (W.ISH_P4_NO_P31 || W.ISH_P31_OFF || W.ISH_P31 || D.getElementById('ishp-p31-js')) return true;
     if (D.getElementById('лента')) return true;
@@ -352,7 +352,7 @@
 
   /* ───────── П35: раздел каталога в палитре главной (ish-design-p35.js/.css с того же адреса, один раз) ─────────
      Признак: страница со списком товаров (.t-store__card-list). Выключатель: window.ISH_P35_OFF = 1 или window.ISH_P4_NO_P35 = 1 (до загрузки p4). Кэш: поменять P35V. */
-  var P35V = '15';
+  var P35V = '16';
   function p35() {
     if (W.ISH_P4_NO_P35 || W.ISH_P35_OFF || W.ISH_P35 || D.getElementById('ishp-p35-js')) return true;
     if (D.getElementById('лента')) return true;
@@ -485,7 +485,7 @@
   })();
 
   /* ───────── П10: карточка товара (/tproduct/), а на /spec и /podbor - только css и выбор «КП» ───────── */
-  var P10V = '11';
+  var P10V = '12';
   function p10() {
     if (W.ISH_P10_OFF || D.getElementById('ishp-p10-js')) return;
     var p = location.pathname;

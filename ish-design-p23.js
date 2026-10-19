@@ -361,10 +361,10 @@
 
   /* ─────────────── приглашение на странице ─────────────── */
   function ctaHtml() {
-    return '<div class="ishp23-cta__in"><div class="ishp23-cta__t"><div class="ishp23-eb">Подбор техники</div>' +
-      '<h2 class="ishp23-cta__h">Не знаете, что выбрать?</h2>' +
+    return '<div class="ishp23-cta__in"><div class="ishp23-cta__t">' +
+      '<h2 class="ishp23-cta__h">Нужна помощь в выборе?</h2>' +
       '</div>' +
-      '<button type="button" class="ishp23-cta__b" data-ishp23-open>Подобрать технику за 1 минуту</button></div>';
+      '<button type="button" class="ishp23-cta__b" data-ishp23-open>Подобрать технику</button></div>';
   }
   function place() {
     /* 19.10.2026: на /podbor (это и есть форма заявки) приглашение в квиз лишнее и ложилось во всю ширину экрана */

@@ -77,6 +77,9 @@
   var CUR = (W.location.pathname || '/').replace(/\/+$/, '').toLowerCase();
   if (CUR === '/obrazovanie' || CUR === '/goszakupki') H.classList.add('ishp31-nokak');
   var H1_TXT = { '/obrazovanie': 'Компьютерная техника для школ и вузов' };
+  var LID_TXT = { '/obrazovanie': 'Техника для компьютерных классов. Работаем через портал goszakup.gov.kz' };
+  /* 19.10: на этих страницах низ-блоки «Подбор техники» и «Не нашли нужное?» не рисуем (Асхат) */
+  var NOLOW = (CUR === '/obrazovanie' || CUR === '/goszakupki');
 
   function pageCfg() {
     var p = (W.location.pathname || '/').replace(/\/+$/, '').toLowerCase();
@@ -104,6 +107,7 @@
     var t = el('div', 'ishp31-hero__t');
     if (над) { над.setAttribute('data-n', cfg.n); t.appendChild(над); }
     t.appendChild(h1);
+    if (лид && LID_TXT[CUR]) лид.textContent = LID_TXT[CUR];
     if (лид) { лид.classList.add('ishp31-hero__s'); t.appendChild(лид); }
     if (ряд) { ряд.classList.add('ishp31-hero__r'); t.appendChild(ряд); }
     hero.appendChild(t);
@@ -128,14 +132,14 @@
     var cfg = pageCfg();
     var тело = D.querySelector('.вн-тело');
     if (!cfg || !тело || D.getElementById('ishp31-low')) return !!D.getElementById('ishp31-low');
-    if (!cfg.pod && !cfg.fin) return true;
+    if (NOLOW || (!cfg.pod && !cfg.fin)) return true;
     var s = el('div', 'ishp31-low');
     s.id = 'ishp31-low';
     var h = '';
-    if (cfg.pod) h += '<section class="ishp31-pod" aria-label="Подбор техники"><div class="ishp31-pod__t"><div class="ishp31-pod__eb">Подбор техники</div>' +
-      '<h2>Не знаете, что выбрать?</h2>' +
+    if (cfg.pod) h += '<section class="ishp31-pod" aria-label="Подбор техники"><div class="ishp31-pod__t">' +
+      '<h2>Нужна помощь в выборе?</h2>' +
       '</div>' +
-      '<a class="ishp31-pod__b" href="' + REQ + '">Подобрать технику за 1 минуту</a></section>';
+      '<a class="ishp31-pod__b" href="' + REQ + '">Подобрать технику</a></section>';
     if (cfg.fin) h += '<section class="ishp31-nf" aria-label="Не нашли нужное?"><span class="ishp31-nf__l">' + logo('ishp31-nf__lg', '#272B36', '#2B44C7') + '</span>' +
       '<div class="ishp31-nf__t"><h3>Не нашли нужное? Пришлите список</h3><p>Проработаем и ответим в день обращения.</p></div>' +
       '<div class="ishp31-ls" aria-hidden="true"><span>Ноутбук 15.6″ — 10 шт</span><span>Монитор 24″ — 10 шт</span><span>МФУ A4 — 2 шт</span><i class="ishp31-ok"><svg viewBox="0 0 20 20"><circle cx="10" cy="10" r="10" fill="#1FA971"/><path d="m5.6 10.4 3 3 5.8-6.4" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>КП готово</i></div>' +

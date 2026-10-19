@@ -588,3 +588,6 @@ html.ishp35-on .ishp35-rb{display:none}
   html.ishp35-on .ishp35-rb__g+.ishp35-rb__g,html.ishp35-on .ishp35-rb__i--c{display:none}
   html.ishp35-on .ishp35-rb::before,html.ishp35-on .ishp35-rb::after{display:none}
 }
+
+/* 19.10.2026 (Асхат «шире»): на телефоне шапка раздела/группы по ширине кнопки «Фильтры» - контейнер .вн-а__об даёт ~40px сбоку, список ~20px */
+@media screen and (max-width:760px){html.ishp35-on .вн-а__об>.ishp35-hero{margin-left:-20px;margin-right:-20px}}

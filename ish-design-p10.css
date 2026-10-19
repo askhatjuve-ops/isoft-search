@@ -1,4 +1,4 @@
-/* ish-design-p10.css  v1  (16.10.2026)  П10 «карточка товара: внешний слой». Подключает ish-design-p10.js (<link id="ishd-p10">).
+/* ish-design-p10.css  v9.1 (кандидат 19.10.2026, v9.1 колонки по верху и низу, согласие под обеими колонками: /podbor в два столбца, без пустой полосы, без дубля подсказки БИН/ИИН; p4: P10V 8 -> 9)  v1  (16.10.2026)  П10 «карточка товара: внешний слой». Подключает ish-design-p10.js (<link id="ishd-p10">).
    Всё под html.ishp10-on (класс ставит js) — без js файл ничего не меняет. Исключение: Ик5 (ошибки полей) на любой странице, куда подгружен файл — тоже под html.ishp10-on.
    Откат: пустой файл на Pages (js увидит, что переменной --ishp10 нет, и ничего не построит).
    Шрифт TildaSans (--f из фрагмента), цвета те же: кобальт #2B44C7, чернила #171923, серый #565D70. «В корзину» не перекрашивается. Минимум 12 px. */
@@ -135,4 +135,30 @@ html.ishp10-on .ishp10-chip.is-on{border-color:var(--p10-k);background:#EEF1FC;c
 @media screen and (max-width:640px){
   html.ishp10-on .ishp10-brand{padding:15px 1px;margin:-15px -1px}
   html.ishp10-on .ishp10-crumbs a{padding:13px 0;margin:-7px 0}
+}
+
+/* v9 (19.10): /podbor — форма в два столбца на компьютере, без пустой полосы над формой, без дубля подсказки под БИН/ИИН.
+   Только блок #rec3729382103 (форма) и #rec4304430103 (шапка страницы); разметка Tilda не меняется, порядок Tab = порядок в разметке. */
+/* без пустой полосы: общий каркас .вн держит min-height:52vh (ish-design-vn.css), для шапки /podbor из одной плашки это ~190 px пустоты */
+#rec4304430103 .вн{min-height:0}
+/* подсказка под БИН/ИИН повторяет подпись над полем; плейсхолдер поля остаётся */
+#rec3729382103 .ishp28-hint{display:none}
+@media (min-width:981px){
+  #rec3729382103.t-rec_pt_105{padding-top:28px!important}
+  #rec3729382103 .t-container>.t-col{box-sizing:border-box;width:100%!important;max-width:none!important;margin-left:0!important;padding-left:20px!important;padding-right:20px!important}
+  #rec3729382103 .t-container>.t-col>div{max-width:none!important;width:100%!important}
+  #rec3729382103 form.t-form{box-sizing:border-box;max-width:1160px;margin:0 auto;padding:22px 28px 24px;column-count:2;column-gap:44px;column-fill:balance}
+  #rec3729382103 .t-form__inputsbox{display:contents}
+  #rec3729382103 form.t-form>*,#rec3729382103 .t-input-group{break-inside:avoid;-webkit-column-break-inside:avoid}
+  #rec3729382103 .t-input-group{margin-bottom:12px!important}
+  #rec3729382103 .pb-док{width:100%;box-sizing:border-box}
+  #rec3729382103 .pb-прим{margin:10px 0 14px}
+  #rec3729382103 .ishp10-topic{margin-bottom:14px}
+  /* левый столбец: вид документа, тема, компания, БИН/ИИН, контактное лицо, телефон; правый: почта, город, список, комментарий, согласие */
+  #rec3729382103 .t-input-group_ph{break-after:column;-webkit-column-break-after:always}
+  #rec3729382103 .t-input-group_ta textarea{min-height:0!important;height:96px!important}
+  #rec3729382103 .t-input-group_ta+.t-input-group_ta textarea{height:230px!important}
+  #rec3729382103 .t-input-group_cb{column-span:all;margin:6px 0 10px!important}
+  #rec3729382103 .t-form__errorbox-middle,#rec3729382103 .t-form__errorbox-bottom,#rec3729382103 .t-form__submit{column-span:all}
+  #rec3729382103 .t-form__submit{margin-top:6px}
 }

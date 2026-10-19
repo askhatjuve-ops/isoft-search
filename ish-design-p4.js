@@ -85,7 +85,7 @@
       ведёт();
     }
     if (!право.querySelector('.ishp-btn')) {
-      var b = el('<a class="ishp-btn" href="' + REQ + '">Запросить КП/счёт</a>');
+      var b = el('<a class="ishp-btn" href="' + REQ + '">Запросить счёт/КП</a>');
       var корзина = право.querySelector('.нш-корзина');
       право.insertBefore(b, корзина || null);
     }
@@ -293,7 +293,7 @@
   /* ───────── П24: мега-меню «Каталог» (Ш9): ish-design-p24.js (+ .css рядом), один раз ─────────
      Признак: десктоп (>=981) и есть блок шапки .нш-шапка с .нш-шапка-право; на телефоне и на карточке v8 (html.ishpg-on) не грузим.
      p24 сам строит кнопку и панель. Выключатель: window.ISH_P24_OFF = 1. Кэш: поменять P24V. */
-  var P24V = '2';
+  var P24V = '3';
   function p24() {
     if (W.ISH_P24_OFF || W.__ishP24 || D.getElementById('ishp-p24-js')) return true;
     if (!(W.matchMedia && W.matchMedia('(min-width:981px)').matches)) return true;

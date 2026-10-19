@@ -1,9 +1,9 @@
-/* ish-design-p8.js  v2.0  (C2 «Витрина, другой ритм», подготовка 16.10.2026; НЕ выложено на Pages)  П8 «блоки главной ниже первого экрана» b2b.isoft-shop.kz
+/* ish-design-p8.js  v2.1  (19.10.2026: «Почему мы» убрана, в «Коротко о нас» строка про цены, на телефоне цифры стопкой; НЕ выложено)  (C2 «Витрина, другой ритм», подготовка 16.10.2026; НЕ выложено на Pages)  П8 «блоки главной ниже первого экрана» b2b.isoft-shop.kz
    Грузится загрузчиком П4 (ish-design-p4.js) только на главной, по признаку «#лента .слайд». Сам подключает ish-design-p8.css рядом с собой.
    Что делает (только ДОБАВЛЯЕТ узлы с префиксом ishp8-, каждый раз проверяя, что такого ещё нет; родные узлы блока 4204120903 не переписывает):
      Г12  полоса фактов одной плашкой перед «Как оформить заказ»
      Г8   плитки разделов после «Как оформить заказ»: «Компьютеры» 2x2, «Торговое оборудование» широкая, наклон и блик при наведении
-     Г11  «Для кого», Г21 цифры (bento), Г18 «Почему мы» (bento), Г20 бренды кобальтовыми плитками с волной - после рядов товаров, перед «Не нашли нужное?»
+     Г11  «Для кого», Г21 цифры (bento; v2.1: строка «Цены видны сразу…» под заголовком, на телефоне ≤640 плитки стопкой со свайпом), Г18 «Почему мы» СНЯТА в v2.1, Г20 бренды кобальтовыми плитками с волной - после рядов товаров, перед «Не нашли нужное?»
      Шаги «Как оформить заказ» (ступени), полки «Ноутбуки/Мониторы» (подпись «NN / РАЗДЕЛ», скругления, тени) - только CSS (html.ishp8-on).
    Выключатели: window.ISH_P4_NO_P8 (до загрузчика) или window.ISH_P8_OFF. Не загрузился / ошибка - сайт как был.
    Уважает prefers-reduced-motion (без наклона, волны и появления). Тексты - подтверждённые факты (решения 15-16.10; «Из каталога» и «3 города самовывоза» подтверждены владельцем 16.10).
@@ -164,19 +164,71 @@
   }
 
   /* ───────── Г21 цифры (bento 5/4/3) ───────── */
+  var ЦЕННИК = '<svg class="ishp8-pi" viewBox="0 0 28 28" aria-hidden="true"><path d="M3.5 14.2V4.5h9.7l10.3 10.3-9.2 9.2z"/><circle cx="9" cy="10" r="1.6"/></svg>';
   function html_nums() {
-    return шапка('03', 'В цифрах', 'Коротко о нас') + '<div class="ishp8-nums">' +
+    return шапка('03', 'В цифрах', 'Коротко о нас') +
+      '<p class="ishp8-sub">' + ЦЕННИК + '<span><b>Цены видны сразу, без регистрации.</b></span></p><div class="ishp8-nums">' +
       обёртка('k1', '<span class="ishp8-lgw">' + лого('ishp8-lg', '#fff') + '</span><b>25</b><span>лет на рынке техники</span>', 6, 'div', 'ishp8-num') +
       обёртка('k2', '<b>14 000+</b><span>позиций в расширенном ассортименте</span>', 6, 'a', 'ishp8-num ishp8-num--a', '/assortiment') +
-      обёртка('k3', '<b>3</b><span>города самовывоза: Астана, Алматы, Актобе</span>', 6, 'div', 'ishp8-num') + '</div>';
+      обёртка('k3', '<b>3</b><span>города самовывоза: Астана, Алматы, Актобе</span>', 6, 'div', 'ishp8-num') + '</div>' +
+      '<div class="ishp8-cnt" aria-hidden="true"><b>1</b> / 3</div>';
   }
 
-  /* ───────── Г18 «Почему мы» (bento 7/5, на всю ширину) ───────── */
-  function html_bento() {
-    return шапка('04', 'Почему мы', 'Как мы работаем с юридическими лицами и ИП') + '<div class="ishp8-bento">' +
-      обёртка('c-big', ДЕКО + '<b>Цены видны сразу, без регистрации</b><span>Каталог открыт: смотрите цену до звонка и заявки.</span>', 5, 'div', 'ishp8-bc ishp8-bc--big') +
-      обёртка('c-a', '<span class="ishp8-bx">' + ик('clock') + '</span><b>Ответ в день обращения</b><span>Наличие, срок, цена, аналог</span>', 8, 'div', 'ishp8-bc') +
-      обёртка('c-b', '<span class="ishp8-bx">' + ик('gov') + '</span><b>Госзакупки и тендеры</b><span>КП под тендер, договор поставки</span>', 8, 'div', 'ishp8-bc') + '</div>';
+  /* ───────── v2.1: цифры стопкой на телефоне (≤640): свайп влево/вправо, верхняя уходит в конец; без библиотек ───────── */
+  function стопка(корень) {
+    var сетка = корень.querySelector('.ishp8-nums');
+    if (!сетка || сетка.getAttribute('data-stk')) return;
+    сетка.setAttribute('data-stk', '1');
+    var порядок = [].slice.call(сетка.children), счёт = корень.querySelector('.ishp8-cnt b'), номер = 0, всего = порядок.length;
+    var mq = W.matchMedia('(max-width:640px)'), H = D.documentElement;
+    var т = function (w) { return w.firstChild; };               // .ishp8-ti
+    function показ() {
+      порядок.forEach(function (w, i) {
+        var ti = т(w), p = Math.min(i, 2);
+        w.style.zIndex = 10 - i;
+        ti.style.transition = ''; ti.style.pointerEvents = i ? 'none' : '';
+        ti.style.transformOrigin = '50% 100%';
+        ti.style.opacity = i > 2 ? '0' : '';
+        ti.style.transform = i ? 'translateY(' + p * 13 + 'px) scale(' + (1 - p * .06) + ')' : 'none';
+      });
+      if (счёт) счёт.textContent = номер + 1;
+    }
+    function сброс() {
+      порядок.forEach(function (w) { var ti = т(w); w.style.zIndex = ''; ['transition', 'pointerEvents', 'transformOrigin', 'opacity', 'transform'].forEach(function (k) { ti.style[k] = ''; }); });
+    }
+    function режим() { if (mq.matches) { H.classList.add('ishp8-stk'); показ(); } else { H.classList.remove('ishp8-stk'); сброс(); } }
+    var x0 = 0, dx = 0, тянем = false, двинули = false;
+    сетка.addEventListener('dragstart', function (e) { if (mq.matches) e.preventDefault(); });
+    сетка.addEventListener('pointerdown', function (e) {
+      if (!mq.matches || !порядок[0].contains(e.target)) return;
+      тянем = true; двинули = false; x0 = e.clientX; dx = 0; т(порядок[0]).style.transition = 'none';
+      try { сетка.setPointerCapture(e.pointerId); } catch (er) {}
+    });
+    сетка.addEventListener('pointermove', function (e) {
+      if (!тянем) return;
+      dx = e.clientX - x0; if (Math.abs(dx) > 6) двинули = true;
+      var ti = т(порядок[0]);
+      ti.style.transform = 'translateX(' + dx + 'px) rotate(' + dx / 22 + 'deg)';
+      ti.style.opacity = 1 - Math.min(.5, Math.abs(dx) / 500);
+    });
+    function конец() {
+      if (!тянем) return; тянем = false;
+      var w = порядок[0], ti = т(w);
+      if (Math.abs(dx) > 60) {
+        var d = dx > 0 ? 1 : -1;
+        ti.style.transition = RM ? 'none' : 'transform .26s ease-out,opacity .26s';
+        ti.style.transform = 'translateX(' + d * 130 + '%) rotate(' + d * 12 + 'deg)'; ti.style.opacity = '0';
+        setTimeout(function () {
+          порядок.push(порядок.shift()); номер = (номер + 1) % всего;
+          ti.style.transition = 'none'; показ(); ti.offsetHeight; ti.style.transition = '';
+        }, RM ? 0 : 270);
+      } else показ();
+    }
+    сетка.addEventListener('pointerup', конец); сетка.addEventListener('pointercancel', конец);
+    /* ссылка «14 000+»: после жеста перелистывания переход не нужен */
+    сетка.addEventListener('click', function (e) { if (двинули) { e.preventDefault(); e.stopPropagation(); двинули = false; } }, true);
+    if (mq.addEventListener) mq.addEventListener('change', режим); else mq.addListener(режим);
+    режим();
   }
 
   /* ───────── Г20 бренды: кобальтовые плитки с белыми знаками ───────── */
@@ -230,6 +282,7 @@
       [].forEach.call(корень.querySelectorAll('[data-tilt]'), function (el) {
         var m = +el.getAttribute('data-tilt');
         el.addEventListener('pointermove', function (e) {
+          if (D.documentElement.classList.contains('ishp8-stk') && el.closest('.ishp8-nums')) return;   // v2.1: на телефоне цифры стопкой, наклона нет
           var r = el.getBoundingClientRect(), x = (e.clientX - r.left) / r.width, y = (e.clientY - r.top) / r.height;
           el.classList.add('on');
           el.style.setProperty('--rx', ((.5 - y) * m).toFixed(2) + 'deg');
@@ -322,7 +375,7 @@
   var шаги_полок = 0;
   function полки() {
     if (D.getElementById('ishp8-g')) return true;
-    var хост = D.getElementById('ряды'), бренды = D.getElementById('ishp8-f'), перед = D.getElementById('ishp8-e');
+    var хост = D.getElementById('ряды'), бренды = D.getElementById('ishp8-f'), перед = D.getElementById('ishp8-d');
     if (!хост || !бренды || !перед || бренды.parentNode !== перед.parentNode || !хост.parentNode) return false;
     var места = [].slice.call(хост.children);
     if (!места.length) return false;
@@ -372,11 +425,12 @@
     /* остальное - после рядов товаров, перед «Не нашли нужное?» */
     if (!D.getElementById('ishp8-c')) {
       [['ishp8-c', 'ishp8-sec--who', html_who], ['ishp8-d', 'ishp8-sec--nums', html_nums],
-       ['ishp8-e', 'ishp8-sec--bento', html_bento], ['ishp8-f', 'ishp8-sec--brands', html_brands]].forEach(function (x) {
+       ['ishp8-f', 'ishp8-sec--brands', html_brands]].forEach(function (x) {
         var s = sec(x[0], x[1], x[2]()); родитель.insertBefore(s, запрос); новые.push(s);
       });
     }
     новые.forEach(подогнать);
+    try { var нс = D.getElementById('ishp8-d'); if (нс) стопка(нс); } catch (e) {}
     try { слить_запрос(); } catch (e) {}
     D.documentElement.classList.add('ishp8-on');
     try { анимации(); } catch (e) {}

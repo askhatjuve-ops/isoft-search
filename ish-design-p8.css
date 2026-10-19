@@ -1,4 +1,4 @@
-/* ish-design-p8.css  v2.0  (C2 «Витрина, другой ритм», подготовка 16.10.2026; НЕ выложено)  П8 «блоки главной ниже первого экрана»
+/* ish-design-p8.css  v2.1  (19.10.2026: см. ish-design-p8.js v2.1; НЕ выложено)  (C2 «Витрина, другой ритм», подготовка 16.10.2026; НЕ выложено)  П8 «блоки главной ниже первого экрана»
    Подключает ish-design-p8.js (рядом с собой). Откат: пустой файл на Pages. Шрифт TildaSans, фон страницы #F5F3EE, акцент - кобальт #2B44C7, графит #1E2430.
    Всё под .ishp8-* или html.ishp8-on - верх сайта (шапка, поиск, «Каталог», слайдер) не затрагивается. Чужие правила блока 4204120903 перекрываются только
    в разделах «ШАГИ» и «ПОЛКИ». Размеры текста не меньше 12px. На 390 горизонтальной прокрутки нет. */
@@ -551,3 +551,18 @@ html.ishp8-on #запросБлок .ishp8-cur{background:var(--p8-cobalt)}
   .ishp8-who>.w2 .ishp8-go,.ishp8-who>.w3 .ishp8-go{display:inline-flex;align-items:center;min-height:44px;margin-bottom:-8px}
   html.ishp8-on body #allrecords #ishp8-g #ряды .ткупить{height:44px!important;min-height:44px}
 }
+
+/* ───────── v2.1 (19.10): «Коротко о нас» - строка про цены; «Почему мы» снята; на телефоне цифры стопкой ───────── */
+.ishp8-sub{margin:-12px 0 22px;display:flex;align-items:center;gap:10px;font:500 16px/1.4 var(--p8-f);color:var(--p8-mut)}
+.ishp8-sub b{color:var(--p8-cobalt);font-weight:800}
+.ishp8-pi{width:22px;height:22px;flex:none;fill:none;stroke:var(--p8-cobalt);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.ishp8-cnt{display:none}
+@media (max-width:640px){
+  .ishp8-sub{font-size:15px;align-items:flex-start;margin-top:-10px}.ishp8-sub .ishp8-pi{margin-top:2px}
+  html.ishp8-stk .ishp8-sec--nums .ishp8-nums{display:grid;grid-template-columns:minmax(0,1fr);gap:0;padding-bottom:30px;touch-action:pan-y}
+  html.ishp8-stk .ishp8-nums>.k1,html.ishp8-stk .ishp8-nums>.k2,html.ishp8-stk .ishp8-nums>.k3{grid-column:1;grid-row:1}
+  html.ishp8-stk .ishp8-nums .ishp8-ti{touch-action:pan-y;user-select:none;-webkit-user-select:none;transition:transform .35s cubic-bezier(.2,.8,.2,1),opacity .3s;box-shadow:0 14px 26px -16px rgba(23,25,35,.5);-webkit-user-drag:none}
+  html.ishp8-stk .ishp8-cnt{display:block;text-align:center;font:700 13px/1 var(--p8-f);color:var(--p8-mut);letter-spacing:.04em}
+  html.ishp8-stk .ishp8-cnt b{color:var(--p8-cobalt)}
+}
+@media (prefers-reduced-motion:reduce){html.ishp8-stk .ishp8-nums .ishp8-ti{transition:none}}

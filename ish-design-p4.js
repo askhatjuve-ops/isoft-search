@@ -505,6 +505,44 @@
   }
   /* Г1: и при data-m="header" (решение владельца 16.10); выключатель window.ISH_P4_NO_HERO; на странице без слайдера hero() ничего не делает */
   if ((has('hero') || has('header')) && !W.ISH_P4_NO_HERO) until(hero);
+  /* 19.10: подвал - убрать колонку «Покупателям», «Документы и условия» -> «Покупателям», текст под логотипом короче.
+     Родной блок Tilda не правим (потребовал бы переопубликовать все страницы): подмена DOM после загрузки.
+     Охранник: меняем, только если тексты и ссылки совпали с ожидаемыми. Два подвала: десктоп .нп-подвал-верх (h5, >=981) и мобильный .isoft-foot__in (h4, <=980). */
+  function footerFix() {
+    var roots = D.querySelectorAll('.нп-подвал-верх, .isoft-foot__in');
+    if (!roots.length) return false;
+    var OKH = { '/#catalog': 1, '/dlya-organizacij': 1, '/podbor': 1 };
+    function low(s) { return String(s || '').replace(/\s+/g, ' ').trim().toLowerCase(); }
+    for (var r = 0; r < roots.length; r++) {
+      var root = roots[r];
+      if (root.getAttribute('data-ishfoot') === '1') continue;
+      var buy = null, doc = null, hh = root.querySelectorAll('h4, h5');
+      for (var i = 0; i < hh.length; i++) {
+        var tx = low(hh[i].textContent), col = hh[i].parentNode;
+        if (col.parentNode !== root && !(col.parentNode && col.parentNode.parentNode === root)) continue;
+        if (tx === 'покупателям' && !buy) buy = hh[i];
+        else if (tx === 'документы и условия' && !doc) doc = hh[i];
+      }
+      if (!buy || !doc) continue;                     /* уже правили или разметка другая - не трогаем */
+      var links = buy.parentNode.querySelectorAll('a'), safe = links.length > 0;
+      for (var k = 0; k < links.length; k++) if (!OKH[links[k].getAttribute('href')]) safe = false;
+      if (!safe) continue;
+      buy.parentNode.parentNode.removeChild(buy.parentNode);
+      var nodes = doc.childNodes;
+      for (var n = 0; n < nodes.length; n++) {
+        if (nodes[n].nodeType === 3 && low(nodes[n].nodeValue) === 'документы и условия') { nodes[n].nodeValue = 'Покупателям'; break; }
+      }
+      if (root.classList.contains('нп-подвал-верх')) root.style.setProperty('grid-template-columns', '1.2fr 1fr 1fr 1.1fr', 'important');
+      root.setAttribute('data-ishfoot', '1');
+    }
+    var about = D.querySelectorAll('.нп-подвал-о');
+    for (var a = 0; a < about.length; a++) {
+      if (low(about[a].textContent) === 'компьютерная и офисная техника для юрлиц и ип: счёт на почту, бесплатная доставка по всему казахстану.')
+        about[a].textContent = 'Компьютерная и офисная техника для юрлиц, бесплатная доставка по всему Казахстану.';
+    }
+    return true;
+  }
+  until(footerFix);
   p6wait();
   p8wait();
   p9wait();

@@ -1,8 +1,8 @@
-/* ish-design-p37.js  v1.1.1 (19.10: IMG 47 разделов)  v1.1 (19.10: быстрый доступ - 2 тонкие строки)  v1.0  (кандидат 17.10.2026, волна 3 «хвосты» C2; НЕ выложено)  П37 «хвосты в стиле главной»
+/* ish-design-p37.js  v1.2 (19.10: один блок «связь» - телефон, режим, «Не нашли нужное? Отправьте список →»; значки WhatsApp/Telegram убраны, строка оболочки скрыта)  v1.1 (19.10: быстрый доступ - 2 тонкие строки)  v1.0  (кандидат 17.10.2026, волна 3 «хвосты» C2; НЕ выложено)  П37 «хвосты в стиле главной»
    Внешний слой. Блоки Tilda НЕ пишет. Подгружает ish-design-p37.css с того же адреса. Выключатель до загрузки: window.ISH_P37_OFF = 1.
    Что делает (вид - в css, здесь только то, чего css не умеет):
      1. Мобильное меню (оболочка, экран «Каталог товаров», #ishЭкран): над списком разделов - 4 быстрых пункта со значками в кобальтовых квадратах,
-        под списком - карточка «телефон + WhatsApp + Telegram». Узлы с классами .ishp37-*; чужую разметку не трогает; оболочка перерисует экран - дорисуем заново.
+        под списком - один блок «связь»: телефон (tel:), режим работы и внутренняя строка «Не нашли нужное? Отправьте список →» (нативная строка оболочки .действие[data-список] прячется css, её текст берём оттуда; клик идёт тем же data-список). Узлы с классами .ishp37-*; чужую разметку не трогает; оболочка перерисует экран - дорисуем заново.
      2. Шторка фильтров на телефоне: на кнопку «Показать товары» (.вн-моб-пок) пишет «Показать N», если число известно надёжно (иначе текст не меняется).
      3. Мега-меню: поверх разметки p24 строит «слева группы, справа разделы мини-плитками с фото» (разметка p24 остаётся, прячется только сетка колонок).
      4. /assortiment: в iframe#isoft-catalog-frame (тот же origin) подключает ish-design-p37a.css - оформление приложения в стиле главной. Приложение и ish-assort.js не меняются.
@@ -33,8 +33,6 @@
     dl: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 6h11v10H2zM13 9h4l4 3v4h-8"/><circle cx="6.5" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></svg>',
     ch: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 5 7 7-7 7"/></svg>',
     ph: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>',
-    wa: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21l1.6-4.7A8.5 8.5 0 1 1 8 19.5z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1.3-1.3-2-1-1 .7a3.6 3.6 0 0 1-1.9-1.9l.7-1-1-2z"/></svg>',
-    tg: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21.5 2.8 2.9 10.1c-.8.3-.8 1.4 0 1.7l4.6 1.6 1.8 5.6c.2.7 1 .8 1.5.3l2.5-2.4 4.7 3.5c.6.4 1.4.1 1.6-.6L22.9 4.2c.2-.8-.6-1.7-1.4-1.4z"/><path d="m9.5 13.4 8.2-6.2-6.4 7.3"/></svg>'
   };
   /* 19.10.2026 (Асхат): из 4 быстрых пунктов оставлены 2 тонкие строки - КП/счёт и расширенный ассортимент;
      «Для организаций» и «Доставка и оплата» повторяют меню и главную - убраны. */
@@ -50,10 +48,22 @@
     });
     return h + '</div><div class="ishp37-sub"><b>01</b> / Разделы каталога</div>';
   }
-  function contactHtml() {
-    return '<a class="ishp37-tel" href="tel:' + TEL + '"><b>' + PHONE + '</b><span>Пн–Вс 9:00–18:00 · звонок и счёт в день обращения</span></a>' +
-      '<a class="ishp37-m" href="https://wa.me/77758818531" target="_blank" rel="noopener" aria-label="Написать в WhatsApp">' + IC.wa + '</a>' +
-      '<a class="ishp37-m" href="https://t.me/+77758818531" target="_blank" rel="noopener" aria-label="Написать в Telegram">' + IC.tg + '</a>';
+  /* вариант компоновки блока «связь»: 1 (по умолчанию) - телефон сверху, строка-ссылка под линией; 2 - телефон + кобальтовая кнопка-трубка, строка плиткой; 3 - компактно, «СВЯЗЬ», стрелка в тексте */
+  var CT_VAR = parseInt(W.ISH_P37_CT_VAR, 10) || 1;
+  function origText(ek) {
+    /* текст и цель берём у строки оболочки .действие[data-список]; её саму не удаляем (скрыта css) */
+    var o = q('.действие[data-список]', ek), t = o && q('.т', o), b = t && q('b', t), l1 = '', l2 = '';
+    if (t) { l1 = (t.firstChild && t.firstChild.nodeType === 3 ? t.firstChild.nodeValue : '').replace(/\s+/g, ' ').trim(); l2 = b ? b.textContent.trim() : ''; }
+    return [l1 || 'Не нашли нужное?', l2 || 'Отправьте список'];
+  }
+  function contactHtml(ek) {
+    var o = origText(ek), v = CT_VAR;
+    var tel = '<a class="ishp37-tel" href="tel:' + TEL + '"><b>' + PHONE + '</b><span>Пн–Вс 9:00–18:00 · звонок и счёт в день обращения</span></a>';
+    var ls = '<button type="button" class="ishp37-ls" data-список="1"><span class="ishp37-lt">' + esc(o[0]) + ' <b>' + esc(o[1]) + (v === 3 ? ' →' : '') + '</b></span>' +
+      (v === 3 ? '' : '<span class="ishp37-qs">' + IC.ch + '</span>') + '</button>';
+    if (v === 2) return '<div class="ishp37-hd">' + tel + '<a class="ishp37-call" href="tel:' + TEL + '" aria-label="Позвонить">' + IC.ph + '</a></div>' + ls;
+    if (v === 3) return '<div class="ishp37-kick">Связь</div>' + tel + ls;
+    return tel + ls;
   }
   var busy = false;
   function menu() {
@@ -68,7 +78,7 @@
         list.parentNode.insertBefore(w, list);
       }
       if (!q('.ishp37-ct', ek)) {
-        var c = D.createElement('div'); c.className = 'ishp37-ct'; c.innerHTML = contactHtml();
+        var c = D.createElement('div'); c.className = 'ishp37-ct ishp37-ct--v' + CT_VAR; c.innerHTML = contactHtml(ek);
         list.parentNode.insertBefore(c, list.nextSibling);
       }
     } catch (e) {}

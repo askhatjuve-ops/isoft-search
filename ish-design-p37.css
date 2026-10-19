@@ -1,4 +1,4 @@
-/* ish-design-p37.css  v1.0  (кандидат 17.10.2026, волна 3 «хвосты» C2; НЕ выложено)  П37: мега-меню каталога (p24), мобильное меню-шторка (оболочка), кнопки WhatsApp/Telegram (p22), шторка фильтров на телефоне (p6).
+/* ish-design-p37.css  v1.2 (19.10: блок «связь» вместо карточки с мессенджерами; варианты --v1/--v2/--v3)  v1.0  (кандидат 17.10.2026, волна 3 «хвосты» C2; НЕ выложено)  П37: мега-меню каталога (p24), мобильное меню-шторка (оболочка), кнопки WhatsApp/Telegram (p22), шторка фильтров на телефоне (p6).
    Подключает ish-design-p37.js (рядом с собой). Откат: пустой файл на Pages или window.ISH_P37_OFF = 1.
    Стиль главной C2 (p8): TildaSans, фон #F5F3EE, кобальт #2B44C7, светло-голубые #E7EAFB/#EEF1FD, скругление 28/22/18/14, мягкая тень, индиго только для карточек-призывов.
    Чужие файлы не правятся: только перекрытие по специфичности (html body ... и лишний класс у !important-правил страницы). Текст не меньше 12px, на 390 без горизонтальной прокрутки. */
@@ -68,13 +68,33 @@ html body #ishЭкран .шев svg{width:15px;height:15px}
 .ishp37-q--thin .ishp37-qs svg{width:13px;height:13px}
 .ishp37-sub{margin:4px 18px 10px;font:700 12px/1.2 var(--p37-f);letter-spacing:.12em;text-transform:uppercase;color:var(--p37-mut)}
 .ishp37-sub b{color:var(--p37-k);font-weight:700}
-/* внизу: телефон и мессенджеры */
-.ishp37-ct{display:grid;grid-template-columns:minmax(0,1fr) auto auto;align-items:center;gap:10px;margin:16px 14px 0;padding:14px 14px 14px 18px;border-radius:22px;background:#fff;box-shadow:var(--p37-sh);font-family:var(--p37-f)}
-.ishp37-ct a.ishp37-tel,.ishp37-ct a.ishp37-tel:visited{display:block;color:var(--p37-ink);text-decoration:none}
+/* внизу: один блок «связь» (19.10): телефон, режим, внутренняя строка «Не нашли нужное? Отправьте список →».
+   Белая плашка с тенью и радиусом 22, без обводки. Нативная строка оболочки (.действие, пунктирная, как раздел каталога) прячется, когда блок уже есть. */
+html body #ishЭкран .ishp37-ct ~ .действие[data-список]{display:none}
+.ishp37-ct{display:block;margin:16px 14px 0;padding:16px 18px 6px;border-radius:22px;background:#fff;box-shadow:var(--p37-sh);font-family:var(--p37-f)}
+.ishp37-ct a.ishp37-tel,.ishp37-ct a.ishp37-tel:visited{display:block;min-height:44px;color:var(--p37-ink);text-decoration:none}
 .ishp37-tel b{display:block;font:800 19px/1.2 var(--p37-f);letter-spacing:-.01em}
 .ishp37-tel span{display:block;margin-top:2px;font:400 12.5px/1.3 var(--p37-f);color:var(--p37-mut)}
-.ishp37-ct a.ishp37-m,.ishp37-ct a.ishp37-m:visited{display:grid;place-items:center;width:46px;height:46px;border-radius:50%;background:var(--p37-soft);color:var(--p37-k);box-shadow:0 8px 16px -10px rgba(43,68,199,.6)}
-.ishp37-m svg{width:22px;height:22px;display:block}
+html body #ishЭкран .ishp37-ct button.ishp37-ls{display:grid;grid-template-columns:minmax(0,1fr) 28px;align-items:center;gap:10px;box-sizing:border-box;width:100%;min-height:48px;margin:0;padding:6px 0;border:0;border-radius:0;background:none;color:var(--p37-ink);font:400 14px/1.3 var(--p37-f);text-align:left;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.ishp37-lt{color:var(--p37-mut)}
+.ishp37-lt b{font-weight:700;color:var(--p37-ink)}
+.ishp37-ls .ishp37-qs{display:grid;place-items:center;width:28px;height:28px;border-radius:50%;background:var(--p37-soft2);color:var(--p37-k)}
+.ishp37-ls .ishp37-qs svg{width:14px;height:14px}
+.ishp37-ls:active .ishp37-qs{background:var(--p37-soft)}
+/* вариант 1: телефон, под ним тонкая линия-разделитель и строка-ссылка */
+html body #ishЭкран .ishp37-ct--v1 button.ishp37-ls{margin-top:12px;padding-top:10px;border-top:1px solid #EEEAE0}
+/* вариант 2: телефон слева и одна залитая кнопка-трубка справа; строка-ссылка - мягкая плитка внутри плашки */
+.ishp37-ct--v2{padding:16px 14px 14px 18px}
+.ishp37-hd{display:grid;grid-template-columns:minmax(0,1fr) 46px;align-items:center;gap:12px}
+.ishp37-ct a.ishp37-call,.ishp37-ct a.ishp37-call:visited{display:grid;place-items:center;width:46px;height:46px;border-radius:50%;background:linear-gradient(160deg,#4B63E8,#2B44C7 60%,#2036A8);color:#fff;box-shadow:0 10px 18px -10px rgba(43,68,199,.9)}
+.ishp37-call svg{width:21px;height:21px;display:block}
+html body #ishЭкран .ishp37-ct--v2 button.ishp37-ls{margin-top:14px;padding:8px 10px 8px 14px;border-radius:14px;background:var(--p37-soft2)}
+.ishp37-ct--v2 .ishp37-ls .ishp37-qs{background:#fff}
+/* вариант 3: компактно, подпись «СВЯЗЬ», стрелка в тексте */
+.ishp37-ct--v3{padding:14px 18px 4px}
+.ishp37-kick{margin:0 0 4px;font:700 12px/1.2 var(--p37-f);letter-spacing:.12em;text-transform:uppercase;color:var(--p37-mut)}
+html body #ishЭкран .ishp37-ct--v3 button.ishp37-ls{display:block;min-height:44px;padding:10px 0 8px;border-top:1px solid #EEEAE0}
+.ishp37-ct--v3 .ishp37-lt b{color:var(--p37-k)}
 /* нижняя панель: активный раздел на светло-голубой подложке */
 html body #ishТаб button.вкл .обёртка{display:grid;place-items:center;width:52px;height:30px;border-radius:15px;background:var(--p37-soft);color:var(--p37-k)}
 

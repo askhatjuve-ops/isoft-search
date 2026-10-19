@@ -314,7 +314,7 @@
     s.id = 'ishp35-low';
     s.innerHTML = '<div class="ishp35-wrap">' + (th ? '<section class="ishp35-sec">' + eb('02', head) + '<div class="ishp35-tiles">' + th + '</div></section>' : '') +
       '<section class="ishp23-cta ishp35-cta" aria-label="Подбор техники"><div class="ishp23-cta__in"><div class="ishp23-cta__t"><div class="ishp23-eb">Подбор техники</div>' +
-      '<h2 class="ishp23-cta__h">Не знаете, что выбрать? Опишите задачу</h2>' +
+      '<h2 class="ishp23-cta__h">Не знаете, что выбрать?</h2>' +
       '</div>' +
       '<button type="button" class="ishp23-cta__b" data-ishp23-open>Подобрать технику за 1 минуту</button></div></section></div>';
     if (before) before.parentNode.insertBefore(s, before); else anchor.after(s);

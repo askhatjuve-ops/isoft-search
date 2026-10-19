@@ -127,7 +127,7 @@
     s.id = 'ishp31-low';
     var h = '';
     if (cfg.pod) h += '<section class="ishp31-pod" aria-label="Подбор техники"><div class="ishp31-pod__t"><div class="ishp31-pod__eb">Подбор техники</div>' +
-      '<h2>Не знаете, что выбрать? Опишите задачу</h2>' +
+      '<h2>Не знаете, что выбрать?</h2>' +
       '</div>' +
       '<a class="ishp31-pod__b" href="' + REQ + '">Подобрать технику за 1 минуту</a></section>';
     if (cfg.fin) h += '<section class="ishp31-nf" aria-label="Не нашли нужное?"><span class="ishp31-nf__l">' + logo('ishp31-nf__lg', '#272B36', '#2B44C7') + '</span>' +

@@ -1,4 +1,4 @@
-/* ish-design-p8.css  v2.1  (19.10.2026: см. ish-design-p8.js v2.1; НЕ выложено)  (C2 «Витрина, другой ритм», подготовка 16.10.2026; НЕ выложено)  П8 «блоки главной ниже первого экрана»
+/* ish-design-p8.css  v2.2  (19.10.2026: см. ish-design-p8.js v2.2; НЕ выложено)  (C2 «Витрина, другой ритм», подготовка 16.10.2026; НЕ выложено)  П8 «блоки главной ниже первого экрана»
    Подключает ish-design-p8.js (рядом с собой). Откат: пустой файл на Pages. Шрифт TildaSans, фон страницы #F5F3EE, акцент - кобальт #2B44C7, графит #1E2430.
    Всё под .ishp8-* или html.ishp8-on - верх сайта (шапка, поиск, «Каталог», слайдер) не затрагивается. Чужие правила блока 4204120903 перекрываются только
    в разделах «ШАГИ» и «ПОЛКИ». Размеры текста не меньше 12px. На 390 горизонтальной прокрутки нет. */
@@ -566,3 +566,76 @@ html.ishp8-on #запросБлок .ishp8-cur{background:var(--p8-cobalt)}
   html.ishp8-stk .ishp8-cnt b{color:var(--p8-cobalt)}
 }
 @media (prefers-reduced-motion:reduce){html.ishp8-stk .ishp8-nums .ishp8-ti{transition:none}}
+/* ───────── v2.2 (19.10): телефон ≤640. «Как оформить заказ» - ряды по очереди + машинка; «Для кого» - три чипа и панель. Компьютер не затронут ───────── */
+.ishp8-rail,.ishp8-mach,.ishp8-chips{display:none}
+@media (max-width:640px){
+  /* ШАГИ: белые ряды «значок - название - номер»; значки кобальт / индиго / графит */
+  html.ishp8-on body #allrecords .в73.в73{position:relative;row-gap:10px}
+  html.ishp8-on body #allrecords .в73.в73 .шаг.шаг{display:grid!important;grid-template-columns:46px minmax(0,1fr) auto;grid-template-rows:auto auto;column-gap:14px;row-gap:0;align-items:center;margin:0 0 0 22px;width:auto!important;max-width:none!important;padding:12px 16px;min-height:0!important;border:0;border-radius:20px;background:#fff!important;color:var(--p8-ink);box-shadow:var(--p8-sh)}
+  html.ishp8-on body #allrecords .в73.в73 .шаг.шаг .у.у{grid-column:1;grid-row:1/3;order:0;position:relative;display:grid!important;place-items:center;width:46px!important;height:46px!important;margin:0!important;padding:0!important;border-radius:14px!important;color:#fff;justify-self:start;text-align:center;border:0}
+  html.ishp8-on body #allrecords .в73.в73 .шаг.шаг.ш1 .у.у{background:linear-gradient(150deg,#4A63E6,#2B44C7 55%,#1A2A8C)!important;box-shadow:0 8px 16px -8px rgba(43,68,199,.6)!important}
+  html.ishp8-on body #allrecords .в73.в73 .шаг.шаг.ш2 .у.у{background:linear-gradient(135deg,#2B2F6B,#15173A)!important;box-shadow:0 8px 16px -8px rgba(21,23,58,.6)!important}
+  html.ishp8-on body #allrecords .в73.в73 .шаг.шаг.ш3 .у.у{background:linear-gradient(135deg,#2A3142,#161A24)!important;box-shadow:0 8px 16px -8px rgba(22,26,36,.6)!important}
+  html.ishp8-on body #allrecords .в73.в73 .шаг.шаг .у.у svg{display:block!important;width:27px;height:27px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+  html.ishp8-on body #allrecords .в73.в73 .шаг.шаг .у.у::after{content:""!important;position:absolute;inset:0;display:block;border-radius:inherit;opacity:0;pointer-events:none;font:inherit}
+  html.ishp8-on body #allrecords .в73.в73 .шаг.шаг .вх-верх.вх-верх{grid-column:2;grid-row:1;margin:0;font-size:16px;line-height:1.25;color:var(--p8-ink)!important;align-self:end!important}
+  html.ishp8-on body #allrecords .в73.в73 .шаг.шаг .низ.низ{grid-column:2;grid-row:2;margin:2px 0 0;font-size:13.5px!important;line-height:1.35;color:var(--p8-mut)!important;align-self:start!important}
+  html.ishp8-on body #allrecords .в73.в73 .шаг.шаг::after{grid-column:3;grid-row:1/3;justify-self:end;font:800 13px/1 var(--p8-f);letter-spacing:.06em;color:var(--p8-cobalt)}
+  html.ishp8-on body #allrecords .в73.в73 .шаг.ш1::after{content:"01"}
+  html.ishp8-on body #allrecords .в73.в73 .шаг.ш2::after{content:"02"}
+  html.ishp8-on body #allrecords .в73.в73 .шаг.ш3::after{content:"03"}
+
+  /* до начала показа (ставит скрипт, класс ishp8-m): ряды притушены, у последнего шага значка нет */
+  html.ishp8-on body #allrecords .в73.в73.ishp8-m:not(.ishp8-fin) .шаг.шаг:not(.on){opacity:.55;transform:translateY(8px)}
+  html.ishp8-on body #allrecords .в73.в73.ishp8-m .шаг.шаг{transition:opacity .5s,transform .5s}
+  html.ishp8-on body #allrecords .в73.в73.ishp8-m:not(.ishp8-fin) .шаг.шаг:not(.on)::after{color:#9CA1B2}
+  html.ishp8-on body #allrecords .в73.в73.ishp8-m:not(.ishp8-fin) .шаг.шаг:not(.on) .у.у{background:var(--p8-mist)!important;box-shadow:none!important;color:#8A8FA0}
+  html.ishp8-on body #allrecords .в73.в73.ishp8-m:not(.ishp8-fin) .шаг.ш3:not(.done) .у.у{background:var(--p8-mist)!important;box-shadow:none!important}
+  html.ishp8-on body #allrecords .в73.в73.ishp8-m:not(.ishp8-fin) .шаг.ш3:not(.done) .у.у svg{opacity:0}
+
+  /* рельс и машинка (узлы добавляет скрипт) */
+  html.ishp8-on body #allrecords .в73.ishp8-m .ishp8-rail{display:block;position:absolute;left:9.5px;top:var(--m-y1,0px);height:calc(var(--m-y3,0px) - var(--m-y1,0px));width:3px;z-index:1;pointer-events:none;background:radial-gradient(circle,#C3C8DA 1.4px,transparent 1.9px) 0 0/3px 8px repeat-y}
+  .ishp8-rail b{position:absolute;inset:0;transform-origin:50% 0;transform:scaleY(0);background:radial-gradient(circle,#2A3142 1.5px,transparent 2px) 0 0/3px 8px repeat-y}
+  html.ishp8-on body #allrecords .в73.ishp8-m.ishp8-fin .ishp8-rail b{transform:scaleY(1)!important}
+  html.ishp8-on body #allrecords .в73.ishp8-m .ishp8-mach{display:grid;position:absolute;left:0;top:0;z-index:4;width:46px;height:46px;border-radius:14px;place-items:center;pointer-events:none;color:#fff;opacity:0;transform:translate(-12px,0) scale(.56);transform-origin:50% 50%;
+    background:linear-gradient(135deg,#2A3142,#161A24);box-shadow:0 8px 16px -8px rgba(22,26,36,.6)}
+  .ishp8-mach svg{display:block;width:27px;height:27px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+
+  /* последний шаг: «встал на место» - короткий «бум» плитки и вспышка кольца */
+  html.ishp8-on body #allrecords .в73.в73 .шаг.ш3.pop .у.у{animation:ishp8-boom .45s cubic-bezier(.3,1.6,.5,1)}
+  html.ishp8-on body #allrecords .в73.в73 .шаг.ш3.pop .у.у::after{animation:ishp8-ringm .9s ease-out}
+  @keyframes ishp8-boom{0%{transform:scale(1)}35%{transform:scale(1.14)}100%{transform:scale(1)}}
+  @keyframes ishp8-ringm{0%{opacity:1;box-shadow:0 0 0 0 rgba(43,68,199,.55)}100%{opacity:0;box-shadow:0 0 0 16px rgba(43,68,199,0)}}
+  .ishp8-rt{display:none!important}
+
+  /* ДЛЯ КОГО: три чипа и панель под ними (вариант Д) */
+  html.ishp8-chp .ishp8-chips{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:0}
+  .ishp8-chip{display:flex;flex-direction:column;align-items:center;gap:8px;min-width:0;padding:12px 4px 10px;border:0;border-radius:18px;background:var(--p8-mist);color:#3A3F52;font:700 13px/1.2 var(--p8-f);cursor:pointer;transition:background .3s,transform .3s,box-shadow .3s;-webkit-tap-highlight-color:transparent}
+  .ishp8-ci{display:grid;place-items:center;width:42px;height:42px;border-radius:13px;background:#fff;transition:background .3s}
+  .ishp8-ci svg{width:28px;height:28px;fill:none;stroke:var(--p8-cobalt);stroke-width:2.06;stroke-linecap:round;stroke-linejoin:round;transition:stroke .3s}
+  .ishp8-chip.on{background:#fff;color:var(--p8-ink);transform:translateY(-3px);box-shadow:var(--p8-sh2)}
+  .ishp8-chip.on .ishp8-ci{background:linear-gradient(145deg,var(--p8-cb2),var(--p8-cobalt));animation:ishp8-cb .5s}
+  .ishp8-chip.on .ishp8-ci svg{stroke:#fff}
+  .ishp8-chip:focus-visible{outline:2px solid var(--p8-cobalt);outline-offset:2px}
+  @keyframes ishp8-cb{0%{transform:scale(.88)}60%{transform:scale(1.08)}100%{transform:none}}
+  html.ishp8-chp .ishp8-who{display:grid;grid-template-columns:minmax(0,1fr);gap:0;margin-top:14px}
+  html.ishp8-chp .ishp8-who>.ishp8-tw.ishp8-tw{grid-column:1;grid-row:1;opacity:0!important;visibility:hidden;transform:translateY(8px)!important;pointer-events:none;transition:opacity .35s,transform .35s,visibility 0s .35s}
+  html.ishp8-chp .ishp8-who>.ishp8-tw.cv{opacity:1!important;visibility:visible;transform:none!important;pointer-events:auto;transition:opacity .35s,transform .35s}
+  html.ishp8-chp .ishp8-who .ishp8-ti{height:auto}
+  html.ishp8-chp .ishp8-who .ishp8-wc{position:relative;min-height:0;padding:18px;gap:12px;border-radius:22px}
+  html.ishp8-chp .ishp8-who .ishp8-wc .ishp8-wi,html.ishp8-chp .ishp8-who .ishp8-wc>b{display:none}
+  html.ishp8-chp .ishp8-who .ishp8-wc p{margin:0;font-size:15px}
+  html.ishp8-chp .ishp8-who>.w1 .ishp8-wc p{font-size:15px}
+  html.ishp8-chp .ishp8-who .ishp8-wc::before{content:"";position:absolute;top:-6px;left:calc(100% / 6 * var(--x,1) - 8px);width:16px;height:16px;transform:rotate(45deg);border-radius:3px;background:#fff;z-index:0}
+  html.ishp8-chp .ishp8-who>.w1 .ishp8-wc::before{background:#4258E0}
+  html.ishp8-chp .ishp8-who>.w2 .ishp8-wc::before{--x:3}
+  html.ishp8-chp .ishp8-who>.w3 .ishp8-wc::before{--x:5;background:var(--p8-soft)}
+  html.ishp8-chp .ishp8-who .ishp8-wc>*{position:relative;z-index:1}
+  html.ishp8-chp .ishp8-who>.w2 .ishp8-go,html.ishp8-chp .ishp8-who>.w3 .ishp8-go{width:auto;justify-content:flex-start;align-self:flex-start}
+}
+@media (prefers-reduced-motion:reduce){
+  html.ishp8-on body #allrecords .в73.в73.ishp8-m .шаг.шаг{transition:none}
+  .ishp8-chip,.ishp8-ci,.ishp8-ci svg{transition:none}
+  .ishp8-chip.on .ishp8-ci{animation:none}
+  html.ishp8-chp .ishp8-who>.ishp8-tw.ishp8-tw,html.ishp8-chp .ishp8-who>.ishp8-tw.cv{transition:none}
+}

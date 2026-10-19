@@ -1,10 +1,11 @@
-/* ish-design-p8.js  v2.1  (19.10.2026: «Почему мы» убрана, в «Коротко о нас» строка про цены, на телефоне цифры стопкой; НЕ выложено)  (C2 «Витрина, другой ритм», подготовка 16.10.2026; НЕ выложено на Pages)  П8 «блоки главной ниже первого экрана» b2b.isoft-shop.kz
+/* ish-design-p8.js  v2.2  (19.10.2026: на телефоне ≤640 «Три шага» - подсветка по очереди и машинка, «Для кого» - три чипа и панель; v2.1: «Почему мы» убрана, в «Коротко о нас» строка про цены, на телефоне цифры стопкой; НЕ выложено)  (C2 «Витрина, другой ритм», подготовка 16.10.2026; НЕ выложено на Pages)  П8 «блоки главной ниже первого экрана» b2b.isoft-shop.kz
    Грузится загрузчиком П4 (ish-design-p4.js) только на главной, по признаку «#лента .слайд». Сам подключает ish-design-p8.css рядом с собой.
    Что делает (только ДОБАВЛЯЕТ узлы с префиксом ishp8-, каждый раз проверяя, что такого ещё нет; родные узлы блока 4204120903 не переписывает):
      Г12  полоса фактов одной плашкой перед «Как оформить заказ»
      Г8   плитки разделов после «Как оформить заказ»: «Компьютеры» 2x2, «Торговое оборудование» широкая, наклон и блик при наведении
      Г11  «Для кого», Г21 цифры (bento; v2.1: строка «Цены видны сразу…» под заголовком, на телефоне ≤640 плитки стопкой со свайпом), Г18 «Почему мы» СНЯТА в v2.1, Г20 бренды кобальтовыми плитками с волной - после рядов товаров, перед «Не нашли нужное?»
-     Шаги «Как оформить заказ» (ступени), полки «Ноутбуки/Мониторы» (подпись «NN / РАЗДЕЛ», скругления, тени) - только CSS (html.ishp8-on).
+     v2.2 (только ≤640 px, компьютер как был): «Как оформить заказ» - три ряда загораются по очереди, по точечной линии едет машинка и на последнем шаге становится его значком (один раз при входе в экран, при повторном входе снова); «Для кого» - три чипа со значками и одна панель под ними (смена по касанию, без автопереключения). Выключатели: ISH_P8_NO_MOB (оба блока), ISH_P8_NO_CARCHIPS (только чипы).
+    Шаги «Как оформить заказ» (ступени), полки «Ноутбуки/Мониторы» (подпись «NN / РАЗДЕЛ», скругления, тени) - только CSS (html.ishp8-on).
    Выключатели: window.ISH_P4_NO_P8 (до загрузчика) или window.ISH_P8_OFF. Не загрузился / ошибка - сайт как был.
    Уважает prefers-reduced-motion (без наклона, волны и появления). Тексты - подтверждённые факты (решения 15-16.10; «Из каталога» и «3 города самовывоза» подтверждены владельцем 16.10).
    Бренд-знаки - знаком/текстом без ссылок и без заявления о партнёрстве. */
@@ -16,6 +17,9 @@
   var tag = D.currentScript || D.querySelector('script[src*="ish-design-p8.js"]');
   var RM = false, FINE = false;
   try { RM = W.matchMedia('(prefers-reduced-motion: reduce)').matches; FINE = W.matchMedia('(hover:hover) and (pointer:fine)').matches; } catch (e) {}
+  var МОБ = { matches: false };
+  try { МОБ = W.matchMedia('(max-width:640px)'); } catch (e) {}
+  function при_смене(mq, f) { try { mq.addEventListener('change', f); } catch (e) { try { mq.addListener(f); } catch (e2) {} } }
 
   /* стили: рядом с собой, один раз */
   (function () {
@@ -430,6 +434,8 @@
     }
     новые.forEach(подогнать);
     try { var нс = D.getElementById('ishp8-d'); if (нс) стопка(нс); } catch (e) {}
+    try { кого_чипы(D.getElementById('ishp8-c')); } catch (e) {}
+    try { шаги_моб(); } catch (e) {}
     try { слить_запрос(); } catch (e) {}
     D.documentElement.classList.add('ishp8-on');
     try { анимации(); } catch (e) {}
@@ -530,6 +536,7 @@
     }
     var играет = false;
     function играть() {
+      if (МОБ.matches) return;                                  /* v2.2: на телефоне свой маршрут (шаги_моб) */
       cancelAnimationFrame(raf);
       var g = нарисовать(0); if (!g) return;
       tr.style.opacity = 1; rg.style.opacity = 0; кадр(0);
@@ -552,6 +559,144 @@
     var rt = 0;
     W.addEventListener('resize', function () { clearTimeout(rt); rt = setTimeout(function () { if (!играет && был) { нарисовать(1); tr.style.opacity = 0; } }, 250); });
     return true;
+  }
+
+  /* ───────── v2.2: телефон ≤640. Только добавляет классы и два узла; на компьютере (>640) всё снимается ───────── */
+
+  /* «Как оформить заказ»: ряды загораются по очереди, по точечной линии едет машинка и на последнем шаге становится его значком */
+  function шаги_моб() {
+    var хост = D.getElementById('полоса');
+    if (!хост || хост.getAttribute('data-ishm') || W.ISH_P8_NO_MOB) return;
+    хост.setAttribute('data-ishm', '1');
+    var b = null, строки = [], плитки = [], рельс = null, шкала = null, маш = null, io = null, тм = [], ран = false, играет = 0;
+    function после(ms, f) { тм.push(setTimeout(f, ms)); }
+    function стоп() {
+      тм.forEach(clearTimeout); тм = []; играет++;
+      try { if (маш && маш.getAnimations) маш.getAnimations().forEach(function (a) { a.cancel(); }); } catch (e) {}
+    }
+    function сброс() {
+      стоп();
+      if (!b) return;
+      b.classList.remove('ishp8-fin');
+      строки.forEach(function (r) { r.classList.remove('on', 'done', 'pop'); });
+      if (шкала) { шкала.style.transition = 'none'; шкала.style.transform = ''; }
+    }
+    function финал() {
+      стоп();
+      if (!b) return;
+      b.classList.add('ishp8-fin');
+      строки.forEach(function (r) { r.classList.add('on', 'done'); r.classList.remove('pop'); });
+      if (шкала) { шкала.style.transition = 'none'; шкала.style.transform = ''; }
+    }
+    function снять() {
+      стоп();
+      if (io) { io.disconnect(); io = null; }
+      if (b) {
+        b.classList.remove('ishp8-m', 'ishp8-fin');
+        строки.forEach(function (r) { r.classList.remove('on', 'done', 'pop'); });
+        [рельс, маш].forEach(function (n) { if (n && n.parentNode) n.parentNode.removeChild(n); });
+      }
+      b = null; строки = []; плитки = []; рельс = шкала = маш = null; ран = false;
+    }
+    function точки() {
+      if (!b) return null;
+      var R = b.getBoundingClientRect();
+      var т = плитки.map(function (e) { var q = e.getBoundingClientRect(); return { x: q.left - R.left + q.width / 2, y: q.top - R.top + q.height / 2 }; });
+      b.style.setProperty('--m-y1', т[0].y.toFixed(1) + 'px');
+      b.style.setProperty('--m-y3', т[2].y.toFixed(1) + 'px');
+      return т;
+    }
+    function играть() {
+      if (!b || !маш || !маш.animate) { финал(); return; }
+      сброс();
+      var т = точки(), id = ++играет;
+      if (!т) { финал(); return; }
+      var S0 = .56, ez = 'cubic-bezier(.45,0,.25,1)', T = 2650;
+      var f = function (ms) { return ms / T; };
+      var p = function (x, y, s, o, e) { return { transform: 'translate(' + (x - 23).toFixed(1) + 'px,' + (y - 23).toFixed(1) + 'px) scale(' + s + ')', opacity: o, easing: e || ez }; };
+      var k = [
+        p(11, т[0].y, .3, 0), p(11, т[0].y, S0, 1),
+        p(11, т[1].y, S0, 1), p(11, т[1].y, S0, 1),
+        p(11, т[2].y, S0, 1), p(11, т[2].y, S0, 1, 'cubic-bezier(.3,0,.2,1)'),
+        p(т[2].x, т[2].y, 1.14, 1, 'cubic-bezier(.3,0,.3,1)'), p(т[2].x, т[2].y, 1, 1)
+      ];
+      [0, f(250), f(1050), f(1150), f(1950), f(2100), f(2500), 1].forEach(function (o, i) { k[i].offset = o; });
+      строки[0].classList.add('on');
+      после(250, function () { if (шкала) { шкала.style.transition = 'transform .8s cubic-bezier(.45,0,.25,1)'; шкала.style.transform = 'scaleY(' + ((т[1].y - т[0].y) / (т[2].y - т[0].y)).toFixed(3) + ')'; } });
+      после(1050, function () { строки[1].classList.add('on'); });
+      после(1150, function () { if (шкала) шкала.style.transform = 'scaleY(1)'; });
+      после(1950, function () { строки[2].classList.add('on'); });
+      var a = маш.animate(k, { duration: T, fill: 'forwards' });
+      после(T, function () {
+        if (id !== играет) return;
+        строки[2].classList.add('done', 'pop');
+        a.cancel();                      /* машинка = значок: на месте, подмена в одном кадре */
+        b.classList.add('ishp8-fin');
+        после(1100, function () { строки[2].classList.remove('pop'); });
+      });
+    }
+    function собрать() {
+      снять();
+      if (!МОБ.matches) return;
+      var n = хост.querySelector('.в73');
+      if (!n || !n.querySelector('.шаг.ш3')) return;
+      b = n;
+      строки = ['.ш1', '.ш2', '.ш3'].map(function (s) { return b.querySelector('.шаг' + s); });
+      плитки = строки.map(function (r) { return r && r.querySelector('.у'); });
+      if (строки.some(function (r) { return !r; }) || плитки.some(function (r) { return !r; })) { b = null; return; }
+      рельс = D.createElement('span'); рельс.className = 'ishp8-rail'; рельс.setAttribute('aria-hidden', 'true'); рельс.innerHTML = '<b></b>';
+      шкала = рельс.firstChild;
+      маш = D.createElement('span'); маш.className = 'ishp8-mach'; маш.setAttribute('aria-hidden', 'true');
+      var sv = плитки[2].querySelector('svg'); маш.innerHTML = sv ? sv.outerHTML : '';
+      b.appendChild(рельс); b.appendChild(маш);
+      b.classList.add('ishp8-m');
+      точки();
+      if (RM || !('IntersectionObserver' in W)) { финал(); return; }
+      io = new IntersectionObserver(function (es) {
+        var e = es[es.length - 1];
+        if (e.intersectionRatio >= .4) { if (!ран) { ран = true; играть(); } }
+        else if (!e.isIntersecting && ран) { сброс(); ран = false; }   /* ушли с экрана - в исходное; при возврате сыграет снова */
+      }, { threshold: [0, .4] });
+      io.observe(b);
+    }
+    собрать();
+    try { new MutationObserver(function () { if (!хост.querySelector('.ishp8-m')) собрать(); }).observe(хост, { childList: true }); } catch (e) {}   /* вкладки «По запросу / Из каталога» перерисовывают блок */
+    при_смене(МОБ, собрать);
+    var rt = 0;
+    W.addEventListener('resize', function () { clearTimeout(rt); rt = setTimeout(function () { точки(); }, 200); });
+    try { if (D.fonts && D.fonts.ready) D.fonts.ready.then(function () { точки(); }); } catch (e) {}
+  }
+
+  /* «Для кого»: три чипа со значками и одна панель под ними (вариант Д). Карточки остаются на месте, на телефоне видна одна */
+  function кого_чипы(корень) {
+    if (!корень || корень.getAttribute('data-chp') || W.ISH_P8_NO_MOB || W.ISH_P8_NO_CARCHIPS) return;
+    var сетка = корень.querySelector('.ishp8-who');
+    if (!сетка) return;
+    корень.setAttribute('data-chp', '1');
+    var оболочки = [].slice.call(сетка.children), H = D.documentElement;
+    var имена = оболочки.map(function (w) { var x = w.querySelector('.ishp8-wc b'); return x ? x.textContent : ''; });
+    var чипы = D.createElement('div');
+    чипы.className = 'ishp8-chips'; чипы.setAttribute('role', 'tablist');
+    чипы.innerHTML = оболочки.map(function (w, i) {
+      var sv = w.querySelector('.ishp8-wi');
+      return '<button type="button" class="ishp8-chip" role="tab" aria-selected="false" data-i="' + i + '"><span class="ishp8-ci"><svg viewBox="0 0 34 34" aria-hidden="true">' + (sv ? sv.innerHTML : '') + '</svg></span>' + имена[i] + '</button>';
+    }).join('');
+    сетка.parentNode.insertBefore(чипы, сетка);
+    var кн = [].slice.call(чипы.children), тек = 0;
+    function выбрать(i) {
+      тек = i;
+      кн.forEach(function (c, j) { c.classList.remove('on'); c.setAttribute('aria-selected', j === i ? 'true' : 'false'); if (j === i) { void c.offsetWidth; c.classList.add('on'); } });
+      оболочки.forEach(function (w, j) {
+        w.classList.toggle('cv', j === i);
+        if (j === i) { w.classList.add('in'); w.removeAttribute('inert'); w.removeAttribute('aria-hidden'); } else { w.setAttribute('inert', ''); w.setAttribute('aria-hidden', 'true'); }
+      });
+    }
+    кн.forEach(function (c, i) { c.addEventListener('click', function () { выбрать(i); }); });
+    function режим() {
+      if (МОБ.matches) { H.classList.add('ishp8-chp'); оболочки.forEach(function (w) { w.setAttribute('role', 'tabpanel'); }); выбрать(тек); }
+      else { H.classList.remove('ishp8-chp'); оболочки.forEach(function (w) { w.classList.remove('cv'); w.removeAttribute('inert'); w.removeAttribute('aria-hidden'); w.removeAttribute('role'); }); }
+    }
+    режим(); при_смене(МОБ, режим);
   }
   until(вставить, 80);
 })();

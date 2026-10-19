@@ -1,4 +1,4 @@
-/* ish-design-p25.css v4 (19.10.2026: окно сравнения на <=720px - без колонки названий, 2 товара 50/50, компактная шапка) · v3 · П25 «Сравнение моделей» (К19) + «Таблица однотипных товаров» (К21) · 16.10.2026
+/* ish-design-p25.css v4.1 (19.10.2026: мобильное окно сравнения - перебиты общие правила ish-design-poisk.css (желтый, заливки кнопок, узкая рамка фото, фон названий); только <=720px, компьютер не менялся) · v4 (19.10.2026: окно сравнения на <=720px - без колонки названий, 2 товара 50/50, компактная шапка) · v3 · П25 «Сравнение моделей» (К19) + «Таблица однотипных товаров» (К21) · 16.10.2026
    Внешний файл на Pages, подключается ish-design-p25.js. Все классы с префиксом ishp25-; родные узлы Tilda не переписываются.
    Кобальт только на действии (чекбокс, активный вид, кнопки); «В корзину» в списке не перекрашивается (это .ish13-buy, здесь его нет);
    двойник «В корзину» в окне и таблице - контур кобальт, как .ish13-buy. Радиусы 8/10, пилюль нет. Откат: пустой файл. */
@@ -223,3 +223,37 @@ html body .ishp25-tbl .ishp25-tb__t small{font-weight:400;color:var(--p25-mut)}
 .вн-т{position:relative}
 .вн-т > .ishp25-cmp{grid-column:2;grid-row:2;align-self:end;justify-self:start;margin-top:8px}
 @media screen and (max-width:640px){.вн-т > .ishp25-cmp{grid-column:1/-1;grid-row:auto;min-height:44px}}
+
+/* ═══ v4.1 · мобильное окно сравнения (<=720px). Перебивает ish-design-poisk.css (html body .ishp25-* , грузится после p25.css) специфичностью через .ishp25-ov .ishp25-win. Компьютер не затронут. ═══ */
+@media (max-width:720px){
+  /* 3. залита одна кнопка «Только отличия»; «В корзину» - белая, обводка кобальт; «Очистить» - белая с серой обводкой */
+  html body .ishp25-ov .ishp25-win .ishp25-ct .ishp25-buy{background:#fff;border:1.5px solid var(--p25-k);color:var(--p25-k);font-weight:600;border-radius:10px;box-shadow:none}
+  html body .ishp25-ov .ishp25-win .ishp25-ct .ishp25-buy:hover,html body .ishp25-ov .ishp25-win .ishp25-ct .ishp25-buy:active{background:#fff;border-color:var(--p25-k);color:var(--p25-k)}
+  html body .ishp25-ov .ishp25-win .ishp25-ct .ishp25-buy svg{stroke:var(--p25-k)}
+  html body .ishp25-ov .ishp25-win .ishp25-ct .ishp25-buy_in{background:var(--p25-soft)!important;color:var(--p25-k)!important}
+  html body .ishp25-ov .ishp25-win .ishp25-btn[data-a=diff],html body .ishp25-ov .ishp25-win .ishp25-btn[data-a=diff][aria-pressed]{background:var(--p25-k);border-color:var(--p25-k);color:#fff}
+  html body .ishp25-ov .ishp25-win .ishp25-btn[data-a=clear]{background:#fff;color:var(--p25-ink)}
+  html body .ishp25-ov .ishp25-win .ishp25-x{background:#fff}
+
+  /* 1. отличающиеся строки - палитра сайта: тонкая кобальтовая полоска слева + лавандовый тон, значение жирным; жёлтого нет */
+  html body .ishp25-ov .ishp25-win .ishp25-note{background:var(--p25-soft);color:var(--p25-ink)}
+  html body .ishp25-ov .ishp25-win .ishp25-ct tbody tr.ishp25-d{background:#F3F5FD;box-shadow:inset 3px 0 0 var(--p25-k)}
+  html body .ishp25-ov .ishp25-win .ishp25-ct tbody tr.ishp25-d td,html body .ishp25-ov .ishp25-win .ishp25-ct tbody tr.ishp25-d td.ishp25-d{background:transparent;color:var(--p25-ink);font-weight:700}
+  html body .ishp25-ov .ishp25-win .ishp25-ct tbody tr.ishp25-d td.ishp25-nil{font-weight:400;color:var(--p25-mut)}
+
+  /* 2. название характеристики - серый мелкий текст над значениями, без своего фона */
+  html body .ishp25-ov .ishp25-win .ishp25-ct tbody tr th[scope=row]{background:transparent!important;box-shadow:none;border:0;color:var(--p25-mut)!important;font-size:12px;font-weight:500;line-height:1.3;
+    text-transform:none!important;letter-spacing:0!important;padding:10px 12px 0;margin:0}
+  html body .ishp25-ov .ishp25-win .ishp25-ct tbody tr.ishp25-d th[scope=row]{color:var(--p25-mut)!important}
+  html body .ishp25-ov .ishp25-win .ishp25-ct tbody td{background:transparent;padding:2px 12px 10px}
+
+  /* 4. фото: блок на всю ширину колонки, фото по центру, высота 76px; узкой лавандовой рамки нет (белый фон снимка сливается с белой шапкой) */
+  html body .ishp25-ov .ishp25-win .ishp25-ct .ishp25-ct__img{display:block;width:100%;height:76px;padding:0;margin:0 0 8px;box-sizing:border-box;border-radius:10px;
+    background-color:transparent;background-position:center;background-repeat:no-repeat;background-size:contain;background-origin:padding-box;background-clip:padding-box;mix-blend-mode:normal}
+
+  /* 5. ровная сетка: одинаковые поля и разделители в шапке и в строках, колонки поровну */
+  html body .ishp25-ov .ishp25-win .ishp25-ct thead th.ishp25-ct__p{padding:8px 12px 10px;border-bottom:0;background:#fff}
+  html body .ishp25-ov .ishp25-win .ishp25-ct thead th.ishp25-ct__p + th.ishp25-ct__p,html body .ishp25-ov .ishp25-win .ishp25-ct tbody td + td{border-left:1px solid var(--p25-line)}
+  html body .ishp25-ov .ishp25-win .ishp25-ct tbody tr{border-bottom:1px solid var(--p25-line)}
+  html body .ishp25-ov .ishp25-win .ishp25-ct tbody tr th,html body .ishp25-ov .ishp25-win .ishp25-ct tbody td{border-bottom:0}
+}

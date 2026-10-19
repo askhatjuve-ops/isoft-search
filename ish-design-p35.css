@@ -1,4 +1,4 @@
-/* ish-design-p35.css  v3.0  (кандидат 17.10.2026; НЕ выложено; v3 дописан в конце файла: шапка без фото/длинное слово, плитки без картинки, бренды текстом, режим группы html.ishp35-grp)  П35 «раздел каталога: компоненты главной»
+/* ish-design-p35.css  v3.2  (кандидат 19.10.2026; НЕ выложено; v3.2: лента преимуществ в шапке группы (телефон), плитки «Разделов группы» на телефоне без обводки, на тени, фото меньше (вариант Б); v3 дописан в конце файла: шапка без фото/длинное слово, плитки без картинки, бренды текстом, режим группы html.ishp35-grp)  П35 «раздел каталога: компоненты главной»
    Подключает ish-design-p35.js. Откат: пустой файл на Pages или window.ISH_P35_OFF / ISH_P4_NO_P35.
    Что: голубая палитра главной (#E7EAFB / #EEF1FD, кобальт на активном), шапка раздела с градиентом, полоса «кто мы», две индиго-плиты,
    экран «ничего не найдено», светлый низ, сегмент «Список / Плитка», цена и характеристики контрастнее, телефон: круги не на «В корзину».
@@ -551,3 +551,40 @@ html.ishp35-on.ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] 
 
 /* 19.10.2026: плитки «Разделы группы» налезали рядами на 26 px - padding+рамка сверх высоты ячейки (нет border-box) */
 .ishp35-tiles .ishp8-tile{box-sizing:border-box}
+
+/* v3.2 (19.10.2026), только телефон (<=760, как шапка): «Разделы группы» - вариант Б «фото меньше»: строка по содержимому, зазор рядов = колонок, без обводки, на тени. Компьютер без изменений. */
+@media screen and (max-width:760px){
+  html.ishp35-on .ishp35-tiles{grid-auto-rows:auto;gap:8px}
+  html.ishp35-on .ishp35-tiles .ishp8-tile{border:0;box-shadow:var(--p8-sh);border-radius:18px;padding:10px 10px 12px}
+  html.ishp35-on .ishp35-tiles .ishp8-tile:hover{box-shadow:var(--p8-sh2)}
+  html.ishp35-on .ishp35-tiles .ishp8-ix{left:10px;top:10px}
+  html.ishp35-on .ishp35-tiles .ishp8-stage{height:68px}
+  html.ishp35-on .ishp35-tiles .ishp8-stage img{max-height:58px}
+  html.ishp35-on .ishp35-tiles .ishp8-tt{margin-top:2px}
+}
+
+/* v3.2 (19.10.2026): лента преимуществ внутри низа шапки группы. На компьютере скрыта (там прежняя полоса), на телефоне вместо полосы 2x2 */
+html.ishp35-on .ishp35-rb{display:none}
+@media screen and (max-width:760px){
+  html.ishp35-grp .ishp35-strip{display:none}
+  html.ishp35-grp .ishp35-hero{padding-bottom:16px}
+  html.ishp35-grp .ishp35-rb{display:block;grid-column:1/-1;order:9;min-width:0;margin-top:4px;position:relative;overflow:hidden;box-sizing:border-box;border-radius:18px;
+    -webkit-backdrop-filter:blur(14px) saturate(1.3);backdrop-filter:blur(14px) saturate(1.3);background:rgba(255,255,255,.10);box-shadow:inset 0 0 0 1px rgba(255,255,255,.08)}
+  html.ishp35-grp .ishp35-rb__t{display:flex;width:max-content;animation:ishp35-rbm 44s linear infinite;will-change:transform}
+  html.ishp35-grp .ishp35-rb__g{display:flex;flex:none}
+  html.ishp35-grp .ishp35-rb__i{display:flex;align-items:center;gap:8px;height:44px;padding:0 10px 0 14px;font:700 14px/1 var(--p35-f);color:#fff;white-space:nowrap}
+  html.ishp35-grp .ishp35-rb__i svg{width:20px;height:20px;flex:none;stroke:#B4BDFF;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+  html.ishp35-grp .ishp35-rb__i::after{content:"";width:4px;height:4px;border-radius:50%;background:rgba(255,255,255,.4);margin-left:10px}
+  html.ishp35-grp .ishp35-rb.is-p .ishp35-rb__t{animation-play-state:paused}
+  html.ishp35-grp .ishp35-rb::before,html.ishp35-grp .ishp35-rb::after{content:"";position:absolute;top:0;bottom:0;width:22px;z-index:2;pointer-events:none}
+  html.ishp35-grp .ishp35-rb::before{left:0;background:linear-gradient(90deg,rgba(32,38,70,.9),transparent)}
+  html.ishp35-grp .ishp35-rb::after{right:0;background:linear-gradient(270deg,rgba(32,38,70,.9),transparent)}
+}
+@keyframes ishp35-rbm{to{transform:translateX(-50%)}}
+@media screen and (max-width:760px) and (prefers-reduced-motion:reduce){
+  html.ishp35-grp .ishp35-rb__t{animation:none}
+  html.ishp35-grp .ishp35-rb{overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  html.ishp35-grp .ishp35-rb::-webkit-scrollbar{display:none}
+  html.ishp35-grp .ishp35-rb__g+.ishp35-rb__g,html.ishp35-grp .ishp35-rb__i--c{display:none}
+  html.ishp35-grp .ishp35-rb::before,html.ishp35-grp .ishp35-rb::after{display:none}
+}

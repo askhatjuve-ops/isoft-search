@@ -1,4 +1,4 @@
-/* ish-design-p35.js  v3.0  (кандидат 17.10.2026; НЕ выложено)  П35 «раздел и группа каталога: компоненты главной»
+/* ish-design-p35.js  v3.2  (кандидат 19.10.2026; НЕ выложено; v3.2: на телефоне в группе плашка «Для юрлиц и ИП…» заменена стеклянной бегущей лентой внутри низа шапки)  П35 «раздел и группа каталога: компоненты главной»
    Режимы (определяются сами):
      раздел  - есть .t-store__card-list и верх .вн-а (список Tilda);
      группа  - есть .вн-гр[data-gruppa] и #вн-гр-список (родительская страница: свой список из getproductslist, без блока t-store).
@@ -84,6 +84,21 @@
 
   /* ───── верх: тёмная карточка (как «Торговое оборудование» главной) + отдельная полоса фактов ───── */
   var heroEl = null, subEl = null;
+  /* v3.2: бесконечная лента преимуществ (телефон, группа). Два одинаковых ряда, сдвиг на -50%; каждый ряд из двух наборов, чтобы не было просвета на широком экране.
+     Пауза на касание (класс is-p); при prefers-reduced-motion лента стоит и листается пальцем (css). Читается один набор, копии aria-hidden. */
+  function ribbon() {
+    var items = [['org', 'Для юрлиц и ИП'], ['inv', 'Счёт с НДС'], ['truck', 'Бесплатная доставка'], ['shield', 'Гарантия от производителя']];
+    function set(copy) {
+      return items.map(function (x) {
+        return '<span class="ishp35-rb__i' + (copy ? ' ishp35-rb__i--c' : '') + '"' + (copy ? ' aria-hidden="true"' : ' role="listitem"') + '>' + svg28(IC[x[0]]) + x[1] + '</span>';
+      }).join('');
+    }
+    var r = el('div', 'ishp35-rb', '<div class="ishp35-rb__t"><div class="ishp35-rb__g" role="list" aria-label="Преимущества">' + set(0) + set(1) + '</div><div class="ishp35-rb__g" aria-hidden="true">' + set(1) + set(1) + '</div></div>');
+    var tm;
+    ['touchstart', 'pointerdown', 'mouseenter'].forEach(function (n) { r.addEventListener(n, function () { clearTimeout(tm); r.classList.add('is-p'); }, { passive: true }); });
+    ['touchend', 'touchcancel', 'pointerup', 'pointercancel', 'mouseleave'].forEach(function (n) { r.addEventListener(n, function () { tm = setTimeout(function () { r.classList.remove('is-p'); }, 1200); }); });
+    return r;
+  }
   function top() {
     var об = D.querySelector('.вн-а__об');
     if (!об || об.getAttribute('data-p35')) return !!об;
@@ -116,6 +131,7 @@
       strip.appendChild(el('div', 'ishp8-strip__i', svg28(IC[x[0]]) + '<p><b>' + x[1] + '</b></p>'));
       strip.lastChild.setAttribute('role', 'listitem');
     });
+    if (MODE === 'grp') hero.appendChild(ribbon());   /* v3.2: лента внутри низа шапки; видна только на телефоне (css), полоса strip там скрыта */
     об.appendChild(hero);
     об.appendChild(strip);
     if (MODE === 'grp') об.appendChild(subs());

@@ -10,8 +10,8 @@
 .ishp21-row{display:flex;gap:16px;align-items:center;justify-content:space-between;flex-wrap:wrap}
 .ishp21-txt{display:flex;flex-direction:column;gap:2px;min-width:0;flex:1 1 320px}
 .ishp21-txt b{display:flex;align-items:center;gap:12px;font-size:16px;font-weight:700;line-height:1.3}
-.ishp21-txt b::before{content:'';flex:none;width:36px;height:36px;border-radius:12px;box-shadow:0 8px 16px -8px rgba(43,68,199,.7);
-  background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='white' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'><path d='M10 13V3.5M6.5 7L10 3.5 13.5 7M3.5 12.5v3a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1v-3'/></svg>") center/20px no-repeat,linear-gradient(145deg,#5B73F0,#2B44C7)}
+.ishp21-txt b::before{content:'';flex:none;width:36px;height:36px;border-radius:50%;
+  background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='%232B44C7' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'><path d='M10 13V3.5M6.5 7L10 3.5 13.5 7M3.5 12.5v3a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1v-3'/></svg>") center/20px no-repeat,rgba(231,234,251,.6)}
 .ishp21-txt span{padding-left:48px;font-size:14px;line-height:1.4;color:#565D70}
 .ishp21-btns{display:flex;gap:8px;flex-wrap:wrap}
 .ishp21-btn{all:unset;box-sizing:border-box;cursor:pointer;min-height:46px;padding:0 18px;display:inline-flex;align-items:center;justify-content:center;text-align:center;

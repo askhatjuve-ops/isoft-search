@@ -47,10 +47,10 @@
   }
   var IC = {
     org: '<rect x="5" y="3.5" width="18" height="21" rx="2"/><path d="M10 8.5h2.5M15.5 8.5H18M10 13h2.5M15.5 13H18M11.5 24.5v-5h5v5"/>',
-    inv: '<path d="M6 3.5h12l4 4V24.5H6z"/><path d="M18 3.5v4h4M10 13h8M10 17h8M10 21h5"/>',
+    inv: '<path d="M6 3.5h12l4 4V24.5H6z"/><path class="ln" d="M18 3.5v4h4M10 13h8M10 17h8M10 21h5"/>',
     truck: '<path d="M2.5 7h14v11h-14zM16.5 11h5l4 4v3h-9z"/><circle cx="7" cy="20" r="2"/><circle cx="21" cy="20" r="2"/>',
-    shield: '<path d="M14 3 5 6.5v7c0 5.5 3.8 9.4 9 11.5 5.2-2.1 9-6 9-11.5v-7z"/><path d="m10 14 3 3 5-6"/>',
-    search: '<circle cx="12.5" cy="12.5" r="7.5"/><path d="m24 24-5.8-5.8M9.5 12.5h6"/>'
+    shield: '<path d="M14 3 5 6.5v7c0 5.5 3.8 9.4 9 11.5 5.2-2.1 9-6 9-11.5v-7z"/><path class="ln" d="m10 14 3 3 5-6"/>',
+    search: '<circle cx="12.5" cy="12.5" r="7.5"/><path class="ln" d="m24 24-5.8-5.8M9.5 12.5h6"/>'
   };
   var HERO_IMG = T + 'stor3761-6264-4162-b266-646337356566/f1e622a0312466f3ef1b71f3fde3f412.jpg';  /* фото плитки «Компьютеры» с главной (для плитки «Весь каталог») */
   var BRAND_KEY = { lenovo: 'lenovo', hp: 'hp', dell: 'dell', 'dell technologies': 'dell', asus: 'asus', acer: 'acer' };

@@ -54,8 +54,8 @@ html body #ishЭкран .шев svg{width:15px;height:15px}
 .ishp37-q{display:grid;gap:10px;margin:0 14px 18px}
 .ishp37-q a,.ishp37-q a:visited{display:grid;grid-template-columns:44px minmax(0,1fr) 32px;align-items:center;gap:14px;min-height:68px;padding:10px 14px 10px 12px;border-radius:20px;background:var(--p37-soft2);border:1px solid var(--p37-line);color:var(--p37-ink);text-decoration:none;font-family:var(--p37-f)}
 .ishp37-q a:active{background:var(--p37-soft)}
-.ishp37-qi{display:grid;place-items:center;width:44px;height:44px;border-radius:14px;background:linear-gradient(160deg,#4B63E8,#2B44C7 60%,#2036A8);color:#fff;box-shadow:0 12px 20px -12px rgba(43,68,199,.9)}
-.ishp37-qi svg{width:22px;height:22px;display:block}
+.ishp37-qi{display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:rgba(231,234,251,.6);color:#2B44C7}
+.ishp37-qi svg{width:22px;height:22px;display:block;stroke:#2B44C7;fill:rgba(43,68,199,.09);stroke-width:1.5}
 .ishp37-q b{display:block;font:700 16px/1.25 var(--p37-f)}
 .ishp37-q em{display:block;margin-top:2px;font:400 13px/1.3 var(--p37-f);font-style:normal;color:var(--p37-mut)}
 .ishp37-qs{display:grid;place-items:center;width:32px;height:32px;border-radius:50%;background:#fff;color:var(--p37-k)}

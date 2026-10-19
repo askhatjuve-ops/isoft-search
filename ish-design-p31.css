@@ -16,7 +16,7 @@ html.ishp31-on .вн-верх{background:none;border-bottom:0;padding:24px 0 0}
 html.ishp31-on .вн-верх .вн-крошки{margin:0 0 16px}
 html.ishp31-on .ishp31-hero{position:relative;overflow:hidden;isolation:isolate;display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);align-items:center;gap:24px;
   min-height:188px;box-sizing:border-box;padding:28px 40px 30px;border-radius:28px;background:var(--p31-ind);color:#fff;margin:0 0 20px}
-html.ishp31-on .ishp31-hero--strip{padding-bottom:62px;margin-bottom:0}
+html.ishp31-on .ishp31-hero--strip{padding-bottom:22px;row-gap:0;margin-bottom:0}
 html.ishp31-on .ishp31-hero__t{min-width:0;position:relative;z-index:1}
 html.ishp31-on .ishp31-hero .вн-над{display:block;margin:0 0 10px;font:700 12px/1.2 var(--p31-f);letter-spacing:.12em;text-transform:uppercase;color:#C9CFE6;background:none;-webkit-background-clip:border-box;background-clip:border-box}
 html.ishp31-on .ishp31-hero .вн-над::before{content:attr(data-n) "\00a0/\00a0";color:#B4BDFF;font-variant-numeric:tabular-nums}
@@ -35,14 +35,14 @@ html.ishp31-on .ishp31-ring--a{width:190px;height:190px}
 html.ishp31-on .ishp31-ring--b{width:270px;height:270px;border-color:rgba(255,255,255,.09)}
 html.ishp31-on .ishp31-tile{position:relative;display:grid;place-items:center;width:124px;height:124px;border-radius:32px;background:linear-gradient(145deg,rgba(255,255,255,.22),rgba(255,255,255,.06));border:1px solid rgba(255,255,255,.3);box-shadow:0 24px 40px -20px rgba(8,10,40,.8),0 1px 0 rgba(255,255,255,.35) inset;backdrop-filter:blur(2px);rotate:-6deg}
 html.ishp31-on .ishp31-tile svg{width:68px;height:68px;fill:none;stroke:#fff;stroke-width:1.15;stroke-linecap:round;stroke-linejoin:round;rotate:6deg}
-/* полоса фактов: компонент главной */
-html.ishp31-on .ishp31-strip{position:relative;z-index:2;margin:-34px 24px 0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-radius:26px;padding:10px;font-family:var(--p31-f);
-  background:linear-gradient(180deg,rgba(226,230,252,.46) 0,rgba(226,230,252,0) 62%),linear-gradient(90deg,rgba(231,234,251,.14),rgba(255,255,255,.04));-webkit-backdrop-filter:blur(12px) saturate(2);backdrop-filter:blur(12px) saturate(2);border:1px solid rgba(255,255,255,.49);box-shadow:0 1px 0 rgba(255,255,255,.6) inset,0 20px 44px -30px rgba(43,68,199,.25)}
-html.ishp31-on .ishp31-strip__i{position:relative;display:flex;gap:14px;align-items:center;padding:12px 16px;min-height:72px;min-width:0}
-html.ishp31-on .ishp31-strip__i+.ishp31-strip__i::before{content:"";position:absolute;left:0;top:14%;bottom:14%;width:1px;background:linear-gradient(180deg,rgba(43,68,199,0),rgba(43,68,199,.2),rgba(43,68,199,0))}
-html.ishp31-on .ishp31-strip__i svg{flex:0 0 36px;width:36px;height:36px;box-sizing:border-box;padding:0;background:none;box-shadow:none;border-radius:0;stroke:#2B44C7;fill:rgba(43,68,199,.09);stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+/* полоса фактов П2 (утв. 19.10): стекло ВНУТРИ тёмной плашки hero у нижнего края; свечение и кольца уходят под неё */
+html.ishp31-on .ishp31-strip{grid-column:1/-1;position:relative;z-index:2;margin:22px 0 0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-radius:22px;padding:10px;font-family:var(--p31-f);isolation:isolate;color:#fff;
+  background:rgba(255,255,255,.10);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);border:0;box-shadow:inset 0 1px 0 rgba(255,255,255,.34)}
+html.ishp31-on .ishp31-strip__i{position:relative;display:flex;gap:14px;align-items:center;padding:8px 16px;min-height:60px;min-width:0}
+html.ishp31-on .ishp31-strip__i+.ishp31-strip__i::before{content:"";position:absolute;left:0;top:18%;bottom:18%;width:1px;background:linear-gradient(180deg,rgba(255,255,255,0),rgba(255,255,255,.2),rgba(255,255,255,0))}
+html.ishp31-on .ishp31-strip__i svg{flex:0 0 34px;width:34px;height:34px;box-sizing:border-box;padding:0;background:none;box-shadow:none;border-radius:0;stroke:#C9D0FF;fill:none;stroke-width:1.25;stroke-linecap:round;stroke-linejoin:round}
 html.ishp31-on .ishp31-strip__i p{margin:0;min-width:0}
-html.ishp31-on .ishp31-strip__i b{display:block;font:300 17px/1.25 var(--p31-f);color:#3F4464}
+html.ishp31-on .ishp31-strip__i b{display:block;font:250 17px/1.25 var(--p31-f);font-variation-settings:normal;color:#fff}
 html.ishp31-on .вн-верх+.вн-тело{padding-top:28px}
 
 /* ═══ тело: белые карточки ═══ */
@@ -150,22 +150,22 @@ html.ishp31-on .ishp31-b--main:hover{background:var(--p31-cobalt-h);border-color
   html.ishp31-text .вн-чтение{padding:22px 18px;border-radius:20px}
   html.ishp31-on .ishp31-strip{grid-template-columns:repeat(2,minmax(0,1fr))}
   html.ishp31-on .ishp31-strip__i:nth-child(3)::before{display:none}
-  html.ishp31-on .ishp31-strip__i:nth-child(n+3){border-top:1px solid;border-image:linear-gradient(90deg,rgba(43,68,199,0),rgba(43,68,199,.2),rgba(43,68,199,0)) 1}
+  html.ishp31-on .ishp31-strip__i:nth-child(n+3){border-top:1px solid rgba(255,255,255,.1)}
 }
 @media screen and (max-width:760px){
   html.ishp31-on .вн-верх{padding:16px 0 0}
   html.ishp31-on .вн-верх .вн-крошки{margin:0 0 12px}
   html.ishp31-on .ishp31-hero{grid-template-columns:minmax(0,1fr) 92px;min-height:152px;padding:20px 16px 24px;border-radius:24px;gap:8px}
-  html.ishp31-on .ishp31-hero--strip{padding-bottom:50px}
+  html.ishp31-on .ishp31-hero--strip{padding-bottom:14px}
   html.ishp31-on body .ishp31-hero h1{font-size:28px!important}
   html.ishp31-on .ishp31-hero .ishp31-hero__s{font-size:13.5px;margin-top:10px}
   html.ishp31-on .ishp31-hero__p{min-height:92px}
   html.ishp31-on .ishp31-ring{display:none}
   html.ishp31-on .ishp31-tile{width:84px;height:84px;border-radius:24px}
   html.ishp31-on .ishp31-tile svg{width:46px;height:46px}
-  html.ishp31-on .ishp31-strip{margin:-28px 8px 0}
+  html.ishp31-on .ishp31-strip{margin:16px 0 0;border-radius:18px;padding:6px}
   html.ishp31-on .ishp31-strip__i{padding:8px;gap:8px;min-height:56px}
-  html.ishp31-on .ishp31-strip__i svg{flex-basis:28px;width:28px;height:28px;padding:0}
+  html.ishp31-on .ishp31-strip__i svg{flex-basis:26px;width:26px;height:26px;padding:0}
   html.ishp31-on .ishp31-strip__i b{font-size:13px}
   html.ishp31-on .ishp31-pod{flex-direction:column;align-items:stretch;gap:16px;padding:24px 18px;border-radius:22px}
   html.ishp31-on .ishp31-pod__b{width:100%}

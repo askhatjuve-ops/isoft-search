@@ -121,7 +121,7 @@
         i.setAttribute('role', 'listitem');
         strip.appendChild(i);
       });
-      об.appendChild(strip);
+      hero.appendChild(strip);
       hero.classList.add('ishp31-hero--strip');
     }
     return true;

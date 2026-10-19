@@ -185,4 +185,9 @@ html.ishp31-nokak #shagi .вн-ряд{display:none!important}
 @media screen and (min-width:981px){
   html.ishp31-nokak body .вн-об,html.ishp31-nokak body .вн-тело{max-width:1280px!important;width:100%;box-sizing:border-box;margin-left:auto!important;margin-right:auto!important;padding-left:20px!important;padding-right:20px!important}
   html.ishp31-nokak .ishp31-strip{margin-left:0;margin-right:0}
+  /* 19.10: верх и низ колонок на одной линии: у #shagi снят margin-top (остался от скрытой #kak), левая колонка тянется на высоту сетки, карточка шагов заполняет её; sticky справа снят. Плитки шагов не трогаем */
+  html.ishp31-nokak body .вн-тело{align-items:stretch}
+  html.ishp31-nokak body .вн-тело>div:first-child{display:flex;flex-direction:column}
+  html.ishp31-nokak body #shagi{margin-top:0!important;flex:1 1 auto}
+  html.ishp31-nokak body .вн-тело>.вн-бок{position:static!important;align-self:stretch}
 }

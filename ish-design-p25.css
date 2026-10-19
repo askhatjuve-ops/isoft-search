@@ -1,4 +1,4 @@
-/* ish-design-p25.css v4.1 (19.10.2026: мобильное окно сравнения - перебиты общие правила ish-design-poisk.css (желтый, заливки кнопок, узкая рамка фото, фон названий); только <=720px, компьютер не менялся) · v4 (19.10.2026: окно сравнения на <=720px - без колонки названий, 2 товара 50/50, компактная шапка) · v3 · П25 «Сравнение моделей» (К19) + «Таблица однотипных товаров» (К21) · 16.10.2026
+/* ish-design-p25.css v4.2 (19.10.2026: мобильная полоска под шапкой убрана - разделители колонок сплошные, лишние пустые строки скрыты; компьютер >720px оформлен как телефон) · v4.1 (19.10.2026: мобильное окно сравнения - перебиты общие правила ish-design-poisk.css (желтый, заливки кнопок, узкая рамка фото, фон названий); только <=720px, компьютер не менялся) · v4 (19.10.2026: окно сравнения на <=720px - без колонки названий, 2 товара 50/50, компактная шапка) · v3 · П25 «Сравнение моделей» (К19) + «Таблица однотипных товаров» (К21) · 16.10.2026
    Внешний файл на Pages, подключается ish-design-p25.js. Все классы с префиксом ishp25-; родные узлы Tilda не переписываются.
    Кобальт только на действии (чекбокс, активный вид, кнопки); «В корзину» в списке не перекрашивается (это .ish13-buy, здесь его нет);
    двойник «В корзину» в окне и таблице - контур кобальт, как .ish13-buy. Радиусы 8/10, пилюль нет. Откат: пустой файл. */
@@ -258,4 +258,53 @@ html body .ishp25-tbl .ishp25-tb__t small{font-weight:400;color:var(--p25-mut)}
   html body .ishp25-ov .ishp25-win .ishp25-ct tbody tr th,html body .ishp25-ov .ishp25-win .ishp25-ct tbody td{border-bottom:0}
   /* 19.10 (Асхат): цена и «В корзину» на одном уровне в колонках - название ровно 3 строки (обрезка «…», место держится и при 1-2 строках) */
   html body .ishp25-ov .ishp25-win .ishp25-ct .ishp25-ct__n{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;overflow:hidden;line-height:1.3;height:3.9em;max-height:3.9em}
+}
+
+/* ═══ v4.2 · 1) полоска под карточками на телефоне ═══
+   Что это было: первая строка таблицы - подпись характеристики (серый мелкий текст) отдельной зоной над значениями; вертикальные разделители колонок
+   начинались только под подписью, поэтому у строки отличий под шапкой получалась «пустая» полоска с синей кромкой слева.
+   Теперь разделители идут на всю высоту строки (фоном строки), а пустые строки (без подписи или без единого значения) скрыты. */
+@media (max-width:720px){
+  html body .ishp25-ov .ishp25-win .ishp25-ct tbody td + td{border-left:0}
+  html body .ishp25-ov .ishp25-win .ishp25-ct tbody tr:not(:has(td.ishp25-same)){background-image:repeating-linear-gradient(to right,transparent 0,transparent calc(100% / var(--n) - 1px),var(--p25-line) calc(100% / var(--n) - 1px),var(--p25-line) calc(100% / var(--n)))}
+  html body .ishp25-ov .ishp25-win .ishp25-ct tbody tr:has(th[scope=row]:empty),html body .ishp25-ov .ishp25-win .ishp25-ct tbody tr:not(:has(td:not(:empty))){display:none}
+  html body .ishp25-ov .ishp25-win .ishp25-ct thead .ishp25-ct__c0{display:none!important}
+}
+
+/* ═══ v4.2 · 2) компьютер (>720px) - то же оформление, что на телефоне. Колонка названий слева остаётся, но без фона: серый текст ═══ */
+@media (min-width:721px){
+  /* кнопки */
+  html body .ishp25-ov .ishp25-win .ishp25-ct .ishp25-buy{background:#fff;border:1.5px solid var(--p25-k);color:var(--p25-k);font-weight:600;border-radius:10px;box-shadow:none}
+  html body .ishp25-ov .ishp25-win .ishp25-ct .ishp25-buy:hover,html body .ishp25-ov .ishp25-win .ishp25-ct .ishp25-buy:active{background:var(--p25-soft);border-color:var(--p25-k);color:var(--p25-k)}
+  html body .ishp25-ov .ishp25-win .ishp25-ct .ishp25-buy svg{stroke:var(--p25-k)}
+  html body .ishp25-ov .ishp25-win .ishp25-ct .ishp25-buy_in{background:var(--p25-soft)!important;color:var(--p25-k)!important}
+  html body .ishp25-ov .ishp25-win .ishp25-btn[data-a=diff],html body .ishp25-ov .ishp25-win .ishp25-btn[data-a=diff][aria-pressed]{background:var(--p25-k);border-color:var(--p25-k);color:#fff}
+  html body .ishp25-ov .ishp25-win .ishp25-btn[data-a=clear]{background:#fff;color:var(--p25-ink)}
+  html body .ishp25-ov .ishp25-win .ishp25-btn[data-a=clear]:hover{background:var(--p25-mist)}
+  html body .ishp25-ov .ishp25-win .ishp25-x{background:#fff}
+  html body .ishp25-ov .ishp25-win .ishp25-note{background:var(--p25-soft);color:var(--p25-ink)}
+
+  /* строки отличий: кобальтовая полоска слева, бледный фон, значение жирным, «нет данных» серым */
+  html body .ishp25-ov .ishp25-win .ishp25-ct tbody tr.ishp25-d{background:#F3F5FD;box-shadow:inset 3px 0 0 var(--p25-k)}
+  html body .ishp25-ov .ishp25-win .ishp25-ct tbody tr td,html body .ishp25-ov .ishp25-win .ishp25-ct tbody tr.ishp25-d td,html body .ishp25-ov .ishp25-win .ishp25-ct tbody tr.ishp25-d td.ishp25-d{background:transparent;color:var(--p25-ink)}
+  html body .ishp25-ov .ishp25-win .ishp25-ct tbody tr.ishp25-d td,html body .ishp25-ov .ishp25-win .ishp25-ct tbody tr.ishp25-d td.ishp25-d{font-weight:700}
+  html body .ishp25-ov .ishp25-win .ishp25-ct tbody tr.ishp25-d td.ishp25-nil,html body .ishp25-ov .ishp25-win .ishp25-ct tbody td .ishp25-nil{font-weight:400;color:var(--p25-mut)}
+
+  /* колонка названий: серый текст, без фона и без лавандовых ячеек */
+  html body .ishp25-ov .ishp25-win .ishp25-ct tbody tr th[scope=row],html body .ishp25-ov .ishp25-win .ishp25-ct tbody tr.ishp25-d th[scope=row],html body .ishp25-ov .ishp25-win .ishp25-ct thead .ishp25-ct__c0{background:transparent!important;box-shadow:none;color:var(--p25-mut)!important;font-weight:500!important;text-transform:none!important;letter-spacing:0!important}
+  html body .ishp25-ov .ishp25-win .ishp25-ct tbody tr th[scope=row]{font-size:13px!important;padding-left:16px}
+
+  html body .ishp25-ov .ishp25-win .ishp25-ct thead .ishp25-ct__c0,html body .ishp25-ov .ishp25-win .ishp25-ct thead .ishp25-ct__c0 *{text-transform:uppercase!important;letter-spacing:.05em!important;font-size:12px!important}
+
+  /* фото: без узкой рамки и подложки */
+  html body .ishp25-ov .ishp25-win .ishp25-ct .ishp25-ct__img{height:96px;padding:0;border-radius:10px;background-color:transparent;background-position:center;background-repeat:no-repeat;background-size:contain;background-origin:padding-box;background-clip:padding-box;mix-blend-mode:normal}
+
+  /* ровные разделители: одна линия в шапке и в строках */
+  html body .ishp25-ov .ishp25-win .ishp25-ct thead th.ishp25-ct__p{border-bottom:1.5px solid var(--p25-ui)}
+  html body .ishp25-ov .ishp25-win .ishp25-ct thead th.ishp25-ct__p + th.ishp25-ct__p,html body .ishp25-ov .ishp25-win .ishp25-ct tbody td + td{border-left:1px solid var(--p25-line)}
+  html body .ishp25-ov .ishp25-win .ishp25-ct tbody th,html body .ishp25-ov .ishp25-win .ishp25-ct tbody td{border-bottom:1px solid var(--p25-line)}
+
+  /* цена и «В корзину» на одном уровне: название ровно 3 строки, артикул держит место */
+  html body .ishp25-ov .ishp25-win .ishp25-ct .ishp25-ct__n{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;overflow:hidden;line-height:1.3;height:3.9em;max-height:3.9em}
+  html body .ishp25-ov .ishp25-win .ishp25-ct .ishp25-ct__sku{min-height:1.3em}
 }

@@ -430,6 +430,29 @@
     к.appendChild(п);
     к.classList.add('ishp8-b1');
     а.style.display = 'none';
+    свайп_баннера(к);
+  }
+  /* 19.10 свайп баннера пальцем: жест -> штатный клик по стрелке #влево/#вправо (слайды и автопрокрутка - родные).
+     touch-action:pan-y отдаёт браузеру вертикаль, горизонталь приходит нам без preventDefault; слушатели passive */
+  function свайп_баннера(к) {
+    if (к.getAttribute('data-ishp8-sw')) return;
+    к.setAttribute('data-ishp8-sw', '1');
+    var x0 = 0, y0 = 0, t0 = 0, идёт = false;
+    к.style.touchAction = 'pan-y';
+    к.addEventListener('touchstart', function (e) {
+      if (e.touches.length !== 1) { идёт = false; return; }
+      x0 = e.touches[0].clientX; y0 = e.touches[0].clientY; t0 = Date.now(); идёт = true;
+    }, { passive: true });
+    к.addEventListener('touchcancel', function () { идёт = false; }, { passive: true });
+    к.addEventListener('touchend', function (e) {
+      if (!идёт) return;
+      идёт = false;
+      var t = e.changedTouches[0];
+      var dx = t.clientX - x0, dy = t.clientY - y0;
+      if (Date.now() - t0 > 900 || Math.abs(dx) < 40 || Math.abs(dx) < Math.abs(dy) * 1.5) return;
+      var б = D.getElementById(dx < 0 ? 'вправо' : 'влево');
+      if (б) б.click();
+    }, { passive: true });
   }
   function вставить() {
     var полоса = D.getElementById('полоса');

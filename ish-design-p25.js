@@ -1,4 +1,5 @@
-/* ish-design-p25.js  v4  (19.10.2026: getproduct просит storepartuid - без него «ERROR:Wrong storepartuid», полный список не грузился никогда)
+/* ish-design-p25.js  v5  (19.10.2026: только вёрстка окна на телефоне <=720px, см. ish-design-p25.css v4; логика не менялась; в ish-design-p4.js P25V '5' -> '6')
+   v4  (19.10.2026: getproduct просит storepartuid - без него «ERROR:Wrong storepartuid», полный список не грузился никогда)
    v3  (16.10.2026)  П25 «Сравнение моделей» (К19) + «Таблица однотипных товаров» (К21), b2b.isoft-shop.kz
    Внешний файл на Pages. Грузится из ish-design-p4.js (строка в README) на страницах со списком товаров (.t-store__card[data-ish13])
    и на карточке товара (/tproduct/). Сам подключает ish-design-p25.css рядом с собой. Не загрузился - сайт как был.

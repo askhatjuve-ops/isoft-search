@@ -315,7 +315,7 @@
 
   /* ───────── П25: сравнение моделей (К19) и таблица однотипных товаров (К21) (ish-design-p25.js/.css с того же адреса, один раз) ─────────
      Признак: список товаров (.t-store__card[data-ish13]) или карточка товара (/tproduct/). Выключатель: window.ISH_P25_OFF = 1. Кэш: поменять P25V. */
-  var P25V = '5';
+  var P25V = '6';
   function p25() {
     if (W.ISH_P25_OFF || W.__ishP25 || D.getElementById('ishp-p25-js')) return true;
     var карт = /\/tproduct\//.test(location.pathname);

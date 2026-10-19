@@ -1,4 +1,4 @@
-/* ish-design-p25.css v3 · П25 «Сравнение моделей» (К19) + «Таблица однотипных товаров» (К21) · 16.10.2026
+/* ish-design-p25.css v4 (19.10.2026: окно сравнения на <=720px - без колонки названий, 2 товара 50/50, компактная шапка) · v3 · П25 «Сравнение моделей» (К19) + «Таблица однотипных товаров» (К21) · 16.10.2026
    Внешний файл на Pages, подключается ish-design-p25.js. Все классы с префиксом ishp25-; родные узлы Tilda не переписываются.
    Кобальт только на действии (чекбокс, активный вид, кнопки); «В корзину» в списке не перекрашивается (это .ish13-buy, здесь его нет);
    двойник «В корзину» в окне и таблице - контур кобальт, как .ish13-buy. Радиусы 8/10, пилюль нет. Откат: пустой файл. */
@@ -90,16 +90,44 @@ html.ishp25-lock,html.ishp25-lock body{overflow:hidden}
 .ishp25-ct__p .ishp25-buy{width:100%}
 @media (max-width:720px){
   .ishp25-ov{padding:0}
-  .ishp25-win{max-width:none;height:100%;border-radius:0}
-  .ishp25-hd{flex-wrap:wrap;padding:12px}
-  .ishp25-hd h2{font-size:18px}
-  .ishp25-hd__t{width:100%}.ishp25-btn{flex:1 1 auto;height:44px}.ishp25-x{width:44px;height:44px}
-  .ishp25-ct{width:max-content;min-width:100%;table-layout:auto}
-  .ishp25-ct th[scope=row],.ishp25-ct__c0{width:104px;min-width:104px;max-width:104px;padding:8px 10px}
-  .ishp25-ct__p{min-width:170px;width:170px}
-  .ishp25-ct td{min-width:170px;width:170px}
-  .ishp25-ct__rm{width:44px;height:44px;right:2px;top:2px}
-  .ishp25-buy{min-height:44px}
+  .ishp25-win{max-width:none;height:100%;border-radius:0;padding-bottom:env(safe-area-inset-bottom,0px)}
+  /* шапка окна: строка 1 - заголовок и крестик, строка 2 - «Только отличия» (главная, залита) и «Очистить» (второстепенная) */
+  .ishp25-hd{display:grid;grid-template-columns:minmax(0,1fr) auto 44px;gap:8px;padding:10px 12px;align-items:center}
+  .ishp25-hd h2{font-size:18px;grid-column:1/3;grid-row:1}
+  .ishp25-hd__t{display:contents}
+  .ishp25-x{grid-column:3;grid-row:1;width:44px;height:44px}
+  .ishp25-btn{grid-row:2;height:44px;font-size:15px}
+  .ishp25-btn[data-a=diff]{grid-column:1;background:var(--p25-k);color:#fff}
+  .ishp25-btn[data-a=diff]:hover,.ishp25-btn[data-a=diff][aria-pressed="true"]{background:var(--p25-k);color:#fff}
+  .ishp25-btn[data-a=clear]{grid-column:2/4;border-color:var(--p25-ui);color:var(--p25-ink);font-weight:500;padding:0 16px}
+  .ishp25-btn[data-a=clear]:hover{background:var(--p25-mist)}
+  /* таблица: без колонки названий; название характеристики - строка над значениями; товары делят ширину поровну */
+  .ishp25-scr{scroll-snap-type:x proximity;overscroll-behavior:contain}
+  .ishp25-ct{display:block;table-layout:fixed;width:100%;min-width:calc(var(--n) * 150px)}
+  .ishp25-ct thead,.ishp25-ct tbody{display:block}
+  .ishp25-ct tr{display:grid;grid-template-columns:repeat(var(--n),minmax(0,1fr))}
+  .ishp25-ct th,.ishp25-ct td{border-bottom:0}
+  .ishp25-ct tbody tr{border-bottom:1px solid var(--p25-line)}
+  /* название характеристики прилипает к левому краю, пока 3-4 товара листают вбок */
+  .ishp25-ct th[scope=row]{grid-column:1/-1;position:sticky;left:0;justify-self:start;width:auto;min-width:0;max-width:100vw;background:transparent;padding:10px 12px 2px;font-size:12px;line-height:1.3}
+  .ishp25-ct td{width:auto;min-width:0;padding:2px 12px 10px;scroll-snap-align:start}
+  .ishp25-ct td + td{border-left:1px solid var(--p25-line)}
+  .ishp25-ct tbody tr.ishp25-d{background:var(--p25-diff)}
+  .ishp25-ct tbody tr.ishp25-d th[scope=row]{background:transparent}
+  .ishp25-ct td.ishp25-same{grid-column:1/-1;padding:20px 12px!important}
+  /* шапка товаров: липкая, компактная */
+  .ishp25-ct thead{position:sticky;top:0;z-index:3;background:#fff;box-shadow:0 1px 0 var(--p25-ui)}
+  .ishp25-ct thead .ishp25-ct__c0{display:none}
+  .ishp25-ct thead th.ishp25-ct__p{position:relative;top:auto;min-width:0;width:auto;padding:8px 10px 10px;scroll-snap-align:start}
+  .ishp25-ct thead th.ishp25-ct__p + th.ishp25-ct__p{border-left:1px solid var(--p25-line)}
+  .ishp25-ct__img{width:72px;height:72px;margin:0 0 6px;background-color:#F3F1EB}
+  .ishp25-ct__n{font-size:13px;line-height:1.3;margin-bottom:2px}
+  .ishp25-ct__sku{display:none}
+  .ishp25-ct__price{font-size:16px;margin:2px 0 8px}
+  .ishp25-ct__rm{width:44px;height:44px;right:0;top:0;background:transparent}
+  .ishp25-buy{min-height:44px;padding:0 8px}
+  .ishp25-buy:hover{background:#fff;color:var(--p25-k)}
+  .ishp25-buy_in:hover{background:var(--p25-soft)}
 }
 
 /* карточка товара: «Добавить к сравнению» */

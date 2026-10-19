@@ -259,7 +259,7 @@
     var s = el('section', 'ishp35-plate');
     s.setAttribute('aria-label', 'Пришлите список');
     s.innerHTML = '<div class="ishp35-plate__t"><b class="ishp35-plate__h">Пришлите список — подберём позиции</b>' +
-      '<p>Назовите модели или задачу — ответим по каждой позиции в рабочий день.</p></div>' +
+      '</div>' +
       '<a class="ishp35-plate__b" href="' + REQ + '">Прислать список</a>';
     return s;
   }

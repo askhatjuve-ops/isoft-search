@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<yml_catalog date="2026-10-18 16:19">
+<yml_catalog date="2026-10-19 09:33">
 <shop>
 <name>iSoft</name>
 <company>iSoft</company>
@@ -64,7 +64,7 @@
 <name>IP телефон Grandstream GRP2612</name>
 <vendor>Grandstream</vendor>
 <vendorCode>IS0ED359C120</vendorCode>
-<description>Модель GRP2612 · Тип устройства IP-телефон · PoE Нет · Порт Ethernet Fast Ethernet (100 Мбит/с) · Количество линий 3–4 линии · Размер дисплея до 2,5″ · SIP-аккаунтов 4</description>
+<description>Модель GRP2612 · Тип устройства IP-телефон · PoE Нет · Порт Ethernet Fast Ethernet (100 Мбит/с) · Количество линий 3–4 линии · Диагональ до 2,5″ · SIP-аккаунтов 4</description>
 </offer>
 <offer id="IS182A08D4E4" available="true">
 <url>https://b2b.isoft-shop.kz/konferenc-svyaz/tproduct/165574574304-ip-telefon-grandstream-gxp2170</url>
@@ -75,7 +75,7 @@
 <name>IP телефон Grandstream GXP2170</name>
 <vendor>Grandstream</vendor>
 <vendorCode>IS182A08D4E4</vendorCode>
-<description>Модель GXP2170 · Тип устройства IP-телефон · PoE Есть · Порт Ethernet Gigabit (1000 Мбит/с) · Количество линий 12–16 линий · Размер дисплея 4,3″ · SIP-аккаунтов 6</description>
+<description>Модель GXP2170 · Тип устройства IP-телефон · PoE Есть · Порт Ethernet Gigabit (1000 Мбит/с) · Количество линий 12–16 линий · Диагональ 4,3″ · SIP-аккаунтов 6</description>
 </offer>
 <offer id="IS1E07893C50" available="true">
 <url>https://b2b.isoft-shop.kz/konferenc-svyaz/tproduct/702613378514-ip-telefon-grandstream-grp2613</url>
@@ -86,7 +86,7 @@
 <name>IP телефон Grandstream GRP2613</name>
 <vendor>Grandstream</vendor>
 <vendorCode>IS1E07893C50</vendorCode>
-<description>Модель GRP2613 · Тип устройства IP-телефон · PoE Есть · Порт Ethernet Gigabit (1000 Мбит/с) · Количество линий 6–8 линий · Размер дисплея 2,6–3″ · SIP-аккаунтов 3</description>
+<description>Модель GRP2613 · Тип устройства IP-телефон · PoE Есть · Порт Ethernet Gigabit (1000 Мбит/с) · Количество линий 6–8 линий · Диагональ 2,6–3″ · SIP-аккаунтов 3</description>
 </offer>
 <offer id="IS2D851DBE1B" available="true">
 <url>https://b2b.isoft-shop.kz/konferenc-svyaz/tproduct/428302433574-ip-telefon-grandstream-gxp1615</url>
@@ -97,7 +97,7 @@
 <name>IP телефон Grandstream GXP1615</name>
 <vendor>Grandstream</vendor>
 <vendorCode>IS2D851DBE1B</vendorCode>
-<description>Модель GXP1615 · Тип устройства IP-телефон · PoE Есть · Порт Ethernet Fast Ethernet (100 Мбит/с) · Количество линий 2 линии · Размер дисплея 2,6–3″ · SIP-аккаунтов 2</description>
+<description>Модель GXP1615 · Тип устройства IP-телефон · PoE Есть · Порт Ethernet Fast Ethernet (100 Мбит/с) · Количество линий 2 линии · Диагональ 2,6–3″ · SIP-аккаунтов 2</description>
 </offer>
 <offer id="IS357F7208D4" available="true">
 <url>https://b2b.isoft-shop.kz/konferenc-svyaz/tproduct/573697719924-ip-telefon-grandstream-grp2614</url>
@@ -108,7 +108,7 @@
 <name>IP телефон Grandstream GRP2614</name>
 <vendor>Grandstream</vendor>
 <vendorCode>IS357F7208D4</vendorCode>
-<description>Модель GRP2614 · Тип устройства IP-телефон · PoE Есть · Порт Ethernet Gigabit (1000 Мбит/с) · Количество линий 3–4 линии · Размер дисплея 2,6–3″ · SIP-аккаунтов 12 · Wi-Fi Есть · Bluetooth Есть</description>
+<description>Модель GRP2614 · Тип устройства IP-телефон · PoE Есть · Порт Ethernet Gigabit (1000 Мбит/с) · Количество линий 3–4 линии · Диагональ 2,6–3″ · SIP-аккаунтов 12 · Wi-Fi Есть · Bluetooth Есть</description>
 </offer>
 <offer id="IS37DE8C56BF" available="true">
 <url>https://b2b.isoft-shop.kz/konferenc-svyaz/tproduct/564741019464-ip-videotelefon-grandstream-gxv3480</url>
@@ -119,7 +119,7 @@
 <name>IP-видеотелефон Grandstream GXV3480</name>
 <vendor>Grandstream</vendor>
 <vendorCode>IS37DE8C56BF</vendorCode>
-<description>Модель GXV3480 · Тип устройства IP-видеотелефон · PoE Есть · Порт Ethernet Gigabit (1000 Мбит/с) · Количество линий 12–16 линий · Wi-Fi Есть · SIP-аккаунтов 16 · Размер дисплея 8″</description>
+<description>Модель GXV3480 · Тип устройства IP-видеотелефон · PoE Есть · Порт Ethernet Gigabit (1000 Мбит/с) · Количество линий 12–16 линий · Wi-Fi Есть · SIP-аккаунтов 16 · Диагональ 8″</description>
 </offer>
 <offer id="IS3B9A5DB257" available="true">
 <url>https://b2b.isoft-shop.kz/konferenc-svyaz/tproduct/824768028404-ip-telefon-grandstream-grp2634</url>
@@ -130,7 +130,7 @@
 <name>IP телефон Grandstream GRP2634</name>
 <vendor>Grandstream</vendor>
 <vendorCode>IS3B9A5DB257</vendorCode>
-<description>Модель GRP2634 · Тип устройства IP-телефон · PoE Есть · Порт Ethernet Gigabit (1000 Мбит/с) · Количество линий 6–8 линий · Wi-Fi Есть · Bluetooth Есть · SIP-аккаунтов 12 · Размер дисплея 2,6–3″</description>
+<description>Модель GRP2634 · Тип устройства IP-телефон · PoE Есть · Порт Ethernet Gigabit (1000 Мбит/с) · Количество линий 6–8 линий · Wi-Fi Есть · Bluetooth Есть · SIP-аккаунтов 12 · Диагональ 2,6–3″</description>
 </offer>
 <offer id="IS4319D93E30" available="true">
 <url>https://b2b.isoft-shop.kz/konferenc-svyaz/tproduct/681623427044-ip-telefon-grandstream-grp2602</url>
@@ -141,7 +141,7 @@
 <name>IP телефон Grandstream GRP2602</name>
 <vendor>Grandstream</vendor>
 <vendorCode>IS4319D93E30</vendorCode>
-<description>Модель GRP2602 · Тип устройства IP-телефон · PoE Нет · Порт Ethernet Fast Ethernet (100 Мбит/с) · Количество линий 2 линии · SIP-аккаунтов 4 · Размер дисплея до 2,5″</description>
+<description>Модель GRP2602 · Тип устройства IP-телефон · PoE Нет · Порт Ethernet Fast Ethernet (100 Мбит/с) · Количество линий 2 линии · SIP-аккаунтов 4 · Диагональ до 2,5″</description>
 </offer>
 <offer id="IS4564592E8B" available="true">
 <url>https://b2b.isoft-shop.kz/konferenc-svyaz/tproduct/328656992784-ip-telefon-grandstream-gxp1610p</url>
@@ -152,7 +152,7 @@
 <name>IP телефон Grandstream GXP1610P</name>
 <vendor>Grandstream</vendor>
 <vendorCode>IS4564592E8B</vendorCode>
-<description>Модель GXP1610P · Тип устройства IP-телефон · PoE Есть · Порт Ethernet Fast Ethernet (100 Мбит/с) · Количество линий 2 линии · SIP-аккаунтов 2 · Размер дисплея 2,6–3″</description>
+<description>Модель GXP1610P · Тип устройства IP-телефон · PoE Есть · Порт Ethernet Fast Ethernet (100 Мбит/с) · Количество линий 2 линии · SIP-аккаунтов 2 · Диагональ 2,6–3″</description>
 </offer>
 <offer id="IS4D029F7668" available="true">
 <url>https://b2b.isoft-shop.kz/konferenc-svyaz/tproduct/696106278064-ip-telefon-grandstream-grp2603</url>
@@ -163,7 +163,7 @@
 <name>IP телефон Grandstream GRP2603</name>
 <vendor>Grandstream</vendor>
 <vendorCode>IS4D029F7668</vendorCode>
-<description>Модель GRP2603 · Тип устройства IP-телефон · PoE Нет · Порт Ethernet Gigabit (1000 Мбит/с) · Количество линий 3–4 линии · SIP-аккаунтов 6 · Размер дисплея 2,6–3″</description>
+<description>Модель GRP2603 · Тип устройства IP-телефон · PoE Нет · Порт Ethernet Gigabit (1000 Мбит/с) · Количество линий 3–4 линии · SIP-аккаунтов 6 · Диагональ 2,6–3″</description>
 </offer>
 <offer id="IS6617E02430" available="true">
 <url>https://b2b.isoft-shop.kz/konferenc-svyaz/tproduct/247117507424-ip-telefon-grandstream-ghp631</url>
@@ -174,7 +174,7 @@
 <name>IP телефон Grandstream GHP631</name>
 <vendor>Grandstream</vendor>
 <vendorCode>IS6617E02430</vendorCode>
-<description>Модель GHP631 · Тип устройства IP-телефон · PoE Есть · Порт Ethernet Fast Ethernet (100 Мбит/с) · Количество линий 2 линии · Wi-Fi Есть · Размер дисплея 3,5″</description>
+<description>Модель GHP631 · Тип устройства IP-телефон · PoE Есть · Порт Ethernet Fast Ethernet (100 Мбит/с) · Количество линий 2 линии · Wi-Fi Есть · Диагональ 3,5″</description>
 </offer>
 <offer id="IS6835A9B00E" available="true">
 <url>https://b2b.isoft-shop.kz/konferenc-svyaz/tproduct/502301740974-ip-telefon-grandstream-gxp2160</url>
@@ -185,7 +185,7 @@
 <name>IP телефон Grandstream GXP2160</name>
 <vendor>Grandstream</vendor>
 <vendorCode>IS6835A9B00E</vendorCode>
-<description>Модель GXP2160 · Тип устройства IP-телефон · PoE Есть · Порт Ethernet Gigabit (1000 Мбит/с) · Количество линий 6–8 линий · SIP-аккаунтов 6 · Размер дисплея 4,3″</description>
+<description>Модель GXP2160 · Тип устройства IP-телефон · PoE Есть · Порт Ethernet Gigabit (1000 Мбит/с) · Количество линий 6–8 линий · SIP-аккаунтов 6 · Диагональ 4,3″</description>
 </offer>
 <offer id="IS953F0B503F" available="true">
 <url>https://b2b.isoft-shop.kz/konferenc-svyaz/tproduct/961798005174-ip-telefon-grandstream-grp2636</url>
@@ -196,7 +196,7 @@
 <name>IP телефон Grandstream GRP2636</name>
 <vendor>Grandstream</vendor>
 <vendorCode>IS953F0B503F</vendorCode>
-<description>Модель GRP2636 · Тип устройства IP-телефон · PoE Есть · Порт Ethernet Gigabit (1000 Мбит/с) · Количество линий 12–16 линий · Wi-Fi Есть · Bluetooth Есть · SIP-аккаунтов 16 · Размер дисплея 4,3″</description>
+<description>Модель GRP2636 · Тип устройства IP-телефон · PoE Есть · Порт Ethernet Gigabit (1000 Мбит/с) · Количество линий 12–16 линий · Wi-Fi Есть · Bluetooth Есть · SIP-аккаунтов 16 · Диагональ 4,3″</description>
 </offer>
 <offer id="ISA03DDFF145" available="true">
 <url>https://b2b.isoft-shop.kz/konferenc-svyaz/tproduct/346223845684-ip-telefon-grandstream-grp2601</url>
@@ -207,7 +207,7 @@
 <name>IP телефон Grandstream GRP2601</name>
 <vendor>Grandstream</vendor>
 <vendorCode>ISA03DDFF145</vendorCode>
-<description>Модель GRP2601 · Тип устройства IP-телефон · PoE Нет · Порт Ethernet Fast Ethernet (100 Мбит/с) · Количество линий 2 линии · SIP-аккаунтов 2 · Размер дисплея до 2,5″</description>
+<description>Модель GRP2601 · Тип устройства IP-телефон · PoE Нет · Порт Ethernet Fast Ethernet (100 Мбит/с) · Количество линий 2 линии · SIP-аккаунтов 2 · Диагональ до 2,5″</description>
 </offer>
 <offer id="ISBFCF336C14" available="true">
 <url>https://b2b.isoft-shop.kz/konferenc-svyaz/tproduct/140125980264-ip-telefon-grandstream-gxp1620</url>
@@ -218,7 +218,7 @@
 <name>IP телефон Grandstream GXP1620</name>
 <vendor>Grandstream</vendor>
 <vendorCode>ISBFCF336C14</vendorCode>
-<description>Модель GXP1620 · Тип устройства IP-телефон · PoE Нет · Порт Ethernet Fast Ethernet (100 Мбит/с) · Количество линий 2 линии · Размер дисплея 2,6–3″ · SIP-аккаунтов 2</description>
+<description>Модель GXP1620 · Тип устройства IP-телефон · PoE Нет · Порт Ethernet Fast Ethernet (100 Мбит/с) · Количество линий 2 линии · Диагональ 2,6–3″ · SIP-аккаунтов 2</description>
 </offer>
 <offer id="ISC00B998185" available="true">
 <url>https://b2b.isoft-shop.kz/konferenc-svyaz/tproduct/472889077164-ip-telefon-grandstream-grp2604</url>
@@ -229,7 +229,7 @@
 <name>IP телефон Grandstream GRP2604</name>
 <vendor>Grandstream</vendor>
 <vendorCode>ISC00B998185</vendorCode>
-<description>Модель GRP2604 · Тип устройства IP-телефон · PoE Нет · Порт Ethernet Gigabit (1000 Мбит/с) · Количество линий 3–4 линии · SIP-аккаунтов 6 · Размер дисплея 2,6–3″</description>
+<description>Модель GRP2604 · Тип устройства IP-телефон · PoE Нет · Порт Ethernet Gigabit (1000 Мбит/с) · Количество линий 3–4 линии · SIP-аккаунтов 6 · Диагональ 2,6–3″</description>
 </offer>
 <offer id="ISC503BAC70B" available="true">
 <url>https://b2b.isoft-shop.kz/konferenc-svyaz/tproduct/537913423864-ip-telefon-grandstream-grp2604p</url>
@@ -240,7 +240,7 @@
 <name>IP телефон Grandstream GRP2604P</name>
 <vendor>Grandstream</vendor>
 <vendorCode>ISC503BAC70B</vendorCode>
-<description>Модель GRP2604P · Тип устройства IP-телефон · PoE Есть · Порт Ethernet Gigabit (1000 Мбит/с) · Количество линий 3–4 линии · SIP-аккаунтов 6 · Размер дисплея 2,6–3″</description>
+<description>Модель GRP2604P · Тип устройства IP-телефон · PoE Есть · Порт Ethernet Gigabit (1000 Мбит/с) · Количество линий 3–4 линии · SIP-аккаунтов 6 · Диагональ 2,6–3″</description>
 </offer>
 <offer id="ISCA8CCDC660" available="true">
 <url>https://b2b.isoft-shop.kz/konferenc-svyaz/tproduct/713693474014-ip-telefon-grandstream-grp2602g</url>
@@ -251,7 +251,7 @@
 <name>IP телефон Grandstream GRP2602G</name>
 <vendor>Grandstream</vendor>
 <vendorCode>ISCA8CCDC660</vendorCode>
-<description>Модель GRP2602G · Тип устройства IP-телефон · PoE Есть · Порт Ethernet Gigabit (1000 Мбит/с) · Количество линий 2 линии · SIP-аккаунтов 4 · Размер дисплея до 2,5″</description>
+<description>Модель GRP2602G · Тип устройства IP-телефон · PoE Есть · Порт Ethernet Gigabit (1000 Мбит/с) · Количество линий 2 линии · SIP-аккаунтов 4 · Диагональ до 2,5″</description>
 </offer>
 <offer id="ISCB1CFA026F" available="true">
 <url>https://b2b.isoft-shop.kz/konferenc-svyaz/tproduct/162191323064-ip-telefon-grandstream-grp2612w</url>
@@ -273,7 +273,7 @@
 <name>IP телефон Grandstream GXP1625</name>
 <vendor>Grandstream</vendor>
 <vendorCode>ISD0A1E8C230</vendorCode>
-<description>Модель GXP1625 · Тип устройства IP-телефон · PoE Есть · Порт Ethernet Fast Ethernet (100 Мбит/с) · Количество линий 2 линии · SIP-аккаунтов 2 · Размер дисплея 2,6–3″</description>
+<description>Модель GXP1625 · Тип устройства IP-телефон · PoE Есть · Порт Ethernet Fast Ethernet (100 Мбит/с) · Количество линий 2 линии · SIP-аккаунтов 2 · Диагональ 2,6–3″</description>
 </offer>
 <offer id="ISDF37073C17" available="true">
 <url>https://b2b.isoft-shop.kz/konferenc-svyaz/tproduct/631180172984-ip-telefon-grandstream-ghp631w</url>
@@ -284,7 +284,7 @@
 <name>IP телефон Grandstream GHP631W</name>
 <vendor>Grandstream</vendor>
 <vendorCode>ISDF37073C17</vendorCode>
-<description>Модель GHP631W · Тип устройства IP-телефон · PoE Есть · Порт Ethernet Fast Ethernet (100 Мбит/с) · Количество линий 2 линии · Wi-Fi Есть · Размер дисплея 3,5″</description>
+<description>Модель GHP631W · Тип устройства IP-телефон · PoE Есть · Порт Ethernet Fast Ethernet (100 Мбит/с) · Количество линий 2 линии · Wi-Fi Есть · Диагональ 3,5″</description>
 </offer>
 <offer id="ISE126B7DCAE" available="true">
 <url>https://b2b.isoft-shop.kz/konferenc-svyaz/tproduct/974626589284-ip-telefon-grandstream-ghp630w</url>
@@ -295,7 +295,7 @@
 <name>IP телефон Grandstream GHP630W</name>
 <vendor>Grandstream</vendor>
 <vendorCode>ISE126B7DCAE</vendorCode>
-<description>Модель GHP630W · Тип устройства IP-телефон · PoE Есть · Порт Ethernet Fast Ethernet (100 Мбит/с) · Количество линий 2 линии · Wi-Fi Есть · Размер дисплея 3,5″</description>
+<description>Модель GHP630W · Тип устройства IP-телефон · PoE Есть · Порт Ethernet Fast Ethernet (100 Мбит/с) · Количество линий 2 линии · Wi-Fi Есть · Диагональ 3,5″</description>
 </offer>
 <offer id="ISE225766BCC" available="true">
 <url>https://b2b.isoft-shop.kz/konferenc-svyaz/tproduct/207553751454-ip-telefon-grandstream-grp2612g</url>
@@ -306,7 +306,7 @@
 <name>IP телефон Grandstream GRP2612G</name>
 <vendor>Grandstream</vendor>
 <vendorCode>ISE225766BCC</vendorCode>
-<description>Модель GRP2612G · Тип устройства IP-телефон · PoE Есть · Порт Ethernet Gigabit (1000 Мбит/с) · Количество линий 3–4 линии · SIP-аккаунтов 4 · Размер дисплея до 2,5″</description>
+<description>Модель GRP2612G · Тип устройства IP-телефон · PoE Есть · Порт Ethernet Gigabit (1000 Мбит/с) · Количество линий 3–4 линии · SIP-аккаунтов 4 · Диагональ до 2,5″</description>
 </offer>
 <offer id="ISEEACAA2824" available="true">
 <url>https://b2b.isoft-shop.kz/konferenc-svyaz/tproduct/690342847714-ip-telefon-grandstream-grp2616</url>
@@ -317,7 +317,7 @@
 <name>IP телефон Grandstream GRP2616</name>
 <vendor>Grandstream</vendor>
 <vendorCode>ISEEACAA2824</vendorCode>
-<description>Модель GRP2616 · Тип устройства IP-телефон · PoE Есть · Порт Ethernet Gigabit (1000 Мбит/с) · Количество линий 6–8 линий · Wi-Fi Есть · Bluetooth Есть · SIP-аккаунтов 16 · Размер дисплея 4,3″</description>
+<description>Модель GRP2616 · Тип устройства IP-телефон · PoE Есть · Порт Ethernet Gigabit (1000 Мбит/с) · Количество линий 6–8 линий · Wi-Fi Есть · Bluetooth Есть · SIP-аккаунтов 16 · Диагональ 4,3″</description>
 </offer>
 <offer id="ISFB1CB6778C" available="true">
 <url>https://b2b.isoft-shop.kz/konferenc-svyaz/tproduct/872435993154-ip-telefon-grandstream-grp2602p</url>
@@ -328,7 +328,7 @@
 <name>IP телефон Grandstream GRP2602P</name>
 <vendor>Grandstream</vendor>
 <vendorCode>ISFB1CB6778C</vendorCode>
-<description>Модель GRP2602P · Тип устройства IP-телефон · PoE Есть · Порт Ethernet Fast Ethernet (100 Мбит/с) · Количество линий 2 линии · SIP-аккаунтов 4 · Размер дисплея до 2,5″</description>
+<description>Модель GRP2602P · Тип устройства IP-телефон · PoE Есть · Порт Ethernet Fast Ethernet (100 Мбит/с) · Количество линий 2 линии · SIP-аккаунтов 4 · Диагональ до 2,5″</description>
 </offer>
 <offer id="IS0043EC49B1" available="true">
 <url>https://b2b.isoft-shop.kz/ssd-nakopiteli/tproduct/670596000154-samsung-pm897-384tb-data-center-ssd-25-i</url>
@@ -336,6 +336,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/tild3937-3736-4665-a465-333863303564/670596000154.jpg</picture>
+<picture>https://static.tildacdn.com/tild3834-3134-4632-b963-353466643931/670596000154_1.jpg</picture>
 <name>SAMSUNG PM897 3.84TB Data Center SSD, 2.5-inch 7mm, SATA 6Gb/s, Read/Write: 560/530 MB/s, Random Read/Write IOPS 98K/31K</name>
 <vendor>Samsung</vendor>
 <vendorCode>IS0043EC49B1</vendorCode>
@@ -347,6 +348,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/stor3564-3633-4138-b232-353438633436/b1d29765779b926273d72dd0b1fdff27.jpg</picture>
+<picture>https://static.tildacdn.com/tild3163-6536-4562-b739-643436336331/969357743624_1.jpg</picture>
 <name>Ssd SSD-накопитель SATA 480 GB Kingston DC600M, SEDC600M/480G, SATA 6Gb/s</name>
 <vendor>Kingston</vendor>
 <vendorCode>IS03377DE1CF</vendorCode>
@@ -369,6 +371,8 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/stor3662-3064-4266-b236-383536663933/8737955f13f3e70388b5201403b5c092.jpg</picture>
+<picture>https://static.tildacdn.com/tild3232-3361-4431-b362-356230303534/557227892704_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild6364-6433-4339-b034-613536633663/557227892704_2.jpg</picture>
 <name>Твердотельный накопитель SSD Kingston FURY Renegade G5 SFYR2S/1T0 M.2 NVMe PCIe 5.0x4</name>
 <vendor>Kingston</vendor>
 <vendorCode>SFYR2S/1T0</vendorCode>
@@ -380,6 +384,8 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/tild3837-3261-4562-a235-386665356462/718066075214.jpg</picture>
+<picture>https://static.tildacdn.com/tild3632-6561-4531-b135-646139633230/718066075214_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild3265-3636-4233-b039-656232353433/700487835264_2.jpg</picture>
 <name>Ssd SSD-накопитель USB 512 GB HIKSEMI, HS-USB-S560 512G U3, Type-A/Type-C, grey</name>
 <vendor>HIKSEMI</vendor>
 <vendorCode>IS0A6080DE9C</vendorCode>
@@ -392,6 +398,7 @@
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/stor3661-6565-4233-b966-313762336536/6503b75787ea18aa77d24fcbf59786ca.jpg</picture>
 <picture>https://static.tildacdn.com/stor3436-3965-4461-b639-343466343761/597ab1c83024ffbfc59b9b1bafa12bf2.jpg</picture>
+<picture>https://static.tildacdn.com/tild6362-6232-4662-a561-636261346461/688360444294_1.jpg</picture>
 <name>SSD-накопитель Netac NT01SA500-960-S3X 960GB SATA</name>
 <vendor>NETAC</vendor>
 <vendorCode>NT01SA500-960-S3X</vendorCode>
@@ -415,6 +422,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/tild3261-3761-4139-a232-633435306431/171075981584.jpg</picture>
+<picture>https://static.tildacdn.com/tild3236-3338-4861-a531-363461656131/971381639554_1.jpg</picture>
 <name>SILICON POWER 500GB DS72 Dual USB-C/USB 3.2 Gen 2, Portable External SSD</name>
 <vendor>SILICON POWER</vendor>
 <vendorCode>IS0DD759FE59</vendorCode>
@@ -426,6 +434,8 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/stor3763-3163-4563-b034-326436333633/38338a13b4a08d7010f906189fd1c4b2.jpg</picture>
+<picture>https://static.tildacdn.com/tild3231-3630-4965-b432-323666383463/863175118374_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild6231-6365-4361-a637-363335376235/863175118374_2.jpg</picture>
 <name>Внешний SSD диск Kingston 2TB XS1000 Красный SXS1000R/2000GA</name>
 <vendor>Kingston</vendor>
 <vendorCode>IS0F56374EE2</vendorCode>
@@ -448,6 +458,8 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/stor3135-3663-4731-a231-303731623939/58e82550701e3940898516e57992dd1f.jpg</picture>
+<picture>https://static.tildacdn.com/tild6435-3861-4566-b939-316235626435/980990238714_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild3731-3333-4566-a433-663037643733/980990238714_2.jpg</picture>
 <name>SSD-накопитель Samsung 870 EVO SSD 500 ГБ SATA 2.5-inch MZ-77E500BW</name>
 <vendor>Samsung</vendor>
 <vendorCode>IS1062885952</vendorCode>
@@ -459,6 +471,8 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/stor6630-6633-4434-a633-613139323663/a51f58b32df26ddac647f25f7e6907c6.jpg</picture>
+<picture>https://static.tildacdn.com/tild3565-3962-4434-b531-313832616565/366988458804_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild3737-3432-4931-b334-633732373362/366988458804_2.jpg</picture>
 <name>Ssd SSD-накопитель Huawei L1-25-SSD3840G 3,84TB SAS 2.5-inch 02356TMT</name>
 <vendor>HUAWEI eKit</vendor>
 <vendorCode>IS14F5FA64AB</vendorCode>
@@ -470,6 +484,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/stor3833-6163-4032-a337-336439383438/a6d4b34dc4cbc2f3b34a6aad7826fefc.jpg</picture>
+<picture>https://static.tildacdn.com/tild6663-3562-4165-a264-313238386662/991411481904_1.jpg</picture>
 <name>Внешний SSD диск Kingston 1TB Dual Portable Красный SPSD/1TB</name>
 <vendor>Kingston</vendor>
 <vendorCode>IS15B473EEF6</vendorCode>
@@ -514,6 +529,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/stor3633-6431-4236-a131-623131613361/071c2929370be361211dc72c4ad8a9ea.jpg</picture>
+<picture>https://static.tildacdn.com/tild3661-3330-4566-b839-373032663062/217089679184_1.jpg</picture>
 <name>Твердотельный накопитель SSD Kingston SKC600/512G SATA III 2.5-inch</name>
 <vendor>Kingston</vendor>
 <vendorCode>SKC600/512G</vendorCode>
@@ -525,6 +541,8 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/stor6264-6137-4031-a239-656430656166/9defe54d4d582e86f2e827d20dbc40da.jpg</picture>
+<picture>https://static.tildacdn.com/tild3032-6230-4239-b639-306433363563/976637716334_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild3565-3139-4265-b934-373434396633/976637716334_2.jpg</picture>
 <name>Ssd SSD-накопитель Kingston SNV3SM3/2T0 2TB Mini M.2 2230 PCIe Gen4 x4</name>
 <vendor>Kingston</vendor>
 <vendorCode>IS2434758C29</vendorCode>
@@ -547,6 +565,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/stor3930-3762-4235-a132-663666636636/3ac0a8a51029a0be1cc8a4c044da2805.jpg</picture>
+<picture>https://static.tildacdn.com/tild3634-3062-4362-b030-326166363664/640776187024_1.jpg</picture>
 <name>Внешний SSD диск Verbatim TurboMetal 32021 1TB</name>
 <vendor>Verbatim</vendor>
 <vendorCode>32021</vendorCode>
@@ -570,6 +589,7 @@
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/tild3062-3231-4134-b935-663632353832/654527321694.jpg</picture>
 <picture>https://static.tildacdn.com/tild6361-3537-4461-b563-353231623466/654527321694_2.jpg</picture>
+<picture>https://static.tildacdn.com/tild3661-6439-4935-b134-646364343333/654527321694_2.jpg</picture>
 <name>Ssd SSD-накопитель USB 1 TB HIKSEMI, HS-ESSD-ELITE7S 1T, USB 3.2 + Type-C, Grey</name>
 <vendor>HIKSEMI</vendor>
 <vendorCode>IS2C646A9DAD</vendorCode>
@@ -592,6 +612,8 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/stor3131-6332-4634-b534-633666333631/569957aec43ebb0322e9aa263e069fbe.jpg</picture>
+<picture>https://static.tildacdn.com/tild6362-6232-4662-a561-636261346461/688360444294_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild6439-6466-4764-b535-626364376361/691832689764_2.jpg</picture>
 <name>Твердотельный накопитель SSD Netac NT01SA500-480-S3X 480GB SATA</name>
 <vendor>NETAC</vendor>
 <vendorCode>NT01SA500-480-S3X</vendorCode>
@@ -614,6 +636,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/tild3566-3537-4437-b336-313463613134/519642785494.jpg</picture>
+<picture>https://static.tildacdn.com/tild3738-6539-4263-b134-313138346534/519642785494_2.jpg</picture>
 <name>Ssd SSD-накопитель USB 1 TB HIKSEMI, HS-ESSD-Elite 1T, USB 3.2, grey</name>
 <vendor>HIKSEMI</vendor>
 <vendorCode>IS306E96E5A8</vendorCode>
@@ -626,6 +649,7 @@
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/stor6635-3133-4038-a132-613637353565/ba8d5afcce0430ddbc6a23694fc0a786.jpg</picture>
 <picture>https://static.tildacdn.com/stor3564-6133-4433-b633-396332383333/9669114eed3195f292df4cbf39e0dcb3.jpg</picture>
+<picture>https://static.tildacdn.com/tild3463-3763-4565-b532-653465356563/970561051854_1.jpg</picture>
 <name>Твердотельный накопитель SSD M.2 2280 4Tb Kingston Fury Renegade NVMe (R14800/W14000MB/s)</name>
 <vendor>Kingston</vendor>
 <vendorCode>SFYR2S/4T0</vendorCode>
@@ -648,6 +672,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/stor3163-3233-4339-b139-316338623861/ed3f6f3174655fadd43b349bbb203f7e.jpg</picture>
+<picture>https://static.tildacdn.com/tild3437-3262-4632-b532-376133613236/649324890954_1.jpg</picture>
 <name>Твердотельный накопитель SSD M.2 2280 1Tb Gigabyte AORUS Gen4 7300 TLC 3D NAND (R7300/W6000MB/s)</name>
 <vendor>Gigabyte</vendor>
 <vendorCode>IS369536BC77</vendorCode>
@@ -670,6 +695,8 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/stor3366-6562-4536-b330-643539666462/0a34e6f79b4d4708685a5fa4728e5e44.jpg</picture>
+<picture>https://static.tildacdn.com/tild3262-3363-4433-b663-316136643135/914902862404_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild3537-3665-4239-b164-623839343865/687124734124_1.jpg</picture>
 <name>SSD-накопитель Huawei D2020SASSSD3840 3,84TB SAS 2.5-inch OceanStor Dorado 2020</name>
 <vendor>Huawei</vendor>
 <vendorCode>02356TUV</vendorCode>
@@ -681,6 +708,8 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/stor3866-3334-4538-b262-306464656639/8bada3d2dc5114051912ea12773665b7.jpg</picture>
+<picture>https://static.tildacdn.com/tild3164-6138-4039-a561-366164646534/623367581224_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild6531-3561-4735-b032-306537393339/623367581224_2.jpg</picture>
 <name>Ssd SSD-накопитель Huawei L1-25-SSD1.92T-V22Y 1,92TB SAS 2.5-inch 02356ASC</name>
 <vendor>HUAWEI eKit</vendor>
 <vendorCode>IS3EB92721AF</vendorCode>
@@ -693,6 +722,7 @@
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/stor3166-6435-4666-b365-343831303732/f5c103f084f0153a3b1de3e9e8dc0129.jpg</picture>
 <picture>https://static.tildacdn.com/stor3330-6132-4965-a131-396231303239/73cf2918e10159746dcc81f04327ad39.jpg</picture>
+<picture>https://static.tildacdn.com/tild3033-3639-4735-a132-663264663437/390791350004_1.jpg</picture>
 <name>SSD-накопитель Patriot P220 512GB SATA III</name>
 <vendor>Patriot</vendor>
 <vendorCode>P220S512G25</vendorCode>
@@ -704,6 +734,8 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/stor3563-3935-4465-a365-343830303662/36003eadee182599545e20e588fc2670.jpg</picture>
+<picture>https://static.tildacdn.com/tild3562-3964-4566-a637-613839373332/176817777644_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild3737-3036-4866-a636-663832373032/176817777644_2.jpg</picture>
 <name>Ssd SSD-накопитель Huawei L1-35-SSD1920G 02356TLH</name>
 <vendor>HUAWEI eKit</vendor>
 <vendorCode>IS419DF9B7E4</vendorCode>
@@ -715,6 +747,8 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/stor6338-3739-4135-b664-663334356665/8021de829c03e359c93522f6ca7f3dc9.jpg</picture>
+<picture>https://static.tildacdn.com/tild6162-3738-4535-a464-353732316630/605752882584_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild3161-3662-4037-b436-356239306439/605752882584_2.jpg</picture>
 <name>Твердотельный накопитель SSD M.2 2280 500Gb Kingston NV3 TLC 3D NAND (R5000/W3000MB/s)</name>
 <vendor>Kingston</vendor>
 <vendorCode>SNV3S/500G</vendorCode>
@@ -726,6 +760,8 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/stor3466-6265-4563-b630-663934363862/208b2079796d6c3838244bd2e49ddf90.jpg</picture>
+<picture>https://static.tildacdn.com/tild6539-3234-4265-a465-326262356563/611524175684_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild3133-3262-4436-a430-613634393961/611524175684_2.jpg</picture>
 <name>SSD-накопитель Patriot Burst Elite 480GB SATA</name>
 <vendor>Patriot</vendor>
 <vendorCode>PBE480GS25SSDR</vendorCode>
@@ -748,6 +784,8 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/stor3434-3562-4138-b731-643730616463/679b1d4a011ab46026e1535c7639cebc.jpg</picture>
+<picture>https://static.tildacdn.com/tild6265-3962-4466-b139-303433373865/340136974674_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild6538-3430-4362-b663-356338663230/340136974674_2.jpg</picture>
 <name>Ssd SSD-накопитель Kingston FURY Renegade SFYRDK/2000G M.2 NVMe PCIe 4.0 HeatSink</name>
 <vendor>Kingston</vendor>
 <vendorCode>IS49706C903B</vendorCode>
@@ -782,6 +820,8 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/stor3364-6365-4161-a539-636666653461/891d6ae2f88ef7d3eb228179b1693567.jpg</picture>
+<picture>https://static.tildacdn.com/tild3236-6637-4564-b939-643566383639/709763551704_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild3130-3036-4735-a530-303765316163/709763551704_2.jpg</picture>
 <name>Ssd SSD-накопитель Kingston FURY Renegade G5 SFYR2S/2T0 M.2 NVMe PCIe 5.0x4</name>
 <vendor>Kingston</vendor>
 <vendorCode>IS4D2FD369D9</vendorCode>
@@ -793,6 +833,8 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/tild3232-6332-4465-b932-373132303036/341748889154.jpg</picture>
+<picture>https://static.tildacdn.com/tild3530-6334-4565-b939-656137396134/341748889154_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild3661-6335-4532-a632-376261363663/341748889154_2.jpg</picture>
 <name>Ssd SSD-накопитель SATA 1 TB Silicon Power A56, SP001TBSS3A56A25, SATA 6Gb/s</name>
 <vendor>SILICON POWER</vendor>
 <vendorCode>IS4D9E2AA6B7</vendorCode>
@@ -816,6 +858,7 @@
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/stor3838-3539-4436-a336-386666386136/b2551e19d0b059a19977efe5b502ec34.jpg</picture>
 <picture>https://static.tildacdn.com/stor6463-3235-4736-b262-613466623934/f649840557b1158d8be7a7a703f54738.jpg</picture>
+<picture>https://static.tildacdn.com/tild3537-3665-4239-b164-623839343865/687124734124_1.jpg</picture>
 <name>SSD-накопитель Huawei D2020-SAS3.84T-CF</name>
 <vendor>Huawei</vendor>
 <vendorCode>02551272</vendorCode>
@@ -827,6 +870,8 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/tild6638-3131-4966-b066-366133353734/757553210994.jpg</picture>
+<picture>https://static.tildacdn.com/tild3635-3164-4636-b937-366462313737/630787108284_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild3232-3865-4438-b730-336265316362/757553210994_2.jpg</picture>
 <name>Ssd SSD-накопитель USB 512 GB HIKSEMI, HS-ESSD-T100 Black 512G, USB 3.2 + Type-C, black</name>
 <vendor>HIKSEMI</vendor>
 <vendorCode>IS529E035739</vendorCode>
@@ -838,6 +883,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/stor3439-3766-4434-a232-323930323933/81eb7aa2d0c928f4671deae8532dddc6.jpg</picture>
+<picture>https://static.tildacdn.com/tild3861-3131-4533-b762-383437363166/179649560634_1.jpg</picture>
 <name>Внешний SSD диск Verbatim VX500 47443 480GB Серый</name>
 <vendor>Verbatim</vendor>
 <vendorCode>47443</vendorCode>
@@ -849,6 +895,8 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/stor3733-6432-4864-b932-646439376561/0888ee3b6eeb36e275434c772bffd110.png</picture>
+<picture>https://static.tildacdn.com/tild6331-3933-4033-b039-353738383533/228167573804_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild3963-6530-4565-b662-656337343739/228167573804_2.jpg</picture>
 <name>SEAGATE SSD External Ultra Compact (2.5-inch/2TB/USB 3.1 TYPE C) Dark Grey</name>
 <vendor>SEAGATE</vendor>
 <vendorCode>IS542026DD30</vendorCode>
@@ -860,6 +908,8 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/stor3033-3037-4938-a535-383638303632/1c10861a4797e700e20e828ae9067ea8.jpg</picture>
+<picture>https://static.tildacdn.com/tild3163-6637-4637-b833-663738356435/269039866494_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild3639-6331-4534-b330-636338333031/325956560594_2.jpg</picture>
 <name>SSD-накопитель Apacer AS350X 512GB SATA</name>
 <vendor>Apacer</vendor>
 <vendorCode>AP512GAS350XR-1</vendorCode>
@@ -871,6 +921,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/stor3761-6439-4531-a630-383665663564/cc9bccb6c8bf63b8126cb0db5a85a0c0.jpg</picture>
+<picture>https://static.tildacdn.com/tild3939-3739-4535-b734-623731636633/928730162614_1.jpg</picture>
 <name>Твердотельный накопитель SSD Kingston NV3 SNV3S/1000GBK 1000GB M.2 NVMe PCIe 4.0x4 6000/4000Мб/cBULK</name>
 <vendor>Kingston</vendor>
 <vendorCode>SNV3S/1000GBK</vendorCode>
@@ -882,6 +933,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/tild6430-6461-4137-b039-386266333632/541393907084.jpg</picture>
+<picture>https://static.tildacdn.com/tild3733-3633-4262-b362-643066666461/891039298104_1.jpg</picture>
 <name>SAMSUNG PM893 7.68TB Data Center SSD, 2.5-inch 7mm, SATA 6Gb/s, Read/Write: 560/530 MB/s, Random Read/Write IOPS 98K/31K</name>
 <vendor>Samsung</vendor>
 <vendorCode>IS56DAC18DB8</vendorCode>
@@ -893,6 +945,8 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/tild3837-3261-4562-a235-386665356462/718066075214.jpg</picture>
+<picture>https://static.tildacdn.com/tild3632-6561-4531-b135-646139633230/718066075214_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild6534-3338-4461-a532-656334336364/718066075214_2.jpg</picture>
 <name>Ssd SSD-накопитель USB 1 TB HIKSEMI, HS-USB-S560 1T U3, Type-A/Type-C, grey</name>
 <vendor>HIKSEMI</vendor>
 <vendorCode>IS571ED1A26C</vendorCode>
@@ -904,6 +958,8 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/stor3536-3865-4064-b864-326561353962/74bce2e66924244be911a6d604089215.jpg</picture>
+<picture>https://static.tildacdn.com/tild3061-3434-4364-b962-313437383830/593405706094_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild6333-3465-4066-a461-396666336262/593405706094_2.jpg</picture>
 <name>Внешний SSD диск Kingston 4TB XS2000 Черный SXS2000/4000GA</name>
 <vendor>Kingston</vendor>
 <vendorCode>IS585E601EC1</vendorCode>
@@ -915,6 +971,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/tild6130-3465-4139-b339-653863383831/480525540284.jpg</picture>
+<picture>https://static.tildacdn.com/tild3233-6363-4165-a436-316431663630/480525540284_1.jpg</picture>
 <name>SILICON POWER PC60 512GB Portable SSD SATAIII USB 3.2 Gen2 (Type-C) Portable SSD, R/W: up to 540MB/s, 500MB/s, Black</name>
 <vendor>SILICON POWER</vendor>
 <vendorCode>IS594255D8C6</vendorCode>
@@ -937,6 +994,8 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/tild6364-6238-4630-b566-633433356361/915221673694.jpg</picture>
+<picture>https://static.tildacdn.com/tild3962-3665-4137-a435-383535396636/915221673694_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild6236-6538-4537-b866-613134613130/915221673694_2.jpg</picture>
 <name>Ssd SSD-накопитель U.2 1920 GB Intel D7-P5520, SSDPF2KX019T1M1, NVMe</name>
 <vendor>Intel</vendor>
 <vendorCode>IS5B6CF00F99</vendorCode>
@@ -981,6 +1040,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/tild6337-3263-4333-a232-653935646364/762374476394.jpg</picture>
+<picture>https://static.tildacdn.com/tild6230-3565-4965-a131-383532353264/578049212444_1.jpg</picture>
 <name>NETAC ZX20 II USB 3.2 Gen 2 Type-C External Magnetic Portable SSD 512GB</name>
 <vendor>NETAC</vendor>
 <vendorCode>IS6FD31ED009</vendorCode>
@@ -1003,6 +1063,8 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/tild3561-3339-4563-b635-623164346534/818351444364.jpg</picture>
+<picture>https://static.tildacdn.com/tild6637-3630-4739-b932-333236323634/818351444364_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild3138-6565-4863-b734-663963633065/818351444364_2.jpg</picture>
 <name>Ssd SSD-накопитель USB 512 GB HIKSEMI, HS-ESSD-T200N 512G, USB 3.2, black</name>
 <vendor>HIKSEMI</vendor>
 <vendorCode>IS71425F505F</vendorCode>
@@ -1025,6 +1087,8 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/tild3339-3362-4330-b261-346561363035/598486976044.jpg</picture>
+<picture>https://static.tildacdn.com/tild6365-6161-4666-a136-616531633338/598486976044_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild3466-3164-4632-b265-323731343166/598486976044_2.jpg</picture>
 <name>Ssd SSD-накопитель USB 1 TB HIKSEMI, HS-ESSD-Elite9 1T, USB 3.2, grey</name>
 <vendor>HIKSEMI</vendor>
 <vendorCode>IS74046C643E</vendorCode>
@@ -1037,6 +1101,7 @@
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/stor3035-3732-4434-b030-353062636536/be56a5eb4abb4e07ea81b1cd84e999e8.jpg</picture>
 <picture>https://static.tildacdn.com/stor3336-6631-4465-b865-656535316263/274d265fdcc6a9e380609e43cd5da6f4.jpg</picture>
+<picture>https://static.tildacdn.com/tild3063-3964-4962-a466-343930373261/946419072774_1.jpg</picture>
 <name>Твердотельный накопитель SSD M.2 2280 1Tb Kingston NV3 TLC 3D NAND (R6000/W4000MB/s)</name>
 <vendor>Kingston</vendor>
 <vendorCode>SNV3S/1000G</vendorCode>
@@ -1048,6 +1113,8 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/stor3630-6635-4135-b664-306162306635/0c788b8e72211e6a8847f3af564c42be.jpg</picture>
+<picture>https://static.tildacdn.com/tild6361-3131-4263-a663-643032346464/677832389284_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild6539-3232-4536-a333-646333663538/677832389284_2.jpg</picture>
 <name>Твердотельный накопитель SSD M.2 2280 2Tb Kingston NV3 TLC 3D NAND (R6000/W5000MB/s)</name>
 <vendor>Kingston</vendor>
 <vendorCode>SNV3S/2000G</vendorCode>
@@ -1059,6 +1126,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/tild6130-3465-4139-b339-653863383831/480525540284.jpg</picture>
+<picture>https://static.tildacdn.com/tild3233-6363-4165-a436-316431663630/480525540284_1.jpg</picture>
 <name>SILICON POWER PC60 1TB Portable SSD SATAIII USB 3.2 Gen2 (Type-C) Portable SSD, R/W: up to 540MB/s, 500MB/s, Black</name>
 <vendor>SILICON POWER</vendor>
 <vendorCode>IS7790571C72</vendorCode>
@@ -1070,6 +1138,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/stor3130-6332-4566-b536-303262656538/cce029459490de7f50b28b898e479934.jpg</picture>
+<picture>https://static.tildacdn.com/tild3238-3032-4636-b533-303235616664/958507293874_1.jpg</picture>
 <name>Внешний SSD диск Verbatim VX500 47444 1TB Серый</name>
 <vendor>Verbatim</vendor>
 <vendorCode>47444</vendorCode>
@@ -1081,6 +1150,8 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/tild3135-3737-4264-b237-616330383935/164414199564.jpg</picture>
+<picture>https://static.tildacdn.com/tild3434-3536-4039-b937-363834366330/164414199564_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild3636-6431-4336-a339-636237343764/164414199564_2.jpg</picture>
 <name>Ssd SSD-накопитель M.2, 960 GB Exascend PE4, EXPE4M960GB, 2280, NVMe</name>
 <vendor>EXASCEND</vendor>
 <vendorCode>IS7B61EC5147</vendorCode>
@@ -1104,6 +1175,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/stor3637-3362-4662-a536-303430363632/4f45108e913bcf45a92f629154a40ff9.jpg</picture>
+<picture>https://static.tildacdn.com/tild6435-3664-4035-a139-373565336330/477212297694_1.jpg</picture>
 <name>Внешний SSD диск Lexar 1TB SL300 Чёрный</name>
 <vendor>Lexar</vendor>
 <vendorCode>LSL300001T-RNBNG</vendorCode>
@@ -1115,6 +1187,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/tild6462-6161-4463-b434-363630623066/675500922334.jpg</picture>
+<picture>https://static.tildacdn.com/tild6231-3734-4532-b865-313361396534/675500922334_1.jpg</picture>
 <name>NETAC Z SLIM Black USB 3.2 Gen 2 Type-C External SSD 500GB</name>
 <vendor>NETAC</vendor>
 <vendorCode>IS7D4B204BAE</vendorCode>
@@ -1148,6 +1221,8 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/stor3466-3364-4066-b430-633237306535/b1e0b21bed7f8f26f79b690706daed46.jpg</picture>
+<picture>https://static.tildacdn.com/tild6336-6161-4731-b238-313064313461/781880040654_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild6336-3438-4066-a430-366463313439/781880040654_2.jpg</picture>
 <name>Твердотельный накопитель SSD Netac NT01N600S-512G-S3X 512GB SATA</name>
 <vendor>NETAC</vendor>
 <vendorCode>NT01N600S-512G-S3X</vendorCode>
@@ -1160,6 +1235,7 @@
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/tild6336-6232-4131-b638-306266643832/671499987334.jpg</picture>
 <picture>https://static.tildacdn.com/tild3961-3363-4331-a563-633539343631/671499987334_2.jpg</picture>
+<picture>https://static.tildacdn.com/tild6334-3439-4439-b865-326561643439/671499987334_1.jpg</picture>
 <name>Ssd SSD-накопитель M.2 SATA 1 TB Hiksemi (Hikvision) HS-SSD-WAVE(N) 1024G, SATA 6Gb/s</name>
 <vendor>HIKSEMI</vendor>
 <vendorCode>IS82CA37E518</vendorCode>
@@ -1182,6 +1258,8 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/stor3435-6366-4133-b636-616232646637/e8784e276f1c856e9084cfd8929a10a3.jpg</picture>
+<picture>https://static.tildacdn.com/tild6366-3632-4264-a238-306436363366/500999533184_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild3061-3137-4330-b062-353236326461/500999533184_2.jpg</picture>
 <name>Ssd SSD-накопитель Kingston SKC600MS/256G mSATA</name>
 <vendor>Kingston</vendor>
 <vendorCode>IS83991B4CC7</vendorCode>
@@ -1193,6 +1271,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/stor3836-3739-4562-b237-376437653366/a0c0d0e168bfb725a7a08a035fc2ffe5.jpg</picture>
+<picture>https://static.tildacdn.com/tild6238-3166-4533-b636-373464313739/826204185324_1.jpg</picture>
 <name>Ssd SSD-накопитель Gigabyte G440E500G 500GB M.2 2280 PCIe 4.0x4</name>
 <vendor>Gigabyte</vendor>
 <vendorCode>IS83A938FBB6</vendorCode>
@@ -1204,6 +1283,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/stor6236-3237-4565-b931-333438363164/7991de185a6b5a60e2042c3e91edb0b0.jpg</picture>
+<picture>https://static.tildacdn.com/tild6138-6332-4432-b535-313938383934/607296615264_1.jpg</picture>
 <name>Твердотельный накопитель SSD Kingston SKC600/256G SATA III 2.5-inch</name>
 <vendor>Kingston</vendor>
 <vendorCode>SKC600/256G</vendorCode>
@@ -1237,6 +1317,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/stor3761-3333-4632-b032-306430336136/4d533a82c304423ed0c5f4c10b4854c7.jpg</picture>
+<picture>https://static.tildacdn.com/tild6439-3533-4061-b564-323630633066/594013065444_1.jpg</picture>
 <name>SSD-накопитель ADATA XPG GAMMIX S70 BLADE 4 ТБ M.2</name>
 <vendor>Adata</vendor>
 <vendorCode>AGAMMIXS70B-4T-CS</vendorCode>
@@ -1271,6 +1352,8 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/stor3462-6135-4230-b764-643536393139/9f5c3dad404121b882ed796df010d32a.jpg</picture>
+<picture>https://static.tildacdn.com/tild3663-6336-4439-a335-326434323964/804354268604_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild3266-6163-4361-a537-663932616437/804354268604_2.jpg</picture>
 <name>Твердотельный накопитель SSD Kingston SNV3SM3/500G 500GB Mini M.2 2230 PCIe Gen4 x4</name>
 <vendor>Kingston</vendor>
 <vendorCode>SNV3SM3/500G</vendorCode>
@@ -1282,6 +1365,8 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/stor3831-3839-4564-a362-373864343162/c6387fb0905e2ecf9a85bc651251d7f3.jpg</picture>
+<picture>https://static.tildacdn.com/tild6635-6134-4233-b165-373666396531/168999806674_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild3461-3363-4530-b235-633364346432/168999806674_2.jpg</picture>
 <name>SSD-накопитель Netac NT01N600S-002T-S3X 2TB 2.5 SATAIII</name>
 <vendor>NETAC</vendor>
 <vendorCode>NT01N600S-002T-S3X</vendorCode>
@@ -1304,6 +1389,8 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/tild6466-6333-4237-a436-653835666636/367204316314.jpg</picture>
+<picture>https://static.tildacdn.com/tild3966-6635-4034-a338-396339616634/367204316314_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild3762-6664-4530-b038-393962396637/367204316314_2.jpg</picture>
 <name>Ssd SSD-накопитель SATA 1 TB Silicon Power A55 SP001TBSS3A55S25, SATA 6Gb/s</name>
 <vendor>SILICON POWER</vendor>
 <vendorCode>IS9A8763A6EB</vendorCode>
@@ -1337,6 +1424,8 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/tild3437-3339-4932-a431-333430623831/832464609244.jpg</picture>
+<picture>https://static.tildacdn.com/tild3334-6161-4265-a266-656538643834/722311944094_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild6638-6264-4639-a138-333437363732/722311944094_2.jpg</picture>
 <name>Ssd SSD-накопитель USB 1 TB HIKSEMI, HS-ESSD-T300S 1T, USB 3.2 + Type-C, black</name>
 <vendor>HIKSEMI</vendor>
 <vendorCode>IS9DD1B947D7</vendorCode>
@@ -1370,6 +1459,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/tild3562-6566-4230-a132-323665333735/364453242084.jpg</picture>
+<picture>https://static.tildacdn.com/tild3837-6539-4065-a631-666336636635/364453242084_1.jpg</picture>
 <name>SAMSUNG PM1653 960GB Enterprise SSD, 2.5-inch, SAS 24Gb/s, Read/Write: 4200 / 1200 MB/s, Random Read/Write IOPS 600K/55K</name>
 <vendor>Samsung</vendor>
 <vendorCode>ISA3F5588769</vendorCode>
@@ -1381,6 +1471,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/stor3433-3931-4537-b230-303962383363/f73b76aa045a097395111d176d1144b1.jpg</picture>
+<picture>https://static.tildacdn.com/tild6635-3565-4036-b265-326335356661/229481633004_1.jpg</picture>
 <name>Внешний SSD диск Verbatim TurboMetal 32022 2TB</name>
 <vendor>Verbatim</vendor>
 <vendorCode>32022</vendorCode>
@@ -1392,6 +1483,8 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/stor3937-3434-4436-b765-333466326264/613b3acacc50b9801393ef878633c8a1.jpg</picture>
+<picture>https://static.tildacdn.com/tild3334-6534-4431-a664-366165313034/346559379884_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild6631-3134-4431-a533-653334396532/346559379884_2.jpg</picture>
 <name>SSD-накопитель Patriot P210 512GB SATA</name>
 <vendor>Patriot</vendor>
 <vendorCode>P210S512G25</vendorCode>
@@ -1439,6 +1532,7 @@
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/stor3331-6633-4238-b537-343661376535/bab4e677bf0c85ed62162fb4cf6544e9.jpg</picture>
 <picture>https://static.tildacdn.com/stor3164-6530-4534-a133-366234663934/7a9bfc79ca29ebbc2464cb5d93985191.jpg</picture>
+<picture>https://static.tildacdn.com/tild3063-3966-4539-b337-336465386334/121658086524_1.jpg</picture>
 <name>SSD-накопитель Apacer AS340X 480GB SATA</name>
 <vendor>Apacer</vendor>
 <vendorCode>AP480GAS340XC-1</vendorCode>
@@ -1450,6 +1544,8 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/stor6261-3863-4062-b964-343531386566/4abd73220aa354cc86e05d79b4b3cea0.jpg</picture>
+<picture>https://static.tildacdn.com/tild3865-3462-4730-b565-383934353031/599047044554_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild3330-3932-4266-b335-666665376234/599047044554_2.jpg</picture>
 <name>Внешний SSD диск Kingston 1TB XS1000 Красный SXS1000R/1000GA</name>
 <vendor>Kingston</vendor>
 <vendorCode>ISAD9B1B3EE5</vendorCode>
@@ -1475,6 +1571,7 @@
 <picture>https://static.tildacdn.com/tild3032-3532-4033-b762-313831363536/213359592824.jpg</picture>
 <picture>https://static.tildacdn.com/tild3939-3463-4565-a337-313830343665/213359592824_2.jpg</picture>
 <picture>https://static.tildacdn.com/tild3362-3334-4132-a633-313831363665/213359592824_3.jpg</picture>
+<picture>https://static.tildacdn.com/tild6434-3532-4363-a632-373435613637/213359592824_2.jpg</picture>
 <name>Ssd SSD-накопитель M.2 PCIe 512 GB Gigabyte, G3NVME512G, PCIe 3.0 NVMe</name>
 <vendor>Gigabyte</vendor>
 <vendorCode>ISB2742C7762</vendorCode>
@@ -1497,6 +1594,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/stor6564-3739-4238-b636-383163623061/9307b75c291a08432640cb75e5a99cd5.jpg</picture>
+<picture>https://static.tildacdn.com/tild3636-3031-4164-a638-363534376465/950205348654_1.jpg</picture>
 <name>Внешний SSD диск Kingston 512GB Dual Portable Красный SPSD/512GB</name>
 <vendor>Kingston</vendor>
 <vendorCode>ISB7F1B59CDC</vendorCode>
@@ -1521,6 +1619,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/stor3366-3836-4732-a130-626164633837/be762ae6ed6af8ce7adc567da024b19a.jpg</picture>
+<picture>https://static.tildacdn.com/tild6366-3666-4431-a535-336163313034/218454368534_1.jpg</picture>
 <name>Внешний SSD диск Verbatim Pocket SSD 32190 1TB Чёрный</name>
 <vendor>Verbatim</vendor>
 <vendorCode>32190</vendorCode>
@@ -1532,6 +1631,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/tild3466-6130-4738-b134-393165613133/578049212444.jpg</picture>
+<picture>https://static.tildacdn.com/tild6230-3565-4965-a131-383532353264/578049212444_1.jpg</picture>
 <name>NETAC ZX20 II USB 3.2 Gen 2 Type-C External Magnetic Portable SSD 1TB</name>
 <vendor>NETAC</vendor>
 <vendorCode>ISBB13B56DFC</vendorCode>
@@ -1543,6 +1643,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/stor3839-6130-4664-a639-373632396434/490c4715a6e25165d1cd0fdb4b4f6dc1.jpg</picture>
+<picture>https://static.tildacdn.com/tild3364-3935-4465-a335-393834653035/739167097834_1.jpg</picture>
 <name>Ssd SSD-накопитель Kingston SKC600/1024G SATA III 2.5-inch</name>
 <vendor>Kingston</vendor>
 <vendorCode>ISBF727E8F35</vendorCode>
@@ -1554,6 +1655,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/tild3562-6566-4230-a132-323665333735/364453242084.jpg</picture>
+<picture>https://static.tildacdn.com/tild3632-3139-4434-b638-636664356236/781703519084_1.jpg</picture>
 <name>SAMSUNG PM1653 7.68TB Enterprise SSD, 2.5-inch, SAS 24Gb/s, TLC</name>
 <vendor>Samsung</vendor>
 <vendorCode>ISC167A34E38</vendorCode>
@@ -1565,6 +1667,8 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/stor3634-3864-4634-b165-613832353333/af28ae44b711f7e9c4f818488a900504.jpg</picture>
+<picture>https://static.tildacdn.com/tild3230-3739-4135-b231-663934303064/811646820734_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild3231-6338-4339-b261-323066663163/811646820734_2.jpg</picture>
 <name>Ssd SSD-накопитель Kingston NV3 SNV3S/4000G M.2 NVMe PCIe 4.0x4</name>
 <vendor>Kingston</vendor>
 <vendorCode>ISC35B908F24</vendorCode>
@@ -1576,6 +1680,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/stor6131-3539-4535-b633-303066343862/558255fe7bde44c92700bb4070cd9a6b.jpg</picture>
+<picture>https://static.tildacdn.com/tild3735-3734-4333-b330-666533623663/428995916084_1.jpg</picture>
 <name>Твердотельный накопитель внутренний Lexar NM620 LNM620X001T-RNNNG M.2</name>
 <vendor>Lexar</vendor>
 <vendorCode>LNM620X001T-RNNNG</vendorCode>
@@ -1587,6 +1692,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/tild6430-6461-4137-b039-386266333632/541393907084.jpg</picture>
+<picture>https://static.tildacdn.com/tild3733-3633-4262-b362-643066666461/891039298104_1.jpg</picture>
 <name>SAMSUNG PM893 3.84TB Data Center SSD, 2.5-inch 7mm, SATA 6Gb/s, Read/Write: 560/530 MB/s, Random Read/Write IOPS 98K/31K</name>
 <vendor>Samsung</vendor>
 <vendorCode>ISC8BF569B4E</vendorCode>
@@ -1610,6 +1716,7 @@
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/tild3930-3635-4866-a363-613231313834/615509255704.jpg</picture>
 <picture>https://static.tildacdn.com/tild3863-6436-4438-a166-626661386633/615509255704_2.jpg</picture>
+<picture>https://static.tildacdn.com/tild3037-3334-4533-b165-363037396336/615509255704_1.jpg</picture>
 <name>Ssd SSD-накопитель M.2, 1920 GB Exascend PE4, EXPE4M1920GB, NVMe</name>
 <vendor>EXASCEND</vendor>
 <vendorCode>ISCBDCE4B7C0</vendorCode>
@@ -1621,6 +1728,8 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/stor3636-6366-4965-b735-393830653135/ce137e71438d6f58d0b8cb76d6f922fa.jpg</picture>
+<picture>https://static.tildacdn.com/tild6635-6134-4233-b165-373666396531/168999806674_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild3461-3363-4530-b235-633364346432/168999806674_2.jpg</picture>
 <name>SSD-накопитель Netac NT01N600S-001T-S3X 1TB 2.5 SATAIII</name>
 <vendor>NETAC</vendor>
 <vendorCode>NT01N600S-001T-S3X</vendorCode>
@@ -1645,6 +1754,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/stor6231-3561-4338-a633-653633363834/c477d11ad7907ab36a1340c5d5395d84.jpg</picture>
+<picture>https://static.tildacdn.com/tild3038-3662-4336-a330-393130663861/337965640774_1.jpg</picture>
 <name>SSD-накопитель Kingston SA400S37/960G SATA 7мм</name>
 <vendor>Kingston</vendor>
 <vendorCode>SA400S37/960G</vendorCode>
@@ -1678,6 +1788,8 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/stor3364-3765-4364-b036-356633636139/7fbb8f7c8a782a51110a46bfc28eb322.jpg</picture>
+<picture>https://static.tildacdn.com/tild3262-3363-4433-b663-316136643135/914902862404_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild3537-3665-4239-b164-623839343865/687124734124_1.jpg</picture>
 <name>SSD-накопитель Huawei D2020SASSSDm3840 3,84TB SAS 2.5-inch OceanStor Dorado 2020 02356HAT</name>
 <vendor>HUAWEI eKit</vendor>
 <vendorCode>ISD58ED32964</vendorCode>
@@ -1689,6 +1801,8 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/stor3633-3566-4265-b737-623533326530/fae999ffa6c9bc4d36cd0a8252990562.jpg</picture>
+<picture>https://static.tildacdn.com/tild6366-3632-4264-a238-306436363366/500999533184_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild3061-3137-4330-b062-353236326461/500999533184_2.jpg</picture>
 <name>SSD-накопитель Kingston SKC600MS/512G mSATA</name>
 <vendor>Kingston</vendor>
 <vendorCode>ISD660B94520</vendorCode>
@@ -1712,6 +1826,8 @@
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/tild3666-3239-4131-b066-303863633431/722311944094.jpg</picture>
 <picture>https://static.tildacdn.com/tild6139-3033-4234-b035-656232376436/722311944094_2.jpg</picture>
+<picture>https://static.tildacdn.com/tild3334-6161-4265-a266-656538643834/722311944094_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild6638-6264-4639-a138-333437363732/722311944094_2.jpg</picture>
 <name>Ssd SSD-накопитель USB 2 TB HIKSEMI, HS-ESSD-T300S 2T Black, USB 3.2 + Type-C, black</name>
 <vendor>HIKSEMI</vendor>
 <vendorCode>ISD8905748AC</vendorCode>
@@ -1724,6 +1840,7 @@
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/stor3134-6230-4132-b331-623531613861/ead50906df31e8fc9d7cda1371bc0183.jpg</picture>
 <picture>https://static.tildacdn.com/stor6261-6234-4338-b333-303530393566/a82b66406106dae31203d5d472a4c0bd.jpg</picture>
+<picture>https://static.tildacdn.com/tild3632-6461-4535-a434-333037356434/420817221124_1.jpg</picture>
 <name>Твердотельный накопитель SSD 2.5-inch SATA-3 1Tb Gigabyte TLC 3D NAND(R550/W500MB/s)</name>
 <vendor>Gigabyte</vendor>
 <vendorCode>GP-GSTFS31100TNTD</vendorCode>
@@ -1736,6 +1853,7 @@
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/stor6239-3236-4130-b233-613564636565/926da7eb509a2455434e178d1b8b168a.jpg</picture>
 <picture>https://static.tildacdn.com/stor3432-3433-4761-a663-316536353131/282d18a5d3aca4f885d25e90f2176636.jpg</picture>
+<picture>https://static.tildacdn.com/tild6538-3432-4337-b232-666262623230/751409790184_1.jpg</picture>
 <name>Внешний SSD диск Kingston 2TB XS1000 Темный</name>
 <vendor>Kingston</vendor>
 <vendorCode>SXS1000/2000GA</vendorCode>
@@ -1771,6 +1889,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/tild3738-6335-4866-a134-643736303165/630787108284.jpg</picture>
+<picture>https://static.tildacdn.com/tild3635-3164-4636-b937-366462313737/630787108284_1.jpg</picture>
 <name>Ssd SSD-накопитель USB 1 TB HIKSEMI, HS-ESSD-T100 BLACK 1024G, USB 3.2 + Type-C, black</name>
 <vendor>HIKSEMI</vendor>
 <vendorCode>ISDD6DF35653</vendorCode>
@@ -1804,6 +1923,8 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/stor3265-6639-4833-a234-336466646134/79e4f65b8d0c70a77e26369837acc785.jpg</picture>
+<picture>https://static.tildacdn.com/tild3739-3739-4632-b565-386433356131/368026604174_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild3438-3565-4332-b966-333566393934/368026604174_2.jpg</picture>
 <name>Ssd SSD-накопитель Kingston SKC600/2048G SATA III 2.5-inch</name>
 <vendor>Kingston</vendor>
 <vendorCode>ISE17C305587</vendorCode>
@@ -1815,6 +1936,8 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/stor3334-3866-4165-b865-613436323939/253e144dc25bea52f8cb59c1fae87db5.jpg</picture>
+<picture>https://static.tildacdn.com/tild3339-3164-4664-b337-663462656134/664078848024_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild3535-6539-4234-b733-666630363763/664078848024_2.jpg</picture>
 <name>SSD-накопитель Kingston SA400S37/480G SATA 7мм</name>
 <vendor>Kingston</vendor>
 <vendorCode>SA400S37/480G</vendorCode>
@@ -1826,6 +1949,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/stor3964-6136-4262-a238-353930343331/2733f7aae0174a7a5942a5eed1dca43e.jpg</picture>
+<picture>https://static.tildacdn.com/tild3963-6237-4462-a261-623730346638/588233052444_1.jpg</picture>
 <name>SSD-накопитель Apacer AS2280Q4U 1TB</name>
 <vendor>Apacer</vendor>
 <vendorCode>AP1TBAS2280Q4U-1</vendorCode>
@@ -1838,6 +1962,7 @@
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/stor3135-6565-4464-b063-653861643363/5849ad7ff22a9df686c1bf8aaba5d860.jpg</picture>
 <picture>https://static.tildacdn.com/stor3930-3331-4832-b533-626131353366/e5ec540c2ecc5330f0bc5a5ce19cd016.jpg</picture>
+<picture>https://static.tildacdn.com/tild3063-3534-4363-b639-653033303234/596265730624_1.jpg</picture>
 <name>Твердотельный накопитель SSD Samsung 990 EVO PLUS 2TB M.2</name>
 <vendor>Samsung</vendor>
 <vendorCode>MZ-V9S2T0BW</vendorCode>
@@ -1860,6 +1985,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/tild3938-6438-4335-b861-366537303163/965244755604.jpg</picture>
+<picture>https://static.tildacdn.com/tild3637-6566-4162-a166-373063393032/965244755604_1.jpg</picture>
 <name>Ssd SSD-накопитель M.2 PCIe 512 GB Colorful CN600 512G, PCIe 3.0 x4, NVMe</name>
 <vendor>COLORFUL</vendor>
 <vendorCode>ISE7DF516E6F</vendorCode>
@@ -1882,6 +2008,8 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/tild6466-6333-4237-a436-653835666636/367204316314.jpg</picture>
+<picture>https://static.tildacdn.com/tild3632-3461-4632-b430-663963666335/607751667444_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild6536-6265-4564-a330-383766643962/607751667444_2.jpg</picture>
 <name>Ssd SSD-накопитель SATA 512 GB Silicon Power A55 SP512GBSS3A55S25, SATA 6Gb/s</name>
 <vendor>SILICON POWER</vendor>
 <vendorCode>ISE9587A7C09</vendorCode>
@@ -1929,6 +2057,7 @@
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/stor3663-6663-4863-b634-366537323935/4c037ded07fad28e5153710320419463.jpg</picture>
 <picture>https://static.tildacdn.com/stor3731-6236-4330-b066-366464303637/7dfd2f49e048d3d33af4c6f51c8406af.jpg</picture>
+<picture>https://static.tildacdn.com/tild6662-6331-4261-b735-383535643030/594697825184_1.jpg</picture>
 <name>Внешний SSD 1Tb Apacer AS721 USB 3.2 Gen 2</name>
 <vendor>Apacer</vendor>
 <vendorCode>AP1TBAS721B-1</vendorCode>
@@ -1940,6 +2069,8 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/stor3037-6131-4134-b962-306339616261/2db7b9ebb28f52ef0114fab7dc328cde.jpg</picture>
+<picture>https://static.tildacdn.com/tild6636-3465-4062-b763-656131313438/690094858954_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild6566-3135-4135-b239-316266623964/690094858954_2.jpg</picture>
 <name>SSD-накопитель Kingston SEDC600M/1920G SATA 7мм</name>
 <vendor>Kingston</vendor>
 <vendorCode>ISF01549FE3F</vendorCode>
@@ -1951,6 +2082,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/tild3261-3761-4139-a232-633435306431/171075981584.jpg</picture>
+<picture>https://static.tildacdn.com/tild3236-3338-4861-a531-363461656131/971381639554_1.jpg</picture>
 <name>SILICON POWER 250GB DS72 Dual USB-C/USB 3.2 Gen 2, Portable External SSD</name>
 <vendor>SILICON POWER</vendor>
 <vendorCode>ISF0B9AD12F1</vendorCode>
@@ -1973,6 +2105,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/tild6534-3730-4438-b661-393034343831/788411933004.jpg</picture>
+<picture>https://static.tildacdn.com/tild3363-6236-4861-b433-316463313464/788411933004_1.jpg</picture>
 <name>SAMSUNG PM9A3 1.92TB Data Center SSD, 2.5-inch 7mm, PCIe Gen4 x4, Read/Write: 6800/4000 MB/s</name>
 <vendor>Samsung</vendor>
 <vendorCode>ISF21D80A389</vendorCode>
@@ -1997,6 +2130,8 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/tild6639-3733-4539-a439-386564353064/144708513644.jpg</picture>
+<picture>https://static.tildacdn.com/tild3730-6262-4239-b539-316666613631/144708513644_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild3834-6361-4831-b036-616137393465/144708513644_2.jpg</picture>
 <name>Ssd SSD-накопитель SATA 512 GB Netac SA500, NT01SA500-512-S3X, SATA 6Gb/s</name>
 <vendor>NETAC</vendor>
 <vendorCode>ISF5301B5981</vendorCode>
@@ -2019,6 +2154,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/stor3261-6431-4537-b935-663931306434/79413eae51c2bcc727b1550fe6d008ca.jpg</picture>
+<picture>https://static.tildacdn.com/tild3631-3132-4833-a265-353130616133/526303938934_1.jpg</picture>
 <name>SSD-накопитель внутренний Lexar NS100 LNS100-512RB SATA</name>
 <vendor>Lexar</vendor>
 <vendorCode>LNS100-512RB</vendorCode>
@@ -2043,6 +2179,8 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/stor6237-3464-4533-b066-356130623134/c5b2578079459e053f7cee2b001c5424.jpg</picture>
+<picture>https://static.tildacdn.com/tild3163-6637-4637-b833-663738356435/269039866494_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild3233-6162-4532-b732-666232623761/269039866494_2.jpg</picture>
 <name>SSD-накопитель Apacer AS350X 1TB SATA</name>
 <vendor>Apacer</vendor>
 <vendorCode>AP1TBAS350XR-1</vendorCode>
@@ -2054,6 +2192,8 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/tild6134-6665-4438-b439-666565646538/738597830704.jpg</picture>
+<picture>https://static.tildacdn.com/tild6438-3765-4237-b238-303063346363/738597830704_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild6136-6331-4566-a366-316533363138/738597830704_2.jpg</picture>
 <name>Ssd SSD-накопитель SATA 480 GB Gigabyte, GP-GSTFS31480GNTD, SATA 6Gb/s</name>
 <vendor>Gigabyte</vendor>
 <vendorCode>ISFB89D6758D</vendorCode>
@@ -2076,6 +2216,8 @@
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/tild3931-3064-4538-b935-363737343531/447202616344.jpg</picture>
+<picture>https://static.tildacdn.com/tild3837-3338-4039-b163-623135623066/447202616344_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild6665-3734-4131-b932-393365336235/447202616344_3.jpg</picture>
 <name>Ssd SSD-накопитель M.2 PCIe 1 TB Gigabyte, G440E1TB, PCI4.0 x4, NVMe 1.4</name>
 <vendor>Gigabyte</vendor>
 <vendorCode>ISFEC7DFC956</vendorCode>
@@ -3901,17 +4043,6 @@
 <vendorCode>IS56617F04EF</vendorCode>
 <description>Сертификат эффективности 80+ Gold · Мощность 750 Вт · Класс мощности 700–850 Вт · Форм-фактор ATX · Цвет Чёрный · Гарантия 1 год · Версия ATX ATX 3.1 · Модульность Модульный</description>
 </offer>
-<offer id="IS5664EE4C5C" available="true">
-<url>https://b2b.isoft-shop.kz/bloki-pitaniya/tproduct/641566567194-blok-pitaniya-bequiet-dark-power-pro13-1</url>
-<price>273000</price>
-<currencyId>KZT</currencyId>
-<categoryId>893353989834</categoryId>
-<picture>https://static.tildacdn.com/stor3130-3637-4535-b831-383333343761/a5455457217a474ae4a0c23ad23bf80a.jpg</picture>
-<name>Блок питания Bequiet! Dark Power Pro13 1300W BN331</name>
-<vendor>Bequiet!</vendor>
-<vendorCode>IS5664EE4C5C</vendorCode>
-<description>Класс мощности 1000–1300 Вт · Мощность 1300 Вт · Гарантия 10 лет · Форм-фактор ATX · Цвет Чёрный · Сертификат эффективности 80+ Titanium · Версия ATX ATX 3.0</description>
-</offer>
 <offer id="IS5750FAA67D" available="true">
 <url>https://b2b.isoft-shop.kz/bloki-pitaniya/tproduct/923957684384-blok-pitaniya-fsp-hydro-ptm-x-pro-atx30</url>
 <price>130000</price>
@@ -4558,17 +4689,6 @@
 <vendorCode>IS8AE44195E4</vendorCode>
 <description>Мощность 850 Вт · Форм-фактор ATX · Сертификат эффективности 80+ Gold · Версия ATX ATX 3.1 · Класс мощности 700–850 Вт · Модульность Модульный</description>
 </offer>
-<offer id="IS8B9086AE73" available="true">
-<url>https://b2b.isoft-shop.kz/bloki-pitaniya/tproduct/988294612504-blok-pitaniya-bequiet-pure-power-12-m-55</url>
-<price>59000</price>
-<currencyId>KZT</currencyId>
-<categoryId>893353989834</categoryId>
-<picture>https://static.tildacdn.com/stor3933-3962-4237-b966-343436343339/09355cc41286b66ac25677c5563a534e.jpg</picture>
-<name>Блок питания Bequiet! PURE POWER 12 M 550W BN341</name>
-<vendor>Bequiet!</vendor>
-<vendorCode>IS8B9086AE73</vendorCode>
-<description>Класс мощности 550–650 Вт · Мощность 550 Вт · Гарантия 10 лет · Форм-фактор ATX · Сертификат эффективности 80+ Gold</description>
-</offer>
 <offer id="IS8BD71C0CB1" available="true">
 <url>https://b2b.isoft-shop.kz/bloki-pitaniya/tproduct/761721484044-blok-pitaniya-thermaltake-toughpower-gf3</url>
 <price>94000</price>
@@ -4590,17 +4710,6 @@
 <vendor>Qudion</vendor>
 <vendorCode>IS8D3290F079</vendorCode>
 <description>Форм-фактор ATX</description>
-</offer>
-<offer id="IS8E8A8DCB8F" available="true">
-<url>https://b2b.isoft-shop.kz/bloki-pitaniya/tproduct/499028180224-blok-pitaniya-bequiet-pure-power-13m-650</url>
-<price>77000</price>
-<currencyId>KZT</currencyId>
-<categoryId>893353989834</categoryId>
-<picture>https://static.tildacdn.com/stor6666-3135-4066-a138-386161306632/0b2445daae9ee5a174e0e2ee285e2926.jpg</picture>
-<name>Блок питания Bequiet! Pure Power 13M 650W BP025EU</name>
-<vendor>Bequiet!</vendor>
-<vendorCode>IS8E8A8DCB8F</vendorCode>
-<description>Класс мощности 550–650 Вт · Мощность 650 Вт · Гарантия 3 года · Форм-фактор ATX · Цвет Чёрный · Сертификат эффективности 80+ Gold · Версия ATX ATX 3.1</description>
 </offer>
 <offer id="IS8F3C1100CC" available="true">
 <url>https://b2b.isoft-shop.kz/bloki-pitaniya/tproduct/419746719134-blok-pitaniya-gamemax-gx-pro-1250g-gold</url>
@@ -5599,6 +5708,17 @@
 <vendorCode>ISDD99912D2E</vendorCode>
 <description>Мощность 750 Вт · Форм-фактор ATX · Сертификат эффективности 80+ Gold · Версия ATX ATX 3.1 · Класс мощности 700–850 Вт · Цвет Чёрный · Гарантия 7 лет</description>
 </offer>
+<offer id="ISDF4FCC3830" available="true">
+<url>https://b2b.isoft-shop.kz/bloki-pitaniya/tproduct/494758110814-blok-pitaniya-bequiet-system-power-11-65</url>
+<price>48000</price>
+<currencyId>KZT</currencyId>
+<categoryId>893353989834</categoryId>
+<picture>https://static.tildacdn.com/stor6263-3433-4365-b831-653337303237/6ae8545791bd31630c7e22ef27c4d4ef.jpg</picture>
+<name>Блок питания Bequiet! System Power 11 650W BP011EU</name>
+<vendor>Bequiet!</vendor>
+<vendorCode>ISDF4FCC3830</vendorCode>
+<description>Гарантия 1 год · Класс мощности 550–650 Вт · Мощность 650 Вт · Форм-фактор ATX · Сертификат эффективности 80+ Bronze · Версия ATX ATX 3.1 · Цвет Чёрный</description>
+</offer>
 <offer id="ISDFF4B764F6" available="true">
 <url>https://b2b.isoft-shop.kz/bloki-pitaniya/tproduct/449015168824-blok-pitaniya-1stplayer-dk-premium-800w</url>
 <price>32000</price>
@@ -6081,17 +6201,6 @@
 <vendorCode>GV-R9070XTGAMING-16GD</vendorCode>
 <description>Radeon RX 9070 XT GAMING 16G (GV-R9070XTGAMING-16GD) 4719331356149, GDDR6, 256bit, 2-HDMI, 2-DP, Windforce 3X Fan, 288*132*56 мм, Цветная коробка</description>
 </offer>
-<offer id="IS2E0BB12AF9" available="true">
-<url>https://b2b.isoft-shop.kz/videokarty/tproduct/182578683734-videokarta-palit-rtx5060-infinity-2-oc-8</url>
-<price>329000</price>
-<currencyId>KZT</currencyId>
-<categoryId>784666503994</categoryId>
-<picture>https://static.tildacdn.com/stor3933-6461-4935-b535-626231646239/e9a5bf40932ada7c0c010acd2bb7f9de.jpg</picture>
-<name>Видеокарта PALIT RTX5060 INFINITY 2 OC 8GB NE75060V19P1-GB2063L)</name>
-<vendor>Palit</vendor>
-<vendorCode>IS2E0BB12AF9</vendorCode>
-<description>Объём видеопамяти 8 ГБ · Графический процессор RTX 5060 · Серия видеокарты GeForce RTX 5000 · Разрядность шины 128 бит · Видеовыходы HDMI / DP x 3</description>
-</offer>
 <offer id="IS34222DC3C3" available="true">
 <url>https://b2b.isoft-shop.kz/videokarty/tproduct/136074627694-videokarta-gigabyte-amd-radeon-rx-9070-g</url>
 <price>425000</price>
@@ -6249,18 +6358,6 @@
 <vendor>MAXSUN</vendor>
 <vendorCode>IS5BDBFEBCAA</vendorCode>
 <description>Графический процессор GTX 1650 · Разрядность шины 128 бит · Тип видеопамяти GDDR6 · Частота 1665 МГц · Объём видеопамяти 4 ГБ · Видеовыходы HDMI / DVI / DP</description>
-</offer>
-<offer id="IS5C819A5FEF" available="true">
-<url>https://b2b.isoft-shop.kz/videokarty/tproduct/871178770204-videokarta-gigabyte-geforce-rtx-5060-oc</url>
-<price>303000</price>
-<currencyId>KZT</currencyId>
-<categoryId>784666503994</categoryId>
-<picture>https://static.tildacdn.com/stor3662-6337-4265-a164-326238386436/ecfc47a076a4c36324d810259bc25542.jpg</picture>
-<picture>https://static.tildacdn.com/stor3430-3232-4335-b665-383931396431/a029c12b23a8d5186a60cfc8976fa772.jpg</picture>
-<name>Видеокарта Gigabyte GeForce RTX 5060 OC LP 8 ГБ</name>
-<vendor>Gigabyte</vendor>
-<vendorCode>GV-N5060OC-8GL</vendorCode>
-<description>RTX5060 OC Low Profile 8G (GV-N5060OC-8GL) 4719331356422, GDDR7, 128bit, 1-HDMI, 3-DP, 3X Fan, 182*69*36 мм, Цветная коробка</description>
 </offer>
 <offer id="IS5DD2B2C47A" available="true">
 <url>https://b2b.isoft-shop.kz/videokarty/tproduct/482648441594-videokarta-afox-gtx1050-4gb-d5-dual-fan</url>
@@ -6646,7 +6743,7 @@
 <name>Видеокарта PALIT RTX5080 INFINITY 3 16GB (NE75080019T2-GB2035S)</name>
 <vendor>Palit</vendor>
 <vendorCode>ISB9901C179A</vendorCode>
-<description>Графический процессор RTX 5080 · Объём видеопамяти 16 ГБ · Серия видеокарты GeForce RTX 5000</description>
+<description>Графический процессор RTX 5080 · Объём видеопамяти 16 ГБ · Серия видеокарты GeForce RTX 5000 · Разрядность шины 256 бит · Видеовыходы HDMI / DP x 3</description>
 </offer>
 <offer id="ISC037EBE8A4" available="true">
 <url>https://b2b.isoft-shop.kz/videokarty/tproduct/994243619984-videokarta-gpu-nvidia-8-gb-zotac-rtx-506</url>
@@ -8125,7 +8222,7 @@
 <name>Монитор Dahua DHI-VTH2611L-WP (4.3-inch)</name>
 <vendor>Dahua</vendor>
 <vendorCode>IS06983BF73A</vendorCode>
-<description>Диагональ экрана 4,3″</description>
+<description>Диагональ 4,3″</description>
 </offer>
 <offer id="IS0EDEA371AD" available="true">
 <url>https://b2b.isoft-shop.kz/domofony/tproduct/667359936044-oborudovanie-videodomofonii-dahua-dhi-de</url>
@@ -8323,7 +8420,7 @@
 <name>Монитор Dahua DHI-VTH1020J 7.0-inch</name>
 <vendor>Dahua</vendor>
 <vendorCode>IS8984EB5C13</vendorCode>
-<description>Диагональ экрана 7″</description>
+<description>Диагональ 7″</description>
 </offer>
 <offer id="IS8C29B55A39" available="true">
 <url>https://b2b.isoft-shop.kz/domofony/tproduct/926097036124-gibridnaya-domofonnaya-sistema-dahua-dhi</url>
@@ -8367,7 +8464,7 @@
 <name>Монитор домофона Hikvision DS-KH6100-E1 4.3-inch</name>
 <vendor>Hikvision</vendor>
 <vendorCode>ISA816A38319</vendorCode>
-<description>Тип устройства Монитор домофона · Диагональ экрана 4,3″</description>
+<description>Тип устройства Монитор домофона · Диагональ 4,3″</description>
 </offer>
 <offer id="ISAD6D217BE3" available="true">
 <url>https://b2b.isoft-shop.kz/domofony/tproduct/782520337174-domofonnaya-sistema-dahua-dhi-kta02</url>
@@ -8422,7 +8519,7 @@
 <name>Монитор домофона Hikvision DS-KH6352-WTDE6(B) 7-inch</name>
 <vendor>Hikvision</vendor>
 <vendorCode>ISBC96E8B180</vendorCode>
-<description>Диагональ экрана 7″ · Тип устройства Монитор домофона</description>
+<description>Диагональ 7″ · Тип устройства Монитор домофона</description>
 </offer>
 <offer id="ISBD3180817F" available="true">
 <url>https://b2b.isoft-shop.kz/domofony/tproduct/262200303214-videodomofon-dahua-dhi-vth8641kms-wp-10</url>
@@ -8433,7 +8530,7 @@
 <name>Видеодомофон Dahua DHI-VTH8641KMS-WP (10-inch)</name>
 <vendor>Dahua</vendor>
 <vendorCode>ISBD3180817F</vendorCode>
-<description>Тип устройства Видеодомофон · Диагональ экрана 10″</description>
+<description>Тип устройства Видеодомофон · Диагональ 10″</description>
 </offer>
 <offer id="ISBE1286B625" available="true">
 <url>https://b2b.isoft-shop.kz/domofony/tproduct/433571423694-vizivnaya-panel-dahua-dhi-vto9631q</url>
@@ -8499,7 +8596,7 @@
 <name>Монитор Dahua DHI-VTH2621GW-WP (7-inch)</name>
 <vendor>Dahua</vendor>
 <vendorCode>ISD1283F45C1</vendorCode>
-<description>Диагональ экрана 7″</description>
+<description>Диагональ 7″</description>
 </offer>
 <offer id="ISD449794BC9" available="true">
 <url>https://b2b.isoft-shop.kz/domofony/tproduct/709635646684-master-stantsiya-dahua-dhi-vts5a40b</url>
@@ -8565,7 +8662,7 @@
 <name>Монитор Dahua DHI-VTH5721A-WP (7-inch)</name>
 <vendor>Dahua</vendor>
 <vendorCode>ISEE65E87956</vendorCode>
-<description>Диагональ экрана 7″</description>
+<description>Диагональ 7″</description>
 </offer>
 <offer id="ISF7BADBE800" available="true">
 <url>https://b2b.isoft-shop.kz/domofony/tproduct/480235527424-vizivnaya-panel-hikvision-ds-kv6114-wbe1</url>
@@ -8631,7 +8728,7 @@
 <name>Монитор домофона Hikvision DS-KH6110-WE1 4.3-inch</name>
 <vendor>Hikvision</vendor>
 <vendorCode>ISFD8CC2CB6E</vendorCode>
-<description>Тип устройства Монитор домофона · Диагональ экрана 4,3″</description>
+<description>Тип устройства Монитор домофона · Диагональ 4,3″</description>
 </offer>
 <offer id="IS0752CF75B1" available="true">
 <url>https://b2b.isoft-shop.kz/zhestkie-diski/tproduct/488511981984-zhyostkii-disk-dell-8tb-hard-drive-sata</url>
@@ -10329,7 +10426,7 @@
 <name>ИБП APC/SMT3000IC 8x IEC C13+2x IEC C19 outlets, SmartConnect Port+SmartSlot, AVR, LCD/Smart/3 000 VA/2 700 W</name>
 <vendor>APC</vendor>
 <vendorCode>IS4E3633F0BB</vendorCode>
-<description>Класс мощности 3 кВА · Мощность 3000 ВА / 2700 Вт · Розеток 10</description>
+<description>Класс мощности 3 кВА · Мощность 3000 ВА / 2700 Вт · Розеток 10 · Размещение Напольный</description>
 </offer>
 <offer id="IS4E88085D30" available="true">
 <url>https://b2b.isoft-shop.kz/ibp-i-zashchita-pitaniya/tproduct/297215414644-ibp-cyberpower-ols10000ert6u</url>
@@ -12262,6 +12359,17 @@
 <vendorCode>ISE6BCA0A6A4</vendorCode>
 <description>Розеток 4 · Мощность 900 Вт · Класс мощности 1–2,2 кВА</description>
 </offer>
+<offer id="ISE7F4BF9B5B" available="true">
+<url>https://b2b.isoft-shop.kz/ibp-i-zashchita-pitaniya/tproduct/426314905294-ibp-eaton5px1500irtng2-5px-1500i-rt2u-ne</url>
+<price>697000</price>
+<currencyId>KZT</currencyId>
+<categoryId>622117808604</categoryId>
+<picture>https://static.tildacdn.com/stor3465-3231-4535-b438-366439316136/a781544adfea929638f2415fdf40c3fe.jpg</picture>
+<name>ИБП Eaton/5PX1500IRTNG2 5PX 1500i RT2U Netpack G2/5PX Gen2 UPS/1 500 VA/1 500 W</name>
+<vendor>Eaton</vendor>
+<vendorCode>ISE7F4BF9B5B</vendorCode>
+<description>Класс мощности 1–2,2 кВА · Мощность 1500 ВА / 1500 Вт · Размещение Стоечный / напольный</description>
+</offer>
 <offer id="ISE8845DBF60" available="true">
 <url>https://b2b.isoft-shop.kz/ibp-i-zashchita-pitaniya/tproduct/772360220614-ibp-eaton-5sc1500i</url>
 <price>318000</price>
@@ -13601,6 +13709,17 @@
 <name>IP-камера TP-Link Tapo C206</name>
 <vendor>TP-Link</vendor>
 <vendorCode>IS5D9710C82D</vendorCode>
+<description>Тип устройства IP-камера</description>
+</offer>
+<offer id="IS5DCAF23D5E" available="true">
+<url>https://b2b.isoft-shop.kz/videonablyudenie/tproduct/930318834294-ip-videokamera-hikvision-ds-2cd1067g3-li</url>
+<price>65000</price>
+<currencyId>KZT</currencyId>
+<categoryId>593618245944</categoryId>
+<picture>https://static.tildacdn.com/stor6466-6533-4434-b835-376432623935/c7975da65b9ad88e16ffe80dfd9c5c24.jpg</picture>
+<name>IP видеокамера Hikvision DS-2CD1067G3-LIU</name>
+<vendor>Hikvision</vendor>
+<vendorCode>IS5DCAF23D5E</vendorCode>
 <description>Тип устройства IP-камера</description>
 </offer>
 <offer id="IS5EB82C36B8" available="true">
@@ -19263,17 +19382,6 @@
 <vendorCode>IS3C55CBFC30</vendorCode>
 <description>Форм-фактор E-ATX · Цвет Белый · Макс. длина видеокарты 340 мм · Макс. высота кулера 185 мм · Тип устройства Корпус · Гарантия 1 год · Материал Сталь</description>
 </offer>
-<offer id="IS3C64CF1A12" available="true">
-<url>https://b2b.isoft-shop.kz/korpusa-i-bloki-pitaniya/tproduct/583005066234-kompyuternii-korpus-thermaltake-view-600</url>
-<price>79000</price>
-<currencyId>KZT</currencyId>
-<categoryId>976729823024</categoryId>
-<picture>https://static.tildacdn.com/stor3034-6661-4563-b064-303665636335/eab165683bd68e3a7141c99a47a91dca.jpg</picture>
-<name>Компьютерный корпус Thermaltake View 600 TG Transformative Teal без Б/П CA-11H-00FTWN-00</name>
-<vendor>Thermaltake</vendor>
-<vendorCode>IS3C64CF1A12</vendorCode>
-<description>Форм-фактор E-ATX · Макс. длина видеокарты 480 мм · Макс. высота кулера 195 мм · Тип устройства Корпус · Гарантия 1 год · Материал Сталь</description>
-</offer>
 <offer id="IS3D4C96D77B" available="true">
 <url>https://b2b.isoft-shop.kz/korpusa-i-bloki-pitaniya/tproduct/256407026804-korpus-case-atx-midi-tower-gigabyte-aoru</url>
 <price>68000</price>
@@ -19450,7 +19558,7 @@
 <name>Компьютерный корпус 1STPLAYER AU7 Black без Б/П AU7-BK-2FA7-14-2FA7R-1FA7</name>
 <vendor>1STPLAYER</vendor>
 <vendorCode>IS4818CDD1E0</vendorCode>
-<description>Тип устройства Корпус · Цвет Чёрный</description>
+<description>Тип устройства Корпус · Цвет Чёрный · Гарантия 1 год · Форм-фактор ATX</description>
 </offer>
 <offer id="IS4A54068206" available="true">
 <url>https://b2b.isoft-shop.kz/korpusa-i-bloki-pitaniya/tproduct/781238714034-kompyuternii-korpus-deepcool-cg530-4f-wh</url>
@@ -22486,6 +22594,17 @@
 <vendor>HP</vendor>
 <vendorCode>1F3W2A</vendorCode>
 <description>Тип устройства МФУ · Технология печати струйный · Цветность цветной · Партномер: 1F3W2A</description>
+</offer>
+<offer id="IS7BFF88EC63" available="true">
+<url>https://b2b.isoft-shop.kz/mfu-struynye-cvetnye/tproduct/786456843314-tsvetnoe-mfu-canon-pixma-ts7640i-6256c00</url>
+<price>82000</price>
+<currencyId>KZT</currencyId>
+<categoryId>334369722184</categoryId>
+<picture>https://static.tildacdn.com/stor3839-6164-4766-b133-363734636561/45268c411eb9b3c1cab309147fd22531.jpg</picture>
+<name>Цветное МФУ Canon Pixma TS7640I 6256C007AA</name>
+<vendor>Canon</vendor>
+<vendorCode>IS7BFF88EC63</vendorCode>
+<description>Тип устройства МФУ</description>
 </offer>
 <offer id="IS822936565E" available="true">
 <url>https://b2b.isoft-shop.kz/mfu-struynye-cvetnye/tproduct/382568086874-mfu-epson-xp-15000-exp-photo-a3-printers</url>
@@ -26946,7 +27065,7 @@
 <name>Материнская плата ASRock B760M PRO-A/D4 WIFI</name>
 <vendor>ASRock</vendor>
 <vendorCode>IS9D3E4A9F86</vendorCode>
-<description>Чипсет B760</description>
+<description>Форм-фактор Micro-ATX · Чипсет B760 · Сокет LGA1700 · Тип памяти DDR4 · Слотов памяти 4 · Интерфейс SATA / PCI-E 3.0 / PCI-E 4.0 · Видеовыходы HDMI / DP · Разъёмов M.2 2 · Разъёмов SATA 4</description>
 </offer>
 <offer id="IS9D402BB9AE" available="true">
 <url>https://b2b.isoft-shop.kz/materinskie-platy/tproduct/619689134244-materinskaya-plata-mb-socket1851-atx-iz8</url>
@@ -27081,7 +27200,7 @@
 <name>Материнская плата ASRock B760M PRO-A/D4</name>
 <vendor>ASRock</vendor>
 <vendorCode>ISA7C08D62AD</vendorCode>
-<description>Чипсет B760</description>
+<description>Видеовыходы HDMI / DP · Чипсет B760 · Сокет LGA1700 · Тип памяти DDR4 · Форм-фактор Micro-ATX · Слотов памяти 4 · Интерфейс SATA / PCI-E 3.0 / PCI-E 4.0 · Разъёмов M.2 2 · Разъёмов SATA 4</description>
 </offer>
 <offer id="ISA8C8C83E53" available="true">
 <url>https://b2b.isoft-shop.kz/materinskie-platy/tproduct/466442868124-materinskaya-plata-asrock-b860-rock-wifi</url>
@@ -27092,7 +27211,7 @@
 <name>Материнская плата ASRock B860 Rock WiFi 7</name>
 <vendor>ASRock</vendor>
 <vendorCode>ISA8C8C83E53</vendorCode>
-<description>Чипсет B860</description>
+<description>Форм-фактор ATX · Чипсет B860 · Сокет LGA1851 · Тип памяти DDR5 · Слотов памяти 4 · Интерфейс SATA / PCI-E 3.0 / PCI-E 4.0 / PCI-E 5.0 · Видеовыходы HDMI · Разъёмов M.2 3 · Разъёмов SATA 4</description>
 </offer>
 <offer id="ISAA6C7ED473" available="true">
 <url>https://b2b.isoft-shop.kz/materinskie-platy/tproduct/303833196724-materinskaya-plata-mb-socket1200-mitx-ic</url>
@@ -29410,17 +29529,6 @@
 <vendorCode>IS4368E70B52</vendorCode>
 <description>Диагональ 27″ · Разрешение 2560×1440 · Тип матрицы IPS · Частота обновления 180 Гц · Яркость 300 кд/м² · Соотношение сторон 16:9 · Угол обзора 178° · Размер экрана 27–29″</description>
 </offer>
-<offer id="IS43B2853667" available="true">
-<url>https://b2b.isoft-shop.kz/monitory/tproduct/260096657264-monitor-lg-32un650k-waruz</url>
-<price>267380</price>
-<currencyId>KZT</currencyId>
-<categoryId>929335537584</categoryId>
-<picture>https://static.tildacdn.com/tild6138-6139-4632-b132-393235313837/260096657264.jpg</picture>
-<name>Монитор LG 32UN650K-W.ARUZ</name>
-<vendor>LG</vendor>
-<vendorCode>IS43B2853667</vendorCode>
-<description>Диагональ 32″ · Разрешение 3840×2160 · Соотношение сторон 16:9 · Тип матрицы IPS · Угол обзора 178° · Яркость 350 кд/м² · Время отклика 5 мс · Размер экрана 31,5–32″ · Частота обновления 60 Гц · Контрастность 1000:1</description>
-</offer>
 <offer id="IS43DD511BF2" available="true">
 <url>https://b2b.isoft-shop.kz/monitory/tproduct/735536930474-monitor-acer-sa322qhbmix-sa2-series-umjs</url>
 <price>115000</price>
@@ -29562,19 +29670,6 @@
 <vendor>LG</vendor>
 <vendorCode>IS491CD23296</vendorCode>
 <description>Диагональ 24″ · Разрешение 1920×1080 · Тип матрицы IPS · Частота обновления 180 Гц · Время отклика 1 мс · Яркость 300 кд/м² · Соотношение сторон 16:9 · Контрастность 1000:1 · Угол обзора 178° · VESA 100×100</description>
-</offer>
-<offer id="IS4932E72ED2" available="true">
-<url>https://b2b.isoft-shop.kz/monitory/tproduct/743809731044-monitor-samsung-34-inch-ls34dg852sixci</url>
-<price>717000</price>
-<currencyId>KZT</currencyId>
-<categoryId>929335537584</categoryId>
-<picture>https://static.tildacdn.com/stor3661-6539-4531-b831-653031643039/56521f3d8c2e9f1d7288ef95a676db2e.jpg</picture>
-<picture>https://static.tildacdn.com/tild3062-6464-4163-b239-613239343565/743809731044.jpg</picture>
-<picture>https://static.tildacdn.com/tild3764-6664-4736-a635-643361326635/743809731044_2.jpg</picture>
-<name>Монитор Samsung 34-inch LS34DG852SIXCI</name>
-<vendor>Samsung</vendor>
-<vendorCode>IS4932E72ED2</vendorCode>
-<description>Диагональ 34″ · Размер экрана 34–38″</description>
 </offer>
 <offer id="IS4A2BD4FA7D" available="true">
 <url>https://b2b.isoft-shop.kz/monitory/tproduct/181550417834-monitor-aoc-25g50z01</url>
@@ -33281,7 +33376,7 @@
 <picture>https://static.tildacdn.com/tild6163-3234-4338-b036-343564306432/909778351954.jpg</picture>
 <picture>https://static.tildacdn.com/tild6136-6362-4163-b630-373362386235/909778351954_2.jpg</picture>
 <name>Monoblock Dell/Optiplex 5400 AIO/Core i5/12500/3 GHz/8 Gb/M.2 PCIe SSD/256 Gb/No ODD/Graphics/UHD 770/256</name>
-<vendor>DELL</vendor>
+<vendor>Dell</vendor>
 <vendorCode>ISDAB00C2998</vendorCode>
 <description>Процессор Core i5 · Оперативная память 8 Gb · Тип памяти DDR4 · Накопитель 256 ГБ · Тип накопителя M.2 PCIe SSD</description>
 </offer>
@@ -40733,7 +40828,7 @@
 <name>Ноутбук ASUS TUF Gaming A15 FA506NCG-HN469W, Ryzen 7 155-3.0/512GB SSD/16GB/RTX 3050 4GB/15.6-inch FHD/Win11</name>
 <vendor>ASUS</vendor>
 <vendorCode>IS36A6BA1F92</vendorCode>
-<description>Видеокарта RTX 3050 · Диагональ 15,6″ · Линейка процессора Ryzen 7 · Накопитель 512 ГБ · Оперативная память 16 ГБ · Операционная система Windows 11 · Разрешение 1920×1080 · Семья ОС Windows 11</description>
+<description>Видеокарта RTX 3050 · Диагональ 15,6″ · Линейка процессора Ryzen 7 · Накопитель 512 ГБ · Оперативная память 16 ГБ · Операционная система Windows 11 · Разрешение 1920×1080 · Семья ОС Windows 11 · Процессор AMD Ryzen 7 155</description>
 </offer>
 <offer id="IS3753246F46" available="true">
 <url>https://b2b.isoft-shop.kz/noutbuki/tproduct/466316020534-noutbuk-asus-rog-flow-z13-gz302ea-ru003w</url>
@@ -40828,7 +40923,7 @@
 <name>Ноутбук 15-inch MacBook Air: Apple M5 chip with 10-core CPU and 10-core GPU, 16GB, 1TB SSD - Sky Blue,Model A3448</name>
 <vendor>APPLE</vendor>
 <vendorCode>IS3CD3500411</vendorCode>
-<description>Количество ядер процессора 10 · Линейка процессора Apple M · Накопитель 1 ТБ · Оперативная память 16 ГБ · Процессор Apple M5</description>
+<description>Видеокарта Встроенная · Диагональ 15,3″ · Линейка процессора Apple M · Накопитель 1 ТБ · Оперативная память 16 ГБ · Операционная система macOS · Разрешение 2880×1864 · Процессор Apple M5 · Количество ядер процессора 10 · В комплекте Адаптер питания USB-C, кабель USB-C на MagSafe 3 (2 м)</description>
 </offer>
 <offer id="IS3CF706BD3E" available="true">
 <url>https://b2b.isoft-shop.kz/noutbuki/tproduct/151366074244-noutbuk-asus-h7606ww-se079x-90nb17f1-m00</url>
@@ -42019,7 +42114,7 @@
 <name>Ноутбук APPLE MacBook Air, 15-inch, Silver, Model A3448, M5 CHIP WITH 10C CPU, 16GB, 1TB SSD storage, Two Thunderbolt 4 Ports, Touch ID</name>
 <vendor>APPLE</vendor>
 <vendorCode>IS934A530818</vendorCode>
-<description>Накопитель 1 ТБ · Оперативная память 16 ГБ</description>
+<description>Накопитель 1 ТБ · Оперативная память 16 ГБ · В комплекте Адаптер питания USB-C, кабель USB-C на MagSafe 3 (2 м) · Процессор Apple M5 · Видеокарта Встроенная · Операционная система macOS · Диагональ 15,3″ · Разрешение 2880×1864 · Ёмкость батареи 66,5 Вт·ч · Тип матрицы IPS</description>
 </offer>
 <offer id="IS938D4604D3" available="true">
 <url>https://b2b.isoft-shop.kz/noutbuki/tproduct/615822376974-noutbuk-dell-pro-16-pc16255-bto604pc1625</url>
@@ -42584,7 +42679,7 @@
 <name>Ноутбук APPLE MacBook Air 13-inch Apple M5 (10-core CPU, 10-core GPU), 24GB, 1TB SSD, Midnight, Model A3449</name>
 <vendor>APPLE</vendor>
 <vendorCode>ISBE0D74D238</vendorCode>
-<description>Количество ядер процессора 10 · Линейка процессора Apple M · Накопитель 1 ТБ · Оперативная память 24 ГБ · Процессор Apple M5 · Операционная система macOS · Диагональ 13,6″ · Разрешение 2560×1664 · В комплекте Адаптер питания USB-C, кабель USB-C на MagSafe 3 (2 м) · Семья ОС macOS</description>
+<description>Видеокарта Встроенная · Диагональ 13,6″ · Линейка процессора Apple M · Накопитель 1 ТБ · Оперативная память 24 ГБ · Операционная система macOS · Разрешение 2560×1664 · Семья ОС macOS · Процессор Apple M5 · Количество ядер процессора 10</description>
 </offer>
 <offer id="ISBE8E714FF7" available="true">
 <url>https://b2b.isoft-shop.kz/noutbuki/tproduct/237669180174-notebook-acer-ph3d15-71-99ny-predator-he</url>
@@ -42853,7 +42948,7 @@
 <name>Ноутбук ASUS Zenbook 14 UX3480AA-U1586W 14-inch FHD 60Hz Core Ultra 7 355 16GB 1TB Win11</name>
 <vendor>ASUS</vendor>
 <vendorCode>ISD1E2594E62</vendorCode>
-<description>Диагональ 14″ · Линейка процессора Core Ultra 7 · Накопитель 1 ТБ · Оперативная память 16 ГБ · Операционная система Windows 11 · Разрешение 1920×1080 · Семья ОС Windows 11 · Частота обновления 60 Гц</description>
+<description>Диагональ 14″ · Линейка процессора Core Ultra 7 · Накопитель 1 ТБ · Оперативная память 16 ГБ · Операционная система Windows 11 · Разрешение 1920×1080 · Семья ОС Windows 11 · Процессор Intel Core Ultra 7 355 · Частота обновления 60 Гц</description>
 </offer>
 <offer id="ISD2414F9F8C" available="true">
 <url>https://b2b.isoft-shop.kz/noutbuki/tproduct/111548595544-noutbuk-asus-zenbook-duo-ux8407aa-sn066w</url>
@@ -43556,7 +43651,7 @@
 <name>Оперативная память DIMM DDR4 8 GB &amp;lt;3200MHz&amp;gt; Hiksemi (Hikvision) Armor, HSC408U32Z2 (Purple)</name>
 <vendor>HIKSEMI</vendor>
 <vendorCode>IS00EC5170D2</vendorCode>
-<description>Частота 3200 МГц · Тип памяти DDR4 · Объём 8 ГБ · Форм-фактор DIMM · Модулей в комплекте 1 · Тайминги CL18</description>
+<description>Частота 3200 МГц · Тип памяти DDR4 · Объём комплекта 8 ГБ · Форм-фактор DIMM · Модулей в комплекте 1 · Тайминги CL18</description>
 </offer>
 <offer id="IS050DC4E9E6" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/513805898534-operativnaya-pamyat-apacer-panther-ah5u1</url>
@@ -43589,7 +43684,7 @@
 <name>Оперативная память для ноутбука Lexar LD5S16G56C46ST-BGS DDR5 16GB</name>
 <vendor>Lexar</vendor>
 <vendorCode>IS0789C32AB5</vendorCode>
-<description>Форм-фактор SO-DIMM · Тип памяти DDR5 · Объём 16 ГБ · Частота 5600 МГц · Модулей в комплекте 1</description>
+<description>Форм-фактор SO-DIMM · Тип памяти DDR5 · Объём комплекта 16 ГБ · Частота 5600 МГц · Модулей в комплекте 1</description>
 </offer>
 <offer id="IS07C7AF578F" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/864003995214-operativnaya-pamyat-synology-d4eu02-16g</url>
@@ -43623,7 +43718,7 @@
 <name>Оперативная память Lexar LD4AU008G-B3200GSST DDR4 8GB</name>
 <vendor>Lexar</vendor>
 <vendorCode>IS0AE0BE9D23</vendorCode>
-<description>Частота 3200 МГц · Тип памяти DDR4 · Объём 8 ГБ · Форм-фактор DIMM · Модулей в комплекте 1</description>
+<description>Частота 3200 МГц · Тип памяти DDR4 · Объём комплекта 8 ГБ · Форм-фактор DIMM · Модулей в комплекте 1</description>
 </offer>
 <offer id="IS0C45F5468D" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/685924913494-operativnaya-pamyat-corsair-ddr5-5200mts</url>
@@ -43634,7 +43729,7 @@
 <name>Оперативная память CORSAIR DDR5, 5200MT/s 16GB 2x8GB DIMM, Unbuffered, 40-40-40-77, 1Gbx16, Std PMIC, AMD EXPO</name>
 <vendor>CORSAIR</vendor>
 <vendorCode>IS0C45F5468D</vendorCode>
-<description>Тип памяти DDR5 · Модулей в комплекте 2 · Объём 16 ГБ · Тайминги 40-40-40-77 · Форм-фактор DIMM · Частота 5200 МГц</description>
+<description>Тип памяти DDR5 · Модулей в комплекте 2 · Объём комплекта 16 ГБ · Тайминги 40-40-40-77 · Форм-фактор DIMM · Частота 5200 МГц</description>
 </offer>
 <offer id="IS0DDB2EDEFB" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/508330316054-operativnaya-pamyat-lexar-8gb-ddr5-5600m</url>
@@ -43645,7 +43740,7 @@
 <name>Оперативная память LEXAR 8GB DDR5 5600MHz UDIMM 262 PIN, CL46, 1.1V- BLISTER Package</name>
 <vendor>Lexar</vendor>
 <vendorCode>IS0DDB2EDEFB</vendorCode>
-<description>Тип памяти DDR5 · Модулей в комплекте 1 · Объём 8 ГБ · Тайминги CL46 · Форм-фактор UDIMM · Частота 5600 МГц</description>
+<description>Тип памяти DDR5 · Модулей в комплекте 1 · Объём комплекта 8 ГБ · Тайминги CL46 · Форм-фактор UDIMM · Частота 5600 МГц</description>
 </offer>
 <offer id="IS0F04246775" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/723773514724-komplekt-modulei-pamyati-kingston-fury-b</url>
@@ -43656,7 +43751,7 @@
 <name>Комплект модулей памяти Kingston Fury Beast KF560C36BBEK2-16 DDR5 16GB (2x8GB) 6000MHz</name>
 <vendor>Kingston</vendor>
 <vendorCode>IS0F04246775</vendorCode>
-<description>Частота 6000 МГц · Тип памяти DDR5 · Объём 16 ГБ · Модулей в комплекте 2 · Форм-фактор DIMM</description>
+<description>Частота 6000 МГц · Тип памяти DDR5 · Объём комплекта 16 ГБ · Модулей в комплекте 2 · Форм-фактор DIMM</description>
 </offer>
 <offer id="IS10651DCB00" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/716127559904-operativnaya-pamyat-dimm-ddr5-16-gb-5600</url>
@@ -43678,7 +43773,7 @@
 <name>Оперативная память Synology D4EC-2666-16G 16GB DDR4-2666 ECC UDIMM</name>
 <vendor>Synology</vendor>
 <vendorCode>IS151EDCC33F</vendorCode>
-<description>Объём 16 ГБ · Тип памяти DDR4 · Форм-фактор UDIMM</description>
+<description>Объём комплекта 16 ГБ · Тип памяти DDR4 · Форм-фактор UDIMM</description>
 </offer>
 <offer id="IS1B6CAA6BE4" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/131565810594-komplekt-modulei-pamyati-kingston-fury-b</url>
@@ -43689,7 +43784,7 @@
 <name>Комплект модулей памяти Kingston FURY Beast KF556C36BBEK2-32 DDR5 32GB (2x16GB) 5600MHz</name>
 <vendor>Kingston</vendor>
 <vendorCode>IS1B6CAA6BE4</vendorCode>
-<description>Частота 5600 МГц · Тип памяти DDR5 · Объём 32 ГБ · Модулей в комплекте 2 · Форм-фактор DIMM</description>
+<description>Частота 5600 МГц · Тип памяти DDR5 · Объём комплекта 32 ГБ · Модулей в комплекте 2 · Форм-фактор DIMM</description>
 </offer>
 <offer id="IS1BA8161EDD" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/904640771734-operativnaya-pamyat-dlya-noutbuka-agi-so</url>
@@ -43722,7 +43817,7 @@
 <name>Оперативная память RAM 16GB DDR4-3200 ECC UDIMM / Altos BrainSphere T110F6, S330F6, S340F6(Apacer 16GB ECC UDIMM D33.2728AS.004 DDR4 3200 CL22 2048Mx8*9 1-Rank SA HF) SC.MEM11.03N</name>
 <vendor>Apacer</vendor>
 <vendorCode>IS221BB58FCB</vendorCode>
-<description>Тип памяти DDR4 · Объём 16 ГБ · Форм-фактор UDIMM · Тайминги CL22</description>
+<description>Тип памяти DDR4 · Объём комплекта 16 ГБ · Форм-фактор UDIMM · Тайминги CL22</description>
 </offer>
 <offer id="IS26C6DD4CB1" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/232970343454-operativnaya-pamyat-kingston-fury-beast</url>
@@ -43733,7 +43828,7 @@
 <name>Оперативная память Kingston FURY Beast KF432C16BB1/16WP DDR4 16GB 3200MHz Чёрный</name>
 <vendor>Kingston</vendor>
 <vendorCode>IS26C6DD4CB1</vendorCode>
-<description>Частота 3200 МГц · Тип памяти DDR4 · Объём 16 ГБ · Форм-фактор DIMM · Модулей в комплекте 1</description>
+<description>Частота 3200 МГц · Тип памяти DDR4 · Объём комплекта 16 ГБ · Форм-фактор DIMM · Модулей в комплекте 1</description>
 </offer>
 <offer id="IS29097F9697" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/267533779784-operativnaya-pamyat-dimm-ddr4-16gb-3200m</url>
@@ -43768,7 +43863,7 @@
 <name>Оперативная память Kingston FURY Beast RGB XMP KF556C40BBA-32 DDR5 32GB 5600MHz</name>
 <vendor>Kingston</vendor>
 <vendorCode>IS2FAA485030</vendorCode>
-<description>Частота 5600 МГц · Тип памяти DDR5 · Объём 32 ГБ · Форм-фактор DIMM · Модулей в комплекте 1</description>
+<description>Частота 5600 МГц · Тип памяти DDR5 · Объём комплекта 32 ГБ · Форм-фактор DIMM · Модулей в комплекте 1</description>
 </offer>
 <offer id="IS2FC138A29C" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/688965424804-operativnaya-pamyat-dlya-noutbuka-kingst</url>
@@ -43779,7 +43874,7 @@
 <name>Оперативная память для ноутбука Kingston KVR32S22S8/8WP DDR4 8GB 3200MHz</name>
 <vendor>Kingston</vendor>
 <vendorCode>IS2FC138A29C</vendorCode>
-<description>Частота 3200 МГц · Тип памяти DDR4 · Объём 8 ГБ · Форм-фактор SO-DIMM · Модулей в комплекте 1</description>
+<description>Частота 3200 МГц · Тип памяти DDR4 · Объём комплекта 8 ГБ · Форм-фактор SO-DIMM · Модулей в комплекте 1</description>
 </offer>
 <offer id="IS3135EAE97C" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/539049138814-nabor-modulei-pamyati-agi-turbosprint-di</url>
@@ -43790,7 +43885,7 @@
 <name>Набор модулей памяти AGI TURBOSPRINT DIMM DDR5 32Gb (16x2) AGI6CSJ16UD858-DC</name>
 <vendor>AGI</vendor>
 <vendorCode>IS3135EAE97C</vendorCode>
-<description>Частота 6000 МГц · Тип памяти DDR5 · Объём 32 ГБ · Форм-фактор DIMM · Тайминги CL36 · Модулей в комплекте 2</description>
+<description>Частота 6000 МГц · Тип памяти DDR5 · Объём комплекта 32 ГБ · Форм-фактор DIMM · Тайминги CL36 · Модулей в комплекте 2</description>
 </offer>
 <offer id="IS36728232A3" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/215365481004-operativnaya-pamyat-apacer-fl32g2cpkh-32</url>
@@ -43814,7 +43909,7 @@
 <name>Оперативная память NETAC Basic SO DDR4-3200 16G C22</name>
 <vendor>NETAC</vendor>
 <vendorCode>IS389DE65B1D</vendorCode>
-<description>Объём 16 ГБ · Тип памяти DDR4</description>
+<description>Объём комплекта 16 ГБ · Тип памяти DDR4</description>
 </offer>
 <offer id="IS3B0E6B2396" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/130199504774-operativnaya-pamyat-ram-32gb-ddr5-4800-e</url>
@@ -43826,7 +43921,7 @@
 <name>Оперативная память RAM 32GB DDR5-4800 ECC UDIMM / Altos BrainSphere T15F6 (Memory APACER UNB-ECC DDRV 5600 32GB D33.35301H.006 LF+HF HY-A 2048x8) KN.03201.004</name>
 <vendor>Apacer</vendor>
 <vendorCode>IS3B0E6B2396</vendorCode>
-<description>Объём 32 ГБ · Тип памяти DDR5 · Форм-фактор UDIMM</description>
+<description>Объём комплекта 32 ГБ · Тип памяти DDR5 · Форм-фактор UDIMM</description>
 </offer>
 <offer id="IS3B31E7CD8B" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/932875425184-operativnaya-pamyat-samsung-64gb-ddr5-48</url>
@@ -43837,7 +43932,7 @@
 <name>Оперативная память SAMSUNG 64GB DDR5 4800Mhz ECC RDIMM</name>
 <vendor>Samsung</vendor>
 <vendorCode>IS3B31E7CD8B</vendorCode>
-<description>Тип памяти DDR5 · Форм-фактор RDIMM · Объём 64 ГБ · Частота 4800 МГц · Модулей в комплекте 1</description>
+<description>Тип памяти DDR5 · Форм-фактор RDIMM · Объём комплекта 64 ГБ · Частота 4800 МГц · Модулей в комплекте 1</description>
 </offer>
 <offer id="IS3D9236F31F" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/380496155794-operativnaya-pamyat-dimm-ddr4-16-gb-hiks</url>
@@ -43848,7 +43943,7 @@
 <name>Оперативная память DIMM DDR4 16 GB Hiksemi (Hikvision) Future HSC416U32F3</name>
 <vendor>HIKSEMI</vendor>
 <vendorCode>IS3D9236F31F</vendorCode>
-<description>Частота 3200 МГц · Тип памяти DDR4 · Объём 16 ГБ · Форм-фактор DIMM · Модулей в комплекте 2</description>
+<description>Частота 3200 МГц · Тип памяти DDR4 · Объём комплекта 16 ГБ · Форм-фактор DIMM · Модулей в комплекте 2</description>
 </offer>
 <offer id="IS3E32B717A4" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/889913583264-komplekt-modulei-pamyati-kingston-fury-b</url>
@@ -43859,7 +43954,7 @@
 <name>Комплект модулей памяти Kingston FURY Beast RGB KF560C36BBE2AK2-32 DDR5 32GB (2x16GB) 6000MHz</name>
 <vendor>Kingston</vendor>
 <vendorCode>IS3E32B717A4</vendorCode>
-<description>Частота 6000 МГц · Тип памяти DDR5 · Объём 32 ГБ · Модулей в комплекте 2 · Форм-фактор DIMM</description>
+<description>Частота 6000 МГц · Тип памяти DDR5 · Объём комплекта 32 ГБ · Модулей в комплекте 2 · Форм-фактор DIMM</description>
 </offer>
 <offer id="IS3EC913016C" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/253944620024-operativnaya-pamyat-lexar-ares-32gb-ddr5</url>
@@ -43870,7 +43965,7 @@
 <name>Оперативная память LEXAR Ares 32GB DDR5 6800MHz (2x16GB) CL34 DIMM, 1.4V, heatsink, RGB, Black</name>
 <vendor>Lexar</vendor>
 <vendorCode>IS3EC913016C</vendorCode>
-<description>Модулей в комплекте 2 · Объём 32 ГБ · Тайминги CL34 · Тип памяти DDR5 · Форм-фактор DIMM · Частота 6800 МГц</description>
+<description>Модулей в комплекте 2 · Объём комплекта 32 ГБ · Тайминги CL34 · Тип памяти DDR5 · Форм-фактор DIMM · Частота 6800 МГц</description>
 </offer>
 <offer id="IS44BF6E5EF0" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/941289941384-operativnaya-pamyat-ram-16gb-ddr5-4800-e</url>
@@ -43882,7 +43977,7 @@
 <name>Оперативная память RAM 16GB DDR5-4800 ECC UDIMM / Altos BrainSphere T15F6(Apacer 16GB ECC UDIMM D33.31280S.006 DDR5 4800 CL40 2Gx72 2Gx8*10 1-Rank) SC.MEM11.048</name>
 <vendor>Apacer</vendor>
 <vendorCode>IS44BF6E5EF0</vendorCode>
-<description>Тип памяти DDR5 · Объём 16 ГБ · Форм-фактор UDIMM · Тайминги CL40</description>
+<description>Тип памяти DDR5 · Объём комплекта 16 ГБ · Форм-фактор UDIMM · Тайминги CL40</description>
 </offer>
 <offer id="IS45D74F2CF9" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/692645676214-operativnaya-pamyat-dimm-ecc-ddr4-8-gb-l</url>
@@ -43893,7 +43988,7 @@
 <name>Оперативная память DIMM ECC DDR4 8 GB &amp;lt;3200MHz&amp;gt; Kingston, KTD-PE432E/8G, Unbuffered CL22</name>
 <vendor>Kingston</vendor>
 <vendorCode>IS45D74F2CF9</vendorCode>
-<description>Частота 3200 МГц · Тип памяти DDR4 · Объём 8 ГБ · Форм-фактор DIMM · Тайминги CL22 · Модулей в комплекте 1</description>
+<description>Частота 3200 МГц · Тип памяти DDR4 · Объём комплекта 8 ГБ · Форм-фактор DIMM · Тайминги CL22 · Модулей в комплекте 1</description>
 </offer>
 <offer id="IS46A0139FDE" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/551043232584-operativnaya-pamyat-samsung-16gb-udimm-3</url>
@@ -43904,7 +43999,7 @@
 <name>Оперативная память SAMSUNG 16GB UDIMM 3200 DDR4</name>
 <vendor>Samsung</vendor>
 <vendorCode>IS46A0139FDE</vendorCode>
-<description>Тип памяти DDR4 · Модулей в комплекте 1 · Объём 16 ГБ · Форм-фактор UDIMM · Частота 3200 МГц</description>
+<description>Тип памяти DDR4 · Модулей в комплекте 1 · Объём комплекта 16 ГБ · Форм-фактор UDIMM · Частота 3200 МГц</description>
 </offer>
 <offer id="IS4AFF4BAA68" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/504571853864-operativnaya-pamyat-dimm-ddr4-32-gb-hiks</url>
@@ -43915,7 +44010,7 @@
 <name>Оперативная память DIMM DDR4 32 GB Hiksemi Future HSC432U32F3</name>
 <vendor>HIKSEMI</vendor>
 <vendorCode>IS4AFF4BAA68</vendorCode>
-<description>Частота 3200 МГц · Тип памяти DDR4 · Объём 32 ГБ · Форм-фактор DIMM · Модулей в комплекте 2 · Тайминги CL18</description>
+<description>Частота 3200 МГц · Тип памяти DDR4 · Объём комплекта 32 ГБ · Форм-фактор DIMM · Модулей в комплекте 2 · Тайминги CL18</description>
 </offer>
 <offer id="IS4BB01E65CE" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/695429197524-operativnaya-pamyat-dimm-ddr4-32-gb-hiks</url>
@@ -43926,7 +44021,7 @@
 <name>Оперативная память DIMM DDR4 32 GB Hiksemi (Hikvision) Sword RGB HSC432U32B5</name>
 <vendor>HIKSEMI</vendor>
 <vendorCode>IS4BB01E65CE</vendorCode>
-<description>Частота 3200 МГц · Тип памяти DDR4 · Объём 32 ГБ · Форм-фактор DIMM · Модулей в комплекте 2</description>
+<description>Частота 3200 МГц · Тип памяти DDR4 · Объём комплекта 32 ГБ · Форм-фактор DIMM · Модулей в комплекте 2</description>
 </offer>
 <offer id="IS4D6A08ECB9" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/310655782364-operativnaya-pamyat-lexar-ld4au016g-b320</url>
@@ -43949,7 +44044,7 @@
 <name>Оперативная память DIMM ECC DDR4 8 GB Kingston KSM29RS8/8HDR</name>
 <vendor>Kingston</vendor>
 <vendorCode>IS5366A7775E</vendorCode>
-<description>Частота 2933 МГц · Тип памяти DDR4 · Объём 8 ГБ · Форм-фактор DIMM · Тайминги CL21 · Модулей в комплекте 1</description>
+<description>Частота 2933 МГц · Тип памяти DDR4 · Объём комплекта 8 ГБ · Форм-фактор DIMM · Тайминги CL21 · Модулей в комплекте 1</description>
 </offer>
 <offer id="IS53BD5FC7C3" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/943869042194-operativnaya-pamyat-ozu-agi-sodimm-16gb</url>
@@ -43960,7 +44055,7 @@
 <name>Оперативная память ОЗУ AGI SODIMM 16Gb DDR5, 5600MT/s, CL40, 1.1v, AGI560016SD238-ST</name>
 <vendor>AGI</vendor>
 <vendorCode>IS53BD5FC7C3</vendorCode>
-<description>Объём 16 ГБ · Тайминги CL40 · Тип памяти DDR5 · Форм-фактор SO-DIMM</description>
+<description>Объём комплекта 16 ГБ · Тайминги CL40 · Тип памяти DDR5 · Форм-фактор SO-DIMM</description>
 </offer>
 <offer id="IS5EEEBCBA39" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/853774853804-operativnaya-pamyat-dimm-ddr4-8-gb-pc256</url>
@@ -43993,7 +44088,7 @@
 <name>Оперативная память SO-DIMM DDR3 8 GB 1600MHz Kingbank, K5.01.FN034C4002, CL11</name>
 <vendor>KINGBANK</vendor>
 <vendorCode>IS60317CE779</vendorCode>
-<description>Тип памяти DDR3 · Объём 8 ГБ · Тайминги CL11 · Форм-фактор SO-DIMM · Частота 1600 МГц · Модулей в комплекте 1</description>
+<description>Тип памяти DDR3 · Объём комплекта 8 ГБ · Тайминги CL11 · Форм-фактор SO-DIMM · Частота 1600 МГц · Модулей в комплекте 1</description>
 </offer>
 <offer id="IS60C5F8ADBA" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/774456331684-operativnaya-pamyat-corsair-ddr4-3200mhz</url>
@@ -44004,7 +44099,7 @@
 <name>Оперативная память CORSAIR DDR4, 3200MHz 32GB 2x16GB Dimm, Dual Rank, 16-20-20-38, XMP 2.0, Vengeance LPX black Heatspreader, Black PCB</name>
 <vendor>CORSAIR</vendor>
 <vendorCode>IS60C5F8ADBA</vendorCode>
-<description>Модулей в комплекте 2 · Объём 32 ГБ · Тайминги 16-20-20-38 · Тип памяти DDR4 · Форм-фактор DIMM · Частота 3200 МГц</description>
+<description>Модулей в комплекте 2 · Объём комплекта 32 ГБ · Тайминги 16-20-20-38 · Тип памяти DDR4 · Форм-фактор DIMM · Частота 3200 МГц</description>
 </offer>
 <offer id="IS617D35BA1F" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/883653131304-operativnaya-pamyat-dimm-ddr5-16-gb-5600</url>
@@ -44027,7 +44122,7 @@
 <name>Оперативная память SO-DIMM DDR4 32 GB &amp;lt;3200MHz&amp;gt; Kingston, KVR32S22D8/32, CL22</name>
 <vendor>Kingston</vendor>
 <vendorCode>IS6214B683B9</vendorCode>
-<description>Частота 3200 МГц · Тип памяти DDR4 · Объём 32 ГБ · Форм-фактор SO-DIMM · Тайминги CL22 · Модулей в комплекте 1</description>
+<description>Частота 3200 МГц · Тип памяти DDR4 · Объём комплекта 32 ГБ · Форм-фактор SO-DIMM · Тайминги CL22 · Модулей в комплекте 1</description>
 </offer>
 <offer id="IS635299B2DD" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/571327448734-operativnaya-pamyat-kingston-fury-beast</url>
@@ -44073,7 +44168,7 @@
 <name>Оперативная память CORSAIR DDR4, 3200MHz 16GB 1x16GB Dimm, Unbuffered, Dual Rank, 16-20-20-38, XMP 2.0</name>
 <vendor>CORSAIR</vendor>
 <vendorCode>IS67FA3E1F50</vendorCode>
-<description>Модулей в комплекте 1 · Объём 16 ГБ · Тайминги 16-20-20-38 · Тип памяти DDR4 · Форм-фактор DIMM · Частота 3200 МГц</description>
+<description>Модулей в комплекте 1 · Объём комплекта 16 ГБ · Тайминги 16-20-20-38 · Тип памяти DDR4 · Форм-фактор DIMM · Частота 3200 МГц</description>
 </offer>
 <offer id="IS6C8CD951DB" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/878987565094-operativnaya-pamyat-pny-16gbddr5dimm4800</url>
@@ -44084,7 +44179,7 @@
 <name>Оперативная память PNY 16GB,DDR5,DIMM,4800,BLK</name>
 <vendor>PNY</vendor>
 <vendorCode>IS6C8CD951DB</vendorCode>
-<description>Частота 4800 МГц · Тип памяти DDR5 · Объём 16 ГБ · Форм-фактор DIMM · Модулей в комплекте 1 · Тайминги CL40</description>
+<description>Частота 4800 МГц · Тип памяти DDR5 · Объём комплекта 16 ГБ · Форм-фактор DIMM · Модулей в комплекте 1 · Тайминги CL40</description>
 </offer>
 <offer id="IS6E5588EB7F" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/534550175464-operativnaya-pamyat-dimm-ddr4-16-gb-lt32</url>
@@ -44095,7 +44190,7 @@
 <name>Оперативная память DIMM DDR4 16 GB &amp;lt;3200MHz&amp;gt; KingBank, KJIB (Intel), K5.01.FP149D7101, CL19</name>
 <vendor>KINGBANK</vendor>
 <vendorCode>IS6E5588EB7F</vendorCode>
-<description>Частота 3200 МГц · Тип памяти DDR4 · Объём 16 ГБ · Форм-фактор DIMM · Тайминги CL19 · Модулей в комплекте 1</description>
+<description>Частота 3200 МГц · Тип памяти DDR4 · Объём комплекта 16 ГБ · Форм-фактор DIMM · Тайминги CL19 · Модулей в комплекте 1</description>
 </offer>
 <offer id="IS712AB70223" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/529792659934-operativnaya-pamyat-netac-basic-so-ddr5</url>
@@ -44108,7 +44203,7 @@
 <name>Оперативная память NETAC Basic SO DDR5-4800 8GB C40</name>
 <vendor>NETAC</vendor>
 <vendorCode>IS712AB70223</vendorCode>
-<description>Объём 8 ГБ · Тип памяти DDR5</description>
+<description>Объём комплекта 8 ГБ · Тип памяти DDR5</description>
 </offer>
 <offer id="IS71B50C7098" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/679823125504-operativnaya-pamyat-dimm-ddr5-16-gb-lt52</url>
@@ -44119,7 +44214,7 @@
 <name>Оперативная память DIMM DDR5 16 GB &amp;lt;5200MHz&amp;gt; Kingston Fury Beast, KF552C40BB-16, CL40, black</name>
 <vendor>Kingston</vendor>
 <vendorCode>IS71B50C7098</vendorCode>
-<description>Частота 5200 МГц · Тип памяти DDR5 · Объём 16 ГБ · Форм-фактор DIMM · Тайминги CL40</description>
+<description>Частота 5200 МГц · Тип памяти DDR5 · Объём комплекта 16 ГБ · Форм-фактор DIMM · Тайминги CL40</description>
 </offer>
 <offer id="IS72B36C252A" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/554950912904-operativnaya-pamyat-kingston-fury-beast</url>
@@ -44130,7 +44225,7 @@
 <name>Оперативная память Kingston FURY Beast Black KF560C30BBE-8 DDR5 8GB 6000MHz</name>
 <vendor>Kingston</vendor>
 <vendorCode>IS72B36C252A</vendorCode>
-<description>Объём 8 ГБ · Тип памяти DDR5 · Частота 6000 МГц</description>
+<description>Объём комплекта 8 ГБ · Тип памяти DDR5 · Частота 6000 МГц</description>
 </offer>
 <offer id="IS763370B42B" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/578234581514-operativnaya-pamyat-dimm-ddr4-16-gb-lt32</url>
@@ -44141,7 +44236,7 @@
 <name>Оперативная память DIMM DDR4 16 GB &amp;lt;3200MHz&amp;gt; Hiksemi (Hikvision) Armor, HSC416U32E2 (White)</name>
 <vendor>HIKSEMI</vendor>
 <vendorCode>IS763370B42B</vendorCode>
-<description>Частота 3200 МГц · Тип памяти DDR4 · Объём 16 ГБ · Форм-фактор DIMM · Модулей в комплекте 1</description>
+<description>Частота 3200 МГц · Тип памяти DDR4 · Объём комплекта 16 ГБ · Форм-фактор DIMM · Модулей в комплекте 1</description>
 </offer>
 <offer id="IS780B4C745C" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/859380999844-operativnaya-pamyat-apacer-el16g21gsh</url>
@@ -44163,7 +44258,7 @@
 <name>Оперативная память CORSAIR DDR4, 3200MHz 32GB 2x16GB Dimm, 16-20-20-38, XMP 2.0, Vengeance RGB RS Heatspreader</name>
 <vendor>CORSAIR</vendor>
 <vendorCode>IS79E2B886CC</vendorCode>
-<description>Модулей в комплекте 2 · Объём 32 ГБ · Тайминги 16-20-20-38 · Тип памяти DDR4 · Форм-фактор DIMM · Частота 3200 МГц</description>
+<description>Модулей в комплекте 2 · Объём комплекта 32 ГБ · Тайминги 16-20-20-38 · Тип памяти DDR4 · Форм-фактор DIMM · Частота 3200 МГц</description>
 </offer>
 <offer id="IS7DF824679E" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/701458951184-operativnaya-pamyat-dimm-ddr4-16gb-3200m</url>
@@ -44197,7 +44292,7 @@
 <name>Оперативная память CORSAIR DDR4, 3200MHz 16GB 2x8GB Dimm, 16-20-20-38, XMP 2.0, Vengeance RGB RS, RGB LED, Black PCB, 1.35V</name>
 <vendor>CORSAIR</vendor>
 <vendorCode>IS85149DA2F1</vendorCode>
-<description>Модулей в комплекте 2 · Объём 16 ГБ · Тайминги 16-20-20-38 · Тип памяти DDR4 · Форм-фактор DIMM · Частота 3200 МГц</description>
+<description>Модулей в комплекте 2 · Объём комплекта 16 ГБ · Тайминги 16-20-20-38 · Тип памяти DDR4 · Форм-фактор DIMM · Частота 3200 МГц</description>
 </offer>
 <offer id="IS85C83F4C87" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/917182168034-operativnaya-pamyat-ram-32gb-ddr4-3200-e</url>
@@ -44208,7 +44303,7 @@
 <name>Оперативная память RAM 32GB DDR4-3200 ECC UDIMM / Altos BrainSphere T110F6, S330F6, S340F6(Apacer 32GB ECC UDIMM D33.27306S.007 DDR4 3200 CL22 2048Mx8*18 2-Rank SA HF) SC.MEM11.03P</name>
 <vendor>Apacer</vendor>
 <vendorCode>IS85C83F4C87</vendorCode>
-<description>Тип памяти DDR4 · Объём 32 ГБ · Форм-фактор UDIMM · Тайминги CL22</description>
+<description>Тип памяти DDR4 · Объём комплекта 32 ГБ · Форм-фактор UDIMM · Тайминги CL22</description>
 </offer>
 <offer id="IS8671872363" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/973339504754-komplekt-modulei-pamyati-kingston-fury-b</url>
@@ -44219,7 +44314,7 @@
 <name>Комплект модулей памяти Kingston FURY Beast Black EXPO KF556C36BBEK2-64 DDR5 64GB (2x32GB) 5600M</name>
 <vendor>Kingston</vendor>
 <vendorCode>IS8671872363</vendorCode>
-<description>Частота 5600 МГц · Тип памяти DDR5 · Объём 64 ГБ · Модулей в комплекте 2 · Форм-фактор DIMM</description>
+<description>Частота 5600 МГц · Тип памяти DDR5 · Объём комплекта 64 ГБ · Модулей в комплекте 2 · Форм-фактор DIMM</description>
 </offer>
 <offer id="IS879C746020" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/426037822384-operativnaya-pamyat-dlya-noutbuka-kingst</url>
@@ -44230,7 +44325,7 @@
 <name>Оперативная память для ноутбука Kingston KVR56S46BS6-8 DDR5 8GB 5600MHz</name>
 <vendor>Kingston</vendor>
 <vendorCode>IS879C746020</vendorCode>
-<description>Объём 8 ГБ · Тип памяти DDR5 · Частота 5600 МГц</description>
+<description>Объём комплекта 8 ГБ · Тип памяти DDR5 · Частота 5600 МГц</description>
 </offer>
 <offer id="IS8B5C20C098" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/443909472094-operativnaya-pamyat-apacer-panther-rgb-a</url>
@@ -44252,7 +44347,7 @@
 <name>Оперативная память DIMM DDR4 32 GB kit &amp;lt;3200MHz&amp;gt; G.Skill FlareX (AMD), F4-3200C16D-32GFX, (2x16GB), 16-18-18-38</name>
 <vendor>G.SKILL</vendor>
 <vendorCode>IS8B884848F2</vendorCode>
-<description>Модулей в комплекте 2 · Объём 32 ГБ · Тайминги 16-18-18-38 · Тип памяти DDR4 · Форм-фактор DIMM · Частота 3200 МГц</description>
+<description>Модулей в комплекте 2 · Объём комплекта 32 ГБ · Тайминги 16-18-18-38 · Тип памяти DDR4 · Форм-фактор DIMM · Частота 3200 МГц</description>
 </offer>
 <offer id="IS8BC90FAB18" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/627352377644-operativnaya-pamyat-dimm-ddr3-8-gb-1600m</url>
@@ -44264,7 +44359,7 @@
 <name>Оперативная память DIMM DDR3 8 GB 1600MHz KingBank KDUN, K5.01.FP034C4001, CL11</name>
 <vendor>KINGBANK</vendor>
 <vendorCode>IS8BC90FAB18</vendorCode>
-<description>Тип памяти DDR3 · Объём 8 ГБ · Тайминги CL11 · Форм-фактор DIMM · Частота 1600 МГц · Модулей в комплекте 1</description>
+<description>Тип памяти DDR3 · Объём комплекта 8 ГБ · Тайминги CL11 · Форм-фактор DIMM · Частота 1600 МГц · Модулей в комплекте 1</description>
 </offer>
 <offer id="IS8DE1EF8CCF" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/377451953224-operativnaya-pamyat-goodram-16gb-ddr4-32</url>
@@ -44275,7 +44370,7 @@
 <name>Оперативная память GOODRAM 16GB DDR4 3200MHz CL22 DIMM</name>
 <vendor>GOODRAM</vendor>
 <vendorCode>IS8DE1EF8CCF</vendorCode>
-<description>Объём 16 ГБ · Тайминги CL22 · Тип памяти DDR4 · Форм-фактор DIMM · Частота 3200 МГц</description>
+<description>Объём комплекта 16 ГБ · Тайминги CL22 · Тип памяти DDR4 · Форм-фактор DIMM · Частота 3200 МГц</description>
 </offer>
 <offer id="IS912DD41487" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/501153147694-operativnaya-pamyat-kingston-kvr56u46bs6</url>
@@ -44286,7 +44381,7 @@
 <name>Оперативная память Kingston KVR56U46BS6-8 DDR5 8GB</name>
 <vendor>Kingston</vendor>
 <vendorCode>IS912DD41487</vendorCode>
-<description>Объём 8 ГБ · Тип памяти DDR5</description>
+<description>Объём комплекта 8 ГБ · Тип памяти DDR5</description>
 </offer>
 <offer id="IS929BBA8EA1" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/493382222734-operativnaya-pamyat-corsair-ddr4-3200mhz</url>
@@ -44297,7 +44392,7 @@
 <name>Оперативная память CORSAIR DDR4, 3200MHz 32GB 2x16GB Dimm, 16-20-20-38, XMP 2.0, Vengeance RGB Pro black Heatspreader, RGB LED</name>
 <vendor>CORSAIR</vendor>
 <vendorCode>IS929BBA8EA1</vendorCode>
-<description>Модулей в комплекте 2 · Объём 32 ГБ · Тайминги 16-20-20-38 · Тип памяти DDR4 · Форм-фактор DIMM · Частота 3200 МГц</description>
+<description>Модулей в комплекте 2 · Объём комплекта 32 ГБ · Тайминги 16-20-20-38 · Тип памяти DDR4 · Форм-фактор DIMM · Частота 3200 МГц</description>
 </offer>
 <offer id="IS9465BFB5B4" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/365920015854-operativnaya-pamyat-agi-turbojet-rgb-dim</url>
@@ -44308,7 +44403,7 @@
 <name>Оперативная память AGI Turbojet RGB DIMM DDR5, 16Gb 6000MHz, CL30, AGI6APC16UD858-SR, Retail</name>
 <vendor>AGI</vendor>
 <vendorCode>IS9465BFB5B4</vendorCode>
-<description>Частота 6000 МГц · Тип памяти DDR5 · Объём 16 ГБ · Форм-фактор DIMM · Тайминги CL30</description>
+<description>Частота 6000 МГц · Тип памяти DDR5 · Объём комплекта 16 ГБ · Форм-фактор DIMM · Тайминги CL30</description>
 </offer>
 <offer id="IS9548F82D37" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/618550183694-operativnaya-pamyat-corsair-ddr4-3200mhz</url>
@@ -44319,7 +44414,7 @@
 <name>Оперативная память CORSAIR DDR4, 3200MHz 8GB 1x8GB Dimm, Unbuffered, Single Rank, 16-20-20-38, XMP 2.0</name>
 <vendor>CORSAIR</vendor>
 <vendorCode>IS9548F82D37</vendorCode>
-<description>Модулей в комплекте 1 · Объём 8 ГБ · Тайминги 16-20-20-38 · Тип памяти DDR4 · Форм-фактор DIMM · Частота 3200 МГц</description>
+<description>Модулей в комплекте 1 · Объём комплекта 8 ГБ · Тайминги 16-20-20-38 · Тип памяти DDR4 · Форм-фактор DIMM · Частота 3200 МГц</description>
 </offer>
 <offer id="IS96A41EB79E" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/724329322104-operativnaya-pamyat-8gb-5600mhz-ddr5-tea</url>
@@ -44352,7 +44447,7 @@
 <name>Оперативная память DIMM DDR4 16 GB Hiksemi (Hikvision) Future RGB HSC416U32C5</name>
 <vendor>HIKSEMI</vendor>
 <vendorCode>IS9A95E82704</vendorCode>
-<description>Частота 3200 МГц · Тип памяти DDR4 · Объём 16 ГБ · Форм-фактор DIMM · Модулей в комплекте 2 · Тайминги CL18</description>
+<description>Частота 3200 МГц · Тип памяти DDR4 · Объём комплекта 16 ГБ · Форм-фактор DIMM · Модулей в комплекте 2 · Тайминги CL18</description>
 </offer>
 <offer id="IS9B2C4FA8DD" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/571305341524-ozu-team-group-delta-rgb-32gb-16x2-ddr-5</url>
@@ -44385,7 +44480,7 @@
 <name>Набор модулей памяти Kingston Beast Black RGB 32 ГБ, DDR 5, 6400 МГц, 1.4 В, CL32, KF564C32BBEAK2-32</name>
 <vendor>Kingston</vendor>
 <vendorCode>IS9C840BBD63</vendorCode>
-<description>Частота 6400 МГц · Тип памяти DDR5 · Объём 32 ГБ · Тайминги CL32</description>
+<description>Частота 6400 МГц · Тип памяти DDR5 · Объём комплекта 32 ГБ · Тайминги CL32</description>
 </offer>
 <offer id="ISA06B59620D" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/787308297454-operativnaya-pamyat-dimm-ddr4-16-gb-lt32</url>
@@ -44396,7 +44491,7 @@
 <name>Оперативная память DIMM DDR4 16 GB &amp;lt;3200MHz&amp;gt; Hiksemi (Hikvision) Armor, HSC416U32D2 (Black)</name>
 <vendor>HIKSEMI</vendor>
 <vendorCode>ISA06B59620D</vendorCode>
-<description>Частота 3200 МГц · Тип памяти DDR4 · Объём 16 ГБ · Форм-фактор DIMM · Модулей в комплекте 1</description>
+<description>Частота 3200 МГц · Тип памяти DDR4 · Объём комплекта 16 ГБ · Форм-фактор DIMM · Модулей в комплекте 1</description>
 </offer>
 <offer id="ISA2217516D5" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/591049863464-operativnaya-pamyat-ddr5-gskill-ripjaws</url>
@@ -44419,7 +44514,7 @@
 <name>Оперативная память TEAM GROUP TEAMGROUP ELITE DDR5 DESKTOP MEMORY 16GB(1x16GB) 5600MHz CL46 44800 MB/s</name>
 <vendor>Team_Group</vendor>
 <vendorCode>ISA583598350</vendorCode>
-<description>Тип памяти DDR5 · Форм-фактор DIMM · Модулей в комплекте 1 · Объём 16 ГБ · Тайминги CL46 · Частота 5600 МГц</description>
+<description>Тип памяти DDR5 · Форм-фактор DIMM · Модулей в комплекте 1 · Объём комплекта 16 ГБ · Тайминги CL46 · Частота 5600 МГц</description>
 </offer>
 <offer id="ISA61DC973E1" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/716286909814-operativnaya-pamyat-dimm-ddr4-16-gb-hiks</url>
@@ -44430,7 +44525,7 @@
 <name>Оперативная память DIMM DDR4 16 GB Hiksemi (Hikvision) Sword RGB HSC416U32B5</name>
 <vendor>HIKSEMI</vendor>
 <vendorCode>ISA61DC973E1</vendorCode>
-<description>Частота 3200 МГц · Тип памяти DDR4 · Объём 16 ГБ · Форм-фактор DIMM · Модулей в комплекте 2 · Тайминги CL18</description>
+<description>Частота 3200 МГц · Тип памяти DDR4 · Объём комплекта 16 ГБ · Форм-фактор DIMM · Модулей в комплекте 2 · Тайминги CL18</description>
 </offer>
 <offer id="ISA6D776CAEC" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/175893077274-operativnaya-pamyat-dimm-ddr4-32-gb-gski</url>
@@ -44441,7 +44536,7 @@
 <name>Оперативная память DIMM DDR4 32 GB G.Skill Trident Z RGB F4-3200C16D-32GTZRX</name>
 <vendor>G.SKILL</vendor>
 <vendorCode>ISA6D776CAEC</vendorCode>
-<description>Частота 3200 МГц · Тип памяти DDR4 · Объём 32 ГБ · Форм-фактор DIMM · Модулей в комплекте 2 · Тайминги 16-18-18-38</description>
+<description>Частота 3200 МГц · Тип памяти DDR4 · Объём комплекта 32 ГБ · Форм-фактор DIMM · Модулей в комплекте 2 · Тайминги 16-18-18-38</description>
 </offer>
 <offer id="ISA704617429" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/424142328194-operativnaya-pamyat-dimm-ddr4-16384mbx2</url>
@@ -44463,7 +44558,7 @@
 <name>Оперативная память DIMM ECC DDR4 16 GB Kingston KSM32RS8/16MFR</name>
 <vendor>Kingston</vendor>
 <vendorCode>ISA843D1DB66</vendorCode>
-<description>Частота 3200 МГц · Тип памяти DDR4 · Объём 16 ГБ · Форм-фактор DIMM · Тайминги CL22 · Модулей в комплекте 1</description>
+<description>Частота 3200 МГц · Тип памяти DDR4 · Объём комплекта 16 ГБ · Форм-фактор DIMM · Тайминги CL22 · Модулей в комплекте 1</description>
 </offer>
 <offer id="ISA8738687A8" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/924766833224-operativnaya-pamyat-synology-d4eu02-8g</url>
@@ -44485,7 +44580,7 @@
 <name>Оперативная память DIMM DDR4 16 GB &amp;lt;3200MHz&amp;gt; Hiksemi (Hikvision) Hiker, HSC416U32Z1, CL22</name>
 <vendor>HIKSEMI</vendor>
 <vendorCode>ISA95DCB6ABB</vendorCode>
-<description>Частота 3200 МГц · Тип памяти DDR4 · Объём 16 ГБ · Форм-фактор DIMM · Тайминги CL22 · Модулей в комплекте 1</description>
+<description>Частота 3200 МГц · Тип памяти DDR4 · Объём комплекта 16 ГБ · Форм-фактор DIMM · Тайминги CL22 · Модулей в комплекте 1</description>
 </offer>
 <offer id="ISAA5EE66A22" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/961598908914-operativnaya-pamyat-sodimm-ddr5-32-gb-48</url>
@@ -44508,7 +44603,7 @@
 <name>Оперативная память DIMM DDR4 32 GB G.Skill Aegis F4-3200C16D-32GIS</name>
 <vendor>G.SKILL</vendor>
 <vendorCode>ISB0EB1F0112</vendorCode>
-<description>Частота 3200 МГц · Тип памяти DDR4 · Объём 32 ГБ · Форм-фактор DIMM · Модулей в комплекте 2 · Тайминги 16-18-18-38</description>
+<description>Частота 3200 МГц · Тип памяти DDR4 · Объём комплекта 32 ГБ · Форм-фактор DIMM · Модулей в комплекте 2 · Тайминги 16-18-18-38</description>
 </offer>
 <offer id="ISB9074D24BE" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/178848864174-modul-pamyati-team-group-t-force-delta-r</url>
@@ -44530,7 +44625,7 @@
 <name>Оперативная память CORSAIR DDR4, 3200MHz 16GB 1x16GB Dimm, 16-20-20-38, XMP 2.0, Vengeance RGB RS, RGB LED, Black PCB, 1.35V</name>
 <vendor>CORSAIR</vendor>
 <vendorCode>ISB94E7DF170</vendorCode>
-<description>Модулей в комплекте 1 · Объём 16 ГБ · Тайминги 16-20-20-38 · Тип памяти DDR4 · Форм-фактор DIMM · Частота 3200 МГц</description>
+<description>Модулей в комплекте 1 · Объём комплекта 16 ГБ · Тайминги 16-20-20-38 · Тип памяти DDR4 · Форм-фактор DIMM · Частота 3200 МГц</description>
 </offer>
 <offer id="ISBBA4044384" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/443054332354-operativnaya-pamyat-dimm-ddr4-16-gb-lt26</url>
@@ -44541,7 +44636,7 @@
 <name>Оперативная память DIMM DDR4 16 GB &amp;lt;2666MHz&amp;gt; Hiksemi (Hikvision) Hiker, HSC416U26Z1</name>
 <vendor>HIKSEMI</vendor>
 <vendorCode>ISBBA4044384</vendorCode>
-<description>Частота 2666 МГц · Тип памяти DDR4 · Объём 16 ГБ · Форм-фактор DIMM · Модулей в комплекте 1</description>
+<description>Частота 2666 МГц · Тип памяти DDR4 · Объём комплекта 16 ГБ · Форм-фактор DIMM · Модулей в комплекте 1</description>
 </offer>
 <offer id="ISBCDC2F9115" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/190193804974-operativnaya-pamyat-goodram-16gb-2666mhz</url>
@@ -44552,7 +44647,7 @@
 <name>Оперативная память GOODRAM 16GB 2666MHz CL19 DIMM</name>
 <vendor>GOODRAM</vendor>
 <vendorCode>ISBCDC2F9115</vendorCode>
-<description>Объём 16 ГБ · Тайминги CL19 · Форм-фактор DIMM · Частота 2666 МГц</description>
+<description>Объём комплекта 16 ГБ · Тайминги CL19 · Форм-фактор DIMM · Частота 2666 МГц</description>
 </offer>
 <offer id="ISBF183F50E4" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/265045573594-operativnaya-pamyat-dimm-ddr5-16-gb-kit</url>
@@ -44563,7 +44658,7 @@
 <name>Оперативная память DIMM DDR5 16 GB kit &amp;lt;5600MHz&amp;gt; Kingston Fury Beast RGB (AMD+Intel), KF556C36BBEAK2-16, CL36</name>
 <vendor>Kingston</vendor>
 <vendorCode>ISBF183F50E4</vendorCode>
-<description>Объём 16 ГБ · Тайминги CL36 · Тип памяти DDR5 · Форм-фактор DIMM · Частота 5600 МГц</description>
+<description>Объём комплекта 16 ГБ · Тайминги CL36 · Тип памяти DDR5 · Форм-фактор DIMM · Частота 5600 МГц</description>
 </offer>
 <offer id="ISC04EE1FAC2" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/579919591524-operativnaya-pamyat-corsair-ddr4-3200mhz</url>
@@ -44574,7 +44669,7 @@
 <name>Оперативная память CORSAIR DDR4, 3200MHz 16GB 2x8GB DIMM, 16-18-18-36, XMP 2.0, VENGEANCE RGB PRO Heatspreader, RGB LED, 1.35V</name>
 <vendor>CORSAIR</vendor>
 <vendorCode>ISC04EE1FAC2</vendorCode>
-<description>Модулей в комплекте 2 · Объём 16 ГБ · Тайминги 16-18-18-36 · Тип памяти DDR4 · Форм-фактор DIMM · Частота 3200 МГц</description>
+<description>Модулей в комплекте 2 · Объём комплекта 16 ГБ · Тайминги 16-18-18-36 · Тип памяти DDR4 · Форм-фактор DIMM · Частота 3200 МГц</description>
 </offer>
 <offer id="ISC1CE68387C" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/119140460324-operativnaya-pamyat-dimm-ddr5-32768mbx2</url>
@@ -44596,7 +44691,7 @@
 <name>Оперативная память ОЗУ для Ноутбука Team Group Elite DDR5 TED516G5600C46A-S01</name>
 <vendor>Team_Group</vendor>
 <vendorCode>ISC1F0741224</vendorCode>
-<description>Объём 16 ГБ · Тип памяти DDR5 · Форм-фактор SO-DIMM · Частота 5600 МГц</description>
+<description>Объём комплекта 16 ГБ · Тип памяти DDR5 · Форм-фактор SO-DIMM · Частота 5600 МГц</description>
 </offer>
 <offer id="ISC2CC1436A7" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/465890920384-operativnaya-pamyat-dimm-ddr5-8192mbx2-5</url>
@@ -44629,7 +44724,7 @@
 <name>Комплект модулей памяти Kingston FURY Beast Black KF560C36BBE2K2-32 DDR5 32GB (2x16GB) 6000MHz</name>
 <vendor>Kingston</vendor>
 <vendorCode>ISC63228920C</vendorCode>
-<description>Частота 6000 МГц · Тип памяти DDR5 · Объём 32 ГБ · Модулей в комплекте 2 · Форм-фактор DIMM</description>
+<description>Частота 6000 МГц · Тип памяти DDR5 · Объём комплекта 32 ГБ · Модулей в комплекте 2 · Форм-фактор DIMM</description>
 </offer>
 <offer id="ISCA0A8960EA" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/310803069034-operativnaya-pamyat-dimm-ddr4-32-gb-lt32</url>
@@ -44641,7 +44736,7 @@
 <name>Оперативная память DIMM DDR4 32 GB &amp;lt;3200MHz&amp;gt; KingBank, KDUN, K5.01.FP049E4001 , CL22</name>
 <vendor>KINGBANK</vendor>
 <vendorCode>ISCA0A8960EA</vendorCode>
-<description>Частота 3200 МГц · Тип памяти DDR4 · Объём 32 ГБ · Форм-фактор DIMM · Тайминги CL22 · Модулей в комплекте 1</description>
+<description>Частота 3200 МГц · Тип памяти DDR4 · Объём комплекта 32 ГБ · Форм-фактор DIMM · Тайминги CL22 · Модулей в комплекте 1</description>
 </offer>
 <offer id="ISCA89B3BE07" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/992073453204-operativnaya-pamyat-dlya-noutbuka-kingst</url>
@@ -44652,7 +44747,7 @@
 <name>Оперативная память для ноутбука Kingston KVR32S22D8/16WP DDR4 16GB 3200MHz</name>
 <vendor>Kingston</vendor>
 <vendorCode>ISCA89B3BE07</vendorCode>
-<description>Частота 3200 МГц · Тип памяти DDR4 · Объём 16 ГБ · Форм-фактор SO-DIMM · Модулей в комплекте 1</description>
+<description>Частота 3200 МГц · Тип памяти DDR4 · Объём комплекта 16 ГБ · Форм-фактор SO-DIMM · Модулей в комплекте 1</description>
 </offer>
 <offer id="ISCAA49D481C" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/799635250964-operativnaya-pamyat-dimm-ddr5-32768mbx2</url>
@@ -44675,7 +44770,7 @@
 <name>Оперативная память DIMM DDR5 32 GB Apacer Panther, AH5U32G52C5227BAA-2 (2x16), CL40</name>
 <vendor>Apacer</vendor>
 <vendorCode>ISCCB030BD87</vendorCode>
-<description>Объём 32 ГБ · Тайминги CL40 · Тип памяти DDR5 · Форм-фактор DIMM · Частота 5200 МГц</description>
+<description>Объём комплекта 32 ГБ · Тайминги CL40 · Тип памяти DDR5 · Форм-фактор DIMM · Частота 5200 МГц</description>
 </offer>
 <offer id="ISCF6B149F6E" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/498928996134-operativnaya-pamyat-so-dimm-ddr5-16-gb-g</url>
@@ -44686,7 +44781,7 @@
 <name>Оперативная память SO-DIMM DDR5 16 GB G.Skill RipJaws F5-5600S4645A16GX1-RS</name>
 <vendor>G.SKILL</vendor>
 <vendorCode>ISCF6B149F6E</vendorCode>
-<description>Частота 5600 МГц · Тип памяти DDR5 · Объём 16 ГБ · Форм-фактор SO-DIMM · Тайминги 46-45-45-89</description>
+<description>Частота 5600 МГц · Тип памяти DDR5 · Объём комплекта 16 ГБ · Форм-фактор SO-DIMM · Тайминги 46-45-45-89</description>
 </offer>
 <offer id="ISD0A773945C" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/330855989894-komplekt-modulei-pamyati-kingston-fury-b</url>
@@ -44697,7 +44792,7 @@
 <name>Комплект модулей памяти Kingston FURY Beast KF560C36BWE2K2-32 DDR5 32GB (2x16GB) 6000MHz</name>
 <vendor>Kingston</vendor>
 <vendorCode>ISD0A773945C</vendorCode>
-<description>Частота 6000 МГц · Тип памяти DDR5 · Объём 32 ГБ · Модулей в комплекте 2 · Форм-фактор DIMM</description>
+<description>Частота 6000 МГц · Тип памяти DDR5 · Объём комплекта 32 ГБ · Модулей в комплекте 2 · Форм-фактор DIMM</description>
 </offer>
 <offer id="ISD176E72CDD" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/678063750654-operativnaya-pamyat-dlya-noutbuka-kingst</url>
@@ -44708,7 +44803,7 @@
 <name>Оперативная память для ноутбука Kingston KVR32S22S8/8 DDR4 8GB 3200MHz</name>
 <vendor>Kingston</vendor>
 <vendorCode>ISD176E72CDD</vendorCode>
-<description>Частота 3200 МГц · Тип памяти DDR4 · Объём 8 ГБ · Форм-фактор SO-DIMM · Модулей в комплекте 1</description>
+<description>Частота 3200 МГц · Тип памяти DDR4 · Объём комплекта 8 ГБ · Форм-фактор SO-DIMM · Модулей в комплекте 1</description>
 </offer>
 <offer id="ISD4F91C109B" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/362933046404-operativnaya-pamyat-netac-basic-so-ddr4</url>
@@ -44721,7 +44816,7 @@
 <name>Оперативная память NETAC Basic SO DDR4-2666 16G C19</name>
 <vendor>NETAC</vendor>
 <vendorCode>ISD4F91C109B</vendorCode>
-<description>Объём 16 ГБ · Тип памяти DDR4</description>
+<description>Объём комплекта 16 ГБ · Тип памяти DDR4</description>
 </offer>
 <offer id="ISD7A4324EE9" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/476799655654-modul-pamyati-synology-d4eu01-8g-dlya-fs</url>
@@ -44743,7 +44838,7 @@
 <name>Оперативная память PNY 16GB,DDR5,DIMM,5600,BLK</name>
 <vendor>PNY</vendor>
 <vendorCode>ISD86DF8A870</vendorCode>
-<description>Частота 5600 МГц · Тип памяти DDR5 · Объём 16 ГБ · Форм-фактор DIMM · Модулей в комплекте 1 · Тайминги CL40</description>
+<description>Частота 5600 МГц · Тип памяти DDR5 · Объём комплекта 16 ГБ · Форм-фактор DIMM · Модулей в комплекте 1 · Тайминги CL40</description>
 </offer>
 <offer id="ISDB12267678" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/197370548924-operativnaya-pamyat-dell-memory-upgrade</url>
@@ -44754,7 +44849,7 @@
 <name>Оперативная память DELL Memory Upgrade - 8GB - 1Rx16 DDR4 UDIMM 3200MHz AB371021</name>
 <vendor>Dell</vendor>
 <vendorCode>ISDB12267678</vendorCode>
-<description>Объём 8 ГБ · Тип памяти DDR4 · Форм-фактор UDIMM · Частота 3200 МГц</description>
+<description>Объём комплекта 8 ГБ · Тип памяти DDR4 · Форм-фактор UDIMM · Частота 3200 МГц</description>
 </offer>
 <offer id="ISDB19D7E0FE" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/959026265414-operativnaya-pamyat-kingston-fury-beast</url>
@@ -44765,7 +44860,7 @@
 <name>Оперативная память Kingston FURY Beast RGB XMP KF560C36BBEA-8 DDR5 8GB 6000MHz</name>
 <vendor>Kingston</vendor>
 <vendorCode>ISDB19D7E0FE</vendorCode>
-<description>Частота 6000 МГц · Тип памяти DDR5 · Объём 8 ГБ · Форм-фактор DIMM · Модулей в комплекте 1</description>
+<description>Частота 6000 МГц · Тип памяти DDR5 · Объём комплекта 8 ГБ · Форм-фактор DIMM · Модулей в комплекте 1</description>
 </offer>
 <offer id="ISDF1ECF3C64" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/471978873164-operativnaya-pamyat-dimm-ddr5-16-gb-lt56</url>
@@ -44776,7 +44871,7 @@
 <name>Оперативная память DIMM DDR5 16 GB &amp;lt;5600MHz&amp;gt; Patriot, PSD516G560081, CL46</name>
 <vendor>Patriot</vendor>
 <vendorCode>ISDF1ECF3C64</vendorCode>
-<description>Частота 5600 МГц · Тип памяти DDR5 · Объём 16 ГБ · Форм-фактор DIMM · Тайминги CL46</description>
+<description>Частота 5600 МГц · Тип памяти DDR5 · Объём комплекта 16 ГБ · Форм-фактор DIMM · Тайминги CL46</description>
 </offer>
 <offer id="ISE2E8CF4AF4" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/100618530884-komplekt-modulei-pamyati-kingston-fury-b</url>
@@ -44798,7 +44893,7 @@
 <name>Комплект модулей памяти Kingston FURY Renegade RGB XMP KF560C32RSAK2-96 DDR5 96GB (2x48GB) 6000M</name>
 <vendor>Kingston</vendor>
 <vendorCode>ISE369ACDB14</vendorCode>
-<description>Тип памяти DDR5 · Форм-фактор DIMM · Модулей в комплекте 2 · Объём 96 ГБ · Частота 6000 МГц</description>
+<description>Тип памяти DDR5 · Форм-фактор DIMM · Модулей в комплекте 2 · Объём комплекта 96 ГБ · Частота 6000 МГц</description>
 </offer>
 <offer id="ISE423590B3C" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/157375477574-operativnaya-pamyat-dimm-ecc-ddr5-32-gb</url>
@@ -44809,7 +44904,7 @@
 <name>Оперативная память DIMM ECC DDR5 32 GB Kingston KSM56R46BD8PMI-32MDI</name>
 <vendor>Kingston</vendor>
 <vendorCode>ISE423590B3C</vendorCode>
-<description>Частота 5600 МГц · Тип памяти DDR5 · Объём 32 ГБ · Форм-фактор DIMM · Тайминги CL46 · Модулей в комплекте 1</description>
+<description>Частота 5600 МГц · Тип памяти DDR5 · Объём комплекта 32 ГБ · Форм-фактор DIMM · Тайминги CL46 · Модулей в комплекте 1</description>
 </offer>
 <offer id="ISE5EDE649A4" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/530357058464-operativnaya-pamyat-kingston-kvr32n22d81</url>
@@ -44842,7 +44937,7 @@
 <name>Оперативная память DIMM DDR4 8 GB &amp;lt;2666MHz&amp;gt; G.Skill Aegis, F4-2666C19S-8GIS, 19-19-19-43</name>
 <vendor>G.SKILL</vendor>
 <vendorCode>ISE903B57A5F</vendorCode>
-<description>Частота 2666 МГц · Тип памяти DDR4 · Объём 8 ГБ · Форм-фактор DIMM · Тайминги 19-19-19-43</description>
+<description>Частота 2666 МГц · Тип памяти DDR4 · Объём комплекта 8 ГБ · Форм-фактор DIMM · Тайминги 19-19-19-43</description>
 </offer>
 <offer id="ISEC64979715" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/164332265104-operativnaya-pamyat-dlya-noutbuka-lexar</url>
@@ -44853,7 +44948,7 @@
 <name>Оперативная память для ноутбука Lexar LD5S08G56C46ST-BGS DDR5 8GB</name>
 <vendor>Lexar</vendor>
 <vendorCode>ISEC64979715</vendorCode>
-<description>Частота 5600 МГц · Тип памяти DDR5 · Объём 8 ГБ · Форм-фактор SO-DIMM · Модулей в комплекте 1</description>
+<description>Частота 5600 МГц · Тип памяти DDR5 · Объём комплекта 8 ГБ · Форм-фактор SO-DIMM · Модулей в комплекте 1</description>
 </offer>
 <offer id="ISF6E68D6BC2" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/250273697814-operativnaya-pamyat-dimm-ddr4-32-gb-king</url>
@@ -44864,7 +44959,7 @@
 <name>Оперативная память DIMM DDR4 32 GB Kingston Fury Beast RGB KF432C16BB2A/32</name>
 <vendor>Kingston</vendor>
 <vendorCode>ISF6E68D6BC2</vendorCode>
-<description>Частота 3200 МГц · Тип памяти DDR4 · Объём 32 ГБ · Форм-фактор DIMM · Тайминги CL16 · Модулей в комплекте 1</description>
+<description>Частота 3200 МГц · Тип памяти DDR4 · Объём комплекта 32 ГБ · Форм-фактор DIMM · Тайминги CL16 · Модулей в комплекте 1</description>
 </offer>
 <offer id="ISF6E8AA2194" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/542013719884-operativnaya-pamyat-dimm-ecc-ddr4-8-gb-k</url>
@@ -44875,7 +44970,7 @@
 <name>Оперативная память DIMM ECC DDR4 8 GB Kingston KSM32RS8/8HDR</name>
 <vendor>Kingston</vendor>
 <vendorCode>ISF6E8AA2194</vendorCode>
-<description>Частота 3200 МГц · Тип памяти DDR4 · Объём 8 ГБ · Форм-фактор DIMM · Тайминги CL22 · Модулей в комплекте 1</description>
+<description>Частота 3200 МГц · Тип памяти DDR4 · Объём комплекта 8 ГБ · Форм-фактор DIMM · Тайминги CL22 · Модулей в комплекте 1</description>
 </offer>
 <offer id="ISF787659998" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/465961903344-nabor-modulei-pamyati-crucial-pro-dimm-d</url>
@@ -44897,7 +44992,7 @@
 <name>Оперативная память DIMM DDR4 16 GB Hiksemi (Hikvision) Armor HSC416U32D3</name>
 <vendor>HIKSEMI</vendor>
 <vendorCode>ISF8643CD139</vendorCode>
-<description>Частота 3200 МГц · Тип памяти DDR4 · Объём 16 ГБ · Форм-фактор DIMM · Модулей в комплекте 2</description>
+<description>Частота 3200 МГц · Тип памяти DDR4 · Объём комплекта 16 ГБ · Форм-фактор DIMM · Модулей в комплекте 2</description>
 </offer>
 <offer id="ISFE4010DB6E" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/401812558484-operativnaya-pamyat-dimm-ddr5-16384mbx2</url>
@@ -48329,7 +48424,7 @@
 <name>Охлаждение Cooler ID-Cooling, SE-903-XT, for S1700/1200/115x/AMD, 130W, 9cm fan, 2200rpm, 45.8CFM, 4pin</name>
 <vendor>ID-COOLING</vendor>
 <vendorCode>ISF830A5920A</vendorCode>
-<description>TDP 130 Вт · Интерфейс 4-pin · Скорость вращения 2200 об/мин · Сокет 1700 / 1200 / 115x · Тип устройства Кулер для процессора</description>
+<description>Тип устройства Кулер для процессора · Форм-фактор 92 мм · Сокет 1700 / 1200 / 115x · Интерфейс 4-pin · TDP 130 Вт · Скорость вращения 2200 об/мин · Уровень шума 25,8 дБА</description>
 </offer>
 <offer id="ISF8E1B8CD9E" available="true">
 <url>https://b2b.isoft-shop.kz/ohlazhdenie/tproduct/854144438454-ohlazhdenie-fan-for-case-12cm-id-cooling</url>
@@ -48879,17 +48974,6 @@
 <vendorCode>3025V_BI</vendorCode>
 <description>Монохромное МФУ, Xerox, WorkCentre 3025BI, 3025V_BI, Лазерное, А4, 20 стр./мин., Подача 150 листов, Планшетный сканер, ЖК Дисплей, 600 МГц CPU, 128 МБ RAM, USB 2.0, Wi-Fi</description>
 </offer>
-<offer id="IS81249091B3" available="true">
-<url>https://b2b.isoft-shop.kz/printery-i-mfu/tproduct/155635599714-mfu-lazernoe-canon-i-sensys-mf465dw</url>
-<price>208000</price>
-<currencyId>KZT</currencyId>
-<categoryId>883275389424</categoryId>
-<picture>https://static.tildacdn.com/stor3332-3631-4762-b135-326263353263/854e0533543e9f9b3b489ce739ccf722.jpg</picture>
-<name>МФУ лазерное Canon i-SENSYS MF465dw</name>
-<vendor>Canon</vendor>
-<vendorCode>7188C007AA</vendorCode>
-<description>Монохромное МФУ, Canon, i-SENSYS MF465DW II, 7188C007AA, Лазерное, A4, 40 стр./мин., Подача 350 листов, Двусторонний автоподатчик документов, Сенсорный дисплей 5", 1.2 ГГц CPU, 1 ГБ RAM, USB 2.0, Ethernet 10/100/1000, Wi-Fi</description>
-</offer>
 <offer id="IS86EB7FE07C" available="true">
 <url>https://b2b.isoft-shop.kz/printery-i-mfu/tproduct/278892473824-mfu-hp-9yg08a-laserjet-m236sdn</url>
 <price>153000</price>
@@ -48936,19 +49020,6 @@
 <vendor>Xerox</vendor>
 <vendorCode>B235V_DNI</vendorCode>
 <description>Монохромное МФУ, Xerox, B235DNI, B235V_DNI, Лазерное, А4, 34 стр./мин., Подача 251 лист, Односторонний автоподатчик документов, до 23 изобр./мин., Сенсорный дисплей 2.8", 1 ГГц CPU, 512 МБ RAM, USB 2.0, Ethernet 10/100, Wi-Fi</description>
-</offer>
-<offer id="IS9E73C536CD" available="true">
-<url>https://b2b.isoft-shop.kz/printery-i-mfu/tproduct/583651620064-mfu-canon-mf463dw-eu</url>
-<price>202000</price>
-<currencyId>KZT</currencyId>
-<categoryId>883275389424</categoryId>
-<picture>https://static.tildacdn.com/stor3337-3032-4862-a530-643738396430/21573cce03845a54efc5f0f458c0ffde.jpg</picture>
-<picture>https://static.tildacdn.com/tild6263-6432-4464-b333-613738613162/583651620064.jpg</picture>
-<picture>https://static.tildacdn.com/tild3936-3063-4430-b261-666538396239/583651620064_2.jpg</picture>
-<name>МФУ Canon MF463dw EU</name>
-<vendor>Canon</vendor>
-<vendorCode>IS9E73C536CD</vendorCode>
-<description>Монохромное МФУ, Canon, i-SENSYS MF463DW II, 7188C008AA, Лазерное, A4, 40 стр./мин., Подача 350 листов, Двусторонний автоподатчик документов, Сенсорный дисплей 5", 1.2 ГГц CPU, 1 ГБ RAM, USB 2.0, Ethernet 10/100/1000, Wi-Fi</description>
 </offer>
 <offer id="ISAB97FD7860" available="true">
 <url>https://b2b.isoft-shop.kz/printery-i-mfu/tproduct/829317557674-monohromnoe-mfu-xerox-b115ni-b115vni</url>
@@ -49113,7 +49184,7 @@
 <name>МФУ HP/LaserJet Enterprise M528dn/Printer-Scaner(ADF-40p.)-Copier/A4/43 ppm/1200x1200 dpi 1PV64A#B19</name>
 <vendor>HP</vendor>
 <vendorCode>ISEF27192723</vendorCode>
-<description>МФУ HP/LaserJet Enterprise M528dn/Printer-Scaner(ADF-40p.)-Copier/A4/43 ppm/1200x1200 dpi 1PV64A#B19 (HP)</description>
+<description>Тип устройства МФУ · Технология печати лазерный · Формат A4 · Скорость печати 43 стр/мин · Разрешение печати 1200×1200 dpi · Интерфейсы USB, Ethernet · Функции принтер, сканер, копир, факс</description>
 </offer>
 <offer id="ISF432E1D7B3" available="true">
 <url>https://b2b.isoft-shop.kz/printery-i-mfu/tproduct/245900003074-mfu-canon-i-sensys-mf272dw</url>
@@ -49221,7 +49292,7 @@
 <name>Принтер HP/Color LaserJet Pro 3203dn/A4/25 ppm/600x600 dpi 8D7L2A#B19</name>
 <vendor>HP</vendor>
 <vendorCode>IS47F47EA64C</vendorCode>
-<description>Принтер HP/Color LaserJet Pro 3203dn/A4/25 ppm/600x600 dpi 8D7L2A#B19 (HP)</description>
+<description>Тип устройства Принтер · Технология печати лазерный · Формат A4 · Скорость печати 25 стр/мин · Разрешение печати 600×600 dpi · Интерфейсы USB, Ethernet, Wi-Fi · Цветность цветной</description>
 </offer>
 <offer id="IS6A1B6ECA06" available="true">
 <url>https://b2b.isoft-shop.kz/printery-lazernye-cvetnye/tproduct/209946693194-printer-hp-color-lj-pro-4203dn-4ra89a</url>
@@ -53131,17 +53202,6 @@
 <vendorCode>IS30C11B48FD</vendorCode>
 <description>Тип устройства Коммутатор · Портов 16 · Скорость 10/100/1000 Мбит/с · Уровень L2 · Управление Управляемый · Класс по числу портов 11–22 порта</description>
 </offer>
-<offer id="IS323E0DA949" available="true">
-<url>https://b2b.isoft-shop.kz/setevoe-oborudovanie/tproduct/780332461244-kommutator-bdcom-s1500-24p2g2s</url>
-<price>90000</price>
-<currencyId>KZT</currencyId>
-<categoryId>737078043964</categoryId>
-<picture>https://static.tildacdn.com/stor6234-3438-4236-a139-616435313635/709acaf75dedd3c14da8e95066712aeb.jpg</picture>
-<name>Коммутатор BDCOM S1500-24P2G2S</name>
-<vendor>BDCOM</vendor>
-<vendorCode>IS323E0DA949</vendorCode>
-<description>Тип устройства Коммутатор · Портов 26 · Скорость 10/100/1000 Мбит/с · Слотов SFP 2 · PoE Есть · Управление Неуправляемый · Класс по числу портов 23–40 портов · Размещение В стойку · Бюджет PoE 280 Вт</description>
-</offer>
 <offer id="IS326DBC0F0B" available="true">
 <url>https://b2b.isoft-shop.kz/setevoe-oborudovanie/tproduct/956302588094-kommutator-dahua-dh-pfs3006-4et-36</url>
 <price>24000</price>
@@ -55111,17 +55171,6 @@
 <vendor>TP-Link</vendor>
 <vendorCode>IS9016F43852</vendorCode>
 <description>Тип устройства Коммутатор · Портов 16 · Скорость 10/100 Мбит/с · Управление Неуправляемый · Размещение Настольный · Класс по числу портов 11–22 порта</description>
-</offer>
-<offer id="IS90E44F4992" available="true">
-<url>https://b2b.isoft-shop.kz/setevoe-oborudovanie/tproduct/113701734644-kommutator-d-link-dgs-1100-16v2a2a</url>
-<price>67000</price>
-<currencyId>KZT</currencyId>
-<categoryId>737078043964</categoryId>
-<picture>https://static.tildacdn.com/stor3536-3266-4631-a339-646235356662/f2d9a757bb808ed1bd08e3aafabb638f.jpg</picture>
-<name>Коммутатор D-Link DGS-1100-16V2/A2A</name>
-<vendor>D-Link</vendor>
-<vendorCode>IS90E44F4992</vendorCode>
-<description>Тип устройства Коммутатор · Портов 16 · Скорость 10/100/1000 Мбит/с · Уровень L2 · Управление Управляемый · Размещение В стойку · Класс по числу портов 11–22 порта</description>
 </offer>
 <offer id="IS911DB2AB55" available="true">
 <url>https://b2b.isoft-shop.kz/setevoe-oborudovanie/tproduct/134687462164-kommutator-hikvision-ds-3e1518p-ei-v2</url>
@@ -57181,17 +57230,6 @@
 <vendorCode>ISF3199B804E</vendorCode>
 <description>Тип устройства Коммутатор · Слотов SFP 4 · Портов 24 · Скорость 10/100/1000 Мбит/с · Уровень L2 · Управление Управляемый · Размещение В стойку · Класс по числу портов 23–40 портов</description>
 </offer>
-<offer id="ISF40277E4AE" available="true">
-<url>https://b2b.isoft-shop.kz/setevoe-oborudovanie/tproduct/211844587334-kommutator-tp-linktl-sg1008p-4gpoe-64wt8</url>
-<price>46000</price>
-<currencyId>KZT</currencyId>
-<categoryId>737078043964</categoryId>
-<picture>https://static.tildacdn.com/stor3339-3136-4066-a631-303164346466/d2e4f8260564a5f87dda467072e2914a.jpg</picture>
-<name>Коммутатор TP-Link/TL-SG1008P 4GPoE+ 64Wt/8 port/10/100/1000</name>
-<vendor>TP-Link</vendor>
-<vendorCode>ISF40277E4AE</vendorCode>
-<description>Тип устройства Коммутатор · Портов 8 · Скорость 10/100/1000 Мбит/с · Класс по числу портов До 10 портов · PoE Есть · Бюджет PoE 64 Вт</description>
-</offer>
 <offer id="ISF449FDF93B" available="true">
 <url>https://b2b.isoft-shop.kz/setevoe-oborudovanie/tproduct/739453810524-kommutator-bdcom-s2528-c</url>
 <price>88000</price>
@@ -58598,19 +58636,6 @@
 <vendorCode>ISC2E6E7AB4B</vendorCode>
 <description>Форм-фактор Tower · Процессор Core i5/14500 · Оперативная память 8 ГБ · Накопитель 256 ГБ · Тип накопителя SSD · Wi-Fi Wi-Fi 6E · Операционная система Windows 11 Pro · Семья ОС Windows 11 · Линейка процессора Core i5</description>
 </offer>
-<offer id="ISC62972AD39" available="true">
-<url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/776679712594-sistemnii-blok-workstation-dell-pro-max</url>
-<price>1477000</price>
-<currencyId>KZT</currencyId>
-<categoryId>763638053684</categoryId>
-<picture>https://static.tildacdn.com/tild3664-6338-4261-a538-663861623732/396628416664.jpg</picture>
-<picture>https://static.tildacdn.com/tild3663-3436-4265-a162-383933326232/776679712594.jpg</picture>
-<picture>https://static.tildacdn.com/tild3131-3439-4336-b965-326563323434/776679712594_2.jpg</picture>
-<name>Системный блок Workstation Dell Pro Max T2 FCT2250 210-BPSN_BTO107_FCT2250_EMEA</name>
-<vendor>Dell</vendor>
-<vendorCode>ISC62972AD39</vendorCode>
-<description>Форм-фактор Tower · Оперативная память 32 ГБ · Операционная система Windows 11 · Семья ОС Windows 11 · Накопитель 1000 ГБ</description>
-</offer>
 <offer id="ISC8F5139A62" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/425182938064-sistemnii-blok-workstation-dell-pro-max</url>
 <price>1428000</price>
@@ -58620,7 +58645,7 @@
 <picture>https://static.tildacdn.com/tild3765-3664-4130-b939-346639626436/425182938064.jpg</picture>
 <picture>https://static.tildacdn.com/tild6163-6538-4538-a234-306233383430/425182938064_2.jpg</picture>
 <name>Системный блок Workstation Dell Pro Max T2 FCT2250 210-BPSN_BTO112_FCT2250_EMEA</name>
-<vendor>DELL</vendor>
+<vendor>Dell</vendor>
 <vendorCode>ISC8F5139A62</vendorCode>
 <description>Форм-фактор Tower · Процессор Intel Core Ultra 9 285 · Оперативная память 32 ГБ · Видеокарта Встроенная · Операционная система Windows 11 · Семья ОС Windows 11 · Линейка процессора Core Ultra 9 · Блок питания 1500 Вт · Накопитель 1024 ГБ · Тип памяти DDR5</description>
 </offer>
@@ -59044,17 +59069,6 @@
 <vendorCode>DS225+</vendorCode>
 <description>Партномер: DS225+</description>
 </offer>
-<offer id="ISECE1EFDDCE" available="true">
-<url>https://b2b.isoft-shop.kz/servery-i-shd/tproduct/203242339274-sistema-hraneniya-setevoe-hranilische-as</url>
-<price>202000</price>
-<currencyId>KZT</currencyId>
-<categoryId>168824029674</categoryId>
-<picture>https://static.tildacdn.com/stor3334-3538-4264-b262-626237363631/fbd0c70eb76a40debc54e5c4f5fb4ef1.png</picture>
-<name>Система хранения Сетевое хранилище ASUSTOR AS1104T</name>
-<vendor>Asustor</vendor>
-<vendorCode>ISECE1EFDDCE</vendorCode>
-<description>Тип устройства NAS · Отсеков 4</description>
-</offer>
 <offer id="ISEEC5BF4715" available="true">
 <url>https://b2b.isoft-shop.kz/servery-i-shd/tproduct/575270111994-sistema-hraneniya-setevoi-nakopitel-asus</url>
 <price>566000</price>
@@ -59065,17 +59079,6 @@
 <vendor>Asustor</vendor>
 <vendorCode>ISEEC5BF4715</vendorCode>
 <description>Тип устройства NAS · Отсеков 12 · Оперативная память 4 ГБ</description>
-</offer>
-<offer id="IS01DB6310A0" available="true">
-<url>https://b2b.isoft-shop.kz/skanery-dokumentov/tproduct/700347806754-shirokoformatnii-skaner-canon-scanner-z3</url>
-<price>3032000</price>
-<currencyId>KZT</currencyId>
-<categoryId>157170829164</categoryId>
-<picture>https://static.tildacdn.com/stor3933-3766-4638-b562-626132653238/aafd456bd507cce22487677a049b675f.jpg</picture>
-<name>Широкоформатный Сканер Canon SCANNER Z36-AIO FOR TX 3850V632</name>
-<vendor>Canon</vendor>
-<vendorCode>IS01DB6310A0</vendorCode>
-<description>Тип устройства Сканер · Тип сканера Широкоформатный</description>
 </offer>
 <offer id="IS08914BA286" available="true">
 <url>https://b2b.isoft-shop.kz/skanery-dokumentov/tproduct/848799731104-shirokoformatnii-skaner-canon-scanner-lm</url>
@@ -60105,6 +60108,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3139-3565-4437-b434-626535333664/89144fc500321c579991b805b1170e87.jpg</picture>
+<picture>https://static.tildacdn.com/tild6161-3639-4364-b637-303963616437/341154515294_1.jpg</picture>
 <name>Wi-Fi точка доступа TP-Link CPE510</name>
 <vendor>TP-Link</vendor>
 <vendorCode>IS04BD9A77AA</vendorCode>
@@ -60127,6 +60131,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3561-6337-4864-b833-333631343662/d8a26eff809e64f91ee354821ee3b8b9.jpg</picture>
+<picture>https://static.tildacdn.com/tild3939-6234-4239-b433-633838636163/508998690974_1.jpg</picture>
 <name>Беспроводная точка доступа Ubiquiti U6-IW</name>
 <vendor>Ubiquiti</vendor>
 <vendorCode>IS077772985B</vendorCode>
@@ -60138,6 +60143,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3961-3539-4336-b030-383464383239/f5c536536944e275584d42fe835241d0.jpg</picture>
+<picture>https://static.tildacdn.com/tild3064-3836-4339-b433-366239633261/833612673764_1.jpg</picture>
 <name>Точка доступа Huawei AP362E</name>
 <vendor>HUAWEI eKit</vendor>
 <vendorCode>IS0AE73AE294</vendorCode>
@@ -60149,6 +60155,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3561-3639-4363-b363-363730333338/5cbe8f38f1e95f04b1b512e9640c9c55.jpg</picture>
+<picture>https://static.tildacdn.com/tild3666-3638-4839-b638-316337326261/440292380414_1.jpg</picture>
 <name>Беспроводная широкополосная точка доступа Ubiquiti Wave-AP-Gen2</name>
 <vendor>Ubiquiti</vendor>
 <vendorCode>IS0BA612371F</vendorCode>
@@ -60206,6 +60213,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3264-3363-4139-b232-336435373130/5973ba1b0c357dd9bdad44befbd59cfe.jpg</picture>
+<picture>https://static.tildacdn.com/tild3765-6630-4234-a330-643431653232/412181159254_1.jpg</picture>
 <name>Точка доступа TP-Link/CPE220/2,4 ГГц 300 Мбит/с 12 дБи Outdoor Wi-Fi hotspot</name>
 <vendor>TP-Link</vendor>
 <vendorCode>IS18853BA9E3</vendorCode>
@@ -60217,6 +60225,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3634-6565-4536-b963-313661316636/353fd02d5d7cdd0ceb14abd238750823.jpg</picture>
+<picture>https://static.tildacdn.com/tild3934-6234-4635-a235-636664656137/606348489854_1.jpg</picture>
 <name>Беспроводная точка доступа Ubiquiti U7-Pro-XG</name>
 <vendor>Ubiquiti</vendor>
 <vendorCode>IS1AA6D87376</vendorCode>
@@ -60228,6 +60237,8 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3833-3539-4732-b563-653938386537/e493f904dc23136888cefdd9f2e6267b.jpg</picture>
+<picture>https://static.tildacdn.com/tild3438-3964-4733-b732-346334633933/761544985734_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild6366-6333-4332-b730-613534343264/761544985734_2.jpg</picture>
 <name>Wi-Fi точка доступа TP-Link EAP225</name>
 <vendor>TP-Link</vendor>
 <vendorCode>IS1AAA97ABB9</vendorCode>
@@ -60239,6 +60250,9 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3234-3133-4438-b863-303230336563/3d8774683ba8d0e266cd9f6229b41d54.jpg</picture>
+<picture>https://static.tildacdn.com/tild3131-6333-4262-a666-623032346164/404729971064_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild6462-3338-4235-b439-303031353166/404729971064_2.jpg</picture>
+<picture>https://static.tildacdn.com/tild3261-6230-4633-b466-376333393962/404729971064_3.jpg</picture>
 <name>Точка доступа EnGenius Networks ECW526</name>
 <vendor>EnGenius Networks</vendor>
 <vendorCode>IS1C3EB27F6B</vendorCode>
@@ -60261,6 +60275,8 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor6263-6334-4432-a466-343532653166/c82e01cb4d197249aaca47d251a60cfe.jpg</picture>
+<picture>https://static.tildacdn.com/tild6661-3032-4139-b562-313235356635/298589138464_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild3462-6461-4362-b133-333561616236/298589138464_2.jpg</picture>
 <name>Беспроводная точка доступа Ubiquiti U6-Mesh-Pro</name>
 <vendor>Ubiquiti</vendor>
 <vendorCode>IS29D594173A</vendorCode>
@@ -60283,6 +60299,8 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3763-3430-4465-b032-346438396331/6bfb5b72d0202396bd39ed8070a91ac1.jpg</picture>
+<picture>https://static.tildacdn.com/tild6265-3535-4365-a531-636662393165/263211213884_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild3238-3639-4538-a464-613537386139/263211213884_2.jpg</picture>
 <name>Точка доступа Grandstream GWN7674</name>
 <vendor>Grandstream</vendor>
 <vendorCode>IS2B104C1198</vendorCode>
@@ -60305,21 +60323,12 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3930-3731-4339-a139-626636393936/6a1fb36168b160300cfba04251d7e4fc.jpg</picture>
+<picture>https://static.tildacdn.com/tild3262-3363-4634-a232-336632666135/355420199534_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild6261-6362-4163-b537-623465373566/355420199534_2.jpg</picture>
 <name>Точка доступа Huawei eKitEngine AP263</name>
 <vendor>HUAWEI eKit</vendor>
 <vendorCode>IS2C6D45CC00</vendorCode>
 <description>Wi-Fi Wi-Fi 6 · Гарантия 1 год · Скорость 10/100/1000 Мбит/с · Класс скорости Wi-Fi 2700–3600 Мбит/с · Класс Wi-Fi AX3000 · Диапазон частот 2,4/5 ГГц · Исполнение Для помещений · Размещение Настенная</description>
-</offer>
-<offer id="IS2C6E99F5B0" available="true">
-<url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/882722106704-tochka-dostupa-hpearuba-instant-on-ap25</url>
-<price>123000</price>
-<currencyId>KZT</currencyId>
-<categoryId>669770887424</categoryId>
-<picture>https://static.tildacdn.com/stor3334-3932-4264-b637-393237633865/a6bbdec266b9c0780eb966da3828fb2b.jpg</picture>
-<name>Точка доступа HPE/Aruba Instant On AP25 (RW) 4x4 Wi-Fi 6 Indoor Access Point</name>
-<vendor>HPE</vendor>
-<vendorCode>R9B28A</vendorCode>
-<description>Партномер: R9B28A</description>
 </offer>
 <offer id="IS2F5C337B68" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/274653634474-besprovodnaya-tochka-dostupa-ubiquiti-ua</url>
@@ -60371,6 +60380,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3765-3139-4462-a639-336165323237/353bcf2263c3c84d1fde07edfb31e12b.jpg</picture>
+<picture>https://static.tildacdn.com/tild3261-3032-4337-a333-623038353566/515006428444_1.jpg</picture>
 <name>Беспроводная точка доступа Ubiquiti U6+</name>
 <vendor>Ubiquiti</vendor>
 <vendorCode>IS35A0DBD0B7</vendorCode>
@@ -60382,6 +60392,8 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3232-3732-4636-b463-333166653764/57b07d7dd72ed129c404a4fc8509ce19.jpg</picture>
+<picture>https://static.tildacdn.com/tild3534-3262-4039-a235-643764656362/946502534784_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild3062-6130-4439-b062-323736643965/946502534784_2.jpg</picture>
 <name>Беспроводная точка доступа Ubiquiti UDW</name>
 <vendor>Ubiquiti</vendor>
 <vendorCode>IS3619C7E922</vendorCode>
@@ -60393,6 +60405,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor6338-6332-4232-b339-313562663265/4cb28e9c44ea19a9a199b06d3c30f697.jpg</picture>
+<picture>https://static.tildacdn.com/tild3538-3165-4432-b638-663163656461/932030846454_1.jpg</picture>
 <name>Точка доступа MikroTik RBSXTsqG-5acD</name>
 <vendor>MikroTik</vendor>
 <vendorCode>IS384E577B97</vendorCode>
@@ -60459,6 +60472,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3833-6537-4235-a164-626564626534/492793eb7e49dd94a085642d3b7b94ba.jpg</picture>
+<picture>https://static.tildacdn.com/tild3863-3036-4733-a361-373264373332/495441371624_1.jpg</picture>
 <name>Wi-Fi точка доступа TP-Link EAP215-Bridge KIT</name>
 <vendor>TP-Link</vendor>
 <vendorCode>IS3FC338F99A</vendorCode>
@@ -60470,6 +60484,8 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3237-6536-4530-a138-616565386161/2a9d5f7b491cd7a19ec3241b872bb0b5.jpg</picture>
+<picture>https://static.tildacdn.com/tild3263-3164-4137-b535-353764356262/683999878244_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild6439-3537-4631-b230-376133646633/683999878244_2.jpg</picture>
 <name>Wi-Fi точка доступа TP-Link EAP610</name>
 <vendor>TP-Link</vendor>
 <vendorCode>IS4108908B16</vendorCode>
@@ -60503,6 +60519,8 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3631-3963-4164-b561-643435653634/fc462122347c2f8f9a455566182b760a.jpg</picture>
+<picture>https://static.tildacdn.com/tild3534-6236-4737-b337-646338376139/879852454024_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild6138-6165-4065-b233-333266636563/879852454024_2.jpg</picture>
 <name>Точка доступа HPE/Aruba Instant On AP27 (RW) Dual Radio 2x2 Wi-Fi 6 Outdoor Access Point</name>
 <vendor>HPE</vendor>
 <vendorCode>S1T37A</vendorCode>
@@ -60536,6 +60554,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3036-6462-4364-b630-613536653132/59c20bc816f172e16bf8620daf48904f.jpg</picture>
+<picture>https://static.tildacdn.com/tild3132-3931-4861-b135-316634333839/938613734954_1.jpg</picture>
 <name>Точка доступа Huawei AP265E</name>
 <vendor>HUAWEI eKit</vendor>
 <vendorCode>IS4EADD060B7</vendorCode>
@@ -60547,6 +60566,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3839-3032-4330-a339-306563643365/3bc212fc8c480aa1bb070fb2104580a2.jpg</picture>
+<picture>https://static.tildacdn.com/tild6165-6132-4837-a262-353665333534/232763188894_1.jpg</picture>
 <name>Точка доступа Huawei AP371</name>
 <vendor>HUAWEI eKit</vendor>
 <vendorCode>IS518F2C9217</vendorCode>
@@ -60558,6 +60578,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor6437-6537-4465-a230-653936336631/df1ec0d76ca0e2f5afdf85ac94405adb.jpg</picture>
+<picture>https://static.tildacdn.com/tild3561-3561-4262-a537-313839653362/144801030904_1.jpg</picture>
 <name>Wi-Fi точка доступа TP-Link EAP660 HD</name>
 <vendor>TP-Link</vendor>
 <vendorCode>IS534F851DEE</vendorCode>
@@ -60569,6 +60590,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3061-6263-4435-b636-353231633465/7a2a32cb0cbeb60efe4ec0f5e7f2e5b1.jpg</picture>
+<picture>https://static.tildacdn.com/tild6464-3665-4366-a162-633931336134/925775768624_1.jpg</picture>
 <name>Wi-Fi точка доступа TP-Link EAP650-Outdoor</name>
 <vendor>TP-Link</vendor>
 <vendorCode>IS549EBBB47D</vendorCode>
@@ -60614,6 +60636,8 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3735-6438-4964-b932-663833363137/d772a4ce6d1fdd3b4a66a748af023f8b.jpg</picture>
+<picture>https://static.tildacdn.com/tild3130-6565-4664-a438-653938306463/692593001594_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild3536-6633-4430-b533-613833363931/692593001594_2.jpg</picture>
 <name>Беспроводная точка доступа H3C AOLYNK-UAP622MG-AX30</name>
 <vendor>H3C</vendor>
 <vendorCode>IS59080D8D08</vendorCode>
@@ -60625,6 +60649,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3466-3764-4261-b361-386664326433/040aa761f13cd1f687474d3cf019cc65.jpg</picture>
+<picture>https://static.tildacdn.com/tild6631-3131-4934-a662-616166383465/418970754364_1.jpg</picture>
 <name>Беспроводная точка доступа Ubiquiti U6-Pro</name>
 <vendor>Ubiquiti</vendor>
 <vendorCode>IS5923FD560E</vendorCode>
@@ -60658,6 +60683,8 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/tild6433-6131-4432-a537-613330656533/IS5BF7AEE002.jpg</picture>
+<picture>https://static.tildacdn.com/tild6130-6131-4432-a366-316337666339/839134820004_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild3339-3835-4630-b163-346666323235/839134820004_2.jpg</picture>
 <name>Точка доступа MikroTik LHG-5axD-XL</name>
 <vendor>MikroTik</vendor>
 <vendorCode>IS5BF7AEE002</vendorCode>
@@ -60669,6 +60696,8 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3631-3237-4437-b662-633932323738/e7d83100d1000ffd55da0dbb8fc4edcb.jpg</picture>
+<picture>https://static.tildacdn.com/tild3431-6337-4038-b361-306334643162/210917312484_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild3739-6163-4133-a365-396636383861/210917312484_2.jpg</picture>
 <name>Wi-Fi точка доступа TP-Link TL-WA3001</name>
 <vendor>TP-Link</vendor>
 <vendorCode>IS5F0ECE5E1F</vendorCode>
@@ -60680,6 +60709,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3563-3139-4566-b630-633162666561/8200e44f6df982c09c203f0c16025e56.jpg</picture>
+<picture>https://static.tildacdn.com/tild6131-3662-4431-b738-336364613233/743819050414_1.jpg</picture>
 <name>Wi-Fi точка доступа TP-Link EAP725-Wall</name>
 <vendor>TP-Link</vendor>
 <vendorCode>IS5F60616862</vendorCode>
@@ -60691,6 +60721,8 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3630-6636-4532-b065-363732303338/392b9299cc7023e1f084bc6e4e5f2f83.jpg</picture>
+<picture>https://static.tildacdn.com/tild3538-3037-4665-a432-326438356235/516734129814_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild6361-6463-4466-b438-303965396539/516734129814_2.jpg</picture>
 <name>Точка доступа MikroTik RBLHG-5HPnD-XL4pack</name>
 <vendor>MikroTik</vendor>
 <vendorCode>IS612C74DF8D</vendorCode>
@@ -60702,6 +60734,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor6634-3463-4364-b537-646166336665/6324867e24ffcb7f427ec2bbe90b1888.jpg</picture>
+<picture>https://static.tildacdn.com/tild6235-3534-4661-a265-663532663864/194088522394_1.jpg</picture>
 <name>Точка доступа Grandstream GWN7660ELR</name>
 <vendor>Grandstream</vendor>
 <vendorCode>IS637C6A18B4</vendorCode>
@@ -60724,6 +60757,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3865-3762-4633-b161-386537303265/5737bc10068e5cc153ec86ade50d330f.jpg</picture>
+<picture>https://static.tildacdn.com/tild6564-6461-4536-b066-353234373331/981767432164_1.jpg</picture>
 <name>Wi-Fi точка доступа TP-Link EAP655-Wall</name>
 <vendor>TP-Link</vendor>
 <vendorCode>IS64EC0B0C92</vendorCode>
@@ -60780,6 +60814,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor6231-3461-4237-b839-316435626166/db09452b6d1ddb76dc34f89023f5002c.jpg</picture>
+<picture>https://static.tildacdn.com/tild6164-6362-4630-b864-383862396535/488115299454_1.jpg</picture>
 <name>Точка доступа Huawei AP772E</name>
 <vendor>HUAWEI eKit</vendor>
 <vendorCode>IS6C6D95A60C</vendorCode>
@@ -60802,6 +60837,8 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor6161-3938-4366-b161-396562616236/54c5b5cb12f84aa5fe0089ef2ac719b0.jpg</picture>
+<picture>https://static.tildacdn.com/tild6630-3663-4035-a339-326332333862/969801761924_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild3565-3231-4437-b662-306238633935/969801761924_2.jpg</picture>
 <name>Точка доступа Grandstream GWN7665</name>
 <vendor>Grandstream</vendor>
 <vendorCode>IS72CA5859F5</vendorCode>
@@ -60836,6 +60873,8 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor6361-3735-4439-b238-353134326236/25fd78bf8a770294c4773bd45861d43b.jpg</picture>
+<picture>https://static.tildacdn.com/tild3361-6235-4930-b838-313130393538/787603917904_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild6435-6530-4638-b236-663534653531/787603917904_2.jpg</picture>
 <name>Wi-Fi точка доступа TP-Link EAP245</name>
 <vendor>TP-Link</vendor>
 <vendorCode>IS7E6FF86D79</vendorCode>
@@ -60858,6 +60897,8 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor6635-3932-4934-b935-363063643863/af94fedd19f5f84c6355ba1f459e9b27.jpg</picture>
+<picture>https://static.tildacdn.com/tild3265-3162-4735-a330-303832366632/619408233224_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild3931-3363-4433-b633-396439656266/619408233224_2.jpg</picture>
 <name>Wi-Fi точка доступа TP-Link EAP620 HD</name>
 <vendor>TP-Link</vendor>
 <vendorCode>IS7FE7CC317D</vendorCode>
@@ -60869,6 +60910,8 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor6133-3363-4635-b363-316331386463/bd13551f87ad27c616f55be18efbfeaa.jpg</picture>
+<picture>https://static.tildacdn.com/tild3562-3136-4366-b433-343632306365/640425398024_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild3334-6635-4233-a437-633738383664/640425398024_2.jpg</picture>
 <name>Точка доступа Huawei eKitEngine AP160</name>
 <vendor>HUAWEI eKit</vendor>
 <vendorCode>IS806F3B52F2</vendorCode>
@@ -60880,6 +60923,8 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3231-6565-4630-b430-303531363537/ff616bae68962bed42a0e598a54b4eab.jpg</picture>
+<picture>https://static.tildacdn.com/tild3330-6431-4533-b332-393839353863/509336927394_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild3535-3439-4239-a461-313331643036/509336927394_2.jpg</picture>
 <name>Точка доступа MikroTik wAPG-5HaxD2HaxD</name>
 <vendor>MikroTik</vendor>
 <vendorCode>IS8089157A79</vendorCode>
@@ -60891,6 +60936,8 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor6335-3464-4533-b037-656164323836/94037c56b22263fdf76cb7ef80c55201.jpg</picture>
+<picture>https://static.tildacdn.com/tild6134-3866-4637-a631-336133353632/376804807864_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild6230-3530-4166-b935-393263656635/376804807864_2.jpg</picture>
 <name>Беспроводная точка доступа Ubiquiti UAP-FlexHD</name>
 <vendor>Ubiquiti</vendor>
 <vendorCode>IS80D8C23692</vendorCode>
@@ -60902,6 +60949,8 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor6361-3234-4363-b765-653437656335/6051b070c41d273e29e7de2fc827a2ae.jpg</picture>
+<picture>https://static.tildacdn.com/tild3036-6332-4363-a130-333232666166/397557938874_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild3636-3966-4538-a236-663665333564/397557938874_2.jpg</picture>
 <name>Wi-Fi точка доступа TP-Link EAP772</name>
 <vendor>TP-Link</vendor>
 <vendorCode>IS8104FE2720</vendorCode>
@@ -60913,6 +60962,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3534-3864-4262-a165-343166303362/7e19478bb47f17d2b979e4473e13d7eb.jpg</picture>
+<picture>https://static.tildacdn.com/tild3065-6630-4633-b730-343865636431/309896696094_1.jpg</picture>
 <name>Беспроводная точка доступа (роутер) H3C EWP-WA6020</name>
 <vendor>H3C</vendor>
 <vendorCode>IS8285CA05DB</vendorCode>
@@ -60957,6 +61007,8 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor6466-3531-4332-a237-386230323562/345387800baa4fe7741ba52a798ef22c.jpg</picture>
+<picture>https://static.tildacdn.com/tild3265-3333-4831-b130-306566323130/883894575564_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild6631-3533-4535-a436-613230383538/883894575564_2.jpg</picture>
 <name>Точка доступа MikroTik RBLHG5kit</name>
 <vendor>MikroTik</vendor>
 <vendorCode>IS8680A76CBC</vendorCode>
@@ -60968,6 +61020,8 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor6330-3162-4234-b763-363536346236/344f3a6dd148829746168e7d5096eca2.jpg</picture>
+<picture>https://static.tildacdn.com/tild6163-3439-4062-b161-353864643839/853933010594_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild6361-3961-4937-b233-333266363666/853933010594_2.jpg</picture>
 <name>Точка доступа Huawei AP771</name>
 <vendor>HUAWEI eKit</vendor>
 <vendorCode>IS87DF1BBA5E</vendorCode>
@@ -61003,21 +61057,12 @@
 <picture>https://static.tildacdn.com/tild6130-3230-4131-b166-363165616634/113047463944.jpg</picture>
 <picture>https://static.tildacdn.com/tild3762-3333-4630-a131-373964383434/113047463944_2.jpg</picture>
 <picture>https://static.tildacdn.com/tild6230-6533-4235-b262-373561643136/113047463944_3.jpg</picture>
+<picture>https://static.tildacdn.com/tild3866-3236-4937-b531-313162363864/113047463944_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild3562-3361-4035-b930-646137633737/113047463944_2.jpg</picture>
 <name>Точка доступа UBIQUITI UniFi U7 Pro Max, Access Point, WiFi 7</name>
 <vendor>Ubiquiti</vendor>
 <vendorCode>IS8C11D4440B</vendorCode>
 <description>Wi-Fi Wi-Fi 7 · PoE Есть · Скорость 2,5 Гбит/с · Класс скорости Wi-Fi от 9300 Мбит/с · Класс Wi-Fi BE9200</description>
-</offer>
-<offer id="IS8D555B044F" available="true">
-<url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/613701226914-wi-fi-tochka-dostupa-tp-link-eap650</url>
-<price>114000</price>
-<currencyId>KZT</currencyId>
-<categoryId>669770887424</categoryId>
-<picture>https://static.tildacdn.com/stor3538-3031-4438-b233-646439376532/beb646c4cc83bad1d827feaac000cd6e.jpg</picture>
-<name>Wi-Fi точка доступа TP-Link EAP650</name>
-<vendor>TP-Link</vendor>
-<vendorCode>IS8D555B044F</vendorCode>
-<description>Wi-Fi Wi-Fi 6 · PoE Есть · Гарантия 3 года · Скорость 10/100/1000 Мбит/с · Класс скорости Wi-Fi 2700–3600 Мбит/с · Класс Wi-Fi AX3000</description>
 </offer>
 <offer id="IS8DD2E7A7E1" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/650206639414-tochka-dostupa-grandstream-gwn7664elr</url>
@@ -61025,6 +61070,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3461-3338-4430-b636-666530313130/c487398d6293d682fb5830ec70355642.jpg</picture>
+<picture>https://static.tildacdn.com/tild3631-3563-4362-a337-326265393266/650206639414_1.jpg</picture>
 <name>Точка доступа Grandstream GWN7664ELR</name>
 <vendor>Grandstream</vendor>
 <vendorCode>IS8DD2E7A7E1</vendorCode>
@@ -61036,6 +61082,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3738-6464-4261-b564-316461393361/6816adac54cdcaa6bb786c702f60f97e.jpg</picture>
+<picture>https://static.tildacdn.com/tild3734-3035-4930-b536-663633366161/429416276254_1.jpg</picture>
 <name>Точка доступа MikroTik LHG-5axD</name>
 <vendor>MikroTik</vendor>
 <vendorCode>IS8EA020E24C</vendorCode>
@@ -61047,6 +61094,8 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor6661-3835-4130-a263-623536363433/b8304492ada8f0d4eb69d300cc023f8f.jpg</picture>
+<picture>https://static.tildacdn.com/tild3361-3336-4464-a332-386333396262/698816837164_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild6635-3631-4634-b339-663837623238/698816837164_2.jpg</picture>
 <name>Точка доступа Huawei eKitEngine AP361</name>
 <vendor>HUAWEI eKit</vendor>
 <vendorCode>IS8F2E2A6B6F</vendorCode>
@@ -61058,6 +61107,8 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3363-3539-4665-b063-306633333131/4c5f705fe7f94e53a8df6c5efd6b14ad.jpg</picture>
+<picture>https://static.tildacdn.com/tild3738-3737-4235-a361-323964396136/195227371124_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild3839-3739-4165-b435-326163653265/195227371124_2.jpg</picture>
 <name>Сетевая точка доступа Ubiquiti Wave-Pico</name>
 <vendor>Ubiquiti</vendor>
 <vendorCode>IS8FFABAE243</vendorCode>
@@ -61081,6 +61132,8 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor6633-6138-4364-b562-616137313430/c1bc143b4f9ad006d4dc48f66154ac40.jpg</picture>
+<picture>https://static.tildacdn.com/tild3661-3236-4433-b237-396532366535/767112031404_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild3836-3431-4535-a131-333365393762/767112031404_2.jpg</picture>
 <name>Беспроводная точка доступа MikroTik RB4011iGS+5HacQ2HnD-IN</name>
 <vendor>MikroTik</vendor>
 <vendorCode>IS90769BAACC</vendorCode>
@@ -61092,6 +61145,8 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3337-3533-4230-a337-336337383234/420982bcf11dcb083c3b2522ac0b0405.jpg</picture>
+<picture>https://static.tildacdn.com/tild6537-3334-4562-b035-636434633464/210904174054_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild6632-3337-4863-b937-656162646566/210904174054_2.jpg</picture>
 <name>Точка доступа Huawei eKitEngine AP661</name>
 <vendor>HUAWEI eKit</vendor>
 <vendorCode>IS924E87D2F8</vendorCode>
@@ -61114,6 +61169,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3063-3732-4134-b436-363366333436/fef53846f0ee9fc48001ef090279947b.jpg</picture>
+<picture>https://static.tildacdn.com/tild3665-3236-4837-b034-386632353337/455220642194_1.jpg</picture>
 <name>Беспроводная точка доступа (роутер) H3C EWP-WA6022H</name>
 <vendor>H3C</vendor>
 <vendorCode>IS97C60E1620</vendorCode>
@@ -61125,6 +61181,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3034-3838-4330-b433-313363313161/9ca9be47fe4823f47e903c5bf6156dfa.jpg</picture>
+<picture>https://static.tildacdn.com/tild3533-3062-4266-b832-376533643961/851707769544_1.jpg</picture>
 <name>Wi-Fi точка доступа TP-Link EAP225-Outdoor</name>
 <vendor>TP-Link</vendor>
 <vendorCode>IS98BAEE645A</vendorCode>
@@ -61136,6 +61193,8 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3738-3764-4038-b964-326665393230/05c422166226e7af4a30eceb8e8f6136.jpg</picture>
+<picture>https://static.tildacdn.com/tild6631-3131-4934-a662-616166383465/418970754364_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild3961-6462-4261-b464-303330333032/418970754364_2.jpg</picture>
 <name>Беспроводная точка доступа Ubiquiti U7-Pro</name>
 <vendor>Ubiquiti</vendor>
 <vendorCode>IS9BD6AF587E</vendorCode>
@@ -61147,6 +61206,8 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3163-6532-4630-b461-303538643231/1f503387e79b07e982a615581567fcf9.jpg</picture>
+<picture>https://static.tildacdn.com/tild3335-6331-4734-b063-656638633963/346974726974_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild3730-3334-4930-b534-366262363132/346974726974_2.jpg</picture>
 <name>Беспроводная точка доступа H3C AOLYNK-UAP622G-AX18</name>
 <vendor>H3C</vendor>
 <vendorCode>IS9DFEEFC258</vendorCode>
@@ -61169,6 +61230,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor6661-6463-4264-b338-613863313832/9357aab43a580226a4048b755e68d57c.jpg</picture>
+<picture>https://static.tildacdn.com/tild3962-3836-4862-b231-333735623335/508867059644_1.jpg</picture>
 <name>Точка доступа Grandstream GWN7625</name>
 <vendor>Grandstream</vendor>
 <vendorCode>IS9FB2F27D9F</vendorCode>
@@ -61180,6 +61242,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3763-6637-4263-b964-636139653232/7fedbd5977f1915f8d6fa2d29ca212cc.jpg</picture>
+<picture>https://static.tildacdn.com/tild3538-3932-4261-b335-306665383935/332988594204_1.jpg</picture>
 <name>Точка доступа MikroTik RBOmniTikG-5HacD</name>
 <vendor>MikroTik</vendor>
 <vendorCode>ISA0DC380119</vendorCode>
@@ -61213,6 +61276,8 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3939-3636-4563-b565-373436336236/4297a33216d0bc577f33217166c07336.jpg</picture>
+<picture>https://static.tildacdn.com/tild3433-6332-4530-b331-393138363335/201229705294_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild6132-6437-4534-a639-623038656265/201229705294_2.jpg</picture>
 <name>Wi-Fi точка доступа TP-Link EAP670</name>
 <vendor>TP-Link</vendor>
 <vendorCode>ISA76790C72A</vendorCode>
@@ -61224,6 +61289,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3963-3732-4966-b465-616434633136/a76f6d4a4d9933b8c82077c2cc01aa74.jpg</picture>
+<picture>https://static.tildacdn.com/tild3163-6530-4238-a361-663335663563/211743424584_1.jpg</picture>
 <name>Wi-Fi точка доступа TP-Link EAP723</name>
 <vendor>TP-Link</vendor>
 <vendorCode>ISA978C79F56</vendorCode>
@@ -61235,6 +61301,8 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3338-3164-4762-a162-626361633737/4347599cda88460add2b8f6eb021fadb.jpg</picture>
+<picture>https://static.tildacdn.com/tild3261-3437-4330-b835-333662353065/322740106034_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild6263-6261-4037-a466-616234663630/322740106034_2.jpg</picture>
 <name>Точка доступа MikroTik RBLHGG-5acD-XL4pack</name>
 <vendor>MikroTik</vendor>
 <vendorCode>ISAA2EEDAFEC</vendorCode>
@@ -61246,6 +61314,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor6139-3831-4532-b661-613535646565/e5c9461d9db88457ff9a2178a4cf9cf4.jpg</picture>
+<picture>https://static.tildacdn.com/tild6365-6633-4836-b232-393565336336/412162438184_1.jpg</picture>
 <name>Точка доступа Grandstream GWN7662</name>
 <vendor>Grandstream</vendor>
 <vendorCode>ISACC108496C</vendorCode>
@@ -61281,6 +61350,8 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3432-3863-4162-a166-643366363531/eae499e22ac710c0be905cc5e085b512.jpg</picture>
+<picture>https://static.tildacdn.com/tild3532-3862-4334-b761-333732613230/998607547254_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild3739-3337-4233-b862-633563633036/998607547254_2.jpg</picture>
 <name>Точка доступа MikroTik SXTsq-5axD</name>
 <vendor>MikroTik</vendor>
 <vendorCode>ISB15B02190F</vendorCode>
@@ -61292,6 +61363,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor6238-3434-4639-a235-616636616366/2820d66e284ee478851d72073e92d1b5.jpg</picture>
+<picture>https://static.tildacdn.com/tild3665-3237-4736-b239-373161323961/239629329154_1.jpg</picture>
 <name>Беспроводная точка доступа Hikvision DS-3WF0FA-5AC/O</name>
 <vendor>Hikvision</vendor>
 <vendorCode>ISB1C9E9D9EE</vendorCode>
@@ -61303,6 +61375,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3962-3030-4265-a135-336338373639/75c4c6b4a70d53e9ff1a764392441e59.jpg</picture>
+<picture>https://static.tildacdn.com/tild3833-3534-4534-a637-636337303637/914846941654_1.jpg</picture>
 <name>Беспроводная точка доступа Ubiquiti U7-Lite</name>
 <vendor>Ubiquiti</vendor>
 <vendorCode>ISB1CF8D34C2</vendorCode>
@@ -61314,6 +61387,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3430-3365-4666-b262-353030613831/a95e4d4b7dfdd2c25fa029e8ddf07ace.jpg</picture>
+<picture>https://static.tildacdn.com/tild3934-6166-4662-b063-366432643261/981749619364_1.jpg</picture>
 <name>Точка доступа MikroTik L22UGS-5HaxD2HaxD-15S</name>
 <vendor>MikroTik</vendor>
 <vendorCode>ISB51E8ED0EC</vendorCode>
@@ -61325,6 +61399,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3963-3061-4635-b863-643735353737/1b37238dab7c1b15429550b32012b43c.jpg</picture>
+<picture>https://static.tildacdn.com/tild3064-6130-4463-b238-333937646235/763924599554_1.jpg</picture>
 <name>Точка доступа Grandstream GWN7630LR</name>
 <vendor>Grandstream</vendor>
 <vendorCode>ISB6AA7DBE61</vendorCode>
@@ -61359,6 +61434,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3739-6466-4561-b861-353434313232/6a24cc396b07c229c27c4f19821a52c7.jpg</picture>
+<picture>https://static.tildacdn.com/tild3336-6133-4465-a464-663062373738/783812137674_1.jpg</picture>
 <name>Беспроводная точка доступа Ubiquiti U6-Enterprise</name>
 <vendor>Ubiquiti</vendor>
 <vendorCode>ISB9A7E77E81</vendorCode>
@@ -61463,6 +61539,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3534-3437-4637-b162-653666636236/3e10690f877a1448b51b14d63988304a.jpg</picture>
+<picture>https://static.tildacdn.com/tild6564-6661-4336-b566-646238356561/372144487104_1.jpg</picture>
 <name>Беспроводная точка доступа Ubiquiti U7-Pro-XGS</name>
 <vendor>Ubiquiti</vendor>
 <vendorCode>ISC04ADB1CFD</vendorCode>
@@ -61485,6 +61562,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/tild3139-3961-4162-b363-393834636337/ISC9AA89AA4D.png</picture>
+<picture>https://static.tildacdn.com/tild3361-3836-4866-b036-636230326561/400070828534_1.jpg</picture>
 <name>Точка доступа Grandstream GWN7605LR, WiFi Access Point, 802.11ac, 2x2:2 MU-MIMO GWN7605LR</name>
 <vendor>Grandstream</vendor>
 <vendorCode>ISC9AA89AA4D</vendorCode>
@@ -61507,6 +61585,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3066-6631-4531-b436-613566636238/61f43e40bd50f3ea72b7a30f5458427e.jpg</picture>
+<picture>https://static.tildacdn.com/tild3536-3732-4330-b931-353663633333/428900428854_1.jpg</picture>
 <name>Беспроводная точка доступа Ubiquiti UDB-Pro-Sector</name>
 <vendor>Ubiquiti</vendor>
 <vendorCode>ISCD0676E525</vendorCode>
@@ -61518,6 +61597,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor6162-3763-4337-a238-306339663866/4be15d8d2b12423dee5f984cf83efe99.jpg</picture>
+<picture>https://static.tildacdn.com/tild3364-3836-4430-a638-306139623366/594068806814_1.jpg</picture>
 <name>Точка доступа Grandstream GWN7615</name>
 <vendor>Grandstream</vendor>
 <vendorCode>ISCFE6F4D214</vendorCode>
@@ -61540,6 +61620,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3761-6530-4539-a563-303962613631/4c040c68f994f013121982a6c99e1513.jpg</picture>
+<picture>https://static.tildacdn.com/tild3237-3462-4637-a461-643134306133/502959849354_1.jpg</picture>
 <name>Wi-Fi точка доступа TP-link CPE605</name>
 <vendor>TP-Link</vendor>
 <vendorCode>ISD1D7AEFD13</vendorCode>
@@ -61551,6 +61632,8 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor6563-6138-4566-b030-663337363062/5951ccd6a6c94ce7a8e0e89ac562df03.jpg</picture>
+<picture>https://static.tildacdn.com/tild6337-3438-4561-b466-373566643766/494560649264_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild3130-6139-4463-b433-626438333132/494560649264_2.jpg</picture>
 <name>Точка доступа MikroTik RB911G-5HPnD-QRT</name>
 <vendor>MikroTik</vendor>
 <vendorCode>ISD22D26EFDD</vendorCode>
@@ -61573,6 +61656,8 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor6132-3439-4635-a338-636134656264/4840cea89eb3284927b120aa9d024ae4.jpg</picture>
+<picture>https://static.tildacdn.com/tild6531-6262-4366-b335-353764373433/450823406444_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild3531-3866-4162-a336-376661376531/450823406444_2.jpg</picture>
 <name>Точка доступа MikroTik RB911G-2HPnD-12S</name>
 <vendor>MikroTik</vendor>
 <vendorCode>ISD561BF22B9</vendorCode>
@@ -61584,6 +61669,8 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3765-6237-4532-a335-656635323931/15ee53492489ed39ace257415d6d36ef.jpg</picture>
+<picture>https://static.tildacdn.com/tild6438-3335-4664-b435-353535626330/530085116724_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild6634-3937-4465-a438-333239363238/530085116724_2.jpg</picture>
 <name>Точка доступа Grandstream GWN7664E</name>
 <vendor>Grandstream</vendor>
 <vendorCode>ISD7E0A3CF97</vendorCode>
@@ -61606,6 +61693,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3833-6537-4235-a164-626564626534/492793eb7e49dd94a085642d3b7b94ba.jpg</picture>
+<picture>https://static.tildacdn.com/tild3863-3036-4733-a361-373264373332/495441371624_1.jpg</picture>
 <name>Wi-Fi точка доступа TP-Link EAP211-Bridge KIT</name>
 <vendor>TP-Link</vendor>
 <vendorCode>ISD91C2ADCC7</vendorCode>
@@ -61639,6 +61727,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor6132-6265-4462-b938-393737646266/758a1cb753c8027e6834a803963a7982.jpg</picture>
+<picture>https://static.tildacdn.com/tild6631-3131-4934-a662-616166383465/418970754364_1.jpg</picture>
 <name>Беспроводная точка доступа Ubiquiti UAP-AC-PRO</name>
 <vendor>Ubiquiti</vendor>
 <vendorCode>ISDCD1629769</vendorCode>
@@ -61694,6 +61783,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3138-6135-4065-b035-386433306235/41f9e449f483eff418c3552bfb044e09.jpg</picture>
+<picture>https://static.tildacdn.com/tild6661-3436-4433-b537-653637323330/300851245394_1.jpg</picture>
 <name>Точка доступа Grandstream GWN7670</name>
 <vendor>Grandstream</vendor>
 <vendorCode>ISE048C948BE</vendorCode>
@@ -61716,6 +61806,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3439-3336-4565-a134-373838636439/1ce248caaddbe4b544b848a25ea0d761.jpg</picture>
+<picture>https://static.tildacdn.com/tild3362-6534-4362-b764-346439643563/918080181664_1.jpg</picture>
 <name>Беспроводная точка доступа Ubiquiti U7-Outdoor</name>
 <vendor>Ubiquiti</vendor>
 <vendorCode>ISE342AF102E</vendorCode>
@@ -61727,6 +61818,8 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3831-3462-4166-a264-666263623436/e7cccfcdbfaf3faa75e2afe80d93ea12.jpg</picture>
+<picture>https://static.tildacdn.com/tild3032-3335-4739-a333-303237643264/771464277054_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild6136-3764-4936-b364-316439356634/771464277054_2.jpg</picture>
 <name>Wi-Fi точка доступа TP-Link CPE610</name>
 <vendor>TP-Link</vendor>
 <vendorCode>ISE57ED34194</vendorCode>
@@ -61749,6 +61842,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3831-3563-4232-b037-666563366436/cd927ae093f0b3adb75709a7ed9c1690.jpg</picture>
+<picture>https://static.tildacdn.com/tild3439-3131-4235-b164-623563383661/299454838414_1.jpg</picture>
 <name>Точка доступа MikroTik RBwAPR-2nD</name>
 <vendor>MikroTik</vendor>
 <vendorCode>ISE7C20572B5</vendorCode>
@@ -61760,6 +61854,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor6435-6561-4163-b266-326632663165/2ca0313b851d8f05e5804a561a5b68ab.jpg</picture>
+<picture>https://static.tildacdn.com/tild6336-3661-4564-b532-376562623135/578804099174_1.jpg</picture>
 <name>Wi-Fi точка доступа TP-Link EAP650-Wall</name>
 <vendor>TP-Link</vendor>
 <vendorCode>ISE7CA458CFE</vendorCode>
@@ -61793,6 +61888,8 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor6333-6461-4564-a161-386135316439/c5c243e765ca48f098e312c25188d9df.jpg</picture>
+<picture>https://static.tildacdn.com/tild6238-3137-4663-b435-333761623462/248574286204_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild6637-3030-4635-b632-663164663662/248574286204_2.jpg</picture>
 <name>Точка доступа Grandstream GWN7661E</name>
 <vendor>Grandstream</vendor>
 <vendorCode>GWN7661E</vendorCode>
@@ -61804,6 +61901,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor6364-3765-4964-a662-373935663032/1009a398388a463644c0cd7a32af627e.jpg</picture>
+<picture>https://static.tildacdn.com/tild6637-3239-4464-b930-343032316336/152834858374_1.jpg</picture>
 <name>Wi-Fi точка доступа TP-Link EAP773</name>
 <vendor>TP-Link</vendor>
 <vendorCode>ISEF38108152</vendorCode>
@@ -61837,6 +61935,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3031-6539-4339-b434-303330666561/a75e1e5969e4788ea8108c340585fb62.jpg</picture>
+<picture>https://static.tildacdn.com/tild3066-3661-4830-b562-386239653036/112201727424_1.jpg</picture>
 <name>Wi-Fi точка доступа TP-Link EAP223</name>
 <vendor>TP-Link</vendor>
 <vendorCode>ISF7145798C5</vendorCode>
@@ -61859,6 +61958,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3164-3162-4132-a430-326633653832/0e5608cf634a37330e9b3cf85962de97.jpg</picture>
+<picture>https://static.tildacdn.com/tild6466-3339-4431-a162-303238633339/718542314904_1.jpg</picture>
 <name>Точка доступа Huawei eKitEngine AP271E</name>
 <vendor>HUAWEI eKit</vendor>
 <vendorCode>ISF87C0FAA1B</vendorCode>
@@ -61870,6 +61970,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3366-6566-4861-b036-663466386534/b39ae30ee1418eee59fe14e05f72a75a.jpg</picture>
+<picture>https://static.tildacdn.com/tild3364-3135-4466-a461-363737316334/440525911964_1.jpg</picture>
 <name>Точка доступа TP-Link EAP783</name>
 <vendor>TP-Link</vendor>
 <vendorCode>ISFF6055281C</vendorCode>

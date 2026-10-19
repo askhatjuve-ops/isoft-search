@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<yml_catalog date="2026-10-19 09:33">
+<yml_catalog date="2026-10-19 10:57">
 <shop>
 <name>iSoft</name>
 <company>iSoft</company>
@@ -18655,17 +18655,6 @@
 <vendorCode>IS01F6759ED1</vendorCode>
 <description>Форм-фактор ATX · Цвет Белый · Материал Сталь · Макс. длина видеокарты 400 мм · Макс. высота кулера 185 мм · Тип устройства Корпус · Гарантия 1 год</description>
 </offer>
-<offer id="IS03E0D9F2A4" available="true">
-<url>https://b2b.isoft-shop.kz/korpusa-i-bloki-pitaniya/tproduct/809682819614-kompyuternii-korpus-deepcool-cc560-wh-be</url>
-<price>29000</price>
-<currencyId>KZT</currencyId>
-<categoryId>976729823024</categoryId>
-<picture>https://static.tildacdn.com/stor3639-6233-4534-b439-373432343831/7088b328f0ae19f9f3b8f9c40ed6174d.jpg</picture>
-<name>Компьютерный корпус Deepcool CC560 WH без Б/П R-CC560-WHGAA4-G-2</name>
-<vendor>Deepcool</vendor>
-<vendorCode>IS03E0D9F2A4</vendorCode>
-<description>Форм-фактор ATX · Цвет Белый · Макс. длина видеокарты 370 мм · Макс. высота кулера 165 мм · Тип устройства Корпус · Гарантия 1 год</description>
-</offer>
 <offer id="IS05098797F1" available="true">
 <url>https://b2b.isoft-shop.kz/korpusa-i-bloki-pitaniya/tproduct/912656185994-kompyuternii-korpus-deepcool-ch690-digit</url>
 <price>60000</price>
@@ -19559,17 +19548,6 @@
 <vendor>1STPLAYER</vendor>
 <vendorCode>IS4818CDD1E0</vendorCode>
 <description>Тип устройства Корпус · Цвет Чёрный · Гарантия 1 год · Форм-фактор ATX</description>
-</offer>
-<offer id="IS4A54068206" available="true">
-<url>https://b2b.isoft-shop.kz/korpusa-i-bloki-pitaniya/tproduct/781238714034-kompyuternii-korpus-deepcool-cg530-4f-wh</url>
-<price>40000</price>
-<currencyId>KZT</currencyId>
-<categoryId>976729823024</categoryId>
-<picture>https://static.tildacdn.com/stor6137-6331-4663-a263-396337636132/fe662dc3865e82eb377eb9eed2162c54.jpg</picture>
-<name>Компьютерный корпус Deepcool CG530 4F WH без Б/П R-CG530-WHADA4-G-1</name>
-<vendor>Deepcool</vendor>
-<vendorCode>IS4A54068206</vendorCode>
-<description>Форм-фактор ATX · Цвет Белый · Макс. длина видеокарты 410 мм · Макс. высота кулера 160 мм · Тип устройства Корпус · Гарантия 1 год</description>
 </offer>
 <offer id="IS4A891F7AB3" available="true">
 <url>https://b2b.isoft-shop.kz/korpusa-i-bloki-pitaniya/tproduct/305204205154-korpus-case-matx-mini-tower-chieftec-uni</url>
@@ -21067,17 +21045,6 @@
 <vendor>FSP</vendor>
 <vendorCode>ISAF43E63DC8</vendorCode>
 <description>Форм-фактор ATX · Тип устройства Корпус · Цвет Белый · Макс. длина видеокарты 415 мм</description>
-</offer>
-<offer id="ISAF614478CC" available="true">
-<url>https://b2b.isoft-shop.kz/korpusa-i-bloki-pitaniya/tproduct/496943887664-kompyuternii-korpus-deepcool-cg330-3f-be</url>
-<price>30000</price>
-<currencyId>KZT</currencyId>
-<categoryId>976729823024</categoryId>
-<picture>https://static.tildacdn.com/stor3332-3463-4639-b261-393537383433/955ff281822a108f8ab5064fb051f9a9.jpg</picture>
-<name>Компьютерный корпус Deepcool CG330 3F без Б/П R-CG330-BKNGM3-G</name>
-<vendor>Deepcool</vendor>
-<vendorCode>ISAF614478CC</vendorCode>
-<description>Форм-фактор Micro-ATX · Макс. длина видеокарты 410 мм · Макс. высота кулера 163 мм · Тип устройства Корпус · Гарантия 1 год · Цвет Чёрный</description>
 </offer>
 <offer id="ISAFADEA4676" available="true">
 <url>https://b2b.isoft-shop.kz/korpusa-i-bloki-pitaniya/tproduct/941018184924-modul-mikrofonov-logitech-dlya-rally-952</url>
@@ -27056,6 +27023,19 @@
 <vendorCode>IS9AE24DA3FB</vendorCode>
 <description>Сокет AM5 · Тип памяти DDR5 · Чипсет B840 · Форм-фактор Micro-ATX · Слотов памяти 2 · Видеовыходы HDMI / DP · Разъёмов M.2 2 · Разъёмов SATA 4 · Интерфейс SATA / PCI-E 3.0 / PCI-E 4.0</description>
 </offer>
+<offer id="IS9B82179296" available="true">
+<url>https://b2b.isoft-shop.kz/materinskie-platy/tproduct/317521133544-materinskaya-plata-gigabyte-b840m-d2h</url>
+<price>62000</price>
+<currencyId>KZT</currencyId>
+<categoryId>248907277044</categoryId>
+<picture>https://static.tildacdn.com/tild3462-6535-4637-b537-666237323266/317521133544_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild3463-3538-4936-b436-636238373639/317521133544.jpg</picture>
+<picture>https://static.tildacdn.com/tild3165-6535-4336-b336-633530343635/317521133544_2.jpg</picture>
+<name>Материнская плата Gigabyte B840M D2H</name>
+<vendor>Gigabyte</vendor>
+<vendorCode>IS9B82179296</vendorCode>
+<description>Сокет AM5 · Тип памяти DDR5 · Чипсет B840 · Форм-фактор Micro-ATX · Слотов памяти 2 · Видеовыходы HDMI · Разъёмов M.2 2 · Разъёмов SATA 4 · Интерфейс SATA / PCI-E 3.0 / PCI-E 4.0</description>
+</offer>
 <offer id="IS9D3E4A9F86" available="true">
 <url>https://b2b.isoft-shop.kz/materinskie-platy/tproduct/394615341154-materinskaya-plata-asrock-b760m-pro-ad4</url>
 <price>62000</price>
@@ -28075,6 +28055,17 @@
 <vendorCode>IS30A1AFD558</vendorCode>
 <description>Межсетевой экран DPtech FW1000-MA-G (DPtech)</description>
 </offer>
+<offer id="IS4EDF8092FD" available="true">
+<url>https://b2b.isoft-shop.kz/mezhsetevye-ekrany/tproduct/241215739414-fortinet-fortigate-60f-10-x-ge-rj45-port</url>
+<price>818000</price>
+<currencyId>KZT</currencyId>
+<categoryId>558101512014</categoryId>
+<picture>https://static.tildacdn.com/tild3331-6336-4965-a366-376236363736/IS4EDF8092FD_1.png</picture>
+<name>Fortinet FortiGate-60F 10 x GE RJ45 ports (including 7 x Internal Ports, 2 x WAN Ports, 1 x DMZ Port). FG-60F</name>
+<vendor>Fortinet</vendor>
+<vendorCode>IS4EDF8092FD</vendorCode>
+<description>Fortinet FortiGate-60F 10 x GE RJ45 ports (including 7 x Internal Ports, 2 x WAN Ports, 1 x DMZ Port). FG-60F (Fortinet)</description>
+</offer>
 <offer id="IS5539024A81" available="true">
 <url>https://b2b.isoft-shop.kz/mezhsetevye-ekrany/tproduct/395779320864-fortinet-fortigate-91g-fg-91g</url>
 <price>3488000</price>
@@ -28088,6 +28079,51 @@
 <vendorCode>IS5539024A81</vendorCode>
 <description>Портов 10 · Накопитель 120 ГБ · Тип накопителя SSD</description>
 </offer>
+<offer id="IS57892B6F8F" available="true">
+<url>https://b2b.isoft-shop.kz/mezhsetevye-ekrany/tproduct/851734702604-fortinet-fortigate-50g-5-x-ge-rj45-ports</url>
+<price>903000</price>
+<currencyId>KZT</currencyId>
+<categoryId>558101512014</categoryId>
+<picture>https://static.tildacdn.com/tild3331-3034-4135-b066-366138393839/IS57892B6F8F_1.jpg</picture>
+<name>Fortinet FortiGate-50G 5 x GE RJ45 ports (including 4 x Internal Ports, 1 x WAN Ports) FG-50G</name>
+<vendor>Fortinet</vendor>
+<vendorCode>IS57892B6F8F</vendorCode>
+<description>Fortinet FortiGate-50G 5 x GE RJ45 ports (including 4 x Internal Ports, 1 x WAN Ports) FG-50G (Fortinet)</description>
+</offer>
+<offer id="IS5BC421F665" available="true">
+<url>https://b2b.isoft-shop.kz/mezhsetevye-ekrany/tproduct/964886639134-fortinet-fortigate-120g-18-x-ge-rj45-por</url>
+<price>4551000</price>
+<currencyId>KZT</currencyId>
+<categoryId>558101512014</categoryId>
+<picture>https://static.tildacdn.com/tild3334-6463-4531-b631-383730666130/IS5BC421F665_1.jpg</picture>
+<name>Fortinet FortiGate-120G 18 x GE RJ45 ports FG-120G</name>
+<vendor>Fortinet</vendor>
+<vendorCode>IS5BC421F665</vendorCode>
+<description>Fortinet FortiGate-120G 18 x GE RJ45 ports FG-120G (Fortinet)</description>
+</offer>
+<offer id="IS9CBA31DFFC" available="true">
+<url>https://b2b.isoft-shop.kz/mezhsetevye-ekrany/tproduct/170587456054-fortinet-fortigate-30g-4-x-ge-rj45-ports</url>
+<price>576000</price>
+<currencyId>KZT</currencyId>
+<categoryId>558101512014</categoryId>
+<picture>https://static.tildacdn.com/tild3838-3966-4738-b964-363934623436/IS9CBA31DFFC_1.jpg</picture>
+<name>Fortinet FortiGate-30G 4 x GE RJ45 ports (including 3 x Internal Ports, 1 x WAN Ports) FG-30G</name>
+<vendor>Fortinet</vendor>
+<vendorCode>IS9CBA31DFFC</vendorCode>
+<description>Fortinet FortiGate-30G 4 x GE RJ45 ports (including 3 x Internal Ports, 1 x WAN Ports) FG-30G (Fortinet)</description>
+</offer>
+<offer id="ISD3EC2440A6" available="true">
+<url>https://b2b.isoft-shop.kz/mezhsetevye-ekrany/tproduct/574936306914-fortinet-fortigate-70g-10-x-ge-rj45-port</url>
+<price>1290000</price>
+<currencyId>KZT</currencyId>
+<categoryId>558101512014</categoryId>
+<picture>https://static.tildacdn.com/tild3535-3961-4535-b038-663564343839/ISD3EC2440A6_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild3161-3639-4131-b137-373737653864/574936306914_1.jpg</picture>
+<name>Fortinet FortiGate-70G 10 x GE RJ45 ports (including 7 x Internal Ports, 2 x WAN Ports, 1 x DMZ Port). FG-70G</name>
+<vendor>Fortinet</vendor>
+<vendorCode>ISD3EC2440A6</vendorCode>
+<description>Fortinet FortiGate-70G 10 x GE RJ45 ports (including 7 x Internal Ports, 2 x WAN Ports, 1 x DMZ Port). FG-70G (Fortinet)</description>
+</offer>
 <offer id="ISDCFF76765D" available="true">
 <url>https://b2b.isoft-shop.kz/mezhsetevye-ekrany/tproduct/578792898764-mezhsetevoi-ekran-h3c-ns-secpath-f100-c</url>
 <price>177000</price>
@@ -28098,6 +28134,17 @@
 <vendor>H3C</vendor>
 <vendorCode>ISDCFF76765D</vendorCode>
 <description>Межсетевой экран H3C NS-SecPath F100-C-A2-I (H3C)</description>
+</offer>
+<offer id="ISDD0236E4AC" available="true">
+<url>https://b2b.isoft-shop.kz/mezhsetevye-ekrany/tproduct/442692747404-fortinet-fortigate-90g-8-x-ge-rj45-ports</url>
+<price>3005000</price>
+<currencyId>KZT</currencyId>
+<categoryId>558101512014</categoryId>
+<picture>https://static.tildacdn.com/tild6531-6338-4661-b136-646434393439/ISDD0236E4AC_1.jpg</picture>
+<name>Fortinet FortiGate-90G 8 x GE RJ45 ports, 2 x 10GE RJ45/SFP+ shared media WAN ports. FG-90G</name>
+<vendor>Fortinet</vendor>
+<vendorCode>ISDD0236E4AC</vendorCode>
+<description>Fortinet FortiGate-90G 8 x GE RJ45 ports, 2 x 10GE RJ45/SFP+ shared media WAN ports. FG-90G (Fortinet)</description>
 </offer>
 <offer id="IS07BFA4369B" available="true">
 <url>https://b2b.isoft-shop.kz/mini-pk-i-rabochie-stancii/tproduct/669377242934-mini-pk-hp-pro-mini-260-g9-260-g9-mini-r</url>
@@ -29171,6 +29218,17 @@
 <vendor>Acer</vendor>
 <vendorCode>IS2BE003D24D</vendorCode>
 <description>Время отклика 1 мс · Диагональ 27″ · Разрешение 2560×1440 · Тип матрицы IPS · Частота обновления 180 Гц · Яркость 400 кд/м² · Соотношение сторон 16:9 · Размер экрана 27–29″</description>
+</offer>
+<offer id="IS2C27F231EB" available="true">
+<url>https://b2b.isoft-shop.kz/monitory/tproduct/858836571564-monitor-acer-nitro-ed340curx0bmiipx-umce</url>
+<price>181000</price>
+<currencyId>KZT</currencyId>
+<categoryId>929335537584</categoryId>
+<picture>https://static.tildacdn.com/tild3935-3535-4563-a565-386165626663/IS2C27F231EB_1.jpg</picture>
+<name>Монитор Acer Nitro ED340CURX0bmiipx UM.CE0EE.009, 86cm 34-inch Curved ZeroFrame VA WQHD, 200Hz 21:9 1ms(VRB), 250nits 2xHDMI(2.1)</name>
+<vendor>Acer</vendor>
+<vendorCode>IS2C27F231EB</vendorCode>
+<description>Время отклика 1 мс · Диагональ 34″ · Соотношение сторон 21:9 · Тип матрицы VA · Частота обновления 200 Гц · Яркость 250 кд/м² · Размер экрана 34–38″</description>
 </offer>
 <offer id="IS2CF2B85F1B" available="true">
 <url>https://b2b.isoft-shop.kz/monitory/tproduct/854857730314-monitor-samsung-5m1-ls24a400ujixci</url>
@@ -30376,18 +30434,6 @@
 <vendorCode>IS7960D016C8</vendorCode>
 <description>Диагональ 27″ · Размер экрана 27–29″</description>
 </offer>
-<offer id="IS7A075446F6" available="true">
-<url>https://b2b.isoft-shop.kz/monitory/tproduct/402676411804-monitor-238-inch-gigabyte-gs24f14a-ek</url>
-<price>47000</price>
-<currencyId>KZT</currencyId>
-<categoryId>929335537584</categoryId>
-<picture>https://static.tildacdn.com/stor3766-6536-4531-b963-626334623761/a03f4406732e4ba47854cad3ca46ceca.jpg</picture>
-<picture>https://static.tildacdn.com/stor3830-6462-4964-b734-323137346363/9a4a756897b83e1ecd19bdeff879a08b.jpg</picture>
-<name>Монитор 23.8-inch Gigabyte GS24F14A EK</name>
-<vendor>Gigabyte</vendor>
-<vendorCode>GS24F14A</vendorCode>
-<description>23.8", 1920x1080, IPS, 144 Гц, 1*HDMI (v2.0), DP(v1.4), 400кд/м2, 1500:1, 1 мс, Регулировка наклона, 178/178,16:9, 16.7, Чёрный · Партномер: GS24F14A</description>
-</offer>
 <offer id="IS7B627F59D6" available="true">
 <url>https://b2b.isoft-shop.kz/monitory/tproduct/205343046284-monitor-dell-alienware-27-gaming-monitor</url>
 <price>164000</price>
@@ -30757,6 +30803,18 @@
 <vendor>Dell</vendor>
 <vendorCode>IS8B154D3472</vendorCode>
 <description>Время отклика 0 мс · Диагональ 27″ · Разрешение 2560×1440 · Тип матрицы OLED · Частота обновления 280 Гц · Яркость 1000 кд/м² · Размер экрана 27–29″</description>
+</offer>
+<offer id="IS8BA4C4275A" available="true">
+<url>https://b2b.isoft-shop.kz/monitory/tproduct/415132230194-monitor-dell-pro-p-27-monitor-p2726h-210</url>
+<price>123000</price>
+<currencyId>KZT</currencyId>
+<categoryId>929335537584</categoryId>
+<picture>https://static.tildacdn.com/tild6665-3465-4933-b065-396638313538/IS8BA4C4275A_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild6639-3634-4237-a161-303532363634/IS8BA4C4275A_2.jpg</picture>
+<name>Монитор DELL Pro P 27 Monitor - P2726H 210-BVKP, 27.0-inch, 1920x1080, IPS, 120 Hz, DP,2xUSB-A, 2xUSB-C /Swivel, Pivot, Black/War 3Yrs</name>
+<vendor>Dell</vendor>
+<vendorCode>IS8BA4C4275A</vendorCode>
+<description>Время отклика 5 мс · Диагональ 27,0″ · Контрастность 500:1 · Разрешение 1920×1080 · Соотношение сторон 16:9 · Тип матрицы IPS · Угол обзора 178° · Частота обновления 120 Гц · Яркость 300 кд/м² · Размер экрана 27–29″</description>
 </offer>
 <offer id="IS8D30F275A6" available="true">
 <url>https://b2b.isoft-shop.kz/monitory/tproduct/399269489654-monitor-asus-xg49vq-90lm04h0-b01170</url>
@@ -58624,6 +58682,17 @@
 <vendor>HP</vendor>
 <vendorCode>ISB86898A39C</vendorCode>
 <description>Форм-фактор Tower</description>
+</offer>
+<offer id="ISBDE7267333" available="true">
+<url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/912741279274-sistemnii-blok-dell-pro-max-tower-t2-fct</url>
+<price>1825000</price>
+<currencyId>KZT</currencyId>
+<categoryId>763638053684</categoryId>
+<picture>https://static.tildacdn.com/tild3562-3163-4162-b263-623039316165/ISBDE7267333_1.jpg</picture>
+<name>Системный блок DELL Pro Max Tower T2 FCT2250 U7 265 BTO107_FCT2250_EMEA, 32GB, 1TB, NVIDIA RTX A1000 8GB, No Wifi, Mouse, vPro, War 3Yrs PS</name>
+<vendor>Dell</vendor>
+<vendorCode>ISBDE7267333</vendorCode>
+<description>Линейка процессора Core Ultra 7 · Оперативная память 32 ГБ · Операционная система Windows 11 Pro · Процессор U7 265 · Семья ОС Windows 11 · Форм-фактор Tower</description>
 </offer>
 <offer id="ISC2E6E7AB4B" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/518366357414-sistemnii-blok-dell-pro-tower-qct1250-21</url>

@@ -1,4 +1,4 @@
-/* ish-design-p36.css  v1.1  (кандидат 17.10.2026; НЕ выложено)  П36 «карточка товара в духе главной C2»
+/* ish-design-p36.css  v1.4  (кандидат 17.10.2026; НЕ выложено)  П36 «карточка товара в духе главной C2»
    Подключает ish-design-p36.js (рядом с собой). Откат: пустой файл на Pages или window.ISH_P36_OFF / ISH_P4_NO_P36.
    Окно Tilda (крестик, «К разделу», крошки) ОСТАЁТСЯ, меняется всё внутри. Всё под html.ishp36-on (ставит js).
    Перебивает правила блока 4055071703 и ish-design.css (там !important) через ID #allrecords; сам блок не правится.
@@ -234,7 +234,8 @@ html.ishp36-on:has(.t-popup_show) .ishk-bar,html.ishp36-on:has(.t-store__prod-sn
   html.ishp36-on body .ishpg3-sticky,html.ishp36-on body .ishp10-sticky{padding-bottom:max(12px,env(safe-area-inset-bottom,0px))}
 }
 
-/* v1.3 (18.10): телефон: крестик окна >= 44 px (псевдоэлемент) */
+/* v1.4 (19.10): телефон: крестик окна >= 44 px — сама кнопка 44, центр прежний (было 36, right/top 12 -> 44, right/top 8).
+   Раньше зону нажатия делал ::after 44x44, но он же рисует вторую линию крестика (background:currentColor из шапки карточки) — и заливал тёмный квадрат #171923 поверх крестика. ::after больше не трогаем. */
 @media (max-width:640px){
-  html.ishp36-on #allrecords a.ishpg-close.ishpg-m::after{content:"";position:absolute;left:50%;top:50%;width:44px;height:44px;transform:translate(-50%,-50%)}
+  html.ishp36-on #allrecords a.ishpg-close.ishpg-m{width:44px;height:44px;right:8px;top:8px}
 }

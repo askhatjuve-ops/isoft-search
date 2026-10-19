@@ -548,3 +548,6 @@ html.ishp35-on.ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] 
   html.ishp35-on .ishp9-bc{min-height:44px}
   html.ishp35-on:not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] .ish13-buy{height:44px!important;min-height:44px}
 }
+
+/* 19.10.2026: плитки «Разделы группы» налезали рядами на 26 px - padding+рамка сверх высоты ячейки (нет border-box) */
+.ishp35-tiles .ishp8-tile{box-sizing:border-box}

@@ -60,6 +60,12 @@ html body #ishЭкран .шев svg{width:15px;height:15px}
 .ishp37-q em{display:block;margin-top:2px;font:400 13px/1.3 var(--p37-f);font-style:normal;color:var(--p37-mut)}
 .ishp37-qs{display:grid;place-items:center;width:32px;height:32px;border-radius:50%;background:#fff;color:var(--p37-k)}
 .ishp37-qs svg{width:15px;height:15px}
+/* 19.10: тонкие строки быстрого доступа (2 шт.), без значков и рамки */
+.ishp37-q--thin{gap:6px;margin:0 14px 14px}
+.ishp37-q--thin a,.ishp37-q--thin a:visited{grid-template-columns:minmax(0,1fr) 26px;min-height:44px;padding:8px 10px 8px 16px;border:0;border-radius:14px;font:400 14px/1.3 var(--p37-f)}
+.ishp37-q--thin b{display:inline;font:700 14px/1.3 var(--p37-f)}
+.ishp37-q--thin .ishp37-qs{width:26px;height:26px}
+.ishp37-q--thin .ishp37-qs svg{width:13px;height:13px}
 .ishp37-sub{margin:4px 18px 10px;font:700 12px/1.2 var(--p37-f);letter-spacing:.12em;text-transform:uppercase;color:var(--p37-mut)}
 .ishp37-sub b{color:var(--p37-k);font-weight:700}
 /* внизу: телефон и мессенджеры */

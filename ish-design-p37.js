@@ -1,4 +1,4 @@
-/* ish-design-p37.js  v1.0  (кандидат 17.10.2026, волна 3 «хвосты» C2; НЕ выложено)  П37 «хвосты в стиле главной»
+/* ish-design-p37.js  v1.1 (19.10: быстрый доступ - 2 тонкие строки)  v1.0  (кандидат 17.10.2026, волна 3 «хвосты» C2; НЕ выложено)  П37 «хвосты в стиле главной»
    Внешний слой. Блоки Tilda НЕ пишет. Подгружает ish-design-p37.css с того же адреса. Выключатель до загрузки: window.ISH_P37_OFF = 1.
    Что делает (вид - в css, здесь только то, чего css не умеет):
      1. Мобильное меню (оболочка, экран «Каталог товаров», #ishЭкран): над списком разделов - 4 быстрых пункта со значками в кобальтовых квадратах,
@@ -36,19 +36,19 @@
     wa: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21l1.6-4.7A8.5 8.5 0 1 1 8 19.5z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1.3-1.3-2-1-1 .7a3.6 3.6 0 0 1-1.9-1.9l.7-1-1-2z"/></svg>',
     tg: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21.5 2.8 2.9 10.1c-.8.3-.8 1.4 0 1.7l4.6 1.6 1.8 5.6c.2.7 1 .8 1.5.3l2.5-2.4 4.7 3.5c.6.4 1.4.1 1.6-.6L22.9 4.2c.2-.8-.6-1.7-1.4-1.4z"/><path d="m9.5 13.4 8.2-6.2-6.4 7.3"/></svg>'
   };
+  /* 19.10.2026 (Асхат): из 4 быстрых пунктов оставлены 2 тонкие строки - КП/счёт и расширенный ассортимент;
+     «Для организаций» и «Доставка и оплата» повторяют меню и главную - убраны. */
   var БЫСТРО = [
-    ['kp', 'Запросить КП или счёт', 'Ответим в день обращения', '/podbor'],
-    ['as', 'Расширенный ассортимент', '14 000+ позиций, под заказ', '/assortiment'],
-    ['org', 'Для организаций', 'Счёт с НДС, договор, документы', '/dlya-organizacij'],
-    ['dl', 'Доставка и оплата', 'Бесплатно по Казахстану', '/delivery']
+    ['Нужно КП или счёт?', 'Ответим в день обращения', '/podbor'],
+    ['Расширенный ассортимент', '14 000+ позиций под заказ', '/assortiment']
   ];
   function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
   function quickHtml() {
-    var h = '<div class="ishp37-sub"><b>01</b> / Быстрый доступ</div><div class="ishp37-q">';
+    var h = '<div class="ishp37-q ishp37-q--thin">';
     БЫСТРО.forEach(function (r) {
-      h += '<a href="' + esc(r[3]) + '"><span class="ishp37-qi">' + IC[r[0]] + '</span><span><b>' + esc(r[1]) + '</b><em>' + esc(r[2]) + '</em></span><span class="ishp37-qs">' + IC.ch + '</span></a>';
+      h += '<a href="' + esc(r[2]) + '"><span><b>' + esc(r[0]) + '</b> ' + esc(r[1]) + '</span><span class="ishp37-qs">' + IC.ch + '</span></a>';
     });
-    return h + '</div><div class="ishp37-sub"><b>02</b> / Разделы каталога</div>';
+    return h + '</div><div class="ishp37-sub"><b>01</b> / Разделы каталога</div>';
   }
   function contactHtml() {
     return '<a class="ishp37-tel" href="tel:' + TEL + '"><b>' + PHONE + '</b><span>Пн–Вс 9:00–18:00 · звонок и счёт в день обращения</span></a>' +

@@ -442,7 +442,7 @@
       '<div class="ishp35-nf__t"><h3>Не нашли нужное? Пришлите список</h3><p>Проработаем и ответим в день обращения.</p></div>' +
       '<div class="ishp35-ls" aria-hidden="true"><span>Ноутбук 15.6″ — 10 шт</span><span>Монитор 24″ — 10 шт</span><span>МФУ A4 — 2 шт</span><i class="ishp35-ok"><svg viewBox="0 0 20 20"><circle cx="10" cy="10" r="10" fill="#1FA971"/><path d="m5.6 10.4 3 3 5.8-6.4" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>КП готово</i></div>' +
       '<div class="ishp35-nf__b"><span class="ishp35-nf__w"><a class="ishp35-b ishp35-b--main" href="' + REQ + '">Написать, что нужно</a></span>' +
-      '<a class="ishp35-b" href="/assortiment">Посмотреть расширенный ассортимент iSoft</a></div></section></div>';
+      '<a class="ishp35-b" href="/assortiment">Расширенный ассортимент 14000+</a></div></section></div>';
     if (foot) foot.parentNode.insertBefore(e, foot); else host.appendChild(e);
     return true;
   }

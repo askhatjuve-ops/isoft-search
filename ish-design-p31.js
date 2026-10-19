@@ -73,6 +73,11 @@
     '/details':          { n: '01', big: 'card', pod: 0, fin: 1, facts: [['org', 'ТОО «ISOFT Казахстан»'], ['doc', 'БИН 130240003176'], ['check', 'Плательщик НДС'], ['clock', 'Пн–Вс, 9:00–18:00']] },
     '/policy':           { n: '01', big: 'lock', pod: 0, fin: 0, facts: null }
   };
+  /* 19.10: на /obrazovanie и /goszakupki убрана карточка «Как мы работаем» (#kak, родной блок Tilda; прячет правило html.ishp31-nokak #kak в p31.css); на /obrazovanie H1 = «Компьютерная техника для школ и вузов» */
+  var CUR = (W.location.pathname || '/').replace(/\/+$/, '').toLowerCase();
+  if (CUR === '/obrazovanie' || CUR === '/goszakupki') H.classList.add('ishp31-nokak');
+  var H1_TXT = { '/obrazovanie': 'Компьютерная техника для школ и вузов' };
+
   function pageCfg() {
     var p = (W.location.pathname || '/').replace(/\/+$/, '').toLowerCase();
     return PAGES[p] || null;
@@ -91,6 +96,7 @@
     var об = верх.querySelector('.вн-об'), h1 = об && об.querySelector('h1');
     if (!h1) return false;
     верх.setAttribute('data-p31', '1');
+    if (H1_TXT[CUR]) h1.textContent = H1_TXT[CUR];
     var cfg = pageCfg() || { n: '01', big: 'doc', pod: 0, fin: 0, facts: null };
     var над = об.querySelector('.вн-над'), лид = об.querySelector('.вн-лид'), ряд = об.querySelector('.вн-ряд');
     var hero = el('section', 'ishp31-hero' + (лид ? '' : ' ishp31-hero--nolid'));
@@ -134,7 +140,7 @@
       '<div class="ishp31-nf__t"><h3>Не нашли нужное? Пришлите список</h3><p>Проработаем и ответим в день обращения.</p></div>' +
       '<div class="ishp31-ls" aria-hidden="true"><span>Ноутбук 15.6″ — 10 шт</span><span>Монитор 24″ — 10 шт</span><span>МФУ A4 — 2 шт</span><i class="ishp31-ok"><svg viewBox="0 0 20 20"><circle cx="10" cy="10" r="10" fill="#1FA971"/><path d="m5.6 10.4 3 3 5.8-6.4" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>КП готово</i></div>' +
       '<div class="ishp31-nf__b"><span class="ishp31-nf__w"><a class="ishp31-b ishp31-b--main" href="' + REQ + '">Написать, что нужно</a></span>' +
-      '<a class="ishp31-b" href="/assortiment">Посмотреть расширенный ассортимент iSoft</a></div></section>';
+      '<a class="ishp31-b" href="/assortiment">Расширенный ассортимент 14000+</a></div></section>';
     s.innerHTML = h;
     тело.appendChild(s);   /* внутри сетки .вн-тело на всю ширину: те же края, что у карточек и шапки */
     return true;

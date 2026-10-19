@@ -169,7 +169,7 @@
   }
 
   /* ───────── П8: блоки главной ниже первого экрана (грузит ish-design-p8.js с того же адреса, один раз; только где есть слайдер главной) ───────── */
-  var P8V = '30';
+  var P8V = '31';
   function p8() {
     if (W.ISH_P4_NO_P8 || W.ISH_P8 || D.getElementById('ishp-p8-js')) return true;
     if (!D.querySelector('#лента .слайд')) return false;
@@ -292,7 +292,7 @@
   /* ───────── П24: мега-меню «Каталог» (Ш9): ish-design-p24.js (+ .css рядом), один раз ─────────
      Признак: десктоп (>=981) и есть блок шапки .нш-шапка с .нш-шапка-право; на телефоне и на карточке v8 (html.ishpg-on) не грузим.
      p24 сам строит кнопку и панель. Выключатель: window.ISH_P24_OFF = 1. Кэш: поменять P24V. */
-  var P24V = '3';
+  var P24V = '4';
   function p24() {
     if (W.ISH_P24_OFF || W.__ishP24 || D.getElementById('ishp-p24-js')) return true;
     if (!(W.matchMedia && W.matchMedia('(min-width:981px)').matches)) return true;
@@ -331,7 +331,7 @@
   /* ───────── П31: внутренние страницы в духе главной C2 (ish-design-p31.js/.css с того же адреса, один раз) ─────────
      Признак: только текстовая страница (.вн-верх/.вн-тело); список и карточка не затрагиваются. На главной (#лента) не грузим - там П8.
      Выключатель: window.ISH_P31_OFF = 1 или window.ISH_P4_NO_P31 = 1 (до загрузки p4). Кэш: поменять P31V. */
-  var P31V = '4';
+  var P31V = '6';
   function p31() {
     if (W.ISH_P4_NO_P31 || W.ISH_P31_OFF || W.ISH_P31 || D.getElementById('ishp-p31-js')) return true;
     if (D.getElementById('лента')) return true;
@@ -352,7 +352,7 @@
 
   /* ───────── П35: раздел каталога в палитре главной (ish-design-p35.js/.css с того же адреса, один раз) ─────────
      Признак: страница со списком товаров (.t-store__card-list). Выключатель: window.ISH_P35_OFF = 1 или window.ISH_P4_NO_P35 = 1 (до загрузки p4). Кэш: поменять P35V. */
-  var P35V = '14';
+  var P35V = '15';
   function p35() {
     if (W.ISH_P4_NO_P35 || W.ISH_P35_OFF || W.ISH_P35 || D.getElementById('ishp-p35-js')) return true;
     if (D.getElementById('лента')) return true;
@@ -423,7 +423,7 @@
 
   /* ───────── П37: хвосты в стиле главной - мега-меню, мобильное меню, мессенджеры, шторка фильтров, /assortiment (ish-design-p37.js/.css/p37a.css с того же адреса, на всех страницах) ─────────
      Выключатель: window.ISH_P37_OFF = 1 или window.ISH_P4_NO_P37 = 1 (до загрузки p4). Кэш: поменять P37V. */
-  var P37V = '7';
+  var P37V = '8';
   (function () {
     if (W.ISH_P4_NO_P37 || W.ISH_P37_OFF || W.__ishP37 || D.getElementById('ishp-p37-js')) return;
     var src = tag && tag.src;

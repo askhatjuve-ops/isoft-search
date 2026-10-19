@@ -1,4 +1,4 @@
-/* ish-design-p39.css  v1.1  (19.10.2026, кандидат)  П39: счётчик списка, шапка-убегайка, стекло. Подключает ish-design-p39.js.
+/* ish-design-p39.css  v1.2  (19.10.2026; стекло заметнее: .62, blur 18)  П39: счётчик списка, шапка-убегайка, стекло. Подключает ish-design-p39.js.
    Источник: Дизайн_2026/BI_GROUP_РАЗБОР_18.10.md. Выключатель: window.ISH_P39_OFF = 1; по частям window.ISH_P39_SKIP = 'count,hdr,glass'.
    v1.1: правила лент («lanes») удалены совсем (19.10, решение Асхата). Правила узкие, чужие блоки главной (#ishp8-*, #полоса) не затрагиваются. */
 
@@ -21,9 +21,9 @@
 /* ═══ стекло: только на телефоне/планшете, с плотным запасным цветом (остаётся белый, если blur не поддержан) ═══ */
 @supports ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){
   @media (max-width:980px){
-    html.ishp39-glass body #ishТаб{background:rgba(255,255,255,.86)!important;-webkit-backdrop-filter:blur(14px) saturate(1.2);backdrop-filter:blur(14px) saturate(1.2)}
-    html.ishp39-glass body .ishpg3-sticky,html.ishp39-glass body .ishp10-sticky,html.ishp39-glass.ishp10-on body .ishp10-sticky,html.ishp39-glass.ishp36-on body .ishpg3-sticky,html.ishp39-glass.ishp36-on body .ishp10-sticky{background:rgba(255,255,255,.86)!important;-webkit-backdrop-filter:blur(14px) saturate(1.2);backdrop-filter:blur(14px) saturate(1.2)}
+    html.ishp39-glass body #ishТаб{background:rgba(255,255,255,.62)!important;-webkit-backdrop-filter:blur(18px) saturate(1.6);backdrop-filter:blur(18px) saturate(1.6)}
+    html.ishp39-glass body .ishpg3-sticky,html.ishp39-glass body .ishp10-sticky,html.ishp39-glass.ishp10-on body .ishp10-sticky,html.ishp39-glass.ishp36-on body .ishpg3-sticky,html.ishp39-glass.ishp36-on body .ishp10-sticky{background:rgba(255,255,255,.62)!important;-webkit-backdrop-filter:blur(18px) saturate(1.6);backdrop-filter:blur(18px) saturate(1.6)}
     html.ishp39-glass body .вх-экран .кн.втор{-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
-    html.ishp39-glass body .t-slds__arrow.t-slds__arrow-withbg{background-color:rgba(255,255,255,.7)!important;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+    html.ishp39-glass body .t-slds__arrow.t-slds__arrow-withbg{background-color:rgba(255,255,255,.55)!important;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
   }
 }

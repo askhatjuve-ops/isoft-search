@@ -450,7 +450,7 @@
 
   /* ───────── П39 v1.1 (ленты удалены 19.10): «Показано N из M» в разделе каталога, шапка-убегайка, стекло (ish-design-p39.js/.css с того же адреса, на всех страницах; сам молчит, если нечего править)
      Выключатели: window.ISH_P39_OFF = 1 или window.ISH_P4_NO_P39 = 1 (до загрузки p4); по частям - window.ISH_P39_SKIP = 'count,hdr,glass'. Кэш: поменять P39V. */
-  var P39V = '2';
+  var P39V = '3';
   (function () {
     if (W.ISH_P4_NO_P39 || W.ISH_P39_OFF || W.__ishP39 || D.getElementById('ishp-p39-js')) return;
     var src = tag && tag.src;

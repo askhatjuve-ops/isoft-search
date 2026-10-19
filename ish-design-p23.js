@@ -367,6 +367,8 @@
       '<button type="button" class="ishp23-cta__b" data-ishp23-open>Подобрать технику за 1 минуту</button></div>';
   }
   function place() {
+    /* 19.10.2026: на /podbor (это и есть форма заявки) приглашение в квиз лишнее и ложилось во всю ширину экрана */
+    if (/^\/podbor\/?$/.test(location.pathname)) return true;
     var f = findForm();
     if (!f) return false;
     var s = D.getElementById('ishp23-cta');

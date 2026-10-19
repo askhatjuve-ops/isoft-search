@@ -232,7 +232,7 @@
      Признак: на странице есть меню/лента разделов (ish-nav, подвал, боковая колонка раздела, рубрикатор/панель главной, лента Tilda).
      p20 сам опрашивает DOM и наблюдает за ним, от порядка загрузки с ish-nav.js не зависит. Выключатель: window.ISH_P20_OFF = 1
      (собственные выключатели p20: window.ISH_P20 = {короткие:false, низ:false} читаются самим p20). Кэш: поменять P20V. */
-  var P20V = '1';
+  var P20V = '2';
   function p20() {
     if (W.ISH_P20_OFF || W.__ishP20 || D.getElementById('ishp-p20-js')) return true;
     if (!D.querySelector('.isoft-nav, .isoft-foot, #вн-бок, .рубрикатор, .панель-сетка, .t-catalog__parts-above-item')) return false;

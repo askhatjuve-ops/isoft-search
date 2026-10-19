@@ -1,4 +1,4 @@
-/* ish-design-p20.js v1 · П20, 16.10.2026. Внешний слой поверх живой вёрстки; блоки Tilda НЕ пишутся.
+/* ish-design-p20.js v1.1 · П20, 16.10.2026. v1.1 (19.10, кандидат): в панели главной (.панель) короткая подпись раздела (обёртка .ishp20-сл) попадала под правило блока «.панель a span» (12px, серый) и выглядела мельче соседей - теперь наследует размер и цвет ссылки. Внешний слой поверх живой вёрстки; блоки Tilda НЕ пишутся.
    Ш7 - короткие/ровные ПОДПИСИ пунктов меню (адреса и textContent не меняются).
    К24 - внизу раздела каталога блок «Смежные разделы и помощь» (копии карточек из боковой колонки #вн-бок).
    Подключение (одна строка, после ish-nav.js): <script src=".../ish-design-p20.js?v=1" charset="utf-8" defer></script>
@@ -6,7 +6,7 @@
 (function () {
   'use strict';
   if (window.__ishP20) return;
-  window.__ishP20 = 'v1';
+  window.__ishP20 = 'v1.1';
   var ВКЛ = window.ISH_P20 || {};
 
   /* Ш7: полное имя (как в дереве) -> короткая подпись. ПРЕДЛОЖЕНИЕ, утверждает Асхат; ключ ищется после норм().
@@ -34,6 +34,7 @@
     '.ishp20-полн{position:absolute!important;width:1px!important;height:1px!important;overflow:hidden!important;' +
     'clip:rect(0 0 0 0)!important;clip-path:inset(50%)!important;white-space:nowrap!important}' +
     '.ishp20-сл[data-ish-short]::after{content:attr(data-ish-short)}' +
+    '.панель a>.ishp20-сл{font-size:inherit;color:inherit}' +
     '.ishp20-низ{box-sizing:border-box;max-width:min(1440px,calc(100% - 40px));margin:8px auto 40px;padding:20px 0 0;' +
     'border-top:1px solid #E3DFD6;font-family:TildaSans,Arial,sans-serif;color:#171923}' +
     '.ishp20-низ__заг{margin:0 0 14px;font-size:20px;line-height:1.3;font-weight:700}' +

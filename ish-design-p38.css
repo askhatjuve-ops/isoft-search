@@ -27,3 +27,6 @@ a.ishp38-chip:hover{border-color:#2B44C7;color:#171923}
 /* hover2 (К20/Фт7): при наведении на фото в списке первое гаснет, второе (штатное Tilda) проявляется за 200 мс; только при hover-устройстве */
 html.ishp38-h2 .t-store__card .t-store__card__bgimg_hover,html.ishp38-h2 .t-store__card .t-store__card__bgimg_second{transition:opacity .2s ease!important}
 html.ishp38-h2 .t-store__card .t-store__card__imgwrapper:hover .t-store__card__bgimg_hover{opacity:0}
+
+/* 19.10: в виде «Список» наличие уже стоит сверху у бренда (.ishp35r-av) - нижний бейдж не дублируем; в плитке верхний скрыт, нижний остаётся */
+html.ishp35-on:not(.ishd-tile) .t-store__card:has(.ishp35r-av) .ishp38-stock{display:none!important}

@@ -436,7 +436,7 @@
 
   /* ───────── П38: мелочи показа - единый формат цены «471 000 ₸», alt у фото товаров, «Цены обновлены сегодня» (ish-design-p38.js/.css с того же адреса, на всех страницах; сам молчит, если нечего править)
      Выключатели: window.ISH_P38_OFF = 1 или window.ISH_P4_NO_P38 = 1 (до загрузки p4); по частям - window.ISH_P38_SKIP = 'price,alt,date'. Кэш: поменять P38V. */
-  var P38V = '5';
+  var P38V = '6';
   (function () {
     if (W.ISH_P4_NO_P38 || W.ISH_P38_OFF || W.__ishP38 || D.getElementById('ishp-p38-js')) return;
     var src = tag && tag.src;

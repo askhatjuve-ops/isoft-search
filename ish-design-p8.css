@@ -1,4 +1,4 @@
-/* ish-design-p8.css  v2.3  (19.10.2026: полоса фактов на ≤640 - одна строка значков; v2.2: см. ish-design-p8.js v2.2; НЕ выложено)  (C2 «Витрина, другой ритм», подготовка 16.10.2026; НЕ выложено)  П8 «блоки главной ниже первого экрана»
+/* ish-design-p8.css  v2.4  (19.10.2026: «Коротко о нас» на ≥981 - заголовок слева, три плитки в ряд, см. конец файла; 19.10.2026: полоса фактов на ≤640 - одна строка значков; v2.2: см. ish-design-p8.js v2.2; НЕ выложено)  (C2 «Витрина, другой ритм», подготовка 16.10.2026; НЕ выложено)  П8 «блоки главной ниже первого экрана»
    Подключает ish-design-p8.js (рядом с собой). Откат: пустой файл на Pages. Шрифт TildaSans, фон страницы #F5F3EE, акцент - кобальт #2B44C7, графит #1E2430.
    Всё под .ishp8-* или html.ishp8-on - верх сайта (шапка, поиск, «Каталог», слайдер) не затрагивается. Чужие правила блока 4204120903 перекрываются только
    в разделах «ШАГИ» и «ПОЛКИ». Размеры текста не меньше 12px. На 390 горизонтальной прокрутки нет. */
@@ -644,4 +644,20 @@ html.ishp8-on #запросБлок .ishp8-cur{background:var(--p8-cobalt)}
   .ishp8-chip,.ishp8-ci,.ishp8-ci svg{transition:none}
   .ishp8-chip.on .ishp8-ci{animation:none}
   html.ishp8-chp .ishp8-who>.ishp8-tw.ishp8-tw,html.ishp8-chp .ishp8-who>.ishp8-tw.cv{transition:none}
+}
+
+/* ───────── v2.4 (19.10): «Коротко о нас» на компьютере ≥981 - заголовок слева колонкой 25%, справа три плитки в один ряд (~180 px). Планшет и телефон не затронуты ───────── */
+@media (min-width:981px){
+  html .ishp8-sec--nums{display:grid;grid-template-columns:minmax(210px,25%) minmax(0,1fr);grid-template-rows:auto auto auto 1fr;column-gap:32px;align-items:start}
+  html .ishp8-sec--nums>.ishp8-eb,html .ishp8-sec--nums>.ishp8-h,html .ishp8-sec--nums>.ishp8-sub{grid-column:1}
+  html .ishp8-sec--nums>.ishp8-h{margin:6px 0 14px}
+  html .ishp8-sec--nums>.ishp8-sub{margin:0;font-size:15px;align-items:flex-start}
+  html .ishp8-sec--nums>.ishp8-sub .ishp8-pi{margin-top:1px}
+  html .ishp8-sec--nums>.ishp8-nums{grid-column:2;grid-row:1/-1;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+  html .ishp8-sec--nums>.ishp8-nums>.k1,html .ishp8-sec--nums>.ishp8-nums>.k2,html .ishp8-sec--nums>.ishp8-nums>.k3{grid-column:auto;min-height:180px}
+  html .ishp8-sec--nums .ishp8-num{display:flex;flex-direction:column;justify-content:space-between;min-height:180px;padding:20px 22px 20px;border-radius:24px}
+  html .ishp8-sec--nums .ishp8-num b{font-size:clamp(46px,5vw,68px);line-height:1}
+  html .ishp8-sec--nums .ishp8-num>span:not(.ishp8-gl):not(.ishp8-lgw){margin-top:auto;padding-top:10px;font-size:14px;line-height:1.35}
+  html .ishp8-sec--nums .ishp8-num .ishp8-lgw{right:20px;top:20px}
+  html .ishp8-sec--nums .ishp8-num .ishp8-lgw .ishp8-lg{height:34px;width:auto}
 }

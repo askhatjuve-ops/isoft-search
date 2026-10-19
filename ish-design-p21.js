@@ -1,4 +1,4 @@
-/* ish-design-p21.js  v2-кандидат (17.10.2026, волна 1 В: номер заявки крупно)  [v1 16.10.2026]  П21 «номер заявки» и «список из Excel в корзину»  b2b.isoft-shop.kz
+/* ish-design-p21.js  v3-кандидат (19.10.2026: плашка Excel «Есть готовый список в Excel?» по умолчанию выключена, вернуть: window.ISH_P21_XLS = 1) | прежняя v2-кандидат (17.10.2026, волна 1 В: номер заявки крупно)  [v1 16.10.2026]  П21 «номер заявки» и «список из Excel в корзину»  b2b.isoft-shop.kz
    Внешний слой. Грузится из ish-design-p4.js (строка в README). Ничего не пишет в Tilda, блоки не правит.
    Модули (выключатели: window.ISH_P21_OFF = 1 - всё; window.ISH_P21_SKIP = 'num,xls' - по частям):
      num  Кр3  номер заявки ISH-ДДММ-NNNN: делается в браузере при отправке корзины, дописывается В НАЧАЛО поля «Комментарий»
@@ -530,7 +530,7 @@
   }
 
   if (on('num')) initNum();
-  if (on('xls')) {
+  if (on('xls') && W.ISH_P21_XLS) {
     if (D.readyState === 'loading') D.addEventListener('DOMContentLoaded', initXls); else initXls();
   }
   W.ISHP21 = { version: 1, withNumber: withNumber, parseCsv: parseCsv, toItems: toItems, detect: detect, buildIndex: buildIndex, matchOne: matchOne };

@@ -211,7 +211,7 @@
   /* ───────── П19: формы и корзина (ish-design-p19.js с того же адреса, один раз) ─────────
      Грузим там, где есть форма Tilda, корзина /spec или сетка товаров: сам p19 в пустой странице ничего не делает.
      Выключатель: window.ISH_P19_OFF = 1 (до загрузки p4). Кэш: поменять P19V. */
-  var P19V = '2';
+  var P19V = '3';
   function p19() {
     if (W.ISH_P19_OFF || W.ISH_P19 || D.getElementById('ishp-p19-js')) return true;
     if (!(D.querySelector('.t-form') || D.getElementById('specRoot') || D.querySelector('.js-store-grid-cont'))) return false;
@@ -253,7 +253,7 @@
   /* ───────── П21: номер заявки (Кр3) и загрузка списка из Excel (Кр8) (ish-design-p21.js/.css с того же адреса, один раз) ─────────
      Грузим там, где есть форма корзины Tilda (form3238938703) или корзина /spec (#specRoot). В остальных страницах p21 не нужен.
      Выключатель: window.ISH_P21_OFF = 1 (до загрузки p4); по частям: window.ISH_P21_SKIP = 'num' или 'xls'. Кэш: поменять P21V. */
-  var P21V = '2';
+  var P21V = '3';
   function p21() {
     if (W.ISH_P21_OFF || W.ISH_P21 || D.getElementById('ishp-p21-js')) return true;
     if (!(D.getElementById('form3238938703') || D.getElementById('specRoot'))) return false;

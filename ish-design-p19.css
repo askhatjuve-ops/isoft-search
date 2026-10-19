@@ -1,4 +1,4 @@
-/* ish-design-p19.css  v2-кандидат (17.10.2026, волна 1 В: + раздел корзина/форма/спасибо/пустая/мини-корзина)  [v1 16.10.2026]  П19 «формы и корзина». Только новые узлы с префиксом ishp19-; чужие правила не перекрываются.
+/* ish-design-p19.css  v3-кандидат (19.10.2026: /spec - hero и панели корзины по ширине шапки 1240, плитки скрыты) | прежняя v2-кандидат (17.10.2026, волна 1 В: + раздел корзина/форма/спасибо/пустая/мини-корзина)  [v1 16.10.2026]  П19 «формы и корзина». Только новые узлы с префиксом ishp19-; чужие правила не перекрываются.
    Грузится из ish-design-p19.js (тот же адрес). Пустой файл на Pages = остаются тексты, без оформления. */
 html.ishp19-on{--p19-k:#2B44C7;--p19-ink:#171923;--p19-mut:#565D70;--p19-line:#D9D3C5;--p19-err:#B42318;--p19-f:var(--f,TildaSans,Arial,sans-serif)}
 
@@ -278,3 +278,8 @@ html.ishp19-on .ishk-mini .ishk-acts .ishk-ghost:hover,html.ishp19-on .ishk-shee
   html.ishp19-on .sp-полоса__сум span{color:#4A5272}
   html.ishp19-on .sp-полоса__сум b{color:#2B44C7}
 }
+
+/* ===== 19.10: корзина /spec - ширина как у шапки (контейнер 1240, боковые поля 20, на телефоне 16) и без плиток/плашки Excel ===== */
+html body #specRoot .вн-об,html body #specRoot .вн-тело{width:min(1240px,calc(100% - 40px))!important;max-width:1240px!important;margin-left:auto!important;margin-right:auto!important;padding-left:0!important;padding-right:0!important;box-sizing:border-box}
+html body #specRoot .ishp19c-tiles,html body #specRoot .ishp21-bar{display:none!important}
+@media screen and (max-width:760px){html body #specRoot .вн-об,html body #specRoot .вн-тело{width:calc(100% - 32px)!important}}

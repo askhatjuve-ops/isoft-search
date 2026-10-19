@@ -1,7 +1,7 @@
 /* ish-design-p24.css v2 · П24 «Мега-меню» (Ш9). Кобальт только на действии; тень уровня 2 из ish-design.css (--ishd-sh-2). */
 .ishp24{flex:0 0 auto;position:static}
 html body .нш-к .ishp24-btn{position:relative;display:inline-flex;align-items:center;justify-content:flex-start;gap:10px;box-sizing:border-box;height:42px;margin:0;padding:0 16px;
-  border:0;border-radius:10px;background:var(--p8-cobalt,#2B44C7);color:#fff;font:700 16px/1 TildaSans,Manrope,Arial,sans-serif;white-space:nowrap;cursor:pointer;
+  border:0;border-radius:10px;background:var(--p8-cobalt,#2B44C7);color:#fff;font:500 16px/1 TildaSans,Manrope,Arial,sans-serif;white-space:nowrap;cursor:pointer;
   box-shadow:0 8px 18px -10px rgba(43,68,199,.55);transition:background .15s,box-shadow .15s}
 html body .нш-к .ishp24-btn:hover,html body .нш-к .ishp24--open .ishp24-btn{background:#2036A8;color:#fff}
 html body .нш-к .ishp24-btn .ishp24-bt{flex:1 1 auto;text-align:left}

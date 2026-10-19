@@ -132,8 +132,8 @@
       strip.lastChild.setAttribute('role', 'listitem');
     });
     hero.appendChild(ribbon());   /* v3.3: и в группе, и в разделе. v3.2: лента внутри низа шапки; видна только на телефоне (css), полоса strip там скрыта */
+    hero.appendChild(strip);   /* П2 (19.10): полоса фактов стеклом внутри тёмной шапки */
     об.appendChild(hero);
-    об.appendChild(strip);
     if (MODE === 'grp') об.appendChild(subs());
     return true;
   }

@@ -28,9 +28,14 @@ html.ishp35-on .ishp35-hero__s{margin:12px 0 0;font:400 15px/1.4 var(--p35-f);co
 html.ishp35-on .ishp35-hero__p{position:relative;height:112px;display:grid;place-items:center;align-self:center}
 html.ishp35-on .ishp35-hero__p::before{content:"";position:absolute;inset:-28px -10px -28px -10px;background:radial-gradient(closest-side,#3B52CC 0%,#34499F 45%,rgba(43,68,199,.3) 75%,transparent);pointer-events:none}
 html.ishp35-on .ishp35-hero__p img{position:relative;max-width:78%;max-height:112px;object-fit:contain;mix-blend-mode:multiply;transform:translateY(8px) scale(1.5)}
-html.ishp35-on .ishp35-strip{position:relative;z-index:2;margin:-32px 24px 0;grid-template-columns:repeat(4,minmax(0,1fr))}
-html.ishp35-on .ishp35-strip .ishp8-strip__i b{font:250 17px/1.25 var(--p35-f);color:#3F4464}
-html.ishp35-on .ishp35-strip .ishp8-strip__i{min-height:72px;padding:12px 16px}
+/* полоса фактов П2 (утв. 19.10): прозрачное стекло ВНУТРИ тёмной шапки у нижнего края; только .ishp35-hero > .ishp35-strip, главная и Б1+ (p8) не затронуты */
+html.ishp35-on .ishp35-hero{padding-bottom:20px}
+html.ishp35-on .ishp35-hero>.ishp35-strip{grid-column:1/-1;position:relative;z-index:2;margin:8px 0 0;grid-template-columns:repeat(4,minmax(0,1fr));border-radius:22px;padding:10px;isolation:isolate;color:#fff;
+  background:rgba(255,255,255,.10);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);border:0;box-shadow:inset 0 1px 0 rgba(255,255,255,.34)}
+html.ishp35-on .ishp35-hero>.ishp35-strip .ishp8-strip__i{min-height:60px;padding:8px 16px}
+html.ishp35-on .ishp35-hero>.ishp35-strip .ishp8-strip__i+.ishp8-strip__i::before{top:18%;bottom:18%;background:linear-gradient(180deg,rgba(255,255,255,0),rgba(255,255,255,.2),rgba(255,255,255,0))}
+html.ishp35-on .ishp35-hero>.ishp35-strip .ishp8-strip__i svg{flex:0 0 34px;width:34px;height:34px;stroke:#C9D0FF;fill:none;stroke-width:1.25}
+html.ishp35-on .ishp35-hero>.ishp35-strip .ishp8-strip__i b{font:250 17px/1.25 var(--p35-f);font-variation-settings:normal;color:#fff}
 
 /* ═══ единая строка-панель над списком: панель-фон + «Найдено N» и сортировка (.вн-верх) + «Список/Плитка» (.ishd-view) в одной ячейке сетки ═══ */
 html.ishp35-on body #allrecords .t-store.вн-сетка > .ishp35-bar,html.ishp35-on body #allrecords .t-store.вн-сетка > .вн-верх,html.ishp35-on body #allrecords .t-store.вн-сетка > .ishd-view{grid-column:2;grid-row:1}
@@ -192,23 +197,19 @@ html.ishp35-on .ishp35-b--main:hover{background:var(--p35-kh);border-color:var(-
   html.ishp35-on .ishp35-tiles{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
 @media screen and (max-width:900px){
-  html.ishp35-on .ishp35-strip{grid-template-columns:repeat(2,minmax(0,1fr))}
-  html.ishp35-on .ishp35-strip .ishp8-strip__i:nth-child(3)::before{display:none}
+  html.ishp35-on .ishp35-hero>.ishp35-strip{grid-template-columns:repeat(2,minmax(0,1fr))}
+  html.ishp35-on .ishp35-hero>.ishp35-strip .ishp8-strip__i:nth-child(3)::before{display:none}
+  html.ishp35-on .ishp35-hero>.ishp35-strip .ishp8-strip__i:nth-child(n+3){border-top:1px solid rgba(255,255,255,.12)}
   html.ishp35-on .вн-текст__в{columns:1}
 }
 @media screen and (max-width:760px){
   html.ishp35-on .вн-а{padding:16px 0 0;margin:0 0 16px}
   html.ishp35-on .вн-а .вн-крошки{margin:0 0 12px}
-  html.ishp35-on .ishp35-hero{grid-template-columns:minmax(0,1fr) 120px;min-height:152px;padding:20px 16px 48px;border-radius:24px;gap:8px}
+  html.ishp35-on .ishp35-hero{grid-template-columns:minmax(0,1fr) 120px;min-height:152px;padding:20px 16px 16px;border-radius:24px;gap:8px}
   html.ishp35-on body .ishp35-hero h1{font-size:30px!important}
   html.ishp35-on .ishp35-hero__s{font-size:13px;margin-top:8px}
   html.ishp35-on .ishp35-hero__p{height:96px}
   html.ishp35-on .ishp35-hero__p img{max-width:100%;max-height:96px}
-  html.ishp35-on .ishp35-strip{margin:-28px 8px 0}
-  html.ishp35-on .ishp35-strip .ishp8-strip__i{padding:8px;gap:8px;min-height:56px;border-top:0!important}
-  html.ishp35-on .ishp35-strip .ishp8-strip__i:nth-child(n+3){border-top:1px solid rgba(43,68,199,.10)!important}
-  html.ishp35-on .ishp35-strip .ishp8-strip__i svg{flex-basis:28px;width:28px;height:28px}
-  html.ishp35-on .ishp35-strip .ishp8-strip__i b{font-size:13px}
   html.ishp35-on .ishp35-bar{display:none}
   html.ishp35-on body #allrecords .t-store.вн-сетка > .ishd-view,html.ishp35-on body .t-store > .ishd-view{height:auto;min-height:56px;margin:0 20px 12px;padding:8px 8px 8px 16px;box-sizing:border-box;justify-self:stretch;display:flex;align-items:center;justify-content:space-between;background:#fff;border:1px solid var(--p35-line);border-radius:18px;grid-row:auto}
   html.ishp35-on .ishd-view::before{content:var(--p35-n,"");font:700 15px/1.2 var(--p35-f);color:var(--p35-ink)}
@@ -567,7 +568,7 @@ html.ishp35-on.ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] 
 /* v3.2/v3.3: лента преимуществ внутри низа шапки (группа и раздел). На компьютере скрыта (там прежняя полоса), на телефоне вместо полосы 2x2 */
 html.ishp35-on .ishp35-rb{display:none}
 @media screen and (max-width:760px){
-  html.ishp35-on .ishp35-strip{display:none}
+  html.ishp35-on .ishp35-hero>.ishp35-strip{display:none}
   html.ishp35-on .ishp35-hero{padding-bottom:16px}
   html.ishp35-on .ishp35-rb{display:block;grid-column:1/-1;order:9;min-width:0;margin-top:4px;position:relative;overflow:hidden;box-sizing:border-box;border-radius:18px;
     -webkit-backdrop-filter:blur(14px) saturate(1.3);backdrop-filter:blur(14px) saturate(1.3);background:rgba(255,255,255,.10);box-shadow:inset 0 0 0 1px rgba(255,255,255,.08)}

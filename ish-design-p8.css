@@ -680,3 +680,37 @@ html.ishp8-on #запросБлок .ishp8-cur{background:var(--p8-cobalt)}
   html .ishp23-cta .ishp23-cta__b:hover{background:var(--p8-cobalt-h);color:#fff;box-shadow:0 12px 24px -10px rgba(43,68,199,.75)}
   html .ishp23-cta .ishp23-cta__b:focus-visible{outline:2px solid var(--p8-cobalt);outline-offset:3px}
 }
+
+/* ───── 19.10 Б1+: полоса фактов внутри баннера (стекло поверх фото). Только #карусель.ishp8-b1; p35 (.ishp35-strip) не затрагивается ───── */
+#карусель.ishp8-b1 .слайд{align-items:flex-start;padding-top:70px}
+#карусель.ishp8-b1 .точки{bottom:auto;top:26px}
+#карусель.ishp8-b1 .слайд::after{content:"";position:absolute;left:0;right:0;bottom:0;height:150px;z-index:2;pointer-events:none;background:linear-gradient(180deg,rgba(15,18,40,0),rgba(15,18,40,.55))}
+#карусель.ishp8-b1>.ishp8-strip{position:absolute;z-index:6;left:16px;right:16px;bottom:16px;margin:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;padding:6px;border:0;border-radius:20px;color:#fff;isolation:isolate;
+  background:rgba(255,255,255,.16);box-shadow:inset 0 1px 0 rgba(255,255,255,.34);-webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px)}
+#карусель.ishp8-b1>.ishp8-strip .ishp8-strip__i{min-height:54px;gap:12px;padding:6px 14px}
+#карусель.ishp8-b1>.ishp8-strip .ishp8-strip__i+.ishp8-strip__i::before{top:20%;bottom:20%;background:linear-gradient(180deg,rgba(255,255,255,0),rgba(255,255,255,.22),rgba(255,255,255,0))}
+#карусель.ishp8-b1>.ishp8-strip .ishp8-strip__i svg{width:30px;height:30px;flex:0 0 30px;fill:none;stroke:#E3E7FF;stroke-width:1.25}
+#карусель.ishp8-b1>.ishp8-strip .ishp8-strip__i b{font:250 15.5px/1.25 var(--p8-f);color:#fff}
+#карусель.ishp8-b1>.ishp8-strip .ishp8-strip__s{margin-top:2px;font:250 13px/1.25 var(--p8-f);color:rgba(255,255,255,.82)}
+@media (max-width:1100px){#карусель.ishp8-b1>.ishp8-strip .ishp8-strip__i{padding:6px 10px;gap:9px}#карусель.ishp8-b1>.ishp8-strip .ishp8-strip__i b{font-size:14px}}
+@media (max-width:980px){
+  #карусель.ishp8-b1 .слайд{padding:60px 24px 150px;min-height:420px;height:auto}
+  #карусель.ishp8-b1 .точки{top:30px;left:24px}
+  #карусель.ishp8-b1 .стрелка{top:14px;bottom:auto;right:14px}
+  #карусель.ishp8-b1 .стрелка.влев{right:58px;left:auto}
+  #карусель.ishp8-b1>.ishp8-strip{grid-template-columns:repeat(2,minmax(0,1fr));left:12px;right:12px;bottom:12px;padding:4px;border-radius:18px}
+  #карусель.ishp8-b1>.ishp8-strip .ishp8-strip__i,#карусель.ishp8-b1>.ishp8-strip .ishp8-strip__i:nth-child(3){flex-direction:row;align-items:center;text-align:left;gap:9px;padding:6px 10px;min-height:48px}
+  #карусель.ishp8-b1>.ishp8-strip .ishp8-strip__i svg{flex:0 0 24px;width:24px;height:24px}
+  #карусель.ishp8-b1>.ishp8-strip .ishp8-strip__i b{font-size:13.5px;overflow-wrap:normal}
+  #карусель.ishp8-b1>.ishp8-strip .ishp8-sf{display:inline}
+  #карусель.ishp8-b1>.ishp8-strip .ishp8-ss{display:none}
+  #карусель.ishp8-b1>.ishp8-strip .ishp8-strip__s{display:block;font-size:12px}
+  #карусель.ishp8-b1>.ishp8-strip .ishp8-strip__i:nth-child(3)::before{display:none}
+  #карусель.ishp8-b1>.ishp8-strip .ishp8-strip__i:nth-child(n+3){border-top:1px solid rgba(255,255,255,.12)}
+  #карусель.ishp8-b1>.ishp8-strip .ishp8-strip__i+.ishp8-strip__i::before{display:block}
+  #карусель.ishp8-b1>.ishp8-strip .ishp8-strip__i:nth-child(3)::before{display:none}
+}
+/* телефон: вуаль темнее и шире - заголовок не теряется на светлой правой части фото (все слайды) */
+@media (max-width:640px){
+  #карусель .слайд .вуаль{background:linear-gradient(95deg,rgba(12,14,22,.88) 0%,rgba(12,14,22,.8) 55%,rgba(12,14,22,.66) 80%,rgba(12,14,22,.52) 100%)}
+}

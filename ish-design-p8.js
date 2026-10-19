@@ -422,6 +422,15 @@
     подогнать(s);
     return true;
   }
+  /* 19.10 Б1+: полоса фактов переезжает внутрь баннера #карусель (одна на весь слайдер, не листается). Нет баннера - остаётся на месте */
+  function полоса_в_баннер() {
+    var к = D.getElementById('карусель'), а = D.getElementById('ishp8-a');
+    var п = а && а.querySelector('.ishp8-strip');
+    if (!к || !п) return;
+    к.appendChild(п);
+    к.classList.add('ishp8-b1');
+    а.style.display = 'none';
+  }
   function вставить() {
     var полоса = D.getElementById('полоса');
     var запрос = D.getElementById('запросБлок');
@@ -439,6 +448,7 @@
         var s = sec(x[0], x[1], x[2]()); родитель.insertBefore(s, запрос); новые.push(s);
       });
     }
+    try { полоса_в_баннер(); } catch (e) {}
     новые.forEach(подогнать);
     try { var нс = D.getElementById('ishp8-d'); if (нс) стопка(нс); } catch (e) {}
     try { кого_чипы(D.getElementById('ishp8-c')); } catch (e) {}

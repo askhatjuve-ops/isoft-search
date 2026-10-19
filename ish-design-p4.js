@@ -532,7 +532,6 @@
       for (var n = 0; n < nodes.length; n++) {
         if (nodes[n].nodeType === 3 && low(nodes[n].nodeValue) === 'документы и условия') { nodes[n].nodeValue = 'Покупателям'; break; }
       }
-      if (root.classList.contains('нп-подвал-верх')) root.style.setProperty('grid-template-columns', '1.2fr 1fr 1fr 1.1fr', 'important');
       root.setAttribute('data-ishfoot', '1');
     }
     var about = D.querySelectorAll('.нп-подвал-о');
@@ -543,6 +542,85 @@
     return true;
   }
   until(footerFix);
+  /* 19.10 (вечер): компоновка десктопного подвала. Пять колонок в одну линию: логотип+текст+иконки | Разделы каталога | Покупателям | Связаться | Офисы.
+     Работает на живой разметке Tilda (офисы внутри «Связаться») и на правленной руками (заголовок «Наши офисы:» без h5, иконки в «Связаться»).
+     Охранник: колонки узнаём по тексту h5; не нашли «Разделы каталога» и «Связаться» - ничего не трогаем. Телефон (#isoftFoot) не затрагивается. */
+  function footerLayout() {
+    var root = D.querySelector('.нп-подвал-верх');
+    if (!root) return false;
+    if (root.getAttribute('data-ishlay') === '1') return true;
+    if (!D.getElementById('ishp-foot-css')) {
+      var st = D.createElement('style'); st.id = 'ishp-foot-css';
+      st.textContent =
+        '@media (min-width:981px){' +
+        'html body .нп-подвал-верх[data-ishlay]{display:grid!important;grid-template-columns:minmax(200px,1fr) auto auto auto auto!important;gap:28px 36px!important;align-items:start!important}' +
+        'html body .нп-подвал-верх[data-ishlay]>div{min-width:0;margin:0!important;padding:0!important}' +
+        'html body .нп-подвал-верх[data-ishlay]>.ish-fc1{order:1}html body .нп-подвал-верх[data-ishlay]>.ish-fc2{order:2}html body .нп-подвал-верх[data-ishlay]>.ish-fc3{order:3}html body .нп-подвал-верх[data-ishlay]>.ish-fc4{order:4}html body .нп-подвал-верх[data-ishlay]>.ish-fc5{order:5}' +
+        'html body .нп-подвал-верх[data-ishlay] h5{margin:0 0 14px!important;font:700 12px/16px TildaSans,Arial,sans-serif!important;letter-spacing:.07em!important;text-transform:uppercase!important;color:#fff!important}' +
+        'html body .нп-подвал-верх[data-ishlay] .нп-подвал-лого{height:16px;margin:0 0 14px;display:flex;align-items:flex-start;overflow:visible}' +
+        'html body .нп-подвал-верх[data-ishlay] .нп-подвал-лого img{margin:0!important;display:block;height:24px}' +
+        'html body .нп-подвал-верх[data-ishlay] .нп-подвал-о{max-width:300px}' +
+        'html body .нп-подвал-верх[data-ishlay] .нп-подвал-связь{margin-top:16px}' +
+        'html body .нп-подвал-верх[data-ishlay] .нп-подвал-тел{white-space:nowrap;margin:0 0 6px}' +
+        'html body .нп-подвал-верх[data-ishlay] .ish-fhours{margin:0 0 14px!important;white-space:nowrap}' +
+        'html body .нп-подвал-верх[data-ishlay] li{white-space:nowrap}' +
+        'html body .нп-подвал-верх[data-ishlay] li{line-height:1.45}' +
+        '}' +
+        '@media (min-width:981px) and (max-width:1100px){' +
+        'html body .нп-подвал-верх[data-ishlay]{grid-template-columns:repeat(6,minmax(0,1fr))!important;gap:28px 28px!important}' +
+        'html body .нп-подвал-верх[data-ishlay] li,html body .нп-подвал-верх[data-ishlay] .ish-fhours{white-space:normal}' +
+        'html body .нп-подвал-верх[data-ishlay]>.ish-fc1,html body .нп-подвал-верх[data-ishlay]>.ish-fc2,html body .нп-подвал-верх[data-ishlay]>.ish-fc3{grid-column:span 2}' +
+        'html body .нп-подвал-верх[data-ishlay]>.ish-fc4,html body .нп-подвал-верх[data-ishlay]>.ish-fc5{grid-column:span 3}' +
+        '}';
+      D.head.appendChild(st);
+    }
+    function low(s) { return String(s || '').replace(/\s+/g, ' ').trim().toLowerCase(); }
+    var kids = [].slice.call(root.children), c = {};
+    kids.forEach(function (k) {
+      var h = k.querySelector('h5'), t = h ? low(h.textContent) : '';
+      if (k.querySelector('.нп-подвал-лого')) c[1] = k;
+      else if (t === 'разделы каталога') c[2] = k;
+      else if (t === 'покупателям') c[3] = k;
+      else if (t === 'связаться') c[4] = k;
+      else if (t === 'офисы') c[5] = k;
+    });
+    if (!c[2] || !c[4]) return false;                /* разметка не наша - не трогаем */
+    var ul = c[4].querySelector('ul'), i, li;
+    /* иконки мессенджеров - под текст у логотипа */
+    var ic = root.querySelector('.нп-подвал-связь');
+    if (ic && c[1] && !c[1].contains(ic)) c[1].appendChild(ic);
+    /* офисы - отдельная колонка с заголовком «ОФИСЫ» */
+    if (!c[5] && ul) {
+      var addr = [], lis = [].slice.call(ul.children);
+      for (i = 0; i < lis.length; i++) {
+        var tl = low(lis[i].textContent);
+        if (/^наши офисы/.test(tl)) { lis[i].parentNode.removeChild(lis[i]); }
+        else if (/^(астана|алматы|актобе)\s*,/.test(tl)) addr.push(lis[i]);
+      }
+      if (addr.length) {
+        c[5] = D.createElement('div');
+        var h = D.createElement('h5'); h.textContent = 'Офисы';
+        var u2 = D.createElement('ul');
+        addr.forEach(function (a) { u2.appendChild(a); });
+        c[5].appendChild(h); c[5].appendChild(u2);
+        root.appendChild(c[5]);
+      }
+    }
+    /* «Наши офисы:» отдельным элементом без h5 (правка руками): заменяем на h5 «Офисы» */
+    if (c[5] && !c[5].querySelector('h5')) {
+      var first = c[5].firstElementChild;
+      if (first && /^наши офисы:?$/.test(low(first.textContent))) {
+        var h6 = D.createElement('h5'); h6.textContent = 'Офисы'; c[5].replaceChild(h6, first);
+      }
+    }
+    /* строка «Отдел продаж · …» - метка для отступа */
+    var dv = c[4].querySelectorAll(':scope > div');
+    for (i = 0; i < dv.length; i++) if (/отдел продаж/.test(low(dv[i].textContent))) dv[i].classList.add('ish-fhours');
+    for (i = 1; i <= 5; i++) if (c[i]) c[i].classList.add('ish-fc' + i);
+    root.setAttribute('data-ishlay', '1');
+    return true;
+  }
+  until(footerLayout);
   p6wait();
   p8wait();
   p9wait();

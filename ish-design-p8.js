@@ -146,7 +146,7 @@
   function html_who() {
     var к = [
       ['<rect x="4" y="9" width="26" height="19" rx="2"/><path d="M12 9V6h10v3M4 17h26"/>', 'Бизнес',
-       'Счёт с НДС, договор, накладная и счёт-фактура.',
+       'Счёт с НДС, договор, накладная и АВР.',
        'Запросить цену', '/podbor', ' data-д="запрос"'],
       ['<path d="M5 28h24M7 28V14M27 28V14M13 28V14M21 28V14M4 14 17 6l13 8z"/>', 'Госзакупки',
        'Работаем через goszakup.gov.kz.',
@@ -382,7 +382,7 @@
     шаги_полок++;
     if (готовы.length < места.length && !(шаги_полок > 56 && готовы.length)) return false;   // ждём оба ряда (до ~14 с), потом хотя бы один
     var s = sec('ishp8-g', 'ishp8-sec--shelf',
-      '<div class="ishp8-eb">Товары</div><h2 class="ishp8-h">Цены на сайте — как есть</h2>' +
+      '<div class="ishp8-eb">Товары</div><h2 class="ishp8-h">Популярные категории</h2>' +
       '<div class="ishp8-shbar"><div class="ishp8-tabs" role="tablist" aria-label="Категория"></div><a class="ishp8-all" href="/"></a></div>');
     var табы = s.querySelector('.ishp8-tabs'), все = s.querySelector('.ishp8-all');
     var пары = готовы.map(function (м) {

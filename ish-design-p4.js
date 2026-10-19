@@ -169,7 +169,7 @@
   }
 
   /* ───────── П8: блоки главной ниже первого экрана (грузит ish-design-p8.js с того же адреса, один раз; только где есть слайдер главной) ───────── */
-  var P8V = '31';
+  var P8V = '32';
   function p8() {
     if (W.ISH_P4_NO_P8 || W.ISH_P8 || D.getElementById('ishp-p8-js')) return true;
     if (!D.querySelector('#лента .слайд')) return false;
@@ -331,7 +331,7 @@
   /* ───────── П31: внутренние страницы в духе главной C2 (ish-design-p31.js/.css с того же адреса, один раз) ─────────
      Признак: только текстовая страница (.вн-верх/.вн-тело); список и карточка не затрагиваются. На главной (#лента) не грузим - там П8.
      Выключатель: window.ISH_P31_OFF = 1 или window.ISH_P4_NO_P31 = 1 (до загрузки p4). Кэш: поменять P31V. */
-  var P31V = '9';
+  var P31V = '10';
   function p31() {
     if (W.ISH_P4_NO_P31 || W.ISH_P31_OFF || W.ISH_P31 || D.getElementById('ishp-p31-js')) return true;
     if (D.getElementById('лента')) return true;
@@ -485,7 +485,7 @@
   })();
 
   /* ───────── П10: карточка товара (/tproduct/), а на /spec и /podbor - только css и выбор «КП» ───────── */
-  var P10V = '12';
+  var P10V = '13';
   function p10() {
     if (W.ISH_P10_OFF || D.getElementById('ishp-p10-js')) return;
     var p = location.pathname;

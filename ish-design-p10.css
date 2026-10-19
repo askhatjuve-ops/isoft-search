@@ -201,3 +201,7 @@ html.ishp10-on .ishp10-chip.is-on{border-color:var(--p10-k);background:#EEF1FC;c
 @media (min-width:981px){
   html #rec4304430103 .вн-крошки{margin-left:calc(50% - min(620px,50vw - 20px))!important}
 }
+
+/* v13 (19.10): /podbor - вкладки «Счёт на оплату | Коммерческое предложение» делят капсулу поровну (по 50%), текст по центру */
+#rec3729382103 .pb-док{display:flex;width:100%;box-sizing:border-box}
+#rec3729382103 .pb-док>button{flex:1 1 0!important;min-width:0;display:flex;align-items:center;justify-content:center;text-align:center}

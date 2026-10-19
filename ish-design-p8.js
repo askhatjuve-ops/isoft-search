@@ -362,6 +362,15 @@
     w.appendChild(к);
   }
   /* мобильная подпись второй кнопки «Не нашли нужное?» (Tilda-текст, меняем только в JS, ≤640px) */
+  /* 19.10 (Асхат, исключение для блока заказа): две ссылки isoftOrder на расширенный ассортимент - та же подпись, что везде; только текст, Tilda-код блока не трогаем */
+  function ссылки_заказа() {
+    var сс = D.querySelectorAll('.isoft-order__more, .isoft-order__more2');
+    if (!сс.length) return false;
+    for (var i = 0; i < сс.length; i++) {
+      if (сс[i].textContent.toLowerCase().indexOf('расширенный ассортимент') >= 0) сс[i].textContent = 'Расширенный ассортимент 14000+ →';
+    }
+    return true;
+  }
   function подпись_кнопки() {
     var к = D.querySelector('#запросБлок .кн-к.конт');
     if (!к || к.getAttribute('data-p8t')) return;
@@ -442,6 +451,7 @@
     try { заголовок_запроса(); } catch (e) {}
     try { описание_запроса(); } catch (e) {}
     кнопка_запроса();
+    until(ссылки_заказа, 90);
     until(полки, 90);
     return true;
   }

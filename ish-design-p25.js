@@ -1,4 +1,5 @@
-/* ish-design-p25.js  v3  (16.10.2026)  П25 «Сравнение моделей» (К19) + «Таблица однотипных товаров» (К21), b2b.isoft-shop.kz
+/* ish-design-p25.js  v4  (19.10.2026: getproduct просит storepartuid - без него «ERROR:Wrong storepartuid», полный список не грузился никогда)
+   v3  (16.10.2026)  П25 «Сравнение моделей» (К19) + «Таблица однотипных товаров» (К21), b2b.isoft-shop.kz
    Внешний файл на Pages. Грузится из ish-design-p4.js (строка в README) на страницах со списком товаров (.t-store__card[data-ish13])
    и на карточке товара (/tproduct/). Сам подключает ish-design-p25.css рядом с собой. Не загрузился - сайт как был.
    Не пишет в Tilda, не правит родные узлы: добавляет свои с префиксом ishp25-. «В корзину» не перекрашивает и не подменяет:
@@ -112,7 +113,8 @@
       l: c.getAttribute('data-product-url') || (a ? a.getAttribute('href') : '') || '',
       i: картинка(c),
       a: txt(q('.js-store-prod-sku, .t-store__card__sku, .вн-т__арт', c)).replace(/^Артикул:?\s*/i, ''),
-      c: парыИзКарточки(c)
+      c: парыИзКарточки(c),
+      s: часть()                                   /* v4: раздел запоминаем вместе с товаром */
     };
   }
   function родная(uid) {                           /* родная кнопка «В корзину» этого товара: в списке или на его карточке */
@@ -216,7 +218,7 @@
   }
 
   /* ══ окно сравнения ══ */
-  var окно = null, толькоОтл = false, последнийФокус = null;
+  var окно = null, толькоОтл = false, последнийФокус = null, грузится = false;
   function норм(v) { return v == null || v === '' ? '' : String(v).replace(/\s+/g, ' ').trim().toLowerCase(); }
   function разобрать(д) {                          /* ответ getproduct -> [[имя, значение]] */
     var о = json(д, null), сп = о && (о.characteristics || (о.product && о.product.characteristics) || (о.products && о.products[0] && о.products[0].characteristics));
@@ -228,6 +230,20 @@
     });
     return из;
   }
+  var частьРаздела = null;
+  function часть() {                               /* v4: uid раздела магазина. Без него getproduct отвечает 200 + текст «ERROR:Wrong storepartuid». Tilda кладёт его в options.storepart инлайн-скрипта блока t-store */
+    if (частьРаздела) return частьРаздела;
+    var у = q('[data-storepart-uid],[data-storepartuid]'), м = у && /\d{6,}/.exec(у.getAttribute('data-storepart-uid') || у.getAttribute('data-storepartuid') || '');
+    if (м) частьРаздела = м[0];
+    else {
+      var ск = D.getElementsByTagName('script');
+      for (var i = 0; i < ск.length && !частьРаздела; i++) {
+        var н = !ск[i].src && /storepart\s*:\s*['"](\d{6,})['"]/.exec(ск[i].textContent || '');
+        if (н) частьРаздела = н[1];
+      }
+    }
+    return частьРаздела || '';
+  }
   function добрать(список, готово) {               /* только выбранные 2-4, по одному, с кэшем; ничего не рушит при ошибке */
     var i = 0;
     (function дальше() {
@@ -236,6 +252,8 @@
       if (it.f) { дальше(); return; }
       var кэш = json(ssGet(K_FULL + it.u), null);
       if (кэш && кэш.length) { it.f = кэш; дальше(); return; }
+      var ч = it.s || часть();
+      if (!ч) { дальше(); return; }                /* раздела нет - запрос заведомо бесполезен, остаёмся на данных карточки */
       var x = new XMLHttpRequest(), done = false;
       function конец(ok, d) {
         if (done) return; done = true;
@@ -243,7 +261,7 @@
         дальше();
       }
       try {
-        x.open('GET', 'https://store.tildaapi.pro/api/getproduct/?productuid=' + encodeURIComponent(it.u), true);
+        x.open('GET', 'https://store.tildaapi.pro/api/getproduct/?storepartuid=' + encodeURIComponent(ч) + '&productuid=' + encodeURIComponent(it.u), true);
         x.timeout = 6000;
         x.onload = function () { конец(x.status >= 200 && x.status < 300, x.responseText); };
         x.onerror = x.ontimeout = function () { конец(false); };
@@ -293,7 +311,7 @@
     q('.ishp25-hd small', окно).textContent = s.length + ' из ' + MAX + (строки.some(function (r) { return r.d; }) ? ' · отличий: ' + строки.filter(function (r) { return r.d; }).length : ' · отличий нет');
     var од = q('[data-a=diff]', окно); од.setAttribute('aria-pressed', толькоОтл ? 'true' : 'false'); од.textContent = толькоОтл ? 'Показать все' : 'Только отличия';
     var не = s.some(function (it) { return !(it.f && it.f.length); });
-    q('.ishp25-note', окно).hidden = !не;
+    q('.ishp25-note', окно).hidden = грузится || !не;   /* v4: пока грузим - плашку об отказе не показываем */
   }
   function открыть() {
     if (окно || выбор().length < 2) return;
@@ -321,7 +339,9 @@
     рисоватьОкно();
     var w = q('.ishp25-win', окно); if (w) w.focus();
     var рабочий = выбор();
+    грузится = true; рисоватьОкно();
     добрать(рабочий, function () {
+      грузится = false;
       var тек = выбор();                           /* полные данные кладём в сохранённый выбор по uid (пока окно жило, выбор мог измениться) */
       тек.forEach(function (it) { рабочий.forEach(function (r) { if (r.u === it.u && r.f) it.f = r.f; }); });
       if (тек.length) писать(тек);

@@ -169,7 +169,7 @@
   }
 
   /* ───────── П8: блоки главной ниже первого экрана (грузит ish-design-p8.js с того же адреса, один раз; только где есть слайдер главной) ───────── */
-  var P8V = '26';
+  var P8V = '27';
   function p8() {
     if (W.ISH_P4_NO_P8 || W.ISH_P8 || D.getElementById('ishp-p8-js')) return true;
     if (!D.querySelector('#лента .слайд')) return false;

@@ -18,7 +18,7 @@
   var W = window, D = document;
   if (W.__ishP4) return;
   W.__ishP4 = 1;
-  /* СКС (20.10): ЕДИНЫЙ ВЫКЛЮЧАТЕЛЬ нового раздела «Кабельные системы (СКС)». 0 - ссылок на новые страницы нет нигде (меню, плитки, крошки, поиск, подвал). Поставить 1 ТОЛЬКО после создания страниц /kabelnye-sistemy-sks и 6 подразделов. Можно и из блока до загрузки: window.ISH_SKS_ON = 1. */
+  /* СКС (20.10): ЕДИНЫЙ ВЫКЛЮЧАТЕЛЬ нового раздела «Кабельные системы (СКС)». 0 - ссылок на новые страницы нет нигде (меню, плитки, крошки, поиск, подвал). Поставить 1 ТОЛЬКО после создания 6 страниц разделов (страницы-узла /kabelnye-sistemy-sks не будет). Можно и из блока до загрузки: window.ISH_SKS_ON = 1. */
   var СКС_ВКЛ = 0; if (W.ISH_SKS_ON === undefined) W.ISH_SKS_ON = СКС_ВКЛ;
   var tag = D.currentScript || D.querySelector('script[src*="ish-design-p4.js"]');
   var mods = ((tag && tag.getAttribute('data-m')) || 'header,hero').split(',');
@@ -234,7 +234,7 @@
      Признак: на странице есть меню/лента разделов (ish-nav, подвал, боковая колонка раздела, рубрикатор/панель главной, лента Tilda).
      p20 сам опрашивает DOM и наблюдает за ним, от порядка загрузки с ish-nav.js не зависит. Выключатель: window.ISH_P20_OFF = 1
      (собственные выключатели p20: window.ISH_P20 = {короткие:false, низ:false} читаются самим p20). Кэш: поменять P20V. */
-  var P20V = '3';   /* 20.10: +подписи СКС */
+  var P20V = '4';   /* 20.10: подписи СКС без узла */
   function p20() {
     if (W.ISH_P20_OFF || W.__ishP20 || D.getElementById('ishp-p20-js')) return true;
     if (!D.querySelector('.isoft-nav, .isoft-foot, #вн-бок, .рубрикатор, .панель-сетка, .t-catalog__parts-above-item')) return false;
@@ -295,7 +295,7 @@
   /* ───────── П24: мега-меню «Каталог» (Ш9): ish-design-p24.js (+ .css рядом), один раз ─────────
      Признак: десктоп (>=981) и есть блок шапки .нш-шапка с .нш-шапка-право; на телефоне и на карточке v8 (html.ishpg-on) не грузим.
      p24 сам строит кнопку и панель. Выключатель: window.ISH_P24_OFF = 1. Кэш: поменять P24V. */
-  var P24V = '7';   /* 20.10: +узел СКС за ISH_SKS_ON */
+  var P24V = '8';   /* 20.10: СКС подзаголовком + 6 пунктов, без узла, за ISH_SKS_ON */
   function p24() {
     if (W.ISH_P24_OFF || W.__ishP24 || D.getElementById('ishp-p24-js')) return true;
     if (!(W.matchMedia && W.matchMedia('(min-width:981px)').matches)) return true;
@@ -355,7 +355,7 @@
 
   /* ───────── П35: раздел каталога в палитре главной (ish-design-p35.js/.css с того же адреса, один раз) ─────────
      Признак: страница со списком товаров (.t-store__card-list). Выключатель: window.ISH_P35_OFF = 1 или window.ISH_P4_NO_P35 = 1 (до загрузки p4). Кэш: поменять P35V. */
-  var P35V = '25';   /* 20.10: p35.css v3.5 - цены списка на одной вертикали */
+  var P35V = '26';   /* 20.10: p35.css v3.5 - цены списка на одной вертикали */
   function p35() {
     if (W.ISH_P4_NO_P35 || W.ISH_P35_OFF || W.ISH_P35 || D.getElementById('ishp-p35-js')) return true;
     if (D.getElementById('лента')) return true;
@@ -426,7 +426,7 @@
 
   /* ───────── П37: хвосты в стиле главной - мега-меню, мобильное меню, мессенджеры, шторка фильтров, /assortiment (ish-design-p37.js/.css/p37a.css с того же адреса, на всех страницах) ─────────
      Выключатель: window.ISH_P37_OFF = 1 или window.ISH_P4_NO_P37 = 1 (до загрузки p4). Кэш: поменять P37V. */
-  var P37V = '13';   /* 20.10: +слот фото СКС */
+  var P37V = '14';   /* 20.10: слот фото узла СКС убран */
   (function () {
     if (W.ISH_P4_NO_P37 || W.ISH_P37_OFF || W.__ishP37 || D.getElementById('ishp-p37-js')) return;
     var src = tag && tag.src;
@@ -510,7 +510,7 @@
   })();
 
   /* ───────── П10: карточка товара (/tproduct/), а на /spec и /podbor - только css и выбор «КП» ───────── */
-  var P10V = '15';   /* 20.10: +крошки СКС */
+  var P10V = '16';   /* 20.10: крошки СКС без узла */
   function p10() {
     if (W.ISH_P10_OFF || D.getElementById('ishp-p10-js')) return;
     var p = location.pathname;

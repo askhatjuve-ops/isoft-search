@@ -13,8 +13,8 @@
 
   /* [группа, адрес группы, [[раздел, адрес], ...]] - порядок как в меню сайта */
   var ДЕРЕВО = [["Компьютеры","/kompyutery",[["Ноутбуки","/noutbuki"],["Системные блоки","/sistemnye-bloki"],["Моноблоки","/monobloki"],["Мини-ПК","/mini-pk-i-rabochie-stancii"]]],["Мониторы и экраны","/monitory-i-ekrany",[["Мониторы","/monitory"],["Телевизоры","/televizory"],["Проекторы","/proektory-i-paneli"],["Кронштейны для мониторов и ТВ","/kronshteyny-i-krepleniya"]]],["Комплектующие","/komplektuyushchie",[["Процессоры","/processory"],["Материнские платы","/materinskie-platy"],["Оперативная память","/operativnaya-pamyat"],["Видеокарты","/videokarty"],["Охлаждение","/ohlazhdenie"],["Корпуса","/korpusa-i-bloki-pitaniya"],["Блоки питания","/bloki-pitaniya"]]],["Накопители","/nakopiteli",[["SSD-накопители","/ssd-nakopiteli"],["Жёсткие диски","/zhestkie-diski"],["USB-флешки","/fleshki-i-karty-pamyati"],["Карты памяти","/karty-pamyati"]]],["Серверы и серверная инфраструктура","/servery-i-infrastruktura",[["ИБП","/ibp-i-zashchita-pitaniya"],["Системы хранения","/servery-i-shd"],["Серверы","/servery"],["Шкафы и стойки","/shkafy-i-stoyki"]]],["Сетевое оборудование","/set-i-servery",[["Сетевое оборудование","/setevoe-oborudovanie"],["Маршрутизаторы (роутеры)","/marshrutizatory"],["Точки доступа Wi-Fi","/tochki-dostupa"],["Сетевые карты и адаптеры","/setevye-karty"],["Межсетевые экраны","/mezhsetevye-ekrany"],["IP-телефоны","/konferenc-svyaz"]]],["Печать и сканирование","/ofis-i-rabochee-mesto",[["Принтеры и МФУ","/printery-i-mfu"],["МФУ лазерные цветные","/mfu-lazernye-cvetnye"],["МФУ струйные цветные","/mfu-struynye-cvetnye"],["Принтеры лазерные ч/б","/printery-lazernye-chb"],["Принтеры лазерные цветные","/printery-lazernye-cvetnye"],["Плоттеры","/plottery"],["Сканеры документов","/skanery-dokumentov"]]],["Рабочее место","/svyaz-i-videonablyudenie",[["Клавиатуры","/klaviatury"],["Мыши","/klaviatury-i-myshi"],["Гарнитуры для конференц-связи","/garnitury"],["Наушники","/naushniki"]]],["Видеонаблюдение и безопасность","/videonablyudenie-i-bezopasnost",[["Камеры видеонаблюдения","/videonablyudenie"],["Видеорегистраторы","/videoregistratory"],["СКУД и турникеты","/skud-i-turnikety"],["Домофоны","/domofony"]]],["Торговое оборудование","/torgovoe-oborudovanie",[["Сканеры штрихкода","/skanery-shtrihkoda"],["Терминалы сбора данных","/terminaly-sbora-dannyh"],["Принтеры этикеток","/printery-etiketok"]]]];
-  /* СКС (20.10, НЕ включено): узел «Кабельные системы (СКС)» - последний пункт группы «Сетевое оборудование»; семь подразделов лежат на странице узла. Включается window.ISH_SKS_ON (константа СКС_ВКЛ в ish-design-p4.js). Узла нет в Tilda-меню до создания страницы. */
-  if (W.ISH_SKS_ON) ДЕРЕВО.forEach(function (г) { if (г[1] === '/set-i-servery' && !г[2].some(function (р) { return р[1] === '/kabelnye-sistemy-sks'; })) г[2].push(['Кабельные системы (СКС)', '/kabelnye-sistemy-sks']); });
+  /* СКС (20.10, НЕ включено): страницы-узла нет. Шесть новых разделов идут обычными пунктами группы «Сетевое оборудование» под подзаголовком «Кабельные системы (СКС)» (без ссылки); «Шкафы и стойки» остаются на месте. Включает window.ISH_SKS_ON (константа СКС_ВКЛ в ish-design-p4.js). */
+  if (W.ISH_SKS_ON) ДЕРЕВО.forEach(function (г) { if (г[1] === '/set-i-servery' && !г[2].some(function (р) { return р[1] === '/patch-paneli'; })) { г[2].push(['Кабельные системы (СКС)', '']); [['Кабель витая пара', '/kabel-vitaya-para'],['Розетки и модули', '/rozetki-i-moduli'],['Патч-панели', '/patch-paneli'],['Патч-корды', '/patch-kordy'],['Кабель-каналы и короба', '/kabel-kanaly-i-koroba'],['Коннекторы и инструмент', '/konnektory-i-instrument']].forEach(function (р) { г[2].push(р); }); } });
 
   /* короткие подписи: как в ish-design-p20.js (Ш7); адреса и полные имена (title) не меняются */
   var КОРОТКО = {
@@ -24,7 +24,6 @@
     'Гарнитуры для конференц-связи': 'Конференц-гарнитуры',
     'Сетевые карты и адаптеры': 'Сетевые карты',
     'Маршрутизаторы (роутеры)': 'Роутеры',
-    'Кабельные системы (СКС)': 'Кабельные системы СКС',
     'Коннекторы и инструмент': 'Коннекторы, инструмент'
   };
   /* значки групп: те же, что в левой колонке главной (ВИД в блоке главной): [фон, цвет, path] */
@@ -62,6 +61,7 @@
            '<span class="ishp24-ic" style="background:' + в[0] + ';color:' + в[1] + '"><svg viewBox="0 0 18 18" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + в[2] + '</svg></span>' +
            '<span class="ishp24-gn">' + esc(имя(г[0])) + '</span></a><ul>';
       г[2].forEach(function (р) {
+        if (!р[1]) { h += '<li class="ishp24-sub" style="padding:10px 0 2px 40px;font:600 11px/1.3 TildaSans,Arial,sans-serif;letter-spacing:.6px;text-transform:uppercase;color:#6B7280">' + esc(р[0]) + '</li>'; return; }
         h += '<li><a class="ishp24-l" href="' + esc(р[1]) + '" title="' + esc(р[0]) + '">' + esc(имя(р[0])) + '</a></li>';
       });
       h += '</ul></section>';

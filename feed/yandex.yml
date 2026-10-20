@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<yml_catalog date="2026-10-20 20:51">
+<yml_catalog date="2026-10-20 21:59">
 <shop>
 <name>iSoft</name>
 <company>iSoft</company>
@@ -886,19 +886,6 @@
 <vendorCode>02551272</vendorCode>
 <description>Твердотельный накопитель SSD, Huawei, D2020-SAS3.84T-CF, 3.84TB, SAS, 2.5", для СХД OceanStor Dorado 2020 · Партномер: 02551272</description>
 </offer>
-<offer id="IS529E035739" available="true">
-<url>https://b2b.isoft-shop.kz/ssd-nakopiteli/tproduct/757553210994-ssd-ssd-nakopitel-usb-512-gb-hiksemi-hs</url>
-<price>50000</price>
-<currencyId>KZT</currencyId>
-<categoryId>615429773604</categoryId>
-<picture>https://static.tildacdn.com/tild6638-3131-4966-b066-366133353734/757553210994.jpg</picture>
-<picture>https://static.tildacdn.com/tild3635-3164-4636-b937-366462313737/630787108284_1.jpg</picture>
-<picture>https://static.tildacdn.com/tild3232-3865-4438-b730-336265316362/757553210994_2.jpg</picture>
-<name>Ssd SSD-накопитель USB 512 GB HIKSEMI, HS-ESSD-T100 Black 512G, USB 3.2 + Type-C, black</name>
-<vendor>HIKSEMI</vendor>
-<vendorCode>IS529E035739</vendorCode>
-<description>Ёмкость 512 ГБ · Интерфейс USB 3.2 · Скорость чтения 560 МБ/с · Скорость записи 510 МБ/с</description>
-</offer>
 <offer id="IS533AD38956" available="true">
 <url>https://b2b.isoft-shop.kz/ssd-nakopiteli/tproduct/179649560634-vneshnii-ssd-disk-verbatim-vx500-47443-4</url>
 <price>53000</price>
@@ -998,17 +985,6 @@
 <vendor>SILICON POWER</vendor>
 <vendorCode>IS594255D8C6</vendorCode>
 <description>Ёмкость 512 ГБ · Интерфейс SATA III · Скорость записи 500 МБ/с · Скорость чтения 540 МБ/с · В комплекте Краткое руководство пользователя, кабель-переходник USB тип A - USB тип C</description>
-</offer>
-<offer id="IS5A8CE536E1" available="true">
-<url>https://b2b.isoft-shop.kz/ssd-nakopiteli/tproduct/633070861574-ssd-ssd-nakopitel-sata-128-gb-patriot-p2</url>
-<price>20000</price>
-<currencyId>KZT</currencyId>
-<categoryId>615429773604</categoryId>
-<picture>https://static.tildacdn.com/tild6161-3435-4639-b035-636638306637/633070861574.jpg</picture>
-<name>Ssd SSD-накопитель SATA 128 GB Patriot P210, P210S128G25, SATA 6Gb/s</name>
-<vendor>Patriot</vendor>
-<vendorCode>IS5A8CE536E1</vendorCode>
-<description>Ёмкость 128 ГБ · Интерфейс SATA III</description>
 </offer>
 <offer id="IS5B6CF00F99" available="true">
 <url>https://b2b.isoft-shop.kz/ssd-nakopiteli/tproduct/915221673694-ssd-ssd-nakopitel-u2-1920-gb-intel-d7-p5</url>
@@ -1383,6 +1359,17 @@
 <vendorCode>P300P256GM28</vendorCode>
 <description>P300 P300P256GM28, 256 GB, M.2 NVMe PCIe 3.0x4, 1700/1100 Мб/с</description>
 </offer>
+<offer id="IS99C9BA924F" available="true">
+<url>https://b2b.isoft-shop.kz/ssd-nakopiteli/tproduct/111262830244-ssd-ssd-nakopitel-kingston-skc3000d2048g</url>
+<price>204000</price>
+<currencyId>KZT</currencyId>
+<categoryId>615429773604</categoryId>
+<picture>https://static.tildacdn.com/stor6433-3362-4231-a137-326164326434/859996142a7652671fa52cf2eef38809.jpg</picture>
+<name>Ssd SSD-накопитель Kingston SKC3000D/2048G M.2 NVMe PCIe 4.0</name>
+<vendor>Kingston</vendor>
+<vendorCode>IS99C9BA924F</vendorCode>
+<description>Ёмкость 2 ТБ · Интерфейс NVME · Форм-фактор M.2 · Скорость чтения 7000 МБ/с · Скорость записи 7000 МБ/с</description>
+</offer>
 <offer id="IS9A8763A6EB" available="true">
 <url>https://b2b.isoft-shop.kz/ssd-nakopiteli/tproduct/367204316314-ssd-ssd-nakopitel-sata-1-tb-silicon-powe</url>
 <price>98000</price>
@@ -1417,19 +1404,6 @@
 <vendor>Samsung</vendor>
 <vendorCode>IS9BA46CF969</vendorCode>
 <description>Ёмкость 2 ТБ · Интерфейс NVME · Форм-фактор M.2</description>
-</offer>
-<offer id="IS9DD1B947D7" available="true">
-<url>https://b2b.isoft-shop.kz/ssd-nakopiteli/tproduct/832464609244-ssd-ssd-nakopitel-usb-1-tb-hiksemi-hs-es</url>
-<price>103000</price>
-<currencyId>KZT</currencyId>
-<categoryId>615429773604</categoryId>
-<picture>https://static.tildacdn.com/tild3437-3339-4932-a431-333430623831/832464609244.jpg</picture>
-<picture>https://static.tildacdn.com/tild3334-6161-4265-a266-656538643834/722311944094_1.jpg</picture>
-<picture>https://static.tildacdn.com/tild6638-6264-4639-a138-333437363732/722311944094_2.jpg</picture>
-<name>Ssd SSD-накопитель USB 1 TB HIKSEMI, HS-ESSD-T300S 1T, USB 3.2 + Type-C, black</name>
-<vendor>HIKSEMI</vendor>
-<vendorCode>IS9DD1B947D7</vendorCode>
-<description>Ёмкость 1 ТБ · Интерфейс USB 3.2 · Скорость чтения 560 МБ/с · Скорость записи 500 МБ/с</description>
 </offer>
 <offer id="ISA027CFE6C9" available="true">
 <url>https://b2b.isoft-shop.kz/ssd-nakopiteli/tproduct/139610169534-tverdotelnii-nakopitel-ssd-apacer-as2280</url>
@@ -1562,20 +1536,6 @@
 <vendor>SANDISK</vendor>
 <vendorCode>ISB137238656</vendorCode>
 <description>Ёмкость 500 ГБ · Интерфейс USB 3.2</description>
-</offer>
-<offer id="ISB2742C7762" available="true">
-<url>https://b2b.isoft-shop.kz/ssd-nakopiteli/tproduct/213359592824-ssd-ssd-nakopitel-m2-pcie-512-gb-gigabyt</url>
-<price>65000</price>
-<currencyId>KZT</currencyId>
-<categoryId>615429773604</categoryId>
-<picture>https://static.tildacdn.com/tild3032-3532-4033-b762-313831363536/213359592824.jpg</picture>
-<picture>https://static.tildacdn.com/tild3939-3463-4565-a337-313830343665/213359592824_2.jpg</picture>
-<picture>https://static.tildacdn.com/tild3362-3334-4132-a633-313831363665/213359592824_3.jpg</picture>
-<picture>https://static.tildacdn.com/tild6434-3532-4363-a632-373435613637/213359592824_2.jpg</picture>
-<name>Ssd SSD-накопитель M.2 PCIe 512 GB Gigabyte, G3NVME512G, PCIe 3.0 NVMe</name>
-<vendor>Gigabyte</vendor>
-<vendorCode>ISB2742C7762</vendorCode>
-<description>Ёмкость 512 ГБ · Интерфейс PCIE 3.0 · Форм-фактор M.2 · Скорость чтения 1900 МБ/с · Скорость записи 1200 МБ/с</description>
 </offer>
 <offer id="ISB36E1A8D1F" available="true">
 <url>https://b2b.isoft-shop.kz/ssd-nakopiteli/tproduct/665137816624-netac-sa500-25-sataiii-3d-128gb</url>
@@ -1978,18 +1938,6 @@
 <vendorCode>ISE7BF73D693</vendorCode>
 <description>Ёмкость 128 ГБ · Интерфейс USB 3.2</description>
 </offer>
-<offer id="ISE7DF516E6F" available="true">
-<url>https://b2b.isoft-shop.kz/ssd-nakopiteli/tproduct/965244755604-ssd-ssd-nakopitel-m2-pcie-512-gb-colorfu</url>
-<price>63000</price>
-<currencyId>KZT</currencyId>
-<categoryId>615429773604</categoryId>
-<picture>https://static.tildacdn.com/tild3938-6438-4335-b861-366537303163/965244755604.jpg</picture>
-<picture>https://static.tildacdn.com/tild3637-6566-4162-a166-373063393032/965244755604_1.jpg</picture>
-<name>Ssd SSD-накопитель M.2 PCIe 512 GB Colorful CN600 512G, PCIe 3.0 x4, NVMe</name>
-<vendor>COLORFUL</vendor>
-<vendorCode>ISE7DF516E6F</vendorCode>
-<description>Ёмкость 512 ГБ · Интерфейс PCIE 3.0 X4 · Скорость чтения 1800 МБ/с · Скорость записи 1500 МБ/с · Форм-фактор M.2</description>
-</offer>
 <offer id="ISE8F416C65D" available="true">
 <url>https://b2b.isoft-shop.kz/ssd-nakopiteli/tproduct/581337193054-dell-960gb-ssd-sata-read-intensive-6gbps</url>
 <price>2791000</price>
@@ -2277,18 +2225,6 @@
 <vendor>NETAC</vendor>
 <vendorCode>IS1A7020F45F</vendorCode>
 <description>Ёмкость 64 ГБ · Интерфейс USB 2.0</description>
-</offer>
-<offer id="IS1F943FAAE6" available="true">
-<url>https://b2b.isoft-shop.kz/fleshki-i-karty-pamyati/tproduct/191064673814-fleshka-usb-flash-16gb-netac-um81-nt03um</url>
-<price>4100</price>
-<currencyId>KZT</currencyId>
-<categoryId>672013402974</categoryId>
-<picture>https://static.tildacdn.com/tild6231-3438-4932-a435-376335353164/191064673814.jpg</picture>
-<picture>https://static.tildacdn.com/tild6433-3332-4034-b864-396230376162/191064673814_2.jpg</picture>
-<name>Флешка USB flash 16GB Netac UM81, NT03UM81N-016G-20BK, USB 2.0, small size, black</name>
-<vendor>NETAC</vendor>
-<vendorCode>IS1F943FAAE6</vendorCode>
-<description>Ёмкость 16 ГБ · Интерфейс USB 2.0</description>
 </offer>
 <offer id="IS2060B89B0B" available="true">
 <url>https://b2b.isoft-shop.kz/fleshki-i-karty-pamyati/tproduct/226734727794-fleshka-usb-nakopitel-kingston-dtxm256gb</url>
@@ -2645,20 +2581,6 @@
 <vendorCode>ISA25B7A23B1</vendorCode>
 <description>Ёмкость 64 ГБ · Интерфейс USB 3.2</description>
 </offer>
-<offer id="ISA25DA08855" available="true">
-<url>https://b2b.isoft-shop.kz/fleshki-i-karty-pamyati/tproduct/127390718204-fleshka-usb-flash-128gb-kingston-dtx-dtx</url>
-<price>7600</price>
-<currencyId>KZT</currencyId>
-<categoryId>672013402974</categoryId>
-<picture>https://static.tildacdn.com/tild3437-3665-4533-b237-616663363261/127390718204.jpg</picture>
-<picture>https://static.tildacdn.com/tild6433-6634-4936-b230-653931333164/127390718204_2.jpg</picture>
-<picture>https://static.tildacdn.com/tild3530-6361-4430-a136-313663623030/127390718204_3.jpg</picture>
-<picture>https://static.tildacdn.com/tild6164-3461-4664-b637-333264393931/127390718204_4.jpg</picture>
-<name>Флешка USB flash 128GB Kingston DTX, DTX/128GB, USB 3.2, black</name>
-<vendor>Kingston</vendor>
-<vendorCode>ISA25DA08855</vendorCode>
-<description>Ёмкость 128 ГБ · Интерфейс USB 3.2</description>
-</offer>
 <offer id="ISA9113B8DE2" available="true">
 <url>https://b2b.isoft-shop.kz/fleshki-i-karty-pamyati/tproduct/217754306024-fleshka-usb-flash-64gb-hiksemi-hs-usb-m2</url>
 <price>6000</price>
@@ -2886,18 +2808,6 @@
 <vendor>Apacer</vendor>
 <vendorCode>ISE37179DFB5</vendorCode>
 <description>Ёмкость 32 ГБ · Интерфейс USB 3.1</description>
-</offer>
-<offer id="ISE662C5A369" available="true">
-<url>https://b2b.isoft-shop.kz/fleshki-i-karty-pamyati/tproduct/712416912364-fleshka-usb-flash-64gb-kingston-dtxs-dtx</url>
-<price>4700</price>
-<currencyId>KZT</currencyId>
-<categoryId>672013402974</categoryId>
-<picture>https://static.tildacdn.com/tild6635-3136-4030-b461-666433393866/712416912364.jpg</picture>
-<picture>https://static.tildacdn.com/tild3032-3532-4663-b731-346361346339/712416912364_2.jpg</picture>
-<name>Флешка USB flash 64GB Kingston DTXS, DTXS/64GB, USB 3.2, black</name>
-<vendor>Kingston</vendor>
-<vendorCode>ISE662C5A369</vendorCode>
-<description>Ёмкость 64 ГБ · Интерфейс USB 3.2</description>
 </offer>
 <offer id="ISEF4D03E7D2" available="true">
 <url>https://b2b.isoft-shop.kz/fleshki-i-karty-pamyati/tproduct/631336673654-fleshka-kingston-usb-flesh-128gb-31-king</url>
@@ -5751,19 +5661,6 @@
 <vendorCode>ISE9DF3FDE19</vendorCode>
 <description>Мощность 550 Вт · Форм-фактор ATX · Сертификат эффективности 80+ Bronze · Класс мощности 550–650 Вт · Модульность Немодульный · Цвет Чёрный · Гарантия 1 год</description>
 </offer>
-<offer id="ISEAC2D08C8C" available="true">
-<url>https://b2b.isoft-shop.kz/bloki-pitaniya/tproduct/589746627454-blok-pitaniya-atx-genin-genpsu550k-550w</url>
-<price>15000</price>
-<currencyId>KZT</currencyId>
-<categoryId>893353989834</categoryId>
-<picture>https://static.tildacdn.com/tild6432-3761-4336-a436-393165613636/606929638114.jpg</picture>
-<picture>https://static.tildacdn.com/tild6562-6161-4437-b136-346364313465/589746627454_2.jpg</picture>
-<picture>https://static.tildacdn.com/tild3834-3830-4739-a336-646362653863/589746627454_3.jpg</picture>
-<name>Блок питания ATX Genin, GENPSU550K, 550W, 80plus, black</name>
-<vendor>GENIN</vendor>
-<vendorCode>ISEAC2D08C8C</vendorCode>
-<description>Мощность 550 Вт · Форм-фактор ATX · Класс мощности 550–650 Вт</description>
-</offer>
 <offer id="ISEB54FEF7B9" available="true">
 <url>https://b2b.isoft-shop.kz/bloki-pitaniya/tproduct/190640336044-blok-pitaniya-formula-v-fv-850bd</url>
 <price>34000</price>
@@ -5840,20 +5737,6 @@
 <vendor>Thermaltake</vendor>
 <vendorCode>ISF01334A8E9</vendorCode>
 <description>Мощность 550 Вт · Форм-фактор ATX · Класс мощности 550–650 Вт · Модульность Немодульный · Цвет Чёрный · Гарантия 3 года</description>
-</offer>
-<offer id="ISF36E7BF9C5" available="true">
-<url>https://b2b.isoft-shop.kz/bloki-pitaniya/tproduct/481483165774-blok-pitaniya-atx-fsp-vita-1000gm-1000w</url>
-<price>87000</price>
-<currencyId>KZT</currencyId>
-<categoryId>893353989834</categoryId>
-<picture>https://static.tildacdn.com/tild3963-6532-4335-b337-643538306236/481483165774.jpg</picture>
-<picture>https://static.tildacdn.com/tild3139-6363-4430-a135-613237666232/481483165774_2.jpg</picture>
-<picture>https://static.tildacdn.com/tild6137-6265-4766-a430-623861316363/481483165774_3.jpg</picture>
-<picture>https://static.tildacdn.com/tild3065-3835-4866-b965-646233363262/481483165774_4.jpg</picture>
-<name>Блок питания ATX FSP VITA-1000GM, 1000W, Cybernetics Gold, modular, black</name>
-<vendor>FSP</vendor>
-<vendorCode>ISF36E7BF9C5</vendorCode>
-<description>Сертификат эффективности 80+ Gold · Мощность 1000 Вт · Форм-фактор ATX · Версия ATX ATX 3.1 · Класс мощности 1000–1300 Вт · Модульность Модульный</description>
 </offer>
 <offer id="ISF65C8892E6" available="true">
 <url>https://b2b.isoft-shop.kz/bloki-pitaniya/tproduct/877885257294-blok-pitaniya-atx-chieftec-atmos-series</url>
@@ -6033,17 +5916,6 @@
 <vendorCode>AFRX580-8192D5H3-V3</vendorCode>
 <description>Radeon RX 580 GAMING 8GB Dual Fan (4897033786812), AFRX580-8192D5H3-V3, GDDR5, 256bit, HDMI, 2*DP, 225*125*46 мм, Цветная коробка</description>
 </offer>
-<offer id="IS09973B8D24" available="true">
-<url>https://b2b.isoft-shop.kz/videokarty/tproduct/947573427214-videokarta-gpu-nvidia12-gb-maxsun-rtx-30</url>
-<price>271000</price>
-<currencyId>KZT</currencyId>
-<categoryId>784666503994</categoryId>
-<picture>https://static.tildacdn.com/tild3830-3337-4339-b162-313431623666/947573427214.jpg</picture>
-<name>Видеокарта GPU NVIDIA,12 GB, MaxSun RTX 3060 [MS-RTX3060 TRB 12G], 3DP/HDMI, GDDR6/192-bit</name>
-<vendor>MAXSUN</vendor>
-<vendorCode>IS09973B8D24</vendorCode>
-<description>Объём видеопамяти 12 ГБ · Графический процессор RTX 3060 · Тип видеопамяти GDDR6 · Разрядность шины 192 бит · Видеовыходы HDMI / DP x 3 · Серия видеокарты GeForce RTX 3000</description>
-</offer>
 <offer id="IS0E93DF58FA" available="true">
 <url>https://b2b.isoft-shop.kz/videokarty/tproduct/965161078034-videokarta-palit-rtx3060-infinity-2-oc-1</url>
 <price>281000</price>
@@ -6169,7 +6041,7 @@
 </offer>
 <offer id="IS2E0BB12AF9" available="true">
 <url>https://b2b.isoft-shop.kz/videokarty/tproduct/182578683734-videokarta-palit-rtx5060-infinity-2-oc-8</url>
-<price>329000</price>
+<price>335000</price>
 <currencyId>KZT</currencyId>
 <categoryId>784666503994</categoryId>
 <picture>https://static.tildacdn.com/stor3933-6461-4935-b535-626231646239/e9a5bf40932ada7c0c010acd2bb7f9de.jpg</picture>
@@ -6869,17 +6741,6 @@
 <vendor>Gigabyte</vendor>
 <vendorCode>ISEA538A8156</vendorCode>
 <description>Объём видеопамяти 16 ГБ · Графический процессор RTX 5070Ti · Разрядность шины 256 бит · Видеовыходы HDMI / DP x 3 · Серия видеокарты GeForce RTX 5000</description>
-</offer>
-<offer id="ISF06CDA4AE9" available="true">
-<url>https://b2b.isoft-shop.kz/videokarty/tproduct/340656187444-videokarta-gpu-nvidia-6-gb-afox-gtx-1660</url>
-<price>170000</price>
-<currencyId>KZT</currencyId>
-<categoryId>784666503994</categoryId>
-<picture>https://static.tildacdn.com/tild6162-3162-4163-a263-366436636265/340656187444.jpg</picture>
-<name>Видеокарта GPU NVIDIA, 6 GB, Afox GTX 1660Ti [AF1660TI-6144D6H4], DVI/DP/HDMI, GDDR6/192-bit</name>
-<vendor>AFOX</vendor>
-<vendorCode>ISF06CDA4AE9</vendorCode>
-<description>Объём видеопамяти 6 ГБ · Графический процессор GTX 1660Ti · Тип видеопамяти GDDR6 · Разрядность шины 192 бит · Видеовыходы HDMI / DVI / DP · Серия видеокарты GeForce GTX / GT</description>
 </offer>
 <offer id="ISF071A33CE3" available="true">
 <url>https://b2b.isoft-shop.kz/videokarty/tproduct/620048641274-videokarta-gpu-nvidia-gigabyte-5060-gv-n</url>
@@ -7627,6 +7488,17 @@
 <name>Сетевой видеорегистратор Hikvision DS-7108NI-Q1/8P(D)</name>
 <vendor>Hikvision</vendor>
 <vendorCode>ISB518B665CE</vendorCode>
+<description>Тип устройства Сетевой видеорегистратор</description>
+</offer>
+<offer id="ISB55DEACD1E" available="true">
+<url>https://b2b.isoft-shop.kz/videoregistratory/tproduct/804238769094-setevoi-videoregistrator-hikvision-ds-86</url>
+<price>594000</price>
+<currencyId>KZT</currencyId>
+<categoryId>155389326584</categoryId>
+<picture>https://static.tildacdn.com/stor3432-6364-4764-b735-393866343662/7dcdc2ca1af9652416112be719e863f8.jpg</picture>
+<name>Сетевой видеорегистратор Hikvision DS-8632NXI-K8</name>
+<vendor>Hikvision</vendor>
+<vendorCode>ISB55DEACD1E</vendorCode>
 <description>Тип устройства Сетевой видеорегистратор</description>
 </offer>
 <offer id="ISB6990D6021" available="true">
@@ -10779,6 +10651,17 @@
 <vendorCode>IS6ABF12F70A</vendorCode>
 <description>Интерфейс USB, RS-232 · В комплекте 2 кабеля питания IEC для нагрузки, кабель USB, кабель RS232 · Мощность 3000 ВА / 2700 Вт · Класс мощности 3 кВА · Топология On-Line · Розеток 8 · Размещение Напольный · Время переключения 0 мс · Гарантия 2 года · Цвет Чёрный</description>
 </offer>
+<offer id="IS6AF8D60BFB" available="true">
+<url>https://b2b.isoft-shop.kz/ibp-i-zashchita-pitaniya/tproduct/508821535634-ibp-svc-rto-15k-lcd</url>
+<price>101000</price>
+<currencyId>KZT</currencyId>
+<categoryId>622117808604</categoryId>
+<picture>https://static.tildacdn.com/stor6339-6337-4734-a165-326432346564/30f5d2b9ff88fa0a5a768ea77f1acf40.jpg</picture>
+<name>ИБП SVC RTO-1.5K-LCD</name>
+<vendor>SVC</vendor>
+<vendorCode>IS6AF8D60BFB</vendorCode>
+<description>Гарантия 1 год · В комплекте Гарантийный талон, инструкция, CD диск, комплект болтов, кабель питания, кабель USB · Топология Линейно-интерактивный · Мощность 1500 ВА / 900 Вт · Розеток 3 · Интерфейс USB · Размещение Стоечный · Форма выходного сигнала Ступенчатая синусоида · Время переключения 2-6 мс · Ёмкость батареи 12В/9Ач х 2</description>
+</offer>
 <offer id="IS6BB2169221" available="true">
 <url>https://b2b.isoft-shop.kz/ibp-i-zashchita-pitaniya/tproduct/557234508944-ibp-apc-easy-ups-srv-2000va-230v-srv2ki</url>
 <price>353000</price>
@@ -11071,6 +10954,17 @@
 <vendor>APC</vendor>
 <vendorCode>SRV2KRILRK</vendorCode>
 <description>Партномер: SRV2KRILRK</description>
+</offer>
+<offer id="IS86C300F766" available="true">
+<url>https://b2b.isoft-shop.kz/ibp-i-zashchita-pitaniya/tproduct/705497502194-ibp-cyberpower-ut2200eg</url>
+<price>95000</price>
+<currencyId>KZT</currencyId>
+<categoryId>622117808604</categoryId>
+<picture>https://static.tildacdn.com/stor3939-3165-4462-b932-643934376165/6959a9476104fbb3c8940c095e0af9d9.jpg</picture>
+<name>ИБП CyberPower UT2200EG</name>
+<vendor>CyberPower</vendor>
+<vendorCode>IS86C300F766</vendorCode>
+<description>Гарантия 2 года · Топология Линейно-интерактивный · Мощность 2200 ВА / 1320 Вт · Розеток 4 · Размещение Напольный · Ёмкость батареи 12В/9Ач х 2 · Цвет Чёрный · Класс мощности 1–2,2 кВА</description>
 </offer>
 <offer id="IS883B25C31E" available="true">
 <url>https://b2b.isoft-shop.kz/ibp-i-zashchita-pitaniya/tproduct/782579615054-ibp-ippon-na-tae-3000-2055085</url>
@@ -11940,6 +11834,17 @@
 <vendor>SVC</vendor>
 <vendorCode>ISC7657C6706</vendorCode>
 <description>Розеток 3 · Мощность 800 ВА / 480 Вт · Класс мощности до 1 кВА · Топология Линейно-интерактивный · Размещение Напольный · Время переключения 3 мс · Ёмкость батареи 12В/9Ач · Гарантия 1 год · Цвет Чёрный · Интерфейс USB</description>
+</offer>
+<offer id="ISC87323F5A5" available="true">
+<url>https://b2b.isoft-shop.kz/ibp-i-zashchita-pitaniya/tproduct/421372685144-ibp-svc-rt-3kln-lcd</url>
+<price>323000</price>
+<currencyId>KZT</currencyId>
+<categoryId>622117808604</categoryId>
+<picture>https://static.tildacdn.com/stor6666-6163-4666-a430-326133643233/9c12ffafe3713b6f3b87b73064eaa4fd.jpg</picture>
+<name>ИБП SVC RT-3KLN-LCD</name>
+<vendor>SVC</vendor>
+<vendorCode>ISC87323F5A5</vendorCode>
+<description>Гарантия 3 года · В комплекте Гарантийный талон, инструкция, CD диск, кабель питания, кабель RS-232, кабель USB · Топология On-Line · Мощность 3000 ВА / 3000 Вт · Интерфейс USB, RS-232 · Размещение Стоечный · Форма выходного сигнала Синусоида · Время переключения 0 мс · Ёмкость батареи 12В/9Ач х 6 · Типоразмер (U) 2U</description>
 </offer>
 <offer id="ISC8A1CC0B9F" available="true">
 <url>https://b2b.isoft-shop.kz/ibp-i-zashchita-pitaniya/tproduct/311878724844-ibp-cyberpower-ol10kert3upm</url>
@@ -13443,6 +13348,17 @@
 <vendor>HiLook</vendor>
 <vendorCode>IPC-B121HE-UC</vendorCode>
 <description>Партномер: IPC-B121HE-UC</description>
+</offer>
+<offer id="IS4338DB52D9" available="true">
+<url>https://b2b.isoft-shop.kz/videonablyudenie/tproduct/185306728954-ip-videokamera-dahua-dhi-itc413-pw4d-z1</url>
+<price>363000</price>
+<currencyId>KZT</currencyId>
+<categoryId>593618245944</categoryId>
+<picture>https://static.tildacdn.com/stor3530-3164-4332-a563-363837363363/726e5d7986bcd47d4ba64eb708bd58c2.jpg</picture>
+<name>IP видеокамера Dahua DHI-ITC413-PW4D-Z1</name>
+<vendor>Dahua</vendor>
+<vendorCode>IS4338DB52D9</vendorCode>
+<description>Тип устройства IP-камера</description>
 </offer>
 <offer id="IS4457013AE4" available="true">
 <url>https://b2b.isoft-shop.kz/videonablyudenie/tproduct/741266396444-ip-videokamera-hikvision-ds-2cd3021g0-i</url>
@@ -17667,19 +17583,6 @@
 <vendorCode>ISA3FF543648</vendorCode>
 <description>Цвет Чёрный · Тип устройства клавиатура · Подключение Беспроводное · Кнопок 68 · Тип клавиатуры механическая · Раскладка русская/английская</description>
 </offer>
-<offer id="ISA4A7FF4D8D" available="true">
-<url>https://b2b.isoft-shop.kz/klaviatury/tproduct/721635774114-klaviatura-usb-defender-novis-gk-318-ru</url>
-<price>10000</price>
-<currencyId>KZT</currencyId>
-<categoryId>723843374454</categoryId>
-<picture>https://static.tildacdn.com/tild3935-3636-4563-b539-643739663838/721635774114.jpg</picture>
-<picture>https://static.tildacdn.com/tild3839-3864-4466-a165-366134396236/721635774114_2.jpg</picture>
-<picture>https://static.tildacdn.com/tild3938-3539-4762-a561-306566323630/721635774114.jpg</picture>
-<name>Клавиатура USB, Defender Novis GK-318 RU, (45318)</name>
-<vendor>DEFENDER</vendor>
-<vendorCode>ISA4A7FF4D8D</vendorCode>
-<description>Цвет Белый, голубой · Тип устройства клавиатура · Подключение Проводное · Кнопок 80 · Тип клавиатуры мембранная · Подсветка RGB · Раскладка русская/английская</description>
-</offer>
 <offer id="ISA520299141" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury/tproduct/316246903294-klaviatura-igrovaya-logitech-g413-se-mec</url>
 <price>49000</price>
@@ -18412,17 +18315,6 @@
 <vendorCode>ISE7D4879A56</vendorCode>
 <description>Тип устройства клавиатура · Раскладка русская/английская/казахская · Цвет Белый, фиолетовый · Подключение проводное и беспроводное · Форм-фактор TKL · Тип клавиатуры механическая · Кнопок 87 · Подсветка RGB</description>
 </offer>
-<offer id="ISE8A306D825" available="true">
-<url>https://b2b.isoft-shop.kz/klaviatury/tproduct/984032069944-klaviatura-usb-delux-dlk-150gb-wireless</url>
-<price>5500</price>
-<currencyId>KZT</currencyId>
-<categoryId>723843374454</categoryId>
-<picture>https://static.tildacdn.com/tild3538-3464-4533-a538-373765343465/984032069944.jpg</picture>
-<name>Клавиатура USB, Delux DLK-150GB, wireless, 1xAAA, ultra slim, black</name>
-<vendor>Delux</vendor>
-<vendorCode>ISE8A306D825</vendorCode>
-<description>Тип устройства клавиатура · Раскладка русская/английская/казахская · Подключение Беспроводное · Цвет Чёрный</description>
-</offer>
 <offer id="ISEA7722D39A" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury/tproduct/775811515594-klaviatura-razer-blackwidow-v3-tenkeyles</url>
 <price>63000</price>
@@ -19035,18 +18927,6 @@
 <vendorCode>IS2A9050C54F</vendorCode>
 <description>Тип устройства Корпус · Цвет Чёрный</description>
 </offer>
-<offer id="IS2AFB640242" available="true">
-<url>https://b2b.isoft-shop.kz/korpusa-i-bloki-pitaniya/tproduct/670889365294-korpus-case-matx-midi-tower-fsp-s342-wa</url>
-<price>36000</price>
-<currencyId>KZT</currencyId>
-<categoryId>976729823024</categoryId>
-<picture>https://static.tildacdn.com/tild6438-3437-4339-a164-613264306139/670889365294.jpg</picture>
-<picture>https://static.tildacdn.com/tild3966-3765-4166-b737-343762363662/670889365294_2.jpg</picture>
-<name>Корпус Case mATX midi tower FSP S342-WA, (без БП), WHITE</name>
-<vendor>FSP</vendor>
-<vendorCode>IS2AFB640242</vendorCode>
-<description>Форм-фактор Micro-ATX · Цвет Белый · Тип устройства Корпус · Интерфейс USB 3.0 / Type-C · Материал Сталь, закаленное стекло · Макс. длина видеокарты 410 мм · Макс. высота кулера 160 мм</description>
-</offer>
 <offer id="IS2C59E054D0" available="true">
 <url>https://b2b.isoft-shop.kz/korpusa-i-bloki-pitaniya/tproduct/563688008224-kompyuternii-korpus-cougar-mx220-rgb-whi</url>
 <price>38000</price>
@@ -19268,18 +19148,6 @@
 <vendor>Bequiet!</vendor>
 <vendorCode>IS38B64B49D4</vendorCode>
 <description>Форм-фактор ATX · Цвет Чёрный · Макс. длина видеокарты 400 мм · Макс. высота кулера 185 мм · Тип устройства Корпус · Гарантия 1 год · Материал Сталь</description>
-</offer>
-<offer id="IS395A0CED3D" available="true">
-<url>https://b2b.isoft-shop.kz/korpusa-i-bloki-pitaniya/tproduct/199985208804-korpus-case-atx-midi-tower-wintek-cube-p</url>
-<price>33000</price>
-<currencyId>KZT</currencyId>
-<categoryId>976729823024</categoryId>
-<picture>https://static.tildacdn.com/tild6531-6330-4064-a135-376231376333/199985208804.jpg</picture>
-<picture>https://static.tildacdn.com/tild3866-3963-4233-b862-616439303364/199985208804_2.jpg</picture>
-<name>Корпус Case ATX midi tower Wintek, Cube pro V909-B TG, (без БП), black</name>
-<vendor>WINTEK</vendor>
-<vendorCode>IS395A0CED3D</vendorCode>
-<description>Форм-фактор ATX · Цвет Чёрный · Тип устройства Корпус · Интерфейс USB 3.0 · Материал Сталь, пластик · Макс. длина видеокарты 330 мм · Макс. высота кулера 168 мм</description>
 </offer>
 <offer id="IS3ABA9F6D08" available="true">
 <url>https://b2b.isoft-shop.kz/korpusa-i-bloki-pitaniya/tproduct/409201094374-korpus-case-matx-mini-tower-apex-4</url>
@@ -19552,18 +19420,6 @@
 <vendorCode>IS4ADD847609</vendorCode>
 <description>Форм-фактор ATX · Тип устройства Корпус · Цвет Чёрный</description>
 </offer>
-<offer id="IS4AE2CEA47C" available="true">
-<url>https://b2b.isoft-shop.kz/korpusa-i-bloki-pitaniya/tproduct/432974153984-korpus-case-atx-midi-tower-wintek-bastio</url>
-<price>30000</price>
-<currencyId>KZT</currencyId>
-<categoryId>976729823024</categoryId>
-<picture>https://static.tildacdn.com/tild3064-3964-4330-b037-633531336139/432974153984.jpg</picture>
-<picture>https://static.tildacdn.com/tild3737-6162-4639-b737-326561346365/432974153984_2.jpg</picture>
-<name>Корпус Case ATX midi tower Wintek, Bastion 925-B TG, (без БП), Black</name>
-<vendor>WINTEK</vendor>
-<vendorCode>IS4AE2CEA47C</vendorCode>
-<description>Форм-фактор ATX · Тип устройства Корпус · Цвет Чёрный</description>
-</offer>
 <offer id="IS4BCB7C5240" available="true">
 <url>https://b2b.isoft-shop.kz/korpusa-i-bloki-pitaniya/tproduct/611238400594-kompyuternii-korpus-cougar-mx600-mini-rg</url>
 <price>49000</price>
@@ -19674,18 +19530,6 @@
 <vendor>Cougar</vendor>
 <vendorCode>IS4F3E8E8230</vendorCode>
 <description>Форм-фактор ATX · Цвет Чёрный · Тип устройства Корпус · Интерфейс USB 3.2 Gen 2 / Type-C · Материал Сталь, пластик, стекло · Макс. длина видеокарты 430 мм · Макс. высота кулера 175 мм</description>
-</offer>
-<offer id="IS4FB46D8A52" available="true">
-<url>https://b2b.isoft-shop.kz/korpusa-i-bloki-pitaniya/tproduct/206324323214-korpus-case-matx-mini-tower-fsp-cst360w</url>
-<price>35000</price>
-<currencyId>KZT</currencyId>
-<categoryId>976729823024</categoryId>
-<picture>https://static.tildacdn.com/tild3739-3237-4862-a439-393861383464/206324323214.jpg</picture>
-<picture>https://static.tildacdn.com/tild3732-6330-4834-b732-393461363339/206324323214_2.jpg</picture>
-<name>Корпус Case MATX mini tower FSP, CST360W , (без БП) , White</name>
-<vendor>FSP</vendor>
-<vendorCode>IS4FB46D8A52</vendorCode>
-<description>Форм-фактор Micro-ATX · Тип устройства Корпус · Цвет Белый</description>
 </offer>
 <offer id="IS51D40ED5C6" available="true">
 <url>https://b2b.isoft-shop.kz/korpusa-i-bloki-pitaniya/tproduct/149602166124-kompyuternii-korpus-1stplayer-wd7-white</url>
@@ -20197,6 +20041,17 @@
 <vendor>1STPLAYER</vendor>
 <vendorCode>IS7328BEB08B</vendorCode>
 <description>Форм-фактор ATX · Макс. длина видеокарты 320 мм · Макс. высота кулера 165 мм · Тип устройства Корпус · Гарантия 1 год · Цвет Белый · Материал Сталь</description>
+</offer>
+<offer id="IS736D0D293E" available="true">
+<url>https://b2b.isoft-shop.kz/korpusa-i-bloki-pitaniya/tproduct/726945597744-kompyuternii-korpus-1stplayer-bv6-black</url>
+<price>25000</price>
+<currencyId>KZT</currencyId>
+<categoryId>976729823024</categoryId>
+<picture>https://static.tildacdn.com/stor6565-3464-4763-a131-303638323966/3b630d80281b43abea0b982871970a83.jpg</picture>
+<name>Компьютерный корпус 1STPLAYER BV6 Black без Б/П BV6-BK-2FH7R-1FH7</name>
+<vendor>1STPLAYER</vendor>
+<vendorCode>IS736D0D293E</vendorCode>
+<description>Форм-фактор Micro-ATX · Тип устройства Корпус · Цвет Чёрный · Гарантия 1 год · Макс. длина видеокарты 410 мм</description>
 </offer>
 <offer id="IS73FCED81E6" available="true">
 <url>https://b2b.isoft-shop.kz/korpusa-i-bloki-pitaniya/tproduct/133920969394-kompyuternii-korpus-1stplayer-uv5-black</url>
@@ -22459,17 +22314,6 @@
 <vendor>Xiaomi</vendor>
 <vendorCode>PMDYJ02HT</vendorCode>
 <description>МФУ струйное, Xiaomi, Wireless All-in-One Inkjet Printer, PMDYJ02HT/BHR7410RU, Струйный, Цветная печать, Максимальный формат А4, Печать фотографий, копирование, сканирование, Уровень шума 48 дБ, Струйная печать, Разрешение сканера 600*300dpi, Рабочая частота 2.400-2.4835 ГГц, Выходная мощность ВЧ: &lt;20 дБм, Номинальное напряжение: 220-240 В ~, Вес нетто: около 4,6 кг, Размеры товара: 450 306 160 мм, Белый</description>
-</offer>
-<offer id="IS11DD84B082" available="true">
-<url>https://b2b.isoft-shop.kz/mfu-struynye-cvetnye/tproduct/720844017034-mfu-struinoe-tsvetnoe-epson-l6370-c11cl4</url>
-<price>253000</price>
-<currencyId>KZT</currencyId>
-<categoryId>334369722184</categoryId>
-<picture>https://static.tildacdn.com/tild6161-3736-4365-a166-343065353266/IS11DD84B082_1.png</picture>
-<name>МФУ струйное цветное Epson L6370 C11CL43405, А4, до 35 стр/мин, Ethernet, Wi-Fi Direct, ADF, Duplex, СНПЧ</name>
-<vendor>Epson</vendor>
-<vendorCode>IS11DD84B082</vendorCode>
-<description>Тип устройства МФУ · Скорость печати 35 стр/мин · Интерфейсы Ethernet, Wi-Fi</description>
 </offer>
 <offer id="IS2FFBF42157" available="true">
 <url>https://b2b.isoft-shop.kz/mfu-struynye-cvetnye/tproduct/298696424884-mfu-hp-smart-tank-675-28c12a</url>
@@ -25750,19 +25594,6 @@
 <vendorCode>IS3785996760</vendorCode>
 <description>Чипсет B860 · Сокет LGA1851 · Тип памяти DDR5 · Форм-фактор Micro-ATX · Слотов памяти 2 · Интерфейс SATA / PCI-E 3.0 / PCI-E 4.0 · Видеовыходы HDMI / DP · Разъёмов M.2 2 · Разъёмов SATA 4</description>
 </offer>
-<offer id="IS37DFFA339B" available="true">
-<url>https://b2b.isoft-shop.kz/materinskie-platy/tproduct/476570943014-materinskaya-plata-mb-socket-am5-atx-amd</url>
-<price>110000</price>
-<currencyId>KZT</currencyId>
-<categoryId>248907277044</categoryId>
-<picture>https://static.tildacdn.com/tild3363-6463-4236-a662-383637663930/476570943014.jpg</picture>
-<picture>https://static.tildacdn.com/tild3532-3934-4638-a464-316634373666/476570943014.jpg</picture>
-<picture>https://static.tildacdn.com/tild3234-3462-4633-a462-366330366262/476570943014_2.jpg</picture>
-<name>Материнская плата MB Socket AM5, ATX, AMD B840 (HDMI) MSI B840 GAMING PLUS WIFI, 4DDR5, PCIx16</name>
-<vendor>MSI</vendor>
-<vendorCode>IS37DFFA339B</vendorCode>
-<description>Форм-фактор ATX · Сокет AM5 · Тип памяти DDR5 · Чипсет B840 · Слотов памяти 4 · Сеть 2,5 Гбит/с · Видеовыходы HDMI · Разъёмов M.2 2 · Разъёмов SATA 4</description>
-</offer>
 <offer id="IS3961879540" available="true">
 <url>https://b2b.isoft-shop.kz/materinskie-platy/tproduct/330615701124-materinskaya-plata-gigabyte-z890-a-elite</url>
 <price>180000</price>
@@ -26054,19 +25885,6 @@
 <vendorCode>IS4ABA994C8E</vendorCode>
 <description>Сокет sTR5 · Тип памяти DDR5 · Слотов памяти 8 · Сеть 10 Гбит/с · Разъёмов M.2 4 · Разъёмов SATA 4</description>
 </offer>
-<offer id="IS4BFAC37A6E" available="true">
-<url>https://b2b.isoft-shop.kz/materinskie-platy/tproduct/913296437674-materinskaya-plata-mb-socket-am5-matx-am</url>
-<price>134000</price>
-<currencyId>KZT</currencyId>
-<categoryId>248907277044</categoryId>
-<picture>https://static.tildacdn.com/tild3437-3635-4161-a234-343831363363/913296437674.jpg</picture>
-<picture>https://static.tildacdn.com/tild3834-3061-4330-a263-343333323466/913296437674.jpg</picture>
-<picture>https://static.tildacdn.com/tild6462-3837-4464-a336-643338653162/913296437674_2.jpg</picture>
-<name>Материнская плата MB Socket AM5, MATX, AMD B850 (DP+HDMI), Asus B850M MAX GAMING WIFI, 4DDR5, PCIx16</name>
-<vendor>ASUS</vendor>
-<vendorCode>IS4BFAC37A6E</vendorCode>
-<description>Сокет AM5 · Тип памяти DDR5 · Форм-фактор Micro-ATX · Чипсет B850 · Слотов памяти 4 · Сеть 1 Гбит/с · Видеовыходы HDMI / DP · Разъёмов M.2 3 · Разъёмов SATA 4</description>
-</offer>
 <offer id="IS4CD3A76C38" available="true">
 <url>https://b2b.isoft-shop.kz/materinskie-platy/tproduct/905876488314-materinskaya-plata-asus-main-board-deskt</url>
 <price>108000</price>
@@ -26101,19 +25919,6 @@
 <vendor>ASUS</vendor>
 <vendorCode>IS4ED214043E</vendorCode>
 <description>Слотов памяти 4 · Сокет AM5 · Тип памяти DDR5 · Чипсет X870 · Видеовыходы HDMI</description>
-</offer>
-<offer id="IS501EAFF4CF" available="true">
-<url>https://b2b.isoft-shop.kz/materinskie-platy/tproduct/965078059924-materinskaya-plata-mb-socket-am5-atx-amd</url>
-<price>104000</price>
-<currencyId>KZT</currencyId>
-<categoryId>248907277044</categoryId>
-<picture>https://static.tildacdn.com/tild6666-6234-4964-a237-373034306135/965078059924.jpg</picture>
-<picture>https://static.tildacdn.com/tild6331-3834-4964-b363-393965383637/965078059924.jpg</picture>
-<picture>https://static.tildacdn.com/tild3233-6463-4436-a161-356665373837/965078059924_2.jpg</picture>
-<name>Материнская плата MB Socket AM5, ATX, AMD B650 (DP+HDMI), Gigabyte B650 EAGLE, 4DDR5, 4PCIx16</name>
-<vendor>Gigabyte</vendor>
-<vendorCode>IS501EAFF4CF</vendorCode>
-<description>Сокет AM5 · Тип памяти DDR5 · Форм-фактор ATX · Чипсет B650 · Слотов памяти 4 · Видеовыходы HDMI / DP</description>
 </offer>
 <offer id="IS5359029649" available="true">
 <url>https://b2b.isoft-shop.kz/materinskie-platy/tproduct/570828223054-materinskaya-plata-gigabyte-z790-d</url>
@@ -26345,19 +26150,6 @@
 <vendor>ASUS</vendor>
 <vendorCode>IS680D3EB5C4</vendorCode>
 <description>Сокет AM5 · Чипсет X870E · Тип памяти DDR5 · Слотов памяти 4</description>
-</offer>
-<offer id="IS68DEC27D1A" available="true">
-<url>https://b2b.isoft-shop.kz/materinskie-platy/tproduct/676094284184-materinskaya-plata-mb-socket1700-matx-ih</url>
-<price>38000</price>
-<currencyId>KZT</currencyId>
-<categoryId>248907277044</categoryId>
-<picture>https://static.tildacdn.com/tild6139-6564-4161-a230-646237616337/676094284184.jpg</picture>
-<picture>https://static.tildacdn.com/tild3133-3166-4232-b765-313939316332/676094284184.jpg</picture>
-<picture>https://static.tildacdn.com/tild3935-3462-4238-a564-346537643864/676094284184_2.jpg</picture>
-<name>Материнская плата MB Socket1700, MATX, iH610 (HDMI), MaxSun Challenger H610M-H V1, V2, 2DDR4,PCIx16</name>
-<vendor>MAXSUN</vendor>
-<vendorCode>IS68DEC27D1A</vendorCode>
-<description>Форм-фактор Micro-ATX · Слотов памяти 2 · Сокет LGA1700 · Тип памяти DDR4 · Чипсет H610 · Видеовыходы HDMI · Сеть 1 Гбит/с · Разъёмов M.2 1 · Разъёмов SATA 2</description>
 </offer>
 <offer id="IS698DBC6157" available="true">
 <url>https://b2b.isoft-shop.kz/materinskie-platy/tproduct/420878242584-materinskaya-plata-supermicro-mbd-h13ssl</url>
@@ -26775,19 +26567,6 @@
 <vendorCode>IS84052F3E5C</vendorCode>
 <description>Интерфейс SATA / PCI-E 3.0 · Форм-фактор Micro-ATX · Видеовыходы HDMI x 2 · Сокет LGA1700 · Тип памяти DDR5 · Чипсет H610 · Слотов памяти 2 · Разъёмов M.2 1 · Разъёмов SATA 4</description>
 </offer>
-<offer id="IS844803A837" available="true">
-<url>https://b2b.isoft-shop.kz/materinskie-platy/tproduct/666886487154-materinskaya-plata-mb-socket1700-matx-ih</url>
-<price>40000</price>
-<currencyId>KZT</currencyId>
-<categoryId>248907277044</categoryId>
-<picture>https://static.tildacdn.com/tild6132-3165-4439-b737-336138313930/666886487154.jpg</picture>
-<picture>https://static.tildacdn.com/tild3638-6333-4132-b732-346638313564/666886487154.jpg</picture>
-<picture>https://static.tildacdn.com/tild3638-3563-4930-b063-313636373763/666886487154_2.jpg</picture>
-<name>Материнская плата MB Socket1700, MATX, iH610 (HDMI), Gigabyte H610M K DDR4, 2DDR4, PCIx16, PCIx1</name>
-<vendor>Gigabyte</vendor>
-<vendorCode>IS844803A837</vendorCode>
-<description>Слотов памяти 2 · Сокет LGA1700 · Тип памяти DDR4 · Форм-фактор Micro-ATX · Чипсет H610 · Сеть 1 Гбит/с · Разъёмов M.2 1 · Разъёмов SATA 2 · Видеовыходы HDMI</description>
-</offer>
 <offer id="IS85D42BD59A" available="true">
 <url>https://b2b.isoft-shop.kz/materinskie-platy/tproduct/395931869164-materinskaya-plata-gigabyte-b850m-force</url>
 <price>100000</price>
@@ -26985,19 +26764,6 @@
 <vendorCode>IS932106F289</vendorCode>
 <description>Чипсет Z890</description>
 </offer>
-<offer id="IS97E3D28F2C" available="true">
-<url>https://b2b.isoft-shop.kz/materinskie-platy/tproduct/236992222234-materinskaya-plata-mb-socket1200-matx-ih</url>
-<price>37000</price>
-<currencyId>KZT</currencyId>
-<categoryId>248907277044</categoryId>
-<picture>https://static.tildacdn.com/tild3263-3037-4931-b165-323337393232/236992222234.jpg</picture>
-<picture>https://static.tildacdn.com/tild3164-3739-4663-b035-643436313732/236992222234.jpg</picture>
-<picture>https://static.tildacdn.com/tild6639-3962-4138-a232-616561336562/236992222234_2.jpg</picture>
-<name>Материнская плата MB Socket1200, MATX, iH410 (D-Sub+HDMI, GNIC), Gigabyte H410M H, 2DDR4, PCIx16, 2PCIx1</name>
-<vendor>Gigabyte</vendor>
-<vendorCode>IS97E3D28F2C</vendorCode>
-<description>Слотов памяти 2 · Сокет LGA1200 · Тип памяти DDR4 · Форм-фактор Micro-ATX · Чипсет H410</description>
-</offer>
 <offer id="IS98C39F6C0C" available="true">
 <url>https://b2b.isoft-shop.kz/materinskie-platy/tproduct/306249767834-materinskaya-plata-asrock-b550m-phantom</url>
 <price>50000</price>
@@ -27107,19 +26873,6 @@
 <vendor>Gigabyte</vendor>
 <vendorCode>IS9FF38243D3</vendorCode>
 <description>Видеовыходы HDMI / DP · Тип памяти DDR5 · Чипсет B650 · Слотов памяти 4 · Разъёмов M.2 1 · Разъёмов SATA 6</description>
-</offer>
-<offer id="ISA069540B49" available="true">
-<url>https://b2b.isoft-shop.kz/materinskie-platy/tproduct/982452635654-materinskaya-plata-mb-socket1851-matx-ib</url>
-<price>124000</price>
-<currencyId>KZT</currencyId>
-<categoryId>248907277044</categoryId>
-<picture>https://static.tildacdn.com/tild3763-3730-4462-b765-616164393737/982452635654.jpg</picture>
-<picture>https://static.tildacdn.com/tild3365-6238-4565-b862-333731373633/982452635654.jpg</picture>
-<picture>https://static.tildacdn.com/tild3166-6662-4437-b030-613265633236/982452635654_2.jpg</picture>
-<name>Материнская плата MB Socket1851, MATX, iB860 (2DP+HDMI), Gigabyte B860M DS3H WIFI6E, 4DDR5, PCIx16</name>
-<vendor>Gigabyte</vendor>
-<vendorCode>ISA069540B49</vendorCode>
-<description>Форм-фактор Micro-ATX · Сокет LGA1851 · Тип памяти DDR5 · Чипсет B860 · Слотов памяти 4 · Сеть 2,5 Гбит/с · Видеовыходы HDMI / DP x 2 · Разъёмов SATA 4</description>
 </offer>
 <offer id="ISA2CA0646DA" available="true">
 <url>https://b2b.isoft-shop.kz/materinskie-platy/tproduct/916773572784-materinskaya-plata-gigabyte-h810m-gaming</url>
@@ -27298,19 +27051,6 @@
 <vendor>ASUS</vendor>
 <vendorCode>ISB3EE721CD0</vendorCode>
 <description>Форм-фактор Micro-ATX · Чипсет H610 · Сокет LGA1700 · Тип памяти DDR5 · Слотов памяти 2 · Видеовыходы HDMI x 2 · Разъёмов M.2 1 · Разъёмов SATA 2 · Сеть 1 Гбит/с</description>
-</offer>
-<offer id="ISB6BAE8395C" available="true">
-<url>https://b2b.isoft-shop.kz/materinskie-platy/tproduct/664878050614-materinskaya-plata-mb-socket-am5-matx-am</url>
-<price>59000</price>
-<currencyId>KZT</currencyId>
-<categoryId>248907277044</categoryId>
-<picture>https://static.tildacdn.com/tild3432-3734-4734-b963-306562336236/664878050614.jpg</picture>
-<picture>https://static.tildacdn.com/tild3534-3161-4832-a564-643562306532/664878050614.jpg</picture>
-<picture>https://static.tildacdn.com/tild3864-3462-4639-a230-366566356231/664878050614_2.jpg</picture>
-<name>Материнская плата MB Socket AM5, MATX, AMD B650 (HDMI) MaxSun Challenger B650M-K, 2DDR5, 2PCIx16, PCIx1</name>
-<vendor>MAXSUN</vendor>
-<vendorCode>ISB6BAE8395C</vendorCode>
-<description>Форм-фактор Micro-ATX · Слотов памяти 2 · Сокет AM5 · Тип памяти DDR5 · Чипсет B650 · Видеовыходы HDMI · Сеть 1 Гбит/с · Разъёмов M.2 1 · Разъёмов SATA 2</description>
 </offer>
 <offer id="ISB76D2F34DB" available="true">
 <url>https://b2b.isoft-shop.kz/materinskie-platy/tproduct/659838830574-plata-gigabyte-am5-x870e-x870e-a-pro-x-4</url>
@@ -27572,19 +27312,6 @@
 <vendor>ASUS</vendor>
 <vendorCode>ISCA6FB86861</vendorCode>
 <description>Сокет LGA1700 · Тип памяти DDR5 · Форм-фактор Micro-ATX · Слотов памяти 4 · Чипсет C262 · Видеовыходы VGA · Разъёмов M.2 1 · Разъёмов SATA 8</description>
-</offer>
-<offer id="ISCCCD4C5BC2" available="true">
-<url>https://b2b.isoft-shop.kz/materinskie-platy/tproduct/740442685454-materinskaya-plata-mb-socket-am5-matx-am</url>
-<price>123000</price>
-<currencyId>KZT</currencyId>
-<categoryId>248907277044</categoryId>
-<picture>https://static.tildacdn.com/tild3939-3532-4833-a437-396630363133/740442685454.jpg</picture>
-<picture>https://static.tildacdn.com/tild6165-6230-4039-a635-306566643439/740442685454.jpg</picture>
-<picture>https://static.tildacdn.com/tild3032-6362-4330-a632-303933336130/740442685454_2.jpg</picture>
-<name>Материнская плата MB Socket AM5, MATX, AMD B850 (2DP+HDMI), ASUS PRIME B850M-A WIFI, 4DDR5, 2PCIx16</name>
-<vendor>ASUS</vendor>
-<vendorCode>ISCCCD4C5BC2</vendorCode>
-<description>Форм-фактор Micro-ATX · Сокет AM5 · Тип памяти DDR5 · Чипсет B850 · Слотов памяти 4 · Сеть 2,5 Гбит/с · Видеовыходы HDMI / DP x 2 · Разъёмов SATA 4</description>
 </offer>
 <offer id="ISCE370877DD" available="true">
 <url>https://b2b.isoft-shop.kz/materinskie-platy/tproduct/120736601174-materinskaya-plata-gigabyte-b760m-ds3h-a</url>
@@ -28280,6 +28007,17 @@
 <vendor>ASUS</vendor>
 <vendorCode>90AR00Q2-M00030</vendorCode>
 <description>Процессор Core 5 · Партномер: 90AR00Q2-M00030</description>
+</offer>
+<offer id="IS9851347DA3" available="true">
+<url>https://b2b.isoft-shop.kz/mini-pk-i-rabochie-stancii/tproduct/178988154194-mini-pk-apple-mac-mini-apple-m6-chip-12</url>
+<price>689000</price>
+<currencyId>KZT</currencyId>
+<categoryId>322713034454</categoryId>
+<picture>https://static.tildacdn.com/tild3935-6135-4333-b135-653866333365/IS9851347DA3.jpg</picture>
+<name>Мини-ПК APPLE Mac mini, Apple M6 chip (12-core CPU, 12-core GPU), 16GB, 256GB SSD, Model A3534</name>
+<vendor>APPLE</vendor>
+<vendorCode>IS9851347DA3</vendorCode>
+<description>Комплектация Готовый (ОЗУ и накопитель в комплекте) · Процессор Apple M6 · Оперативная память 16 ГБ · Накопитель 256 ГБ · Количество ядер процессора 12 · Видеокарта Встроенная · Операционная система macOS · Линейка процессора Apple M · Семья ОС macOS · Тип накопителя SSD</description>
 </offer>
 <offer id="ISA7D7A6A416" available="true">
 <url>https://b2b.isoft-shop.kz/mini-pk-i-rabochie-stancii/tproduct/558408729934-mini-pk-logitech-intel-13th-gen-nuc-with</url>
@@ -32501,18 +32239,6 @@
 <vendorCode>ISED3ABDE4E0</vendorCode>
 <description>Время отклика 1 мс · Диагональ 23,8″ · Разрешение 1920×1080 · Тип матрицы IPS · Частота обновления 200 Гц · Яркость 300 кд/м² · VESA 75×75 · Размер экрана 23–24″ · Соотношение сторон 16:9 · Угол обзора 178°</description>
 </offer>
-<offer id="ISEDD06F4F9D" available="true">
-<url>https://b2b.isoft-shop.kz/monitory/tproduct/193104520734-monitor-238-inch-sanc-m2453fxg-1920x1080</url>
-<price>62000</price>
-<currencyId>KZT</currencyId>
-<categoryId>929335537584</categoryId>
-<picture>https://static.tildacdn.com/tild3662-6262-4832-a534-656566393933/193104520734.jpg</picture>
-<picture>https://static.tildacdn.com/tild6532-3234-4137-a635-323561386562/193104520734.jpg</picture>
-<name>Монитор 23.8-inch Sanc M2453FXG, 1920x1080 IPS (LED) 144Hz, 2ms, 250 cd/m2, 1000:1, DP/HDMI</name>
-<vendor>SANC</vendor>
-<vendorCode>ISEDD06F4F9D</vendorCode>
-<description>Время отклика 2 мс · Диагональ 23,8″ · Разрешение 1920×1080 · Тип матрицы IPS · Частота обновления 144 Гц · Яркость 250 кд/м² · Размер экрана 23–24″ · Контрастность 1000:1</description>
-</offer>
 <offer id="ISEDE52F8888" available="true">
 <url>https://b2b.isoft-shop.kz/monitory/tproduct/919216504244-monitor-dell-ultrasharp-27-thunderbolt-h</url>
 <price>314000</price>
@@ -34113,20 +33839,6 @@
 <vendor>Genius</vendor>
 <vendorCode>IS1456210C8E</vendorCode>
 <description>Тип устройства мышь · Подключение Проводное · Тип сенсора Оптический · Цвет Красный · Разрешение сенсора 1000 dpi · Кнопок 3 · Гарантия 1 год · Длина кабеля 1,5 м · Материал Пластик</description>
-</offer>
-<offer id="IS1474D436C7" available="true">
-<url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/788521130624-mish-redragon-mirage-pro-wireless-optica</url>
-<price>21000</price>
-<currencyId>KZT</currencyId>
-<categoryId>816235379434</categoryId>
-<picture>https://static.tildacdn.com/tild6338-6138-4064-a233-393236663039/788521130624.jpg</picture>
-<picture>https://static.tildacdn.com/tild3633-6261-4164-a635-313534653365/788521130624_2.jpg</picture>
-<picture>https://static.tildacdn.com/tild3132-6238-4561-b562-653062326165/788521130624_3.jpg</picture>
-<picture>https://static.tildacdn.com/tild3534-6337-4237-a636-616665616337/788521130624_4.jpg</picture>
-<name>Мышь Redragon Mirage Pro, Wireless, Optical 4800 dpi, 1AA, USB, Black (71432)</name>
-<vendor>REDRAGON</vendor>
-<vendorCode>IS1474D436C7</vendorCode>
-<description>Тип устройства мышь · Подключение Беспроводное · Тип сенсора Оптический · Цвет Чёрный · Разрешение сенсора 4800 dpi · Кнопок 9 · Длина кабеля 1,8 м · Назначение Игровая</description>
 </offer>
 <offer id="IS15DCB6E103" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/139988068364-mish-logitech-m100-optical-21-buttons-us</url>
@@ -36506,19 +36218,6 @@
 <vendorCode>IS86F9E48C24</vendorCode>
 <description>В комплекте Руководство по быстрому старту, USB-кабель для зарядки · Тип устройства мышь · Гарантия 2 года · Цвет Золотой · Подключение Беспроводное · Кнопок 3</description>
 </offer>
-<offer id="IS876C5532C0" available="true">
-<url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/235009309124-mish-acer-omr050-wireless-bt24ghz-optica</url>
-<price>8500</price>
-<currencyId>KZT</currencyId>
-<categoryId>816235379434</categoryId>
-<picture>https://static.tildacdn.com/tild6466-6661-4366-b339-306563346465/235009309124.jpg</picture>
-<picture>https://static.tildacdn.com/tild3135-3339-4966-b534-663665653938/235009309124_2.jpg</picture>
-<picture>https://static.tildacdn.com/tild3839-3736-4365-a162-613930343136/235009309124_3.jpg</picture>
-<name>Мышь Acer OMR050, Wireless, BT/2,4GHz, Optical 800-1600 dpi, 1AAA, USB, black</name>
-<vendor>Acer</vendor>
-<vendorCode>IS876C5532C0</vendorCode>
-<description>Подключение Беспроводное · Разрешение сенсора 1600 dpi · Тип устройства мышь · Тип сенсора Оптический · Цвет Чёрный</description>
-</offer>
 <offer id="IS886D35EDDE" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/664478688664-kompyuternaya-mish-rapoo-mt750-plus</url>
 <price>19000</price>
@@ -37473,6 +37172,17 @@
 <vendorCode>ISB33386D9F4</vendorCode>
 <description>Тип устройства мышь · Подключение Беспроводное · Тип сенсора Оптический · Цвет Комбинированный · Разрешение сенсора 1600 dpi · Кнопок 3 · Гарантия 1 год · Подсветка Нет</description>
 </offer>
+<offer id="ISB3895F8D74" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/721962328714-mish-lorgar-gaming-mouse-mse90w-elite-wi</url>
+<price>25000</price>
+<currencyId>KZT</currencyId>
+<categoryId>816235379434</categoryId>
+<picture>https://static.tildacdn.com/stor3931-6266-4061-a662-303137353364/8334470d3c6e13def2a71983be1f4017.png</picture>
+<name>Мышь LORGAR Gaming Mouse MSE90W Elite Wireless Magnesium Black</name>
+<vendor>LORGAR</vendor>
+<vendorCode>ISB3895F8D74</vendorCode>
+<description>Назначение Игровая · Подключение Беспроводное · Тип устройства мышь · Цвет Чёрный</description>
+</offer>
 <offer id="ISB4386C780A" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/641768847984-kompyuternaya-mish-rapoo-b20-chyornii</url>
 <price>3000</price>
@@ -37567,6 +37277,17 @@
 <vendorCode>ISB836DC44C8</vendorCode>
 <description>Подключение Беспроводное · Тип устройства мышь · Цвет Белый</description>
 </offer>
+<offer id="ISB8DE98D336" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/607834237344-mish-lorgar-gaming-mouse-mse90w-elite-wi</url>
+<price>25000</price>
+<currencyId>KZT</currencyId>
+<categoryId>816235379434</categoryId>
+<picture>https://static.tildacdn.com/stor6434-3861-4162-b137-343839383863/2dd82b3915255ebea8a5e0d9edd7b569.png</picture>
+<name>Мышь LORGAR Gaming Mouse MSE90W Elite Wireless Magnesium White</name>
+<vendor>LORGAR</vendor>
+<vendorCode>ISB8DE98D336</vendorCode>
+<description>Назначение Игровая · Подключение Беспроводное · Тип устройства мышь · Цвет Белый</description>
+</offer>
 <offer id="ISB93A99C1DE" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/125302694724-mish-logitech-m190-wireless-mouse-red</url>
 <price>6300</price>
@@ -37578,7 +37299,7 @@
 <name>Мышь LOGITECH M190 Wireless Mouse - RED</name>
 <vendor>Logitech</vendor>
 <vendorCode>ISB93A99C1DE</vendorCode>
-<description>В комплекте USB-приёмник, руководство по быстрому старту · Тип устройства мышь · Гарантия 2 года · Цвет Красный · Подключение Беспроводное · Кнопок 3</description>
+<description>Гарантия 2 года · В комплекте USB-приёмник, руководство по быстрому старту · Тип устройства мышь · Цвет красный · Подключение Беспроводное · Кнопок 3</description>
 </offer>
 <offer id="ISB98948F06E" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/243384732164-mish-canyon-mouse-mw-12-dual-band-wirele</url>
@@ -37661,17 +37382,6 @@
 <vendor>Dell</vendor>
 <vendorCode>ISBFCD040802</vendorCode>
 <description>Тип устройства мышь · Цвет Чёрный · Подключение Беспроводное · Тип сенсора Оптический · Кнопок 4 · Гарантия 3 года · Разрешение сенсора 6000 dpi</description>
-</offer>
-<offer id="ISC00D122636" available="true">
-<url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/322494577214-provodnaya-mish-ugreen-mu007-portable-wi</url>
-<price>2500</price>
-<currencyId>KZT</currencyId>
-<categoryId>816235379434</categoryId>
-<picture>https://static.tildacdn.com/stor3830-3330-4261-a430-383738323035/fb16d7869fd954a75ffec3f4afa1b3bc.jpg</picture>
-<name>Проводная мышь Ugreen MU007 Portable Wired Mouse 1200 dpi/1.5M 90789</name>
-<vendor>UGREEN</vendor>
-<vendorCode>90789</vendorCode>
-<description>Тип устройства мышь · Подключение Проводное · Разрешение сенсора 1200 dpi · Партномер: 90789</description>
 </offer>
 <offer id="ISC0AF92FFF9" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/579388326024-mish-acer-omr136-krasnii-optich-1000dpi</url>
@@ -37860,7 +37570,7 @@
 <name>Мышь LOGITECH M171 Wireless Mouse - RED 910-004641</name>
 <vendor>Logitech</vendor>
 <vendorCode>ISCE206C6AF8</vendorCode>
-<description>В комплекте USB-приёмник, батарейка AA · Тип устройства мышь · Гарантия 2 года · Цвет Красный · Подключение Беспроводное · Кнопок 3</description>
+<description>Гарантия 2 года · В комплекте USB-приёмник, батарейка AA · Тип устройства мышь · Цвет красный · Подключение Беспроводное · Кнопок 3</description>
 </offer>
 <offer id="ISCEFEF38E53" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/175482959284-kompyuternaya-mish-razer-basilisk-v3-pro</url>
@@ -39179,7 +38889,7 @@
 <name>Гарнитура Razer Kaira X for Xbox - Pulse Red RZ04-03970500-R3M1</name>
 <vendor>Razer</vendor>
 <vendorCode>IS2CBACA5A75</vendorCode>
-<description>Тип устройства Гарнитура · Цвет Красный</description>
+<description>Тип устройства Гарнитура · Цвет красный</description>
 </offer>
 <offer id="IS2EC8DB1D03" available="true">
 <url>https://b2b.isoft-shop.kz/naushniki/tproduct/599322794694-garnitura-razer-barracuda-rz04-03790100</url>
@@ -39256,7 +38966,7 @@
 <name>Наушники с микрофоном HyperX Cloud Earbuds III S Red BN7S2AA</name>
 <vendor>HyperX</vendor>
 <vendorCode>IS3FFCF8F71A</vendorCode>
-<description>Тип устройства Наушники с микрофоном · Цвет Красный</description>
+<description>Тип устройства Наушники с микрофоном · Цвет красный</description>
 </offer>
 <offer id="IS4632913A72" available="true">
 <url>https://b2b.isoft-shop.kz/naushniki/tproduct/695714064044-garnitura-razer-blackshark-v3-pro-black</url>
@@ -39741,7 +39451,7 @@
 <name>Наушники с микрофоном HyperX Cloud Earbuds III Red BN7S0AA</name>
 <vendor>HyperX</vendor>
 <vendorCode>ISED410AB565</vendorCode>
-<description>Тип устройства Наушники с микрофоном · Цвет Красный</description>
+<description>Тип устройства Наушники с микрофоном · Цвет красный</description>
 </offer>
 <offer id="ISF2E9BF8C4D" available="true">
 <url>https://b2b.isoft-shop.kz/naushniki/tproduct/617653325534-garnitura-hyperx-cloud-jet-dual-black-aj</url>
@@ -39992,6 +39702,18 @@
 <vendor>ASUS</vendor>
 <vendorCode>IS0A14430492</vendorCode>
 <description>Диагональ 14″ · Оперативная память 16 ГБ · Операционная система Windows 11 Home · Разрешение 1920×1200 · Процессор Qualcomm Snapdragon X X1 26 101 · Накопитель 256 ГБ · Тип матрицы IPS · Wi-Fi Wi-Fi 6E · Bluetooth 5.3 · Подсветка клавиатуры есть</description>
+</offer>
+<offer id="IS0B1A760F0D" available="true">
+<url>https://b2b.isoft-shop.kz/noutbuki/tproduct/165486427884-noutbuk-apple-macbook-air-13-inch-apple</url>
+<price>1385000</price>
+<currencyId>KZT</currencyId>
+<categoryId>293087419414</categoryId>
+<picture>https://static.tildacdn.com/tild3333-3032-4530-b735-343438626132/IS0B1A760F0D.jpg</picture>
+<picture>https://static.tildacdn.com/tild6563-3634-4237-b439-393731303533/165486427884.jpg</picture>
+<name>Ноутбук APPLE MacBook Air 13-inch Apple M5 (10-core CPU, 10-core GPU), 24GB, 1TB SSD, Sky Blue, Model A3449</name>
+<vendor>APPLE</vendor>
+<vendorCode>IS0B1A760F0D</vendorCode>
+<description>Количество ядер процессора 10 · Линейка процессора Apple M · Накопитель 1 ТБ · Оперативная память 24 ГБ · Процессор Apple M5 · Операционная система macOS · Диагональ 13,6″ · Разрешение 2560×1664 · Ёмкость батареи 53,8 Вт·ч · Wi-Fi Wi-Fi 7</description>
 </offer>
 <offer id="IS0D039FF440" available="true">
 <url>https://b2b.isoft-shop.kz/noutbuki/tproduct/871307492184-noutbuk-dell-pro-16-pc16250-u7-255u-210</url>
@@ -40290,6 +40012,18 @@
 <vendor>ASUS</vendor>
 <vendorCode>IS2A417A8557</vendorCode>
 <description>Тип памяти LPDDR5X · Диагональ 14″ · Разрешение 1920×1200 · Тип матрицы OLED · Частота обновления 60 Гц · Накопитель 1 ТБ · Оперативная память 16 ГБ · Операционная система без ОС · Процессор AMD AI 7 445 · Видеокарта Radeon Graphics</description>
+</offer>
+<offer id="IS2A85D29CA2" available="true">
+<url>https://b2b.isoft-shop.kz/noutbuki/tproduct/892928192264-noutbuk-apple-macbook-air-13-inch-silver</url>
+<price>1581000</price>
+<currencyId>KZT</currencyId>
+<categoryId>293087419414</categoryId>
+<picture>https://static.tildacdn.com/stor3435-3732-4561-b430-313638653931/0853b426c0262220baa9ae1536fc12b3.png</picture>
+<picture>https://static.tildacdn.com/tild6461-6332-4365-a336-373030386231/892928192264.jpg</picture>
+<name>Ноутбук APPLE MacBook Air, 13-inch, Silver, Model A3449, 32GB, 1TB, SSD, Two Thunderbolt 4 Ports, Touch ID, Liquid Retina display</name>
+<vendor>APPLE</vendor>
+<vendorCode>IS2A85D29CA2</vendorCode>
+<description>Количество ядер процессора 10 · Накопитель 1 ТБ · Оперативная память 32 ГБ · Процессор Apple M5 · Операционная система macOS · Диагональ 13,6″ · Разрешение 2560×1664 · Ёмкость батареи 53,8 Вт·ч · Wi-Fi Wi-Fi 7 · Bluetooth 6.0</description>
 </offer>
 <offer id="IS2B6F54E807" available="true">
 <url>https://b2b.isoft-shop.kz/noutbuki/tproduct/139455079414-noutbuk-asus-zenbook-14-um3406ga-qd049-r</url>
@@ -40594,6 +40328,17 @@
 <vendor>HP</vendor>
 <vendorCode>IS3C80370858</vendorCode>
 <description>Диагональ 16″ · Оперативная память 32 ГБ · Операционная система Windows 11 Pro · Процессор Ultra 9 285HX · Накопитель 1 ТБ · Камера IR + 5 Мп · Линейка процессора Core Ultra 9 · Тип накопителя SSD · Разрешение 2560×1600 · Видеокарта NVIDIA RTX PRO 3000</description>
+</offer>
+<offer id="IS3CD3500411" available="true">
+<url>https://b2b.isoft-shop.kz/noutbuki/tproduct/516138177094-noutbuk-15-inch-macbook-air-apple-m5-chi</url>
+<price>1354000</price>
+<currencyId>KZT</currencyId>
+<categoryId>293087419414</categoryId>
+<picture>https://static.tildacdn.com/stor6239-3439-4834-a136-663731383466/2ffda41af95df6f1c765d6dd7e723ded.png</picture>
+<name>Ноутбук 15-inch MacBook Air: Apple M5 chip with 10-core CPU and 10-core GPU, 16GB, 1TB SSD - Sky Blue,Model A3448</name>
+<vendor>APPLE</vendor>
+<vendorCode>IS3CD3500411</vendorCode>
+<description>Видеокарта Встроенная · Диагональ 15,3″ · Линейка процессора Apple M · Накопитель 1 ТБ · Оперативная память 16 ГБ · Операционная система macOS · Разрешение 2880×1864 · Процессор Apple M5 · Количество ядер процессора 10 · В комплекте Адаптер питания USB-C, кабель USB-C на MagSafe 3 (2 м)</description>
 </offer>
 <offer id="IS3CF706BD3E" available="true">
 <url>https://b2b.isoft-shop.kz/noutbuki/tproduct/151366074244-noutbuk-asus-h7606ww-se079x-90nb17f1-m00</url>
@@ -41562,21 +41307,6 @@
 <vendorCode>IS7E6BC5A74C</vendorCode>
 <description>Тип памяти DDR5 · Диагональ 16″ · Оперативная память 16 ГБ · Операционная система Windows 11 · Разрешение 1920×1200 · Процессор Intel Core Ultra 7 265U · Накопитель 512 ГБ · Видеокарта Встроенная · Ёмкость батареи 55 Вт·ч · Bluetooth 5.3</description>
 </offer>
-<offer id="IS7EE23EE453" available="true">
-<url>https://b2b.isoft-shop.kz/noutbuki/tproduct/325568887734-noutbuk-acer-aspire-lite-al15-45p-ryzen</url>
-<price>306000</price>
-<currencyId>KZT</currencyId>
-<categoryId>293087419414</categoryId>
-<picture>https://static.tildacdn.com/tild6430-6366-4761-b666-323032353838/325568887734.jpg</picture>
-<picture>https://static.tildacdn.com/tild3964-3161-4336-b566-323434356161/325568887734.jpg</picture>
-<picture>https://static.tildacdn.com/tild3035-6365-4130-b930-313833323235/325568887734_2.jpg</picture>
-<picture>https://static.tildacdn.com/tild3832-6337-4131-a265-623033313865/325568887734_3.jpg</picture>
-<picture>https://static.tildacdn.com/tild3038-3363-4366-b666-353764326230/325568887734_4.jpg</picture>
-<name>Ноутбук Acer Aspire Lite AL15-45P, Ryzen 3 5400U-2.6/256GB SSD/8GB/14-inch WUXGA/DOS</name>
-<vendor>Acer</vendor>
-<vendorCode>IS7EE23EE453</vendorCode>
-<description>Диагональ 14″ · Оперативная память 8 ГБ · Операционная система без ОС · Разрешение 1920×1200 · Процессор AMD Ryzen 3 5400U · Накопитель 256 ГБ · Семья ОС Без ОС · Линейка процессора Ryzen 3 · Тип накопителя SSD</description>
-</offer>
 <offer id="IS7F5FA26102" available="true">
 <url>https://b2b.isoft-shop.kz/noutbuki/tproduct/905623894724-noutbuk-asus-p3606cma-mb0121x-c7-350-90n</url>
 <price>878000</price>
@@ -41832,6 +41562,17 @@
 <vendor>Lenovo</vendor>
 <vendorCode>IS922DD740B2</vendorCode>
 <description>Линейка процессора Core i5 · Накопитель 512 ГБ · Оперативная память 8 ГБ · Процессор Intel i5-13420H · Операционная система без ОС · Диагональ 15,6″ · Разрешение 1920×1080 · Семья ОС Без ОС</description>
+</offer>
+<offer id="IS934A530818" available="true">
+<url>https://b2b.isoft-shop.kz/noutbuki/tproduct/860844702184-noutbuk-apple-macbook-air-15-inch-silver</url>
+<price>1371000</price>
+<currencyId>KZT</currencyId>
+<categoryId>293087419414</categoryId>
+<picture>https://static.tildacdn.com/stor6432-6132-4761-b661-333266306230/a3cda3c0c98d870901734f53dd02017b.png</picture>
+<name>Ноутбук APPLE MacBook Air, 15-inch, Silver, Model A3448, M5 CHIP WITH 10C CPU, 16GB, 1TB SSD storage, Two Thunderbolt 4 Ports, Touch ID</name>
+<vendor>APPLE</vendor>
+<vendorCode>IS934A530818</vendorCode>
+<description>Накопитель 1 ТБ · Оперативная память 16 ГБ · В комплекте Адаптер питания USB-C, кабель USB-C на MagSafe 3 (2 м) · Процессор Apple M5 · Видеокарта Встроенная · Операционная система macOS · Диагональ 15,3″ · Разрешение 2880×1864 · Ёмкость батареи 66,5 Вт·ч · Тип матрицы IPS</description>
 </offer>
 <offer id="IS938D4604D3" available="true">
 <url>https://b2b.isoft-shop.kz/noutbuki/tproduct/615822376974-noutbuk-dell-pro-16-pc16255-bto604pc1625</url>
@@ -42204,17 +41945,6 @@
 <vendorCode>FX608JPR-RV118</vendorCode>
 <description>Игровой ноутбук линейки Asus TUF Gaming F16. Процессор Intel Core i5-14450HX. Оперативной памяти 16 ГБ DDR5. Накопитель SSD на 1 ТБ. Экран 16 дюймов, 1920×1200, матрица IPS, 165 Гц. Видеокарта дискретная: NVIDIA GeForce RTX 5070, 8 ГБ видеопамяти. В комплекте DOS — операционную систему ставит покупатель. · Партномер: FX608JPR-RV118</description>
 </offer>
-<offer id="ISB10DD34A13" available="true">
-<url>https://b2b.isoft-shop.kz/noutbuki/tproduct/209183127424-noutbuk-asus-b1503cva-s75357-c5-120u-90n</url>
-<price>957000</price>
-<currencyId>KZT</currencyId>
-<categoryId>293087419414</categoryId>
-<picture>https://static.tildacdn.com/stor3265-6334-4834-a261-373739626262/00702e47f1c9571181d6cf3c8a0ec9a0.jpg</picture>
-<name>Ноутбук ASUS B1503CVA-S75357 C5-120U 90NX0801-M0AC30</name>
-<vendor>ASUS</vendor>
-<vendorCode>ISB10DD34A13</vendorCode>
-<description>Гарантия 1 год · Диагональ 15,6″ · Оперативная память 16 ГБ · Операционная система без ОС · Разрешение 1920×1080 · Процессор Intel Core 5 120U · Накопитель 512 ГБ · Видеокарта Встроенная · Ёмкость батареи 42 Вт·ч · Камера HD</description>
-</offer>
 <offer id="ISB114B1F279" available="true">
 <url>https://b2b.isoft-shop.kz/noutbuki/tproduct/322877950834-173-inch-noutbuk-msi-cyborg-17-b2rwekg-2</url>
 <price>742000</price>
@@ -42396,6 +42126,18 @@
 <vendor>Dell</vendor>
 <vendorCode>ISBDE85FA00F</vendorCode>
 <description>Тип памяти DDR5 · Диагональ 14″ · Оперативная память 32 ГБ · Операционная система Windows 11 · Разрешение 1920×1200 · Процессор Intel Core Ultra 7 255U · Накопитель 512 ГБ · Видеокарта Встроенная · Ёмкость батареи 45 Вт·ч · Bluetooth 5.3</description>
+</offer>
+<offer id="ISBE0D74D238" available="true">
+<url>https://b2b.isoft-shop.kz/noutbuki/tproduct/425081854024-noutbuk-apple-macbook-air-13-inch-apple</url>
+<price>1357000</price>
+<currencyId>KZT</currencyId>
+<categoryId>293087419414</categoryId>
+<picture>https://static.tildacdn.com/stor3366-3631-4564-b837-353765386464/85afe37c2e8eefd93be59c5e243fb119.png</picture>
+<picture>https://static.tildacdn.com/tild3932-6335-4139-b761-333462653962/425081854024.jpg</picture>
+<name>Ноутбук APPLE MacBook Air 13-inch Apple M5 (10-core CPU, 10-core GPU), 24GB, 1TB SSD, Midnight, Model A3449</name>
+<vendor>APPLE</vendor>
+<vendorCode>ISBE0D74D238</vendorCode>
+<description>Видеокарта Встроенная · Диагональ 13,6″ · Линейка процессора Apple M · Накопитель 1 ТБ · Оперативная память 24 ГБ · Операционная система macOS · Разрешение 2560×1664 · Семья ОС macOS · Процессор Apple M5 · Количество ядер процессора 10</description>
 </offer>
 <offer id="ISBE8E714FF7" available="true">
 <url>https://b2b.isoft-shop.kz/noutbuki/tproduct/237669180174-notebook-acer-ph3d15-71-99ny-predator-he</url>
@@ -43399,17 +43141,6 @@
 <vendorCode>ISFF7F0DA265</vendorCode>
 <description>Ноутбук линейки HP EliteBook 1040 G9. Процессор Intel Core i5-1245U. Оперативной памяти 16 ГБ DDR5. Накопитель SSD на 512 ГБ. Экран 14 дюймов. Графика встроенная. Предустановлена Windows 11.</description>
 </offer>
-<offer id="IS00EC5170D2" available="true">
-<url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/787168875234-operativnaya-pamyat-dimm-ddr4-8-gb-lt320</url>
-<price>36000</price>
-<currencyId>KZT</currencyId>
-<categoryId>160131640904</categoryId>
-<picture>https://static.tildacdn.com/tild3063-3933-4733-b439-633962643863/787168875234.jpg</picture>
-<name>Оперативная память DIMM DDR4 8 GB &amp;lt;3200MHz&amp;gt; Hiksemi (Hikvision) Armor, HSC408U32Z2 (Purple)</name>
-<vendor>HIKSEMI</vendor>
-<vendorCode>IS00EC5170D2</vendorCode>
-<description>Частота 3200 МГц · Тип памяти DDR4 · Объём комплекта 8 ГБ · Форм-фактор DIMM · Модулей в комплекте 1 · Тайминги CL18</description>
-</offer>
 <offer id="IS050DC4E9E6" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/513805898534-operativnaya-pamyat-apacer-panther-ah5u1</url>
 <price>140000</price>
@@ -43747,6 +43478,17 @@
 <vendorCode>IS45D74F2CF9</vendorCode>
 <description>Частота 3200 МГц · Тип памяти DDR4 · Объём комплекта 8 ГБ · Форм-фактор DIMM · Тайминги CL22 · Модулей в комплекте 1</description>
 </offer>
+<offer id="IS45ED5615DF" available="true">
+<url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/461747359534-operativnaya-pamyat-apacer-nox-ah5u16g60</url>
+<price>135000</price>
+<currencyId>KZT</currencyId>
+<categoryId>160131640904</categoryId>
+<picture>https://static.tildacdn.com/stor6339-6666-4637-b939-646466323134/c09c5a62e7a2a3fb016f18f547a7720e.jpg</picture>
+<name>Оперативная память Apacer NOX AH5U16G60C622MBAA-1 DDR5 16GB</name>
+<vendor>Apacer</vendor>
+<vendorCode>IS45ED5615DF</vendorCode>
+<description>Форм-фактор DIMM · Объём 16 ГБ · Тип памяти DDR5 · Модулей в комплекте 1</description>
+</offer>
 <offer id="IS46A0139FDE" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/551043232584-operativnaya-pamyat-samsung-16gb-udimm-3</url>
 <price>81000</price>
@@ -43768,17 +43510,6 @@
 <vendor>HIKSEMI</vendor>
 <vendorCode>IS4AFF4BAA68</vendorCode>
 <description>Частота 3200 МГц · Тип памяти DDR4 · Объём комплекта 32 ГБ · Форм-фактор DIMM · Модулей в комплекте 2 · Тайминги CL18</description>
-</offer>
-<offer id="IS4BB01E65CE" available="true">
-<url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/695429197524-operativnaya-pamyat-dimm-ddr4-32-gb-hiks</url>
-<price>150000</price>
-<currencyId>KZT</currencyId>
-<categoryId>160131640904</categoryId>
-<picture>https://static.tildacdn.com/tild3662-3136-4430-a438-303666666336/695429197524.jpg</picture>
-<name>Оперативная память DIMM DDR4 32 GB Hiksemi (Hikvision) Sword RGB HSC432U32B5</name>
-<vendor>HIKSEMI</vendor>
-<vendorCode>IS4BB01E65CE</vendorCode>
-<description>Частота 3200 МГц · Тип памяти DDR4 · Объём комплекта 32 ГБ · Форм-фактор DIMM · Модулей в комплекте 2</description>
 </offer>
 <offer id="IS4D6A08ECB9" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/310655782364-operativnaya-pamyat-lexar-ld4au016g-b320</url>
@@ -44306,17 +44037,6 @@
 <vendorCode>ISA61DC973E1</vendorCode>
 <description>Частота 3200 МГц · Тип памяти DDR4 · Объём комплекта 16 ГБ · Форм-фактор DIMM · Модулей в комплекте 2 · Тайминги CL18</description>
 </offer>
-<offer id="ISA6D776CAEC" available="true">
-<url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/175893077274-operativnaya-pamyat-dimm-ddr4-32-gb-gski</url>
-<price>174000</price>
-<currencyId>KZT</currencyId>
-<categoryId>160131640904</categoryId>
-<picture>https://static.tildacdn.com/tild3833-3765-4461-a331-653132333564/175893077274.jpg</picture>
-<name>Оперативная память DIMM DDR4 32 GB G.Skill Trident Z RGB F4-3200C16D-32GTZRX</name>
-<vendor>G.SKILL</vendor>
-<vendorCode>ISA6D776CAEC</vendorCode>
-<description>Частота 3200 МГц · Тип памяти DDR4 · Объём комплекта 32 ГБ · Форм-фактор DIMM · Модулей в комплекте 2 · Тайминги 16-18-18-38</description>
-</offer>
 <offer id="ISA704617429" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/424142328194-operativnaya-pamyat-dimm-ddr4-16384mbx2</url>
 <price>221000</price>
@@ -44730,17 +44450,6 @@
 <vendor>Kingston</vendor>
 <vendorCode>KF432C16BB2A/8WP</vendorCode>
 <description>Тип памяти DDR4 · Объём 8 ГБ · Частота 3200 МГц · Форм-фактор DIMM · Модулей в комплекте 1 · Партномер: KF432C16BB2A/8WP</description>
-</offer>
-<offer id="ISE903B57A5F" available="true">
-<url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/875494512484-operativnaya-pamyat-dimm-ddr4-8-gb-lt266</url>
-<price>39000</price>
-<currencyId>KZT</currencyId>
-<categoryId>160131640904</categoryId>
-<picture>https://static.tildacdn.com/tild6332-3930-4734-b831-363933313161/875494512484.jpg</picture>
-<name>Оперативная память DIMM DDR4 8 GB &amp;lt;2666MHz&amp;gt; G.Skill Aegis, F4-2666C19S-8GIS, 19-19-19-43</name>
-<vendor>G.SKILL</vendor>
-<vendorCode>ISE903B57A5F</vendorCode>
-<description>Частота 2666 МГц · Тип памяти DDR4 · Объём комплекта 8 ГБ · Форм-фактор DIMM · Тайминги 19-19-19-43</description>
 </offer>
 <offer id="ISEC64979715" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/164332265104-operativnaya-pamyat-dlya-noutbuka-lexar</url>
@@ -45274,19 +44983,6 @@
 <vendor>-</vendor>
 <vendorCode>IS233CF042CC</vendorCode>
 <description>Уровень шума 30,6 дБА · Интерфейс 4-pin · Тип устройства Кулер для процессора · Воздушный поток 56,68 CFM</description>
-</offer>
-<offer id="IS23E595EE9B" available="true">
-<url>https://b2b.isoft-shop.kz/ohlazhdenie/tproduct/964682582144-ohlazhdenie-cooler-id-cooling-se-904-xt</url>
-<price>9000</price>
-<currencyId>KZT</currencyId>
-<categoryId>831063569394</categoryId>
-<picture>https://static.tildacdn.com/tild3938-3331-4530-b333-353061366434/964682582144.jpg</picture>
-<picture>https://static.tildacdn.com/tild3538-6461-4365-b637-613733396262/964682582144_2.jpg</picture>
-<picture>https://static.tildacdn.com/tild6564-3238-4333-b065-646333323564/964682582144_3.jpg</picture>
-<name>Охлаждение Cooler ID-Cooling SE-904-XT BLACK</name>
-<vendor>ID-COOLING</vendor>
-<vendorCode>IS23E595EE9B</vendorCode>
-<description>Скорость вращения 500–2500 об/мин · Уровень шума 29,1 дБА · Подсветка Нет · Интерфейс 4-pin · Тип устройства Кулер для процессора · Форм-фактор 100 мм · Количество вентиляторов 1 · Сокет 1851 / 1700 / 1200 / 115x · TDP 180 Вт · Цвет Чёрный</description>
 </offer>
 <offer id="IS24DCE1E278" available="true">
 <url>https://b2b.isoft-shop.kz/ohlazhdenie/tproduct/203068603704-kuler-dlya-kompyuternogo-korpusa-thermal</url>
@@ -46470,18 +46166,6 @@
 <vendor>Gigabyte</vendor>
 <vendorCode>IS750E0A70C7</vendorCode>
 <description>Форм-фактор 240 мм · Уровень шума 37,1 дБА · Подсветка ARGB · Скорость вращения 800–2500 об/мин · Тип устройства Водяное охлаждение (СЖО) · Сокет 1851 / 1700 / 1200 / 1151 / 2066 / 2011 / 1366 / AM5 / AM4 / sTRX4 / TR4 / AM3 / AM3+ / AM2 · TDP 240 Вт · Количество вентиляторов 2 · Цвет Чёрный · Гарантия 1 год</description>
-</offer>
-<offer id="IS7663E1E0A5" available="true">
-<url>https://b2b.isoft-shop.kz/ohlazhdenie/tproduct/994407661054-ohlazhdenie-termopasta-heatsink-compound</url>
-<price>2800</price>
-<currencyId>KZT</currencyId>
-<categoryId>831063569394</categoryId>
-<picture>https://static.tildacdn.com/tild6434-6461-4762-a536-313135623431/994407661054.jpg</picture>
-<picture>https://static.tildacdn.com/tild3832-6336-4537-a665-373136316337/994407661054_2.jpg</picture>
-<name>Охлаждение Термопаста heatsink compound, Arctic MX-6, 2г шприц, 2.6g/cm3</name>
-<vendor>ARCTIC</vendor>
-<vendorCode>IS7663E1E0A5</vendorCode>
-<description>Тип устройства Термопаста и термопрокладки · Вес нетто 2 г</description>
 </offer>
 <offer id="IS775E6B3EBF" available="true">
 <url>https://b2b.isoft-shop.kz/ohlazhdenie/tproduct/840555401344-ohlazhdenie-water-cooler-corsair-h115i-e</url>
@@ -47753,21 +47437,6 @@
 <vendorCode>ISCEDCD6A79A</vendorCode>
 <description>Форм-фактор 120 мм · Уровень шума 13,8–30,5 дБА · Подсветка ARGB · Интерфейс 4-pin · Скорость вращения 500–1500 об/мин · Тип устройства Вентилятор для корпуса · Воздушный поток 68,2 CFM · Тип подшипника Гидродинамический · Цвет Белый</description>
 </offer>
-<offer id="ISD082B9B63C" available="true">
-<url>https://b2b.isoft-shop.kz/ohlazhdenie/tproduct/411834428544-ohlazhdenie-water-cooler-asus-rog-strix</url>
-<price>55000</price>
-<currencyId>KZT</currencyId>
-<categoryId>831063569394</categoryId>
-<picture>https://static.tildacdn.com/tild3731-6636-4337-b339-343231373738/411834428544.jpg</picture>
-<picture>https://static.tildacdn.com/tild6438-3831-4465-b462-623463353563/411834428544_2.jpg</picture>
-<picture>https://static.tildacdn.com/tild6238-3037-4130-b635-373465333161/411834428544_3.jpg</picture>
-<picture>https://static.tildacdn.com/tild3463-6639-4433-a363-363732363566/411834428544_4.jpg</picture>
-<picture>https://static.tildacdn.com/tild6130-6433-4263-b265-656532616463/411834428544_5.jpg</picture>
-<name>Охлаждение Water Cooler ASUS ROG STRIX LC II 240 RGB WE, for Socket 2066/2011/1700/1366/115x/AMD/TR4</name>
-<vendor>ASUS</vendor>
-<vendorCode>ISD082B9B63C</vendorCode>
-<description>Форм-фактор 240 мм · Уровень шума 37,6 дБА · Подсветка ARGB · Скорость вращения 800–2500 об/мин · Тип устройства Водяное охлаждение (СЖО) · Сокет LGA2066 · Количество вентиляторов 2</description>
-</offer>
 <offer id="ISD2AD19B8EE" available="true">
 <url>https://b2b.isoft-shop.kz/ohlazhdenie/tproduct/877196255854-kuler-dlya-kompyuternogo-korpusa-thermal</url>
 <price>28000</price>
@@ -47893,21 +47562,6 @@
 <vendor>Deepcool</vendor>
 <vendorCode>ISE141377DFF</vendorCode>
 <description>Подсветка LED · Гарантия 1 год · Количество вентиляторов 1</description>
-</offer>
-<offer id="ISE3C2E618C4" available="true">
-<url>https://b2b.isoft-shop.kz/ohlazhdenie/tproduct/276957401454-ohlazhdenie-cooler-id-cooling-dk-01</url>
-<price>2700</price>
-<currencyId>KZT</currencyId>
-<categoryId>831063569394</categoryId>
-<picture>https://static.tildacdn.com/tild3131-6531-4630-a338-396432343765/276957401454.jpg</picture>
-<picture>https://static.tildacdn.com/tild3830-3539-4331-b731-343434396635/276957401454_2.jpg</picture>
-<picture>https://static.tildacdn.com/tild6231-3532-4562-a461-396532323830/276957401454_3.jpg</picture>
-<picture>https://static.tildacdn.com/tild3562-3434-4563-b131-653738643739/276957401454_4.jpg</picture>
-<picture>https://static.tildacdn.com/tild6265-6239-4137-a635-346433356163/276957401454_5.jpg</picture>
-<name>Охлаждение Cooler ID-Cooling DK-01</name>
-<vendor>ID-COOLING</vendor>
-<vendorCode>ISE3C2E618C4</vendorCode>
-<description>Форм-фактор 92 мм · Уровень шума 14,2–28,8 дБА · Интерфейс 4-pin PWM · Скорость вращения 800–2500 об/мин · Тип устройства Кулер для процессора · Воздушный поток 45,3 CFM · Тип подшипника Гидродинамический · Сокет 1700 / 1200 / 775 / 115x · TDP 95 Вт · Количество вентиляторов 1</description>
 </offer>
 <offer id="ISE62383652C" available="true">
 <url>https://b2b.isoft-shop.kz/ohlazhdenie/tproduct/761532085694-ohlazhdenie-komplekt-kulerov-dlya-kompyu</url>
@@ -58961,17 +58615,6 @@
 <vendorCode>IS6D0C4CD30E</vendorCode>
 <description>Тип устройства Сканер · Тип сканера Планшетный · Формат A4 · Скорость сканирования до 25 стр./мин</description>
 </offer>
-<offer id="IS8BDE3A704B" available="true">
-<url>https://b2b.isoft-shop.kz/skanery-dokumentov/tproduct/552305701894-skaner-epson-workforce-ds-870-b11b250401</url>
-<price>491000</price>
-<currencyId>KZT</currencyId>
-<categoryId>157170829164</categoryId>
-<picture>https://static.tildacdn.com/tild3738-6539-4864-b662-346435366438/IS8BDE3A704B_1.jpg</picture>
-<name>Сканер Epson WorkForce DS-870, B11B250401, A4, 600x600dpi, CIS, 65ppm, 48/24 bit, USB 2.0</name>
-<vendor>Epson</vendor>
-<vendorCode>IS8BDE3A704B</vendorCode>
-<description>Тип устройства Сканер · Формат A4 · Разрешение сканирования 600×600 dpi · Интерфейсы USB 2.0</description>
-</offer>
 <offer id="IS93FFB8F0C0" available="true">
 <url>https://b2b.isoft-shop.kz/skanery-dokumentov/tproduct/842659967954-skaner-scanner-canondocument-scanner-dr</url>
 <price>688000</price>
@@ -61788,6 +61431,17 @@
 <vendorCode>IS02D92D73BC</vendorCode>
 <description>Исполнение Настенный · Типоразмер (U) 6U · Габариты 600×600 мм · Дверь Стеклянная · Ширина, мм 600 · Глубина, мм 600</description>
 </offer>
+<offer id="IS12266CE84E" available="true">
+<url>https://b2b.isoft-shop.kz/shkafy-i-stoyki/tproduct/699947910904-shkaf-kommunikatsionnii-ship-601s8042541</url>
+<price>445000</price>
+<currencyId>KZT</currencyId>
+<categoryId>667674530784</categoryId>
+<picture>https://static.tildacdn.com/stor3561-6136-4739-b235-636665616139/7d3f10e4cfc47582aba81fce4b9eb6db.jpg</picture>
+<name>Шкаф коммуникационный SHIP 601S.8042.54.100 42U 800*1000*2000 мм</name>
+<vendor>Ship</vendor>
+<vendorCode>IS12266CE84E</vendorCode>
+<description>Габариты 800×1000×2000 мм · Исполнение Напольный · Типоразмер (U) 42U</description>
+</offer>
 <offer id="IS1C1C8F5DC8" available="true">
 <url>https://b2b.isoft-shop.kz/shkafy-i-stoyki/tproduct/103207674504-lanmaster-shkaf-nastennii-serii-pro-9u-6</url>
 <price>79000</price>
@@ -61832,6 +61486,17 @@
 <vendorCode>IS27C355C0AD</vendorCode>
 <description>Исполнение Настенный · Типоразмер (U) 6U · Габариты 570×450×370 мм · Ширина, мм 570 · Глубина, мм 450</description>
 </offer>
+<offer id="IS2872C54E96" available="true">
+<url>https://b2b.isoft-shop.kz/shkafy-i-stoyki/tproduct/742847562334-shkaf-kommunikatsionnii-nastennii-ship-5</url>
+<price>63000</price>
+<currencyId>KZT</currencyId>
+<categoryId>667674530784</categoryId>
+<picture>https://static.tildacdn.com/stor6539-3832-4161-a332-323439376666/1b41e11dfe059cc9011a2b652e537846.jpg</picture>
+<name>Шкаф коммуникационный настенный SHIP 5412.01.100 12U 570*450*635 мм</name>
+<vendor>Ship</vendor>
+<vendorCode>IS2872C54E96</vendorCode>
+<description>Габариты 570×450×635 мм · Исполнение Настенный · Типоразмер (U) 12U</description>
+</offer>
 <offer id="IS2AED9A68AC" available="true">
 <url>https://b2b.isoft-shop.kz/shkafy-i-stoyki/tproduct/426854173444-lider-team-shkaf-napolnii-pixietech-42u</url>
 <price>404000</price>
@@ -61842,6 +61507,61 @@
 <vendor>Lider Team</vendor>
 <vendorCode>IS2AED9A68AC</vendorCode>
 <description>Исполнение Напольный · Типоразмер (U) 42U · Габариты 800×1200×2000 мм · Дверь Перфорированная · Ширина, мм 800 · Глубина, мм 1200</description>
+</offer>
+<offer id="IS2C277DFCD4" available="true">
+<url>https://b2b.isoft-shop.kz/shkafy-i-stoyki/tproduct/260596440044-shkaf-kommunikatsionnii-ship-601s6042241</url>
+<price>349000</price>
+<currencyId>KZT</currencyId>
+<categoryId>667674530784</categoryId>
+<picture>https://static.tildacdn.com/stor6335-3531-4631-b039-636139633334/71dfc1ee3877adf67d7346618d930a64.jpg</picture>
+<name>Шкаф коммуникационный SHIP 601S.6042.24.100 42U 600*1000*2000 мм</name>
+<vendor>Ship</vendor>
+<vendorCode>IS2C277DFCD4</vendorCode>
+<description>Габариты 600×1000×2000 мм · Исполнение Напольный · Типоразмер (U) 42U</description>
+</offer>
+<offer id="IS304EB96443" available="true">
+<url>https://b2b.isoft-shop.kz/shkafy-i-stoyki/tproduct/146288611484-shkaf-kommunikatsionnii-nastennii-ship-s</url>
+<price>62000</price>
+<currencyId>KZT</currencyId>
+<categoryId>667674530784</categoryId>
+<picture>https://static.tildacdn.com/stor6334-3330-4663-b466-626332373061/5d252b5253b3d70f268d7ec410b10eb4.jpg</picture>
+<name>Шкаф коммуникационный настенный SHIP SC5415.11.100 15U 570*450*770 мм</name>
+<vendor>Ship</vendor>
+<vendorCode>IS304EB96443</vendorCode>
+<description>Габариты 570×450×770 мм · Исполнение Настенный · Типоразмер (U) 15U</description>
+</offer>
+<offer id="IS30EB997609" available="true">
+<url>https://b2b.isoft-shop.kz/shkafy-i-stoyki/tproduct/367524888354-shkaf-kommunikatsionnii-ship-601s6842541</url>
+<price>321000</price>
+<currencyId>KZT</currencyId>
+<categoryId>667674530784</categoryId>
+<picture>https://static.tildacdn.com/stor3561-6136-4739-b235-636665616139/7d3f10e4cfc47582aba81fce4b9eb6db.jpg</picture>
+<name>Шкаф коммуникационный SHIP 601S.6842.54.100 42U 600*800*2000 мм</name>
+<vendor>Ship</vendor>
+<vendorCode>IS30EB997609</vendorCode>
+<description>Габариты 600×800×2000 мм · Исполнение Напольный · Типоразмер (U) 42U</description>
+</offer>
+<offer id="IS4435332E43" available="true">
+<url>https://b2b.isoft-shop.kz/shkafy-i-stoyki/tproduct/434041446654-shkaf-kommunikatsionnii-nastennii-ship-s</url>
+<price>64000</price>
+<currencyId>KZT</currencyId>
+<categoryId>667674530784</categoryId>
+<picture>https://static.tildacdn.com/stor6334-3330-4663-b466-626332373061/5d252b5253b3d70f268d7ec410b10eb4.jpg</picture>
+<name>Шкаф коммуникационный настенный SHIP SC5612.11.100 12U 570*600*635 мм</name>
+<vendor>Ship</vendor>
+<vendorCode>IS4435332E43</vendorCode>
+<description>Габариты 570×600×635 мм · Исполнение Настенный · Типоразмер (U) 12U</description>
+</offer>
+<offer id="IS44E52B3ECF" available="true">
+<url>https://b2b.isoft-shop.kz/shkafy-i-stoyki/tproduct/890126315534-shkaf-kommunikatsionnii-ship-601s6633031</url>
+<price>214000</price>
+<currencyId>KZT</currencyId>
+<categoryId>667674530784</categoryId>
+<picture>https://static.tildacdn.com/stor3163-3635-4630-b064-663065313637/a1d953f7653e05c9bc66d3a6a90f3c0d.jpg</picture>
+<name>Шкаф коммуникационный SHIP 601S.6633.03.100 33U 600*600*1600 мм</name>
+<vendor>Ship</vendor>
+<vendorCode>IS44E52B3ECF</vendorCode>
+<description>Габариты 600×600×1600 мм · Исполнение Напольный · Типоразмер (U) 33U</description>
 </offer>
 <offer id="IS4F2C7DD62D" available="true">
 <url>https://b2b.isoft-shop.kz/shkafy-i-stoyki/tproduct/813377218514-lanmaster-shkaf-19-inch-business-42u-twt</url>
@@ -61854,6 +61574,127 @@
 <vendorCode>IS4F2C7DD62D</vendorCode>
 <description>Lanmaster Шкаф 19-inch Business 42U TWT-CBB-42U-6x10-G1 (Lanmaster)</description>
 </offer>
+<offer id="IS4FC92F6643" available="true">
+<url>https://b2b.isoft-shop.kz/shkafy-i-stoyki/tproduct/984009461334-shkaf-kommunikatsionnii-ship-601s6838241</url>
+<price>269000</price>
+<currencyId>KZT</currencyId>
+<categoryId>667674530784</categoryId>
+<picture>https://static.tildacdn.com/stor6335-3531-4631-b039-636139633334/71dfc1ee3877adf67d7346618d930a64.jpg</picture>
+<name>Шкаф коммуникационный SHIP 601S.6838.24.100 38U 600*800*1800 мм</name>
+<vendor>Ship</vendor>
+<vendorCode>IS4FC92F6643</vendorCode>
+<description>Габариты 600×800×1800 мм · Исполнение Напольный · Типоразмер (U) 38U</description>
+</offer>
+<offer id="IS5403F08EC3" available="true">
+<url>https://b2b.isoft-shop.kz/shkafy-i-stoyki/tproduct/544340709874-shkaf-kommunikatsionnii-nastennii-ship-v</url>
+<price>49000</price>
+<currencyId>KZT</currencyId>
+<categoryId>667674530784</categoryId>
+<picture>https://static.tildacdn.com/stor6564-3137-4762-a561-356464346666/cc5b0a50f76685cfe91be4d2880c8ff8.jpg</picture>
+<name>Шкаф коммуникационный настенный SHIP VP5406.100 6U 570*450*380 мм</name>
+<vendor>Ship</vendor>
+<vendorCode>IS5403F08EC3</vendorCode>
+<description>Габариты 570×450×380 мм · Исполнение Настенный · Типоразмер (U) 6U</description>
+</offer>
+<offer id="IS5486138624" available="true">
+<url>https://b2b.isoft-shop.kz/shkafy-i-stoyki/tproduct/803208902784-shkaf-kommunikatsionnii-ship-601s6824031</url>
+<price>202000</price>
+<currencyId>KZT</currencyId>
+<categoryId>667674530784</categoryId>
+<picture>https://static.tildacdn.com/stor3163-3635-4630-b064-663065313637/a1d953f7653e05c9bc66d3a6a90f3c0d.jpg</picture>
+<name>Шкаф коммуникационный SHIP 601S.6824.03.100 24U 600*800*1200 мм</name>
+<vendor>Ship</vendor>
+<vendorCode>IS5486138624</vendorCode>
+<description>Габариты 600×800×1200 мм · Исполнение Напольный · Типоразмер (U) 24U</description>
+</offer>
+<offer id="IS549E010F3C" available="true">
+<url>https://b2b.isoft-shop.kz/shkafy-i-stoyki/tproduct/407794515054-shkaf-kommunikatsionnii-ship-601s6615031</url>
+<price>144000</price>
+<currencyId>KZT</currencyId>
+<categoryId>667674530784</categoryId>
+<picture>https://static.tildacdn.com/stor3163-3635-4630-b064-663065313637/a1d953f7653e05c9bc66d3a6a90f3c0d.jpg</picture>
+<name>Шкаф коммуникационный SHIP 601S.6615.03.100 15U 600*600*800 мм</name>
+<vendor>Ship</vendor>
+<vendorCode>IS549E010F3C</vendorCode>
+<description>Габариты 600×600×800 мм · Исполнение Напольный · Типоразмер (U) 15U</description>
+</offer>
+<offer id="IS57A95258A5" available="true">
+<url>https://b2b.isoft-shop.kz/shkafy-i-stoyki/tproduct/152163971724-shkaf-kommunikatsionnii-nastennii-ship-e</url>
+<price>44000</price>
+<currencyId>KZT</currencyId>
+<categoryId>667674530784</categoryId>
+<picture>https://static.tildacdn.com/stor6336-6362-4635-b262-353436336462/fba537ccee36a566239ea5d7caa79d02.jpg</picture>
+<name>Шкаф коммуникационный настенный SHIP EW5406.100 6U 540*450*327 мм</name>
+<vendor>Ship</vendor>
+<vendorCode>IS57A95258A5</vendorCode>
+<description>Габариты 540×450×327 мм · Исполнение Настенный · Типоразмер (U) 6U</description>
+</offer>
+<offer id="IS5A77127DAD" available="true">
+<url>https://b2b.isoft-shop.kz/shkafy-i-stoyki/tproduct/263418361054-shkaf-kommunikatsionnii-nastennii-ship-s</url>
+<price>50000</price>
+<currencyId>KZT</currencyId>
+<categoryId>667674530784</categoryId>
+<picture>https://static.tildacdn.com/stor6334-3330-4663-b466-626332373061/5d252b5253b3d70f268d7ec410b10eb4.jpg</picture>
+<name>Шкаф коммуникационный настенный SHIP SC5606.11.100 6U 570*600*380 мм</name>
+<vendor>Ship</vendor>
+<vendorCode>IS5A77127DAD</vendorCode>
+<description>Габариты 570×600×380 мм · Исполнение Настенный · Типоразмер (U) 6U</description>
+</offer>
+<offer id="IS5EC5516D62" available="true">
+<url>https://b2b.isoft-shop.kz/shkafy-i-stoyki/tproduct/840414960474-shkaf-kommunikatsionnii-nastennii-ship-v</url>
+<price>65000</price>
+<currencyId>KZT</currencyId>
+<categoryId>667674530784</categoryId>
+<picture>https://static.tildacdn.com/stor6163-3163-4034-b034-376131643936/53ab0b8b0b0e9ef3339442f0c4bb2836.jpg</picture>
+<name>Шкаф коммуникационный настенный SHIP VA5409.01.100 9U 540*450*460 мм</name>
+<vendor>Ship</vendor>
+<vendorCode>IS5EC5516D62</vendorCode>
+<description>Габариты 540×450×460 мм · Исполнение Настенный · Типоразмер (U) 9U</description>
+</offer>
+<offer id="IS5F65634349" available="true">
+<url>https://b2b.isoft-shop.kz/shkafy-i-stoyki/tproduct/274290008434-shkaf-kommunikatsionnii-ship-601s6815031</url>
+<price>162000</price>
+<currencyId>KZT</currencyId>
+<categoryId>667674530784</categoryId>
+<picture>https://static.tildacdn.com/stor3163-3635-4630-b064-663065313637/a1d953f7653e05c9bc66d3a6a90f3c0d.jpg</picture>
+<name>Шкаф коммуникационный SHIP 601S.6815.03.100 15U 600*800*800 мм</name>
+<vendor>Ship</vendor>
+<vendorCode>IS5F65634349</vendorCode>
+<description>Габариты 600×800×800 мм · Исполнение Напольный · Типоразмер (U) 15U</description>
+</offer>
+<offer id="IS65F65C710E" available="true">
+<url>https://b2b.isoft-shop.kz/shkafy-i-stoyki/tproduct/665502865574-shkaf-kommunikatsionnii-ship-601s8842241</url>
+<price>373000</price>
+<currencyId>KZT</currencyId>
+<categoryId>667674530784</categoryId>
+<picture>https://static.tildacdn.com/stor6335-3531-4631-b039-636139633334/71dfc1ee3877adf67d7346618d930a64.jpg</picture>
+<name>Шкаф коммуникационный SHIP 601S.8842.24.100 42U 800*800*2000 мм</name>
+<vendor>Ship</vendor>
+<vendorCode>IS65F65C710E</vendorCode>
+<description>Габариты 800×800×2000 мм · Исполнение Напольный · Типоразмер (U) 42U</description>
+</offer>
+<offer id="IS668356D51C" available="true">
+<url>https://b2b.isoft-shop.kz/shkafy-i-stoyki/tproduct/686084619664-shkaf-kommunikatsionnii-nastennii-ship-5</url>
+<price>79000</price>
+<currencyId>KZT</currencyId>
+<categoryId>667674530784</categoryId>
+<picture>https://static.tildacdn.com/stor6539-3832-4161-a332-323439376666/1b41e11dfe059cc9011a2b652e537846.jpg</picture>
+<name>Шкаф коммуникационный настенный SHIP 5415.01.100 15U 570*450*770 мм</name>
+<vendor>Ship</vendor>
+<vendorCode>IS668356D51C</vendorCode>
+<description>Габариты 570×450×770 мм · Исполнение Настенный · Типоразмер (U) 15U</description>
+</offer>
+<offer id="IS672C015F00" available="true">
+<url>https://b2b.isoft-shop.kz/shkafy-i-stoyki/tproduct/221604836834-shkaf-kommunikatsionnii-ship-601s6842031</url>
+<price>290000</price>
+<currencyId>KZT</currencyId>
+<categoryId>667674530784</categoryId>
+<picture>https://static.tildacdn.com/stor3163-3635-4630-b064-663065313637/a1d953f7653e05c9bc66d3a6a90f3c0d.jpg</picture>
+<name>Шкаф коммуникационный SHIP 601S.6842.03.100 42U 600*800*2000 мм</name>
+<vendor>Ship</vendor>
+<vendorCode>IS672C015F00</vendorCode>
+<description>Габариты 600×800×2000 мм · Исполнение Напольный · Типоразмер (U) 42U</description>
+</offer>
 <offer id="IS68CF94C97A" available="true">
 <url>https://b2b.isoft-shop.kz/shkafy-i-stoyki/tproduct/993709567214-lider-team-shkaf-nastennii-pixietech-15u</url>
 <price>52000</price>
@@ -61864,6 +61705,94 @@
 <vendor>Lider Team</vendor>
 <vendorCode>IS68CF94C97A</vendorCode>
 <description>Исполнение Настенный · Типоразмер (U) 15U · Габариты 570×600×770 мм · Ширина, мм 570 · Глубина, мм 600</description>
+</offer>
+<offer id="IS6A65C2BBE9" available="true">
+<url>https://b2b.isoft-shop.kz/shkafy-i-stoyki/tproduct/820305891064-klimaticheskii-shkaf-ship-shk-9u-nastenn</url>
+<price>363000</price>
+<currencyId>KZT</currencyId>
+<categoryId>667674530784</categoryId>
+<picture>https://static.tildacdn.com/stor3634-3835-4539-b534-653838636562/ce36ae6176b56d148642d1a37f366de7.jpg</picture>
+<name>Климатический шкаф SHIP ШК-9U (настенный)</name>
+<vendor>Ship</vendor>
+<vendorCode>IS6A65C2BBE9</vendorCode>
+<description>Исполнение Настенный · Типоразмер (U) 9U</description>
+</offer>
+<offer id="IS6A806B004A" available="true">
+<url>https://b2b.isoft-shop.kz/shkafy-i-stoyki/tproduct/414892733154-shkaf-kommunikatsionnii-nastennii-ship-5</url>
+<price>89000</price>
+<currencyId>KZT</currencyId>
+<categoryId>667674530784</categoryId>
+<picture>https://static.tildacdn.com/stor6539-3832-4161-a332-323439376666/1b41e11dfe059cc9011a2b652e537846.jpg</picture>
+<name>Шкаф коммуникационный настенный SHIP 5615.01.100 15U 570*600*770 мм</name>
+<vendor>Ship</vendor>
+<vendorCode>IS6A806B004A</vendorCode>
+<description>Габариты 570×600×770 мм · Исполнение Настенный · Типоразмер (U) 15U</description>
+</offer>
+<offer id="IS6DE3939377" available="true">
+<url>https://b2b.isoft-shop.kz/shkafy-i-stoyki/tproduct/359408591144-battery-eaton9sx-ebm-rack2u48vexternal-9</url>
+<price>227000</price>
+<currencyId>KZT</currencyId>
+<categoryId>667674530784</categoryId>
+<picture>https://static.tildacdn.com/stor3163-3732-4935-a237-366162396431/c2c23db77ba9a4ee46488f598134f926.jpg</picture>
+<name>Battery Eaton/9SX EBM Rack2U/48V/external 9SXEBM48R</name>
+<vendor>Eaton</vendor>
+<vendorCode>IS6DE3939377</vendorCode>
+<description>Battery Eaton/9SX EBM Rack2U/48V/external 9SXEBM48R (Eaton)</description>
+</offer>
+<offer id="IS72FDFAF124" available="true">
+<url>https://b2b.isoft-shop.kz/shkafy-i-stoyki/tproduct/916545393764-shkaf-kommunikatsionnii-nastennii-ship-s</url>
+<price>44000</price>
+<currencyId>KZT</currencyId>
+<categoryId>667674530784</categoryId>
+<picture>https://static.tildacdn.com/stor6334-3330-4663-b466-626332373061/5d252b5253b3d70f268d7ec410b10eb4.jpg</picture>
+<name>Шкаф коммуникационный настенный SHIP SC5406.11.100 6U 570*450*380 мм</name>
+<vendor>Ship</vendor>
+<vendorCode>IS72FDFAF124</vendorCode>
+<description>Габариты 570×450×380 мм · Исполнение Настенный · Типоразмер (U) 6U</description>
+</offer>
+<offer id="IS7633849AEF" available="true">
+<url>https://b2b.isoft-shop.kz/shkafy-i-stoyki/tproduct/390512471674-battery-eaton9sx-ebm-rack2u36vexternal-9</url>
+<price>227000</price>
+<currencyId>KZT</currencyId>
+<categoryId>667674530784</categoryId>
+<picture>https://static.tildacdn.com/stor3639-3237-4438-b931-366532306366/47c916feb0d3f8d64fd229963cf5a33e.jpg</picture>
+<name>Battery Eaton/9SX EBM Rack2U/36V/external 9SXEBM36R</name>
+<vendor>Eaton</vendor>
+<vendorCode>IS7633849AEF</vendorCode>
+<description>Battery Eaton/9SX EBM Rack2U/36V/external 9SXEBM36R (Eaton)</description>
+</offer>
+<offer id="IS77903B019B" available="true">
+<url>https://b2b.isoft-shop.kz/shkafy-i-stoyki/tproduct/893058573164-shkaf-kommunikatsionnii-ship-601s6047241</url>
+<price>362000</price>
+<currencyId>KZT</currencyId>
+<categoryId>667674530784</categoryId>
+<picture>https://static.tildacdn.com/stor6335-3531-4631-b039-636139633334/71dfc1ee3877adf67d7346618d930a64.jpg</picture>
+<name>Шкаф коммуникационный SHIP 601S.6047.24.100 47U 600*1000*2200 мм</name>
+<vendor>Ship</vendor>
+<vendorCode>IS77903B019B</vendorCode>
+<description>Габариты 600×1000×2200 мм · Исполнение Напольный · Типоразмер (U) 47U</description>
+</offer>
+<offer id="IS78F65CDC9E" available="true">
+<url>https://b2b.isoft-shop.kz/shkafy-i-stoyki/tproduct/881189266684-shkaf-kommunikatsionnii-ship-601s8042031</url>
+<price>399000</price>
+<currencyId>KZT</currencyId>
+<categoryId>667674530784</categoryId>
+<picture>https://static.tildacdn.com/stor3163-3635-4630-b064-663065313637/a1d953f7653e05c9bc66d3a6a90f3c0d.jpg</picture>
+<name>Шкаф коммуникационный SHIP 601S.8042.03.100 42U 800*1000*2000 мм</name>
+<vendor>Ship</vendor>
+<vendorCode>IS78F65CDC9E</vendorCode>
+<description>Габариты 800×1000×2000 мм · Исполнение Напольный · Типоразмер (U) 42U</description>
+</offer>
+<offer id="IS7E81BC1AC6" available="true">
+<url>https://b2b.isoft-shop.kz/shkafy-i-stoyki/tproduct/446701309154-shkaf-kommunikatsionnii-ship-601s6620031</url>
+<price>160000</price>
+<currencyId>KZT</currencyId>
+<categoryId>667674530784</categoryId>
+<picture>https://static.tildacdn.com/stor3163-3635-4630-b064-663065313637/a1d953f7653e05c9bc66d3a6a90f3c0d.jpg</picture>
+<name>Шкаф коммуникационный SHIP 601S.6620.03.100 20U 600*600*1000 мм</name>
+<vendor>Ship</vendor>
+<vendorCode>IS7E81BC1AC6</vendorCode>
+<description>Габариты 600×600×1000 мм · Исполнение Напольный · Типоразмер (U) 20U</description>
 </offer>
 <offer id="IS8114CE7F13" available="true">
 <url>https://b2b.isoft-shop.kz/shkafy-i-stoyki/tproduct/946394097714-lanmaster-shkaf-19-inch-business-42u-twt</url>
@@ -61887,6 +61816,28 @@
 <vendorCode>IS81458428E4</vendorCode>
 <description>Lanmaster Шкаф 19-inch Business 42U TWT-CBB-42U-6x8-P1 (Lanmaster)</description>
 </offer>
+<offer id="IS826383FC8E" available="true">
+<url>https://b2b.isoft-shop.kz/shkafy-i-stoyki/tproduct/792763185324-shkaf-kommunikatsionnii-ship-601s6624031</url>
+<price>178000</price>
+<currencyId>KZT</currencyId>
+<categoryId>667674530784</categoryId>
+<picture>https://static.tildacdn.com/stor3163-3635-4630-b064-663065313637/a1d953f7653e05c9bc66d3a6a90f3c0d.jpg</picture>
+<name>Шкаф коммуникационный SHIP 601S.6624.03.100 24U 600*600*1200 мм</name>
+<vendor>Ship</vendor>
+<vendorCode>IS826383FC8E</vendorCode>
+<description>Габариты 600×600×1200 мм · Исполнение Напольный · Типоразмер (U) 24U</description>
+</offer>
+<offer id="IS88FF6B2387" available="true">
+<url>https://b2b.isoft-shop.kz/shkafy-i-stoyki/tproduct/130673050124-shkaf-kommunikatsionnii-ship-601s6042031</url>
+<price>328000</price>
+<currencyId>KZT</currencyId>
+<categoryId>667674530784</categoryId>
+<picture>https://static.tildacdn.com/stor3163-3635-4630-b064-663065313637/a1d953f7653e05c9bc66d3a6a90f3c0d.jpg</picture>
+<name>Шкаф коммуникационный SHIP 601S.6042.03.100 42U 600*1000*2000 мм</name>
+<vendor>Ship</vendor>
+<vendorCode>IS88FF6B2387</vendorCode>
+<description>Габариты 600×1000×2000 мм · Исполнение Напольный · Типоразмер (U) 42U</description>
+</offer>
 <offer id="IS8D26601E0E" available="true">
 <url>https://b2b.isoft-shop.kz/shkafy-i-stoyki/tproduct/333078952384-lider-team-shkaf-napolnii-pixietech-47u</url>
 <price>402000</price>
@@ -61897,6 +61848,50 @@
 <vendor>Lider Team</vendor>
 <vendorCode>IS8D26601E0E</vendorCode>
 <description>Исполнение Напольный · Типоразмер (U) 47U · Габариты 800×1000×2222 мм · Дверь Перфорированная (двойная) · Ширина, мм 800 · Глубина, мм 1000</description>
+</offer>
+<offer id="IS8D527D1DDA" available="true">
+<url>https://b2b.isoft-shop.kz/shkafy-i-stoyki/tproduct/173167340104-shkaf-kommunikatsionnii-ship-601s6242241</url>
+<price>359000</price>
+<currencyId>KZT</currencyId>
+<categoryId>667674530784</categoryId>
+<picture>https://static.tildacdn.com/stor6335-3531-4631-b039-636139633334/71dfc1ee3877adf67d7346618d930a64.jpg</picture>
+<name>Шкаф коммуникационный SHIP 601S.6242.24.100 42U 600*1200*2000 мм</name>
+<vendor>Ship</vendor>
+<vendorCode>IS8D527D1DDA</vendorCode>
+<description>Габариты 600×1200×2000 мм · Исполнение Напольный · Типоразмер (U) 42U</description>
+</offer>
+<offer id="IS8EB10C3AE8" available="true">
+<url>https://b2b.isoft-shop.kz/shkafy-i-stoyki/tproduct/343608795164-shkaf-kommunikatsionnii-ship-601s6027241</url>
+<price>273000</price>
+<currencyId>KZT</currencyId>
+<categoryId>667674530784</categoryId>
+<picture>https://static.tildacdn.com/stor6335-3531-4631-b039-636139633334/71dfc1ee3877adf67d7346618d930a64.jpg</picture>
+<name>Шкаф коммуникационный SHIP 601S.6027.24.100 27U 600*1000*1400 мм</name>
+<vendor>Ship</vendor>
+<vendorCode>IS8EB10C3AE8</vendorCode>
+<description>Габариты 600×1000×1400 мм · Исполнение Напольный · Типоразмер (U) 27U</description>
+</offer>
+<offer id="IS908DBF0F56" available="true">
+<url>https://b2b.isoft-shop.kz/shkafy-i-stoyki/tproduct/405929980114-shkaf-kommunikatsionnii-ship-601s6024031</url>
+<price>242000</price>
+<currencyId>KZT</currencyId>
+<categoryId>667674530784</categoryId>
+<picture>https://static.tildacdn.com/stor3163-3635-4630-b064-663065313637/a1d953f7653e05c9bc66d3a6a90f3c0d.jpg</picture>
+<name>Шкаф коммуникационный SHIP 601S.6024.03.100 24U 600*1000*1200 мм</name>
+<vendor>Ship</vendor>
+<vendorCode>IS908DBF0F56</vendorCode>
+<description>Габариты 600×1000×1200 мм · Исполнение Напольный · Типоразмер (U) 24U</description>
+</offer>
+<offer id="IS9367E8C0D4" available="true">
+<url>https://b2b.isoft-shop.kz/shkafy-i-stoyki/tproduct/481223341834-shkaf-kommunikatsionnii-ship-601s6833241</url>
+<price>256000</price>
+<currencyId>KZT</currencyId>
+<categoryId>667674530784</categoryId>
+<picture>https://static.tildacdn.com/stor6335-3531-4631-b039-636139633334/71dfc1ee3877adf67d7346618d930a64.jpg</picture>
+<name>Шкаф коммуникационный SHIP 601S.6833.24.100 33U 600*800*1600 мм</name>
+<vendor>Ship</vendor>
+<vendorCode>IS9367E8C0D4</vendorCode>
+<description>Габариты 600×800×1600 мм · Исполнение Напольный · Типоразмер (U) 33U</description>
 </offer>
 <offer id="IS98C857DA09" available="true">
 <url>https://b2b.isoft-shop.kz/shkafy-i-stoyki/tproduct/458843549854-lanmaster-shkaf-19-inch-business-18u-twt</url>
@@ -61909,6 +61904,17 @@
 <vendorCode>IS98C857DA09</vendorCode>
 <description>Lanmaster Шкаф 19-inch Business 18U TWT-CBB-18U-6x6-P1 (Lanmaster)</description>
 </offer>
+<offer id="IS9B50CFFB05" available="true">
+<url>https://b2b.isoft-shop.kz/shkafy-i-stoyki/tproduct/951932773804-shkaf-kommunikatsionnii-ship-601s6815241</url>
+<price>172000</price>
+<currencyId>KZT</currencyId>
+<categoryId>667674530784</categoryId>
+<picture>https://static.tildacdn.com/stor6335-3531-4631-b039-636139633334/71dfc1ee3877adf67d7346618d930a64.jpg</picture>
+<name>Шкаф коммуникационный SHIP 601S.6815.24.100 15U 600*800*800 мм</name>
+<vendor>Ship</vendor>
+<vendorCode>IS9B50CFFB05</vendorCode>
+<description>Габариты 600×800×800 мм · Исполнение Напольный · Типоразмер (U) 15U</description>
+</offer>
 <offer id="ISA05637FD7C" available="true">
 <url>https://b2b.isoft-shop.kz/shkafy-i-stoyki/tproduct/232133067764-lider-team-shkaf-napolnii-pixietech-42u</url>
 <price>354000</price>
@@ -61919,6 +61925,17 @@
 <vendor>Lider Team</vendor>
 <vendorCode>ISA05637FD7C</vendorCode>
 <description>Исполнение Напольный · Типоразмер (U) 42U · Габариты 600×1200×2000 мм · Дверь Перфорированная · Ширина, мм 600 · Глубина, мм 1200</description>
+</offer>
+<offer id="ISA6344AC072" available="true">
+<url>https://b2b.isoft-shop.kz/shkafy-i-stoyki/tproduct/604724924204-shkaf-kommunikatsionnii-nastennii-ship-e</url>
+<price>61000</price>
+<currencyId>KZT</currencyId>
+<categoryId>667674530784</categoryId>
+<picture>https://static.tildacdn.com/stor6637-3037-4236-b038-626663346436/96a99f7b9443c9291fe4ecab50073c8e.jpg</picture>
+<name>Шкаф коммуникационный настенный SHIP EW5412.100 12U 540*450*593 мм</name>
+<vendor>Ship</vendor>
+<vendorCode>ISA6344AC072</vendorCode>
+<description>Габариты 540×450×593 мм · Исполнение Настенный · Типоразмер (U) 12U</description>
 </offer>
 <offer id="ISB8E50CD2A2" available="true">
 <url>https://b2b.isoft-shop.kz/shkafy-i-stoyki/tproduct/443864425404-lider-team-shkaf-nastennii-pixietech-9u</url>
@@ -61931,6 +61948,61 @@
 <vendorCode>ISB8E50CD2A2</vendorCode>
 <description>Исполнение Настенный · Типоразмер (U) 9U · Габариты 570×600×490 мм · Ширина, мм 570 · Глубина, мм 600</description>
 </offer>
+<offer id="ISBAB445BBC0" available="true">
+<url>https://b2b.isoft-shop.kz/shkafy-i-stoyki/tproduct/198788358774-shkaf-kommunikatsionnii-ship-601s6820031</url>
+<price>184000</price>
+<currencyId>KZT</currencyId>
+<categoryId>667674530784</categoryId>
+<picture>https://static.tildacdn.com/stor3163-3635-4630-b064-663065313637/a1d953f7653e05c9bc66d3a6a90f3c0d.jpg</picture>
+<name>Шкаф коммуникационный SHIP 601S.6820.03.100 20U 600*800*1000 мм</name>
+<vendor>Ship</vendor>
+<vendorCode>ISBAB445BBC0</vendorCode>
+<description>Габариты 600×800×1000 мм · Исполнение Напольный · Типоразмер (U) 20U</description>
+</offer>
+<offer id="ISBCDFDAB80E" available="true">
+<url>https://b2b.isoft-shop.kz/shkafy-i-stoyki/tproduct/959280094614-shkaf-kommunikatsionnii-nastennii-ship-5</url>
+<price>101000</price>
+<currencyId>KZT</currencyId>
+<categoryId>667674530784</categoryId>
+<picture>https://static.tildacdn.com/stor6231-3436-4363-a130-313034633164/c4152daf281af6599d27c074da6aca82.jpg</picture>
+<name>Шкаф коммуникационный настенный SHIP 5618.01.100 18U 570*600*900 мм</name>
+<vendor>Ship</vendor>
+<vendorCode>ISBCDFDAB80E</vendorCode>
+<description>Габариты 570×600×900 мм · Исполнение Настенный · Типоразмер (U) 18U</description>
+</offer>
+<offer id="ISC15770A265" available="true">
+<url>https://b2b.isoft-shop.kz/shkafy-i-stoyki/tproduct/871702287904-shkaf-kommunikatsionnii-ship-601s8047241</url>
+<price>441000</price>
+<currencyId>KZT</currencyId>
+<categoryId>667674530784</categoryId>
+<picture>https://static.tildacdn.com/stor6335-3531-4631-b039-636139633334/71dfc1ee3877adf67d7346618d930a64.jpg</picture>
+<name>Шкаф коммуникационный SHIP 601S.8047.24.100 47U 800*1000*2200 мм</name>
+<vendor>Ship</vendor>
+<vendorCode>ISC15770A265</vendorCode>
+<description>Габариты 800×1000×2200 мм · Исполнение Напольный · Типоразмер (U) 47U</description>
+</offer>
+<offer id="ISC48955EBBE" available="true">
+<url>https://b2b.isoft-shop.kz/shkafy-i-stoyki/tproduct/476779395954-option-hp-enterprisehpe-g2-rack-42u1200m</url>
+<price>257000</price>
+<currencyId>KZT</currencyId>
+<categoryId>667674530784</categoryId>
+<picture>https://static.tildacdn.com/stor3238-3864-4236-a135-613362666631/a9cd96704c5d9884ae916867b834a652.jpg</picture>
+<name>Option HP Enterprise/HPE G2 Rack 42U/1200mm Side Panel Kit P9L16A</name>
+<vendor>HPE</vendor>
+<vendorCode>ISC48955EBBE</vendorCode>
+<description>Типоразмер (U) 42U</description>
+</offer>
+<offer id="ISC5859A94FF" available="true">
+<url>https://b2b.isoft-shop.kz/shkafy-i-stoyki/tproduct/877174133704-klimaticheskii-shkaf-ship-shk-15u-nasten</url>
+<price>427000</price>
+<currencyId>KZT</currencyId>
+<categoryId>667674530784</categoryId>
+<picture>https://static.tildacdn.com/stor3863-3232-4032-a166-363435306536/b620082cea9552be5e18168ea8041be3.jpg</picture>
+<name>Климатический шкаф SHIP ШК-15U (настенный)</name>
+<vendor>Ship</vendor>
+<vendorCode>ISC5859A94FF</vendorCode>
+<description>Исполнение Настенный · Типоразмер (U) 15U</description>
+</offer>
 <offer id="ISC9CB39BA18" available="true">
 <url>https://b2b.isoft-shop.kz/shkafy-i-stoyki/tproduct/511112564184-lider-team-shkaf-napolnii-pixietech-24u</url>
 <price>200000</price>
@@ -61942,6 +62014,28 @@
 <vendorCode>ISC9CB39BA18</vendorCode>
 <description>Исполнение Напольный · Типоразмер (U) 24U · Габариты 600×800×1150 мм · Дверь Перфорированная · Ширина, мм 600 · Глубина, мм 800</description>
 </offer>
+<offer id="ISCBA524C1C3" available="true">
+<url>https://b2b.isoft-shop.kz/shkafy-i-stoyki/tproduct/246312098514-shkaf-kommunikatsionnii-ship-601s6824541</url>
+<price>234000</price>
+<currencyId>KZT</currencyId>
+<categoryId>667674530784</categoryId>
+<picture>https://static.tildacdn.com/stor3561-6136-4739-b235-636665616139/7d3f10e4cfc47582aba81fce4b9eb6db.jpg</picture>
+<name>Шкаф коммуникационный SHIP 601S.6824.54.100 24U 600*800*1200 мм</name>
+<vendor>Ship</vendor>
+<vendorCode>ISCBA524C1C3</vendorCode>
+<description>Габариты 600×800×1200 мм · Исполнение Напольный · Типоразмер (U) 24U</description>
+</offer>
+<offer id="ISCCB12AB0A2" available="true">
+<url>https://b2b.isoft-shop.kz/shkafy-i-stoyki/tproduct/972692308544-shkaf-kommunikatsionnii-ship-601s6024241</url>
+<price>251000</price>
+<currencyId>KZT</currencyId>
+<categoryId>667674530784</categoryId>
+<picture>https://static.tildacdn.com/stor6335-3531-4631-b039-636139633334/71dfc1ee3877adf67d7346618d930a64.jpg</picture>
+<name>Шкаф коммуникационный SHIP 601S.6024.24.100 24U 600*1000*1200 мм</name>
+<vendor>Ship</vendor>
+<vendorCode>ISCCB12AB0A2</vendorCode>
+<description>Габариты 600×1000×1200 мм · Исполнение Напольный · Типоразмер (U) 24U</description>
+</offer>
 <offer id="ISD2B9678254" available="true">
 <url>https://b2b.isoft-shop.kz/shkafy-i-stoyki/tproduct/737384073244-lider-team-shkaf-napolnii-pixietech-42u</url>
 <price>393000</price>
@@ -61952,6 +62046,28 @@
 <vendor>Lider Team</vendor>
 <vendorCode>ISD2B9678254</vendorCode>
 <description>Исполнение Напольный · Типоразмер (U) 42U · Габариты 800×1000×2000 мм · Дверь Перфорированная · Ширина, мм 800 · Глубина, мм 1000</description>
+</offer>
+<offer id="ISD462408C89" available="true">
+<url>https://b2b.isoft-shop.kz/shkafy-i-stoyki/tproduct/307235051044-shkaf-kommunikatsionnii-nastennii-ship-5</url>
+<price>46000</price>
+<currencyId>KZT</currencyId>
+<categoryId>667674530784</categoryId>
+<picture>https://static.tildacdn.com/stor6539-3832-4161-a332-323439376666/1b41e11dfe059cc9011a2b652e537846.jpg</picture>
+<name>Шкаф коммуникационный настенный SHIP 5406.01.100 6U 570*450*380 мм</name>
+<vendor>Ship</vendor>
+<vendorCode>ISD462408C89</vendorCode>
+<description>Габариты 570×450×380 мм · Исполнение Настенный · Типоразмер (U) 6U</description>
+</offer>
+<offer id="ISD47D550F91" available="true">
+<url>https://b2b.isoft-shop.kz/shkafy-i-stoyki/tproduct/889400873864-shkaf-kommunikatsionnii-ship-601s6824241</url>
+<price>214000</price>
+<currencyId>KZT</currencyId>
+<categoryId>667674530784</categoryId>
+<picture>https://static.tildacdn.com/stor6335-3531-4631-b039-636139633334/71dfc1ee3877adf67d7346618d930a64.jpg</picture>
+<name>Шкаф коммуникационный SHIP 601S.6824.24.100 24U 600*800*1200 мм</name>
+<vendor>Ship</vendor>
+<vendorCode>ISD47D550F91</vendorCode>
+<description>Габариты 600×800×1200 мм · Исполнение Напольный · Типоразмер (U) 24U</description>
 </offer>
 <offer id="ISD53E8BAF18" available="true">
 <url>https://b2b.isoft-shop.kz/shkafy-i-stoyki/tproduct/884964018844-lanmaster-shkaf-19-inch-business-22u-twt</url>
@@ -61975,6 +62091,17 @@
 <vendorCode>ISD563CE983E</vendorCode>
 <description>Исполнение Уличный · Типоразмер (U) 9U</description>
 </offer>
+<offer id="ISD6565C6D82" available="true">
+<url>https://b2b.isoft-shop.kz/shkafy-i-stoyki/tproduct/731689749604-shkaf-kommunikatsionnii-ship-601s6847241</url>
+<price>325000</price>
+<currencyId>KZT</currencyId>
+<categoryId>667674530784</categoryId>
+<picture>https://static.tildacdn.com/stor6335-3531-4631-b039-636139633334/71dfc1ee3877adf67d7346618d930a64.jpg</picture>
+<name>Шкаф коммуникационный SHIP 601S.6847.24.100 47U 600*800*2200 мм</name>
+<vendor>Ship</vendor>
+<vendorCode>ISD6565C6D82</vendorCode>
+<description>Габариты 600×800×2200 мм · Исполнение Напольный · Типоразмер (U) 47U</description>
+</offer>
 <offer id="ISDBD01F15FE" available="true">
 <url>https://b2b.isoft-shop.kz/shkafy-i-stoyki/tproduct/318978789114-lanmaster-shkaf-19-inch-business-42u-twt</url>
 <price>509000</price>
@@ -61997,6 +62124,61 @@
 <vendorCode>ISE4BE547F59</vendorCode>
 <description>Lanmaster Шкаф 19-inch Business 18U TWT-CBB-18U-6x8-P1 (Lanmaster)</description>
 </offer>
+<offer id="ISE916CE6189" available="true">
+<url>https://b2b.isoft-shop.kz/shkafy-i-stoyki/tproduct/994529953004-shkaf-kommunikatsionnii-nastennii-ship-5</url>
+<price>118000</price>
+<currencyId>KZT</currencyId>
+<categoryId>667674530784</categoryId>
+<picture>https://static.tildacdn.com/stor6232-3737-4365-b666-323565666238/ca42537df6fb5c48fed1bb2fe219a737.jpg</picture>
+<name>Шкаф коммуникационный настенный SHIP 5622.01.100 22U 570*600*1080 мм</name>
+<vendor>Ship</vendor>
+<vendorCode>ISE916CE6189</vendorCode>
+<description>Габариты 570×600×1080 мм · Исполнение Настенный · Типоразмер (U) 22U</description>
+</offer>
+<offer id="ISED2B93A454" available="true">
+<url>https://b2b.isoft-shop.kz/shkafy-i-stoyki/tproduct/893478069354-shkaf-kommunikatsionnii-nastennii-ship-v</url>
+<price>81000</price>
+<currencyId>KZT</currencyId>
+<categoryId>667674530784</categoryId>
+<picture>https://static.tildacdn.com/stor6163-3163-4034-b034-376131643936/53ab0b8b0b0e9ef3339442f0c4bb2836.jpg</picture>
+<name>Шкаф коммуникационный настенный SHIP VA5415.01.100 15U 540*450*725 мм</name>
+<vendor>Ship</vendor>
+<vendorCode>ISED2B93A454</vendorCode>
+<description>Габариты 540×450×725 мм · Исполнение Настенный · Типоразмер (U) 15U</description>
+</offer>
+<offer id="ISEF56316CCC" available="true">
+<url>https://b2b.isoft-shop.kz/shkafy-i-stoyki/tproduct/348402210554-shkaf-kommunikatsionnii-ship-601s8042241</url>
+<price>409000</price>
+<currencyId>KZT</currencyId>
+<categoryId>667674530784</categoryId>
+<picture>https://static.tildacdn.com/stor6335-3531-4631-b039-636139633334/71dfc1ee3877adf67d7346618d930a64.jpg</picture>
+<name>Шкаф коммуникационный SHIP 601S.8042.24.100 42U 800*1000*2000 мм</name>
+<vendor>Ship</vendor>
+<vendorCode>ISEF56316CCC</vendorCode>
+<description>Габариты 800×1000×2000 мм · Исполнение Напольный · Типоразмер (U) 42U</description>
+</offer>
+<offer id="ISEF98576FA3" available="true">
+<url>https://b2b.isoft-shop.kz/shkafy-i-stoyki/tproduct/848747746154-shkaf-kommunikatsionnii-nastennii-ship-v</url>
+<price>71000</price>
+<currencyId>KZT</currencyId>
+<categoryId>667674530784</categoryId>
+<picture>https://static.tildacdn.com/stor3430-3830-4238-b365-643266623062/0eacfca40f6de7c4a10278c93f8dc101.jpg</picture>
+<name>Шкаф коммуникационный настенный SHIP VP5412.100 12U 570*450*635 мм</name>
+<vendor>Ship</vendor>
+<vendorCode>ISEF98576FA3</vendorCode>
+<description>Габариты 570×450×635 мм · Исполнение Настенный · Типоразмер (U) 12U</description>
+</offer>
+<offer id="ISF0DAEA2311" available="true">
+<url>https://b2b.isoft-shop.kz/shkafy-i-stoyki/tproduct/145816136904-shkaf-kommunikatsionnii-nastennii-ship-5</url>
+<price>58000</price>
+<currencyId>KZT</currencyId>
+<categoryId>667674530784</categoryId>
+<picture>https://static.tildacdn.com/stor3037-3030-4532-b866-323431353233/687bf2da6642df1606dd75c7f17ee48f.jpg</picture>
+<name>Шкаф коммуникационный настенный SHIP 5606.01.100 6U 570*600*380 мм</name>
+<vendor>Ship</vendor>
+<vendorCode>ISF0DAEA2311</vendorCode>
+<description>Габариты 570×600×380 мм · Исполнение Настенный · Типоразмер (U) 6U</description>
+</offer>
 <offer id="ISF3C63D9A11" available="true">
 <url>https://b2b.isoft-shop.kz/shkafy-i-stoyki/tproduct/104180079454-lanmaster-shkaf-nastennii-serii-pro-18u</url>
 <price>120000</price>
@@ -62007,6 +62189,17 @@
 <vendor>Lanmaster</vendor>
 <vendorCode>ISF3C63D9A11</vendorCode>
 <description>Исполнение Настенный · Типоразмер (U) 18U · Габариты 600×600 мм · Дверь Стеклянная · Ширина, мм 600 · Глубина, мм 600</description>
+</offer>
+<offer id="ISF6171FAEFD" available="true">
+<url>https://b2b.isoft-shop.kz/shkafy-i-stoyki/tproduct/426462385414-shkaf-kommunikatsionnii-nastennii-ship-5</url>
+<price>73000</price>
+<currencyId>KZT</currencyId>
+<categoryId>667674530784</categoryId>
+<picture>https://static.tildacdn.com/stor6539-3832-4161-a332-323439376666/1b41e11dfe059cc9011a2b652e537846.jpg</picture>
+<name>Шкаф коммуникационный настенный SHIP 5612.01.100 12U 570*600*635 мм</name>
+<vendor>Ship</vendor>
+<vendorCode>ISF6171FAEFD</vendorCode>
+<description>Габариты 570×600×635 мм · Исполнение Настенный · Типоразмер (U) 12U</description>
 </offer>
 <offer id="ISFAF5D77556" available="true">
 <url>https://b2b.isoft-shop.kz/shkafy-i-stoyki/tproduct/562031772344-lider-team-shkaf-napolnii-pixietech-27u</url>

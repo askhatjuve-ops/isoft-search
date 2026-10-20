@@ -376,7 +376,7 @@
 
   /* ───────── П36: карточка товара в духе главной C2 (ish-design-p36.js/.css с того же адреса, один раз) ─────────
      Признак: блок покупки карточки (.ishpg-row, его строят p9/p10, поэтому ждём). Выключатель: window.ISH_P36_OFF = 1 или window.ISH_P4_NO_P36 = 1 (до загрузки p4). Кэш: поменять P36V. */
-  var P36V = '11';   /* 20.10: главное фото карточки целиком, contain (p36.css) */
+  var P36V = '12';   /* 20.10: главное фото карточки целиком, contain (p36.css) */
   function p36() {
     if (W.ISH_P4_NO_P36 || W.ISH_P36_OFF || W.ISH_P36 || D.getElementById('ishp-p36-js')) return true;
     if (!D.querySelector('.ishpg-row')) return false;

@@ -463,12 +463,12 @@
 
   /* ───────── П40 v1 (20.10): панель фильтров Ф3 «Стеклянные плитки» на разделах со списком товаров (ish-design-p40.js/.css с того же адреса, один раз; после p6 и p35)
      Признак: список товаров .t-store__card-list. Карточки и список не трогает. Выключатель: window.ISH_P40_OFF = 1 или window.ISH_P4_NO_P40 = 1 (до загрузки p4). Кэш: поменять P40V. */
-  var P40V = '1';
-  var P40_ВЫКЛ = 1;   /* 20.10: Асхат «убого» - П40 выключен до переделки */
+  var P40V = '3';
+  var P40_ВЫКЛ = 0;   /* 20.10: Асхат «убого» - П40 выключен до переделки */
   function p40() {
     if (P40_ВЫКЛ || W.ISH_P4_NO_P40 || W.ISH_P40_OFF || W.ISH_P40 || D.getElementById('ishp-p40-js')) return true;
     if (D.getElementById('лента')) return true;
-    if (!D.querySelector('.t-store__card-list')) return false;
+    if (!D.querySelector('.t-store__card-list, .вн-гр[data-gruppa]')) return false;   /* v3: раздел (список Tilda) или группа (свой список .вн-гр) */
     var src = tag && tag.src;
     if (!src) return true;
     var s = D.createElement('script');

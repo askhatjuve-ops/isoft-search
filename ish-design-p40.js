@@ -47,7 +47,31 @@
     if (!имена.length) return '';
     return имена.length > 2 ? имена[0] + ', ' + имена[1] + ', +' + (имена.length - 2) : имена.join(', ');
   }
+  /* группы (/kompyutery и др.): свой фильтр .вн-ф - заголовок-кнопка и следующий за ним .вн-ф__тело; подпись пишем в data-ishp40-sel кнопки */
+  function подписьГруппы2(к) {
+    var т = к.nextElementSibling;
+    if (!т || !т.classList.contains('вн-ф__тело')) return '';
+    var цена = т.querySelector('#вн-гр-от, #вн-гр-до');
+    if (цена) {
+      var а = D.getElementById('вн-гр-от'), б = D.getElementById('вн-гр-до');
+      var от = а && а.value.trim(), до = б && б.value.trim();
+      return от && до ? 'от ' + от + ' до ' + до : от ? 'от ' + от : до ? 'до ' + до : '';
+    }
+    var имена = qa('input:checked', т).map(function (c) { var с = c.parentNode.querySelector('span'); return txt(с || c.parentNode); }).filter(Boolean);
+    if (!имена.length) return '';
+    return имена.length > 2 ? имена[0] + ', ' + имена[1] + ', +' + (имена.length - 2) : имена.join(', ');
+  }
+  function обновитьГруппы() {
+    qa('.вн-ф__заг').forEach(function (к) {
+      var п = подписьГруппы2(к);
+      if (п) { if (к.getAttribute('data-ishp40-sel') !== п) к.setAttribute('data-ishp40-sel', п); }
+      else if (к.hasAttribute('data-ishp40-sel')) к.removeAttribute('data-ishp40-sel');
+    });
+    var ок = D.getElementById('вн-гр-цена-ок');
+    if (ок && /^\s*(ok|ок)\s*$/i.test(ок.textContent)) ок.textContent = 'Применить';
+  }
   function обновить() {
+    обновитьГруппы();
     qa('.t-store .t-store__filter__item').forEach(function (it) {
       var з = it.querySelector(':scope > .t-store__filter__item-title');
       if (!з) return;
@@ -61,20 +85,20 @@
 
   D.addEventListener('change', function (e) {
     var t = e.target;
-    if (t && t.closest && t.closest('.t-store__filter')) { запуск(); setTimeout(запуск, 400); }
+    if (t && t.closest && t.closest('.t-store__filter, .вн-ф')) { запуск(); setTimeout(запуск, 400); }
   }, true);
   D.addEventListener('input', function (e) {
     var t = e.target;
-    if (t && t.classList && (t.classList.contains('js-store-filter-pricemin') || t.classList.contains('js-store-filter-pricemax'))) запуск();
+    if (t && t.classList && (t.classList.contains('js-store-filter-pricemin') || t.classList.contains('js-store-filter-pricemax') || t.id === 'вн-гр-от' || t.id === 'вн-гр-до')) запуск();
   }, true);
   D.addEventListener('click', function (e) {
     var t = e.target;
-    if (t && t.closest && t.closest('.t-store__filter')) { setTimeout(запуск, 120); setTimeout(запуск, 700); }
+    if (t && t.closest && t.closest('.t-store__filter, .вн-ф')) { setTimeout(запуск, 120); setTimeout(запуск, 700); }
   }, true);
 
   var n = 0;
   (function старт() {
-    var корень = D.querySelector('.t-store');
+    var корень = D.querySelector('.t-store') || D.querySelector('.вн-гр');
     if (!корень) { if (++n < 80) setTimeout(старт, 250); return; }
     запуск();
     if (W.MutationObserver) new MutationObserver(запуск).observe(корень, { childList: true, subtree: true });

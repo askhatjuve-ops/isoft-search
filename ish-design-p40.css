@@ -2,32 +2,33 @@
    Слой поверх p6 и p35 (они не менялись): перебивает их правила панели фильтров (p35 стр. 66-77, p6 стр. 10-130). Подключает ish-design-p40.js.
    Трогает только панель фильтров раздела (.вн-бок__фильтры, .t-store__filter, шторка и кнопка «Фильтры» на телефоне).
    Карточки товаров и список НЕ трогаются. Эталон: Страницы_на_оценку\20.10_фильтры, .v-f3. Откат: window.ISH_P40_OFF = 1 (нет js - нет этого css). */
-html.ishp40-on{--p40-k:#2B44C7;--p40-ind:#2B2F6B;--p40-ink:#171923;--p40-mut:#5A5F70;--p40-f:TildaSans,Arial,sans-serif;
-  --p40-glass:rgba(255,255,255,.45);--p40-glass2:rgba(255,255,255,.72);--p40-edge:rgba(255,255,255,.7);
+html.ishp40-on{--p40-k:#2B44C7;--p40-ind:#2B2F6B;--p40-ink:#1F2336;--p40-mut:#5A5F70;--p40-f:TildaSans,Arial,sans-serif;
+  --p40-glass:rgba(255,255,255,.62);--p40-glass2:rgba(255,255,255,.86);--p40-edge:rgba(255,255,255,.95);
   --p40-grad:linear-gradient(135deg,#3550D6,#2B44C7 55%,#2B2F6B)}
 
 @media screen and (min-width:961px){
-/* ── подсветка за колонкой: без неё стекло не видно (как .stage.bk::before в превью) ── */
-html.ishp40-on:root body #allrecords#allrecords .вн-бок__карта.вн-бок__фильтры{position:relative;isolation:isolate;background:none!important;border:0!important;
+/* ── выравнивание: колонка и список по краям шапки сайта (min(1240px,100vw-40px) по центру), верх колонки = верх панели над списком ── */
+html.ishp40-on:root body #allrecords#allrecords .t-store.вн-сетка{max-width:min(1240px,100% - 40px)!important;padding-left:0!important;padding-right:0!important}
+/* ── подсветка за колонкой: мягкие радиальные пятна без границ. Колонка .вн-бок - прокручиваемая (overflow), поэтому за её пределы пятна не выйдут;
+   расширяем саму колонку полями (padding + такой же минус margin): содержимое стоит на месте, пятна тают внутри расширенного поля и уходят за край колонки ── */
+html.ishp40-on:root body #allrecords#allrecords .t-store.вн-сетка > .вн-бок{box-sizing:content-box;width:300px;margin:-70px 0 -70px -70px;
+  padding:70px 28px 70px 70px;top:15px!important;pointer-events:none;background-repeat:no-repeat;
+  background-image:radial-gradient(200px 200px at 215px 170px,rgba(43,68,199,.62),transparent 72%),
+    radial-gradient(170px 170px at 268px 330px,rgba(160,172,240,.90),transparent 72%),
+    radial-gradient(200px 220px at 170px 520px,rgba(108,92,231,.56),transparent 72%),
+    radial-gradient(200px 200px at 250px calc(100% - 300px),rgba(43,68,199,.50),transparent 72%),
+    radial-gradient(190px 210px at 170px calc(100% - 140px),rgba(108,92,231,.52),transparent 72%)}
+html.ishp40-on:root body #allrecords#allrecords .t-store.вн-сетка > .вн-бок > *{pointer-events:auto}
+html.ishp40-on:root body #allrecords#allrecords .вн-бок__карта.вн-бок__фильтры{background:none!important;border:0!important;
   border-radius:0!important;box-shadow:none!important;overflow:visible!important;padding:0!important}
-html.ishp40-on:root body #allrecords#allrecords .вн-бок__карта.вн-бок__фильтры::before{content:"";position:absolute;z-index:-1;pointer-events:none;
-  top:-40px;bottom:-30px;left:-50px;right:-12px;background-repeat:no-repeat;
-  -webkit-mask-image:linear-gradient(90deg,transparent,#000 44px,#000 calc(100% - 24px),transparent),linear-gradient(180deg,transparent,#000 40px,#000 calc(100% - 40px),transparent);
-  mask-image:linear-gradient(90deg,transparent,#000 44px,#000 calc(100% - 24px),transparent),linear-gradient(180deg,transparent,#000 40px,#000 calc(100% - 40px),transparent);
-  -webkit-mask-composite:source-in;mask-composite:intersect;
-  background-image:radial-gradient(420px 360px at 12% 0,rgba(43,68,199,.30),transparent 70%),
-    radial-gradient(380px 420px at 30% 340px,rgba(108,92,231,.26),transparent 70%),
-    radial-gradient(360px 300px at 22% 700px,rgba(43,68,199,.22),transparent 70%),
-    radial-gradient(300px 260px at 60% 120px,rgba(160,172,240,.45),transparent 70%),
-    radial-gradient(380px 420px at 40% 1040px,rgba(108,92,231,.24),transparent 70%)}
 }
 /* на телефоне колонки нет: тот же вид без isolate (внутри остаётся шторка с position:fixed) */
 html.ishp40-on:root body #allrecords#allrecords .вн-бок__карта.вн-бок__фильтры{background:none!important;border:0!important;border-radius:0!important;box-shadow:none!important;padding:0!important}
 
 /* ── шапка панели: «Фильтры» светлым 20, воронка индиго, «Сбросить всё» ссылкой ── */
 html.ishp40-on:root body #allrecords#allrecords .вн-бок__фильтры > .вн-бок__заг{display:flex!important;align-items:center;gap:10px;min-height:0;
-  margin:0!important;padding:2px 6px 14px!important;background:none!important;color:var(--p40-ink)!important;box-sizing:border-box;
-  font:300 20px/1.2 var(--p40-f)!important;justify-content:flex-start}
+  margin:0!important;padding:2px 0 14px!important;background:none!important;color:#2A2F45!important;box-sizing:border-box;
+  font:500 20px/1.2 var(--p40-f)!important;justify-content:flex-start}
 html.ishp40-on:root body #allrecords#allrecords .вн-бок__фильтры > .вн-бок__заг::before{content:"";flex:none;width:18px;height:18px;border-radius:0;
   background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%232B2F6B' stroke-width='1.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M2 3h12l-4.6 5.4V13l-2.8-1.4V8.4z'/%3E%3C/svg%3E") center/18px 18px no-repeat}
 html.ishp40-on:root body #allrecords#allrecords .вн-бок__фильтры .ishd-reset{margin:0 0 0 auto;padding:0;min-height:0;color:var(--p40-k);
@@ -43,7 +44,7 @@ html.ishp40-on:root body #allrecords#allrecords .вн-бок__фильтры .t-
 html.ishp40-on:root body #allrecords#allrecords .t-store__filter .t-store__filter__item:not(.t-store__filter__item_sort-mobile){
   box-sizing:border-box;margin:0!important;padding:0 14px!important;border:1px solid var(--p40-edge)!important;border-radius:16px;
   background:var(--p40-glass)!important;-webkit-backdrop-filter:blur(14px) saturate(1.3);backdrop-filter:blur(14px) saturate(1.3);
-  box-shadow:0 4px 18px rgba(43,68,199,.07)!important;transition:background .16s,box-shadow .16s,border-color .16s}
+  box-shadow:0 4px 18px rgba(43,68,199,.10)!important;transition:background .16s,box-shadow .16s,border-color .16s}
 html.ishp40-on:root body #allrecords#allrecords .t-store__filter .t-store__filter__item.active:not(.t-store__filter__item_sort-mobile){
   background:var(--p40-glass2)!important;border-color:rgba(43,68,199,.18)!important;
   box-shadow:0 10px 28px rgba(43,68,199,.14),inset 0 1px 0 #fff!important}
@@ -105,6 +106,66 @@ html.ishp40-on:root body #allrecords#allrecords #ишфаЕщё{display:flex!imp
   font:400 13.5px/1 var(--p40-f)!important}
 html.ishp40-on:root body #allrecords#allrecords #ишфаЕщё:hover{background:rgba(255,255,255,.6)!important}
 
+
+/* ══════════ группы (/kompyutery и др.): свой фильтр .вн-ф, тот же вид. Заголовок группы - кнопка, тело - следующий элемент: плитка = пара, склеенная краями ══════════ */
+@media screen and (min-width:961px){
+html.ishp40-on:root body #allrecords#allrecords .вн-ф{position:relative;background:none!important;border:0!important;border-radius:0!important;box-shadow:none!important;padding:0!important;overflow:visible!important}
+html.ishp40-on:root body #allrecords#allrecords .вн-ф::before{content:"";position:absolute;z-index:-1;pointer-events:none;top:-70px;bottom:-70px;left:-70px;right:-24px;background-repeat:no-repeat;
+  background-image:radial-gradient(200px 200px at 215px 170px,rgba(43,68,199,.62),transparent 72%),
+    radial-gradient(170px 170px at 268px 330px,rgba(160,172,240,.90),transparent 72%),
+    radial-gradient(200px 220px at 170px 520px,rgba(108,92,231,.56),transparent 72%),
+    radial-gradient(200px 200px at 250px calc(100% - 300px),rgba(43,68,199,.50),transparent 72%),
+    radial-gradient(190px 210px at 170px calc(100% - 140px),rgba(108,92,231,.52),transparent 72%)}
+html.ishp40-on:root body #allrecords#allrecords .вн-ф > .вн-бок__заг{display:flex!important;align-items:center;gap:10px;margin:0!important;padding:2px 0 14px!important;min-height:0;background:none!important;
+  color:#2A2F45!important;box-sizing:border-box;font:500 20px/1.2 var(--p40-f)!important}
+html.ishp40-on:root body #allrecords#allrecords .вн-ф > .вн-бок__заг::before{content:"";flex:none;width:18px;height:18px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%232B2F6B' stroke-width='1.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M2 3h12l-4.6 5.4V13l-2.8-1.4V8.4z'/%3E%3C/svg%3E") center/18px 18px no-repeat}
+}
+html.ishp40-on:root body #allrecords#allrecords .вн-ф{background:none!important;border:0!important;border-radius:0!important;box-shadow:none!important;padding:0!important}
+html.ishp40-on:root body #allrecords#allrecords .вн-ф__заг{position:relative;box-sizing:border-box;width:100%;min-height:48px;margin:0 0 8px!important;padding:0 14px!important;border:1px solid var(--p40-edge)!important;border-radius:16px!important;
+  background:var(--p40-glass)!important;-webkit-backdrop-filter:blur(14px) saturate(1.3);backdrop-filter:blur(14px) saturate(1.3);
+  box-shadow:0 4px 18px rgba(43,68,199,.10);color:var(--p40-ink)!important;font:400 14px/1.3 var(--p40-f)!important;transition:background .16s,box-shadow .16s}
+html.ishp40-on:root body #allrecords#allrecords .вн-ф__заг[aria-expanded="true"]{margin:0!important;border-bottom:0!important;border-radius:16px 16px 0 0!important;background:var(--p40-glass2)!important;
+  border-color:rgba(43,68,199,.18)!important;box-shadow:0 -4px 18px rgba(43,68,199,.08);font-weight:500!important}
+html.ishp40-on:root body #allrecords#allrecords .вн-ф__заг i{display:none!important}
+html.ishp40-on:root body #allrecords#allrecords .вн-ф__заг::after{content:"";flex:none;order:2;width:6px;height:6px;margin:-3px 3px 0 auto;border:solid var(--p40-mut);border-width:0 1px 1px 0;transform:rotate(45deg)}
+html.ishp40-on:root body #allrecords#allrecords .вн-ф__заг[aria-expanded="true"]::after{margin-top:3px;transform:rotate(225deg)}
+html.ishp40-on:root body #allrecords#allrecords .вн-ф__заг[aria-expanded="false"][data-ishp40-sel]::before{content:attr(data-ishp40-sel);order:1;flex:0 1 auto;min-width:0;max-width:150px;margin:0 10px 0 auto;overflow:hidden;
+  white-space:nowrap;text-overflow:ellipsis;color:var(--p40-k);font:300 12.5px/1.2 var(--p40-f);text-align:right}
+html.ishp40-on:root body #allrecords#allrecords .вн-ф__заг[aria-expanded="false"][data-ishp40-sel]::after{margin-left:0}
+html.ishp40-on:root body #allrecords#allrecords .вн-ф__заг + .вн-ф__тело{box-sizing:border-box;margin:0 0 8px;padding:0 14px 12px!important;border:1px solid rgba(43,68,199,.18);border-top:0;border-radius:0 0 16px 16px;
+  background:var(--p40-glass2);-webkit-backdrop-filter:blur(14px) saturate(1.3);backdrop-filter:blur(14px) saturate(1.3);box-shadow:0 10px 28px rgba(43,68,199,.14)}
+html.ishp40-on:root body #allrecords#allrecords .вн-ф label{min-height:38px;padding:4px!important;gap:10px;border-radius:10px;font:400 13.5px/1.25 var(--p40-f)!important;color:var(--p40-ink)!important}
+html.ishp40-on:root body #allrecords#allrecords .вн-ф label:hover{background:rgba(255,255,255,.6)}
+html.ishp40-on:root body #allrecords#allrecords .вн-ф label input[type=checkbox]{-webkit-appearance:none;appearance:none;flex:0 0 18px;width:18px;height:18px;margin:0;border:1px solid rgba(43,68,199,.35);border-radius:6px;
+  background:rgba(255,255,255,.75) center/12px no-repeat;cursor:pointer}
+html.ishp40-on:root body #allrecords#allrecords .вн-ф label input[type=checkbox]:checked{border-color:var(--p40-k);
+  background-color:var(--p40-k);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' fill='none' stroke='%23fff' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M2.5 6.2l2.4 2.4 4.6-5'/%3E%3C/svg%3E")}
+html.ishp40-on:root body #allrecords#allrecords .вн-ф label:has(input:checked) span{font-weight:500}
+html.ishp40-on:root body #allrecords#allrecords .вн-ф label em{font:300 11.5px/1 var(--p40-f);color:#8A8FA3}
+html.ishp40-on:root body #allrecords#allrecords .вн-ф__сп{scrollbar-width:thin;scrollbar-color:rgba(43,68,199,.28) transparent}
+html.ishp40-on:root body #allrecords#allrecords .вн-ф__сп::-webkit-scrollbar{width:4px}
+html.ishp40-on:root body #allrecords#allrecords .вн-ф__сп::-webkit-scrollbar-thumb{background:rgba(43,68,199,.28);border-radius:4px}
+html.ishp40-on:root body #allrecords#allrecords .вн-ф__цена{gap:8px}
+html.ishp40-on:root body #allrecords#allrecords .вн-ф__цена input{flex:1 1 100px;min-width:100px;width:auto;height:40px;box-sizing:border-box;border:0;border-radius:12px;background:rgba(231,234,251,.7);padding:0 12px;
+  font:400 13.5px/1 var(--p40-f)}
+html.ishp40-on:root body #allrecords#allrecords .вн-ф__цена input:focus{outline:2px solid var(--p40-k)}
+html.ishp40-on:root body #allrecords#allrecords .вн-ф__ок{flex:1 1 100%;height:44px;border:0;border-radius:12px;color:#fff;background:var(--p40-grad);box-shadow:0 6px 16px rgba(43,68,199,.30);font:500 14px/1 var(--p40-f)}
+html.ishp40-on:root body #allrecords#allrecords .вн-гр .вн-ф__ещё{justify-content:center;box-sizing:border-box;width:100%;margin:0 0 8px;min-height:44px;padding:0 10px;border:1px solid var(--p40-edge);border-radius:14px;
+  background:rgba(255,255,255,.35);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);color:var(--p40-k);font:400 13.5px/1 var(--p40-f)}
+html.ishp40-on:root body #allrecords#allrecords .вн-гр .вн-ф__ещё::after{margin-left:8px;border-color:var(--p40-k)}
+html.ishp40-on:root body #allrecords#allrecords .вн-ф__сброс{box-sizing:border-box;width:100%;margin:0;padding:0 10px;min-height:40px;border:0;background:none;color:var(--p40-k);text-align:center;font:400 13px/1 var(--p40-f);
+  text-decoration:underline;text-underline-offset:3px}
+
+
+/* «Популярные бренды» под фильтрами - то же стекло, что плитки; чипы лёгкие, без рамки */
+html.ishp40-on:root body #allrecords#allrecords .вн-бок__карта.вн-бренды{box-sizing:border-box;padding:14px!important;border:1px solid var(--p40-edge)!important;border-radius:16px!important;
+  background:var(--p40-glass)!important;-webkit-backdrop-filter:blur(14px) saturate(1.3);backdrop-filter:blur(14px) saturate(1.3);box-shadow:0 4px 18px rgba(43,68,199,.10)!important}
+html.ishp40-on:root body #allrecords#allrecords .вн-бренды > .вн-бок__заг{padding:0 0 10px!important;color:#2A2F45!important;font:500 14px/1.3 var(--p40-f)!important}
+html.ishp40-on:root body #allrecords#allrecords .вн-бренд-чип{border:0!important;box-shadow:none!important;background:rgba(231,234,251,.6)!important;color:var(--p40-ink)!important;font:400 13.5px/1 var(--p40-f)!important;
+  transition:color .16s,background .16s}
+html.ishp40-on:root body #allrecords#allrecords .вн-бренд-чип:hover{color:var(--p40-k)!important;background:rgba(231,234,251,.9)!important}
+html.ishp40-on:root body #allrecords#allrecords .вн-бренд-чип.is-on{color:var(--p40-k)!important;font-weight:500!important}
+
 /* ══════════ телефон ══════════ */
 @media screen and (max-width:960px){
   /* кнопка «Фильтры»: стеклянная, без кружка с числом */
@@ -125,13 +186,24 @@ html.ishp40-on:root body #allrecords#allrecords #ишфаЕщё:hover{background
     padding:12px 16px 24px!important;display:flex!important;flex-direction:column;gap:8px}
   html.ishp40-on:root body #allrecords#allrecords .t-store__filter__options.вн-моб-откр .t-store__filter__item{
     box-sizing:border-box;margin:0!important;padding:0 14px!important;border:1px solid var(--p40-edge)!important;border-radius:16px!important;
-    background:var(--p40-glass)!important;-webkit-backdrop-filter:blur(14px) saturate(1.3);backdrop-filter:blur(14px) saturate(1.3);box-shadow:0 4px 18px rgba(43,68,199,.07)!important}
+    background:var(--p40-glass)!important;-webkit-backdrop-filter:blur(14px) saturate(1.3);backdrop-filter:blur(14px) saturate(1.3);box-shadow:0 4px 18px rgba(43,68,199,.10)!important}
   html.ishp40-on:root body #allrecords#allrecords .t-store__filter__options.вн-моб-откр .t-store__filter__item.active{
     background:var(--p40-glass2)!important;border-color:rgba(43,68,199,.18)!important;box-shadow:0 10px 28px rgba(43,68,199,.14),inset 0 1px 0 #fff!important}
   html.ishp40-on:root body #allrecords#allrecords .t-store__filter__options.вн-моб-откр .t-store__filter__item-title{min-height:52px;
     padding:0!important;font:400 15px/1.3 var(--p40-f)!important;color:var(--p40-ink)!important}
   html.ishp40-on:root body #allrecords#allrecords .t-store__filter__options.вн-моб-откр .t-store__filter__item.active > .t-store__filter__item-title{font-weight:500!important}
   html.ishp40-on:root body #allrecords#allrecords .t-store__filter__options.вн-моб-откр .t-store__filter__item:not(.active) > .t-store__filter__item-title[data-ishp40-sel]::before{max-width:190px}
+  /* группы: кнопка «Фильтры» - стеклянная, без кружка с числом */
+  html.ishp40-on:root body #allrecords#allrecords #вн-гр-фкн{border:1px solid rgba(43,68,199,.35)!important;border-radius:14px!important;color:var(--p40-k)!important;font-weight:400!important;
+    background:linear-gradient(rgba(255,255,255,.55),rgba(255,255,255,.55)),radial-gradient(160px 90px at 12% 0,rgba(43,68,199,.30),transparent 75%),radial-gradient(200px 100px at 85% 100%,rgba(108,92,231,.28),transparent 75%),#F5F3EE!important;
+    box-shadow:0 4px 18px rgba(43,68,199,.07)!important}
+  html.ishp40-on:root body #allrecords#allrecords #вн-гр-фкн b,html.ishp40-on:root body #allrecords#allrecords #вн-гр-фкн em,html.ishp40-on:root body #allrecords#allrecords #вн-гр-фкн i,html.ishp40-on:root body #allrecords#allrecords #вн-гр-фкн .ishd-n{display:none!important}
+  /* группы: шторка .вн-гр.is-ф - тот же фон-подсветка и плитки */
+  html.ishp40-on:root body #allrecords#allrecords .вн-гр.is-ф .вн-гр__бок{background-color:#F5F3EE!important;background-repeat:no-repeat!important;padding:12px 16px 24px!important;
+    background-image:radial-gradient(360px 320px at 0% 0,rgba(43,68,199,.30),transparent 70%),radial-gradient(340px 380px at 100% 40%,rgba(108,92,231,.26),transparent 70%),
+      radial-gradient(360px 300px at 0% 80%,rgba(43,68,199,.22),transparent 70%),radial-gradient(300px 260px at 90% 8%,rgba(160,172,240,.45),transparent 70%)!important}
+  html.ishp40-on:root body #allrecords#allrecords .вн-гр.is-ф .вн-ф__заг{padding:0 14px!important;min-height:52px;font-size:15px!important}
+  html.ishp40-on:root body #allrecords#allrecords .вн-гр.is-ф .вн-ф__сброс{display:block!important}
   /* значения в шторке - стеклянные чипы; выбранный: кобальтовая рамка и текст, не заливка (залитая кнопка одна - «Применить») */
   html.ishp40-on:root body.вн-моб-ф #allrecords#allrecords .вн-моб-откр .t-store__filter__item .t-store__filter__checkbox.t-checkbox__control,
   html.ishp40-on:root body.вн-моб-ф #allrecords#allrecords .вн-моб-откр .t-store__filter__item .t-store__filter__custom-sel{
@@ -150,7 +222,7 @@ html.ishp40-on:root body #allrecords#allrecords #ишфаЕщё:hover{background
   html.ishp40-on:root body.вн-моб-ф .вн-моб-откр .t-store__filter__item.active > .t-store__filter__item-title{color:var(--p40-ink)!important}
   html.ishp40-on:root body.вн-моб-ф .вн-моб-шап,html.ishp40-on:root body.вн-моб-ф .вн-моб-низ{background:rgba(255,255,255,.72)!important;
     -webkit-backdrop-filter:blur(18px) saturate(1.3);backdrop-filter:blur(18px) saturate(1.3);border-color:var(--p40-edge)!important}
-  html.ishp40-on:root body.вн-моб-ф .вн-моб-шап{font:300 20px/1 var(--p40-f)}
+  html.ishp40-on:root body.вн-моб-ф .вн-моб-шап{font:500 20px/1 var(--p40-f);color:#2A2F45}
   html.ishp40-on:root body.вн-моб-ф .вн-моб-шап button{color:var(--p40-ink)}
   html.ishp40-on:root body.вн-моб-ф .вн-моб-низ button{border-radius:12px!important}
   html.ishp40-on:root body.вн-моб-ф .вн-моб-низ .вн-моб-сброс{border:1px solid var(--p40-edge)!important;background:rgba(255,255,255,.55)!important;color:var(--p40-mut)!important;

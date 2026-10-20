@@ -79,7 +79,8 @@
   var H1_TXT = { '/obrazovanie': 'Компьютерная техника для школ и вузов' };
   var LID_TXT = { '/obrazovanie': 'Техника для компьютерных классов. Работаем через портал goszakup.gov.kz' };
   /* 19.10: на этих страницах низ-блоки «Подбор техники» и «Не нашли нужное?» не рисуем (Асхат) */
-  var NOLOW = (CUR === '/obrazovanie' || CUR === '/goszakupki');
+  /* 20.10: и на /delivery, /details, /dlya-organizacij, /po-schetu, /s-nds (Асхат) */
+  var NOLOW = ['/obrazovanie', '/goszakupki', '/delivery', '/details', '/dlya-organizacij', '/po-schetu', '/s-nds'].indexOf(CUR) >= 0;
 
   function pageCfg() {
     var p = (W.location.pathname || '/').replace(/\/+$/, '').toLowerCase();

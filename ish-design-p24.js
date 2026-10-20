@@ -37,7 +37,7 @@
     'Торговое оборудование': ['#E9ECFC', '#2B44C7', '<path d="M2 4.5V2h2.5M16 4.5V2h-2.5M2 13.5V16h2.5M16 13.5V16h-2.5"/><path d="M5 5.5v7M7.5 5.5v7M10 5.5v7M13 5.5v7"/>']
   };
   /* нижняя строка панели: [адрес, подпись, главная?] - адреса уже есть в шапке сайта */
-  var ЕЩЁ = [['/katalog', 'Весь каталог', 1], ['/assortiment', 'Расширенный ассортимент 14000+', 0], ['/podbor', 'Запросить счёт/КП', 0]];
+  var ЕЩЁ = [['/katalog', 'Весь каталог', 1], ['/assortiment', 'Расширенный ассортимент 14000+', 0], ['/podbor', 'Запросить счёт | КП', 0]];
 
   var BURGER = '<svg class="ishp24-brg" viewBox="0 0 18 18" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path class="l1" d="M3 5h12"/><path class="l2" d="M3 9h12"/><path class="l3" d="M3 13h12"/></svg>';
   var CHEV = '<svg class="ishp24-chev" viewBox="0 0 12 12" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m2.5 4.5 3.5 3.5 3.5-3.5"/></svg>';

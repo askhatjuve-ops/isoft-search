@@ -353,7 +353,7 @@
 
   /* ───────── П35: раздел каталога в палитре главной (ish-design-p35.js/.css с того же адреса, один раз) ─────────
      Признак: страница со списком товаров (.t-store__card-list). Выключатель: window.ISH_P35_OFF = 1 или window.ISH_P4_NO_P35 = 1 (до загрузки p4). Кэш: поменять P35V. */
-  var P35V = '20';
+  var P35V = '21';
   function p35() {
     if (W.ISH_P4_NO_P35 || W.ISH_P35_OFF || W.ISH_P35 || D.getElementById('ishp-p35-js')) return true;
     if (D.getElementById('лента')) return true;
@@ -468,7 +468,7 @@
   function p40() {
     if (P40_ВЫКЛ || W.ISH_P4_NO_P40 || W.ISH_P40_OFF || W.ISH_P40 || D.getElementById('ishp-p40-js')) return true;
     if (D.getElementById('лента')) return true;
-    if (!D.querySelector('.t-store__card-list, .вн-гр[data-gruppa]')) return false;   /* v3: раздел (список Tilda) или группа (свой список .вн-гр) */
+    if (!D.querySelector('.t-store__card-list, .вн-гр[data-gruppa], .t-store__filter')) return false;   /* разделы, группы (свой фильтр .вн-ф) и /katalog */
     var src = tag && tag.src;
     if (!src) return true;
     var s = D.createElement('script');

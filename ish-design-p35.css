@@ -77,22 +77,22 @@ html.ishp35-on .t-store__filter input[type=text]{background:#fff;border-color:va
 html.ishp35-on .js-store-filter-mob-btn{background:var(--p35-soft2)!important;border:1px solid var(--p35-line)!important;color:var(--p35-k)!important;border-radius:14px!important}
 
 /* ═══ строка товара: цена крупнее и темнее, характеристики контрастнее; без подиумов и теней ═══ */
-html.ishp35-on body #allrecords .t-store__card[data-ish13]{border-radius:18px;border-color:var(--p35-line);box-shadow:none}
-html.ishp35-on body #allrecords .t-store__card[data-ish13]:hover{border-color:#B7C2F0}
-html.ishp35-on body #allrecords .t-store__card__price-value,html.ishp35-on body #allrecords .t-store__card__price-currency{font-family:var(--p35-f);font-weight:800;color:#0B0E1A}
-html.ishp35-on body #allrecords .t-store__card__price .t-store__card__price-value{font-size:24px;line-height:1.1;letter-spacing:-.01em}
-html.ishp35-on body #allrecords .t-store__card__price .t-store__card__price-currency{font-size:20px}
-html.ishp35-on .ish13-крат i{color:#1F2433}
-html.ishp35-on .ish13-крат b{color:#5E647A;font-weight:500}
-html.ishp35-on body #allrecords .t-store__card__sku,html.ishp35-on body #allrecords .t-store__card__sku .ishp9-lab{color:#7A8094}
+html:is(.ishp35-on,.ishp35-kat) body #allrecords .t-store__card[data-ish13]{border-radius:18px;border-color:var(--p35-line);box-shadow:none}
+html:is(.ishp35-on,.ishp35-kat) body #allrecords .t-store__card[data-ish13]:hover{border-color:#B7C2F0}
+html:is(.ishp35-on,.ishp35-kat) body #allrecords .t-store__card__price-value,html:is(.ishp35-on,.ishp35-kat) body #allrecords .t-store__card__price-currency{font-family:var(--p35-f);font-weight:800;color:#0B0E1A}
+html:is(.ishp35-on,.ishp35-kat) body #allrecords .t-store__card__price .t-store__card__price-value{font-size:24px;line-height:1.1;letter-spacing:-.01em}
+html:is(.ishp35-on,.ishp35-kat) body #allrecords .t-store__card__price .t-store__card__price-currency{font-size:20px}
+html:is(.ishp35-on,.ishp35-kat) .ish13-крат i{color:#1F2433}
+html:is(.ishp35-on,.ishp35-kat) .ish13-крат b{color:#5E647A;font-weight:500}
+html:is(.ishp35-on,.ishp35-kat) body #allrecords .t-store__card__sku,html:is(.ishp35-on,.ishp35-kat) body #allrecords .t-store__card__sku .ishp9-lab{color:#7A8094}
 
 /* «Загрузить ещё»: белая с кобальтовым текстом (Tilda красит кнопку своим #rec…-правилом с !important - перебиваем по id) */
-html.ishp35-on body #allrecords .t-store__load-more-btn-wrap .t-btnflex.t-btnflex_type_button{background:#fff!important;background-color:#fff!important;border:1px solid #AEBBEF!important;box-shadow:none!important;color:var(--p35-k)!important;border-radius:12px!important}
-html.ishp35-on body #allrecords .t-store__load-more-btn-wrap .t-btnflex__text{color:var(--p35-k)!important}
-html.ishp35-on body #allrecords .t-store__load-more-btn-wrap .t-btnflex.t-btnflex_type_button:hover{background:var(--p35-soft2)!important;background-color:var(--p35-soft2)!important;border-color:var(--p35-k)!important}
-html.ishp35-on .ishp19-note{color:var(--p35-mut);margin-bottom:0}
-html.ishp35-on body #allrecords .t-store__load-more-btn-wrap{margin:0!important;padding:12px 0 0!important}
-html.ishp35-on body #allrecords .t-store__load-more-btn-wrap .t-btnflex.t-btnflex_type_button{margin:0 auto!important}
+html:is(.ishp35-on,.ishp35-kat) body #allrecords .t-store__load-more-btn-wrap .t-btnflex.t-btnflex_type_button{background:#fff!important;background-color:#fff!important;border:1px solid #AEBBEF!important;box-shadow:none!important;color:var(--p35-k)!important;border-radius:12px!important}
+html:is(.ishp35-on,.ishp35-kat) body #allrecords .t-store__load-more-btn-wrap .t-btnflex__text{color:var(--p35-k)!important}
+html:is(.ishp35-on,.ishp35-kat) body #allrecords .t-store__load-more-btn-wrap .t-btnflex.t-btnflex_type_button:hover{background:var(--p35-soft2)!important;background-color:var(--p35-soft2)!important;border-color:var(--p35-k)!important}
+html:is(.ishp35-on,.ishp35-kat) .ishp19-note{color:var(--p35-mut);margin-bottom:0}
+html:is(.ishp35-on,.ishp35-kat) body #allrecords .t-store__load-more-btn-wrap{margin:0!important;padding:12px 0 0!important}
+html:is(.ishp35-on,.ishp35-kat) body #allrecords .t-store__load-more-btn-wrap .t-btnflex.t-btnflex_type_button{margin:0 auto!important}
 
 /* ═══ индиго-плиты «Пришлите список» ═══ */
 html.ishp35-on .ishp35-plate{flex:0 0 100%;width:100%;max-width:100%;box-sizing:border-box;position:relative;overflow:hidden;isolation:isolate;display:flex;align-items:center;justify-content:space-between;gap:24px;
@@ -106,7 +106,7 @@ html.ishp35-on .ishp35-plate__b{flex:none;box-sizing:border-box;display:inline-f
 html.ishp35-on .ishp35-plate__b:hover{transform:translateY(-2px);box-shadow:0 14px 26px -12px rgba(23,25,35,.4);color:var(--p35-kh)}
 html.ishp35-on .ishp35-plate__b:focus-visible{outline:2px solid #fff;outline-offset:3px}
 html.ishp35-on .t-store__card-list > .ishp35-plate{grid-column:1/-1}
-html.ishp35-on body #allrecords .t-store__load-more-btn-wrap .t-btnflex.t-btnflex_type_button{height:44px!important}
+html:is(.ishp35-on,.ishp35-kat) body #allrecords .t-store__load-more-btn-wrap .t-btnflex.t-btnflex_type_button{height:44px!important}
 
 /* ═══ экран «ничего не найдено» ═══ */
 html.ishp35-on .ishp35-empty{display:flex;align-items:center;gap:20px;flex-wrap:wrap;box-sizing:border-box;margin:8px 0 20px;padding:30px 32px;border-radius:22px;background:linear-gradient(120deg,#fff 0%,var(--p35-soft) 100%);border:1px solid var(--p35-line);font-family:var(--p35-f)}
@@ -317,6 +317,55 @@ html.ishp35-grp .вн-т:hover .вн-т__кн{background:var(--p35-k);color:#fff
 html.ishp35-grp .вн-т .ish13-крат i{color:#1F2433}
 html.ishp35-grp .вн-т .ish13-крат i b{color:#5E647A;font-weight:500}
 html.ishp35-grp .вн-т__арт,html.ishp35-grp .вн-т__раздел{color:#7A8094}
+/* 20.10: строка товара на странице ГРУППЫ (.вн-т) = строка раздела p35 «Список» (v1.1: нижняя строка «артикул · Сравнить · цена · В корзину»). Плитку не трогаем.
+   .вн-т__текст и .вн-т__цена делаем display:contents - имя, характеристики, артикул, цена и кнопка становятся ячейками сетки строки, как у t-store. */
+html.ishp35-kat .t-store__card:has(.ishp35r-av) .ishp38-stock{display:none!important}
+html.ishp35-grp .вн-т__фото img{background:transparent}
+html.ishp35-grp:not(.ishd-tile) .вн-т__имя{color:var(--r35-ink,#171923)!important}
+@media (hover:hover){html.ishp35-grp:not(.ishd-tile) .вн-т:hover .вн-т__имя{color:var(--r35-k,#2B44C7)!important}}
+html.ishp35-grp .ishp35r-br{display:flex;align-items:center;gap:10px;flex-wrap:wrap;min-height:18px;margin:2px 0 6px;font:700 11.5px/1.2 TildaSans,Arial,sans-serif;letter-spacing:.09em;text-transform:uppercase;color:var(--r35-k,#2B44C7)}
+html.ishp35-grp .вн-т__кн svg{width:16px;height:16px;flex:none;fill:none;stroke:currentColor;stroke-width:1.63;stroke-linecap:round;stroke-linejoin:round}
+@media screen and (min-width:761px){
+  html.ishp35-grp:not(.ishd-tile) .вн-т{display:grid;grid-template-columns:208px minmax(0,1fr) auto auto auto;grid-template-rows:auto auto auto minmax(8px,1fr) auto;column-gap:0;align-items:center;padding:16px;border-radius:16px;border:1px solid var(--r35-line,#E6E9F5);box-shadow:none;transition:border-color .18s,transform .18s}
+  html.ishp35-grp:not(.ishd-tile) .вн-т:hover{border-color:rgba(43,68,199,.4);transform:translateY(-2px)}
+  html.ishp35-grp:not(.ishd-tile) .вн-т__фото{grid-column:1;grid-row:1/span 5;align-self:start;width:184px;height:160px;margin:0;border-radius:14px;background:var(--r35-ph,#F3F5FD);position:relative;box-sizing:border-box;overflow:hidden}
+  html.ishp35-grp:not(.ishd-tile) .вн-т__фото img{position:absolute;inset:10px;width:calc(100% - 20px);height:calc(100% - 20px);object-fit:contain;mix-blend-mode:multiply}
+  html.ishp35-grp:not(.ishd-tile) .вн-т__фото i{background:transparent}
+  html.ishp35-grp:not(.ishd-tile) .вн-т__текст,html.ishp35-grp:not(.ishd-tile) .вн-т__цена{display:contents}
+  html.ishp35-grp:not(.ishd-tile) .вн-т .ishp35r-br{grid-column:2/-1;grid-row:1}
+  html.ishp35-grp:not(.ishd-tile) .вн-т__имя{grid-column:2/-1;grid-row:2;margin:0 0 10px;font:700 16px/22px TildaSans,Arial,sans-serif;letter-spacing:0;color:var(--r35-ink,#171923)}
+  html.ishp35-grp:not(.ishd-tile) .вн-т:hover .вн-т__имя{color:var(--r35-k,#2B44C7)}
+  html.ishp35-grp:not(.ishd-tile) .вн-т .ish13-крат{grid-column:2/-1;grid-row:3;display:block;margin:0;padding:0}
+  html.ishp35-grp:not(.ishd-tile) .вн-т .ish13-крат i{display:grid;grid-template-columns:156px minmax(0,1fr);column-gap:12px;font:400 14px/20px TildaSans,Arial,sans-serif;color:var(--r35-ink,#171923)}
+  html.ishp35-grp:not(.ishd-tile) .вн-т .ish13-крат i b{display:block;font-weight:400;color:var(--r35-mut,#7A8094);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  html.ishp35-grp:not(.ishd-tile) .вн-т__арт{grid-column:2;grid-row:5;margin:0;align-self:center;font:500 12px/16px TildaSans,Arial,sans-serif;color:#4A5066}
+  html.ishp35-grp:not(.ishd-tile) .вн-т__раздел{display:none}
+  html.ishp35-grp:not(.ishd-tile) .вн-т > .ishp25-cmp{grid-column:3;grid-row:5;margin:0 0 0 16px;align-self:center;justify-self:end}
+  html.ishp35-grp:not(.ishd-tile) .вн-т__цена b{grid-column:4;grid-row:5;margin:0 0 0 24px;align-self:center;font:800 24px/28px TildaSans,Arial,sans-serif;color:#0B0E1A;white-space:nowrap;text-align:right}
+  html.ishp35-grp:not(.ishd-tile) .вн-т__цена b::after{content:none}
+  html.ishp35-grp:not(.ishd-tile) .вн-т__кн{grid-column:5;grid-row:5;display:flex;align-items:center;justify-content:center;gap:6px;box-sizing:border-box;width:152px;height:40px;margin:0 0 0 16px;border:1px solid var(--p35-k);border-radius:8px;background:#fff;color:var(--p35-k);font:500 14px/1 TildaSans,Arial,sans-serif;text-decoration:none}
+  html.ishp35-grp:not(.ishd-tile) .вн-т:hover .вн-т__кн{background:var(--p35-k);color:#fff}
+}
+@media screen and (max-width:760px){
+  html.ishp35-grp:not(.ishd-tile) .вн-т{display:grid;grid-template-columns:96px minmax(0,1fr);grid-template-rows:auto auto auto 0 auto auto;column-gap:12px;align-items:start;padding:12px;border-radius:16px;border:1px solid var(--r35-line,#E6E9F5);box-shadow:none}
+  html.ishp35-grp:not(.ishd-tile) .вн-т__фото{grid-column:1;grid-row:1/span 4;width:96px;height:96px;margin:0;border-radius:12px;background:var(--r35-ph,#F3F5FD);position:relative;box-sizing:border-box;overflow:hidden}
+  html.ishp35-grp:not(.ishd-tile) .вн-т__фото img{position:absolute;inset:6px;width:calc(100% - 12px);height:calc(100% - 12px);object-fit:contain;mix-blend-mode:multiply}
+  html.ishp35-grp:not(.ishd-tile) .вн-т__фото i{background:transparent}
+  html.ishp35-grp:not(.ishd-tile) .вн-т__текст{display:contents}
+  html.ishp35-grp:not(.ishd-tile) .вн-т .ishp35r-br{grid-column:2;grid-row:1;margin:0 0 4px;font-size:11px}
+  html.ishp35-grp:not(.ishd-tile) .вн-т__имя{grid-column:2;grid-row:2;margin:0 0 6px;font:700 14px/19px TildaSans,Arial,sans-serif;color:var(--r35-ink,#171923);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+  html.ishp35-grp:not(.ishd-tile) .вн-т .ish13-крат{grid-column:2;grid-row:3;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;margin:0;padding:0;font-size:12.5px;line-height:17px;color:#4A5066}
+  html.ishp35-grp:not(.ishd-tile) .вн-т .ish13-крат i{display:inline;font:400 12.5px/17px TildaSans,Arial,sans-serif;color:#4A5066}
+  html.ishp35-grp:not(.ishd-tile) .вн-т .ish13-крат i b{display:none}
+  html.ishp35-grp:not(.ishd-tile) .вн-т .ish13-крат i:nth-child(n+4){display:none}
+  html.ishp35-grp:not(.ishd-tile) .вн-т .ish13-крат i:not(:last-child):not(:nth-child(3))::after{content:" · ";color:#9AA0B4;white-space:pre}
+  html.ishp35-grp:not(.ishd-tile) .вн-т__арт,html.ishp35-grp:not(.ishd-tile) .вн-т__раздел{display:none}
+  html.ishp35-grp:not(.ishd-tile) .вн-т__цена{grid-column:1/-1;grid-row:5;display:flex;flex-direction:row;align-items:center;justify-content:space-between;min-width:0;margin-top:10px}
+  html.ishp35-grp:not(.ishd-tile) .вн-т__цена b{margin:0;min-height:44px;display:flex;align-items:center;font:800 20px/24px TildaSans,Arial,sans-serif;color:#0B0E1A;white-space:nowrap}
+  html.ishp35-grp:not(.ishd-tile) .вн-т__кн{display:flex;align-items:center;justify-content:center;box-sizing:border-box;width:44px;height:44px;margin:0;padding:0;flex:none;font-size:0;border:1px solid var(--p35-k);border-radius:8px;background:#fff;color:var(--p35-k)}
+  html.ishp35-grp:not(.ishd-tile) .вн-т__кн svg{width:18px;height:18px}
+  html.ishp35-grp:not(.ishd-tile) .вн-т > .ishp25-cmp{grid-column:1/-1;grid-row:6;justify-self:start;margin-top:8px;min-height:36px}
+}
 html.ishp35-grp #вн-гр-список > .ishp35-plate{grid-column:1/-1}
 html.ishp35-grp .вн-гр__ещё{max-width:360px;margin:12px auto 0;height:44px;border:1px solid #AEBBEF;border-radius:12px;background:#fff;color:var(--p35-k);font:700 15px/1 var(--p35-f)}
 html.ishp35-grp .вн-гр__ещё:hover{background:var(--p35-soft2);border-color:var(--p35-k)}
@@ -362,193 +411,193 @@ html.ishp35-on .ishp35-tiles{grid-auto-rows:minmax(216px,auto)}
    фото 1:1 только в плитке. НЕ ДЕЛАЕМ (провал П31): подиумы/диски под фото, тяжёлые тени, радиус строк 22-28, заливка «В корзину».
    Всё под html.ishp35-on + #allrecords (боевые правила Tilda-блока с #rec…!important перебиваем !important и двойным #allrecords). */
 :root{--r35-line:#E6E9F5;--r35-ph:#F3F5FD;--r35-mut:#7A8094;--r35-ink:#171923;--r35-k:#2B44C7}
-html.ishp35-on:not(.ishd-tile) body #allrecords#allrecords .t-store__card-list:has(> .t-store__card[data-ish13]){display:flex!important;flex-direction:column;gap:12px!important;row-gap:12px!important;column-gap:0!important}
-html.ishp35-on body #allrecords#allrecords .t-store__card-list:has(> .t-store__card[data-ish13]) > :is(.t-store__grid-separator,.t-clear){display:none!important}
-html.ishp35-on:not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13]{
+html:is(.ishp35-on,.ishp35-kat):not(.ishd-tile) body #allrecords#allrecords .t-store__card-list:has(> .t-store__card[data-ish13]){display:flex!important;flex-direction:column;gap:12px!important;row-gap:12px!important;column-gap:0!important}
+html:is(.ishp35-on,.ishp35-kat) body #allrecords#allrecords .t-store__card-list:has(> .t-store__card[data-ish13]) > :is(.t-store__grid-separator,.t-clear){display:none!important}
+html:is(.ishp35-on,.ishp35-kat):not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13]{
   display:grid!important;grid-template-columns:184px minmax(0,1fr) 184px!important;grid-template-rows:auto auto auto auto 1fr!important;column-gap:24px!important;row-gap:0!important;
   box-sizing:border-box!important;width:100%!important;max-width:100%!important;margin:0!important;padding:16px!important;
   background:#fff!important;border:1px solid var(--r35-line)!important;border-radius:16px!important;box-shadow:none!important;
   transition:border-color .18s,transform .18s}
 @media (hover:hover){
-  html.ishp35-on body #allrecords#allrecords .t-store__card[data-ish13]:hover{border-color:rgba(43,68,199,.4)!important;transform:translateY(-2px);box-shadow:none!important}
+  html:is(.ishp35-on,.ishp35-kat) body #allrecords#allrecords .t-store__card[data-ish13]:hover{border-color:rgba(43,68,199,.4)!important;transform:translateY(-2px);box-shadow:none!important}
 }
-@media (prefers-reduced-motion:reduce){html.ishp35-on body #allrecords .t-store__card[data-ish13]{transition:none!important}html.ishp35-on body #allrecords .t-store__card[data-ish13]:hover{transform:none!important}}
+@media (prefers-reduced-motion:reduce){html:is(.ishp35-on,.ishp35-kat) body #allrecords .t-store__card[data-ish13]{transition:none!important}html:is(.ishp35-on,.ishp35-kat) body #allrecords .t-store__card[data-ish13]:hover{transform:none!important}}
 
 /* фото: светлая подложка #F3F5FD, скругление 14, без подиума; белый фон снимка «вписывается» в подложку (multiply) */
-html.ishp35-on:not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] > a:first-child{grid-column:1!important;grid-row:1 / span 5!important;align-self:start;width:184px!important}
-html.ishp35-on body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__imgwrapper{
+html:is(.ishp35-on,.ishp35-kat):not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] > a:first-child{grid-column:1!important;grid-row:1 / span 5!important;align-self:start;width:184px!important}
+html:is(.ishp35-on,.ishp35-kat) body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__imgwrapper{
   background:var(--r35-ph)!important;border-radius:14px!important;overflow:hidden;box-sizing:border-box;padding:0!important;height:160px!important;width:100%!important;position:relative}
-html.ishp35-on:not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__bgimg{position:absolute!important;inset:10px!important;width:auto!important;height:auto!important;padding:0!important;background-size:contain!important;background-position:center!important;background-repeat:no-repeat!important;background-color:transparent!important;mix-blend-mode:multiply}
+html:is(.ishp35-on,.ishp35-kat):not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__bgimg{position:absolute!important;inset:10px!important;width:auto!important;height:auto!important;padding:0!important;background-size:contain!important;background-position:center!important;background-repeat:no-repeat!important;background-color:transparent!important;mix-blend-mode:multiply}
 
 /* бренд капсом (кобальт, как на полке главной) + «в наличии» */
-html.ishp35-on body #allrecords#allrecords .ishp35r-br{grid-column:2;grid-row:1;display:flex;align-items:center;gap:10px;flex-wrap:wrap;min-height:18px;margin:2px 0 6px;font:700 11.5px/1.2 TildaSans,Arial,sans-serif;letter-spacing:.09em;text-transform:uppercase;color:var(--r35-k)}
-html.ishp35-on body #allrecords#allrecords .ishp35r-av{display:inline-flex;align-items:center;gap:6px;font:500 12px/1.2 TildaSans,Arial,sans-serif;letter-spacing:0;text-transform:none;color:#4A5066}
-html.ishp35-on body #allrecords#allrecords .ishp35r-av::before{content:"";width:8px;height:8px;border-radius:50%;background:#1FA463;flex:none}
+html:is(.ishp35-on,.ishp35-kat) body #allrecords#allrecords .ishp35r-br{grid-column:2;grid-row:1;display:flex;align-items:center;gap:10px;flex-wrap:wrap;min-height:18px;margin:2px 0 6px;font:700 11.5px/1.2 TildaSans,Arial,sans-serif;letter-spacing:.09em;text-transform:uppercase;color:var(--r35-k)}
+html:is(.ishp35-on,.ishp35-kat) body #allrecords#allrecords .ishp35r-av{display:inline-flex;align-items:center;gap:6px;font:500 12px/1.2 TildaSans,Arial,sans-serif;letter-spacing:0;text-transform:none;color:#4A5066}
+html:is(.ishp35-on,.ishp35-kat) body #allrecords#allrecords .ishp35r-av::before{content:"";width:8px;height:8px;border-radius:50%;background:#1FA463;flex:none}
 
 /* название 16/700 тёмное */
-html.ishp35-on:not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__title{grid-column:2!important;grid-row:2!important;margin:0 0 10px!important;padding:0!important;
+html:is(.ishp35-on,.ishp35-kat):not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__title{grid-column:2!important;grid-row:2!important;margin:0 0 10px!important;padding:0!important;
   font:700 16px/22px TildaSans,Arial,sans-serif!important;letter-spacing:0;color:var(--r35-ink)!important;overflow-wrap:anywhere}
-html.ishp35-on body #allrecords#allrecords .t-store__card[data-ish13]:hover .t-store__card__title{color:var(--r35-k)!important}
+html:is(.ishp35-on,.ishp35-kat) body #allrecords#allrecords .t-store__card[data-ish13]:hover .t-store__card__title{color:var(--r35-k)!important}
 
 /* характеристики столбиком: ключ серый (колонка 156), значение тёмное */
-html.ishp35-on:not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] .ish13-крат{grid-column:2!important;grid-row:3!important;display:block!important;margin:0!important;padding:0!important}
-html.ishp35-on:not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] .ish13-крат i{display:grid!important;grid-template-columns:156px minmax(0,1fr);column-gap:12px;font:400 14px/20px TildaSans,Arial,sans-serif!important;color:var(--r35-ink)!important;font-style:normal}
-html.ishp35-on:not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] .ish13-крат i b{display:block!important;font-weight:400!important;color:var(--r35-mut)!important;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-html.ishp35-on:not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] .ish13-крат i + i::before{content:none!important}
-html.ishp35-on:not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__sku{grid-column:2!important;grid-row:4!important;margin-top:6px!important}
-html.ishp35-on body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__sku .ishp9-lab{font-size:12px!important;color:var(--r35-mut)!important}
-html.ishp35-on body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__sku .js-store-prod-sku{font-size:12px!important;font-weight:500!important;color:#4A5066!important}
+html:is(.ishp35-on,.ishp35-kat):not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] .ish13-крат{grid-column:2!important;grid-row:3!important;display:block!important;margin:0!important;padding:0!important}
+html:is(.ishp35-on,.ishp35-kat):not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] .ish13-крат i{display:grid!important;grid-template-columns:156px minmax(0,1fr);column-gap:12px;font:400 14px/20px TildaSans,Arial,sans-serif!important;color:var(--r35-ink)!important;font-style:normal}
+html:is(.ishp35-on,.ishp35-kat):not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] .ish13-крат i b{display:block!important;font-weight:400!important;color:var(--r35-mut)!important;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+html:is(.ishp35-on,.ishp35-kat):not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] .ish13-крат i + i::before{content:none!important}
+html:is(.ishp35-on,.ishp35-kat):not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__sku{grid-column:2!important;grid-row:4!important;margin-top:6px!important}
+html:is(.ishp35-on,.ishp35-kat) body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__sku .ishp9-lab{font-size:12px!important;color:var(--r35-mut)!important}
+html:is(.ishp35-on,.ishp35-kat) body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__sku .js-store-prod-sku{font-size:12px!important;font-weight:500!important;color:#4A5066!important}
 
 /* цена 24/800 и «с НДС» мелко; «В корзину» как есть (только на всю ширину колонки) */
-html.ishp35-on:not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price-wrapper{grid-column:3!important;grid-row:1 / span 5!important;display:flex!important;flex-direction:column!important;justify-content:flex-end;align-items:stretch;gap:0;padding:0!important;margin:0!important}
-html.ishp35-on body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price{display:flex!important;flex-wrap:wrap;align-items:baseline;justify-content:flex-end;margin:0 0 12px!important;text-align:right;color:#0B0E1A}
-html.ishp35-on body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price::after{content:"с НДС";flex:0 0 100%;margin-top:2px;font:400 12px/16px TildaSans,Arial,sans-serif;color:var(--r35-mut);text-align:right}
-html.ishp35-on body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price-value{font-size:24px!important;font-weight:800!important;line-height:28px!important;color:#0B0E1A!important}
-html.ishp35-on body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price-currency{font-size:20px!important;font-weight:800!important;color:#0B0E1A!important}
-html.ishp35-on:not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] .ish13-buy{width:100%!important;box-sizing:border-box}
+html:is(.ishp35-on,.ishp35-kat):not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price-wrapper{grid-column:3!important;grid-row:1 / span 5!important;display:flex!important;flex-direction:column!important;justify-content:flex-end;align-items:stretch;gap:0;padding:0!important;margin:0!important}
+html:is(.ishp35-on,.ishp35-kat) body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price{display:flex!important;flex-wrap:wrap;align-items:baseline;justify-content:flex-end;margin:0 0 12px!important;text-align:right;color:#0B0E1A}
+html:is(.ishp35-on,.ishp35-kat) body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price::after{content:"с НДС";flex:0 0 100%;margin-top:2px;font:400 12px/16px TildaSans,Arial,sans-serif;color:var(--r35-mut);text-align:right}
+html:is(.ishp35-on,.ishp35-kat) body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price-value{font-size:24px!important;font-weight:800!important;line-height:28px!important;color:#0B0E1A!important}
+html:is(.ishp35-on,.ishp35-kat) body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price-currency{font-size:20px!important;font-weight:800!important;color:#0B0E1A!important}
+html:is(.ishp35-on,.ishp35-kat):not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] .ish13-buy{width:100%!important;box-sizing:border-box}
 
 /* «Сравнить» - аккуратный чекбокс-чип */
-html.ishp35-on:not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] > .ishp25-cmp{grid-column:2!important;grid-row:5!important;align-self:end;justify-self:start;margin:12px 0 0!important;
+html:is(.ishp35-on,.ishp35-kat):not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] > .ishp25-cmp{grid-column:2!important;grid-row:5!important;align-self:end;justify-self:start;margin:12px 0 0!important;
   display:inline-flex;align-items:center;gap:8px;min-height:32px;padding:0 12px 0 8px!important;box-sizing:border-box;border:1px solid var(--r35-line);border-radius:10px;background:#fff;cursor:pointer;transition:border-color .15s,background .15s}
-html.ishp35-on body #allrecords#allrecords .t-store__card[data-ish13] > .ishp25-cmp:hover{border-color:rgba(43,68,199,.4);background:#F7F8FE}
-html.ishp35-on body #allrecords#allrecords .t-store__card[data-ish13] > .ishp25-cmp .ishp25-cmp__box{width:16px;height:16px;border-radius:5px;border-color:#B7BED6}
-html.ishp35-on body #allrecords#allrecords .t-store__card[data-ish13] > .ishp25-cmp .ishp25-cmp__box::after{left:4.5px;top:1px;width:4px;height:8px}
-html.ishp35-on body #allrecords#allrecords .t-store__card[data-ish13] > .ishp25-cmp .ishp25-cmp__t{font:500 13px/1 TildaSans,Arial,sans-serif;color:#3A3F52}
-html.ishp35-on body #allrecords#allrecords .t-store__card[data-ish13] > .ishp25-cmp:has(input:checked){border-color:var(--r35-k);background:#EEF1FD}
-html.ishp35-on body #allrecords#allrecords .t-store__card[data-ish13] > .ishp25-cmp:has(input:checked) .ishp25-cmp__t{color:var(--r35-k);font-weight:600}
+html:is(.ishp35-on,.ishp35-kat) body #allrecords#allrecords .t-store__card[data-ish13] > .ishp25-cmp:hover{border-color:rgba(43,68,199,.4);background:#F7F8FE}
+html:is(.ishp35-on,.ishp35-kat) body #allrecords#allrecords .t-store__card[data-ish13] > .ishp25-cmp .ishp25-cmp__box{width:16px;height:16px;border-radius:5px;border-color:#B7BED6}
+html:is(.ishp35-on,.ishp35-kat) body #allrecords#allrecords .t-store__card[data-ish13] > .ishp25-cmp .ishp25-cmp__box::after{left:4.5px;top:1px;width:4px;height:8px}
+html:is(.ishp35-on,.ishp35-kat) body #allrecords#allrecords .t-store__card[data-ish13] > .ishp25-cmp .ishp25-cmp__t{font:500 13px/1 TildaSans,Arial,sans-serif;color:#3A3F52}
+html:is(.ishp35-on,.ishp35-kat) body #allrecords#allrecords .t-store__card[data-ish13] > .ishp25-cmp:has(input:checked){border-color:var(--r35-k);background:#EEF1FD}
+html:is(.ishp35-on,.ishp35-kat) body #allrecords#allrecords .t-store__card[data-ish13] > .ishp25-cmp:has(input:checked) .ishp25-cmp__t{color:var(--r35-k);font-weight:600}
 
 /* ═══ ПЛИТКА: карточки как полка «Цены на сайте» главной ═══ */
-html.ishp35-on.ishd-tile body #allrecords#allrecords .t-store__card-list:has(> .t-store__card[data-ish13]){display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:16px!important}
-html.ishp35-on.ishd-tile body #allrecords#allrecords .t-store__card-list > .ishp35-plate{grid-column:1/-1}
-html.ishp35-on.ishd-tile body #allrecords#allrecords .t-store__card[data-ish13]{display:flex!important;flex-direction:column!important;box-sizing:border-box!important;width:auto!important;max-width:none!important;margin:0!important;padding:14px!important;
+html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card-list:has(> .t-store__card[data-ish13]){display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:16px!important}
+html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card-list > .ishp35-plate{grid-column:1/-1}
+html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13]{display:flex!important;flex-direction:column!important;box-sizing:border-box!important;width:auto!important;max-width:none!important;margin:0!important;padding:14px!important;
   background:#fff!important;border:1px solid var(--r35-line)!important;border-radius:18px!important;box-shadow:none!important;position:relative;transition:border-color .18s,transform .18s}
-html.ishp35-on.ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] > a:first-child{width:100%!important;display:block}
-html.ishp35-on.ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__imgwrapper{height:auto!important;padding-bottom:100%!important;border-radius:14px!important;background:#EEF1FD!important}
-html.ishp35-on.ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__bgimg{position:absolute!important;inset:12px!important;width:auto!important;height:auto!important;padding:0!important;background-size:contain!important;background-position:center!important;background-repeat:no-repeat!important;background-color:transparent!important;mix-blend-mode:multiply}
-html.ishp35-on.ishd-tile body #allrecords#allrecords .ishp35r-br{margin:12px 0 4px}
-html.ishp35-on.ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__title{margin:0!important;min-height:44px;font:700 15px/22px TildaSans,Arial,sans-serif!important;color:var(--r35-ink)!important;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-html.ishp35-on.ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .ish13-крат{display:flex!important;flex-wrap:wrap;gap:6px;margin:10px 0 0!important;padding:0!important}
-html.ishp35-on.ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .ish13-крат i{display:inline-block!important;max-width:100%;box-sizing:border-box;padding:3px 8px;border-radius:7px;background:#F1F3FC;font:500 12px/16px TildaSans,Arial,sans-serif!important;color:#3A3F52!important;font-style:normal;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-html.ishp35-on.ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .ish13-крат i b{display:none!important}
-html.ishp35-on.ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .ish13-крат i:nth-child(n+4){display:none!important}
-html.ishp35-on.ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__sku{display:none!important}
-html.ishp35-on.ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price-wrapper{display:flex!important;flex-direction:column!important;margin:auto 0 0!important;padding:14px 0 0!important}
-html.ishp35-on.ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price{justify-content:flex-start;text-align:left;margin:0 0 10px!important;width:100%!important;padding:0!important}
-html.ishp35-on.ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price::after{text-align:left}
-html.ishp35-on.ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price-value{font-size:20px!important;line-height:24px!important}
-html.ishp35-on.ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price-currency{font-size:17px!important}
-html.ishp35-on.ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .ish13-buy{width:100%!important;height:40px!important;box-sizing:border-box}
-html.ishp35-on.ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] > .ishp25-cmp{position:absolute;top:22px;left:22px;z-index:2;margin:0!important;display:inline-flex;align-items:center;gap:6px;min-height:28px;padding:0 10px 0 6px!important;border:1px solid var(--r35-line);border-radius:9px;background:rgba(255,255,255,.92)}
-html.ishp35-on.ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] > .ishp25-cmp .ishp25-cmp__t{font:500 12px/1 TildaSans,Arial,sans-serif;color:#3A3F52}
-html.ishp35-on.ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] > .ishp25-cmp .ishp25-cmp__box{width:16px;height:16px}
-@media (hover:hover){html.ishp35-on.ishd-tile body #allrecords#allrecords .t-store__card[data-ish13]:hover{border-color:rgba(43,68,199,.4)!important;transform:translateY(-2px)}}
-@media screen and (max-width:1100px){html.ishp35-on.ishd-tile body #allrecords#allrecords .t-store__card-list:has(> .t-store__card[data-ish13]){grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] > a:first-child{width:100%!important;display:block}
+html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__imgwrapper{height:auto!important;padding-bottom:100%!important;border-radius:14px!important;background:#EEF1FD!important}
+html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__bgimg{position:absolute!important;inset:12px!important;width:auto!important;height:auto!important;padding:0!important;background-size:contain!important;background-position:center!important;background-repeat:no-repeat!important;background-color:transparent!important;mix-blend-mode:multiply}
+html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .ishp35r-br{margin:12px 0 4px}
+html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__title{margin:0!important;min-height:44px;font:700 15px/22px TildaSans,Arial,sans-serif!important;color:var(--r35-ink)!important;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .ish13-крат{display:flex!important;flex-wrap:wrap;gap:6px;margin:10px 0 0!important;padding:0!important}
+html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .ish13-крат i{display:inline-block!important;max-width:100%;box-sizing:border-box;padding:3px 8px;border-radius:7px;background:#F1F3FC;font:500 12px/16px TildaSans,Arial,sans-serif!important;color:#3A3F52!important;font-style:normal;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .ish13-крат i b{display:none!important}
+html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .ish13-крат i:nth-child(n+4){display:none!important}
+html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__sku{display:none!important}
+html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price-wrapper{display:flex!important;flex-direction:column!important;margin:auto 0 0!important;padding:14px 0 0!important}
+html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price{justify-content:flex-start;text-align:left;margin:0 0 10px!important;width:100%!important;padding:0!important}
+html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price::after{text-align:left}
+html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price-value{font-size:20px!important;line-height:24px!important}
+html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price-currency{font-size:17px!important}
+html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .ish13-buy{width:100%!important;height:40px!important;box-sizing:border-box}
+html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] > .ishp25-cmp{position:absolute;top:22px;left:22px;z-index:2;margin:0!important;display:inline-flex;align-items:center;gap:6px;min-height:28px;padding:0 10px 0 6px!important;border:1px solid var(--r35-line);border-radius:9px;background:rgba(255,255,255,.92)}
+html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] > .ishp25-cmp .ishp25-cmp__t{font:500 12px/1 TildaSans,Arial,sans-serif;color:#3A3F52}
+html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] > .ishp25-cmp .ishp25-cmp__box{width:16px;height:16px}
+@media (hover:hover){html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13]:hover{border-color:rgba(43,68,199,.4)!important;transform:translateY(-2px)}}
+@media screen and (max-width:1100px){html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card-list:has(> .t-store__card[data-ish13]){grid-template-columns:repeat(2,minmax(0,1fr))!important}}
 
 /* ═══ планшет ≤960: колонка цены уже ═══ */
 @media screen and (max-width:960px){
-  html.ishp35-on:not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13]{grid-template-columns:150px minmax(0,1fr) 160px!important;column-gap:16px!important}
-  html.ishp35-on:not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] > a:first-child{width:150px!important}
-  html.ishp35-on:not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] .ish13-крат i{grid-template-columns:140px minmax(0,1fr)}
+  html:is(.ishp35-on,.ishp35-kat):not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13]{grid-template-columns:150px minmax(0,1fr) 160px!important;column-gap:16px!important}
+  html:is(.ishp35-on,.ishp35-kat):not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] > a:first-child{width:150px!important}
+  html:is(.ishp35-on,.ishp35-kat):not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] .ish13-крат i{grid-template-columns:140px minmax(0,1fr)}
 }
 /* ═══ телефон ≤760: строка 96px-фото + текст, характеристики одной строкой через «·», цена и круглая «В корзину» ═══ */
 @media screen and (max-width:760px){
-  html.ishp35-on:not(.ishd-tile) body #allrecords#allrecords .t-store__card-list:has(> .t-store__card[data-ish13]){padding:0 12px!important;gap:10px!important}
-  html.ishp35-on:not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13]{grid-template-columns:96px minmax(0,1fr)!important;grid-template-rows:auto auto auto 0 auto auto!important;column-gap:12px!important;padding:12px!important;border-radius:16px!important}
-  html.ishp35-on:not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] > a:first-child{grid-row:1 / span 4!important;width:96px!important}
-  html.ishp35-on:not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__imgwrapper{height:96px!important;border-radius:12px!important}
-  html.ishp35-on:not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__bgimg{inset:6px!important}
-  html.ishp35-on:not(.ishd-tile) body #allrecords#allrecords .ishp35r-br{grid-row:1;margin:0 0 4px;font-size:11px}
-  html.ishp35-on:not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__title{grid-row:2!important;margin:0 0 6px!important;font-size:14px!important;line-height:19px!important;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
-  html.ishp35-on:not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] .ish13-крат{grid-row:3!important;display:-webkit-box!important;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;font-size:12.5px;line-height:17px;color:#4A5066}
-  html.ishp35-on:not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] .ish13-крат i{display:inline!important;font-size:12.5px!important;line-height:17px!important;color:#4A5066!important}
-  html.ishp35-on:not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] .ish13-крат i b{display:none!important}
-  html.ishp35-on:not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] .ish13-крат i:nth-child(n+4){display:none!important}
-  html.ishp35-on:not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] .ish13-крат i:not(:last-child):not(:nth-child(3))::after{content:" · ";color:#9AA0B4;white-space:pre}
-  html.ishp35-on:not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__sku{display:none!important}
-  html.ishp35-on:not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price-wrapper{grid-column:1 / -1!important;grid-row:5!important;flex-direction:row!important;align-items:center;justify-content:space-between;margin-top:10px!important}
-  html.ishp35-on:not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price{margin:0!important;justify-content:flex-start;text-align:left;width:auto!important}
-  html.ishp35-on:not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price::after{text-align:left}
-  html.ishp35-on body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price-value{font-size:20px!important;line-height:24px!important}
-  html.ishp35-on body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price-currency{font-size:17px!important}
-  html.ishp35-on:not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] .ish13-buy{width:44px!important;flex:none}
-  html.ishp35-on:not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] > .ishp25-cmp{grid-column:1 / -1!important;grid-row:6!important;justify-self:start;margin-top:10px!important;min-height:36px}
-  html.ishp35-on.ishd-tile body #allrecords#allrecords .t-store__card-list:has(> .t-store__card[data-ish13]){gap:10px!important;padding:0 12px!important}
-  html.ishp35-on.ishd-tile body #allrecords#allrecords .t-store__card[data-ish13]{padding:10px!important;border-radius:16px!important}
-  html.ishp35-on.ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__title{font-size:13.5px!important;line-height:18px!important;min-height:36px}
-  html.ishp35-on.ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .ish13-крат{display:none!important}
-  html.ishp35-on.ishd-tile body #allrecords#allrecords .ishp35r-av{display:none}
-  html.ishp35-on.ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] > .ishp25-cmp{top:16px;left:16px}
+  html:is(.ishp35-on,.ishp35-kat):not(.ishd-tile) body #allrecords#allrecords .t-store__card-list:has(> .t-store__card[data-ish13]){padding:0 12px!important;gap:10px!important}
+  html:is(.ishp35-on,.ishp35-kat):not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13]{grid-template-columns:96px minmax(0,1fr)!important;grid-template-rows:auto auto auto 0 auto auto!important;column-gap:12px!important;padding:12px!important;border-radius:16px!important}
+  html:is(.ishp35-on,.ishp35-kat):not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] > a:first-child{grid-row:1 / span 4!important;width:96px!important}
+  html:is(.ishp35-on,.ishp35-kat):not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__imgwrapper{height:96px!important;border-radius:12px!important}
+  html:is(.ishp35-on,.ishp35-kat):not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__bgimg{inset:6px!important}
+  html:is(.ishp35-on,.ishp35-kat):not(.ishd-tile) body #allrecords#allrecords .ishp35r-br{grid-row:1;margin:0 0 4px;font-size:11px}
+  html:is(.ishp35-on,.ishp35-kat):not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__title{grid-row:2!important;margin:0 0 6px!important;font-size:14px!important;line-height:19px!important;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+  html:is(.ishp35-on,.ishp35-kat):not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] .ish13-крат{grid-row:3!important;display:-webkit-box!important;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;font-size:12.5px;line-height:17px;color:#4A5066}
+  html:is(.ishp35-on,.ishp35-kat):not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] .ish13-крат i{display:inline!important;font-size:12.5px!important;line-height:17px!important;color:#4A5066!important}
+  html:is(.ishp35-on,.ishp35-kat):not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] .ish13-крат i b{display:none!important}
+  html:is(.ishp35-on,.ishp35-kat):not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] .ish13-крат i:nth-child(n+4){display:none!important}
+  html:is(.ishp35-on,.ishp35-kat):not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] .ish13-крат i:not(:last-child):not(:nth-child(3))::after{content:" · ";color:#9AA0B4;white-space:pre}
+  html:is(.ishp35-on,.ishp35-kat):not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__sku{display:none!important}
+  html:is(.ishp35-on,.ishp35-kat):not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price-wrapper{grid-column:1 / -1!important;grid-row:5!important;flex-direction:row!important;align-items:center;justify-content:space-between;margin-top:10px!important}
+  html:is(.ishp35-on,.ishp35-kat):not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price{margin:0!important;justify-content:flex-start;text-align:left;width:auto!important}
+  html:is(.ishp35-on,.ishp35-kat):not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price::after{text-align:left}
+  html:is(.ishp35-on,.ishp35-kat) body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price-value{font-size:20px!important;line-height:24px!important}
+  html:is(.ishp35-on,.ishp35-kat) body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price-currency{font-size:17px!important}
+  html:is(.ishp35-on,.ishp35-kat):not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] .ish13-buy{width:44px!important;flex:none}
+  html:is(.ishp35-on,.ishp35-kat):not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] > .ishp25-cmp{grid-column:1 / -1!important;grid-row:6!important;justify-self:start;margin-top:10px!important;min-height:36px}
+  html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card-list:has(> .t-store__card[data-ish13]){gap:10px!important;padding:0 12px!important}
+  html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13]{padding:10px!important;border-radius:16px!important}
+  html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__title{font-size:13.5px!important;line-height:18px!important;min-height:36px}
+  html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .ish13-крат{display:none!important}
+  html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .ishp35r-av{display:none}
+  html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] > .ishp25-cmp{top:16px;left:16px}
 }
 
 /* ═══ В1.1 (замечания владельца): нижняя строка «Сравнить · цена · В корзину» на одной линии, без «с НДС» ═══ */
-html.ishp35-on body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price::after{content:none!important;display:none!important}
+html:is(.ishp35-on,.ishp35-kat) body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price::after{content:none!important;display:none!important}
 @media screen and (min-width:761px){
-  html.ishp35-on:not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13]{grid-template-columns:208px minmax(0,1fr) auto auto auto!important;grid-template-rows:auto auto auto minmax(8px,1fr) auto!important;column-gap:0!important;align-items:center!important}
-  html.ishp35-on:not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] > a:first-child{grid-column:1!important;grid-row:1 / span 5!important;margin:0!important;align-self:start!important}
-  html.ishp35-on:not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] .ishp35r-br{grid-column:2 / -1!important;grid-row:1!important}
-  html.ishp35-on:not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__title{grid-column:2 / -1!important;grid-row:2!important}
-  html.ishp35-on:not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] .ish13-крат{grid-column:2 / -1!important;grid-row:3!important}
-  html.ishp35-on:not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price-wrapper{display:contents!important}
-  html.ishp35-on:not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__sku{grid-column:2!important;grid-row:5!important;margin:0!important;align-self:center!important}
-  html.ishp35-on:not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] > .ishp25-cmp{grid-column:3!important;grid-row:5!important;margin:0 0 0 16px!important;align-self:center!important;justify-self:end!important}
-  html.ishp35-on:not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price{grid-column:4!important;grid-row:5!important;margin:0 0 0 24px!important;align-self:center!important;justify-content:flex-end;align-items:center!important;width:auto!important;white-space:nowrap}
-  html.ishp35-on:not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] .ish13-buy{grid-column:5!important;grid-row:5!important;margin:0 0 0 16px!important;width:152px!important;height:40px!important;align-self:center!important}
+  html:is(.ishp35-on,.ishp35-kat):not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13]{grid-template-columns:208px minmax(0,1fr) auto auto auto!important;grid-template-rows:auto auto auto minmax(8px,1fr) auto!important;column-gap:0!important;align-items:center!important}
+  html:is(.ishp35-on,.ishp35-kat):not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] > a:first-child{grid-column:1!important;grid-row:1 / span 5!important;margin:0!important;align-self:start!important}
+  html:is(.ishp35-on,.ishp35-kat):not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] .ishp35r-br{grid-column:2 / -1!important;grid-row:1!important}
+  html:is(.ishp35-on,.ishp35-kat):not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__title{grid-column:2 / -1!important;grid-row:2!important}
+  html:is(.ishp35-on,.ishp35-kat):not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] .ish13-крат{grid-column:2 / -1!important;grid-row:3!important}
+  html:is(.ishp35-on,.ishp35-kat):not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price-wrapper{display:contents!important}
+  html:is(.ishp35-on,.ishp35-kat):not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__sku{grid-column:2!important;grid-row:5!important;margin:0!important;align-self:center!important}
+  html:is(.ishp35-on,.ishp35-kat):not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] > .ishp25-cmp{grid-column:3!important;grid-row:5!important;margin:0 0 0 16px!important;align-self:center!important;justify-self:end!important}
+  html:is(.ishp35-on,.ishp35-kat):not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price{grid-column:4!important;grid-row:5!important;margin:0 0 0 24px!important;align-self:center!important;justify-content:flex-end;align-items:center!important;width:auto!important;white-space:nowrap}
+  html:is(.ishp35-on,.ishp35-kat):not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] .ish13-buy{grid-column:5!important;grid-row:5!important;margin:0 0 0 16px!important;width:152px!important;height:40px!important;align-self:center!important}
 }
 /* плитка: нижняя строка «Сравнить · цена · значок корзины» */
-html.ishp35-on.ishd-tile body #allrecords#allrecords .t-store__card[data-ish13]{display:grid!important;grid-template-columns:auto minmax(0,1fr) auto!important;grid-template-rows:auto auto auto auto minmax(8px,1fr) auto!important;column-gap:0!important;align-items:center!important}
-html.ishp35-on.ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] > a:first-child{grid-column:1 / -1!important;grid-row:1!important}
-html.ishp35-on.ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .ishp35r-br{grid-column:1 / -1;grid-row:2}
-html.ishp35-on.ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__title{grid-column:1 / -1!important;grid-row:3!important}
-html.ishp35-on.ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .ish13-крат{grid-column:1 / -1!important;grid-row:4!important}
-html.ishp35-on.ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price-wrapper{display:contents!important}
-html.ishp35-on.ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] > .ishp25-cmp{position:static!important;grid-column:1!important;grid-row:6!important;margin:14px 0 0!important;align-self:center!important;min-height:32px;padding:0 10px 0 8px!important;top:auto!important;left:auto!important}
-html.ishp35-on.ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price{grid-column:2!important;grid-row:6!important;margin:14px 0 0 12px!important;width:auto!important;align-self:center!important;justify-content:flex-start;align-items:center!important;white-space:nowrap}
-html.ishp35-on.ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .ish13-buy{grid-column:3!important;grid-row:6!important;margin:14px 0 0 12px!important;width:40px!important;min-width:40px;height:40px!important;padding:0!important;font-size:0!important;line-height:0;justify-content:center;align-self:center!important}
-html.ishp35-on.ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .ish13-buy svg{width:18px!important;height:18px!important;margin:0!important}
+html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13]{display:grid!important;grid-template-columns:auto minmax(0,1fr) auto!important;grid-template-rows:auto auto auto auto minmax(8px,1fr) auto!important;column-gap:0!important;align-items:center!important}
+html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] > a:first-child{grid-column:1 / -1!important;grid-row:1!important}
+html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .ishp35r-br{grid-column:1 / -1;grid-row:2}
+html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__title{grid-column:1 / -1!important;grid-row:3!important}
+html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .ish13-крат{grid-column:1 / -1!important;grid-row:4!important}
+html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price-wrapper{display:contents!important}
+html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] > .ishp25-cmp{position:static!important;grid-column:1!important;grid-row:6!important;margin:14px 0 0!important;align-self:center!important;min-height:32px;padding:0 10px 0 8px!important;top:auto!important;left:auto!important}
+html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price{grid-column:2!important;grid-row:6!important;margin:14px 0 0 12px!important;width:auto!important;align-self:center!important;justify-content:flex-start;align-items:center!important;white-space:nowrap}
+html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .ish13-buy{grid-column:3!important;grid-row:6!important;margin:14px 0 0 12px!important;width:40px!important;min-width:40px;height:40px!important;padding:0!important;font-size:0!important;line-height:0;justify-content:center;align-self:center!important}
+html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .ish13-buy svg{width:18px!important;height:18px!important;margin:0!important}
 @media screen and (max-width:760px){
-  html.ishp35-on:not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price{margin:0!important}
-  html.ishp35-on:not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] > .ishp25-cmp{margin-top:8px!important}
-  html.ishp35-on.ishd-tile body #allrecords#allrecords .t-store__card[data-ish13]{grid-template-columns:minmax(0,1fr) auto!important}
-  html.ishp35-on.ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] > .ishp25-cmp{position:absolute!important;top:16px!important;left:16px!important;grid-row:auto!important;margin:0!important;min-height:28px;padding:0 10px 0 6px!important}
-  html.ishp35-on.ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price{grid-column:1!important;margin:10px 0 0!important}
-  html.ishp35-on.ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .ish13-buy{grid-column:2!important;margin:10px 0 0 8px!important}
+  html:is(.ishp35-on,.ishp35-kat):not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price{margin:0!important}
+  html:is(.ishp35-on,.ishp35-kat):not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] > .ishp25-cmp{margin-top:8px!important}
+  html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13]{grid-template-columns:minmax(0,1fr) auto!important}
+  html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] > .ishp25-cmp{position:absolute!important;top:16px!important;left:16px!important;grid-row:auto!important;margin:0!important;min-height:28px;padding:0 10px 0 6px!important}
+  html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price{grid-column:1!important;margin:10px 0 0!important}
+  html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .ish13-buy{grid-column:2!important;margin:10px 0 0 8px!important}
 }
 
 @media screen and (max-width:760px){
-  html.ishp35-on:not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price{align-items:center!important;align-self:center!important;min-height:44px;margin:0!important}
-  html.ishp35-on:not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] .ish13-buy{margin:0!important;align-self:center!important}
+  html:is(.ishp35-on,.ishp35-kat):not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price{align-items:center!important;align-self:center!important;min-height:44px;margin:0!important}
+  html:is(.ishp35-on,.ishp35-kat):not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] .ish13-buy{margin:0!important;align-self:center!important}
 }
 
 @media screen and (max-width:760px){
-  html.ishp35-on.ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] > .ishp25-cmp{position:static!important;grid-column:1!important;grid-row:7!important;margin:8px 0 0!important;justify-self:start;align-self:end!important;min-height:32px;padding:0 10px 0 8px!important}
-  html.ishp35-on.ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price{grid-column:1!important;grid-row:6!important;margin:10px 0 0!important;align-self:start!important;min-height:0}
-  html.ishp35-on.ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .ish13-buy{grid-column:2!important;grid-row:6 / span 2!important;margin:10px 0 0 8px!important;width:48px!important;min-width:48px;height:auto!important;min-height:72px;align-self:stretch!important;border-radius:12px!important}
+  html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] > .ishp25-cmp{position:static!important;grid-column:1!important;grid-row:7!important;margin:8px 0 0!important;justify-self:start;align-self:end!important;min-height:32px;padding:0 10px 0 8px!important}
+  html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price{grid-column:1!important;grid-row:6!important;margin:10px 0 0!important;align-self:start!important;min-height:0}
+  html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .ish13-buy{grid-column:2!important;grid-row:6 / span 2!important;margin:10px 0 0 8px!important;width:48px!important;min-width:48px;height:auto!important;min-height:72px;align-self:stretch!important;border-radius:12px!important}
 }
 
 @media screen and (max-width:760px){
-  html.ishp35-on.ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price{flex-wrap:nowrap!important;white-space:nowrap}
-  html.ishp35-on.ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price-value{font-size:18px!important;line-height:22px!important}
-  html.ishp35-on.ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price-currency{font-size:15px!important}
+  html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price{flex-wrap:nowrap!important;white-space:nowrap}
+  html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price-value{font-size:18px!important;line-height:22px!important}
+  html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price-currency{font-size:15px!important}
 }
 
 @media screen and (max-width:760px){
-  html.ishp35-on.ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .ish13-buy{grid-row:6!important;width:44px!important;min-width:44px!important;max-width:44px!important;height:44px!important;min-height:44px!important;flex:none!important;align-self:center!important;justify-self:end!important;margin:10px 0 0 8px!important;border-radius:12px!important}
+  html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .ish13-buy{grid-row:6!important;width:44px!important;min-width:44px!important;max-width:44px!important;height:44px!important;min-height:44px!important;flex:none!important;align-self:center!important;justify-self:end!important;margin:10px 0 0 8px!important;border-radius:12px!important}
 }
 
 @media screen and (max-width:760px){
-  html.ishp35-on.ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price{align-self:center!important;margin-top:10px!important;overflow:visible!important;text-overflow:clip!important}
+  html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price{align-self:center!important;margin-top:10px!important;overflow:visible!important;text-overflow:clip!important}
 }
 @media screen and (max-width:380px){
-  html.ishp35-on.ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price-value{font-size:15.5px!important}
-  html.ishp35-on.ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price-currency{font-size:13px!important}
-  html.ishp35-on.ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .ish13-buy{margin-left:4px!important}
+  html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price-value{font-size:15.5px!important}
+  html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price-currency{font-size:13px!important}
+  html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .ish13-buy{margin-left:4px!important}
 }
 
 /* v3.1 (18.10): зоны касания >= 44 px на телефоне: «Список/Плитка», «В корзину» в списке (Safari iPhone 14, 390 px). Плитка уже 72 px. */
 @media screen and (max-width:640px){
   html.ishp35-on .ishd-view .ishd-seg button{height:44px;min-height:44px}
   html.ishp35-on .ishp9-bc{min-height:44px}
-  html.ishp35-on:not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] .ish13-buy{height:44px!important;min-height:44px}
+  html:is(.ishp35-on,.ishp35-kat):not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] .ish13-buy{height:44px!important;min-height:44px}
 }
 
 /* 19.10.2026: плитки «Разделы группы» налезали рядами на 26 px - padding+рамка сверх высоты ячейки (нет border-box) */

@@ -498,6 +498,8 @@
   }
   W.addEventListener('scroll', function () { if (!ticking) { ticking = true; requestAnimationFrame(fabs); } }, { passive: true });
 
+  /* 20.10: /katalog (шапка p31, не p35) - не включаем ishp35-on (он перекрасил бы шапку p31 и .вн-текст), а ставим отдельный ishp35-kat: на него расширены только правила карточек списка, кнопки «Загрузить ещё» и цены. */
+  if (((W.location.pathname || '/').replace(/\/+$/, '').toLowerCase()) === '/katalog') H.classList.add('ishp35-kat');
   var tries = 0, started = false, done = {};
   (function step() {
     list = D.querySelector('.t-store__card-list');
@@ -563,7 +565,38 @@
     for (var i = 0; i < сп.length; i++) { var b = норм(сп[i]); if (b.length > 3 && n.indexOf(b) > -1) return сп[i]; }
     return '';
   }
+  var СV = '<svg viewBox="0 0 18 18" aria-hidden="true"><path d="M1 1h2.2l2 10.5h9.3l1.8-7.5H4.4"/><circle cx="6.5" cy="15.5" r="1.3"/><circle cx="13.5" cy="15.5" r="1.3"/></svg>';
+  /* страница группы: строки .вн-т рисует её собственный скрипт (без data-ish13, без остатка). Бренд - по названию (список фильтра «Бренд» группы + запас), кнопке добавляем значок корзины. Наличия в разметке строки нет - не рисуем. */
+  function группа() {
+    var к = D.querySelectorAll('.вн-т:not([data-ishp35r])');
+    if (!к.length) return;
+    var сп = [], seen = {}, эл = D.querySelectorAll('#вн-ф-бренд label');
+    for (var q = 0; q < эл.length; q++) { var s0 = эл[q].textContent.replace(/\s*\(?\d+\)?\s*$/, '').trim(); if (s0 && !seen[s0.toLowerCase()]) { seen[s0.toLowerCase()] = 1; сп.push(s0); } }
+    ЗАПАС.forEach(function (s) { if (!seen[s.toLowerCase()]) { seen[s.toLowerCase()] = 1; сп.push(s); } });
+    сп.sort(function (a, b) { return b.length - a.length; });
+    for (var i = 0; i < к.length; i++) {
+      var c = к[i], tw = c.querySelector('.вн-т__текст'), ti = c.querySelector('.вн-т__имя'), кн = c.querySelector('.вн-т__кн');
+      c.setAttribute('data-ishp35r', '1');
+      if (кн && !кн.querySelector('svg')) кн.insertAdjacentHTML('afterbegin', СV);
+      if (!tw || !ti) continue;
+      var бр = найти(ti.getAttribute('title') || ti.textContent || '', сп);
+      if (!бр) continue;
+      var d = D.createElement('div'); d.className = 'ishp35r-br';
+      var s = D.createElement('span'); s.textContent = бр; d.appendChild(s);
+      tw.insertBefore(d, ti);
+    }
+  }
   function проход() {
+    группа();
+    /* карточки без data-product-inv (/katalog): наличие берём из бейджа П38 (.ishp38-stock), он приходит позже карточки */
+    var ст = D.querySelectorAll('.t-store__card[data-ishp35r] .ishp38-stock');
+    for (var z = 0; z < ст.length; z++) {
+      var cc = ст[z].closest('.t-store__card'); if (!cc || cc.querySelector('.ishp35r-av')) continue;
+      var bb = cc.querySelector('.ishp35r-br'), tw2 = cc.querySelector('.t-store__card__textwrapper'), ti2 = cc.querySelector('.t-store__card__title');
+      if (!tw2 || !ti2) continue;
+      if (!bb) { bb = D.createElement('div'); bb.className = 'ishp35r-br'; tw2.insertBefore(bb, ti2); }
+      var a2 = D.createElement('span'); a2.className = 'ishp35r-av'; a2.textContent = 'в наличии'; bb.appendChild(a2);
+    }
     var к = D.querySelectorAll('.t-store__card[data-ish13]:not([data-ishp35r])');
     if (!к.length) return;
     var сп = бренды();

@@ -1,4 +1,4 @@
-/* ish-design-p8.js  v2.5  (19.10.2026: на телефоне у «Бизнеса» вместо белой кнопки «Запросить цену» строка-ссылка «Для бизнеса →» на /dlya-organizacij, как у госорганов и школ; на компьютере кнопка прежняя; 19.10.2026: на компьютере ≥981 «Коротко о нас» — заголовок слева колонкой 25%, справа три плитки в один ряд высотой ~180 px, телефон и планшет как были; 19.10.2026: на телефоне ≤640 полоса «Гарантия / Доставка / Безнал / Самовывоз» - одна строка из четырёх значков с короткими подписями, компьютер как был; v2.2: на телефоне ≤640 «Три шага» - подсветка по очереди и машинка, «Для кого» - три чипа и панель; v2.1: «Почему мы» убрана, в «Коротко о нас» строка про цены, на телефоне цифры стопкой; НЕ выложено)  (C2 «Витрина, другой ритм», подготовка 16.10.2026; НЕ выложено на Pages)  П8 «блоки главной ниже первого экрана» b2b.isoft-shop.kz
+/* ish-design-p8.js  v2.6  (19.10.2026: на телефоне у «Бизнеса» вместо белой кнопки «Запросить цену» строка-ссылка «Для бизнеса →» на /dlya-organizacij, как у госорганов и школ; на компьютере кнопка прежняя; 19.10.2026: на компьютере ≥981 «Коротко о нас» — заголовок слева колонкой 25%, справа три плитки в один ряд высотой ~180 px, телефон и планшет как были; 19.10.2026: на телефоне ≤640 полоса «Гарантия / Доставка / Безнал / Самовывоз» - одна строка из четырёх значков с короткими подписями, компьютер как был; v2.2: на телефоне ≤640 «Три шага» - подсветка по очереди и машинка, «Для кого» - три чипа и панель; v2.1: «Почему мы» убрана, в «Коротко о нас» строка про цены, на телефоне цифры стопкой; НЕ выложено)  (C2 «Витрина, другой ритм», подготовка 16.10.2026; НЕ выложено на Pages)  П8 «блоки главной ниже первого экрана» b2b.isoft-shop.kz
    Грузится загрузчиком П4 (ish-design-p4.js) только на главной, по признаку «#лента .слайд». Сам подключает ish-design-p8.css рядом с собой.
    Что делает (только ДОБАВЛЯЕТ узлы с префиксом ishp8-, каждый раз проверяя, что такого ещё нет; родные узлы блока 4204120903 не переписывает):
      Г12  полоса фактов одной плашкой перед «Как оформить заказ»
@@ -515,7 +515,117 @@
       var п = D.createElement('p'); п.className = 'ishp8-duo__p'; п.textContent = '4 вопроса, минута - и подберём технику.';
       h.parentNode.appendChild(п);
     }
+    try { карточка_выбора(duo); } catch (e) { duo.classList.remove('ishp8-duo--pk'); }   /* ошибка - старые две карточки остаются видимыми */
     return true;
+  }
+  /* ───── 20.10 вариант Г: одна светлая карточка с переключателем «Подобрать технику | Отправить список» (Асхат) ─────
+     Старые узлы (#ishp23-cta, #запросБлок) остаются в DOM под скрытыми колонками: квиз и окно запроса работают как раньше.
+     Чип -> ISHP23.open() -> тот же ответ в квизе -> «Далее» (со 2-го шага). Текст/файл -> родное окно запроса (#запросОкно), новых отправок нет. */
+  var ПК_ЧИПЫ = ['Офис', 'Бухгалтерия / 1С', 'Дизайн и графика', 'Учебный класс', 'Сервер / хранение'];   /* = STEPS[0].o в ish-design-p23.js */
+  function карточка_выбора(duo) {
+    if (duo.querySelector('.ishp8-pk')) { duo.classList.add('ishp8-duo--pk'); return; }
+    if (!D.getElementById('запросОкно') || !D.querySelector('[data-д="запрос"]')) return;   /* окна запроса нет - не прячем старое */
+    var СКР = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11.5l-8.2 8.2a5 5 0 0 1-7-7l8.6-8.6a3.4 3.4 0 0 1 4.8 4.8l-8.6 8.6a1.8 1.8 0 0 1-2.6-2.6l7.9-7.9"/></svg>';
+    var к = D.createElement('div');
+    к.className = 'ishp8-pk';
+    к.innerHTML =
+      '<div class="ishp8-pk__seg" role="tablist" aria-label="Что сделать">' +
+        '<button type="button" role="tab" id="ishp8-pk-t1" class="ishp8-pk__tab" aria-selected="true" aria-controls="ishp8-pk-p1" tabindex="0">Подобрать технику</button>' +
+        '<button type="button" role="tab" id="ishp8-pk-t2" class="ishp8-pk__tab" aria-selected="false" aria-controls="ishp8-pk-p2" tabindex="-1">Отправить список</button>' +
+      '</div>' +
+      '<div class="ishp8-pk__pane" id="ishp8-pk-p1" role="tabpanel" aria-labelledby="ishp8-pk-t1">' +
+        '<div class="ishp8-pk__q"><h2 class="ishp8-pk__h">Для чего нужна техника?</h2><span class="ishp8-pk__n">вопрос 1 из 4</span></div>' +
+        '<div class="ishp8-pk__chips"></div>' +
+      '</div>' +
+      '<div class="ishp8-pk__pane" id="ishp8-pk-p2" role="tabpanel" aria-labelledby="ishp8-pk-t2" hidden>' +
+        '<div class="ishp8-pk__q"><h2 class="ishp8-pk__h">Что нужно? <b>Вставьте как есть</b></h2></div>' +
+        '<label class="ishp8-pk__lab" for="ishp8-pk-ta">Список или артикулы</label>' +
+        '<textarea class="ishp8-pk__ta" id="ishp8-pk-ta" rows="2" placeholder="Вставьте список или артикулы…"></textarea>' +
+        '<div class="ishp8-pk__row"><div class="ishp8-pk__att"><button type="button" class="ishp8-pk__clip" aria-label="Прикрепить файл: Excel, PDF или фото">' + СКР + '</button>' +
+          '<span class="ishp8-pk__hint" aria-live="polite">Excel, PDF или фото · ответ в день обращения</span>' +
+          '<input type="file" class="ishp8-pk__file" multiple accept=".xls,.xlsx,.csv,.pdf,.doc,.docx,image/*" tabindex="-1" aria-hidden="true"></div>' +
+        '<button type="button" class="ishp8-pk__go">Отправить</button></div>' +
+      '</div>';
+    var чипы = к.querySelector('.ishp8-pk__chips');
+    ПК_ЧИПЫ.forEach(function (t) {
+      var b = D.createElement('button'); b.type = 'button'; b.className = 'ishp8-pk__chip'; b.textContent = t; b.setAttribute('data-pk', t);
+      чипы.appendChild(b);
+    });
+    var табы = [].slice.call(к.querySelectorAll('.ishp8-pk__tab'));
+    function вкладка(i, фокус) {
+      табы.forEach(function (t, j) { t.setAttribute('aria-selected', j === i ? 'true' : 'false'); t.tabIndex = j === i ? 0 : -1; });
+      к.querySelector('#ishp8-pk-p1').hidden = i !== 0; к.querySelector('#ishp8-pk-p2').hidden = i !== 1;
+      if (фокус) табы[i].focus();
+    }
+    табы.forEach(function (t, i) {
+      t.addEventListener('click', function () { вкладка(i); });
+      t.addEventListener('keydown', function (e) {
+        var k = e.key, j = (k === 'ArrowRight' || k === 'ArrowLeft' || k === 'ArrowDown' || k === 'ArrowUp') ? (i + 1) % 2 : k === 'Home' ? 0 : k === 'End' ? 1 : -1;
+        if (j < 0) return;
+        e.preventDefault(); вкладка(j, true);
+      });
+    });
+    /* чип -> квиз сразу со 2-го шага: ждём отрисовку окна квиза, а не таймер наугад */
+    function ждать(f, мс, ок) {
+      var t0 = Date.now();
+      (function ш() { var r = null; try { r = f(); } catch (e) {} if (r) { ок(r); return; } if (Date.now() - t0 < мс) setTimeout(ш, 40); })();
+    }
+    function ответ_в_квизе(метка) {
+      if (!W.ISHP23 || typeof W.ISHP23.open !== 'function') return;
+      W.ISHP23.open();
+      ждать(function () {
+        var ов = D.getElementById('ishp23-ov');
+        if (!ов || ов.hidden) return null;
+        var bs = ов.querySelectorAll('[data-p23="pick"]');
+        for (var i = 0; i < bs.length; i++) if (bs[i].getAttribute('data-label') === метка) return bs[i];
+        return null;
+      }, 2500, function (b) {
+        if (b.getAttribute('aria-pressed') !== 'true') b.click();
+        ждать(function () { var n = D.querySelector('#ishp23-ov [data-p23="next"]'); return n && !n.disabled ? n : null; }, 1500, function (n) { n.click(); });
+      });   /* ответ не нашли - квиз просто остаётся открытым на 1-м шаге */
+    }
+    [].forEach.call(чипы.querySelectorAll('.ishp8-pk__chip'), function (b) {
+      b.addEventListener('click', function () { ответ_в_квизе(b.getAttribute('data-pk')); });
+    });
+    /* текст и файлы -> родное окно запроса */
+    var ta = к.querySelector('.ishp8-pk__ta'), фл = к.querySelector('.ishp8-pk__file'), подс = к.querySelector('.ishp8-pk__hint'), подс0 = подс.textContent, файлы = [];
+    function рост() {
+      ta.style.height = 'auto';
+      var cs = W.getComputedStyle(ta), lh = parseFloat(cs.lineHeight) || 22, pad = (parseFloat(cs.paddingTop) || 0) + (parseFloat(cs.paddingBottom) || 0);
+      var макс = lh * 4 + pad;
+      ta.style.height = Math.min(ta.scrollHeight + 2, макс) + 'px';
+      ta.style.overflowY = ta.scrollHeight + 2 > макс ? 'auto' : 'hidden';
+    }
+    ta.addEventListener('input', рост);
+    фл.addEventListener('change', function () {
+      файлы = файлы.concat([].slice.call(фл.files)); фл.value = '';
+      подс.textContent = файлы.length ? 'Файлы: ' + файлы.map(function (f) { return f.name; }).join(', ') : подс0;
+      подс.classList.toggle('on', !!файлы.length);
+    });
+    к.querySelector('.ishp8-pk__clip').addEventListener('click', function () { фл.click(); });
+    function задать(el, v) {
+      var d = Object.getOwnPropertyDescriptor(W.HTMLTextAreaElement.prototype, 'value');
+      if (d && d.set) d.set.call(el, v); else el.value = v;
+      el.dispatchEvent(new Event('input', { bubbles: true }));
+    }
+    function в_окно() {
+      var а = D.querySelector('[data-д="запрос"]');
+      if (!а) { duo.classList.remove('ishp8-duo--pk'); return; }       /* окна нет - вернуть старые ссылки */
+      а.click();
+      var ят = D.getElementById('окноТекст'), вх = D.getElementById('окноФайл');
+      if (ят && ta.value.trim()) задать(ят, ta.value.trim());
+      if (вх && файлы.length) {
+        try {
+          var dt = new W.DataTransfer(); файлы.forEach(function (f) { dt.items.add(f); });
+          вх.files = dt.files; вх.dispatchEvent(new Event('change', { bubbles: true }));
+        } catch (e) {}
+      }
+      ta.value = ''; рост(); файлы = []; подс.textContent = подс0; подс.classList.remove('on');
+    }
+    к.querySelector('.ishp8-pk__go').addEventListener('click', в_окно);
+    ta.addEventListener('keydown', function (e) { if (e.key === 'Enter' && (e.ctrlKey || e.metaKey)) { e.preventDefault(); в_окно(); } });
+    duo.insertBefore(к, duo.firstChild);
+    duo.classList.add('ishp8-duo--pk');
   }
   /* ───── запуск анимаций ───── */
   function виден(el, fn, порог) {

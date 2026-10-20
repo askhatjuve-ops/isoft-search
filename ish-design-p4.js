@@ -486,7 +486,7 @@
   })();
 
   /* ───────── П22: кнопка WhatsApp (грузит ish-design-p22.js с того же адреса; она сама подтянет ish-design-p22.css; выключатель window.ISH_P22_OFF) ───────── */
-  var P22V = '6';
+  var P22V = '8';
   (function () {
     if (W.ISH_P22_OFF || W.__ishP22 || D.getElementById('ishp-p22-js')) return;
     var src = tag && tag.src;

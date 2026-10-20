@@ -40,3 +40,11 @@
   html.ishp22-card .ishp22{width:44px;height:44px}
   html.ishp22-card .ishp22 svg{width:24px;height:24px}
 }
+/* v7 (20.10): /assortiment, телефон <=680: при прокрутке вниз кнопки уезжают за правый край (transform+opacity, 200 мс), вверх или у верха - возвращаются. Класс ставит p22.js */
+@media (max-width:680px){
+  html.ishp22-asr .ishp22,html.ishp22-asr .ishp22t{transition:bottom .2s ease,right .2s ease,opacity .2s ease,transform .2s ease,background-color .15s ease}
+  html.ishp22-asr .ishp22{width:44px;height:44px;right:var(--p22-r,10px)}
+  html.ishp22-asr .ishp22 svg{width:24px;height:24px}
+  html.ishp22-asr .ishp22t{right:var(--p22-r,10px);bottom:calc(var(--p22-b,14px) + 56px)}
+  html.ishp22-asr.ishp22-away .ishp22,html.ishp22-asr.ishp22-away .ishp22t{opacity:0;transform:translateX(90px);pointer-events:none}
+}

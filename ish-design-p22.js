@@ -1,4 +1,4 @@
-/* ish-design-p22.js  v5  (18.10.2026: на телефоне /podbor и /spec кнопки скрыты, в карточке только WhatsApp)  v4  (16.10.2026)  П22 «WhatsApp + Telegram» (Д16) b2b.isoft-shop.kz
+/* ish-design-p22.js  v6 (20.10.2026: /assortiment на телефоне - кнопки прячутся при прокрутке вниз)  v5  (18.10.2026: на телефоне /podbor и /spec кнопки скрыты, в карточке только WhatsApp)  v4  (16.10.2026)  П22 «WhatsApp + Telegram» (Д16) b2b.isoft-shop.kz
    Плавающая круглая кнопка WhatsApp справа внизу на всех страницах. Номер тот же, что в шапке (wa.me/77758818531).
    v4: НАД WhatsApp стопкой - меньшая круглая кнопка Telegram (#ishp22t, тот же адрес, что в шапке: t.me/+77758818531). Подъём, прятание и сдвиг от .вн-бок общие для обеих (стопка считается целиком). Выключатель только Telegram: window.ISH_P22_TG_OFF = true.
    Подключается из ish-design-p4.js (функция p22, строка описана в README); сам подтягивает ish-design-p22.css с того же адреса.
@@ -12,7 +12,7 @@
   'use strict';
   var W = window, D = document;
   if (W.ISH_P22_OFF || W.__ishP22) return;
-  W.__ishP22 = 6;
+  W.__ishP22 = 8;
   var NUM = '77758818531';
   var TXT = 'Написать в WhatsApp';
   var TG_HREF = 'https://t.me/+77758818531', TG_TXT = 'Написать в Telegram';
@@ -159,16 +159,30 @@
     } catch (e) {}
   }
 
+  /* v6: /assortiment (приложение в iframe той же высоты - листается страница-родитель): вниз - кнопки уходят вправо, вверх или у верха - возвращаются. Только css-класс, на десктопе правил нет */
+  function asrScroll() {
+    var y0 = W.pageYOffset || 0, away = false, raf = 0;
+    function tick() {
+      raf = 0;
+      var y = W.pageYOffset || 0, d = y - y0, next = away;
+      if (y < 80 || d < -6) next = false; else if (d > 6) next = true;
+      if (Math.abs(d) > 6 || y < 80) y0 = y;
+      if (next !== away) { away = next; D.documentElement.classList.toggle('ishp22-away', away); }
+    }
+    W.addEventListener('scroll', function () { if (!raf) raf = W.requestAnimationFrame(tick); }, { passive: true });
+  }
+
   /* CSS: тот же адрес, что у скрипта; без стиля узел не создаётся */
   function start() {
     try {                                                                /* v5: страницы, где кнопки прячутся/уменьшаются (правила в css, телефон <=640) */
       var pp = location.pathname || '/';
       if (pp === '/podbor' || pp.indexOf('/spec') === 0) D.documentElement.classList.add('ishp22-form');
       else if (pp.indexOf('/tproduct/') > -1) D.documentElement.classList.add('ishp22-card');
+      else if (/^\/assortiment\/?$/.test(pp)) { D.documentElement.classList.add('ishp22-asr'); asrScroll(); }   /* v6: расширенный ассортимент, телефон: прячутся при прокрутке вниз */
     } catch (e) {}
     if (D.getElementById('ishp22-css')) { build(); return; }
     var l = D.createElement('link');
-    l.id = 'ishp22-css'; l.rel = 'stylesheet'; l.href = base + 'ish-design-p22.css?v=6';
+    l.id = 'ishp22-css'; l.rel = 'stylesheet'; l.href = base + 'ish-design-p22.css?v=8';
     l.onload = function () { if (D.body) build(); else D.addEventListener('DOMContentLoaded', build); };
     D.head.appendChild(l);
   }

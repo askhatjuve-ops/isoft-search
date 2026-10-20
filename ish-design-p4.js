@@ -19,7 +19,7 @@
   if (W.__ishP4) return;
   W.__ishP4 = 1;
   /* СКС (20.10): ЕДИНЫЙ ВЫКЛЮЧАТЕЛЬ нового раздела «Кабельные системы (СКС)». 0 - ссылок на новые страницы нет нигде (меню, плитки, крошки, поиск, подвал). Поставить 1 ТОЛЬКО после создания 6 страниц разделов (страницы-узла /kabelnye-sistemy-sks не будет). Можно и из блока до загрузки: window.ISH_SKS_ON = 1. */
-  var СКС_ВКЛ = 0; if (W.ISH_SKS_ON === undefined) W.ISH_SKS_ON = СКС_ВКЛ;
+  var СКС_ВКЛ = 1; if (W.ISH_SKS_ON === undefined) W.ISH_SKS_ON = СКС_ВКЛ;
   var tag = D.currentScript || D.querySelector('script[src*="ish-design-p4.js"]');
   var mods = ((tag && tag.getAttribute('data-m')) || 'header,hero').split(',');
   function has(x) { return mods.indexOf(x) > -1; }

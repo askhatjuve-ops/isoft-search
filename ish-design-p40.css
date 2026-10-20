@@ -230,3 +230,7 @@ html.ishp40-on:root body #allrecords#allrecords .вн-бренд-чип.is-on{co
   html.ishp40-on:root body.вн-моб-ф .вн-моб-низ .вн-моб-пок{border:0!important;color:#fff!important;font-weight:500!important;
     background:var(--p40-grad)!important;box-shadow:0 6px 16px rgba(43,68,199,.30)}
 }
+
+/* 20.10: системная полоса прокрутки колонки фильтров (серая, торчала между фильтрами и списком) - скрыта; колёсиком колонка листается как раньше */
+html.ishp40-on:root body #allrecords#allrecords .t-store.вн-сетка > .вн-бок{scrollbar-width:none!important;-ms-overflow-style:none}
+html.ishp40-on:root body #allrecords#allrecords .t-store.вн-сетка > .вн-бок::-webkit-scrollbar{display:none!important;width:0!important;height:0!important}

@@ -186,6 +186,30 @@
     }
   }
 
+  /* 20.10 (Асхат «всё свернуть»): /katalog - текстовая шапка p31 плюс родной магазин Tilda. Список разделов (~70 кнопок) и ряды фильтров (~50 строк) по умолчанию свёрнуты:
+     кнопки «Разделы» и «Фильтры» в одной строке с поиском и порядком; клик раскрывает/сворачивает. Компьютер; на телефоне остаются родные кнопки Tilda. Выключатель: window.ISH_P31_FOLD_OFF = 1 */
+  function foldKat() {
+    if (W.ISH_P31_FOLD_OFF) return;
+    var parts = D.querySelector('.t-store__parts-switch-wrapper'), ctl = D.querySelector('.t-store__filter__controls-wrapper');
+    if (!parts || !ctl || ctl.getAttribute('data-p31f')) return;
+    var opts = ctl.querySelector('.t-store__filter__options'), srt = ctl.querySelector('.t-store__filter__search-and-sort');
+    if (!opts || !srt) return;
+    ctl.setAttribute('data-p31f', '1');
+    H.classList.add('ishp31-fold');
+    function btn(txt, tgt) {
+      var b = el('button', 'ishp31-fb', '<span>' + txt + '</span><svg viewBox="0 0 12 12" aria-hidden="true"><path d="m2.5 4.5 3.5 3.5 3.5-3.5"/></svg>');
+      b.type = 'button'; b.setAttribute('aria-expanded', 'false');
+      b.addEventListener('click', function () {
+        var on = !tgt.classList.contains('ishp31-open');
+        tgt.classList.toggle('ishp31-open', on); b.classList.toggle('is-on', on); b.setAttribute('aria-expanded', on ? 'true' : 'false');
+      });
+      return b;
+    }
+    var row = el('div', 'ishp31-fbar');
+    row.appendChild(btn('Разделы', parts)); row.appendChild(btn('Фильтры', opts));
+    ctl.insertBefore(row, ctl.firstChild);
+  }
+
   function start() {
     var k = kind();
     if (!k.length) return false;
@@ -196,7 +220,7 @@
       try {
         var kk = kind();
         kk.forEach(function (x) { H.classList.add('ishp31-' + x); });
-        if (kk.indexOf('text') > -1) { top(); low(); cta(); reveal('.вн-карта,.вн-шаг,.ishp31-pod,.ishp31-nf'); }
+        if (kk.indexOf('text') > -1) { top(); low(); cta(); foldKat(); reveal('.вн-карта,.вн-шаг,.ishp31-pod,.ishp31-nf'); }
       } catch (e) {}
     }
     pass();

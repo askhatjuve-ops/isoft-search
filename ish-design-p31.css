@@ -198,3 +198,25 @@ html.ishp31-nokak #shagi .вн-ряд{display:none!important}
   html.ishp31-text body .вн-об,html.ishp31-text body .вн-тело{max-width:1280px!important;width:100%;box-sizing:border-box;margin-left:auto!important;margin-right:auto!important;padding-left:20px!important;padding-right:20px!important}
   html.ishp31-text .ishp31-strip{margin-left:0;margin-right:0}
 }
+
+/* 20.10 (Асхат «пустоты», «портянка»): /katalog = текстовая шапка p31 + родной магазин Tilda.
+   (1) пустота под плашкой: .вн держит min-height:52vh (ish-design-vn.css) и блок магазина ещё padding-top 135 (Tilda) - на странице с магазином оба снимаем.
+   (2) «Разделы» и «Фильтры» свёрнуты (кнопки рисует p31.js foldKat); поиск и порядок на виду. Компьютер */
+html.ishp31-text:has(.t-store) .вн{min-height:0!important}
+html.ishp31-text:has(.t-store) .t-rec:has(.t-store){padding-top:20px!important}
+@media screen and (min-width:981px){
+  html.ishp31-fold .js-store-parts-select-container{display:flex;flex-direction:column}
+  html.ishp31-fold .t-store__filter{order:1}
+  html.ishp31-fold .t-store__parts-switch-wrapper{order:2;display:none;margin:0 0 12px}
+  html.ishp31-fold .t-store__parts-switch-wrapper.ishp31-open{display:block}
+  html.ishp31-fold .t-store__filter__controls-wrapper{display:flex!important;flex-wrap:wrap;align-items:center;gap:12px;width:100%}
+  html.ishp31-fold .t-store__filter__controls-wrapper>.t-store__filter__options{display:none!important;order:5;flex:0 0 100%;width:100%}
+  html.ishp31-fold .t-store__filter__controls-wrapper>.t-store__filter__options.ishp31-open{display:block!important}
+  html.ishp31-fold .t-store__filter__controls-wrapper>.t-store__filter__search-and-sort{display:block!important;order:2;margin-left:auto;width:auto!important}
+  .ishp31-fbar{display:flex;gap:10px;order:1}
+  .ishp31-fb{display:inline-flex;align-items:center;gap:8px;height:40px;padding:0 16px;border-radius:12px;border:1px solid #D9D5CA;background:#fff;color:#171923;font:600 14px/1 TildaSans,Arial,sans-serif;cursor:pointer}
+  .ishp31-fb svg{width:12px;height:12px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;transition:transform .15s}
+  .ishp31-fb.is-on{border-color:#2B44C7;color:#2B44C7}
+  .ishp31-fb.is-on svg{transform:rotate(180deg)}
+}
+@media screen and (max-width:980px){.ishp31-fbar{display:none}}

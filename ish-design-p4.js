@@ -9,6 +9,7 @@
    v6: + подгрузки ish-design-p21.js (номер заявки, список из Excel; ISH_P21_OFF), p22.js (кнопка WhatsApp; ISH_P22_OFF), p23.js (квиз «Подбор техники»; ISH_P23_OFF), p24.js (мега-меню «Каталог»; ISH_P24_OFF), p25.js (сравнение и таблица; ISH_P25_OFF). P9V=1.2, P10V=2, P22V=2, P24V=2, P25V=2. v6.1 (П27): P8V=2, P23V=2 (тексты главной и приглашения квиза). v6.2: + подгрузка ish-design-p28.js (события GA4/Метрика, БИН/ИИН; ISH_P28_OFF), p22 -> v4 (Telegram). v6.3 (Т4): P10V=3 (p10 v3: данные товара из «Уточнить по этому товару» заполняют форму /podbor).
    v6.4 (П38): + подгрузка ish-design-p38.js/.css (единый формат цены, alt у фото товаров, «Цены обновлены сегодня»; ISH_P38_OFF, ISH_P38_SKIP). P38V=1.
    v6.5 (П39): + подгрузка ish-design-p39.js/.css («Показано N из M» в разделе, шапка-убегайка на телефоне, стекло; ISH_P39_OFF, ISH_P4_NO_P39, ISH_P39_SKIP). P39V=1.
+   v6.6 (П40, 20.10): + подгрузка ish-design-p40.js/.css (панель фильтров Ф3 «Стеклянные плитки», только разделы со списком товаров; ISH_P40_OFF, ISH_P4_NO_P40). P40V=1.
    v6.x (П40): + подгрузка ish-design-vn.css (общий каркас текстовых страниц .вн; ISH_VN_OFF / ISH_P4_NO_VN). VNV=1.
    Ничего не переписывает в чужих блоках: только ДОБАВЛЯЕТ узлы с префиксом ishp-, каждый раз проверяя, что такого ещё нет.
    Оболочка телефона перерисовывает #ishВерх целиком - трубку возвращает MutationObserver. Ошибка в одном модуле другой не останавливает. */
@@ -458,6 +459,27 @@
     s.id = 'ishp-p39-js'; s.defer = true;
     s.src = src.replace(/ish-design-p4\.js.*$/, 'ish-design-p39.js?v=' + P39V);
     D.head.appendChild(s);
+  })();
+
+  /* ───────── П40 v1 (20.10): панель фильтров Ф3 «Стеклянные плитки» на разделах со списком товаров (ish-design-p40.js/.css с того же адреса, один раз; после p6 и p35)
+     Признак: список товаров .t-store__card-list. Карточки и список не трогает. Выключатель: window.ISH_P40_OFF = 1 или window.ISH_P4_NO_P40 = 1 (до загрузки p4). Кэш: поменять P40V. */
+  var P40V = '1';
+  function p40() {
+    if (W.ISH_P4_NO_P40 || W.ISH_P40_OFF || W.ISH_P40 || D.getElementById('ishp-p40-js')) return true;
+    if (D.getElementById('лента')) return true;
+    if (!D.querySelector('.t-store__card-list')) return false;
+    var src = tag && tag.src;
+    if (!src) return true;
+    var s = D.createElement('script');
+    s.id = 'ishp-p40-js'; s.defer = true;
+    s.src = src.replace(/ish-design-p4\.js.*$/, 'ish-design-p40.js?v=' + P40V);
+    D.head.appendChild(s);
+    return true;
+  }
+  (function () {
+    if (W.ISH_P4_NO_P40 || W.ISH_P40_OFF) return;
+    var n = 0;
+    (function step() { var ok = false; try { ok = p40(); } catch (e) {} if (!ok && ++n < 80) setTimeout(step, 250); })();
   })();
 
   /* ───────── П22: кнопка WhatsApp (грузит ish-design-p22.js с того же адреса; она сама подтянет ish-design-p22.css; выключатель window.ISH_P22_OFF) ───────── */

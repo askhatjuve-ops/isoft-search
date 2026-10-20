@@ -233,3 +233,7 @@ html.ishp40-on:root body #allrecords#allrecords .вн-бренд-чип.is-on{co
 /* 20.10: системная полоса прокрутки колонки фильтров (серая, торчала между фильтрами и списком) - скрыта; колёсиком колонка листается как раньше */
 html.ishp40-on:root body #allrecords#allrecords .t-store.вн-сетка > .вн-бок{scrollbar-width:none!important;-ms-overflow-style:none}
 html.ishp40-on:root body #allrecords#allrecords .t-store.вн-сетка > .вн-бок::-webkit-scrollbar{display:none!important;width:0!important;height:0!important}
+
+/* 20.10 v6 (Асхат: «несуразное пятно с границами») - подсветка за колонкой фильтров убрана везде: разделы, группы, /katalog. Плитки остаются */
+html.ishp40-on:root body #allrecords#allrecords .t-store.вн-сетка{background-image:none!important}
+html.ishp40-on:root body #allrecords#allrecords .вн-ф::before{content:none!important;display:none!important}

@@ -579,10 +579,11 @@
       c.setAttribute('data-ishp35r', '1');
       if (кн && !кн.querySelector('svg')) кн.insertAdjacentHTML('afterbegin', СV);
       if (!tw || !ti) continue;
-      var бр = найти(ti.getAttribute('title') || ti.textContent || '', сп);
-      if (!бр) continue;
+      var бр = найти(ti.getAttribute('title') || ti.textContent || '', сп), нал = parseFloat(c.getAttribute('data-product-inv')) > 0;   /* 20.10: остаток кладёт генератор группы */
+      if (!бр && !нал) continue;
       var d = D.createElement('div'); d.className = 'ishp35r-br';
-      var s = D.createElement('span'); s.textContent = бр; d.appendChild(s);
+      if (бр) { var s = D.createElement('span'); s.textContent = бр; d.appendChild(s); }
+      if (нал) { var a = D.createElement('span'); a.className = 'ishp35r-av'; a.textContent = 'в наличии'; d.appendChild(a); }
       tw.insertBefore(d, ti);
     }
   }

@@ -714,3 +714,52 @@ html.ishp8-on #запросБлок .ishp8-cur{background:var(--p8-cobalt)}
 @media (max-width:640px){
   #карусель .слайд .вуаль{background:linear-gradient(95deg,rgba(12,14,22,.88) 0%,rgba(12,14,22,.8) 55%,rgba(12,14,22,.66) 80%,rgba(12,14,22,.52) 100%)}
 }
+
+/* ───── 20.10 связка «Подбор техники» (квиз) + «Пришлите список» (форма) в один ряд после «Как оформить заказ»; на телефоне друг под другом ───── */
+/* --- п.4 связка «Подбор техники» (квиз) + «Пришлите список» (форма) --- */
+html body #ishp8-duo{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);gap:16px;align-items:stretch}
+html body #ishp8-duo .ishp8-duo__l,html body #ishp8-duo .ishp8-duo__r{min-width:0;display:flex;flex-direction:column}
+html body #ishp8-duo .ishp8-duo__l:empty{display:none}
+html body #ishp8-duo .ishp8-duo__l:empty+.ishp8-duo__r{grid-column:1/-1}
+html body #ishp8-duo .ishp23-cta,html.ishp8-on #ishp8-duo #запросБлок.запрос-блок{margin:0;flex:1 1 auto}
+html body #ishp8-duo .ishp23-cta{display:flex;flex-direction:column}
+html body #ishp8-duo .ishp23-cta .ishp23-cta__in{flex:1 1 auto;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:18px;box-sizing:border-box;padding:28px 30px}
+html body #ishp8-duo .ishp23-cta .ishp23-cta__in::before{right:-160px;top:auto;bottom:-70px;transform:none;width:460px;height:260px}
+html body #ishp8-duo .ishp23-cta .ishp23-cta__t{max-width:none}
+html body #ishp8-duo .ishp23-cta .ishp23-cta__h{margin:0;font-size:22px;line-height:1.2}
+html body #ishp8-duo .ishp23-cta .ishp8-duo__p{margin:8px 0 0;color:#D3D7F3;font:400 14.5px/1.4 var(--p8-f)}
+/* правая половина: текст и кнопки слева, листок справа */
+html.ishp8-on #ishp8-duo #запросБлок.запрос-блок{display:grid;grid-template-columns:minmax(0,1fr) 210px;grid-template-areas:"t l" "b l";column-gap:22px;row-gap:14px;align-content:center;align-items:center;box-sizing:border-box;padding:26px 28px;border-radius:28px}
+html.ishp8-on #ishp8-duo #запросБлок .зб-знак{display:none}
+html.ishp8-on #ishp8-duo #запросБлок .зб-текст{grid-area:t}
+html.ishp8-on #ishp8-duo #запросБлок .зб-текст h3{margin:0 0 6px;font-size:22px!important;line-height:1.2}
+html.ishp8-on #ishp8-duo #запросБлок .зб-текст p{margin:0;font-size:14px}
+html.ishp8-on #ishp8-duo #запросБлок .ishp8-zls{grid-area:l;display:flex;align-self:center}
+html.ishp8-on #ishp8-duo #запросБлок .ishp8-ls{flex:0 0 100%;width:100%;max-width:100%;height:92px;padding:10px 12px}
+html.ishp8-on #ishp8-duo #запросБлок .ishp8-ls .ishp8-lr{font-size:13px}
+html.ishp8-on #ishp8-duo #запросБлок.ishp8-merged .зб-кнопки{grid-area:b;flex-direction:row;flex-wrap:wrap;align-items:center;gap:6px 18px;width:auto}
+html.ishp8-on #ishp8-duo #запросБлок.ishp8-merged .зб-кнопки .кн-к.конт{height:auto;min-height:0;padding:0;background:none;box-shadow:none;border-radius:0;font-size:13.5px;justify-content:flex-start;text-align:left;width:auto}
+@media (max-width:980px){
+  html body #ishp8-duo{grid-template-columns:minmax(0,1fr)}
+  html.ishp8-on #ishp8-duo #запросБлок.запрос-блок.ishp8-merged{grid-template-columns:minmax(0,1fr) 190px}
+}
+@media (max-width:640px){
+  html body #ishp8-duo{gap:10px}
+  html body #ishp8-duo .ishp23-cta .ishp23-cta__in{padding:18px 18px;gap:12px;border-radius:22px}
+  html body #ishp8-duo .ishp23-cta .ishp23-cta__h{font-size:19px}
+  html body #ishp8-duo .ishp23-cta .ishp8-duo__p{margin-top:4px;font-size:13.5px;color:#D3D7F3}
+  /* телефон: левая карточка тёмная индиго, как на компьютере (одна залитая синяя кнопка на экран - справа) */
+  html body #ishp8-duo .ishp23-cta .ishp23-cta__in{background:var(--p8-ind-bg);box-shadow:var(--p8-sh2)}
+  html body #ishp8-duo .ishp23-cta .ishp23-cta__in::before{display:block;right:-100px;bottom:-60px;width:360px;height:200px}
+  html body #ishp8-duo .ishp23-cta .ishp23-cta__h{color:#fff}
+  html body #ishp8-duo .ishp23-cta .ishp23-cta__b,html body #ishp8-duo .ishp23-cta .ishp23-cta__b:hover{background:#fff;color:var(--p8-cobalt);box-shadow:0 10px 24px -12px rgba(23,25,35,.35)}
+  html body #ishp8-duo .ishp23-cta .ishp23-cta__b:focus-visible{outline:2px solid #fff;outline-offset:3px}
+  html body #ishp8-duo .ishp23-cta .ishp23-cta__b{width:100%;min-height:46px}
+  html.ishp8-on #ishp8-duo #запросБлок.запрос-блок.ishp8-merged{grid-template-columns:minmax(0,1fr);grid-template-areas:"t" "b";padding:18px 18px;row-gap:12px;border-radius:22px}
+  html.ishp8-on #ishp8-duo #запросБлок .ishp8-zls{display:none}
+  html.ishp8-on #ishp8-duo #запросБлок .зб-текст h3{font-size:19px!important}
+  html.ishp8-on #ishp8-duo #запросБлок .зб-текст p{font-size:13.5px}
+  html.ishp8-on #ishp8-duo #запросБлок.ishp8-merged .зб-кнопки{flex-direction:column;align-items:stretch;gap:8px;width:100%}
+  html.ishp8-on #ishp8-duo #запросБлок .зб-кнопки .кн-к:not(.конт){height:46px}
+  html.ishp8-on #ishp8-duo #запросБлок.ishp8-merged .зб-кнопки .кн-к.конт{justify-content:center;text-align:center;width:100%;height:34px}
+}

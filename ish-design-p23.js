@@ -373,6 +373,8 @@
     if (!f) return false;
     var s = D.getElementById('ishp23-cta');
     if (!s) { s = D.createElement('section'); s.id = 'ishp23-cta'; s.className = 'ishp23-cta'; s.setAttribute('aria-label', 'Подбор техники'); s.innerHTML = ctaHtml(); }
+    var duo = D.querySelector('#ishp8-duo .ishp8-duo__l');                      /* 20.10: на главной приглашение живёт в связке «Подбор / Список» (П8) */
+    if (duo) { if (s.parentNode !== duo) duo.appendChild(s); return true; }
     var who = D.getElementById('ishp8-c');
     if (who && who.parentNode) { if (s.previousElementSibling !== who) who.parentNode.insertBefore(s, who.nextSibling); return true; }
     if (placeWait.n < 28) return false;                                         /* П8 ещё может дорисовать «Для кого» */
@@ -385,7 +387,7 @@
     var iv = setInterval(function () {
       placeWait.n++;
       var ok = false; try { ok = place(); } catch (e) {}
-      if ((ok && D.getElementById('ishp23-cta') && (D.getElementById('ishp8-c') ? D.getElementById('ishp23-cta').previousElementSibling === D.getElementById('ishp8-c') : placeWait.n >= 28)) || placeWait.n > 120) clearInterval(iv);
+      if ((ok && D.getElementById('ishp23-cta') && (D.getElementById('ishp8-duo') ? true : D.getElementById('ishp8-c') ? D.getElementById('ishp23-cta').previousElementSibling === D.getElementById('ishp8-c') : placeWait.n >= 28)) || placeWait.n > 120) clearInterval(iv);
     }, 250);
   }
 

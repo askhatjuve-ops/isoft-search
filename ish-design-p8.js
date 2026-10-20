@@ -342,7 +342,7 @@
     if (!h || h.getAttribute('data-p8h')) return;
     if (h.textContent.indexOf('Напишите, что ищете') < 0) return;
     h.setAttribute('data-p8h', '1');
-    h.textContent = 'Не нашли нужное? Пришлите список';
+    h.textContent = 'Знаете, что нужно? Пришлите список';   /* 20.10: правая половина связки «Подбор / Список» */
   }
   /* описание под заголовком «Не нашли нужное?» короче (охранник: только родная формулировка) */
   function описание_запроса() {
@@ -477,6 +477,7 @@
     try { кого_чипы(D.getElementById('ishp8-c')); } catch (e) {}
     try { шаги_моб(); } catch (e) {}
     try { слить_запрос(); } catch (e) {}
+    try { связка(); } catch (e) {}
     D.documentElement.classList.add('ishp8-on');
     try { анимации(); } catch (e) {}
     подпись_кнопки();
@@ -486,6 +487,34 @@
     кнопка_запроса();
     until(ссылки_заказа, 90);
     until(полки, 90);
+    until(связка, 90);
+    return true;
+  }
+  /* ───── 20.10 связка «Подбор техники» + «Пришлите список» в один ряд сразу после «Как оформить заказ» (перед «Для кого») ─────
+     Узлы переносятся целиком (id и обработчики остаются): слева #ishp23-cta (квиз П23), справа #запросБлок. Не получилось - блоки стоят где были. */
+  function связка() {
+    var c = D.getElementById('ishp8-c'), з = D.getElementById('запросБлок');
+    var w = c && c.parentNode;
+    if (!c || !з) return false;
+    var duo = D.getElementById('ishp8-duo');
+    if (!duo) {
+      duo = D.createElement('section');
+      duo.id = 'ishp8-duo'; duo.className = 'ishp8-sec ishp8-duo';
+      duo.innerHTML = '<div class="ishp8-duo__l"></div><div class="ishp8-duo__r"></div>';
+      w.insertBefore(duo, c);
+    }
+    var пр = duo.querySelector('.ishp8-duo__r'), лв = duo.querySelector('.ishp8-duo__l');
+    if (з.parentNode !== пр) пр.appendChild(з);
+    var cta = D.getElementById('ishp23-cta');
+    if (!cta) return false;                                   // квиз (П23) ещё не нарисовал приглашение - until повторит
+    if (cta.parentNode !== лв) лв.appendChild(cta);
+    var h = cta.querySelector('.ishp23-cta__h');
+    if (h && !cta.getAttribute('data-p8d')) {
+      cta.setAttribute('data-p8d', '1');
+      h.textContent = 'Не знаете, что выбрать?';
+      var п = D.createElement('p'); п.className = 'ishp8-duo__p'; п.textContent = '4 вопроса, минута - и подберём технику.';
+      h.parentNode.appendChild(п);
+    }
     return true;
   }
   /* ───── запуск анимаций ───── */

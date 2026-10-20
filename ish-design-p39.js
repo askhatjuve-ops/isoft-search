@@ -1,4 +1,4 @@
-/* ish-design-p39.js  v1.1  (19.10.2026, кандидат)  П39 «счётчик списка, шапка-убегайка, стекло»  b2b.isoft-shop.kz
+/* ish-design-p39.js  v1.2  (20.10.2026: число порции на кнопке; кандидат)  П39 «счётчик списка, шапка-убегайка, стекло»  b2b.isoft-shop.kz
    По разбору BI Group (Дизайн_2026/BI_GROUP_РАЗБОР_18.10.md). Внешний слой: блоки Tilda не переписывает, только ДОБАВЛЯЕТ классы ishp39-* и узлы ishp39-*; подключает ish-design-p39.css рядом с собой.
    v1.1: часть «lanes» (ленты главной на телефоне, лента разделов на компьютере) УДАЛЕНА из кода и css по решению Асхата 19.10 (главная переделана: ленты её сломали бы). Блоки #ishp8-a/-b/-c/-bt и «Три шага» модуль не трогает.
    Выключатель: window.ISH_P39_OFF = 1 (весь модуль) или window.ISH_P4_NO_P39 = 1 (в загрузчике p4); по частям - window.ISH_P39_SKIP = 'count,hdr,glass' (подстрока: что названо, то ВЫКЛЮЧЕНО). Всё - до загрузки файла.
@@ -79,6 +79,12 @@
     if (t.innerHTML !== html) t.innerHTML = html;   /* без лишней записи: наблюдатель не зацикливается */
     if (bar.hidden === full) bar.hidden = !full;
     if (full) { var w = Math.min(100, Math.round(n / N * 1000) / 10) + '%'; if (bar.firstChild.style.width !== w) bar.firstChild.style.width = w; }
+    /* 20.10: число следующей порции на кнопке (Tilda грузит по 36); при фильтре общее неизвестно - текст не трогаем */
+    var bt = wrapBtn && wrapBtn.querySelector('.t-btnflex__text');
+    if (bt && full && N > n && /^(Показать|Загрузить) ещё(\s+\d+)?$/.test(bt.textContent.trim())) {
+      var tt = 'Показать ещё ' + Math.min(36, N - n);
+      if (bt.textContent !== tt) bt.textContent = tt;
+    }
   }
 
   /* ───────── шапка-убегайка (телефон) ───────── */

@@ -1,4 +1,4 @@
-/* ish-design-p35.css  v3.3  (кандидат 19.10.2026; НЕ выложено; v3.3: лента преимуществ в шапке и на страницах разделов (телефон); v3.2: лента преимуществ в шапке группы (телефон), плитки «Разделов группы» на телефоне без обводки, на тени, фото меньше (вариант Б); v3 дописан в конце файла: шапка без фото/длинное слово, плитки без картинки, бренды текстом, режим группы html.ishp35-grp)  П35 «раздел каталога: компоненты главной»
+/* ish-design-p35.css  v3.4  (кандидат 20.10.2026; НЕ выложено; v3.4: плитка группы = плитка раздела, чип «Сравнить», переключатель вида без значков везде, «Показать ещё» 48 px лавандовая; v3.3: лента преимуществ в шапке и на страницах разделов (телефон); v3.2: лента преимуществ в шапке группы (телефон), плитки «Разделов группы» на телефоне без обводки, на тени, фото меньше (вариант Б); v3 дописан в конце файла: шапка без фото/длинное слово, плитки без картинки, бренды текстом, режим группы html.ishp35-grp)  П35 «раздел каталога: компоненты главной»
    Подключает ish-design-p35.js. Откат: пустой файл на Pages или window.ISH_P35_OFF / ISH_P4_NO_P35.
    Что: голубая палитра главной (#E7EAFB / #EEF1FD, кобальт на активном), шапка раздела с градиентом, полоса «кто мы», две индиго-плиты,
    экран «ничего не найдено», светлый низ, сегмент «Список / Плитка», цена и характеристики контрастнее, телефон: круги не на «В корзину».
@@ -87,9 +87,9 @@ html:is(.ishp35-on,.ishp35-kat) .ish13-крат b{color:#5E647A;font-weight:500}
 html:is(.ishp35-on,.ishp35-kat) body #allrecords .t-store__card__sku,html:is(.ishp35-on,.ishp35-kat) body #allrecords .t-store__card__sku .ishp9-lab{color:#7A8094}
 
 /* «Загрузить ещё»: белая с кобальтовым текстом (Tilda красит кнопку своим #rec…-правилом с !important - перебиваем по id) */
-html:is(.ishp35-on,.ishp35-kat) body #allrecords .t-store__load-more-btn-wrap .t-btnflex.t-btnflex_type_button{background:#fff!important;background-color:#fff!important;border:1px solid #AEBBEF!important;box-shadow:none!important;color:var(--p35-k)!important;border-radius:12px!important}
-html:is(.ishp35-on,.ishp35-kat) body #allrecords .t-store__load-more-btn-wrap .t-btnflex__text{color:var(--p35-k)!important}
-html:is(.ishp35-on,.ishp35-kat) body #allrecords .t-store__load-more-btn-wrap .t-btnflex.t-btnflex_type_button:hover{background:var(--p35-soft2)!important;background-color:var(--p35-soft2)!important;border-color:var(--p35-k)!important}
+html:is(.ishp35-on,.ishp35-kat) body #allrecords .t-store__load-more-btn-wrap .t-btnflex.t-btnflex_type_button{background:rgba(231,234,251,.7)!important;background-color:rgba(231,234,251,.7)!important;border:0!important;box-shadow:none!important;color:var(--p35-k)!important;border-radius:14px!important;width:100%!important;max-width:360px!important;height:48px!important;min-height:48px!important}
+html:is(.ishp35-on,.ishp35-kat) body #allrecords .t-store__load-more-btn-wrap .t-btnflex__text{color:var(--p35-k)!important;font:500 15px/1 var(--p35-f)!important}
+html:is(.ishp35-on,.ishp35-kat) body #allrecords .t-store__load-more-btn-wrap .t-btnflex.t-btnflex_type_button:hover{background:rgba(231,234,251,.95)!important;background-color:rgba(231,234,251,.95)!important}
 html:is(.ishp35-on,.ishp35-kat) .ishp19-note{color:var(--p35-mut);margin-bottom:0}
 html:is(.ishp35-on,.ishp35-kat) body #allrecords .t-store__load-more-btn-wrap{margin:0!important;padding:12px 0 0!important}
 html:is(.ishp35-on,.ishp35-kat) body #allrecords .t-store__load-more-btn-wrap .t-btnflex.t-btnflex_type_button{margin:0 auto!important}
@@ -106,7 +106,7 @@ html.ishp35-on .ishp35-plate__b{flex:none;box-sizing:border-box;display:inline-f
 html.ishp35-on .ishp35-plate__b:hover{transform:translateY(-2px);box-shadow:0 14px 26px -12px rgba(23,25,35,.4);color:var(--p35-kh)}
 html.ishp35-on .ishp35-plate__b:focus-visible{outline:2px solid #fff;outline-offset:3px}
 html.ishp35-on .t-store__card-list > .ishp35-plate{grid-column:1/-1}
-html:is(.ishp35-on,.ishp35-kat) body #allrecords .t-store__load-more-btn-wrap .t-btnflex.t-btnflex_type_button{height:44px!important}
+html:is(.ishp35-on,.ishp35-kat) body #allrecords .t-store__load-more-btn-wrap .t-btnflex.t-btnflex_type_button{height:48px!important}
 
 /* ═══ экран «ничего не найдено» ═══ */
 html.ishp35-on .ishp35-empty{display:flex;align-items:center;gap:20px;flex-wrap:wrap;box-sizing:border-box;margin:8px 0 20px;padding:30px 32px;border-radius:22px;background:linear-gradient(120deg,#fff 0%,var(--p35-soft) 100%);border:1px solid var(--p35-line);font-family:var(--p35-f)}
@@ -367,8 +367,8 @@ html.ishp35-grp .вн-т__кн svg{width:16px;height:16px;flex:none;fill:none;st
   html.ishp35-grp:not(.ishd-tile) .вн-т > .ishp25-cmp{grid-column:1/-1;grid-row:6;justify-self:start;margin-top:8px;min-height:36px}
 }
 html.ishp35-grp #вн-гр-список > .ishp35-plate{grid-column:1/-1}
-html.ishp35-grp .вн-гр__ещё{max-width:360px;margin:12px auto 0;height:44px;border:1px solid #AEBBEF;border-radius:12px;background:#fff;color:var(--p35-k);font:700 15px/1 var(--p35-f)}
-html.ishp35-grp .вн-гр__ещё:hover{background:var(--p35-soft2);border-color:var(--p35-k)}
+html.ishp35-grp .вн-гр__ещё{width:100%;max-width:360px;margin:12px auto 0;height:48px;border:0;border-radius:14px;background:rgba(231,234,251,.7);color:var(--p35-k);font:500 15px/1 var(--p35-f)}
+html.ishp35-grp .вн-гр__ещё:hover{background:rgba(231,234,251,.95)}
 html.ishp35-grp .ishp35-note{margin:12px 0 0;font:400 13px/1.45 var(--p35-f);color:var(--p35-mut)}
 html.ishp35-grp .вн-гр__пусто{padding:30px 32px;border-radius:22px;border-color:var(--p35-line);background:linear-gradient(120deg,#fff 0%,var(--p35-soft) 100%);font:400 15px/1.5 var(--p35-f);color:var(--p35-mut)}
 /* «Плитка»: 3 колонки справа от панели (2 на планшете и телефоне) */
@@ -648,3 +648,60 @@ html.ishp35-on .ishp35-rb{display:none}
   html.ishp35-on .ishp35-wrap,html.ishp35-on .вн-а__об,html.ishp35-on .вн-гр,html.ishp35-on .вн-текст{max-width:min(1280px,100%)!important;padding-left:20px!important;padding-right:20px!important;margin-left:auto!important;margin-right:auto!important;box-sizing:border-box}
   html.ishp35-on .js-store-grid-cont,html.ishp35-on .js-store-parts-select-container{max-width:min(1240px,calc(100% - 40px))!important;margin-left:auto!important;margin-right:auto!important}
 }
+
+/* ═══ v3.4 (20.10): плитка группы = плитка раздела (низ: «Сравнить · цена · значок корзины»; на телефоне цена+значок, «Сравнить» строкой ниже) ═══ */
+html.ishd-tile.ishp35-grp body #вн-гр-список{gap:16px}
+html.ishd-tile.ishp35-grp body #вн-гр-список .вн-т{display:grid;grid-template-columns:auto minmax(0,1fr) auto;grid-template-rows:auto minmax(0,1fr) auto;column-gap:0;align-items:center;box-sizing:border-box;padding:14px;border-radius:18px;border:1px solid var(--r35-line,#E6E9F5);box-shadow:none;transition:border-color .18s,transform .18s}
+@media (hover:hover){html.ishd-tile.ishp35-grp body #вн-гр-список .вн-т:hover{border-color:rgba(43,68,199,.4);transform:translateY(-2px)}}
+html.ishd-tile.ishp35-grp body #вн-гр-список .вн-т__фото{grid-column:1/-1;grid-row:1;position:relative;display:block;width:100%;height:auto;aspect-ratio:1/1;margin:0;border-radius:14px;background:#EEF1FD;overflow:hidden}
+html.ishd-tile.ishp35-grp body #вн-гр-список .вн-т__фото img{position:absolute;inset:12px;width:calc(100% - 24px);height:calc(100% - 24px);object-fit:contain;mix-blend-mode:multiply;background:transparent}
+html.ishd-tile.ishp35-grp body #вн-гр-список .вн-т__текст{grid-column:1/-1;grid-row:2;display:block;align-self:start;min-width:0;margin:0}
+html.ishd-tile.ishp35-grp body #вн-гр-список .ishp35r-br{margin:12px 0 4px}
+html.ishd-tile.ishp35-grp body #вн-гр-список .вн-т__имя{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;margin:0;min-height:44px;font:700 15px/22px TildaSans,Arial,sans-serif;letter-spacing:0;color:var(--r35-ink,#171923)!important}
+@media (hover:hover){html.ishd-tile.ishp35-grp body #вн-гр-список .вн-т:hover .вн-т__имя{color:var(--r35-ink,#171923)!important}}
+html.ishd-tile.ishp35-grp body #вн-гр-список .ish13-крат{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 0;padding:0}
+html.ishd-tile.ishp35-grp body #вн-гр-список .ish13-крат i{display:inline-block;max-width:100%;box-sizing:border-box;padding:3px 8px;border-radius:7px;background:#F1F3FC;font:500 12px/16px TildaSans,Arial,sans-serif;color:#3A3F52;font-style:normal;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+html.ishd-tile.ishp35-grp body #вн-гр-список .ish13-крат i b{display:none}
+html.ishd-tile.ishp35-grp body #вн-гр-список .ish13-крат i:nth-child(n+4){display:none}
+html.ishd-tile.ishp35-grp body #вн-гр-список .вн-т__арт,html.ishd-tile.ishp35-grp body #вн-гр-список .вн-т__раздел{display:none}
+html.ishd-tile.ishp35-grp body #вн-гр-список .вн-т__цена{display:contents}
+html.ishd-tile.ishp35-grp body #вн-гр-список .вн-т__цена b{grid-column:2;grid-row:3;margin:14px 0 0 12px;align-self:center;white-space:nowrap;font:800 20px/24px TildaSans,Arial,sans-serif;color:#0B0E1A}
+html.ishd-tile.ishp35-grp body #вн-гр-список .вн-т__кн{grid-column:3;grid-row:3;display:flex;align-items:center;justify-content:center;box-sizing:border-box;width:40px;min-width:40px;height:40px;margin:14px 0 0 12px;padding:0;font-size:0;line-height:0;border:1px solid transparent;border-radius:8px;align-self:center}
+html.ishd-tile.ishp35-grp body #вн-гр-список .вн-т__кн svg{width:18px;height:18px;margin:0}
+html.ishd-tile.ishp35-grp body #вн-гр-список .вн-т:hover .вн-т__кн{background:var(--lv-k,var(--p35-k));color:#fff}
+html.ishd-tile.ishp35-grp body #вн-гр-список .вн-т > .ishp25-cmp{grid-column:1;grid-row:3;position:static;display:inline-flex;align-items:center;gap:6px;box-sizing:border-box;min-height:32px;margin:14px 0 0;padding:0 10px 0 8px;border:1px solid var(--r35-line,#E6E9F5);border-radius:9px;background:rgba(255,255,255,.92);justify-self:start;align-self:center}
+html.ishd-tile.ishp35-grp body #вн-гр-список .вн-т > .ishp25-cmp:hover{border-color:rgba(43,68,199,.4);background:#F7F8FE}
+html.ishd-tile.ishp35-grp body #вн-гр-список .вн-т > .ishp25-cmp .ishp25-cmp__t{font:500 12px/12px TildaSans,Arial,sans-serif;color:#3A3F52}
+html.ishd-tile.ishp35-grp body #вн-гр-список .вн-т > .ishp25-cmp .ishp25-cmp__box{width:16px;height:16px;border:1px solid #B7BED6}
+@media screen and (max-width:760px){
+  html.ishd-tile.ishp35-grp body #вн-гр-список{gap:10px;padding:0}
+  html.ishd-tile.ishp35-grp body #вн-гр-список .вн-т{grid-template-columns:minmax(0,1fr) auto;grid-template-rows:auto minmax(0,1fr) auto auto;padding:10px;border-radius:16px}
+  html.ishd-tile.ishp35-grp body #вн-гр-список .вн-т__имя{font-size:13.5px;line-height:18px;min-height:36px}
+  html.ishd-tile.ishp35-grp body #вн-гр-список .ish13-крат{display:none}
+  html.ishd-tile.ishp35-grp body #вн-гр-список .вн-т__цена b{grid-column:1;grid-row:3;margin:10px 0 0;font-size:18px;line-height:22px;flex-wrap:nowrap}
+  html.ishd-tile.ishp35-grp body #вн-гр-список .вн-т__кн{grid-column:2;grid-row:3;width:44px;min-width:44px;height:44px;margin:10px 0 0 8px;border-radius:12px;justify-self:end}
+  html.ishd-tile.ishp35-grp body #вн-гр-список .вн-т > .ishp25-cmp{grid-column:1;grid-row:4;margin:8px 0 0;justify-self:start}
+}
+@media screen and (max-width:380px){html.ishd-tile.ishp35-grp body #вн-гр-список .вн-т__цена b{font-size:15.5px}}
+/* v3.4: «Сравнить» в группе (и в списке, и в плитке) - тот же чип, что в разделе: рамка светлая, чекбокс 16 px */
+html.ishp35-grp body #вн-гр-список .вн-т > .ishp25-cmp{display:inline-flex;align-items:center;gap:8px;box-sizing:border-box;min-height:32px;padding:0 12px 0 8px;border:1px solid var(--r35-line,#E6E9F5);border-radius:10px;background:#fff;transition:border-color .15s,background .15s}
+html.ishp35-grp body #вн-гр-список .вн-т > .ishp25-cmp:hover{border-color:rgba(43,68,199,.4);background:#F7F8FE}
+html.ishp35-grp body #вн-гр-список .вн-т > .ishp25-cmp .ishp25-cmp__box{width:16px;height:16px;border:1px solid #B7BED6;border-radius:5px}
+html.ishp35-grp body #вн-гр-список .вн-т > .ishp25-cmp input:checked + .ishp25-cmp__box{background:var(--p35-k);border-color:var(--p35-k)}
+html.ishp35-grp body #вн-гр-список .вн-т > .ishp25-cmp input:checked + .ishp25-cmp__box::after{left:4.5px;top:1px;width:4px;height:8px}
+html.ishp35-grp body #вн-гр-список .вн-т > .ishp25-cmp .ishp25-cmp__t{font:500 12px/12px TildaSans,Arial,sans-serif;color:#3A3F52}
+html.ishd-tile.ishp35-grp body #вн-гр-список .вн-т__фото{background:#EEF1FD!important}
+
+/* ═══ v3.4: переключатель «Список | Плитка» - один вид везде (лавандовая капсула, без значков, активная половина белая с кобальтовым текстом) ═══
+   Места: p6 .ishd-view (раздел), p31 .ishp31-view (копия на /katalog, мобильный ряд), p35 .ishp35-gv (группа), p25 .ishp25-own (запасной, если p6 не пришёл). */
+html:is(.ishp35-on,.ishp35-kat,.ishp35-grp) body :is(.ishd-view,.ishp31-view,.ishp35-gv,.ishp25-own) .ishd-seg{display:inline-flex;gap:0;padding:4px;border:0;border-radius:14px;background:var(--p35-soft2);overflow:visible}
+html:is(.ishp35-on,.ishp35-kat,.ishp35-grp) body :is(.ishd-view,.ishp31-view,.ishp35-gv,.ishp25-own) .ishd-seg button{display:inline-flex;align-items:center;justify-content:center;gap:0;height:44px;min-height:44px;margin:0;padding:0 20px;border:0;border-left:0!important;border-radius:10px;background:transparent;color:#3A3F52;font:600 14px/1 var(--p35-f);box-shadow:none}
+html:is(.ishp35-on,.ishp35-kat,.ishp35-grp) body :is(.ishd-view,.ishp31-view,.ishp35-gv,.ishp25-own) .ishd-seg button svg{display:none}
+html:is(.ishp35-on,.ishp35-kat,.ishp35-grp) body :is(.ishd-view,.ishp31-view,.ishp35-gv,.ishp25-own) .ishd-seg button[aria-pressed="true"]{background:#fff;color:var(--p35-k);box-shadow:0 1px 3px rgba(23,25,35,.12)}
+html:is(.ishp35-on,.ishp35-kat,.ishp35-grp) body :is(.ishd-view,.ishp31-view,.ishp35-gv,.ishp25-own) .ishd-seg button:hover:not([aria-pressed="true"]){background:var(--p35-soft)}
+/* v3.4: рамка и подложка фото группы - как в разделе (страничные правила красили рамку бежевым #D9D3C5, подложку серо-бежевой) */
+html.ishp35-grp body #вн-гр-список .вн-т{border-color:var(--r35-line,#E6E9F5)!important}
+@media (hover:hover){html.ishp35-grp body #вн-гр-список .вн-т:hover{border-color:rgba(43,68,199,.4)!important}}
+html.ishp35-grp body #вн-гр-список .вн-т__фото{background:var(--r35-ph,#F3F5FD)!important}
+html.ishd-tile.ishp35-grp body #вн-гр-список .вн-т__фото{background:#EEF1FD!important}
+html.ishp35-grp body #вн-гр-список .вн-т__фото i{background:transparent!important}

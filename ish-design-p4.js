@@ -353,7 +353,7 @@
 
   /* ───────── П35: раздел каталога в палитре главной (ish-design-p35.js/.css с того же адреса, один раз) ─────────
      Признак: страница со списком товаров (.t-store__card-list). Выключатель: window.ISH_P35_OFF = 1 или window.ISH_P4_NO_P35 = 1 (до загрузки p4). Кэш: поменять P35V. */
-  var P35V = '21';
+  var P35V = '22';
   function p35() {
     if (W.ISH_P4_NO_P35 || W.ISH_P35_OFF || W.ISH_P35 || D.getElementById('ishp-p35-js')) return true;
     if (D.getElementById('лента')) return true;
@@ -450,7 +450,7 @@
 
   /* ───────── П39 v1.1 (ленты удалены 19.10): «Показано N из M» в разделе каталога, шапка-убегайка, стекло (ish-design-p39.js/.css с того же адреса, на всех страницах; сам молчит, если нечего править)
      Выключатели: window.ISH_P39_OFF = 1 или window.ISH_P4_NO_P39 = 1 (до загрузки p4); по частям - window.ISH_P39_SKIP = 'count,hdr,glass'. Кэш: поменять P39V. */
-  var P39V = '3';
+  var P39V = '4';
   (function () {
     if (W.ISH_P4_NO_P39 || W.ISH_P39_OFF || W.__ishP39 || D.getElementById('ishp-p39-js')) return;
     var src = tag && tag.src;

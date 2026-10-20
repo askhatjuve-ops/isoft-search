@@ -542,6 +542,12 @@
     return true;
   }
   until(footerFix);
+  /* 20.10: на 404 (/stranica-ne-naydena) убрана полоса контактов перед подвалом (блок T123 rec4039445703, класс .ish404-contacts) по просьбе владельца. Только CSS, только этот путь. */
+  if (/^\/stranica-ne-naydena\/?$/.test(location.pathname) && !D.getElementById('ishp-404-css')) {
+    var st404 = D.createElement('style'); st404.id = 'ishp-404-css';
+    st404.textContent = 'html body .ish404-contacts,html body #rec4039445703 .ish404-contacts{display:none!important}';
+    D.head.appendChild(st404);
+  }
   /* 19.10 (вечер): компоновка десктопного подвала. Пять колонок в одну линию: логотип+текст+иконки | Разделы каталога | Покупателям | Связаться | Офисы.
      Работает на живой разметке Tilda (офисы внутри «Связаться») и на правленной руками (заголовок «Наши офисы:» без h5, иконки в «Связаться»).
      Охранник: колонки узнаём по тексту h5; не нашли «Разделы каталога» и «Связаться» - ничего не трогаем. Телефон (#isoftFoot) не затрагивается. */

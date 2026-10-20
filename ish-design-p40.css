@@ -11,14 +11,13 @@ html.ishp40-on{--p40-k:#2B44C7;--p40-ind:#2B2F6B;--p40-ink:#1F2336;--p40-mut:#5A
 html.ishp40-on:root body #allrecords#allrecords .t-store.вн-сетка{max-width:min(1240px,100% - 40px)!important;padding-left:0!important;padding-right:0!important}
 /* ── подсветка за колонкой: мягкие радиальные пятна без границ. Колонка .вн-бок - прокручиваемая (overflow), поэтому за её пределы пятна не выйдут;
    расширяем саму колонку полями (padding + такой же минус margin): содержимое стоит на месте, пятна тают внутри расширенного поля и уходят за край колонки ── */
-html.ishp40-on:root body #allrecords#allrecords .t-store.вн-сетка > .вн-бок{box-sizing:content-box;width:300px;margin:-70px 0 -70px -70px;
-  padding:70px 28px 70px 70px;top:15px!important;pointer-events:none;background-repeat:no-repeat;
-  background-image:radial-gradient(200px 200px at 215px 170px,rgba(43,68,199,.62),transparent 72%),
-    radial-gradient(170px 170px at 268px 330px,rgba(160,172,240,.90),transparent 72%),
-    radial-gradient(200px 220px at 170px 520px,rgba(108,92,231,.56),transparent 72%),
-    radial-gradient(200px 200px at 250px calc(100% - 300px),rgba(43,68,199,.50),transparent 72%),
-    radial-gradient(190px 210px at 170px calc(100% - 140px),rgba(108,92,231,.52),transparent 72%)}
-html.ishp40-on:root body #allrecords#allrecords .t-store.вн-сетка > .вн-бок > *{pointer-events:auto}
+/* 20.10 v5: прежний приём (минус margin + padding у липкой колонки) ломал прокрутку - колонка уезжала вверх и под баннер.
+   Колонка снова обычная, пятна - фоном самой сетки слева (за колонкой), колонку не трогают */
+html.ishp40-on:root body #allrecords#allrecords .t-store.вн-сетка > .вн-бок{box-sizing:border-box;width:300px;margin:0;padding:0;pointer-events:auto;background:none}
+html.ishp40-on:root body #allrecords#allrecords .t-store.вн-сетка{background-repeat:no-repeat;
+  background-image:radial-gradient(200px 200px at 150px 170px,rgba(43,68,199,.40),transparent 72%),
+    radial-gradient(170px 170px at 230px 360px,rgba(160,172,240,.70),transparent 72%),
+    radial-gradient(200px 220px at 110px 600px,rgba(108,92,231,.38),transparent 72%)}
 html.ishp40-on:root body #allrecords#allrecords .вн-бок__карта.вн-бок__фильтры{background:none!important;border:0!important;
   border-radius:0!important;box-shadow:none!important;overflow:visible!important;padding:0!important}
 }

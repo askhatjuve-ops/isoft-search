@@ -426,7 +426,7 @@
 
   /* ───────── П37: хвосты в стиле главной - мега-меню, мобильное меню, мессенджеры, шторка фильтров, /assortiment (ish-design-p37.js/.css/p37a.css с того же адреса, на всех страницах) ─────────
      Выключатель: window.ISH_P37_OFF = 1 или window.ISH_P4_NO_P37 = 1 (до загрузки p4). Кэш: поменять P37V. */
-  var P37V = '14';   /* 20.10: слот фото узла СКС убран */
+  var P37V = '15';   /* 20.10: + ISH_КАРТА: 6 разделов СКС на клиенте (за ISH_SKS_ON) */
   (function () {
     if (W.ISH_P4_NO_P37 || W.ISH_P37_OFF || W.__ishP37 || D.getElementById('ishp-p37-js')) return;
     var src = tag && tag.src;
@@ -608,6 +608,28 @@
     return true;
   }
   until(footerCatFold);
+  /* 20.10 (СКС, решение координатора): подвал - 6 ссылок на разделы СКС в группу «Сеть и хранение данных» (/set-i-servery) без записи в блок Tilda
+     (запись подвала требует переопубликовать все страницы). Только за выключателем ISH_SKS_ON (СКС_ВКЛ). Охранник: ссылки добавляем, только если
+     группа найдена, в списке нет ни одной из них и в нём есть ожидаемый пункт /servery-i-shd; пометка data-ishsks на ul, повтор ничего не делает. */
+  function footerSks() {
+    if (!W.ISH_SKS_ON) return true;
+    var gn = D.querySelectorAll('.isoft-foot__gname[href="/set-i-servery"]');
+    if (!gn.length) return false;
+    var L = [['/kabel-vitaya-para', 'Кабель витая пара'], ['/rozetki-i-moduli', 'Розетки и модули'], ['/patch-paneli', 'Патч-панели'],
+             ['/patch-kordy', 'Патч-корды'], ['/kabel-kanaly-i-koroba', 'Кабель-каналы и короба'], ['/konnektory-i-instrument', 'Коннекторы и инструмент']];
+    for (var g = 0; g < gn.length; g++) {
+      var ul = gn[g].parentNode && gn[g].parentNode.querySelector('ul');
+      if (!ul || ul.getAttribute('data-ishsks') === '1') continue;
+      if (!ul.querySelector('a[href="/servery-i-shd"]') || ul.querySelector('a[href="/kabel-vitaya-para"]')) continue;
+      for (var i = 0; i < L.length; i++) {
+        var li = D.createElement('li'), a = D.createElement('a');
+        a.setAttribute('href', L[i][0]); a.textContent = L[i][1]; li.appendChild(a); ul.appendChild(li);
+      }
+      ul.setAttribute('data-ishsks', '1');
+    }
+    return true;
+  }
+  until(footerSks);
   /* 20.10: на 404 (/stranica-ne-naydena) убрана полоса контактов перед подвалом (блок T123 rec4039445703, класс .ish404-contacts) по просьбе владельца. Только CSS, только этот путь. */
   if (/^\/stranica-ne-naydena\/?$/.test(location.pathname) && !D.getElementById('ishp-404-css')) {
     var st404 = D.createElement('style'); st404.id = 'ishp-404-css';

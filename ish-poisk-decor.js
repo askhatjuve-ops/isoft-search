@@ -1,4 +1,4 @@
-/* ish-poisk-decor.js v1 · КАНДИДАТ (волна 1, задача Г, 17.10.2026) · НЕ выложено
+/* ish-poisk-decor.js v2 (20.10: без баннера «Поиск: …» и меты карточки выдачи) · v1 КАНДИДАТ (волна 1, задача Г, 17.10.2026) · НЕ выложено
    Допиливает разметку, которую рисует ish-search.js (его не меняем): чипы разделов, бренд капсом в строке товара, «Все результаты →» + «Не нашли? Пришлите список»,
    кнопка в пустом результате, «Поиск: …» в шапке /katalog, мета-бренд в карточке. Идемпотентно; ничего не читает из сети. Откат: убрать подключение. */
 (function () {
@@ -37,19 +37,7 @@
     box.__ps = 0;
   }
   function res() {
-    var h = D.querySelector('#ish-results .ir-head'); if (!h) return;
-    var q = D.querySelector('#ir-q'), v = q ? q.value.trim() : '';
-    var t = h.querySelector('.ishps-h1');
-    if (!t) { t = D.createElement('h1'); t.className = 'ishps-h1'; h.insertBefore(t, h.firstChild); }
-    var s = 'Поиск: ' + v; if (t.__s !== s) { t.__s = s; t.textContent = ''; t.appendChild(D.createTextNode('Поиск: ')); var sp = D.createElement('span'); sp.textContent = v; t.appendChild(sp); }
-    qa('.ir-meta:not([data-ps])').forEach(function (m) {
-      m.setAttribute('data-ps', '1');
-      var c = m.cloneNode(true), parts = m.textContent.split(' · '); if (parts.length < 2) return;
-      var br = parts[parts.length - 2]; if (!br || /^Артикул/.test(br) || br.length > 24) return;
-      m.innerHTML = '<span class="ishps-br">' + br.replace(/</g, '&lt;') + '</span>' + parts.slice(0, -2).join(' · ').replace(/</g, '&lt;') + (parts.length > 2 ? ' · ' : '') + parts[parts.length - 1].replace(/</g, '&lt;');
-      if (parts.slice(0, -2).length === 0) m.innerHTML = '<span class="ishps-br">' + br.replace(/</g, '&lt;') + '</span>' + parts[parts.length - 1].replace(/</g, '&lt;');
-      void c;
-    });
+    /* 20.10: баннер «Поиск: …» и разметка меты карточки отсюда убраны - шапку и карточку выдачи рисует сам ish-search.js (одна плашка, без дубля) */
     var em = D.querySelector('#ir-empty .ir-empty');
     if (em && !em.querySelector('.ishps-btn')) { var a = em.querySelector('a[href="/podbor"]'); if (a) a.className = 'ishps-btn'; }
   }

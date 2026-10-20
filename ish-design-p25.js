@@ -1,4 +1,5 @@
-/* ish-design-p25.js  v5  (19.10.2026: только вёрстка окна на телефоне <=720px, см. ish-design-p25.css v4; логика не менялась; в ish-design-p4.js P25V '5' -> '6')
+/* ish-design-p25.js  v6  (20.10.2026: карточки выдачи поиска /katalog (.ir-card со своим чекбоксом .ir-cmp) входят в то же сравнение: выбор в общем хранилище, окно и плашка те же; в p4 P25V '9' -> '10', p25() видит .ir-card)
+   v5  (19.10.2026: только вёрстка окна на телефоне <=720px, см. ish-design-p25.css v4; логика не менялась; в ish-design-p4.js P25V '5' -> '6')
    v4  (19.10.2026: getproduct просит storepartuid - без него «ERROR:Wrong storepartuid», полный список не грузился никогда)
    v3  (16.10.2026)  П25 «Сравнение моделей» (К19) + «Таблица однотипных товаров» (К21), b2b.isoft-shop.kz
    Внешний файл на Pages. Грузится из ish-design-p4.js (строка в README) на страницах со списком товаров (.t-store__card[data-ish13])
@@ -82,14 +83,19 @@
   /* ══ данные карточки списка ══ */
   function inPopup(e) { return !!(e.closest && e.closest('.t-store__prod-popup, .t-popup, .t-catalog__product-popup')); }
   function карточки() {
-    return qa('.t-store__card[data-product-uid], .вн-т[data-product-uid]').filter(function (c) { return !inPopup(c); });   /* кандидат: + строки родительской (.вн-т) */
+    return qa('.t-store__card[data-product-uid], .вн-т[data-product-uid], .ir-card[data-product-uid]').filter(function (c) { return !inPopup(c); });   /* кандидат: + строки родительской (.вн-т) */
   }
   function числоЦены(c) {
-    var e = q('.js-store-prod-price-val, .js-product-price, .вн-т__цена b', c);
+    var e = q('.js-store-prod-price-val, .js-product-price, .вн-т__цена b, .ir-price[data-product-price-def]', c);
     var v = e ? (e.getAttribute('data-product-price-def') || txt(e)) : '';
     return parseFloat(String(v).replace(/[^\d.]/g, '')) || 0;
   }
   function парыИзКарточки(c) {
+    if (c.classList.contains('ir-card')) {            /* v6: карточка выдачи поиска: пары из dl.ir-sp */
+      var о = [];
+      qa('.ir-sp dt', c).forEach(function (d) { о.push([txt(d).replace(/[:\s]+$/, ''), txt(d.nextElementSibling)]); });
+      return о.filter(function (p) { return p[0] && p[1]; });
+    }
     return qa('.ish13-крат i', c).map(function (i) {
       var b = q('b', i), k = txt(b).replace(/[:\s]+$/, ''), full = txt(i), v = txt(i);
       if (b) v = full.slice(txt(b).length).replace(/^[:\s]+/, '');
@@ -97,6 +103,7 @@
     }).filter(function (p) { return p[0] && p[1]; });
   }
   function картинка(c) {
+    var ir = q('.ir-ph img', c); if (ir) return ir.getAttribute('src') || '';
     var im = q('.вн-т__фото img', c); if (im) return im.getAttribute('src') || '';
     var b = q('.t-store__card__bgimg, [data-original]', c), u = '';
     if (b) {
@@ -106,14 +113,14 @@
     return u;
   }
   function снять(c) {
-    var ne = q('.js-store-prod-name, .t-store__card__title, .вн-т__имя', c), a = q('a[href]', c);
+    var ne = q('.js-store-prod-name, .t-store__card__title, .вн-т__имя, .ir-name', c), a = q('a[href]', c);
     return {
       u: c.getAttribute('data-product-uid'),
       n: ne ? txt(ne) : '',
       p: числоЦены(c),
       l: c.getAttribute('data-product-url') || (a ? a.getAttribute('href') : '') || '',
       i: картинка(c),
-      a: txt(q('.js-store-prod-sku, .t-store__card__sku, .вн-т__арт', c)).replace(/^Артикул:?\s*/i, ''),
+      a: txt(q('.js-store-prod-sku, .t-store__card__sku, .вн-т__арт, .ir-art b', c)).replace(/^Артикул:?\s*/i, ''),
       c: парыИзКарточки(c),
       s: часть()                                   /* v4: раздел запоминаем вместе с товаром */
     };
@@ -122,6 +129,7 @@
     uid = String(uid).replace(/[^\w-]/g, '');
     var k = q('.t-store__card[data-product-uid="' + uid + '"] a.ish13-buy');
     if (k) return k;
+    var ик = q('.ir-card[data-product-uid="' + uid + '"] .ir-add'); if (ик) return ик;   /* v6: выдача поиска - её собственная кнопка (корзина и GA4 те же) */
     if (ЭТО_КАРТОЧКА) {
       var pu = q('.t-store__prod-popup [data-product-uid], .js-store-product[data-product-uid], [data-product-uid]');
       if (pu && pu.getAttribute('data-product-uid') === uid) return q('.ishpg-add') || q('.t-store__prod-popup__btn');
@@ -147,6 +155,20 @@
     if (!ON_CMP) return;
     var s = выбор(), полно = s.length >= MAX;
     карточки().forEach(function (c) {
+      if (c.classList.contains('ir-card')) {            /* v6: выдача поиска: свой чекбокс .ir-cmp, p25 держит выбор и состояние */
+        var ил = q('.ir-cmp', c), ии = ил && q('input', ил); if (!ии) return;
+        var ид = c.getAttribute('data-product-uid'), вкл = ищи(ид) > -1;
+        if (!ии.__p25) {
+          ии.__p25 = 1;
+          ии.addEventListener('change', function () {
+            var ok = переключить(снять(c), ии.checked);
+            if (!ok) { ии.checked = false; мигнуть('Можно сравнить не больше ' + MAX + ' товаров'); }
+          });
+        }
+        if (ии.checked !== вкл) ии.checked = вкл;
+        ии.disabled = полно && !вкл;
+        return;
+      }
       if (!c.hasAttribute('data-ish13') && !c.classList.contains('вн-т')) return;
       var uid = c.getAttribute('data-product-uid'), л = q(':scope > .ishp25-cmp', c);
       if (!л) {
@@ -363,7 +385,7 @@
   }
   function синхрКорзины() {
     qa('.ishp25-buy[data-buy]').forEach(function (b) {
-      var k = родная(b.getAttribute('data-buy')), в = !!(k && /\bishk-in\b/.test(k.className)), s = q('span', b);
+      var k = родная(b.getAttribute('data-buy')), в = !!(k && (/\bishk-in\b/.test(k.className) || k.getAttribute('data-s') === 'in')), s = q('span', b);
       b.classList.toggle('ishp25-buy_in', в); if (s) s.textContent = в ? 'В корзине' : 'В корзину';
     });
   }
@@ -586,7 +608,7 @@
   function старт() {
     if (!ЭТО_КАРТОЧКА) {
       until(function () {
-        if (!q('.t-store__card[data-ish13], .вн-т[data-product-uid]')) return false;
+        if (!q('.t-store__card[data-ish13], .вн-т[data-product-uid], .ir-card[data-product-uid]')) return false;
         цикл();
         var с = карточки()[0], список = document.getElementById('вн-гр-список') || (с && с.parentNode);
         if (список && W.MutationObserver && !наблюдатель) {

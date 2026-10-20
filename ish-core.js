@@ -636,6 +636,19 @@
     }
 
     // наш артикул IS… лежит первым в колонке партномеров (индекс v2)
+    // 20.10: пары «подпись/значение» для строки карточки в выдаче. P[10] = [номер подписи в idx.L, значение, ...] (до 5, правила строки раздела);
+    // нет P[10] (старый индекс) - запасной путь из P[9] (признаки фильтров): линейка процессора, память, накопитель, ОС, диагональ.
+    var LBL = idx.L || [], SPEC_FB = { 'Линейка процессора': ['Процессор', 1], 'Оперативная память': ['Оперативная память', 2], 'Накопитель': ['Накопитель', 3], 'Операционная система': ['Операционная система', 4], 'Диагональ': ['Диагональ', 5], 'Разрешение': ['Разрешение', 6], 'Частота обновления': ['Частота обновления', 7] };
+    function specsOf(pr) {
+      var a = pr[10], o = [], k;
+      if (a && a.length) { for (k = 0; k + 1 < a.length; k += 2) if (LBL[a[k]]) o.push([LBL[a[k]], String(a[k + 1])]); return o; }
+      a = pr[9];
+      if (!a || !a.length || !A.length) return o;
+      var t = [];
+      for (k = 0; k + 1 < a.length; k += 2) { var at = A[a[k]], f = at && SPEC_FB[at[0]]; if (f) t.push([f[1], f[0], at[1][a[k + 1]]]); }
+      t.sort(function (x, y) { return x[0] - y[0]; });
+      return t.slice(0, 5).map(function (x) { return [x[1], String(x[2])]; });
+    }
     function skuOf(pr) { var m = pr[6] && /^is[0-9a-f]{10}$/.exec(pr[6].split(' ')[0]); return m ? m[0].toUpperCase() : ''; }
     // адрес карточки: /<сегмент раздела>/tproduct/<uid>-<слог>; без сегмента (индекс v1) адреса нет
     function productUrl(dx) {
@@ -834,7 +847,7 @@
         var pr = P[dx], ph = photoUrls(pr[5]);
         return { i: dx, id: uidOf(dx), title: pr[0], html: highlight(pr[0], ctx), brand: pr[1] >= 0 ? B[pr[1]] : '', brandIdx: pr[1],
           cat: C[pr[2]][0], catIdx: pr[2], price: pr[3], qty: pr[4], photo: ph.photo, thumb: ph.thumb, score: Math.round(score[dx] * 100) / 100,
-          sku: skuOf(pr), url: productUrl(dx) };
+          sku: skuOf(pr), url: productUrl(dx), specs: specsOf(pr) };
       });
       if (!M.length) { res.fallback = { categories: topCats(6), words: [] }; }
       else if (res.relaxed) res.fallback = { categories: [], words: [] };

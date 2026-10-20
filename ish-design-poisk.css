@@ -62,45 +62,8 @@ html body .ishps-ask a:hover{background:var(--ps-kh)}
   html body .ishps-ask a{width:100%}
 }
 
-/* ═════════ 2. Страница /katalog (#ish-results, .ir) ═════════ */
-html body .ir{--kb:#2B44C7;--kbh:#2036A8;--kbs:#E7EAFB;--lin:#D5DCF7;--por:#EEF1FD}
-html body .ir-sform input[type=search]{height:50px;border:1px solid var(--ps-line);border-radius:14px;background:#fff;padding:0 18px}
-html body .ir-sform button{height:50px;border-radius:14px;border-color:var(--ps-line)}
-html body .ir-sform button[type=submit]{background:var(--ps-k);border-color:var(--ps-k)}
-/* шапка-карточка как в разделе: индиго, «Поиск: …», счётчик */
-html body .ir-head{position:relative;overflow:hidden;isolation:isolate;margin:6px 0 0;padding:28px 36px;border-radius:28px;background:var(--ps-ind);color:#fff;min-height:132px;box-sizing:border-box}
-html body .ir-head::after{content:"";position:absolute;z-index:-1;right:-60px;top:-70px;width:340px;height:340px;background:radial-gradient(closest-side,rgba(132,116,255,.55),rgba(108,92,231,.18) 60%,transparent)}
-html body .ir-head .ishps-h1{margin:0 0 8px;font:800 clamp(28px,3vw,38px)/1.12 var(--ps-f);letter-spacing:-.02em;color:#fff;overflow-wrap:anywhere}
-html body .ir-head .ishps-h1 span{color:#B4BDFF}
-html body .ir-count{font:600 15px/1.3 var(--ps-f);color:#C9CFE6}
-html body .ir-head.ishps-no .ir-count{display:block}
-html body .ir-note{color:#C9CFE6}html body .ir-note b{color:#fff}html body .ir-note a{color:#B4BDFF}
-html body .ir-chips{margin-top:16px}
-html body .ir-chip{border-radius:14px;border-color:var(--ps-line);min-height:40px}
-html body .ir-chip:hover{border-color:var(--ps-k)}
-html body .ir-chip[aria-pressed=true]{background:var(--ps-k);border-color:var(--ps-k)}
-html body .ir-tools{background:#fff;border:1px solid var(--ps-line);border-radius:18px}
-html body .ir-list{gap:12px}
-html body .ir-card{border:1px solid var(--ps-line);border-radius:20px;padding:14px 18px 14px 14px;box-shadow:0 14px 30px -24px rgba(23,25,35,.5)}
-html body .ir-card:hover{border-color:var(--ps-k)}
-html body .ir-ph{background:var(--ps-img);border-radius:14px}
-html body .ir-ph img{mix-blend-mode:multiply;padding:6px;box-sizing:border-box}
-html body .ir-meta b{color:var(--ps-ink)}
-html body .ir-meta .ishps-br{color:var(--ps-k);font-weight:800;letter-spacing:.1em;text-transform:uppercase;font-size:11.5px;margin-right:6px}
-html body .ir-add,html body .ir-ask{border-radius:12px;border-color:var(--ps-k)}
-html body .ir-add:hover,html body .ir-ask:hover{background:var(--ps-k);color:#fff}
-html body .ir-empty{background:var(--ps-soft2);border:1px solid var(--ps-line);border-radius:20px;padding:26px}
-html body .ir-empty a.ishps-btn,html body .ir-empty .ishps-btn{display:inline-flex;align-items:center;min-height:46px;padding:0 22px;border-radius:12px;background:var(--ps-k);color:#fff;font-weight:700;text-decoration:none}
-html body .ir-sug a{border-radius:12px;border-color:var(--ps-line)}
-html body .ir-more{border-radius:14px;border-color:var(--ps-k)}
-html body .ir-toast{border-radius:16px}
-@media (max-width:640px){
-  html body .ir{padding:12px 12px 40px}
-  html body .ir-head{padding:22px 20px;border-radius:22px;min-height:0}
-  html body .ir-card{grid-template-columns:84px minmax(0,1fr);border-radius:18px}
-  html body .ir-ph{width:84px;height:84px}
-  html body .ir-buy{grid-column:1/-1;flex-direction:row;justify-content:space-between;align-items:center;min-width:0}
-}
+/* ═════════ 2. Страница /katalog (#ish-results, .ir) ═════════
+   20.10: вид выдачи (шапка-плашка, плитки фильтров, карточка как в разделе) несёт сам ish-search.js (блок «страница результатов»), правила .ir-* отсюда убраны, чтобы не спорили с ним. */
 
 /* ═════════ 3. Сравнение (p25) ═════════ */
 html body .ishp25-bar{background:linear-gradient(135deg,#fff,#E7EAFB);border-radius:18px;padding:8px 8px 8px 12px;gap:10px;color:var(--ps-ink);

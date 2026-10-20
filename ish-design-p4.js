@@ -315,17 +315,17 @@
 
   /* ───────── П25: сравнение моделей (К19) и таблица однотипных товаров (К21) (ish-design-p25.js/.css с того же адреса, один раз) ─────────
      Признак: список товаров (.t-store__card[data-ish13]) или карточка товара (/tproduct/). Выключатель: window.ISH_P25_OFF = 1. Кэш: поменять P25V. */
-  var P25V = '9';
+  var P25V = '10';   /* 20.10: p25 v6 - карточки выдачи поиска (.ir-card) в том же сравнении */
   function p25() {
     if (W.ISH_P25_OFF || W.__ishP25 || D.getElementById('ishp-p25-js')) return true;
     var карт = /\/tproduct\//.test(location.pathname);
-    if (!карт && !D.querySelector('.t-store__card[data-ish13], .вн-т[data-product-uid]')) return false;   /* + родительская */
+    if (!карт && !D.querySelector('.t-store__card[data-ish13], .вн-т[data-product-uid], .ir-card[data-product-uid]')) return false;   /* + родительская, + выдача поиска /katalog */
     var src = tag && tag.src; if (!src) return true;
     var s = D.createElement('script'); s.id = 'ishp-p25-js'; s.defer = true;
     s.src = src.replace(/ish-design-p4\.js.*$/, 'ish-design-p25.js?v=' + P25V); D.head.appendChild(s); return true;
   }
   function p25wait() {
-    if (W.ISH_P25_OFF || !(D.querySelector('.t-store, .вн-гр[data-gruppa]') || /\/tproduct\//.test(location.pathname))) return;
+    if (W.ISH_P25_OFF || !(D.querySelector('.t-store, .вн-гр[data-gruppa], #ish-results') ||/\/tproduct\//.test(location.pathname))) return;
     var n = 0; (function step() { var ok = false; try { ok = p25(); } catch (e) {} if (!ok && ++n < 80) setTimeout(step, 250); })();
   }
 
@@ -353,7 +353,7 @@
 
   /* ───────── П35: раздел каталога в палитре главной (ish-design-p35.js/.css с того же адреса, один раз) ─────────
      Признак: страница со списком товаров (.t-store__card-list). Выключатель: window.ISH_P35_OFF = 1 или window.ISH_P4_NO_P35 = 1 (до загрузки p4). Кэш: поменять P35V. */
-  var P35V = '23';
+  var P35V = '24';   /* 20.10: p35.css v3.5 - цены списка на одной вертикали */
   function p35() {
     if (W.ISH_P4_NO_P35 || W.ISH_P35_OFF || W.ISH_P35 || D.getElementById('ishp-p35-js')) return true;
     if (D.getElementById('лента')) return true;
@@ -394,7 +394,7 @@
 
   /* ───────── Поиск и сравнение в стиле главной (ish-design-poisk.css + ish-poisk-decor.js с того же адреса, на всех страницах) ─────────
      Идут ПОСЛЕ ish-search.js, p25.css и мини-корзины: подключаем на событии load (и не раньше). Выключатель: window.ISH_POISK_OFF = 1. Кэш: поменять POISKV. */
-  var POISKV = '1';
+  var POISKV = '2';   /* 20.10: ish-design-poisk.css без правил карточки/колонки выдачи (их несёт ish-search.js), ish-poisk-decor.js без второго баннера «Поиск: …» */
   (function () {
     if (W.ISH_POISK_OFF || D.getElementById('ishp-poisk-js')) return;
     var src = tag && tag.src;

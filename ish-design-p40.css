@@ -237,3 +237,11 @@ html.ishp40-on:root body #allrecords#allrecords .t-store.вн-сетка > .вн
 /* 20.10 v6 (Асхат: «несуразное пятно с границами») - подсветка за колонкой фильтров убрана везде: разделы, группы, /katalog. Плитки остаются */
 html.ishp40-on:root body #allrecords#allrecords .t-store.вн-сетка{background-image:none!important}
 html.ishp40-on:root body #allrecords#allrecords .вн-ф::before{content:none!important;display:none!important}
+
+/* 20.10 v7 (Асхат: между плитками сине-серая полоса - тень 18px заливала зазор). Тень плиток короткая, зазор чистый */
+html.ishp40-on:root body #allrecords#allrecords .t-store__filter .t-store__filter__item:not(.t-store__filter__item_sort-mobile),
+html.ishp40-on:root body #allrecords#allrecords .t-store__filter__options.вн-моб-откр .t-store__filter__item,
+html.ishp40-on:root body #allrecords#allrecords .вн-ф__заг{box-shadow:0 1px 2px rgba(23,25,35,.05)!important}
+html.ishp40-on:root body #allrecords#allrecords .t-store__filter .t-store__filter__item.active:not(.t-store__filter__item_sort-mobile),
+html.ishp40-on:root body #allrecords#allrecords .t-store__filter__options.вн-моб-откр .t-store__filter__item.active{box-shadow:0 2px 8px -2px rgba(43,68,199,.16),inset 0 1px 0 #fff!important}
+html.ishp40-on:root body #allrecords#allrecords .вн-ф__заг[aria-expanded="true"]{box-shadow:none!important}

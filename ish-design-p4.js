@@ -542,6 +542,46 @@
     return true;
   }
   until(footerFix);
+  /* 20.10: подвал на телефоне (<=980) - семь групп каталога (.isoft-foot__cat) сворачиваются в одну строку «Каталог»:
+     слово ведёт на /katalog, стрелка раскрывает группы (как в превью главной, ish-design-p8). Компьютерный подвал (>=981) не трогаем.
+     Охранник: сворачиваем, только если в блоке ровно семь ожидаемых групп; пометка data-ishcat на .isoft-foot__cat, повторный вызов ничего не делает. Tilda-блок не правим. */
+  function footerCatFold() {
+    var cat = D.querySelector('.isoft-foot__cat'), inn = cat && cat.querySelector('.isoft-foot__cat-in');
+    if (!cat || !inn) return false;
+    if (cat.getAttribute('data-ishcat') === '1') return true;
+    var WANT = ['компьютеры', 'мониторы и экраны', 'комплектующие', 'накопители', 'сеть и хранение данных', 'печать и сканирование', 'рабочее место и видеонаблюдение'];
+    var gn = inn.querySelectorAll('.isoft-foot__gname'), got = [];
+    for (var i = 0; i < gn.length; i++) got.push(String(gn[i].textContent || '').replace(/\s+/g, ' ').trim().toLowerCase());
+    if (got.length !== WANT.length) return true;      /* чужая разметка - не трогаем (и не ждём) */
+    for (var k = 0; k < WANT.length; k++) if (got.indexOf(WANT[k]) < 0) return true;
+    if (!D.getElementById('ishp-footcat-css')) {
+      var st = D.createElement('style'); st.id = 'ishp-footcat-css';
+      st.textContent =
+        '.ishp-fcat{display:none}' +
+        '@media (max-width:980px){' +
+        'html body .isoft-foot__cat[data-ishcat] .ishp-fcat{display:flex;align-items:stretch;justify-content:space-between;min-height:48px;margin:0;padding:0 16px;box-sizing:border-box;border-bottom:1px solid rgba(255,255,255,.12)}' +
+        'html body .isoft-foot__cat[data-ishcat] .ishp-fcat a{flex:1 1 auto;display:flex;align-items:center;color:#fff;text-decoration:none;font:600 13px/1.2 TildaSans,Arial,sans-serif;letter-spacing:.7px;text-transform:uppercase}' +
+        'html body .isoft-foot__cat[data-ishcat] .ishp-fcat button{flex:0 0 48px;display:flex;align-items:center;justify-content:flex-end;margin:0;padding:0;background:none;border:0;color:#fff;cursor:pointer}' +
+        'html body .isoft-foot__cat[data-ishcat] .ishp-fcat svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round;transition:transform .2s}' +
+        'html body .isoft-foot__cat[data-ishcat="1"] .isoft-foot__cat-in{display:none}' +
+        'html body .isoft-foot__cat[data-ishcat="1"][data-ishopen="1"] .isoft-foot__cat-in{display:block}' +
+        'html body .isoft-foot__cat[data-ishcat][data-ishopen="1"] .ishp-fcat svg{transform:rotate(180deg)}' +
+        '}';
+      D.head.appendChild(st);
+    }
+    var row = D.createElement('div'); row.className = 'ishp-fcat';
+    row.innerHTML = '<a href="/katalog">Каталог</a><button type="button" aria-expanded="false" aria-label="Показать разделы каталога"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>';
+    var btn = row.querySelector('button');
+    btn.addEventListener('click', function () {
+      var o = cat.getAttribute('data-ishopen') === '1';
+      if (o) cat.removeAttribute('data-ishopen'); else cat.setAttribute('data-ishopen', '1');
+      btn.setAttribute('aria-expanded', o ? 'false' : 'true');
+    });
+    cat.insertBefore(row, inn);
+    cat.setAttribute('data-ishcat', '1');
+    return true;
+  }
+  until(footerCatFold);
   /* 20.10: на 404 (/stranica-ne-naydena) убрана полоса контактов перед подвалом (блок T123 rec4039445703, класс .ish404-contacts) по просьбе владельца. Только CSS, только этот путь. */
   if (/^\/stranica-ne-naydena\/?$/.test(location.pathname) && !D.getElementById('ishp-404-css')) {
     var st404 = D.createElement('style'); st404.id = 'ishp-404-css';

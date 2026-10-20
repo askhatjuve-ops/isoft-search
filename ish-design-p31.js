@@ -186,28 +186,78 @@
     }
   }
 
-  /* 20.10 (Асхат «всё свернуть»): /katalog - текстовая шапка p31 плюс родной магазин Tilda. Список разделов (~70 кнопок) и ряды фильтров (~50 строк) по умолчанию свёрнуты:
-     кнопки «Разделы» и «Фильтры» в одной строке с поиском и порядком; клик раскрывает/сворачивает. Компьютер; на телефоне остаются родные кнопки Tilda. Выключатель: window.ISH_P31_FOLD_OFF = 1 */
+  /* 20.10 (Асхат «всё свернуть»): /katalog - текстовая шапка p31 плюс родной магазин Tilda. Список разделов (~70 кнопок) и ряды фильтров (~50 строк) по умолчанию свёрнуты.
+     Компьютер: одна панель в строку по краям контента - «Разделы», «Фильтры», поиск (тянется), «Порядок», «Список / Плитка» (копия переключателя p6, клик уходит в родной - он скрыт); чип бренда «-» скрыт.
+     Телефон: только портянка разделов -> одна кнопка «Разделы» (фильтры там за родной кнопкой Tilda, не трогаем). Выключатель: window.ISH_P31_FOLD_OFF = 1 */
+  function foldBtn(txt, tgt) {
+    var b = el('button', 'ishp31-fb', '<span>' + txt + '</span><svg viewBox="0 0 12 12" aria-hidden="true"><path d="m2.5 4.5 3.5 3.5 3.5-3.5"/></svg>');
+    b.type = 'button'; b.setAttribute('aria-expanded', 'false');
+    b.addEventListener('click', function () {
+      var on = !tgt.classList.contains('ishp31-open');
+      tgt.classList.toggle('ishp31-open', on); b.classList.toggle('is-on', on); b.setAttribute('aria-expanded', on ? 'true' : 'false');
+    });
+    return b;
+  }
   function foldKat() {
     if (W.ISH_P31_FOLD_OFF) return;
-    var parts = D.querySelector('.t-store__parts-switch-wrapper'), ctl = D.querySelector('.t-store__filter__controls-wrapper');
-    if (!parts || !ctl || ctl.getAttribute('data-p31f')) return;
-    var opts = ctl.querySelector('.t-store__filter__options'), srt = ctl.querySelector('.t-store__filter__search-and-sort');
-    if (!opts || !srt) return;
-    ctl.setAttribute('data-p31f', '1');
-    H.classList.add('ishp31-fold');
-    function btn(txt, tgt) {
-      var b = el('button', 'ishp31-fb', '<span>' + txt + '</span><svg viewBox="0 0 12 12" aria-hidden="true"><path d="m2.5 4.5 3.5 3.5 3.5-3.5"/></svg>');
-      b.type = 'button'; b.setAttribute('aria-expanded', 'false');
-      b.addEventListener('click', function () {
-        var on = !tgt.classList.contains('ishp31-open');
-        tgt.classList.toggle('ishp31-open', on); b.classList.toggle('is-on', on); b.setAttribute('aria-expanded', on ? 'true' : 'false');
-      });
-      return b;
+    var parts = D.querySelector('.t-store__parts-switch-wrapper');
+    if (!parts) return;
+    /* телефон: одна кнопка «Разделы» вместо портянки (CSS показывает её только до 980) */
+    if (!parts.getAttribute('data-p31m') && parts.parentNode) {
+      parts.setAttribute('data-p31m', '1');
+      H.classList.add('ishp31-foldm');
+      var mb = el('div', 'ishp31-mbar');
+      mb.appendChild(foldBtn('Разделы', parts));
+      parts.parentNode.insertBefore(mb, parts);
     }
-    var row = el('div', 'ishp31-fbar');
-    row.appendChild(btn('Разделы', parts)); row.appendChild(btn('Фильтры', opts));
-    ctl.insertBefore(row, ctl.firstChild);
+    var ctl = D.querySelector('.t-store__filter__controls-wrapper');
+    if (!ctl) return;
+    var opts = ctl.querySelector('.t-store__filter__options'), srt = ctl.querySelector('.t-store__filter__search-and-sort');
+    if (opts && srt && !ctl.getAttribute('data-p31f')) {
+      ctl.setAttribute('data-p31f', '1');
+      H.classList.add('ishp31-fold');
+      var row = el('div', 'ishp31-fbar');
+      row.appendChild(foldBtn('Разделы', parts)); row.appendChild(foldBtn('Фильтры', opts));
+      ctl.insertBefore(row, ctl.firstChild);
+    }
+    if (!ctl.getAttribute('data-p31f')) return;
+    /* метки на поиск и порядок внутри родной обёртки: селекторов Tilda на поиск мало, берём по полю ввода и по .t-store__filter__sort */
+    for (var i = 0; i < srt.children.length; i++) {
+      var ch = srt.children[i];
+      if (ch.classList.contains('ishp31-s') || ch.classList.contains('ishp31-o')) continue;
+      if (ch.querySelector('input') || ch.tagName === 'INPUT') ch.classList.add('ishp31-s');
+      else if (ch.classList.contains('t-store__filter__sort') || ch.querySelector('.t-store__filter__sort,.ishp9-sort,select')) ch.classList.add('ishp31-o');
+    }
+    /* «Список / Плитка»: копия в панели; родная полоса p6 остаётся в DOM скрытой, клик копии = клик по родной кнопке */
+    var nat = D.querySelector('.ishd-view');
+    var cl = ctl.querySelector('.ishp31-view');
+    if (nat && !cl) {
+      cl = el('div', 'ishp31-view', '');
+      var seg = nat.querySelector('.ishd-seg');
+      if (seg) {
+        cl.appendChild(seg.cloneNode(true));
+        cl.addEventListener('click', function (e) {
+          var bb = e.target && e.target.closest ? e.target.closest('button[data-v]') : null;
+          if (!bb) return;
+          var o = D.querySelector('.ishd-view button[data-v="' + bb.getAttribute('data-v') + '"]');
+          if (o) o.click();
+        });
+        ctl.appendChild(cl);
+      }
+    }
+    if (cl && nat) {
+      var ob = nat.querySelectorAll('button[data-v]'), cb = cl.querySelectorAll('button[data-v]');
+      for (var j = 0; j < cb.length; j++) for (var k = 0; k < ob.length; k++)
+        if (ob[k].getAttribute('data-v') === cb[j].getAttribute('data-v') && cb[j].getAttribute('aria-pressed') !== ob[k].getAttribute('aria-pressed'))
+          cb[j].setAttribute('aria-pressed', ob[k].getAttribute('aria-pressed'));
+      cl.hidden = !!nat.hidden;
+    }
+    /* пустой бренд: чип «-» в строке брендов */
+    var chips = D.querySelectorAll('.ishp9-bc[data-v]');
+    for (var c = 0; c < chips.length; c++) {
+      var v = (chips[c].getAttribute('data-v') || '').replace(/\s+/g, '');
+      if ((v === '-' || v === '') && !chips[c].classList.contains('ishp31-nochip')) chips[c].classList.add('ishp31-nochip');
+    }
   }
 
   function start() {

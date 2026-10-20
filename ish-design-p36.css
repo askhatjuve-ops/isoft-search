@@ -239,3 +239,8 @@ html.ishp36-on:has(.t-popup_show) .ishk-bar,html.ishp36-on:has(.t-store__prod-sn
 @media (max-width:640px){
   html.ishp36-on #allrecords a.ishpg-close.ishpg-m{width:44px;height:44px;right:8px;top:8px}
 }
+
+/* 20.10 (Асхат «края»): карточка товара на компьютере - панель от края до края шапки сайта (1280 - 20 по центру; Tilda ставила 1440 - 40). Телефон не трогаем */
+@media screen and (min-width:981px){
+  html.ishp36-on #allrecords .t-store__prod-snippet__container{max-width:min(1240px,calc(100% - 40px))!important}
+}

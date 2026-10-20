@@ -81,7 +81,7 @@ html.ishp10-on .ishp10-zoom:focus-visible{outline:3px solid #B9C3F5;outline-offs
 
 /* Т20: липкая панель покупки. Десктоп и товар без цены (на телефоне с ценой работает панель v8p7). Справа оставлено место под плашку корзины (она у края, 16 px) */
 .ishp10-sticky{display:none}
-html.ishp10-on .ishp10-sticky{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:91;align-items:center;justify-content:space-between;gap:16px;box-sizing:border-box;padding:10px 24px 10px max(20px,calc((100% - 1440px)/2 + 20px));padding-right:340px;background:#fff;border-top:1px solid #D5DBF7;box-shadow:0 -8px 24px rgba(23,25,35,.10);font-family:var(--p10-f);transform:translateY(110%);visibility:hidden;transition:transform .2s,visibility 0s .2s}
+html.ishp10-on .ishp10-sticky{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:91;align-items:center;justify-content:space-between;gap:16px;box-sizing:border-box;padding:10px 24px 10px max(20px,calc((100% - 1240px)/2));padding-right:340px;background:#fff;border-top:1px solid #D5DBF7;box-shadow:0 -8px 24px rgba(23,25,35,.10);font-family:var(--p10-f);transform:translateY(110%);visibility:hidden;transition:transform .2s,visibility 0s .2s}
 html.ishp10-on .ishp10-sticky.ishp10-show{transform:none;visibility:visible;transition:transform .2s}
 html.ishp10-on .ishp10-sn{display:flex;align-items:center;gap:20px;min-width:0;flex:1 1 auto}
 html.ishp10-on .ishp10-sname{flex:1 1 auto;min-width:0;font:600 15px/1.3 var(--p10-f);color:var(--p10-ink);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}

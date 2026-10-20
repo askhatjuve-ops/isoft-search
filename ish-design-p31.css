@@ -192,3 +192,9 @@ html.ishp31-nokak #shagi .вн-ряд{display:none!important}
   html.ishp31-nokak body #shagi{margin-top:0!important;flex:1 1 auto}
   html.ishp31-nokak body .вн-тело>.вн-бок{position:static!important;align-self:stretch}
 }
+
+/* 20.10: ВСЕ текстовые страницы p31 (/delivery, /details, /dlya-organizacij, /po-schetu, /s-nds, /policy, /katalog и т.п.): левый и правый края крошек, шапки-плиты и тела = края содержимого шапки сайта (1280 - 20 по центру). Отдельно от скрытия #kak (оно остаётся только на nokak). Телефон не трогаем */
+@media screen and (min-width:981px){
+  html.ishp31-text body .вн-об,html.ishp31-text body .вн-тело{max-width:1280px!important;width:100%;box-sizing:border-box;margin-left:auto!important;margin-right:auto!important;padding-left:20px!important;padding-right:20px!important}
+  html.ishp31-text .ishp31-strip{margin-left:0;margin-right:0}
+}

@@ -137,3 +137,11 @@ html body .ishp22-tip{border-radius:12px;padding:8px 14px}
   html body #влево::after,html body #вправо::after{content:"";position:absolute;left:50%;top:50%;width:44px;height:44px;transform:translate(-50%,-50%)}
   html body button.точка::after{content:"";position:absolute;left:50%;top:50%;width:44px;height:44px;transform:translate(-50%,-50%)}
 }
+
+/* 20.10 (Асхат «края»): /assortiment на компьютере - приложение в iframe держит 18px внутри, поэтому рамка шире на 2x18: содержимое на краях шапки сайта (1280 - 20 по центру). Телефон не трогаем */
+@media screen and (min-width:981px){
+  html body #isoft-catalog-host{max-width:1276px;margin-left:auto;margin-right:auto}
+}
+@media screen and (min-width:981px){
+  html:has(#isoft-catalog-host) body,html:has(#isoft-catalog-host) #allrecords{background:#F5F3EE!important}
+}

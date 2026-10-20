@@ -18,9 +18,11 @@ html.ishp19-on{--p19-k:#2B44C7;--p19-ink:#171923;--p19-mut:#565D70;--p19-line:#D
 .ishp19-prn{font-weight:400}
 
 /* Т26: сноска под сеткой */
-.ishp19-note{max-width:min(1400px,calc(100% - 40px));margin:12px auto 0;box-sizing:border-box;
+.ishp19-note{max-width:min(1240px,calc(100% - 40px));margin:12px auto 0;box-sizing:border-box;
   font:400 13px/1.45 var(--p19-f,TildaSans,Arial,sans-serif);color:var(--p19-mut,#565D70)}
 @media screen and (max-width:700px){.ishp19-note{padding:0 16px;max-width:100%}}
+/* 20.10 (Асхат «края»): сетка товаров и сноска на компьютере на краях шапки сайта (1240 по центру; Tilda ставила 1400 - 80) */
+@media screen and (min-width:981px){html body #allrecords .js-store-grid-cont,html body #allrecords .js-store-parts-select-container{max-width:min(1240px,calc(100% - 40px))!important;margin-left:auto!important;margin-right:auto!important}}
 
 /* Фр3: значок ошибки там, где не подключён css П10 (главная и др.); на /spec и /podbor его даёт П10 */
 html.ishp19-on:not(.ishp10-on) .t-input-error:not(:empty){display:flex;align-items:flex-start;gap:6px;margin-top:6px;color:var(--p19-err)!important;font:500 13px/1.35 var(--p19-f)}

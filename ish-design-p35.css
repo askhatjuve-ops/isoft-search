@@ -593,3 +593,9 @@ html.ishp35-on .ishp35-rb{display:none}
 
 /* 19.10.2026 (Асхат «шире»): на телефоне шапка раздела/группы по ширине кнопки «Фильтры» - контейнер .вн-а__об даёт ~40px сбоку, список ~20px */
 @media screen and (max-width:760px){html.ishp35-on .вн-а__об>.ishp35-hero{margin-left:-20px;margin-right:-20px}}
+
+/* 20.10 (Асхат «края»): раздел и группа на компьютере - крошки, шапка, список, «О разделе» и низ на тех же краях, что содержимое шапки сайта (.нш-wrap: 1280 - 20 по центру; было 1440 - 40 + 40). Телефон не трогаем */
+@media screen and (min-width:981px){
+  html.ishp35-on .ishp35-wrap,html.ishp35-on .вн-а__об,html.ishp35-on .вн-гр,html.ishp35-on .вн-текст{max-width:min(1280px,100%)!important;padding-left:20px!important;padding-right:20px!important;margin-left:auto!important;margin-right:auto!important;box-sizing:border-box}
+  html.ishp35-on .js-store-grid-cont,html.ishp35-on .js-store-parts-select-container{max-width:min(1240px,calc(100% - 40px))!important;margin-left:auto!important;margin-right:auto!important}
+}

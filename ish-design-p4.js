@@ -210,7 +210,7 @@
   /* ───────── П19: формы и корзина (ish-design-p19.js с того же адреса, один раз) ─────────
      Грузим там, где есть форма Tilda, корзина /spec или сетка товаров: сам p19 в пустой странице ничего не делает.
      Выключатель: window.ISH_P19_OFF = 1 (до загрузки p4). Кэш: поменять P19V. */
-  var P19V = '4';
+  var P19V = '5';
   function p19() {
     if (W.ISH_P19_OFF || W.ISH_P19 || D.getElementById('ishp-p19-js')) return true;
     if (!(D.querySelector('.t-form') || D.getElementById('specRoot') || D.querySelector('.js-store-grid-cont'))) return false;
@@ -331,7 +331,7 @@
   /* ───────── П31: внутренние страницы в духе главной C2 (ish-design-p31.js/.css с того же адреса, один раз) ─────────
      Признак: только текстовая страница (.вн-верх/.вн-тело); список и карточка не затрагиваются. На главной (#лента) не грузим - там П8.
      Выключатель: window.ISH_P31_OFF = 1 или window.ISH_P4_NO_P31 = 1 (до загрузки p4). Кэш: поменять P31V. */
-  var P31V = '13';
+  var P31V = '14';
   function p31() {
     if (W.ISH_P4_NO_P31 || W.ISH_P31_OFF || W.ISH_P31 || D.getElementById('ishp-p31-js')) return true;
     if (D.getElementById('лента')) return true;
@@ -352,7 +352,7 @@
 
   /* ───────── П35: раздел каталога в палитре главной (ish-design-p35.js/.css с того же адреса, один раз) ─────────
      Признак: страница со списком товаров (.t-store__card-list). Выключатель: window.ISH_P35_OFF = 1 или window.ISH_P4_NO_P35 = 1 (до загрузки p4). Кэш: поменять P35V. */
-  var P35V = '19';
+  var P35V = '20';
   function p35() {
     if (W.ISH_P4_NO_P35 || W.ISH_P35_OFF || W.ISH_P35 || D.getElementById('ishp-p35-js')) return true;
     if (D.getElementById('лента')) return true;
@@ -373,7 +373,7 @@
 
   /* ───────── П36: карточка товара в духе главной C2 (ish-design-p36.js/.css с того же адреса, один раз) ─────────
      Признак: блок покупки карточки (.ishpg-row, его строят p9/p10, поэтому ждём). Выключатель: window.ISH_P36_OFF = 1 или window.ISH_P4_NO_P36 = 1 (до загрузки p4). Кэш: поменять P36V. */
-  var P36V = '8';
+  var P36V = '9';
   function p36() {
     if (W.ISH_P4_NO_P36 || W.ISH_P36_OFF || W.ISH_P36 || D.getElementById('ishp-p36-js')) return true;
     if (!D.querySelector('.ishpg-row')) return false;
@@ -423,7 +423,7 @@
 
   /* ───────── П37: хвосты в стиле главной - мега-меню, мобильное меню, мессенджеры, шторка фильтров, /assortiment (ish-design-p37.js/.css/p37a.css с того же адреса, на всех страницах) ─────────
      Выключатель: window.ISH_P37_OFF = 1 или window.ISH_P4_NO_P37 = 1 (до загрузки p4). Кэш: поменять P37V. */
-  var P37V = '11';
+  var P37V = '12';
   (function () {
     if (W.ISH_P4_NO_P37 || W.ISH_P37_OFF || W.__ishP37 || D.getElementById('ishp-p37-js')) return;
     var src = tag && tag.src;
@@ -485,7 +485,7 @@
   })();
 
   /* ───────── П10: карточка товара (/tproduct/), а на /spec и /podbor - только css и выбор «КП» ───────── */
-  var P10V = '13';
+  var P10V = '14';
   function p10() {
     if (W.ISH_P10_OFF || D.getElementById('ishp-p10-js')) return;
     var p = location.pathname;

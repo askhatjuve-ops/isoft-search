@@ -159,7 +159,7 @@
     'принтер': ['мфу'], 'мфу': ['принтер'],
     'уши': ['наушник'], 'гарнитура': ['наушник'], 'проц': ['процессор', 'cpu'], 'цп': ['процессор', 'cpu'], 'cpu': ['процессор'],
     'материнка': ['материнск'], 'мамка': ['материнск'], 'мать': ['материнск'], 'кейс': ['корпус'], 'вайфай': ['wifi', 'wi'],
-    'нвме': ['nvme', 'm2'], 'usbc': ['typec'], 'typec': ['usbc'], 'интернет': []
+    'патч-корд': ['патч*', 'корд*'], 'патч-корды': ['патч*', 'корд*'], 'патч-панель': ['патч*', 'панел*'], 'скс': ['utp', 'ftp', 'патч*', 'rj45', 'keystone', 'витая*'], 'sks': ['utp', 'ftp', 'патч*', 'rj45', 'keystone'], 'витая': ['utp', 'ftp'], 'пара': ['utp', 'ftp'], 'патчкорд': ['патч*', 'корд*'], 'патч': ['патч*'], 'нвме': ['nvme', 'm2'], 'usbc': ['typec'], 'typec': ['usbc'], 'интернет': []
   };
   var STOP = {};
   ('для и в на с по от к у из the a for купить цена цены цену недорого дешево магазин алматы астана казахстан интернет заказать оптом kz or of').split(' ')
@@ -1000,6 +1000,10 @@
    *   off  — слой не включается (мгновенный откат);  flag — только у тех, кто открыл сайт с ?ishsearch=1 (запоминается в браузере);  all — у всех */
   var VER = '97eb9b34', MODE = 'all';
   var SECTIONS = [["Мини-ПК","/mini-pk-i-rabochie-stancii",14],["Моноблоки","/monobloki",51],["Ноутбуки","/noutbuki",287],["Системные блоки","/sistemnye-bloki",34],["Кронштейны для мониторов и ТВ","/kronshteyny-i-krepleniya",29],["Мониторы","/monitory",376],["Проекторы","/proektory-i-paneli",24],["Телевизоры","/televizory",48],["Блоки питания","/bloki-pitaniya",267],["Видеокарты","/videokarty",78],["Корпуса","/korpusa-i-bloki-pitaniya",283],["Материнские платы","/materinskie-platy",231],["Оперативная память","/operativnaya-pamyat",128],["Охлаждение","/ohlazhdenie",296],["Процессоры","/processory",101],["SSD-накопители","/ssd-nakopiteli",155],["USB-флешки","/fleshki-i-karty-pamyati",62],["Жёсткие диски","/zhestkie-diski",70],["Карты памяти","/karty-pamyati",45],["ИБП","/ibp-i-zashchita-pitaniya",276],["Серверы","/servery",6],["Системы хранения","/servery-i-shd",33],["Шкафы и стойки","/shkafy-i-stoyki",23],["IP-телефоны","/konferenc-svyaz",25],["Маршрутизаторы (роутеры)","/marshrutizatory",223],["Межсетевые экраны","/mezhsetevye-ekrany",10],["Сетевое оборудование","/setevoe-oborudovanie",490],["Сетевые карты и адаптеры","/setevye-karty",71],["Точки доступа Wi-Fi","/tochki-dostupa",157],["МФУ лазерные цветные","/mfu-lazernye-cvetnye",27],["МФУ струйные цветные","/mfu-struynye-cvetnye",18],["Плоттеры","/plottery",11],["Принтеры и МФУ","/printery-i-mfu",43],["Принтеры лазерные цветные","/printery-lazernye-cvetnye",12],["Принтеры лазерные ч/б","/printery-lazernye-chb",14],["Сканеры документов","/skanery-dokumentov",23],["Гарнитуры для конференц-связи","/garnitury",18],["Клавиатуры","/klaviatury",232],["Мыши","/klaviatury-i-myshi",500],["Наушники","/naushniki",70],["Видеорегистраторы","/videoregistratory",97],["Домофоны","/domofony",49],["Камеры видеонаблюдения","/videonablyudenie",229],["СКУД и турникеты","/skud-i-turnikety",77],["Принтеры этикеток","/printery-etiketok",12],["Сканеры штрихкода","/skanery-shtrihkoda",15],["Терминалы сбора данных","/terminaly-sbora-dannyh",7]];   // [[имя, адрес, число товаров], …] из индекса: разделы показываются сразу, пока грузится индекс товаров
+  /* СКС (20.10, НЕ включено): адреса новых разделов прячутся из подсказок, пока window.ISH_SKS_ON не включён (задаёт ish-design-p4.js, константа СКС_ВКЛ); при включении узел «Кабельные системы (СКС)» встаёт в быстрый список с суммой товаров семёрки */
+  var СКС_АДРЕСА = { '/kabelnye-sistemy-sks': 1, '/kabel-vitaya-para': 1, '/rozetki-i-moduli': 1, '/patch-paneli': 1, '/patch-kordy': 1, '/kabel-kanaly-i-koroba': 1, '/konnektory-i-instrument': 1 };
+  function sksOk(c) { return !СКС_АДРЕСА[c.url] || !!window.ISH_SKS_ON; }
+  function sksList(L) { var on = !!window.ISH_SKS_ON, out = [], sum = 0; L.forEach(function (c) { if (СКС_АДРЕСА[c[1]]) { if (!on) return; sum += c[2] | 0; } out.push(c); }); if (on && sum > 0) out.push(['Кабельные системы (СКС)', '/kabelnye-sistemy-sks', sum]); return out; }
   var SRC = (document.currentScript && document.currentScript.src) || '';
   var BASE = SRC.replace(/[^\/]*(\?.*)?$/, '');
   var RAW_PARAM = 'ish_raw=1';    // «искать как ввели»: выдача без исправлений и без разбора цены
@@ -1198,7 +1202,7 @@
     }
 
     function quick(q) {   // индекс ещё грузится: разделы из встроенного списка, строка про загрузку, ссылка «искать в каталоге»
-      var cs = []; try { cs = root.ishQuickCats ? root.ishQuickCats(SECTIONS, q, 3) : []; } catch (e) {}
+      var cs = []; try { cs = root.ishQuickCats ? root.ishQuickCats(sksList(SECTIONS), q, 3) : []; } catch (e) {}
       var h = '';
       if (cs.length) {
         h += '<div class="нш-гр">Разделы</div>';
@@ -1235,7 +1239,7 @@
         pop.forEach(function (q) { h += '<a href="' + esc(allUrl(q)) + '" data-q="' + esc(q) + '">' + esc(q) + '</a>'; });
         h += '</div>';
       }
-      var r0 = S.query('', { limit: 0 }), cs = (r0.categories || []).filter(function (c) { return c.url; }).slice(0, 6);
+      var r0 = S.query('', { limit: 0 }), cs = (r0.categories || []).filter(function (c) { return c.url && sksOk(c); }).slice(0, 6);
       if (cs.length) {
         h += '<div class="нш-гр">Разделы</div>';
         cs.forEach(function (c) { h += '<a class="нш-подсказка нш-раздел" href="' + esc(c.url) + '"><b>' + esc(c.name) + '</b><span>' + c.n + '</span></a>'; });
@@ -1260,7 +1264,7 @@
         h += '<div class="нш-гр">Запросы</div>';
         comp.forEach(function (c) { h += '<a class="нш-подсказка нш-запрос" href="' + esc(allUrl(c.q)) + '" data-q="' + esc(c.q) + '"><b>' + c.html + '</b></a>'; });
       }
-      var cats = (r.categories || []).filter(function (c) { return c.url && c.n > 0 && c.hit; }).slice(0, 3);   // только разделы, чьё название совпало со словами запроса
+      var cats = (r.categories || []).filter(function (c) { return c.url && c.n > 0 && c.hit && sksOk(c); }).slice(0, 3);   // только разделы, чьё название совпало со словами запроса
       if (cats.length) {
         h += '<div class="нш-гр">Разделы</div>';
         cats.forEach(function (c) {
@@ -1959,7 +1963,7 @@
     if (st.raw) h += '<p><a href="' + esc(katalogUrl(st.q, false)) + '">Искать с исправлением опечаток и раскладки</a></p>';
     var w = (r.fallback && r.fallback.words) || [];
     if (w.length) { h += '<p>Возможно, вы искали:</p><div class="ir-sug">' + w.map(function (x) { return '<a href="' + esc(katalogUrl(x)) + '">' + esc(x) + '</a>'; }).join('') + '</div>'; }
-    var cs = ((r.fallback && r.fallback.categories) || []).filter(function (c) { return c.url; }).slice(0, 6);
+    var cs = ((r.fallback && r.fallback.categories) || []).filter(function (c) { return c.url && (window.ISH_SKS_ON || !/^\/(kabelnye-sistemy-sks|kabel-vitaya-para|rozetki-i-moduli|patch-paneli|patch-kordy|kabel-kanaly-i-koroba|konnektory-i-instrument)$/.test(c.url)); }).slice(0, 6);
     if (cs.length) { h += '<p>Разделы каталога:</p><div class="ir-sug">' + cs.map(function (c) { return '<a href="' + esc(c.url) + '">' + esc(c.name) + '</a>'; }).join('') + '</div>'; }
     h += '<p>Не нашли нужное? Пришлите список — подберём. <a href="/podbor">Оставить запрос на подбор</a></p></div>';
     $('#ir-empty').innerHTML = h;

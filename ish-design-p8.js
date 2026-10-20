@@ -141,7 +141,7 @@
           '<span class="ishp8-ix">' + ('0' + (i + 1)).slice(-2) + '</span>' +
           '<span class="ishp8-stage"><span class="ishp8-pod"></span><svg class="ishp8-fb" viewBox="0 0 18 18" aria-hidden="true">' + ЗНАЧКИ[р[3]] + '</svg>' +
           '<img src="' + T + р[4] + '" alt="" loading="lazy" decoding="async">' + (р[1] === '/torgovoe-oborudovanie' ? ЛАЗЕР : '') + '</span>' +
-          '<span class="ishp8-tt"><b>' + р[0] + '</b><span>' + р[2] + '</span></span>' + ряд_брендов(р[1]),
+          '<span class="ishp8-tt"><b>' + р[0] + '</b><span>' + (р[1] === '/set-i-servery' && W.ISH_SKS_ON ? 'Роутеры · Wi-Fi · Кабельные системы (СКС)' : р[2]) + '</span></span>' + ряд_брендов(р[1]),
           9, 'a', 'ishp8-tile', р[1]);
       }).join('') + '</div>';
   }

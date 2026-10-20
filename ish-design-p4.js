@@ -426,7 +426,7 @@
 
   /* ───────── П37: хвосты в стиле главной - мега-меню, мобильное меню, мессенджеры, шторка фильтров, /assortiment (ish-design-p37.js/.css/p37a.css с того же адреса, на всех страницах) ─────────
      Выключатель: window.ISH_P37_OFF = 1 или window.ISH_P4_NO_P37 = 1 (до загрузки p4). Кэш: поменять P37V. */
-  var P37V = '15';   /* 20.10: + ISH_КАРТА: 6 разделов СКС на клиенте (за ISH_SKS_ON) */
+  var P37V = '16';   /* 20.10: + ISH_КАРТА: 6 разделов СКС на клиенте (за ISH_SKS_ON); p37a v2.1: /assortiment на телефоне */
   (function () {
     if (W.ISH_P4_NO_P37 || W.ISH_P37_OFF || W.__ishP37 || D.getElementById('ishp-p37-js')) return;
     var src = tag && tag.src;

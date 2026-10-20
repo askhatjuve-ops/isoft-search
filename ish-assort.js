@@ -304,6 +304,8 @@
     var input = D.getElementById('search'), panel = D.querySelector('.search-panel'), row = D.querySelector('.filter-row');
     var sort = D.getElementById('sort'), stat = D.getElementById('statusFilter');
     input.setAttribute('placeholder', 'Название, бренд или артикул — например, ноутбук asus, 9T5B2AA, ssd 512');
+    var narrow = false; try { narrow = W.matchMedia('(max-width:680px)').matches; } catch (e) {}
+    if (narrow) input.setAttribute('placeholder', 'Название, бренд, артикул');      // на телефоне длинная подсказка обрезалась
     input.setAttribute('autocomplete', 'off'); input.setAttribute('role', 'combobox'); input.setAttribute('aria-autocomplete', 'list'); input.setAttribute('aria-expanded', 'false'); input.setAttribute('aria-controls', 'ia-dd');
     me.origUI = { sort: sort.innerHTML, stat: stat.innerHTML, ph: input.getAttribute('placeholder') || '' };
     stat.innerHTML = '<option value="">Любое наличие</option><option value="site">В продаже на сайте</option><option value="order">Только под заказ</option>';
@@ -311,7 +313,7 @@
     sort.insertAdjacentHTML('afterbegin', '<option value="rel">По релевантности</option>');
     sort.value = 'rel'; st.sort = 'rel'; st.pageSize = STEP;
     var price = D.createElement('span'); price.className = 'ia-price'; price.id = 'ia-price';
-    price.innerHTML = '<span class="ia-lbl">Цена, ₸</span><input id="ia-p1" type="number" min="0" inputmode="numeric" placeholder="Цена от, ₸" aria-label="Цена от"><input id="ia-p2" type="number" min="0" inputmode="numeric" placeholder="до, ₸" aria-label="Цена до">';
+    price.innerHTML = '<span class="ia-lbl">Цена, ₸</span><input id="ia-p1" type="number" min="0" inputmode="numeric" placeholder="Цена от, ₸" aria-label="Цена от"><input id="ia-p2" type="number" min="0" inputmode="numeric" placeholder="' + (narrow ? 'Цена до, ₸' : 'до, ₸') + '" aria-label="Цена до">';
     row.insertBefore(price, sort);
     var reset = D.createElement('button'); reset.type = 'button'; reset.className = 'ia-reset'; reset.id = 'ia-reset'; reset.hidden = true; reset.textContent = 'Сбросить всё';
     row.insertBefore(reset, row.querySelector('#downloadCatalogXlsx') || null);

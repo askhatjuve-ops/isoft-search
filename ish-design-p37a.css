@@ -1,4 +1,4 @@
-/* ish-design-p37a.css  v2.0  (кандидат 17.10.2026, волна 3; НЕ выложено)  Оформление /assortiment внутри iframe#isoft-catalog-frame: компоненты раздела П35 и главной C2, без своих цветов.
+/* ish-design-p37a.css  v2.1  (кандидат 17.10.2026, волна 3; НЕ выложено)  Оформление /assortiment внутри iframe#isoft-catalog-frame: компоненты раздела П35 и главной C2, без своих цветов.
    Шапка-карточка = шапка раздела (индиго #2B2F6B→#15173A, 28); строка поиска = как в шапке сайта; категории = белые плитки «Разделы каталога» с фото, подпись по центру.
    Подключается из ish-design-p37.js (ссылка в head документа iframe). Приложение (Tilda T123 4776961803) и ish-assort.js не меняются. Откат: пустой файл.
    Только вид: id, data-атрибуты и классы приложения не трогаются; поиск, «Мой запрос», «В запрос», «Показать ещё» работают как раньше. */
@@ -58,3 +58,98 @@ html body .category[data-group="Сеть и серверы"]::before{background-
 html body .category[data-group="Печать и сканирование"]::before{background-image:url(https://static.tildacdn.com/tild3234-6165-4262-b837-666635633064/298696424884.jpg)}
 html body .category[data-group="Рабочее место и видеонаблюдение"]::before{background-image:url(https://static.tildacdn.com/stor3166-6566-4338-b031-313337613233/2fec9b0bf204f7fb214c097139a06de0.jpg)}
 html body .category[data-group="Электропитание"]::before{background-image:url(https://static.tildacdn.com/tild6365-3034-4766-b337-343265306465/827211892244.jpg)}
+
+/* v2.1 (20.10.2026): телефон. Полный проход по /assortiment на 390 и 360: шапка, плитки полосой с «отщипом», поиск и фильтры сеткой 50/50, поля 44 px
+   и 16 px шрифта (iOS не приближает экран при вводе), Excel - вторичная кнопка, строка товара без «огрызков» рамки, «Показать ещё» во всю ширину,
+   подкатегории чипами в той же полосе, пустой результат, нижний отступ под меню и кнопки мессенджеров. Только @media(max-width:680px): десктоп не затронут. */
+@media(max-width:680px){
+  html body{padding-bottom:184px}
+  html body main{width:calc(100% - 32px);padding-top:6px}
+  /* шапка: заголовок и «Мой запрос» в одну строку, ссылка на список ниже */
+  html body .header{width:calc(100% - 32px);margin:8px auto 12px;padding:18px 16px 16px;border-radius:24px;gap:10px 8px;align-items:flex-start}
+  html body .brand{flex:1 1 0;min-width:0;max-width:none;font-size:24px;line-height:1.1;gap:6px}
+  html body .brand::before{font-size:11px;letter-spacing:.12em;font-weight:500}
+  html body .header-button{margin-left:auto;flex:none;min-height:44px;padding:0 14px;font-size:14px;font-weight:500;white-space:nowrap}
+  html body .header .direct-list-link{order:3;min-height:44px;padding:8px 16px;font:500 14px/1.25 TildaSans,Manrope,Arial,sans-serif;border-radius:12px;text-align:center}
+  /* плитки разделов: узкая полоса, видна следующая плитка, без полосы прокрутки */
+  html body .categories{margin:0 -16px;padding:2px 16px 10px;gap:10px;scroll-snap-type:x proximity;scroll-padding:0 16px;-webkit-overflow-scrolling:touch;scrollbar-width:none;-ms-overflow-style:none}
+  html body .categories::-webkit-scrollbar{display:none}
+  html body .categories::after{content:"";flex:0 0 6px}
+  html body .categories>.category,html body .category-group>.category{width:124px;height:104px;padding:6px 8px 10px;border-radius:18px;scroll-snap-align:start}
+  html body .category .cat-name{font:600 13px/1.2 TildaSans,Manrope,Arial,sans-serif}
+  html body .category b{font:300 12px/1.2 TildaSans,Manrope,Arial,sans-serif;font-variant-numeric:tabular-nums}
+  html body .category[data-category="Все товары"]::before{font-size:18px}
+  html body .category:hover{transform:none}
+  /* подкатегории выбранной группы: чипы в той же полосе, сразу после плитки группы */
+  html body .category-group{display:contents}
+  html body .subcategory-list{display:contents}
+  html body .subcategory{flex:0 0 auto;width:auto;min-height:44px;align-self:center;padding:0 14px;border:1px solid var(--line);border-radius:999px;background:#fff;color:#171923;font:400 13px/1.2 TildaSans,Manrope,Arial,sans-serif;white-space:nowrap;gap:6px}
+  html body .subcategory b{font:300 12px/1 TildaSans,Manrope,Arial,sans-serif;color:#5A5F70}
+  html body .subcategory.active{background:var(--soft);border-color:var(--k);color:var(--k)}
+  /* поиск */
+  html body .search-panel .main-search{min-height:48px;height:48px;padding:0 14px 0 44px;gap:0;font-size:0;border-width:1px;box-shadow:none;position:relative;
+    background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%232B44C7' stroke-width='1.8' stroke-linecap='round'%3E%3Ccircle cx='11' cy='11' r='6.5'/%3E%3Cpath d='M16 16l4.5 4.5'/%3E%3C/svg%3E") no-repeat 14px center}
+  html body .main-search input{font:400 16px/1.2 TildaSans,Manrope,Arial,sans-serif}
+  html body .main-search input::placeholder{color:#7A7F90;font-weight:300}
+  /* фильтры: бренд и наличие 50/50, цена от/до 50/50, сортировка и «Сбросить» ниже, Excel - вторичная кнопка */
+  html body .search-panel .filter-row{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px;align-items:stretch}
+  html body .search-panel .filter-row select{width:100%;min-width:0;flex:none;min-height:44px;height:44px;padding:0 24px 0 10px;font:400 16px/1.2 TildaSans,Manrope,Arial,sans-serif;border-radius:12px;text-overflow:ellipsis}
+  html body .search-panel .filter-row .ia-price{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;gap:8px;width:auto}
+  html body .ia-price .ia-lbl{display:none}
+  html body .ia-price input{width:100%;min-width:0;min-height:44px;height:44px;padding:0 12px;border-radius:12px;font:400 16px/1.2 TildaSans,Manrope,Arial,sans-serif}
+  html body .ia-price input::placeholder{color:#7A7F90;font-weight:300}
+  html body .search-panel #sort{grid-column:1/-1}
+  html body .search-panel .ia-reset{grid-column:1/-1;justify-self:end;min-height:36px;padding:0 4px;font:400 14px/1 TildaSans,Manrope,Arial,sans-serif}
+  html body .search-panel #downloadCatalogXlsx{grid-column:1/-1;justify-self:start;flex:none;width:auto;min-height:44px;margin:2px 0 0;padding:0 16px;border:1px solid var(--line);border-radius:12px;background:#fff;color:var(--k);font:500 14px/1 TildaSans,Manrope,Arial,sans-serif}
+  html body .search-panel #downloadCatalogXlsx:hover{background:var(--soft);color:var(--k);filter:none}
+  /* подсказки под строкой поиска */
+  html body .ia-dd{left:0;right:0;top:54px;max-height:min(56vh,420px);border-radius:14px}
+  html body .ia-i{min-height:44px;padding:8px 12px;font-size:14px}
+  /* заголовок результатов */
+  html body .results-meta{padding:14px 2px 8px;font:300 13px/1.2 TildaSans,Manrope,Arial,sans-serif}
+  html body .results-meta strong{font-weight:600;font-size:15px}
+  /* строка товара: сетка, без «огрызков» рамки от десктопной таблицы */
+  html body .table-box td:first-child,html body .table-box td:last-child{border:0;border-radius:0;padding:0}
+  html body .table-box tbody tr{grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"b p" "n n" "s s" "q a" "o o";gap:6px 10px;padding:14px;margin-bottom:10px;border:1px solid var(--line);border-radius:18px;box-shadow:var(--sh)}
+  html body .table-box td{min-width:0}
+  html body .table-box td:nth-child(1){grid-area:b;align-self:center}
+  html body .table-box td:nth-child(2){grid-area:n}
+  html body .table-box td:nth-child(3){grid-area:s}
+  html body .table-box td:nth-child(4){grid-area:p;align-self:center;text-align:right}
+  html body .table-box td:nth-child(5){grid-area:q;margin-top:4px}
+  html body .table-box td:nth-child(6),html body .table-box .row-actions{display:contents}
+  html body .brand-name{font-size:11px;font-weight:600;letter-spacing:.08em}
+  html body .product-name{font:500 15px/1.3 TildaSans,Manrope,Arial,sans-serif}
+  html body .sku{font:300 12px/1.2 TildaSans,Manrope,Arial,sans-serif;margin-top:3px}
+  html body .price{font:600 16px/1.2 TildaSans,Manrope,Arial,sans-serif}
+  html body .status{padding:4px 10px;font-size:11px;font-weight:400}
+  html body .qty{grid-template-columns:44px 40px 44px;height:44px;border-radius:12px}
+  html body .qty button{font-size:20px;font-weight:300}
+  html body .qty output{font-size:15px}
+  html body .table-box .add-button{grid-area:a;min-height:44px;margin-top:4px;padding:0 12px;border-radius:12px;font:500 14px/1 TildaSans,Manrope,Arial,sans-serif}
+  html body .table-box .open-button{grid-area:o;justify-self:start;min-height:40px;margin:-4px 0 -6px;padding:0 2px;border:0;background:none;color:var(--k);font:400 14px/1 TildaSans,Manrope,Arial,sans-serif}
+  html body .table-box .open-button::after{content:"\00a0→"}
+  /* пустой результат */
+  html body .empty{padding:28px 4px 20px;font:300 14px/1.45 TildaSans,Manrope,Arial,sans-serif}
+  html body .empty strong{font:600 17px/1.3 TildaSans,Manrope,Arial,sans-serif;margin-bottom:8px}
+  html body .empty a{color:var(--k)}
+  html body .ia-sug{gap:8px;margin-top:14px}
+  html body .ia-sug button{min-height:40px;padding:0 14px;font:400 14px/1.2 TildaSans,Manrope,Arial,sans-serif}
+  /* «Показать ещё» и счётчик */
+  html body .pagination{gap:10px;padding:6px 2px;align-items:stretch}
+  html body #pageMeta{text-align:center;font-weight:300;font-size:13px}
+  html body .pages{width:100%;justify-content:center;flex-wrap:wrap}
+  html body .pages button{width:44px;height:44px;border-radius:12px;font-size:15px}
+  html body .pages button.ia-more{width:100%;max-width:none;height:48px;padding:0;margin:0;border:1px solid var(--k);border-radius:12px;background:#fff;color:var(--k);font:500 15px/1 TildaSans,Manrope,Arial,sans-serif}
+  /* панель «Выбрано», примечание */
+  html body .request-bar{padding:12px 14px;gap:10px}
+  html body .request-summary{font:300 14px/1.2 TildaSans,Manrope,Arial,sans-serif}
+  html body .request-summary strong{font-weight:600;font-size:17px}
+  html body .primary-button{min-height:48px}
+  html body .fineprint{font:300 12px/1.4 TildaSans,Manrope,Arial,sans-serif;margin:10px 2px 0}
+}
+@media(max-width:360px){
+  html body .brand{font-size:21px}
+  html body .header-button{padding:0 10px}
+  html body .categories>.category,html body .category-group>.category{width:116px}
+}

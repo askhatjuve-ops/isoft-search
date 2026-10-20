@@ -774,3 +774,44 @@ html body #карусель .слайд-текст p{min-height:calc(2 * 1.45em)
   html body #карусель .слайд-текст h2{min-height:calc(3 * 1.15em)}
   html body #карусель .слайд-текст p{font-size:15px;line-height:1.45;min-height:calc(3 * 1.45em);margin-bottom:18px}
 }
+
+/* ───── 20.10 (Асхат: «перегруз кнопками») связка: кнопки-плашки -> одна текстовая строка-ссылка со стрелкой внизу, карточка целиком кликабельна (растянутая ссылка ::before), «Расширенный ассортимент» из блока убрана (v2.7) ───── */
+html body #ishp8-duo{--p8-arr:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M2 8h12M9 3l5 5-5 5'/%3E%3C/svg%3E")}
+html.ishp8-on #ishp8-duo #запросБлок.запрос-блок{position:relative}
+html body #ishp8-duo .ishp23-cta .ishp23-cta__in{justify-content:space-between;gap:14px}
+/* левая: белая строка-ссылка */
+html body #ishp8-duo .ishp23-cta .ishp23-cta__b,html body #ishp8-duo .ishp23-cta .ishp23-cta__b:hover{position:static;z-index:auto;display:inline-flex;align-items:center;width:auto;min-height:44px;padding:0;border:0;border-radius:0;background:none;box-shadow:none;transform:none;color:#fff;font:700 15px/1.2 var(--p8-f);text-align:left}
+html body #ishp8-duo .ishp23-cta .ishp23-cta__b::before{content:"";position:absolute;inset:0;z-index:2;border-radius:inherit}
+html body #ishp8-duo .ishp23-cta .ishp23-cta__in{cursor:pointer}
+html body #ishp8-duo .ishp23-cta .ishp23-cta__b:hover::after{transform:translateX(3px)}
+html body #ishp8-duo .ishp23-cta .ishp23-cta__b::after{transition:transform .2s}
+html body #ishp8-duo .ishp23-cta .ishp23-cta__b:focus-visible{outline:0}
+html body #ishp8-duo .ishp23-cta .ishp23-cta__b:focus-visible::before{outline:2px solid #fff;outline-offset:-4px;border-radius:28px}
+/* правая: кобальтовая строка-ссылка, «Расширенный ассортимент» убран */
+html.ishp8-on #ishp8-duo #запросБлок .зб-кнопки .кн-к.конт{display:none}
+html.ishp8-on #ishp8-duo #запросБлок.запрос-блок{align-content:space-between}
+html.ishp8-on #ishp8-duo #запросБлок.ishp8-merged .зб-кнопки{align-self:end;width:auto}
+html.ishp8-on #ishp8-duo #запросБлок .ishp8-zbw{position:static;width:auto;display:block}
+html.ishp8-on #ishp8-duo #запросБлок .ishp8-zbw::before{display:none}
+html.ishp8-on #ishp8-duo #запросБлок.ishp8-merged .зб-кнопки .кн-к:not(.конт){position:static;display:inline-flex;align-items:center;justify-content:flex-start;width:auto;height:auto;min-height:44px;padding:0;border:0;border-radius:0;background:none;box-shadow:none;color:var(--p8-cobalt);font:700 15px/1.2 var(--p8-f);text-align:left;gap:0}
+html.ishp8-on #ishp8-duo #запросБлок.ishp8-merged .зб-кнопки .кн-к:not(.конт):hover{background:none;color:var(--p8-cobalt-h)}
+html.ishp8-on #ishp8-duo #запросБлок.ishp8-merged .зб-кнопки .кн-к:not(.конт)::before{content:"";position:absolute;inset:0;z-index:3;border-radius:28px}
+html.ishp8-on #ishp8-duo #запросБлок.ishp8-merged .зб-кнопки .кн-к:not(.конт)::after{content:"";display:inline-block;width:.95em;height:.95em;margin-left:7px;background:currentColor;-webkit-mask:var(--p8-arr) center/contain no-repeat;mask:var(--p8-arr) center/contain no-repeat;transition:transform .2s}
+html.ishp8-on #ishp8-duo #запросБлок.ishp8-merged .зб-кнопки .кн-к:not(.конт):hover::after{transform:translateX(3px)}
+html.ishp8-on #ishp8-duo #запросБлок.ishp8-merged .зб-кнопки .кн-к:not(.конт):focus-visible{outline:0}
+html.ishp8-on #ishp8-duo #запросБлок.ishp8-merged .зб-кнопки .кн-к:not(.конт):focus-visible::before{outline:2px solid var(--p8-cobalt);outline-offset:-4px}
+html.ishp8-on #ishp8-duo #запросБлок{cursor:pointer}
+@media (max-width:640px){
+  html body #ishp8-duo{gap:8px}
+  html body #ishp8-duo .ishp23-cta .ishp23-cta__in{padding:14px 16px 4px;gap:2px;border-radius:20px}
+  html body #ishp8-duo .ishp23-cta .ishp23-cta__h{font-size:18px}
+  html body #ishp8-duo .ishp23-cta .ishp8-duo__p{margin-top:3px;font-size:13px}
+  html body #ishp8-duo .ishp23-cta .ishp23-cta__b,html body #ishp8-duo .ishp23-cta .ishp23-cta__b:hover{width:auto;min-height:44px;background:none;box-shadow:none;color:#fff}
+  html body #ishp8-duo .ishp23-cta .ishp23-cta__b::before,html body #ishp8-duo .ishp23-cta .ishp23-cta__b:focus-visible::before{border-radius:20px}
+  html.ishp8-on #ishp8-duo #запросБлок.запрос-блок.ishp8-merged{padding:14px 16px 4px;row-gap:2px;border-radius:20px;align-content:start}
+  html.ishp8-on #ishp8-duo #запросБлок .зб-текст h3{font-size:18px!important;margin-bottom:3px}
+  html.ishp8-on #ishp8-duo #запросБлок .зб-текст p{font-size:13px}
+  html.ishp8-on #ishp8-duo #запросБлок.ishp8-merged .зб-кнопки{width:auto;align-items:flex-start;gap:0}
+  html.ishp8-on #ishp8-duo #запросБлок.ishp8-merged .зб-кнопки .кн-к:not(.конт){width:auto;height:auto;min-height:44px;padding:0;font-size:15px;justify-content:flex-start;text-align:left}
+  html.ishp8-on #ishp8-duo #запросБлок.ishp8-merged .зб-кнопки .кн-к:not(.конт)::before{border-radius:20px}
+}

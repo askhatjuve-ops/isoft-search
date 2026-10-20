@@ -106,8 +106,23 @@ html.ishp31-text .вн-карта.ishp31-cta a.вн-кноп_вт{background:tra
 html.ishp31-text .вн-карта.ishp31-cta a.вн-кноп_вт:hover{background:rgba(255,255,255,.14);border-color:#fff;color:#fff}
 
 /* вторая и дальше карточки боковой колонки: кнопка не залита (залитая - только в плите) */
-html.ishp31-text .вн-бок .вн-карта:not(.ishp31-cta) a.вн-кноп_гл,html.ishp31-text .вн-бок .вн-карта:not(.ishp31-cta) a.вн-кноп_гл:hover{background:#fff;color:var(--p31-cobalt);border:1px solid #AEBBEF}
-html.ishp31-text .вн-бок .вн-карта:not(.ishp31-cta) a.вн-кноп_гл:hover{background:var(--p31-soft2);border-color:var(--p31-cobalt)}
+html.ishp31-text .вн-бок .вн-карта:not(.ishp31-cta):not(.вн-счёт3) a.вн-кноп_гл,html.ishp31-text .вн-бок .вн-карта:not(.ishp31-cta):not(.вн-счёт3) a.вн-кноп_гл:hover{background:#fff;color:var(--p31-cobalt);border:1px solid #AEBBEF}
+html.ishp31-text .вн-бок .вн-карта:not(.ishp31-cta):not(.вн-счёт3) a.вн-кноп_гл:hover{background:var(--p31-soft2);border-color:var(--p31-cobalt)}
+
+/* карточка «Нужен счёт?» на /details: лавандовое стекло, стеклянные ряды (В3, выбрано 20.10) */
+html.ishp31-text .вн-бок .вн-карта.вн-счёт3{background:linear-gradient(160deg,rgba(231,234,251,.96),rgba(238,241,253,.8));border:1px solid rgba(255,255,255,.9);box-shadow:0 1px 0 #fff inset,0 14px 30px -20px rgba(43,68,199,.45),0 2px 6px rgba(23,25,35,.04);padding:20px 18px 18px}
+.вн-счёт3 h3{font-size:18px;font-weight:600;color:#171923;margin:0}
+.вн-счёт3__шап{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:4px}
+.вн-счёт3__шап svg{width:26px;height:26px;flex:none;fill:none;stroke:#2B44C7;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.вн-счёт3 p{font-size:13.5px;font-weight:400;color:#5A5F70;margin:0 0 14px}
+.вн a.вн-счёт3__ряд{display:flex;align-items:center;gap:12px;padding:12px 14px;margin-top:8px;border-radius:16px;background:rgba(255,255,255,.78);box-shadow:0 1px 0 #fff inset,0 6px 14px -10px rgba(43,68,199,.5);color:#171923;text-decoration:none}
+.вн-счёт3__ряд>svg:not(.ar){width:24px;height:24px;flex:none;fill:none;stroke:#2B44C7;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.вн-счёт3__ряд span{flex:1;min-width:0;display:grid;gap:1px}
+.вн-счёт3__ряд b{font-size:14.5px;font-weight:500}
+.вн-счёт3__ряд small{font-size:12.5px;font-weight:400;color:#646B7D}
+.вн-счёт3__ряд .ar{width:18px;height:18px;flex:none;fill:none;stroke:#2B44C7;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;transition:translate .2s}
+.вн a.вн-счёт3__ряд:hover{color:#2B44C7;background:rgba(255,255,255,.95)}
+.вн-счёт3__ряд:hover .ar{translate:3px 0}
 
 /* ═══ низ: «Подбор техники» (индиго) и «Не нашли нужное? Пришлите список» ═══ */
 html.ishp31-on .ishp31-low{grid-column:1/-1;margin-top:22px;font-family:var(--p31-f)}

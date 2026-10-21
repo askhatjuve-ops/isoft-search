@@ -245,3 +245,39 @@ html.ishp36-on:has(.t-popup_show) .ishk-bar,html.ishp36-on:has(.t-store__prod-sn
 @media screen and (min-width:981px){
   html.ishp36-on #allrecords .t-store__prod-snippet__container{max-width:min(1240px,calc(100% - 40px))!important}
 }
+
+/* ═══ 21.10: верх карточки влезает в один экран на ноутбуке (≥901): плотные плашки, фото по высоте окна ═══ */
+@media screen and (min-width:901px){
+  html.ishp36-on #allrecords .t-store__prod-snippet__container{padding-top:10px!important}
+  html.ishp36-on #allrecords .t-store__prod-snippet__container>.js-store-product{padding:10px 18px 16px;border-radius:24px}
+  html.ishp36-on #allrecords .ishpg-top{margin:0 0 8px}
+  html.ishp36-on #allrecords .ishpg-row{gap:10px 16px;grid-template-columns:44% minmax(0,1fr)}
+  html.ishp36-on #allrecords .ishpg-row>.t-store__prod-popup__slider{padding:12px!important;border-radius:18px}
+  html.ishp36-on #allrecords .ishpg-row .t-slds__items-wrapper,html.ishp36-on #allrecords .ishpg-row .t-slds__item{height:clamp(260px,calc(100vh - 350px),460px)!important}
+  html.ishp36-on #allrecords .ishpg-row .t-slds__bgimg:not(.t-slds__thumbsbullet .t-slds__bgimg){padding-bottom:0!important;height:clamp(260px,calc(100vh - 350px),460px)!important}
+  html.ishp36-on #allrecords .ishpg-row .t-slds__thumbsbullet-wrapper{margin-top:8px;gap:6px}
+  html.ishp36-on #allrecords .ishpg-row .t-slds__thumbsbullet{width:48px!important;height:48px!important;border-radius:10px}
+  html.ishp36-on #allrecords .ishp10-zoom{top:20px;right:20px}
+  html.ishp36-on #allrecords .ishpg-row>.t-store__prod-popup__info{gap:10px}
+  html.ishp36-on #allrecords .ishpg-row .t-store__prod-popup__title-wrapper{padding:14px 20px 12px;border-radius:18px;gap:3px}
+  html.ishp36-on #allrecords .ishpg-row .t-store__prod-popup__brand{font-size:11px!important}
+  html.ishp36-on #allrecords .ishpg-row .t-store__prod-popup__name{font-size:23px!important;line-height:1.18!important}
+  html.ishp36-on #allrecords .ishpg-row .t-store__prod-popup__sku{font-size:12.5px!important;margin-top:0!important}
+  html.ishp36-on #allrecords .ishp36-bb{gap:8px;padding:14px 20px 12px;border-radius:20px}
+  html.ishp36-on #allrecords .ishp36-bb .t-store__prod-popup__price,html.ishp36-on #allrecords .ishp36-bb .t-store__prod-popup__price-value,html.ishp36-on #allrecords .ishp36-bb .t-store__prod-popup__price-currency{font-size:30px!important}
+  html.ishp36-on #allrecords .ishp36-bb .ishpg3-vat{font-size:12.5px}
+  html.ishp36-on #allrecords .ishp36-bb .ishpg3-vat small{font-size:11.5px}
+  html.ishp36-on #allrecords .ishp36-bb .ishpg-buy{margin:0;gap:10px}
+  html.ishp36-on #allrecords .ishp36-bb .ishpg-qty,html.ishp36-on #allrecords .ishp36-bb .ishpg-qty button,html.ishp36-on #allrecords .ishp36-bb .ishpg-qty input,html.ishp36-on #allrecords .ishp36-bb .ishpg-add{height:42px}
+  html.ishp36-on #allrecords .ishp36-bb .ishpg-qty{width:112px}
+  html.ishp36-on #allrecords .ishp36-bb .ishpg-buy::before{height:120px}
+  html.ishp36-on #allrecords .ishp36-bb .ishp10-kp,html.ishp36-on #allrecords .ishp36-bb .ishpg3-ask{min-height:30px;font-size:13.5px!important}
+  html.ishp36-on #allrecords .ishp36-cmp{min-height:30px}
+  html.ishp36-on #allrecords .ishpg-sec{padding:16px 22px 14px;border-radius:18px}
+  html.ishp36-on #allrecords .ishpg-sec .ishpg-hh{font-size:19px;margin:0 0 6px}
+  html.ishp36-on #allrecords .ishpg-sec .ishpg-hh::before{margin:0 0 4px}
+  html.ishp36-on #allrecords .ishpg-pair,html.ishp36-on #allrecords .ishpg-pair:nth-child(n){padding:8px 0;font-size:13.5px}
+  html.ishp36-on #allrecords .ishpg3-trust{padding:2px 18px;border-radius:18px}
+  html.ishp36-on #allrecords .ishpg3-trust li{padding:6px 0;font-size:13px!important}
+  html.ishp36-on #allrecords .ishpg3-trust svg{flex-basis:30px;width:30px;height:30px}
+}

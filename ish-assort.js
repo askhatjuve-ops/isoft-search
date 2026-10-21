@@ -312,6 +312,7 @@
             fc.slice(0, 5).map(function (c) { return '<button type="button" data-ia-cat="' + esc(c.name) + '">' + esc(c.name) + '</button>'; }).join('') + '</div>' : '') + '</div>';
       }
       D.querySelectorAll('#tableBox .sku').forEach(function (k) { if (/^\s*Артикул не выделен\s*$/.test(k.textContent)) k.textContent = ''; });
+      var cEl = D.getElementById('categories'); if (cEl) cEl.style.setProperty('--ia-cols', Math.max(1, Math.ceil(cEl.querySelectorAll(':scope > .category, :scope > .category-group').length / 2)));   // плитки в два ряда: колонок = ceil(N/2)
       chips(q); subs();
       var ttl = D.getElementById('resultTitle'); if (ttl && ttl.textContent.indexOf('не опознано') >= 0) ttl.textContent = ttl.textContent.replace('не опознано', 'Прочее');
       var clr = D.getElementById('ia-clear'); if (clr) clr.hidden = !(D.getElementById('search').value);

@@ -157,7 +157,7 @@ html body .category[data-group="Электропитание"]::before{backgroun
 /* v2.2 (21.10.2026): ПК. Страница идёт сплошным списком, без внутреннего окна прокрутки (раньше html/body = 100% высоты окна и overflow:hidden,
    список листался внутри ~480 px); высоту окна iframe по содержимому задаёт ish-design-p37.js. Шрифты строк 13-14 px (было 9-12). Телефон не затронут. */
 @media(min-width:681px){
-  html,body{height:auto!important;overflow:visible!important}
+  html,body{height:auto!important;overflow:hidden!important}   /* v2.3: hidden - без собственной вертикальной полосы iframe (в документе бывает +11 px сверх тела) */
   html body main,html body #catalogScreen,html body .catalog-layout,html body .catalog-content{height:auto!important;max-height:none}
   html body .catalog-content{display:block}
   html body .table-box{overflow:visible!important;max-height:none!important;padding-right:0;scrollbar-gutter:auto}
@@ -186,3 +186,30 @@ html body .categories::-webkit-scrollbar-button{display:none;width:0;height:0}
 /* плитки без фото в данных: «Программное обеспечение» (рисованный знак: коробка с окном программы) и «Прочее» (IP-телефон Grandstream с карточки сайта) */
 html body .category[data-group="Прочее"]::before{background-image:url(https://static.tildacdn.com/stor3638-3666-4632-b861-656231376334/0998a27a731b08842cc31143d492b4fc.jpg)}
 html body .category[data-group="Программное обеспечение"]::before{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 90'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23FFFFFF'/%3E%3Cstop offset='1' stop-color='%23DDE2F7'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%233B55E6'/%3E%3Cstop offset='1' stop-color='%231F2FA3'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cellipse cx='60' cy='82' rx='38' ry='4' fill='%23000' opacity='.12'/%3E%3Cpath d='M30 12l46-6v70l-46 6z' fill='url(%23b)'/%3E%3Cpath d='M76 6l14 5v66l-14-1z' fill='%23182590'/%3E%3Crect x='36' y='22' width='34' height='26' rx='3' fill='url(%23a)' transform='skewY(-6)'/%3E%3Cpath d='M39 28h28M39 33h20M39 38h24' stroke='%232B44C7' stroke-width='2.4' stroke-linecap='round' transform='skewY(-6)'/%3E%3Ccircle cx='48' cy='62' r='6' fill='%23fff' opacity='.9'/%3E%3Cpath d='M45.5 62l2 2 3.5-4' stroke='%232B44C7' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E")}
+
+/* v2.3 (21.10.2026): плитки разделов в ДВА ряда. ПК (от 901 px): сетка, колонок = ceil(N/2) (число ставит ish-assort.js в --ia-cols), без горизонтальной полосы;
+   до 900 px: два ряда, лента листается свайпом вбок, полоса скрыта, справа виден край следующей плитки. */
+@media(min-width:901px){
+  html body .categories{display:grid;grid-template-columns:repeat(var(--ia-cols,7),minmax(0,1fr));grid-auto-flow:row;gap:12px;overflow:visible;padding:2px 2px 10px}
+  html body .categories>.category-group,html body .categories>.category{min-width:0}
+  html body .categories>.category,html body .category-group>.category{width:100%;min-width:0;height:132px}
+}
+@media(min-width:901px) and (max-width:1180px){
+  html body .categories{gap:8px}
+  html body .categories>.category,html body .category-group>.category{height:116px;padding:6px 6px 10px;border-radius:18px}
+  html body .category .cat-name{font-size:12.5px}
+  html body .category b{font-size:11px}
+}
+@media(max-width:900px){
+  html body .categories{display:grid;grid-template-rows:repeat(2,auto);grid-auto-flow:column;grid-auto-columns:max-content;gap:10px;overflow-x:auto;overflow-y:hidden;scrollbar-width:none;-ms-overflow-style:none;-webkit-overflow-scrolling:touch;scroll-snap-type:x proximity}
+  html body .categories::-webkit-scrollbar{display:none;width:0;height:0}
+  html body .categories::after{display:none}
+  html body .categories>.category-group,html body .categories>.category{display:block;min-width:0}
+  html body .categories>.category,html body .category-group>.category{width:132px;height:112px;scroll-snap-align:start}
+}
+@media(max-width:680px){
+  html body .categories>.category,html body .category-group>.category{width:124px;height:104px}
+}
+@media(min-width:681px) and (max-width:1100px){
+  html body .search-panel .filter-row select{font-size:13px;padding-right:24px;text-overflow:ellipsis}
+}

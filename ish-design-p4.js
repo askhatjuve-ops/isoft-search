@@ -1,4 +1,4 @@
-/* ish-design-p4.js  v6.7  (21.10.2026: P6V=7 живые бренды, P9V=3 подпись сортировки, P19V=7 форма /spec, P21V=5 значок корзины, P35V=34 живое «Найдено», подсветка «Каталог» на телефоне)  [было v6.5 18.10.2026]  П4 «шапка и меню» + Г1 «кнопки в hero» b2b.isoft-shop.kz
+/* ish-design-p4.js  v6.8  (21.10.2026: вкладка «Заявка» в нижней панели телефона -> /podbor; ISH_P4_NO_TABREQ; P6V=7 живые бренды, P9V=3 подпись сортировки, P19V=7 форма /spec, P21V=5 значок корзины, P35V=34 живое «Найдено», подсветка «Каталог» на телефоне)  [было v6.5 18.10.2026]  П4 «шапка и меню» + Г1 «кнопки в hero» b2b.isoft-shop.kz
    Подключается из блока шапки 3263300503 строкой <script src=... defer data-m="header,hero">. Не загрузился - сайт как был.
    Модули (атрибут data-m, по умолчанию оба): header - Ш14 полоса, Ш5 кнопка, Ш13 трубка; hero - Г1 две кнопки (с v2 включается и при data-m="header").
    v2: + подгрузка ish-design-p6.js на страницах каталога. Выключатели: window.ISH_P4_NO_HERO, window.ISH_P4_NO_P6.
@@ -753,5 +753,49 @@
     })();
   }
   try { tabFix(); } catch (e) {}
+  /* v6.8 (21.10): телефон, нижняя панель. Десктопная залитая кнопка «Запросить счёт | КП» в шапку телефона не влезает (одна залитая на экран) -
+     добавляем четвёртую вкладку «Заявка» (->/podbor) между «Каталог» и «Корзина». Оболочка перерисовывает #ishТаб целиком - вкладку возвращает MutationObserver.
+     На /podbor подсветка переходит с «Главная» на «Заявка». Выключатель: window.ISH_P4_NO_TABREQ. */
+  function tabReq() {
+    if (W.ISH_P4_NO_TABREQ) return;
+    if (!D.getElementById('ishp-tabreq-css')) {
+      var st = D.createElement('style'); st.id = 'ishp-tabreq-css';
+      st.textContent = 'html body #ishТаб:has(button[data-ishp-req]){grid-template-columns:repeat(4,minmax(0,1fr))!important}html body #ishТаб button[data-ishp-req]{flex:1 1 0;min-width:0}html body #ishТаб button[data-ishp-req] svg{width:22px;height:22px;display:block}';
+      D.head.appendChild(st);
+    }
+    var ICO = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3h7l5 5v12a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z"/><path d="M14 3v5h5"/><path d="M9 13h6M9 17h6"/></svg>';
+    function правка() {
+      var t = D.getElementById('ishТаб');
+      if (!t) return;
+      var on = String(location.pathname).replace(/\/+$/, '') === '/podbor';
+      var b = t.querySelector('[data-ishp-req]');
+      if (!b) {
+        var cart = t.querySelector('[data-таб="cart"]');
+        if (!cart) return;
+        b = D.createElement('button'); b.type = 'button'; b.setAttribute('data-ishp-req', '1');
+        b.innerHTML = '<span class="обёртка">' + ICO + '</span><span>Заявка</span>';
+        t.insertBefore(b, cart);
+      }
+      if (on) {
+        var act = t.querySelectorAll('button.вкл');
+        for (var i = 0; i < act.length; i++) if (act[i] !== b) { act[i].classList.remove('вкл'); act[i].removeAttribute('aria-current'); }
+        b.classList.add('вкл'); b.setAttribute('aria-current', 'page');
+      } else if (b.classList.contains('вкл')) { b.classList.remove('вкл'); b.removeAttribute('aria-current'); }
+    }
+    D.addEventListener('click', function (e) {
+      var x = e.target && e.target.closest && e.target.closest('#ishТаб [data-ishp-req]');
+      if (!x) return;
+      e.preventDefault(); e.stopPropagation();
+      if (String(location.pathname).replace(/\/+$/, '') !== '/podbor') location.assign(REQ);
+    }, true);
+    var n = 0, obs = false;
+    (function go() {
+      var t = D.getElementById('ishТаб');
+      if (t && !obs && W.MutationObserver) { obs = true; new MutationObserver(function () { правка(); }).observe(t, { childList: true }); }
+      правка();
+      if (++n < 40) setTimeout(go, obs ? 1500 : 500);
+    })();
+  }
+  try { tabReq(); } catch (e) {}
   try { p10(); } catch (e) {}
 })();

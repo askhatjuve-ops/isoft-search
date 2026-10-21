@@ -1,4 +1,4 @@
-/* ish-design-p8.css  v2.7  (20.10.2026: баннер - кнопка «Запросить цену» в одном месте, подпись на телефоне целиком; 19.10.2026: телефон ≤640 - «Для бизнеса →» вместо белой кнопки у «Бизнеса»; «Подбор техники» - светлая лавандовая плашка и одна кобальтовая кнопка; компьютер не затронут; 19.10.2026: «Коротко о нас» на ≥981 - заголовок слева, три плитки в ряд, см. конец файла; 19.10.2026: полоса фактов на ≤640 - одна строка значков; v2.2: см. ish-design-p8.js v2.2; НЕ выложено)  (C2 «Витрина, другой ритм», подготовка 16.10.2026; НЕ выложено)  П8 «блоки главной ниже первого экрана»
+/* ish-design-p8.css  v2.8 (21.10: карточка «выбрать / список» - тёмный индиго, отделяется от светлых соседей)  (20.10.2026: баннер - кнопка «Запросить цену» в одном месте, подпись на телефоне целиком; 19.10.2026: телефон ≤640 - «Для бизнеса →» вместо белой кнопки у «Бизнеса»; «Подбор техники» - светлая лавандовая плашка и одна кобальтовая кнопка; компьютер не затронут; 19.10.2026: «Коротко о нас» на ≥981 - заголовок слева, три плитки в ряд, см. конец файла; 19.10.2026: полоса фактов на ≤640 - одна строка значков; v2.2: см. ish-design-p8.js v2.2; НЕ выложено)  (C2 «Витрина, другой ритм», подготовка 16.10.2026; НЕ выложено)  П8 «блоки главной ниже первого экрана»
    Подключает ish-design-p8.js (рядом с собой). Откат: пустой файл на Pages. Шрифт TildaSans, фон страницы #F5F3EE, акцент - кобальт #2B44C7, графит #1E2430.
    Всё под .ishp8-* или html.ishp8-on - верх сайта (шапка, поиск, «Каталог», слайдер) не затрагивается. Чужие правила блока 4204120903 перекрываются только
    в разделах «ШАГИ» и «ПОЛКИ». Размеры текста не меньше 12px. На 390 горизонтальной прокрутки нет. */
@@ -862,3 +862,23 @@ html body #ishp8-duo .ishp8-pk__go:hover{background:var(--p8-cobalt-h)}
   html body #ishp8-duo .ishp8-pk__go{width:100%}
 }
 @media (prefers-reduced-motion:reduce){html body #ishp8-duo .ishp8-pk *{transition:none!important}}
+
+/* ───── 21.10: карточка «Подобрать технику | Отправить список» - тёмный индиго (светлые шаги выше, плитки ниже); контраст текста >=7:1 ───── */
+html body #ishp8-duo .ishp8-pk{background:linear-gradient(135deg,#1f2a5c,#2a3577);border-color:rgba(255,255,255,.10);color:#fff;box-shadow:0 22px 44px -26px rgba(12,16,48,.55)}
+html body #ishp8-duo .ishp8-pk::after{background:radial-gradient(closest-side,rgba(120,140,255,.45),rgba(0,0,0,0))}
+html body #ishp8-duo .ishp8-pk__seg{background:rgba(255,255,255,.10)}
+html body #ishp8-duo .ishp8-pk__tab{color:#D6DAF2}
+html body #ishp8-duo .ishp8-pk__tab[aria-selected="true"]{background:#fff;color:#2B44C7;box-shadow:0 6px 16px -8px rgba(0,0,0,.5)}
+html body #ishp8-duo .ishp8-pk__tab:focus-visible,html body #ishp8-duo .ishp8-pk__chip:focus-visible,html body #ishp8-duo .ishp8-pk__clip:focus-visible,html body #ishp8-duo .ishp8-pk__go:focus-visible{outline-color:#fff}
+html body #ishp8-duo .ishp8-pk__h{color:#fff}
+html body #ishp8-duo .ishp8-pk__n{color:#C3C9EC}
+html body #ishp8-duo .ishp8-pk__chip{border-color:rgba(255,255,255,.34);background:rgba(255,255,255,.08);color:#fff}
+html body #ishp8-duo .ishp8-pk__chip:hover{border-color:#fff;background:rgba(255,255,255,.18);box-shadow:none}
+html body #ishp8-duo .ishp8-pk__ta{border-color:rgba(255,255,255,.5);background:#fff;color:#171923;box-shadow:0 0 0 4px rgba(255,255,255,.10)}
+html body #ishp8-duo .ishp8-pk__ta:focus{border-color:#fff;box-shadow:0 0 0 4px rgba(255,255,255,.28)}
+html body #ishp8-duo .ishp8-pk__clip{color:#D6DAF2}
+html body #ishp8-duo .ishp8-pk__clip:hover{background:rgba(255,255,255,.14);color:#fff}
+html body #ishp8-duo .ishp8-pk__hint{color:#C3C9EC}
+html body #ishp8-duo .ishp8-pk__hint.on{color:#fff}
+html body #ishp8-duo .ishp8-pk__go{background:#fff;color:#2B44C7;box-shadow:0 12px 24px -12px rgba(0,0,0,.5);font-weight:700}
+html body #ishp8-duo .ishp8-pk__go:hover{background:#E7EAFB}

@@ -124,13 +124,52 @@
     if (p2 && !q('.ishp36-nf') && p2.parentNode) {
       var nf = D.createElement('section'); nf.className = 'ishp36-nf'; nf.setAttribute('aria-label', 'Не нашли нужное');
       nf.innerHTML = '<div><h3>Не нашли нужное? Пришлите список</h3><p>Проработаем и ответим в день обращения.</p></div>' +
-        '<div class="ishp36-nfb"><span class="ishp36-nfw"><a class="p" href="/spec#kp">Написать, что нужно</a></span>' +
+        '<div class="ishp36-nfb"><span class="ishp36-nfw"><a class="p" href="#zapros" role="button" data-ishp36-ask="1">Написать, что нужно</a></span>' +
         '<a class="s" href="/assortiment">Расширенный ассортимент 14000+ →</a></div>';
       p2.parentNode.insertBefore(nf, p2.nextSibling);
       лист_в_блок(nf);
     }
     return true;
   }
+
+  /* окно запроса «Написать, что нужно»: на карточке нет главного окна (ish15м) - лёгкое своё; отправка в WhatsApp (как запасной путь главной); корзину не открываем никогда */
+  var WA36 = '77758818531';
+  function cl(s) { return String(s || '').replace(/\s+/g, ' ').trim(); }
+  function zapros() {
+    var n = cl((q('.js-store-prod-name') || {}).textContent) || cl((D.querySelector('meta[property="og:title"]') || {}).content) || cl((q('h1') || {}).textContent);
+    var a = cl((q('.js-store-prod-sku') || {}).textContent).replace(/^(арт\.?|артикул)\s*:?\s*/i, '');
+    var pre = n ? n + (a ? ' (арт. ' + a + ')' : '') + ' — нужно: ' : 'Нужно: ';
+    var ov = q('.ishp36-zo');
+    if (!ov) {
+      ov = D.createElement('div'); ov.className = 'ishp36-zo'; ov.setAttribute('role', 'dialog'); ov.setAttribute('aria-modal', 'true'); ov.setAttribute('aria-label', 'Запрос на подбор');
+      ov.innerHTML = '<div class="ishp36-zb"><button type="button" class="ishp36-zx" aria-label="Закрыть">×</button><h3>Что вам нужно?</h3>' +
+        '<p>Напишите список или одну позицию — ответим в день обращения.</p>' +
+        '<textarea class="ishp36-zt" rows="5" aria-label="Список"></textarea>' +
+        '<input class="ishp36-zc" type="text" placeholder="Телефон или почта для ответа" aria-label="Контакт">' +
+        '<button type="button" class="ishp36-zs">Отправить в WhatsApp</button></div>';
+      D.body.appendChild(ov);
+      var close = function () { ov.classList.remove('on'); H.classList.remove('ishp36-zlock'); };
+      ov.addEventListener('click', function (e) { if (e.target === ov || e.target.className === 'ishp36-zx') close(); });
+      D.addEventListener('keydown', function (e) { if (e.key === 'Escape') close(); });
+      q('.ishp36-zs', ov).addEventListener('click', function () {
+        var t = cl(q('.ishp36-zt', ov).value.replace(/\n/g, ' | ')) ? q('.ishp36-zt', ov).value.trim() : '';
+        if (!t) { q('.ishp36-zt', ov).focus(); return; }
+        var c = q('.ishp36-zc', ov).value.trim();
+        var msg = 'Здравствуйте! ' + t + (c ? '\nКонтакт: ' + c : '') + '\n' + location.origin + location.pathname;
+        W.open('https://wa.me/' + WA36 + '?text=' + encodeURIComponent(msg), '_blank', 'noopener');
+        close();
+      });
+    }
+    q('.ishp36-zt', ov).value = pre;
+    ov.classList.add('on'); H.classList.add('ishp36-zlock');
+    var t = q('.ishp36-zt', ov); t.focus(); try { t.setSelectionRange(t.value.length, t.value.length); } catch (e) {}
+  }
+  D.addEventListener('click', function (e) {
+    var b = e.target && e.target.closest && e.target.closest('[data-ishp36-ask]');
+    if (!b) return;
+    e.preventDefault(); e.stopPropagation(); e.stopImmediatePropagation();
+    zapros();
+  }, true);
 
   var done = false;
   function tick() {

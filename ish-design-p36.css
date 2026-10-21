@@ -288,3 +288,17 @@ html.ishp36-on:has(.t-popup_show) .ishk-bar,html.ishp36-on:has(.t-store__prod-sn
   html.ishp36-on #allrecords .ishpg3-trust li{padding:6px 0;font-size:13px!important}
   html.ishp36-on #allrecords .ishpg3-trust svg{flex-basis:30px;width:30px;height:30px}
 }
+
+/* окно запроса «Написать, что нужно» (карточка) */
+.ishp36-zo{display:none;position:fixed;inset:0;z-index:900000;background:rgba(23,25,35,.55);align-items:center;justify-content:center;padding:16px;box-sizing:border-box;font-family:var(--f,TildaSans,Arial,sans-serif)}
+.ishp36-zo.on{display:flex}
+html.ishp36-zlock{overflow:hidden}
+.ishp36-zb{position:relative;width:100%;max-width:460px;background:#fff;border-radius:22px;padding:26px 24px 22px;box-sizing:border-box;box-shadow:0 30px 70px -20px rgba(23,25,35,.5)}
+.ishp36-zb h3{margin:0 0 6px;font:800 21px/1.2 var(--f,TildaSans,Arial,sans-serif);color:#171923}
+.ishp36-zb p{margin:0 0 14px;font:400 14px/1.45 var(--f,TildaSans,Arial,sans-serif);color:#5B6072}
+.ishp36-zb textarea,.ishp36-zb input{display:block;width:100%;box-sizing:border-box;margin:0 0 10px;padding:12px 14px;border:1px solid #D5D9EA;border-radius:12px;font:400 15px/1.4 var(--f,TildaSans,Arial,sans-serif);color:#171923;resize:vertical}
+.ishp36-zb textarea:focus,.ishp36-zb input:focus{outline:2px solid #2B44C7;outline-offset:1px}
+.ishp36-zs{width:100%;min-height:46px;border:0;border-radius:14px;background:#2B44C7;color:#fff;font:700 14.5px/1 var(--f,TildaSans,Arial,sans-serif);cursor:pointer}
+.ishp36-zs:hover{background:#2238A8}
+.ishp36-zx{position:absolute;top:6px;right:6px;width:40px;height:40px;border:0;border-radius:12px;background:transparent;color:#5B6072;font-size:26px;line-height:1;cursor:pointer}
+.ishp36-zx:hover{background:#F0F1F7}

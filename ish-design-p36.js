@@ -82,9 +82,29 @@
     cmpSync();
   }
 
+  /* 21.10: адаптивное окно фото. Tilda ставит cover: у очень широких/узких фото (патч-панель 1U ~5:1) видна увеличенная середина.
+     По naturalWidth/Height: w/h > 1.6 или < 0.62 - показать целиком (contain, data-ishar="x"), остальные как были (cover). Главное фото и миниатюры. */
+  var ARC = {};
+  function arUrl(n) {
+    var u = n.getAttribute('data-original') || n.getAttribute('data-image-url') || '';
+    if (!u) { var m = /url\(["']?([^"')]+)/.exec(n.getAttribute('style') || ''); u = m ? m[1] : ''; }
+    return /^data:/.test(u) ? '' : u;
+  }
+  function arOne(n) {
+    var u = arUrl(n); if (!u) return;
+    if (n.getAttribute('data-ishar-u') === u) return;
+    n.setAttribute('data-ishar-u', u);
+    var set = function (r) { try { if (r > 1.6 || r < 0.62) n.setAttribute('data-ishar', 'x'); else n.removeAttribute('data-ishar'); } catch (e) {} };
+    if (ARC[u]) return set(ARC[u]);
+    var im = new Image();
+    im.onload = function () { if (im.naturalWidth && im.naturalHeight) { ARC[u] = im.naturalWidth / im.naturalHeight; set(ARC[u]); } };
+    im.src = u;
+  }
+  function arAll() { var a = D.querySelectorAll('.ishpg-row .t-slds__bgimg'); for (var i = 0; i < a.length; i++) arOne(a[i]); }
   function pass() {
     var row = q('.ishpg-row');
     if (!row) return false;
+    try { arAll(); } catch (e) {}
     H.classList.add('ishp36-on');
     var panel = q('.ishpg3-panel', row);
     if (panel && !q('.ishp36-bb', panel)) {
@@ -203,6 +223,7 @@
     }
     return ok;
   }
+  (function arPoll(n) { try { arAll(); } catch (e) {} if (n < 20) setTimeout(function () { arPoll(n + 1); }, 700); })(0); /* ленивая подстановка фона Tilda - без события */
   (function wait(n) { if (!tick() && n < 40) setTimeout(function () { wait(n + 1); }, 250); })(0);
   if (W.MutationObserver) {
     var t = 0;

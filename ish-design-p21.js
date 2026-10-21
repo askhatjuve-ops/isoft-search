@@ -529,6 +529,35 @@
     (function go() { var ok = false; try { ok = place(); } catch (e) {} if (++n < 400) setTimeout(go, ok ? 900 : 250); })();   /* /spec перерисовывает #spBody: следим, чтобы блок оставался на месте */
   }
 
+  /* ════════════════ 21.10: значок корзины в шапке после заказа ════════════════
+     После успешной отправки формы заказа корзина Tilda пуста, а счётчик шапки (.нш-счёт, берёт число из .t706__carticon-counter, запасной путь - tcart
+     из localStorage) оставался «1»: родной значок не перерисовывался. Теперь после tildaform:aftersuccess формы заказа ~25 с сверяем состав корзины
+     (память tcart и localStorage); пуста - перерисовываем родной значок и гасим оба счётчика. Выключатель: window.ISH_P21_NO_BADGE = 1. */
+  function cartQty() {
+    var n = 0, c = null, ok = false;
+    try { if (W.tcart && Array.isArray(W.tcart.products)) { c = W.tcart.products; ok = true; } } catch (e) {}
+    if (!ok) { try { c = (JSON.parse(W.localStorage.getItem('tcart') || '{}').products) || []; ok = true; } catch (e) {} }
+    if (!ok) return -1;
+    c.forEach(function (p) { n += parseFloat(p.quantity) || 1; });
+    return n;
+  }
+  function fixBadge() {
+    if (cartQty() !== 0) return false;
+    try { if (typeof W.tcart__reDrawCartIcon === 'function') W.tcart__reDrawCartIcon(); } catch (e) {}
+    qa('.t706__carticon-counter').forEach(function (x) { x.textContent = ''; });
+    qa('.t706__carticon').forEach(function (x) { x.classList.add('t706__carticon_empty'); });
+    qa('.нш-счёт').forEach(function (x) { x.textContent = ''; x.style.display = 'none'; });
+    return true;
+  }
+  function initBadge() {
+    if (W.ISH_P21_NO_BADGE) return;
+    D.addEventListener('tildaform:aftersuccess', function (e) {
+      if (!e.target || e.target.id !== CART_FORM) return;
+      var t0 = Date.now(), iv = setInterval(function () { try { fixBadge(); } catch (x) {} if (Date.now() - t0 > 25000) clearInterval(iv); }, 500);
+    });
+  }
+  initBadge();
+
   if (on('num')) initNum();
   if (on('xls') && W.ISH_P21_XLS) {
     if (D.readyState === 'loading') D.addEventListener('DOMContentLoaded', initXls); else initXls();

@@ -237,10 +237,36 @@
       document.head.appendChild(sc);
     }
 
+    /* 21.10 (v6): ЖИВЫЕ числа брендов от самой Tilda (getfilters раздела - те же, что считает список). Индекс поиска собран по снимку и
+       отстаёт от сайта (Lenovo 21 в панели при 32 в списке). Один запрос на страницу; не ответил - числа по файлу/индексу, как было. */
+    var живые = null, живыеЗапросили = false;
+    function запроситьЖивые() {
+      if (живыеЗапросили || window.ISH_P6_NO_LIVE) return;
+      var ув = '', ск = document.getElementsByTagName('script');
+      for (var i = 0; i < ск.length && !ув; i++) { var н = !ск[i].src && /storepart\s*:\s*['"](\d{6,})['"]/.exec(ск[i].textContent || ''); if (н) ув = н[1]; }
+      if (!ув || !window.fetch) return;
+      живыеЗапросили = true;
+      try {
+        fetch('https://store.tildaapi.pro/api/getfilters/?storepartuid=' + encodeURIComponent(ув), { credentials: 'omit' })
+          .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+          .then(function (j) {
+            var fs = (j && j.filters) || [], g = null;
+            for (var k = 0; k < fs.length; k++) if (fs[k] && (fs[k].name === 'brand' || fs[k].label === 'Бренд')) { g = fs[k]; break; }
+            if (!g || !g.values || !g.values.length) return;
+            var m = {};
+            for (var t = 0; t < g.values.length; t++) { var vv = g.values[t]; if (vv && vv.value != null && +vv.count > 0) m[String(vv.value)] = +vv.count; }
+            живые = m; запуск();
+          }, function () {});
+      } catch (e) {}
+    }
+
     function счётчики() {                                                  // Ф3: только при наличии данных
       if (window.ISH_P6_NO_COUNTS) return;
       запроситьФайл();
+      запроситьЖивые();
       var D = разделИзФайла(window.ISH_P6_COUNTS);
+      if (живые) { var M2 = {}; for (var k2 in (D || {})) if (Object.prototype.hasOwnProperty.call(D, k2)) M2[k2] = D[k2]; M2['Бренд'] = живые; D = M2; }
+      else
       if (!D || !D['Бренд']) {                                             // бренда в файле нет — по индексу, как раньше
         запроситьИндекс();
         var A = данныеАвто();

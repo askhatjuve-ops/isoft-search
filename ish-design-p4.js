@@ -1,4 +1,4 @@
-/* ish-design-p4.js  v6.5  (18.10.2026)  П4 «шапка и меню» + Г1 «кнопки в hero» b2b.isoft-shop.kz
+/* ish-design-p4.js  v6.7  (21.10.2026: P6V=7 живые бренды, P9V=3 подпись сортировки, P19V=6 /spec, P21V=5 значок корзины, P35V=34 живое «Найдено», подсветка «Каталог» на телефоне)  [было v6.5 18.10.2026]  П4 «шапка и меню» + Г1 «кнопки в hero» b2b.isoft-shop.kz
    Подключается из блока шапки 3263300503 строкой <script src=... defer data-m="header,hero">. Не загрузился - сайт как был.
    Модули (атрибут data-m, по умолчанию оба): header - Ш14 полоса, Ш5 кнопка, Ш13 трубка; hero - Г1 две кнопки (с v2 включается и при data-m="header").
    v2: + подгрузка ish-design-p6.js на страницах каталога. Выключатели: window.ISH_P4_NO_HERO, window.ISH_P4_NO_P6.
@@ -152,7 +152,7 @@
   }
 
   /* ───────── П6: фильтры и «Список / Плитка» на страницах каталога (грузит ish-design-p6.js с того же адреса, один раз) ───────── */
-  var P6V = '6';
+  var P6V = '7';
   function p6() {
     if (W.ISH_P4_NO_P6 || W.ISH_P6 || D.getElementById('ishp-p6-js')) return true;
     if (!D.querySelector('.t-store__card[data-ish13], .t-store__filter__item, .t-store__filter')) return false;
@@ -192,7 +192,7 @@
   }
 
   /* ───────── П9: списки разделов, карточка, ряды главной (ish-design-p9.js с того же адреса, один раз) ───────── */
-  var P9V = '2';
+  var P9V = '3';
   function p9() {
     if (W.ISH_P9_OFF || W.ISH_P9 || D.getElementById('ishp-p9-js')) return true;
     if (!D.querySelector('.t-store__card-list, .js-store-product, .раздел-загол')) return false;
@@ -213,7 +213,7 @@
   /* ───────── П19: формы и корзина (ish-design-p19.js с того же адреса, один раз) ─────────
      Грузим там, где есть форма Tilda, корзина /spec или сетка товаров: сам p19 в пустой странице ничего не делает.
      Выключатель: window.ISH_P19_OFF = 1 (до загрузки p4). Кэш: поменять P19V. */
-  var P19V = '5';
+  var P19V = '6';
   function p19() {
     if (W.ISH_P19_OFF || W.ISH_P19 || D.getElementById('ishp-p19-js')) return true;
     if (!(D.querySelector('.t-form') || D.getElementById('specRoot') || D.querySelector('.js-store-grid-cont'))) return false;
@@ -255,7 +255,7 @@
   /* ───────── П21: номер заявки (Кр3) и загрузка списка из Excel (Кр8) (ish-design-p21.js/.css с того же адреса, один раз) ─────────
      Грузим там, где есть форма корзины Tilda (form3238938703) или корзина /spec (#specRoot). В остальных страницах p21 не нужен.
      Выключатель: window.ISH_P21_OFF = 1 (до загрузки p4); по частям: window.ISH_P21_SKIP = 'num' или 'xls'. Кэш: поменять P21V. */
-  var P21V = '4';
+  var P21V = '5';
   function p21() {
     if (W.ISH_P21_OFF || W.ISH_P21 || D.getElementById('ishp-p21-js')) return true;
     if (!(D.getElementById('form3238938703') || D.getElementById('specRoot'))) return false;
@@ -355,7 +355,7 @@
 
   /* ───────── П35: раздел каталога в палитре главной (ish-design-p35.js/.css с того же адреса, один раз) ─────────
      Признак: страница со списком товаров (.t-store__card-list). Выключатель: window.ISH_P35_OFF = 1 или window.ISH_P4_NO_P35 = 1 (до загрузки p4). Кэш: поменять P35V. */
-  var P35V = '33';   /* 21.10 v3.6: плитка - цена в одну строку, одно «в наличии» */   /* 21.10 группы 21.10: плитки группы */   /* 20.10 печать 7→4: плитки группы */   /* 20.10: фото 6 разделов СКС в плитках группы (p35.js v3.4); пред.: 20.10: p35.css v3.5 - цены списка на одной вертикали */
+  var P35V = '34';   /* 21.10 v3.6: плитка - цена в одну строку, одно «в наличии» */   /* 21.10 группы 21.10: плитки группы */   /* 20.10 печать 7→4: плитки группы */   /* 20.10: фото 6 разделов СКС в плитках группы (p35.js v3.4); пред.: 20.10: p35.css v3.5 - цены списка на одной вертикали */
   function p35() {
     if (W.ISH_P4_NO_P35 || W.ISH_P35_OFF || W.ISH_P35 || D.getElementById('ishp-p35-js')) return true;
     if (D.getElementById('лента')) return true;
@@ -727,5 +727,31 @@
   p31wait();
   p35wait();
   p36wait();
+  /* v6.7 (21.10): телефон, нижняя панель оболочки. На странице раздела/карточки оболочка считает экран «home» и подсвечивает «Главная».
+     Оболочка живёт в блоке Tilda (не правим): после её отрисовки переносим подсветку на «Каталог». Выключатель: window.ISH_P4_NO_TABFIX. */
+  function tabFix() {
+    if (W.ISH_P4_NO_TABFIX) return;
+    function нужно() {
+      var p = String(location.pathname).replace(/\/+$/, '');
+      if (!p || p === '/spec' || p === '/podbor') return false;
+      return /\/tproduct\//.test(p) || !!D.querySelector('.t-store__card-list, .t-store .js-store-grid-cont');
+    }
+    function правка() {
+      var t = D.getElementById('ishТаб');
+      if (!t || !нужно()) return;
+      var home = t.querySelector('[data-таб="home"]'), cat = t.querySelector('[data-таб="catalog"]');
+      if (!home || !cat || !home.classList.contains('вкл')) return;
+      home.classList.remove('вкл'); home.removeAttribute('aria-current');
+      cat.classList.add('вкл'); cat.setAttribute('aria-current', 'page');
+    }
+    var n = 0, obs = false;
+    (function go() {
+      var t = D.getElementById('ishТаб');
+      if (t && !obs && W.MutationObserver) { obs = true; new MutationObserver(function () { правка(); }).observe(t, { childList: true }); }
+      правка();
+      if (++n < 40) setTimeout(go, obs ? 1500 : 500);
+    })();
+  }
+  try { tabFix(); } catch (e) {}
   try { p10(); } catch (e) {}
 })();

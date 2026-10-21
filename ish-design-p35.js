@@ -635,3 +635,30 @@
   }
   if (D.readyState === 'loading') D.addEventListener('DOMContentLoaded', старт); else старт();
 })();
+
+/* ═══════════════ П35 «Найдено N» живое (21.10.2026) ═════════
+   Строка «Найдено N» над списком (и у переключателя вида на телефоне) берёт число из CSS-переменной --p35-n, а p35 ставит туда статичное
+   «Все товары раздела (N)». После фильтра число не менялось, а рядом Tilda показывала своё «Найдено: 32». Теперь: пока у Tilda есть число
+   фильтра (js-store-filters-prodsnumber, строка видна) - в --p35-n живое число; фильтр сброшен - возвращаем прежнее. Родная строка Tilda
+   скрыта в css (одна строка, одно число). Откат: window.ISH_P35LIVE_OFF=1. */
+(function () {
+  'use strict';
+  if (window.ISH_P35LIVE_OFF || window.__ishP35Live) return; window.__ishP35Live = 1;
+  var D = document, H = D.documentElement, base = null, last = '';
+  function num(n) { return String(n).replace(/\B(?=(\d{3})+$)/g, ' '); }
+  function тик() {
+    var sp = D.querySelector('.js-store-filters-prodsnumber');
+    if (!sp || !H.classList.contains('ishp35-on')) return;
+    var w = sp.closest ? sp.closest('.js-store-filters-prodsnumber-wrap') : null;
+    var n = (sp.textContent || '').replace(/\D/g, '');
+    var on = !!n && !!w && w.style.display !== 'none';
+    if (on) {
+      if (base === null) base = H.style.getPropertyValue('--p35-n');
+      var v = '"Найдено ' + num(n) + '"';
+      if (H.style.getPropertyValue('--p35-n') !== v) H.style.setProperty('--p35-n', v);
+    } else if (base !== null) {
+      H.style.setProperty('--p35-n', base); base = null;
+    }
+  }
+  setInterval(тик, 400);
+})();

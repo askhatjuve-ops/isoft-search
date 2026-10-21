@@ -284,3 +284,9 @@ html.ishp19-on .ishk-mini .ishk-acts .ishk-ghost:hover,html.ishp19-on .ishk-shee
 html body #specRoot .вн-об,html body #specRoot .вн-тело{width:min(1240px,calc(100% - 40px))!important;max-width:1240px!important;margin-left:auto!important;margin-right:auto!important;padding-left:0!important;padding-right:0!important;box-sizing:border-box}
 html body #specRoot .ishp19c-tiles,html body #specRoot .ishp21-bar{display:none!important}
 @media screen and (max-width:760px){html body #specRoot .вн-об,html body #specRoot .вн-тело{width:calc(100% - 32px)!important}}
+/* 21.10: /spec, форма заявки - подпись первого поля сдвинута вправо (пустая левая ячейка у группы). Подписи и поля - в колонку от левого края.
+   Правило страхующее: на живой /spec не проверялось (корзина пуста - формы нет), проверить после выкладки. */
+html.ishp19-on .t706__cartwin .t-input-group > .t-input-title,
+html.ishp19-on .t706__cartwin .t-input-group > .t-input-block{margin-left:0!important;padding-left:0!important;text-align:left!important;float:none!important;width:auto!important}
+html.ishp19-on .t706__cartwin .t-input-group{display:block!important;text-align:left!important}
+html.ishp19-on .t706__cartwin .t-input-group > :empty:not(.t-input-error):not(.t-input-block){display:none!important}

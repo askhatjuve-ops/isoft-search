@@ -792,3 +792,5 @@ html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__
 @media screen and (max-width:600px){
   html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] > .ishp25-cmp .ishp25-cmp__t{font-size:12px!important}
 }
+/* 21.10: родная строка Tilda «Найдено: N» скрыта - число живое в «Найдено N» нашей строки (p35 live) */
+html.ishp35-on .t-store__filter__prods-number{display:none!important}

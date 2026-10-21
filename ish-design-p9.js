@@ -168,6 +168,10 @@
       }
     });
     sel.addEventListener('change', показать);
+    /* 21.10: «Сбросить всё» Tilda меняет sel.value кодом без события change - подпись оставалась «Цена: по возрастанию» при порядке по умолчанию.
+       Сверяем подпись с выбранным пунктом (дёшево: сравнение двух строк раз в 400 мс, пока вкладка открыта). */
+    var посл = sel.value;
+    setInterval(function () { if (D.hidden) return; if (sel.value !== посл) { посл = sel.value; показать(); } else { var c = sel.options[sel.selectedIndex]; if (c && val.textContent !== c.text) показать(); } }, 400);
     box.appendChild(wrap);
     root.classList.add('ishp9-sort-on');
     собрать();

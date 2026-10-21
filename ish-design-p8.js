@@ -368,6 +368,26 @@
     }
     return true;
   }
+  /* 21.10: слайд «14 000+ позиций» - кнопка ведёт в расширенный ассортимент, а не в окно запроса (p4 ставит всем слайдам «Запросить цену» → /podbor) */
+  function кнопка_слайда_ассортимент() {
+    var лента = D.getElementById('лента');
+    if (!лента) return false;
+    var сл = лента.querySelectorAll('.слайд');
+    if (!сл.length) return false;
+    var готово = true;
+    for (var i = 0; i < сл.length; i++) {
+      var т = сл[i].querySelector('.слайд-текст');
+      if (!т || !/^\s*14\s*000\+/.test(т.textContent)) continue;
+      var а = т.querySelector('.кнопки a');
+      if (!а || !сл[i].getAttribute('data-ishp')) { готово = false; continue; }
+      if (а.getAttribute('data-p8a')) continue;
+      а.setAttribute('href', '/assortiment');
+      а.removeAttribute('data-д');
+      а.setAttribute('data-p8a', '1');
+      for (var n = а.firstChild; n; n = n.nextSibling) if (n.nodeType === 3 && n.nodeValue.trim()) { n.nodeValue = 'Расширенный ассортимент'; break; }
+    }
+    return готово;
+  }
   function подпись_кнопки() {
     var к = D.querySelector('#запросБлок .кн-к.конт');
     if (!к || к.getAttribute('data-p8t')) return;
@@ -502,6 +522,7 @@
     try { описание_запроса(); } catch (e) {}
     кнопка_запроса();
     until(ссылки_заказа, 90);
+    until(кнопка_слайда_ассортимент, 90);
     until(function () { var r = полки(); if (r) { try { поднять_запрос(); } catch (e) {} } return r; }, 90);
     return true;
   }

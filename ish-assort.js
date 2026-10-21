@@ -350,8 +350,8 @@
       var g = st.expandedGroup;
       row.innerHTML = '';
       var all = D.createElement('button'); all.type = 'button'; all.className = 'subcategory' + (st.category === g ? ' active' : ''); all.setAttribute('data-category', g);
-      all.innerHTML = '<span>Все: ' + esc(g) + '</span>'; row.appendChild(all);
-      [].slice.call(list.querySelectorAll('.subcategory')).forEach(function (b) { var sp = b.querySelector('span'); if (sp) sp.textContent = shown(sp.textContent); row.appendChild(b); });
+      all.innerHTML = '<span>Все</span><b>' + fmt(me.origTotals.gt[g] || me.origTotals.ct[g] || 0) + '</b>'; row.appendChild(all);
+      [].slice.call(list.querySelectorAll('.subcategory')).forEach(function (b) { var sp = b.querySelector('span'); if (sp && sp.textContent === 'не опознано') sp.textContent = 'Другое'; row.appendChild(b); });
       if (list.parentNode) list.parentNode.removeChild(list);
       row.hidden = false;
     }

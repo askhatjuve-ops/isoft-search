@@ -719,3 +719,9 @@ html.ishp8-on #запросБлок .ishp8-zls{min-height:92px}
 #rec3523869303 .ishp8-mess .ishp8-mt{background:#fff;color:#2B44C7;box-shadow:inset 0 0 0 1.5px #2B44C7}
 #rec3523869303 .ishp8-mess .ishp8-mh{flex-basis:100%;font-size:13px;color:#2B44C7;min-height:18px}
 @media (max-width:640px){#rec3523869303 .ishp8-mess button{flex:1 1 100%}}
+
+/* 21.10 заголовки слайдов на телефоне: ровно две строки (перенос задан <br class="бр">), без обрезки */
+@media (max-width:600px){
+  html body #карусель .слайд-текст h2{font-size:clamp(19px,5.6vw,23px);line-height:1.15;min-height:calc(2 * 1.15em);white-space:nowrap;overflow-wrap:normal}
+  html body #карусель .слайд-текст h2 .бр{display:inline}
+}

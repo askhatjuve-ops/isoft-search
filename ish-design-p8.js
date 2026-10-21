@@ -458,6 +458,17 @@
     if (з.previousElementSibling === b) return;
     п.parentNode.insertBefore(з, п);
   }
+  /* 21.10 заголовки слайдов: без префикса «Техника для бизнеса:», переносы под две строки на телефоне (текст узла, Tilda не трогаем) */
+  function заголовки_слайдов() {
+    var ok = false;
+    [].forEach.call(D.querySelectorAll('#карусель .слайд-текст h2'), function (h) {
+      ok = true;
+      var t = h.textContent.replace(/\s+/g, ' ').trim();
+      if (/^Техника для бизнеса:/.test(t)) h.innerHTML = 'По одному запросу<br class="бр">в&nbsp;одном&nbsp;месте';
+      else if (/^14 000\+ позиций/.test(t) && h.querySelector('.бр') && /^14 000\+ позиций\s*$/.test(h.firstChild.textContent)) h.innerHTML = '14 000+ позиций в<br class="бр">расширенном ассортименте';
+    });
+    return ok;
+  }
   function вставить() {
     var полоса = D.getElementById('полоса');
     var запрос = D.getElementById('запросБлок');
@@ -482,6 +493,7 @@
     try { шаги_моб(); } catch (e) {}
     try { слить_запрос(); } catch (e) {}
     try { поднять_запрос(); } catch (e) {}
+    until(заголовки_слайдов, 40);
     D.documentElement.classList.add('ishp8-on');
     try { анимации(); } catch (e) {}
     подпись_кнопки();

@@ -1,4 +1,4 @@
-/* ish-design-p35.css  v3.5  (20.10.2026: цены списка на одной вертикали - tabular-nums и фиксированная колонка цены от 1101 px) v3.4  (кандидат 20.10.2026; НЕ выложено; v3.4: плитка группы = плитка раздела, чип «Сравнить», переключатель вида без значков везде, «Показать ещё» 48 px лавандовая; v3.3: лента преимуществ в шапке и на страницах разделов (телефон); v3.2: лента преимуществ в шапке группы (телефон), плитки «Разделов группы» на телефоне без обводки, на тени, фото меньше (вариант Б); v3 дописан в конце файла: шапка без фото/длинное слово, плитки без картинки, бренды текстом, режим группы html.ishp35-grp)  П35 «раздел каталога: компоненты главной»
+/* ish-design-p35.css  v3.6 (21.10.2026: плитка - цена в одну строку, одно «в наличии») v3.5  (20.10.2026: цены списка на одной вертикали - tabular-nums и фиксированная колонка цены от 1101 px) v3.4  (кандидат 20.10.2026; НЕ выложено; v3.4: плитка группы = плитка раздела, чип «Сравнить», переключатель вида без значков везде, «Показать ещё» 48 px лавандовая; v3.3: лента преимуществ в шапке и на страницах разделов (телефон); v3.2: лента преимуществ в шапке группы (телефон), плитки «Разделов группы» на телефоне без обводки, на тени, фото меньше (вариант Б); v3 дописан в конце файла: шапка без фото/длинное слово, плитки без картинки, бренды текстом, режим группы html.ishp35-grp)  П35 «раздел каталога: компоненты главной»
    Подключает ish-design-p35.js. Откат: пустой файл на Pages или window.ISH_P35_OFF / ISH_P4_NO_P35.
    Что: голубая палитра главной (#E7EAFB / #EEF1FD, кобальт на активном), шапка раздела с градиентом, полоса «кто мы», две индиго-плиты,
    экран «ничего не найдено», светлый низ, сегмент «Список / Плитка», цена и характеристики контрастнее, телефон: круги не на «В корзину».
@@ -723,4 +723,31 @@ html.ishp35-on .ishp35-cta{display:none!important}
 @media (max-width:600px){
   html.ishp35-on .ishp35-nfw .ishp35-wrap{padding-left:16px;padding-right:16px}
   html.ishp35-on .ishp35-nfw .ishp35-nf{max-width:100%}
+}
+
+/* ═══ v3.6 (21.10): плитка - цена с ₸ всегда в одну строку, наличие одно (нижнее) ═══ */
+html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .ishp35r-av{display:none!important}
+html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13]{container-type:inline-size}
+html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price{flex-wrap:nowrap!important;white-space:nowrap!important;min-width:0}
+html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price-value,html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price-currency{white-space:nowrap!important;display:inline-block}
+html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price-currency{margin-left:.25em}
+@media screen and (min-width:761px){
+  html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card-list:has(> .t-store__card[data-ish13]) .t-store__card[data-ish13]{grid-template-columns:auto minmax(min-content,1fr) auto!important}
+}
+@container (max-width:330px){
+  html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] > .ishp25-cmp .ishp25-cmp__t{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+  html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] > .ishp25-cmp{padding:0 8px!important;min-width:32px;justify-content:center}
+  html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price{margin-left:8px!important}
+  html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .ish13-buy{margin-left:8px!important}
+}
+@container (max-width:250px){
+  html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price-value{font-size:clamp(16px,7.4cqw,18px)!important}
+  html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price-currency{font-size:14px!important}
+}
+html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price,html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price-value,html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price-currency{overflow:visible!important;text-overflow:clip!important}
+html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .ishp38-stock{white-space:nowrap;grid-column:1 / -1}
+@container (max-width:190px){
+  html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price-value{font-size:clamp(12.5px,8.6cqw,16px)!important;letter-spacing:-.02em}
+  html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price-currency{font-size:12px!important;margin-left:.15em}
+  html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .ish13-buy{margin-left:4px!important}
 }

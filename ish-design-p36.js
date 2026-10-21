@@ -105,7 +105,7 @@
       var nf = D.createElement('section'); nf.className = 'ishp36-nf'; nf.setAttribute('aria-label', 'Не нашли нужное');
       nf.innerHTML = '<div><h3>Не нашли нужное? Пришлите список</h3><p>Проработаем и ответим в день обращения.</p></div>' +
         '<div class="ishp36-nfb"><span class="ishp36-nfw"><a class="p" href="/spec#kp">Написать, что нужно</a></span>' +
-        '<a class="s" href="/podbor">Подобрать технику →</a></div>';
+        '<a class="s" href="/assortiment">Расширенный ассортимент 14000+ →</a></div>';
       p2.parentNode.insertBefore(nf, p2.nextSibling);
     }
     return true;

@@ -313,6 +313,7 @@
       }
       D.querySelectorAll('#tableBox .sku').forEach(function (k) { if (/^\s*Артикул не выделен\s*$/.test(k.textContent)) k.textContent = ''; });
       chips(q); subs();
+      var ttl = D.getElementById('resultTitle'); if (ttl && ttl.textContent.indexOf('не опознано') >= 0) ttl.textContent = ttl.textContent.replace('не опознано', 'Прочее');
       var clr = D.getElementById('ia-clear'); if (clr) clr.hidden = !(D.getElementById('search').value);
       var rs = D.getElementById('ia-reset');
       if (rs) rs.hidden = !(q || st.brand || st.status || me.pmin != null || me.pmax != null || st.category !== 'Все товары' || st.sort !== 'rel');
@@ -331,13 +332,14 @@
       });
     }
     // «Найдено в разделах»: чипы из фасетов движка (только разделы с совпадениями, по убыванию); плитки сверху не меняются
+    function shown(n) { return n === 'не опознано' ? 'Прочее' : n; }    // служебное имя раздела покупателю не показываем
     function chips(q) {
       var box = D.getElementById('ia-chips'); if (!box) return;
       var f = q && me.facets ? me.facets.filter(function (c) { return c.n > 0; }).sort(function (a, c) { return c.n - a.n; }).slice(0, 8) : [];
       if (!f.length) { box.hidden = true; box.innerHTML = ''; return; }
       box.hidden = false;
       box.innerHTML = '<span class="ia-chips__l">Найдено в разделах:</span>' + f.map(function (c) {
-        return '<button type="button" class="ia-chip' + (st.category === c.name ? ' ia-on' : '') + '" data-ia-chip="' + esc(c.name) + '" aria-pressed="' + (st.category === c.name) + '">' + esc(c.name) + ' <b>' + fmt(c.n) + '</b></button>';
+        return '<button type="button" class="ia-chip' + (st.category === c.name ? ' ia-on' : '') + '" data-ia-chip="' + esc(c.name) + '" aria-pressed="' + (st.category === c.name) + '">' + esc(shown(c.name)) + ' <b>' + fmt(c.n) + '</b></button>';
       }).join('');
     }
     // подразделы выбранной плитки: чипами строкой под лентой (список приложения переносится из плитки сюда)
@@ -349,7 +351,7 @@
       row.innerHTML = '';
       var all = D.createElement('button'); all.type = 'button'; all.className = 'subcategory' + (st.category === g ? ' active' : ''); all.setAttribute('data-category', g);
       all.innerHTML = '<span>Все: ' + esc(g) + '</span>'; row.appendChild(all);
-      [].slice.call(list.querySelectorAll('.subcategory')).forEach(function (b) { row.appendChild(b); });
+      [].slice.call(list.querySelectorAll('.subcategory')).forEach(function (b) { var sp = b.querySelector('span'); if (sp) sp.textContent = shown(sp.textContent); row.appendChild(b); });
       if (list.parentNode) list.parentNode.removeChild(list);
       row.hidden = false;
     }

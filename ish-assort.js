@@ -120,6 +120,8 @@
     '.ia-lbl{font-size:12px;color:var(--muted);white-space:nowrap}',
     '.ia-more{display:block;white-space:nowrap;margin:6px auto;min-height:44px;padding:0 26px;border:1px solid var(--blue);border-radius:10px;background:var(--paper);color:var(--blue);font-weight:600}',
     '.ia-more:hover{background:var(--blue2)}',
+    'th.ia-sortable{cursor:pointer;user-select:none;white-space:nowrap}th.ia-sortable:hover,th.ia-on{color:var(--blue)}',
+    'th .ia-ar{margin-left:5px;font-size:9px;vertical-align:1px}',
     '.ia-dd{position:absolute;left:13px;right:13px;top:70px;z-index:30;background:var(--paper);border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);max-height:min(70vh,520px);overflow:auto;padding:6px}',
     '.ia-dd[hidden]{display:none}',
     '.ia-h{padding:8px 10px 4px;font-size:11px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}',
@@ -162,22 +164,38 @@
       if (st.category === 'Все товары') return null;
       var g = gi[st.category]; return g ? g.slice() : [st.category];
     }
+    // сортировка по заголовкам столбцов (21.10): сортируем данные (массив позиций), не строки на экране
+    var COLL = (W.Intl && W.Intl.Collator) ? new W.Intl.Collator('ru') : { compare: function (a, c) { return a < c ? -1 : a > c ? 1 : 0; } };
+    function byName(a, c) { return COLL.compare(a.name, c.name); }
+    function brandKey(p) { return p.brand === '-' || !p.brand ? '￿' : p.brand; }   // «Без бренда» всегда в конце списка
+    function cmpFor(sort) {
+      switch (sort) {
+        case 'priceAsc': return function (a, c) { return a.price - c.price; };
+        case 'priceDesc': return function (a, c) { return c.price - a.price; };
+        case 'nameDesc': return function (a, c) { return byName(c, a); };
+        case 'brandAsc': return function (a, c) { return COLL.compare(brandKey(a), brandKey(c)) || byName(a, c); };
+        case 'brandDesc': return function (a, c) { var x = brandKey(a), y = brandKey(c); return (x === y ? 0 : x === '￿' ? 1 : y === '￿' ? -1 : COLL.compare(y, x)) || byName(a, c); };
+        case 'statusAsc': return function (a, c) { return (a.on_site ? 0 : 1) - (c.on_site ? 0 : 1) || byName(a, c); };   // в наличии (на сайте) -> под заказ
+        case 'statusDesc': return function (a, c) { return (c.on_site ? 0 : 1) - (a.on_site ? 0 : 1) || byName(a, c); };
+        default: return byName;
+      }
+    }
+    var LOCAL = { name: 1, nameDesc: 1, brandAsc: 1, brandDesc: 1, statusAsc: 1, statusDesc: 1 };   // порядок считаем сами, не движок поиска
+    var COLS = [['brandAsc', 'brandDesc'], ['name', 'nameDesc'], ['statusAsc', 'statusDesc'], ['priceAsc', 'priceDesc']];
     function ownFilter(cs) {
       var set = cs ? new Set(cs) : null, b = st.brand, s = st.status, pm = me.pmin, px = me.pmax;
       var rows = prods.filter(function (p) {
         return (!set || set.has(p.category)) && (!b || p.brand === b) && (!s || (s === 'site' ? p.on_site : !p.on_site)) &&
           (pm == null || p.price >= pm) && (px == null || p.price <= px);
       });
-      rows.sort(function (a, c) {
-        return st.sort === 'priceAsc' ? a.price - c.price : st.sort === 'priceDesc' ? c.price - a.price : a.name.localeCompare(c.name, 'ru');
-      });
+      rows.sort(cmpFor(st.sort));
       return rows;
     }
     function compute() {
       var q = String(st.query || '').trim(), cs = cats(), res = null, rows;
       me.hl = new Map();
       if (q) {
-        var need = st.status === 'order' || st.sort === 'name';
+        var need = st.status === 'order' || !!LOCAL[st.sort];
         var o = { limit: need ? 20000 : Math.max(STEP, st.pageSize || STEP), brands: st.brand ? [st.brand] : [], cats: cs || [], inStock: st.status === 'site' };
         if (me.pmin != null) o.priceMin = me.pmin;
         if (me.pmax != null) o.priceMax = me.pmax;
@@ -189,7 +207,7 @@
           list.push(p); me.hl.set(p.id, r.html);
         });
         if (st.status === 'order') list = list.filter(function (p) { return !p.on_site; });
-        if (st.sort === 'name') list.sort(function (a, c) { return a.name.localeCompare(c.name, 'ru'); });
+        if (LOCAL[st.sort]) list.sort(cmpFor(st.sort));
         rows = list;
         var total = need ? list.length : res.total;
         if (rows.length < total) rows.length = total;     // хвост пустой: рисуется только срез первых st.pageSize
@@ -266,7 +284,20 @@
       var rs = D.getElementById('ia-reset');
       if (rs) rs.hidden = !(q || st.brand || st.status || me.pmin != null || me.pmax != null || st.category !== 'Все товары' || st.sort !== 'rel');
       brandOptions(res);
+      marks();
     }
+    // заголовки столбцов: указатель, ▲/▼ у активного (перерисовываются вместе с таблицей)
+    function marks() {
+      D.querySelectorAll('#tableBox thead th').forEach(function (th, i) {
+        var pair = COLS[i]; if (!pair) return;
+        var old = th.querySelector('.ia-ar'); if (old) th.removeChild(old);
+        var k = pair.indexOf(st.sort);
+        th.classList.add('ia-sortable'); th.setAttribute('aria-sort', k === 0 ? 'ascending' : k === 1 ? 'descending' : 'none');
+        th.setAttribute('title', 'Сортировать: клик — по возрастанию, ещё клик — по убыванию, третий — сброс');
+        if (k >= 0) { var a = D.createElement('span'); a.className = 'ia-ar'; a.setAttribute('aria-hidden', 'true'); a.textContent = k === 0 ? '▲' : '▼'; th.appendChild(a); th.classList.add('ia-on'); } else th.classList.remove('ia-on');
+      });
+    }
+    me.marks = marks; me.cmpFor = cmpFor; me.cols = COLS;
 
     W.filteredProducts = function () { return me.rows || me.origFiltered(); };
     W.renderCatalog = function () {
@@ -308,7 +339,10 @@
     me.origUI = { sort: sort.innerHTML, stat: stat.innerHTML, ph: input.getAttribute('placeholder') || '' };
     stat.innerHTML = '<option value="">Любое наличие</option><option value="site">В продаже на сайте</option><option value="order">Только под заказ</option>';
     stat.value = '';
-    sort.insertAdjacentHTML('afterbegin', '<option value="rel">По релевантности</option>');
+    sort.innerHTML = '<option value="rel">По релевантности</option><option value="name">По названию А→Я</option><option value="nameDesc">По названию Я→А</option>' +
+      '<option value="brandAsc">По бренду А→Я</option><option value="brandDesc">По бренду Я→А</option>' +
+      '<option value="statusAsc">Сначала в наличии</option><option value="statusDesc">Сначала под заказ</option>' +
+      '<option value="priceAsc">Сначала дешевле</option><option value="priceDesc">Сначала дороже</option>';
     sort.value = 'rel'; st.sort = 'rel'; st.pageSize = STEP;
     var price = D.createElement('span'); price.className = 'ia-price'; price.id = 'ia-price';
     price.innerHTML = '<span class="ia-lbl">Цена, ₸</span><input id="ia-p1" type="number" min="0" inputmode="numeric" placeholder="Цена от, ₸" aria-label="Цена от"><input id="ia-p2" type="number" min="0" inputmode="numeric" placeholder="до, ₸" aria-label="Цена до">';
@@ -362,6 +396,13 @@
 
     // сброс «показать ещё» при смене условий — в фазе захвата, раньше обработчиков приложения
     D.addEventListener('input', function (e) { if (e.target.id === 'search') { st.rawQuery = e.target.value.trim(); resetPaging(); } }, true);
+    D.addEventListener('click', function (e) {          // клик по заголовку столбца: по возрастанию -> по убыванию -> по релевантности
+      var th = e.target && e.target.closest ? e.target.closest('#tableBox thead th') : null, pair = th && me.cols[th.cellIndex];
+      if (!pair) return;
+      var k = pair.indexOf(sort.value);
+      sort.value = k < 0 ? pair[0] : k === 0 ? pair[1] : 'rel';
+      sort.dispatchEvent(new W.Event('change', { bubbles: true }));
+    });
     D.addEventListener('change', function (e) { var id = e.target.id; if (id === 'brandFilter' || id === 'statusFilter' || id === 'sort') resetPaging(); }, true);
     D.addEventListener('click', function (e) { if (e.target.closest && e.target.closest('#categories')) resetPaging(); }, true);
 

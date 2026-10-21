@@ -368,7 +368,7 @@
   }
   function place() {
     /* 19.10.2026: на /podbor (это и есть форма заявки) приглашение в квиз лишнее и ложилось во всю ширину экрана */
-    if (/^\/podbor\/?$/.test(location.pathname)) return true;
+    if (/^\/(podbor|assortiment)\/?$/.test(location.pathname)) return true;   /* 21.10: и на /assortiment приглашение убрано (Асхат) */
     var f = findForm();
     if (!f) return false;
     var s = D.getElementById('ishp23-cta');

@@ -153,6 +153,23 @@
   }
 
   /* ───────── 3. /assortiment: оформление приложения внутри iframe ───────── */
+  /* 21.10: на ПК окно приложения (iframe) растёт по содержимому: страница листается целиком, без внутреннего окна прокрутки.
+     Блок Tilda каждые 0.7 с ставит высоту «окно минус шапка» инлайном; наш !important из стиля сильнее (значение берём из переменной --ish-fh). */
+  var fitOn = false;
+  function fitFrame(f, d) {
+    if (fitOn) return; fitOn = true;
+    var st = D.createElement('style'); st.id = 'ishp37-fit';
+    st.textContent = '@media(min-width:901px){#isoft-catalog-frame{height:var(--ish-fh,720px)!important;min-height:0!important}}';
+    D.head.appendChild(st);
+    function go() {
+      try {
+        if (W.innerWidth <= 900 || !d.body) return;
+        var h = Math.ceil(d.body.getBoundingClientRect().height);
+        if (h > 200 && Math.abs((parseInt(f.style.getPropertyValue('--ish-fh')) || 0) - h) > 2) f.style.setProperty('--ish-fh', h + 'px');
+      } catch (e) {}
+    }
+    setInterval(go, 400); W.addEventListener('resize', go); go();
+  }
   function assort() {
     var f = D.getElementById('isoft-catalog-frame');
     if (!f) return false;
@@ -161,6 +178,7 @@
     if (!d.getElementById('ishp37a-css')) {
       var l = d.createElement('link'); l.id = 'ishp37a-css'; l.rel = 'stylesheet'; l.href = BASE + 'ish-design-p37a.css' + VQ; d.head.appendChild(l);
     }
+    fitFrame(f, d);
     return true;
   }
 

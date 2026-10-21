@@ -302,3 +302,7 @@ html.ishp36-zlock{overflow:hidden}
 .ishp36-zs:hover{background:#2238A8}
 .ishp36-zx{position:absolute;top:6px;right:6px;width:40px;height:40px;border:0;border-radius:12px;background:transparent;color:#5B6072;font-size:26px;line-height:1;cursor:pointer}
 .ishp36-zx:hover{background:#F0F1F7}
+
+.ishp36-zs2{margin-top:8px;background:#fff;color:#2B44C7;box-shadow:inset 0 0 0 1.5px #2B44C7}
+.ishp36-zs2:hover{background:#EEF1FD}
+.ishp36-zb .ishp36-zh{margin:10px 0 0;min-height:18px;font-size:13px;color:#2B44C7}

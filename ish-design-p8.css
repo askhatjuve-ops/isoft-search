@@ -713,3 +713,9 @@ html.ishp8-on #запросБлок .ishp8-zls{min-height:92px}
   html.ishp8-on #запросБлок .зб-текст h3{font-size:19px;margin:0 0 4px}
   html.ishp8-on #запросБлок .зб-текст p{font-size:13.5px;margin:0}
 }
+
+#rec3523869303 .ishp8-mess{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:12px}
+#rec3523869303 .ishp8-mess button{min-height:46px;padding:0 20px;border-radius:14px;font:700 14.5px/1 inherit;font-family:inherit;cursor:pointer;border:0;background:#2B44C7;color:#fff}
+#rec3523869303 .ishp8-mess .ishp8-mt{background:#fff;color:#2B44C7;box-shadow:inset 0 0 0 1.5px #2B44C7}
+#rec3523869303 .ishp8-mess .ishp8-mh{flex-basis:100%;font-size:13px;color:#2B44C7;min-height:18px}
+@media (max-width:640px){#rec3523869303 .ishp8-mess button{flex:1 1 100%}}

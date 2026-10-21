@@ -714,6 +714,57 @@
   }
   until(вставить, 80);
   }
+  /* 21.10: окно заявки на главной (штатная Tilda-форма #rec3523869303): к кнопке «Отправить список» добавляем WhatsApp и Telegram на номер из шапки.
+     Письмо через форму уходит как раньше; кнопки берут то, что уже введено (список обязателен, остальное - если заполнено). */
+  function мессенджеры() {
+    var NUM = '77758818531';
+    var рек = D.getElementById('rec3523869303');
+    var блок = рек && рек.querySelector('.t-form__submit');
+    if (!блок) return false;
+    if (блок.querySelector('.ishp8-mess')) return true;
+    var знач = function (имя) {
+      var e = рек.querySelector('[name="' + имя + '"]');
+      return e ? String(e.value || '').trim() : '';
+    };
+    var сбор = function () {
+      var список = знач('Список позиций *');
+      if (!список) { var т = рек.querySelector('textarea[name^="Список"]'); if (т) т.focus(); return ''; }
+      var стр = ['Здравствуйте! Список позиций:', список];
+      var комм = знач('Комментарий'); if (комм) стр.push('Комментарий: ' + комм);
+      var к = [знач('Name'), знач('Phone'), знач('Email')].filter(Boolean).join(', ');
+      var орг = знач('Компания'); if (орг) к = орг + (к ? ', ' + к : '');
+      if (к) стр.push('Контакт: ' + к);
+      стр.push(location.origin + location.pathname);
+      return стр.join('\n');
+    };
+    var w = D.createElement('div'); w.className = 'ishp8-mess';
+    w.innerHTML = '<button type="button" class="ishp8-mw">Отправить в WhatsApp</button>' +
+      '<button type="button" class="ishp8-mt">Отправить в Telegram</button>' +
+      '<span class="ishp8-mh" role="status" aria-live="polite"></span>';
+    блок.appendChild(w);
+    w.querySelector('.ishp8-mw').addEventListener('click', function () {
+      var т = сбор(); if (!т) return;
+      W.open('https://wa.me/' + NUM + '?text=' + encodeURIComponent(т), '_blank', 'noopener');
+    });
+    w.querySelector('.ishp8-mt').addEventListener('click', function () {
+      var т = сбор(); if (!т) return;
+      var h = w.querySelector('.ishp8-mh');
+      var открыть = function (ok) {
+        h.textContent = ok ? 'Текст скопирован — вставьте в чат.' : 'Не удалось скопировать — вставьте текст в чат вручную.';
+        setTimeout(function () { W.open('https://t.me/+' + NUM, '_blank', 'noopener'); }, ok ? 700 : 0);
+      };
+      var запас = function () {
+        var ta = D.createElement('textarea'); ta.value = т; ta.style.cssText = 'position:fixed;opacity:0;top:0;left:0';
+        D.body.appendChild(ta); ta.select(); var ok = false;
+        try { ok = D.execCommand('copy'); } catch (e) {}
+        D.body.removeChild(ta); открыть(ok);
+      };
+      if (W.navigator && navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(т).then(function () { открыть(true); }, запас);
+      else запас();
+    });
+    return true;
+  }
+  (function ждать(n) { try { if (мессенджеры()) return; } catch (e) {} if (n < 60) setTimeout(function () { ждать(n + 1); }, 500); })(0);
   /* общий листок (ish-design-list-anim.js) рядом с собой: грузим один раз, затем строим главную */
   if (W.ISHLA) { главная(); return; }
   var ls0 = D.getElementById('ishla-js');

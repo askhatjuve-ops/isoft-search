@@ -146,18 +146,40 @@
         '<p>Напишите список или одну позицию — ответим в день обращения.</p>' +
         '<textarea class="ishp36-zt" rows="5" aria-label="Список"></textarea>' +
         '<input class="ishp36-zc" type="text" placeholder="Телефон или почта для ответа" aria-label="Контакт">' +
-        '<button type="button" class="ishp36-zs">Отправить в WhatsApp</button></div>';
+        '<button type="button" class="ishp36-zs">Отправить в WhatsApp</button>' +
+        '<button type="button" class="ishp36-zs ishp36-zs2">Отправить в Telegram</button>' +
+        '<p class="ishp36-zh" role="status" aria-live="polite"></p></div>';
       D.body.appendChild(ov);
       var close = function () { ov.classList.remove('on'); H.classList.remove('ishp36-zlock'); };
       ov.addEventListener('click', function (e) { if (e.target === ov || e.target.className === 'ishp36-zx') close(); });
       D.addEventListener('keydown', function (e) { if (e.key === 'Escape') close(); });
-      q('.ishp36-zs', ov).addEventListener('click', function () {
-        var t = cl(q('.ishp36-zt', ov).value.replace(/\n/g, ' | ')) ? q('.ishp36-zt', ov).value.trim() : '';
-        if (!t) { q('.ishp36-zt', ov).focus(); return; }
+      var сбор = function () {
+        var t = q('.ishp36-zt', ov).value.trim();
+        if (!t) { q('.ishp36-zt', ov).focus(); return ''; }
         var c = q('.ishp36-zc', ov).value.trim();
-        var msg = 'Здравствуйте! ' + t + (c ? '\nКонтакт: ' + c : '') + '\n' + location.origin + location.pathname;
+        return 'Здравствуйте! ' + t + (c ? '\nКонтакт: ' + c : '') + '\n' + location.origin + location.pathname;
+      };
+      q('.ishp36-zs', ov).addEventListener('click', function () {
+        var msg = сбор(); if (!msg) return;
         W.open('https://wa.me/' + WA36 + '?text=' + encodeURIComponent(msg), '_blank', 'noopener');
         close();
+      });
+      /* Telegram по номеру текст подставить не умеет: копируем в буфер, подсказка, открываем чат */
+      q('.ishp36-zs2', ov).addEventListener('click', function () {
+        var msg = сбор(); if (!msg) return;
+        var h = q('.ishp36-zh', ov);
+        var открыть = function (ok) {
+          h.textContent = ok ? 'Текст скопирован — вставьте в чат.' : 'Не удалось скопировать — выделите текст и вставьте в чат вручную.';
+          setTimeout(function () { W.open('https://t.me/+' + WA36, '_blank', 'noopener'); }, ok ? 700 : 0);
+        };
+        var запас = function () {
+          var ta = D.createElement('textarea'); ta.value = msg; ta.style.cssText = 'position:fixed;opacity:0;top:0;left:0';
+          D.body.appendChild(ta); ta.select(); var ok = false;
+          try { ok = D.execCommand('copy'); } catch (e) {}
+          D.body.removeChild(ta); открыть(ok);
+        };
+        if (W.navigator && navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(msg).then(function () { открыть(true); }, запас);
+        else запас();
       });
     }
     q('.ishp36-zt', ov).value = pre;

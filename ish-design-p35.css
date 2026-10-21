@@ -751,3 +751,29 @@ html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__
   html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price-currency{font-size:12px!important;margin-left:.15em}
   html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .ish13-buy{margin-left:4px!important}
 }
+/* v3.6b: ₸ того же кегля, что цифры, вплотную (0.25em), по одной линии */
+html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13]{--p36:20px}
+@media screen and (max-width:760px){html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13]{--p36:18px}}
+@media screen and (max-width:380px){html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13]{--p36:15.5px}}
+@container (max-width:250px){html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price{--p36:clamp(16px,7.4cqw,18px)}}
+@container (max-width:190px){html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price{--p36:clamp(12.5px,8.6cqw,16px)}}
+html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price{align-items:baseline!important}
+html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price .t-store__card__price-value,html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price .t-store__card__price-currency{font-size:var(--p36)!important;line-height:1.2!important;letter-spacing:-.01em}
+html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price .t-store__card__price-currency{margin-left:-.1em!important;padding:0!important;letter-spacing:0!important}
+/* v3.6c: телефон - «Сравнить» вернулся в плитку: иконка-чекбокс слева от цены в строке цены */
+@media screen and (max-width:760px){
+  html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13]{grid-template-columns:auto minmax(min-content,1fr) auto!important}
+  html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] > .ishp25-cmp{position:static!important;grid-column:1!important;grid-row:6!important;margin:10px 0 0!important;align-self:center!important;justify-self:start!important;min-height:36px!important;min-width:32px;padding:0 6px!important;justify-content:center}
+  html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price{grid-column:2!important;grid-row:6!important;margin:10px 0 0 6px!important}
+  html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .ish13-buy{grid-column:3!important;grid-row:6!important}
+  html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .ishp38-stock{grid-column:1 / -1!important}
+}
+@media screen and (max-width:380px){
+  html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13]{padding:10px!important}
+  html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] > .ishp25-cmp{min-width:24px!important;padding:0 4px!important}
+  html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price{margin-left:2px!important}
+  html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .ish13-buy{width:34px!important;min-width:34px!important;max-width:34px!important;margin-left:2px!important}
+}
+@container (max-width:190px){
+  html:is(.ishp35-on,.ishp35-kat).ishd-tile body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price{--p36:clamp(11px,8.2cqw,15px)}
+}

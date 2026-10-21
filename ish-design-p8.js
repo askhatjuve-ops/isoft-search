@@ -538,7 +538,6 @@
         '<div class="ishp8-pk__chips"></div>' +
       '</div>' +
       '<div class="ishp8-pk__pane" id="ishp8-pk-p2" role="tabpanel" aria-labelledby="ishp8-pk-t2" hidden>' +
-        '<div class="ishp8-pk__q"><h2 class="ishp8-pk__h">Что нужно? <b>Вставьте как есть</b></h2></div>' +
         '<label class="ishp8-pk__lab" for="ishp8-pk-ta">Список или артикулы</label>' +
         '<textarea class="ishp8-pk__ta" id="ishp8-pk-ta" rows="2" placeholder="Вставьте список или артикулы…"></textarea>' +
         '<div class="ishp8-pk__row"><div class="ishp8-pk__att"><button type="button" class="ishp8-pk__clip" aria-label="Прикрепить файл: Excel, PDF или фото">' + СКР + '</button>' +

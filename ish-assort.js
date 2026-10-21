@@ -133,7 +133,19 @@
     '.ia-i .ia-p{white-space:nowrap;font-weight:600}',
     '.ia-sug{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;justify-content:center}',
     '.ia-sug button{border:1px solid var(--line);border-radius:999px;background:var(--paper);padding:6px 12px;color:var(--blue)}',
-    '.category.ia-zero{opacity:.45}',
+    'input[type=search]::-webkit-search-cancel-button{display:none}',
+    '.main-search .ia-go{flex:none;min-height:36px;padding:0 20px;border:0;border-radius:9px;background:var(--blue);color:#fff;font-size:14px;font-weight:700;line-height:1;font-family:inherit;white-space:nowrap;margin-right:-8px}',
+    '.main-search .ia-go:hover{filter:brightness(1.12)}',
+    '.main-search .ia-clear{flex:none;width:32px;height:32px;border:0;border-radius:50%;background:transparent;color:var(--muted);font-size:22px;line-height:1;margin-left:auto}',
+    '.main-search .ia-clear:hover{background:var(--blue2);color:var(--blue)}.main-search .ia-clear[hidden]{display:none}',
+    '.ia-chips,.ia-sub{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:0 0 10px}.ia-chips[hidden],.ia-sub[hidden]{display:none}',
+    '.ia-chips__l{font-size:13px;color:var(--muted);margin-right:2px}',
+    '.ia-chip,#ia-sub .subcategory{display:inline-flex;align-items:center;gap:6px;width:auto;min-height:36px;padding:0 14px;border:1px solid var(--line);border-radius:999px;background:#fff;color:var(--text);font-size:13px;font-weight:400;line-height:1.2;font-family:inherit;white-space:nowrap}',
+    '.ia-chip b,#ia-sub .subcategory b{font-weight:400;font-size:12px;color:var(--muted)}',
+    '.ia-chip:hover,#ia-sub .subcategory:hover{border-color:var(--blue);color:var(--blue)}',
+    '.ia-chip.ia-on,#ia-sub .subcategory.active{background:var(--blue2);border-color:var(--blue);color:var(--blue)}',
+    '#ia-sub .subcategory-list{display:contents}',
+    '@media(max-width:680px){.ia-chips,.ia-sub{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin:0 -2px 10px;padding-bottom:2px}.ia-chips::-webkit-scrollbar,.ia-sub::-webkit-scrollbar{display:none}.ia-chips__l{white-space:nowrap}.ia-chip,#ia-sub .subcategory{flex:none;min-height:40px}}',
     '.search-panel{display:flex;flex-wrap:wrap;align-items:center;gap:8px;padding:8px}',
     '.search-panel .main-search{flex:1 1 100%;min-width:0;width:auto}',
     '.search-panel .filter-row{display:flex;flex:1 1 100%;flex-wrap:wrap;align-items:center;gap:8px;margin:0;min-width:0}',
@@ -180,6 +192,29 @@
         default: return byName;
       }
     }
+    // релевантность (21.10): раздел/тип товара, совпавший с запросом, идёт первым, затем слово в начале названия, затем прочие совпадения (порядок движка внутри группы)
+    var ALIAS = [['монитор', 'monitor'], ['принтер', 'printer'], ['клавиатур', 'keyboard'], ['ноутбук', 'notebook'], ['коммутатор', 'switch']];
+    function stemOf(t) { return /[а-яё]/.test(t) ? t.replace(/(ами|ями|ов|ев|ей|ом|ем|ах|ях|ы|и|а|я|о|е|у|ю|ь|й)$/, '') : t.replace(/(es|s)$/, ''); }
+    function stemsOf(q) {
+      var out = [];
+      String(q || '').toLowerCase().split(/[\s,;]+/).forEach(function (t) {
+        if (!/^[a-zа-яё]{3,}$/.test(t)) return;
+        var s0 = stemOf(t); if (s0.length < 3) return;
+        out.push(s0); ALIAS.forEach(function (a) { if (a[0] === s0) out.push(a[1]); else if (a[1] === s0) out.push(a[0]); });
+      });
+      return out;
+    }
+    var SIZE = /^[\d.,]+(-?inch|-?дюйм\S*|["″'“”]+)?$/;
+    function tierOf(p, ss) {
+      var cw = String(p.category || '').toLowerCase().split(/[\s(\/]/)[0], i, j;
+      var ws = String(p.name || '').toLowerCase().split(/\s+/).filter(function (w) { return w && !SIZE.test(w); }).slice(0, 3), lead = false, cat = false;
+      for (i = 0; i < ss.length; i++) {
+        if (cw.indexOf(ss[i]) === 0) cat = true;
+        for (j = 0; j < ws.length; j++) if (ws[j].replace(/^[^a-zа-яё]+/, '').indexOf(ss[i]) === 0) lead = true;
+      }
+      return cat && lead ? 0 : cat ? 1 : lead ? 2 : 3;     // раздел и тип в названии -> только раздел -> только тип в названии -> прочее
+    }
+    me.tierOf = tierOf; me.stemsOf = stemsOf;
     var LOCAL = { name: 1, nameDesc: 1, brandAsc: 1, brandDesc: 1, statusAsc: 1, statusDesc: 1 };   // порядок считаем сами, не движок поиска
     var COLS = [['brandAsc', 'brandDesc'], ['name', 'nameDesc'], ['statusAsc', 'statusDesc'], ['priceAsc', 'priceDesc']];
     function ownFilter(cs) {
@@ -195,7 +230,7 @@
       var q = String(st.query || '').trim(), cs = cats(), res = null, rows;
       me.hl = new Map();
       if (q) {
-        var need = st.status === 'order' || !!LOCAL[st.sort];
+        var ss = st.sort === 'rel' ? stemsOf(q) : [], need = st.status === 'order' || !!LOCAL[st.sort] || ss.length > 0;
         var o = { limit: need ? 20000 : Math.max(STEP, st.pageSize || STEP), brands: st.brand ? [st.brand] : [], cats: cs || [], inStock: st.status === 'site' };
         if (me.pmin != null) o.priceMin = me.pmin;
         if (me.pmax != null) o.priceMax = me.pmax;
@@ -208,11 +243,12 @@
         });
         if (st.status === 'order') list = list.filter(function (p) { return !p.on_site; });
         if (LOCAL[st.sort]) list.sort(cmpFor(st.sort));
+        else if (ss.length) list = list.map(function (p, i) { return [tierOf(p, ss), i, p]; }).sort(function (a, c) { return a[0] - c[0] || a[1] - c[1]; }).map(function (x) { return x[2]; });
         rows = list;
         var total = need ? list.length : res.total;
         if (rows.length < total) rows.length = total;     // хвост пустой: рисуется только срез первых st.pageSize
       } else rows = ownFilter(cs);
-      me.last = res; me.rows = rows;
+      me.last = res; me.rows = rows; me.facets = res && res.facets ? res.facets.cats : null;
       return res;
     }
     function applyCounts(res) {
@@ -275,12 +311,9 @@
           ((words.length || fc.length) ? '<div class="ia-sug">' + words.map(function (w) { return '<button type="button" data-ia-q="' + esc(w) + '">' + esc(w) + '</button>'; }).join('') +
             fc.slice(0, 5).map(function (c) { return '<button type="button" data-ia-cat="' + esc(c.name) + '">' + esc(c.name) + '</button>'; }).join('') + '</div>' : '') + '</div>';
       }
-      D.querySelectorAll('#categories [data-category]').forEach(function (b) {
-        var c = b.querySelector('b'); b.classList.toggle('ia-zero', !!c && c.textContent.replace(/\s/g, '') === '0' && b.getAttribute('data-category') !== 'Все товары');
-      });
-      D.querySelectorAll('#categories [data-group]').forEach(function (b) {
-        var c = b.querySelector('b'); b.classList.toggle('ia-zero', !!c && c.textContent.replace(/\s/g, '') === '0');
-      });
+      D.querySelectorAll('#tableBox .sku').forEach(function (k) { if (/^\s*Артикул не выделен\s*$/.test(k.textContent)) k.textContent = ''; });
+      chips(q); subs();
+      var clr = D.getElementById('ia-clear'); if (clr) clr.hidden = !(D.getElementById('search').value);
       var rs = D.getElementById('ia-reset');
       if (rs) rs.hidden = !(q || st.brand || st.status || me.pmin != null || me.pmax != null || st.category !== 'Все товары' || st.sort !== 'rel');
       brandOptions(res);
@@ -297,13 +330,36 @@
         if (k >= 0) { var a = D.createElement('span'); a.className = 'ia-ar'; a.setAttribute('aria-hidden', 'true'); a.textContent = k === 0 ? '▲' : '▼'; th.appendChild(a); th.classList.add('ia-on'); } else th.classList.remove('ia-on');
       });
     }
+    // «Найдено в разделах»: чипы из фасетов движка (только разделы с совпадениями, по убыванию); плитки сверху не меняются
+    function chips(q) {
+      var box = D.getElementById('ia-chips'); if (!box) return;
+      var f = q && me.facets ? me.facets.filter(function (c) { return c.n > 0; }).sort(function (a, c) { return c.n - a.n; }).slice(0, 8) : [];
+      if (!f.length) { box.hidden = true; box.innerHTML = ''; return; }
+      box.hidden = false;
+      box.innerHTML = '<span class="ia-chips__l">Найдено в разделах:</span>' + f.map(function (c) {
+        return '<button type="button" class="ia-chip' + (st.category === c.name ? ' ia-on' : '') + '" data-ia-chip="' + esc(c.name) + '" aria-pressed="' + (st.category === c.name) + '">' + esc(c.name) + ' <b>' + fmt(c.n) + '</b></button>';
+      }).join('');
+    }
+    // подразделы выбранной плитки: чипами строкой под лентой (список приложения переносится из плитки сюда)
+    function subs() {
+      var row = D.getElementById('ia-sub'); if (!row) return;
+      var list = D.querySelector('#categories .subcategory-list');
+      if (!list) { row.hidden = true; row.innerHTML = ''; return; }
+      var g = st.expandedGroup;
+      row.innerHTML = '';
+      var all = D.createElement('button'); all.type = 'button'; all.className = 'subcategory' + (st.category === g ? ' active' : ''); all.setAttribute('data-category', g);
+      all.innerHTML = '<span>Все: ' + esc(g) + '</span>'; row.appendChild(all);
+      [].slice.call(list.querySelectorAll('.subcategory')).forEach(function (b) { row.appendChild(b); });
+      if (list.parentNode) list.parentNode.removeChild(list);
+      row.hidden = false;
+    }
     me.marks = marks; me.cmpFor = cmpFor; me.cols = COLS;
 
     W.filteredProducts = function () { return me.rows || me.origFiltered(); };
     W.renderCatalog = function () {
       if (!me.active) return me.origRender();
       var res = null;
-      try { st.page = 1; res = compute(); applyCounts(res); } catch (e) { return fail(e); }
+      try { st.page = 1; res = compute(); applyCounts(null); } catch (e) { return fail(e); }
       me.origRender();
       try { post(res); } catch (e) { log('post', e); me.errors++; if (me.errors > 3) fail(e); }
     };
@@ -351,6 +407,15 @@
     row.insertBefore(reset, row.querySelector('#downloadCatalogXlsx') || null);
     var note = D.createElement('div'); note.className = 'ia-note'; note.id = 'ia-note'; note.setAttribute('aria-live', 'polite');
     var meta = D.querySelector('.results-meta'); meta.parentNode.insertBefore(note, meta.nextSibling);
+    var chipsEl = D.createElement('div'); chipsEl.className = 'ia-chips'; chipsEl.id = 'ia-chips'; chipsEl.hidden = true; meta.parentNode.insertBefore(chipsEl, meta);
+    var cats = D.getElementById('categories'), subEl = D.createElement('div'); subEl.className = 'ia-sub'; subEl.id = 'ia-sub'; subEl.hidden = true;
+    if (cats && cats.parentNode) cats.parentNode.insertBefore(subEl, cats.nextSibling);
+    var lab = input.closest ? input.closest('.main-search') : null;
+    if (lab) {
+      var clr = D.createElement('button'); clr.type = 'button'; clr.className = 'ia-clear'; clr.id = 'ia-clear'; clr.hidden = true; clr.setAttribute('aria-label', 'Очистить поиск'); clr.textContent = '×';
+      var go = D.createElement('button'); go.type = 'button'; go.className = 'ia-go'; go.id = 'ia-go'; go.textContent = 'Найти';
+      lab.appendChild(clr); lab.appendChild(go);
+    }
     var dd = D.createElement('div'); dd.className = 'ia-dd'; dd.id = 'ia-dd'; dd.setAttribute('role', 'listbox'); dd.hidden = true;
     panel.appendChild(dd);
 
@@ -365,6 +430,7 @@
     }
     var seq = 0;
     function renderDD() {
+      close(); return;       // 21.10: выпадающие подсказки убраны - результаты и «Найдено в разделах» видны под полем сразу
       var q = String(st.query || '').trim(), res = me.last, h = '', n = 0;
       function it(attrs, left, right, cls) { return '<div class="ia-i" role="option" id="ia-o' + (++n) + '" aria-selected="false" ' + attrs + '><span class="ia-t">' + left + '</span>' + (right ? '<b class="' + (cls || '') + '">' + right + '</b>' : '') + '</div>'; }
       if (q.length < 2 || !res) {
@@ -395,7 +461,29 @@
     function resetPaging() { st.pageSize = STEP; st.page = 1; }
 
     // сброс «показать ещё» при смене условий — в фазе захвата, раньше обработчиков приложения
-    D.addEventListener('input', function (e) { if (e.target.id === 'search') { st.rawQuery = e.target.value.trim(); resetPaging(); } }, true);
+    // живой поиск с задержкой 300 мс: слушатель приложения не получает каждую букву (страница не прыгает), применяем сами
+    var liveT = 0;
+    function applyQuery() {
+      clearTimeout(liveT);
+      var v = input.value; st.rawQuery = v.trim(); st.query = v.trim().toLowerCase(); st.page = 1; resetPaging();
+      clearTimeout(urlT); urlT = setTimeout(syncUrl, 300);
+      render();
+    }
+    D.addEventListener('input', function (e) {
+      if (e.target.id !== 'search') return;
+      e.stopImmediatePropagation();
+      var c = D.getElementById('ia-clear'); if (c) c.hidden = !input.value;
+      clearTimeout(liveT); liveT = setTimeout(applyQuery, 300);
+    }, true);
+    D.addEventListener('click', function (e) {
+      var t = e.target && e.target.closest ? e.target : null; if (!t) return;
+      if (t.closest('#ia-go')) { applyQuery(); if (W.innerWidth <= 680) input.blur(); return; }
+      if (t.closest('#ia-clear')) { input.value = ''; applyQuery(); input.focus(); return; }
+      var ch = t.closest('#ia-chips [data-ia-chip]');
+      if (ch) { var nm = ch.getAttribute('data-ia-chip'); resetPaging(); st.category = st.category === nm ? 'Все товары' : nm; render(); return; }
+      var sb = t.closest('#ia-sub [data-category]');
+      if (sb) { resetPaging(); st.category = sb.getAttribute('data-category'); render(); }
+    });
     D.addEventListener('click', function (e) {          // клик по заголовку столбца: по возрастанию -> по убыванию -> по релевантности
       var th = e.target && e.target.closest ? e.target.closest('#tableBox thead th') : null, pair = th && me.cols[th.cellIndex];
       if (!pair) return;
@@ -406,13 +494,12 @@
     D.addEventListener('change', function (e) { var id = e.target.id; if (id === 'brandFilter' || id === 'statusFilter' || id === 'sort') resetPaging(); }, true);
     D.addEventListener('click', function (e) { if (e.target.closest && e.target.closest('#categories')) resetPaging(); }, true);
 
-    input.addEventListener('input', function () { clearTimeout(urlT); urlT = setTimeout(syncUrl, 400); renderDD(); });
     input.addEventListener('focus', function () { if (me.active) renderDD(); });
     input.addEventListener('keydown', function (e) {
       if (e.key === 'ArrowDown') { if (dd.hidden) renderDD(); mark(cur + 1); e.preventDefault(); }
       else if (e.key === 'ArrowUp') { if (!dd.hidden) { mark(cur - 1); e.preventDefault(); } }
       else if (e.key === 'Escape') { if (!dd.hidden) { close(); e.preventDefault(); } }     // первый Esc закрывает подсказки, не стирая запрос (type=search стёр бы его сам)
-      else if (e.key === 'Enter') { var it = items()[cur]; if (it) { pick(it); e.preventDefault(); } else close(); }
+      else if (e.key === 'Enter') { e.preventDefault(); close(); applyQuery(); if (W.innerWidth <= 680) input.blur(); }
     });
     D.addEventListener('mousedown', function (e) { if (!dd.hidden && !dd.contains(e.target) && e.target !== input) close(); });
     var blurT = 0;
@@ -427,7 +514,7 @@
     function pick(it) {
       var a;
       resetPaging();
-      if ((a = it.getAttribute('data-ia-cat')) != null) { st.category = a; st.expandedGroup = groupOf(a) || st.expandedGroup; }
+      if ((a = it.getAttribute('data-ia-cat')) != null) { st.category = a; }
       else if ((a = it.getAttribute('data-ia-brand')) != null) { st.brand = a; }
       else if ((a = it.getAttribute('data-ia-prod')) != null) { setQuery(a); }
       close(); render();
@@ -437,7 +524,7 @@
       var t = e.target.closest ? e.target : null; if (!t) return;
       if (t.closest('[data-ia-more]')) { st.pageSize += STEP; render(); return; }
       var b = t.closest('[data-ia-q]'); if (b) { resetPaging(); setQuery(b.getAttribute('data-ia-q')); render(); return; }
-      b = t.closest('#tableBox [data-ia-cat]'); if (b) { resetPaging(); st.category = b.getAttribute('data-ia-cat'); st.expandedGroup = groupOf(st.category) || st.expandedGroup; render(); return; }
+      b = t.closest('#tableBox [data-ia-cat]'); if (b) { resetPaging(); st.category = b.getAttribute('data-ia-cat'); render(); return; }
       if (t.closest('#ia-reset')) {
         resetPaging(); setQuery(''); st.category = 'Все товары'; st.expandedGroup = ''; st.brand = ''; st.status = ''; st.sort = 'rel';
         me.pmin = me.pmax = null; D.getElementById('ia-p1').value = ''; D.getElementById('ia-p2').value = '';

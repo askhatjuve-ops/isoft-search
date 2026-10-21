@@ -1,0 +1,20 @@
+/* ish-design-list-anim.css  v1.0 (21.10): листок с набором списка и «КП готово» (общий для главной и карточки). Только .ishla* */
+.ishla{position:relative;flex:0 0 292px;width:292px;height:92px;box-sizing:border-box;padding:12px 18px;border-radius:16px;background:rgba(43,68,199,.07);border:1px solid rgba(43,68,199,.2);pointer-events:none;align-self:center}
+.ishla .ishla-lr{display:block;height:22px;margin:0;font:500 14px/22px TildaSans,Arial,sans-serif;color:#171923;white-space:nowrap;opacity:0;transform:none;transition:transform .5s cubic-bezier(.5,0,.2,1),opacity .4s}
+.ishla .ishla-lr.on{opacity:1}
+.ishla .ishla-lr>span{display:inline;margin:0;max-width:none;color:inherit;font:inherit}
+.ishla-cur{display:inline-block;width:2px;height:15px;margin-left:2px;vertical-align:-2px;background:#2B44C7;animation:ishla-blink .8s steps(1) infinite}
+@keyframes ishla-blink{50%{opacity:0}}
+.ishla.fold .ishla-lr{opacity:0!important;transform:translateY(0) scale(.55)}
+.ishla.fold .ishla-lr:nth-child(1){transform:translateY(22px) scale(.55)}
+.ishla.fold .ishla-lr:nth-child(3){transform:translateY(-22px) scale(.55);transition-delay:.12s}
+.ishla-ok{position:absolute;left:50%;top:50%;display:flex;align-items:center;gap:8px;padding:9px 16px 9px 10px;border-radius:999px;background:#fff;color:#2B44C7;font:700 15px/1 TildaSans,Arial,sans-serif;white-space:nowrap;box-shadow:0 10px 22px -10px rgba(10,20,80,.7);opacity:0;transform:translate(-50%,-50%) scale(.8);transition:transform .45s cubic-bezier(.3,1.5,.5,1),opacity .3s}
+.ishla-ok svg{width:20px;height:20px;flex:none}
+.ishla.done .ishla-ok{opacity:1;transform:translate(-50%,-50%) scale(1)}
+@media (max-width:640px){.ishla{flex:none;width:100%;max-width:none;padding:10px 14px}}
+@media (prefers-reduced-motion:reduce){
+  .ishla-cur,.ishla-ok{animation:none!important}
+  .ishla-ok{display:none!important}
+  .ishla .ishla-lr{opacity:1;transition:none}
+  .ishla-lr::after{content:attr(data-t)}
+}

@@ -452,19 +452,6 @@ html .ishp8-bi .ishp8-bic{margin-top:4px;text-align:center}
 
 /* ───────── АНИМАЦИИ (C2, 17.10): только transform/opacity, декор без кликов, при «уменьшить движение» всё выключено ───────── */
 /* 1. «листок» в плашке «Пришлите список» */
-.ishp8-ls{position:relative;flex:0 0 292px;width:292px;box-sizing:border-box;padding:12px 18px;min-height:82px;border-radius:16px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);pointer-events:none;align-self:center}
-html .ishp8-bento>.c-w .ishp8-ls .ishp8-lr{display:block;height:22px;margin:0;font:500 14px/22px var(--p8-f);color:#EEF0FF;white-space:nowrap;opacity:0;transform:none;transition:transform .5s cubic-bezier(.5,0,.2,1),opacity .4s}
-html .ishp8-bento>.c-w .ishp8-ls .ishp8-lr.on{opacity:1}
-html .ishp8-bento>.c-w .ishp8-ls .ishp8-lr>span{display:inline;margin:0;max-width:none;color:inherit;font:inherit}
-.ishp8-cur{display:inline-block;width:2px;height:15px;margin-left:2px;vertical-align:-2px;background:#fff;animation:ishp8-blink .8s steps(1) infinite}
-@keyframes ishp8-blink{50%{opacity:0}}
-.ishp8-ls.fold .ishp8-lr{opacity:0!important;transform:translateY(0) scale(.55)}
-.ishp8-ls.fold .ishp8-lr:nth-child(1){transform:translateY(22px) scale(.55)}
-.ishp8-ls.fold .ishp8-lr:nth-child(3){transform:translateY(-22px) scale(.55);transition-delay:.12s}
-.ishp8-ok{position:absolute;left:50%;top:50%;display:flex;align-items:center;gap:8px;padding:9px 16px 9px 10px;border-radius:999px;background:#fff;color:var(--p8-cobalt);font:700 15px/1 var(--p8-f);white-space:nowrap;box-shadow:0 10px 22px -10px rgba(10,20,80,.7);opacity:0;transform:translate(-50%,-50%) scale(.8);transition:transform .45s cubic-bezier(.3,1.5,.5,1),opacity .3s}
-.ishp8-ok svg{width:20px;height:20px;flex:none}
-.ishp8-ls.done .ishp8-ok{opacity:1;transform:translate(-50%,-50%) scale(1)}
-@media (max-width:900px){.ishp8-ls{flex:none;width:100%;max-width:340px;align-self:flex-start}}
 /* 2. лазер сканера на плитке «Торговое оборудование» */
 .ishp8-lz{position:absolute;left:50%;top:50%;width:min(128px,78%);aspect-ratio:1/1;transform:translate(-50%,-50%);pointer-events:none;z-index:2}
 .ishp8-lzc{position:absolute;left:-46%;top:13.4%;width:44%;height:auto;opacity:.92;border-radius:5px;box-shadow:0 6px 14px -6px rgba(0,0,0,.6)}
@@ -509,10 +496,8 @@ html.ishp8-on body #allrecords .в73 .шаг.ishp8-flash{animation:ishp8-pop .8s
 }
 @media (hover:none),(pointer:coarse){.ishp8-br{display:none}}
 @media (prefers-reduced-motion:reduce){
-  .ishp8-dot,.ishp8-cur,.ishp8-lz *,.ishp8-ok{animation:none!important}
+  .ishp8-dot,.ishp8-lz *{animation:none!important}
   .ishp8-lz,.ishp8-rt,.ishp8-br,.ishp8-ok{display:none!important}
-  html .ishp8-bento>.c-w .ishp8-ls .ishp8-lr{opacity:1;transition:none}
-  .ishp8-lr::after{content:attr(data-t)}
 }
 
 /* ───────── C2 «вариант 2» (17.10): порядок блоков, сквозные номера, объединённый финальный блок ───────── */
@@ -523,11 +508,6 @@ html.ishp8-on #запросБлок.ishp8-merged{grid-template-columns:auto minm
 html.ishp8-on #запросБлок .ishp8-zls{display:flex;align-items:center;justify-content:center;min-width:0}
 html.ishp8-on #запросБлок.ishp8-merged .зб-кнопки{flex-direction:column;align-items:stretch;gap:12px}
 html.ishp8-on #запросБлок.ishp8-merged .зб-кнопки .кн-к{justify-content:center;text-align:center;white-space:nowrap}
-html.ishp8-on #запросБлок .ishp8-ls{flex:0 0 292px;width:292px;height:92px;min-height:0;background:rgba(43,68,199,.07);border:1px solid rgba(43,68,199,.2);align-self:center}
-html.ishp8-on #запросБлок .ishp8-ls .ishp8-lr{display:block;height:22px;margin:0;font:500 14px/22px var(--p8-f);color:var(--p8-ink);white-space:nowrap;opacity:0;transform:none;transition:transform .5s cubic-bezier(.5,0,.2,1),opacity .4s}
-html.ishp8-on #запросБлок .ishp8-ls .ishp8-lr.on{opacity:1}
-html.ishp8-on #запросБлок .ishp8-ls .ishp8-lr>span{display:inline;margin:0;max-width:none;color:inherit;font:inherit}
-html.ishp8-on #запросБлок .ishp8-cur{background:var(--p8-cobalt)}
 @media (max-width:1180px){
   html.ishp8-on #запросБлок.ishp8-merged{grid-template-columns:auto minmax(0,1fr)}
   html.ishp8-on #запросБлок .ishp8-zls{grid-column:1/-1;justify-content:flex-start}
@@ -539,12 +519,10 @@ html.ishp8-on #запросБлок .ishp8-cur{background:var(--p8-cobalt)}
 }
 @media (max-width:640px){
   html.ishp8-on #запросБлок.ishp8-merged{gap:14px}
-  html.ishp8-on #запросБлок .ishp8-ls{flex:none;width:100%;max-width:none;padding:10px 14px}
   html.ishp8-on #запросБлок.ishp8-merged .зб-кнопки{flex-direction:column;flex-wrap:nowrap;align-items:stretch;width:100%}
   html.ishp8-on #запросБлок.ishp8-merged .зб-кнопки .кн-к{width:100%}
 }
 @media (prefers-reduced-motion:reduce){
-  html.ishp8-on #запросБлок .ishp8-ls .ishp8-lr{opacity:1;transition:none}
 }
 @media (max-width:640px){html.ishp8-on #полоса{margin-top:36px}}
 @media (max-width:980px){html.ishp8-on #запросБлок.запрос-блок{margin-bottom:36px}}
@@ -729,11 +707,9 @@ html body #карусель .слайд-текст p{min-height:calc(2 * 1.45em)
 /* 21.10 (Асхат): вместо связки «Подбор / Список» вернули прежний светлый блок «Пришлите список» (градиент, листок «10 шт», «КП готово»); карточка квиза на главной скрыта, сам квиз П23 работает как раньше */
 html.ishp8-on #ishp23-cta{display:none!important}
 html.ishp8-on #запросБлок .ishp8-zls{min-height:92px}
-html.ishp8-on #запросБлок .ishp8-ls .ishp8-ok{color:var(--p8-cobalt)}
 @media (max-width:640px){
   html.ishp8-on #запросБлок.запрос-блок{padding:18px 16px;gap:12px}
   html.ishp8-on #запросБлок .зб-знак.ishp8-zl{display:none}
   html.ishp8-on #запросБлок .зб-текст h3{font-size:19px;margin:0 0 4px}
   html.ishp8-on #запросБлок .зб-текст p{font-size:13.5px;margin:0}
-  html.ishp8-on #запросБлок .ishp8-ls{height:92px;padding:10px 14px}
 }

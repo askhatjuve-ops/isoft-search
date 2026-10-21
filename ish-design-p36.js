@@ -27,6 +27,26 @@
     [/возврат/i, 'Индивидуальный подход']
   ];
 
+  /* знак iSoft слева и листок со списком между текстом и кнопками - общий модуль ish-design-list-anim.js (как на главной); нет модуля - блок остаётся без них */
+  function лист_в_блок(nf) {
+    function вставить() {
+      if (!W.ISHLA || nf.querySelector('.ishla')) return !!W.ISHLA;
+      var з = D.createElement('div'); з.className = 'ishp36-nfl'; з.innerHTML = W.ISHLA.лого('ishp36-nfg', '#272B36', '#2B44C7');
+      var т = nf.firstChild; т.className = 'ishp36-nft'; var w = D.createElement('div'); w.className = 'ishp36-nfs'; w.innerHTML = W.ISHLA.лист();
+      nf.insertBefore(з, т); nf.insertBefore(w, nf.lastChild);
+      W.ISHLA.пуск(w.firstChild);
+      return true;
+    }
+    if (вставить()) return;
+    if (!D.getElementById('ishla-js') && tag && tag.src) {
+      var sc = D.createElement('script'), v = /[?&]v=(\w+)/.exec(tag.src);
+      sc.id = 'ishla-js'; sc.defer = true;
+      sc.src = tag.src.replace(/ish-design-p36\.js.*$/, 'ish-design-list-anim.js' + (v ? '?v=' + v[1] : ''));
+      D.head.appendChild(sc);
+    }
+    var n = 0; (function ж() { if (!вставить() && ++n < 80) setTimeout(ж, 100); })();
+  }
+
   function q(s, r) { return (r || D).querySelector(s); }
 
 
@@ -107,6 +127,7 @@
         '<div class="ishp36-nfb"><span class="ishp36-nfw"><a class="p" href="/spec#kp">Написать, что нужно</a></span>' +
         '<a class="s" href="/assortiment">Расширенный ассортимент 14000+ →</a></div>';
       p2.parentNode.insertBefore(nf, p2.nextSibling);
+      лист_в_блок(nf);
     }
     return true;
   }

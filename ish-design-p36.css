@@ -135,6 +135,10 @@ html.ishp36-on #allrecords .ishpg-к:hover a.ishpg-кк{background:var(--k);colo
 html.ishp36-on .ishp36-nf{display:flex;align-items:center;justify-content:space-between;gap:20px 28px;flex-wrap:wrap;position:relative;overflow:hidden;isolation:isolate;box-sizing:border-box;margin:24px 0 0;padding:24px 30px;border-radius:26px;background:linear-gradient(135deg,#fff 0%,var(--soft) 55%,#DCE1FA 100%);box-shadow:0 26px 54px -28px rgba(43,68,199,.45),0 2px 6px rgba(23,25,35,.05);font-family:var(--f,TildaSans,Arial,sans-serif)}
 html.ishp36-on .ishp36-nf h3{margin:0 0 4px;font:800 clamp(19px,1.9vw,24px)/1.2 var(--f,TildaSans,Arial,sans-serif);letter-spacing:-.015em;color:var(--ink)}
 html.ishp36-on .ishp36-nf p{margin:0;font:400 14.5px/1.45 var(--f,TildaSans,Arial,sans-serif);color:var(--mut)}
+html.ishp36-on .ishp36-nft{flex:1 1 220px;min-width:0}
+html.ishp36-on .ishp36-nfl{display:flex;align-items:center;justify-content:center;flex:none;height:64px;min-width:64px;padding:0 20px;box-sizing:border-box;border-radius:16px;background:#fff;box-shadow:0 12px 24px -12px rgba(43,68,199,.45),0 2px 5px rgba(23,25,35,.06)}
+html.ishp36-on .ishp36-nfg{width:auto;height:22px;display:block}
+html.ishp36-on .ishp36-nfs{flex:none;display:flex;align-items:center;justify-content:center;min-height:92px}
 html.ishp36-on .ishp36-nfb{display:flex;flex-direction:column;align-items:stretch;gap:12px;flex:0 0 304px;max-width:100%;min-width:0}
 html.ishp36-on .ishp36-nfw{position:relative;display:block}
 html.ishp36-on .ishp36-nfw::before{content:'';position:absolute;left:50%;top:50%;width:330%;height:520%;transform:translate(-50%,-50%);z-index:-1;pointer-events:none;background:radial-gradient(closest-side,rgba(43,68,199,.25) 0%,rgba(43,68,199,.14) 50%,rgba(43,68,199,.05) 75%,transparent)}
@@ -188,6 +192,9 @@ html.ishp36-on body .ishpg3-sbtn,html.ishp36-on body .ishp10-sbtn{border-radius:
   html.ishp36-on #allrecords .ishpg-ряд .ishpg-ц{font-size:18px!important}
   html.ishp36-on .ishp36-nf{padding:20px 18px;border-radius:22px;flex-direction:column;align-items:stretch}
   html.ishp36-on .ishp36-nfb{flex-direction:column;align-items:stretch;flex:none;width:100%}
+  html.ishp36-on .ishp36-nfl{display:none}
+  html.ishp36-on .ishp36-nft{flex:none}
+  html.ishp36-on .ishp36-nfs{width:100%}
   html.ishp36-on .ishp36-nfw{display:block}
 }
 @media (prefers-reduced-motion:reduce){html.ishp36-on #allrecords .ishpg-к,html.ishp36-on #allrecords .ishpg-к:hover{transition:none!important;transform:none!important}}

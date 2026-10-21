@@ -201,6 +201,8 @@
     try { if (!inp.getAttribute('inputmode')) inp.setAttribute('inputmode', 'numeric'); } catch (e) {}
     /* 2. подсказка под полем */
     var blk = q('.t-input-block', g) || inp.parentNode;
+    /* 21.10: группа уже несёт подсказку/ошибку (повторный проход, перерисовка формы) - старые убираем, чтобы не было дубля */
+    [].slice.call(g.querySelectorAll('.ishp28-hint,.ishp28-err')).forEach(function (n) { n.parentNode && n.parentNode.removeChild(n); });
     var hint = D.createElement('div');
     hint.className = 'ishp28-hint'; hint.textContent = BIN_HINT;
     hint.setAttribute('role', 'note');

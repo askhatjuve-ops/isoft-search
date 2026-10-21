@@ -498,7 +498,7 @@
   })();
 
   /* ───────── П28: события аналитики (GA4 + Метрика) и проверка БИН/ИИН (ish-design-p28.js/.css с того же адреса, один раз; выключатель window.ISH_P28_OFF) ───────── */
-  var P28V = '1';
+  var P28V = '2';
   (function () {
     if (W.ISH_P28_OFF || W.__ishP28 || D.getElementById('ishp-p28-js')) return;
     var src = tag && tag.src;

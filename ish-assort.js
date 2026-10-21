@@ -390,7 +390,7 @@
     var style = D.createElement('style'); style.id = 'ia-style'; style.textContent = CSS; D.head.appendChild(style);
     var input = D.getElementById('search'), panel = D.querySelector('.search-panel'), row = D.querySelector('.filter-row');
     var sort = D.getElementById('sort'), stat = D.getElementById('statusFilter');
-    input.setAttribute('placeholder', 'Название, бренд или артикул — например, ноутбук asus, 9T5B2AA, ssd 512');
+    input.setAttribute('placeholder', 'Название, бренд или артикул — например, ноутбук asus, UX3405CA-QD1373, ssd 512');
     input.setAttribute('autocomplete', 'off'); input.setAttribute('role', 'combobox'); input.setAttribute('aria-autocomplete', 'list'); input.setAttribute('aria-expanded', 'false'); input.setAttribute('aria-controls', 'ia-dd');
     me.origUI = { sort: sort.innerHTML, stat: stat.innerHTML, ph: input.getAttribute('placeholder') || '' };
     stat.innerHTML = '<option value="">Любое наличие</option><option value="site">В продаже на сайте</option><option value="order">Только под заказ</option>';

@@ -1328,3 +1328,25 @@ html body #allrecords#allrecords .t-form__inputsbox:has(.t-input[data-tilda-req=
   font: var(--ishd-fw-regular) var(--ishd-fs-xs)/1.35 var(--ishd-font);
   color: var(--ishd-text-2);
 }
+
+/* ---------------------------------------------------------------------------
+   21.10  Родное окно «Спасибо! Данные успешно отправлены» (Tilda, кнопка «Хорошо»):
+   чёрная кнопка -> кобальтовая, как остальные основные кнопки сайта (радиус 8, 600).
+   Окно показывает штатный скрипт форм, когда у формы нет своего текста успеха.
+   --------------------------------------------------------------------------- */
+html body .t-form-success-popup_new .t-form-success-popup__button {
+  background-color: var(--ishd-cobalt, #2B44C7) !important;
+  color: #fff !important;
+  border-radius: 8px !important;
+  font-weight: 600 !important;
+  min-height: 46px;
+  padding: 14px 36px !important;
+  transition: background-color .15s;
+}
+html body .t-form-success-popup_new .t-form-success-popup__button:hover {
+  background-color: var(--ishd-cobalt-hover, #2036A8) !important;
+}
+html body .t-form-success-popup_new .t-form-success-popup__button:focus-visible {
+  outline: 2px solid var(--ishd-cobalt, #2B44C7);
+  outline-offset: 2px;
+}

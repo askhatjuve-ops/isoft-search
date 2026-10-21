@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<yml_catalog date="2026-10-21 12:58">
+<yml_catalog date="2026-10-21 14:35">
 <shop>
 <name>iSoft</name>
 <company>iSoft</company>
@@ -9494,19 +9494,6 @@
 <vendorCode>AP1TBAC633U-1</vendorCode>
 <description>Внешний жёсткий диск, Apacer, AC633, AP1TBAC633U-1, 1TB, 2.5", USB 3.1, Синий</description>
 </offer>
-<offer id="IS64BBBBD393" available="true">
-<url>https://b2b.isoft-shop.kz/zhestkie-diski/tproduct/397174256904-zhyostkii-disk-usb-1-tb-seagate-basic-st</url>
-<price>67000</price>
-<currencyId>KZT</currencyId>
-<categoryId>958449305144</categoryId>
-<picture>https://static.tildacdn.com/tild3832-3666-4231-b733-626238393931/397174256904.jpg</picture>
-<picture>https://static.tildacdn.com/tild3864-3737-4630-a133-613238343530/397174256904_2.jpg</picture>
-<picture>https://static.tildacdn.com/tild3265-3030-4439-b830-313263633934/397174256904_3.jpg</picture>
-<name>Жёсткий диск USB 1 TB Seagate Basic, STJL1000400, USB 3.0, grey</name>
-<vendor>SEAGATE</vendor>
-<vendorCode>IS64BBBBD393</vendorCode>
-<description>Форм-фактор 2.5″ · Ёмкость 1 ТБ · Интерфейс USB 3.0 · Класс ёмкости до 1 ТБ</description>
-</offer>
 <offer id="IS6696FC0B6D" available="true">
 <url>https://b2b.isoft-shop.kz/zhestkie-diski/tproduct/251202253384-zhyostkii-disk-hpemsa-gen6-144tb-sas-12g</url>
 <price>2867000</price>
@@ -10066,6 +10053,17 @@
 <vendor>Astergo</vendor>
 <vendorCode>IS0A99D1940C</vendorCode>
 <description>Топология On-Line · Мощность 10000 ВА / 10000 Вт · Размещение Напольный · Класс мощности 8–11 кВА</description>
+</offer>
+<offer id="IS0B4F7A6D72" available="true">
+<url>https://b2b.isoft-shop.kz/ibp-i-zashchita-pitaniya/tproduct/578632817264-ibp-fsp-fp-850-480wbatareya-12v-9ah4-roz</url>
+<price>28000</price>
+<currencyId>KZT</currencyId>
+<categoryId>622117808604</categoryId>
+<picture>https://static.tildacdn.com/tild3763-6538-4435-a662-643465333135/578632817264.jpg</picture>
+<name>ИБП FSP FP 850 480W/батарея 12V 9Ah/4 розетки IEC PPF4801109</name>
+<vendor>FSP</vendor>
+<vendorCode>IS0B4F7A6D72</vendorCode>
+<description>Мощность 480 Вт · Розеток 4 · Класс мощности до 1 кВА</description>
 </offer>
 <offer id="IS0B52B49F89" available="true">
 <url>https://b2b.isoft-shop.kz/ibp-i-zashchita-pitaniya/tproduct/817503669364-ibp-apcsmx3000hvncsmart-x-seriesline-int</url>
@@ -11858,6 +11856,17 @@
 <vendorCode>IS975E58127B</vendorCode>
 <description>Топология Линейно-интерактивный · Мощность 1200 ВА / 720 Вт · Розеток 8 · Размещение Напольный · Класс мощности 1–2,2 кВА · Время переключения 4 мс · Гарантия 2 года · Цвет Чёрный · Ёмкость батареи 12В/5,8Ач х 2</description>
 </offer>
+<offer id="IS98065FFA60" available="true">
+<url>https://b2b.isoft-shop.kz/ibp-i-zashchita-pitaniya/tproduct/697618222244-ibp-legrand-keor-spx-600-va</url>
+<price>28000</price>
+<currencyId>KZT</currencyId>
+<categoryId>622117808604</categoryId>
+<picture>https://static.tildacdn.com/stor6237-3834-4564-b735-363432316330/67578709317bae7ada8726ee6e3b3e7d.jpg</picture>
+<name>ИБП Legrand Keor SPX 600 ВА</name>
+<vendor>Legrand</vendor>
+<vendorCode>IS98065FFA60</vendorCode>
+<description>Розеток 2 · Мощность 600 ВА · Класс мощности до 1 кВА · Топология Линейно-интерактивный · Размещение Напольный · Тип устройства ИБП · Время переключения 2-6 мс · Ёмкость батареи 12В/7Ач · Гарантия 2 года · Цвет Чёрный</description>
+</offer>
 <offer id="IS99651085D1" available="true">
 <url>https://b2b.isoft-shop.kz/ibp-i-zashchita-pitaniya/tproduct/168820140584-ibp-cyberpower-pr1500ertxl2u</url>
 <price>570000</price>
@@ -12389,6 +12398,17 @@
 <vendor>Eaton</vendor>
 <vendorCode>ISBD1D1710C5</vendorCode>
 <description>Мощность 6000 ВА / 5400 Вт · Класс мощности 5–6 кВА · Топология On-Line · Размещение Стоечный</description>
+</offer>
+<offer id="ISBE788D4C37" available="true">
+<url>https://b2b.isoft-shop.kz/ibp-i-zashchita-pitaniya/tproduct/800848282834-ibp-svc-v-650-f</url>
+<price>28000</price>
+<currencyId>KZT</currencyId>
+<categoryId>622117808604</categoryId>
+<picture>https://static.tildacdn.com/stor6139-3432-4161-a263-303565353132/1352bd905f58ceefecf79d7084d18e1b.jpg</picture>
+<name>ИБП SVC V-650-F</name>
+<vendor>SVC</vendor>
+<vendorCode>ISBE788D4C37</vendorCode>
+<description>Розеток 3 · Мощность 650 ВА / 390 Вт · Класс мощности до 1 кВА · Топология Линейно-интерактивный · Размещение Напольный · Время переключения 3 мс · Ёмкость батареи 12В/9Ач · Гарантия 1 год · Цвет Чёрный · Форма выходного сигнала Ступенчатая синусоида</description>
 </offer>
 <offer id="ISBF48754B19" available="true">
 <url>https://b2b.isoft-shop.kz/ibp-i-zashchita-pitaniya/tproduct/225476307864-ibp-ippon-pacific-1000-1000-va-900-vt-av</url>
@@ -44666,6 +44686,19 @@
 <vendorCode>IS57D0FCF2D0</vendorCode>
 <description>Диагональ 14″ · Оперативная память 16 ГБ · Операционная система Windows 11 Home · Разрешение 1920×1080 · Процессор Intel Core 7 240H · Накопитель 512 ГБ · Тип матрицы IPS · Wi-Fi Wi-Fi 6 · Bluetooth 5.4 · Камера FHD</description>
 </offer>
+<offer id="IS5C50F2659D" available="true">
+<url>https://b2b.isoft-shop.kz/noutbuki/tproduct/217141734134-14-inch-noutbuk-asus-zenbook-duo-ux8407a</url>
+<price>1583000</price>
+<currencyId>KZT</currencyId>
+<categoryId>293087419414</categoryId>
+<picture>https://static.tildacdn.com/stor3637-3238-4563-b761-363763383836/c818a14fb446b2a0fd4cfbae42a8eb9c.jpg</picture>
+<picture>https://static.tildacdn.com/tild6332-6461-4337-b761-356261303336/217141734134.jpg</picture>
+<picture>https://static.tildacdn.com/tild3038-3933-4432-b631-353863633166/217141734134_2.jpg</picture>
+<name>14-inch Ноутбук Asus Zenbook Duo UX8407AA-SN152W, Intel Core Ultra 9 386H, 32 ГБ LPDDR5x, SSD 1 ТБ</name>
+<vendor>ASUS</vendor>
+<vendorCode>UX8407AA-SN152W</vendorCode>
+<description>Ультрабук линейки Asus Zenbook Duo. Процессор Intel Core Ultra 9 386H. Оперативной памяти 32 ГБ LPDDR5x. Накопитель SSD на 1 ТБ. Экран 14 дюймов, 2880×1800, матрица OLED, 144 Гц. Графика встроенная: Intel Graphics. Предустановлена Windows 11 Home. · Партномер: UX8407AA-SN152W</description>
+</offer>
 <offer id="IS5D0CE4B519" available="true">
 <url>https://b2b.isoft-shop.kz/noutbuki/tproduct/702964534364-noutbuk-asus-rog-zephyrus-g16-gu606ar-tb</url>
 <price>2500000</price>
@@ -46557,17 +46590,6 @@
 <vendor>Acer</vendor>
 <vendorCode>ISDD61B1DFCA</vendorCode>
 <description>Тип памяти DDR5 · Процессор Intel Core i5-12500H · Оперативная память 16 ГБ · Накопитель 512 ГБ · Тип накопителя SSD · Операционная система без ОС · Диагональ 15,6″ · Разрешение 1920×1080 · Видеокарта RTX 3070 · Ёмкость батареи 90 Вт·ч</description>
-</offer>
-<offer id="ISDEBD752AC8" available="true">
-<url>https://b2b.isoft-shop.kz/noutbuki/tproduct/895939941024-noutbuk-lenovo-21n5001uru-thinkbook-16p</url>
-<price>983000</price>
-<currencyId>KZT</currencyId>
-<categoryId>293087419414</categoryId>
-<picture>https://static.tildacdn.com/tild6337-3130-4939-b361-613532313830/895939941024.jpg</picture>
-<name>Ноутбук Lenovo 21N5001URU ThinkBook 16p G5 IRX</name>
-<vendor>Lenovo</vendor>
-<vendorCode>ISDEBD752AC8</vendorCode>
-<description>Диагональ 16″ · Оперативная память 16 ГБ · Операционная система без ОС · Процессор Intel Core i7-14650HX · Накопитель 512 ГБ · Камера IR + FHD · Подсветка клавиатуры есть · Гарантия 1 год · Разрешение 2560×1600 · Видеокарта RTX 4060</description>
 </offer>
 <offer id="ISDEE400A065" available="true">
 <url>https://b2b.isoft-shop.kz/noutbuki/tproduct/710439405644-noutbuk-asus-vivobook-s16-s5652ma-tk179w</url>
@@ -52653,18 +52675,6 @@
 <vendorCode>4108C026AA</vendorCode>
 <description>Фотопринтер, Canon, SELPHY SQUARE QX10 Craft Kit, White, 4108C026AA, 287x287 dpi, термическая сублимация, Wi-Fi, USB-B/A, белый</description>
 </offer>
-<offer id="IS1BB151C933" available="true">
-<url>https://b2b.isoft-shop.kz/printery-lazernye-chb/tproduct/551348769834-monohromnii-lazernii-printer-canon-i-s-l</url>
-<price>718000</price>
-<currencyId>KZT</currencyId>
-<categoryId>883275389424</categoryId>
-<picture>https://static.tildacdn.com/stor6231-6133-4366-b664-643035343063/798abcc00ef8669a46ec601ea675447c.jpg</picture>
-<picture>https://static.tildacdn.com/tild3230-6130-4031-a362-346330326631/551348769834.jpg</picture>
-<name>Монохромный лазерный принтер Canon I-S LBP361DW 5644C008AA</name>
-<vendor>Canon</vendor>
-<vendorCode>IS1BB151C933</vendorCode>
-<description>Технология печати лазерный · Формат A4 · Скорость печати 61 стр/мин · Разрешение печати 1200×1200 dpi · Лотки 650 листов · Максимальная нагрузка 275 000 стр./мес · Рекомендуемая нагрузка 16 000 стр./мес · Тип устройства Принтер · Цветность ч/б · Класс скорости печати от 46 стр/мин</description>
-</offer>
 <offer id="IS1E11129DF4" available="true">
 <url>https://b2b.isoft-shop.kz/printery-lazernye-cvetnye/tproduct/794534308694-printer-kyocera-ecosys-pa4000cx-1102z03n</url>
 <price>296000</price>
@@ -53257,6 +53267,17 @@
 <vendor>Wanbo</vendor>
 <vendorCode>IS48020743E6</vendorCode>
 <description>Проектор портативный Wanbo Cube 1 Alpine White (Wanbo)</description>
+</offer>
+<offer id="IS5F621FBABC" available="true">
+<url>https://b2b.isoft-shop.kz/proektory-i-paneli/tproduct/214042385294-proektor-portativnii-wanbo-x5-s</url>
+<price>227000</price>
+<currencyId>KZT</currencyId>
+<categoryId>393119125974</categoryId>
+<picture>https://static.tildacdn.com/tild6335-3139-4066-a335-623533636436/IS5F621FBABC_1.jpg</picture>
+<name>Проектор портативный Wanbo X5 S</name>
+<vendor>Wanbo</vendor>
+<vendorCode>IS5F621FBABC</vendorCode>
+<description>Проектор портативный Wanbo X5 S (Wanbo)</description>
 </offer>
 <offer id="IS6FCCAA2131" available="true">
 <url>https://b2b.isoft-shop.kz/proektory-i-paneli/tproduct/596515244184-proektor-portativnii-wanbo-vali-1-pro</url>
@@ -55608,6 +55629,18 @@
 <vendorCode>IS0254538C3D</vendorCode>
 <description>Тип устройства Коммутатор · Портов 8 · Скорость 10/100/1000 Мбит/с · Слотов SFP 2 · PoE Есть · Бюджет PoE 120 Вт · Уровень L3 · Управление Управляемый · Класс по числу портов До 10 портов</description>
 </offer>
+<offer id="IS045A41E87A" available="true">
+<url>https://b2b.isoft-shop.kz/setevoe-oborudovanie/tproduct/313529372074-kommutator-tp-link-ls1008-8x100mb-neupra</url>
+<price>12345</price>
+<currencyId>KZT</currencyId>
+<categoryId>737078043964</categoryId>
+<picture>https://static.tildacdn.com/stor6666-6538-4139-a362-333463386230/bd620052d46e1b1b2304b05c82cb64a7.jpg</picture>
+<picture>https://static.tildacdn.com/stor6666-3939-4466-b065-303736323832/562da10f748864caa93831e22d28ddc2.jpg</picture>
+<name>Коммутатор TP-Link LS1008 8x100Mb неуправляемый</name>
+<vendor>TP-Link</vendor>
+<vendorCode>LS1008</vendorCode>
+<description>Неуправляемый, 8 портов 10/100 Мбит/с RJ45 с автосогласованием и Auto-MDI/MDIX · Партномер: LS1008</description>
+</offer>
 <offer id="IS04FCDD1725" available="true">
 <url>https://b2b.isoft-shop.kz/setevoe-oborudovanie/tproduct/351051891144-kommutator-d-link-dgs-1100-18pv2a3a</url>
 <price>160000</price>
@@ -56485,6 +56518,17 @@
 <vendor>Fortinet</vendor>
 <vendorCode>IS2559BBD63A</vendorCode>
 <description>Тип устройства Коммутатор · Портов 24 · Скорость 2.5G · PoE Есть · Уровень L2 · Класс по числу портов 23–40 портов</description>
+</offer>
+<offer id="IS25A569C6E7" available="true">
+<url>https://b2b.isoft-shop.kz/setevoe-oborudovanie/tproduct/408239689644-kommutator-tp-link-tl-sg1008p</url>
+<price>44000</price>
+<currencyId>KZT</currencyId>
+<categoryId>737078043964</categoryId>
+<picture>https://static.tildacdn.com/tild6163-6436-4161-a662-663732323963/IS25A569C6E7_1.jpg</picture>
+<name>Коммутатор TP-Link TL-SG1008P</name>
+<vendor>TP-Link</vendor>
+<vendorCode>IS25A569C6E7</vendorCode>
+<description>Портов 8 · PoE Есть · Бюджет PoE 53 Вт</description>
 </offer>
 <offer id="IS25B56E0793" available="true">
 <url>https://b2b.isoft-shop.kz/setevoe-oborudovanie/tproduct/280719581314-kommutator-ubiquiti-usw-pro-48-poe</url>

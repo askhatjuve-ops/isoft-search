@@ -11257,22 +11257,6 @@
 <g:product_type>Жёсткие диски</g:product_type>
 </item>
 <item>
-<g:id>IS64BBBBD393</g:id>
-<title>Жёсткий диск USB 1 TB Seagate Basic, STJL1000400, USB 3.0, grey</title>
-<description>Форм-фактор 2.5″ · Ёмкость 1 ТБ · Интерфейс USB 3.0 · Класс ёмкости до 1 ТБ</description>
-<link>https://b2b.isoft-shop.kz/zhestkie-diski/tproduct/397174256904-zhyostkii-disk-usb-1-tb-seagate-basic-st</link>
-<g:image_link>https://static.tildacdn.com/tild3832-3666-4231-b733-626238393931/397174256904.jpg</g:image_link>
-<g:additional_image_link>https://static.tildacdn.com/tild3864-3737-4630-a133-613238343530/397174256904_2.jpg</g:additional_image_link>
-<g:additional_image_link>https://static.tildacdn.com/tild3265-3030-4439-b830-313263633934/397174256904_3.jpg</g:additional_image_link>
-<g:availability>in_stock</g:availability>
-<g:price>67000 KZT</g:price>
-<g:brand>SEAGATE</g:brand>
-<g:condition>new</g:condition>
-<g:identifier_exists>no</g:identifier_exists>
-<g:google_product_category>Electronics &gt; Electronics Accessories &gt; Computer Components &gt; Storage Devices &gt; Hard Drives</g:google_product_category>
-<g:product_type>Жёсткие диски</g:product_type>
-</item>
-<item>
 <g:id>IS6696FC0B6D</g:id>
 <title>Жёсткий диск HPE/MSA (Gen6) 14.4TB SAS 12G Enterprise 10K/SFF (2.5in)/M2 3yr Wty 6-pack HDD Bundle R0Q67A</title>
 <description>Ёмкость 14,4 ТБ · Интерфейс SAS · Класс ёмкости от 14 ТБ · Форм-фактор 2.5″</description>
@@ -11958,6 +11942,19 @@
 <g:availability>in_stock</g:availability>
 <g:price>939000 KZT</g:price>
 <g:brand>Astergo</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:product_type>ИБП</g:product_type>
+</item>
+<item>
+<g:id>IS0B4F7A6D72</g:id>
+<title>ИБП FSP FP 850 480W/батарея 12V 9Ah/4 розетки IEC PPF4801109</title>
+<description>Мощность 480 Вт · Розеток 4 · Класс мощности до 1 кВА</description>
+<link>https://b2b.isoft-shop.kz/ibp-i-zashchita-pitaniya/tproduct/578632817264-ibp-fsp-fp-850-480wbatareya-12v-9ah4-roz</link>
+<g:image_link>https://static.tildacdn.com/tild3763-6538-4435-a662-643465333135/578632817264.jpg</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>28000 KZT</g:price>
+<g:brand>FSP</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
 <g:product_type>ИБП</g:product_type>
@@ -14038,6 +14035,19 @@
 <g:product_type>ИБП</g:product_type>
 </item>
 <item>
+<g:id>IS98065FFA60</g:id>
+<title>ИБП Legrand Keor SPX 600 ВА</title>
+<description>Розеток 2 · Мощность 600 ВА · Класс мощности до 1 кВА · Топология Линейно-интерактивный · Размещение Напольный · Тип устройства ИБП · Время переключения 2-6 мс · Ёмкость батареи 12В/7Ач · Гарантия 2 года · Цвет Чёрный</description>
+<link>https://b2b.isoft-shop.kz/ibp-i-zashchita-pitaniya/tproduct/697618222244-ibp-legrand-keor-spx-600-va</link>
+<g:image_link>https://static.tildacdn.com/stor6237-3834-4564-b735-363432316330/67578709317bae7ada8726ee6e3b3e7d.jpg</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>28000 KZT</g:price>
+<g:brand>Legrand</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:product_type>ИБП</g:product_type>
+</item>
+<item>
 <g:id>IS99651085D1</g:id>
 <title>ИБП CyberPower PR1500ERTXL2U</title>
 <description>Полная мощность 1500 ВА, активная 1500 Вт. Вольт-амперы показывают габарит прибора, а подключаемую технику считают по ваттам из её паспорта: их сумма не должна превышать 1500 Вт. Такого запаса хватает серверу начального уровня вместе с коммутатором и дисковой полкой. Линейно-интерактивный тип: небольшие просадки и скачки в сети прибор выправляет сам, не трогая заряд, а на батарею техника переходит только когда свет пропал совсем. На выходе 10 розеток IEC C13. Разъём IEC C13 — стандартный вход системных блоков, серверов и сетевого оборудования; бытовая вилка в него не входит, техника подключается своим кабелем C13–C14. Внутри четыре батареи по 12 В на 9 А·ч. Стабилизатор напряжения, в спецификациях его обозначают AVR, держит выход в норме при входном от 159 до 288 В: пока сеть в этих границах, заряд батареи не расходуется. Управление идёт по USB и RS-232: по этому каналу сервер получает команду корректно завершить работу, пока заряд ещё есть. Аварийное отключение EPO выведено на отдельный вход. Сухие контакты передают тревогу во внешнюю систему. Телефонную линию и сетевой кабель заводят через разъёмы RJ-11 и RJ-45 — по ним скачок приходит так же, как по питанию, и защита их тоже прикрывает. Ставится в стандартную стойку 19 дюймов и занимает в ней 2U по высоте. Показания выводит ЖК-экран. Корпус чёрный. · Партномер: PR1500ERTXL2U</description>
@@ -14649,6 +14659,19 @@
 <g:availability>in_stock</g:availability>
 <g:price>1658000 KZT</g:price>
 <g:brand>Eaton</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:product_type>ИБП</g:product_type>
+</item>
+<item>
+<g:id>ISBE788D4C37</g:id>
+<title>ИБП SVC V-650-F</title>
+<description>Розеток 3 · Мощность 650 ВА / 390 Вт · Класс мощности до 1 кВА · Топология Линейно-интерактивный · Размещение Напольный · Время переключения 3 мс · Ёмкость батареи 12В/9Ач · Гарантия 1 год · Цвет Чёрный · Форма выходного сигнала Ступенчатая синусоида</description>
+<link>https://b2b.isoft-shop.kz/ibp-i-zashchita-pitaniya/tproduct/800848282834-ibp-svc-v-650-f</link>
+<g:image_link>https://static.tildacdn.com/stor6139-3432-4161-a263-303565353132/1352bd905f58ceefecf79d7084d18e1b.jpg</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>28000 KZT</g:price>
+<g:brand>SVC</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
 <g:product_type>ИБП</g:product_type>
@@ -53522,6 +53545,22 @@
 <g:product_type>Ноутбуки</g:product_type>
 </item>
 <item>
+<g:id>IS5C50F2659D</g:id>
+<title>14-inch Ноутбук Asus Zenbook Duo UX8407AA-SN152W, Intel Core Ultra 9 386H, 32 ГБ LPDDR5x, SSD 1 ТБ</title>
+<description>Ультрабук линейки Asus Zenbook Duo. Процессор Intel Core Ultra 9 386H. Оперативной памяти 32 ГБ LPDDR5x. Накопитель SSD на 1 ТБ. Экран 14 дюймов, 2880×1800, матрица OLED, 144 Гц. Графика встроенная: Intel Graphics. Предустановлена Windows 11 Home. · Партномер: UX8407AA-SN152W</description>
+<link>https://b2b.isoft-shop.kz/noutbuki/tproduct/217141734134-14-inch-noutbuk-asus-zenbook-duo-ux8407a</link>
+<g:image_link>https://static.tildacdn.com/stor3637-3238-4563-b761-363763383836/c818a14fb446b2a0fd4cfbae42a8eb9c.jpg</g:image_link>
+<g:additional_image_link>https://static.tildacdn.com/tild6332-6461-4337-b761-356261303336/217141734134.jpg</g:additional_image_link>
+<g:additional_image_link>https://static.tildacdn.com/tild3038-3933-4432-b631-353863633166/217141734134_2.jpg</g:additional_image_link>
+<g:availability>in_stock</g:availability>
+<g:price>1583000 KZT</g:price>
+<g:brand>ASUS</g:brand>
+<g:condition>new</g:condition>
+<g:mpn>UX8407AA-SN152W</g:mpn>
+<g:google_product_category>Electronics &gt; Computers &gt; Laptops</g:google_product_category>
+<g:product_type>Ноутбуки</g:product_type>
+</item>
+<item>
 <g:id>IS5D0CE4B519</g:id>
 <title>Ноутбук Asus ROG Zephyrus G16 GU606AR-TB054W 90NR0PC1-M00760, Core Ultra 9 386H, 32 Gb, PCIe NVMe SSD, 1024 Gb, RTX 5070Ti, 12 Gb, 16-inch</title>
 <description>Тип памяти LPDDR5X · Видеокарта RTX 5070 Ti · Диагональ 16″ · Линейка процессора Core Ultra 9 · Накопитель 1 ТБ · Оперативная память 32 ГБ · Операционная система Windows 11 · Разрешение 2560×1600 · Семья ОС Windows 11 · Частота обновления 240 Гц</description>
@@ -55843,20 +55882,6 @@
 <g:availability>in_stock</g:availability>
 <g:price>912000 KZT</g:price>
 <g:brand>Acer</g:brand>
-<g:condition>new</g:condition>
-<g:identifier_exists>no</g:identifier_exists>
-<g:google_product_category>Electronics &gt; Computers &gt; Laptops</g:google_product_category>
-<g:product_type>Ноутбуки</g:product_type>
-</item>
-<item>
-<g:id>ISDEBD752AC8</g:id>
-<title>Ноутбук Lenovo 21N5001URU ThinkBook 16p G5 IRX</title>
-<description>Диагональ 16″ · Оперативная память 16 ГБ · Операционная система без ОС · Процессор Intel Core i7-14650HX · Накопитель 512 ГБ · Камера IR + FHD · Подсветка клавиатуры есть · Гарантия 1 год · Разрешение 2560×1600 · Видеокарта RTX 4060</description>
-<link>https://b2b.isoft-shop.kz/noutbuki/tproduct/895939941024-noutbuk-lenovo-21n5001uru-thinkbook-16p</link>
-<g:image_link>https://static.tildacdn.com/tild6337-3130-4939-b361-613532313830/895939941024.jpg</g:image_link>
-<g:availability>in_stock</g:availability>
-<g:price>983000 KZT</g:price>
-<g:brand>Lenovo</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
 <g:google_product_category>Electronics &gt; Computers &gt; Laptops</g:google_product_category>
@@ -63065,20 +63090,6 @@
 <g:product_type>Принтеры</g:product_type>
 </item>
 <item>
-<g:id>IS1BB151C933</g:id>
-<title>Монохромный лазерный принтер Canon I-S LBP361DW 5644C008AA</title>
-<description>Технология печати лазерный · Формат A4 · Скорость печати 61 стр/мин · Разрешение печати 1200×1200 dpi · Лотки 650 листов · Максимальная нагрузка 275 000 стр./мес · Рекомендуемая нагрузка 16 000 стр./мес · Тип устройства Принтер · Цветность ч/б · Класс скорости печати от 46 стр/мин</description>
-<link>https://b2b.isoft-shop.kz/printery-lazernye-chb/tproduct/551348769834-monohromnii-lazernii-printer-canon-i-s-l</link>
-<g:image_link>https://static.tildacdn.com/stor6231-6133-4366-b664-643035343063/798abcc00ef8669a46ec601ea675447c.jpg</g:image_link>
-<g:additional_image_link>https://static.tildacdn.com/tild3230-6130-4031-a362-346330326631/551348769834.jpg</g:additional_image_link>
-<g:availability>in_stock</g:availability>
-<g:price>718000 KZT</g:price>
-<g:brand>Canon</g:brand>
-<g:condition>new</g:condition>
-<g:identifier_exists>no</g:identifier_exists>
-<g:product_type>Принтеры</g:product_type>
-</item>
-<item>
 <g:id>IS1E11129DF4</g:id>
 <title>Принтер Kyocera ECOSYS PA4000cx 1102Z03NL0</title>
 <description>Тип устройства Принтер · Технология печати лазерный · Цветность цветной · Формат A4 · Разрешение печати 1200×1200 dpi · Интерфейсы USB, Ethernet · Скорость печати 40 стр/мин</description>
@@ -63770,6 +63781,20 @@
 <g:additional_image_link>https://static.tildacdn.com/tild6633-3833-4238-b736-653961323033/242750700384_1.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
 <g:price>95000 KZT</g:price>
+<g:brand>Wanbo</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:google_product_category>Electronics &gt; Video &gt; Projectors</g:google_product_category>
+<g:product_type>Проекторы</g:product_type>
+</item>
+<item>
+<g:id>IS5F621FBABC</g:id>
+<title>Проектор портативный Wanbo X5 S</title>
+<description>Проектор портативный Wanbo X5 S (Wanbo)</description>
+<link>https://b2b.isoft-shop.kz/proektory-i-paneli/tproduct/214042385294-proektor-portativnii-wanbo-x5-s</link>
+<g:image_link>https://static.tildacdn.com/tild6335-3139-4066-a335-623533636436/IS5F621FBABC_1.jpg</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>227000 KZT</g:price>
 <g:brand>Wanbo</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -66548,6 +66573,20 @@
 <g:product_type>Сетевое оборудование</g:product_type>
 </item>
 <item>
+<g:id>IS045A41E87A</g:id>
+<title>Коммутатор TP-Link LS1008 8x100Mb неуправляемый</title>
+<description>Неуправляемый, 8 портов 10/100 Мбит/с RJ45 с автосогласованием и Auto-MDI/MDIX · Партномер: LS1008</description>
+<link>https://b2b.isoft-shop.kz/setevoe-oborudovanie/tproduct/313529372074-kommutator-tp-link-ls1008-8x100mb-neupra</link>
+<g:image_link>https://static.tildacdn.com/stor6666-6538-4139-a362-333463386230/bd620052d46e1b1b2304b05c82cb64a7.jpg</g:image_link>
+<g:additional_image_link>https://static.tildacdn.com/stor6666-3939-4466-b065-303736323832/562da10f748864caa93831e22d28ddc2.jpg</g:additional_image_link>
+<g:availability>in_stock</g:availability>
+<g:price>12345 KZT</g:price>
+<g:brand>TP-Link</g:brand>
+<g:condition>new</g:condition>
+<g:mpn>LS1008</g:mpn>
+<g:product_type>Сетевое оборудование</g:product_type>
+</item>
+<item>
 <g:id>IS04FCDD1725</g:id>
 <title>Коммутатор D-Link DGS-1100-18PV2/A3A</title>
 <description>Тип устройства Коммутатор · Портов 16 · Скорость 10/100/1000 Мбит/с · PoE Есть · Бюджет PoE 130 Вт · Уровень L2 · Управление Управляемый · Класс по числу портов 11–22 порта</description>
@@ -67569,6 +67608,19 @@
 <g:availability>in_stock</g:availability>
 <g:price>2273000 KZT</g:price>
 <g:brand>Fortinet</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:product_type>Сетевое оборудование</g:product_type>
+</item>
+<item>
+<g:id>IS25A569C6E7</g:id>
+<title>Коммутатор TP-Link TL-SG1008P</title>
+<description>Портов 8 · PoE Есть · Бюджет PoE 53 Вт</description>
+<link>https://b2b.isoft-shop.kz/setevoe-oborudovanie/tproduct/408239689644-kommutator-tp-link-tl-sg1008p</link>
+<g:image_link>https://static.tildacdn.com/tild6163-6436-4161-a662-663732323963/IS25A569C6E7_1.jpg</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>44000 KZT</g:price>
+<g:brand>TP-Link</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
 <g:product_type>Сетевое оборудование</g:product_type>

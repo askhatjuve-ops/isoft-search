@@ -714,3 +714,13 @@ html:is(.ishp35-on,.ishp35-kat) body #allrecords#allrecords .t-store__card[data-
   html:is(.ishp35-on,.ishp35-kat):not(.ishd-tile) body #allrecords#allrecords .t-store__card[data-ish13] .t-store__card__price{min-width:168px!important;box-sizing:border-box;justify-content:flex-end!important}
   html.ishp35-grp:not(.ishd-tile) .вн-т__цена b{min-width:168px;box-sizing:border-box;text-align:right}
 }
+
+/* 21.10: «Не нашли нужное?» - отдельный узел #ishp35-nf сразу после списка; дубль-призывы ниже скрыты */
+html.ishp35-on .ishp35-nfw{margin:0}
+html.ishp35-on .ishp35-nfw .ishp35-wrap{padding-bottom:0}
+html.ishp35-nfon body #ishЭкран .ishp37-ct .ishp37-ls,html.ishp35-nfon body #ishЭкран .ishp37-ct ~ .действие[data-список]{display:none!important}
+html.ishp35-on .ishp35-cta{display:none!important}
+@media (max-width:600px){
+  html.ishp35-on .ishp35-nfw .ishp35-wrap{padding-left:16px;padding-right:16px}
+  html.ishp35-on .ishp35-nfw .ishp35-nf{max-width:100%}
+}

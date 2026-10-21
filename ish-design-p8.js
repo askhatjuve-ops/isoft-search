@@ -451,6 +451,13 @@
       if (б) б.click();
     }, { passive: true });
   }
+  /* 21.10: баннер «Не нашли нужное?» стоит сразу после плиток «Разделы каталога», перед «Как оформить заказ»; идемпотентно */
+  function поднять_запрос() {
+    var з = D.getElementById('запросБлок'), п = D.getElementById('полоса'), b = D.getElementById('ishp8-b');
+    if (!з || !п || !b || !п.parentNode || з.parentNode !== п.parentNode) return;
+    if (з.previousElementSibling === b) return;
+    п.parentNode.insertBefore(з, п);
+  }
   function вставить() {
     var полоса = D.getElementById('полоса');
     var запрос = D.getElementById('запросБлок');
@@ -474,6 +481,7 @@
     try { кого_чипы(D.getElementById('ishp8-c')); } catch (e) {}
     try { шаги_моб(); } catch (e) {}
     try { слить_запрос(); } catch (e) {}
+    try { поднять_запрос(); } catch (e) {}
     D.documentElement.classList.add('ishp8-on');
     try { анимации(); } catch (e) {}
     подпись_кнопки();
@@ -482,7 +490,7 @@
     try { описание_запроса(); } catch (e) {}
     кнопка_запроса();
     until(ссылки_заказа, 90);
-    until(полки, 90);
+    until(function () { var r = полки(); if (r) { try { поднять_запрос(); } catch (e) {} } return r; }, 90);
     return true;
   }
   /* ───── запуск анимаций ───── */

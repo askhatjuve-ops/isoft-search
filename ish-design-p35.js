@@ -334,14 +334,8 @@
     var s = el('div', 'ishp35-low');
     s.id = 'ishp35-low';
     s.innerHTML = '<div class="ishp35-wrap">' + (th ? '<section class="ishp35-sec">' + eb('02', head) + '<div class="ishp35-tiles">' + th + '</div></section>' : '') +
-      '<section class="ishp23-cta ishp35-cta" aria-label="Подбор техники"><div class="ishp23-cta__in"><div class="ishp23-cta__t">' +
-      '<h2 class="ishp23-cta__h">Нужна помощь в выборе?</h2>' +
-      '</div>' +
-      '<button type="button" class="ishp23-cta__b" data-ishp23-open>Подобрать технику</button></div></section></div>';
+      '</div>';
     if (before) before.parentNode.insertBefore(s, before); else anchor.after(s);
-    /* подбор: если квиз П23 не подключён - ведём в заявку */
-    var cb = s.querySelector('[data-ishp23-open]');
-    cb.addEventListener('click', function () { setTimeout(function () { if (!D.querySelector('.ishp23-m, .ishp23-modal, [class*="ishp23-ov"]') && !W.ISH_P23) location.href = REQ; }, 400); });
     return true;
   }
   function seo() {
@@ -435,6 +429,23 @@
     renum();
     return true;
   }
+  /* 21.10: баннер «Не нашли нужное?» - отдельный узел сразу после списка/«Загрузить ещё»/подписи, до смежных разделов (#ishp35-low) */
+  function nf() {
+    if (D.getElementById('ishp35-nf')) return true;
+    var low = D.getElementById('ishp35-low');
+    if (!low) return false;
+    var n = el('div', 'ishp35-nfw');
+    n.id = 'ishp35-nf';
+    n.innerHTML = '<div class="ishp35-wrap">' +
+      '<section class="ishp35-nf" aria-label="Не нашли нужное?"><span class="ishp35-nf__l">' + logo('ishp35-nf__lg', '#272B36', '#2B44C7') + '</span>' +
+      '<div class="ishp35-nf__t"><h3>Не нашли нужное? Пришлите список</h3><p>Проработаем и ответим в день обращения.</p></div>' +
+      '<div class="ishp35-ls" aria-hidden="true"><span>Ноутбук 15.6″ — 10 шт</span><span>Монитор 24″ — 10 шт</span><span>МФУ A4 — 2 шт</span><i class="ishp35-ok"><svg viewBox="0 0 20 20"><circle cx="10" cy="10" r="10" fill="#1FA971"/><path d="m5.6 10.4 3 3 5.8-6.4" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>КП готово</i></div>' +
+      '<div class="ishp35-nf__b"><span class="ishp35-nf__w"><a class="ishp35-b ishp35-b--main" href="' + REQ + '">Написать, что нужно</a></span>' +
+      '<a class="ishp35-b" href="/assortiment">Расширенный ассортимент 14000+</a></div></section></div>';
+    low.parentNode.insertBefore(n, low);
+    H.classList.add('ishp35-nfon');
+    return true;
+  }
   function end() {
     if (D.getElementById('ishp35-end')) return true;
     var foot = D.getElementById('t-footer');
@@ -442,12 +453,7 @@
     if (!host) return false;
     var e = el('div', 'ishp35-end');
     e.id = 'ishp35-end';
-    e.innerHTML = '<div class="ishp35-wrap"><section class="ishp35-sec ishp35-brands" hidden></section>' +
-      '<section class="ishp35-nf" aria-label="Не нашли нужное?"><span class="ishp35-nf__l">' + logo('ishp35-nf__lg', '#272B36', '#2B44C7') + '</span>' +
-      '<div class="ishp35-nf__t"><h3>Не нашли нужное? Пришлите список</h3><p>Проработаем и ответим в день обращения.</p></div>' +
-      '<div class="ishp35-ls" aria-hidden="true"><span>Ноутбук 15.6″ — 10 шт</span><span>Монитор 24″ — 10 шт</span><span>МФУ A4 — 2 шт</span><i class="ishp35-ok"><svg viewBox="0 0 20 20"><circle cx="10" cy="10" r="10" fill="#1FA971"/><path d="m5.6 10.4 3 3 5.8-6.4" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>КП готово</i></div>' +
-      '<div class="ishp35-nf__b"><span class="ishp35-nf__w"><a class="ishp35-b ishp35-b--main" href="' + REQ + '">Написать, что нужно</a></span>' +
-      '<a class="ishp35-b" href="/assortiment">Расширенный ассортимент 14000+</a></div></section></div>';
+    e.innerHTML = '<div class="ishp35-wrap"><section class="ishp35-sec ishp35-brands" hidden></section></div>';
     if (foot) foot.parentNode.insertBefore(e, foot); else host.appendChild(e);
     return true;
   }
@@ -531,11 +537,12 @@
         if (!done.low) done.low = low();
         seo();
         if (MODE === 'sec') { allLinks(); noteFix(); }
+        if (!done.nf) done.nf = nf();
         if (!done.end) done.end = end();
         if (done.end && !done.br) done.br = fillBrands() || tries > 80;   /* панель брендов рисуется позже карточек: повторяем до ~20 с */
         place();
         renum();
-        if (done.top && done.bar && done.low && done.end && done.br && (MODE === 'sec' || (cntT && done.note))) return;
+        if (done.top && done.bar && done.low && done.nf && done.end && done.br && (MODE === 'sec' || (cntT && done.note))) return;
       }
     }
     if (++tries < 110) setTimeout(step, 250);

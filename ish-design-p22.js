@@ -1,4 +1,4 @@
-/* ish-design-p22.js  v6 (20.10.2026: /assortiment на телефоне - кнопки прячутся при прокрутке вниз)  v5  (18.10.2026: на телефоне /podbor и /spec кнопки скрыты, в карточке только WhatsApp)  v4  (16.10.2026)  П22 «WhatsApp + Telegram» (Д16) b2b.isoft-shop.kz
+/* ish-design-p22.js  v7 (22.10.2026: текст WhatsApp «Пишу с сайта... Интересует: товар (арт.) — ссылка», раздел, /podbor; выключатель window.ISH_WA_TEXT_OFF)  v6 (20.10.2026: /assortiment на телефоне - кнопки прячутся при прокрутке вниз)  v5  (18.10.2026: на телефоне /podbor и /spec кнопки скрыты, в карточке только WhatsApp)  v4  (16.10.2026)  П22 «WhatsApp + Telegram» (Д16) b2b.isoft-shop.kz
    Плавающая круглая кнопка WhatsApp справа внизу на всех страницах. Номер тот же, что в шапке (wa.me/77758818531).
    v4: НАД WhatsApp стопкой - меньшая круглая кнопка Telegram (#ishp22t, тот же адрес, что в шапке: t.me/+77758818531). Подъём, прятание и сдвиг от .вн-бок общие для обеих (стопка считается целиком). Выключатель только Telegram: window.ISH_P22_TG_OFF = true.
    Подключается из ish-design-p4.js (функция p22, строка описана в README); сам подтягивает ish-design-p22.css с того же адреса.
@@ -12,7 +12,7 @@
   'use strict';
   var W = window, D = document;
   if (W.ISH_P22_OFF || W.__ishP22) return;
-  W.__ishP22 = 8;
+  W.__ishP22 = 9;
   var NUM = '77758818531';
   var TXT = 'Написать в WhatsApp';
   var TG_HREF = 'https://t.me/+77758818531', TG_TXT = 'Написать в Telegram';
@@ -25,18 +25,28 @@
   function txt(sel) { var e = D.querySelector(sel); return e ? clean(e.textContent) : ''; }
 
   /* ───────── текст сообщения ───────── */
+  function cleanUrl() {
+    var u = location.origin + (location.pathname || '/');
+    return u;                                                              /* v9: без utm, ?query и #hash */
+  }
   function message() {
     var path = location.pathname || '/';
+    var OLD = !!W.ISH_WA_TEXT_OFF;
+    var HEAD = OLD ? 'Здравствуйте! ' : 'Здравствуйте! Пишу с сайта b2b.isoft-shop.kz. ';
     if (/\/tproduct\//.test(path)) {
       var n = txt('.js-store-prod-name') || clean((D.querySelector('meta[property="og:title"]') || {}).content) || txt('h1');
-      var a = txt('.js-store-prod-sku');
-      var u = location.origin + path;
-      if (n) return 'Здравствуйте! Вопрос по товару: ' + n + (a ? ' (арт. ' + a + ')' : '') + ', ' + u;
+      var a = txt('.js-store-prod-sku').replace(/^\s*(артикул|арт\.?|sku)\s*:?\s*/i, '');
+      if (n) {
+        if (OLD) return HEAD + 'Вопрос по товару: ' + n + (a ? ' (арт. ' + a + ')' : '') + ', ' + location.origin + path;
+        return HEAD + 'Интересует: ' + n + (a ? ' (арт. ' + a + ')' : '') + ' — ' + cleanUrl();
+      }
     } else if (path !== '/' && path.indexOf('/spec') !== 0 && D.querySelector('.t-store__card, .t-store__filter, .t-store')) {
       var s = txt('h1') || clean(D.title).split(/\s[|—–-]\s/)[0];
-      if (s) return 'Здравствуйте! Вопрос по разделу ' + s;
+      if (s) return OLD ? 'Здравствуйте! Вопрос по разделу ' + s : HEAD + 'Интересует раздел ' + s + ' — ' + cleanUrl();
+    } else if (!OLD && path.indexOf('/podbor') === 0) {
+      return HEAD + 'Интересует подбор техники — ' + cleanUrl();
     }
-    return 'Здравствуйте! Вопрос по сайту iSoft';
+    return OLD ? 'Здравствуйте! Вопрос по сайту iSoft' : HEAD + 'Есть вопрос.';
   }
 
   /* ───────── часы работы: Пн-Вс 9-18, Asia/Almaty ───────── */

@@ -312,7 +312,6 @@
             fc.slice(0, 5).map(function (c) { return '<button type="button" data-ia-cat="' + esc(c.name) + '">' + esc(c.name) + '</button>'; }).join('') + '</div>' : '') + '</div>';
       }
       D.querySelectorAll('#tableBox .sku').forEach(function (k) { if (/^\s*Артикул не выделен\s*$/.test(k.textContent)) k.textContent = ''; });
-      var cEl = D.getElementById('categories'); if (cEl) cEl.style.setProperty('--ia-cols', Math.max(1, Math.ceil(cEl.querySelectorAll(':scope > .category, :scope > .category-group').length / 2)));   // плитки в два ряда: колонок = ceil(N/2)
       chips(q); subs();
       var ttl = D.getElementById('resultTitle'); if (ttl && ttl.textContent.indexOf('не опознано') >= 0) ttl.textContent = ttl.textContent.replace('не опознано', 'Прочее');
       var clr = D.getElementById('ia-clear'); if (clr) clr.hidden = !(D.getElementById('search').value);
@@ -703,36 +702,4 @@
       if (start()) clearInterval(iv);
     }, 250);
   } catch (e) { /* ничего не ломаем */ }
-})(typeof window !== 'undefined' ? window : this);
-
-/* ───────────── 21.10.2026 · ПОВТОР ЗАГРУЗКИ ДАННЫХ КАТАЛОГА (/assortiment) ─────────────
- * Иногда при первой загрузке приложение каталога (iframe, код в Tilda не меняем) пишет в #tableBox «Каталог временно не загрузился.
- * Техническая причина: Failed to fetch / данные страницы не найдены» и больше не пробует. Здесь: увидели эту заглушку при пустом PRODUCTS -
- * заменяем её на «Загружаем каталог…» и вызываем init() приложения заново, до 2 раз с паузой 1,5 с; сообщение остаётся, только если
- * сбой повторился оба раза. Выключатель: ?ishassortretry=0. */
-(function (root) {
-  'use strict';
-  try {
-    if (root.__ishAssortRetry || !/^\/assortiment\/?$/.test(root.location.pathname)) return;
-    if (/[?&]ishassortretry=0/.test(root.location.search)) return;
-    root.__ishAssortRetry = 1;
-    var tries = 0, busy = false, t0 = Date.now();
-    function check() {
-      if (busy) return;
-      var f = document.getElementById('isoft-catalog-frame'), W = f && f.contentWindow, box = null, bad = false;
-      try {
-        box = W && W.document && W.document.getElementById('tableBox');
-        bad = !!(box && /Каталог временно не загрузился/.test(box.textContent || '') && typeof W.init === 'function' &&
-                 !(W.eval('typeof PRODUCTS!=="undefined"&&PRODUCTS.length>0')));
-      } catch (e) { bad = false; }
-      if (!bad || tries >= 2) return;
-      busy = true; tries++;
-      try { box.innerHTML = '<div class="empty"><strong>Загружаем каталог…</strong></div>'; } catch (e) {}
-      setTimeout(function () {
-        var p; try { p = W.init(); } catch (e) { p = null; }
-        Promise.resolve(p).then(function () { busy = false; }, function () { busy = false; });
-      }, 1500);
-    }
-    var iv = setInterval(function () { check(); if (Date.now() - t0 > 90000) clearInterval(iv); }, 500);
-  } catch (e) {}
 })(typeof window !== 'undefined' ? window : this);

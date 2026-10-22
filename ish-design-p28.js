@@ -1,4 +1,4 @@
-/* ish-design-p28.js  v1  (16.10.2026)  П28 «события аналитики + проверка БИН/ИИН» b2b.isoft-shop.kz
+/* ish-design-p28.js  v2  (22.10.2026: + цели Метрики/GA4 с короткими именами form_invoice, form_kp, form_podbor, form_request, click_whatsapp, click_telegram, open_request, search_assortiment - без параметров формы, см. goal())  [v1 16.10.2026]  П28 «события аналитики + проверка БИН/ИИН» b2b.isoft-shop.kz
    Внешний слой. Грузится из ish-design-p4.js (строка в README). В Tilda ничего не пишет, чужие обработчики не заменяет.
    Выключатели: window.ISH_P28_OFF = 1 - всё; window.ISH_P28_SKIP = 'events,bin' - по частям.
 
@@ -74,7 +74,28 @@
     try { if (typeof W.gtag === 'function') W.gtag('event', name, p); } catch (e) {}
     try { if (typeof W.ym === 'function') W.ym(Number(W.mainMetrikaId) || YM_FALLBACK, 'reachGoal', name, p); } catch (e) {}
   }
-  W.ISHP28 = { send: send };               /* для других слоёв и для проверки */
+  /* 22.10: цели для Метрики/GA4 - короткие имена, БЕЗ параметров (только путь страницы в GA4). Никаких значений полей формы. */
+  var GOALS = { form_invoice: 1, form_kp: 1, form_podbor: 1, form_request: 1, click_whatsapp: 1, click_telegram: 1, open_request: 1, search_assortiment: 1 };
+  function goal(name, gap) {
+    if (!GOALS[name]) return;
+    var k = 'g|' + name, now = Date.now(), g = gap == null ? 1500 : gap;
+    if (last[k] && now - last[k] < g) return;
+    last[k] = now;
+    try { if (typeof W.gtag === 'function') W.gtag('event', name, { page_path: (location.pathname || '/').slice(0, 120) }); } catch (e) {}
+    try { if (typeof W.ym === 'function') W.ym(Number(W.mainMetrikaId) || YM_FALLBACK, 'reachGoal', name); } catch (e) {}
+  }
+  function formGoal(form) {
+    var doc = '';
+    try { var d = form && form.querySelector ? form.querySelector('input[name="Документ"]') : null; doc = d ? String(d.value || '').toLowerCase() : ''; } catch (e) {}
+    var path = location.pathname || '/';
+    if (closest(form, '#rec3523869303')) return 'form_request';
+    if (/сч[её]т/.test(doc)) return 'form_invoice';
+    if (/кп|коммерч/.test(doc)) return 'form_kp';
+    if (/подбор/.test(doc) || path.indexOf('/podbor') === 0) return 'form_podbor';
+    if (closest(form, '.t706') || path.indexOf('/spec') === 0) return 'form_invoice';
+    return '';
+  }
+  W.ISHP28 = { send: send, goal: goal };               /* для других слоёв и для проверки */
 
   function placeOf(a) {
     if (closest(a, '#ishp22, #ishp22t')) return 'float';
@@ -92,10 +113,13 @@
     var a = closest(t, 'a[href]');
     if (a) {
       var h = a.getAttribute('href') || '';
-      if (/^https?:\/\/(wa\.me|api\.whatsapp\.com)\//i.test(h)) { send('whatsapp_click', base(placeOf(a))); return; }
-      if (/^https?:\/\/(t\.me|telegram\.me)\//i.test(h) || /^tg:/i.test(h)) { send('telegram_click', base(placeOf(a))); return; }
+      if (/^https?:\/\/(wa\.me|api\.whatsapp\.com)\//i.test(h)) { send('whatsapp_click', base(placeOf(a))); goal('click_whatsapp'); return; }
+      if (/^https?:\/\/(t\.me|telegram\.me)\//i.test(h) || /^tg:/i.test(h)) { send('telegram_click', base(placeOf(a))); goal('click_telegram'); return; }
       if (/^tel:/i.test(h)) { send('phone_click', base(placeOf(a))); return; }
     }
+    /* 22.10: открытие окна «Напишите, что нужно» и поиск «Найти» в /assortiment */
+    if (closest(t, '[data-д="запрос"], [data-ishp-req], a[href="#rec3523869303"]')) goal('open_request');
+    if (closest(t, '#ia-go')) goal('search_assortiment', 3000);
     /* Excel П21 */
     var x = closest(t, '[data-p21]');
     if (x) {
@@ -108,6 +132,7 @@
     if (!b) return;
     var lab = labelOf(b);
     if (!lab || lab.length > 30) return;
+    if (/^напи(шите|сать),?\s+что\s+нужно/.test(lab)) goal('open_request');
     var sc = cardScope(b);
     if (/^в корзину/.test(lab) || /^добавить в корзину/.test(lab)) {
       var ex = base(sc ? 'list' : (pageType() === 'product' ? 'product' : 'page'));
@@ -133,6 +158,7 @@
   function quizOpen() { return D.documentElement.classList.contains('ishp23-lock'); }
   function formDone(form) {
     var id = form && form.id ? String(form.id).slice(0, 40) : '';
+    var fg = formGoal(form); if (fg) goal(fg, 4000);
     if (quizOpen()) { send('quiz_submit', base('quiz'), 4000); return; }
     var kind = closest(form, '.t706') ? 'cart' : (pageType() === 'podbor' ? 'list' : 'other');
     var ex = base(); ex.form_id = id; ex.form_kind = kind;
@@ -248,6 +274,7 @@
       if (on('events')) {
         D.addEventListener('click', onClick, true);
         D.addEventListener('change', onChange, true);
+        D.addEventListener('keydown', function (e) { if (e.key === 'Enter' && e.target && e.target.id === 'search' && /^\/assortiment/.test(location.pathname)) goal('search_assortiment', 3000); }, true);
         D.addEventListener('tildaform:aftersuccess', onSuccess, true);
         watchDom();
       }

@@ -1,4 +1,4 @@
-/* ish-design-p4.js  v6.11  (22.10.2026: + подгрузка ish-design-p42.js «Скачать» (реквизиты PDF, прайс XLSX, условия коротко) на /details и /delivery, P42V=1, ISH_P42_OFF / ISH_P4_NO_P42, P28V=5 цели download_price/download_details; прежняя v6.10: + подгрузка ish-design-p41.js/.css «С этим покупают» на /tproduct/, P41V=1, ISH_P41_OFF / ISH_P4_NO_P41 / ?ishcompanion=0, P28V=4 цель companion_add; прежняя v6.9: P28V=3 цели Метрики/GA4; 21.10.2026: вкладка «Заявка» в нижней панели телефона -> /podbor; ISH_P4_NO_TABREQ; P6V=7 живые бренды, P9V=3 подпись сортировки, P19V=7 форма /spec, P21V=5 значок корзины, P35V=34 живое «Найдено», подсветка «Каталог» на телефоне)  [было v6.5 18.10.2026]  П4 «шапка и меню» + Г1 «кнопки в hero» b2b.isoft-shop.kz
+/* ish-design-p4.js  v6.12  (22.10.2026: + подгрузка ish-design-p43.js подпись «Фото: Icecat» на /tproduct/, P43V=1, ISH_P43_OFF / ISH_P4_NO_P43; прежняя v6.11: + подгрузка ish-design-p42.js «Скачать» (реквизиты PDF, прайс XLSX, условия коротко) на /details и /delivery, P42V=1, ISH_P42_OFF / ISH_P4_NO_P42, P28V=5 цели download_price/download_details; прежняя v6.10: + подгрузка ish-design-p41.js/.css «С этим покупают» на /tproduct/, P41V=1, ISH_P41_OFF / ISH_P4_NO_P41 / ?ishcompanion=0, P28V=4 цель companion_add; прежняя v6.9: P28V=3 цели Метрики/GA4; 21.10.2026: вкладка «Заявка» в нижней панели телефона -> /podbor; ISH_P4_NO_TABREQ; P6V=7 живые бренды, P9V=3 подпись сортировки, P19V=7 форма /spec, P21V=5 значок корзины, P35V=34 живое «Найдено», подсветка «Каталог» на телефоне)  [было v6.5 18.10.2026]  П4 «шапка и меню» + Г1 «кнопки в hero» b2b.isoft-shop.kz
    Подключается из блока шапки 3263300503 строкой <script src=... defer data-m="header,hero">. Не загрузился - сайт как был.
    Модули (атрибут data-m, по умолчанию оба): header - Ш14 полоса, Ш5 кнопка, Ш13 трубка; hero - Г1 две кнопки (с v2 включается и при data-m="header").
    v2: + подгрузка ish-design-p6.js на страницах каталога. Выключатели: window.ISH_P4_NO_HERO, window.ISH_P4_NO_P6.
@@ -510,6 +510,20 @@
     var s = D.createElement('script');
     s.id = 'ishp-p42-js'; s.defer = true;
     s.src = src.replace(/ish-design-p4\.js.*$/, 'ish-design-p42.js?v=' + P42V);
+    D.head.appendChild(s);
+  })();
+
+  /* ───────── П43 v1 (22.10): подпись «Фото: Icecat» под галереей карточки /tproduct/ (ish-design-p43.js с того же адреса, один раз; список uid - icecat_uids.json рядом)
+     Выключатели: window.ISH_P43_OFF = 1 или window.ISH_P4_NO_P43 = 1 (до загрузки p4); ?ishicecat=0. Кэш: поменять P43V. */
+  var P43V = '1';
+  (function () {
+    if (W.ISH_P4_NO_P43 || W.ISH_P43_OFF || W.__ishP43 || D.getElementById('ishp-p43-js')) return;
+    if (!/\/tproduct\//.test(location.pathname)) return;
+    var src = tag && tag.src;
+    if (!src) return;
+    var s = D.createElement('script');
+    s.id = 'ishp-p43-js'; s.defer = true;
+    s.src = src.replace(/ish-design-p4\.js.*$/, 'ish-design-p43.js?v=' + P43V);
     D.head.appendChild(s);
   })();
 

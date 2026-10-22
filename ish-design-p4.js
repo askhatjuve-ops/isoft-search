@@ -1,4 +1,4 @@
-/* ish-design-p4.js  v6.9  (22.10.2026: P28V=3 цели Метрики/GA4; 21.10.2026: вкладка «Заявка» в нижней панели телефона -> /podbor; ISH_P4_NO_TABREQ; P6V=7 живые бренды, P9V=3 подпись сортировки, P19V=7 форма /spec, P21V=5 значок корзины, P35V=34 живое «Найдено», подсветка «Каталог» на телефоне)  [было v6.5 18.10.2026]  П4 «шапка и меню» + Г1 «кнопки в hero» b2b.isoft-shop.kz
+/* ish-design-p4.js  v6.10  (22.10.2026: + подгрузка ish-design-p41.js/.css «С этим покупают» на /tproduct/, P41V=1, ISH_P41_OFF / ISH_P4_NO_P41 / ?ishcompanion=0, P28V=4 цель companion_add; прежняя v6.9: P28V=3 цели Метрики/GA4; 21.10.2026: вкладка «Заявка» в нижней панели телефона -> /podbor; ISH_P4_NO_TABREQ; P6V=7 живые бренды, P9V=3 подпись сортировки, P19V=7 форма /spec, P21V=5 значок корзины, P35V=34 живое «Найдено», подсветка «Каталог» на телефоне)  [было v6.5 18.10.2026]  П4 «шапка и меню» + Г1 «кнопки в hero» b2b.isoft-shop.kz
    Подключается из блока шапки 3263300503 строкой <script src=... defer data-m="header,hero">. Не загрузился - сайт как был.
    Модули (атрибут data-m, по умолчанию оба): header - Ш14 полоса, Ш5 кнопка, Ш13 трубка; hero - Г1 две кнопки (с v2 включается и при data-m="header").
    v2: + подгрузка ish-design-p6.js на страницах каталога. Выключатели: window.ISH_P4_NO_HERO, window.ISH_P4_NO_P6.
@@ -485,6 +485,20 @@
     (function step() { var ok = false; try { ok = p40(); } catch (e) {} if (!ok && ++n < 80) setTimeout(step, 250); })();
   })();
 
+  /* ───────── П41 v1 (22.10): «С этим покупают» на карточке товара /tproduct/ (ish-design-p41.js/.css с того же адреса, один раз; данные companions.json рядом)
+     Выключатели: window.ISH_P41_OFF = 1 или window.ISH_P4_NO_P41 = 1 (до загрузки p4); ?ishcompanion=0 в адресе. Кэш: поменять P41V. */
+  var P41V = '1';
+  (function () {
+    if (W.ISH_P4_NO_P41 || W.ISH_P41_OFF || W.__ishP41 || D.getElementById('ishp-p41-js')) return;
+    if (!/\/tproduct\/\d/.test(location.pathname) || /[?&]ishcompanion=0(&|$)/.test(location.search)) return;
+    var src = tag && tag.src;
+    if (!src) return;
+    var s = D.createElement('script');
+    s.id = 'ishp-p41-js'; s.defer = true;
+    s.src = src.replace(/ish-design-p4\.js.*$/, 'ish-design-p41.js?v=' + P41V);
+    D.head.appendChild(s);
+  })();
+
   /* ───────── П22: кнопка WhatsApp (грузит ish-design-p22.js с того же адреса; она сама подтянет ish-design-p22.css; выключатель window.ISH_P22_OFF) ───────── */
   var P22V = '8';
   (function () {
@@ -498,7 +512,7 @@
   })();
 
   /* ───────── П28: события аналитики (GA4 + Метрика) и проверка БИН/ИИН (ish-design-p28.js/.css с того же адреса, один раз; выключатель window.ISH_P28_OFF) ───────── */
-  var P28V = '3';
+  var P28V = '4';
   (function () {
     if (W.ISH_P28_OFF || W.__ishP28 || D.getElementById('ishp-p28-js')) return;
     var src = tag && tag.src;

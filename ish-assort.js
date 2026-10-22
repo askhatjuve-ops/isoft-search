@@ -21,7 +21,7 @@
 (function (root) {
   'use strict';
   if (root.ISHAssort) return;
-  var VERSION = '1';
+  var VERSION = '2';
   var MODE = 'on';                 // 'on' — всем; 'flag' — только с ?ishassort=1; 'off' — выключено
   var STEP = 25;
   var FRAME_ID = 'isoft-catalog-frame';

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<yml_catalog date="2026-10-21 14:35">
+<yml_catalog date="2026-10-22 10:38">
 <shop>
 <name>iSoft</name>
 <company>iSoft</company>
@@ -88,7 +88,7 @@
 <name>IP телефон Grandstream GRP2613</name>
 <vendor>Grandstream</vendor>
 <vendorCode>IS1E07893C50</vendorCode>
-<description>Модель GRP2613 · Тип устройства IP-телефон · PoE Есть · Порт Ethernet Gigabit (1000 Мбит/с) · Количество линий 6–8 линий · Диагональ 2,6–3″ · SIP-аккаунтов 3</description>
+<description>Настольный SIP-телефон среднего уровня с цветным экраном 2,8 дюйма (320×240 точек). Шесть клавиш линий и до 4 SIP-аккаунтов: SIP — стандартный протокол IP-телефонии, аккаунт это учётная запись на АТС или у провайдера. Два порта Ethernet 10/100/1000 Мбит/с со встроенным PoE: телефон получает питание по сетевому кабелю от PoE-коммутатора, второй порт отдаёт сеть компьютеру. В базовой версии без индекса W беспроводных модулей нет, подключение только кабелем. Есть разъём RJ9 для гарнитуры с электронным микрошнуром (EHS) Plantronics, управление через облачную систему GDMS, сменные лицевые панели. Подходит для рабочих мест, где нужна цветная индикация и несколько линий при проводной сети.</description>
 </offer>
 <offer id="IS2D851DBE1B" available="true">
 <url>https://b2b.isoft-shop.kz/konferenc-svyaz/tproduct/428302433574-ip-telefon-grandstream-gxp1615</url>
@@ -114,7 +114,7 @@
 <name>IP телефон Grandstream GRP2614</name>
 <vendor>Grandstream</vendor>
 <vendorCode>IS357F7208D4</vendorCode>
-<description>Модель GRP2614 · Тип устройства IP-телефон · PoE Есть · Порт Ethernet Gigabit (1000 Мбит/с) · Количество линий 3–4 линии · Диагональ 2,6–3″ · SIP-аккаунтов 12 · Wi-Fi Есть · Bluetooth Есть</description>
+<description>Настольный SIP-телефон с двумя цветными экранами: основной 2,8 дюйма (320×240 точек) и дополнительный 2,4 дюйма для клавиш быстрого вызова с индикацией занятости коллег (BLF). Четыре клавиши линий и до 12 SIP-аккаунтов: SIP — стандартный протокол IP-телефонии, аккаунт это учётная запись на АТС или у провайдера. Два порта Ethernet 10/100/1000 Мбит/с со встроенным PoE — питание идёт по сетевому кабелю. Встроенные двухдиапазонный Wi-Fi 6 (2,4 и 5 ГГц; в аппаратной версии 5.0 и выше) и Bluetooth для беспроводной гарнитуры. Трёхсторонняя аудиоконференция, сменные лицевые панели, управление через облачную систему GDMS. Подходит для секретарей и менеджеров, у кого много внутренних номеров на быстром наборе.</description>
 </offer>
 <offer id="IS37DE8C56BF" available="true">
 <url>https://b2b.isoft-shop.kz/konferenc-svyaz/tproduct/564741019464-ip-videotelefon-grandstream-gxv3480</url>
@@ -140,7 +140,7 @@
 <name>IP телефон Grandstream GRP2634</name>
 <vendor>Grandstream</vendor>
 <vendorCode>IS3B9A5DB257</vendorCode>
-<description>Модель GRP2634 · Тип устройства IP-телефон · PoE Есть · Порт Ethernet Gigabit (1000 Мбит/с) · Количество линий 6–8 линий · Wi-Fi Есть · Bluetooth Есть · SIP-аккаунтов 12 · Диагональ 2,6–3″</description>
+<description>Настольный SIP-телефон для интенсивной работы с цветным экраном 2,8 дюйма (320×240 точек). Восемь линий и до 12 SIP-аккаунтов: SIP — стандартный протокол IP-телефонии, аккаунт это учётная запись на АТС или у провайдера. Клавиш быстрого вызова много: 32 виртуальные и 10 программируемых. Два порта Ethernet 10/100/1000 Мбит/с со встроенным PoE — питание по сетевому кабелю от PoE-коммутатора. Встроенные двухдиапазонный Wi-Fi 6 (2,4 и 5 ГГц; в аппаратной версии 5.0 и выше) и Bluetooth для гарнитуры и синхронизации контактов. Пятисторонняя аудиоконференция, гарнитурный разъём RJ9 с поддержкой EHS Plantronics, USB-подключение гарнитуры. Подходит для операторов и руководителей с большим числом одновременных звонков.</description>
 </offer>
 <offer id="IS4319D93E30" available="true">
 <url>https://b2b.isoft-shop.kz/konferenc-svyaz/tproduct/681623427044-ip-telefon-grandstream-grp2602</url>
@@ -179,7 +179,7 @@
 <name>IP телефон Grandstream GRP2603</name>
 <vendor>Grandstream</vendor>
 <vendorCode>IS4D029F7668</vendorCode>
-<description>Модель GRP2603 · Тип устройства IP-телефон · PoE Нет · Порт Ethernet Gigabit (1000 Мбит/с) · Количество линий 3–4 линии · SIP-аккаунтов 6 · Диагональ 2,6–3″</description>
+<description>Настольный SIP-телефон начального уровня. Поддерживает 3 линии и 6 SIP-аккаунтов: SIP — стандартный протокол IP-телефонии, аккаунт это учётная запись на АТС или у провайдера. Подсвеченный графический экран 2,7 дюйма (132×64 точки). Два порта Ethernet 10/100/1000 Мбит/с: один в сеть, второй для компьютера, так что отдельный кабель до стола не нужен. Питания по сети (PoE) в этой версии нет — нужен блок питания; модель с PoE выпускается отдельно, с индексом P. Wi-Fi нет, телефон подключается только кабелем. Есть пятисторонняя аудиоконференция и поддержка гарнитур с электронным микрошнуром (EHS) Plantronics, Jabra и Sennheiser. Подходит для рабочих мест с проводной сетью и офисной АТС на SIP.</description>
 </offer>
 <offer id="IS6617E02430" available="true">
 <url>https://b2b.isoft-shop.kz/konferenc-svyaz/tproduct/247117507424-ip-telefon-grandstream-ghp631</url>
@@ -257,7 +257,7 @@
 <name>IP телефон Grandstream GRP2604</name>
 <vendor>Grandstream</vendor>
 <vendorCode>ISC00B998185</vendorCode>
-<description>Модель GRP2604 · Тип устройства IP-телефон · PoE Нет · Порт Ethernet Gigabit (1000 Мбит/с) · Количество линий 3–4 линии · SIP-аккаунтов 6 · Диагональ 2,6–3″</description>
+<description>Настольный SIP-телефон начального уровня для проводной сети. Поддерживает 3 линии и 6 SIP-аккаунтов: SIP — стандартный протокол IP-телефонии, аккаунт это учётная запись на АТС или у провайдера. Подсвеченный графический экран 2,7 дюйма (132×64 точки). Два порта Ethernet 10/100/1000 Мбит/с: один в сеть, второй для компьютера. Питания по сети (PoE) в этой версии нет — нужен отдельный блок питания; вариант с PoE продаётся под индексом P. Wi-Fi нет. Поддерживаются гарнитуры с электронным микрошнуром (EHS) Plantronics, Jabra и Sennheiser, управление через облачную систему GDMS, сменная лицевая панель. Подходит для офисных рабочих мест, где телефон ставят рядом с розеткой и сетевым кабелем.</description>
 </offer>
 <offer id="ISC503BAC70B" available="true">
 <url>https://b2b.isoft-shop.kz/konferenc-svyaz/tproduct/537913423864-ip-telefon-grandstream-grp2604p</url>
@@ -270,7 +270,7 @@
 <name>IP телефон Grandstream GRP2604P</name>
 <vendor>Grandstream</vendor>
 <vendorCode>ISC503BAC70B</vendorCode>
-<description>Модель GRP2604P · Тип устройства IP-телефон · PoE Есть · Порт Ethernet Gigabit (1000 Мбит/с) · Количество линий 3–4 линии · SIP-аккаунтов 6 · Диагональ 2,6–3″</description>
+<description>Настольный SIP-телефон начального уровня со встроенным PoE. PoE — питание по сетевому кабелю: телефону не нужен блок питания и отдельная розетка, достаточно порта коммутатора с PoE. Поддерживает 3 линии и 6 SIP-аккаунтов; SIP — стандартный протокол IP-телефонии, аккаунт это учётная запись на АТС или у провайдера. Подсвеченный графический экран 2,7 дюйма (132×64 точки). Два порта Ethernet 10/100/1000 Мбит/с: один в сеть, второй для компьютера. Wi-Fi нет. Поддерживаются гарнитуры с электронным микрошнуром (EHS) Plantronics, Jabra и Sennheiser, управление через облачную систему GDMS, сменная лицевая панель. Подходит для офисов, где рабочие места питаются от PoE-коммутатора.</description>
 </offer>
 <offer id="ISCA8CCDC660" available="true">
 <url>https://b2b.isoft-shop.kz/konferenc-svyaz/tproduct/713693474014-ip-telefon-grandstream-grp2602g</url>
@@ -1055,7 +1055,7 @@
 <name>Ssd SSD-накопитель U.2 1920 GB Intel D7-P5520, SSDPF2KX019T1M1, NVMe</name>
 <vendor>Intel</vendor>
 <vendorCode>IS5B6CF00F99</vendorCode>
-<description>Ёмкость 1,92 ТБ · Интерфейс NVME · Скорость записи 5300 МБ/с · Скорость чтения 1900 МБ/с · Форм-фактор 2.5″</description>
+<description>Серверный твердотельный накопитель в формате U.2: корпус 2,5 дюйма толщиной 15 мм. Подключается по NVMe — протоколу, при котором данные идут по шине PCI Express (здесь PCIe 4.0 x4) напрямую, без более медленного канала SATA. Ёмкость 1,92 ТБ, память TLC (три бита в одной ячейке). Скорость последовательного чтения до 5300 МБ/с, записи до 1900 МБ/с. Случайное чтение до 700 000 IOPS, случайная запись до 114 000 IOPS; IOPS — число мелких обращений к диску за секунду, от него зависит отклик баз данных и виртуальных машин. Ресурс записи 3,5 ПБ (петабайта) за срок службы, гарантия производителя 5 лет. Подходит для серверов и рабочих станций с корзинами или портами U.2: в слот M.2 и в SATA-отсек без специального переходника не встанет.</description>
 </offer>
 <offer id="IS5D37847D96" available="true">
 <url>https://b2b.isoft-shop.kz/ssd-nakopiteli/tproduct/712627102874-ssd-nakopitel-synology-sat5221-960g</url>
@@ -1347,6 +1347,19 @@
 <vendorCode>AGI1T0G43AI818-CB</vendorCode>
 <description>Ёмкость 1000 ГБ · Партномер: AGI1T0G43AI818-CB</description>
 </offer>
+<offer id="IS8F0E3A0135" available="true">
+<url>https://b2b.isoft-shop.kz/ssd-nakopiteli/tproduct/520436984234-ssd-nakopitel-patriot-burst-elite-240gb</url>
+<price>29000</price>
+<currencyId>KZT</currencyId>
+<categoryId>615429773604</categoryId>
+<picture>https://static.tildacdn.com/stor6332-6466-4866-a534-393966633037/f1f77b72ddf64a1a7d8f619926d494f9.jpg</picture>
+<picture>https://static.tildacdn.com/tild6366-3366-4266-b539-393935343361/520436984234_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild6164-6236-4139-b830-656531623964/520436984234_2.jpg</picture>
+<name>SSD-накопитель Patriot Burst Elite 240GB SATA</name>
+<vendor>Patriot</vendor>
+<vendorCode>PBE240GS25SSDR</vendorCode>
+<description>Твердотельный накопитель SSD, Patriot, Burst Elite PBE240GS25SSDR, 240 GB, SATA, 450/320 МБ/с</description>
+</offer>
 <offer id="IS8F62718B59" available="true">
 <url>https://b2b.isoft-shop.kz/ssd-nakopiteli/tproduct/594013065444-ssd-nakopitel-adata-xpg-gammix-s70-blade</url>
 <price>407000</price>
@@ -1382,6 +1395,19 @@
 <vendorCode>P220S256G25</vendorCode>
 <description>Твердотельный накопитель SSD, Patriot, P220 P220S256G25, 256GB, SATA III, 550/490 МБ/с</description>
 </offer>
+<offer id="IS92A369CDE6" available="true">
+<url>https://b2b.isoft-shop.kz/ssd-nakopiteli/tproduct/804354268604-tverdotelnii-nakopitel-ssd-kingston-snv3</url>
+<price>53000</price>
+<currencyId>KZT</currencyId>
+<categoryId>615429773604</categoryId>
+<picture>https://static.tildacdn.com/stor3462-6135-4230-b764-643536393139/9f5c3dad404121b882ed796df010d32a.jpg</picture>
+<picture>https://static.tildacdn.com/tild3663-6336-4439-a335-326434323964/804354268604_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild3266-6163-4361-a537-663932616437/804354268604_2.jpg</picture>
+<name>Твердотельный накопитель SSD Kingston SNV3SM3/500G 500GB Mini M.2 2230 PCIe Gen4 x4</name>
+<vendor>Kingston</vendor>
+<vendorCode>SNV3SM3/500G</vendorCode>
+<description>Ёмкость 500 Гб · Интерфейс PCI-E 4.0 · Форм-фактор M.2 2230 · Скорость чтения 5000 Мб/с · Скорость записи 3000 Мб/сек · Партномер: SNV3SM3/500G</description>
+</offer>
 <offer id="IS937BD7762D" available="true">
 <url>https://b2b.isoft-shop.kz/ssd-nakopiteli/tproduct/168999806674-ssd-nakopitel-netac-nt01n600s-002t-s3x-2</url>
 <price>129000</price>
@@ -1407,6 +1433,17 @@
 <vendor>Patriot</vendor>
 <vendorCode>P300P256GM28</vendorCode>
 <description>P300 P300P256GM28, 256 GB, M.2 NVMe PCIe 3.0x4, 1700/1100 Мб/с</description>
+</offer>
+<offer id="IS99C9BA924F" available="true">
+<url>https://b2b.isoft-shop.kz/ssd-nakopiteli/tproduct/111262830244-ssd-ssd-nakopitel-kingston-skc3000d2048g</url>
+<price>204000</price>
+<currencyId>KZT</currencyId>
+<categoryId>615429773604</categoryId>
+<picture>https://static.tildacdn.com/stor6433-3362-4231-a137-326164326434/859996142a7652671fa52cf2eef38809.jpg</picture>
+<name>Ssd SSD-накопитель Kingston SKC3000D/2048G M.2 NVMe PCIe 4.0</name>
+<vendor>Kingston</vendor>
+<vendorCode>IS99C9BA924F</vendorCode>
+<description>Ёмкость 2 ТБ · Интерфейс NVME · Форм-фактор M.2 · Скорость чтения 7000 МБ/с · Скорость записи 7000 МБ/с</description>
 </offer>
 <offer id="IS9A8763A6EB" available="true">
 <url>https://b2b.isoft-shop.kz/ssd-nakopiteli/tproduct/367204316314-ssd-ssd-nakopitel-sata-1-tb-silicon-powe</url>
@@ -6061,6 +6098,19 @@
 <vendor>Bequiet!</vendor>
 <vendorCode>ISDF4FCC3830</vendorCode>
 <description>Гарантия 1 год · Класс мощности 550–650 Вт · Мощность 650 Вт · Форм-фактор ATX · Сертификат эффективности 80+ Bronze · Версия ATX ATX 3.1 · Цвет Чёрный</description>
+</offer>
+<offer id="ISDFF4B764F6" available="true">
+<url>https://b2b.isoft-shop.kz/bloki-pitaniya/tproduct/449015168824-blok-pitaniya-1stplayer-dk-premium-800w</url>
+<price>32000</price>
+<currencyId>KZT</currencyId>
+<categoryId>893353989834</categoryId>
+<picture>https://static.tildacdn.com/stor3735-3838-4431-b832-373932333064/3b383a73d989173fcaaa5452d083d163.jpg</picture>
+<picture>https://static.tildacdn.com/tild6133-3862-4966-b337-366663653065/449015168824_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild3636-6165-4661-a263-376137306534/449015168824_2.jpg</picture>
+<name>Блок питания 1STPLAYER DK PREMIUM 800W Bronze DKPM-BRZ-800-BK-EU</name>
+<vendor>1STPLAYER</vendor>
+<vendorCode>ISDFF4B764F6</vendorCode>
+<description>Мощность 800 Вт · Форм-фактор ATX · Сертификат эффективности 80+ Bronze · Класс мощности 700–850 Вт · Цвет Чёрный · Гарантия 1 год</description>
 </offer>
 <offer id="ISE243C1F4E7" available="true">
 <url>https://b2b.isoft-shop.kz/bloki-pitaniya/tproduct/531400595694-blok-pitaniya-thermaltake-litepower-rgb</url>
@@ -11287,6 +11337,17 @@
 <vendor>APC</vendor>
 <vendorCode>IS6855906A41</vendorCode>
 <description>Мощность 650 ВА · Класс мощности до 1 кВА · Топология Off-line</description>
+</offer>
+<offer id="IS689A6B944A" available="true">
+<url>https://b2b.isoft-shop.kz/ibp-i-zashchita-pitaniya/tproduct/982732718524-ibp-svc-pts-2kln-lcd</url>
+<price>208000</price>
+<currencyId>KZT</currencyId>
+<categoryId>622117808604</categoryId>
+<picture>https://static.tildacdn.com/tila3161-3065-4437-b230-666332393864/IS689A6B944A_1.jpg</picture>
+<name>ИБП SVC PTS-2KLN-LCD</name>
+<vendor>SVC</vendor>
+<vendorCode>IS689A6B944A</vendorCode>
+<description>Гарантия 3 года · В комплекте Гарантийный талон, инструкция, CD диск, кабель питания, кабель RS-232, кабель USB · Топология On-Line · Мощность 2000 ВА / 2000 Вт · Розеток 4 · Интерфейс USB, RS-232 · Размещение Напольный · Форма выходного сигнала Синусоида · Время переключения 0 мс · Ёмкость батареи 12В/9Ач х 6</description>
 </offer>
 <offer id="IS68F68348DF" available="true">
 <url>https://b2b.isoft-shop.kz/ibp-i-zashchita-pitaniya/tproduct/364277566714-ibp-svc-v-1500-fsmart-avr-1500va900w-12v</url>
@@ -24443,6 +24504,18 @@
 <vendor>Xerox</vendor>
 <vendorCode>B315V_DNI</vendorCode>
 <description>Монохромное МФУ, Xerox, B315DNI, B315V_DNI, Лазерное, А4, 40 стр./мин., Подача 350 листов, Двусторонний автоподатчик документов, до 92 изобр./мин., Сенсорный дисплей 2.8", 1 ГГц CPU, 512 МБ RAM, USB 2.0, Ethernet 10/100, Wi-Fi</description>
+</offer>
+<offer id="ISECB2DAB616" available="true">
+<url>https://b2b.isoft-shop.kz/mfu-lazernye-cvetnye/tproduct/565470342694-mfu-hp-4zb97a-color-laser-179fnw-a4-prin</url>
+<price>199000</price>
+<currencyId>KZT</currencyId>
+<categoryId>910558779244</categoryId>
+<picture>https://static.tildacdn.com/tild3833-3864-4365-a631-626363336534/565470342694.jpg</picture>
+<picture>https://static.tildacdn.com/tild6434-3634-4864-a235-333762333934/565470342694_2.jpg</picture>
+<name>МФУ HP 4ZB97A Color Laser 179fnw (A4) Printer/Scanner/Copier/Fax/ADF 600 dpi, 18/4 ppm, 800 MHz, 128 Mb, tray 150 pages, USB, Ethernet</name>
+<vendor>HP</vendor>
+<vendorCode>ISECB2DAB616</vendorCode>
+<description>Тип устройства МФУ · Цветность цветной · Формат A4 · Скорость печати 18 стр/мин · Класс скорости печати до 22 стр/мин · Технология печати лазерный</description>
 </offer>
 <offer id="ISEF27192723" available="true">
 <url>https://b2b.isoft-shop.kz/printery-i-mfu/tproduct/142644564064-mfu-hplaserjet-enterprise-m528dnprinter</url>
@@ -43401,17 +43474,6 @@
 <vendorCode>IS004C8002DE</vendorCode>
 <description>Диагональ 16″ · Линейка процессора Core Ultra 7 · Оперативная память 16 ГБ · Операционная система Windows 11 Pro · Процессор Intel Ultra 7 255U · Разрешение 1920×1200 · Семья ОС Windows 11 · Частота обновления 60 Гц</description>
 </offer>
-<offer id="IS00B37C7102" available="true">
-<url>https://b2b.isoft-shop.kz/noutbuki/tproduct/449526743774-noutbuk-dell-latitude-5540-n016l554015em</url>
-<price>734000</price>
-<currencyId>KZT</currencyId>
-<categoryId>293087419414</categoryId>
-<picture>https://static.tildacdn.com/tild6339-6466-4431-b035-643333386636/413757518614.jpg</picture>
-<name>Ноутбук Dell Latitude 5540 N016L554015EMEA_VP, Core i5-1345U, 16GB, 512GB SSD, 15.6-inch FHD, FgrPr, FHD, IR Cam, Mic, WLAN + BT</name>
-<vendor>Dell</vendor>
-<vendorCode>IS00B37C7102</vendorCode>
-<description>Процессор Core i5-1345U · Оперативная память 16 ГБ · Операционная система Windows 11 Pro · Диагональ 15,6″ · Разрешение 1920×1080 · Камера IR · Линейка процессора Core i5 · Видеокарта Встроенная · Накопитель 512 ГБ · Тип накопителя SSD</description>
-</offer>
 <offer id="IS0156BDF8AB" available="true">
 <url>https://b2b.isoft-shop.kz/noutbuki/tproduct/169737923934-noutbuk-hp-probook-4-g1a-16-uma-ryze7-25</url>
 <price>950000</price>
@@ -43819,6 +43881,17 @@
 <vendor>Acer</vendor>
 <vendorCode>IS17181B6186</vendorCode>
 <description>Ёмкость батареи 56 Вт·ч · Видеокарта Встроенная · Диагональ 14″ · Накопитель 512 ГБ · Оперативная память 32 ГБ · Операционная система без ОС · Процессор Intel Core i7-1355U · Разрешение 1920×1200 · Тип матрицы IPS · Семья ОС Без ОС</description>
+</offer>
+<offer id="IS1722FA29BC" available="true">
+<url>https://b2b.isoft-shop.kz/noutbuki/tproduct/173504373564-noutbuk-msi-cyborg-17-b2rwgkg-288xkz-173</url>
+<price>1024000</price>
+<currencyId>KZT</currencyId>
+<categoryId>293087419414</categoryId>
+<picture>https://static.tildacdn.com/tila3432-3662-4661-a639-353663646233/IS1722FA29BC_1.jpg</picture>
+<name>Ноутбук MSI Cyborg 17 B2RWGKG-288XKZ 17.3-inch FHD 144Hz Core 7 240H 16GB 1TB RTX5070 DOS 9S7-17U332-288</name>
+<vendor>MSI</vendor>
+<vendorCode>IS1722FA29BC</vendorCode>
+<description>Видеокарта RTX 5070 · Диагональ 17,3″ · Накопитель 1 ТБ · Оперативная память 16 ГБ · Операционная система без ОС · Разрешение 1920×1080 · Частота обновления 144 Гц · Линейка процессора Core 7 · Семья ОС Без ОС · Тип памяти DDR5</description>
 </offer>
 <offer id="IS17BABCA21E" available="true">
 <url>https://b2b.isoft-shop.kz/noutbuki/tproduct/144634231934-noutbuk-asus-90nr0pe1-m005n0-rog-zephyru</url>
@@ -48396,6 +48469,17 @@
 <vendorCode>ISCA0A8960EA</vendorCode>
 <description>Частота 3200 МГц · Тип памяти DDR4 · Объём комплекта 32 ГБ · Форм-фактор DIMM · Тайминги CL22 · Модулей в комплекте 1</description>
 </offer>
+<offer id="ISCA89B3BE07" available="true">
+<url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/992073453204-operativnaya-pamyat-dlya-noutbuka-kingst</url>
+<price>121000</price>
+<currencyId>KZT</currencyId>
+<categoryId>160131640904</categoryId>
+<picture>https://static.tildacdn.com/stor6663-3164-4633-a234-393432633564/b6e4a2da97e72dd53be9d9426321a743.jpg</picture>
+<name>Оперативная память для ноутбука Kingston KVR32S22D8/16WP DDR4 16GB 3200MHz</name>
+<vendor>Kingston</vendor>
+<vendorCode>ISCA89B3BE07</vendorCode>
+<description>Частота 3200 МГц · Тип памяти DDR4 · Объём комплекта 16 ГБ · Форм-фактор SO-DIMM · Модулей в комплекте 1</description>
+</offer>
 <offer id="ISCCB030BD87" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/730960668384-operativnaya-pamyat-dimm-ddr5-32-gb-apac</url>
 <price>402000</price>
@@ -50669,18 +50753,6 @@
 <vendor>ARCTIC</vendor>
 <vendorCode>IS85325A7477</vendorCode>
 <description>Сокет LGA1851 · Форм-фактор 420 мм · Подсветка ARGB · Скорость вращения 400–2500 об/мин · Количество вентиляторов 3 · Тип устройства Водяное охлаждение (СЖО) · Цвет Чёрный · Тип подшипника Гидродинамический</description>
-</offer>
-<offer id="IS85B33F9942" available="true">
-<url>https://b2b.isoft-shop.kz/ohlazhdenie/tproduct/618457027744-ohlazhdenie-termoprokladka-heatsink-comp</url>
-<price>9100</price>
-<currencyId>KZT</currencyId>
-<categoryId>831063569394</categoryId>
-<picture>https://static.tildacdn.com/tild3534-3635-4863-b866-333534633432/618457027744.jpg</picture>
-<picture>https://static.tildacdn.com/tild3436-6430-4539-b966-316234373337/618457027744_2.jpg</picture>
-<name>Охлаждение Термопрокладка, heatsink compound, Gelid GP-Extreme, 120x20x3mm, 2.8g/cm3, (2шт/уп)</name>
-<vendor>GELID</vendor>
-<vendorCode>IS85B33F9942</vendorCode>
-<description>Тип устройства Термопаста и термопрокладки</description>
 </offer>
 <offer id="IS85E030B3D8" available="true">
 <url>https://b2b.isoft-shop.kz/ohlazhdenie/tproduct/801186966034-ohlazhdenie-komplekt-ventilyatorov-asus</url>
@@ -53344,6 +53416,17 @@
 <vendor>Acer</vendor>
 <vendorCode>ISA0730373C4</vendorCode>
 <description>Разрешение 3840×2160 · Класс яркости от 3000 лм · Технология проектора DLP · Яркость 4000 лм · Контрастность 20000:1</description>
+</offer>
+<offer id="ISBAE536D616" available="true">
+<url>https://b2b.isoft-shop.kz/proektory-i-paneli/tproduct/162731728404-proektor-portativnii-wanbo-cube-2s-deep</url>
+<price>139000</price>
+<currencyId>KZT</currencyId>
+<categoryId>393119125974</categoryId>
+<picture>https://static.tildacdn.com/tila3962-3464-4338-b462-623761623530/ISBAE536D616_1.jpg</picture>
+<name>Проектор портативный Wanbo Cube 2S Deep Night</name>
+<vendor>Wanbo</vendor>
+<vendorCode>ISBAE536D616</vendorCode>
+<description>Проектор портативный Wanbo Cube 2S Deep Night (Wanbo)</description>
 </offer>
 <offer id="ISCB8D7D05A4" available="true">
 <url>https://b2b.isoft-shop.kz/proektory-i-paneli/tproduct/336041653844-proektor-acer-pd1520s-dlp-mrjy611001</url>

@@ -1,4 +1,4 @@
-/* ish-design-p28.js  v3  (22.10.2026: + цель companion_add («С этим покупают», p41); v2: + цели Метрики/GA4 с короткими именами form_invoice, form_kp, form_podbor, form_request, click_whatsapp, click_telegram, open_request, search_assortiment - без параметров формы, см. goal())  [v1 16.10.2026]  П28 «события аналитики + проверка БИН/ИИН» b2b.isoft-shop.kz
+/* ish-design-p28.js  v4  (22.10.2026: + цели download_price, download_details («Скачать», p42); v3: + цель companion_add («С этим покупают», p41); v2: + цели Метрики/GA4 с короткими именами form_invoice, form_kp, form_podbor, form_request, click_whatsapp, click_telegram, open_request, search_assortiment - без параметров формы, см. goal())  [v1 16.10.2026]  П28 «события аналитики + проверка БИН/ИИН» b2b.isoft-shop.kz
    Внешний слой. Грузится из ish-design-p4.js (строка в README). В Tilda ничего не пишет, чужие обработчики не заменяет.
    Выключатели: window.ISH_P28_OFF = 1 - всё; window.ISH_P28_SKIP = 'events,bin' - по частям.
 
@@ -75,7 +75,7 @@
     try { if (typeof W.ym === 'function') W.ym(Number(W.mainMetrikaId) || YM_FALLBACK, 'reachGoal', name, p); } catch (e) {}
   }
   /* 22.10: цели для Метрики/GA4 - короткие имена, БЕЗ параметров (только путь страницы в GA4). Никаких значений полей формы. */
-  var GOALS = { form_invoice: 1, form_kp: 1, form_podbor: 1, form_request: 1, click_whatsapp: 1, click_telegram: 1, open_request: 1, search_assortiment: 1, companion_add: 1 };
+  var GOALS = { form_invoice: 1, form_kp: 1, form_podbor: 1, form_request: 1, click_whatsapp: 1, click_telegram: 1, open_request: 1, search_assortiment: 1, companion_add: 1, download_price: 1, download_details: 1 };
   function goal(name, gap) {
     if (!GOALS[name]) return;
     var k = 'g|' + name, now = Date.now(), g = gap == null ? 1500 : gap;

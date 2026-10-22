@@ -885,6 +885,25 @@
       }, 0);
     }, true);
   })();
+  /* v2.8 (22.10): в форме «Отправить список» (rec3523869303, её открывает окно) появилось поле «Файл» (Uploadcare, name="Файл").
+     Тогда файл прикладывают там, а зону файла в самом окне убираем (форма окна файл не передаёт) - обходной шаг выше не запустится,
+     файлов в пуле нет. Поля нет - окно как было. Выключатель: W.ISH_P8_FILE_NATIVE_OFF. Ждём до 30 с: блоки окна и формы грузятся позже. */
+  (function () {
+    if (W.ISH_P8_FILE_NATIVE_OFF) return;
+    function готово() {
+      var поле = D.querySelector('#rec3523869303 [name="Файл"]'), зона = D.getElementById('окноЗона');
+      if (!поле || !зона) return false;
+      if (зона.getAttribute('data-ishp8-native')) return true;
+      зона.setAttribute('data-ishp8-native', '1');
+      зона.hidden = true; зона.style.display = 'none';
+      var сп = D.getElementById('окноФайлы'); if (сп) { сп.hidden = true; сп.style.display = 'none'; }
+      var п = D.createElement('p'); п.className = 'окно-под'; п.setAttribute('data-ishp8-native', '1');
+      п.textContent = 'ТЗ или список файлом приложите на следующем шаге - там есть поле «Файл».';
+      зона.parentNode.insertBefore(п, зона.nextSibling);
+      return true;
+    }
+    (function ждать(n) { try { if (готово()) return; } catch (e) {} if (n < 60) setTimeout(function () { ждать(n + 1); }, 500); })(0);
+  })();
   /* общий листок (ish-design-list-anim.js) рядом с собой: грузим один раз, затем строим главную */
   if (W.ISHLA) { главная(); return; }
   var ls0 = D.getElementById('ishla-js');

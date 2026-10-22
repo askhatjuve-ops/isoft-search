@@ -1,4 +1,4 @@
-/* ish-design-p10.js  v5  (18.10.2026)  П10 «карточка товара: внешний слой» b2b.isoft-shop.kz
+/* ish-design-p10.js  v5.1  (22.10.2026: ?code= на /podbor, ISH_PODBOR_CODE_OFF; прежняя v5 18.10.2026)  П10 «карточка товара: внешний слой» b2b.isoft-shop.kz
    Подключается строкой в HEAD/подвале ТОЛЬКО для страниц карточки (/tproduct/...). Блок 4055071703 (запас 251 знак) не правится.
    Ждёт, пока фрагмент v8p7 соберёт карточку (html.ishpg-on), и ДОБАВЛЯЕТ узлы с префиксом ishp10-. Чужих узлов не переписывает,
    «В корзину» не перекрашивает и не подменяет: все кнопки-двойники кликают ЧЕРЕЗ родную .ishpg-add (одно место добавления в корзину).
@@ -93,6 +93,7 @@
     } catch (e) {}
   }
   function askLine(d) {
+    if (d.c) return 'Код подбора: ' + d.c;      /* 22.10: ?code= из бота (ISH_PODBOR_CODE_OFF) */
     var parts = [];
     if (d.n) parts.push(d.n);
     if (d.a) parts.push(/^арт/i.test(d.a) ? d.a : 'Арт. iSoft ' + d.a);
@@ -101,6 +102,12 @@
   }
   function askRead() {
     var d = null;
+    if (!W.ISH_PODBOR_CODE_OFF) {      /* 22.10: /podbor?code=А12 -> «Код подбора: А12» в Список позиций/Комментарий (Tilda сама параметры в поле не кладёт) */
+      try {
+        var c = /[?&]code=([^&#]*)/.exec(location.search);
+        if (c) { c = decodeURIComponent(c[1].replace(/\+/g, ' ')).replace(/[^0-9A-Za-zА-Яа-яЁё_-]/g, '').slice(0, 24); if (c) return { c: c }; }
+      } catch (e) {}
+    }
     try { d = JSON.parse(sessionStorage.getItem(ASK_KEY) || 'null'); } catch (e) {}
     if (d && d.t && Date.now() - d.t < ASK_TTL) return d;
     try {

@@ -1,4 +1,4 @@
-/* ish-design-p10.js  v5.1  (22.10.2026: ?code= на /podbor, ISH_PODBOR_CODE_OFF; прежняя v5 18.10.2026)  П10 «карточка товара: внешний слой» b2b.isoft-shop.kz
+/* ish-design-p10.js  v5.2  (23.10.2026: поле файла Uploadcare по-русски, контурная кнопка; ISH_P10_FILEBTN_OFF; прежняя v5.1 22.10.2026: ?code= на /podbor, ISH_PODBOR_CODE_OFF; прежняя v5 18.10.2026)  П10 «карточка товара: внешний слой» b2b.isoft-shop.kz
    Подключается строкой в HEAD/подвале ТОЛЬКО для страниц карточки (/tproduct/...). Блок 4055071703 (запас 251 знак) не правится.
    Ждёт, пока фрагмент v8p7 соберёт карточку (html.ishpg-on), и ДОБАВЛЯЕТ узлы с префиксом ishp10-. Чужих узлов не переписывает,
    «В корзину» не перекрашивает и не подменяет: все кнопки-двойники кликают ЧЕРЕЗ родную .ishpg-add (одно место добавления в корзину).
@@ -202,11 +202,51 @@
     mark(topicSplit(com.value).t);
     ['input', 'change'].forEach(function (ev) { com.addEventListener(ev, function () { mark(topicSplit(com.value).t); }); });   /* чип следует за полем: стёр метку - выбор снят */
   }
+  /* ── v5.2 (23.10): поле «Приложить файл» (Uploadcare Tilda): надписи по-русски и контурная кнопка, как чипы темы. Выключатель: window.ISH_P10_FILEBTN_OFF.
+     Tilda сама ставит UPLOADCARE_LOCALE="" и строит виджет, поэтому локаль ru только пробуем (до инициализации), а надписи переписываем наблюдателем.
+     Стиль кнопки ставим inline с !important: родной блок задаёт цвет и рамку правилом по id блока (со своим !important), css-файлом его не перебить. ── */
+  var UC_RU = { 'Choose a file': 'Выбрать файл', 'Choose files': 'Выбрать файлы', 'Drop a file here': 'Перетащите файл сюда', 'Drop files here': 'Перетащите файлы сюда', 'Cancel': 'Отмена', 'Remove': 'Удалить', 'Loading...': 'Загрузка...', 'Loading…': 'Загрузка…', 'Uploading...': 'Загрузка...', 'Uploading…': 'Загрузка…', 'Uploaded': 'Загружено', 'File uploaded': 'Файл загружен', 'Uploading failed': 'Не удалось загрузить' };
+  function ucRu(t) {
+    var x = String(t || '').replace(/^\s+|\s+$/g, ''); if (!x) return t;
+    if (UC_RU[x]) return UC_RU[x];
+    var m = /^(Uploading\.\.\.|Uploading…)\s*(\d+%?)?$/.exec(x); if (m) return 'Загрузка… ' + (m[2] || '');
+    m = /^(\d+)\s+files?$/.exec(x); if (m) return m[1] + ' ' + (m[1] === '1' ? 'файл' : 'файлов');
+    return t;
+  }
+  function ucStyle(b) {
+    var st = {
+      'background': '#fff', 'background-color': '#fff', 'color': '#2B44C7', 'border': '1px solid #2B44C7', 'border-style': 'solid', 'border-width': '1px',
+      'border-radius': '22px', 'box-shadow': 'none', 'min-height': '44px', 'height': '44px', 'padding': '0 18px', 'font': '500 15px/1.2 ' + (getComputedStyle(H).getPropertyValue('--f') || 'TildaSans,Arial,sans-serif'),
+      'cursor': 'pointer'
+    };
+    for (var k in st) b.style.setProperty(k, st[k], 'important');
+  }
+  function fileBtn() {
+    var seen = 0;
+    function pass() {
+      qa('.t-uploadcare .uploadcare--widget').forEach(function (w) {
+        qa('.uploadcare--widget__dragndrop-area, .uploadcare--widget__text, .uploadcare--widget__button', w).forEach(function (n) {
+          n.childNodes.forEach(function (c) { if (c.nodeType === 3) { var r = ucRu(c.nodeValue); if (r !== c.nodeValue) c.nodeValue = r; } });
+        });
+        var o = q('.uploadcare--widget__button_type_open', w);
+        if (o && !o.__ishp10uc) { o.__ishp10uc = 1; ucStyle(o); o.classList.add('ishp10-filebtn'); }
+        ['cancel', 'remove'].forEach(function (k) {
+          var b = q('.uploadcare--widget__button_type_' + k, w);
+          if (b && !b.__ishp10uc) { b.__ishp10uc = 1; b.classList.add('ishp10-filelink'); }
+        });
+        w.classList.add('ishp10-uc'); seen = 1;
+      });
+    }
+    pass();
+    var box = q('.t-uploadcare') && q('.t-uploadcare').closest ? q('.t-uploadcare').closest('form') : null;
+    if (W.MutationObserver) new MutationObserver(function () { try { pass(); } catch (e) {} }).observe(box || D.body, { childList: true, subtree: true, characterData: true });
+  }
   function podborForm() {
     until(function () {
       var f = q('form.t-form, form.js-form-proccess'); if (!f || !q('[name^="Комментарий"], [name^="Список позиций"]', f)) return false;
       if (!off('bin')) step('bin', function () { binOptional(f); });
       if (!off('topic')) step('topic', function () { topicChips(f); });
+      if (!off('filebtn') && !W.ISH_P10_FILEBTN_OFF) step('filebtn', fileBtn);
       return true;
     }, 40, 250);
   }

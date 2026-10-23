@@ -205,3 +205,8 @@ html.ishp10-on .ishp10-chip.is-on{border-color:var(--p10-k);background:#EEF1FC;c
 /* v13 (19.10): /podbor - вкладки «Счёт на оплату | Коммерческое предложение» делят капсулу поровну (по 50%), текст по центру */
 #rec3729382103 .pb-док{display:flex;width:100%;box-sizing:border-box}
 #rec3729382103 .pb-док>button{flex:1 1 0!important;min-width:0;display:flex;align-items:center;justify-content:center;text-align:center}
+/* v5.2 (23.10): поле файла Uploadcare в форме - контурная кнопка как чипы темы; основной стиль ставит js inline (!important), здесь запас и мелочи */
+html.ishp10-on .t-uploadcare .uploadcare--widget{font-family:var(--p10-f);color:var(--p10-ink)}
+html.ishp10-on .t-uploadcare .uploadcare--widget__button_type_open.ishp10-filebtn:hover{border-color:var(--p10-kh)!important;background:#EEF1FC!important;color:var(--p10-kh)!important}
+html.ishp10-on .t-uploadcare .uploadcare--widget__button.ishp10-filelink{background:none;border:0;color:var(--p10-mut);font:400 14px/1.2 var(--p10-f);text-decoration:underline;cursor:pointer;padding:0 6px}
+html.ishp10-on .t-uploadcare .uploadcare--widget__text,html.ishp10-on .t-uploadcare .uploadcare--widget__dragndrop-area{font-family:var(--p10-f);color:var(--p10-mut);font-size:14px}

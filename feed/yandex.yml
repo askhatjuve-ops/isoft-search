@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<yml_catalog date="2026-10-23 18:35">
+<yml_catalog date="2026-10-23 19:43">
 <shop>
 <name>iSoft</name>
 <company>iSoft</company>
@@ -88,6 +88,17 @@
 <vendor>Grandstream</vendor>
 <vendorCode>IS182A08D4E4</vendorCode>
 <description>Модель GXP2170 · Тип устройства IP-телефон · PoE Есть · Скорость портов 1 Гбит/с (Gigabit) · Количество линий 12–16 линий · Диагональ 4,3″ · SIP-аккаунтов 6</description>
+</offer>
+<offer id="IS1CAFD3338A" available="true">
+<url>https://b2b.isoft-shop.kz/konferenc-svyaz/tproduct/588184628594-logitech-webcam-rally-bar-huddle-graphit</url>
+<price>1195000</price>
+<currencyId>KZT</currencyId>
+<categoryId>878347274554</categoryId>
+<picture>https://static.tildacdn.com/tild3632-3961-4237-a533-393663313235/IS1CAFD3338A_1.png</picture>
+<name>Logitech WEBCAM - Rally Bar Huddle - GRAPHITE - USB - PLUGE 960-001501</name>
+<vendor>Logitech</vendor>
+<vendorCode>IS1CAFD3338A</vendorCode>
+<description>Logitech WEBCAM - Rally Bar Huddle - GRAPHITE - USB - PLUGE 960-001501 (Logitech)</description>
 </offer>
 <offer id="IS1E07893C50" available="true">
 <url>https://b2b.isoft-shop.kz/konferenc-svyaz/tproduct/702613378514-ip-telefon-grandstream-grp2613</url>
@@ -219,6 +230,28 @@
 <vendorCode>IS6835A9B00E</vendorCode>
 <description>Модель GXP2160 · Тип устройства IP-телефон · PoE Есть · Скорость портов 1 Гбит/с (Gigabit) · Количество линий 6–8 линий · SIP-аккаунтов 6 · Диагональ 4,3″</description>
 </offer>
+<offer id="IS6A52CE59DC" available="true">
+<url>https://b2b.isoft-shop.kz/konferenc-svyaz/tproduct/260854483274-rally-mic-pod-hub-logitech-939-001647</url>
+<price>195000</price>
+<currencyId>KZT</currencyId>
+<categoryId>878347274554</categoryId>
+<picture>https://static.tildacdn.com/tild6235-6264-4136-b461-333932306564/IS6A52CE59DC_1.jpg</picture>
+<name>Rally Mic Pod Hub, Logitech (939-001647)</name>
+<vendor>Logitech</vendor>
+<vendorCode>IS6A52CE59DC</vendorCode>
+<description>Rally Mic Pod Hub, Logitech (939-001647) (Logitech)</description>
+</offer>
+<offer id="IS81872523E2" available="true">
+<url>https://b2b.isoft-shop.kz/konferenc-svyaz/tproduct/697355142034-logitech-mic-pod-pendant-mount-off-white</url>
+<price>74000</price>
+<currencyId>KZT</currencyId>
+<categoryId>878347274554</categoryId>
+<picture>https://static.tildacdn.com/tild6233-3237-4563-a432-333066653663/IS81872523E2_1.png</picture>
+<name>LOGITECH Mic Pod Pendant Mount - OFF-WHITE - EMEA29-953</name>
+<vendor>Logitech</vendor>
+<vendorCode>IS81872523E2</vendorCode>
+<description>LOGITECH Mic Pod Pendant Mount - OFF-WHITE - EMEA29-953 (Logitech)</description>
+</offer>
 <offer id="IS953F0B503F" available="true">
 <url>https://b2b.isoft-shop.kz/konferenc-svyaz/tproduct/961798005174-ip-telefon-grandstream-grp2636</url>
 <price>86000</price>
@@ -244,6 +277,17 @@
 <vendor>Grandstream</vendor>
 <vendorCode>ISA03DDFF145</vendorCode>
 <description>Модель GRP2601 · Тип устройства IP-телефон · PoE Нет · Скорость портов 100 Мбит/с (Fast Ethernet) · Количество линий 2 линии · SIP-аккаунтов 2 · Диагональ до 2,5″</description>
+</offer>
+<offer id="ISA2FF56057E" available="true">
+<url>https://b2b.isoft-shop.kz/konferenc-svyaz/tproduct/738991470034-sistema-dlya-videokonferentsii-logitech</url>
+<price>1391000</price>
+<currencyId>KZT</currencyId>
+<categoryId>878347274554</categoryId>
+<picture>https://static.tildacdn.com/tila6633-3631-4336-a139-376465393664/ISA2FF56057E_1.png</picture>
+<name>Система для видеоконференций Logitech Rally Standard (M/N: V-R0009/V-R0010/V-R0011/V-U0047/V-U0048/V-U0049) 960-001218</name>
+<vendor>Logitech</vendor>
+<vendorCode>ISA2FF56057E</vendorCode>
+<description>Система для видеоконференций Logitech Rally Standard (M/N: V-R0009/V-R0010/V-R0011/V-U0047/V-U0048/V-U0049) 960-001218 (Logitech)</description>
 </offer>
 <offer id="ISAFADEA4676" available="true">
 <url>https://b2b.isoft-shop.kz/korpusa-i-bloki-pitaniya/tproduct/941018184924-modul-mikrofonov-logitech-dlya-rally-952</url>
@@ -6713,6 +6757,17 @@
 <vendorCode>AFRX580-8192D5H3-V3</vendorCode>
 <description>Radeon RX 580 GAMING 8GB Dual Fan (4897033786812), AFRX580-8192D5H3-V3, GDDR5, 256bit, HDMI, 2*DP, 225*125*46 мм, Цветная коробка</description>
 </offer>
+<offer id="IS06672638D7" available="true">
+<url>https://b2b.isoft-shop.kz/videokarty/tproduct/846307252434-videokarta-gpu-nvidia-2-gb-ocpc-gt-730-o</url>
+<price>37000</price>
+<currencyId>KZT</currencyId>
+<categoryId>784666503994</categoryId>
+<picture>https://static.tildacdn.com/tild3332-3731-4231-b063-356135396639/IS06672638D7_1.jpg</picture>
+<name>Видеокарта GPU NVIDIA, 2 GB, OCPC GT 730, [OCVNGT730G2], VGA/HDMI/DVI, GDDR3/64-bit</name>
+<vendor>OCPC</vendor>
+<vendorCode>IS06672638D7</vendorCode>
+<description>Видеовыходы HDMI / DVI · Графический процессор GT730 · Объём видеопамяти 2 ГБ · Разрядность шины 64 бит · Тип видеопамяти GDDR3 · Серия видеокарты GeForce GTX / GT</description>
+</offer>
 <offer id="IS0E93DF58FA" available="true">
 <url>https://b2b.isoft-shop.kz/videokarty/tproduct/965161078034-videokarta-palit-rtx3060-infinity-2-oc-1</url>
 <price>258000</price>
@@ -7198,6 +7253,17 @@
 <vendor>ASUS</vendor>
 <vendorCode>IS66C984CA55</vendorCode>
 <description>Объём видеопамяти 16 ГБ · Графический процессор RTX 5080 · Тип видеопамяти GDDR7 · Разрядность шины 256 бит · Видеовыходы HDMI / DP x 2 · Серия видеокарты GeForce RTX 5000</description>
+</offer>
+<offer id="IS6820EA72D0" available="true">
+<url>https://b2b.isoft-shop.kz/videokarty/tproduct/586369574644-videokarta-gpu-nvidia-4-gb-ocpc-gt-730-o</url>
+<price>44000</price>
+<currencyId>KZT</currencyId>
+<categoryId>784666503994</categoryId>
+<picture>https://static.tildacdn.com/tild3332-3731-4231-b063-356135396639/IS06672638D7_1.jpg</picture>
+<name>Видеокарта GPU NVIDIA, 4 GB, OCPC GT 730, [OCVNGT730G4], VGA/HDMI/DVI, GDDR3/128-bit</name>
+<vendor>OCPC</vendor>
+<vendorCode>IS6820EA72D0</vendorCode>
+<description>Видеовыходы HDMI / DVI · Графический процессор GT730 · Объём видеопамяти 4 ГБ · Разрядность шины 128 бит · Тип видеопамяти GDDR3 · Серия видеокарты GeForce GTX / GT</description>
 </offer>
 <offer id="IS6943006078" available="true">
 <url>https://b2b.isoft-shop.kz/videokarty/tproduct/289172718284-videokarta-gigabyte-radeon-rx-7600-gamin</url>
@@ -13835,17 +13901,6 @@
 <vendorCode>ISF4BDC0460E</vendorCode>
 <description>Розеток 6 · Мощность 2200 ВА / 1320 Вт · Класс мощности 1–2,2 кВА · Топология Линейно-интерактивный · Размещение Напольный · Время переключения 10 мс · Гарантия 2 года · Тип устройства ИБП</description>
 </offer>
-<offer id="ISF4EB91EC90" available="true">
-<url>https://b2b.isoft-shop.kz/ibp-i-zashchita-pitaniya/tproduct/859293117894-ibp-dahua-dh-pfm3350-600-dh-pfm3350-600</url>
-<price>21000</price>
-<currencyId>KZT</currencyId>
-<categoryId>622117808604</categoryId>
-<picture>https://static.tildacdn.com/tila3764-3737-4834-a330-666431653266/ISF4EB91EC90_1.jpg</picture>
-<name>ИБП Dahua DH-PFM3350-600 DH-PFM3350-600-EN</name>
-<vendor>Dahua</vendor>
-<vendorCode>ISF4EB91EC90</vendorCode>
-<description>Гарантия 1 год · Топология Линейно-интерактивный · Мощность 600 ВА / 360 Вт · Розеток 2 · Размещение Напольный · Форма выходного сигнала Ступенчатая синусоида · Время переключения 3 мс · Ёмкость батареи 12В/7Ач · Цвет Чёрный</description>
-</offer>
 <offer id="ISF4FC4CD17E" available="true">
 <url>https://b2b.isoft-shop.kz/ibp-i-zashchita-pitaniya/tproduct/974439680874-ibp-eaton9sx-1000i-rack2uon-line1-000-va</url>
 <price>438000</price>
@@ -17603,17 +17658,6 @@
 <vendorCode>IS11F786B1D9</vendorCode>
 <description>Тип устройства клавиатура</description>
 </offer>
-<offer id="IS165E88E972" available="true">
-<url>https://b2b.isoft-shop.kz/klaviatury/tproduct/844762342484-klaviatura-genius-kb-117-104-knopki-usb</url>
-<price>3400</price>
-<currencyId>KZT</currencyId>
-<categoryId>723843374454</categoryId>
-<picture>https://static.tildacdn.com/tila3161-3031-4736-a232-613534336538/IS165E88E972_1.jpg</picture>
-<name>Клавиатура Genius KB-117, 104 кнопки, USB KZ чёрная 31310016410</name>
-<vendor>Genius</vendor>
-<vendorCode>IS165E88E972</vendorCode>
-<description>Тип устройства клавиатура · Кнопок 104</description>
-</offer>
 <offer id="IS17263742A3" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury/tproduct/731917543554-klaviatura-usb-defender-amox-gk-585-ru-w</url>
 <price>18000</price>
@@ -19185,17 +19229,6 @@
 <vendorCode>IS79D39E3014</vendorCode>
 <description>Тип устройства клавиатура</description>
 </offer>
-<offer id="IS7ABFA45489" available="true">
-<url>https://b2b.isoft-shop.kz/klaviatury/tproduct/622938932894-klaviatura-usb-defender-astra-hb-588-ru</url>
-<price>3500</price>
-<currencyId>KZT</currencyId>
-<categoryId>723843374454</categoryId>
-<picture>https://static.tildacdn.com/tild3832-3833-4737-b738-363231653831/IS7ABFA45489_1.jpg</picture>
-<name>Клавиатура USB, Defender Astra HB-588 RU, (45588)</name>
-<vendor>DEFENDER</vendor>
-<vendorCode>IS7ABFA45489</vendorCode>
-<description>Тип устройства клавиатура</description>
-</offer>
 <offer id="IS7BA0D7C4AA" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury/tproduct/483437831254-klaviatura-acer-nitro-okw303-mehanichesk</url>
 <price>22000</price>
@@ -19425,6 +19458,17 @@
 <vendor>Dark Project</vendor>
 <vendorCode>IS8BFA74C932</vendorCode>
 <description>Цвет Белый · Тип устройства клавиатура · Подключение Проводное · Тип клавиатуры механическая · Подсветка RGB · Раскладка русская/английская · Форм-фактор Компактная · Материал Пластик, металл</description>
+</offer>
+<offer id="IS8D0FF426E2" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury/tproduct/109393575974-klaviatura-delux-dlk-180ub</url>
+<price>3726</price>
+<currencyId>KZT</currencyId>
+<categoryId>723843374454</categoryId>
+<picture>https://static.tildacdn.com/stor6131-3164-4437-a364-663935373065/4dd23bf35b3328c0eda481895b15da55.jpg</picture>
+<name>Клавиатура Delux DLK-180UB</name>
+<vendor>Delux</vendor>
+<vendorCode>DLK-180UB</vendorCode>
+<description>Клавиатура, Delux, DLK-180UB, USB, Кол-во стандартных клавиш 104, Размер: 439.2 x 141.5 x 25.5 мм., Длина кабеля 1,6 метра, Анг/Рус/Каз, Чёрная</description>
 </offer>
 <offer id="IS8D18016069" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury/tproduct/311024283134-klaviatura-bluetooth-aula-s75-pro-light</url>
@@ -19838,6 +19882,17 @@
 <vendorCode>ISA934314BA7</vendorCode>
 <description>Цвет Белый, синий · Тип устройства клавиатура · Подключение Проводное · Подсветка RGB · Раскладка русская/английская · Кнопок 96</description>
 </offer>
+<offer id="ISA944F57499" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury/tproduct/155563880944-besprovodnaya-klaviatura-ugreen-k551-750</url>
+<price>11000</price>
+<currencyId>KZT</currencyId>
+<categoryId>723843374454</categoryId>
+<picture>https://static.tildacdn.com/tild3462-6630-4735-a133-323231336464/ISA944F57499_1.png</picture>
+<name>Беспроводная клавиатура UGREEN K551 75049RU Multi-Mode BT2.4G беспроводная Черный Bluetooth/Радиоканал</name>
+<vendor>UGREEN</vendor>
+<vendorCode>ISA944F57499</vendorCode>
+<description>Подключение Беспроводное · Тип устройства клавиатура</description>
+</offer>
 <offer id="ISA9EAA2ED94" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury/tproduct/311586346764-klaviatura-usb-gembird-kbw-7-bt24-ghz-wi</url>
 <price>24000</price>
@@ -19849,17 +19904,6 @@
 <vendor>GEMBIRD</vendor>
 <vendorCode>ISA9EAA2ED94</vendorCode>
 <description>Цвет Серый · Тип устройства клавиатура · Подключение Беспроводное · Кнопок 68 · Раскладка русская/английская</description>
-</offer>
-<offer id="ISAA16F2190B" available="true">
-<url>https://b2b.isoft-shop.kz/klaviatury/tproduct/654697534774-klaviatura-usb-defender-element-hb-520b</url>
-<price>3100</price>
-<currencyId>KZT</currencyId>
-<categoryId>723843374454</categoryId>
-<picture>https://static.tildacdn.com/tild6332-3135-4666-a265-313861376638/ISAA16F2190B_1.jpg</picture>
-<name>Клавиатура USB, Defender Element HB-520B, чёрная, (45522)</name>
-<vendor>DEFENDER</vendor>
-<vendorCode>ISAA16F2190B</vendorCode>
-<description>Тип устройства клавиатура</description>
 </offer>
 <offer id="ISAB23D6488B" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury/tproduct/917251311764-klaviatura-asus-m701-rog-azothnxswrukbro</url>
@@ -19907,6 +19951,17 @@
 <vendor>Delux</vendor>
 <vendorCode>DLK-6060UB</vendorCode>
 <description>Клавиатура, Delux, DLK-6060UB, USB, Кол-во стандартных клавиш 104, 8 мультимедиа-клавиш, Размер: 446*211*24 мм., Длина кабеля 1,6 метра, Защита от случайного пролива воды/кофе, Чёрный</description>
+</offer>
+<offer id="ISADF2A1B778" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury/tproduct/137579627864-klaviatura-delux-dlk-02ub</url>
+<price>3753</price>
+<currencyId>KZT</currencyId>
+<categoryId>723843374454</categoryId>
+<picture>https://static.tildacdn.com/stor3562-3666-4263-b732-326464303538/e532148ccb909be0f32d9e7958ea7e47.jpg</picture>
+<name>Клавиатура Delux DLK-02UB</name>
+<vendor>Delux</vendor>
+<vendorCode>DLK-02UB</vendorCode>
+<description>Клавиатура, Delux, DLK-02UB, USB, Кол-во стандартных клавиш 102, 10 мультимеда-клавиш, Размер: 436,9*159,9*27,4 мм., Длина кабеля 1,5 метра, Анг/Рус/Каз, Чёрный</description>
 </offer>
 <offer id="ISAF76A136A7" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury/tproduct/685839711134-klaviatura-i-mish-hp-3l1f0aa-230-besprov</url>
@@ -21246,6 +21301,17 @@
 <vendorCode>IS12BFF5631F</vendorCode>
 <description>Форм-фактор ATX · Цвет Чёрный · Макс. длина видеокарты 360 мм · Макс. высота кулера 160 мм · Тип устройства Корпус · Гарантия 1 год</description>
 </offer>
+<offer id="IS13EF3A7B9A" available="true">
+<url>https://b2b.isoft-shop.kz/korpusa-i-bloki-pitaniya/tproduct/365697323494-korpus-external-25-inch-case-sata-to-usb</url>
+<price>5500</price>
+<currencyId>KZT</currencyId>
+<categoryId>976729823024</categoryId>
+<picture>https://static.tildacdn.com/tila3561-6535-4665-b933-373762386437/IS13EF3A7B9A_1.jpg</picture>
+<name>Корпус External 2.5-inch Case SATA to USB 3.0, Gembird EE2-U3S-7, power via Type-C</name>
+<vendor>GEMBIRD</vendor>
+<vendorCode>IS13EF3A7B9A</vendorCode>
+<description>Интерфейс USB 3.0 / Type-C · Тип устройства Корпус</description>
+</offer>
 <offer id="IS14454FC08A" available="true">
 <url>https://b2b.isoft-shop.kz/korpusa-i-bloki-pitaniya/tproduct/929260671484-kompyuternii-korpus-thermaltake-the-towe</url>
 <price>86000</price>
@@ -22569,6 +22635,17 @@
 <vendorCode>HK360</vendorCode>
 <description>Компьютерный корпус, HuntKey, HK360, ATX/Micro ATX, USB 2*3.0, HD-Audio+ Mic, Высота процессорного кулера до 155мм, Длина VGA до 330мм, 1*3.5"/2*2.5", Толщина 0,45мм, 345x180x412мм, Без Б/П, Черный</description>
 </offer>
+<offer id="IS69B7B39C9F" available="true">
+<url>https://b2b.isoft-shop.kz/korpusa-i-bloki-pitaniya/tproduct/987695077574-korpus-external-25-inch-case-sata-to-usb</url>
+<price>5800</price>
+<currencyId>KZT</currencyId>
+<categoryId>976729823024</categoryId>
+<picture>https://static.tildacdn.com/tila6635-6165-4238-b537-643637383834/IS69B7B39C9F_1.jpg</picture>
+<name>Корпус External 2.5-inch Case SATA to USB 3.0, Agestar 3UB2P4, power via USB</name>
+<vendor>AGESTAR</vendor>
+<vendorCode>IS69B7B39C9F</vendorCode>
+<description>Интерфейс USB 3.0 · Тип устройства Корпус</description>
+</offer>
 <offer id="IS6A4604AA1C" available="true">
 <url>https://b2b.isoft-shop.kz/korpusa-i-bloki-pitaniya/tproduct/855050567494-kompyuternii-korpus-cougar-fv270-wh-bez</url>
 <price>90000</price>
@@ -22977,6 +23054,17 @@
 <vendor>Deepcool</vendor>
 <vendorCode>IS828536A911</vendorCode>
 <description>Форм-фактор ATX · Макс. длина видеокарты 410 мм · Макс. высота кулера 176 мм · Тип устройства Корпус · Гарантия 1 год · Цвет Белый</description>
+</offer>
+<offer id="IS8511E197ED" available="true">
+<url>https://b2b.isoft-shop.kz/korpusa-i-bloki-pitaniya/tproduct/789844314404-korpus-external-m2-case-m2-to-usb-30-gem</url>
+<price>6400</price>
+<currencyId>KZT</currencyId>
+<categoryId>976729823024</categoryId>
+<picture>https://static.tildacdn.com/tila6435-3034-4365-a437-303233383837/IS8511E197ED_1.jpg</picture>
+<name>Корпус External M2 Case M2 to USB 3.0, Gembird EEM2-SATA-1, power via USB, black</name>
+<vendor>GEMBIRD</vendor>
+<vendorCode>IS8511E197ED</vendorCode>
+<description>Интерфейс USB 3.0 · Тип устройства Корпус · Цвет Чёрный</description>
 </offer>
 <offer id="IS85A7688732" available="true">
 <url>https://b2b.isoft-shop.kz/korpusa-i-bloki-pitaniya/tproduct/505686660404-kompyuternii-korpus-huntkey-s900-bez-bp</url>
@@ -23732,6 +23820,17 @@
 <vendorCode>ISB0872A50B7</vendorCode>
 <description>Форм-фактор E-ATX · Макс. длина видеокарты 360 мм · Макс. высота кулера 185 мм · Тип устройства Корпус · Гарантия 1 год · Цвет Белый · Материал Сталь</description>
 </offer>
+<offer id="ISB1D9F98086" available="true">
+<url>https://b2b.isoft-shop.kz/korpusa-i-bloki-pitaniya/tproduct/410627009224-korpus-external-m2-case-m2-to-usb-30-age</url>
+<price>19000</price>
+<currencyId>KZT</currencyId>
+<categoryId>976729823024</categoryId>
+<picture>https://static.tildacdn.com/tila6566-3361-4330-b235-396531313463/ISB1D9F98086_1.jpg</picture>
+<name>Корпус External M2 Case M2 to USB 3.0, Agestar 31UBNV1C, power via USB, gray</name>
+<vendor>AGESTAR</vendor>
+<vendorCode>ISB1D9F98086</vendorCode>
+<description>Интерфейс USB 3.0 · Тип устройства Корпус · Цвет Серый · Материал Алюминий</description>
+</offer>
 <offer id="ISB251B67C44" available="true">
 <url>https://b2b.isoft-shop.kz/korpusa-i-bloki-pitaniya/tproduct/946337818434-kompyuternii-korpus-aerocool-p500b-digi</url>
 <price>44000</price>
@@ -23796,6 +23895,17 @@
 <vendor>Thermaltake</vendor>
 <vendorCode>ISB2E46EC7C7</vendorCode>
 <description>Форм-фактор ATX · Цвет Чёрный · Макс. длина видеокарты 300 мм · Макс. высота кулера 150 мм · Тип устройства Корпус · Гарантия 1 год · Материал Сталь</description>
+</offer>
+<offer id="ISB4DCA0392C" available="true">
+<url>https://b2b.isoft-shop.kz/korpusa-i-bloki-pitaniya/tproduct/423381099184-korpus-external-m2-case-m2-to-usb-30-age</url>
+<price>20000</price>
+<currencyId>KZT</currencyId>
+<categoryId>976729823024</categoryId>
+<picture>https://static.tildacdn.com/tild6432-3535-4436-a131-333031653165/ISB4DCA0392C_1.jpg</picture>
+<name>Корпус External M2 Case M2 to USB 3.0, Agestar 31UBNV5C, power via USB,black</name>
+<vendor>AGESTAR</vendor>
+<vendorCode>ISB4DCA0392C</vendorCode>
+<description>Интерфейс USB 3.0 · Тип устройства Корпус · Цвет Чёрный</description>
 </offer>
 <offer id="ISB5BC2567B4" available="true">
 <url>https://b2b.isoft-shop.kz/korpusa-i-bloki-pitaniya/tproduct/488154107354-kompyuternii-korpus-xg-xc-370-2-bez-bp</url>
@@ -24546,6 +24656,17 @@
 <vendorCode>ISF9457A9029</vendorCode>
 <description>Форм-фактор ATX · Цвет Белый · Макс. длина видеокарты 413 мм · Макс. высота кулера 175 мм · Тип устройства Корпус · Гарантия 1 год</description>
 </offer>
+<offer id="ISFA875B042D" available="true">
+<url>https://b2b.isoft-shop.kz/korpusa-i-bloki-pitaniya/tproduct/836883192114-korpus-external-25-inch-case-sata-to-usb</url>
+<price>6300</price>
+<currencyId>KZT</currencyId>
+<categoryId>976729823024</categoryId>
+<picture>https://static.tildacdn.com/tild6136-3431-4434-b935-386630613732/ISFA875B042D_1.jpg</picture>
+<name>Корпус External 2.5-inch Case SATA to USB 3.1, Agestar 3UBCP3, power via USB, black</name>
+<vendor>AGESTAR</vendor>
+<vendorCode>ISFA875B042D</vendorCode>
+<description>Интерфейс USB 3.1 · Тип устройства Корпус · Цвет Чёрный · Материал Пластик</description>
+</offer>
 <offer id="ISFADD2F12F3" available="true">
 <url>https://b2b.isoft-shop.kz/korpusa-i-bloki-pitaniya/tproduct/541182907914-kompyuternii-korpus-1stplayer-rt7-black</url>
 <price>46000</price>
@@ -24621,6 +24742,17 @@
 <vendor>iiyama</vendor>
 <vendorCode>MD-WM15060</vendorCode>
 <description>Партномер: MD-WM15060</description>
+</offer>
+<offer id="IS097C48496B" available="true">
+<url>https://b2b.isoft-shop.kz/kronshteyny-i-krepleniya/tproduct/850262272294-kronshtein-potolochnii-brateck-prb-2-bel</url>
+<price>7400</price>
+<currencyId>KZT</currencyId>
+<categoryId>867910086654</categoryId>
+<picture>https://static.tildacdn.com/tild3965-3239-4638-a164-663161646266/IS097C48496B_1.jpg</picture>
+<name>Кронштейн потолочный Brateck PRB-2 Белый</name>
+<vendor>Brateck</vendor>
+<vendorCode>IS097C48496B</vendorCode>
+<description>Размещение Потолочный</description>
 </offer>
 <offer id="IS0ED13A3DBF" available="true">
 <url>https://b2b.isoft-shop.kz/kronshteyny-i-krepleniya/tproduct/333597512994-nastolnii-kronshtein-s-gazliftom-xg-mgg</url>
@@ -39244,19 +39376,6 @@
 <vendorCode>IS306C626981</vendorCode>
 <description>Тип устройства мышь · Тип сенсора Оптический · Цвет Красный · Разрешение сенсора 42000 dpi</description>
 </offer>
-<offer id="IS314C997ED0" available="true">
-<url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/308880441614-mish-defender-patch-ms-759-usb-optical-1</url>
-<price>1200</price>
-<currencyId>KZT</currencyId>
-<categoryId>816235379434</categoryId>
-<picture>https://static.tildacdn.com/tild3864-6334-4462-b965-353064663862/308880441614.jpg</picture>
-<picture>https://static.tildacdn.com/tild3738-6461-4632-a530-623638646237/308880441614_2.jpg</picture>
-<picture>https://static.tildacdn.com/tild6433-3861-4265-b131-653161373437/308880441614_3.jpg</picture>
-<name>Мышь Defender Patch MS-759, USB, Optical 1000 dpi, (52759), gray</name>
-<vendor>DEFENDER</vendor>
-<vendorCode>IS314C997ED0</vendorCode>
-<description>Тип устройства мышь · Подключение Проводное · Тип сенсора Оптический · Цвет Серый · Разрешение сенсора 1000 dpi</description>
-</offer>
 <offer id="IS31857B1DF3" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/263107710444-mish-asus-p713-rog-harpe-ace-aim-lab-edi</url>
 <price>53000</price>
@@ -40034,19 +40153,6 @@
 <vendor>Cougar</vendor>
 <vendorCode>IS4D56273A64</vendorCode>
 <description>Тип устройства мышь · Подключение Беспроводное · Тип сенсора Оптический · Цвет Чёрный · Разрешение сенсора 26000 dpi · Кнопок 7 · Гарантия 1 год · Назначение Игровая · Материал Пластик</description>
-</offer>
-<offer id="IS4D5AF075FA" available="true">
-<url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/585241683464-kompyuternaya-mish-xg-xm-775ogb</url>
-<price>1200</price>
-<currencyId>KZT</currencyId>
-<categoryId>816235379434</categoryId>
-<picture>https://static.tildacdn.com/stor6534-6537-4263-a165-623233613139/4e2166ceca78c881a65a997ab2fe2391.jpg</picture>
-<picture>https://static.tildacdn.com/tild6362-3065-4463-a165-643536316433/585241683464_1.jpg</picture>
-<picture>https://static.tildacdn.com/tild3333-3932-4666-b262-643638663031/585241683464_2.jpg</picture>
-<name>Компьютерная мышь XG XM-775OGB</name>
-<vendor>XG</vendor>
-<vendorCode>IS4D5AF075FA</vendorCode>
-<description>Подключение Беспроводное · Разрешение сенсора 1000 dpi · Тип устройства мышь · Кнопок 4 · Тип сенсора Оптический · Цвет Чёрный · Гарантия 1 год</description>
 </offer>
 <offer id="IS4DE373B928" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/782987878494-kompyuternaya-mish-vgn-dragonfly-y2-ultr</url>
@@ -41579,6 +41685,17 @@
 <vendor>Glorious</vendor>
 <vendorCode>IS8BC4549E61</vendorCode>
 <description>Тип устройства мышь · Подключение Проводное · Тип сенсора Оптический · Цвет Белый · Разрешение сенсора 26000 dpi · Кнопок 6 · Гарантия 2 года · Назначение Игровая · Длина кабеля 2 м · Подсветка RGB</description>
+</offer>
+<offer id="IS8BDC3374D3" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/619917931464-mish-defender-sinsister-gm-933-usb-white</url>
+<price>4400</price>
+<currencyId>KZT</currencyId>
+<categoryId>816235379434</categoryId>
+<picture>https://static.tildacdn.com/tild3737-3436-4239-a638-363433636530/IS8BDC3374D3_1.jpg</picture>
+<name>Мышь Defender Sin'Sister GM-933, USB, white (52932)</name>
+<vendor>DEFENDER</vendor>
+<vendorCode>IS8BDC3374D3</vendorCode>
+<description>Тип устройства мышь · Цвет Белый · Подключение Проводное · Тип сенсора Оптический · Разрешение сенсора 7200 dpi · Кнопок 6 · Назначение Игровая · Длина кабеля 1,5 м</description>
 </offer>
 <offer id="IS8C4EAE9982" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/694907315494-mish-hp-4e407aa-235-slim-wireless-mouse</url>
@@ -44681,6 +44798,17 @@
 <vendorCode>IS1478483B1B</vendorCode>
 <description>Тип устройства Гарнитура</description>
 </offer>
+<offer id="IS15890B037D" available="true">
+<url>https://b2b.isoft-shop.kz/naushniki/tproduct/843253512824-naushniki-tecno-buds-4-bd04-midnight-blu</url>
+<price>10000</price>
+<currencyId>KZT</currencyId>
+<categoryId>813446092544</categoryId>
+<picture>https://static.tildacdn.com/tild3265-6431-4038-a565-646362363761/IS15890B037D_1.jpg</picture>
+<name>Наушники TECNO Buds 4 BD04 Midnight Blue</name>
+<vendor>Tecno</vendor>
+<vendorCode>IS15890B037D</vendorCode>
+<description>Тип устройства Наушники · Цвет Синий · В комплекте Зарядный кейс, наушники, набор амбушюр в размерах S/M/L, руководство пользователя</description>
+</offer>
 <offer id="IS158DA67876" available="true">
 <url>https://b2b.isoft-shop.kz/naushniki/tproduct/187941796034-garnitura-razer-barracuda-x-2022-rz04-04</url>
 <price>42000</price>
@@ -45407,6 +45535,17 @@
 <vendor>Huawei</vendor>
 <vendorCode>IS5365B627EA</vendorCode>
 <description>Тип устройства Наушники</description>
+</offer>
+<offer id="IS53A507984B" available="true">
+<url>https://b2b.isoft-shop.kz/naushniki/tproduct/902644640614-bluetooth-naushniki-moondrop-golden-ages</url>
+<price>56000</price>
+<currencyId>KZT</currencyId>
+<categoryId>813446092544</categoryId>
+<picture>https://static.tildacdn.com/tila3264-3230-4138-b962-303235326236/IS53A507984B_1.jpg</picture>
+<name>Bluetooth-наушники Moondrop Golden Ages, серые</name>
+<vendor>MOONDROP</vendor>
+<vendorCode>IS53A507984B</vendorCode>
+<description>Цвет Серый · Тип подключения Беспроводное · Тип устройства Наушники</description>
 </offer>
 <offer id="IS5650654983" available="true">
 <url>https://b2b.isoft-shop.kz/naushniki/tproduct/219568387924-naushniki-huawei-freebuds-pro-4-t0022-ze</url>
@@ -46487,6 +46626,17 @@
 <vendorCode>ISB5AAB581DF</vendorCode>
 <description>Тип устройства Наушники</description>
 </offer>
+<offer id="ISB6023A90AA" available="true">
+<url>https://b2b.isoft-shop.kz/naushniki/tproduct/916035450534-naushniki-tecno-buds-4-bd04-belie</url>
+<price>10000</price>
+<currencyId>KZT</currencyId>
+<categoryId>813446092544</categoryId>
+<picture>https://static.tildacdn.com/tild6239-3234-4833-b062-343866646465/ISB6023A90AA_1.jpg</picture>
+<name>Наушники TECNO Buds 4 BD04 белые</name>
+<vendor>Tecno</vendor>
+<vendorCode>ISB6023A90AA</vendorCode>
+<description>Цвет Белый · Тип устройства Наушники · В комплекте Зарядный кейс, наушники, набор амбушюр в размерах S/M/L, руководство пользователя</description>
+</offer>
 <offer id="ISB7057E443D" available="true">
 <url>https://b2b.isoft-shop.kz/naushniki/tproduct/238624736864-naushniki-redmi-buds-8-lite-belie-m2539e</url>
 <price>14000</price>
@@ -46853,6 +47003,17 @@
 <vendorCode>ISD144D14C1B</vendorCode>
 <description>Тип устройства Гарнитура · Цвет Чёрный · Назначение Игровое · Тип подключения Беспроводное</description>
 </offer>
+<offer id="ISD24F38EEF0" available="true">
+<url>https://b2b.isoft-shop.kz/naushniki/tproduct/794136387874-naushniki-redmi-buds-6-night-black-m2429</url>
+<price>21000</price>
+<currencyId>KZT</currencyId>
+<categoryId>813446092544</categoryId>
+<picture>https://static.tildacdn.com/tila3363-6634-4761-b130-333436306162/ISD24F38EEF0_1.jpg</picture>
+<name>Наушники Redmi Buds 6 Night Black M2429E1</name>
+<vendor>Redmi</vendor>
+<vendorCode>ISD24F38EEF0</vendorCode>
+<description>Тип устройства Наушники · Цвет Чёрный</description>
+</offer>
 <offer id="ISD28DBD88C2" available="true">
 <url>https://b2b.isoft-shop.kz/naushniki/tproduct/343637702814-garnitura-razer-opus-x-green-rz04-037604</url>
 <price>25000</price>
@@ -46876,17 +47037,6 @@
 <vendor>APPLE</vendor>
 <vendorCode>ISD3527AE491</vendorCode>
 <description>Тип устройства Наушники</description>
-</offer>
-<offer id="ISD43D50FFB1" available="true">
-<url>https://b2b.isoft-shop.kz/naushniki/tproduct/211516312614-garnitura-genius-hs-04s</url>
-<price>4700</price>
-<currencyId>KZT</currencyId>
-<categoryId>813446092544</categoryId>
-<picture>https://static.tildacdn.com/tila3132-3032-4764-a632-373664396438/ISD43D50FFB1_1.jpg</picture>
-<name>Гарнитура Genius HS-04S</name>
-<vendor>Genius</vendor>
-<vendorCode>ISD43D50FFB1</vendorCode>
-<description>Тип устройства Гарнитура</description>
 </offer>
 <offer id="ISD443AE91E2" available="true">
 <url>https://b2b.isoft-shop.kz/garnitury/tproduct/697315992844-garnitura-jabra-evolve-10-stereo-2699-82</url>
@@ -47333,6 +47483,17 @@
 <vendorCode>ISF54A5605FF</vendorCode>
 <description>Тип устройства Наушники · Цвет Синий</description>
 </offer>
+<offer id="ISF5E394A700" available="true">
+<url>https://b2b.isoft-shop.kz/naushniki/tproduct/962096544814-naushniki-tecno-true-1-air-tu01-air-crea</url>
+<price>30000</price>
+<currencyId>KZT</currencyId>
+<categoryId>813446092544</categoryId>
+<picture>https://static.tildacdn.com/tild6165-3335-4132-b939-663665643739/ISF5E394A700_1.jpg</picture>
+<name>Наушники TECNO True 1 Air TU01 Air Creamy White</name>
+<vendor>Tecno</vendor>
+<vendorCode>ISF5E394A700</vendorCode>
+<description>Цвет Белый · Тип устройства Наушники · В комплекте Зарядный кейс, наушники, набор амбушюр в размерах S/M/L, руководство пользователя</description>
+</offer>
 <offer id="ISF8A743D918" available="true">
 <url>https://b2b.isoft-shop.kz/garnitury/tproduct/988282651654-garnitura-jabra-evolve-20-se-stereo-ms-u</url>
 <price>34000</price>
@@ -47366,6 +47527,17 @@
 <vendor>Edifier</vendor>
 <vendorCode>ISF90AD132CC</vendorCode>
 <description>Тип устройства Наушники</description>
+</offer>
+<offer id="ISFA5FC48899" available="true">
+<url>https://b2b.isoft-shop.kz/naushniki/tproduct/953762128794-naushniki-xiaomi-buds-5-ceramic-white-m2</url>
+<price>47000</price>
+<currencyId>KZT</currencyId>
+<categoryId>813446092544</categoryId>
+<picture>https://static.tildacdn.com/tild3131-6334-4262-b137-643834303062/ISFA5FC48899_1.jpg</picture>
+<name>Наушники Xiaomi Buds 5 Ceramic White M2341E1</name>
+<vendor>Xiaomi</vendor>
+<vendorCode>ISFA5FC48899</vendorCode>
+<description>Тип устройства Наушники · Цвет Белый</description>
 </offer>
 <offer id="ISFA8AAA44E0" available="true">
 <url>https://b2b.isoft-shop.kz/naushniki/tproduct/844541374214-naushniki-soundcore-liberty-4-pro-belie</url>
@@ -47401,17 +47573,6 @@
 <vendor>HyperX</vendor>
 <vendorCode>ISFB08359340</vendorCode>
 <description>Тип устройства Гарнитура · Тип подключения Беспроводное · Цвет Белый</description>
-</offer>
-<offer id="ISFC4B1A0C95" available="true">
-<url>https://b2b.isoft-shop.kz/naushniki/tproduct/453888594954-garnitura-xg-xh-700rgb</url>
-<price>4700</price>
-<currencyId>KZT</currencyId>
-<categoryId>813446092544</categoryId>
-<picture>https://static.tildacdn.com/tila3537-6130-4664-a436-363431363531/ISFC4B1A0C95_1.jpg</picture>
-<name>Гарнитура XG XH-700RGB</name>
-<vendor>XG</vendor>
-<vendorCode>ISFC4B1A0C95</vendorCode>
-<description>Тип устройства Гарнитура</description>
 </offer>
 <offer id="ISFC7AB26C24" available="true">
 <url>https://b2b.isoft-shop.kz/naushniki/tproduct/975948613994-naushniki-redmi-buds-6-active-pink-m2344</url>
@@ -67250,6 +67411,28 @@
 <vendorCode>ISFF9A91E954</vendorCode>
 <description>Интерфейс USB</description>
 </offer>
+<offer id="IS0016CDB7C8" available="true">
+<url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/391309304824-sistemnii-blok-pulser-core-i3-12100-33-g</url>
+<price>269000</price>
+<currencyId>KZT</currencyId>
+<categoryId>763638053684</categoryId>
+<picture>https://static.tildacdn.com/tild6565-3561-4134-a162-366131323365/IS0016CDB7C8_1.jpg</picture>
+<name>Системный блок Pulser Core i3-12100, 3.3 ГГц, H610, 16 ГБ ОЗУ, SSD 1 ТБ M.2, без DVD, БП 400 Вт</name>
+<vendor>Pulser</vendor>
+<vendorCode>IS0016CDB7C8</vendorCode>
+<description>Оперативная память 16 ГБ · Процессор Core i3-12100 · Линейка процессора Core i3 / Core 3</description>
+</offer>
+<offer id="IS00AB982995" available="true">
+<url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/161714989364-sistemnii-blok-pulser-ryzen-5-7500f-37-g</url>
+<price>730000</price>
+<currencyId>KZT</currencyId>
+<categoryId>763638053684</categoryId>
+<picture>https://static.tildacdn.com/tild6163-6561-4237-b333-373664386337/IS00AB982995_1.jpg</picture>
+<name>Системный блок Pulser Ryzen 5 7500F, 3.7 ГГц, B650, 16 ГБ ОЗУ, SSD 512 ГБ M.2, RTX 5050, 8 ГБ, без DVD, БП 600 Вт</name>
+<vendor>Pulser</vendor>
+<vendorCode>IS00AB982995</vendorCode>
+<description>Оперативная память 16 ГБ · Процессор Ryzen 5 7500F · Линейка процессора Ryzen 5 · Видеокарта RTX 5050</description>
+</offer>
 <offer id="IS051AA3B88D" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/897037526434-sistemnii-blok-pk-acer-nitro-n55-tower-g</url>
 <price>1412000</price>
@@ -67272,6 +67455,17 @@
 <vendorCode>IS051C761A65</vendorCode>
 <description>Оперативная память 32 ГБ · Операционная система без ОС · Процессор Intel Core Ultra 7 265 · Ёмкость 1 ТБ · Семья ОС Без ОС · Линейка процессора Core Ultra 7 · Тип накопителя SSD · Накопитель 1 ТБ · Видеокарта RTX 5070 · Форм-фактор Tower</description>
 </offer>
+<offer id="IS087EEDC1BA" available="true">
+<url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/873834693614-sistemnii-blok-pulser-core-i3-12100-33-g</url>
+<price>231000</price>
+<currencyId>KZT</currencyId>
+<categoryId>763638053684</categoryId>
+<picture>https://static.tildacdn.com/tild6136-6237-4336-b465-336132336135/IS087EEDC1BA_1.jpg</picture>
+<name>Системный блок Pulser Core i3-12100, 3.3 ГГц, H610, 8 ГБ ОЗУ, SSD 512 ГБ, без DVD, БП 400 Вт</name>
+<vendor>Pulser</vendor>
+<vendorCode>IS087EEDC1BA</vendorCode>
+<description>Оперативная память 8 ГБ · Процессор Core i3-12100 · Линейка процессора Core i3 / Core 3</description>
+</offer>
 <offer id="IS0A71466E23" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/563249083774-sistemnii-blok-dell-pro-max-tower-t2-fct</url>
 <price>2038000</price>
@@ -67282,6 +67476,17 @@
 <vendor>Dell</vendor>
 <vendorCode>IS0A71466E23</vendorCode>
 <description>Форм-фактор Tower · Процессор U7 265 · Оперативная память 32 ГБ · Операционная система Windows 11 Pro · Семья ОС Windows 11 · Линейка процессора Core Ultra 7</description>
+</offer>
+<offer id="IS0C71911BE3" available="true">
+<url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/913679129804-sistemnii-blok-pulser-core-i3-12100f-33</url>
+<price>446000</price>
+<currencyId>KZT</currencyId>
+<categoryId>763638053684</categoryId>
+<picture>https://static.tildacdn.com/tila6466-3766-4139-a434-383639613236/IS0C71911BE3_1.jpg</picture>
+<name>Системный блок Pulser Core i3-12100F, 3.3 ГГц, H610, 16 ГБ ОЗУ, SSD 512 ГБ M.2, RTX 3050, 6 ГБ, без DVD, БП 500 Вт</name>
+<vendor>Pulser</vendor>
+<vendorCode>IS0C71911BE3</vendorCode>
+<description>Оперативная память 16 ГБ · Процессор Core i3-12100F · Линейка процессора Core i3 / Core 3 · Видеокарта RTX 3050</description>
 </offer>
 <offer id="IS1025516CFA" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/238973518084-sistemnii-blok-asus-90pf05b2-m006z0-tuf</url>
@@ -67308,6 +67513,50 @@
 <vendorCode>IS128E52BD43</vendorCode>
 <description>Форм-фактор Tower · Процессор U7 265 · Оперативная память 32 ГБ · Операционная система Windows 11 Pro · Семья ОС Windows 11 · Линейка процессора Core Ultra 7</description>
 </offer>
+<offer id="IS1DA8B70DD1" available="true">
+<url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/193311634804-sistemnii-blok-pulser-ryzen-5-5600gt-36</url>
+<price>346000</price>
+<currencyId>KZT</currencyId>
+<categoryId>763638053684</categoryId>
+<picture>https://static.tildacdn.com/tila3432-3730-4634-b239-383266643039/IS1DA8B70DD1_1.jpg</picture>
+<name>Системный блок Pulser Ryzen 5 5600GT, 3.6 ГГц, A520, 16 ГБ ОЗУ, SSD 1 ТБ, без DVD, БП 300 Вт</name>
+<vendor>Pulser</vendor>
+<vendorCode>IS1DA8B70DD1</vendorCode>
+<description>Оперативная память 16 ГБ · Процессор Ryzen 5 5600GT · Линейка процессора Ryzen 5</description>
+</offer>
+<offer id="IS22F172E67E" available="true">
+<url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/353746439644-sistemnii-blok-pulser-ryzen-9-9900x3d-44</url>
+<price>2818000</price>
+<currencyId>KZT</currencyId>
+<categoryId>763638053684</categoryId>
+<picture>https://static.tildacdn.com/tila3932-6361-4535-a265-626431643364/IS22F172E67E_1.jpg</picture>
+<name>Системный блок Pulser Ryzen 9 9900X3D, 4.4 ГГц, X870, 64 ГБ ОЗУ, SSD 2 ТБ M.2, RTX 5080, 16 ГБ, без DVD, БП 1000 Вт</name>
+<vendor>Pulser</vendor>
+<vendorCode>IS22F172E67E</vendorCode>
+<description>Оперативная память 64 ГБ · Процессор Ryzen 9 9900X3 · Линейка процессора Ryzen 9 · Видеокарта RTX 5080</description>
+</offer>
+<offer id="IS27EE10B913" available="true">
+<url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/814190678274-sistemnii-blok-pulser-core-i7-14700f-21</url>
+<price>1940000</price>
+<currencyId>KZT</currencyId>
+<categoryId>763638053684</categoryId>
+<picture>https://static.tildacdn.com/tila6233-3864-4265-a331-343330373933/IS27EE10B913_1.jpg</picture>
+<name>Системный блок Pulser Core i7-14700F, 2.1 ГГц, Z790, 32 ГБ ОЗУ, SSD 1 ТБ M.2, RTX 5070 Ti, 16 ГБ, без DVD, БП 1000 Вт</name>
+<vendor>Pulser</vendor>
+<vendorCode>IS27EE10B913</vendorCode>
+<description>Оперативная память 32 ГБ · Процессор Intel Core i7-14700F · Тип накопителя SSD · Ёмкость 1 ТБ · Видеокарта RTX 5070 Ti · Блок питания 1000 Вт · Накопитель 1 ТБ</description>
+</offer>
+<offer id="IS287EF9A886" available="true">
+<url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/116674536214-sistemnii-blok-pulser-core-i5-12400-25-g</url>
+<price>277000</price>
+<currencyId>KZT</currencyId>
+<categoryId>763638053684</categoryId>
+<picture>https://static.tildacdn.com/tila3039-6234-4038-a433-323638623861/IS287EF9A886_1.jpg</picture>
+<name>Системный блок Pulser Core i5-12400, 2.5 ГГц, H610, 16 ГБ ОЗУ, SSD 512 ГБ, без DVD, БП 400 Вт</name>
+<vendor>Pulser</vendor>
+<vendorCode>IS287EF9A886</vendorCode>
+<description>Оперативная память 16 ГБ · Процессор Core i5-12400 · Линейка процессора Core i5</description>
+</offer>
 <offer id="IS294E296C39" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/663936553974-sistemnii-blok-ryzen-5-7500f-37ghzb650ra</url>
 <price>1275000</price>
@@ -67329,6 +67578,17 @@
 <vendor>SANC</vendor>
 <vendorCode>IS330311DEFE</vendorCode>
 <description>Оперативная память 32 ГБ · Процессор Intel Core i7-14700F · Видеокарта RTX 5060 TI</description>
+</offer>
+<offer id="IS33C74A2D2E" available="true">
+<url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/960908277384-sistemnii-blok-pulser-core-i5-12400-25-g</url>
+<price>295000</price>
+<currencyId>KZT</currencyId>
+<categoryId>763638053684</categoryId>
+<picture>https://static.tildacdn.com/tild6136-6237-4336-b465-336132336135/IS087EEDC1BA_1.jpg</picture>
+<name>Системный блок Pulser Core i5-12400, 2.5 ГГц, H610, 16 ГБ ОЗУ, SSD 1 ТБ M.2, без DVD, БП 400 Вт</name>
+<vendor>Pulser</vendor>
+<vendorCode>IS33C74A2D2E</vendorCode>
+<description>Оперативная память 16 ГБ · Процессор Core i5-12400 · Линейка процессора Core i5</description>
 </offer>
 <offer id="IS3925CFAB06" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/832972302114-sistemnii-blok-pk-acer-nitro-n55-tower-g</url>
@@ -67353,6 +67613,39 @@
 <vendorCode>IS396440FEEF</vendorCode>
 <description>Оперативная память 16 ГБ · Операционная система Windows 11 Pro · Процессор Intel Core Ultra 5 235 · Ёмкость 512 ГБ · Семья ОС Windows 11 · Линейка процессора Core Ultra 5 · Тип накопителя SSD · Тип памяти DDR5 · Накопитель 512 ГБ · Форм-фактор Slim</description>
 </offer>
+<offer id="IS39C9A48701" available="true">
+<url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/826489621084-sistemnii-blok-pulser-ryzen-5-8500g-32-g</url>
+<price>351000</price>
+<currencyId>KZT</currencyId>
+<categoryId>763638053684</categoryId>
+<picture>https://static.tildacdn.com/tild6136-6237-4336-b465-336132336135/IS087EEDC1BA_1.jpg</picture>
+<name>Системный блок Pulser Ryzen 5 8500G, 3.2 ГГц, B650, 16 ГБ ОЗУ, SSD 512 ГБ, без DVD, БП 400 Вт</name>
+<vendor>Pulser</vendor>
+<vendorCode>IS39C9A48701</vendorCode>
+<description>Оперативная память 16 ГБ · Процессор Ryzen 5 8500G · Линейка процессора Ryzen 5</description>
+</offer>
+<offer id="IS39E47B5829" available="true">
+<url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/198202668964-sistemnii-blok-pulser-ryzen-3-3200g-36-g</url>
+<price>250000</price>
+<currencyId>KZT</currencyId>
+<categoryId>763638053684</categoryId>
+<picture>https://static.tildacdn.com/tila3432-3730-4634-b239-383266643039/IS1DA8B70DD1_1.jpg</picture>
+<name>Системный блок Pulser Ryzen 3 3200G, 3.6 ГГц, A520, 16 ГБ ОЗУ, SSD 512 ГБ, без DVD, БП 300 Вт</name>
+<vendor>Pulser</vendor>
+<vendorCode>IS39E47B5829</vendorCode>
+<description>Оперативная память 16 ГБ · Процессор Ryzen 3 3200G · Линейка процессора Ryzen 3</description>
+</offer>
+<offer id="IS3BE086D600" available="true">
+<url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/914165761834-sistemnii-blok-pulser-ryzen-9-9900x-44-g</url>
+<price>1742000</price>
+<currencyId>KZT</currencyId>
+<categoryId>763638053684</categoryId>
+<picture>https://static.tildacdn.com/tild3662-6261-4531-a562-356634666132/IS3BE086D600_1.jpg</picture>
+<name>Системный блок Pulser Ryzen 9 9900X, 4.4 ГГц, X870, 32 ГБ ОЗУ, SSD 1 ТБ M.2, RTX 5070, 12 ГБ, без DVD, БП 1000 Вт</name>
+<vendor>Pulser</vendor>
+<vendorCode>IS3BE086D600</vendorCode>
+<description>Оперативная память 32 ГБ · Процессор Ryzen 9 9900X · Линейка процессора Ryzen 9 · Видеокарта RTX 5070</description>
+</offer>
 <offer id="IS42C8C821BB" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/242649574384-sistemnii-blok-acer-veriton-x2735g-sff-k</url>
 <price>549000</price>
@@ -67364,6 +67657,17 @@
 <vendorCode>DT.R6WEC.00J</vendorCode>
 <description>Системный блок линейки Acer Veriton. Процессор Intel Core Ultra 5-225. Оперативной памяти 16 ГБ DDR5. Накопитель SSD на 512 ГБ. Графика встроенная: Intel Arc Graphics. Операционной системы в комплекте нет. Питание: блок питания 180 Вт. · Партномер: DT.R6WEC.00J</description>
 </offer>
+<offer id="IS43675C13F2" available="true">
+<url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/356496082874-sistemnii-blok-pulser-core-i7-14700f-21</url>
+<price>1243000</price>
+<currencyId>KZT</currencyId>
+<categoryId>763638053684</categoryId>
+<picture>https://static.tildacdn.com/tild3439-3630-4933-b738-653566646662/IS43675C13F2_1.jpg</picture>
+<name>Системный блок Pulser Core i7-14700F, 2.1 ГГц, B760, 32 ГБ ОЗУ, SSD 1 ТБ M.2, RTX 5060, 8 ГБ, без DVD, БП 800 Вт</name>
+<vendor>Pulser</vendor>
+<vendorCode>IS43675C13F2</vendorCode>
+<description>Оперативная память 32 ГБ · Процессор Intel Core i7-14700F · Тип накопителя SSD · Ёмкость 1 ТБ · Видеокарта RTX 5060 · Блок питания 800 Вт · Накопитель 1 ТБ</description>
+</offer>
 <offer id="IS4375F45A0E" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/889151524144-sistemnii-blok-pk-nitro-n55-tower-gaming</url>
 <price>1348000</price>
@@ -67374,6 +67678,39 @@
 <vendor>Acer</vendor>
 <vendorCode>IS4375F45A0E</vendorCode>
 <description>Форм-фактор Tower · Процессор Intel Core i7 14700F · Оперативная память 16 ГБ · Видеокарта GeForce RTX 5070 · Операционная система Windows 11 · Сертификат блока питания 80+ Gold · Порты 1× USB-C, 1× USB-A · Wi-Fi Wi-Fi 6E · Bluetooth 5.0 · Семья ОС Windows 11</description>
+</offer>
+<offer id="IS461A1C9B4A" available="true">
+<url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/339946614534-sistemnii-blok-pulser-ryzen-5-8400f-42-g</url>
+<price>1228000</price>
+<currencyId>KZT</currencyId>
+<categoryId>763638053684</categoryId>
+<picture>https://static.tildacdn.com/tild3236-3965-4661-a464-633866636530/IS461A1C9B4A_1.jpg</picture>
+<name>Системный блок Pulser Ryzen 5 8400F, 4.2 ГГц, B840, 32 ГБ ОЗУ, SSD 1 ТБ M.2, RTX 5070, 12 ГБ, без DVD, БП 850 Вт</name>
+<vendor>Pulser</vendor>
+<vendorCode>IS461A1C9B4A</vendorCode>
+<description>Оперативная память 32 ГБ · Процессор Ryzen 5 8400F · Линейка процессора Ryzen 5 · Видеокарта RTX 5070</description>
+</offer>
+<offer id="IS499B9162CE" available="true">
+<url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/258063847094-sistemnii-blok-pulser-core-i3-12100-33-g</url>
+<price>263000</price>
+<currencyId>KZT</currencyId>
+<categoryId>763638053684</categoryId>
+<picture>https://static.tildacdn.com/tila3339-3365-4136-b061-633334333136/IS499B9162CE_1.jpg</picture>
+<name>Системный блок Pulser Core i3-12100, 3.3 ГГц, H610, 16 ГБ ОЗУ, SSD 512 ГБ M.2, без DVD, БП 400 Вт</name>
+<vendor>Pulser</vendor>
+<vendorCode>IS499B9162CE</vendorCode>
+<description>Оперативная память 16 ГБ · Процессор Core i3-12100 · Линейка процессора Core i3 / Core 3</description>
+</offer>
+<offer id="IS4B369DDA90" available="true">
+<url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/865978065934-sistemnii-blok-pulser-ryzen-9-9950x3d-43</url>
+<price>5785000</price>
+<currencyId>KZT</currencyId>
+<categoryId>763638053684</categoryId>
+<picture>https://static.tildacdn.com/tila3466-3434-4233-a361-653862623632/IS4B369DDA90_1.jpg</picture>
+<name>Системный блок Pulser Ryzen 9 9950X3D, 4.3 ГГц, X870, 64 ГБ ОЗУ, SSD 2 ТБ M.2, RTX 5090, 32 ГБ, без DVD, БП 1350 Вт, Windows 11 Pro</name>
+<vendor>Pulser</vendor>
+<vendorCode>IS4B369DDA90</vendorCode>
+<description>Оперативная память 64 ГБ · Процессор Ryzen 9 9950X3 · Линейка процессора Ryzen 9 · Видеокарта RTX 5090 · Операционная система Windows 11 Pro · Семья ОС Windows 11</description>
 </offer>
 <offer id="IS4B4BBB0EA3" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/153244107444-sistemnii-blok-pc-dell-pro-tower-qct1250</url>
@@ -67388,6 +67725,28 @@
 <vendorCode>IS4B4BBB0EA3</vendorCode>
 <description>Оперативная память 8 ГБ · Операционная система Windows 11 · Процессор Intel Core Ultra 7 265 · Ёмкость 512 ГБ · Семья ОС Windows 11 · Линейка процессора Core Ultra 7 · Тип памяти DDR5 · Накопитель 512 ГБ · Видеокарта Встроенная · Форм-фактор Tower</description>
 </offer>
+<offer id="IS4C825C8F21" available="true">
+<url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/136412404644-sistemnii-blok-pulser-pentium-g6400-40-g</url>
+<price>148000</price>
+<currencyId>KZT</currencyId>
+<categoryId>763638053684</categoryId>
+<picture>https://static.tildacdn.com/tild6136-6237-4336-b465-336132336135/IS087EEDC1BA_1.jpg</picture>
+<name>Системный блок Pulser Pentium G6400, 4.0 ГГц, B460, 8 ГБ ОЗУ, SSD 256 ГБ, без DVD, БП 400 Вт</name>
+<vendor>Pulser</vendor>
+<vendorCode>IS4C825C8F21</vendorCode>
+<description>Оперативная память 8 ГБ · Процессор Pentium G6400 · Линейка процессора Celeron / Pentium</description>
+</offer>
+<offer id="IS4CDA368CE8" available="true">
+<url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/477180593024-sistemnii-blok-pulser-core-i3-12100-33-g</url>
+<price>193000</price>
+<currencyId>KZT</currencyId>
+<categoryId>763638053684</categoryId>
+<picture>https://static.tildacdn.com/tild6136-6237-4336-b465-336132336135/IS087EEDC1BA_1.jpg</picture>
+<name>Системный блок Pulser Core i3-12100, 3.3 ГГц, H610, 8 ГБ ОЗУ, SSD 256 ГБ, без DVD, БП 400 Вт</name>
+<vendor>Pulser</vendor>
+<vendorCode>IS4CDA368CE8</vendorCode>
+<description>Оперативная память 8 ГБ · Процессор Core i3-12100 · Линейка процессора Core i3 / Core 3</description>
+</offer>
 <offer id="IS4CDC6855FE" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/962792578824-sistemnii-blok-delltower-plus-ebt2250tow</url>
 <price>2373000</price>
@@ -67401,6 +67760,28 @@
 <vendor>Dell</vendor>
 <vendorCode>IS4CDC6855FE</vendorCode>
 <description>Видеокарта RTX 5080 · Линейка процессора Core Ultra 9 · Оперативная память 32 ГБ · Операционная система Windows 11 · Процессор Core Ultra 9/285K · Семья ОС Windows 11 · Форм-фактор Tower</description>
+</offer>
+<offer id="IS4F8C9C3BB9" available="true">
+<url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/105509606994-sistemnii-blok-pulser-core-i3-12100f-33</url>
+<price>282000</price>
+<currencyId>KZT</currencyId>
+<categoryId>763638053684</categoryId>
+<picture>https://static.tildacdn.com/tila6338-3730-4361-b061-366433663066/IS4F8C9C3BB9_1.jpg</picture>
+<name>Системный блок Pulser Core i3-12100F, 3.3 ГГц, H610, 16 ГБ ОЗУ, SSD 512 ГБ, GT 1030, 2 ГБ, без DVD, БП 400 Вт</name>
+<vendor>Pulser</vendor>
+<vendorCode>IS4F8C9C3BB9</vendorCode>
+<description>Оперативная память 16 ГБ · Процессор Core i3-12100F · Линейка процессора Core i3 / Core 3 · Видеокарта GT1030</description>
+</offer>
+<offer id="IS5076C4F803" available="true">
+<url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/372118643474-sistemnii-blok-pulser-ryzen-7-9800x3d-47</url>
+<price>2690000</price>
+<currencyId>KZT</currencyId>
+<categoryId>763638053684</categoryId>
+<picture>https://static.tildacdn.com/tila3265-3138-4563-a231-623035653237/IS5076C4F803_1.jpg</picture>
+<name>Системный блок Pulser Ryzen 7 9800X3D, 4.7 ГГц, X870E, 32 ГБ ОЗУ, SSD 1 ТБ M.2, RTX 5080, 16 ГБ, без DVD, БП 1000 Вт</name>
+<vendor>Pulser</vendor>
+<vendorCode>IS5076C4F803</vendorCode>
+<description>Оперативная память 32 ГБ · Процессор Ryzen 7 9800X3 · Линейка процессора Ryzen 7 · Видеокарта RTX 5080</description>
 </offer>
 <offer id="IS509D3E3539" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/373467441364-sistemnii-blok-hp-pro-sff-400-g9-9h7c6et</url>
@@ -67461,6 +67842,28 @@
 <vendorCode>DT.R73EC.00E</vendorCode>
 <description>Системный блок линейки Acer Veriton. Процессор Intel Core Ultra 5-225. Оперативной памяти 16 ГБ DDR5. Накопитель SSD на 512 ГБ. Графика встроенная: Intel Arc Graphics. Операционной системы в комплекте нет. Питание: блок питания 300 Вт. · Партномер: DT.R73EC.00E</description>
 </offer>
+<offer id="IS56386B532C" available="true">
+<url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/642299192464-sistemnii-blok-pulser-core-i3-12100-33-g</url>
+<price>263000</price>
+<currencyId>KZT</currencyId>
+<categoryId>763638053684</categoryId>
+<picture>https://static.tildacdn.com/tila3039-6234-4038-a433-323638623861/IS287EF9A886_1.jpg</picture>
+<name>Системный блок Pulser Core i3-12100, 3.3 ГГц, H610, 16 ГБ ОЗУ, SSD 512 ГБ, без DVD, БП 400 Вт</name>
+<vendor>Pulser</vendor>
+<vendorCode>IS56386B532C</vendorCode>
+<description>Оперативная память 16 ГБ · Процессор Core i3-12100 · Линейка процессора Core i3 / Core 3</description>
+</offer>
+<offer id="IS59A27E6405" available="true">
+<url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/819732035944-sistemnii-blok-pulser-ryzen-7-5700x-34-g</url>
+<price>897000</price>
+<currencyId>KZT</currencyId>
+<categoryId>763638053684</categoryId>
+<picture>https://static.tildacdn.com/tila3536-3631-4465-b661-336437643133/IS59A27E6405_1.jpg</picture>
+<name>Системный блок Pulser Ryzen 7 5700X, 3.4 ГГц, B550, 32 ГБ ОЗУ, SSD 1 ТБ M.2, RTX 5060 Ti, 8 ГБ, без DVD, БП 750 Вт</name>
+<vendor>Pulser</vendor>
+<vendorCode>IS59A27E6405</vendorCode>
+<description>Оперативная память 32 ГБ · Процессор Ryzen 7 5700X · Линейка процессора Ryzen 7</description>
+</offer>
 <offer id="IS5A2BA0D124" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/237264800924-sistemnii-blok-hp-prodesk-4-tower-g1i280</url>
 <price>976000</price>
@@ -67472,6 +67875,17 @@
 <vendorCode>CK2H8ET</vendorCode>
 <description>Системный блок линейки HP ProDesk 4. Процессор Intel Core Ultra 7 265. Оперативной памяти 16 ГБ DDR5. Накопитель SSD на 1 ТБ. Предустановлена Windows 11. Питание: блок питания 280 Вт. · Партномер: CK2H8ET</description>
 </offer>
+<offer id="IS5F61832803" available="true">
+<url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/962953134414-sistemnii-blok-pulser-core-i7-14700f-21</url>
+<price>2606000</price>
+<currencyId>KZT</currencyId>
+<categoryId>763638053684</categoryId>
+<picture>https://static.tildacdn.com/tild3430-6337-4035-b135-636664346337/IS5F61832803_1.jpg</picture>
+<name>Системный блок Pulser Core i7-14700F, 2.1 ГГц, Z790, 64 ГБ ОЗУ, SSD 1 ТБ M.2, RTX 5080, 16 ГБ, без DVD, БП 1000 Вт</name>
+<vendor>Pulser</vendor>
+<vendorCode>IS5F61832803</vendorCode>
+<description>Оперативная память 64 ГБ · Процессор Intel Core i7-14700F · Тип накопителя SSD · Ёмкость 1 ТБ · Видеокарта RTX 5080 · Блок питания 1000 Вт · Накопитель 1 ТБ</description>
+</offer>
 <offer id="IS5FDEF9EF8B" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/767199877454-sistemnii-blok-acer-nitro-n50-660-tower</url>
 <price>1306000</price>
@@ -67482,6 +67896,50 @@
 <vendor>Acer</vendor>
 <vendorCode>DG.E4FEC.00C</vendorCode>
 <description>Системный блок линейки Acer Nitro. Оперативной памяти 32 ГБ DDR5. Накопитель SSD на 1 ТБ. Видеокарта дискретная: NVIDIA GeForce RTX 5060. Операционной системы в комплекте нет. · Партномер: DG.E4FEC.00C</description>
+</offer>
+<offer id="IS6568AA4266" available="true">
+<url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/216978884664-sistemnii-blok-pulser-ryzen-5-5600gt-36</url>
+<price>308000</price>
+<currencyId>KZT</currencyId>
+<categoryId>763638053684</categoryId>
+<picture>https://static.tildacdn.com/tild6439-3838-4533-a630-313238396430/IS6568AA4266_1.jpg</picture>
+<name>Системный блок Pulser Ryzen 5 5600GT, 3.6 ГГц, A520, 16 ГБ ОЗУ, SSD 1 ТБ M.2, без DVD, БП 400 Вт</name>
+<vendor>Pulser</vendor>
+<vendorCode>IS6568AA4266</vendorCode>
+<description>Оперативная память 16 ГБ · Процессор Ryzen 5 5600GT · Линейка процессора Ryzen 5</description>
+</offer>
+<offer id="IS6B7531A938" available="true">
+<url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/561533690154-sistemnii-blok-pulser-core-i5-10400-29-g</url>
+<price>257000</price>
+<currencyId>KZT</currencyId>
+<categoryId>763638053684</categoryId>
+<picture>https://static.tildacdn.com/tila3039-6234-4038-a433-323638623861/IS287EF9A886_1.jpg</picture>
+<name>Системный блок Pulser Core i5-10400, 2.9 ГГц, H470, 16 ГБ ОЗУ, SSD 512 ГБ, без DVD, БП 400 Вт</name>
+<vendor>Pulser</vendor>
+<vendorCode>IS6B7531A938</vendorCode>
+<description>Оперативная память 16 ГБ · Процессор Core i5-10400 · Линейка процессора Core i5</description>
+</offer>
+<offer id="IS6C1678372A" available="true">
+<url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/523896183154-sistemnii-blok-pulser-core-i7-14700kf-34</url>
+<price>1921000</price>
+<currencyId>KZT</currencyId>
+<categoryId>763638053684</categoryId>
+<picture>https://static.tildacdn.com/tild3737-6161-4666-a536-346231353766/IS6C1678372A_1.jpg</picture>
+<name>Системный блок Pulser Core i7-14700KF, 3.4 ГГц, Z790, 32 ГБ ОЗУ, SSD 1 ТБ M.2, RTX 5070, 12 ГБ, без DVD, корпус ATX, БП 850 Вт</name>
+<vendor>Pulser</vendor>
+<vendorCode>IS6C1678372A</vendorCode>
+<description>Оперативная память 32 ГБ · Процессор Core i7-14700KF · Линейка процессора Core i7 · Видеокарта RTX 5070</description>
+</offer>
+<offer id="IS6D3EDD2D99" available="true">
+<url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/384556896214-sistemnii-blok-pulser-ryzen-3-3200g-36-g</url>
+<price>167000</price>
+<currencyId>KZT</currencyId>
+<categoryId>763638053684</categoryId>
+<picture>https://static.tildacdn.com/tild6438-3665-4565-b931-356432653235/IS6D3EDD2D99_1.jpg</picture>
+<name>Системный блок Pulser Ryzen 3 3200G, 3.6 ГГц, A520, 8 ГБ ОЗУ, SSD 512 ГБ, без DVD, БП 400 Вт</name>
+<vendor>Pulser</vendor>
+<vendorCode>IS6D3EDD2D99</vendorCode>
+<description>Оперативная память 8 ГБ · Процессор Ryzen 3 3200G · Линейка процессора Ryzen 3</description>
 </offer>
 <offer id="IS72421E780D" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/132088675134-sistemnii-blok-logycom-pba-rog-strix-955</url>
@@ -67505,6 +67963,61 @@
 <vendorCode>IS7512F9F339</vendorCode>
 <description>Линейка процессора Core Ultra 5 · Оперативная память 32 ГБ · Операционная система Windows 11 Pro · Процессор U5 235 · Семья ОС Windows 11 · Форм-фактор Tower</description>
 </offer>
+<offer id="IS756653BB7D" available="true">
+<url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/481413816884-sistemnii-blok-pulser-ryzen-5-8600g-43-g</url>
+<price>391000</price>
+<currencyId>KZT</currencyId>
+<categoryId>763638053684</categoryId>
+<picture>https://static.tildacdn.com/tild3863-3631-4264-a361-623630373938/IS756653BB7D_1.jpg</picture>
+<name>Системный блок Pulser Ryzen 5 8600G, 4.3 ГГц, B650, 16 ГБ ОЗУ, SSD 512 ГБ, без DVD, БП 500 Вт</name>
+<vendor>Pulser</vendor>
+<vendorCode>IS756653BB7D</vendorCode>
+<description>Оперативная память 16 ГБ · Процессор AMD Ryzen 5 8600G · Тип накопителя SSD · Ёмкость 512 ГБ · Блок питания 500 Вт · Накопитель 512 ГБ</description>
+</offer>
+<offer id="IS759F7E6A33" available="true">
+<url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/522235520654-sistemnii-blok-pulser-core-i7-14700f-21</url>
+<price>1409000</price>
+<currencyId>KZT</currencyId>
+<categoryId>763638053684</categoryId>
+<picture>https://static.tildacdn.com/tila3632-6263-4634-b835-373533343063/IS759F7E6A33_1.jpg</picture>
+<name>Системный блок Pulser Core i7-14700F, 2.1 ГГц, B760, 32 ГБ ОЗУ, SSD 1 ТБ M.2, RTX 5060 Ti, 8 ГБ, без DVD, БП 1000 Вт</name>
+<vendor>Pulser</vendor>
+<vendorCode>IS759F7E6A33</vendorCode>
+<description>Оперативная память 32 ГБ · Процессор Intel Core i7-14700F · Тип накопителя SSD · Ёмкость 1 ТБ · Видеокарта RTX 5060 Ti · Блок питания 1000 Вт · Накопитель 1 ТБ</description>
+</offer>
+<offer id="IS765585B436" available="true">
+<url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/275305991674-sistemnii-blok-pulser-core-i3-10105-37-g</url>
+<price>231000</price>
+<currencyId>KZT</currencyId>
+<categoryId>763638053684</categoryId>
+<picture>https://static.tildacdn.com/tila3039-6234-4038-a433-323638623861/IS287EF9A886_1.jpg</picture>
+<name>Системный блок Pulser Core i3-10105, 3.7 ГГц, H470, 16 ГБ ОЗУ, SSD 512 ГБ M.2, без DVD, БП 400 Вт</name>
+<vendor>Pulser</vendor>
+<vendorCode>IS765585B436</vendorCode>
+<description>Оперативная память 16 ГБ · Процессор Core i3-10105 · Линейка процессора Core i3 / Core 3</description>
+</offer>
+<offer id="IS7B7C3E3F13" available="true">
+<url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/287791108734-sistemnii-blok-pulser-ryzen-5-5500-36-gg</url>
+<price>689000</price>
+<currencyId>KZT</currencyId>
+<categoryId>763638053684</categoryId>
+<picture>https://static.tildacdn.com/tila3136-3334-4566-b936-343835633136/IS7B7C3E3F13_1.jpg</picture>
+<name>Системный блок Pulser Ryzen 5 5500, 3.6 ГГц, B550, 16 ГБ ОЗУ, SSD 512 ГБ M.2, RTX 5060, 8 ГБ, без DVD, БП 700 Вт</name>
+<vendor>Pulser</vendor>
+<vendorCode>IS7B7C3E3F13</vendorCode>
+<description>Оперативная память 16 ГБ · Процессор Ryzen 5 5500 · Линейка процессора Ryzen 5</description>
+</offer>
+<offer id="IS7FD025C5DA" available="true">
+<url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/919137191794-sistemnii-blok-pulser-core-i5-14400-25-g</url>
+<price>308000</price>
+<currencyId>KZT</currencyId>
+<categoryId>763638053684</categoryId>
+<picture>https://static.tildacdn.com/tild6136-6237-4336-b465-336132336135/IS087EEDC1BA_1.jpg</picture>
+<name>Системный блок Pulser Core i5-14400, 2.5 ГГц, H610, 16 ГБ ОЗУ, SSD 512 ГБ, без DVD, БП 400 Вт</name>
+<vendor>Pulser</vendor>
+<vendorCode>IS7FD025C5DA</vendorCode>
+<description>Оперативная память 16 ГБ · Процессор Intel Core i5-14400 · Тип накопителя SSD · Ёмкость 512 ГБ · Блок питания 400 Вт · Накопитель 512 ГБ</description>
+</offer>
 <offer id="IS83FB1E497E" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/540319105124-sistemnii-blok-core-i3-14100-35ghzh610ra</url>
 <price>295000</price>
@@ -67515,6 +68028,50 @@
 <vendor>SANC</vendor>
 <vendorCode>IS83FB1E497E</vendorCode>
 <description>Оперативная память 16 ГБ · Процессор Core i3-14100 · Линейка процессора Core i3 / Core 3</description>
+</offer>
+<offer id="IS84C6D52571" available="true">
+<url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/160339857994-sistemnii-blok-pulser-core-i3-14100-35-g</url>
+<price>282000</price>
+<currencyId>KZT</currencyId>
+<categoryId>763638053684</categoryId>
+<picture>https://static.tildacdn.com/tild6136-6237-4336-b465-336132336135/IS087EEDC1BA_1.jpg</picture>
+<name>Системный блок Pulser Core i3-14100, 3.5 ГГц, H610, 16 ГБ ОЗУ, SSD 1 ТБ M.2, без DVD, БП 400 Вт</name>
+<vendor>Pulser</vendor>
+<vendorCode>IS84C6D52571</vendorCode>
+<description>Оперативная память 16 ГБ · Процессор Core i3-14100 · Линейка процессора Core i3 / Core 3</description>
+</offer>
+<offer id="IS86A0AEC1C4" available="true">
+<url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/283798045904-sistemnii-blok-pulser-core-i3-12100-33-g</url>
+<price>253000</price>
+<currencyId>KZT</currencyId>
+<categoryId>763638053684</categoryId>
+<picture>https://static.tildacdn.com/tila6338-3730-4361-b061-366433663066/IS4F8C9C3BB9_1.jpg</picture>
+<name>Системный блок Pulser Core i3-12100, 3.3 ГГц, H610, 8 ГБ ОЗУ, SSD 512 ГБ M.2, без DVD, БП 400 Вт</name>
+<vendor>Pulser</vendor>
+<vendorCode>IS86A0AEC1C4</vendorCode>
+<description>Оперативная память 8 ГБ · Процессор Core i3-12100 · Линейка процессора Core i3 / Core 3</description>
+</offer>
+<offer id="IS8BB5B74B78" available="true">
+<url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/467943449554-sistemnii-blok-pulser-ryzen-5-5600gt-36</url>
+<price>259000</price>
+<currencyId>KZT</currencyId>
+<categoryId>763638053684</categoryId>
+<picture>https://static.tildacdn.com/tild6136-6237-4336-b465-336132336135/IS087EEDC1BA_1.jpg</picture>
+<name>Системный блок Pulser Ryzen 5 5600GT, 3.6 ГГц, A520, 8 ГБ ОЗУ, SSD 512 ГБ, без DVD, БП 400 Вт</name>
+<vendor>Pulser</vendor>
+<vendorCode>IS8BB5B74B78</vendorCode>
+<description>Оперативная память 8 ГБ · Процессор Ryzen 5 5600GT · Линейка процессора Ryzen 5</description>
+</offer>
+<offer id="IS8E1C16E04F" available="true">
+<url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/419076057344-sistemnii-blok-pulser-ryzen-7-5700x-34-g</url>
+<price>750000</price>
+<currencyId>KZT</currencyId>
+<categoryId>763638053684</categoryId>
+<picture>https://static.tildacdn.com/tild3430-3137-4336-b032-653866663531/IS8E1C16E04F_1.jpg</picture>
+<name>Системный блок Pulser Ryzen 7 5700X, 3.4 ГГц, B550, 16 ГБ ОЗУ, SSD 512 ГБ, RTX 5060, 8 ГБ, без DVD, БП 700 Вт</name>
+<vendor>Pulser</vendor>
+<vendorCode>IS8E1C16E04F</vendorCode>
+<description>Оперативная память 16 ГБ · Процессор Ryzen 7 5700X · Линейка процессора Ryzen 7</description>
 </offer>
 <offer id="IS8E59146A89" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/465245059474-sistemnii-blok-hp-pro-tower-400-g9-9m8r6</url>
@@ -67528,6 +68085,50 @@
 <vendorCode>IS8E59146A89</vendorCode>
 <description>Линейка процессора Core i5 · Ёмкость 512 ГБ · Оперативная память 16 ГБ · Операционная система Windows 11 · Процессор Core i5/14500 · Семья ОС Windows 11 · Форм-фактор Tower</description>
 </offer>
+<offer id="IS92D0E9D68F" available="true">
+<url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/655483885554-sistemnii-blok-pulser-ryzen-5-3400g-37-g</url>
+<price>231000</price>
+<currencyId>KZT</currencyId>
+<categoryId>763638053684</categoryId>
+<picture>https://static.tildacdn.com/tild6237-3632-4166-b032-383562643264/IS92D0E9D68F_1.jpg</picture>
+<name>Системный блок Pulser Ryzen 5 3400G, 3.7 ГГц, A520, 16 ГБ ОЗУ, SSD 1 ТБ M.2, без DVD, БП 400 Вт</name>
+<vendor>Pulser</vendor>
+<vendorCode>IS92D0E9D68F</vendorCode>
+<description>Оперативная память 16 ГБ · Процессор Ryzen 5 3400G · Линейка процессора Ryzen 5</description>
+</offer>
+<offer id="IS96167EDE3D" available="true">
+<url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/920945169694-sistemnii-blok-pulser-ryzen-9-9950x-43-g</url>
+<price>3202000</price>
+<currencyId>KZT</currencyId>
+<categoryId>763638053684</categoryId>
+<picture>https://static.tildacdn.com/tild3661-6236-4430-a332-656663333837/IS96167EDE3D_1.jpg</picture>
+<name>Системный блок Pulser Ryzen 9 9950X, 4.3 ГГц, X870, 64 ГБ ОЗУ, SSD 2 ТБ M.2, RTX 5080, 16 ГБ, без DVD, БП 1200 Вт</name>
+<vendor>Pulser</vendor>
+<vendorCode>IS96167EDE3D</vendorCode>
+<description>Оперативная память 64 ГБ · Процессор AMD Ryzen 9 9950X · Тип накопителя SSD · Ёмкость 2 ТБ · Видеокарта RTX 5080 · Блок питания 1200 Вт · Накопитель 2 ТБ</description>
+</offer>
+<offer id="IS965A05BD0B" available="true">
+<url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/785494257764-sistemnii-blok-pulser-ryzen-5-5600x-37-g</url>
+<price>397000</price>
+<currencyId>KZT</currencyId>
+<categoryId>763638053684</categoryId>
+<picture>https://static.tildacdn.com/tild6163-6561-4237-b333-373664386337/IS00AB982995_1.jpg</picture>
+<name>Системный блок Pulser Ryzen 5 5600X, 3.7 ГГц, B550, 16 ГБ ОЗУ, SSD 512 ГБ M.2, RX 580, 8 ГБ, без DVD, БП 600 Вт</name>
+<vendor>Pulser</vendor>
+<vendorCode>IS965A05BD0B</vendorCode>
+<description>Оперативная память 16 ГБ · Процессор Ryzen 5 5600X · Линейка процессора Ryzen 5 · Видеокарта RX 580</description>
+</offer>
+<offer id="IS965ACBD59A" available="true">
+<url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/704613035234-sistemnii-blok-pulser-core-ultra-5-245kf</url>
+<price>1476000</price>
+<currencyId>KZT</currencyId>
+<categoryId>763638053684</categoryId>
+<picture>https://static.tildacdn.com/tild3532-6435-4262-b136-656437306263/IS965ACBD59A_1.jpg</picture>
+<name>Системный блок Pulser Core Ultra 5 245KF, 3.6 ГГц, B860, 32 ГБ ОЗУ, SSD 1 ТБ M.2, RTX 5070, 12 ГБ, без DVD, БП 750 Вт</name>
+<vendor>Pulser</vendor>
+<vendorCode>IS965ACBD59A</vendorCode>
+<description>Оперативная память 32 ГБ · Процессор Core Ultra 5 245KF · Линейка процессора Core Ultra 5 · Видеокарта RTX 5070</description>
+</offer>
 <offer id="IS99B9D27955" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/224188464234-sistemnii-blok-core-i7-14700f-21ghzb760r</url>
 <price>1537000</price>
@@ -67537,7 +68138,29 @@
 <name>Системный блок Core i7-14700F-2.1GHz/B760/RAM 32GB/SSD 1TB (M.2)/RTX5070-12GB/no DVD/850W//Монитор 27-inch Sanc 280Hz</name>
 <vendor>SANC</vendor>
 <vendorCode>IS99B9D27955</vendorCode>
-<description>Оперативная память 32 ГБ · Видеокарта RTX 5070 · Процессор Intel Core i7-14700F</description>
+<description>Оперативная память 32 ГБ · Процессор Intel Core i7-14700F · Тип накопителя SSD · Ёмкость 1 ТБ · Видеокарта RTX 5070 · Накопитель 1 ТБ</description>
+</offer>
+<offer id="IS9A83099E3C" available="true">
+<url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/591533874344-sistemnii-blok-pulser-core-i3-14100-35-g</url>
+<price>244000</price>
+<currencyId>KZT</currencyId>
+<categoryId>763638053684</categoryId>
+<picture>https://static.tildacdn.com/tild6136-6237-4336-b465-336132336135/IS087EEDC1BA_1.jpg</picture>
+<name>Системный блок Pulser Core i3-14100, 3.5 ГГц, H610, 16 ГБ ОЗУ, SSD 512 ГБ, без DVD, БП 400 Вт</name>
+<vendor>Pulser</vendor>
+<vendorCode>IS9A83099E3C</vendorCode>
+<description>Оперативная память 16 ГБ · Процессор Core i3-14100 · Линейка процессора Core i3 / Core 3</description>
+</offer>
+<offer id="IS9C553B772E" available="true">
+<url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/572221391724-sistemnii-blok-pulser-ryzen-7-9800x3d-47</url>
+<price>2869000</price>
+<currencyId>KZT</currencyId>
+<categoryId>763638053684</categoryId>
+<picture>https://static.tildacdn.com/tila3435-3533-4234-a136-366230393966/IS9C553B772E_1.jpg</picture>
+<name>Системный блок Pulser Ryzen 7 9800X3D, 4.7 ГГц, X870, 64 ГБ ОЗУ, SSD 2 ТБ M.2, RTX 5080, 16 ГБ, без DVD, БП 1000 Вт</name>
+<vendor>Pulser</vendor>
+<vendorCode>IS9C553B772E</vendorCode>
+<description>Оперативная память 64 ГБ · Процессор Ryzen 7 9800X3 · Линейка процессора Ryzen 7 · Видеокарта RTX 5080</description>
 </offer>
 <offer id="IS9D203E8D7C" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/538376959754-sistemnii-blok-acer-veriton-vx2710g-sff</url>
@@ -67549,6 +68172,28 @@
 <vendor>Acer</vendor>
 <vendorCode>DT.VY3EC.00W</vendorCode>
 <description>Системный блок линейки Acer Veriton. Процессор Intel Core i5-14400. Оперативной памяти 8 ГБ DDR4. Накопитель SSD на 512 ГБ. Графика встроенная: Intel UHD Graphics. Предустановлена Windows 11 Pro. Питание: блок питания 180 Вт. · Партномер: DT.VY3EC.00W</description>
+</offer>
+<offer id="ISA0CD389C14" available="true">
+<url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/487233088824-sistemnii-blok-pulser-ryzen-3-3200g-36-g</url>
+<price>154000</price>
+<currencyId>KZT</currencyId>
+<categoryId>763638053684</categoryId>
+<picture>https://static.tildacdn.com/tila3739-3039-4735-b162-383431656562/ISA0CD389C14_1.jpg</picture>
+<name>Системный блок Pulser Ryzen 3 3200G, 3.6 ГГц, A520, 8 ГБ ОЗУ, SSD 256 ГБ, без DVD, БП 400 Вт</name>
+<vendor>Pulser</vendor>
+<vendorCode>ISA0CD389C14</vendorCode>
+<description>Оперативная память 8 ГБ · Процессор Ryzen 3 3200G · Линейка процессора Ryzen 3</description>
+</offer>
+<offer id="ISA68D551B9B" available="true">
+<url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/196937021934-sistemnii-blok-pulser-core-i7-13700f-21</url>
+<price>1490000</price>
+<currencyId>KZT</currencyId>
+<categoryId>763638053684</categoryId>
+<picture>https://static.tildacdn.com/tila6239-3637-4933-a165-376630336530/ISA68D551B9B_1.jpg</picture>
+<name>Системный блок Pulser Core i7-13700F, 2.1 ГГц, B760, 32 ГБ ОЗУ, SSD 1 ТБ M.2, RTX 5070, 12 ГБ, без DVD, БП 750 Вт</name>
+<vendor>Pulser</vendor>
+<vendorCode>ISA68D551B9B</vendorCode>
+<description>Оперативная память 32 ГБ · Процессор Core i7-13700F · Линейка процессора Core i7 · Видеокарта RTX 5070</description>
 </offer>
 <offer id="ISB2970A3418" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/423158995744-platforma-rabochei-stantsii-supermicro-s</url>
@@ -67572,6 +68217,17 @@
 <vendorCode>ISB86898A39C</vendorCode>
 <description>Форм-фактор Tower</description>
 </offer>
+<offer id="ISBBB2AA9AEC" available="true">
+<url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/478254268474-sistemnii-blok-pulser-ryzen-5-5500-36-gg</url>
+<price>282000</price>
+<currencyId>KZT</currencyId>
+<categoryId>763638053684</categoryId>
+<picture>https://static.tildacdn.com/tila6338-3730-4361-b061-366433663066/IS4F8C9C3BB9_1.jpg</picture>
+<name>Системный блок Pulser Ryzen 5 5500, 3.6 ГГц, A520, 16 ГБ ОЗУ, SSD 512 ГБ, RX 550, 4 ГБ, без DVD, БП 400 Вт</name>
+<vendor>Pulser</vendor>
+<vendorCode>ISBBB2AA9AEC</vendorCode>
+<description>Оперативная память 16 ГБ · Процессор Ryzen 5 5500 · Линейка процессора Ryzen 5 · Видеокарта RX 550</description>
+</offer>
 <offer id="ISBDE7267333" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/912741279274-sistemnii-blok-dell-pro-max-tower-t2-fct</url>
 <price>1831000</price>
@@ -67582,6 +68238,50 @@
 <vendor>Dell</vendor>
 <vendorCode>ISBDE7267333</vendorCode>
 <description>Линейка процессора Core Ultra 7 · Оперативная память 32 ГБ · Операционная система Windows 11 Pro · Процессор U7 265 · Семья ОС Windows 11 · Форм-фактор Tower</description>
+</offer>
+<offer id="ISBE52B6E2A7" available="true">
+<url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/172529137704-sistemnii-blok-pulser-ryzen-5-5600-35-gg</url>
+<price>436000</price>
+<currencyId>KZT</currencyId>
+<categoryId>763638053684</categoryId>
+<picture>https://static.tildacdn.com/tila6138-3936-4263-b063-653831656633/ISBE52B6E2A7_1.jpg</picture>
+<name>Системный блок Pulser Ryzen 5 5600, 3.5 ГГц, A520, 16 ГБ ОЗУ, SSD 512 ГБ M.2, GTX 1660 S, 6 ГБ, без DVD, БП 700 Вт</name>
+<vendor>Pulser</vendor>
+<vendorCode>ISBE52B6E2A7</vendorCode>
+<description>Оперативная память 16 ГБ · Процессор AMD Ryzen 5 5600 · Тип накопителя SSD · Ёмкость 512 ГБ · Видеокарта GTX 1660 SUPER · Блок питания 700 Вт · Накопитель 512 ГБ</description>
+</offer>
+<offer id="ISBE9E66C65E" available="true">
+<url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/818572258744-sistemnii-blok-pulser-ryzen-7-9700x-38-g</url>
+<price>1914000</price>
+<currencyId>KZT</currencyId>
+<categoryId>763638053684</categoryId>
+<picture>https://static.tildacdn.com/tila3939-3339-4266-b236-633666653936/ISBE9E66C65E_1.jpg</picture>
+<name>Системный блок Pulser Ryzen 7 9700X, 3.8 ГГц, X870, 32 ГБ ОЗУ, SSD 1 ТБ M.2, RTX 5070 Ti, 16 ГБ, без DVD, БП 850 Вт</name>
+<vendor>Pulser</vendor>
+<vendorCode>ISBE9E66C65E</vendorCode>
+<description>Оперативная память 32 ГБ · Процессор Ryzen 7 9700X · Линейка процессора Ryzen 7 · Видеокарта RTX 5070Ti</description>
+</offer>
+<offer id="ISBED891B4EA" available="true">
+<url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/749060145754-sistemnii-blok-pulser-core-i3-12100f-33</url>
+<price>321000</price>
+<currencyId>KZT</currencyId>
+<categoryId>763638053684</categoryId>
+<picture>https://static.tildacdn.com/tild3039-3836-4233-b433-393130626663/ISBED891B4EA_1.jpg</picture>
+<name>Системный блок Pulser Core i3-12100F, 3.3 ГГц, H610, 16 ГБ ОЗУ, SSD 512 ГБ, RX 550, 4 ГБ, без DVD, БП 600 Вт</name>
+<vendor>Pulser</vendor>
+<vendorCode>ISBED891B4EA</vendorCode>
+<description>Оперативная память 16 ГБ · Процессор Core i3-12100F · Линейка процессора Core i3 / Core 3 · Видеокарта RX 550</description>
+</offer>
+<offer id="ISC0C9702461" available="true">
+<url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/451523653244-sistemnii-blok-pulser-ryzen-5-7500f-37-g</url>
+<price>1264000</price>
+<currencyId>KZT</currencyId>
+<categoryId>763638053684</categoryId>
+<picture>https://static.tildacdn.com/tild6136-3161-4166-b263-326366356230/ISC0C9702461_1.jpg</picture>
+<name>Системный блок Pulser Ryzen 5 7500F, 3.7 ГГц, B650, 32 ГБ ОЗУ, SSD 1 ТБ M.2, RTX 5060 Ti, 16 ГБ, без DVD, БП 700 Вт</name>
+<vendor>Pulser</vendor>
+<vendorCode>ISC0C9702461</vendorCode>
+<description>Оперативная память 32 ГБ · Процессор Ryzen 5 7500F · Линейка процессора Ryzen 5</description>
 </offer>
 <offer id="ISC2E6E7AB4B" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/518366357414-sistemnii-blok-dell-pro-tower-qct1250-21</url>
@@ -67594,6 +68294,17 @@
 <vendor>Dell</vendor>
 <vendorCode>ISC2E6E7AB4B</vendorCode>
 <description>Форм-фактор Tower · Процессор Core i5/14500 · Оперативная память 8 ГБ · Ёмкость 256 ГБ · Тип накопителя SSD · Wi-Fi Wi-Fi 6E · Операционная система Windows 11 Pro · Семья ОС Windows 11 · Линейка процессора Core i5</description>
+</offer>
+<offer id="ISC334F642FE" available="true">
+<url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/829729733834-sistemnii-blok-pulser-core-i7-14700f-21</url>
+<price>1217000</price>
+<currencyId>KZT</currencyId>
+<categoryId>763638053684</categoryId>
+<picture>https://static.tildacdn.com/tild3439-3630-4933-b738-653566646662/IS43675C13F2_1.jpg</picture>
+<name>Системный блок Pulser Core i7-14700F, 2.1 ГГц, B760, 16 ГБ ОЗУ, SSD 1 ТБ M.2, RTX 5060 Ti, 16 ГБ, без DVD, БП 800 Вт</name>
+<vendor>Pulser</vendor>
+<vendorCode>ISC334F642FE</vendorCode>
+<description>Оперативная память 16 ГБ · Процессор Intel Core i7-14700F · Тип накопителя SSD · Ёмкость 1 ТБ · Видеокарта RTX 5060 Ti · Блок питания 800 Вт · Накопитель 1 ТБ</description>
 </offer>
 <offer id="ISC8F5139A62" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/425182938064-sistemnii-blok-workstation-dell-pro-max</url>
@@ -67630,6 +68341,50 @@
 <vendorCode>ISCCE524E8D7</vendorCode>
 <description>Оперативная память 32 ГБ · Процессор Ryzen 5 7500F · Линейка процессора Ryzen 5</description>
 </offer>
+<offer id="ISCDFA6A858A" available="true">
+<url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/863429445554-sistemnii-blok-pulser-core-i5-12400-25-g</url>
+<price>346000</price>
+<currencyId>KZT</currencyId>
+<categoryId>763638053684</categoryId>
+<picture>https://static.tildacdn.com/tila3432-3730-4634-b239-383266643039/IS1DA8B70DD1_1.jpg</picture>
+<name>Системный блок Pulser Core i5-12400, 2.5 ГГц, H610, 16 ГБ ОЗУ, SSD 512 ГБ, без DVD, БП 300 Вт</name>
+<vendor>Pulser</vendor>
+<vendorCode>ISCDFA6A858A</vendorCode>
+<description>Оперативная память 16 ГБ · Процессор Core i5-12400 · Линейка процессора Core i5</description>
+</offer>
+<offer id="ISCEDD3EF270" available="true">
+<url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/189996325964-sistemnii-blok-pulser-ryzen-5-7600x-47-g</url>
+<price>1140000</price>
+<currencyId>KZT</currencyId>
+<categoryId>763638053684</categoryId>
+<picture>https://static.tildacdn.com/tild3231-3061-4232-a536-613030323437/ISCEDD3EF270_1.jpg</picture>
+<name>Системный блок Pulser Ryzen 5 7600X, 4.7 ГГц, B650, 32 ГБ ОЗУ, SSD 1 ТБ M.2, RTX 5060, 8 ГБ, без DVD, БП 650 Вт</name>
+<vendor>Pulser</vendor>
+<vendorCode>ISCEDD3EF270</vendorCode>
+<description>Оперативная память 32 ГБ · Процессор Ryzen 5 7600X · Линейка процессора Ryzen 5</description>
+</offer>
+<offer id="ISD205F255B2" available="true">
+<url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/774055920664-sistemnii-blok-pulser-ryzen-5-7500x3d-40</url>
+<price>1332000</price>
+<currencyId>KZT</currencyId>
+<categoryId>763638053684</categoryId>
+<picture>https://static.tildacdn.com/tila3462-3463-4133-b539-633730316638/ISD205F255B2_1.jpg</picture>
+<name>Системный блок Pulser Ryzen 5 7500X3D, 4.0 ГГц, B650, 32 ГБ ОЗУ, SSD 1 ТБ M.2, RTX 5060 Ti, 16 ГБ, без DVD, БП 750 Вт</name>
+<vendor>Pulser</vendor>
+<vendorCode>ISD205F255B2</vendorCode>
+<description>Оперативная память 32 ГБ · Процессор Ryzen 5 7500X3 · Линейка процессора Ryzen 5</description>
+</offer>
+<offer id="ISD842AD5EB8" available="true">
+<url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/356646435964-sistemnii-blok-pulser-core-i7-14700f-21</url>
+<price>1505000</price>
+<currencyId>KZT</currencyId>
+<categoryId>763638053684</categoryId>
+<picture>https://static.tildacdn.com/tila3664-3638-4533-b533-316630376536/ISD842AD5EB8_1.jpg</picture>
+<name>Системный блок Pulser Core i7-14700F, 2.1 ГГц, B760, 32 ГБ ОЗУ, SSD 1 ТБ M.2, RTX 5070, 12 ГБ, без DVD, БП 1000 Вт</name>
+<vendor>Pulser</vendor>
+<vendorCode>ISD842AD5EB8</vendorCode>
+<description>Оперативная память 32 ГБ · Процессор Intel Core i7-14700F · Тип накопителя SSD · Ёмкость 1 ТБ · Видеокарта RTX 5070 · Блок питания 1000 Вт · Накопитель 1 ТБ</description>
+</offer>
 <offer id="ISD9BE5746AA" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/711414541524-sistemnii-blok-pk-acer-nitro-n55-tower-g</url>
 <price>1277000</price>
@@ -67640,6 +68395,39 @@
 <vendor>Acer</vendor>
 <vendorCode>ISD9BE5746AA</vendorCode>
 <description>Форм-фактор Tower · Процессор Intel Core i7 14700F · Оперативная память 32 ГБ · Видеокарта GeForce RTX 5060 Ti · Операционная система Windows 11 · Сертификат блока питания 80+ Gold · Порты 1× USB-C, 1× USB-A · Wi-Fi Wi-Fi 6E · Bluetooth 5.0 · Семья ОС Windows 11</description>
+</offer>
+<offer id="ISDA1507A787" available="true">
+<url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/243408975334-sistemnii-blok-pulser-core-i7-14700kf-34</url>
+<price>2306000</price>
+<currencyId>KZT</currencyId>
+<categoryId>763638053684</categoryId>
+<picture>https://static.tildacdn.com/tila3035-3565-4332-b238-643935366563/ISDA1507A787_1.jpg</picture>
+<name>Системный блок Pulser Core i7-14700KF, 3.4 ГГц, B760, 32 ГБ ОЗУ, SSD 1 ТБ M.2, RTX 5070, 12 ГБ, без DVD, БП 750 Вт</name>
+<vendor>Pulser</vendor>
+<vendorCode>ISDA1507A787</vendorCode>
+<description>Оперативная память 32 ГБ · Процессор Core i7-14700KF · Линейка процессора Core i7 · Видеокарта RTX 5070</description>
+</offer>
+<offer id="ISDD47CEE27F" available="true">
+<url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/781659806684-sistemnii-blok-pulser-ryzen-5-7500f-37-g</url>
+<price>1256000</price>
+<currencyId>KZT</currencyId>
+<categoryId>763638053684</categoryId>
+<picture>https://static.tildacdn.com/tila3939-6363-4035-a566-623033643561/ISDD47CEE27F_1.jpg</picture>
+<name>Системный блок Pulser Ryzen 5 7500F, 3.7 ГГц, B850, 32 ГБ ОЗУ, SSD 1 ТБ M.2, RTX 5060 Ti, 16 ГБ, без DVD, БП 700 Вт</name>
+<vendor>Pulser</vendor>
+<vendorCode>ISDD47CEE27F</vendorCode>
+<description>Оперативная память 32 ГБ · Процессор Ryzen 5 7500F · Линейка процессора Ryzen 5</description>
+</offer>
+<offer id="ISDDFF3223E3" available="true">
+<url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/702154223674-sistemnii-blok-pulser-ryzen-5-5600-35-gg</url>
+<price>397000</price>
+<currencyId>KZT</currencyId>
+<categoryId>763638053684</categoryId>
+<picture>https://static.tildacdn.com/tild3863-3631-4264-a361-623630373938/IS756653BB7D_1.jpg</picture>
+<name>Системный блок Pulser Ryzen 5 5600, 3.5 ГГц, A520, 16 ГБ ОЗУ, SSD 512 ГБ, RX 580, 8 ГБ, без DVD, БП 600 Вт</name>
+<vendor>Pulser</vendor>
+<vendorCode>ISDDFF3223E3</vendorCode>
+<description>Оперативная память 16 ГБ · Процессор AMD Ryzen 5 5600 · Тип накопителя SSD · Ёмкость 512 ГБ · Видеокарта RX 580 · Блок питания 600 Вт · Накопитель 512 ГБ</description>
 </offer>
 <offer id="ISDE6A38D0C8" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/505620257064-sistemnii-blok-dell-pro-tower-qct1255-21</url>
@@ -67665,6 +68453,28 @@
 <vendorCode>ISE6D644003D</vendorCode>
 <description>Оперативная память 8 ГБ · Операционная система Windows 11 · Процессор Intel Core i5-14400 · Ёмкость 512 ГБ · Семья ОС Windows 11 · Тип памяти DDR5 · Накопитель 512 ГБ · Порты 1× USB-C, 7× USB-A, HDMI · Форм-фактор Tower · Блок питания 180 Вт</description>
 </offer>
+<offer id="ISE7A5875829" available="true">
+<url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/935056856004-sistemnii-blok-pulser-ryzen-5-5500gt-36</url>
+<price>269000</price>
+<currencyId>KZT</currencyId>
+<categoryId>763638053684</categoryId>
+<picture>https://static.tildacdn.com/tild3563-3731-4061-b836-643162386262/ISE7A5875829_1.jpg</picture>
+<name>Системный блок Pulser Ryzen 5 5500GT, 3.6 ГГц, A520, 16 ГБ ОЗУ, SSD 512 ГБ, без DVD, БП 400 Вт</name>
+<vendor>Pulser</vendor>
+<vendorCode>ISE7A5875829</vendorCode>
+<description>Оперативная память 16 ГБ · Процессор Ryzen 5 5500GT · Линейка процессора Ryzen 5</description>
+</offer>
+<offer id="ISE8A8269B2A" available="true">
+<url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/612434807494-sistemnii-blok-pulser-ryzen-5-3500x-36-g</url>
+<price>218000</price>
+<currencyId>KZT</currencyId>
+<categoryId>763638053684</categoryId>
+<picture>https://static.tildacdn.com/tila3039-6234-4038-a433-323638623861/IS287EF9A886_1.jpg</picture>
+<name>Системный блок Pulser Ryzen 5 3500X, 3.6 ГГц, A520, 16 ГБ ОЗУ, SSD 512 ГБ, GT 210, 1 ГБ, без DVD, БП 400 Вт</name>
+<vendor>Pulser</vendor>
+<vendorCode>ISE8A8269B2A</vendorCode>
+<description>Оперативная память 16 ГБ · Процессор Ryzen 5 3500X · Линейка процессора Ryzen 5 · Видеокарта GT210</description>
+</offer>
 <offer id="ISED16B8D5F8" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/696833234894-sistemnii-blok-dell-pro-tower-qct1255-am</url>
 <price>822000</price>
@@ -67677,6 +68487,17 @@
 <vendorCode>ISED16B8D5F8</vendorCode>
 <description>Оперативная память 16 ГБ · Операционная система Windows 11 Pro · Процессор AMD Ryzen 7 PRO 8700G · Ёмкость 512 ГБ · Семья ОС Windows 11 · Линейка процессора Ryzen 7 · Тип накопителя SSD · Тип памяти DDR5 · Накопитель 512 ГБ · Форм-фактор Tower</description>
 </offer>
+<offer id="ISF226476C6C" available="true">
+<url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/882191602954-sistemnii-blok-pulser-ryzen-5-8400f-42-g</url>
+<price>809000</price>
+<currencyId>KZT</currencyId>
+<categoryId>763638053684</categoryId>
+<picture>https://static.tildacdn.com/tild6161-6462-4635-a436-393465373832/ISF226476C6C_1.jpg</picture>
+<name>Системный блок Pulser Ryzen 5 8400F, 4.2 ГГц, B650, 16 ГБ ОЗУ, SSD 512 ГБ M.2, RTX 5060, 8 ГБ, без DVD, БП 600 Вт</name>
+<vendor>Pulser</vendor>
+<vendorCode>ISF226476C6C</vendorCode>
+<description>Оперативная память 16 ГБ · Процессор Ryzen 5 8400F · Линейка процессора Ryzen 5</description>
+</offer>
 <offer id="ISF299AC052E" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/974263755064-sistemnii-blok-core-i5-14400-25ghzh610ra</url>
 <price>359000</price>
@@ -67686,7 +68507,29 @@
 <name>Системный блок Core i5-14400-2.5GHz/H610/RAM 16GB/SSD 512GB (M.2)/no DVD/400W/Монитор 23.8-inch Sanc 144Hz</name>
 <vendor>SANC</vendor>
 <vendorCode>ISF299AC052E</vendorCode>
-<description>Оперативная память 16 ГБ · Процессор Intel Core i5-14400</description>
+<description>Оперативная память 16 ГБ · Процессор Intel Core i5-14400 · Тип накопителя SSD · Ёмкость 512 ГБ · Накопитель 512 ГБ</description>
+</offer>
+<offer id="ISF5ADCF55B6" available="true">
+<url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/432890427014-sistemnii-blok-pulser-ryzen-5-7500f-37-g</url>
+<price>869000</price>
+<currencyId>KZT</currencyId>
+<categoryId>763638053684</categoryId>
+<picture>https://static.tildacdn.com/tild3834-6534-4365-a562-663363363637/ISF5ADCF55B6_1.jpg</picture>
+<name>Системный блок Pulser Ryzen 5 7500F, 3.7 ГГц, B650, 16 ГБ ОЗУ, SSD 512 ГБ M.2, RTX 5060, 8 ГБ, без DVD, БП 700 Вт</name>
+<vendor>Pulser</vendor>
+<vendorCode>ISF5ADCF55B6</vendorCode>
+<description>Оперативная память 16 ГБ · Процессор Ryzen 5 7500F · Линейка процессора Ryzen 5</description>
+</offer>
+<offer id="ISFE326BF624" available="true">
+<url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/209976128734-sistemnii-blok-pulser-ryzen-5-7500f-37-g</url>
+<price>1102000</price>
+<currencyId>KZT</currencyId>
+<categoryId>763638053684</categoryId>
+<picture>https://static.tildacdn.com/tild3466-3137-4638-b564-633638616137/ISFE326BF624_1.jpg</picture>
+<name>Системный блок Pulser Ryzen 5 7500F, 3.7 ГГц, B650, 32 ГБ ОЗУ, SSD 1 ТБ M.2, RTX 5060 Ti, 8 ГБ, без DVD, БП 750 Вт</name>
+<vendor>Pulser</vendor>
+<vendorCode>ISFE326BF624</vendorCode>
+<description>Оперативная память 32 ГБ · Процессор Ryzen 5 7500F · Линейка процессора Ryzen 5</description>
 </offer>
 <offer id="IS032F43B0C2" available="true">
 <url>https://b2b.isoft-shop.kz/servery-i-shd/tproduct/355286935484-setevoe-hranilische-synology-diskstation</url>

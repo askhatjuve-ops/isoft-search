@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<yml_catalog date="2026-10-23 19:43">
+<yml_catalog date="2026-10-23 21:08">
 <shop>
 <name>iSoft</name>
 <company>iSoft</company>
@@ -9650,6 +9650,17 @@
 <vendor>Hikvision</vendor>
 <vendorCode>ISFD8CC2CB6E</vendorCode>
 <description>Тип устройства Монитор домофона · Диагональ 4,3″</description>
+</offer>
+<offer id="IS05E24B5381" available="true">
+<url>https://b2b.isoft-shop.kz/zhestkie-diski/tproduct/221556677584-zhyostkii-disk-shd-huawei-l1-nlsas20t-w</url>
+<price>770000</price>
+<currencyId>KZT</currencyId>
+<categoryId>958449305144</categoryId>
+<picture>https://static.tildacdn.com/tild3936-6166-4133-b436-313531613436/221556677584_1.jpg</picture>
+<name>Жёсткий диск СХД HUAWEI L1-NLSAS20T-W 20TB 7.2K RPM NL-SAS Disk Unit (3.5-inch) 02355UUF</name>
+<vendor>Huawei</vendor>
+<vendorCode>IS05E24B5381</vendorCode>
+<description>Ёмкость 20 ТБ · Форм-фактор 3.5″ · Интерфейс SAS · Класс ёмкости от 14 ТБ · Скорость вращения 7200 об/мин</description>
 </offer>
 <offer id="IS0752CF75B1" available="true">
 <url>https://b2b.isoft-shop.kz/zhestkie-diski/tproduct/488511981984-zhyostkii-disk-dell-8tb-hard-drive-sata</url>
@@ -37442,7 +37453,7 @@
 <name>Моноблок Wintek BF2702 27-inch FHD/IPS/Core i5-14400-2.5GHz/RAM 16GB/SSD 1TB (M.2)/no DVD</name>
 <vendor>WINTEK</vendor>
 <vendorCode>IS28276E2581</vendorCode>
-<description>Тип матрицы IPS · Процессор Core i5-14400 · Оперативная память 16 ГБ · Диагональ 27″ · Линейка процессора Core i5</description>
+<description>Тип матрицы IPS · Процессор Intel Core i5-14400 · Оперативная память 16 ГБ · Диагональ 27″ · Линейка процессора Core i5</description>
 </offer>
 <offer id="IS2CEEE33A23" available="true">
 <url>https://b2b.isoft-shop.kz/monobloki/tproduct/126809014564-238-inch-monoblok-acer-aspire-c24-dqbpre</url>
@@ -37539,7 +37550,7 @@
 <name>Моноблок ThinkCentre neo 50a 24 Gen 5/i5-13420H/W11P64/16GB/512GB SSD/UHD/1YR/Wireless Charger 12SD000CRU</name>
 <vendor>Lenovo</vendor>
 <vendorCode>IS48215BE668</vendorCode>
-<description>Процессор i5-13420H · Оперативная память 16 ГБ · Операционная система Windows 11 Pro · Линейка процессора Core i5 · Ёмкость 512 ГБ · Тип накопителя SSD</description>
+<description>Процессор Intel i5-13420H · Оперативная память 16 ГБ · Операционная система Windows 11 Pro · Линейка процессора Core i5 · Ёмкость 512 ГБ · Тип накопителя SSD · Накопитель 512 ГБ</description>
 </offer>
 <offer id="IS4C31DE6708" available="true">
 <url>https://b2b.isoft-shop.kz/monobloki/tproduct/826103817004-monoblok-dell-pro-24-all-in-one-plus-qb2</url>
@@ -37838,6 +37849,20 @@
 <vendor>HP</vendor>
 <vendorCode>ISAD22BDA8FF</vendorCode>
 <description>Тип матрицы IPS · Процессор i5-1335U · Оперативная память 16 ГБ · Операционная система Windows 11 Pro · Диагональ 23,8″ · Линейка процессора Core i5 · Ёмкость 512 ГБ · Тип накопителя SSD</description>
+</offer>
+<offer id="ISAF084C93E7" available="true">
+<url>https://b2b.isoft-shop.kz/monobloki/tproduct/161526399744-monoblok-wintek-bf2402-238-inch-fhdipsco</url>
+<price>397000</price>
+<currencyId>KZT</currencyId>
+<categoryId>692700299904</categoryId>
+<picture>https://static.tildacdn.com/tild6531-3334-4630-b034-313464366661/161526399744_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild6239-6361-4431-b238-343564353030/520252026564.jpg</picture>
+<picture>https://static.tildacdn.com/tild6439-6561-4630-a264-663864393839/161526399744_3.jpg</picture>
+<picture>https://static.tildacdn.com/tild3265-6433-4937-b763-376465336238/161526399744_4.jpg</picture>
+<name>Моноблок Wintek BF2402 23.8-inch FHD/IPS/Core i3-14100-3.5GHz/RAM 16GB/SSD 512GB/no DVD</name>
+<vendor>WINTEK</vendor>
+<vendorCode>ISAF084C93E7</vendorCode>
+<description>Диагональ 23,8″ · Оперативная память 16 ГБ · Процессор Intel Core i3-14100 · Тип матрицы IPS · Линейка процессора Core i3 / Core 3</description>
 </offer>
 <offer id="ISB1804DE2EF" available="true">
 <url>https://b2b.isoft-shop.kz/monobloki/tproduct/200970841404-monoblok-hp-pro-studio-4-g1i-24-aio-bu-n</url>
@@ -48420,7 +48445,7 @@
 <name>Ноутбук Lenovo V15 G5 IRL/i3-1315U/15.6-inch FHD/8GB/512GB SSD/UHD/2YR 83GW009MFW</name>
 <vendor>Lenovo</vendor>
 <vendorCode>IS316BB64551</vendorCode>
-<description>Диагональ 15,6″ · Оперативная память 8 ГБ · Процессор i3-1315U · Ёмкость 512 ГБ · Линейка процессора Core i3 / Core 3 · Тип накопителя SSD · Гарантия 2 года · Разрешение 1920×1080 · Видеокарта Встроенная</description>
+<description>Гарантия 2 года · Диагональ 15,6″ · Оперативная память 8 ГБ · Процессор Intel i3-1315U · Ёмкость 512 ГБ · Линейка процессора Core i3 / Core 3 · Тип накопителя SSD · Разрешение 1920×1080 · Видеокарта Встроенная · Накопитель 512 ГБ</description>
 </offer>
 <offer id="IS31A45A9270" available="true">
 <url>https://b2b.isoft-shop.kz/noutbuki/tproduct/306506552564-noutbuk-hp-probook-4-g1ir-14-cz9b2atbja</url>
@@ -50530,7 +50555,7 @@
 <name>Ноутбук DELL Latitude 5550 210-BLYZ_i7(V)</name>
 <vendor>Dell</vendor>
 <vendorCode>ISC7E4CF2C00</vendorCode>
-<description>Диагональ 15,6″ · Оперативная память 16 ГБ · Операционная система Windows 11 Pro · Процессор Core Ultra 7 155U · Ёмкость 512 ГБ · Камера Нет · Линейка процессора Core Ultra 7 · Тип накопителя SSD · Гарантия 3 года · Разрешение 1920×1080</description>
+<description>Гарантия 3 года · Диагональ 15,6″ · Оперативная память 16 ГБ · Операционная система Windows 11 Pro · Процессор Intel Core Ultra 7 155U · Ёмкость 512 ГБ · Камера Нет · Линейка процессора Core Ultra 7 · Тип накопителя SSD · Разрешение 1920×1080</description>
 </offer>
 <offer id="ISC9B24FCE3F" available="true">
 <url>https://b2b.isoft-shop.kz/noutbuki/tproduct/201126248974-noutbuk-asus-vivobook-14-x1407qa-ly071w</url>
@@ -50597,7 +50622,7 @@
 <name>Ноутбук Ninkear A15 Pro, Ryzen 5 5500U-2.1/512 GB SSD/16GB/15.6-inch FHD/Win11</name>
 <vendor>NINKEAR</vendor>
 <vendorCode>ISCDE0AA7DC2</vendorCode>
-<description>Ёмкость 512 ГБ · Диагональ 15,6″ · Оперативная память 16 ГБ · Операционная система Windows 11 Pro · Процессор Ryzen 5 5500U · Разрешение 1920×1080 · Линейка процессора Ryzen 5 · Семья ОС Windows 11</description>
+<description>Тип памяти DDR4 · Ёмкость 512 ГБ · Диагональ 15,6″ · Оперативная память 16 ГБ · Операционная система Windows 11 Pro · Процессор AMD Ryzen 5 5500U · Разрешение 1920×1080 · Линейка процессора Ryzen 5 · Семья ОС Windows 11 · Накопитель 512 ГБ</description>
 </offer>
 <offer id="ISCDEA5FF6D5" available="true">
 <url>https://b2b.isoft-shop.kz/noutbuki/tproduct/171004139144-noutbuk-dell-pro-14-pc14255-210-bqqc</url>
@@ -50983,7 +51008,7 @@
 <name>Ноутбук DELL Latitude 5540 N024L554015EMEA_VP, Core i7-1365U, 16GB, 512GB SSD, 15.6-inch FHD, FHD, IR Cam, Mic, WLAN + BT</name>
 <vendor>Dell</vendor>
 <vendorCode>ISE7A28F65D6</vendorCode>
-<description>Диагональ 15,6″ · Оперативная память 16 ГБ · Операционная система Windows 11 Pro · Процессор Core i7-1365U · Ёмкость 512 ГБ · Камера IR · Линейка процессора Core i7 · Тип накопителя SSD · Подсветка клавиатуры есть · Гарантия 3 года</description>
+<description>Гарантия 3 года · Тип памяти DDR4 · Диагональ 15,6″ · Оперативная память 16 ГБ · Операционная система Windows 11 Pro · Процессор Intel Core i7-1365U · Ёмкость 512 ГБ · Камера IR · Линейка процессора Core i7 · Тип накопителя SSD</description>
 </offer>
 <offer id="ISE7BB254558" available="true">
 <url>https://b2b.isoft-shop.kz/noutbuki/tproduct/355144645614-16-inch-noutbuk-asus-rog-strix-g16-g615j</url>
@@ -67420,7 +67445,7 @@
 <name>Системный блок Pulser Core i3-12100, 3.3 ГГц, H610, 16 ГБ ОЗУ, SSD 1 ТБ M.2, без DVD, БП 400 Вт</name>
 <vendor>Pulser</vendor>
 <vendorCode>IS0016CDB7C8</vendorCode>
-<description>Оперативная память 16 ГБ · Процессор Core i3-12100 · Линейка процессора Core i3 / Core 3</description>
+<description>Оперативная память 16 ГБ · Процессор Intel Core i3-12100 · Линейка процессора Core i3 / Core 3 · Тип накопителя SSD · Ёмкость 1 ТБ · Блок питания 400 Вт · Накопитель 1 ТБ</description>
 </offer>
 <offer id="IS00AB982995" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/161714989364-sistemnii-blok-pulser-ryzen-5-7500f-37-g</url>
@@ -67431,7 +67456,7 @@
 <name>Системный блок Pulser Ryzen 5 7500F, 3.7 ГГц, B650, 16 ГБ ОЗУ, SSD 512 ГБ M.2, RTX 5050, 8 ГБ, без DVD, БП 600 Вт</name>
 <vendor>Pulser</vendor>
 <vendorCode>IS00AB982995</vendorCode>
-<description>Оперативная память 16 ГБ · Процессор Ryzen 5 7500F · Линейка процессора Ryzen 5 · Видеокарта RTX 5050</description>
+<description>Оперативная память 16 ГБ · Процессор AMD Ryzen 5 7500F · Линейка процессора Ryzen 5 · Видеокарта RTX 5050 · Тип накопителя SSD · Ёмкость 512 ГБ · Блок питания 600 Вт · Накопитель 512 ГБ</description>
 </offer>
 <offer id="IS051AA3B88D" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/897037526434-sistemnii-blok-pk-acer-nitro-n55-tower-g</url>
@@ -67464,7 +67489,7 @@
 <name>Системный блок Pulser Core i3-12100, 3.3 ГГц, H610, 8 ГБ ОЗУ, SSD 512 ГБ, без DVD, БП 400 Вт</name>
 <vendor>Pulser</vendor>
 <vendorCode>IS087EEDC1BA</vendorCode>
-<description>Оперативная память 8 ГБ · Процессор Core i3-12100 · Линейка процессора Core i3 / Core 3</description>
+<description>Оперативная память 8 ГБ · Процессор Intel Core i3-12100 · Линейка процессора Core i3 / Core 3 · Тип накопителя SSD · Ёмкость 512 ГБ · Блок питания 400 Вт · Накопитель 512 ГБ</description>
 </offer>
 <offer id="IS0A71466E23" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/563249083774-sistemnii-blok-dell-pro-max-tower-t2-fct</url>
@@ -67486,7 +67511,7 @@
 <name>Системный блок Pulser Core i3-12100F, 3.3 ГГц, H610, 16 ГБ ОЗУ, SSD 512 ГБ M.2, RTX 3050, 6 ГБ, без DVD, БП 500 Вт</name>
 <vendor>Pulser</vendor>
 <vendorCode>IS0C71911BE3</vendorCode>
-<description>Оперативная память 16 ГБ · Процессор Core i3-12100F · Линейка процессора Core i3 / Core 3 · Видеокарта RTX 3050</description>
+<description>Оперативная память 16 ГБ · Процессор Intel Core i3-12100F · Линейка процессора Core i3 / Core 3 · Видеокарта RTX 3050 · Тип накопителя SSD · Ёмкость 512 ГБ · Блок питания 500 Вт · Накопитель 512 ГБ</description>
 </offer>
 <offer id="IS1025516CFA" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/238973518084-sistemnii-blok-asus-90pf05b2-m006z0-tuf</url>
@@ -67522,7 +67547,7 @@
 <name>Системный блок Pulser Ryzen 5 5600GT, 3.6 ГГц, A520, 16 ГБ ОЗУ, SSD 1 ТБ, без DVD, БП 300 Вт</name>
 <vendor>Pulser</vendor>
 <vendorCode>IS1DA8B70DD1</vendorCode>
-<description>Оперативная память 16 ГБ · Процессор Ryzen 5 5600GT · Линейка процессора Ryzen 5</description>
+<description>Оперативная память 16 ГБ · Процессор AMD Ryzen 5 5600GT · Линейка процессора Ryzen 5 · Тип накопителя SSD · Ёмкость 1 ТБ · Блок питания 300 Вт · Накопитель 1 ТБ</description>
 </offer>
 <offer id="IS22F172E67E" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/353746439644-sistemnii-blok-pulser-ryzen-9-9900x3d-44</url>
@@ -67533,7 +67558,7 @@
 <name>Системный блок Pulser Ryzen 9 9900X3D, 4.4 ГГц, X870, 64 ГБ ОЗУ, SSD 2 ТБ M.2, RTX 5080, 16 ГБ, без DVD, БП 1000 Вт</name>
 <vendor>Pulser</vendor>
 <vendorCode>IS22F172E67E</vendorCode>
-<description>Оперативная память 64 ГБ · Процессор Ryzen 9 9900X3 · Линейка процессора Ryzen 9 · Видеокарта RTX 5080</description>
+<description>Оперативная память 64 ГБ · Процессор AMD Ryzen 9 9900X3 · Линейка процессора Ryzen 9 · Видеокарта RTX 5080 · Тип накопителя SSD · Ёмкость 2 ТБ · Блок питания 1000 Вт · Накопитель 2 ТБ</description>
 </offer>
 <offer id="IS27EE10B913" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/814190678274-sistemnii-blok-pulser-core-i7-14700f-21</url>
@@ -67555,7 +67580,7 @@
 <name>Системный блок Pulser Core i5-12400, 2.5 ГГц, H610, 16 ГБ ОЗУ, SSD 512 ГБ, без DVD, БП 400 Вт</name>
 <vendor>Pulser</vendor>
 <vendorCode>IS287EF9A886</vendorCode>
-<description>Оперативная память 16 ГБ · Процессор Core i5-12400 · Линейка процессора Core i5</description>
+<description>Оперативная память 16 ГБ · Процессор Intel Core i5-12400 · Линейка процессора Core i5 · Тип накопителя SSD · Ёмкость 512 ГБ · Блок питания 400 Вт · Накопитель 512 ГБ</description>
 </offer>
 <offer id="IS294E296C39" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/663936553974-sistemnii-blok-ryzen-5-7500f-37ghzb650ra</url>
@@ -67566,7 +67591,7 @@
 <name>Системный блок Ryzen 5 7500F-3.7GHz/B650/RAM 32GB/SSD 1TB (M.2)/RTX5060-8GB/no DVD/600W/Монитор 27-inch Sanc 240Hz</name>
 <vendor>SANC</vendor>
 <vendorCode>IS294E296C39</vendorCode>
-<description>Оперативная память 32 ГБ · Процессор Ryzen 5 7500F · Линейка процессора Ryzen 5</description>
+<description>Тип памяти DDR5 · Оперативная память 32 ГБ · Процессор AMD Ryzen 5 7500F · Линейка процессора Ryzen 5 · Тип накопителя SSD · Ёмкость 1 ТБ · Видеокарта RTX 5060 · Накопитель 1 ТБ · Операционная система без ОС · Блок питания 600 Вт</description>
 </offer>
 <offer id="IS330311DEFE" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/235655413934-sistemnii-blok-core-i7-14700f-21ghzb760r</url>
@@ -67588,7 +67613,7 @@
 <name>Системный блок Pulser Core i5-12400, 2.5 ГГц, H610, 16 ГБ ОЗУ, SSD 1 ТБ M.2, без DVD, БП 400 Вт</name>
 <vendor>Pulser</vendor>
 <vendorCode>IS33C74A2D2E</vendorCode>
-<description>Оперативная память 16 ГБ · Процессор Core i5-12400 · Линейка процессора Core i5</description>
+<description>Оперативная память 16 ГБ · Процессор Intel Core i5-12400 · Линейка процессора Core i5 · Тип накопителя SSD · Ёмкость 1 ТБ · Блок питания 400 Вт · Накопитель 1 ТБ</description>
 </offer>
 <offer id="IS3925CFAB06" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/832972302114-sistemnii-blok-pk-acer-nitro-n55-tower-g</url>
@@ -67622,7 +67647,7 @@
 <name>Системный блок Pulser Ryzen 5 8500G, 3.2 ГГц, B650, 16 ГБ ОЗУ, SSD 512 ГБ, без DVD, БП 400 Вт</name>
 <vendor>Pulser</vendor>
 <vendorCode>IS39C9A48701</vendorCode>
-<description>Оперативная память 16 ГБ · Процессор Ryzen 5 8500G · Линейка процессора Ryzen 5</description>
+<description>Оперативная память 16 ГБ · Процессор AMD Ryzen 5 8500G · Линейка процессора Ryzen 5 · Тип накопителя SSD · Ёмкость 512 ГБ · Блок питания 400 Вт · Накопитель 512 ГБ</description>
 </offer>
 <offer id="IS39E47B5829" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/198202668964-sistemnii-blok-pulser-ryzen-3-3200g-36-g</url>
@@ -67633,7 +67658,7 @@
 <name>Системный блок Pulser Ryzen 3 3200G, 3.6 ГГц, A520, 16 ГБ ОЗУ, SSD 512 ГБ, без DVD, БП 300 Вт</name>
 <vendor>Pulser</vendor>
 <vendorCode>IS39E47B5829</vendorCode>
-<description>Оперативная память 16 ГБ · Процессор Ryzen 3 3200G · Линейка процессора Ryzen 3</description>
+<description>Оперативная память 16 ГБ · Процессор AMD Ryzen 3 3200G · Линейка процессора Ryzen 3 · Тип накопителя SSD · Ёмкость 512 ГБ · Блок питания 300 Вт · Накопитель 512 ГБ</description>
 </offer>
 <offer id="IS3BE086D600" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/914165761834-sistemnii-blok-pulser-ryzen-9-9900x-44-g</url>
@@ -67644,7 +67669,7 @@
 <name>Системный блок Pulser Ryzen 9 9900X, 4.4 ГГц, X870, 32 ГБ ОЗУ, SSD 1 ТБ M.2, RTX 5070, 12 ГБ, без DVD, БП 1000 Вт</name>
 <vendor>Pulser</vendor>
 <vendorCode>IS3BE086D600</vendorCode>
-<description>Оперативная память 32 ГБ · Процессор Ryzen 9 9900X · Линейка процессора Ryzen 9 · Видеокарта RTX 5070</description>
+<description>Оперативная память 32 ГБ · Процессор AMD Ryzen 9 9900X · Линейка процессора Ryzen 9 · Видеокарта RTX 5070 · Тип накопителя SSD · Ёмкость 1 ТБ · Блок питания 1000 Вт · Накопитель 1 ТБ</description>
 </offer>
 <offer id="IS42C8C821BB" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/242649574384-sistemnii-blok-acer-veriton-x2735g-sff-k</url>
@@ -67688,7 +67713,7 @@
 <name>Системный блок Pulser Ryzen 5 8400F, 4.2 ГГц, B840, 32 ГБ ОЗУ, SSD 1 ТБ M.2, RTX 5070, 12 ГБ, без DVD, БП 850 Вт</name>
 <vendor>Pulser</vendor>
 <vendorCode>IS461A1C9B4A</vendorCode>
-<description>Оперативная память 32 ГБ · Процессор Ryzen 5 8400F · Линейка процессора Ryzen 5 · Видеокарта RTX 5070</description>
+<description>Оперативная память 32 ГБ · Процессор AMD Ryzen 5 8400F · Линейка процессора Ryzen 5 · Видеокарта RTX 5070 · Тип накопителя SSD · Ёмкость 1 ТБ · Блок питания 850 Вт · Накопитель 1 ТБ</description>
 </offer>
 <offer id="IS499B9162CE" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/258063847094-sistemnii-blok-pulser-core-i3-12100-33-g</url>
@@ -67699,7 +67724,7 @@
 <name>Системный блок Pulser Core i3-12100, 3.3 ГГц, H610, 16 ГБ ОЗУ, SSD 512 ГБ M.2, без DVD, БП 400 Вт</name>
 <vendor>Pulser</vendor>
 <vendorCode>IS499B9162CE</vendorCode>
-<description>Оперативная память 16 ГБ · Процессор Core i3-12100 · Линейка процессора Core i3 / Core 3</description>
+<description>Оперативная память 16 ГБ · Процессор Intel Core i3-12100 · Линейка процессора Core i3 / Core 3 · Тип накопителя SSD · Ёмкость 512 ГБ · Блок питания 400 Вт · Накопитель 512 ГБ</description>
 </offer>
 <offer id="IS4B369DDA90" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/865978065934-sistemnii-blok-pulser-ryzen-9-9950x3d-43</url>
@@ -67710,7 +67735,7 @@
 <name>Системный блок Pulser Ryzen 9 9950X3D, 4.3 ГГц, X870, 64 ГБ ОЗУ, SSD 2 ТБ M.2, RTX 5090, 32 ГБ, без DVD, БП 1350 Вт, Windows 11 Pro</name>
 <vendor>Pulser</vendor>
 <vendorCode>IS4B369DDA90</vendorCode>
-<description>Оперативная память 64 ГБ · Процессор Ryzen 9 9950X3 · Линейка процессора Ryzen 9 · Видеокарта RTX 5090 · Операционная система Windows 11 Pro · Семья ОС Windows 11</description>
+<description>Оперативная память 64 ГБ · Процессор AMD Ryzen 9 9950X3 · Линейка процессора Ryzen 9 · Видеокарта RTX 5090 · Операционная система Windows 11 Pro · Семья ОС Windows 11 · Тип накопителя SSD · Ёмкость 2 ТБ · Блок питания 1350 Вт · Накопитель 2 ТБ</description>
 </offer>
 <offer id="IS4B4BBB0EA3" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/153244107444-sistemnii-blok-pc-dell-pro-tower-qct1250</url>
@@ -67734,7 +67759,7 @@
 <name>Системный блок Pulser Pentium G6400, 4.0 ГГц, B460, 8 ГБ ОЗУ, SSD 256 ГБ, без DVD, БП 400 Вт</name>
 <vendor>Pulser</vendor>
 <vendorCode>IS4C825C8F21</vendorCode>
-<description>Оперативная память 8 ГБ · Процессор Pentium G6400 · Линейка процессора Celeron / Pentium</description>
+<description>Оперативная память 8 ГБ · Процессор Intel Pentium G6400 · Линейка процессора Celeron / Pentium · Тип накопителя SSD · Ёмкость 256 ГБ · Блок питания 400 Вт · Накопитель 256 ГБ</description>
 </offer>
 <offer id="IS4CDA368CE8" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/477180593024-sistemnii-blok-pulser-core-i3-12100-33-g</url>
@@ -67745,7 +67770,7 @@
 <name>Системный блок Pulser Core i3-12100, 3.3 ГГц, H610, 8 ГБ ОЗУ, SSD 256 ГБ, без DVD, БП 400 Вт</name>
 <vendor>Pulser</vendor>
 <vendorCode>IS4CDA368CE8</vendorCode>
-<description>Оперативная память 8 ГБ · Процессор Core i3-12100 · Линейка процессора Core i3 / Core 3</description>
+<description>Оперативная память 8 ГБ · Процессор Intel Core i3-12100 · Линейка процессора Core i3 / Core 3 · Тип накопителя SSD · Ёмкость 256 ГБ · Блок питания 400 Вт · Накопитель 256 ГБ</description>
 </offer>
 <offer id="IS4CDC6855FE" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/962792578824-sistemnii-blok-delltower-plus-ebt2250tow</url>
@@ -67770,7 +67795,7 @@
 <name>Системный блок Pulser Core i3-12100F, 3.3 ГГц, H610, 16 ГБ ОЗУ, SSD 512 ГБ, GT 1030, 2 ГБ, без DVD, БП 400 Вт</name>
 <vendor>Pulser</vendor>
 <vendorCode>IS4F8C9C3BB9</vendorCode>
-<description>Оперативная память 16 ГБ · Процессор Core i3-12100F · Линейка процессора Core i3 / Core 3 · Видеокарта GT1030</description>
+<description>Оперативная память 16 ГБ · Процессор Intel Core i3-12100F · Линейка процессора Core i3 / Core 3 · Видеокарта GT1030 · Тип накопителя SSD · Ёмкость 512 ГБ · Блок питания 400 Вт · Накопитель 512 ГБ</description>
 </offer>
 <offer id="IS5076C4F803" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/372118643474-sistemnii-blok-pulser-ryzen-7-9800x3d-47</url>
@@ -67781,7 +67806,7 @@
 <name>Системный блок Pulser Ryzen 7 9800X3D, 4.7 ГГц, X870E, 32 ГБ ОЗУ, SSD 1 ТБ M.2, RTX 5080, 16 ГБ, без DVD, БП 1000 Вт</name>
 <vendor>Pulser</vendor>
 <vendorCode>IS5076C4F803</vendorCode>
-<description>Оперативная память 32 ГБ · Процессор Ryzen 7 9800X3 · Линейка процессора Ryzen 7 · Видеокарта RTX 5080</description>
+<description>Оперативная память 32 ГБ · Процессор AMD Ryzen 7 9800X3 · Линейка процессора Ryzen 7 · Видеокарта RTX 5080 · Тип накопителя SSD · Ёмкость 1 ТБ · Блок питания 1000 Вт · Накопитель 1 ТБ</description>
 </offer>
 <offer id="IS509D3E3539" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/373467441364-sistemnii-blok-hp-pro-sff-400-g9-9h7c6et</url>
@@ -67851,7 +67876,7 @@
 <name>Системный блок Pulser Core i3-12100, 3.3 ГГц, H610, 16 ГБ ОЗУ, SSD 512 ГБ, без DVD, БП 400 Вт</name>
 <vendor>Pulser</vendor>
 <vendorCode>IS56386B532C</vendorCode>
-<description>Оперативная память 16 ГБ · Процессор Core i3-12100 · Линейка процессора Core i3 / Core 3</description>
+<description>Оперативная память 16 ГБ · Процессор Intel Core i3-12100 · Линейка процессора Core i3 / Core 3 · Тип накопителя SSD · Ёмкость 512 ГБ · Блок питания 400 Вт · Накопитель 512 ГБ</description>
 </offer>
 <offer id="IS59A27E6405" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/819732035944-sistemnii-blok-pulser-ryzen-7-5700x-34-g</url>
@@ -67862,7 +67887,7 @@
 <name>Системный блок Pulser Ryzen 7 5700X, 3.4 ГГц, B550, 32 ГБ ОЗУ, SSD 1 ТБ M.2, RTX 5060 Ti, 8 ГБ, без DVD, БП 750 Вт</name>
 <vendor>Pulser</vendor>
 <vendorCode>IS59A27E6405</vendorCode>
-<description>Оперативная память 32 ГБ · Процессор Ryzen 7 5700X · Линейка процессора Ryzen 7</description>
+<description>Оперативная память 32 ГБ · Процессор AMD Ryzen 7 5700X · Линейка процессора Ryzen 7 · Тип накопителя SSD · Ёмкость 1 ТБ · Видеокарта RTX 5060 Ti · Блок питания 750 Вт · Накопитель 1 ТБ</description>
 </offer>
 <offer id="IS5A2BA0D124" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/237264800924-sistemnii-blok-hp-prodesk-4-tower-g1i280</url>
@@ -67906,7 +67931,7 @@
 <name>Системный блок Pulser Ryzen 5 5600GT, 3.6 ГГц, A520, 16 ГБ ОЗУ, SSD 1 ТБ M.2, без DVD, БП 400 Вт</name>
 <vendor>Pulser</vendor>
 <vendorCode>IS6568AA4266</vendorCode>
-<description>Оперативная память 16 ГБ · Процессор Ryzen 5 5600GT · Линейка процессора Ryzen 5</description>
+<description>Оперативная память 16 ГБ · Процессор AMD Ryzen 5 5600GT · Линейка процессора Ryzen 5 · Тип накопителя SSD · Ёмкость 1 ТБ · Блок питания 400 Вт · Накопитель 1 ТБ</description>
 </offer>
 <offer id="IS6B7531A938" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/561533690154-sistemnii-blok-pulser-core-i5-10400-29-g</url>
@@ -67917,7 +67942,7 @@
 <name>Системный блок Pulser Core i5-10400, 2.9 ГГц, H470, 16 ГБ ОЗУ, SSD 512 ГБ, без DVD, БП 400 Вт</name>
 <vendor>Pulser</vendor>
 <vendorCode>IS6B7531A938</vendorCode>
-<description>Оперативная память 16 ГБ · Процессор Core i5-10400 · Линейка процессора Core i5</description>
+<description>Оперативная память 16 ГБ · Процессор Intel Core i5-10400 · Линейка процессора Core i5 · Тип накопителя SSD · Ёмкость 512 ГБ · Блок питания 400 Вт · Накопитель 512 ГБ</description>
 </offer>
 <offer id="IS6C1678372A" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/523896183154-sistemnii-blok-pulser-core-i7-14700kf-34</url>
@@ -67928,7 +67953,7 @@
 <name>Системный блок Pulser Core i7-14700KF, 3.4 ГГц, Z790, 32 ГБ ОЗУ, SSD 1 ТБ M.2, RTX 5070, 12 ГБ, без DVD, корпус ATX, БП 850 Вт</name>
 <vendor>Pulser</vendor>
 <vendorCode>IS6C1678372A</vendorCode>
-<description>Оперативная память 32 ГБ · Процессор Core i7-14700KF · Линейка процессора Core i7 · Видеокарта RTX 5070</description>
+<description>Оперативная память 32 ГБ · Процессор Intel Core i7-14700KF · Линейка процессора Core i7 · Видеокарта RTX 5070 · Тип накопителя SSD · Ёмкость 1 ТБ · Блок питания 850 Вт · Накопитель 1 ТБ</description>
 </offer>
 <offer id="IS6D3EDD2D99" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/384556896214-sistemnii-blok-pulser-ryzen-3-3200g-36-g</url>
@@ -67994,7 +68019,7 @@
 <name>Системный блок Pulser Core i3-10105, 3.7 ГГц, H470, 16 ГБ ОЗУ, SSD 512 ГБ M.2, без DVD, БП 400 Вт</name>
 <vendor>Pulser</vendor>
 <vendorCode>IS765585B436</vendorCode>
-<description>Оперативная память 16 ГБ · Процессор Core i3-10105 · Линейка процессора Core i3 / Core 3</description>
+<description>Оперативная память 16 ГБ · Процессор Intel Core i3-10105 · Линейка процессора Core i3 / Core 3 · Тип накопителя SSD · Ёмкость 512 ГБ · Блок питания 400 Вт · Накопитель 512 ГБ</description>
 </offer>
 <offer id="IS7B7C3E3F13" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/287791108734-sistemnii-blok-pulser-ryzen-5-5500-36-gg</url>
@@ -68005,7 +68030,7 @@
 <name>Системный блок Pulser Ryzen 5 5500, 3.6 ГГц, B550, 16 ГБ ОЗУ, SSD 512 ГБ M.2, RTX 5060, 8 ГБ, без DVD, БП 700 Вт</name>
 <vendor>Pulser</vendor>
 <vendorCode>IS7B7C3E3F13</vendorCode>
-<description>Оперативная память 16 ГБ · Процессор Ryzen 5 5500 · Линейка процессора Ryzen 5</description>
+<description>Оперативная память 16 ГБ · Процессор AMD Ryzen 5 5500 · Линейка процессора Ryzen 5 · Тип накопителя SSD · Ёмкость 512 ГБ · Видеокарта RTX 5060 · Блок питания 700 Вт · Накопитель 512 ГБ</description>
 </offer>
 <offer id="IS7FD025C5DA" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/919137191794-sistemnii-blok-pulser-core-i5-14400-25-g</url>
@@ -68027,7 +68052,7 @@
 <name>Системный блок Core i3-14100-3.5GHz/H610/RAM 16GB/SSD 512GB/no DVD/400W/Монитор 23.8-inch Sanc 120Hz/Key</name>
 <vendor>SANC</vendor>
 <vendorCode>IS83FB1E497E</vendorCode>
-<description>Оперативная память 16 ГБ · Процессор Core i3-14100 · Линейка процессора Core i3 / Core 3</description>
+<description>Оперативная память 16 ГБ · Процессор Intel Core i3-14100 · Линейка процессора Core i3 / Core 3 · Тип накопителя SSD · Ёмкость 512 ГБ · Накопитель 512 ГБ</description>
 </offer>
 <offer id="IS84C6D52571" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/160339857994-sistemnii-blok-pulser-core-i3-14100-35-g</url>
@@ -68038,7 +68063,7 @@
 <name>Системный блок Pulser Core i3-14100, 3.5 ГГц, H610, 16 ГБ ОЗУ, SSD 1 ТБ M.2, без DVD, БП 400 Вт</name>
 <vendor>Pulser</vendor>
 <vendorCode>IS84C6D52571</vendorCode>
-<description>Оперативная память 16 ГБ · Процессор Core i3-14100 · Линейка процессора Core i3 / Core 3</description>
+<description>Оперативная память 16 ГБ · Процессор Intel Core i3-14100 · Линейка процессора Core i3 / Core 3 · Тип накопителя SSD · Ёмкость 1 ТБ · Блок питания 400 Вт · Накопитель 1 ТБ</description>
 </offer>
 <offer id="IS86A0AEC1C4" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/283798045904-sistemnii-blok-pulser-core-i3-12100-33-g</url>
@@ -68049,7 +68074,7 @@
 <name>Системный блок Pulser Core i3-12100, 3.3 ГГц, H610, 8 ГБ ОЗУ, SSD 512 ГБ M.2, без DVD, БП 400 Вт</name>
 <vendor>Pulser</vendor>
 <vendorCode>IS86A0AEC1C4</vendorCode>
-<description>Оперативная память 8 ГБ · Процессор Core i3-12100 · Линейка процессора Core i3 / Core 3</description>
+<description>Оперативная память 8 ГБ · Процессор Intel Core i3-12100 · Линейка процессора Core i3 / Core 3 · Тип накопителя SSD · Ёмкость 512 ГБ · Блок питания 400 Вт · Накопитель 512 ГБ</description>
 </offer>
 <offer id="IS8BB5B74B78" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/467943449554-sistemnii-blok-pulser-ryzen-5-5600gt-36</url>
@@ -68060,7 +68085,7 @@
 <name>Системный блок Pulser Ryzen 5 5600GT, 3.6 ГГц, A520, 8 ГБ ОЗУ, SSD 512 ГБ, без DVD, БП 400 Вт</name>
 <vendor>Pulser</vendor>
 <vendorCode>IS8BB5B74B78</vendorCode>
-<description>Оперативная память 8 ГБ · Процессор Ryzen 5 5600GT · Линейка процессора Ryzen 5</description>
+<description>Оперативная память 8 ГБ · Процессор AMD Ryzen 5 5600GT · Линейка процессора Ryzen 5 · Тип накопителя SSD · Ёмкость 512 ГБ · Блок питания 400 Вт · Накопитель 512 ГБ</description>
 </offer>
 <offer id="IS8E1C16E04F" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/419076057344-sistemnii-blok-pulser-ryzen-7-5700x-34-g</url>
@@ -68071,7 +68096,7 @@
 <name>Системный блок Pulser Ryzen 7 5700X, 3.4 ГГц, B550, 16 ГБ ОЗУ, SSD 512 ГБ, RTX 5060, 8 ГБ, без DVD, БП 700 Вт</name>
 <vendor>Pulser</vendor>
 <vendorCode>IS8E1C16E04F</vendorCode>
-<description>Оперативная память 16 ГБ · Процессор Ryzen 7 5700X · Линейка процессора Ryzen 7</description>
+<description>Оперативная память 16 ГБ · Процессор AMD Ryzen 7 5700X · Линейка процессора Ryzen 7 · Тип накопителя SSD · Ёмкость 512 ГБ · Видеокарта RTX 5060 · Блок питания 700 Вт · Накопитель 512 ГБ</description>
 </offer>
 <offer id="IS8E59146A89" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/465245059474-sistemnii-blok-hp-pro-tower-400-g9-9m8r6</url>
@@ -68116,7 +68141,7 @@
 <name>Системный блок Pulser Ryzen 5 5600X, 3.7 ГГц, B550, 16 ГБ ОЗУ, SSD 512 ГБ M.2, RX 580, 8 ГБ, без DVD, БП 600 Вт</name>
 <vendor>Pulser</vendor>
 <vendorCode>IS965A05BD0B</vendorCode>
-<description>Оперативная память 16 ГБ · Процессор Ryzen 5 5600X · Линейка процессора Ryzen 5 · Видеокарта RX 580</description>
+<description>Оперативная память 16 ГБ · Процессор AMD Ryzen 5 5600X · Линейка процессора Ryzen 5 · Видеокарта RX 580 · Тип накопителя SSD · Ёмкость 512 ГБ · Блок питания 600 Вт · Накопитель 512 ГБ</description>
 </offer>
 <offer id="IS965ACBD59A" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/704613035234-sistemnii-blok-pulser-core-ultra-5-245kf</url>
@@ -68127,7 +68152,7 @@
 <name>Системный блок Pulser Core Ultra 5 245KF, 3.6 ГГц, B860, 32 ГБ ОЗУ, SSD 1 ТБ M.2, RTX 5070, 12 ГБ, без DVD, БП 750 Вт</name>
 <vendor>Pulser</vendor>
 <vendorCode>IS965ACBD59A</vendorCode>
-<description>Оперативная память 32 ГБ · Процессор Core Ultra 5 245KF · Линейка процессора Core Ultra 5 · Видеокарта RTX 5070</description>
+<description>Оперативная память 32 ГБ · Процессор Intel Core Ultra 5 245KF · Линейка процессора Core Ultra 5 · Видеокарта RTX 5070 · Тип накопителя SSD · Ёмкость 1 ТБ · Блок питания 750 Вт · Накопитель 1 ТБ</description>
 </offer>
 <offer id="IS99B9D27955" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/224188464234-sistemnii-blok-core-i7-14700f-21ghzb760r</url>
@@ -68149,7 +68174,7 @@
 <name>Системный блок Pulser Core i3-14100, 3.5 ГГц, H610, 16 ГБ ОЗУ, SSD 512 ГБ, без DVD, БП 400 Вт</name>
 <vendor>Pulser</vendor>
 <vendorCode>IS9A83099E3C</vendorCode>
-<description>Оперативная память 16 ГБ · Процессор Core i3-14100 · Линейка процессора Core i3 / Core 3</description>
+<description>Оперативная память 16 ГБ · Процессор Intel Core i3-14100 · Линейка процессора Core i3 / Core 3 · Тип накопителя SSD · Ёмкость 512 ГБ · Блок питания 400 Вт · Накопитель 512 ГБ</description>
 </offer>
 <offer id="IS9C553B772E" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/572221391724-sistemnii-blok-pulser-ryzen-7-9800x3d-47</url>
@@ -68160,7 +68185,7 @@
 <name>Системный блок Pulser Ryzen 7 9800X3D, 4.7 ГГц, X870, 64 ГБ ОЗУ, SSD 2 ТБ M.2, RTX 5080, 16 ГБ, без DVD, БП 1000 Вт</name>
 <vendor>Pulser</vendor>
 <vendorCode>IS9C553B772E</vendorCode>
-<description>Оперативная память 64 ГБ · Процессор Ryzen 7 9800X3 · Линейка процессора Ryzen 7 · Видеокарта RTX 5080</description>
+<description>Оперативная память 64 ГБ · Процессор AMD Ryzen 7 9800X3 · Линейка процессора Ryzen 7 · Видеокарта RTX 5080 · Тип накопителя SSD · Ёмкость 2 ТБ · Блок питания 1000 Вт · Накопитель 2 ТБ</description>
 </offer>
 <offer id="IS9D203E8D7C" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/538376959754-sistemnii-blok-acer-veriton-vx2710g-sff</url>
@@ -68193,7 +68218,7 @@
 <name>Системный блок Pulser Core i7-13700F, 2.1 ГГц, B760, 32 ГБ ОЗУ, SSD 1 ТБ M.2, RTX 5070, 12 ГБ, без DVD, БП 750 Вт</name>
 <vendor>Pulser</vendor>
 <vendorCode>ISA68D551B9B</vendorCode>
-<description>Оперативная память 32 ГБ · Процессор Core i7-13700F · Линейка процессора Core i7 · Видеокарта RTX 5070</description>
+<description>Оперативная память 32 ГБ · Процессор Intel Core i7-13700F · Линейка процессора Core i7 · Видеокарта RTX 5070 · Тип накопителя SSD · Ёмкость 1 ТБ · Блок питания 750 Вт · Накопитель 1 ТБ</description>
 </offer>
 <offer id="ISB2970A3418" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/423158995744-platforma-rabochei-stantsii-supermicro-s</url>
@@ -68226,7 +68251,7 @@
 <name>Системный блок Pulser Ryzen 5 5500, 3.6 ГГц, A520, 16 ГБ ОЗУ, SSD 512 ГБ, RX 550, 4 ГБ, без DVD, БП 400 Вт</name>
 <vendor>Pulser</vendor>
 <vendorCode>ISBBB2AA9AEC</vendorCode>
-<description>Оперативная память 16 ГБ · Процессор Ryzen 5 5500 · Линейка процессора Ryzen 5 · Видеокарта RX 550</description>
+<description>Оперативная память 16 ГБ · Процессор AMD Ryzen 5 5500 · Линейка процессора Ryzen 5 · Видеокарта RX 550 · Тип накопителя SSD · Ёмкость 512 ГБ · Блок питания 400 Вт · Накопитель 512 ГБ</description>
 </offer>
 <offer id="ISBDE7267333" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/912741279274-sistemnii-blok-dell-pro-max-tower-t2-fct</url>
@@ -68259,7 +68284,7 @@
 <name>Системный блок Pulser Ryzen 7 9700X, 3.8 ГГц, X870, 32 ГБ ОЗУ, SSD 1 ТБ M.2, RTX 5070 Ti, 16 ГБ, без DVD, БП 850 Вт</name>
 <vendor>Pulser</vendor>
 <vendorCode>ISBE9E66C65E</vendorCode>
-<description>Оперативная память 32 ГБ · Процессор Ryzen 7 9700X · Линейка процессора Ryzen 7 · Видеокарта RTX 5070Ti</description>
+<description>Оперативная память 32 ГБ · Процессор AMD Ryzen 7 9700X · Линейка процессора Ryzen 7 · Видеокарта RTX 5070Ti · Тип накопителя SSD · Ёмкость 1 ТБ · Блок питания 850 Вт · Накопитель 1 ТБ</description>
 </offer>
 <offer id="ISBED891B4EA" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/749060145754-sistemnii-blok-pulser-core-i3-12100f-33</url>
@@ -68270,7 +68295,7 @@
 <name>Системный блок Pulser Core i3-12100F, 3.3 ГГц, H610, 16 ГБ ОЗУ, SSD 512 ГБ, RX 550, 4 ГБ, без DVD, БП 600 Вт</name>
 <vendor>Pulser</vendor>
 <vendorCode>ISBED891B4EA</vendorCode>
-<description>Оперативная память 16 ГБ · Процессор Core i3-12100F · Линейка процессора Core i3 / Core 3 · Видеокарта RX 550</description>
+<description>Оперативная память 16 ГБ · Процессор Intel Core i3-12100F · Линейка процессора Core i3 / Core 3 · Видеокарта RX 550 · Тип накопителя SSD · Ёмкость 512 ГБ · Блок питания 600 Вт · Накопитель 512 ГБ</description>
 </offer>
 <offer id="ISC0C9702461" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/451523653244-sistemnii-blok-pulser-ryzen-5-7500f-37-g</url>
@@ -68281,7 +68306,7 @@
 <name>Системный блок Pulser Ryzen 5 7500F, 3.7 ГГц, B650, 32 ГБ ОЗУ, SSD 1 ТБ M.2, RTX 5060 Ti, 16 ГБ, без DVD, БП 700 Вт</name>
 <vendor>Pulser</vendor>
 <vendorCode>ISC0C9702461</vendorCode>
-<description>Оперативная память 32 ГБ · Процессор Ryzen 5 7500F · Линейка процессора Ryzen 5</description>
+<description>Оперативная память 32 ГБ · Процессор AMD Ryzen 5 7500F · Линейка процессора Ryzen 5 · Тип накопителя SSD · Ёмкость 1 ТБ · Видеокарта RTX 5060 Ti · Блок питания 700 Вт · Накопитель 1 ТБ</description>
 </offer>
 <offer id="ISC2E6E7AB4B" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/518366357414-sistemnii-blok-dell-pro-tower-qct1250-21</url>
@@ -68339,7 +68364,7 @@
 <name>Системный блок Ryzen 5 7500F-3.7GHz/B840/RAM 32GB/SSD 1TB (M.2)/RTX5060-8GB/no DVD/600W/Монитор 27-inch Sanc 200Hz</name>
 <vendor>SANC</vendor>
 <vendorCode>ISCCE524E8D7</vendorCode>
-<description>Оперативная память 32 ГБ · Процессор Ryzen 5 7500F · Линейка процессора Ryzen 5</description>
+<description>Оперативная память 32 ГБ · Процессор AMD Ryzen 5 7500F · Линейка процессора Ryzen 5 · Тип накопителя SSD · Ёмкость 1 ТБ · Видеокарта RTX 5060 · Накопитель 1 ТБ</description>
 </offer>
 <offer id="ISCDFA6A858A" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/863429445554-sistemnii-blok-pulser-core-i5-12400-25-g</url>
@@ -68350,7 +68375,7 @@
 <name>Системный блок Pulser Core i5-12400, 2.5 ГГц, H610, 16 ГБ ОЗУ, SSD 512 ГБ, без DVD, БП 300 Вт</name>
 <vendor>Pulser</vendor>
 <vendorCode>ISCDFA6A858A</vendorCode>
-<description>Оперативная память 16 ГБ · Процессор Core i5-12400 · Линейка процессора Core i5</description>
+<description>Оперативная память 16 ГБ · Процессор Intel Core i5-12400 · Линейка процессора Core i5 · Тип накопителя SSD · Ёмкость 512 ГБ · Блок питания 300 Вт · Накопитель 512 ГБ</description>
 </offer>
 <offer id="ISCEDD3EF270" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/189996325964-sistemnii-blok-pulser-ryzen-5-7600x-47-g</url>
@@ -68361,7 +68386,7 @@
 <name>Системный блок Pulser Ryzen 5 7600X, 4.7 ГГц, B650, 32 ГБ ОЗУ, SSD 1 ТБ M.2, RTX 5060, 8 ГБ, без DVD, БП 650 Вт</name>
 <vendor>Pulser</vendor>
 <vendorCode>ISCEDD3EF270</vendorCode>
-<description>Оперативная память 32 ГБ · Процессор Ryzen 5 7600X · Линейка процессора Ryzen 5</description>
+<description>Оперативная память 32 ГБ · Процессор AMD Ryzen 5 7600X · Линейка процессора Ryzen 5 · Тип накопителя SSD · Ёмкость 1 ТБ · Видеокарта RTX 5060 · Блок питания 650 Вт · Накопитель 1 ТБ</description>
 </offer>
 <offer id="ISD205F255B2" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/774055920664-sistemnii-blok-pulser-ryzen-5-7500x3d-40</url>
@@ -68372,7 +68397,7 @@
 <name>Системный блок Pulser Ryzen 5 7500X3D, 4.0 ГГц, B650, 32 ГБ ОЗУ, SSD 1 ТБ M.2, RTX 5060 Ti, 16 ГБ, без DVD, БП 750 Вт</name>
 <vendor>Pulser</vendor>
 <vendorCode>ISD205F255B2</vendorCode>
-<description>Оперативная память 32 ГБ · Процессор Ryzen 5 7500X3 · Линейка процессора Ryzen 5</description>
+<description>Оперативная память 32 ГБ · Процессор AMD Ryzen 5 7500X3 · Линейка процессора Ryzen 5 · Тип накопителя SSD · Ёмкость 1 ТБ · Видеокарта RTX 5060 Ti · Блок питания 750 Вт · Накопитель 1 ТБ</description>
 </offer>
 <offer id="ISD842AD5EB8" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/356646435964-sistemnii-blok-pulser-core-i7-14700f-21</url>
@@ -68405,7 +68430,7 @@
 <name>Системный блок Pulser Core i7-14700KF, 3.4 ГГц, B760, 32 ГБ ОЗУ, SSD 1 ТБ M.2, RTX 5070, 12 ГБ, без DVD, БП 750 Вт</name>
 <vendor>Pulser</vendor>
 <vendorCode>ISDA1507A787</vendorCode>
-<description>Оперативная память 32 ГБ · Процессор Core i7-14700KF · Линейка процессора Core i7 · Видеокарта RTX 5070</description>
+<description>Оперативная память 32 ГБ · Процессор Intel Core i7-14700KF · Линейка процессора Core i7 · Видеокарта RTX 5070 · Тип накопителя SSD · Ёмкость 1 ТБ · Блок питания 750 Вт · Накопитель 1 ТБ</description>
 </offer>
 <offer id="ISDD47CEE27F" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/781659806684-sistemnii-blok-pulser-ryzen-5-7500f-37-g</url>
@@ -68416,7 +68441,7 @@
 <name>Системный блок Pulser Ryzen 5 7500F, 3.7 ГГц, B850, 32 ГБ ОЗУ, SSD 1 ТБ M.2, RTX 5060 Ti, 16 ГБ, без DVD, БП 700 Вт</name>
 <vendor>Pulser</vendor>
 <vendorCode>ISDD47CEE27F</vendorCode>
-<description>Оперативная память 32 ГБ · Процессор Ryzen 5 7500F · Линейка процессора Ryzen 5</description>
+<description>Оперативная память 32 ГБ · Процессор AMD Ryzen 5 7500F · Линейка процессора Ryzen 5 · Тип накопителя SSD · Ёмкость 1 ТБ · Видеокарта RTX 5060 Ti · Блок питания 700 Вт · Накопитель 1 ТБ</description>
 </offer>
 <offer id="ISDDFF3223E3" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/702154223674-sistemnii-blok-pulser-ryzen-5-5600-35-gg</url>
@@ -68462,7 +68487,7 @@
 <name>Системный блок Pulser Ryzen 5 5500GT, 3.6 ГГц, A520, 16 ГБ ОЗУ, SSD 512 ГБ, без DVD, БП 400 Вт</name>
 <vendor>Pulser</vendor>
 <vendorCode>ISE7A5875829</vendorCode>
-<description>Оперативная память 16 ГБ · Процессор Ryzen 5 5500GT · Линейка процессора Ryzen 5</description>
+<description>Оперативная память 16 ГБ · Процессор AMD Ryzen 5 5500GT · Линейка процессора Ryzen 5 · Тип накопителя SSD · Ёмкость 512 ГБ · Блок питания 400 Вт · Накопитель 512 ГБ</description>
 </offer>
 <offer id="ISE8A8269B2A" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/612434807494-sistemnii-blok-pulser-ryzen-5-3500x-36-g</url>
@@ -68473,7 +68498,7 @@
 <name>Системный блок Pulser Ryzen 5 3500X, 3.6 ГГц, A520, 16 ГБ ОЗУ, SSD 512 ГБ, GT 210, 1 ГБ, без DVD, БП 400 Вт</name>
 <vendor>Pulser</vendor>
 <vendorCode>ISE8A8269B2A</vendorCode>
-<description>Оперативная память 16 ГБ · Процессор Ryzen 5 3500X · Линейка процессора Ryzen 5 · Видеокарта GT210</description>
+<description>Оперативная память 16 ГБ · Процессор AMD Ryzen 5 3500X · Линейка процессора Ryzen 5 · Видеокарта GT210 · Тип накопителя SSD · Ёмкость 512 ГБ · Блок питания 400 Вт · Накопитель 512 ГБ</description>
 </offer>
 <offer id="ISED16B8D5F8" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/696833234894-sistemnii-blok-dell-pro-tower-qct1255-am</url>
@@ -68496,7 +68521,7 @@
 <name>Системный блок Pulser Ryzen 5 8400F, 4.2 ГГц, B650, 16 ГБ ОЗУ, SSD 512 ГБ M.2, RTX 5060, 8 ГБ, без DVD, БП 600 Вт</name>
 <vendor>Pulser</vendor>
 <vendorCode>ISF226476C6C</vendorCode>
-<description>Оперативная память 16 ГБ · Процессор Ryzen 5 8400F · Линейка процессора Ryzen 5</description>
+<description>Оперативная память 16 ГБ · Процессор AMD Ryzen 5 8400F · Линейка процессора Ryzen 5 · Тип накопителя SSD · Ёмкость 512 ГБ · Видеокарта RTX 5060 · Блок питания 600 Вт · Накопитель 512 ГБ</description>
 </offer>
 <offer id="ISF299AC052E" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/974263755064-sistemnii-blok-core-i5-14400-25ghzh610ra</url>
@@ -68518,7 +68543,7 @@
 <name>Системный блок Pulser Ryzen 5 7500F, 3.7 ГГц, B650, 16 ГБ ОЗУ, SSD 512 ГБ M.2, RTX 5060, 8 ГБ, без DVD, БП 700 Вт</name>
 <vendor>Pulser</vendor>
 <vendorCode>ISF5ADCF55B6</vendorCode>
-<description>Оперативная память 16 ГБ · Процессор Ryzen 5 7500F · Линейка процессора Ryzen 5</description>
+<description>Оперативная память 16 ГБ · Процессор AMD Ryzen 5 7500F · Линейка процессора Ryzen 5 · Тип накопителя SSD · Ёмкость 512 ГБ · Видеокарта RTX 5060 · Блок питания 700 Вт · Накопитель 512 ГБ</description>
 </offer>
 <offer id="ISFE326BF624" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/209976128734-sistemnii-blok-pulser-ryzen-5-7500f-37-g</url>
@@ -68529,7 +68554,7 @@
 <name>Системный блок Pulser Ryzen 5 7500F, 3.7 ГГц, B650, 32 ГБ ОЗУ, SSD 1 ТБ M.2, RTX 5060 Ti, 8 ГБ, без DVD, БП 750 Вт</name>
 <vendor>Pulser</vendor>
 <vendorCode>ISFE326BF624</vendorCode>
-<description>Оперативная память 32 ГБ · Процессор Ryzen 5 7500F · Линейка процессора Ryzen 5</description>
+<description>Оперативная память 32 ГБ · Процессор AMD Ryzen 5 7500F · Линейка процессора Ryzen 5 · Тип накопителя SSD · Ёмкость 1 ТБ · Видеокарта RTX 5060 Ti · Блок питания 750 Вт · Накопитель 1 ТБ</description>
 </offer>
 <offer id="IS032F43B0C2" available="true">
 <url>https://b2b.isoft-shop.kz/servery-i-shd/tproduct/355286935484-setevoe-hranilische-synology-diskstation</url>

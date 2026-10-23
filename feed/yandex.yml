@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<yml_catalog date="2026-10-23 07:04">
+<yml_catalog date="2026-10-23 10:17">
 <shop>
 <name>iSoft</name>
 <company>iSoft</company>
@@ -10765,17 +10765,6 @@
 <vendorCode>IS30EFAE6CA6</vendorCode>
 <description>Топология On-Line · Мощность 1000 ВА / 900 Вт · Розеток 4 · Размещение Напольный · Класс мощности до 1 кВА · Форма выходного сигнала Чистая синусоида · Время переключения 0 мс · Гарантия 2 года · Цвет Чёрный · Ёмкость батареи 12В/7Ач х 3</description>
 </offer>
-<offer id="IS31AC503FB5" available="true">
-<url>https://b2b.isoft-shop.kz/ibp-i-zashchita-pitaniya/tproduct/539118023054-ibp-svc-v-650-l-lcd</url>
-<price>26100</price>
-<currencyId>KZT</currencyId>
-<categoryId>622117808604</categoryId>
-<picture>https://static.tildacdn.com/stor3138-3435-4166-b138-333361313737/2cd7d8e36f4815ad1456d062ccf32171.jpg</picture>
-<name>ИБП SVC V-650-L-LCD</name>
-<vendor>SVC</vendor>
-<vendorCode>IS31AC503FB5</vendorCode>
-<description>Гарантия 1 год · Топология Линейно-интерактивный · Мощность 650 ВА / 390 Вт · Розеток 3 · Размещение Напольный · Форма выходного сигнала Ступенчатая синусоида · Время переключения 3 мс · Ёмкость батареи 12В/7.5Ач · Цвет Чёрный</description>
-</offer>
 <offer id="IS31EB8BACD7" available="true">
 <url>https://b2b.isoft-shop.kz/ibp-i-zashchita-pitaniya/tproduct/955362148704-ibp-svc-pt-3k-lcd</url>
 <price>196000</price>
@@ -11433,17 +11422,6 @@
 <vendor>APC</vendor>
 <vendorCode>IS6BB2169221</vendorCode>
 <description>Топология On-Line · Мощность 2000 ВА · Класс мощности 1–2,2 кВА</description>
-</offer>
-<offer id="IS6D2D1B11F5" available="true">
-<url>https://b2b.isoft-shop.kz/ibp-i-zashchita-pitaniya/tproduct/793372902534-ibp-cyberpower-uti875e</url>
-<price>26000</price>
-<currencyId>KZT</currencyId>
-<categoryId>622117808604</categoryId>
-<picture>https://static.tildacdn.com/stor6335-3537-4463-a132-316265633636/71bd1da0f3ee7b96235f6ebc3d485a18.jpg</picture>
-<name>ИБП CyberPower UTI875E</name>
-<vendor>CyberPower</vendor>
-<vendorCode>IS6D2D1B11F5</vendorCode>
-<description>Гарантия 1 год · Топология Линейно-интерактивный · Мощность 875 ВА / 425 Вт · Розеток 2 · Размещение Напольный · Ёмкость батареи 12В/5,5Ач · Цвет Чёрный</description>
 </offer>
 <offer id="IS6FE2174547" available="true">
 <url>https://b2b.isoft-shop.kz/ibp-i-zashchita-pitaniya/tproduct/798108535064-ibp-apc-ups-network-management-card-3-ap</url>

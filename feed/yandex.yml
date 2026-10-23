@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<yml_catalog date="2026-10-23 10:17">
+<yml_catalog date="2026-10-23 15:17">
 <shop>
 <name>iSoft</name>
 <company>iSoft</company>
@@ -1299,6 +1299,18 @@
 <vendor>Kingston</vendor>
 <vendorCode>IS83991B4CC7</vendorCode>
 <description>Форм-фактор MSATA · Ёмкость 256 ГБ · Интерфейс SATA III · Скорость чтения 550 МБ/с · Скорость записи 520 МБ/с</description>
+</offer>
+<offer id="IS83A938FBB6" available="true">
+<url>https://b2b.isoft-shop.kz/ssd-nakopiteli/tproduct/826204185324-ssd-ssd-nakopitel-gigabyte-g440e500g-500</url>
+<price>62000</price>
+<currencyId>KZT</currencyId>
+<categoryId>615429773604</categoryId>
+<picture>https://static.tildacdn.com/stor3836-3739-4562-b237-376437653366/a0c0d0e168bfb725a7a08a035fc2ffe5.jpg</picture>
+<picture>https://static.tildacdn.com/tild6238-3166-4533-b636-373464313739/826204185324_1.jpg</picture>
+<name>Ssd SSD-накопитель Gigabyte G440E500G 500GB M.2 2280 PCIe 4.0x4</name>
+<vendor>Gigabyte</vendor>
+<vendorCode>IS83A938FBB6</vendorCode>
+<description>Ёмкость 500 ГБ · Интерфейс PCIE 4.0 X4 · Форм-фактор M.2 2280 · Скорость чтения 3600 МБ/с · Скорость записи 3000 МБ/с</description>
 </offer>
 <offer id="IS87F8D548DD" available="true">
 <url>https://b2b.isoft-shop.kz/ssd-nakopiteli/tproduct/607296615264-tverdotelnii-nakopitel-ssd-kingston-skc6</url>
@@ -6555,6 +6567,17 @@
 <vendorCode>IS2E0BB12AF9</vendorCode>
 <description>Объём видеопамяти 8 ГБ · Графический процессор RTX 5060 · Серия видеокарты GeForce RTX 5000 · Разрядность шины 128 бит · Видеовыходы HDMI / DP x 3</description>
 </offer>
+<offer id="IS33FA010C10" available="true">
+<url>https://b2b.isoft-shop.kz/videokarty/tproduct/403559895754-videokarta-asus-dual-rtx5050-o8g-rtx5050</url>
+<price>277000</price>
+<currencyId>KZT</currencyId>
+<categoryId>784666503994</categoryId>
+<picture>https://static.tildacdn.com/tild3935-6635-4663-a664-353862613864/403559895754_1.jpg</picture>
+<name>Видеокарта ASUS DUAL-RTX5050-O8G, RTX5050, 8Gb GDDR6, 128bit, 2560 CUDA Core, DP, HDMI</name>
+<vendor>ASUS</vendor>
+<vendorCode>IS33FA010C10</vendorCode>
+<description>Видеовыходы HDMI / DP · Объём видеопамяти 8 ГБ · Тип видеопамяти GDDR6 · Графический процессор RTX 5050 · Разрядность шины 128 бит</description>
+</offer>
 <offer id="IS34222DC3C3" available="true">
 <url>https://b2b.isoft-shop.kz/videokarty/tproduct/136074627694-videokarta-gigabyte-amd-radeon-rx-9070-g</url>
 <price>486000</price>
@@ -11023,6 +11046,21 @@
 <vendorCode>IS4D34633609</vendorCode>
 <description>Топология On-Line · Мощность 1500 ВА / 1500 Вт · Розеток 6 · Размещение Напольный · Класс мощности 1–2,2 кВА · Форма выходного сигнала Синусоида · Время переключения 0 мс · Цвет Чёрный</description>
 </offer>
+<offer id="IS4E3633F0BB" available="true">
+<url>https://b2b.isoft-shop.kz/ibp-i-zashchita-pitaniya/tproduct/625753794564-ibp-apcsmt3000ic-8x-iec-c132x-iec-c19-ou</url>
+<price>886000</price>
+<currencyId>KZT</currencyId>
+<categoryId>622117808604</categoryId>
+<picture>https://static.tildacdn.com/stor6132-3961-4238-a231-363030303734/fed493fb40b872235f48e4e853081e0e.jpg</picture>
+<picture>https://static.tildacdn.com/tild6463-6461-4565-b631-313361623864/625753794564_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild3230-6239-4962-b137-333833333034/625753794564_2.jpg</picture>
+<picture>https://static.tildacdn.com/tild6235-3330-4837-b836-383965646464/128180152094_2.jpg</picture>
+<picture>https://static.tildacdn.com/tild6564-6138-4436-b935-373534633330/625753794564_4.jpg</picture>
+<name>ИБП APC/SMT3000IC 8x IEC C13+2x IEC C19 outlets, SmartConnect Port+SmartSlot, AVR, LCD/Smart/3 000 VA/2 700 W</name>
+<vendor>APC</vendor>
+<vendorCode>IS4E3633F0BB</vendorCode>
+<description>Класс мощности 3 кВА · Мощность 3000 ВА / 2700 Вт · Розеток 10 · Размещение Напольный</description>
+</offer>
 <offer id="IS4E88085D30" available="true">
 <url>https://b2b.isoft-shop.kz/ibp-i-zashchita-pitaniya/tproduct/297215414644-ibp-cyberpower-ols10000ert6u</url>
 <price>2057000</price>
@@ -12096,6 +12134,17 @@
 <vendor>Vertiv</vendor>
 <vendorCode>LI38000B020</vendorCode>
 <description>Партномер: LI38000B020</description>
+</offer>
+<offer id="IS9FE53263DE" available="true">
+<url>https://b2b.isoft-shop.kz/ibp-i-zashchita-pitaniya/tproduct/581782571004-ibp-cyberpower-vp1600elcd</url>
+<price>131000</price>
+<currencyId>KZT</currencyId>
+<categoryId>622117808604</categoryId>
+<picture>https://static.tildacdn.com/stor3239-3333-4163-a436-643731356530/fe3d728bc43fbfce5347b172a6a02d14.jpg</picture>
+<name>ИБП CyberPower VP1600ELCD</name>
+<vendor>CyberPower</vendor>
+<vendorCode>VP1600ELCD</vendorCode>
+<description>Полная мощность 1600 ВА, активная 960 Вт. Вольт-амперы показывают габарит прибора, а подключаемую технику считают по ваттам из её паспорта: их сумма не должна превышать 960 Вт. Такой запас берут под рабочую станцию с монитором или под пару обычных рабочих мест сразу. Линейно-интерактивный тип: небольшие просадки и скачки в сети прибор выправляет сам, не трогая заряд, а на батарею техника переходит только когда свет пропал совсем. На выходе пять розеток Schuko. Schuko — обычная европейская розетка, в неё компьютер, монитор или сетевой шкаф включаются без переходника. Внутри две батареи по 12 В на 9 А·ч. Стабилизатор напряжения, в спецификациях его обозначают AVR, держит выход в норме при входном от 167 до 295 В: пока сеть в этих границах, заряд батареи не расходуется. Управление идёт по USB и RS-232: по этому каналу сервер получает команду корректно завершить работу, пока заряд ещё есть. Телефонную линию и сетевой кабель заводят через разъёмы RJ-11 и RJ-45 — по ним скачок приходит так же, как по питанию, и защита их тоже прикрывает. Напольное исполнение. Показания выводит ЖК-экран. Корпус чёрный. · Партномер: VP1600ELCD</description>
 </offer>
 <offer id="ISA03D39FFC6" available="true">
 <url>https://b2b.isoft-shop.kz/ibp-i-zashchita-pitaniya/tproduct/624013557514-ibp-eaton-93pr-200kw-en</url>
@@ -16261,6 +16310,19 @@
 <vendor>HiLook</vendor>
 <vendorCode>IPC-D121HE-UC</vendorCode>
 <description>Антивандальный корпус класса IK10: удар до двадцати джоулей. Класс IK описывает удар, который корпус держит без разрушения; его берут туда, где до камеры дотянется рука. Купольное исполнение: полусфера под прозрачным колпаком. Колпак скрывает, в какую сторону камера смотрит, и меньше собирает пыль на стекле. Разрешение 2 Мп. Мегапиксели — это число точек в кадре: чем их больше, тем дальше от камеры можно узнать лицо или прочитать номер. Такого кадра хватает, чтобы видеть обстановку и движение; лицо на нём узнают с двух-трёх шагов, дальше — только силуэт. Зато архив за месяц занимает меньше всего места. Есть инфракрасная подсветка для съёмки в темноте. Инфракрасный свет глазу не виден: в темноте камера снимает чёрно-белым. Расширенный динамический диапазон (WDR): в кадре против света видно и тёмное, и светлое. Встроенная аналитика отделяет людей и транспорт от прочего движения. Есть встроенный микрофон. Поддерживает сжатие H.265+ — видеоархив занимает меньше места, чем при H.264. Сжатие определяет, сколько места займёт архив: при одном и том же качестве H.265 требует примерно вдвое меньше, чем H.264. Видеорегистратор обязан понимать тот же формат. Класс защиты корпуса IP67: пыль внутрь не попадает, выдерживает кратковременное погружение в воду. Две цифры после букв IP — это защищённость от пыли и от воды: первая отвечает за пыль, вторая за воду. Класс написан для закрытого корпуса, отверстие для кабеля герметизируют отдельно. · Партномер: IPC-D121HE-UC</description>
+</offer>
+<offer id="ISFC00296027" available="true">
+<url>https://b2b.isoft-shop.kz/videonablyudenie/tproduct/990299213804-ip-videokamera-dahua-dh-ipc-hdbw2841rp-z</url>
+<price>203000</price>
+<currencyId>KZT</currencyId>
+<categoryId>593618245944</categoryId>
+<picture>https://static.tildacdn.com/stor3432-3364-4362-b834-636461393862/0cb6e4adf26e137c3819c20277233eef.jpg</picture>
+<picture>https://static.tildacdn.com/tild3733-6138-4161-b933-666535613266/990299213804.jpg</picture>
+<picture>https://static.tildacdn.com/tild3734-6361-4233-a533-666439323264/990299213804_2.jpg</picture>
+<name>IP видеокамера Dahua DH-IPC-HDBW2841RP-ZAS-27135</name>
+<vendor>Dahua</vendor>
+<vendorCode>ISFC00296027</vendorCode>
+<description>Тип устройства IP-камера</description>
 </offer>
 <offer id="ISFC0455BAA2" available="true">
 <url>https://b2b.isoft-shop.kz/videonablyudenie/tproduct/553097411124-ip-videokamera-hilook-ipc-t249haa-lu</url>
@@ -29075,21 +29137,6 @@
 <vendorCode>IS89B8D8E231</vendorCode>
 <description>Сокет AM5 · Тип памяти DDR5 · Чипсет A620 · Форм-фактор Micro-ATX · Слотов памяти 4 · Видеовыходы HDMI / DP · Разъёмов M.2 1 · Разъёмов SATA 4 · Интерфейс SATA / PCI-E 3.0 / PCI-E 4.0</description>
 </offer>
-<offer id="IS8AA2931EB0" available="true">
-<url>https://b2b.isoft-shop.kz/materinskie-platy/tproduct/143581907674-materinskaya-plata-asus-tuf-gaming-b850</url>
-<price>161000</price>
-<currencyId>KZT</currencyId>
-<categoryId>248907277044</categoryId>
-<picture>https://static.tildacdn.com/stor6333-3833-4234-a661-626563346539/5b067d5a9a6ef819167f8eb1ef989687.png</picture>
-<picture>https://static.tildacdn.com/tild6330-3931-4665-b066-353933623533/126584135414_1.jpg</picture>
-<picture>https://static.tildacdn.com/tild3562-6339-4762-b337-633637636630/143581907674_2.jpg</picture>
-<picture>https://static.tildacdn.com/tild3533-6166-4233-b165-373534306464/143581907674_3.jpg</picture>
-<picture>https://static.tildacdn.com/tild3965-3538-4937-b563-656465383030/143581907674_4.jpg</picture>
-<name>Материнская плата ASUS TUF GAMING B850-PLUS WIFI, B850, AM5, 4xDDR5, PCI-E x16, PCI-E x1, M2, SATA</name>
-<vendor>ASUS</vendor>
-<vendorCode>IS8AA2931EB0</vendorCode>
-<description>Сокет AM5 · Чипсет B850 · Тип памяти DDR5 · Слотов памяти 4</description>
-</offer>
 <offer id="IS8C0B9CFAED" available="true">
 <url>https://b2b.isoft-shop.kz/materinskie-platy/tproduct/145584881044-materinskaya-plata-gigabyte-a520m-ds3h-v</url>
 <price>47000</price>
@@ -29302,6 +29349,19 @@
 <vendor>Gigabyte</vendor>
 <vendorCode>IS9EC336F9CF</vendorCode>
 <description>Форм-фактор Micro-ATX · Слотов памяти 4 · Сокет LGA1700 · Тип памяти DDR5 · Чипсет B760 · Видеовыходы HDMI / DP</description>
+</offer>
+<offer id="IS9F34E44173" available="true">
+<url>https://b2b.isoft-shop.kz/materinskie-platy/tproduct/428510677664-materinskaya-plata-gigabyte-b650m-gaming</url>
+<price>90000</price>
+<currencyId>KZT</currencyId>
+<categoryId>248907277044</categoryId>
+<picture>https://static.tildacdn.com/tild3031-6135-4337-b034-373338623666/428510677664_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild6437-3365-4535-b031-366339343462/428510677664_2.jpg</picture>
+<picture>https://static.tildacdn.com/tild3732-3864-4736-b038-356238313865/428510677664_3.jpg</picture>
+<name>Материнская плата Gigabyte B650M GAMING WIFI, Socket AM5, MATX, AMD B650 (D-Sub+HDMI), 2DDR5, PCIx16, PCIx1</name>
+<vendor>Gigabyte</vendor>
+<vendorCode>IS9F34E44173</vendorCode>
+<description>Слотов памяти 2 · Сокет AM5 · Тип памяти DDR5 · Форм-фактор Micro-ATX · Чипсет B650</description>
 </offer>
 <offer id="IS9F5B63C6E5" available="true">
 <url>https://b2b.isoft-shop.kz/materinskie-platy/tproduct/871538385944-materinskaya-plata-gigabyte-b850-eagle-w</url>
@@ -32364,21 +32424,6 @@
 <vendorCode>P27QDA-RGPGL</vendorCode>
 <description>P27QDA-RGPGL, 27", 2560x1440, IPS, 180 Гц, 16:9, 250 кд/м2, 1 мс, 1000:1, 178/178, 16.7 млн., VGA*1, DP*2, DC IN*1, VESA 75*75 мм, кабель DP в комплекте, Чёрный</description>
 </offer>
-<offer id="IS5734AB6F07" available="true">
-<url>https://b2b.isoft-shop.kz/monitory/tproduct/433629798564-monitor-acer-ek271p6bi-ek1-series-umhe1e</url>
-<price>65000</price>
-<currencyId>KZT</currencyId>
-<categoryId>929335537584</categoryId>
-<picture>https://static.tildacdn.com/stor3035-3332-4466-b239-323361646638/4bfb26c32e9afd3f78d7a7d99ed571c6.jpg</picture>
-<picture>https://static.tildacdn.com/tild3537-6566-4961-a561-343533303832/433629798564_1.jpg</picture>
-<picture>https://static.tildacdn.com/tild3464-6336-4566-a631-646366373337/433629798564_2.jpg</picture>
-<picture>https://static.tildacdn.com/tild3166-3331-4565-b064-316632666133/433629798564_3.jpg</picture>
-<picture>https://static.tildacdn.com/tild3865-6262-4934-b231-336333393563/433629798564_4.jpg</picture>
-<name>Монитор Acer EK271P6bi (EK1 Series) UM.HE1EE.601</name>
-<vendor>Acer</vendor>
-<vendorCode>IS5734AB6F07</vendorCode>
-<description>Время отклика 1 мс · Диагональ 27″ · Разрешение 1920×1080 · Тип матрицы IPS · Частота обновления 144 Гц · Яркость 250 кд/м² · Соотношение сторон 16:9 · Размер экрана 27–29″</description>
-</offer>
 <offer id="IS57B8053AAF" available="true">
 <url>https://b2b.isoft-shop.kz/monitory/tproduct/217544935194-monitor-dell-alienware-34-gaming-monitor</url>
 <price>453000</price>
@@ -32595,6 +32640,19 @@
 <vendor>Acer</vendor>
 <vendorCode>IS6536EC9AC2</vendorCode>
 <description>Время отклика 1 мс · Диагональ 31,5″ · Разрешение 1920×1080 · Тип матрицы VA · Яркость 300 кд/м² · VESA 100×100 · Размер экрана 31,5–32″ · Соотношение сторон 16:9</description>
+</offer>
+<offer id="IS66991954A5" available="true">
+<url>https://b2b.isoft-shop.kz/monitory/tproduct/341118560304-monitor-hp5-pro-524pf238-inchfull-hd1920</url>
+<price>100000</price>
+<currencyId>KZT</currencyId>
+<categoryId>929335537584</categoryId>
+<picture>https://static.tildacdn.com/tild6138-3333-4732-b838-386435346337/IS66991954A5.jpg</picture>
+<picture>https://static.tildacdn.com/tild3831-6236-4064-b032-626264336665/341118560304.jpg</picture>
+<picture>https://static.tildacdn.com/tild3436-6562-4630-a262-653837613238/341118560304_2.jpg</picture>
+<name>Монитор HP/5 Pro 524pf/23.8-inch/Full HD/1920x1080 Pix/1xDisplayPort/1xHDMI/1xUSB-B/4xUSB Type-A/5 ms/350 ANSI lum/1500:1/100 Hz 9D9L6UT#ABB</name>
+<vendor>HP</vendor>
+<vendorCode>IS66991954A5</vendorCode>
+<description>Время отклика 5 мс · Диагональ 23,8″ · Разрешение 1920×1080 · Частота обновления 100 Гц · Яркость 350 кд/м² · Размер экрана 23–24″ · Контрастность 1500:1</description>
 </offer>
 <offer id="IS677F77EDF3" available="true">
 <url>https://b2b.isoft-shop.kz/monitory/tproduct/461516883224-monitor-asus-pa27ucdmr</url>
@@ -33805,21 +33863,6 @@
 <vendorCode>90LM08E0-B01KB0</vendorCode>
 <description>Диагональ 27" · Партномер: 90LM08E0-B01KB0</description>
 </offer>
-<offer id="ISAAD83A1FE5" available="true">
-<url>https://b2b.isoft-shop.kz/monitory/tproduct/197457044634-monitor-acer-nitro-vg271um3bmiipx-umhv1e</url>
-<price>117000</price>
-<currencyId>KZT</currencyId>
-<categoryId>929335537584</categoryId>
-<picture>https://static.tildacdn.com/stor6134-6565-4530-b130-336635313634/48b9942df1ef545d6c594e31bf40f82d.jpg</picture>
-<picture>https://static.tildacdn.com/tild6162-3539-4135-b332-336664383030/197457044634_1.jpg</picture>
-<picture>https://static.tildacdn.com/tild6130-6635-4639-b032-336139653234/197457044634_2.jpg</picture>
-<picture>https://static.tildacdn.com/tild6338-3964-4664-b533-613233373332/197457044634_3.jpg</picture>
-<picture>https://static.tildacdn.com/tild6463-3834-4362-a666-376538393365/197457044634_4.jpg</picture>
-<name>Монитор Acer Nitro VG271UM3bmiipx UM.HV1EE.301</name>
-<vendor>Acer</vendor>
-<vendorCode>ISAAD83A1FE5</vendorCode>
-<description>Время отклика 1 мс · Диагональ 27″ · Разрешение 2560×1440 · Тип матрицы IPS · Частота обновления 180 Гц · Яркость 250 кд/м² · Размер экрана 27–29″</description>
-</offer>
 <offer id="ISAB77D84D4D" available="true">
 <url>https://b2b.isoft-shop.kz/monitory/tproduct/842819402134-monitor-aoc-20m1-27b3qa201</url>
 <price>61000</price>
@@ -34780,6 +34823,21 @@
 <vendorCode>ISD9D724B092</vendorCode>
 <description>Диагональ 27″ · Разрешение 3840×2160 · Тип матрицы IPS · Частота обновления 60 Гц · Время отклика 4 мс · Яркость 450 кд/м² · Соотношение сторон 16:9 · Угол обзора 178° · VESA 100×100 · Размер экрана 27–29″</description>
 </offer>
+<offer id="ISD9EC0B86B5" available="true">
+<url>https://b2b.isoft-shop.kz/monitory/tproduct/970667703594-monitor-hp5-pro-qhd-527pq27-inchqhd2560x</url>
+<price>158000</price>
+<currencyId>KZT</currencyId>
+<categoryId>929335537584</categoryId>
+<picture>https://static.tildacdn.com/tild3465-3931-4765-b730-613961376337/970667703594.jpg</picture>
+<picture>https://static.tildacdn.com/tild3066-3039-4433-b863-626331333862/970667703594_2.jpg</picture>
+<picture>https://static.tildacdn.com/tild3838-6139-4238-b336-396134653865/970667703594_3.jpg</picture>
+<picture>https://static.tildacdn.com/tild6331-6266-4638-a261-356139326361/970667703594_4.jpg</picture>
+<picture>https://static.tildacdn.com/tild6463-3039-4932-a464-393065313962/970667703594.jpg</picture>
+<name>Монитор HP/5 Pro QHD 527pq/27-inch/QHD/2560x1440 Pix/DisplayPort1.2/HDMI/USB-B/USB Type-A/5 ms/350 ANSI lum/1500:1/100 Hz 9D9S0UT#ABB</name>
+<vendor>HP</vendor>
+<vendorCode>ISD9EC0B86B5</vendorCode>
+<description>Время отклика 5 мс · Контрастность 1500:1 · Разрешение 2560×1440 · Частота обновления 100 Гц · Яркость 350 кд/м² · Диагональ 27″ · Размер экрана 27–29″</description>
+</offer>
 <offer id="ISDA2D71965F" available="true">
 <url>https://b2b.isoft-shop.kz/monitory/tproduct/130180515054-monitor-dell-pro-27-e2725hm-210-brdq</url>
 <price>81000</price>
@@ -34872,6 +34930,21 @@
 <vendor>Dell</vendor>
 <vendorCode>ISDE1844AFD2</vendorCode>
 <description>Разрешение 1920×1080 · Частота обновления 144 Гц · Диагональ 27″ · Тип матрицы IPS · Время отклика 1 мс · Яркость 300 кд/м² · Соотношение сторон 16:9 · VESA 100×100 · Размер экрана 27–29″</description>
+</offer>
+<offer id="ISDF2CEB72F5" available="true">
+<url>https://b2b.isoft-shop.kz/monitory/tproduct/276211964514-monitor-hps-5-pro-524pn24-inchwuxga1920x</url>
+<price>98000</price>
+<currencyId>KZT</currencyId>
+<categoryId>929335537584</categoryId>
+<picture>https://static.tildacdn.com/tild3734-3762-4362-b834-656132363865/276211964514.jpg</picture>
+<picture>https://static.tildacdn.com/tild6661-6338-4664-a234-636131366335/276211964514_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild6265-3935-4063-a464-356337396333/276211964514_2.jpg</picture>
+<picture>https://static.tildacdn.com/tild6162-6665-4636-b939-373439653637/276211964514_3.jpg</picture>
+<picture>https://static.tildacdn.com/tild3264-6636-4136-b437-313261643432/276211964514_4.jpg</picture>
+<name>Монитор HP/S 5 Pro 524pn/24-inch/WUXGA/1920x1200 Pix/HDMI/DP/USB hub/5 ms/350 ANSI lum/1500:1/100 Hz 9D9A7AA#ABB</name>
+<vendor>HP</vendor>
+<vendorCode>ISDF2CEB72F5</vendorCode>
+<description>Время отклика 5 мс · Диагональ 24″ · Разрешение 1920×1200 · Частота обновления 100 Гц · Яркость 350 кд/м² · Контрастность 1500:1 · Размер экрана 23–24″</description>
 </offer>
 <offer id="ISDFA5AAA82A" available="true">
 <url>https://b2b.isoft-shop.kz/monitory/tproduct/334340943394-monitor-asus-245-inch-rog-strix-xg259cms</url>
@@ -43536,7 +43609,7 @@
 <name>Ноутбук HP ProBook 4 G1a 16 UMA Ryze7 250 4 B9YM3ET, 16-inch G1a, 24GB (2x12GB) DDR5 5600 SODIMM Memory, 1TB PCIe NVMe Value, 1yw</name>
 <vendor>HP</vendor>
 <vendorCode>IS0156BDF8AB</vendorCode>
-<description>Bluetooth 5.4 · Wi-Fi Wi-Fi 7 · Видеокарта Встроенная · Диагональ 16″ · Камера IR + 5 Мп · Линейка процессора Ryzen 7 · Накопитель 1 ТБ · Оперативная память 24 ГБ · Операционная система Windows 11 Pro · Процессор Ryze7 250</description>
+<description>Bluetooth 5.4 · Wi-Fi Wi-Fi 7 · Видеокарта Встроенная · Диагональ 16″ · Камера IR + 5 Мп · Линейка процессора Ryzen 7 · Ёмкость 1 ТБ · Оперативная память 24 ГБ · Операционная система Windows 11 Pro · Процессор Ryze7 250</description>
 </offer>
 <offer id="IS024AE60750" available="true">
 <url>https://b2b.isoft-shop.kz/noutbuki/tproduct/555980874484-noutbuk-msi-crosshair-16-hx-e14wgk-005xk</url>
@@ -43918,21 +43991,6 @@
 <vendorCode>3WHK3KZC94SD</vendorCode>
 <description>GAMING A18 3WHK3KZC94SD, 9RGA8AB7WHKDJK0KZ000, 18", WQXGA 2560x1600, IPS, 165Hz, Ryen 7 260, 16GB DDR5, 1TB SSD Gen4, NVIDIA GeForce RTX5070, 8GB GDDR7, DOS, Черный</description>
 </offer>
-<offer id="IS1394C861AB" available="true">
-<url>https://b2b.isoft-shop.kz/noutbuki/tproduct/491220865904-noutbuk-asus-vivobook-16-x1607ca-mb155w</url>
-<price>745000</price>
-<currencyId>KZT</currencyId>
-<categoryId>293087419414</categoryId>
-<picture>https://static.tildacdn.com/tild6438-3133-4331-a230-356535386561/491220865904.jpg</picture>
-<picture>https://static.tildacdn.com/tild3034-3237-4463-b830-666434666366/491220865904.jpg</picture>
-<picture>https://static.tildacdn.com/tild6539-3939-4966-b134-646437373564/491220865904_2.jpg</picture>
-<picture>https://static.tildacdn.com/tild6139-3531-4565-b432-626430333861/491220865904_3.jpg</picture>
-<picture>https://static.tildacdn.com/tild3934-3265-4231-b561-396265366139/491220865904_4.jpg</picture>
-<name>Ноутбук ASUS VivoBook 16 X1607CA-MB155W, Core U5-225H-1.7/512GB SSD/16GB/16-inch WUXGA, WIN11</name>
-<vendor>ASUS</vendor>
-<vendorCode>IS1394C861AB</vendorCode>
-<description>Процессор Intel Core Ultra 5 225H · Оперативная память 16 ГБ · Ёмкость 512 ГБ · Видеокарта Встроенная · Операционная система Windows 11 · Линейка процессора Core Ultra 5 · Семья ОС Windows 11 · Тип накопителя SSD · Накопитель 512 ГБ · Диагональ 16″</description>
-</offer>
 <offer id="IS1679296B10" available="true">
 <url>https://b2b.isoft-shop.kz/noutbuki/tproduct/840289636064-noutbuk-lenovo-thinkpad-x1-carbon-gen-14</url>
 <price>2293000</price>
@@ -44228,6 +44286,20 @@
 <vendor>Lenovo</vendor>
 <vendorCode>IS316BB64551</vendorCode>
 <description>Диагональ 15,6″ · Оперативная память 8 ГБ · Процессор i3-1315U · Ёмкость 512 ГБ · Линейка процессора Core i3 / Core 3 · Тип накопителя SSD · Гарантия 2 года · Разрешение 1920×1080 · Видеокарта Встроенная</description>
+</offer>
+<offer id="IS31A45A9270" available="true">
+<url>https://b2b.isoft-shop.kz/noutbuki/tproduct/306506552564-noutbuk-hp-probook-4-g1ir-14-cz9b2atbja</url>
+<price>758000</price>
+<currencyId>KZT</currencyId>
+<categoryId>293087419414</categoryId>
+<picture>https://static.tildacdn.com/tild3438-6263-4532-b161-653431353831/306506552564.jpg</picture>
+<picture>https://static.tildacdn.com/tild3663-6435-4239-a533-323065363963/306506552564_2.jpg</picture>
+<picture>https://static.tildacdn.com/tild6666-3031-4739-b864-663330393863/306506552564_3.jpg</picture>
+<picture>https://static.tildacdn.com/tild6434-6535-4632-b538-626561656231/306506552564.jpg</picture>
+<name>Ноутбук HP ProBook 4 G1iR 14 CZ9B2AT#BJA, Core 5 120U, 16 Gb, PCIe NVMe SSD, 512 Gb, (Integrated), 14-inch, 1920x1200, silver</name>
+<vendor>HP</vendor>
+<vendorCode>IS31A45A9270</vendorCode>
+<description>Тип памяти DDR5 · Диагональ 14″ · Линейка процессора Core 5 · Ёмкость 512 ГБ · Оперативная память 16 ГБ · Операционная система Windows 11 · Семья ОС Windows 11 · Процессор Intel Core 5 120U · Разрешение 1920×1200 · Ёмкость батареи 56 Вт·ч</description>
 </offer>
 <offer id="IS33959E48B4" available="true">
 <url>https://b2b.isoft-shop.kz/noutbuki/tproduct/134803806224-noutbuk-asusexpertbook-p3406ccap-ly01401</url>
@@ -46689,17 +46761,6 @@
 <vendor>ASUS</vendor>
 <vendorCode>90NR0N61-M001D0</vendorCode>
 <description>Ноутбук линейки Asus ROG Strix G16. Процессор Intel Core i5-13450HX. Оперативной памяти 16 ГБ DDR5. Накопитель SSD на 1 ТБ. Экран 16 дюймов, 165 Гц. Видеокарта дискретная: NVIDIA GeForce RTX 5060. В комплекте DOS — операционную систему ставит покупатель. · Партномер: 90NR0N61-M001D0</description>
-</offer>
-<offer id="ISE7F2BCBA94" available="true">
-<url>https://b2b.isoft-shop.kz/noutbuki/tproduct/900656839074-noutbuk-acer-aspire-lite-al15-48p-nxdtbe</url>
-<price>414000</price>
-<currencyId>KZT</currencyId>
-<categoryId>293087419414</categoryId>
-<picture>https://static.tildacdn.com/tild6365-3232-4533-a231-633933316631/900656839074.jpg</picture>
-<name>Ноутбук Acer Aspire Lite AL15-48P NX.DTBER.001</name>
-<vendor>Acer</vendor>
-<vendorCode>ISE7F2BCBA94</vendorCode>
-<description>Диагональ 15,6″ · Оперативная память 8 ГБ · Операционная система без ОС · Процессор AMD Ryzen 7 5825U · Ёмкость 512 ГБ · Семья ОС Без ОС · Линейка процессора Ryzen 7 · Тип накопителя SSD · Разрешение 1920×1080 · Видеокарта Встроенная</description>
 </offer>
 <offer id="ISE7FBE5DCA9" available="true">
 <url>https://b2b.isoft-shop.kz/noutbuki/tproduct/279108038064-noutbuk-lenovo-thinkbook-16-gen-9core-7</url>
@@ -56084,6 +56145,19 @@
 <vendorCode>IS144D7E07B8</vendorCode>
 <description>Тип устройства Коммутатор · Портов 10 · Слотов SFP 2 · PoE Есть · Бюджет PoE 400 Вт · Уровень L3 · Управление Управляемый · Размещение В стойку · Класс по числу портов До 10 портов</description>
 </offer>
+<offer id="IS146DACE521" available="true">
+<url>https://b2b.isoft-shop.kz/setevoe-oborudovanie/tproduct/839074288914-kommutator-mikrotik-crs310-8g2sin</url>
+<price>139000</price>
+<currencyId>KZT</currencyId>
+<categoryId>737078043964</categoryId>
+<picture>https://static.tildacdn.com/stor3235-3137-4161-a332-616237646565/7b876ddcda97e0689d30fb0c21d19562.jpg</picture>
+<picture>https://static.tildacdn.com/tild3162-6131-4639-b537-313237356436/839074288914_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild3561-6661-4338-b034-303438663563/839074288914_2.jpg</picture>
+<name>Коммутатор MikroTik CRS310-8G+2S+IN</name>
+<vendor>MikroTik</vendor>
+<vendorCode>IS146DACE521</vendorCode>
+<description>Тип устройства Коммутатор · Портов 5 · Скорость 2.5G · Слотов SFP 2 · Класс по числу портов До 10 портов</description>
+</offer>
 <offer id="IS14FB7BDDEC" available="true">
 <url>https://b2b.isoft-shop.kz/setevoe-oborudovanie/tproduct/242855457424-kommutator-d-link-dgs-1100-26mpv2a3a</url>
 <price>212000</price>
@@ -60333,6 +60407,17 @@
 <vendorCode>ISD369B25811</vendorCode>
 <description>Тип устройства Коммутатор · Портов 24 · Скорость 10/100/1000 Мбит/с · Уровень L2 · Управление Управляемый · Размещение В стойку · Класс по числу портов 23–40 портов · PoE Есть · Бюджет PoE 100 Вт</description>
 </offer>
+<offer id="ISD41194E41D" available="true">
+<url>https://b2b.isoft-shop.kz/setevoe-oborudovanie/tproduct/170547879744-kommutator-hikvision-ds-3e1526p-eim</url>
+<price>147000</price>
+<currencyId>KZT</currencyId>
+<categoryId>737078043964</categoryId>
+<picture>https://static.tildacdn.com/stor6139-3165-4237-a562-643061356431/eeb1ad445f3f6bb58e93bb64e4c322a6.jpg</picture>
+<name>Коммутатор Hikvision DS-3E1526P-EI/M</name>
+<vendor>Hikvision</vendor>
+<vendorCode>ISD41194E41D</vendorCode>
+<description>Тип устройства Коммутатор · Портов 25 · Скорость 10/100/1000 Мбит/с · Уровень L2 · Управление Управляемый · Размещение В стойку · Класс по числу портов 23–40 портов · PoE Есть · Бюджет PoE 230 Вт</description>
+</offer>
 <offer id="ISD455AC568D" available="true">
 <url>https://b2b.isoft-shop.kz/setevoe-oborudovanie/tproduct/229476137564-kommutator-bdcom-s1500-8p2g</url>
 <price>32000</price>
@@ -61672,6 +61757,21 @@
 <vendorCode>IS5528F6DB12</vendorCode>
 <description>Тип устройства Проводная сетевая карта · Интерфейс PCIe x8 · Скорость 10G · Скорость порта 10 Гбит/с</description>
 </offer>
+<offer id="IS5E1CB95561" available="true">
+<url>https://b2b.isoft-shop.kz/setevye-karty/tproduct/525593176164-setevoi-adapter-tp-link-archer-tx20e</url>
+<price>28000</price>
+<currencyId>KZT</currencyId>
+<categoryId>822913095254</categoryId>
+<picture>https://static.tildacdn.com/stor3434-6561-4733-a162-306533313765/feddc0a25f68724e4f54b31b639c3039.jpg</picture>
+<picture>https://static.tildacdn.com/tila6535-6366-4332-b537-616238306263/525593176164_1.jpg</picture>
+<picture>https://static.tildacdn.com/tila3530-3439-4931-a564-633733393437/525593176164_2.jpg</picture>
+<picture>https://static.tildacdn.com/tila3736-6437-4536-b635-623231363964/525593176164_3.jpg</picture>
+<picture>https://static.tildacdn.com/tila6661-3339-4938-b833-366633633639/525593176164_4.jpg</picture>
+<name>Сетевой адаптер TP-Link Archer TX20E</name>
+<vendor>TP-Link</vendor>
+<vendorCode>IS5E1CB95561</vendorCode>
+<description>Тип устройства Wi-Fi адаптер · Интерфейс PCIe · Стандарт Wi-Fi Wi-Fi 6</description>
+</offer>
 <offer id="IS5ECCE35957" available="true">
 <url>https://b2b.isoft-shop.kz/setevye-karty/tproduct/856770393774-setevaya-karta-tp-link-tl-wn881nd</url>
 <price>12000</price>
@@ -62486,6 +62586,19 @@
 <vendor>Dell</vendor>
 <vendorCode>ISC2E6E7AB4B</vendorCode>
 <description>Форм-фактор Tower · Процессор Core i5/14500 · Оперативная память 8 ГБ · Ёмкость 256 ГБ · Тип накопителя SSD · Wi-Fi Wi-Fi 6E · Операционная система Windows 11 Pro · Семья ОС Windows 11 · Линейка процессора Core i5</description>
+</offer>
+<offer id="ISC8F5139A62" available="true">
+<url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/425182938064-sistemnii-blok-workstation-dell-pro-max</url>
+<price>1428000</price>
+<currencyId>KZT</currencyId>
+<categoryId>763638053684</categoryId>
+<picture>https://static.tildacdn.com/tild3664-6338-4261-a538-663861623732/396628416664.jpg</picture>
+<picture>https://static.tildacdn.com/tild3765-3664-4130-b939-346639626436/425182938064.jpg</picture>
+<picture>https://static.tildacdn.com/tild6163-6538-4538-a234-306233383430/425182938064_2.jpg</picture>
+<name>Системный блок Workstation Dell Pro Max T2 FCT2250 210-BPSN_BTO112_FCT2250_EMEA</name>
+<vendor>Dell</vendor>
+<vendorCode>ISC8F5139A62</vendorCode>
+<description>Тип памяти DDR5 · Линейка процессора Core Ultra 9 · Ёмкость 1024 ГБ · Оперативная память 32 ГБ · Операционная система Windows 11 · Семья ОС Windows 11 · Процессор Intel Core Ultra 9 285 · Накопитель 1024 ГБ · Форм-фактор Tower · Видеокарта Встроенная</description>
 </offer>
 <offer id="ISCC173327CB" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/671790306004-platforma-rabochei-stantsii-supermicro-s</url>

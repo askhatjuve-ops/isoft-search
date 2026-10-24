@@ -1,4 +1,28 @@
 /* ish-nav.js v1 · вынесено из общего HEAD проекта (П20, 16.10.2026) побайтно; логика не менялась. Подключение: синхронный <script src> на месте прежнего inline-блока. */
+/* ish_internal: метка «наш браузер» для GA4/Метрики вместо фильтра по IP (24.10.2026). ?ish_internal=1 - включить, =0 - снять; хранится в localStorage. Без метки ничего не делает. */
+function ishInternalMark(W) {
+  try {
+    if (W.__ishInternalDone) return !!W.__ishInternal;
+    W.__ishInternalDone = 1;
+    var f = false, m = /[?&]ish_internal=([01])(?:&|#|$)/.exec(W.location.search || '');
+    try {
+      if (m) { if (m[1] === '1') W.localStorage.setItem('ish_internal', '1'); else W.localStorage.removeItem('ish_internal'); }
+      f = W.localStorage.getItem('ish_internal') === '1';
+    } catch (e) { f = !!(m && m[1] === '1'); }
+    if (!f) return false;
+    W.__ishInternal = 1;
+    W.dataLayer = W.dataLayer || [];
+    var dl = W.dataLayer, mk = function () { return arguments; };
+    try {                                            /* до первого config, если gtag.js ещё не разобрал очередь: тогда помечен и page_view */
+      for (var i = 0; i < dl.length; i++) {
+        if (dl[i] && dl[i][0] === 'config') { dl.splice(i, 0, mk('set', { traffic_type: 'internal' })); break; }
+      }
+    } catch (e) {}
+    dl.push(mk('set', { traffic_type: 'internal' }));  /* и в конец: помечает все последующие события, даже если очередь уже разобрана */
+    return true;
+  } catch (e) { return false; }
+}
+ishInternalMark(window);
 (function () {
   'use strict';
   if (window.__isoftNav) return;

@@ -1,4 +1,4 @@
-/* ish-design-p28.js  v4  (22.10.2026: + цели download_price, download_details («Скачать», p42); v3: + цель companion_add («С этим покупают», p41); v2: + цели Метрики/GA4 с короткими именами form_invoice, form_kp, form_podbor, form_request, click_whatsapp, click_telegram, open_request, search_assortiment - без параметров формы, см. goal())  [v1 16.10.2026]  П28 «события аналитики + проверка БИН/ИИН» b2b.isoft-shop.kz
+/* ish-design-p28.js  v5  (24.10.2026: + метка «наш браузер» ?ish_internal=1 -> traffic_type=internal в GA4 и params internal в Метрике; v4: 22.10.2026: + цели download_price, download_details («Скачать», p42); v3: + цель companion_add («С этим покупают», p41); v2: + цели Метрики/GA4 с короткими именами form_invoice, form_kp, form_podbor, form_request, click_whatsapp, click_telegram, open_request, search_assortiment - без параметров формы, см. goal())  [v1 16.10.2026]  П28 «события аналитики + проверка БИН/ИИН» b2b.isoft-shop.kz
    Внешний слой. Грузится из ish-design-p4.js (строка в README). В Tilda ничего не пишет, чужие обработчики не заменяет.
    Выключатели: window.ISH_P28_OFF = 1 - всё; window.ISH_P28_SKIP = 'events,bin' - по частям.
 
@@ -17,6 +17,32 @@
   var tag = D.currentScript || D.querySelector('script[src*="ish-design-p28.js"]');
   var SKIP = ',' + String(W.ISH_P28_SKIP || '').replace(/\s+/g, '') + ',';
   function on(m) { return SKIP.indexOf(',' + m + ',') < 0; }
+/* ish_internal: метка «наш браузер» для GA4/Метрики вместо фильтра по IP (24.10.2026). ?ish_internal=1 - включить, =0 - снять; хранится в localStorage. Без метки ничего не делает. */
+function ishInternalMark(W) {
+  try {
+    if (W.__ishInternalDone) return !!W.__ishInternal;
+    W.__ishInternalDone = 1;
+    var f = false, m = /[?&]ish_internal=([01])(?:&|#|$)/.exec(W.location.search || '');
+    try {
+      if (m) { if (m[1] === '1') W.localStorage.setItem('ish_internal', '1'); else W.localStorage.removeItem('ish_internal'); }
+      f = W.localStorage.getItem('ish_internal') === '1';
+    } catch (e) { f = !!(m && m[1] === '1'); }
+    if (!f) return false;
+    W.__ishInternal = 1;
+    W.dataLayer = W.dataLayer || [];
+    var dl = W.dataLayer, mk = function () { return arguments; };
+    try {                                            /* до первого config, если gtag.js ещё не разобрал очередь: тогда помечен и page_view */
+      for (var i = 0; i < dl.length; i++) {
+        if (dl[i] && dl[i][0] === 'config') { dl.splice(i, 0, mk('set', { traffic_type: 'internal' })); break; }
+      }
+    } catch (e) {}
+    dl.push(mk('set', { traffic_type: 'internal' }));  /* и в конец: помечает все последующие события, даже если очередь уже разобрана */
+    return true;
+  } catch (e) { return false; }
+}
+  ishInternalMark(W);
+  function ishParams(p) { if (W.__ishInternal) { var o = {}; Object.keys(p).forEach(function (k) { o[k] = p[k]; }); o.traffic_type = 'internal'; return o; } return p; }
+  (function ymMark() { if (!W.__ishInternal) return; var n = 0; (function t() { try { if (typeof W.ym === 'function') { W.ym(Number(W.mainMetrikaId) || 111859133, 'params', { internal: 1 }); return; } } catch (e) { return; } if (++n < 10) setTimeout(t, 1000); })(); })();
   function q(s, r) { return (r || D).querySelector(s); }
   function qa(s, r) { return [].slice.call((r || D).querySelectorAll(s)); }
   function tx(e) { return e ? (e.textContent || '').replace(/\s+/g, ' ').trim() : ''; }
@@ -71,7 +97,7 @@
     var now = Date.now(), gap = dedupeMs == null ? 700 : dedupeMs;
     if (last[key] && now - last[key] < gap) return;
     last[key] = now;
-    try { if (typeof W.gtag === 'function') W.gtag('event', name, p); } catch (e) {}
+    try { if (typeof W.gtag === 'function') W.gtag('event', name, ishParams(p)); } catch (e) {}
     try { if (typeof W.ym === 'function') W.ym(Number(W.mainMetrikaId) || YM_FALLBACK, 'reachGoal', name, p); } catch (e) {}
   }
   /* 22.10: цели для Метрики/GA4 - короткие имена, БЕЗ параметров (только путь страницы в GA4). Никаких значений полей формы. */
@@ -81,7 +107,7 @@
     var k = 'g|' + name, now = Date.now(), g = gap == null ? 1500 : gap;
     if (last[k] && now - last[k] < g) return;
     last[k] = now;
-    try { if (typeof W.gtag === 'function') W.gtag('event', name, { page_path: (location.pathname || '/').slice(0, 120) }); } catch (e) {}
+    try { if (typeof W.gtag === 'function') W.gtag('event', name, ishParams({ page_path: (location.pathname || '/').slice(0, 120) })); } catch (e) {}
     try { if (typeof W.ym === 'function') W.ym(Number(W.mainMetrikaId) || YM_FALLBACK, 'reachGoal', name); } catch (e) {}
   }
   function formGoal(form) {

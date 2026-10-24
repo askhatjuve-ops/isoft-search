@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<yml_catalog date="2026-10-23 23:30">
+<yml_catalog date="2026-10-24 07:25">
 <shop>
 <name>iSoft</name>
 <company>iSoft</company>
@@ -57,106 +57,6 @@
 <category id="667674530784">Шкафы и стойки</category>
 </categories>
 <offers>
-<offer id="IS1D221373EE" available="true">
-<url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/432908466204-mish-attack-shark-r2-optical-paw3950-420</url>
-<price>51000</price>
-<currencyId>KZT</currencyId>
-<picture>https://static.tildacdn.com/tild6237-3132-4562-b733-643961393238/IS1D221373EE_1.jpg</picture>
-<name>Мышь Attack Shark R2, optical, PAW3950, 42000 DPI, BT/2.4 GHz/USB, 8000 Hz, Magnesium Alloy, Black</name>
-<vendor>ATTACK SHARK</vendor>
-<vendorCode>IS1D221373EE</vendorCode>
-<description>Мышь Attack Shark R2, optical, PAW3950, 42000 DPI, BT/2.4 GHz/USB, 8000 Hz, Magnesium Alloy, Black (ATTACK SHARK)</description>
-</offer>
-<offer id="IS1D50B8548D" available="true">
-<url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/639099748744-mish-attack-shark-x11-se-black-optical-2</url>
-<price>16000</price>
-<currencyId>KZT</currencyId>
-<picture>https://static.tildacdn.com/tild3531-3239-4431-b138-343733383936/IS1D50B8548D_1.jpg</picture>
-<name>Мышь ATTACK SHARK X11 SE Black, Optical 22000 dpi, BT/2.4GHz/USB, Black</name>
-<vendor>ATTACK SHARK</vendor>
-<vendorCode>IS1D50B8548D</vendorCode>
-<description>Мышь ATTACK SHARK X11 SE Black, Optical 22000 dpi, BT/2.4GHz/USB, Black (ATTACK SHARK)</description>
-</offer>
-<offer id="IS22E80CAE24" available="true">
-<url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/596264028184-mish-attack-shark-r2-optical-paw3950-420</url>
-<price>51000</price>
-<currencyId>KZT</currencyId>
-<picture>https://static.tildacdn.com/tild3766-3963-4633-b664-306134613663/IS22E80CAE24_1.png</picture>
-<name>Мышь Attack Shark R2, optical, PAW3950, 42000 DPI, BT/2.4 GHz/USB, 8000 Hz, Magnesium Alloy, White</name>
-<vendor>ATTACK SHARK</vendor>
-<vendorCode>IS22E80CAE24</vendorCode>
-<description>Мышь Attack Shark R2, optical, PAW3950, 42000 DPI, BT/2.4 GHz/USB, 8000 Hz, Magnesium Alloy, White (ATTACK SHARK)</description>
-</offer>
-<offer id="IS4ACE302A05" available="true">
-<url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/699168123094-mish-attack-shark-r5-ultra-green-optical</url>
-<price>42000</price>
-<currencyId>KZT</currencyId>
-<picture>https://static.tildacdn.com/tild3966-6366-4165-b735-353832306266/IS4ACE302A05_1.jpg</picture>
-<name>Мышь ATTACK SHARK R5 Ultra Green, Optical 42000 dpi, BT/2.4GHz/USB, Green</name>
-<vendor>ATTACK SHARK</vendor>
-<vendorCode>IS4ACE302A05</vendorCode>
-<description>Мышь ATTACK SHARK R5 Ultra Green, Optical 42000 dpi, BT/2.4GHz/USB, Green (ATTACK SHARK)</description>
-</offer>
-<offer id="IS802B2023F8" available="true">
-<url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/752558669384-mish-attack-shark-x1-optical-paw3395pro</url>
-<price>28000</price>
-<currencyId>KZT</currencyId>
-<picture>https://static.tildacdn.com/tild3931-6336-4330-b133-383131393736/IS802B2023F8_1.jpg</picture>
-<name>Мышь Attack Shark X1, optical, PAW3395PRO, 40000 DPI, BT/2.4 GHz/USB, RGB Charging Dock, Red</name>
-<vendor>ATTACK SHARK</vendor>
-<vendorCode>IS802B2023F8</vendorCode>
-<description>Мышь Attack Shark X1, optical, PAW3395PRO, 40000 DPI, BT/2.4 GHz/USB, RGB Charging Dock, Red (ATTACK SHARK)</description>
-</offer>
-<offer id="IS92A24C59B1" available="true">
-<url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/283861220574-mish-attack-shark-x1-optical-paw3395pro</url>
-<price>28000</price>
-<currencyId>KZT</currencyId>
-<picture>https://static.tildacdn.com/tild3161-3036-4137-a134-363166363435/IS92A24C59B1_1.png</picture>
-<name>Мышь Attack Shark X1, optical, PAW3395PRO, 40000 DPI, BT/2.4 GHz/USB, RGB Charging Dock, White</name>
-<vendor>ATTACK SHARK</vendor>
-<vendorCode>IS92A24C59B1</vendorCode>
-<description>Мышь Attack Shark X1, optical, PAW3395PRO, 40000 DPI, BT/2.4 GHz/USB, RGB Charging Dock, White (ATTACK SHARK)</description>
-</offer>
-<offer id="ISABA09E7B4C" available="true">
-<url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/318558568114-mish-attack-shark-r5-ultra-red-optical-4</url>
-<price>43000</price>
-<currencyId>KZT</currencyId>
-<picture>https://static.tildacdn.com/tild3735-6164-4637-a561-343932643733/ISABA09E7B4C_1.jpg</picture>
-<name>Мышь ATTACK SHARK R5 Ultra Red, Optical 42000 dpi, BT/2.4GHz/USB, Red</name>
-<vendor>ATTACK SHARK</vendor>
-<vendorCode>ISABA09E7B4C</vendorCode>
-<description>Мышь ATTACK SHARK R5 Ultra Red, Optical 42000 dpi, BT/2.4GHz/USB, Red (ATTACK SHARK)</description>
-</offer>
-<offer id="ISBFEE4318C2" available="true">
-<url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/602553442114-mish-attack-shark-g3-optical-paw3311-bt2</url>
-<price>16000</price>
-<currencyId>KZT</currencyId>
-<picture>https://static.tildacdn.com/tila3732-3861-4062-a564-363065313364/ISBFEE4318C2_1.png</picture>
-<name>Мышь Attack Shark G3, optical, PAW3311, BT/2.4 GHz/USB, Berry Red</name>
-<vendor>ATTACK SHARK</vendor>
-<vendorCode>ISBFEE4318C2</vendorCode>
-<description>Мышь Attack Shark G3, optical, PAW3311, BT/2.4 GHz/USB, Berry Red (ATTACK SHARK)</description>
-</offer>
-<offer id="ISE5A4AAA2EB" available="true">
-<url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/415399845994-mish-attack-shark-x1-optical-paw3395pro</url>
-<price>28000</price>
-<currencyId>KZT</currencyId>
-<picture>https://static.tildacdn.com/tila3739-3263-4536-b931-623836306561/ISE5A4AAA2EB_1.jpg</picture>
-<name>Мышь Attack Shark X1, optical, PAW3395PRO, 40000 DPI, BT/2.4 GHz/USB, RGB Charging Dock, Black</name>
-<vendor>ATTACK SHARK</vendor>
-<vendorCode>ISE5A4AAA2EB</vendorCode>
-<description>Мышь Attack Shark X1, optical, PAW3395PRO, 40000 DPI, BT/2.4 GHz/USB, RGB Charging Dock, Black (ATTACK SHARK)</description>
-</offer>
-<offer id="ISF16FD0022B" available="true">
-<url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/706784344114-mish-attack-shark-v6-optical-paw3311-250</url>
-<price>16000</price>
-<currencyId>KZT</currencyId>
-<picture>https://static.tildacdn.com/tila6532-3331-4566-a664-653261356232/ISF16FD0022B_1.jpg</picture>
-<name>Мышь Attack Shark V6, optical, PAW3311, 25000 DPI, BT/2.4 GHz/USB, RGB Charging Dock, Berry Red</name>
-<vendor>ATTACK SHARK</vendor>
-<vendorCode>ISF16FD0022B</vendorCode>
-<description>Мышь Attack Shark V6, optical, PAW3311, 25000 DPI, BT/2.4 GHz/USB, RGB Charging Dock, Berry Red (ATTACK SHARK)</description>
-</offer>
 <offer id="IS0ED359C120" available="true">
 <url>https://b2b.isoft-shop.kz/konferenc-svyaz/tproduct/109905298814-ip-telefon-grandstream-grp2612</url>
 <price>32000</price>
@@ -40453,6 +40353,28 @@
 <vendorCode>IS1C872E6865</vendorCode>
 <description>Тип устройства мышь · Подключение Беспроводное · Тип сенсора Оптический · Цвет Чёрный · Разрешение сенсора 3200 dpi · Кнопок 6 · Гарантия 1 год</description>
 </offer>
+<offer id="IS1D221373EE" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/432908466204-mish-attack-shark-r2-optical-paw3950-420</url>
+<price>51000</price>
+<currencyId>KZT</currencyId>
+<categoryId>816235379434</categoryId>
+<picture>https://static.tildacdn.com/tild6237-3132-4562-b733-643961393238/IS1D221373EE_1.jpg</picture>
+<name>Мышь Attack Shark R2, optical, PAW3950, 42000 DPI, BT/2.4 GHz/USB, 8000 Hz, Magnesium Alloy, Black</name>
+<vendor>ATTACK SHARK</vendor>
+<vendorCode>IS1D221373EE</vendorCode>
+<description>Подключение Беспроводное · Разрешение сенсора 42000 dpi · Тип сенсора Оптический · Тип устройства мышь · Цвет Чёрный</description>
+</offer>
+<offer id="IS1D50B8548D" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/639099748744-mish-attack-shark-x11-se-black-optical-2</url>
+<price>16000</price>
+<currencyId>KZT</currencyId>
+<categoryId>816235379434</categoryId>
+<picture>https://static.tildacdn.com/tild3531-3239-4431-b138-343733383936/IS1D50B8548D_1.jpg</picture>
+<name>Мышь ATTACK SHARK X11 SE Black, Optical 22000 dpi, BT/2.4GHz/USB, Black</name>
+<vendor>ATTACK SHARK</vendor>
+<vendorCode>IS1D50B8548D</vendorCode>
+<description>Подключение Беспроводное · Разрешение сенсора 22000 dpi · Тип сенсора Оптический · Тип устройства мышь · Цвет Чёрный</description>
+</offer>
 <offer id="IS1E69C870A1" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/770829234194-kompyuternaya-mish-glorious-series-one-p</url>
 <price>51000</price>
@@ -40542,6 +40464,17 @@
 <vendor>Glorious</vendor>
 <vendorCode>IS22D8ED4B47</vendorCode>
 <description>Тип устройства мышь · Подключение Проводное · Тип сенсора Оптический · Цвет Чёрный · Разрешение сенсора 19000 dpi · Кнопок 9 · Гарантия 2 года · Назначение Игровая · Длина кабеля 2 м · Подсветка RGB</description>
+</offer>
+<offer id="IS22E80CAE24" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/596264028184-mish-attack-shark-r2-optical-paw3950-420</url>
+<price>51000</price>
+<currencyId>KZT</currencyId>
+<categoryId>816235379434</categoryId>
+<picture>https://static.tildacdn.com/tild3766-3963-4633-b664-306134613663/IS22E80CAE24_1.png</picture>
+<name>Мышь Attack Shark R2, optical, PAW3950, 42000 DPI, BT/2.4 GHz/USB, 8000 Hz, Magnesium Alloy, White</name>
+<vendor>ATTACK SHARK</vendor>
+<vendorCode>IS22E80CAE24</vendorCode>
+<description>Подключение Беспроводное · Разрешение сенсора 42000 dpi · Тип сенсора Оптический · Тип устройства мышь · Цвет Белый</description>
 </offer>
 <offer id="IS2362D1F8D5" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/836339739324-mish-dell-premier-rechargeable-mouse-ms9</url>
@@ -41601,6 +41534,17 @@
 <vendor>Logitech</vendor>
 <vendorCode>IS4A77C163AA</vendorCode>
 <description>Подключение Беспроводное · Разрешение сенсора 4000 dpi · Тип сенсора Оптический · Тип устройства мышь · Цвет Чёрный</description>
+</offer>
+<offer id="IS4ACE302A05" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/699168123094-mish-attack-shark-r5-ultra-green-optical</url>
+<price>42000</price>
+<currencyId>KZT</currencyId>
+<categoryId>816235379434</categoryId>
+<picture>https://static.tildacdn.com/tild3966-6366-4165-b735-353832306266/IS4ACE302A05_1.jpg</picture>
+<name>Мышь ATTACK SHARK R5 Ultra Green, Optical 42000 dpi, BT/2.4GHz/USB, Green</name>
+<vendor>ATTACK SHARK</vendor>
+<vendorCode>IS4ACE302A05</vendorCode>
+<description>Подключение Беспроводное · Разрешение сенсора 42000 dpi · Тип сенсора Оптический · Тип устройства мышь · Цвет Зелёный</description>
 </offer>
 <offer id="IS4B1D4350A3" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/445395881804-mish-canyon-mouse-mw-9-dual-mode-wireles</url>
@@ -42948,6 +42892,17 @@
 <vendorCode>IS8017D40B59</vendorCode>
 <description>Подключение Беспроводное · Тип устройства мышь</description>
 </offer>
+<offer id="IS802B2023F8" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/752558669384-mish-attack-shark-x1-optical-paw3395pro</url>
+<price>28000</price>
+<currencyId>KZT</currencyId>
+<categoryId>816235379434</categoryId>
+<picture>https://static.tildacdn.com/tild3931-6336-4330-b133-383131393736/IS802B2023F8_1.jpg</picture>
+<name>Мышь Attack Shark X1, optical, PAW3395PRO, 40000 DPI, BT/2.4 GHz/USB, RGB Charging Dock, Red</name>
+<vendor>ATTACK SHARK</vendor>
+<vendorCode>IS802B2023F8</vendorCode>
+<description>Подключение Беспроводное · Разрешение сенсора 40000 dpi · Тип сенсора Оптический · Тип устройства мышь · Цвет Красный</description>
+</offer>
 <offer id="IS80FAC50568" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/171382606854-mish-attack-shark-r11-ultra-phantom-shar</url>
 <price>43000</price>
@@ -43433,6 +43388,17 @@
 <vendor>Rapoo</vendor>
 <vendorCode>IS9219866E99</vendorCode>
 <description>Тип устройства мышь · Подключение Проводное · Тип сенсора Оптический · Цвет Чёрный · Разрешение сенсора 1600 dpi · Кнопок 4 · Гарантия 1 год · Длина кабеля 1,5 м · Назначение Игровая · Материал Пластик</description>
+</offer>
+<offer id="IS92A24C59B1" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/283861220574-mish-attack-shark-x1-optical-paw3395pro</url>
+<price>28000</price>
+<currencyId>KZT</currencyId>
+<categoryId>816235379434</categoryId>
+<picture>https://static.tildacdn.com/tild3161-3036-4137-a134-363166363435/IS92A24C59B1_1.png</picture>
+<name>Мышь Attack Shark X1, optical, PAW3395PRO, 40000 DPI, BT/2.4 GHz/USB, RGB Charging Dock, White</name>
+<vendor>ATTACK SHARK</vendor>
+<vendorCode>IS92A24C59B1</vendorCode>
+<description>Подключение Беспроводное · Разрешение сенсора 40000 dpi · Тип сенсора Оптический · Тип устройства мышь · Цвет Белый</description>
 </offer>
 <offer id="IS9372BAB106" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/711795924424-kompyuternaya-mish-delux-dlm-136oub</url>
@@ -44054,6 +44020,17 @@
 <vendorCode>ISAA26859311</vendorCode>
 <description>Тип устройства мышь · Цвет Синий · Гарантия 1 год · Подключение Беспроводное · Разрешение сенсора 1000 dpi</description>
 </offer>
+<offer id="ISABA09E7B4C" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/318558568114-mish-attack-shark-r5-ultra-red-optical-4</url>
+<price>43000</price>
+<currencyId>KZT</currencyId>
+<categoryId>816235379434</categoryId>
+<picture>https://static.tildacdn.com/tild3735-6164-4637-a561-343932643733/ISABA09E7B4C_1.jpg</picture>
+<name>Мышь ATTACK SHARK R5 Ultra Red, Optical 42000 dpi, BT/2.4GHz/USB, Red</name>
+<vendor>ATTACK SHARK</vendor>
+<vendorCode>ISABA09E7B4C</vendorCode>
+<description>Подключение Беспроводное · Разрешение сенсора 42000 dpi · Тип сенсора Оптический · Тип устройства мышь · Цвет Красный</description>
+</offer>
 <offer id="ISABB6ED0189" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/422261082094-mish-attack-shark-x6-white-charging-dock</url>
 <price>25000</price>
@@ -44522,6 +44499,17 @@
 <vendor>Dell</vendor>
 <vendorCode>ISBFCD040802</vendorCode>
 <description>Тип устройства мышь · Цвет Чёрный · Подключение Беспроводное · Тип сенсора Оптический · Кнопок 4 · Гарантия 3 года · Разрешение сенсора 6000 dpi</description>
+</offer>
+<offer id="ISBFEE4318C2" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/602553442114-mish-attack-shark-g3-optical-paw3311-bt2</url>
+<price>16000</price>
+<currencyId>KZT</currencyId>
+<categoryId>816235379434</categoryId>
+<picture>https://static.tildacdn.com/tila3732-3861-4062-a564-363065313364/ISBFEE4318C2_1.png</picture>
+<name>Мышь Attack Shark G3, optical, PAW3311, BT/2.4 GHz/USB, Berry Red</name>
+<vendor>ATTACK SHARK</vendor>
+<vendorCode>ISBFEE4318C2</vendorCode>
+<description>Подключение Беспроводное · Тип сенсора Оптический · Тип устройства мышь · Цвет Красный</description>
 </offer>
 <offer id="ISC01A1985E4" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/322459076064-kompyuternaya-mish-rapoo-mt560-pale-gree</url>
@@ -45410,6 +45398,17 @@
 <vendorCode>ISE4E13E30F7</vendorCode>
 <description>Тип устройства мышь · Цвет Чёрный · Подключение Беспроводное · Разрешение сенсора 3200 dpi</description>
 </offer>
+<offer id="ISE5A4AAA2EB" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/415399845994-mish-attack-shark-x1-optical-paw3395pro</url>
+<price>28000</price>
+<currencyId>KZT</currencyId>
+<categoryId>816235379434</categoryId>
+<picture>https://static.tildacdn.com/tila3739-3263-4536-b931-623836306561/ISE5A4AAA2EB_1.jpg</picture>
+<name>Мышь Attack Shark X1, optical, PAW3395PRO, 40000 DPI, BT/2.4 GHz/USB, RGB Charging Dock, Black</name>
+<vendor>ATTACK SHARK</vendor>
+<vendorCode>ISE5A4AAA2EB</vendorCode>
+<description>Подключение Беспроводное · Разрешение сенсора 40000 dpi · Тип сенсора Оптический · Тип устройства мышь · Цвет Чёрный</description>
+</offer>
 <offer id="ISE5A9E359B7" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/135567662674-mish-besprovodnaya-logitech-m171-black-c</url>
 <price>5800</price>
@@ -45787,6 +45786,17 @@
 <vendor>AJAZZ</vendor>
 <vendorCode>ISF1365F51B2</vendorCode>
 <description>Тип устройства мышь · Цвет Белый · Подключение Беспроводное · Тип сенсора Оптический · Назначение Игровая · Гарантия 1 год · Разрешение сенсора 12800 dpi</description>
+</offer>
+<offer id="ISF16FD0022B" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/706784344114-mish-attack-shark-v6-optical-paw3311-250</url>
+<price>16000</price>
+<currencyId>KZT</currencyId>
+<categoryId>816235379434</categoryId>
+<picture>https://static.tildacdn.com/tila6532-3331-4566-a664-653261356232/ISF16FD0022B_1.jpg</picture>
+<name>Мышь Attack Shark V6, optical, PAW3311, 25000 DPI, BT/2.4 GHz/USB, RGB Charging Dock, Berry Red</name>
+<vendor>ATTACK SHARK</vendor>
+<vendorCode>ISF16FD0022B</vendorCode>
+<description>Подключение Беспроводное · Разрешение сенсора 25000 dpi · Тип сенсора Оптический · Тип устройства мышь · Цвет Красный</description>
 </offer>
 <offer id="ISF22D28F7FA" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/899076583694-kompyuternaya-mish-zowie-fk2-dw-9hn4mbea</url>
@@ -53053,7 +53063,7 @@
 <name>Оперативная память Apacer Panther AH5U16G60C6227BAA-1 DDR5 16GB</name>
 <vendor>Apacer</vendor>
 <vendorCode>AH5U16G60C6227BAA-1</vendorCode>
-<description>Тип памяти DDR5 · Объём 16 ГБ · Частота 6000 МГц · Форм-фактор DIMM · Модулей в комплекте 1 · Партномер: AH5U16G60C6227BAA-1</description>
+<description>Оперативная память Apacer AH5U16G60C6227BAA-1: Тип памяти DDR5 · Объём 16 ГБ · Частота 6000 МГц · Форм-фактор DIMM · Модулей в комплекте 1. Цена с НДС, безналичный расчёт для организаций.</description>
 </offer>
 <offer id="IS06EFC3C0E2" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/162063912794-operativnaya-pamyat-kingston-fury-beast</url>
@@ -53065,7 +53075,7 @@
 <name>Оперативная память Kingston FURY Beast RGB XMP KF560C36BBE-8 DDR5 8GB 6000MHz</name>
 <vendor>Kingston</vendor>
 <vendorCode>KF560C36BBE-8</vendorCode>
-<description>Тип памяти DDR5 · Объём 8 ГБ · Частота 6000 МГц · Форм-фактор DIMM · Модулей в комплекте 1 · Партномер: KF560C36BBE-8</description>
+<description>Оперативная память Kingston KF560C36BBE-8: Тип памяти DDR5 · Объём 8 ГБ · Частота 6000 МГц · Форм-фактор DIMM · Модулей в комплекте 1. Цена с НДС, безналичный расчёт для организаций.</description>
 </offer>
 <offer id="IS07BBCB1137" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/351830579364-operativnaya-pamyat-dimm-ddr5-8-gb-5600m</url>
@@ -53102,7 +53112,7 @@
 <name>Оперативная память DIMM DDR5 16384MBx2 5200MHz Kingston Fury Beast Black CN</name>
 <vendor>Kingston</vendor>
 <vendorCode>KF552C40BBK2-32</vendorCode>
-<description>Тип памяти DDR5 · Объём 32 ГБ · Частота 5200 МГц · Форм-фактор DIMM · Модулей в комплекте 2 · Партномер: KF552C40BBK2-32</description>
+<description>Оперативная память Kingston KF552C40BBK2-32: Тип памяти DDR5 · Объём 32 ГБ · Частота 5200 МГц · Форм-фактор DIMM · Модулей в комплекте 2. Цена с НДС, безналичный расчёт для организаций.</description>
 </offer>
 <offer id="IS0AE0BE9D23" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/174184054104-operativnaya-pamyat-lexar-ld4au008g-b320</url>
@@ -53160,7 +53170,7 @@
 <name>Оперативная память DIMM DDR5 16 ГБ 5600MHz Crucial CN</name>
 <vendor>Crucial</vendor>
 <vendorCode>CT16G56C46U5</vendorCode>
-<description>Тип памяти DDR5 · Объём 16 ГБ · Частота 5600 МГц · Форм-фактор DIMM · Партномер: CT16G56C46U5</description>
+<description>Оперативная память Crucial CT16G56C46U5: Тип памяти DDR5 · Объём 16 ГБ · Частота 5600 МГц · Форм-фактор DIMM. Цена с НДС, безналичный расчёт для организаций.</description>
 </offer>
 <offer id="IS151EDCC33F" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/560422824174-operativnaya-pamyat-synology-d4ec-2666-1</url>
@@ -53206,7 +53216,7 @@
 <name>Оперативная память для ноутбука AGI SO DIMM DDR4, 16Gb, 3200MHz, CL22, 1.2v, AGI320016SD138-ST ОЕМ</name>
 <vendor>AGI</vendor>
 <vendorCode>AGI320016SD138-ST</vendorCode>
-<description>Тип памяти DDR4 · Объём 16 ГБ · Частота 3200 МГц · Форм-фактор SO-DIMM · Партномер: AGI320016SD138-ST</description>
+<description>Оперативная память AGI AGI320016SD138-ST: Тип памяти DDR4 · Объём 16 ГБ · Частота 3200 МГц · Форм-фактор SO-DIMM. Цена с НДС, безналичный расчёт для организаций.</description>
 </offer>
 <offer id="IS1D6BAFB5F4" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/463757329824-operativnaya-pamyat-kingston-dram-32gb-5</url>
@@ -53239,7 +53249,7 @@
 <name>Набор модулей памяти Team Group T-FORCE DELTA RGB, DIMM DDR5, 64Gb, 6000MHz, FF3D564G6000HC38JDC01</name>
 <vendor>Team_Group</vendor>
 <vendorCode>FF3D564G6000HC38JDC01</vendorCode>
-<description>Тип памяти DDR5 · Объём 64 ГБ · Частота 6000 МГц · Форм-фактор DIMM · Партномер: FF3D564G6000HC38JDC01</description>
+<description>Оперативная память Team_Group FF3D564G6000HC38JDC01: Тип памяти DDR5 · Объём 64 ГБ · Частота 6000 МГц · Форм-фактор DIMM. Цена с НДС, безналичный расчёт для организаций.</description>
 </offer>
 <offer id="IS221BB58FCB" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/530981235974-operativnaya-pamyat-ram-16gb-ddr4-3200-e</url>
@@ -53285,7 +53295,7 @@
 <name>Оперативная память DIMM DDR4 16GB 3200MHz Kingston Fury Beast Black RGB</name>
 <vendor>Kingston</vendor>
 <vendorCode>KF432C16BB12A/16WP</vendorCode>
-<description>Тип памяти DDR4 · Объём 16 ГБ · Частота 3200 МГц · Форм-фактор DIMM · Модулей в комплекте 1 · Партномер: KF432C16BB12A/16WP</description>
+<description>Оперативная память Kingston KF432C16BB12A/16WP: Тип памяти DDR4 · Объём 16 ГБ · Частота 3200 МГц · Форм-фактор DIMM · Модулей в комплекте 1. Цена с НДС, безналичный расчёт для организаций.</description>
 </offer>
 <offer id="IS2DE5371289" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/736978412884-pamyat-dimm-ddr5-16-gb-6000mhz-apacer-pa</url>
@@ -53298,7 +53308,7 @@
 <name>Память DIMM DDR5 16 ГБ 6000MHz Apacer PANTHER RGB 40-40-40-96</name>
 <vendor>Apacer</vendor>
 <vendorCode>AH5U16G60C6229BAA-1</vendorCode>
-<description>Модуль памяти, Apacer, Panther RGB AH5U16G60C6229BAA-1, DDR5, 16GB, CL38, 1.35V, DIMM</description>
+<description>Оперативная память Apacer AH5U16G60C6229BAA-1: Модуль памяти, Apacer, Panther RGB AH5U16G60C6229BAA-1, DDR5, 16GB, CL38, 1.35V, DIMM. Цена с НДС, безналичный расчёт для организаций.</description>
 </offer>
 <offer id="IS2E02ADBEC5" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/132055732154-komplekt-modulei-pamyati-kingston-fury-b</url>
@@ -53378,7 +53388,7 @@
 <name>Оперативная память Apacer FL.32G2C.PKH 32GB DDR5 5600MHz</name>
 <vendor>Apacer</vendor>
 <vendorCode>FL.32G2C.PKH</vendorCode>
-<description>Тип памяти DDR5 · Объём 32 ГБ · Частота 5600 МГц · Форм-фактор DIMM · Модулей в комплекте 1 · Партномер: FL.32G2C.PKH</description>
+<description>Оперативная память Apacer FL.32G2C.PKH: Тип памяти DDR5 · Объём 32 ГБ · Частота 5600 МГц · Форм-фактор DIMM · Модулей в комплекте 1. Цена с НДС, безналичный расчёт для организаций.</description>
 </offer>
 <offer id="IS389DE65B1D" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/181254338854-operativnaya-pamyat-netac-basic-so-ddr4</url>
@@ -53521,7 +53531,7 @@
 <name>Оперативная память Lexar LD4AU016G-B3200GSST DDR4 16GB</name>
 <vendor>Lexar</vendor>
 <vendorCode>LD4AU016G-B3200GSST</vendorCode>
-<description>Тип памяти DDR4 · Объём 16 ГБ · Частота 3200 МГц · Форм-фактор DIMM · Модулей в комплекте 1 · Партномер: LD4AU016G-B3200GSST</description>
+<description>Оперативная память Lexar LD4AU016G-B3200GSST: Тип памяти DDR4 · Объём 16 ГБ · Частота 3200 МГц · Форм-фактор DIMM · Модулей в комплекте 1. Цена с НДС, безналичный расчёт для организаций.</description>
 </offer>
 <offer id="IS5146C61FF4" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/748924573184-operativnaya-pamyat-dimm-ddr4-32-gb-3000</url>
@@ -53589,7 +53599,7 @@
 <name>Оперативная память DIMM DDR4 8 ГБ PC25600 3200MHz Kingston Fury Beast Black</name>
 <vendor>Kingston</vendor>
 <vendorCode>KF432C16BB/8WP</vendorCode>
-<description>Тип памяти DDR4 · Объём 8 ГБ · Частота 3200 МГц · Форм-фактор DIMM · Модулей в комплекте 1 · Партномер: KF432C16BB/8WP</description>
+<description>Оперативная память Kingston KF432C16BB/8WP: Тип памяти DDR4 · Объём 8 ГБ · Частота 3200 МГц · Форм-фактор DIMM · Модулей в комплекте 1. Цена с НДС, безналичный расчёт для организаций.</description>
 </offer>
 <offer id="IS5F5464DC16" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/175900698634-komplekt-modulei-pamyati-kingston-kf556c</url>
@@ -53615,7 +53625,7 @@
 <name>DELL 32GB RDIMM/3200MT/s/ Dual Rank/8Gb BASE x4/Customer Kit 370-AEXZ</name>
 <vendor>Dell</vendor>
 <vendorCode>370-AEXZ</vendorCode>
-<description>Объём 32 ГБ · Частота 3200 МГц · Форм-фактор RDIMM · Партномер: 370-AEXZ</description>
+<description>Оперативная память Dell 370-AEXZ: Объём 32 ГБ · Частота 3200 МГц · Форм-фактор RDIMM. Цена с НДС, безналичный расчёт для организаций.</description>
 </offer>
 <offer id="IS60317CE779" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/749452378994-operativnaya-pamyat-so-dimm-ddr3-8-gb-16</url>
@@ -53650,7 +53660,7 @@
 <name>Оперативная память DIMM DDR5 16 ГБ 5600MHz Apacer CL40</name>
 <vendor>Apacer</vendor>
 <vendorCode>FL.16G2C.PKH</vendorCode>
-<description>Тип памяти DDR5 · Объём 16 ГБ · Частота 5600 МГц · Форм-фактор DIMM · Модулей в комплекте 1 · Партномер: FL.16G2C.PKH</description>
+<description>Оперативная память Apacer FL.16G2C.PKH: Тип памяти DDR5 · Объём 16 ГБ · Частота 5600 МГц · Форм-фактор DIMM · Модулей в комплекте 1. Цена с НДС, безналичный расчёт для организаций.</description>
 </offer>
 <offer id="IS6214B683B9" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/779673514154-operativnaya-pamyat-so-dimm-ddr4-32-gb-l</url>
@@ -53676,7 +53686,7 @@
 <name>Оперативная память Kingston FURY Beast KF432C16BB1/16 DDR4 16GB 3200MHz</name>
 <vendor>Kingston</vendor>
 <vendorCode>KF432C16BB1/16</vendorCode>
-<description>Тип памяти DDR4 · Объём 16 ГБ · Частота 3200 МГц · Форм-фактор DIMM · Модулей в комплекте 1 · Партномер: KF432C16BB1/16</description>
+<description>Оперативная память Kingston KF432C16BB1/16: Тип памяти DDR4 · Объём 16 ГБ · Частота 3200 МГц · Форм-фактор DIMM · Модулей в комплекте 1. Цена с НДС, безналичный расчёт для организаций.</description>
 </offer>
 <offer id="IS64892169EA" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/340411010934-operativnaya-pamyat-dimm-ddr5-16gb-5600m</url>
@@ -53688,7 +53698,7 @@
 <name>Оперативная память DIMM DDR5 16gb 5600Mhz Netac Basic 16 ГБ C46</name>
 <vendor>NETAC</vendor>
 <vendorCode>NTBSD5P56SP-16</vendorCode>
-<description>Тип памяти DDR5 · Объём 16 ГБ · Частота 5600 МГц · Форм-фактор DIMM · Партномер: NTBSD5P56SP-16</description>
+<description>Оперативная память NETAC NTBSD5P56SP-16: Тип памяти DDR5 · Объём 16 ГБ · Частота 5600 МГц · Форм-фактор DIMM. Цена с НДС, безналичный расчёт для организаций.</description>
 </offer>
 <offer id="IS656E3EA58A" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/859249119024-operativnaya-pamyat-dimm-ddr4-16gbx2-320</url>
@@ -53703,7 +53713,7 @@
 <name>Оперативная память DIMM DDR4 16GBx2 3200MHz Kingston Fury Beast Black RGB CN</name>
 <vendor>Kingston</vendor>
 <vendorCode>KF432C16BB12AK2/32</vendorCode>
-<description>Тип памяти DDR4 · Объём 32 ГБ · Частота 3200 МГц · Форм-фактор DIMM · Модулей в комплекте 2 · Партномер: KF432C16BB12AK2/32</description>
+<description>Оперативная память Kingston KF432C16BB12AK2/32: Тип памяти DDR4 · Объём 32 ГБ · Частота 3200 МГц · Форм-фактор DIMM · Модулей в комплекте 2. Цена с НДС, безналичный расчёт для организаций.</description>
 </offer>
 <offer id="IS66D21B9FC9" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/316933320004-operativnaya-pamyat-kingston-32gb-5600mt</url>
@@ -53843,7 +53853,7 @@
 <name>Оперативная память Apacer EL.16G21.GSH</name>
 <vendor>Apacer</vendor>
 <vendorCode>EL.16G21.GSH</vendorCode>
-<description>Тип памяти DDR4 · Объём 16 ГБ · Частота 3200 МГц · Форм-фактор DIMM · Модулей в комплекте 1 · Партномер: EL.16G21.GSH</description>
+<description>Оперативная память Apacer EL.16G21.GSH: Тип памяти DDR4 · Объём 16 ГБ · Частота 3200 МГц · Форм-фактор DIMM · Модулей в комплекте 1. Цена с НДС, безналичный расчёт для организаций.</description>
 </offer>
 <offer id="IS79E2B886CC" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/200605874174-operativnaya-pamyat-corsair-ddr4-3200mhz</url>
@@ -53866,7 +53876,7 @@
 <name>Оперативная память DIMM DDR4 16GB 3200MHz T-Force Elite</name>
 <vendor>Team_Group</vendor>
 <vendorCode>TED416G3200C2201</vendorCode>
-<description>Тип памяти DDR4 · Объём 16 ГБ · Частота 3200 МГц · Форм-фактор DIMM · Партномер: TED416G3200C2201</description>
+<description>Оперативная память Team_Group TED416G3200C2201: Тип памяти DDR4 · Объём 16 ГБ · Частота 3200 МГц · Форм-фактор DIMM. Цена с НДС, безналичный расчёт для организаций.</description>
 </offer>
 <offer id="IS84E64E706D" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/664829919984-operativnaya-pamyat-lexar-ld5u16g56c46st</url>
@@ -53878,7 +53888,7 @@
 <name>Оперативная память Lexar LD5U16G56C46ST-BGS DDR5 16GB</name>
 <vendor>Lexar</vendor>
 <vendorCode>LD5U16G56C46ST-BGS</vendorCode>
-<description>Тип памяти DDR5 · Объём 16 ГБ · Частота 5600 МГц · Форм-фактор DIMM · Модулей в комплекте 1 · Партномер: LD5U16G56C46ST-BGS</description>
+<description>Оперативная память Lexar LD5U16G56C46ST-BGS: Тип памяти DDR5 · Объём 16 ГБ · Частота 5600 МГц · Форм-фактор DIMM · Модулей в комплекте 1. Цена с НДС, безналичный расчёт для организаций.</description>
 </offer>
 <offer id="IS85149DA2F1" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/211208811324-operativnaya-pamyat-corsair-ddr4-3200mhz</url>
@@ -53936,7 +53946,7 @@
 <name>Оперативная память Apacer Panther RGB AH5U32G52C5229BAA-1 DDR5 32GB</name>
 <vendor>Apacer</vendor>
 <vendorCode>AH5U32G52C5229BAA-1</vendorCode>
-<description>Тип памяти DDR5 · Объём 32 ГБ · Частота 5200 МГц · Форм-фактор DIMM · Модулей в комплекте 1 · Партномер: AH5U32G52C5229BAA-1</description>
+<description>Оперативная память Apacer AH5U32G52C5229BAA-1: Тип памяти DDR5 · Объём 32 ГБ · Частота 5200 МГц · Форм-фактор DIMM · Модулей в комплекте 1. Цена с НДС, безналичный расчёт для организаций.</description>
 </offer>
 <offer id="IS8B884848F2" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/722842279004-operativnaya-pamyat-dimm-ddr4-32-gb-kit</url>
@@ -54041,7 +54051,7 @@
 <name>Оперативная память 8GB 5600MHz DDR5 Team Group ELITE 44800MB/s CL46 1.1V</name>
 <vendor>Team_Group</vendor>
 <vendorCode>TED58G5600C4601</vendorCode>
-<description>Тип памяти DDR5 · Объём 8 ГБ · Частота 5600 МГц · Форм-фактор DIMM · Партномер: TED58G5600C4601</description>
+<description>Оперативная память Team_Group TED58G5600C4601: Тип памяти DDR5 · Объём 8 ГБ · Частота 5600 МГц · Форм-фактор DIMM. Цена с НДС, безналичный расчёт для организаций.</description>
 </offer>
 <offer id="IS977A1025F9" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/801734808994-operativnaya-pamyat-dimm-ddr5-16-gb-5600</url>
@@ -54065,7 +54075,7 @@
 <name>Оперативная память Apacer Panther AH5U16G52C5227BAA-1 DDR5 16GB</name>
 <vendor>Apacer</vendor>
 <vendorCode>AH5U16G52C5227BAA-1</vendorCode>
-<description>Тип памяти DDR5 · Объём 16 ГБ · Частота 5200 МГц · Форм-фактор DIMM · Модулей в комплекте 1 · Партномер: AH5U16G52C5227BAA-1</description>
+<description>Оперативная память Apacer AH5U16G52C5227BAA-1: Тип памяти DDR5 · Объём 16 ГБ · Частота 5200 МГц · Форм-фактор DIMM · Модулей в комплекте 1. Цена с НДС, безналичный расчёт для организаций.</description>
 </offer>
 <offer id="IS989EF5035E" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/923801643504-operativnaya-pamyat-corsair-vengeance-rg</url>
@@ -54099,7 +54109,7 @@
 <name>ОЗУ Team Group DELTA RGB, 32Gb (16x2) DDR 5, 6000 MHz, 1.25В, CL38, FF3D532G6000HC38ADC01</name>
 <vendor>Team_Group</vendor>
 <vendorCode>FF3D532G6000HC38ADC01</vendorCode>
-<description>Тип памяти DDR5 · Объём 32 ГБ · Частота 6000 МГц · Партномер: FF3D532G6000HC38ADC01</description>
+<description>Оперативная память Team_Group FF3D532G6000HC38ADC01: Тип памяти DDR5 · Объём 32 ГБ · Частота 6000 МГц. Цена с НДС, безналичный расчёт для организаций.</description>
 </offer>
 <offer id="IS9C332EA943" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/336603583614-modul-operativnoi-pamyati-crucial-pro-di</url>
@@ -54110,7 +54120,7 @@
 <name>Модуль оперативной памяти Crucial PRO DIMM DDR5, 16Gb, 5600Mts, CL46, 1.1v, CP16G56C46U5</name>
 <vendor>Crucial</vendor>
 <vendorCode>CP16G56C46U5</vendorCode>
-<description>Тип памяти DDR5 · Объём 16 ГБ · Частота 5600 МГц · Форм-фактор DIMM · Партномер: CP16G56C46U5</description>
+<description>Оперативная память Crucial CP16G56C46U5: Тип памяти DDR5 · Объём 16 ГБ · Частота 5600 МГц · Форм-фактор DIMM. Цена с НДС, безналичный расчёт для организаций.</description>
 </offer>
 <offer id="IS9C840BBD63" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/383849475354-nabor-modulei-pamyati-kingston-beast-bla</url>
@@ -54148,7 +54158,7 @@
 <name>Оперативная память DDR5 G.SKILL RIPJAWS M5 64GB 6000MHz F5-6000J3238G32GX2-RM5RK</name>
 <vendor>G.SKILL</vendor>
 <vendorCode>F5-6000J3238G32GX2-RM5RK</vendorCode>
-<description>Тип памяти DDR5 · Объём 64 ГБ · Частота 6000 МГц · Форм-фактор DIMM · Модулей в комплекте 2 · Партномер: F5-6000J3238G32GX2-RM5RK</description>
+<description>Оперативная память G.SKILL F5-6000J3238G32GX2-RM5RK: Тип памяти DDR5 · Объём 64 ГБ · Частота 6000 МГц · Форм-фактор DIMM · Модулей в комплекте 2. Цена с НДС, безналичный расчёт для организаций.</description>
 </offer>
 <offer id="ISA583598350" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/551607865784-operativnaya-pamyat-team-group-teamgroup</url>
@@ -54185,7 +54195,7 @@
 <name>Оперативная память DIMM DDR4 16384MBx2 3200MHz Kingston Fury Beast Black</name>
 <vendor>Kingston</vendor>
 <vendorCode>KF432C16BB1K2/32</vendorCode>
-<description>Тип памяти DDR4 · Объём 32 ГБ · Частота 3200 МГц · Форм-фактор DIMM · Модулей в комплекте 2 · Партномер: KF432C16BB1K2/32</description>
+<description>Оперативная память Kingston KF432C16BB1K2/32: Тип памяти DDR4 · Объём 32 ГБ · Частота 3200 МГц · Форм-фактор DIMM · Модулей в комплекте 2. Цена с НДС, безналичный расчёт для организаций.</description>
 </offer>
 <offer id="ISA843D1DB66" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/806413647564-operativnaya-pamyat-dimm-ecc-ddr4-16-gb</url>
@@ -54234,7 +54244,7 @@
 <name>Оперативная память SODIMM DDR5 32 ГБ 4800MHz Kingston FURY Impact CN</name>
 <vendor>Kingston</vendor>
 <vendorCode>KF548S38IB-32</vendorCode>
-<description>Тип памяти DDR5 · Объём 32 ГБ · Частота 4800 МГц · Форм-фактор SO-DIMM · Модулей в комплекте 1 · Партномер: KF548S38IB-32</description>
+<description>Оперативная память Kingston KF548S38IB-32: Тип памяти DDR5 · Объём 32 ГБ · Частота 4800 МГц · Форм-фактор SO-DIMM · Модулей в комплекте 1. Цена с НДС, безналичный расчёт для организаций.</description>
 </offer>
 <offer id="ISADFC8FE64E" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/906675855364-operativnaya-pamyat-corsair-vengeance-dd</url>
@@ -54269,7 +54279,7 @@
 <name>Модуль памяти Team Group T-Force Delta RGB 16Gb DDR5 6000MHz FF3D516G6000HC38A01</name>
 <vendor>Team_Group</vendor>
 <vendorCode>FF3D516G6000HC38A01</vendorCode>
-<description>Тип памяти DDR5 · Объём 16 ГБ · Частота 6000 МГц · Партномер: FF3D516G6000HC38A01</description>
+<description>Оперативная память Team_Group FF3D516G6000HC38A01: Тип памяти DDR5 · Объём 16 ГБ · Частота 6000 МГц. Цена с НДС, безналичный расчёт для организаций.</description>
 </offer>
 <offer id="ISB94E7DF170" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/600550785154-operativnaya-pamyat-corsair-ddr4-3200mhz</url>
@@ -54353,7 +54363,7 @@
 <name>Оперативная память DIMM DDR5 8192MBx2 5200MHz Kingston Fury Beast Black CN</name>
 <vendor>Kingston</vendor>
 <vendorCode>KF552C40BBK2-16</vendorCode>
-<description>Тип памяти DDR5 · Объём 16 ГБ · Частота 5200 МГц · Форм-фактор DIMM · Модулей в комплекте 2 · Партномер: KF552C40BBK2-16</description>
+<description>Оперативная память Kingston KF552C40BBK2-16: Тип памяти DDR5 · Объём 16 ГБ · Частота 5200 МГц · Форм-фактор DIMM · Модулей в комплекте 2. Цена с НДС, безналичный расчёт для организаций.</description>
 </offer>
 <offer id="ISC4973A9D5F" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/908179313794-operativnaya-pamyat-apacer-nox-tuf-ah5u1</url>
@@ -54366,7 +54376,7 @@
 <name>Оперативная память Apacer NOX TUF AH5U16G60C622UTAA-1 DDR5 16GB</name>
 <vendor>Apacer</vendor>
 <vendorCode>AH5U16G60C622UTAA-1</vendorCode>
-<description>Тип памяти DDR5 · Объём 16 ГБ · Частота 6000 МГц · Форм-фактор DIMM · Модулей в комплекте 1 · Партномер: AH5U16G60C622UTAA-1</description>
+<description>Оперативная память Apacer AH5U16G60C622UTAA-1: Тип памяти DDR5 · Объём 16 ГБ · Частота 6000 МГц · Форм-фактор DIMM · Модулей в комплекте 1. Цена с НДС, безналичный расчёт для организаций.</description>
 </offer>
 <offer id="ISC609600096" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/447410891534-operativnaya-pamyat-dlya-noutbuka-apacer</url>
@@ -54592,7 +54602,7 @@
 <name>Комплект модулей памяти Kingston FURY Beast KF432C16BB1K2/32WP DDR4 32GB (2x16GB) 3200MHz Чёрный</name>
 <vendor>Kingston</vendor>
 <vendorCode>KF432C16BB1K2/32WP</vendorCode>
-<description>Тип памяти DDR4 · Объём 32 ГБ · Частота 3200 МГц · Форм-фактор DIMM · Модулей в комплекте 2 · Партномер: KF432C16BB1K2/32WP</description>
+<description>Оперативная память Kingston KF432C16BB1K2/32WP: Тип памяти DDR4 · Объём 32 ГБ · Частота 3200 МГц · Форм-фактор DIMM · Модулей в комплекте 2. Цена с НДС, безналичный расчёт для организаций.</description>
 </offer>
 <offer id="ISE423590B3C" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/157375477574-operativnaya-pamyat-dimm-ecc-ddr5-32-gb</url>
@@ -54618,7 +54628,7 @@
 <name>Оперативная память Kingston KVR32N22D8/16WP DDR4 16GB 3200MHz</name>
 <vendor>Kingston</vendor>
 <vendorCode>KVR32N22D8/16WP</vendorCode>
-<description>Тип памяти DDR4 · Объём 16 ГБ · Частота 3200 МГц · Форм-фактор DIMM · Модулей в комплекте 2 · Партномер: KVR32N22D8/16WP</description>
+<description>Оперативная память Kingston KVR32N22D8/16WP: Тип памяти DDR4 · Объём 16 ГБ · Частота 3200 МГц · Форм-фактор DIMM · Модулей в комплекте 2. Цена с НДС, безналичный расчёт для организаций.</description>
 </offer>
 <offer id="ISE62BDCF719" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/707112088464-operativnaya-pamyat-dimm-ddr4-8gb-3200mh</url>
@@ -54629,7 +54639,7 @@
 <name>Оперативная память DIMM DDR4 8GB 3200MHz Kingston Fury Beast Black RGB</name>
 <vendor>Kingston</vendor>
 <vendorCode>KF432C16BB2A/8WP</vendorCode>
-<description>Тип памяти DDR4 · Объём 8 ГБ · Частота 3200 МГц · Форм-фактор DIMM · Модулей в комплекте 1 · Партномер: KF432C16BB2A/8WP</description>
+<description>Оперативная память Kingston KF432C16BB2A/8WP: Тип памяти DDR4 · Объём 8 ГБ · Частота 3200 МГц · Форм-фактор DIMM · Модулей в комплекте 1. Цена с НДС, безналичный расчёт для организаций.</description>
 </offer>
 <offer id="ISE958D51F52" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/980619319714-operativnaya-pamyat-kingston-48gb-5600mt</url>
@@ -54725,7 +54735,7 @@
 <name>Оперативная память DIMM DDR5 16384MBx2 5600MHz Kingston Fury Beast Black RGB CN</name>
 <vendor>Kingston</vendor>
 <vendorCode>ISFE4010DB6E</vendorCode>
-<description>Тип памяти DDR5 · Объём 32 ГБ · Частота 5600 МГц · Форм-фактор DIMM · Модулей в комплекте 2</description>
+<description>Оперативная память Kingston: Тип памяти DDR5 · Объём 32 ГБ · Частота 5600 МГц · Форм-фактор DIMM · Модулей в комплекте 2. Цена с НДС, безналичный расчёт для организаций.</description>
 </offer>
 <offer id="IS01AFAB34F6" available="true">
 <url>https://b2b.isoft-shop.kz/ohlazhdenie/tproduct/491636072404-kuler-dlya-kompyuternogo-korpusa-thermal</url>

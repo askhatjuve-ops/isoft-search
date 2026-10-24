@@ -1,4 +1,4 @@
-/* ish-design-p22.js  v7.2 (24.10.2026: на карточке товара под блоком покупки текстовая ссылка «Спросить в Telegram-боте» -> t.me/isoft_b2b_kz_bot?start=АРТИКУЛ (только A-Za-z0-9_-, как разбирает бот); выключатель window.ISH_P22_BOTLINK_OFF)  v7.1 (+ Telegram-бот: window.ISH_TG_BOT или TG_BOT, t.me/бот?start=SKU, пусто - как раньше; 22.10.2026: текст WhatsApp «Пишу с сайта... Интересует: товар (арт.) — ссылка», раздел, /podbor; выключатель window.ISH_WA_TEXT_OFF)  v6 (20.10.2026: /assortiment на телефоне - кнопки прячутся при прокрутке вниз)  v5  (18.10.2026: на телефоне /podbor и /spec кнопки скрыты, в карточке только WhatsApp)  v4  (16.10.2026)  П22 «WhatsApp + Telegram» (Д16) b2b.isoft-shop.kz
+/* ish-design-p22.js  v7.3 (24.10.2026: на компьютере ссылка «Спросить в Telegram →» с иконкой стоит в строке ссылок карточки (.ishp36-links) рядом с «Запросить КП» и «Уточнить», нижняя ссылка убрана, на телефоне без изменений; css ?v=9)  v7.2 (24.10.2026: на карточке товара под блоком покупки текстовая ссылка «Спросить в Telegram-боте» -> t.me/isoft_b2b_kz_bot?start=АРТИКУЛ (только A-Za-z0-9_-, как разбирает бот); выключатель window.ISH_P22_BOTLINK_OFF)  v7.1 (+ Telegram-бот: window.ISH_TG_BOT или TG_BOT, t.me/бот?start=SKU, пусто - как раньше; 22.10.2026: текст WhatsApp «Пишу с сайта... Интересует: товар (арт.) — ссылка», раздел, /podbor; выключатель window.ISH_WA_TEXT_OFF)  v6 (20.10.2026: /assortiment на телефоне - кнопки прячутся при прокрутке вниз)  v5  (18.10.2026: на телефоне /podbor и /spec кнопки скрыты, в карточке только WhatsApp)  v4  (16.10.2026)  П22 «WhatsApp + Telegram» (Д16) b2b.isoft-shop.kz
    Плавающая круглая кнопка WhatsApp справа внизу на всех страницах. Номер тот же, что в шапке (wa.me/77758818531).
    v4: НАД WhatsApp стопкой - меньшая круглая кнопка Telegram (#ishp22t, тот же адрес, что в шапке: t.me/+77758818531). Подъём, прятание и сдвиг от .вн-бок общие для обеих (стопка считается целиком). Выключатель только Telegram: window.ISH_P22_TG_OFF = true.
    Подключается из ish-design-p4.js (функция p22, строка описана в README); сам подтягивает ish-design-p22.css с того же адреса.
@@ -151,6 +151,27 @@
     var sk = txt('.js-store-prod-sku').replace(/^\s*(артикул|арт\.?|sku)\s*:?\s*/i, '').replace(/[^A-Za-z0-9_-]/g, '').slice(0, 64);
     var href = 'https://t.me/' + BOT_LINK + (sk ? '?start=' + sk : '');
     var a = D.getElementById('ishp22bot');
+    /* v7.3: на компьютере (>=901 px, как раскладка p36) ссылка «Спросить в Telegram →» стоит в одной строке с «Запросить КП →» и «Уточнить по этому товару →»; нижняя убирается. Телефон - как в v7.2 */
+    var desk = !!(W.matchMedia && W.matchMedia('(min-width:901px)').matches);
+    var links = desk ? D.querySelector('.ishp36-links') : null;
+    var tg = D.getElementById('ishp22tg');
+    if (!desk || !links) { if (tg && tg.parentNode) tg.parentNode.removeChild(tg); }
+    if (desk && !links && !W.__ishp22t0) W.__ishp22t0 = Date.now();
+    if (desk && !links && !W.ISH_P36_OFF && Date.now() - W.__ishp22t0 < 6000 && D.querySelector('.ishpg-row')) {
+      /* ждём, пока p36 соберёт строку ссылок (до 6 с); без неё - нижняя ссылка, как раньше */
+      var bw0 = D.querySelector('.ishp22bot-wrap'); if (bw0 && bw0.parentNode) bw0.parentNode.removeChild(bw0);
+      return;
+    }
+    if (links) {
+      var bw = D.querySelector('.ishp22bot-wrap'); if (bw && bw.parentNode) bw.parentNode.removeChild(bw);
+      if (tg && D.body.contains(tg)) { if (tg.getAttribute('href') !== href) tg.setAttribute('href', href); return; }
+      if (!sk && !txt('.js-store-prod-name')) return;
+      tg = D.createElement('a'); tg.id = 'ishp22tg'; tg.className = 'ishp22-tgl'; tg.target = '_blank'; tg.rel = 'noopener noreferrer';
+      tg.setAttribute('href', href); tg.setAttribute('title', 'Цена, наличие, статус заявки');
+      tg.innerHTML = '<svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M21.9 4.3 2.6 11.7c-.9.4-.9 1.1-.2 1.3l4.9 1.5 1.9 5.8c.2.6.4.8.9.8.4 0 .6-.2.9-.4l2.4-2.3 4.9 3.6c.9.5 1.5.2 1.7-.8L23 5.6c.3-1.3-.5-1.9-1.1-1.3zM8.5 13.9l9.7-6.1c.5-.3.9-.1.5.2l-8.1 7.3-.3 3.4-1.8-4.8z"/></svg><span>Спросить в Telegram →</span>';
+      links.appendChild(tg);
+      return;
+    }
     if (a && D.body.contains(a)) { if (a.getAttribute('href') !== href) a.setAttribute('href', href); return; }
     var host = D.querySelector('.js-product-controls-wrapper') || D.querySelector('.js-store-price-wrapper');
     if (!host || !host.parentNode || !sk && !txt('.js-store-prod-name')) return;
@@ -217,7 +238,7 @@
     } catch (e) {}
     if (D.getElementById('ishp22-css')) { build(); return; }
     var l = D.createElement('link');
-    l.id = 'ishp22-css'; l.rel = 'stylesheet'; l.href = base + 'ish-design-p22.css?v=8';
+    l.id = 'ishp22-css'; l.rel = 'stylesheet'; l.href = base + 'ish-design-p22.css?v=9';
     l.onload = function () { if (D.body) build(); else D.addEventListener('DOMContentLoaded', build); };
     D.head.appendChild(l);
   }

@@ -1,4 +1,4 @@
-/* ish-design-p22.js  v7.1 (+ Telegram-бот: window.ISH_TG_BOT или TG_BOT, t.me/бот?start=SKU, пусто - как раньше; 22.10.2026: текст WhatsApp «Пишу с сайта... Интересует: товар (арт.) — ссылка», раздел, /podbor; выключатель window.ISH_WA_TEXT_OFF)  v6 (20.10.2026: /assortiment на телефоне - кнопки прячутся при прокрутке вниз)  v5  (18.10.2026: на телефоне /podbor и /spec кнопки скрыты, в карточке только WhatsApp)  v4  (16.10.2026)  П22 «WhatsApp + Telegram» (Д16) b2b.isoft-shop.kz
+/* ish-design-p22.js  v7.2 (24.10.2026: на карточке товара под блоком покупки текстовая ссылка «Спросить в Telegram-боте» -> t.me/isoft_b2b_kz_bot?start=АРТИКУЛ (только A-Za-z0-9_-, как разбирает бот); выключатель window.ISH_P22_BOTLINK_OFF)  v7.1 (+ Telegram-бот: window.ISH_TG_BOT или TG_BOT, t.me/бот?start=SKU, пусто - как раньше; 22.10.2026: текст WhatsApp «Пишу с сайта... Интересует: товар (арт.) — ссылка», раздел, /podbor; выключатель window.ISH_WA_TEXT_OFF)  v6 (20.10.2026: /assortiment на телефоне - кнопки прячутся при прокрутке вниз)  v5  (18.10.2026: на телефоне /podbor и /spec кнопки скрыты, в карточке только WhatsApp)  v4  (16.10.2026)  П22 «WhatsApp + Telegram» (Д16) b2b.isoft-shop.kz
    Плавающая круглая кнопка WhatsApp справа внизу на всех страницах. Номер тот же, что в шапке (wa.me/77758818531).
    v4: НАД WhatsApp стопкой - меньшая круглая кнопка Telegram (#ishp22t, тот же адрес, что в шапке: t.me/+77758818531). Подъём, прятание и сдвиг от .вн-бок общие для обеих (стопка считается целиком). Выключатель только Telegram: window.ISH_P22_TG_OFF = true.
    Подключается из ish-design-p4.js (функция p22, строка описана в README); сам подтягивает ish-design-p22.css с того же адреса.
@@ -144,8 +144,27 @@
     setInterval(function () { if (!D.hidden) refresh(); }, 400);
   }
 
+  /* v7.2: ссылка на клиентского бота в карточке товара (текстовая, рядом с покупкой; круглые кнопки не трогаем) */
+  var BOT_LINK = 'isoft_b2b_kz_bot';
+  function botLink() {
+    if (W.ISH_P22_BOTLINK_OFF || (location.pathname || '').indexOf('/tproduct/') < 0) return;
+    var sk = txt('.js-store-prod-sku').replace(/^\s*(артикул|арт\.?|sku)\s*:?\s*/i, '').replace(/[^A-Za-z0-9_-]/g, '').slice(0, 64);
+    var href = 'https://t.me/' + BOT_LINK + (sk ? '?start=' + sk : '');
+    var a = D.getElementById('ishp22bot');
+    if (a && D.body.contains(a)) { if (a.getAttribute('href') !== href) a.setAttribute('href', href); return; }
+    var host = D.querySelector('.js-product-controls-wrapper') || D.querySelector('.js-store-price-wrapper');
+    if (!host || !host.parentNode || !sk && !txt('.js-store-prod-name')) return;
+    var w = D.createElement('div');
+    w.className = 'ishp22bot-wrap'; w.style.cssText = 'margin:10px 0 14px;font-size:14px;line-height:1.4';
+    w.innerHTML = '<a id="ishp22bot" target="_blank" rel="noopener noreferrer" style="color:#2B44C7;text-decoration:underline">Спросить в Telegram-боте</a>' +
+      '<span style="display:block;color:#6b7280;font-size:12px">цена, наличие, статус заявки</span>';
+    w.firstChild.setAttribute('href', href);
+    host.parentNode.insertBefore(w, host.nextSibling);
+  }
+
   function refresh() {
     if (!el) return;
+    try { botLink(); } catch (e0) {}
     try {
       var href = 'https://wa.me/' + NUM + '?text=' + encodeURIComponent(message());
       if (href !== last.href) { el.setAttribute('href', href); last.href = href; }

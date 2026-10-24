@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<yml_catalog date="2026-10-24 20:42">
+<yml_catalog date="2026-10-24 22:01">
 <shop>
 <name>iSoft</name>
 <company>iSoft</company>
@@ -57,6 +57,17 @@
 <category id="667674530784">Шкафы и стойки</category>
 </categories>
 <offers>
+<offer id="IS0BF40C279E" available="true">
+<url>https://b2b.isoft-shop.kz/kronshteyny-i-krepleniya/tproduct/115508283334-ip-telefon-grandstream-grp2603p</url>
+<price>33000</price>
+<currencyId>KZT</currencyId>
+<categoryId>878347274554</categoryId>
+<picture>https://static.tildacdn.com/tild6439-3137-4766-b131-383064393865/IS0BF40C279E_1.jpg</picture>
+<name>IP телефон Grandstream GRP2603P</name>
+<vendor>Grandstream</vendor>
+<vendorCode>IS0BF40C279E</vendorCode>
+<description>Модель GRP2603P · Тип устройства IP-телефон</description>
+</offer>
 <offer id="IS0ED359C120" available="true">
 <url>https://b2b.isoft-shop.kz/konferenc-svyaz/tproduct/109905298814-ip-telefon-grandstream-grp2612</url>
 <price>32000</price>
@@ -69,6 +80,17 @@
 <vendor>Grandstream</vendor>
 <vendorCode>IS0ED359C120</vendorCode>
 <description>Модель GRP2612 · Тип устройства IP-телефон · PoE Нет · Скорость портов 100 Мбит/с (Fast Ethernet) · Количество линий 3–4 линии · Диагональ до 2,5″ · SIP-аккаунтов 4</description>
+</offer>
+<offer id="IS11BFB7B525" available="true">
+<url>https://b2b.isoft-shop.kz/kronshteyny-i-krepleniya/tproduct/903885107684-ip-telefon-grandstream-gxp2130</url>
+<price>58000</price>
+<currencyId>KZT</currencyId>
+<categoryId>878347274554</categoryId>
+<picture>https://static.tildacdn.com/tild3062-3961-4266-b937-663034303465/IS11BFB7B525_1.jpg</picture>
+<name>IP телефон Grandstream GXP2130</name>
+<vendor>Grandstream</vendor>
+<vendorCode>IS11BFB7B525</vendorCode>
+<description>Модель GXP2130 · Тип устройства IP-телефон</description>
 </offer>
 <offer id="IS178EA4CED2" available="true">
 <url>https://b2b.isoft-shop.kz/kronshteyny-i-krepleniya/tproduct/277158048964-kronshtein-logitech-nastolnoe-kreplenie</url>
@@ -95,6 +117,17 @@
 <vendorCode>IS182A08D4E4</vendorCode>
 <description>Модель GXP2170 · Тип устройства IP-телефон · PoE Есть · Скорость портов 1 Гбит/с (Gigabit) · Количество линий 12–16 линий · Диагональ 4,3″ · SIP-аккаунтов 6</description>
 </offer>
+<offer id="IS187256DDF3" available="true">
+<url>https://b2b.isoft-shop.kz/kronshteyny-i-krepleniya/tproduct/112575353674-ip-telefon-grandstream-grp2612p</url>
+<price>31000</price>
+<currencyId>KZT</currencyId>
+<categoryId>878347274554</categoryId>
+<picture>https://static.tildacdn.com/tild3335-6261-4162-a666-626164323030/IS187256DDF3_1.jpg</picture>
+<name>IP телефон Grandstream GRP2612P</name>
+<vendor>Grandstream</vendor>
+<vendorCode>IS187256DDF3</vendorCode>
+<description>Модель GRP2612P · Тип устройства IP-телефон</description>
+</offer>
 <offer id="IS1CAFD3338A" available="true">
 <url>https://b2b.isoft-shop.kz/kronshteyny-i-krepleniya/tproduct/588184628594-logitech-webcam-rally-bar-huddle-graphit</url>
 <price>1204000</price>
@@ -118,6 +151,17 @@
 <vendor>Grandstream</vendor>
 <vendorCode>IS1E07893C50</vendorCode>
 <description>Настольный SIP-телефон среднего уровня с цветным экраном 2,8 дюйма (320×240 точек). Шесть клавиш линий и до 4 SIP-аккаунтов: SIP — стандартный протокол IP-телефонии, аккаунт это учётная запись на АТС или у провайдера. Два порта Ethernet 10/100/1000 Мбит/с со встроенным PoE: телефон получает питание по сетевому кабелю от PoE-коммутатора, второй порт отдаёт сеть компьютеру. В базовой версии без индекса W беспроводных модулей нет, подключение только кабелем. Есть разъём RJ9 для гарнитуры с электронным микрошнуром (EHS) Plantronics, управление через облачную систему GDMS, сменные лицевые панели. Подходит для рабочих мест, где нужна цветная индикация и несколько линий при проводной сети.</description>
+</offer>
+<offer id="IS243FF2BEB0" available="true">
+<url>https://b2b.isoft-shop.kz/kronshteyny-i-krepleniya/tproduct/348761414634-ip-telefon-grandstream-grp2650</url>
+<price>89000</price>
+<currencyId>KZT</currencyId>
+<categoryId>878347274554</categoryId>
+<picture>https://static.tildacdn.com/tild6534-3833-4465-b466-323234356264/IS243FF2BEB0_1.jpg</picture>
+<name>IP телефон Grandstream GRP2650</name>
+<vendor>Grandstream</vendor>
+<vendorCode>IS243FF2BEB0</vendorCode>
+<description>Модель GRP2650 · Тип устройства IP-телефон</description>
 </offer>
 <offer id="IS2D851DBE1B" available="true">
 <url>https://b2b.isoft-shop.kz/konferenc-svyaz/tproduct/428302433574-ip-telefon-grandstream-gxp1615</url>
@@ -158,6 +202,17 @@
 <vendorCode>IS37DE8C56BF</vendorCode>
 <description>Модель GXV3480 · Тип устройства IP-видеотелефон · PoE Есть · Скорость портов 1 Гбит/с (Gigabit) · Количество линий 12–16 линий · Wi-Fi Есть · SIP-аккаунтов 16 · Диагональ 8″</description>
 </offer>
+<offer id="IS3B07233D9F" available="true">
+<url>https://b2b.isoft-shop.kz/kronshteyny-i-krepleniya/tproduct/649600537534-ip-telefon-grandstream-grp2601p</url>
+<price>22000</price>
+<currencyId>KZT</currencyId>
+<categoryId>878347274554</categoryId>
+<picture>https://static.tildacdn.com/tild6436-3361-4530-a266-336134623238/IS3B07233D9F_1.jpg</picture>
+<name>IP телефон Grandstream GRP2601P</name>
+<vendor>Grandstream</vendor>
+<vendorCode>IS3B07233D9F</vendorCode>
+<description>Модель GRP2601P · Тип устройства IP-телефон</description>
+</offer>
 <offer id="IS3B9A5DB257" available="true">
 <url>https://b2b.isoft-shop.kz/konferenc-svyaz/tproduct/824768028404-ip-telefon-grandstream-grp2634</url>
 <price>60000</price>
@@ -197,6 +252,17 @@
 <vendorCode>IS4564592E8B</vendorCode>
 <description>Модель GXP1610P · Тип устройства IP-телефон · PoE Есть · Скорость портов 100 Мбит/с (Fast Ethernet) · Количество линий 2 линии · SIP-аккаунтов 2 · Диагональ 2,6–3″</description>
 </offer>
+<offer id="IS4614F0CD15" available="true">
+<url>https://b2b.isoft-shop.kz/kronshteyny-i-krepleniya/tproduct/323698100504-ip-videotelefon-grandstream-gxv3450</url>
+<price>144000</price>
+<currencyId>KZT</currencyId>
+<categoryId>878347274554</categoryId>
+<picture>https://static.tildacdn.com/tild6461-6230-4165-b164-346563386334/IS4614F0CD15_1.jpg</picture>
+<name>IP-видеотелефон Grandstream GXV3450</name>
+<vendor>Grandstream</vendor>
+<vendorCode>IS4614F0CD15</vendorCode>
+<description>Модель GXV3450 · Тип устройства IP-видеотелефон</description>
+</offer>
 <offer id="IS4D029F7668" available="true">
 <url>https://b2b.isoft-shop.kz/konferenc-svyaz/tproduct/696106278064-ip-telefon-grandstream-grp2603</url>
 <price>32000</price>
@@ -209,6 +275,39 @@
 <vendor>Grandstream</vendor>
 <vendorCode>IS4D029F7668</vendorCode>
 <description>Настольный SIP-телефон начального уровня. Поддерживает 3 линии и 6 SIP-аккаунтов: SIP — стандартный протокол IP-телефонии, аккаунт это учётная запись на АТС или у провайдера. Подсвеченный графический экран 2,7 дюйма (132×64 точки). Два порта Ethernet 10/100/1000 Мбит/с: один в сеть, второй для компьютера, так что отдельный кабель до стола не нужен. Питания по сети (PoE) в этой версии нет — нужен блок питания; модель с PoE выпускается отдельно, с индексом P. Wi-Fi нет, телефон подключается только кабелем. Есть пятисторонняя аудиоконференция и поддержка гарнитур с электронным микрошнуром (EHS) Plantronics, Jabra и Sennheiser. Подходит для рабочих мест с проводной сетью и офисной АТС на SIP.</description>
+</offer>
+<offer id="IS55F58DA303" available="true">
+<url>https://b2b.isoft-shop.kz/kronshteyny-i-krepleniya/tproduct/367890658514-ip-telefon-grandstream-gxp1610</url>
+<price>19000</price>
+<currencyId>KZT</currencyId>
+<categoryId>878347274554</categoryId>
+<picture>https://static.tildacdn.com/tild6562-6535-4639-b561-316638383763/IS55F58DA303_1.jpg</picture>
+<name>IP телефон Grandstream GXP1610</name>
+<vendor>Grandstream</vendor>
+<vendorCode>IS55F58DA303</vendorCode>
+<description>Тип устройства IP-телефон · Модель GXP1610</description>
+</offer>
+<offer id="IS5709A1528A" available="true">
+<url>https://b2b.isoft-shop.kz/kronshteyny-i-krepleniya/tproduct/298927850074-ip-videotelefon-grandstream-gxv3470</url>
+<price>257000</price>
+<currencyId>KZT</currencyId>
+<categoryId>878347274554</categoryId>
+<picture>https://static.tildacdn.com/tild6462-6539-4162-b866-613561663761/IS5709A1528A_1.jpg</picture>
+<name>IP-видеотелефон Grandstream GXV3470</name>
+<vendor>Grandstream</vendor>
+<vendorCode>IS5709A1528A</vendorCode>
+<description>Модель GXV3470 · Тип устройства IP-видеотелефон</description>
+</offer>
+<offer id="IS5DF3B0CD17" available="true">
+<url>https://b2b.isoft-shop.kz/kronshteyny-i-krepleniya/tproduct/224881154484-ip-telefon-grandstream-ghp630</url>
+<price>33000</price>
+<currencyId>KZT</currencyId>
+<categoryId>878347274554</categoryId>
+<picture>https://static.tildacdn.com/tild3834-3635-4836-a265-623332623139/IS5DF3B0CD17_1.jpg</picture>
+<name>IP телефон Grandstream GHP630</name>
+<vendor>Grandstream</vendor>
+<vendorCode>IS5DF3B0CD17</vendorCode>
+<description>Тип устройства IP-телефон · Модель GHP630</description>
 </offer>
 <offer id="IS6617E02430" available="true">
 <url>https://b2b.isoft-shop.kz/konferenc-svyaz/tproduct/247117507424-ip-telefon-grandstream-ghp631</url>
@@ -236,6 +335,17 @@
 <vendorCode>IS6835A9B00E</vendorCode>
 <description>Модель GXP2160 · Тип устройства IP-телефон · PoE Есть · Скорость портов 1 Гбит/с (Gigabit) · Количество линий 6–8 линий · SIP-аккаунтов 6 · Диагональ 4,3″</description>
 </offer>
+<offer id="IS6955D3A7A3" available="true">
+<url>https://b2b.isoft-shop.kz/kronshteyny-i-krepleniya/tproduct/993594985324-ip-telefon-grandstream-grp2602w</url>
+<price>31000</price>
+<currencyId>KZT</currencyId>
+<categoryId>878347274554</categoryId>
+<picture>https://static.tildacdn.com/tild3039-3236-4537-a264-633163333131/IS6955D3A7A3_1.jpg</picture>
+<name>IP телефон Grandstream GRP2602W</name>
+<vendor>Grandstream</vendor>
+<vendorCode>IS6955D3A7A3</vendorCode>
+<description>Модель GRP2602W · Тип устройства IP-телефон</description>
+</offer>
 <offer id="IS6A52CE59DC" available="true">
 <url>https://b2b.isoft-shop.kz/kronshteyny-i-krepleniya/tproduct/260854483274-rally-mic-pod-hub-logitech-939-001647</url>
 <price>195000</price>
@@ -246,6 +356,17 @@
 <vendor>Logitech</vendor>
 <vendorCode>IS6A52CE59DC</vendorCode>
 <description>Rally Mic Pod Hub, Logitech (939-001647) (Logitech)</description>
+</offer>
+<offer id="IS6F032A28B9" available="true">
+<url>https://b2b.isoft-shop.kz/kronshteyny-i-krepleniya/tproduct/973207424054-ip-telefon-grandstream-grp2670</url>
+<price>103000</price>
+<currencyId>KZT</currencyId>
+<categoryId>878347274554</categoryId>
+<picture>https://static.tildacdn.com/tild3861-3965-4235-a361-653665616366/IS6F032A28B9_1.jpg</picture>
+<name>IP телефон Grandstream GRP2670</name>
+<vendor>Grandstream</vendor>
+<vendorCode>IS6F032A28B9</vendorCode>
+<description>Модель GRP2670 · Тип устройства IP-телефон</description>
 </offer>
 <offer id="IS81872523E2" available="true">
 <url>https://b2b.isoft-shop.kz/kronshteyny-i-krepleniya/tproduct/697355142034-logitech-mic-pod-pendant-mount-off-white</url>
@@ -283,6 +404,17 @@
 <vendor>Grandstream</vendor>
 <vendorCode>ISA03DDFF145</vendorCode>
 <description>Модель GRP2601 · Тип устройства IP-телефон · PoE Нет · Скорость портов 100 Мбит/с (Fast Ethernet) · Количество линий 2 линии · SIP-аккаунтов 2 · Диагональ до 2,5″</description>
+</offer>
+<offer id="ISA2C4CF56F5" available="true">
+<url>https://b2b.isoft-shop.kz/kronshteyny-i-krepleniya/tproduct/175369422194-ip-telefon-grandstream-grp2601w</url>
+<price>26000</price>
+<currencyId>KZT</currencyId>
+<categoryId>878347274554</categoryId>
+<picture>https://static.tildacdn.com/tild3166-3136-4037-a139-336232393661/ISA2C4CF56F5_1.jpg</picture>
+<name>IP телефон Grandstream GRP2601W</name>
+<vendor>Grandstream</vendor>
+<vendorCode>ISA2C4CF56F5</vendorCode>
+<description>Модель GRP2601W · Тип устройства IP-телефон</description>
 </offer>
 <offer id="ISA2FF56057E" available="true">
 <url>https://b2b.isoft-shop.kz/kronshteyny-i-krepleniya/tproduct/738991470034-sistema-dlya-videokonferentsii-logitech</url>
@@ -423,6 +555,17 @@
 <vendor>Grandstream</vendor>
 <vendorCode>ISE225766BCC</vendorCode>
 <description>Модель GRP2612G · Тип устройства IP-телефон · PoE Есть · Скорость портов 1 Гбит/с (Gigabit) · Количество линий 3–4 линии · SIP-аккаунтов 4 · Диагональ до 2,5″</description>
+</offer>
+<offer id="ISEB9584D633" available="true">
+<url>https://b2b.isoft-shop.kz/kronshteyny-i-krepleniya/tproduct/365108585694-ip-telefon-grandstream-grp2624</url>
+<price>57000</price>
+<currencyId>KZT</currencyId>
+<categoryId>878347274554</categoryId>
+<picture>https://static.tildacdn.com/tild3535-3932-4831-a231-623931623563/ISEB9584D633_1.jpg</picture>
+<name>IP телефон Grandstream GRP2624</name>
+<vendor>Grandstream</vendor>
+<vendorCode>ISEB9584D633</vendorCode>
+<description>Модель GRP2624 · Тип устройства IP-телефон</description>
 </offer>
 <offer id="ISEDF38BB475" available="true">
 <url>https://b2b.isoft-shop.kz/korpusa-i-bloki-pitaniya/tproduct/886762789974-korpus-modul-mikrofonov-logitech-dlya-ra</url>
@@ -10752,6 +10895,17 @@
 <vendor>APC</vendor>
 <vendorCode>IS0F9F3034B6</vendorCode>
 <description>Топология Линейно-интерактивный · Мощность 2200 ВА / 1320 Вт · Розеток 6 · Размещение Напольный · Класс мощности 1–2,2 кВА · Время переключения 10 мс · Гарантия 2 года · Цвет Чёрный</description>
+</offer>
+<offer id="IS0FCDCA30AC" available="true">
+<url>https://b2b.isoft-shop.kz/ibp-i-zashchita-pitaniya/tproduct/156035937334-ibp-apc-back-ups-bx750mi-gr</url>
+<price>57000</price>
+<currencyId>KZT</currencyId>
+<categoryId>622117808604</categoryId>
+<picture>https://static.tildacdn.com/tild3865-3866-4739-a662-306631396530/IS0FCDCA30AC_1.jpg</picture>
+<name>ИБП APC Back-UPS BX750MI-GR</name>
+<vendor>APC</vendor>
+<vendorCode>IS0FCDCA30AC</vendorCode>
+<description>Гарантия 2 года · Топология Линейно-интерактивный · Мощность 750 ВА / 410 Вт · Розеток 4 · Размещение Напольный · Форма выходного сигнала Ступенчатая синусоида · Время переключения 10 мс · Ёмкость батареи 12В/9Ач · Цвет Чёрный</description>
 </offer>
 <offer id="IS120C36AB41" available="true">
 <url>https://b2b.isoft-shop.kz/ibp-i-zashchita-pitaniya/tproduct/928761965924-ibp-apc-smart-ups-srt1000rmxli</url>
@@ -21293,6 +21447,17 @@
 <vendor>Razer</vendor>
 <vendorCode>ISBE550817C1</vendorCode>
 <description>Тип устройства клавиатура · Раскладка русская/английская · Тип клавиатуры механическая · Тип переключателей Yellow Switch</description>
+</offer>
+<offer id="ISBE6020A41D" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury/tproduct/542733033964-klaviatura-and-manipulator-dellpro-5-key</url>
+<price>23000</price>
+<currencyId>KZT</currencyId>
+<categoryId>723843374454</categoryId>
+<picture>https://static.tildacdn.com/tild3239-6661-4534-b838-343332306433/ISBE6020A41D_1.jpg</picture>
+<name>Клавиатура and manipulator Dell/Pro 5 Keyboard and Mouse - KM526/Wireless 580-BDGY</name>
+<vendor>Dell</vendor>
+<vendorCode>ISBE6020A41D</vendorCode>
+<description>Тип устройства комплект клавиатура и мышь · Подключение Беспроводное · Раскладка русская/английская</description>
 </offer>
 <offer id="ISBF149BA287" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury/tproduct/397145232364-klaviatura-glorious-gmmk-numpad-pre-buil</url>
@@ -46753,6 +46918,17 @@
 <vendorCode>IS39A0AC645F</vendorCode>
 <description>Тип устройства Наушники · Цвет Чёрный</description>
 </offer>
+<offer id="IS3A3C3F94FB" available="true">
+<url>https://b2b.isoft-shop.kz/naushniki-i-garnitury/tproduct/939343426914-garnitura-dellpremier-wireless-anc-heads</url>
+<price>231000</price>
+<currencyId>KZT</currencyId>
+<categoryId>813446092544</categoryId>
+<picture>https://static.tildacdn.com/tild6264-3432-4462-b362-616663633265/IS3A3C3F94FB_1.jpg</picture>
+<name>Гарнитура Dell/Premier Wireless ANC Headset - WL7024 520-BBHC</name>
+<vendor>Dell</vendor>
+<vendorCode>IS3A3C3F94FB</vendorCode>
+<description>Тип устройства Гарнитура · Тип подключения Беспроводное</description>
+</offer>
 <offer id="IS3B352A9B43" available="true">
 <url>https://b2b.isoft-shop.kz/naushniki-i-garnitury/tproduct/332640327874-garnitura-logitech-h151-chernaya-1-x-35m</url>
 <price>14000</price>
@@ -65539,6 +65715,17 @@
 <vendorCode>IS1FF40E0848</vendorCode>
 <description>Тип устройства Коммутатор</description>
 </offer>
+<offer id="IS201178FAE5" available="true">
+<url>https://b2b.isoft-shop.kz/setevoe-oborudovanie/tproduct/718202441234-kommutator-grandstream-gwn7802</url>
+<price>83000</price>
+<currencyId>KZT</currencyId>
+<categoryId>737078043964</categoryId>
+<picture>https://static.tildacdn.com/tild3264-3437-4633-a330-323131666532/IS201178FAE5_1.jpg</picture>
+<name>Коммутатор Grandstream GWN7802</name>
+<vendor>Grandstream</vendor>
+<vendorCode>IS201178FAE5</vendorCode>
+<description>Коммутатор Grandstream GWN7802 (Grandstream)</description>
+</offer>
 <offer id="IS2026F1395E" available="true">
 <url>https://b2b.isoft-shop.kz/setevoe-oborudovanie/tproduct/200293130734-kommutator-bdcom-s1500-16t</url>
 <price>30000</price>
@@ -68125,6 +68312,17 @@
 <vendor>Hikvision</vendor>
 <vendorCode>IS86AD3A8323</vendorCode>
 <description>Тип устройства Коммутатор · Портов 5 · Скорость 10/100/1000 Мбит/с · PoE Есть · Управление Неуправляемый · Размещение Настольный · Бюджет PoE 60 Вт · Класс по числу портов До 10 портов</description>
+</offer>
+<offer id="IS875C0DEAEB" available="true">
+<url>https://b2b.isoft-shop.kz/setevoe-oborudovanie/tproduct/510152936674-kommutator-grandstream-gwn7701</url>
+<price>11000</price>
+<currencyId>KZT</currencyId>
+<categoryId>737078043964</categoryId>
+<picture>https://static.tildacdn.com/tild3066-6663-4138-b636-323662663662/IS875C0DEAEB_1.jpg</picture>
+<name>Коммутатор Grandstream GWN7701</name>
+<vendor>Grandstream</vendor>
+<vendorCode>IS875C0DEAEB</vendorCode>
+<description>Коммутатор Grandstream GWN7701 (Grandstream)</description>
 </offer>
 <offer id="IS882FDF6A2D" available="true">
 <url>https://b2b.isoft-shop.kz/setevoe-oborudovanie/tproduct/343486557204-kommutator-huawei-s220-24p4x</url>
@@ -75291,17 +75489,6 @@
 <vendorCode>IS2F5C337B68</vendorCode>
 <description>Wi-Fi Wi-Fi 5 · PoE Есть · Гарантия 1 год · Скорость 10/100/1000 Мбит/с · Класс скорости Wi-Fi 1500–2400 Мбит/с · Класс Wi-Fi AC2000</description>
 </offer>
-<offer id="IS3084608A97" available="true">
-<url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/265690470234-tochka-dostupa-grandstream-gwn7664-80211</url>
-<price>47000</price>
-<currencyId>KZT</currencyId>
-<categoryId>669770887424</categoryId>
-<picture>https://static.tildacdn.com/tild3238-3636-4161-b934-323533323962/IS3084608A97.png</picture>
-<name>Точка доступа Grandstream GWN7664, 802.11ax 4x4:4 Wi-Fi 6 Access Point GWN7664</name>
-<vendor>Grandstream</vendor>
-<vendorCode>IS3084608A97</vendorCode>
-<description>Wi-Fi Wi-Fi 6 · Диапазон частот 2,4/5 ГГц · Исполнение Для помещений · Скорость Wi-Fi 2402 Мбит/с · Портов 2</description>
-</offer>
 <offer id="IS3263D84DF4" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/654685625024-besprovodnaya-tochka-dostupa-h3c-aolynk</url>
 <price>36000</price>
@@ -76563,18 +76750,6 @@
 <vendor>TP-Link</vendor>
 <vendorCode>ISC767E8F58C</vendorCode>
 <description>PoE Есть · Гарантия 3 года · Скорость 10/100 Мбит/с · Класс скорости Wi-Fi до 450 Мбит/с · Диапазон частот 2,4 ГГц · Скорость Wi-Fi 300 Мбит/с · Размещение Потолочная</description>
-</offer>
-<offer id="ISC9AA89AA4D" available="true">
-<url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/400070828534-tochka-dostupa-grandstream-gwn7605lr-wif</url>
-<price>40000</price>
-<currencyId>KZT</currencyId>
-<categoryId>669770887424</categoryId>
-<picture>https://static.tildacdn.com/tild3139-3961-4162-b363-393834636337/ISC9AA89AA4D.png</picture>
-<picture>https://static.tildacdn.com/tild3361-3836-4866-b036-636230326561/400070828534_1.jpg</picture>
-<name>Точка доступа Grandstream GWN7605LR, WiFi Access Point, 802.11ac, 2x2:2 MU-MIMO GWN7605LR</name>
-<vendor>Grandstream</vendor>
-<vendorCode>ISC9AA89AA4D</vendorCode>
-<description>Wi-Fi Wi-Fi 5 · PoE Есть · Скорость 10/100/1000 Мбит/с · Класс скорости Wi-Fi 800–1350 Мбит/с · Диапазон частот 2,4/5 ГГц · Исполнение Уличное · Скорость Wi-Fi 867 Мбит/с · Размещение Настенная · Портов 2</description>
 </offer>
 <offer id="ISCAB36F7001" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/715080394254-tochka-dostupa-mikrotik-ltap-2hndampfg62</url>

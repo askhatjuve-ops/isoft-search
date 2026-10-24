@@ -1,4 +1,4 @@
-/* ish-design-p8.js  v2.6  (19.10.2026: на телефоне у «Бизнеса» вместо белой кнопки «Запросить цену» строка-ссылка «Для бизнеса →» на /dlya-organizacij, как у госорганов и школ; на компьютере кнопка прежняя; 19.10.2026: на компьютере ≥981 «Коротко о нас» — заголовок слева колонкой 25%, справа три плитки в один ряд высотой ~180 px, телефон и планшет как были; 19.10.2026: на телефоне ≤640 полоса «Гарантия / Доставка / Безнал / Самовывоз» - одна строка из четырёх значков с короткими подписями, компьютер как был; v2.2: на телефоне ≤640 «Три шага» - подсветка по очереди и машинка, «Для кого» - три чипа и панель; v2.1: «Почему мы» убрана, в «Коротко о нас» строка про цены, на телефоне цифры стопкой; НЕ выложено)  (C2 «Витрина, другой ритм», подготовка 16.10.2026; НЕ выложено на Pages)  П8 «блоки главной ниже первого экрана» b2b.isoft-shop.kz
+/* ish-design-p8.js  v2.9  (24.10.2026: убран обходной шаг «отправьте файл» (v2.7, ISH_P8_FILE_OFF): форма принимает PDF через поле «Файл»; 19.10.2026: на телефоне у «Бизнеса» вместо белой кнопки «Запросить цену» строка-ссылка «Для бизнеса →» на /dlya-organizacij, как у госорганов и школ; на компьютере кнопка прежняя; 19.10.2026: на компьютере ≥981 «Коротко о нас» — заголовок слева колонкой 25%, справа три плитки в один ряд высотой ~180 px, телефон и планшет как были; 19.10.2026: на телефоне ≤640 полоса «Гарантия / Доставка / Безнал / Самовывоз» - одна строка из четырёх значков с короткими подписями, компьютер как был; v2.2: на телефоне ≤640 «Три шага» - подсветка по очереди и машинка, «Для кого» - три чипа и панель; v2.1: «Почему мы» убрана, в «Коротко о нас» строка про цены, на телефоне цифры стопкой; НЕ выложено)  (C2 «Витрина, другой ритм», подготовка 16.10.2026; НЕ выложено на Pages)  П8 «блоки главной ниже первого экрана» b2b.isoft-shop.kz
    Грузится загрузчиком П4 (ish-design-p4.js) только на главной, по признаку «#лента .слайд». Сам подключает ish-design-p8.css рядом с собой.
    Что делает (только ДОБАВЛЯЕТ узлы с префиксом ishp8-, каждый раз проверяя, что такого ещё нет; родные узлы блока 4204120903 не переписывает):
      Г12  полоса фактов одной плашкой перед «Как оформить заказ»
@@ -806,88 +806,8 @@
     return true;
   }
   (function ждать(n) { try { if (мессенджеры()) return; } catch (e) {} if (n < 60) setTimeout(function () { ждать(n + 1); }, 500); })(0);
-  /* v2.7 (21.10): шаг «Остался один шаг — отправьте файл» в окне запроса главной (#запросОкно, блок T123 rec4204120903).
-     Форма файл не принимает: если в окне выбраны файлы, после штатной отправки (текст уходит как раньше) окно показывает
-     кнопки «Отправить файл» (Web Share, если телефон умеет файлы), «в WhatsApp», «на почту». Без файлов - ничего не делаем.
-     Файлы запоминаем сами (блок очищает input после выбора): change/drop в capture, актуальный набор сверяем с чипами #окноФайлы. */
-  (function () {
-    if (W.ISH_P8_FILE_OFF) return;
-    var пул = [];
-    function el(id) { return D.getElementById(id); }
-    function чипы() {
-      var c = el('окноФайлы'); if (!c) return [];
-      return [].map.call(c.querySelectorAll('.файл-чип'), function (x) { return (x.firstChild && x.firstChild.nodeValue || '').trim(); });
-    }
-    function запомнить(л) { [].forEach.call(л || [], function (ф) { пул.push(ф); }); }
-    D.addEventListener('change', function (e) { if (e.target && e.target.id === 'окноФайл') запомнить(e.target.files); }, true);
-    D.addEventListener('drop', function (e) {
-      if (e.target && e.target.closest && e.target.closest('#окноЗона') && e.dataTransfer) запомнить(e.dataTransfer.files);
-    }, true);
-    function актуальные() {
-      var имена = чипы().slice(), res = [];
-      пул.forEach(function (ф) {
-        var n = ф.name.replace(/[<>&]/g, ''), i = имена.indexOf(n);
-        if (i >= 0) { имена.splice(i, 1); res.push(ф); }
-      });
-      return res;
-    }
-    function стили() {
-      if (el('ishp8-fs-css')) return;
-      var s = D.createElement('style'); s.id = 'ishp8-fs-css';
-      s.textContent = '.ishp8-fs{text-align:center;padding:10px 0 4px}.ishp8-fs h3{padding:0}'
-        + '.ishp8-fs p{margin:0 0 14px;color:var(--mut,#646B7D);font-size:13.5px}.ishp8-fs b{font-weight:600;color:var(--ink,#171923);word-break:break-word}'
-        + '.ishp8-fs .ishp8-fs-k{display:flex;flex-direction:column;gap:10px;margin:0 0 14px}'
-        + '.ishp8-fs .ishp8-fs-k .кн-к{width:100%;box-sizing:border-box;text-decoration:none}.ishp8-fs [hidden]{display:none!important}';
-      D.head.appendChild(s);
-    }
-    function шаг(файлы, текстЗапроса, контакт) {
-      var окно = el('запросОкно'), ф = el('окноФорма'), сп = el('окноСпасибо'), коробка = окно && окно.querySelector('.окно');
-      if (!окно || !ф || !коробка) return;
-      стили();
-      var н = el('ishp8-fs');
-      if (!н) {
-        н = D.createElement('div'); н.id = 'ishp8-fs'; н.className = 'окно-спасибо ishp8-fs'; н.hidden = true;
-        н.innerHTML = '<div class="спасибо-знак"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 14V4M7 8l4-4 4 4"/><path d="M4 13v4h14v-4"/></svg></div>'
-          + '<h3>Остался один шаг — отправьте файл</h3>'
-          + '<p>Текст запроса мы получили. Сам файл форма не принимает: отправьте его в WhatsApp или на почту и прикрепите <b id="ishp8-fs-n"></b> в открывшемся чате или письме.</p>'
-          + '<div class="ishp8-fs-k"><button class="кн-к" type="button" id="ishp8-fs-s" hidden>Отправить файл</button>'
-          + '<a class="кн-к" id="ishp8-fs-w" target="_blank" rel="noopener" href="https://wa.me/77758818531">Отправить файл в WhatsApp</a>'
-          + '<a class="кн-к конт" id="ishp8-fs-m" href="mailto:astana@i-soft.kz">Отправить на почту</a></div>'
-          + '<button class="кн-к конт" type="button" data-закрыть>Закрыть</button>';
-        коробка.appendChild(н);
-        /* блок снова открыл форму (новый запрос) - шаг убираем */
-        try { new MutationObserver(function () { if (!ф.hidden) н.hidden = true; }).observe(ф, {attributes: true, attributeFilter: ['hidden']}); } catch (e) {}
-      }
-      var имена = файлы.map(function (x) { return x.name; }).join(', ');
-      var кратко = (текстЗапроса || '').replace(/\s+/g, ' ').trim().slice(0, 80);
-      var т = 'Файл к запросу с сайта' + (кратко ? ': ' + кратко : '') + ', контакт ' + контакт;
-      el('ishp8-fs-n').textContent = имена;
-      el('ishp8-fs-w').href = 'https://wa.me/77758818531?text=' + encodeURIComponent(т);
-      el('ishp8-fs-m').href = 'mailto:astana@i-soft.kz?subject=' + encodeURIComponent('Файл к запросу с сайта')
-        + '&body=' + encodeURIComponent(т + '\n\nФайл приложите к письму: ' + имена);
-      var б = el('ishp8-fs-s'), можно = false;
-      try { можно = !!(navigator.canShare && navigator.share && navigator.canShare({files: файлы})); } catch (e) {}
-      б.hidden = !можно;
-      б.onclick = function () { try { navigator.share({files: файлы, text: т, title: 'Файл к запросу с сайта'}).catch(function () {}); } catch (e) {} };
-      ф.hidden = true; if (сп) сп.hidden = true; н.hidden = false; окно.hidden = false;
-      D.body.style.overflow = 'hidden';
-    }
-    /* capture на document срабатывает до штатного onsubmit блока; шаг показываем после него, только если штатная проверка прошла */
-    D.addEventListener('submit', function (e) {
-      if (!e.target || e.target.id !== 'окноФорма') return;
-      var файлы = актуальные(), т = el('окноТекст'), к = el('окноКонтакт');
-      if (!файлы.length) return;
-      var текст = т ? т.value : '', контакт = к ? к.value.trim() : '';
-      setTimeout(function () {
-        var ош = el('окноОшибка');
-        if (ош && !ош.hidden) return;
-        try { шаг(файлы, текст, контакт); пул = []; } catch (er) {}
-      }, 0);
-    }, true);
-  })();
   /* v2.8 (22.10): в форме «Отправить список» (rec3523869303, её открывает окно) появилось поле «Файл» (Uploadcare, name="Файл").
-     Тогда файл прикладывают там, а зону файла в самом окне убираем (форма окна файл не передаёт) - обходной шаг выше не запустится,
-     файлов в пуле нет. Поля нет - окно как было. Выключатель: W.ISH_P8_FILE_NATIVE_OFF. Ждём до 30 с: блоки окна и формы грузятся позже. */
+     Тогда файл прикладывают там, а зону файла в самом окне убираем (форма окна файл не передаёт). Поля нет - окно как было. Выключатель: W.ISH_P8_FILE_NATIVE_OFF. Ждём до 30 с: блоки окна и формы грузятся позже. */
   (function () {
     if (W.ISH_P8_FILE_NATIVE_OFF) return;
     function готово() {

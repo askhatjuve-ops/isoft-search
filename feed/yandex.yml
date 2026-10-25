@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<yml_catalog date="2026-10-25 03:08">
+<yml_catalog date="2026-10-25 07:12">
 <shop>
 <name>iSoft</name>
 <company>iSoft</company>
@@ -1705,6 +1705,17 @@
 <vendorCode>P300P256GM28</vendorCode>
 <description>P300 P300P256GM28, 256 GB, M.2 NVMe PCIe 3.0x4, 1700/1100 Мб/с</description>
 </offer>
+<offer id="IS9A846B2F0E" available="true">
+<url>https://b2b.isoft-shop.kz/ssd-nakopiteli/tproduct/309255622434-ssd-ssd-nakopitel-sata-240-gb-kingston-a</url>
+<price>43000</price>
+<currencyId>KZT</currencyId>
+<categoryId>615429773604</categoryId>
+<picture>https://static.tildacdn.com/tila3132-3136-4131-a639-326463333036/IS9A846B2F0E_1.jpg</picture>
+<name>Ssd SSD-накопитель SATA 240 GB Kingston A400, SA400S37/240G, SATA 6Gb/s</name>
+<vendor>Kingston</vendor>
+<vendorCode>IS9A846B2F0E</vendorCode>
+<description>Ёмкость 240 ГБ · Интерфейс SATA III</description>
+</offer>
 <offer id="IS9A8763A6EB" available="true">
 <url>https://b2b.isoft-shop.kz/ssd-nakopiteli/tproduct/367204316314-ssd-ssd-nakopitel-sata-1-tb-silicon-powe</url>
 <price>98000</price>
@@ -1767,6 +1778,17 @@
 <vendor>NETAC</vendor>
 <vendorCode>ISA076EDAC18</vendorCode>
 <description>Ёмкость 1 ТБ · Интерфейс USB 3.2</description>
+</offer>
+<offer id="ISA13994A8D9" available="true">
+<url>https://b2b.isoft-shop.kz/ssd-nakopiteli/tproduct/428918522824-ssd-kingston-2048gb-m2-2280-pcie-40-nvme</url>
+<price>198000</price>
+<currencyId>KZT</currencyId>
+<categoryId>615429773604</categoryId>
+<picture>https://static.tildacdn.com/tila3130-3937-4531-b830-313966343334/ISA13994A8D9_1.png</picture>
+<name>Ssd KINGSTON 2048GB, M.2 2280, PCIe 4.0 NVMe, Read/write: 7,000 / 7,000MB/s, Random 4K read/write: up to 1,000K/1,000K IOPS SKC3000D/2048G</name>
+<vendor>Kingston</vendor>
+<vendorCode>ISA13994A8D9</vendorCode>
+<description>Ёмкость 2 ТБ · Интерфейс PCI-E 4.0 · Форм-фактор M.2 2280</description>
 </offer>
 <offer id="ISA3F5588769" available="true">
 <url>https://b2b.isoft-shop.kz/ssd-nakopiteli/tproduct/364453242084-samsung-pm1653-960gb-enterprise-ssd-25-i</url>
@@ -10784,6 +10806,17 @@
 <vendor>CyberPower</vendor>
 <vendorCode>PR1000ERTXL2U</vendorCode>
 <description>Внутри четыре батареи по 12 В на 7 А·ч. Линейно-интерактивный тип: небольшие просадки и скачки в сети прибор выправляет сам, не трогая заряд, а на батарею техника переходит только когда свет пропал совсем. Полная мощность 1000 ВА, активная 1000 Вт. Вольт-амперы показывают габарит прибора, а подключаемую технику считают по ваттам из её паспорта: их сумма не должна превышать 1000 Вт. Такой запас берут под рабочую станцию с монитором или под пару обычных рабочих мест сразу. На выходе 10 розеток IEC C13. Разъём IEC C13 — стандартный вход системных блоков, серверов и сетевого оборудования; бытовая вилка в него не входит, техника подключается своим кабелем C13–C14. Стабилизатор напряжения, в спецификациях его обозначают AVR, держит выход в норме при входном от 159 до 288 В: пока сеть в этих границах, заряд батареи не расходуется. Управление идёт по USB и RS-232: по этому каналу сервер получает команду корректно завершить работу, пока заряд ещё есть. Аварийное отключение EPO выведено на отдельный вход. Сухие контакты передают тревогу во внешнюю систему. Телефонную линию и сетевой кабель заводят через разъёмы RJ-11 и RJ-45 — по ним скачок приходит так же, как по питанию, и защита их тоже прикрывает. Ставится в стандартную стойку 19 дюймов и занимает в ней 2U по высоте. Показания выводит ЖК-экран. Корпус чёрный. · Партномер: PR1000ERTXL2U</description>
+</offer>
+<offer id="IS0741690C43" available="true">
+<url>https://b2b.isoft-shop.kz/ibp-i-zashchita-pitaniya/tproduct/948572873944-ibp-svc-v-1200-l-lcd-avr-1200va720w-12v7</url>
+<price>55000</price>
+<currencyId>KZT</currencyId>
+<categoryId>622117808604</categoryId>
+<picture>https://static.tildacdn.com/tila3766-3137-4638-b237-613864383665/IS0741690C43_1.jpg</picture>
+<name>ИБП SVC V-1200-L-LCD, AVR, 1200VA/720W, 12V/7Ah*2, (3) Schuko</name>
+<vendor>SVC</vendor>
+<vendorCode>IS0741690C43</vendorCode>
+<description>Мощность 1200 ВА / 720 Вт · Класс мощности 1–2,2 кВА</description>
 </offer>
 <offer id="IS09CDC82E84" available="true">
 <url>https://b2b.isoft-shop.kz/ibp-i-zashchita-pitaniya/tproduct/842824950214-ibp-apc-back-ups-650va-230v-usb-charging</url>
@@ -51507,6 +51540,17 @@
 <vendorCode>IS9A11584FAB</vendorCode>
 <description>Диагональ 18″ · Оперативная память 16 ГБ · Операционная система Windows 11 · Процессор Intel Core Ultra 9 290HX · Ёмкость 1 ТБ · Семья ОС Windows 11 · Линейка процессора Core Ultra 9 · Тип накопителя SSD · Разрешение 2560×1600 · Видеокарта RTX 5070</description>
 </offer>
+<offer id="IS9A5621B963" available="true">
+<url>https://b2b.isoft-shop.kz/noutbuki/tproduct/235825170344-noutbuk-asus-zenbook-duo-ux8407aa-sn152w</url>
+<price>1986000</price>
+<currencyId>KZT</currencyId>
+<categoryId>293087419414</categoryId>
+<picture>https://static.tildacdn.com/tila6265-6662-4639-b939-363662373865/IS9A5621B963_1.jpg</picture>
+<name>Ноутбук ASUS Zenbook DUO UX8407AA-SN152W, Core Ultra 9 386H-2.1/1TB SSD/32GB/14-inch WQXGA Touch/Win11</name>
+<vendor>ASUS</vendor>
+<vendorCode>IS9A5621B963</vendorCode>
+<description>Диагональ 14″ · Ёмкость 1 ТБ · Оперативная память 32 ГБ · Операционная система Windows 11 · Линейка процессора Core Ultra 9 · Семья ОС Windows 11 · Процессор Intel Core Ultra 9 386H · Накопитель 1 ТБ</description>
+</offer>
 <offer id="IS9A903A5C9E" available="true">
 <url>https://b2b.isoft-shop.kz/noutbuki/tproduct/554328514584-notebook-acernitro-5-an515-46ryzen-56600</url>
 <price>815000</price>
@@ -75229,6 +75273,17 @@
 <vendor>TP-Link</vendor>
 <vendorCode>IS18853BA9E3</vendorCode>
 <description>Wi-Fi Wi-Fi 4 · PoE Есть · Скорость 10/100 Мбит/с · Класс скорости Wi-Fi до 450 Мбит/с · Диапазон частот 2,4 ГГц · Исполнение Уличное · Скорость Wi-Fi 300 Мбит/с</description>
+</offer>
+<offer id="IS18EAACDF06" available="true">
+<url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/150617122374-besprovodnaya-tochka-dostupa-hikvision-d</url>
+<price>60000</price>
+<currencyId>KZT</currencyId>
+<categoryId>669770887424</categoryId>
+<picture>https://static.tildacdn.com/tila3266-6637-4265-b565-303232653337/IS18EAACDF06_1.jpg</picture>
+<name>Беспроводная точка доступа Hikvision DS-3WF0EC-5ACT</name>
+<vendor>Hikvision</vendor>
+<vendorCode>IS18EAACDF06</vendorCode>
+<description>Беспроводная точка доступа Hikvision DS-3WF0EC-5ACT (Hikvision)</description>
 </offer>
 <offer id="IS1AA6D87376" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/606348489854-besprovodnaya-tochka-dostupa-ubiquiti-u7</url>

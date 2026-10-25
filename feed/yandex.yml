@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<yml_catalog date="2026-10-25 07:12">
+<yml_catalog date="2026-10-25 08:22">
 <shop>
 <name>iSoft</name>
 <company>iSoft</company>
@@ -62232,6 +62232,17 @@
 <vendor>Intel</vendor>
 <vendorCode>IS66DB0E14FE</vendorCode>
 <description>Core Ultra 5 225F LGA1851, оем, 20M, 2.70/3.30 GHz, 10(4+6)/10 Core Arrow Lake, 65 (121) Вт, без встроенного видео</description>
+</offer>
+<offer id="IS675C1AEB87" available="true">
+<url>https://b2b.isoft-shop.kz/processory/tproduct/566214076754-protsessor-cpu-intel-core-i7-processor-1</url>
+<price>125000</price>
+<currencyId>KZT</currencyId>
+<categoryId>289503131194</categoryId>
+<picture>https://static.tildacdn.com/tila6439-6135-4831-b763-356131316638/IS675C1AEB87_1.jpg</picture>
+<name>Процессор (CPU) Intel Core i7 Processor 11700F 1200 BX8070811700F</name>
+<vendor>Intel</vendor>
+<vendorCode>IS675C1AEB87</vendorCode>
+<description>Сокет LGA1200</description>
 </offer>
 <offer id="IS68CE5F665A" available="true">
 <url>https://b2b.isoft-shop.kz/processory/tproduct/326952752874-protsessor-amd-ryzen-threadripper-7970x</url>

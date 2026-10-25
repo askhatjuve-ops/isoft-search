@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<yml_catalog date="2026-10-25 13:43">
+<yml_catalog date="2026-10-25 19:47">
 <shop>
 <name>iSoft</name>
 <company>iSoft</company>
@@ -60927,17 +60927,6 @@
 <vendorCode>IS21A4B4581A</vendorCode>
 <description>Тип устройства Принтер · Технология печати струйный · Цветность цветной · Скорость печати 32 стр/мин</description>
 </offer>
-<offer id="IS2E454FE28B" available="true">
-<url>https://b2b.isoft-shop.kz/printery/tproduct/755074994244-printer-sublimatsionnii-epson-sc-f500-c1</url>
-<price>1663000</price>
-<currencyId>KZT</currencyId>
-<categoryId>883275389424</categoryId>
-<picture>https://static.tildacdn.com/tild3665-3264-4864-b735-393164666238/IS2E454FE28B_1.jpg</picture>
-<name>Принтер сублимационный Epson SC-F500 C11CJ17301A0 A1 24-inch 610 мм, 70 сек/А1, USB, ethernet, WIFI</name>
-<vendor>Epson</vendor>
-<vendorCode>IS2E454FE28B</vendorCode>
-<description>Тип устройства Принтер · Формат A1</description>
-</offer>
 <offer id="IS37CD125FA4" available="true">
 <url>https://b2b.isoft-shop.kz/printery/tproduct/439019786694-printer-tsvetnoi-lazernii-hp-color-lj-pr</url>
 <price>248000</price>
@@ -61065,17 +61054,6 @@
 <vendor>HP</vendor>
 <vendorCode>IS70FA41DED2</vendorCode>
 <description>Технология печати лазерный · Цветность цветной · Тип устройства Принтер</description>
-</offer>
-<offer id="IS729C982BD6" available="true">
-<url>https://b2b.isoft-shop.kz/printery/tproduct/224828909834-printer-struinii-chb-epson-m1050-c11cl01</url>
-<price>116000</price>
-<currencyId>KZT</currencyId>
-<categoryId>883275389424</categoryId>
-<picture>https://static.tildacdn.com/tild3334-3234-4335-b265-366261303638/IS729C982BD6_1.png</picture>
-<name>Принтер струйный ЧБ Epson M1050 C11CL01401, A4, до 22 стр/мин, WIFI, Ethernet</name>
-<vendor>Epson</vendor>
-<vendorCode>IS729C982BD6</vendorCode>
-<description>Тип устройства Принтер · Технология печати струйный · Цветность ч/б · Формат A4 · Скорость печати 22 стр/мин</description>
 </offer>
 <offer id="IS78C3BF3C9F" available="true">
 <url>https://b2b.isoft-shop.kz/printery/tproduct/132041422514-printer-pantum-bp2300-a4-22ppm-single-fu</url>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<yml_catalog date="2026-10-25 08:22">
+<yml_catalog date="2026-10-25 13:43">
 <shop>
 <name>iSoft</name>
 <company>iSoft</company>
@@ -64956,18 +64956,6 @@
 <vendor>Grandstream</vendor>
 <vendorCode>IS0254538C3D</vendorCode>
 <description>Тип устройства Коммутатор · Портов 8 · Скорость 10/100/1000 Мбит/с · Слотов SFP 2 · PoE Есть · Бюджет PoE 120 Вт · Уровень L3 · Управление Управляемый · Класс по числу портов До 10 портов</description>
-</offer>
-<offer id="IS045A41E87A" available="true">
-<url>https://b2b.isoft-shop.kz/setevoe-oborudovanie/tproduct/313529372074-kommutator-tp-link-ls1008-8x100mb-neupra</url>
-<price>12345</price>
-<currencyId>KZT</currencyId>
-<categoryId>737078043964</categoryId>
-<picture>https://static.tildacdn.com/stor6666-6538-4139-a362-333463386230/bd620052d46e1b1b2304b05c82cb64a7.jpg</picture>
-<picture>https://static.tildacdn.com/stor6666-3939-4466-b065-303736323832/562da10f748864caa93831e22d28ddc2.jpg</picture>
-<name>Коммутатор TP-Link LS1008 8x100Mb неуправляемый</name>
-<vendor>TP-Link</vendor>
-<vendorCode>LS1008</vendorCode>
-<description>Неуправляемый, 8 портов 10/100 Мбит/с RJ45 с автосогласованием и Auto-MDI/MDIX · Партномер: LS1008</description>
 </offer>
 <offer id="IS04FCDD1725" available="true">
 <url>https://b2b.isoft-shop.kz/setevoe-oborudovanie/tproduct/351051891144-kommutator-d-link-dgs-1100-18pv2a3a</url>

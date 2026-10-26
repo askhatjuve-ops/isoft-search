@@ -1,4 +1,4 @@
-/* ish-design-p36.js  v1.0  (кандидат 17.10.2026; НЕ выложено)  П36 «карточка товара в духе главной C2»
+/* ish-design-p36.js  v1.1  (26.10.2026: убраны «Цена с НДС», «В наличии», «в т.ч. НДС», «Цены обновлены»; КП и «Сравнить» в одну строку; кандидат 17.10.2026)  П36 «карточка товара в духе главной C2»
    Грузится загрузчиком П4 (строка P36V, как P31) только на странице товара (.ishpg-row). Сам подключает ish-design-p36.css рядом с собой.
    Что делает: ставит html.ishp36-on; в панели покупки оборачивает цену/наличие/кнопки в индиго-блок (.ishp36-bb), КП и «Уточнить» в одну строку;
    подписи доверия по решению владельца; финальный блок «Не нашли нужное?» после «Вам может подойти».
@@ -101,11 +101,29 @@
     im.src = u;
   }
   function arAll() { var a = D.querySelectorAll('.ishpg-row .t-slds__bgimg'); for (var i = 0; i < a.length; i++) arOne(a[i]); }
+  /* 26.10 решение владельца: в блоке цены нет «Цена с НДС», «в т.ч. НДС 16%: N», «Цены обновлены …» (строку .ishpg3-vat рисует фрагмент v8p7, p38 дописывал дату);
+     то же в липкой панели телефона (.ishpg3-sp span: «Цена с НДС · В наличии» -> «В наличии»). Число цены и микроразметка (itemprop) не трогаются. */
+  var стик_наблюдатель = 0;
+  function стик_текст() {
+    var sp = q('.ishpg3-sticky .ishpg3-sp span'); if (!sp) return;
+    var t = sp.textContent, n = t.replace(/^\s*Цена с НДС\s*(·\s*)?/, '').replace(/^\s*В наличии\s*$/, '');
+    if (n !== t) sp.textContent = n;
+  }
+  function убрать_ндс() {
+    var v = D.querySelectorAll('.ishpg3-vat');
+    for (var i = 0; i < v.length; i++) if (v[i].parentNode) v[i].parentNode.removeChild(v[i]);
+    var av = D.querySelectorAll('.ishpg3-avail:not(.ishpg3-no)');   /* «В наличии» убрано (26.10); «Нет в наличии» / «Наличие уточним» остаются */
+    for (var k = 0; k < av.length; k++) if (av[k].parentNode) av[k].parentNode.removeChild(av[k]);
+    стик_текст();
+    var sp = q('.ishpg3-sticky .ishpg3-sp span');
+    if (sp && !стик_наблюдатель && W.MutationObserver) { стик_наблюдатель = 1; new MutationObserver(стик_текст).observe(sp, { childList: true, characterData: true, subtree: true }); }
+  }
   function pass() {
     var row = q('.ishpg-row');
     if (!row) return false;
     try { arAll(); } catch (e) {}
     H.classList.add('ishp36-on');
+    убрать_ндс();
     var panel = q('.ishpg3-panel', row);
     if (panel && !q('.ishp36-bb', panel)) {
       var price = q('.js-store-price-wrapper', panel), buy = q('.ishpg-buy', panel);
@@ -143,7 +161,7 @@
     var p2 = q('.ishpg-p2');
     if (p2 && !q('.ishp36-nf') && p2.parentNode) {
       var nf = D.createElement('section'); nf.className = 'ishp36-nf'; nf.setAttribute('aria-label', 'Не нашли нужное');
-      nf.innerHTML = '<div><h3>Не нашли нужное? Пришлите список</h3><p>Проработаем и ответим в день обращения.</p></div>' +
+      nf.innerHTML = '<div><h3>Не нашли нужное? Пришлите список</h3><p>Проработаем и ' + ((W.ISH_SLA && W.ISH_SLA.replyLc) ? W.ISH_SLA.replyLc() : 'ответим в рабочее время') + '.</p></div>' +
         '<div class="ishp36-nfb"><span class="ishp36-nfw"><a class="p" href="#zapros" role="button" data-ishp36-ask="1">Написать, что нужно</a></span>' +
         '<a class="s" href="/assortiment">Расширенный ассортимент 14000+ →</a></div>';
       p2.parentNode.insertBefore(nf, p2.nextSibling);
@@ -163,7 +181,7 @@
     if (!ov) {
       ov = D.createElement('div'); ov.className = 'ishp36-zo'; ov.setAttribute('role', 'dialog'); ov.setAttribute('aria-modal', 'true'); ov.setAttribute('aria-label', 'Запрос на подбор');
       ov.innerHTML = '<div class="ishp36-zb"><button type="button" class="ishp36-zx" aria-label="Закрыть">×</button><h3>Что вам нужно?</h3>' +
-        '<p>Напишите список или одну позицию — ответим в день обращения.</p>' +
+        '<p>Напишите список или одну позицию — ' + ((W.ISH_SLA && W.ISH_SLA.replyLc) ? W.ISH_SLA.replyLc() : 'ответим в рабочее время') + '.</p>' +
         '<textarea class="ishp36-zt" rows="5" aria-label="Список"></textarea>' +
         '<input class="ishp36-zc" type="text" placeholder="Телефон или почта для ответа" aria-label="Контакт">' +
         '<button type="button" class="ishp36-zs">Отправить в WhatsApp</button>' +

@@ -1,4 +1,4 @@
-/* ish-design-p36.css  v1.4  (кандидат 17.10.2026; НЕ выложено)  П36 «карточка товара в духе главной C2»
+/* ish-design-p36.css  v1.5  (26.10.2026: без .ishpg3-vat; КП и «Сравнить» в одну строку; кандидат 17.10.2026)  П36 «карточка товара в духе главной C2»
    Подключает ish-design-p36.js (рядом с собой). Откат: пустой файл на Pages или window.ISH_P36_OFF / ISH_P4_NO_P36.
    Окно Tilda (крестик, «К разделу», крошки) ОСТАЁТСЯ, меняется всё внутри. Всё под html.ishp36-on (ставит js).
    Перебивает правила блока 4055071703 и ish-design.css (там !important) через ID #allrecords; сам блок не правится.
@@ -51,7 +51,12 @@ html.ishp36-on #allrecords .ishp36-bb .js-store-price-wrapper{display:flex;flex-
 html.ishp36-on #allrecords .ishp36-bb .js-store-price-wrapper::after{content:none!important}
 html.ishp36-on #allrecords .ishp36-bb .t-store__prod-popup__price,html.ishp36-on #allrecords .ishp36-bb .t-store__prod-popup__price-value,html.ishp36-on #allrecords .ishp36-bb .t-store__prod-popup__price-currency{font:800 36px/1.1 var(--f)!important;letter-spacing:-.02em;color:#fff!important}
 html.ishp36-on #allrecords .ishp36-bb .t-store__prod-popup__price-currency{font-weight:600!important;opacity:.9}
-html.ishp36-on #allrecords .ishp36-bb .ishpg3-vat{display:flex;flex-direction:column;gap:2px;font:600 13px/1.25 var(--f);color:#D3D7F3;white-space:nowrap}
+/* 26.10: число и ₸ - всегда одна строка (Tilda делает оба блоком), ширина по содержимому */
+html.ishp36-on #allrecords .ishp36-bb .js-store-price-wrapper{flex-wrap:nowrap}
+html.ishp36-on #allrecords .ishp36-bb .js-store-prod-price{display:flex!important;flex-wrap:nowrap;align-items:baseline;gap:.2em;white-space:nowrap;width:max-content;max-width:100%}
+html.ishp36-on #allrecords .ishp36-bb .js-store-prod-price>.t-store__prod-popup__price-value,html.ishp36-on #allrecords .ishp36-bb .js-store-prod-price>.t-store__prod-popup__price-currency{display:block!important;white-space:nowrap;flex:none}
+html.ishp36-on #allrecords .ishp36-bb .ishpg3-vat{display:none!important}
+html.ishp36-on #allrecords .ishp36-bb .ishpg3-vat--old{display:flex;flex-direction:column;gap:2px;font:600 13px/1.25 var(--f);color:#D3D7F3;white-space:nowrap}
 html.ishp36-on #allrecords .ishp36-bb .ishpg3-vat small{font:400 12.5px/1.3 var(--f);color:#B9BFE6}
 html.ishp36-on #allrecords .ishp36-bb .ishpg3-avail{color:#E6F7EC;font:600 14px/1.3 var(--f);flex:none}
 html.ishp36-on #allrecords .ishp36-bb .ishpg3-avail i{background:#3DDC84;box-shadow:0 0 0 4px rgba(61,220,132,.2)}
@@ -85,7 +90,17 @@ html.ishp36-on #allrecords .ishp36-cmp__open[hidden]{display:none}
 html.ishp36-on #allrecords .ishp36-cmp__open:hover{color:#fff!important;text-decoration:underline!important}
 html.ishp36-on #allrecords .ishp36-cmp__open[aria-disabled="true"]{opacity:.75}
 /* КП и «Уточнить»: светлые ссылки-стрелки в одну строку */
-html.ishp36-on #allrecords .ishp36-links{display:flex;flex-wrap:wrap;align-items:center;gap:0 22px}
+html.ishp36-on #allrecords .ishp36-links{display:flex;flex-wrap:wrap;align-items:center;gap:0 12px}
+/* 26.10: «Получить КП и счёт →» слева, «Сравнить» справа, одна строка по центру; «Открыть сравнение (N)» (order:4) уходит на свою строку ниже */
+html.ishp36-on #allrecords .ishp36-links .ishp10-kp{flex:0 1 auto;min-width:0;white-space:nowrap}
+html.ishp36-on #allrecords .ishp36-links .ishp36-cmp{margin-left:auto;flex:none}
+@media (max-width:420px){
+  html.ishp36-on #allrecords .ishp36-links{gap:0 2px}
+  html.ishp36-on #allrecords .ishp36-bb .ishp10-kp{font-size:12.5px!important}
+  html.ishp36-on #allrecords .ishp36-links .ishp36-cmp{gap:7px;padding:0 4px 0 4px;font-size:13px}
+  html.ishp36-on #allrecords .ishp36-links .ishp36-cmp input{left:4px}
+  html.ishp36-on #allrecords .ishp36-links .ishp36-cmp_on .ishp36-cmp,html.ishp36-on #allrecords .ishp36-bb .ishp36-cmp_on .ishp36-cmp{gap:6px;padding:0 2px;font-size:12px}
+}
 html.ishp36-on #allrecords .ishp36-links .ishp10-kp,html.ishp36-on #allrecords .ishp36-links .ishpg3-ask{order:1}
 html.ishp36-on #allrecords .ishp36-links .ishpg3-ask{order:2}
 html.ishp36-on #allrecords .ishp36-bb .ishp10-kp,html.ishp36-on #allrecords .ishp36-bb .ishpg3-ask{display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:0;margin:0;color:#D3D7F3!important;font:600 14px/1.3 var(--f)!important;text-decoration:none!important;border:0!important;background:none!important}

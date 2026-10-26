@@ -10,6 +10,10 @@
      notes  Т26  сноска про НДС и бесплатную доставку под сеткой товаров в разделе
    Имена полей (li_nm), подписи, атрибуты data-tilda-*, обработчики отправки НЕ меняются: меняется только ТЕКСТ внутри .t-input-error и .t-form__errorbox-item.
    Фр4 («* - обязательные поля») здесь НЕ делается: строку уже даёт ish-design.css (П1/Фр9); дубль не нужен. */
+/* ISH_SLA: ОДНО место для обещаний срока (часы работы пн–вс 9:00–18:00, время Астаны UTC+5). Копия в каждом файле, кому нужна; первая загруженная создаёт window.ISH_SLA. Менять часы/тексты - здесь (во всех копиях одинаково). Проверка: window.ISH_SLA_NOW = мс. */
+(function (W) { if (W.ISH_SLA) return; var O = 9, C = 18; function ok() { var h = new Date((W.ISH_SLA_NOW || Date.now()) + 5 * 36e5).getUTCHours(); return h >= O && h < C; }
+  W.ISH_SLA = { open: ok, reply: function () { return ok() ? 'Ответим сегодня' : 'Ответим утром, с 9:00'; }, replyLc: function () { return ok() ? 'ответим сегодня' : 'ответим утром, с 9:00'; },
+    inv: function (em) { return ok() ? 'Счёт придёт на почту ' + (em ? em + ' ' : '') + 'за 15 минут' : 'Сейчас нерабочее время — счёт пришлём утром, с 9:00' + (em ? ' на почту ' + em : ''); } }; })(window);
 (function () {
   'use strict';
   var W = window, D = document;
@@ -108,6 +112,22 @@
       if (want) e.textContent = want;
     });
   }
+  /* 26.10: серверная ошибка отправки: телефон и WhatsApp настоящими ссылками рядом с ошибкой (проверка полей этого не касается) */
+  var СВЯЗЬ = 'Не получается отправить? Позвоните <a href="tel:+77758818531">+7 775 881 85 31</a> · <a href="https://wa.me/77758818531" target="_blank" rel="noopener">WhatsApp</a>';
+  function связь(f) {
+    if (!f || q('.ishp19-ct', f)) return;
+    var host = q('.t-form__errorbox-middle', f) || q('.t-form__errorbox-wrapper', f) || f;
+    var p = D.createElement('p'); p.className = 'ishp19-ct'; p.setAttribute('role', 'status'); p.innerHTML = СВЯЗЬ;
+    host.appendChild(p);
+  }
+  function серверная(f) {
+    if (q('.ishp19-ct', f)) return;
+    qa('.t-form__errorbox-item, .js-rule-error', f).forEach(function (e) {
+      var t = tx(e);
+      if (t && /сервер|server|network|сети|позже|later|попробуйте ещё|не удалось/i.test(t) && e.offsetParent !== null) связь(f);
+    });
+  }
+  D.addEventListener('tildaform:aftererror', function (e) { var f = e.target && e.target.closest ? e.target.closest('form') || e.target : null; if (f && f.tagName === 'FORM') связь(f); });
   function привязать(f) {
     if (f.__ishp19) return;
     f.__ishp19 = 1;
@@ -115,7 +135,7 @@
     new MutationObserver(function () {
       if (busy) return;
       busy = true;
-      try { поправить(f); } finally { busy = false; }   /* свои правки тоже вызовут колбэк - он ничего не найдёт менять */
+      try { поправить(f); серверная(f); } finally { busy = false; }   /* свои правки тоже вызовут колбэк - он ничего не найдёт менять */
     }).observe(f, {subtree: true, childList: true, characterData: true});
     поправить(f);
   }
@@ -281,7 +301,7 @@
     });
     if (q('.ishp19c-trust', бок)) return;
     var ит = [['doc', 'Счёт с НДС', 'для юрлиц и ИП, безналично'], ['truck', 'Бесплатная доставка', 'в любую точку Казахстана'],
-              ['shield', 'Гарантия от производителя', ''], ['clock', 'Ответ в день обращения', 'наличие, срок, цена']];
+              ['shield', 'Гарантия от производителя', ''], ['clock', ISH_SLA.reply(), 'наличие, срок, цена']];
     бок.appendChild(node('<div class="ishp19c-trust" role="list">' + ит.map(function (x) {
       return '<div class="ishp19c-trust__i" role="listitem"><span class="ishp19c-sq">' + svg18(x[0]) + '</span><p><b>' + x[1] + '</b>' + (x[2] ? '<span>' + x[2] + '</span>' : '') + '</p></div>';
     }).join('') + '</div>'));

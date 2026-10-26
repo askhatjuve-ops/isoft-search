@@ -16,7 +16,7 @@ html.ishp44 #specRoot .вн-тело>div{max-width:none}
 #ishp44{font-family:'TildaSans',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#171923;font-size:15px;line-height:1.45;margin:6px 0 48px;scroll-margin-top:110px}
 #ishp44 *{box-sizing:border-box}
 #ishp44 .ishp44__wrap{padding-top:8px}
-body.sp-empty-cart #ishp44{display:none}
+body.sp-empty-cart #ishp44 .ishp44__grid,body.sp-empty-cart #ishp44 .ishp44__pd,body.sp-empty-cart #ishp44 .ishp44__fin{display:none}
 #ishp44 .ishp44__sum{display:flex;align-items:center;flex-wrap:wrap;gap:6px 18px;padding:14px 20px;margin:0 0 16px;background:#fff;border:1px solid #E3DFD6;border-radius:14px}
 #ishp44 .ishp44__sum:empty{display:none}
 #ishp44 .ishp44__sum-t{font-weight:600;font-size:17px}
@@ -86,3 +86,9 @@ html.ishp44 #ishp44 .ishp44__wrap{padding-top:0}
   html.ishp44 #specRoot .sp-шапка>div:nth-child(2),html.ishp44 #specRoot .sp-поз>.sp-серед{justify-self:stretch;min-width:0}
   html.ishp44 #specRoot .sp-фото{width:64px!important;height:64px!important}
 }
+
+/* 26.10: быстрая связь (телефон и WhatsApp ссылками) и строка на пустой корзине */
+#ishp44 .ishp44__tel{color:inherit;font-weight:600;text-decoration:underline;text-underline-offset:2px;white-space:nowrap}
+#ishp44 .ishp44__tel:focus-visible{outline:2px solid #272B36;outline-offset:2px;border-radius:2px}
+#ishp44 .ishp44__empty{margin:0 0 14px;text-align:center;color:#272B36;font-size:15px}
+#ishp44 .ishp44__empty[hidden]{display:none}

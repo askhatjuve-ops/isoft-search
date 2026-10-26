@@ -304,3 +304,7 @@ html.ishp19-on .вн .sp-счёт button{background:#fff!important;color:#2B44C7
 html.ishp19-on .вн .sp-счёт button:hover{background:#F3F4F6!important}
 html.ishp19-on .вн .sp-снять{background:#fff!important;border:1px solid #E3DFD6;color:#565D70}
 html.ishp19-on .вн .sp-снять:hover{background:#fff!important;border-color:#E5B8B2;color:#B43A36}
+
+/* 26.10: быстрая связь рядом с серверной ошибкой формы */
+.ishp19-ct{margin:8px 0 0;font-size:14px;line-height:1.4;color:#272B36}
+.ishp19-ct a{color:inherit;font-weight:600;text-decoration:underline;text-underline-offset:2px;white-space:nowrap}

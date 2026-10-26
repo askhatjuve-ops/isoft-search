@@ -193,10 +193,12 @@
 
   /* ══ плашка ══ */
   var плашка = null, сообщ = null, сообщТ = 0;
-  function мигнуть(т) {
+  function мигнуть(т, href, подпись) {                /* 26.10: href - тост со ссылкой (держится дольше, чтобы успеть нажать) */
     if (!сообщ) { сообщ = mk('div', 'ishp25-toast'); сообщ.setAttribute('role', 'status'); D.body.appendChild(сообщ); }
-    сообщ.textContent = т; сообщ.classList.add('ishp25-toast_on');
-    clearTimeout(сообщТ); сообщТ = setTimeout(function () { сообщ.classList.remove('ishp25-toast_on'); }, 2600);
+    сообщ.textContent = т;
+    if (href) { var a = D.createElement('a'); a.href = href; a.textContent = подпись || 'Открыть товар'; сообщ.appendChild(D.createTextNode(' ')); сообщ.appendChild(a); }
+    сообщ.classList.add('ishp25-toast_on');
+    clearTimeout(сообщТ); сообщТ = setTimeout(function () { сообщ.classList.remove('ishp25-toast_on'); }, href ? 6000 : 2600);
   }
   var ПРЕПЯТСТВИЯ = ['.ishk-bar', '.ishp10-sticky', '.ishpg3-sticky', '.таб', '.нш-мт'], подъёмТ = 0;
   function подъём() {                              /* v2: плашка стоит выше нижних панелей, с которыми пересекается по горизонтали */
@@ -345,13 +347,15 @@
       '<button type="button" class="ishp25-btn" data-a="clear">Очистить</button>' +
       '<button type="button" class="ishp25-x" data-a="close" aria-label="Закрыть сравнение">' + ICON.x + '</button></div></div>' +
       '<p class="ishp25-note" hidden>Показаны основные характеристики из карточек: полный список загрузить не удалось.</p>' +
-      '<div class="ishp25-scr"><table class="ishp25-ct"></table></div></div>');
+      '<div class="ishp25-scr"><table class="ishp25-ct"></table></div>' +
+      '<div class="ishp25-ft"><a class="ishp25-kp" href="/spec#kp" data-a="kp">Получить КП и счёт</a></div></div>');
     окно.addEventListener('click', function (e) {
       var t = e.target;
       if (t === окно) { закрыть(); return; }
       var b = t.closest ? t.closest('[data-a],[data-rm],[data-buy]') : null; if (!b) return;
       var a = b.getAttribute('data-a');
-      if (a === 'close') закрыть();
+      if (a === 'kp') { e.preventDefault(); кпИзСравнения(b.getAttribute('href') || '/spec#kp'); }
+      else if (a === 'close') закрыть();
       else if (a === 'clear') { очистить(); закрыть(); }
       else if (a === 'diff') { толькоОтл = !толькоОтл; рисоватьОкно(); }
       else if (b.hasAttribute('data-rm')) { var u = b.getAttribute('data-rm'), s = выбор(), i = ищи(u); if (i > -1) { s.splice(i, 1); писать(s); обновить(); } }
@@ -377,9 +381,17 @@
     плашкаОбн();
     try { if (последнийФокус && последнийФокус.focus) последнийФокус.focus(); } catch (e) {}
   }
+  function кпИзСравнения(url) {                    /* 26.10: родные кнопки «В корзину» (те, что есть на этой странице) нажимаем тем же кодом, затем /spec#kp */
+    var n = 0;
+    выбор().forEach(function (it) {
+      var k = родная(it.u);
+      if (k && !(/ishk-in/.test(k.className) || k.getAttribute('data-s') === 'in')) { k.click(); n++; }
+    });
+    setTimeout(function () { location.href = url; }, n ? 900 : 0);   /* корзина Tilda пишется в localStorage сразу после нажатия */
+  }
   function купитьИз(b) {                           /* родная кнопка: тот же обработчик, что у карточки */
     var k = родная(b.getAttribute('data-buy'));
-    if (!k) { мигнуть('Откройте товар, чтобы добавить его в корзину'); return; }
+    if (!k) { var i = ищи(b.getAttribute('data-buy')), it = i > -1 ? выбор()[i] : null; мигнуть('Откройте товар, чтобы добавить его в корзину.', it && it.l, 'Открыть товар'); return; }
     k.click();
     [400, 1200, 2600].forEach(function (ms) { setTimeout(синхрКорзины, ms); });
   }

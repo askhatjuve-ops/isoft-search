@@ -9,6 +9,10 @@
    Пока в Tilda эти поля обязательны (Компания, Email, Телефон, Согласие), недостающие заполняются служебными заглушками, которые ноутбук
    считает «пусто»: компания «—», почта …@bez-pochty.invalid, телефон (000) 000-00-00. Когда поля в Tilda станут необязательными, заглушки не нужны.
    Выключатель: window.ISH_P44_OFF = 1 (до загрузки p4). Кэш: поменять P44V в p4. */
+/* ISH_SLA: ОДНО место для обещаний срока (часы работы пн–вс 9:00–18:00, время Астаны UTC+5). Копия в каждом файле, кому нужна; первая загруженная создаёт window.ISH_SLA. Менять часы/тексты - здесь (во всех копиях одинаково). Проверка: window.ISH_SLA_NOW = мс. */
+(function (W) { if (W.ISH_SLA) return; var O = 9, C = 18; function ok() { var h = new Date((W.ISH_SLA_NOW || Date.now()) + 5 * 36e5).getUTCHours(); return h >= O && h < C; }
+  W.ISH_SLA = { open: ok, reply: function () { return ok() ? 'Ответим сегодня' : 'Ответим утром, с 9:00'; }, replyLc: function () { return ok() ? 'ответим сегодня' : 'ответим утром, с 9:00'; },
+    inv: function (em) { return ok() ? 'Счёт придёт на почту ' + (em ? em + ' ' : '') + 'за 15 минут' : 'Сейчас нерабочее время — счёт пришлём утром, с 9:00' + (em ? ' на почту ' + em : ''); } }; })(window);
 (function () {
   'use strict';
   var W = window, D = document, H = D.documentElement;
@@ -20,6 +24,9 @@
   var VER = (tag && /[?&]v=([^&]*)/.exec(tag.src || '') || [0, '1'])[1];
   var FID = 'form3238938703';
   var PH_EMAIL = 'kp@bez-pochty.invalid', PH_PHONE = '(000) 000-00-00', PH_COMPANY = '—';
+  /* быстрая связь: телефон и WhatsApp - настоящие ссылки; в текстах ошибок пишем {CT} */
+  var CT = '<a class="ishp44__tel" href="tel:+77758818531">+7 775 881 85 31</a> · <a class="ishp44__tel" href="https://wa.me/77758818531" target="_blank" rel="noopener">WhatsApp</a>';
+  function ct(m) { return esc(m).replace(/\{CT\}/g, CT); }
   var state = { busy: false, done: '', pdf: null, num: '', kpLink: '' };
 
   function q(s, r) { return (r || D).querySelector(s); }
@@ -95,6 +102,7 @@
   function html() {
     return '' +
       '<div class="вн-об ishp44__wrap">' +
+      '<p class="ishp44__empty" id="ishp44empty" hidden>Или позвоните: ' + CT + '</p>' +
       '<div class="ishp44__sum" id="ishp44sum"></div>' +
       '<div class="ishp44__grid" id="ishp44grid">' +
         '<section class="ishp44__card" id="ishp44kp" aria-labelledby="ishp44kpH">' +
@@ -107,7 +115,7 @@
         '</section>' +
         '<section class="ishp44__card ishp44__card_inv" id="ishp44inv" aria-labelledby="ishp44invH">' +
           '<h2 id="ishp44invH">Нужен счёт на оплату?</h2>' +
-          '<p class="ishp44__lead" id="ishp44invL">Укажите БИН и почту. Счёт придёт на почту за 15 минут.</p>' +
+          '<p class="ishp44__lead" id="ishp44invL">Укажите БИН и почту. ' + ISH_SLA.inv() + '.</p>' +
           '<div class="ishp44__two">' +
             '<label class="ishp44__f" for="ishp44bin"><span>БИН / ИИН</span><input id="ishp44bin" type="text" inputmode="numeric" autocomplete="off" placeholder="12 цифр" maxlength="14"></label>' +
             '<label class="ishp44__f" for="ishp44em"><span>Почта</span><input id="ishp44em" type="email" inputmode="email" autocomplete="email" placeholder="name@company.kz"></label>' +
@@ -124,16 +132,17 @@
   function render() {
     var t = totals(), s = q('#ishp44sum'); if (!s) return;
     var cls = D.body.classList;
+    var em0 = q('#ishp44empty'); if (em0) em0.hidden = !!(t.it.length || state.done);
     if (!t.it.length && !state.done) { s.innerHTML = ''; return; }
     if (state.done !== 'inv') s.innerHTML = '<span class="ishp44__sum-t">Итого по заказу</span><span class="ishp44__sum-n">' + t.it.length + ' поз. · ' + t.n + ' шт.</span>' +
       '<span class="ishp44__sum-v"><small>Итого с НДС</small><b>' + (t.noPrice ? 'без позиций «по запросу» ' : '') + money(t.sum) + '</b></span>';
     var inv = q('#ishp44invB'), L = q('#ishp44invL');
     if (inv) { inv.disabled = state.busy || !!t.noPrice; }
-    if (L) L.textContent = t.noPrice ? 'В заказе есть позиция без цены: счёт выставим после того, как менеджер пришлёт цену.' : 'Укажите БИН и почту. Счёт придёт на почту за 15 минут.';
+    if (L) L.textContent = t.noPrice ? 'В заказе есть позиция без цены: счёт выставим после того, как менеджер пришлёт цену.' : 'Укажите БИН и почту. ' + ISH_SLA.inv() + '.';
     var kb = q('#ishp44kpB'); if (kb) kb.disabled = state.busy;
     void cls;
   }
-  function err(which, msg) { var e = q(which === 'kp' ? '#ishp44kpE' : '#ishp44invE'); if (e) e.textContent = msg || ''; }
+  function err(which, msg) { var e = q(which === 'kp' ? '#ishp44kpE' : '#ishp44invE'); if (e) e.innerHTML = msg ? ct(msg) : ''; }
   function mark(id, bad) { var e = q('#' + id); if (e) { e.classList.toggle('ishp44__bad', !!bad); e.setAttribute('aria-invalid', bad ? 'true' : 'false'); } }
 
   /* ── отправка через родную форму Tilda ── */
@@ -160,14 +169,14 @@
   }
   function submit(kind, vals, onOk, onFail) {
     var f = form();
-    if (!f) { onFail('Форма не загрузилась. Обновите страницу или позвоните +7 775 881 85 31.'); return; }
+    if (!f) { onFail('Форма не загрузилась. Обновите страницу или позвоните {CT}.'); return; }
     var done = false, timer;
     function ok() { if (done) return; done = true; clearTimeout(timer); D.removeEventListener('tildaform:aftersuccess', h); onOk(); }
     function h(e) { if (e.target && e.target.id === FID) ok(); }
     D.addEventListener('tildaform:aftersuccess', h);
     setMode(kind === 'kp' ? 'kp' : 'inv');
     setTimeout(function () {
-      var F = form(); if (!F) { onFail('Форма не загрузилась.'); return; }
+      var F = form(); if (!F) { onFail('Форма не загрузилась. Позвоните {CT}.'); return; }
       var set = function (sel, v) { var el = q(sel, F); if (el) setVal(el, v); };
       set('[name^="Компания"]', vals.company || PH_COMPANY);
       set('[name="Email"]', vals.email || PH_EMAIL);
@@ -177,15 +186,15 @@
       var cm = q('[name^="Комментарий"]', F); if (cm) setVal(cm, vals.comment || '');
       consent(F);
       var sb = q('[type="submit"]', F) || q('.t-submit', F);
-      if (!sb) { onFail('Кнопка отправки не найдена. Позвоните +7 775 881 85 31.'); return; }
+      if (!sb) { onFail('Кнопка отправки не найдена. Позвоните {CT}.'); return; }
       sb.click();
       var n = 0;
       (function watch() {                /* 25 с: успех придёт событием; ошибки проверки Tilda рисует в скрытой форме - переносим текст */
         if (done) return;
         n++;
         var e = nativeErrors(F);
-        if (e.length && n > 2) { done = true; D.removeEventListener('tildaform:aftersuccess', h); onFail(e.join(' · ')); return; }
-        if (n > 100) { done = true; D.removeEventListener('tildaform:aftersuccess', h); onFail('Нет ответа от сервера. Проверьте интернет и повторите или позвоните +7 775 881 85 31.'); return; }
+        if (e.length && n > 2) { done = true; D.removeEventListener('tildaform:aftersuccess', h); onFail(e.join(' · ') + ' Не получается? Позвоните {CT}.'); return; }
+        if (n > 100) { done = true; D.removeEventListener('tildaform:aftersuccess', h); onFail('Нет ответа от сервера. Проверьте интернет и повторите или позвоните {CT}.'); return; }
         timer = setTimeout(watch, 250);
       })();
     }, 450);
@@ -223,14 +232,14 @@
       guardClear(true);
       submit('kp', { phone: ten, comment: '[Документ: Лид КП] ' + num + ' (PDF на сайте не собрался)' }, function () {
         state.done = 'kp'; busy(false); showKpOk(null);
-      }, function (m) { busy(false); err('kp', m || 'Не удалось отправить. Позвоните +7 775 881 85 31.'); });
+      }, function (m) { busy(false); err('kp', m || 'Не удалось отправить. Позвоните {CT}.'); });
     });
   }
   function showKpOk(pdf, warn) {
     var o = q('#ishp44kpOk'); if (!o) return;
     var a = pdf ? '<a class="ishp44__lnk" href="' + pdf.url + '" target="_blank" rel="noopener">Открыть КП (PDF)</a><a class="ishp44__lnk ishp44__lnk_2" href="' + pdf.url + '" download="' + esc(pdf.filename) + '">Скачать</a>' : '';
     o.innerHTML = '<b>' + (warn ? 'КП готово, но заявка не ушла' : (pdf ? 'КП готово' : 'Заявка принята')) + '</b>' +
-      '<span>' + (warn ? esc(warn) + ' Скачайте КП и позвоните +7 775 881 85 31.' : (pdf ? 'Менеджер скоро позвонит. Счёт можно выставить ниже.' : 'Менеджер скоро позвонит и пришлёт КП.')) + '</span>' + a;
+      '<span>' + (warn ? ct((warn.indexOf('{CT}') < 0 ? warn + ' Позвоните {CT}.' : warn) + ' Скачайте КП.') : (pdf ? 'Менеджер скоро позвонит. Счёт можно выставить ниже.' : 'Менеджер скоро позвонит и пришлёт КП.')) + '</span>' + a;
     o.hidden = false; o.classList.toggle('ishp44__ok_warn', !!warn);
     if (pdf && !warn) { try { var l = o.querySelector('[download]'); if (l) l.click(); } catch (e) {} }   /* скачивание сразу; ссылки остаются на экране */
   }
@@ -248,12 +257,12 @@
     busy(true); guardClear(false);
     submit('inv', { company: co, bin: bin, email: em, phone: ten.length === 10 ? ten : '', comment: state.kpLink ? '[Основание: КП № ' + state.kpLink + ']' : '' }, function () {
       state.done = 'inv'; busy(false); showInvOk(em); track('ish_p44_invoice', { value: t.sum, items: t.it.length, currency: 'KZT' });
-    }, function (m) { busy(false); err('inv', m || 'Не удалось отправить. Позвоните +7 775 881 85 31.'); });
+    }, function (m) { busy(false); err('inv', m || 'Не удалось отправить. Позвоните {CT}.'); });
   }
   function showInvOk(em) {
     var g = q('#ishp44grid'), f = q('#ishp44fin'); if (!f) return;
     if (g) g.hidden = true;
-    f.innerHTML = '<div class="ishp44__fin-ic" aria-hidden="true">✓</div><h2>Счёт выставляем</h2><p>Счёт придёт на почту <b>' + esc(em) + '</b> за 15 минут. Если письма нет, проверьте папку «Спам» или позвоните +7 775 881 85 31.</p>' +
+    f.innerHTML = '<div class="ishp44__fin-ic" aria-hidden="true">✓</div><h2>Счёт выставляем</h2><p>' + ISH_SLA.inv('<b>' + esc(em) + '</b>') + '. Если письма нет, проверьте папку «Спам» или позвоните ' + CT + '.</p>' +
       '<a class="ishp44__btn ishp44__btn_ghost" href="/#catalog">Вернуться в каталог</a>';
     f.hidden = false;
     var s = q('#ishp44sum'); if (s) s.innerHTML = '';

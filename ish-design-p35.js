@@ -1,4 +1,4 @@
-/* ish-design-p35.js  v3.4  (20.10: фото 6 разделов СКС) v3.3  (кандидат 19.10.2026; НЕ выложено; v3.3: лента и на страницах разделов; v3.2: на телефоне в группе плашка «Для юрлиц и ИП…» заменена стеклянной бегущей лентой внутри низа шапки)  П35 «раздел и группа каталога: компоненты главной»
+/* ish-design-p35.js  v3.5  (26.10: «в наличии» с карточек убрано, строка наличия над сеткой раздела; v3.4  20.10: фото 6 разделов СКС) v3.3  (кандидат 19.10.2026; НЕ выложено; v3.3: лента и на страницах разделов; v3.2: на телефоне в группе плашка «Для юрлиц и ИП…» заменена стеклянной бегущей лентой внутри низа шапки)  П35 «раздел и группа каталога: компоненты главной»
    Режимы (определяются сами):
      раздел  - есть .t-store__card-list и верх .вн-а (список Tilda);
      группа  - есть .вн-гр[data-gruppa] и #вн-гр-список (родительская страница: свой список из getproductslist, без блока t-store).
@@ -9,6 +9,10 @@
        + плитка группы; фото плиток - таблица SEC из индекса поиска; бренды - все из фильтра (знаки 5 брендов, остальные текстом), блок не показывается, если брендов <2;
        число моделей - несколько источников, нет числа - без слова «Найдено»; нумерация подписей 01..NN по факту; длинные слова H1 не режутся.
    Выключатель: window.ISH_P35_OFF = 1 или window.ISH_P4_NO_P35 = 1 (до загрузки p4). Откат: пустой css/js на Pages. */
+/* ISH_SLA: ОДНО место для обещаний срока (часы работы пн–вс 9:00–18:00, время Астаны UTC+5). Копия в каждом файле, кому нужна; первая загруженная создаёт window.ISH_SLA. Менять часы/тексты - здесь (во всех копиях одинаково). Проверка: window.ISH_SLA_NOW = мс. */
+(function (W) { if (W.ISH_SLA) return; var O = 9, C = 18; function ok() { var h = new Date((W.ISH_SLA_NOW || Date.now()) + 5 * 36e5).getUTCHours(); return h >= O && h < C; }
+  W.ISH_SLA = { open: ok, reply: function () { return ok() ? 'Ответим сегодня' : 'Ответим утром, с 9:00'; }, replyLc: function () { return ok() ? 'ответим сегодня' : 'ответим утром, с 9:00'; },
+    inv: function (em) { return ok() ? 'Счёт придёт на почту ' + (em ? em + ' ' : '') + 'за 15 минут' : 'Сейчас нерабочее время — счёт пришлём утром, с 9:00' + (em ? ' на почту ' + em : ''); } }; })(window);
 (function () {
   'use strict';
   var W = window, D = document;
@@ -225,9 +229,17 @@
   }
 
   /* ───── единая строка-панель над списком раздела: «Найдено N», сортировка, «Список / Плитка» ───── */
+  /* 26.10 решение владельца: вместо «В наличии» на каждой карточке - одна строка над сеткой раздела. Не на /assortiment (там «под заказ»). */
+  var AV_TXT = 'Все товары каталога — в наличии у поставщиков, доставка бесплатно';
+  function avLine(before) {
+    if (!before || !before.parentNode || /^\/assortiment/i.test(W.location.pathname || '')) return;
+    if (D.querySelector('.ishp35-avline')) return;
+    before.parentNode.insertBefore(el('p', 'ishp35-avline', AV_TXT), before);
+  }
   function bar() {
     var st = D.querySelector('.t-store.вн-сетка') || D.querySelector('.t-store');
     if (!st) return false;
+    avLine(st);
     var N = total();
     H.style.setProperty('--p35-n', '"' + (N ? 'Найдено ' + num(N) : 'Список') + '"');
     var sort = st.querySelector(':scope > .вн-верх');
@@ -250,6 +262,7 @@
   function grpBar() {
     var v = D.querySelector('.вн-гр__верх');
     if (!v) return false;
+    avLine(v);
     if (!v.querySelector('.ishp35-gv')) {
       var g = el('div', 'ishp35-gv', '<div class="ishd-seg" role="group" aria-label="Вид товаров"><button type="button" data-v="list" aria-pressed="true">Список</button><button type="button" data-v="tile" aria-pressed="false">Плитка</button></div>');
       v.appendChild(g);
@@ -438,7 +451,7 @@
     n.id = 'ishp35-nf';
     n.innerHTML = '<div class="ishp35-wrap">' +
       '<section class="ishp35-nf" aria-label="Не нашли нужное?"><span class="ishp35-nf__l">' + logo('ishp35-nf__lg', '#272B36', '#2B44C7') + '</span>' +
-      '<div class="ishp35-nf__t"><h3>Не нашли нужное? Пришлите список</h3><p>Проработаем и ответим в день обращения.</p></div>' +
+      '<div class="ishp35-nf__t"><h3>Не нашли нужное? Пришлите список</h3><p>Проработаем и ' + ISH_SLA.replyLc() + '.</p></div>' +
       '<div class="ishp35-ls" aria-hidden="true"><span>Ноутбук 15.6″ — 10 шт</span><span>Монитор 24″ — 10 шт</span><span>МФУ A4 — 2 шт</span><i class="ishp35-ok"><svg viewBox="0 0 20 20"><circle cx="10" cy="10" r="10" fill="#1FA971"/><path d="m5.6 10.4 3 3 5.8-6.4" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>КП готово</i></div>' +
       '<div class="ishp35-nf__b"><span class="ishp35-nf__w"><a class="ishp35-b ishp35-b--main" href="' + REQ + '">Написать, что нужно</a></span>' +
       '<a class="ishp35-b" href="/assortiment">Расширенный ассортимент 14000+</a></div></section></div>';
@@ -459,7 +472,7 @@
   }
 
   /* ───── список: плита после 12-й строки, пустой экран, число ───── */
-  var seen = false, demo = false, cntT = 0;
+  var seen = false, demo = false, cntT = 0, t0 = Date.now(), emptyT = 0;
   function rows() { return MODE === 'grp' ? GL.querySelectorAll(':scope > .вн-т') : list.querySelectorAll(':scope > .js-product'); }
   function visibleCards() {
     var a = [], c = rows();
@@ -476,6 +489,8 @@
     var cards = visibleCards(), n = cards.length;
     if (n) seen = true;
     if (MODE === 'sec') {
+      /* 26.10: пустой экран и когда карточек не было с начала: ждём, пока список успеет загрузиться (6 с; 10 с, если страница заявляет товары) */
+      var late = !seen && n === 0 && D.readyState === 'complete' && (Date.now() - t0) > (total() ? 10000 : 6000);
       var wantEmpty = demo || (seen && n === 0);
       empty.hidden = !wantEmpty;
       H.classList.toggle('ishp35-empty-on', wantEmpty);
@@ -591,7 +606,7 @@
       c.setAttribute('data-ishp35r', '1');
       if (кн && !кн.querySelector('svg')) кн.insertAdjacentHTML('afterbegin', СV);
       if (!tw || !ti) continue;
-      var бр = найти(ti.getAttribute('title') || ti.textContent || '', сп), нал = parseFloat(c.getAttribute('data-product-inv')) > 0;   /* 20.10: остаток кладёт генератор группы */
+      var бр = найти(ti.getAttribute('title') || ti.textContent || '', сп), нал = false;   /* 26.10: «в наличии» на карточках убрано (было: data-product-inv > 0) */
       if (!бр && !нал) continue;
       var d = D.createElement('div'); d.className = 'ishp35r-br';
       if (бр) { var s = D.createElement('span'); s.textContent = бр; d.appendChild(s); }
@@ -602,7 +617,7 @@
   function проход() {
     группа();
     /* карточки без data-product-inv (/katalog): наличие берём из бейджа П38 (.ishp38-stock), он приходит позже карточки */
-    var ст = D.querySelectorAll('.t-store__card[data-ishp35r] .ishp38-stock');
+    var ст = [];   /* 26.10: бейдж наличия убран, нижний блок не нужен */
     for (var z = 0; z < ст.length; z++) {
       var cc = ст[z].closest('.t-store__card'); if (!cc || cc.querySelector('.ishp35r-av')) continue;
       var bb = cc.querySelector('.ishp35r-br'), tw2 = cc.querySelector('.t-store__card__textwrapper'), ti2 = cc.querySelector('.t-store__card__title');
@@ -618,7 +633,7 @@
       c.setAttribute('data-ishp35r', '1');
       if (!tw || !ti) continue;
       var имя = ti.getAttribute('data-ish13-имя') || ti.textContent || '';
-      var бр = найти(имя, сп), нал = parseFloat(c.getAttribute('data-product-inv')) > 0;
+      var бр = найти(имя, сп), нал = false;   /* 26.10: «в наличии» на карточках убрано */
       if (!бр && !нал) continue;
       var d = D.createElement('div'); d.className = 'ishp35r-br';
       if (бр) { var s = D.createElement('span'); s.textContent = бр; d.appendChild(s); }

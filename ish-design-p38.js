@@ -1,4 +1,4 @@
-/* ish-design-p38.js  v1.4  (18.10.2026, кандидат)  П38 «мелочи показа: цена, alt, дата цен, наличие, название в списке»  b2b.isoft-shop.kz
+/* ish-design-p38.js  v1.5  (26.10.2026: без даты в карточке и без бейджа «В наличии»; 18.10.2026, кандидат)  П38 «мелочи показа: цена, alt, дата цен, наличие, название в списке»  b2b.isoft-shop.kz
    Внешний слой. Блоки Tilda не пишет, в сеть не ходит (дата берётся из индекса поиска, который страница уже грузит). Подключает ish-design-p38.css рядом с собой.
    Выключатели: window.ISH_P38_OFF = 1 - весь модуль; window.ISH_P38_SKIP = 'price,alt,date,stock,name,variants,hover2' (любая подстрока) - только названные функции. Всё - до загрузки файла.
    Что делает (идемпотентно, метки data-p38; нет элементов - молчит; ошибка в одной функции другую не останавливает):
@@ -201,7 +201,7 @@
   function dateScan() {
     var w = dateWord(), s = w ? 'Цены обновлены ' + w : '';
     qa('.ishp19-note').forEach(function (n) { putDate(n, 'span', s ? ' ' + s + '.' : '', 1); });
-    qa('.ishpg3-vat').forEach(function (v) { putDate(v, 'small', s, 0); });
+    /* 26.10: в карточке «Цены обновлены …» убрано по решению владельца (строки .ishpg3-vat больше нет); дата остаётся только в подписи под списком */
   }
   function findDate() {
     if (W.ISH_INDEX_DATE) setSnap(W.ISH_INDEX_DATE);
@@ -295,6 +295,9 @@
   }
   function stockScan(root) {
     if (!QTY || !root) return;
+    /* 26.10 решение владельца: бейдж «В наличии» убран из карточек; вместо него строка над сеткой раздела (p35). Чистим уже нарисованное. */
+    qa('.ishp38-stock').forEach(function (n) { if (n.parentNode) n.parentNode.removeChild(n); });
+    return;
     cardsIn(root, '.t-store__card').forEach(function (c) {
       var mine = c.querySelector('.ishp38-stock');
       if (!mine && c.querySelector('.ishpg3-avail')) return;                 /* статус уже показан родным блоком */

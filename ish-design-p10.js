@@ -1,4 +1,4 @@
-/* ish-design-p10.js  v5.3  (26.10.2026: «Получить КП и счёт» всегда ведёт на /spec#kp, корзина читается из window.tcart; никогда не /podbor; прежняя v5.2 23.10.2026: поле файла Uploadcare по-русски, контурная кнопка; ISH_P10_FILEBTN_OFF; прежняя v5.1 22.10.2026: ?code= на /podbor, ISH_PODBOR_CODE_OFF; прежняя v5 18.10.2026)  П10 «карточка товара: внешний слой» b2b.isoft-shop.kz
+/* ish-design-p10.js  v5.4  (26.10.2026: липкая панель без «Цена с НДС»; v5.3: «Получить КП и счёт» всегда ведёт на /spec#kp, корзина читается из window.tcart; никогда не /podbor; прежняя v5.2 23.10.2026: поле файла Uploadcare по-русски, контурная кнопка; ISH_P10_FILEBTN_OFF; прежняя v5.1 22.10.2026: ?code= на /podbor, ISH_PODBOR_CODE_OFF; прежняя v5 18.10.2026)  П10 «карточка товара: внешний слой» b2b.isoft-shop.kz
    Подключается строкой в HEAD/подвале ТОЛЬКО для страниц карточки (/tproduct/...). Блок 4055071703 (запас 251 знак) не правится.
    Ждёт, пока фрагмент v8p7 соберёт карточку (html.ishpg-on), и ДОБАВЛЯЕТ узлы с префиксом ishp10-. Чужих узлов не переписывает,
    «В корзину» не перекрашивает и не подменяет: все кнопки-двойники кликают ЧЕРЕЗ родную .ishpg-add (одно место добавления в корзину).
@@ -368,7 +368,7 @@
       '<button type="button" class="ishp10-sbtn" tabindex="-1">' + IC.cart + '<span></span></button>');
     q('.ishp10-sname', el).textContent = name;
     q('b', el).textContent = nopr ? 'Цена по запросу' : money(pr);
-    q('small', el).textContent = nopr ? 'Наличие уточним по запросу' : 'Цена с НДС';
+    q('small', el).textContent = nopr ? 'Наличие уточним по запросу' : '';   /* 26.10: «Цена с НДС» убрано (решение владельца) */
     var btn = q('.ishp10-sbtn', el), bl = q('span', btn); bl.textContent = label;
     el.setAttribute('aria-hidden', 'true'); D.body.appendChild(el);
     var wide = W.matchMedia ? W.matchMedia('(min-width:701px)') : null, raf = 0;

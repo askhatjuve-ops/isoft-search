@@ -1,6 +1,10 @@
 /* ish-poisk-decor.js v2 (20.10: без баннера «Поиск: …» и меты карточки выдачи) · v1 КАНДИДАТ (волна 1, задача Г, 17.10.2026) · НЕ выложено
    Допиливает разметку, которую рисует ish-search.js (его не меняем): чипы разделов, бренд капсом в строке товара, «Все результаты →» + «Не нашли? Пришлите список»,
    кнопка в пустом результате, «Поиск: …» в шапке /katalog, мета-бренд в карточке. Идемпотентно; ничего не читает из сети. Откат: убрать подключение. */
+/* ISH_SLA: ОДНО место для обещаний срока (часы работы пн–вс 9:00–18:00, время Астаны UTC+5). Копия в каждом файле, кому нужна; первая загруженная создаёт window.ISH_SLA. Менять часы/тексты - здесь (во всех копиях одинаково). Проверка: window.ISH_SLA_NOW = мс. */
+(function (W) { if (W.ISH_SLA) return; var O = 9, C = 18; function ok() { var h = new Date((W.ISH_SLA_NOW || Date.now()) + 5 * 36e5).getUTCHours(); return h >= O && h < C; }
+  W.ISH_SLA = { open: ok, reply: function () { return ok() ? 'Ответим сегодня' : 'Ответим утром, с 9:00'; }, replyLc: function () { return ok() ? 'ответим сегодня' : 'ответим утром, с 9:00'; },
+    inv: function (em) { return ok() ? 'Счёт придёт на почту ' + (em ? em + ' ' : '') + 'за 15 минут' : 'Сейчас нерабочее время — счёт пришлём утром, с 9:00' + (em ? ' на почту ' + em : ''); } }; })(window);
 (function () {
   'use strict';
   if (window.__ishPoiskDecor) return; window.__ishPoiskDecor = true;
@@ -32,7 +36,7 @@
     // 4. пустой результат: понятный текст + кнопка
     var e = box.querySelector('.нш-пусто');
     if (e && !box.querySelector('.ishps-ask')) {
-      e.parentNode.insertBefore(mk('<div class="ishps-ask"><p>Пришлите список — подберём и ответим в течение дня.<span>Можно текстом или файлом, артикулы и названия как есть.</span></p><a href="' + LIST + '">Пришлите список</a></div>'), e.nextSibling);
+      e.parentNode.insertBefore(mk('<div class="ishps-ask"><p>Пришлите список — подберём и ' + ISH_SLA.replyLc() + '.<span>Можно текстом или файлом, артикулы и названия как есть.</span></p><a href="' + LIST + '">Пришлите список</a></div>'), e.nextSibling);
     }
     box.__ps = 0;
   }

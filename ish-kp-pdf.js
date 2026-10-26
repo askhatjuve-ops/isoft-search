@@ -1,4 +1,4 @@
-/* ish-kp-pdf.js  v2 (26.10.2026: макет как у фирменного КП кп_бланк.py, логотип ish-kp-logo.png, ссылки WhatsApp/бот/звонок/каталог; v1  КП в PDF прямо в браузере для страницы /spec b2b.isoft-shop.kz
+/* ish-kp-pdf.js  v3 (26.10.2026: + подпись и печать в блоке «Исполнитель» (ish-kp-sign.png, ish-kp-stamp.png; позиции как в кп_бланк.py); v2: (26.10.2026: макет как у фирменного КП кп_бланк.py, логотип ish-kp-logo.png, ссылки WhatsApp/бот/звонок/каталог; v1  КП в PDF прямо в браузере для страницы /spec b2b.isoft-shop.kz
    Грузится по требованию из ish-design-p44.js (по нажатию «Получить КП»), сам ничего не делает.
    API: window.ishKpPdf.build({items:[{name,sku,qty,price}], num, date}) -> Promise<{blob, url, filename, total, vat}>
    Библиотека jsPDF 2.5.1 (MIT) лежит рядом: ish-kp-jspdf.min.js. Шрифт - подмножество DejaVu Sans (свободная лицензия, кириллица, ₸):
@@ -50,23 +50,27 @@
     return s.replace(/\s*\([A-Z0-9]{6,}\)\s*$/, '').replace(/\s{2,}/g, ' ').trim();
   }
 
-  var logo = null;
-  function loadLogo() {                                   /* логотип ISOFT (тот же файл, что в фирменном КП ноутбука) -> data URL + размеры */
-    if (logo) return logo;
-    logo = fetch(BASE + 'ish-kp-logo.png?v=' + VER).then(function (r) { if (!r.ok) throw new Error('logo'); return r.blob(); }).then(function (b) {
+  function loadImg(name) {                                /* картинка -> data URL + размеры; нет файла - null, КП всё равно собираем */
+    return fetch(BASE + name + '?v=' + VER).then(function (r) { if (!r.ok) throw new Error(name); return r.blob(); }).then(function (b) {
       return new Promise(function (ok, no) {
         var fr = new FileReader(); fr.onerror = no;
         fr.onload = function () { var im = new Image(); im.onload = function () { ok({ d: fr.result, w: im.naturalWidth, h: im.naturalHeight }); }; im.onerror = no; im.src = fr.result; };
         fr.readAsDataURL(b);
       });
-    }).catch(function () { return null; });                /* нет логотипа - КП всё равно собираем, вместо него название текстом */
+    }).catch(function () { return null; });
+  }
+  var logo = null, stamp = null, sign = null;
+  function loadLogo() {                                   /* логотип ISOFT (тот же файл, что в фирменном КП ноутбука) */
+    if (!logo) logo = loadImg('ish-kp-logo.png');
     return logo;
   }
+  function loadStamp() { if (!stamp) stamp = loadImg('ish-kp-stamp.png'); return stamp; }
+  function loadSign() { if (!sign) sign = loadImg('ish-kp-sign.png'); return sign; }
   var WA = 'https://wa.me/77758818531', BOT = 'https://t.me/isoft_b2b_kz_bot', SITE_URL = 'https://b2b.isoft-shop.kz', TEL_URL = 'tel:+77758818531';
 
   function build(o) {
-    return Promise.all([init(), loadLogo()]).then(function (r) {
-      var f = r[0], lg = r[1];
+    return Promise.all([init(), loadLogo(), loadStamp(), loadSign()]).then(function (r) {
+      var f = r[0], lg = r[1], st = r[2], sg = r[3];
       var J = W.jspdf.jsPDF, doc = new J({ unit: 'mm', format: 'a4', compress: true });
       doc.addFileToVFS('S.ttf', f.reg); doc.addFont('S.ttf', 'S', 'normal');
       doc.addFileToVFS('SB.ttf', f.bold); doc.addFont('SB.ttf', 'S', 'bold');
@@ -168,6 +172,11 @@
       y += 12;
       if (y > 262) { doc.addPage(); y = 30; }
       txt('Исполнитель', M, y, 9, true, INK); doc.setDrawColor.apply(doc, INK); doc.setLineWidth(0.3); doc.line(M + 26, y + 0.8, M + 96, y + 0.8); txt(ISP, M + 99, y, 7.5, false, SEC);
+      /* подпись (32 мм, на 35 % линии) и печать (30 мм по центру линии) поверх, как в кп_бланк.py */
+      try {
+        if (sg) { var sw = 32, sh = sw * sg.h / sg.w; doc.addImage(sg.d, 'PNG', M + 26 + 70 * 0.35 - sw / 2, y + 0.8 - 1 - sh / 2, sw, sh); }
+        if (st) { var tw = 30, th = tw * st.h / st.w; doc.addImage(st.d, 'PNG', M + 61 - tw / 2, y + 0.8 - 1 - th / 2, tw, th); }
+      } catch (e) {}
       /* 7) подвал каждой страницы */
       var pages = doc.getNumberOfPages(), i, y0 = 274;
       for (i = 1; i <= pages; i++) {

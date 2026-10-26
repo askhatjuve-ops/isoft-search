@@ -842,7 +842,7 @@
 
   /* ───────── П44: «КП и счёт просто» на /spec (ish-design-p44.js + .css; PDF КП - ish-kp-pdf.js по требованию) ─────────
      Выключатель: window.ISH_P44_OFF = 1 или window.ISH_P4_NO_P44 = 1 (до загрузки p4). Кэш: поменять P44V. */
-  var P44V = '6';
+  var P44V = '7';
   function p44() {
     if (W.ISH_P44_OFF || W.ISH_P4_NO_P44 || D.getElementById('ishp-p44-js')) return;
     if (String(location.pathname).replace(/\/+$/, '') !== '/spec') return;

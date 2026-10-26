@@ -1,4 +1,4 @@
-/* ish-kp-pdf.js  v3 (26.10.2026: + подпись и печать в блоке «Исполнитель» (ish-kp-sign.png, ish-kp-stamp.png; позиции как в кп_бланк.py); v2: (26.10.2026: макет как у фирменного КП кп_бланк.py, логотип ish-kp-logo.png, ссылки WhatsApp/бот/звонок/каталог; v1  КП в PDF прямо в браузере для страницы /spec b2b.isoft-shop.kz
+/* ish-kp-pdf.js  v4 (26.10.2026: кнопка «Выставить счёт» = /spec#kp=номер~позиции (счёт открывается на любом устройстве без корзины); прежняя v3: + подпись и печать в блоке «Исполнитель» (ish-kp-sign.png, ish-kp-stamp.png; позиции как в кп_бланк.py); v2: (26.10.2026: макет как у фирменного КП кп_бланк.py, логотип ish-kp-logo.png, ссылки WhatsApp/бот/звонок/каталог; v1  КП в PDF прямо в браузере для страницы /spec b2b.isoft-shop.kz
    Грузится по требованию из ish-design-p44.js (по нажатию «Получить КП»), сам ничего не делает.
    API: window.ishKpPdf.build({items:[{name,sku,qty,price}], num, date}) -> Promise<{blob, url, filename, total, vat}>
    Библиотека jsPDF 2.5.1 (MIT) лежит рядом: ish-kp-jspdf.min.js. Шрифт - подмножество DejaVu Sans (свободная лицензия, кириллица, ₸):
@@ -66,6 +66,30 @@
   }
   function loadStamp() { if (!stamp) stamp = loadImg('ish-kp-stamp.png'); return stamp; }
   function loadSign() { if (!sign) sign = loadImg('ish-kp-sign.png'); return sign; }
+  /* Ссылка «Выставить счёт»: SITE_URL/spec#kp=<номер>~<поз>~<поз>..., поз = sku_qty_цена_имя_uid; каждое поле через encodeURIComponent
+     («_» и «~» в полях экранируются), длина всей ссылки <= LINK_MAX: сначала короче имена, потом без имён (sku_qty_цена), потом sku_qty.
+     Читает ish-design-p44.js (разбор #kp=) - формат менять только вместе с ним. */
+  var LINK_MAX = 1800;
+  function fenc(v) { return encodeURIComponent(String(v == null ? '' : v)).replace(/[_~()!*']/g, function (c) { return '%' + c.charCodeAt(0).toString(16).toUpperCase(); }); }
+  function specLink(items, num) {
+    var base = SITE_URL + '/spec#kp=' + fenc(num || '');
+    function mk(cut, mode) {
+      return items.map(function (it) {
+        var q = Math.max(1, Math.round(Number(it.qty) || 1)), p = Math.max(0, Math.round(Number(it.price) || 0)), sku = String(it.sku || '');
+        var nm = cleanName(it.name, sku).replace(/[<>"&`]/g, ' ').replace(/\s+/g, ' ').trim();
+        if (cut && nm.length > cut) nm = nm.slice(0, cut).trim();
+        var f = mode === 3 ? [sku, q] : mode === 2 ? [sku, q, p] : mode === 1 ? [sku, q, p, nm] : [sku, q, p, nm, it.uid || ''];
+        if (mode === 0 && !f[4]) f.pop();
+        return f.map(fenc).join('_');
+      });
+    }
+    var tries = [[0, 0], [60, 1], [40, 1], [24, 1], [12, 1], [0, 2], [0, 3]], i, u;
+    for (i = 0; i < tries.length; i++) {
+      u = base + (items.length ? '~' : '') + mk(tries[i][0], tries[i][1]).join('~');
+      if (u.length <= LINK_MAX) return u;
+    }
+    return SITE_URL + '/spec';                              /* не влезло даже sku_qty: обычная ссылка, как раньше */
+  }
   var WA = 'https://wa.me/77758818531', BOT = 'https://t.me/isoft_b2b_kz_bot', SITE_URL = 'https://b2b.isoft-shop.kz', TEL_URL = 'tel:+77758818531';
 
   function build(o) {
@@ -122,7 +146,7 @@
       txt('в том числе НДС 16%: ' + money(vat) + ' ₸', M + 5, y + 23.5, 8.5, false, SEC);
       txt('Действительно до ' + dstr(until) + ' (3 банковских дня)', M + 5, y + 27.6, 8.5, true, INK);
       var bw = 62, bh = 13, bx = R - bw - 5, by = y + 5;
-      btn('Выставить счёт', SITE_URL + '/spec', bx, by, bw, bh, true, 12);
+      btn('Выставить счёт', specLink(items, o.num), bx, by, bw, bh, true, 12);
       txt('на странице заказа или в Telegram-боте', bx + bw / 2, by + bh + 4, 7.5, false, SEC, 'center');
       txt('Предложение не является счётом', bx + bw / 2, by + bh + 7.4, 7.5, false, SEC, 'center');
       y += 33;
@@ -192,5 +216,5 @@
       return { blob: blob, url: URL.createObjectURL(blob), filename: filename, total: total, vat: vat, until: dstr(until) };
     });
   }
-  W.ishKpPdf = { build: build, init: init, plusWork: plusWork };
+  W.ishKpPdf = { build: build, init: init, plusWork: plusWork, specLink: specLink };
 })();

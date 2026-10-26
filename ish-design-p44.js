@@ -1,4 +1,4 @@
-/* ish-design-p44.js  v1 (26.10.2026)  П44 «КП и счёт просто» на /spec b2b.isoft-shop.kz
+/* ish-design-p44.js  v2 (26.10.2026: #kp=номер~позиции из ссылки PDF-КП -> пустая корзина Tilda заполняется этими позициями; v1)  П44 «КП и счёт просто» на /spec b2b.isoft-shop.kz
    Решение владельца 26.10: путь «КП и счёт» из карточки и корзины = «Ваш заказ» + телефон + [Получить КП] и ниже БИН + почта + [Выставить счёт].
    Без темы запроса, контактного лица, комментария, файла, списка текстом, вкладок «Счёт/КП» и галочки (вместо неё строка про политику).
    Длинная форма остаётся ТОЛЬКО на /podbor.
@@ -20,7 +20,7 @@
   var VER = (tag && /[?&]v=([^&]*)/.exec(tag.src || '') || [0, '1'])[1];
   var FID = 'form3238938703';
   var PH_EMAIL = 'kp@bez-pochty.invalid', PH_PHONE = '(000) 000-00-00', PH_COMPANY = '—';
-  var state = { busy: false, done: '', pdf: null, num: '' };
+  var state = { busy: false, done: '', pdf: null, num: '', kpLink: '' };
 
   function q(s, r) { return (r || D).querySelector(s); }
   function esc(s) { return String(s == null ? '' : s).replace(/[&<>"]/g, function (m) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[m]; }); }
@@ -45,7 +45,7 @@
     var r = [];
     (cart().products || []).forEach(function (p) {
       if (!p || typeof p !== 'object' || p.deleted === 'yes' || !(Number(p.quantity) > 0) || (!p.name && !p.uid)) return;
-      r.push({ name: String(p.name || ''), sku: String(p.sku || ''), qty: Number(p.quantity), price: Number(p.price) || 0 });
+      r.push({ name: String(p.name || ''), sku: String(p.sku || ''), qty: Number(p.quantity), price: Number(p.price) || 0, uid: String(p.uid || '') });
     });
     return r;
   }
@@ -246,7 +246,7 @@
     if (co.length < 2) { mark('ishp44co', true); err('inv', 'Укажите название компании или ФИО: оно нужно для счёта'); q('#ishp44co').focus(); return; }
     var ten = phone10(q('#ishp44ph').value);
     busy(true); guardClear(false);
-    submit('inv', { company: co, bin: bin, email: em, phone: ten.length === 10 ? ten : '', comment: '' }, function () {
+    submit('inv', { company: co, bin: bin, email: em, phone: ten.length === 10 ? ten : '', comment: state.kpLink ? '[Основание: КП № ' + state.kpLink + ']' : '' }, function () {
       state.done = 'inv'; busy(false); showInvOk(em); track('ish_p44_invoice', { value: t.sum, items: t.it.length, currency: 'KZT' });
     }, function (m) { busy(false); err('inv', m || 'Не удалось отправить. Позвоните +7 775 881 85 31.'); });
   }
@@ -293,6 +293,39 @@
   }
   until(build, 80, 250);
   setInterval(function () { try { var h = q('#specRoot h1'); if (h && h.textContent.trim() === 'Корзина') h.textContent = 'Ваш заказ'; render(); fixNote(); } catch (e) {} }, 900);
+  /* #kp=номер~поз~поз (ссылка «Выставить счёт» из PDF-КП, формат - ish-kp-pdf.js specLink): поз = sku_qty[_цена[_имя[_uid]]], поля через encodeURIComponent.
+     Корзина Tilda пуста (другое устройство, бухгалтер) -> кладём позиции в неё через tcart__addProduct: дальше всё как обычно (список, итог, форма счёта).
+     Корзина не пуста -> не трогаем. Данные из ссылки чужие: числа в рамках, имя без разметки. */
+  function kpParse(h) {
+    var m = /^#kp=(.+)$/.exec(h || ''); if (!m) return null;
+    var P = m[1].split('~'), dec = function (x) { try { return decodeURIComponent(x); } catch (e) { return ''; } }, num = dec(P[0]).slice(0, 30), out = [];
+    P.slice(1, 101).forEach(function (r) {
+      var f = r.split('_').map(dec), sku = (f[0] || '').slice(0, 40), qty = Math.round(Number(f[1])), price = Math.round(Number(f[2])) || 0;
+      if (!sku || !(qty >= 1 && qty <= 9999) || !(price >= 0 && price < 1e9)) return;
+      var name = (f[3] || '').replace(/[<>"&`]/g, ' ').replace(/\s+/g, ' ').trim().slice(0, 160) || sku;
+      out.push({ sku: sku, qty: qty, price: price, name: name, uid: (f[4] || '').slice(0, 60) || 'kp_' + sku });
+    });
+    return out.length ? { num: num, it: out } : null;
+  }
+  function kpFill() {
+    var d = kpParse(location.hash); if (!d) return false;
+    var tries = 0;
+    (function go() {
+      var ready = typeof W.tcart__addProduct === 'function' && D.getElementById('ishp44');
+      if (!ready) { if (++tries < 60) return setTimeout(go, 250); return; }
+      var ls = 0; try { ls = (JSON.parse(localStorage.getItem('tcart') || '{}').products || []).filter(function (p) { return p && p.deleted !== 'yes' && Number(p.quantity) > 0; }).length; } catch (e) {}
+      if (items().length || ls) return;                       /* корзина не пуста: ничего не трогаем */
+      d.it.forEach(function (x) {
+        try { W.tcart__addProduct({ name: x.name, price: String(x.price), quantity: x.qty, amount: x.price * x.qty, sku: x.sku, uid: x.uid, single: 'y' }); } catch (e) {}
+      });
+      state.kpLink = d.num || 'без номера';
+      var p = D.getElementById('ishp44'), w = q('.ishp44__wrap', p);
+      if (w && !q('#ishp44src')) { var n = D.createElement('p'); n.id = 'ishp44src'; n.className = 'ishp44__lead'; n.textContent = 'Позиции из КП' + (d.num ? ' № ' + d.num : '') + '. Укажите БИН и почту, и мы выставим счёт.'; w.insertBefore(n, w.firstChild); }
+      setTimeout(function () { render(); try { typeof W.tcart__reDrawProducts === 'function' && W.tcart__reDrawProducts(); typeof W.tcart__updateTotalProductsinCartObj === 'function' && W.tcart__updateTotalProductsinCartObj(); } catch (e) {} try { p.scrollIntoView({ behavior: 'smooth', block: 'start' }); } catch (e) {} }, 400);
+    })();
+    return true;
+  }
+  if (/^#kp=/.test(location.hash)) kpFill();
   /* #kp в адресе (из карточки): прокрутить к панели, когда она появится */
   if (location.hash === '#kp') until(function () { var p = D.getElementById('ishp44'); if (!p || !items().length) return false; setTimeout(function () { try { var ph = q('#ishp44ph'); p.scrollIntoView({ behavior: 'smooth', block: 'start' }); } catch (e) {} }, 700); return true; }, 40, 250);
 })();

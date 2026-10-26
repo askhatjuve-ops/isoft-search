@@ -1,4 +1,4 @@
-/* ish-design-p19.css  v3-кандидат (19.10.2026: /spec - hero и панели корзины по ширине шапки 1240, плитки скрыты) | прежняя v2-кандидат (17.10.2026, волна 1 В: + раздел корзина/форма/спасибо/пустая/мини-корзина)  [v1 16.10.2026]  П19 «формы и корзина». Только новые узлы с префиксом ishp19-; чужие правила не перекрываются.
+/* ish-design-p19.css  v3-кандидат (26.10.2026: v8 список /spec белый; 19.10.2026: /spec - hero и панели корзины по ширине шапки 1240, плитки скрыты) | прежняя v2-кандидат (17.10.2026, волна 1 В: + раздел корзина/форма/спасибо/пустая/мини-корзина)  [v1 16.10.2026]  П19 «формы и корзина». Только новые узлы с префиксом ishp19-; чужие правила не перекрываются.
    Грузится из ish-design-p19.js (тот же адрес). Пустой файл на Pages = остаются тексты, без оформления. */
 html.ishp19-on{--p19-k:#2B44C7;--p19-ink:#171923;--p19-mut:#565D70;--p19-line:#D9D3C5;--p19-err:#B42318;--p19-f:var(--f,TildaSans,Arial,sans-serif)}
 
@@ -288,3 +288,19 @@ html body #specRoot .ishp19c-tiles,html body #specRoot .ishp21-bar{display:none!
 html body .t706__cartwin .t-form__inputsbox::before{grid-column:1/-1!important;grid-row:auto!important;margin:0!important}
 @media screen and (max-width:640px){html body .t706__cartwin .t-form__inputsbox{grid-template-columns:minmax(0,1fr)!important}
 html body .t706__cartwin .t-form__inputsbox>*{grid-column:1/-1!important}}
+
+/* v8 (26.10.2026): список позиций на /spec - единая схема. Страница бежевая, карточка и строки чисто белые (#fff), внутри ни бежевого, ни голубого.
+   Фото на нейтральном светло-сером, счётчик белый с серой рамкой (синий только у значков +/-), «Убрать» белая, при наведении красная. */
+html.ishp19-on .вн .sp-спис{background:#fff!important;border:1px solid #E3DFD6;box-shadow:0 1px 2px rgba(23,25,35,.05),0 8px 24px rgba(23,25,35,.06)}
+html.ishp19-on .вн .sp-шапка{background:#fff!important}
+html.ishp19-on .вн .sp-поз,html.ishp19-on .вн .sp-поз:nth-child(even),html.ishp19-on .вн .sp-поз:nth-child(odd),html.ishp19-on .вн .sp-поз:hover{background:#fff!important}
+html.ishp19-on .вн .sp-поз{border-bottom:1px solid #ECEAE4}
+html.ishp19-on .вн .sp-фото{background:#F3F4F6!important;border:0}
+html.ishp19-on .вн .sp-фото img{background:none!important}
+html.ishp19-on .вн .sp-счёт{background:#fff!important;border:1px solid #D9DCE3!important}
+html.ishp19-on .вн .sp-счёт b{background:#fff!important;border-color:#D9DCE3!important}
+html.ishp19-on .вн .sp-кн{background:#fff!important;border-color:#D9DCE3!important}
+html.ishp19-on .вн .sp-счёт button{background:#fff!important;color:#2B44C7}
+html.ishp19-on .вн .sp-счёт button:hover{background:#F3F4F6!important}
+html.ishp19-on .вн .sp-снять{background:#fff!important;border:1px solid #E3DFD6;color:#565D70}
+html.ishp19-on .вн .sp-снять:hover{background:#fff!important;border-color:#E5B8B2;color:#B43A36}

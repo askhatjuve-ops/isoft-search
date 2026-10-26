@@ -193,7 +193,7 @@ html.ishp36-on body .ishpg3-sbtn,html.ishp36-on body .ishp10-sbtn{border-radius:
   html.ishp36-on #allrecords .ishpg-row>.t-store__prod-popup__slider{padding:12px!important;border-radius:18px}
   html.ishp36-on #allrecords .ishp10-zoom{top:20px;right:20px}
   html.ishp36-on #allrecords .ishpg-row .t-store__prod-popup__title-wrapper{padding:18px 18px 16px;border-radius:18px}
-  html.ishp36-on #allrecords .ishpg-row .t-store__prod-popup__name{font-size:22px!important}
+  html.ishp36-on #allrecords .ishpg-row .t-store__prod-popup__name{font:700 15px/1.3 var(--f)!important;letter-spacing:0}
   html.ishp36-on #allrecords .ishp36-bb{padding:20px 18px 16px;border-radius:22px}
   html.ishp36-on #allrecords .ishp36-bb .t-store__prod-popup__price,html.ishp36-on #allrecords .ishp36-bb .t-store__prod-popup__price-value,html.ishp36-on #allrecords .ishp36-bb .t-store__prod-popup__price-currency{font-size:32px!important}
   html.ishp36-on #allrecords .ishpg3-trust{display:none!important}

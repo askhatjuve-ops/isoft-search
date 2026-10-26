@@ -1,4 +1,4 @@
-/* ish-design-p22.js  v8 (26.10.2026: «Вопрос по товару: WhatsApp · Telegram» вместо одиночной ссылки Telegram, десктоп и телефон; css ?v=10)  v7.3 (24.10.2026: на компьютере ссылка «Спросить в Telegram →» с иконкой стоит в строке ссылок карточки (.ishp36-links) рядом с «Запросить КП» и «Уточнить», нижняя ссылка убрана, на телефоне без изменений; css ?v=9)  v7.2 (24.10.2026: на карточке товара под блоком покупки текстовая ссылка «Спросить в Telegram-боте» -> t.me/isoft_b2b_kz_bot?start=АРТИКУЛ (только A-Za-z0-9_-, как разбирает бот); выключатель window.ISH_P22_BOTLINK_OFF)  v7.1 (+ Telegram-бот: window.ISH_TG_BOT или TG_BOT, t.me/бот?start=SKU, пусто - как раньше; 22.10.2026: текст WhatsApp «Пишу с сайта... Интересует: товар (арт.) — ссылка», раздел, /podbor; выключатель window.ISH_WA_TEXT_OFF)  v6 (20.10.2026: /assortiment на телефоне - кнопки прячутся при прокрутке вниз)  v5  (18.10.2026: на телефоне /podbor и /spec кнопки скрыты, в карточке только WhatsApp)  v4  (16.10.2026)  П22 «WhatsApp + Telegram» (Д16) b2b.isoft-shop.kz
+/* ish-design-p22.js  v8.1 (26.10.2026: строка «Вопрос по товару» убрана; на /tproduct/ угловой Telegram -> бот ?start=SKU, на телефоне в карточке Telegram снова виден над WhatsApp, #ishТаб в список препятствий; css ?v=11)  v8 (26.10.2026: «Вопрос по товару: WhatsApp · Telegram» вместо одиночной ссылки Telegram, десктоп и телефон; css ?v=10)  v7.3 (24.10.2026: на компьютере ссылка «Спросить в Telegram →» с иконкой стоит в строке ссылок карточки (.ishp36-links) рядом с «Запросить КП» и «Уточнить», нижняя ссылка убрана, на телефоне без изменений; css ?v=9)  v7.2 (24.10.2026: на карточке товара под блоком покупки текстовая ссылка «Спросить в Telegram-боте» -> t.me/isoft_b2b_kz_bot?start=АРТИКУЛ (только A-Za-z0-9_-, как разбирает бот); выключатель window.ISH_P22_BOTLINK_OFF)  v7.1 (+ Telegram-бот: window.ISH_TG_BOT или TG_BOT, t.me/бот?start=SKU, пусто - как раньше; 22.10.2026: текст WhatsApp «Пишу с сайта... Интересует: товар (арт.) — ссылка», раздел, /podbor; выключатель window.ISH_WA_TEXT_OFF)  v6 (20.10.2026: /assortiment на телефоне - кнопки прячутся при прокрутке вниз)  v5  (18.10.2026: на телефоне /podbor и /spec кнопки скрыты, в карточке только WhatsApp)  v4  (16.10.2026)  П22 «WhatsApp + Telegram» (Д16) b2b.isoft-shop.kz
    Плавающая круглая кнопка WhatsApp справа внизу на всех страницах. Номер тот же, что в шапке (wa.me/77758818531).
    v4: НАД WhatsApp стопкой - меньшая круглая кнопка Telegram (#ishp22t, тот же адрес, что в шапке: t.me/+77758818531). Подъём, прятание и сдвиг от .вн-бок общие для обеих (стопка считается целиком). Выключатель только Telegram: window.ISH_P22_TG_OFF = true.
    Подключается из ish-design-p4.js (функция p22, строка описана в README); сам подтягивает ish-design-p22.css с того же адреса.
@@ -80,7 +80,7 @@
     if ((location.pathname || '').indexOf('/spec') === 0 && anyShown('.t706__orderform')) return true; /* форма заявки на /spec */
     return false;
   }
-  var OBST = ['.ishk-bar', '.ishp25-bar', '.ishp10-sticky', '.ishpg3-sticky', '.таб', '.нш-мт'];
+  var OBST = ['.ishk-bar', '.ishp25-bar', '.ishp10-sticky', '.ishpg3-sticky', '.таб', '#ishТаб', '.нш-мт'];
   function lift() {
     var vh = W.innerHeight, vw = W.innerWidth, m = 0;
     OBST.forEach(function (s) {
@@ -144,42 +144,12 @@
     setInterval(function () { if (!D.hidden) refresh(); }, 400);
   }
 
-  /* v8 (26.10.2026): под «В корзину» - «Получить КП и счёт →» (p10) и строка «Вопрос по товару: WhatsApp · Telegram» (десктоп и телефон). «Уточнить по этому товару» скрыта css (ссылка и форма /podbor остаются). Выключатель: window.ISH_P22_BOTLINK_OFF */
+  /* v8.1 (26.10.2026): строка «Вопрос по товару: WhatsApp · Telegram» убрана - под «В корзину» одна ссылка «Получить КП и счёт →» (p10); связь через угловые кнопки, на /tproduct/ они несут товар. Старые узлы v7.x/v8 стираем. */
   var BOT_LINK = 'isoft_b2b_kz_bot';
-  var IC_WA = '<svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 14.9L2 22l5.25-1.4A9.9 9.9 0 1 0 12.04 2zm0 1.8a8.1 8.1 0 1 1-4.2 15l-.3-.18-3.1.83.83-3.03-.2-.32A8.1 8.1 0 0 1 12.04 3.8zM8.6 7.3c-.2 0-.5.07-.75.35-.25.27-.97.95-.97 2.3s1 2.7 1.13 2.88c.14.18 1.95 3.1 4.8 4.2 2.37.93 2.85.75 3.36.7.52-.05 1.66-.68 1.9-1.33.23-.65.23-1.2.16-1.33-.07-.12-.25-.18-.52-.32-.27-.14-1.6-.8-1.85-.88-.25-.1-.43-.14-.6.13-.18.27-.7.88-.86 1.06-.16.18-.32.2-.6.07-.27-.14-1.14-.42-2.17-1.34-.8-.72-1.34-1.6-1.5-1.87-.16-.27-.02-.42.12-.55.12-.12.27-.32.4-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.6-1.5-.84-2.05-.2-.48-.44-.5-.6-.5z"/></svg>';
-  var IC_TG = '<svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M21.9 4.3 2.6 11.7c-.9.4-.9 1.1-.2 1.3l4.9 1.5 1.9 5.8c.2.6.4.8.9.8.4 0 .6-.2.9-.4l2.4-2.3 4.9 3.6c.9.5 1.5.2 1.7-.8L23 5.6c.3-1.3-.5-1.9-1.1-1.3zM8.5 13.9l9.7-6.1c.5-.3.9-.1.5.2l-8.1 7.3-.3 3.4-1.8-4.8z"/></svg>';
+  function skuNow() { return txt('.js-store-prod-sku').replace(/^\s*(артикул|арт\.?|sku)\s*:?\s*/i, '').replace(/[^A-Za-z0-9_-]/g, '').slice(0, 64); }
   function botLink() {
-    if (W.ISH_P22_BOTLINK_OFF || (location.pathname || '').indexOf('/tproduct/') < 0) return;
-    var sk = txt('.js-store-prod-sku').replace(/^\s*(артикул|арт\.?|sku)\s*:?\s*/i, '').replace(/[^A-Za-z0-9_-]/g, '').slice(0, 64);
-    var nm = txt('.js-store-prod-name') || clean((D.querySelector('meta[property="og:title"]') || {}).content) || txt('h1');
-    if (!sk && !nm) return;
-    var th = 'https://t.me/' + BOT_LINK + (sk ? '?start=' + sk : '');
-    var art = txt('.js-store-prod-sku').replace(/^\s*(артикул|арт\.?|sku)\s*:?\s*/i, '');
-    var wh = 'https://wa.me/' + NUM + '?text=' + encodeURIComponent('Здравствуйте! Вопрос по товару: ' + nm + (art ? ' (' + art + ')' : '') + ' ' + cleanUrl());
-    /* старые элементы v7.x - убрать */
-    var old = D.getElementById('ishp22tg'); if (old && old.parentNode) old.parentNode.removeChild(old);
+    ['ishp22tg', 'ishp22q'].forEach(function (id) { var o = D.getElementById(id); if (o && o.parentNode) o.parentNode.removeChild(o); });
     var ow = D.querySelector('.ishp22bot-wrap'); if (ow && ow.parentNode) ow.parentNode.removeChild(ow);
-    var row = D.getElementById('ishp22q');
-    if (row && D.body.contains(row)) {
-      var a1 = row.querySelector('.ishp22-qwa'), a2 = row.querySelector('.ishp22-qtg');
-      if (a1.getAttribute('href') !== wh) a1.setAttribute('href', wh);
-      if (a2.getAttribute('href') !== th) a2.setAttribute('href', th);
-      return;
-    }
-    var links = D.querySelector('.ishp36-links');
-    if (!links && !W.ISH_P36_OFF && D.querySelector('.ishpg-row')) {
-      if (!W.__ishp22t0) W.__ishp22t0 = Date.now();
-      if (Date.now() - W.__ishp22t0 < 6000) return;    /* ждём, пока p36 соберёт блок ссылок (до 6 с) */
-    }
-    var host = links || D.querySelector('.js-product-controls-wrapper') || D.querySelector('.js-store-price-wrapper');
-    if (!host) return;
-    row = D.createElement('div'); row.id = 'ishp22q'; row.className = 'ishp22-q';
-    row.innerHTML = '<span class="ishp22-ql">Вопрос по товару:</span>' +
-      '<a class="ishp22-qa ishp22-qwa" target="_blank" rel="noopener noreferrer" title="Написать в WhatsApp">' + IC_WA + '<span>WhatsApp</span></a>' +
-      '<a class="ishp22-qa ishp22-qtg" target="_blank" rel="noopener noreferrer" title="Цена, наличие, статус заявки">' + IC_TG + '<span>Telegram</span></a>';
-    row.querySelector('.ishp22-qwa').setAttribute('href', wh);
-    row.querySelector('.ishp22-qtg').setAttribute('href', th);
-    if (links) links.appendChild(row); else host.parentNode.insertBefore(row, host.nextSibling);
   }
 
   function refresh() {
@@ -190,7 +160,8 @@
       if (href !== last.href) { el.setAttribute('href', href); last.href = href; }
       if (tg) {
         var bot = String(W.ISH_TG_BOT || TG_BOT || '').replace(/^@/, ''), th = TG_HREF;
-        if (bot) { var sk = txt('.js-store-prod-sku').replace(/^\s*(артикул|арт\.?|sku)\s*:?\s*/i, '').replace(/[^A-Za-z0-9_-]/g, '').slice(0, 64); th = 'https://t.me/' + bot + (sk ? '?start=' + sk : ''); }
+        if (!bot && !W.ISH_P22_BOTLINK_OFF && (location.pathname || '').indexOf('/tproduct/') > -1) bot = BOT_LINK;   /* v8.1: карточка товара - в бота с артикулом */
+        if (bot) { var sk = skuNow(); th = 'https://t.me/' + bot + (sk ? '?start=' + sk : ''); }
         if (th !== last.tg) { tg.setAttribute('href', th); last.tg = th; }
       }
       var open = inHours();
@@ -237,7 +208,7 @@
     } catch (e) {}
     if (D.getElementById('ishp22-css')) { build(); return; }
     var l = D.createElement('link');
-    l.id = 'ishp22-css'; l.rel = 'stylesheet'; l.href = base + 'ish-design-p22.css?v=10';
+    l.id = 'ishp22-css'; l.rel = 'stylesheet'; l.href = base + 'ish-design-p22.css?v=11';
     l.onload = function () { if (D.body) build(); else D.addEventListener('DOMContentLoaded', build); };
     D.head.appendChild(l);
   }

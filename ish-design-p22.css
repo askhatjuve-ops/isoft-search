@@ -36,7 +36,8 @@
    В карточке товара прячем Telegram (WhatsApp с названием товара остаётся, поднят над липкой панелью покупки p22.js), WhatsApp 44 px. Классы ставит p22.js. */
 @media (max-width:640px){
   html.ishp22-form #ishp22,html.ishp22-form #ishp22t{display:none!important}
-  html.ishp22-card #ishp22t{display:none!important}
+  /* v9: в карточке Telegram виден над WhatsApp (оба 44 px, зазор 12) */
+  html.ishp22-card .ishp22t{right:var(--p22-r,14px);bottom:calc(var(--p22-b,14px) + 56px)}
   html.ishp22-card .ishp22{width:44px;height:44px}
   html.ishp22-card .ishp22 svg{width:24px;height:24px}
 }
@@ -48,14 +49,8 @@
   html.ishp22-asr .ishp22t{right:var(--p22-r,10px);bottom:calc(var(--p22-b,14px) + 56px)}
   html.ishp22-asr.ishp22-away .ishp22,html.ishp22-asr.ishp22-away .ishp22t{opacity:0;transform:translateX(90px);pointer-events:none}
 }
-/* v8 (26.10): блок под «В корзину»: «Получить КП и счёт →» главная строка; «Уточнить по этому товару» скрыта (форма не тронута); строка «Вопрос по товару: WhatsApp · Telegram» */
+/* v8 (26.10): блок под «В корзину»: «Получить КП и счёт →» главная строка; «Уточнить по этому товару» скрыта (форма не тронута) (строка «Вопрос по товару» убрана в v9) */
 html.ishp36-on #allrecords .ishp36-links{gap:0 22px}
 html.ishp36-on #allrecords .ishp36-links .ishp10-kp{order:1;flex:1 1 100%;font-weight:700!important;font-size:15px!important;color:#2B44C7!important}
 html.ishp36-on #allrecords .ishp36-links .ishpg3-ask{display:none!important}
-html.ishp36-on #allrecords .ishp36-links .ishp22-q{order:3;flex:1 1 100%;display:flex;flex-wrap:wrap;align-items:center;gap:0 16px;min-width:0}
-.ishp22-q .ishp22-ql{font:400 14px/1.3 var(--f,TildaSans,Arial,sans-serif);color:#3F465A}
-.ishp22-q .ishp22-qa{display:inline-flex;align-items:center;gap:6px;min-height:40px;color:#2B44C7!important;font:600 14px/1.3 var(--f,TildaSans,Arial,sans-serif)!important;text-decoration:none!important;border:0!important;background:none!important}
-.ishp22-q .ishp22-qa:hover span{text-decoration:underline}
-.ishp22-q .ishp22-qa:focus-visible{outline:3px solid #B9C3F5;outline-offset:2px;border-radius:4px}
-.ishp22-q .ishp22-qa svg{flex:none}
-@media (max-width:900px){.ishp22-q .ishp22-ql{flex:1 1 100%;font-size:13px;margin-top:2px}html.ishp36-on #allrecords .ishp36-links .ishp10-kp{font-size:14.5px!important}.ishp22-q .ishp22-qa{min-height:36px}}
+@media (max-width:900px){html.ishp36-on #allrecords .ishp36-links .ishp10-kp{font-size:14.5px!important}}

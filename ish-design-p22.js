@@ -33,13 +33,13 @@
   function message() {
     var path = location.pathname || '/';
     var OLD = !!W.ISH_WA_TEXT_OFF;
-    var HEAD = OLD ? 'Здравствуйте! ' : 'Здравствуйте! Пишу с сайта b2b.isoft-shop.kz. ';
+    var HEAD = 'Здравствуйте! ';                                           /* v8.2: без «Пишу с сайта…» — ссылка и так показывает откуда */
     if (/\/tproduct\//.test(path)) {
       var n = txt('.js-store-prod-name') || clean((D.querySelector('meta[property="og:title"]') || {}).content) || txt('h1');
       var a = txt('.js-store-prod-sku').replace(/^\s*(артикул|арт\.?|sku)\s*:?\s*/i, '');
       if (n) {
         if (OLD) return HEAD + 'Вопрос по товару: ' + n + (a ? ' (арт. ' + a + ')' : '') + ', ' + location.origin + path;
-        return HEAD + 'Интересует: ' + n + (a ? ' (арт. ' + a + ')' : '') + ' — ' + cleanUrl();
+        return HEAD + 'Интересует: ' + n + (a ? ' (арт. ' + a + ')' : '') + ' ' + cleanUrl();
       }
     } else if (path !== '/' && path.indexOf('/spec') !== 0 && D.querySelector('.t-store__card, .t-store__filter, .t-store')) {
       var s = txt('h1') || clean(D.title).split(/\s[|—–-]\s/)[0];

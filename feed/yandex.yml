@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<yml_catalog date="2026-10-26 10:44">
+<yml_catalog date="2026-10-26 11:27">
 <shop>
 <name>iSoft</name>
 <company>iSoft</company>
@@ -27055,7 +27055,7 @@
 </offer>
 <offer id="IS7BFF88EC63" available="true">
 <url>https://b2b.isoft-shop.kz/mfu/tproduct/786456843314-tsvetnoe-mfu-canon-pixma-ts7640i-6256c00</url>
-<price>78000</price>
+<price>81000</price>
 <currencyId>KZT</currencyId>
 <categoryId>910558779244</categoryId>
 <picture>https://static.tildacdn.com/stor3839-6164-4766-b133-363734636561/45268c411eb9b3c1cab309147fd22531.jpg</picture>
@@ -37136,6 +37136,17 @@
 <vendor>Dell</vendor>
 <vendorCode>ISBD36D9D28A</vendorCode>
 <description>Диагональ 24″ · Контрастность 1000:1 · Разрешение 1920×1080 · Тип матрицы IPS · Частота обновления 144 Гц · Время отклика 1 мс · Яркость 300 кд/м² · Соотношение сторон 16:9 · VESA 100×100 · Размер экрана 23–24″</description>
+</offer>
+<offer id="ISBDC3CF9C15" available="true">
+<url>https://b2b.isoft-shop.kz/monitory/tproduct/970488494664-monitor-asus-pa32uce-ips315169-uhd3840x2</url>
+<price>717000</price>
+<currencyId>KZT</currencyId>
+<categoryId>929335537584</categoryId>
+<picture>https://static.tildacdn.com/tild6439-3765-4961-b061-393437613432/ISBDC3CF9C15_1.jpg</picture>
+<name>Монитор ASUS PA32UCE IPS,31.5,16:9 UHD(3840x2160x60Hz),600cd/m2,HDR10,1K:1,178/178,4ms,2xDP,2xHDMI,USBC 96W</name>
+<vendor>ASUS</vendor>
+<vendorCode>ISBDC3CF9C15</vendorCode>
+<description>Время отклика 4 мс · Диагональ 31,5″ · Разрешение 3840×2160 · Соотношение сторон 16:9 · Тип матрицы IPS · Угол обзора 178° · Частота обновления 60 Гц · Яркость 600 кд/м² · Размер экрана 31,5–32″</description>
 </offer>
 <offer id="ISBDF0F6ECCA" available="true">
 <url>https://b2b.isoft-shop.kz/monitory/tproduct/500790443104-monitor-iiyama-prographic-hb3201uhsnp-b1</url>
@@ -51959,6 +51970,17 @@
 <vendor>Lenovo</vendor>
 <vendorCode>ISB82A6B4B93</vendorCode>
 <description>Диагональ 14″ · Камера IR + 5 Мп · Ёмкость 512 ГБ · Оперативная память 32 ГБ · Операционная система Windows 11 Pro · Линейка процессора Core Ultra 5 · Семья ОС Windows 11 · Процессор Intel Core Ultra 5 325 · Накопитель 512 ГБ · Разрешение 1920×1200</description>
+</offer>
+<offer id="ISBBA2132354" available="true">
+<url>https://b2b.isoft-shop.kz/noutbuki/tproduct/893267423014-noutbuk-asus-vivobook-15-x1504ma-bq257w</url>
+<price>600000</price>
+<currencyId>KZT</currencyId>
+<categoryId>293087419414</categoryId>
+<picture>https://static.tildacdn.com/tild3132-6634-4363-a166-623735663162/ISBBA2132354_1.jpg</picture>
+<name>Ноутбук ASUS VivoBook 15 X1504MA-BQ257W, Core 5 320-1.5/512GB SSD/16GB/15.6-inch FHD/WIN11</name>
+<vendor>ASUS</vendor>
+<vendorCode>ISBBA2132354</vendorCode>
+<description>Диагональ 15,6″ · Ёмкость 512 ГБ · Оперативная память 16 ГБ · Операционная система Windows 11 · Разрешение 1920×1080 · Линейка процессора Core 5 · Семья ОС Windows 11 · Процессор Intel Core 5 320 · Накопитель 512 ГБ</description>
 </offer>
 <offer id="ISBDE85FA00F" available="true">
 <url>https://b2b.isoft-shop.kz/noutbuki/tproduct/138613127444-noutbuk-dell-pro-14-pc14250-210-bqhfbto1</url>
@@ -73755,6 +73777,17 @@
 <vendor>Synology</vendor>
 <vendorCode>IS67361839EA</vendorCode>
 <description>Тип устройства Дисковая полка (модуль расширения) · Отсеков 12</description>
+</offer>
+<offer id="IS7AA73FED3A" available="true">
+<url>https://b2b.isoft-shop.kz/servery-i-shd/tproduct/436296703384-sistema-hraneniya-dannih-ne-ukomplektova</url>
+<price>4006000</price>
+<currencyId>KZT</currencyId>
+<categoryId>168824029674</categoryId>
+<picture>https://static.tildacdn.com/tild6337-3433-4064-b436-663365656631/IS7AA73FED3A_1.jpg</picture>
+<name>Система хранения данных (не укомплектована дисками) Huawei D2020-64G-SAS-AC OceanStor Dorado 2020 02356DPM</name>
+<vendor>HUAWEI eKit</vendor>
+<vendorCode>IS7AA73FED3A</vendorCode>
+<description>Оперативная память 64 ГБ</description>
 </offer>
 <offer id="IS7E1E12EE49" available="true">
 <url>https://b2b.isoft-shop.kz/servery-i-shd/tproduct/149226799854-sistema-hraneniya-setevoi-nakopitel-asus</url>

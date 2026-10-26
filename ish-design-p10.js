@@ -255,7 +255,7 @@
   function kp() {
     if (q('.ishp10-kp') || H.classList.contains('ishpg-nopr')) return;
     var main = q('.ishpg-add'), buy = q('.ishpg-buy'); if (!main || !buy) return;
-    var ask = q('.ishpg3-ask'), a = mk('a', 'ishp10-kp', IC.doc + '<span>Запросить КП</span>');
+    var ask = q('.ishpg3-ask'), a = mk('a', 'ishp10-kp', IC.doc + '<span>Получить КП и счёт</span>');
     a.href = '/spec#kp'; a.setAttribute('title', 'Положим товар в корзину и откроем заявку на КП');
     if (ask && ask.parentNode) ask.parentNode.insertBefore(a, ask); else buy.parentNode.insertBefore(a, buy.nextSibling);
     a.addEventListener('click', function (e) {

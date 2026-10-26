@@ -1,4 +1,4 @@
-/* ish-design-p44.css  v1 (26.10.2026)  П44 «КП и счёт просто» на /spec. Все правила за html.ishp44 (ставит p44.js на /spec). Откат: пустой файл или ISH_P44_OFF. */
+/* ish-design-p44.css  v2 (26.10.2026)  П44 «КП и счёт просто» на /spec. Все правила за html.ishp44 (ставит p44.js на /spec). Откат: пустой файл или ISH_P44_OFF. */
 /* что убираем с пути: вкладки Счёт/КП и заголовок формы, правая колонка итога и «Как дальше», нижняя панель, ступени 01-02-03, подпись и пояснение вверху */
 html.ishp44 #spFormHead,
 html.ishp44 .sp-aside,
@@ -71,3 +71,18 @@ body.sp-empty-cart #ishp44{display:none}
 }
 
 html.ishp44 #specRoot .ishp31-hero{min-height:0!important;padding-top:26px!important;padding-bottom:26px!important}
+
+/* v2 (26.10.2026): вёрстка списка и отступов. Только компьютер (>900px): одна сетка на заголовок и строки, заголовки строго над столбцами; отступы между блоками 16-28 px; «Действия» не липнет к баннеру */
+html.ishp44 #spTools{margin-bottom:16px}
+html.ishp44 #specRoot .вн-тело{padding-top:8px!important;padding-bottom:16px!important}
+html.ishp44 #specRoot .sp-спис{margin:0}
+html.ishp44 #specRoot .вн-тихо{margin:12px 0 0}
+html.ishp44 #ishp44{margin-top:0;margin-bottom:40px}
+html.ishp44 #ishp44 .ishp44__wrap{padding-top:0}
+@media (min-width:901px){
+  html.ishp44 #specRoot .sp-шапка,html.ishp44 #specRoot .sp-поз{grid-template-columns:64px minmax(0,1fr) 120px 140px 120px 40px!important;gap:14px!important;padding-left:20px!important;padding-right:20px!important;align-items:center}
+  html.ishp44 #specRoot .sp-шапка>*,html.ishp44 #specRoot .sp-поз>*{text-align:left!important;justify-self:start}
+  html.ishp44 #specRoot .sp-шапка>.sp-цифра,html.ishp44 #specRoot .sp-поз>.sp-цифра{justify-self:start;width:auto}
+  html.ishp44 #specRoot .sp-шапка>div:nth-child(2),html.ishp44 #specRoot .sp-поз>.sp-серед{justify-self:stretch;min-width:0}
+  html.ishp44 #specRoot .sp-фото{width:64px!important;height:64px!important}
+}

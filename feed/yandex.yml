@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<yml_catalog date="2026-10-26 06:50">
+<yml_catalog date="2026-10-26 10:44">
 <shop>
 <name>iSoft</name>
 <company>iSoft</company>
@@ -7271,21 +7271,6 @@
 <vendorCode>IS5BDBFEBCAA</vendorCode>
 <description>Графический процессор GTX 1650 · Разрядность шины 128 бит · Тип видеопамяти GDDR6 · Частота 1665 МГц · Объём видеопамяти 4 ГБ · Видеовыходы HDMI / DVI / DP</description>
 </offer>
-<offer id="IS5C819A5FEF" available="true">
-<url>https://b2b.isoft-shop.kz/videokarty/tproduct/871178770204-videokarta-gigabyte-geforce-rtx-5060-oc</url>
-<price>278000</price>
-<currencyId>KZT</currencyId>
-<categoryId>784666503994</categoryId>
-<picture>https://static.tildacdn.com/stor3662-6337-4265-a164-326238386436/ecfc47a076a4c36324d810259bc25542.jpg</picture>
-<picture>https://static.tildacdn.com/stor3430-3232-4335-b665-383931396431/a029c12b23a8d5186a60cfc8976fa772.jpg</picture>
-<picture>https://static.tildacdn.com/tila6466-6635-4739-b537-623230666166/871178770204_1.jpg</picture>
-<picture>https://static.tildacdn.com/tila3362-3562-4135-b539-336365633632/871178770204_2.jpg</picture>
-<picture>https://static.tildacdn.com/tila3932-3331-4531-b466-353332383439/871178770204_3.jpg</picture>
-<name>Видеокарта Gigabyte GeForce RTX 5060 OC LP 8 ГБ</name>
-<vendor>Gigabyte</vendor>
-<vendorCode>GV-N5060OC-8GL</vendorCode>
-<description>RTX5060 OC Low Profile 8G (GV-N5060OC-8GL) 4719331356422, GDDR7, 128bit, 1-HDMI, 3-DP, 3X Fan, 182*69*36 мм, Цветная коробка</description>
-</offer>
 <offer id="IS5DD2B2C47A" available="true">
 <url>https://b2b.isoft-shop.kz/videokarty/tproduct/482648441594-videokarta-afox-gtx1050-4gb-d5-dual-fan</url>
 <price>84000</price>
@@ -7335,17 +7320,6 @@
 <vendor>Palit</vendor>
 <vendorCode>NE7506T019P1-GB2062D</vendorCode>
 <description>RTX5060Ti DUAL 8G (4710562245264), NE7506T019P1-GB2062D, GDDR7, 128bit, 3-DP, HDMI, 262.1*126.3*40.1 мм, Цветная коробка</description>
-</offer>
-<offer id="IS645CFEB4C2" available="true">
-<url>https://b2b.isoft-shop.kz/videokarty/tproduct/384838420084-videokarta-gigabyte-gv-n3050wf2ocv2-6gd</url>
-<price>171000</price>
-<currencyId>KZT</currencyId>
-<categoryId>784666503994</categoryId>
-<picture>https://static.tildacdn.com/tild3335-3837-4137-b763-616634323261/IS645CFEB4C2_1.jpg</picture>
-<name>Видеокарта Gigabyte (GV-N3050WF2OCV2-6GD) RTX3050 WINDFORCE OC V2 6G</name>
-<vendor>Gigabyte</vendor>
-<vendorCode>IS645CFEB4C2</vendorCode>
-<description>Объём видеопамяти 6 ГБ · Графический процессор RTX 3050 · Серия видеокарты GeForce RTX 3000 · Разрядность шины 96 бит · Видеовыходы HDMI x 2 / DP x 2</description>
 </offer>
 <offer id="IS64ADBBCEC8" available="true">
 <url>https://b2b.isoft-shop.kz/videokarty/tproduct/115025879874-videokarta-afox-gtx1050ti-gaming-4gb-d5</url>
@@ -10210,19 +10184,6 @@
 <vendor>Apacer</vendor>
 <vendorCode>IS60ADE57542</vendorCode>
 <description>Ёмкость 2 ТБ · Форм-фактор 2.5″ · Интерфейс USB 3.2 · Класс ёмкости 1,2–2 ТБ</description>
-</offer>
-<offer id="IS6176159E1A" available="true">
-<url>https://b2b.isoft-shop.kz/zhestkie-diski/tproduct/908916150994-zhyostkii-disk-seagate-hdd-skyhawk-surve</url>
-<price>271000</price>
-<currencyId>KZT</currencyId>
-<categoryId>958449305144</categoryId>
-<picture>https://static.tildacdn.com/tild3737-3935-4135-b063-343263326635/IS6176159E1A_1.jpg</picture>
-<picture>https://static.tildacdn.com/tild3039-6136-4837-b836-393839393862/908916150994_1.jpg</picture>
-<picture>https://static.tildacdn.com/tild3661-6665-4431-b063-323963643534/908916150994_2.jpg</picture>
-<name>Жёсткий диск SEAGATE HDD SkyHawk Surveillance (3.5-inch/8TB/SATA 6Gb/s/rpm 5400)</name>
-<vendor>SEAGATE</vendor>
-<vendorCode>IS6176159E1A</vendorCode>
-<description>Интерфейс SATA III · Форм-фактор 3.5″</description>
 </offer>
 <offer id="IS62337B5932" available="true">
 <url>https://b2b.isoft-shop.kz/zhestkie-diski/tproduct/559383987904-vneshnii-zhyostkii-disk-apacer-1tb-25-in</url>
@@ -55437,19 +55398,6 @@
 <vendorCode>IS2EA06F50D4</vendorCode>
 <description>Тип устройства Термопаста и термопрокладки · Гарантия 1 год · Вес нетто 1 г</description>
 </offer>
-<offer id="IS2ECCC64E21" available="true">
-<url>https://b2b.isoft-shop.kz/ohlazhdenie/tproduct/716096810244-kuler-s-vodyanim-ohlazhdeniem-deepcool-l</url>
-<price>40000</price>
-<currencyId>KZT</currencyId>
-<categoryId>831063569394</categoryId>
-<picture>https://static.tildacdn.com/stor3030-6533-4961-a138-633061626365/850ca9005bc69036b47ee65f2d85b711.jpg</picture>
-<picture>https://static.tildacdn.com/tild6132-3930-4936-a666-363664393761/716096810244_1.jpg</picture>
-<picture>https://static.tildacdn.com/tild3062-3461-4833-b434-396434373838/716096810244_2.jpg</picture>
-<name>Кулер с водяным охлаждением Deepcool LE360 PRO WH R-LE360PRO-WHAMMC-G-1</name>
-<vendor>Deepcool</vendor>
-<vendorCode>IS2ECCC64E21</vendorCode>
-<description>Гарантия 1 год · Скорость вращения 400–2400 об/мин · Уровень шума 36,07 дБА · Подсветка ARGB · Интерфейс 4-pin PWM · Тип устройства Водяное охлаждение (СЖО) · Форм-фактор 360 мм · Количество вентиляторов 3 · Воздушный поток 66,23 CFM · Сокет 1851 / 1700 / 1200 / 1151 / AM5 / AM4</description>
-</offer>
 <offer id="IS2EFEB0B8C5" available="true">
 <url>https://b2b.isoft-shop.kz/ohlazhdenie/tproduct/488354090814-kuler-s-vodyanim-ohlazhdeniem-1stplayer</url>
 <price>41000</price>
@@ -55833,17 +55781,6 @@
 <vendor>Razer</vendor>
 <vendorCode>IS4AC292A035</vendorCode>
 <description>TDP 250 Вт · Форм-фактор 240 мм · Уровень шума 40 дБА · Подсветка RGB · Интерфейс 4-pin PWM · Скорость вращения 500–2000 об/мин · Количество вентиляторов 2 · Тип устройства Водяное охлаждение (СЖО) · Цвет Чёрный · Гарантия 2 года</description>
-</offer>
-<offer id="IS4BF296BEBD" available="true">
-<url>https://b2b.isoft-shop.kz/ohlazhdenie/tproduct/762801110114-ohlazhdenie-kuler-dlya-protsessora-jonsb</url>
-<price>8800</price>
-<currencyId>KZT</currencyId>
-<categoryId>831063569394</categoryId>
-<picture>https://static.tildacdn.com/tila6561-3538-4263-b039-353035333535/IS4BF296BEBD_1.jpg</picture>
-<name>Охлаждение Кулер для процессора Jonsbo CR-1000 EVO(ARGB) White</name>
-<vendor>Jonsbo</vendor>
-<vendorCode>IS4BF296BEBD</vendorCode>
-<description>Гарантия 1 год · Форм-фактор 120 мм · Подсветка ARGB · Тип устройства Кулер для процессора · Сокет 1700 / 1200 / 1151 / AM5 / AM4 · TDP 220 Вт · Интерфейс 4-pin PWM · Скорость вращения 600–1500 об/мин · Уровень шума 32 дБА · Количество вентиляторов 1</description>
 </offer>
 <offer id="IS4C0CD03D2F" available="true">
 <url>https://b2b.isoft-shop.kz/ohlazhdenie/tproduct/411300901534-ohlazhdenie-water-cooler-id-cooling-fx36</url>
@@ -58174,19 +58111,6 @@
 <vendor>ASUS</vendor>
 <vendorCode>ISDA339C0A5D</vendorCode>
 <description>Форм-фактор 240 мм · Подсветка ARGB · Количество вентиляторов 2 · Тип устройства Водяное охлаждение (СЖО) · Сокет LGA1700</description>
-</offer>
-<offer id="ISDB572A7F30" available="true">
-<url>https://b2b.isoft-shop.kz/ohlazhdenie/tproduct/948660727774-kuler-s-vodyanim-ohlazhdeniem-deepcool-l</url>
-<price>35000</price>
-<currencyId>KZT</currencyId>
-<categoryId>831063569394</categoryId>
-<picture>https://static.tildacdn.com/stor6363-3963-4861-a335-346633636661/850a976a1b76bd4e8ad6cd419efc3c29.jpg</picture>
-<picture>https://static.tildacdn.com/tild3839-3439-4635-b337-636239323065/948660727774_1.jpg</picture>
-<picture>https://static.tildacdn.com/tild3863-3837-4461-b430-663833363666/948660727774_2.jpg</picture>
-<name>Кулер с водяным охлаждением Deepcool LE360 V2 ZERO DARK R-LE360ZERO-BKLNMD-G-1</name>
-<vendor>Deepcool</vendor>
-<vendorCode>ISDB572A7F30</vendorCode>
-<description>Форм-фактор 360 мм · Уровень шума 24,96 дБА · Подсветка ARGB · Интерфейс 4-pin PWM · Скорость вращения 500–1600 об/мин · Тип устройства Водяное охлаждение (СЖО) · Воздушный поток 48,34 CFM · Тип подшипника Гидравлический · Сокет 1851 / 1700 / 1200 / 1151 / AM5 / AM4 · TDP 300 Вт</description>
 </offer>
 <offer id="ISDCAC2BF24F" available="true">
 <url>https://b2b.isoft-shop.kz/ohlazhdenie/tproduct/849463667874-ohlazhdenie-kuler-dlya-protsessora-deepc</url>

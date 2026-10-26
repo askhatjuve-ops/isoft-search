@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<yml_catalog date="2026-10-25 19:47">
+<yml_catalog date="2026-10-26 06:50">
 <shop>
 <name>iSoft</name>
 <company>iSoft</company>
@@ -72434,6 +72434,19 @@
 <vendorCode>IS1F812795BF</vendorCode>
 <description>Оперативная память 32 ГБ · Процессор AMD Ryzen 7 9800X3 · Линейка процессора Ryzen 7 · Видеокарта RTX 5070Ti · Тип накопителя SSD · Ёмкость 1 ТБ · Блок питания 850 Вт · Накопитель 1 ТБ</description>
 </offer>
+<offer id="IS2065FF8E49" available="true">
+<url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/137823424124-sistemnii-blok-pulser-ryzen-5-7600x-47-g</url>
+<price>1409000</price>
+<currencyId>KZT</currencyId>
+<categoryId>763638053684</categoryId>
+<picture>https://static.tildacdn.com/tila3230-3330-4636-a532-316133633637/137823424124_1.jpg</picture>
+<picture>https://static.tildacdn.com/tila3464-6561-4132-b738-343535366435/137823424124_2.jpg</picture>
+<picture>https://static.tildacdn.com/tila3233-6466-4361-a563-343833666534/137823424124_3.jpg</picture>
+<name>Системный блок Pulser Ryzen 5 7600X, 4.7 ГГц, B850, 32 ГБ ОЗУ, SSD 1 ТБ M.2, RTX 5070, 12 ГБ, без DVD, БП 850 Вт</name>
+<vendor>Pulser</vendor>
+<vendorCode>IS2065FF8E49</vendorCode>
+<description>Оперативная память 32 ГБ · Процессор AMD Ryzen 5 7600X · Линейка процессора Ryzen 5 · Видеокарта RTX 5070 · Тип накопителя SSD · Ёмкость 1 ТБ · Блок питания 850 Вт · Накопитель 1 ТБ</description>
+</offer>
 <offer id="IS22F172E67E" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/353746439644-sistemnii-blok-pulser-ryzen-9-9900x3d-44</url>
 <price>2818000</price>
@@ -73128,6 +73141,19 @@
 <vendor>Acer</vendor>
 <vendorCode>DT.VY3EC.00W</vendorCode>
 <description>Системный блок линейки Acer Veriton. Процессор Intel Core i5-14400. Оперативной памяти 8 ГБ DDR4. Накопитель SSD на 512 ГБ. Графика встроенная: Intel UHD Graphics. Предустановлена Windows 11 Pro. Питание: блок питания 180 Вт. · Партномер: DT.VY3EC.00W</description>
+</offer>
+<offer id="IS9D56C1BF73" available="true">
+<url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/727210739734-sistemnii-blok-pulser-ryzen-5-8400f-42-g</url>
+<price>1153000</price>
+<currencyId>KZT</currencyId>
+<categoryId>763638053684</categoryId>
+<picture>https://static.tildacdn.com/tild6262-6135-4463-b062-383337316336/727210739734_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild3134-6538-4835-b261-346630623762/727210739734_2.jpg</picture>
+<picture>https://static.tildacdn.com/tild3264-6230-4035-a534-393237306539/727210739734_3.jpg</picture>
+<name>Системный блок Pulser Ryzen 5 8400F, 4.2 ГГц, B650, 32 ГБ ОЗУ, SSD 1 ТБ M.2, RTX 5070, 12 ГБ, без DVD, БП 800 Вт</name>
+<vendor>Pulser</vendor>
+<vendorCode>IS9D56C1BF73</vendorCode>
+<description>Оперативная память 32 ГБ · Процессор AMD Ryzen 5 8400F · Линейка процессора Ryzen 5 · Видеокарта RTX 5070 · Тип накопителя SSD · Ёмкость 1 ТБ · Блок питания 800 Вт · Накопитель 1 ТБ</description>
 </offer>
 <offer id="IS9ED9C67D1B" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/578118998224-sistemnii-blok-pulser-ryzen-9-9900x-44-g</url>

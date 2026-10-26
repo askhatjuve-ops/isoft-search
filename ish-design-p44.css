@@ -1,0 +1,73 @@
+/* ish-design-p44.css  v1 (26.10.2026)  П44 «КП и счёт просто» на /spec. Все правила за html.ishp44 (ставит p44.js на /spec). Откат: пустой файл или ISH_P44_OFF. */
+/* что убираем с пути: вкладки Счёт/КП и заголовок формы, правая колонка итога и «Как дальше», нижняя панель, ступени 01-02-03, подпись и пояснение вверху */
+html.ishp44 #spFormHead,
+html.ishp44 .sp-aside,
+html.ishp44 #spBar,
+html.ishp44 .ishp19c-steps,
+html.ishp44 #spKick,
+html.ishp44 #spLead,
+html.ishp44 #specRoot .вн-бок,
+html.ishp44 .ishp31-hero__p{display:none!important}
+/* родная форма Tilda нужна для отправки: прячем ЗА КРАЙ экрана, не display:none (иначе проверка полей пропускает/ломается) */
+html.ishp44 .t706__cartwin{position:absolute!important;left:-10000px!important;top:0!important;width:640px!important;height:auto!important;max-height:none!important;overflow:visible!important;opacity:0!important;pointer-events:none!important;z-index:-1!important}
+html.ishp44 #specRoot .вн-тело{grid-template-columns:minmax(0,1fr)!important}
+html.ishp44 #specRoot .вн-тело>div{max-width:none}
+
+#ishp44{font-family:'TildaSans',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#171923;font-size:15px;line-height:1.45;margin:6px 0 48px;scroll-margin-top:110px}
+#ishp44 *{box-sizing:border-box}
+#ishp44 .ishp44__wrap{padding-top:8px}
+body.sp-empty-cart #ishp44{display:none}
+#ishp44 .ishp44__sum{display:flex;align-items:center;flex-wrap:wrap;gap:6px 18px;padding:14px 20px;margin:0 0 16px;background:#fff;border:1px solid #E3DFD6;border-radius:14px}
+#ishp44 .ishp44__sum:empty{display:none}
+#ishp44 .ishp44__sum-t{font-weight:600;font-size:17px}
+#ishp44 .ishp44__sum-n{color:#646B7D;font-size:14px}
+#ishp44 .ishp44__sum-v{margin-left:auto;display:flex;align-items:baseline;gap:10px;text-align:right}
+#ishp44 .ishp44__sum-v small{color:#646B7D;font-size:13px}
+#ishp44 .ishp44__sum-v b{font-size:24px;font-variant-numeric:tabular-nums;color:#2B44C7;font-weight:700}
+#ishp44 .ishp44__grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:start}
+#ishp44 .ishp44__grid[hidden],#ishp44 [hidden]{display:none!important}
+#ishp44 .ishp44__card{background:#fff;border:1px solid #E3DFD6;border-radius:14px;padding:22px 22px 20px;box-shadow:0 1px 2px rgba(23,25,35,.04)}
+#ishp44 h2{margin:0 0 6px;font-size:21px;line-height:1.25;font-weight:600;letter-spacing:-.01em}
+#ishp44 .ishp44__lead{margin:0 0 16px;color:#646B7D;font-size:14.5px}
+#ishp44 .ishp44__f{display:block;margin:0 0 12px}
+#ishp44 .ishp44__f>span{display:block;margin:0 0 5px;font-size:13.5px;font-weight:600;color:#272B36}
+#ishp44 .ishp44__f input{display:block;width:100%;height:48px;padding:0 14px;border:1px solid #928A79;border-radius:8px;background:#fff;color:#171923;font-size:16px;line-height:1.2;font-weight:400;font-family:inherit;outline:0}
+#ishp44 .ishp44__f input::placeholder{color:#9A9486}
+#ishp44 .ishp44__f input:focus{border-color:#2B44C7;box-shadow:0 0 0 3px rgba(43,68,199,.18)}
+#ishp44 .ishp44__f input.ishp44__bad{border-color:#B43A36;background:#FDF3F2}
+#ishp44 .ishp44__two{display:grid;grid-template-columns:1fr 1fr;gap:0 12px}
+#ishp44 .ishp44__err{min-height:0;margin:0 0 10px;color:#B43A36;font-size:13.5px;font-weight:500}
+#ishp44 .ishp44__err:empty{display:none}
+#ishp44 .ishp44__btn{display:flex;align-items:center;justify-content:center;width:100%;height:50px;border:0;border-radius:8px;background:#2B44C7;color:#fff;font-size:16px;line-height:1;font-weight:600;font-family:inherit;cursor:pointer;text-decoration:none;box-shadow:0 1px 2px rgba(43,68,199,.35),0 6px 14px rgba(43,68,199,.2);transition:background .15s}
+#ishp44 .ishp44__btn:hover{background:#2036A8}
+#ishp44 .ishp44__btn:focus-visible{outline:2px solid #2B44C7;outline-offset:2px}
+#ishp44 .ishp44__btn:disabled{opacity:.55;cursor:not-allowed;box-shadow:none}
+#ishp44 .ishp44__btn.ishp44__wait{opacity:.7;cursor:progress}
+#ishp44 .ishp44__btn_inv{background:#171923;box-shadow:none}
+#ishp44 .ishp44__btn_inv:hover{background:#2B2F3E}
+#ishp44 .ishp44__btn_ghost{background:#fff;color:#2B44C7;border:1px solid #2B44C7;box-shadow:none;width:auto;display:inline-flex;padding:0 24px}
+#ishp44 .ishp44__btn_ghost:hover{background:#E9ECFC}
+#ishp44 .ishp44__ok{margin-top:14px;padding:14px 16px;border-radius:10px;background:#E8F4EE;border:1px solid #B9DCC9;display:grid;gap:4px}
+#ishp44 .ishp44__ok b{color:#14704A;font-size:16px}
+#ishp44 .ishp44__ok span{color:#272B36;font-size:14px}
+#ishp44 .ishp44__ok_warn{background:#FDF3E6;border-color:#EBCB9B}
+#ishp44 .ishp44__ok_warn b{color:#9A5B00}
+#ishp44 .ishp44__lnk{display:inline-flex;align-items:center;justify-content:center;height:42px;margin-top:8px;padding:0 18px;border-radius:8px;background:#14704A;color:#fff!important;font-weight:600;font-size:14.5px;text-decoration:none!important}
+#ishp44 .ishp44__lnk_2{background:#fff;color:#14704A!important;border:1px solid #14704A;margin-left:8px}
+#ishp44 .ishp44__pd{margin:14px 2px 0;color:#646B7D;font-size:13px}
+#ishp44 .ishp44__pd a{color:#2B44C7}
+#ishp44 .ishp44__fin{background:#fff;border:1px solid #E3DFD6;border-radius:14px;padding:34px 24px;text-align:center;max-width:620px;margin:0 auto}
+#ishp44 .ishp44__fin-ic{width:52px;height:52px;margin:0 auto 12px;border-radius:50%;background:#E8F4EE;color:#14704A;font-size:26px;line-height:52px}
+#ishp44 .ishp44__fin p{margin:8px 0 18px;color:#272B36}
+@media (max-width:900px){
+  #ishp44{margin-bottom:96px}
+  #ishp44 .ishp44__grid{grid-template-columns:1fr}
+  #ishp44 .ishp44__wrap{padding-left:16px;padding-right:16px}
+  #ishp44 .ishp44__sum{padding:12px 14px}
+  #ishp44 .ishp44__sum-v{margin-left:0;width:100%;justify-content:space-between}
+  #ishp44 .ishp44__two{grid-template-columns:1fr}
+  #ishp44 .ishp44__card{padding:18px 16px 16px}
+  #ishp44 .ishp44__lnk_2{margin-left:0}
+}
+
+html.ishp44 #specRoot .ishp31-hero{min-height:0!important;padding-top:26px!important;padding-bottom:26px!important}

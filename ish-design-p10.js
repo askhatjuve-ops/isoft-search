@@ -1,4 +1,4 @@
-/* ish-design-p10.js  v5.2  (23.10.2026: поле файла Uploadcare по-русски, контурная кнопка; ISH_P10_FILEBTN_OFF; прежняя v5.1 22.10.2026: ?code= на /podbor, ISH_PODBOR_CODE_OFF; прежняя v5 18.10.2026)  П10 «карточка товара: внешний слой» b2b.isoft-shop.kz
+/* ish-design-p10.js  v5.3  (26.10.2026: «Получить КП и счёт» всегда ведёт на /spec#kp, корзина читается из window.tcart; никогда не /podbor; прежняя v5.2 23.10.2026: поле файла Uploadcare по-русски, контурная кнопка; ISH_P10_FILEBTN_OFF; прежняя v5.1 22.10.2026: ?code= на /podbor, ISH_PODBOR_CODE_OFF; прежняя v5 18.10.2026)  П10 «карточка товара: внешний слой» b2b.isoft-shop.kz
    Подключается строкой в HEAD/подвале ТОЛЬКО для страниц карточки (/tproduct/...). Блок 4055071703 (запас 251 знак) не правится.
    Ждёт, пока фрагмент v8p7 соберёт карточку (html.ishpg-on), и ДОБАВЛЯЕТ узлы с префиксом ishp10-. Чужих узлов не переписывает,
    «В корзину» не перекрашивает и не подменяет: все кнопки-двойники кликают ЧЕРЕЗ родную .ishpg-add (одно место добавления в корзину).
@@ -79,9 +79,20 @@
     sync();
   }
 
-  /* сколько штук лежит в родной корзине Tilda (localStorage 'tcart'); по приросту видно, что «положить» сработало */
+  /* сколько штук лежит в родной корзине Tilda. 26.10: сначала живой объект window.tcart (он обновляется сразу, как у блока /spec),
+     localStorage - запасной: он пишется позже и в закрытом режиме браузера недоступен совсем */
+  function cartObj() {
+    var c = W.tcart;
+    if (!c || !c.products) { try { c = JSON.parse(localStorage.getItem('tcart') || '{}'); } catch (e) { c = {}; } }
+    return c && c.products ? c : { products: [] };
+  }
   function cartQ() {
-    try { var c = JSON.parse(localStorage.getItem('tcart') || '{}'), n = 0; (c.products || []).forEach(function (p) { n += parseFloat(p.quantity) || 1; }); return n; } catch (e) { return 0; }
+    var n = 0; try { cartObj().products.forEach(function (p) { if (p && p.deleted !== 'yes') n += parseFloat(p.quantity) || 1; }); } catch (e) {}
+    return n;
+  }
+  function cartHas(uid) {
+    if (!uid) return false;
+    try { return cartObj().products.some(function (p) { return p && p.deleted !== 'yes' && String(p.uid) === String(uid); }); } catch (e) { return false; }
   }
   /* ── Т4: данные товара для формы /podbor (sessionStorage 'ishp10_ask', живёт 1 час; запасной источник - ?model=&art= из ссылки) ── */
   var ASK_KEY = 'ishp10_ask', ASK_TTL = 3600 * 1000;
@@ -261,12 +272,14 @@
     a.addEventListener('click', function (e) {
       if (e.ctrlKey || e.metaKey || e.shiftKey || e.button === 1) return;
       e.preventDefault();
-      var n0 = cartQ(), t0 = Date.now();
+      var n0 = cartQ(), t0 = Date.now(), pr = q('[data-product-uid]'), uid = pr ? pr.getAttribute('data-product-uid') : '';
       main.click();                                    /* кладём через родную кнопку: те же проверки, то же окошко «Добавлено» */
       try { sessionStorage.setItem('ishp10_doc', 'kp'); } catch (x) {}
-      (function wait() {                               /* общая корзина кладёт асинхронно: ждём прирост до 1,5 с */
-        if (cartQ() > n0) { setTimeout(function () { location.href = '/spec#kp'; }, 200); return; }
-        if (Date.now() - t0 > 1500) { askSave(); location.href = ask ? ask.getAttribute('href') : '/podbor'; return; }
+      /* 26.10: на /spec ведём ВСЕГДА. Раньше, если за 1,5 с количество в localStorage не выросло, уводило на /podbor с текстом «Уточнить по товару»
+         (живой тест 26.10: товар в корзину лёг, а открылась форма подбора). Теперь признак - товар уже лежит в корзине (живой window.tcart),
+         рост количества или тайм-аут; корзину на /spec читает сама страница, в крайнем случае там будет пусто и ссылка в каталог. */
+      (function wait() {
+        if (cartQ() > n0 || cartHas(uid) || Date.now() - t0 > 1500) { setTimeout(function () { location.href = '/spec#kp'; }, 200); return; }
         setTimeout(wait, 100);
       })();
     });

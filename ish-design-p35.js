@@ -1,4 +1,4 @@
-/* ish-design-p35.js  v3.5  (26.10: «в наличии» с карточек убрано, строка наличия над сеткой раздела; v3.4  20.10: фото 6 разделов СКС) v3.3  (кандидат 19.10.2026; НЕ выложено; v3.3: лента и на страницах разделов; v3.2: на телефоне в группе плашка «Для юрлиц и ИП…» заменена стеклянной бегущей лентой внутри низа шапки)  П35 «раздел и группа каталога: компоненты главной»
+/* ish-design-p35.js  v3.6  (26.10: кнопки входа в /podbor -> «Прислать список»; v3.5: 26.10: «в наличии» с карточек убрано, строка наличия над сеткой раздела; v3.4  20.10: фото 6 разделов СКС) v3.3  (кандидат 19.10.2026; НЕ выложено; v3.3: лента и на страницах разделов; v3.2: на телефоне в группе плашка «Для юрлиц и ИП…» заменена стеклянной бегущей лентой внутри низа шапки)  П35 «раздел и группа каталога: компоненты главной»
    Режимы (определяются сами):
      раздел  - есть .t-store__card-list и верх .вн-а (список Tilda);
      группа  - есть .вн-гр[data-gruppa] и #вн-гр-список (родительская страница: свой список из getproductslist, без блока t-store).
@@ -288,7 +288,7 @@
   empty.innerHTML = '<span class="ishp35-empty__i">' + svg28(IC.search) + '</span><div class="ishp35-empty__t"><b>Нет моделей с такими параметрами</b>' +
     '<p>Сбросьте часть фильтров или пришлите список — подберём подходящие позиции вручную.</p></div>' +
     '<div class="ishp35-empty__b"><button type="button" class="ishp35-btn" data-ishp35="reset">Сбросить фильтры</button>' +
-    '<a class="ishp35-btn ishp35-btn--2" href="' + REQ + '">Пришлите список</a></div>';
+    '<a class="ishp35-btn ishp35-btn--2" href="' + REQ + '">Прислать список</a></div>';
   function reset() {
     var b = D.querySelector('#вн-гр-сброс.is-on, .ishd-reset:not([hidden]), .js-store-filter-reset, .t-store__filter__btn-reset, [class*="filter-reset"]');
     if (b) { b.click(); return; }
@@ -453,7 +453,7 @@
       '<section class="ishp35-nf" aria-label="Не нашли нужное?"><span class="ishp35-nf__l">' + logo('ishp35-nf__lg', '#272B36', '#2B44C7') + '</span>' +
       '<div class="ishp35-nf__t"><h3>Не нашли нужное? Пришлите список</h3><p>Проработаем и ' + ISH_SLA.replyLc() + '.</p></div>' +
       '<div class="ishp35-ls" aria-hidden="true"><span>Ноутбук 15.6″ — 10 шт</span><span>Монитор 24″ — 10 шт</span><span>МФУ A4 — 2 шт</span><i class="ishp35-ok"><svg viewBox="0 0 20 20"><circle cx="10" cy="10" r="10" fill="#1FA971"/><path d="m5.6 10.4 3 3 5.8-6.4" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>КП готово</i></div>' +
-      '<div class="ishp35-nf__b"><span class="ishp35-nf__w"><a class="ishp35-b ishp35-b--main" href="' + REQ + '">Написать, что нужно</a></span>' +
+      '<div class="ishp35-nf__b"><span class="ishp35-nf__w"><a class="ishp35-b ishp35-b--main" href="' + REQ + '">Прислать список</a></span>' +
       '<a class="ishp35-b" href="/assortiment">Расширенный ассортимент 14000+</a></div></section></div>';
     low.parentNode.insertBefore(n, low);
     H.classList.add('ishp35-nfon');

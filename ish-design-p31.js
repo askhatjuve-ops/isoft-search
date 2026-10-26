@@ -1,4 +1,4 @@
-/* ish-design-p31.js  v2.0  (кандидат 17.10.2026; НЕ выложено на Pages)  П31 v2 «текстовые страницы в стиле главной C2 и раздела П35»  b2b.isoft-shop.kz
+/* ish-design-p31.js  v2.1  (26.10: «Подобрать технику» и «Написать, что нужно» -> одна «Прислать список»; v2.0: кандидат 17.10.2026; НЕ выложено на Pages)  П31 v2 «текстовые страницы в стиле главной C2 и раздела П35»  b2b.isoft-shop.kz
    Грузится загрузчиком П4 (ish-design-p4.js, строка P31V; в кандидате P31V = '2') только на текстовых страницах (.вн-верх / .вн-тело). Сам подключает ish-design-p31.css рядом с собой.
    Что делает (родные узлы Tilda не переписывает - переставляет и добавляет узлы с префиксом ishp31-):
    1) верх: тёмная индиго-шапка со скруглением 28 («NN / РАЗДЕЛ», H1 белым, подпись из .вн-лид, справа линейный знак крупно) + белая полоса фактов внахлёст;
@@ -138,17 +138,18 @@
     var тело = D.querySelector('.вн-тело');
     if (!cfg || !тело || D.getElementById('ishp31-low')) return !!D.getElementById('ishp31-low');
     if (NOLOW || (!cfg.pod && !cfg.fin)) return true;
+    var showPod = cfg.pod && !cfg.fin;   /* 26.10: две кнопки в /podbor на одной странице - оставляем одну («Прислать список» в «Не нашли нужное?») */
     var s = el('div', 'ishp31-low');
     s.id = 'ishp31-low';
     var h = '';
-    if (cfg.pod) h += '<section class="ishp31-pod" aria-label="Подбор техники"><div class="ishp31-pod__t">' +
+    if (showPod) h += '<section class="ishp31-pod" aria-label="Подбор техники"><div class="ishp31-pod__t">' +
       '<h2>Нужна помощь в выборе?</h2>' +
       '</div>' +
-      '<a class="ishp31-pod__b" href="' + REQ + '">Подобрать технику</a></section>';
+      '<a class="ishp31-pod__b" href="' + REQ + '">Прислать список</a></section>';
     if (cfg.fin) h += '<section class="ishp31-nf" aria-label="Не нашли нужное?"><span class="ishp31-nf__l">' + logo('ishp31-nf__lg', '#272B36', '#2B44C7') + '</span>' +
       '<div class="ishp31-nf__t"><h3>Не нашли нужное? Пришлите список</h3><p>Проработаем и ' + ISH_SLA.replyLc() + '.</p></div>' +
       '<div class="ishp31-ls" aria-hidden="true"><span>Ноутбук 15.6″ — 10 шт</span><span>Монитор 24″ — 10 шт</span><span>МФУ A4 — 2 шт</span><i class="ishp31-ok"><svg viewBox="0 0 20 20"><circle cx="10" cy="10" r="10" fill="#1FA971"/><path d="m5.6 10.4 3 3 5.8-6.4" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>КП готово</i></div>' +
-      '<div class="ishp31-nf__b"><span class="ishp31-nf__w"><a class="ishp31-b ishp31-b--main" href="' + REQ + '">Написать, что нужно</a></span>' +
+      '<div class="ishp31-nf__b"><span class="ishp31-nf__w"><a class="ishp31-b ishp31-b--main" href="' + REQ + '">Прислать список</a></span>' +
       '<a class="ishp31-b" href="/assortiment">Расширенный ассортимент 14000+</a></div></section>';
     s.innerHTML = h;
     тело.appendChild(s);   /* внутри сетки .вн-тело на всю ширину: те же края, что у карточек и шапки */

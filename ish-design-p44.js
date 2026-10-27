@@ -381,7 +381,7 @@
     var p = D.createElement('div'); p.id = 'ishp44'; p.className = 'ishp44'; p.innerHTML = html();
     body.parentNode.insertBefore(p, body.nextSibling);
     var ph = q('#ishp44ph');
-    ph.addEventListener('input', function () { var d = phone10(ph.value); ph.value = phoneFmt(d); mark('ishp44ph', false); err('kp', ''); });
+    ph.addEventListener('input', function () { var d = phone10(ph.value.replace(/^\s*\+7/, '')); ph.value = phoneFmt(d); mark('ishp44ph', false); err('kp', ''); });
     ph.addEventListener('focus', function () { if (!ph.value) ph.value = '+7 '; });
     ph.addEventListener('blur', function () { if (ph.value === '+7 ' || ph.value === '+7') ph.value = ''; });
     var bn = q('#ishp44bin'); bn.addEventListener('input', function () { bn.value = digits(bn.value).slice(0, 12); mark('ishp44bin', false); err('inv', ''); });

@@ -106,7 +106,7 @@
       '<p class="ishp44__empty" id="ishp44empty" hidden>Или позвоните: ' + CT + '</p>' +
       '<div class="ishp44__sum" id="ishp44sum"></div>' +
       '<section class="ishp44__card ishp44__list" id="ishp44list" aria-labelledby="ishp44listH" hidden>' +
-        '<h2 id="ishp44listH">Пришлите список</h2>' +
+        '<h2 id="ishp44listH">Позиции</h2>' +
         '<p class="ishp44__lead" id="ishp44listL"></p>' +
         '<label class="ishp44__f" for="ishp44tx"><span>Список позиций</span><textarea id="ishp44tx" rows="6" placeholder="Название, модель или артикул и количество — каждая позиция с новой строки"></textarea></label>' +
         '<div class="ishp44__file"><button type="button" class="ishp44__btn ishp44__btn_ghost" id="ishp44fb">Выбрать файл</button><span class="ishp44__fn" id="ishp44fn">ТЗ, спецификация: PDF, Excel, Word или фото — необязательно</span><button type="button" class="ishp44__x" id="ishp44fx" hidden>Убрать</button></div>' +

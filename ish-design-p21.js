@@ -508,7 +508,7 @@
     /* корзина пуста - формы на странице нет: кладём текст в буфер и ведём в «Отправить готовый список» */
     var txt = lastNotFound.map(function (x) { return x.name + (x.art ? ' [' + x.art + ']' : '') + ' — ' + x.qty + ' шт'; }).join('\n');
     var go = function (copied) {
-      if (note) note.innerHTML = (copied ? 'Список скопирован. ' : '') + 'Корзина пуста, поэтому форма заявки здесь скрыта: <a href="/podbor">откройте «Отправить готовый список»</a> и вставьте его в поле позиций.';
+      if (note) note.innerHTML = (copied ? 'Список скопирован. ' : '') + 'Корзина пуста, поэтому форма заявки здесь скрыта: <a href="/spec">откройте «Прислать список»</a> и вставьте его в поле позиций.';
     };
     try { W.navigator.clipboard.writeText(txt).then(function () { go(true); }, function () { go(false); }); } catch (e) { go(false); }
   }

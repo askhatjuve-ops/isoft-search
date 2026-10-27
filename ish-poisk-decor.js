@@ -8,7 +8,7 @@
 (function () {
   'use strict';
   if (window.__ishPoiskDecor) return; window.__ishPoiskDecor = true;
-  var D = document, LIST = '/podbor';
+  var D = document, LIST = '/spec';
   function qa(s, r) { return Array.prototype.slice.call((r || D).querySelectorAll(s)); }
   function mk(h) { var d = D.createElement('div'); d.innerHTML = h; return d.firstChild; }
   function drop(box) {
@@ -43,7 +43,7 @@
   function res() {
     /* 20.10: баннер «Поиск: …» и разметка меты карточки отсюда убраны - шапку и карточку выдачи рисует сам ish-search.js (одна плашка, без дубля) */
     var em = D.querySelector('#ir-empty .ir-empty');
-    if (em && !em.querySelector('.ishps-btn')) { var a = em.querySelector('a[href="/podbor"]'); if (a) a.className = 'ishps-btn'; }
+    if (em && !em.querySelector('.ishps-btn')) { var a = em.querySelector('a[href="/spec"]'); if (a) a.className = 'ishps-btn'; }
   }
   function run() { qa('.нш-подсказки, .нш-мс').forEach(drop); res(); }
   var mo = new MutationObserver(function () { mo.disconnect(); try { run(); } catch (e) {} mo.observe(D.documentElement, { childList: true, subtree: true }); });

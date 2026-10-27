@@ -1,4 +1,4 @@
-/* ish-design-p44.css  v2 (26.10.2026)  П44 «КП и счёт просто» на /spec. Все правила за html.ishp44 (ставит p44.js на /spec). Откат: пустой файл или ISH_P44_OFF. */
+/* ish-design-p44.css  v3 (27.10.2026: пустая корзина = поле списка и файл, карточки остаются)  v2 (26.10.2026)  П44 «КП и счёт просто» на /spec. Все правила за html.ishp44 (ставит p44.js на /spec). Откат: пустой файл или ISH_P44_OFF. */
 /* что убираем с пути: вкладки Счёт/КП и заголовок формы, правая колонка итога и «Как дальше», нижняя панель, ступени 01-02-03, подпись и пояснение вверху */
 html.ishp44 #spFormHead,
 html.ishp44 .sp-aside,
@@ -16,7 +16,6 @@ html.ishp44 #specRoot .вн-тело>div{max-width:none}
 #ishp44{font-family:'TildaSans',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#171923;font-size:15px;line-height:1.45;margin:6px 0 48px;scroll-margin-top:110px}
 #ishp44 *{box-sizing:border-box}
 #ishp44 .ishp44__wrap{padding-top:8px}
-body.sp-empty-cart #ishp44 .ishp44__grid,body.sp-empty-cart #ishp44 .ishp44__pd,body.sp-empty-cart #ishp44 .ishp44__fin{display:none}
 #ishp44 .ishp44__sum{display:flex;align-items:center;flex-wrap:wrap;gap:6px 18px;padding:14px 20px;margin:0 0 16px;background:#fff;border:1px solid #E3DFD6;border-radius:14px}
 #ishp44 .ishp44__sum:empty{display:none}
 #ishp44 .ishp44__sum-t{font-weight:600;font-size:17px}
@@ -92,3 +91,16 @@ html.ishp44 #ishp44 .ishp44__wrap{padding-top:0}
 #ishp44 .ishp44__tel:focus-visible{outline:2px solid #272B36;outline-offset:2px;border-radius:2px}
 #ishp44 .ishp44__empty{margin:0 0 14px;text-align:center;color:#272B36;font-size:15px}
 #ishp44 .ishp44__empty[hidden]{display:none}
+
+/* v3 (27.10): пустая корзина на /spec = «Пришлите список». Страница прячет родную форму (display:none) и блок позиций; форму возвращаем за край экрана (нужна для отправки), блок позиций прячем */
+html.ishp44 body.sp-empty-cart .t706__cartwin{display:block!important}
+html.ishp44 body.sp-empty-cart #spBody,html.ishp44 body.sp-empty-cart #spTools{display:none!important}
+#ishp44 .ishp44__list{margin:0 0 16px}
+#ishp44 .ishp44__f textarea{display:block;width:100%;min-height:132px;padding:12px 14px;border:1px solid #928A79;border-radius:8px;background:#fff;color:#171923;font-size:16px;line-height:1.4;font-weight:400;font-family:inherit;outline:0;resize:vertical}
+#ishp44 .ishp44__f textarea::placeholder{color:#9A9486}
+#ishp44 .ishp44__f textarea:focus{border-color:#2B44C7;box-shadow:0 0 0 3px rgba(43,68,199,.18)}
+#ishp44 .ishp44__f textarea.ishp44__bad{border-color:#B43A36;background:#FDF3F2}
+#ishp44 .ishp44__file{display:flex;align-items:center;flex-wrap:wrap;gap:8px 14px;margin:0 0 10px}
+#ishp44 .ishp44__file .ishp44__btn{width:auto;height:44px;flex:0 0 auto}
+#ishp44 .ishp44__fn{color:#646B7D;font-size:13.5px;min-width:0}
+#ishp44 .ishp44__x{border:0;background:none;color:#2B44C7;font:inherit;font-size:13.5px;text-decoration:underline;cursor:pointer;padding:4px}

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<yml_catalog date="2026-10-26 11:27">
+<yml_catalog date="2026-10-27 07:01">
 <shop>
 <name>iSoft</name>
 <company>iSoft</company>
@@ -2410,17 +2410,6 @@
 <vendor>Kingston</vendor>
 <vendorCode>ISF01549FE3F</vendorCode>
 <description>Ёмкость 1,92 ТБ · Интерфейс SATA III · Скорость записи 530 МБ/с · Скорость чтения 560 МБ/с</description>
-</offer>
-<offer id="ISF02FFC580B" available="true">
-<url>https://b2b.isoft-shop.kz/ssd-nakopiteli/tproduct/138612027014-ssd-ssd-nakopitel-m2-pcie-500-gb-kingsto</url>
-<price>61000</price>
-<currencyId>KZT</currencyId>
-<categoryId>615429773604</categoryId>
-<picture>https://static.tildacdn.com/tild3162-3636-4966-b630-366338343163/ISF02FFC580B_1.jpg</picture>
-<name>Ssd SSD-накопитель M.2 PCIe 500 GB Kingston SNV3SM3, SNV3SM3/500G, PCIe 4.0 NVMe</name>
-<vendor>Kingston</vendor>
-<vendorCode>ISF02FFC580B</vendorCode>
-<description>Ёмкость 500 ГБ · Интерфейс PCI-E 4.0 · Форм-фактор M.2</description>
 </offer>
 <offer id="ISF0B9AD12F1" available="true">
 <url>https://b2b.isoft-shop.kz/ssd-nakopiteli/tproduct/171075981584-silicon-power-250gb-ds72-dual-usb-cusb-3</url>

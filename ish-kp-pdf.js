@@ -1,4 +1,4 @@
-/* ish-kp-pdf.js  v4 (26.10.2026: кнопка «Выставить счёт» = /spec#kp=номер~позиции (счёт открывается на любом устройстве без корзины); прежняя v3: + подпись и печать в блоке «Исполнитель» (ish-kp-sign.png, ish-kp-stamp.png; позиции как в кп_бланк.py); v2: (26.10.2026: макет как у фирменного КП кп_бланк.py, логотип ish-kp-logo.png, ссылки WhatsApp/бот/звонок/каталог; v1  КП в PDF прямо в браузере для страницы /spec b2b.isoft-shop.kz
+/* ish-kp-pdf.js  v5 (27.10.2026: «Каталог на сайте» ведёт в /#catalog, а не на главную; прежняя v4: 26.10.2026: кнопка «Выставить счёт» = /spec#kp=номер~позиции (счёт открывается на любом устройстве без корзины); прежняя v3: + подпись и печать в блоке «Исполнитель» (ish-kp-sign.png, ish-kp-stamp.png; позиции как в кп_бланк.py); v2: (26.10.2026: макет как у фирменного КП кп_бланк.py, логотип ish-kp-logo.png, ссылки WhatsApp/бот/звонок/каталог; v1  КП в PDF прямо в браузере для страницы /spec b2b.isoft-shop.kz
    Грузится по требованию из ish-design-p44.js (по нажатию «Получить КП»), сам ничего не делает.
    API: window.ishKpPdf.build({items:[{name,sku,qty,price}], num, date}) -> Promise<{blob, url, filename, total, vat}>
    Библиотека jsPDF 2.5.1 (MIT) лежит рядом: ish-kp-jspdf.min.js. Шрифт - подмножество DejaVu Sans (свободная лицензия, кириллица, ₸):
@@ -152,7 +152,7 @@
       y += 33;
       /* 4) вторичные кнопки */
       var ws3 = Wd - 38 * 2 - 48 - 9, bxx = M;
-      [['WhatsApp', WA + '?text=' + encodeURIComponent('КП № ' + o.num), 38], ['Telegram-бот', BOT, 38], ['Позвонить ' + TEL, TEL_URL, 48], ['Каталог на сайте', SITE_URL, ws3]].forEach(function (b) {
+      [['WhatsApp', WA + '?text=' + encodeURIComponent('КП № ' + o.num), 38], ['Telegram-бот', BOT, 38], ['Позвонить ' + TEL, TEL_URL, 48], ['Каталог на сайте', SITE_URL + '/#catalog', ws3]].forEach(function (b) {
         btn(b[0], b[1], bxx, y, b[2], 8.5, false, 7.8); bxx += b[2] + 3;
       });
       y += 8.5 + 6;

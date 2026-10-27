@@ -12,7 +12,7 @@
 /* ISH_SLA: ОДНО место для обещаний срока (часы работы пн–вс 9:00–18:00, время Астаны UTC+5). Копия в каждом файле, кому нужна; первая загруженная создаёт window.ISH_SLA. Менять часы/тексты - здесь (во всех копиях одинаково). Проверка: window.ISH_SLA_NOW = мс. */
 (function (W) { if (W.ISH_SLA) return; var O = 9, C = 18; function ok() { var h = new Date((W.ISH_SLA_NOW || Date.now()) + 5 * 36e5).getUTCHours(); return h >= O && h < C; }
   W.ISH_SLA = { open: ok, reply: function () { return ok() ? 'Ответим сегодня' : 'Ответим утром, с 9:00'; }, replyLc: function () { return ok() ? 'ответим сегодня' : 'ответим утром, с 9:00'; },
-    inv: function (em) { return ok() ? 'Счёт придёт на почту ' + (em ? em + ' ' : '') + 'за 15 минут' : 'Сейчас нерабочее время — счёт пришлём утром, с 9:00' + (em ? ' на почту ' + em : ''); } }; })(window);
+    inv: function (em) { return ok() ? 'Счёт придёт на почту ' + (em ? em + ' ' : '') + 'в течение 15 минут' : 'Сейчас нерабочее время — счёт пришлём утром, с 9:00' + (em ? ' на почту ' + em : ''); } }; })(window);
 (function () {
   'use strict';
   var W = window, D = document;

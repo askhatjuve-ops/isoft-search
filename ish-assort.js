@@ -21,7 +21,7 @@
 (function (root) {
   'use strict';
   if (root.ISHAssort) return;
-  var VERSION = '1';
+  var VERSION = '2';
   var MODE = 'on';                 // 'on' — всем; 'flag' — только с ?ishassort=1; 'off' — выключено
   var STEP = 25;
   var FRAME_ID = 'isoft-catalog-frame';
@@ -307,7 +307,7 @@
         var box = D.getElementById('tableBox');
         if (box) box.innerHTML = '<div class="empty"><strong>По запросу «' + esc(q) + '» ничего не нашли</strong>' +
           (st.brand || st.status || me.pmin != null || me.pmax != null || st.category !== 'Все товары' ? 'Попробуйте снять фильтры. ' : '') +
-          'Не нашли нужное? <a href="/podbor" target="_top">Пришлите список — подберём</a>.' +
+          'Не нашли нужное? <a href="/spec" target="_top">Пришлите список — подберём</a>.' +
           ((words.length || fc.length) ? '<div class="ia-sug">' + words.map(function (w) { return '<button type="button" data-ia-q="' + esc(w) + '">' + esc(w) + '</button>'; }).join('') +
             fc.slice(0, 5).map(function (c) { return '<button type="button" data-ia-cat="' + esc(c.name) + '">' + esc(c.name) + '</button>'; }).join('') + '</div>' : '') + '</div>';
       }
@@ -607,7 +607,7 @@
  * Что делает в окне приложения (iframe#isoft-catalog-frame, тот же origin; код приложения в Tilda НЕ меняется):
  *   — кнопка строки «В запрос» → «В корзину»: кладёт позицию в общую корзину Tilda (ishKorzina.add → tcart__addProduct) с выбранным
  *     количеством (минимум 1), показывает общее подтверждение (мини-корзина / нижняя панель) и сбрасывает счётчик строки;
- *   — «Мой запрос» в шапке приложения и полоса «Выбрано: … Оформить запрос» прячутся; ссылка «Уже есть готовый список?» (/podbor) остаётся;
+ *   — «Мой запрос» в шапке приложения и полоса «Выбрано: … Оформить запрос» прячутся; ссылка «Уже есть готовый список?» (/spec) остаётся;
  *   — форма запроса страницы (#rec4465413003 → блок формы с textarea «Список позиций *») прячется;
  *   — позиция без цены: price 0, в корзине помечается «цена по запросу» и в итог не входит.
  * Выключатель: ?ishassortcart=0 в адресе или localStorage.ishassortcart = '0'. Откат всем: убрать этот кусок из файла и выложить.

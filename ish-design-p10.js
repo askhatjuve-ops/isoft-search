@@ -368,7 +368,7 @@
       '<button type="button" class="ishp10-sbtn" tabindex="-1">' + IC.cart + '<span></span></button>');
     q('.ishp10-sname', el).textContent = name;
     q('b', el).textContent = nopr ? 'Цена по запросу' : money(pr);
-    q('small', el).textContent = nopr ? 'Наличие уточним по запросу' : '';   /* 26.10: «Цена с НДС» убрано (решение владельца) */
+    q('small', el).textContent = nopr ? 'Цена по запросу' : '';   /* 26.10: «Цена с НДС» убрано (решение владельца) */
     var btn = q('.ishp10-sbtn', el), bl = q('span', btn); bl.textContent = label;
     el.setAttribute('aria-hidden', 'true'); D.body.appendChild(el);
     var wide = W.matchMedia ? W.matchMedia('(min-width:701px)') : null, raf = 0;

@@ -425,7 +425,7 @@
   function handle(file) {
     busy = true; bar.classList.add('ishp21-busy'); result.innerHTML = '';
     if (!W.ishKorzina || typeof W.ishKorzina.add !== 'function') { say('Корзина сейчас недоступна — обновите страницу и повторите.', 'bad'); finish(); return; }
-    if (file.size > MAX_BYTES) { say('Файл больше 5 МБ. Разбейте список на части или пришлите его в разделе «Отправить готовый список».', 'bad'); finish(); return; }
+    if (file.size > MAX_BYTES) { say('Файл больше 5 МБ. Разбейте список на части или пришлите его в разделе «Прислать список».', 'bad'); finish(); return; }
     say('Читаю файл…');
     readRows(file).then(function (rows) {
       var items = toItems(rows);
@@ -471,7 +471,7 @@
     if (miss.length) {
       h += '<div class="ishp21-miss"><b>Не нашли в каталоге: ' + miss.length + ' — добавим вручную</b><ul>' +
         lastNotFound.map(function (x) { return '<li><span>' + esc(x.name) + (x.art ? ' <i>' + esc(x.art) + '</i>' : '') + '</span><em>' + x.qty + ' шт · ' + esc(x.why) + '</em></li>'; }).join('') + '</ul>' +
-        '<div class="ishp21-btns"><button type="button" class="ishp21-btn ishp21-btn_main" data-p21="send">Отправить список менеджеру как есть</button></div>' +
+        '<div class="ishp21-btns"><button type="button" class="ishp21-btn ishp21-btn_main" data-p21="send">Прислать список</button></div>' +
         '<p class="ishp21-note" data-p21note></p></div>';
     }
     if (over) h += '<p class="ishp21-note">В файле больше ' + MAX_ROWS + ' строк — обработали первые ' + MAX_ROWS + '. Остальное пришлите отдельным файлом.</p>';
@@ -502,7 +502,7 @@
       var rest = cur.slice(head.length).replace(LIST_RE, '').replace(NUM_STRIP, '').replace(/^[\s·]+/, '').replace(/[\s·]+$/, '');
       setVal(k, head + line + (rest ? ' · ' + rest : ''));
       try { k.scrollIntoView({ block: 'center', behavior: 'smooth' }); k.focus({ preventScroll: true }); } catch (e) {}
-      if (note) note.textContent = 'Список вписан в комментарий к заявке. Заполните контакты и нажмите «Отправить» — менеджер увидит его вместе с корзиной.';
+      if (note) note.textContent = 'Список вписан в комментарий к заявке. Заполните контакты и нажмите «Отправить» — счёт придёт на почту в течение 15 минут в рабочее время.';
       return;
     }
     /* корзина пуста - формы на странице нет: кладём текст в буфер и ведём в «Отправить готовый список» */

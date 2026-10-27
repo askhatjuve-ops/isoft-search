@@ -1851,7 +1851,7 @@
         '<form class="ir-sform" id="ir-sform" role="search" action="#"><input type="search" id="ir-q" aria-label="Поиск по каталогу" autocomplete="off" enterkeyhint="search">' +
         (voice ? '<button type="button" id="ir-mic" aria-label="Голосовой поиск" title="Голосовой поиск">' + MIC + '</button>' : '') +
         '<button type="submit" class="ir-go" aria-label="Найти">' + LUPA + '</button></form>' +
-        '<p class="ir-hint">Не нашли нужное? Пришлите список — <a href="/podbor">подберём</a></p><p class="ir-note" id="ir-note"></p></section>' +
+        '<p class="ir-hint">Не нашли нужное? Пришлите список — <a href="/spec">подберём</a></p><p class="ir-note" id="ir-note"></p></section>' +
       '<div class="ir-mob"><button type="button" class="ir-fbtn" id="ir-fopen">' + FILTIC + 'Фильтры <span id="ir-fcnt"></span></button></div>' +
       '<div class="ir-grid"><aside class="ir-side" id="ir-side" aria-label="Фильтры"><h3 class="ir-fh">' + FILTIC + 'Фильтры<button type="button" class="ir-reset" id="ir-reset" hidden>Сбросить всё</button><button type="button" class="ir-fx" id="ir-fclose" aria-label="Закрыть фильтры">×</button></h3>' +
         '<div class="ir-fl" id="ir-fl"></div><div class="ir-fbar"><button type="button" class="ir-fres" id="ir-fres2">Сбросить</button><button type="button" class="ir-fshow" id="ir-fshow">Показать</button></div></aside>' +
@@ -1965,7 +1965,7 @@
     if (w.length) { h += '<p>Возможно, вы искали:</p><div class="ir-sug">' + w.map(function (x) { return '<a href="' + esc(katalogUrl(x)) + '">' + esc(x) + '</a>'; }).join('') + '</div>'; }
     var cs = ((r.fallback && r.fallback.categories) || []).filter(function (c) { return c.url && (window.ISH_SKS_ON || !/^\/(kabel-vitaya-para|rozetki-i-moduli|patch-paneli|patch-kordy|kabel-kanaly-i-koroba|konnektory-i-instrument)$/.test(c.url)); }).slice(0, 6);
     if (cs.length) { h += '<p>Разделы каталога:</p><div class="ir-sug">' + cs.map(function (c) { return '<a href="' + esc(c.url) + '">' + esc(c.name) + '</a>'; }).join('') + '</div>'; }
-    h += '<p>Не нашли нужное? Пришлите список — подберём. <a href="/podbor">Оставить запрос на подбор</a></p></div>';
+    h += '<p>Не нашли нужное? Пришлите список — подберём. <a href="/spec">Прислать список</a></p></div>';
     $('#ir-empty').innerHTML = h;
   }
   function more(r) {

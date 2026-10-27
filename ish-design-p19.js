@@ -301,7 +301,7 @@
     });
     if (q('.ishp19c-trust', бок)) return;
     var ит = [['doc', 'Счёт с НДС', 'для юрлиц и ИП, безналично'], ['truck', 'Бесплатная доставка', 'в любую точку Казахстана'],
-              ['shield', 'Гарантия от производителя', ''], ['clock', ISH_SLA.reply(), 'наличие, срок, цена']];
+              ['shield', 'Гарантия от производителя', ''], ['clock', ISH_SLA.reply(), 'цена, срок']];
     бок.appendChild(node('<div class="ishp19c-trust" role="list">' + ит.map(function (x) {
       return '<div class="ishp19c-trust__i" role="listitem"><span class="ishp19c-sq">' + svg18(x[0]) + '</span><p><b>' + x[1] + '</b>' + (x[2] ? '<span>' + x[2] + '</span>' : '') + '</p></div>';
     }).join('') + '</div>'));
@@ -341,7 +341,7 @@
     var ok = node('<div class="ishp19c-ok" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5.5 12.8l4.2 4.2L18.5 8"/></svg></div>');
     у.insertBefore(ok, у.firstChild);
     var нт = node('<ol class="ishp19c-next" aria-label="Что будет дальше">' +
-      '<li><span class="n">01</span><b>Проверим позиции</b><i>наличие и цены по заявке</i></li>' +
+      '<li><span class="n">01</span><b>Сформируем КП и счёт</b><i>по заявке</i></li>' +
       '<li><span class="n">02</span><b>Пришлём счёт или КП</b><i>на почту, которую вы указали</i></li>' +
       '<li><span class="n">03</span><b>Оплата и доставка</b><i>безналично, доставка бесплатная</i></li></ol>');
     var кн = q('a.ish15-btn', у);

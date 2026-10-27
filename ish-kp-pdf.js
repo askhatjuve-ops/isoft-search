@@ -189,7 +189,7 @@
         'Предложение не является счётом на оплату.',
         'Счёт: на странице заказа ' + SITE + '/spec или в Telegram-боте.',
         'Цены в тенге, с НДС 16%.',
-        noPrice ? 'Позиции «по запросу» в итог не входят: цену пришлёт менеджер.' : '',
+        noPrice ? 'Позиции «по запросу» в итог не входят: цену по этой позиции пришлём на почту в рабочее время.' : '',
         'Доставка по Казахстану бесплатна. Гарантия от производителя.'
       ].filter(Boolean);
       cond.forEach(function (c) { doc.setFont('S', 'normal').setFontSize(9).setTextColor.apply(doc, INK); var ls = doc.splitTextToSize(c, Wd - 5); doc.text('•', M, y); doc.text(ls, M + 4, y); y += ls.length * 4.3 + 1; });

@@ -115,7 +115,7 @@
       '<div class="ishp44__grid" id="ishp44grid">' +
         '<section class="ishp44__card" id="ishp44kp" aria-labelledby="ishp44kpH">' +
           '<h2 id="ishp44kpH">Получить КП</h2>' +
-          '<p class="ishp44__lead" id="ishp44kpL">Коммерческое предложение в PDF откроется сразу. Менеджер перезвонит и уточнит наличие.</p>' +
+          '<p class="ishp44__lead" id="ishp44kpL">Коммерческое предложение в PDF откроется сразу.</p>' +
           '<label class="ishp44__f" for="ishp44ph"><span>Телефон</span><input id="ishp44ph" type="tel" inputmode="tel" autocomplete="tel" placeholder="+7 ___ ___ __ __" maxlength="17"></label>' +
           '<label class="ishp44__f" id="ishp44kpEmW" for="ishp44kpEm" hidden><span>Почта</span><input id="ishp44kpEm" type="email" inputmode="email" autocomplete="email" placeholder="name@company.kz"></label>' +
           '<div class="ishp44__err" id="ishp44kpE" role="alert"></div>' +
@@ -144,7 +144,7 @@
     var ls = q('#ishp44list'); if (ls) ls.hidden = !lm;
     var ew = q('#ishp44kpEmW'); if (ew) ew.hidden = !lm;
     var ll = q('#ishp44listL'); if (ll) ll.textContent = 'Название, модель или артикул — по одной позиции в строке. Проработаем и ' + ISH_SLA.replyLc() + '.';
-    var kl = q('#ishp44kpL'); if (kl) kl.textContent = lm ? 'Подготовим коммерческое предложение по списку и пришлём на почту. Менеджер уточнит наличие.' : 'Коммерческое предложение в PDF откроется сразу. Менеджер перезвонит и уточнит наличие.';
+    var kl = q('#ishp44kpL'); if (kl) kl.textContent = lm ? 'Подготовим коммерческое предложение по списку и пришлём на почту.' : 'Коммерческое предложение в PDF откроется сразу.';
     var kbt = q('#ishp44kpB'); if (kbt) { var kw = lm ? 'Прислать список на КП' : 'Получить КП'; if (kbt.textContent !== kw) kbt.textContent = kw; }
     var em0 = q('#ishp44empty'); if (em0) em0.hidden = !!(!lm || state.done);
     if (!t.it.length) { s.innerHTML = ''; }
@@ -152,7 +152,7 @@
       '<span class="ishp44__sum-v"><small>Итого с НДС</small><b>' + (t.noPrice ? 'без позиций «по запросу» ' : '') + money(t.sum) + '</b></span>';
     var inv = q('#ishp44invB'), L = q('#ishp44invL');
     if (inv) { inv.disabled = state.busy || !!t.noPrice; }
-    if (L) L.textContent = lm ? 'Укажите БИН, почту и название. Подберём позиции и выставим счёт. ' + ISH_SLA.reply() + '.' : (t.noPrice ? 'В заказе есть позиция без цены: счёт выставим после того, как менеджер пришлёт цену.' : 'Укажите БИН и почту. ' + ISH_SLA.inv() + '.');
+    if (L) L.textContent = lm ? 'Укажите БИН, почту и название. Подберём позиции и выставим счёт. ' + ISH_SLA.reply() + '.' : (t.noPrice ? 'Цену по этой позиции пришлём на почту в рабочее время.' : 'Укажите БИН и почту. ' + ISH_SLA.inv() + '.');
     var kb = q('#ishp44kpB'); if (kb) kb.disabled = state.busy;
     var fx = q('#ishp44fn'); if (fx) fileSync();
   }
@@ -352,7 +352,7 @@
     if (listMode()) { listSend('inv'); return; }
     err('inv', ''); ['ishp44bin', 'ishp44em', 'ishp44co'].forEach(function (i) { mark(i, false); });
     var t = totals(); if (!t.it.length) { err('inv', 'В заказе нет позиций. Добавьте товар из каталога.'); return; }
-    if (t.noPrice) { err('inv', 'В заказе есть позиция без цены: счёт выставим после ответа менеджера.'); return; }
+    if (t.noPrice) { err('inv', 'Цену по этой позиции пришлём на почту в рабочее время.'); return; }
     var bin = digits(q('#ishp44bin').value), em = q('#ishp44em').value.trim(), co = q('#ishp44co').value.replace(/\s+/g, ' ').trim();
     if (bin.length !== 12) { mark('ishp44bin', true); err('inv', 'БИН или ИИН — 12 цифр, сейчас ' + bin.length); q('#ishp44bin').focus(); return; }
     if (!binOk(bin)) { mark('ishp44bin', true); err('inv', 'Проверьте БИН: последняя цифра не сходится'); q('#ishp44bin').focus(); return; }

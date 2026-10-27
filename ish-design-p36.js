@@ -114,6 +114,8 @@
     for (var i = 0; i < v.length; i++) if (v[i].parentNode) v[i].parentNode.removeChild(v[i]);
     var av = D.querySelectorAll('.ishpg3-avail:not(.ishpg3-no)');   /* «В наличии» убрано (26.10); «Нет в наличии» / «Наличие уточним» остаются */
     for (var k = 0; k < av.length; k++) if (av[k].parentNode) av[k].parentNode.removeChild(av[k]);
+    var no = D.querySelectorAll('.ishpg3-avail.ishpg3-no');   /* 27.10: «Наличие уточним» -> «Под заказ» */
+    for (var m = 0; m < no.length; m++) if (/наличие\s+уточним/i.test(no[m].textContent)) no[m].textContent = 'Под заказ';
     стик_текст();
     var sp = q('.ishpg3-sticky .ishpg3-sp span');
     if (sp && !стик_наблюдатель && W.MutationObserver) { стик_наблюдатель = 1; new MutationObserver(стик_текст).observe(sp, { childList: true, characterData: true, subtree: true }); }

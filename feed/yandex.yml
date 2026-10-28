@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<yml_catalog date="2026-10-28 10:56">
+<yml_catalog date="2026-10-28 13:09">
 <shop>
 <name>iSoft</name>
 <company>iSoft</company>
@@ -5283,6 +5283,17 @@
 <vendorCode>IS7FF3A1EBE5</vendorCode>
 <description>Мощность 650 Вт · Форм-фактор ATX · Сертификат эффективности 80+ Bronze · Версия ATX ATX 3.1 · Класс мощности 550–650 Вт</description>
 </offer>
+<offer id="IS81065D0EEE" available="true">
+<url>https://b2b.isoft-shop.kz/bloki-pitaniya/tproduct/960674108034-blok-pitaniya-gamemax-rgb-pro-1300p-plat</url>
+<price>100000</price>
+<currencyId>KZT</currencyId>
+<categoryId>893353989834</categoryId>
+<picture>https://static.tildacdn.com/tila3665-3032-4965-b266-313835346664/IS81065D0EEE_1.jpg</picture>
+<name>Блок питания Gamemax RGB PRO 1300P Platinum 2110-1300B0028</name>
+<vendor>Gamemax</vendor>
+<vendorCode>IS81065D0EEE</vendorCode>
+<description>Сертификат эффективности 80+ Platinum · Гарантия 1 год · Мощность 1300 Вт · Форм-фактор ATX · Версия ATX ATX 3.1 · Цвет Чёрный · Класс мощности 1000–1300 Вт</description>
+</offer>
 <offer id="IS813E44FD2A" available="true">
 <url>https://b2b.isoft-shop.kz/bloki-pitaniya/tproduct/113975098754-blok-pitaniya-gamemax-gx-pro-1050g-gold</url>
 <price>84000</price>
@@ -7721,6 +7732,17 @@
 <vendorCode>IS8B1CC15B73</vendorCode>
 <description>Видеовыходы HDMI / DP · Графический процессор RTX 5060 · Объём видеопамяти 8 ГБ · Разрядность шины 128 бит · Тип видеопамяти GDDR7 · Серия видеокарты GeForce RTX 5000</description>
 </offer>
+<offer id="IS8FBD55CE16" available="true">
+<url>https://b2b.isoft-shop.kz/videokarty/tproduct/374035669394-videokarta-gigabyte-gv-n3050wf2ocv2-6gd</url>
+<price>177000</price>
+<currencyId>KZT</currencyId>
+<categoryId>784666503994</categoryId>
+<picture>https://static.tildacdn.com/tila6165-3061-4433-b461-333533316265/IS8FBD55CE16_1.jpg</picture>
+<name>Видеокарта Gigabyte GV-N3050WF2OCV2-6GD, 6Gb GDDR6, 96Bit, 3584 CUDA Core, HDMI, DP, Retail</name>
+<vendor>Gigabyte</vendor>
+<vendorCode>IS8FBD55CE16</vendorCode>
+<description>Видеовыходы HDMI / DP · Объём видеопамяти 6 ГБ · Разрядность шины 96 бит · Тип видеопамяти GDDR6</description>
+</offer>
 <offer id="IS90FD17089A" available="true">
 <url>https://b2b.isoft-shop.kz/videokarty/tproduct/551154004154-videokarta-palit-rtx5060-infinity-2-oc-v</url>
 <price>319000</price>
@@ -7927,6 +7949,17 @@
 <vendor>OCPC</vendor>
 <vendorCode>ISBD1248CF71</vendorCode>
 <description>Объём видеопамяти 4 ГБ · Графический процессор RX 6500 · Видеовыходы HDMI / DP · Тип видеопамяти GDDR6</description>
+</offer>
+<offer id="ISBDD7B1F221" available="true">
+<url>https://b2b.isoft-shop.kz/videokarty/tproduct/873694064394-videokarta-gigabyte-gv-n507taorus-m-16gd</url>
+<price>875000</price>
+<currencyId>KZT</currencyId>
+<categoryId>784666503994</categoryId>
+<picture>https://static.tildacdn.com/tila3839-3864-4130-b562-656236643031/873694064394_1.jpg</picture>
+<name>Видеокарта Gigabyte GV-N507TAORUS M-16GD, RTX 5070Ti AORUS MASTER, 16G GDDR7, 256bit, HDMI, DP GV-N507TAORUS M-16GD 1.0</name>
+<vendor>Gigabyte</vendor>
+<vendorCode>ISBDD7B1F221</vendorCode>
+<description>Видеовыходы HDMI / DP · Графический процессор RTX 5070Ti · Объём видеопамяти 16 ГБ · Разрядность шины 256 бит · Тип видеопамяти GDDR7 · Серия видеокарты GeForce RTX 5000</description>
 </offer>
 <offer id="ISC037EBE8A4" available="true">
 <url>https://b2b.isoft-shop.kz/videokarty/tproduct/994243619984-videokarta-gpu-nvidia-8-gb-zotac-rtx-506</url>
@@ -14104,6 +14137,17 @@
 <vendor>CyberPower</vendor>
 <vendorCode>OR600ELCDRM1U</vendorCode>
 <description>Полная мощность 600 ВА, активная 360 Вт. Вольт-амперы показывают габарит прибора, а подключаемую технику считают по ваттам из её паспорта: их сумма не должна превышать 360 Вт. Такого запаса хватает одному рабочему месту: системный блок с монитором, роутер и сетевой шкаф с мелочью. Линейно-интерактивный тип: небольшие просадки и скачки в сети прибор выправляет сам, не трогая заряд, а на батарею техника переходит только когда свет пропал совсем. На выходе шесть розеток IEC C13. Разъём IEC C13 — стандартный вход системных блоков, серверов и сетевого оборудования; бытовая вилка в него не входит, техника подключается своим кабелем C13–C14. Внутри две батареи по 6 В на 9 А·ч. Стабилизатор напряжения, в спецификациях его обозначают AVR, держит выход в норме при входном от 160 до 263 В: пока сеть в этих границах, заряд батареи не расходуется. Управление идёт по USB и RS-232: по этому каналу сервер получает команду корректно завершить работу, пока заряд ещё есть. Телефонную линию и сетевой кабель заводят через разъёмы RJ-11 и RJ-45 — по ним скачок приходит так же, как по питанию, и защита их тоже прикрывает. Ставится в стандартную стойку 19 дюймов и занимает в ней 1U по высоте. Показания выводит ЖК-экран. Корпус чёрный. · Партномер: OR600ELCDRM1U</description>
+</offer>
+<offer id="ISE93870FE11" available="true">
+<url>https://b2b.isoft-shop.kz/ibp-i-zashchita-pitaniya/tproduct/963633793414-ibp-apc-back-ups-bx1200mi-gr</url>
+<price>94000</price>
+<currencyId>KZT</currencyId>
+<categoryId>622117808604</categoryId>
+<picture>https://static.tildacdn.com/tila6638-3832-4731-b262-316336633263/ISE93870FE11_1.jpg</picture>
+<name>ИБП APC Back-UPS BX1200MI-GR</name>
+<vendor>APC</vendor>
+<vendorCode>ISE93870FE11</vendorCode>
+<description>Гарантия 2 года · Топология Линейно-интерактивный · Мощность 1200 ВА / 650 Вт · Розеток 4 · Размещение Напольный · Форма выходного сигнала Ступенчатая синусоида · Время переключения 10 мс · Цвет Чёрный · Рабочая температура от 0 до 40 °С</description>
 </offer>
 <offer id="ISEB4551DB4E" available="true">
 <url>https://b2b.isoft-shop.kz/ibp-i-zashchita-pitaniya/tproduct/896823404384-ibp-legrand-keor-s-3-kva-8</url>
@@ -29001,6 +29045,17 @@
 <vendorCode>IS7B499BC056</vendorCode>
 <description>Вид роутера Радиомост (наружный) · Скорость портов 1 Гбит/с (Gigabit) · Гарантия 1 год · Поколение Wi-Fi Wi-Fi 5 · Скорость 10/100/1000 Мбит/с · Wi-Fi 802.11a/b/g/n/ac</description>
 </offer>
+<offer id="IS7DAB5CCF58" available="true">
+<url>https://b2b.isoft-shop.kz/marshrutizatory/tproduct/823296328254-router-marshrutizator-mikrotik-s53ug5hax</url>
+<price>185000</price>
+<currencyId>KZT</currencyId>
+<categoryId>424596428574</categoryId>
+<picture>https://static.tildacdn.com/tila6237-6430-4733-a331-616238383036/IS7DAB5CCF58_1.jpg</picture>
+<name>Роутер Маршрутизатор MikroTik S53UG+5HaxD2HaxD-TC&amp;amp;EG18-EA</name>
+<vendor>MikroTik</vendor>
+<vendorCode>IS7DAB5CCF58</vendorCode>
+<description>Диапазон частот 2,4/5 ГГц</description>
+</offer>
 <offer id="IS80750EF148" available="true">
 <url>https://b2b.isoft-shop.kz/marshrutizatory/tproduct/846212859224-marshrutizator-asus-rt-ax53u-90ig06p0-mo</url>
 <price>34000</price>
@@ -29738,6 +29793,17 @@
 <vendor>TP-Link</vendor>
 <vendorCode>ISB4A923C6E6</vendorCode>
 <description>Вид роутера Wi-Fi роутер (дом/офис) · Скорость портов 1 Гбит/с (Gigabit) · Гарантия 3 года · Поколение Wi-Fi Wi-Fi 5</description>
+</offer>
+<offer id="ISB5B01D3582" available="true">
+<url>https://b2b.isoft-shop.kz/marshrutizatory/tproduct/406592471864-router-besprovodnoi-marshrutizator-ubiqu</url>
+<price>50000</price>
+<currencyId>KZT</currencyId>
+<categoryId>424596428574</categoryId>
+<picture>https://static.tildacdn.com/tild3561-3139-4462-a638-313865323432/ISB5B01D3582_1.jpg</picture>
+<name>Роутер Беспроводной маршрутизатор Ubiquiti LBE-5AC-Gen2</name>
+<vendor>Ubiquiti</vendor>
+<vendorCode>ISB5B01D3582</vendorCode>
+<description>Портов 1</description>
 </offer>
 <offer id="ISB5B3B461BE" available="true">
 <url>https://b2b.isoft-shop.kz/marshrutizatory/tproduct/918717298854-marshrutizator-tp-link-archer-ax72</url>
@@ -34847,21 +34913,6 @@
 <vendorCode>IS2BE003D24D</vendorCode>
 <description>Время отклика 1 мс · Диагональ 27″ · Разрешение 2560×1440 · Тип матрицы IPS · Частота обновления 180 Гц · Яркость 400 кд/м² · Соотношение сторон 16:9 · Размер экрана 27–29″</description>
 </offer>
-<offer id="IS2C27F231EB" available="true">
-<url>https://b2b.isoft-shop.kz/monitory/tproduct/858836571564-monitor-acer-nitro-ed340curx0bmiipx-umce</url>
-<price>164000</price>
-<currencyId>KZT</currencyId>
-<categoryId>929335537584</categoryId>
-<picture>https://static.tildacdn.com/tild3935-3535-4563-a565-386165626663/IS2C27F231EB_1.jpg</picture>
-<picture>https://static.tildacdn.com/tild3134-3533-4232-a331-613434313839/858836571564_1.jpg</picture>
-<picture>https://static.tildacdn.com/tild3634-3263-4135-a635-316230316361/858836571564_2.jpg</picture>
-<picture>https://static.tildacdn.com/tild3932-3934-4261-a136-313138643864/858836571564_3.jpg</picture>
-<picture>https://static.tildacdn.com/tild6537-3961-4663-b035-323535633761/858836571564_4.jpg</picture>
-<name>Монитор Acer Nitro ED340CURX0bmiipx UM.CE0EE.009, 86cm 34-inch Curved ZeroFrame VA WQHD, 200Hz 21:9 1ms(VRB), 250nits 2xHDMI(2.1)</name>
-<vendor>Acer</vendor>
-<vendorCode>IS2C27F231EB</vendorCode>
-<description>Время отклика 1 мс · Диагональ 34″ · Соотношение сторон 21:9 · Тип матрицы VA · Частота обновления 200 Гц · Яркость 250 кд/м² · Размер экрана 34–38″</description>
-</offer>
 <offer id="IS2CF2B85F1B" available="true">
 <url>https://b2b.isoft-shop.kz/monitory/tproduct/854857730314-monitor-samsung-5m1-ls24a400ujixci</url>
 <price>155000</price>
@@ -36257,6 +36308,18 @@
 <vendor>Dell</vendor>
 <vendorCode>IS7C57D619BF</vendorCode>
 <description>Контрастность 1500:1 · Разрешение 2560×1440 · Соотношение сторон 16:9 · Тип матрицы IPS · Частота обновления 100 Гц · Диагональ 27″ · Время отклика 5 мс · Яркость 350 кд/м² · VESA 100×100 · Размер экрана 27–29″</description>
+</offer>
+<offer id="IS7CF1B11ABC" available="true">
+<url>https://b2b.isoft-shop.kz/monitory/tproduct/920786186874-monitor-dell-ultrasharp-24-monitor-u2424</url>
+<price>154000</price>
+<currencyId>KZT</currencyId>
+<categoryId>929335537584</categoryId>
+<picture>https://static.tildacdn.com/tila3832-3965-4532-b564-316330626365/IS7CF1B11ABC_1.jpg</picture>
+<picture>https://static.tildacdn.com/tila6634-3266-4365-b161-653737313365/IS7CF1B11ABC_2.jpg</picture>
+<name>Монитор DELL UltraSharp 24 Monitor - U2424H, 60.47 см (23.8-inch)/3Yr w 210-BKTZ</name>
+<vendor>Dell</vendor>
+<vendorCode>IS7CF1B11ABC</vendorCode>
+<description>Диагональ 23,8″ · Размер экрана 23–24″ · Разрешение 1920×1080 · Тип матрицы IPS · Частота обновления 120 Гц · Время отклика 5 мс · Яркость 250 кд/м² · Соотношение сторон 16:9 · VESA 100×100</description>
 </offer>
 <offer id="IS7DAB0312A7" available="true">
 <url>https://b2b.isoft-shop.kz/monitory/tproduct/214506552094-monitor-27-inch-asrock-pg27qrt1b</url>
@@ -43532,17 +43595,6 @@
 <vendorCode>IS916F01031A</vendorCode>
 <description>Тип устройства мышь · Цвет Чёрный</description>
 </offer>
-<offer id="IS91CB41A11C" available="true">
-<url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/439395540254-mish-acer-omw011-cherniisinii-optich-120</url>
-<price>2400</price>
-<currencyId>KZT</currencyId>
-<categoryId>816235379434</categoryId>
-<picture>https://static.tildacdn.com/tild3762-6463-4638-b065-663662633635/439395540254.jpg</picture>
-<name>Мышь Acer OMW011 черный/синий оптич. 1200dpi USB 3but (ZL.MCEEE.002)</name>
-<vendor>Acer</vendor>
-<vendorCode>IS91CB41A11C</vendorCode>
-<description>Тип устройства мышь · Цвет Комбинированный · Подключение Проводное · Тип сенсора Оптический · Разрешение сенсора 1200 dpi · Кнопок 3</description>
-</offer>
 <offer id="IS91E09B749F" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/264166523124-mish-besprovodnaya-logitech-m240-silent</url>
 <price>9600</price>
@@ -48324,7 +48376,7 @@
 </offer>
 <offer id="ISB21785025E" available="true">
 <url>https://b2b.isoft-shop.kz/naushniki-i-garnitury/tproduct/496004746954-naushniki-redmi-buds-8-zelyonie-m2544e1</url>
-<price>25000</price>
+<price>26000</price>
 <currencyId>KZT</currencyId>
 <categoryId>813446092544</categoryId>
 <picture>https://static.tildacdn.com/tila6462-3836-4935-a537-356335333264/ISB21785025E_1.jpg</picture>
@@ -50602,6 +50654,17 @@
 <vendor>Dell</vendor>
 <vendorCode>IS563DAD8D20</vendorCode>
 <description>Процессор Intel Core Ultra 5 238V · Оперативная память 32 ГБ · Ёмкость 512 ГБ · Видеокарта Intel Arc 130V · Операционная система Windows 11 · Линейка процессора Core Ultra 5 · Семья ОС Windows 11 · Тип накопителя SSD · Накопитель 512 ГБ · Диагональ 14″</description>
+</offer>
+<offer id="IS5657BBA09B" available="true">
+<url>https://b2b.isoft-shop.kz/noutbuki/tproduct/896805384794-noutbuk-13-inch-macbook-air-apple-m5-cpu</url>
+<price>908000</price>
+<currencyId>KZT</currencyId>
+<categoryId>293087419414</categoryId>
+<picture>https://static.tildacdn.com/tila3464-3430-4634-b035-333430383462/IS5657BBA09B_1.png</picture>
+<name>Ноутбук 13-inch MacBook Air: Apple M5, CPU 10 ядер, GPU 8 ядер, 16GB, 512GB SSD - серебристый, модель A3449</name>
+<vendor>APPLE</vendor>
+<vendorCode>IS5657BBA09B</vendorCode>
+<description>В комплекте Адаптер питания USB-C, кабель USB-C на MagSafe 3 (2 м) · Ёмкость 512 ГБ · Диагональ 13,6″ · Оперативная память 16 ГБ · Операционная система macOS · Разрешение 2560×1664 · Линейка процессора Apple M · Процессор Apple M5 · Накопитель 512 ГБ · Количество ядер процессора 10</description>
 </offer>
 <offer id="IS57D0FCF2D0" available="true">
 <url>https://b2b.isoft-shop.kz/noutbuki/tproduct/686024804684-noutbuk-asus-90nx0871-m02ld0-expertbook</url>
@@ -53476,6 +53539,17 @@
 <vendorCode>IS3E32B717A4</vendorCode>
 <description>Частота 6000 МГц · Тип памяти DDR5 · Оперативная память 32 ГБ · Модулей в комплекте 2 · Форм-фактор DIMM</description>
 </offer>
+<offer id="IS3E9E2B7323" available="true">
+<url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/117449515764-operativnaya-pamyat-dlya-noutbuka-apacer</url>
+<price>16000</price>
+<currencyId>KZT</currencyId>
+<categoryId>160131640904</categoryId>
+<picture>https://static.tildacdn.com/tila6630-3639-4837-b066-353930363432/IS3E9E2B7323_1.jpg</picture>
+<name>Оперативная память для ноутбука Apacer DS.08G2K.KAM</name>
+<vendor>Apacer</vendor>
+<vendorCode>IS3E9E2B7323</vendorCode>
+<description>Форм-фактор SO-DIMM · Частота 1600 МГц · Тип памяти DDR3 · Оперативная память 8 ГБ · Модулей в комплекте 1</description>
+</offer>
 <offer id="IS3EC913016C" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/253944620024-operativnaya-pamyat-lexar-ares-32gb-ddr5</url>
 <price>364000</price>
@@ -54276,6 +54350,17 @@
 <vendorCode>KF548S38IB-32</vendorCode>
 <description>Оперативная память Kingston KF548S38IB-32: Тип памяти DDR5 · Объём 32 ГБ · Частота 4800 МГц · Форм-фактор SO-DIMM · Модулей в комплекте 1. Цена с НДС, безналичный расчёт для организаций.</description>
 </offer>
+<offer id="ISAC44872CA1" available="true">
+<url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/393082987664-operativnaya-pamyat-so-dimm-ddr3-8-gb-16</url>
+<price>16000</price>
+<currencyId>KZT</currencyId>
+<categoryId>160131640904</categoryId>
+<picture>https://static.tildacdn.com/tila6339-6339-4536-a538-323765393230/ISAC44872CA1_1.jpg</picture>
+<name>Оперативная память SO-DIMM DDR3 8 GB 1600MHz Hiksemi (Hikvision) Hiker, HSC308S16Z1, CL11</name>
+<vendor>HIKSEMI</vendor>
+<vendorCode>ISAC44872CA1</vendorCode>
+<description>Объём 8 ГБ · Тайминги CL11 · Тип памяти DDR3 · Форм-фактор SO-DIMM · Частота 1600 МГц · Оперативная память 8 ГБ · Модулей в комплекте 1</description>
+</offer>
 <offer id="ISADFC8FE64E" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/906675855364-operativnaya-pamyat-corsair-vengeance-dd</url>
 <price>368000</price>
@@ -54513,6 +54598,17 @@
 <vendor>Kingston</vendor>
 <vendorCode>ISD176E72CDD</vendorCode>
 <description>Частота 3200 МГц · Тип памяти DDR4 · Оперативная память 8 ГБ · Форм-фактор SO-DIMM · Модулей в комплекте 1</description>
+</offer>
+<offer id="ISD1DE4B1126" available="true">
+<url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/206437601904-operativnaya-pamyat-dimm-ddr3-8-gb-1600m</url>
+<price>16000</price>
+<currencyId>KZT</currencyId>
+<categoryId>160131640904</categoryId>
+<picture>https://static.tildacdn.com/tila3832-6161-4630-b633-383264303831/ISD1DE4B1126_1.jpg</picture>
+<name>Оперативная память DIMM DDR3 8 GB 1600MHz Hiksemi (Hikvision) Hiker, HSC308U16Z1, CL11</name>
+<vendor>HIKSEMI</vendor>
+<vendorCode>ISD1DE4B1126</vendorCode>
+<description>Объём 8 ГБ · Тайминги CL11 · Тип памяти DDR3 · Форм-фактор DIMM · Частота 1600 МГц · Оперативная память 8 ГБ · Модулей в комплекте 1</description>
 </offer>
 <offer id="ISD32D713723" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/152149606184-operativnaya-pamyat-dimm-ddr5-32-gb-lt56</url>
@@ -64922,6 +65018,17 @@
 <vendorCode>IS095823C15C</vendorCode>
 <description>Управление Управляемый · Слотов SFP 2 · Портов 8</description>
 </offer>
+<offer id="IS0A364C2BC5" available="true">
+<url>https://b2b.isoft-shop.kz/setevoe-oborudovanie/tproduct/303718518234-kommutator-mikrotik-crs328-24p-4srm</url>
+<price>362000</price>
+<currencyId>KZT</currencyId>
+<categoryId>737078043964</categoryId>
+<picture>https://static.tildacdn.com/tila6163-6434-4765-a363-343466353762/IS0A364C2BC5_1.jpg</picture>
+<name>Коммутатор MikroTik CRS328-24P-4S+RM</name>
+<vendor>MikroTik</vendor>
+<vendorCode>IS0A364C2BC5</vendorCode>
+<description>Портов 24</description>
+</offer>
 <offer id="IS0A9E4F8E46" available="true">
 <url>https://b2b.isoft-shop.kz/setevoe-oborudovanie/tproduct/811962354154-kommutator-mikrotik-crs418-8p-8g-2srm</url>
 <price>275000</price>
@@ -72078,17 +72185,6 @@
 <vendor>Acer</vendor>
 <vendorCode>IS051AA3B88D</vendorCode>
 <description>Форм-фактор Tower · Процессор Intel Core i7-14700F · Оперативная память 32 ГБ · Видеокарта GeForce RTX 5070 · Операционная система Windows 11 · Сертификат блока питания 80+ Gold · Порты 1× USB-C, 1× USB-A · Wi-Fi Wi-Fi 6E · Bluetooth 5.0 · Семья ОС Windows 11</description>
-</offer>
-<offer id="IS051C761A65" available="true">
-<url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/677030947214-sistemnii-blok-rabochaya-stantsiya-acer</url>
-<price>1954000</price>
-<currencyId>KZT</currencyId>
-<categoryId>763638053684</categoryId>
-<picture>https://static.tildacdn.com/tild3664-6234-4061-b864-326439353538/677030947214.jpg</picture>
-<name>Системный блок Рабочая станция Acer Altos P10 F10 Tower DT.L19EC.00E</name>
-<vendor>Acer</vendor>
-<vendorCode>IS051C761A65</vendorCode>
-<description>Оперативная память 32 ГБ · Операционная система без ОС · Процессор Intel Core Ultra 7 265 · Ёмкость 1 ТБ · Семья ОС Без ОС · Линейка процессора Core Ultra 7 · Тип накопителя SSD · Накопитель 1 ТБ · Видеокарта RTX 5070 · Форм-фактор Tower</description>
 </offer>
 <offer id="IS087EEDC1BA" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/873834693614-sistemnii-blok-pulser-core-i3-12100-33-g</url>

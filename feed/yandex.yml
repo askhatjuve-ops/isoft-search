@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<yml_catalog date="2026-10-28 10:20">
+<yml_catalog date="2026-10-28 10:56">
 <shop>
 <name>iSoft</name>
 <company>iSoft</company>
@@ -7490,20 +7490,6 @@
 <vendorCode>IS64ADBBCEC8</vendorCode>
 <description>Объём видеопамяти 4 ГБ · Графический процессор GTX 1050Ti · Серия видеокарты GeForce GTX / GT · Разрядность шины 128 бит · Видеовыходы HDMI / DVI / DP · Тип видеопамяти GDDR5</description>
 </offer>
-<offer id="IS66C984CA55" available="true">
-<url>https://b2b.isoft-shop.kz/videokarty/tproduct/988444699164-videokarta-gpu-nvidia-asus-rog-rtx-5080</url>
-<price>1485000</price>
-<currencyId>KZT</currencyId>
-<categoryId>784666503994</categoryId>
-<picture>https://static.tildacdn.com/tild3730-3938-4336-b332-373865306435/988444699164.jpg</picture>
-<picture>https://static.tildacdn.com/tild3066-6130-4238-b737-316361366338/988444699164_1.jpg</picture>
-<picture>https://static.tildacdn.com/tild3433-6264-4539-b738-346338623739/988444699164_2.jpg</picture>
-<picture>https://static.tildacdn.com/tild3731-6235-4634-b566-643436313133/988444699164_3.jpg</picture>
-<name>Видеокарта GPU NVIDIA ASUS ROG RTX 5080 [ROG-ASTRAL-RTX5080-O16G-DHAHAB-CORE]</name>
-<vendor>ASUS</vendor>
-<vendorCode>IS66C984CA55</vendorCode>
-<description>Объём видеопамяти 16 ГБ · Графический процессор RTX 5080 · Тип видеопамяти GDDR7 · Разрядность шины 256 бит · Видеовыходы HDMI / DP x 2 · Серия видеокарты GeForce RTX 5000</description>
-</offer>
 <offer id="IS6820EA72D0" available="true">
 <url>https://b2b.isoft-shop.kz/videokarty/tproduct/586369574644-videokarta-gpu-nvidia-4-gb-ocpc-gt-730-o</url>
 <price>44000</price>
@@ -7606,19 +7592,6 @@
 <vendor>ASUS</vendor>
 <vendorCode>IS790DDA57AC</vendorCode>
 <description>Видеовыходы HDMI / DP x 3 · Графический процессор RTX 5070 · Объём видеопамяти 12 ГБ · Разрядность шины 192 бит · Серия видеокарты GeForce RTX 5000 · Тип видеопамяти GDDR7</description>
-</offer>
-<offer id="IS7F0C493BA4" available="true">
-<url>https://b2b.isoft-shop.kz/videokarty/tproduct/938086700364-videokarta-gigabyte-geforce-rtx-5070ti-g</url>
-<price>834000</price>
-<currencyId>KZT</currencyId>
-<categoryId>784666503994</categoryId>
-<picture>https://static.tildacdn.com/stor6666-6537-4135-a433-303463303233/1742f01c58531f4c1c3b768afab645c9.jpg</picture>
-<picture>https://static.tildacdn.com/tild3966-3437-4264-b535-333361643162/938086700364_1.jpg</picture>
-<picture>https://static.tildacdn.com/tild3139-6539-4963-a133-353262303962/938086700364_2.jpg</picture>
-<name>Видеокарта Gigabyte GeForce RTX 5070Ti GAMING OC 16 ГБ</name>
-<vendor>Gigabyte</vendor>
-<vendorCode>IS7F0C493BA4</vendorCode>
-<description>RTX5070Ti GAMING OC 16G (GV-N507TGAMING OC-16GD) (4719331355562), GDDR7, 256bit, 1-HDMI, 3-DP, Windforce 3X Fan, 340*140*70 мм, Цветная коробка</description>
 </offer>
 <offer id="IS819B15FB96" available="true">
 <url>https://b2b.isoft-shop.kz/videokarty/tproduct/414169697914-videokarta-palit-geforce-rtx-5060ti-whit</url>
@@ -8146,7 +8119,7 @@
 </offer>
 <offer id="ISEA538A8156" available="true">
 <url>https://b2b.isoft-shop.kz/videokarty/tproduct/787533688044-videokarta-gigabyte-gv-n507teagleoc-ice</url>
-<price>804000</price>
+<price>807000</price>
 <currencyId>KZT</currencyId>
 <categoryId>784666503994</categoryId>
 <picture>https://static.tildacdn.com/stor6663-3035-4730-a566-396237646536/05faeb5fad3fbeb5b8a899ee99a28668.jpg</picture>
@@ -10708,17 +10681,6 @@
 <vendorCode>02355SUB</vendorCode>
 <description>Жёсткий диск Huawei 02355SUB: Жесткий диск, Huawei, L1-NLSAS10T-W, 10TB, 7.2K RPM, NL-SAS, 3.5". Цена с НДС, безналичный расчёт для организаций.</description>
 </offer>
-<offer id="ISCA2AC0037D" available="true">
-<url>https://b2b.isoft-shop.kz/zhestkie-diski/tproduct/700884655674-zhyostkii-disk-sata-6000-gb-western-digi</url>
-<price>233000</price>
-<currencyId>KZT</currencyId>
-<categoryId>958449305144</categoryId>
-<picture>https://static.tildacdn.com/tila6132-6236-4664-a437-613261663037/ISCA2AC0037D_1.jpg</picture>
-<name>Жёсткий диск SATA 6000 GB Western Digital Purple Surveillance, WD64PURZ, 5400rpm, 256MB cache, SATA 6 Gb/s</name>
-<vendor>WD</vendor>
-<vendorCode>ISCA2AC0037D</vendorCode>
-<description>Ёмкость 6000 ГБ · Интерфейс SATA III · Скорость вращения 5400 об/мин · Класс ёмкости 5–8 ТБ</description>
-</offer>
 <offer id="ISCA7EE52064" available="true">
 <url>https://b2b.isoft-shop.kz/zhestkie-diski/tproduct/597091693964-zhyostkii-disk-western-digital-hdd-exter</url>
 <price>126000</price>
@@ -12299,6 +12261,17 @@
 <vendorCode>IS656A687864</vendorCode>
 <description>Мощность 900 Вт · Розеток 4 · Класс мощности 1–2,2 кВА</description>
 </offer>
+<offer id="IS6611E21D2B" available="true">
+<url>https://b2b.isoft-shop.kz/ibp-i-zashchita-pitaniya/tproduct/400230605994-ibp-svc-rt-2kln-lcd</url>
+<price>250000</price>
+<currencyId>KZT</currencyId>
+<categoryId>622117808604</categoryId>
+<picture>https://static.tildacdn.com/tila3239-3966-4430-b262-303831613436/IS6611E21D2B_1.jpg</picture>
+<name>ИБП SVC RT-2KLN-LCD</name>
+<vendor>SVC</vendor>
+<vendorCode>IS6611E21D2B</vendorCode>
+<description>Гарантия 3 года · В комплекте Гарантийный талон, инструкция, CD диск, кабель питания, кабель RS-232, кабель USB · Топология On-Line · Мощность 2000 ВА / 2000 Вт · Розеток 2 · Интерфейс USB, RS-232 · Размещение Стоечный · Форма выходного сигнала Синусоида · Время переключения 0 мс · Ёмкость батареи 12В/9Ач х 6</description>
+</offer>
 <offer id="IS6816E7B9D3" available="true">
 <url>https://b2b.isoft-shop.kz/ibp-i-zashchita-pitaniya/tproduct/946819387204-ibp-cyberpower-ols6kert5u</url>
 <price>1472000</price>
@@ -12531,6 +12504,17 @@
 <vendor>SVC</vendor>
 <vendorCode>IS75B6FA0A9C</vendorCode>
 <description>Цвет Чёрный · Мощность 1500 ВА / 900 Вт · Класс мощности 1–2,2 кВА · Гарантия 1 год · Рабочая температура от 0 до 40 °С · Топология Линейно-интерактивный · Розеток 3 · Размещение Напольный · Ёмкость батареи 12В/9Ач х 2 · Форма выходного сигнала Ступенчатая синусоида</description>
+</offer>
+<offer id="IS77D762A730" available="true">
+<url>https://b2b.isoft-shop.kz/ibp-i-zashchita-pitaniya/tproduct/536956174474-ibp-eaton-5sc3000irt</url>
+<price>913000</price>
+<currencyId>KZT</currencyId>
+<categoryId>622117808604</categoryId>
+<picture>https://static.tildacdn.com/tild6231-6261-4439-b532-346432333730/ISD85EA60095.jpg</picture>
+<name>ИБП Eaton 5SC3000IRT</name>
+<vendor>Eaton</vendor>
+<vendorCode>IS77D762A730</vendorCode>
+<description>Гарантия 2 года · Топология Линейно-интерактивный · Мощность 3000 ВА / 2700 Вт · Розеток 8 · Интерфейс USB, RS-232 · Размещение Стоечный · Форма выходного сигнала Чистая синусоида · Время переключения 3 мс · Ёмкость батареи 12В/9Ач х 6 · Типоразмер (U) 2U</description>
 </offer>
 <offer id="IS7822361C22" available="true">
 <url>https://b2b.isoft-shop.kz/ibp-i-zashchita-pitaniya/tproduct/587319706704-ibp-cyberpower-bs650e</url>
@@ -47785,17 +47769,6 @@
 <vendorCode>IS88D5346D99</vendorCode>
 <description>Тип устройства Гарнитура · Назначение Игровое · Цвет Розовый · Тип подключения Беспроводное · Звучание Стерео</description>
 </offer>
-<offer id="IS890CF781B0" available="true">
-<url>https://b2b.isoft-shop.kz/naushniki-i-garnitury/tproduct/420886773124-naushniki-redmi-buds-8-belie-m2544e1</url>
-<price>26000</price>
-<currencyId>KZT</currencyId>
-<categoryId>813446092544</categoryId>
-<picture>https://static.tildacdn.com/tila3165-6635-4932-b438-636661386333/IS890CF781B0_1.jpg</picture>
-<name>Наушники Redmi Buds 8 белые M2544E1</name>
-<vendor>Redmi</vendor>
-<vendorCode>IS890CF781B0</vendorCode>
-<description>Материал Пластик · Цвет Белый · Тип устройства Наушники</description>
-</offer>
 <offer id="IS8C6ECAF111" available="true">
 <url>https://b2b.isoft-shop.kz/naushniki-i-garnitury/tproduct/504602508654-garnitura-besprovodnaya-logitech-zone-vi</url>
 <price>67000</price>
@@ -48348,6 +48321,17 @@
 <vendor>Jabra</vendor>
 <vendorCode>ISB1DFCCBAD0</vendorCode>
 <description>Тип устройства Гарнитура · Звучание Стерео</description>
+</offer>
+<offer id="ISB21785025E" available="true">
+<url>https://b2b.isoft-shop.kz/naushniki-i-garnitury/tproduct/496004746954-naushniki-redmi-buds-8-zelyonie-m2544e1</url>
+<price>25000</price>
+<currencyId>KZT</currencyId>
+<categoryId>813446092544</categoryId>
+<picture>https://static.tildacdn.com/tila6462-3836-4935-a537-356335333264/ISB21785025E_1.jpg</picture>
+<name>Наушники Redmi Buds 8 зелёные M2544E1</name>
+<vendor>Redmi</vendor>
+<vendorCode>ISB21785025E</vendorCode>
+<description>Тип устройства Наушники · Цвет Зелёный · Материал Пластик</description>
 </offer>
 <offer id="ISB29AEED2D9" available="true">
 <url>https://b2b.isoft-shop.kz/naushniki-i-garnitury/tproduct/159139114454-garnitura-hyperx-cloud-iii-s-gaming-head</url>
@@ -51834,17 +51818,6 @@
 <vendorCode>FX608JPR-RV118</vendorCode>
 <description>Ноутбук ASUS FX608JPR-RV118: Игровой ноутбук линейки Asus TUF Gaming F16. Процессор Intel Core i5-14450HX. Оперативной памяти 16 ГБ DDR5. Накопитель SSD на 1 ТБ. Экран 16 дюймов, 1920×1200, матрица IPS, 165 Гц. Видеокарта дискретная: NVIDIA GeForce RTX 5070, 8 ГБ видеопамяти. В комплекте DOS — операционную систему ставит покупатель.. Цена с НДС, безналичный расчёт для организаций.</description>
 </offer>
-<offer id="ISB05868944C" available="true">
-<url>https://b2b.isoft-shop.kz/noutbuki/tproduct/802847593844-noutbuk-hp-elitebook-6-g2a-e59cwecbja-ry</url>
-<price>1107000</price>
-<currencyId>KZT</currencyId>
-<categoryId>293087419414</categoryId>
-<picture>https://static.tildacdn.com/tila3661-3439-4130-a631-326531616134/ISB05868944C_1.jpg</picture>
-<name>Ноутбук HP EliteBook 6 G2a E59CWEC#BJA, Ryzen AI 7 Pro 450, 32 Gb, PCIe NVMe SSD, 1000 Gb, Radeon, 860M, 256 Mb, 14-inch, 1920x1200, silver</name>
-<vendor>HP</vendor>
-<vendorCode>ISB05868944C</vendorCode>
-<description>Диагональ 14″ · Ёмкость 1 ТБ · Оперативная память 32 ГБ · Операционная система Windows 11 · Процессор Ryzen AI 7 Pro/450 · Разрешение 1920×1200 · Линейка процессора Ryzen 7 · Семья ОС Windows 11</description>
-</offer>
 <offer id="ISB1B1419518" available="true">
 <url>https://b2b.isoft-shop.kz/noutbuki/tproduct/879964144494-noutbuk-asus-p1403cva-s61875-c3-100u-90n</url>
 <price>385000</price>
@@ -54420,17 +54393,6 @@
 <vendorCode>F5-6000J3238G32GX2-TZ5K</vendorCode>
 <description>Тип памяти DDR5 · Объём 64 ГБ · Частота 6000 МГц · Форм-фактор DIMM · Модулей в комплекте 2 · Партномер: F5-6000J3238G32GX2-TZ5K</description>
 </offer>
-<offer id="ISC1F0741224" available="true">
-<url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/357637048554-operativnaya-pamyat-ozu-dlya-noutbuka-te</url>
-<price>158000</price>
-<currencyId>KZT</currencyId>
-<categoryId>160131640904</categoryId>
-<picture>https://static.tildacdn.com/stor3866-3261-4534-b563-343830383938/ab8fba27ea6ec85e0d94213662d06ffa.png</picture>
-<name>Оперативная память ОЗУ для Ноутбука Team Group Elite DDR5 TED516G5600C46A-S01</name>
-<vendor>Team_Group</vendor>
-<vendorCode>ISC1F0741224</vendorCode>
-<description>Оперативная память 16 ГБ · Тип памяти DDR5 · Форм-фактор SO-DIMM · Частота 5600 МГц</description>
-</offer>
 <offer id="ISC2CC1436A7" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/465890920384-operativnaya-pamyat-dimm-ddr5-8192mbx2-5</url>
 <price>150000</price>
@@ -56024,6 +55986,19 @@
 <vendor>Cougar</vendor>
 <vendorCode>IS5489F0D047</vendorCode>
 <description>Гарантия 5 лет · Скорость вращения 700–2500 об/мин · Уровень шума 38 дБА · Подсветка ARGB · Интерфейс 4-pin PWM · Тип устройства Водяное охлаждение (СЖО) · Форм-фактор 360 мм · Количество вентиляторов 3 · Воздушный поток 78,2 CFM · Сокет 1851 / 1700 / 1200 / 1151 / 2066 / 2011 / 1366 / AM5 / AM4 / AM3 / AM3+ / AM2 / AM2+</description>
+</offer>
+<offer id="IS5505854E6D" available="true">
+<url>https://b2b.isoft-shop.kz/ohlazhdenie/tproduct/589769667244-kuler-dlya-protsessora-deepcool-ak620-di</url>
+<price>38000</price>
+<currencyId>KZT</currencyId>
+<categoryId>831063569394</categoryId>
+<picture>https://static.tildacdn.com/stor6262-3064-4666-b163-396432643236/c61b611fa356662432eb33769b39bf72.jpg</picture>
+<picture>https://static.tildacdn.com/tild3139-6165-4364-b533-346636346463/589769667244_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild6661-3435-4163-b035-613064646562/589769667244_2.jpg</picture>
+<name>Кулер для процессора Deepcool AK620 DIGITAL SE R-AK620-BKADMN-GJD</name>
+<vendor>Deepcool</vendor>
+<vendorCode>IS5505854E6D</vendorCode>
+<description>Гарантия 3 года · Скорость вращения 500–1850 об/мин · Уровень шума 28 дБА · Подсветка ARGB · Интерфейс 4-pin PWM · Тип устройства Кулер для процессора · Форм-фактор 120 мм · Количество вентиляторов 2 · Воздушный поток 68,99 CFM · Сокет 1851 / 1700 / 1200 / 1151 / AM5 / AM4</description>
 </offer>
 <offer id="IS557CCE045F" available="true">
 <url>https://b2b.isoft-shop.kz/ohlazhdenie/tproduct/203290727554-ohlazhdenie-cooler-pccooler-gi-h58u-v2-f</url>
@@ -61502,20 +61477,6 @@
 <vendorCode>ISDFCBACA4C1</vendorCode>
 <description>Разрешение 1920×1200 · Класс яркости от 3000 лм · Технология проектора LCD (3LCD) · Яркость 6200 лм · Контрастность 5000000:1</description>
 </offer>
-<offer id="ISE0CAE5F1D7" available="true">
-<url>https://b2b.isoft-shop.kz/proektory-i-paneli/tproduct/408335557204-lazernii-proektor-epson-eb-l630su-v11ha2</url>
-<price>2862000</price>
-<currencyId>KZT</currencyId>
-<categoryId>393119125974</categoryId>
-<picture>https://static.tildacdn.com/tild6330-3130-4464-b939-623930656531/408335557204.jpg</picture>
-<picture>https://static.tildacdn.com/tild6438-3663-4664-b162-316365366430/408335557204_2.jpg</picture>
-<picture>https://static.tildacdn.com/tild3134-6238-4862-b137-633561623963/408335557204_3.jpg</picture>
-<picture>https://static.tildacdn.com/tild3232-6662-4434-b733-316261363030/408335557204_4.jpg</picture>
-<name>Лазерный проектор Epson EB-L630SU V11HA29040, LCD: 3 х 0.67-inch, WUXGA(1920x1200), 6000lm, 2500000:1, WiFi/HDMI/VGA/LAN/USB</name>
-<vendor>Epson</vendor>
-<vendorCode>ISE0CAE5F1D7</vendorCode>
-<description>Разрешение 1920×1200 · Класс яркости от 3000 лм · Технология проектора LCD (3LCD) · Яркость 6000 лм · Контрастность 2500000:1</description>
-</offer>
 <offer id="ISE208BB9D8F" available="true">
 <url>https://b2b.isoft-shop.kz/proektory-i-paneli/tproduct/927088488124-proektor-xiaomi-smart-projector-l1-pro-b</url>
 <price>223000</price>
@@ -64688,6 +64649,17 @@
 <vendorCode>IS2A552C48D4</vendorCode>
 <description>Форм-фактор Rack · Блок питания 1+1 550 Вт · Процессор Intel Xeon E-2356G · Оперативная память 16 ГБ · Тип памяти DDR4 · Накопитель 512 ГБ · Тип накопителя SSD</description>
 </offer>
+<offer id="IS55D6DA9175" available="true">
+<url>https://b2b.isoft-shop.kz/servery/tproduct/627501596704-server-hpeml30-gen111xeon6333p6c12t31-gh</url>
+<price>4429000</price>
+<currencyId>KZT</currencyId>
+<categoryId>983972211584</categoryId>
+<picture>https://static.tildacdn.com/tild6664-3130-4135-a262-303866323338/IS55D6DA9175_1.jpg</picture>
+<name>Server HPE/ML30 Gen11/1/Xeon/6333P(6C/12T)/3,1 GHz/1x32 Gb/MR216i/2x480 Gb SSD RI/4x1Gb Base T/2x1000W Titanium P87458-425</name>
+<vendor>HPE</vendor>
+<vendorCode>IS55D6DA9175</vendorCode>
+<description>Блок питания 2×1000 Вт · Накопитель 2×480 ГБ SSD · Оперативная память 32 ГБ · Процессор Xeon 6333P</description>
+</offer>
 <offer id="IS6BED94513F" available="true">
 <url>https://b2b.isoft-shop.kz/servery/tproduct/983710912534-dell-poweredge-r470xeon-6517p8x-25-inch</url>
 <price>4841000</price>
@@ -66633,17 +66605,6 @@
 <vendor>Grandstream</vendor>
 <vendorCode>IS49F713C586</vendorCode>
 <description>Тип устройства Коммутатор · Портов 16 · Скорость 10/100/1000 Мбит/с · Слотов SFP 4 · PoE Есть · Уровень L2+ · Управление Управляемый · Класс по числу портов 11–22 порта · Размещение В стойку · Бюджет PoE 240 Вт</description>
-</offer>
-<offer id="IS4AA3AC323E" available="true">
-<url>https://b2b.isoft-shop.kz/setevoe-oborudovanie/tproduct/412626879394-mounting-kit-hpearuba-ap-mnt-d-ap-mount</url>
-<price>12000</price>
-<currencyId>KZT</currencyId>
-<categoryId>737078043964</categoryId>
-<picture>https://static.tildacdn.com/stor6465-3935-4430-b062-383332376233/9cd1c919f6acd8c713e247a40e8980aa.jpg</picture>
-<name>Mounting Kit HPE/Aruba AP-MNT-D AP mount bracket individual</name>
-<vendor>HPE</vendor>
-<vendorCode>R3J18A</vendorCode>
-<description>Партномер: R3J18A</description>
 </offer>
 <offer id="IS4ACA44A3F5" available="true">
 <url>https://b2b.isoft-shop.kz/setevoe-oborudovanie/tproduct/189896810854-kommutator-bdcom-s1200-8p2g</url>
@@ -72368,17 +72329,6 @@
 <vendorCode>DT.R6WEC.00J</vendorCode>
 <description>Системный блок линейки Acer Veriton. Процессор Intel Core Ultra 5-225. Оперативной памяти 16 ГБ DDR5. Накопитель SSD на 512 ГБ. Графика встроенная: Intel Arc Graphics. Операционной системы в комплекте нет. Питание: блок питания 180 Вт. · Партномер: DT.R6WEC.00J</description>
 </offer>
-<offer id="IS43675C13F2" available="true">
-<url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/356496082874-sistemnii-blok-pulser-core-i7-14700f-21</url>
-<price>1243000</price>
-<currencyId>KZT</currencyId>
-<categoryId>763638053684</categoryId>
-<picture>https://static.tildacdn.com/tild3439-3630-4933-b738-653566646662/IS43675C13F2_1.jpg</picture>
-<name>Системный блок Pulser Core i7-14700F, 2.1 ГГц, B760, 32 ГБ ОЗУ, SSD 1 ТБ M.2, RTX 5060, 8 ГБ, без DVD, БП 800 Вт</name>
-<vendor>Pulser</vendor>
-<vendorCode>IS43675C13F2</vendorCode>
-<description>Оперативная память 32 ГБ · Процессор Intel Core i7-14700F · Тип накопителя SSD · Ёмкость 1 ТБ · Видеокарта RTX 5060 · Блок питания 800 Вт · Накопитель 1 ТБ</description>
-</offer>
 <offer id="IS4375F45A0E" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/889151524144-sistemnii-blok-pk-nitro-n55-tower-gaming</url>
 <price>1348000</price>
@@ -77564,6 +77514,17 @@
 <vendor>Ship</vendor>
 <vendorCode>ISEF98576FA3</vendorCode>
 <description>Габариты 570×450×635 мм · Исполнение Настенный · Типоразмер (U) 12U</description>
+</offer>
+<offer id="ISF0DAEA2311" available="true">
+<url>https://b2b.isoft-shop.kz/shkafy-i-stoyki/tproduct/145816136904-shkaf-kommunikatsionnii-nastennii-ship-5</url>
+<price>61000</price>
+<currencyId>KZT</currencyId>
+<categoryId>667674530784</categoryId>
+<picture>https://static.tildacdn.com/stor3037-3030-4532-b866-323431353233/687bf2da6642df1606dd75c7f17ee48f.jpg</picture>
+<name>Шкаф коммуникационный настенный SHIP 5606.01.100 6U 570*600*380 мм</name>
+<vendor>Ship</vendor>
+<vendorCode>ISF0DAEA2311</vendorCode>
+<description>Габариты 570×600×380 мм · Исполнение Настенный · Типоразмер (U) 6U</description>
 </offer>
 <offer id="ISF3C63D9A11" available="true">
 <url>https://b2b.isoft-shop.kz/shkafy-i-stoyki/tproduct/104180079454-lanmaster-shkaf-nastennii-serii-pro-18u</url>

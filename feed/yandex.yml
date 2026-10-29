@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<yml_catalog date="2026-10-29 08:11">
+<yml_catalog date="2026-10-29 08:54">
 <shop>
 <name>iSoft</name>
 <company>iSoft</company>
@@ -2307,6 +2307,17 @@
 <vendor>Acer</vendor>
 <vendorCode>ISDB424E5CE7</vendorCode>
 <description>Ёмкость 960 ГБ · Форм-фактор 2.5″ · Интерфейс SATA</description>
+</offer>
+<offer id="ISDD471E5CC3" available="true">
+<url>https://b2b.isoft-shop.kz/ssd-nakopiteli/tproduct/572195102934-netac-sa500-25-sataiii-3d-nand-ssd-512gb</url>
+<price>47000</price>
+<currencyId>KZT</currencyId>
+<categoryId>615429773604</categoryId>
+<picture>https://static.tildacdn.com/tila3833-6330-4334-a638-633030313964/ISDD471E5CC3_1.jpg</picture>
+<name>NETAC SA500 2.5 SATAIII 3D NAND SSD 512GB, R/W up to 520/450MB/s</name>
+<vendor>NETAC</vendor>
+<vendorCode>ISDD471E5CC3</vendorCode>
+<description>Ёмкость 512 ГБ · Интерфейс SATA III · Форм-фактор 2.5″ · Скорость записи 450 МБ/с · Скорость чтения 520 МБ/с</description>
 </offer>
 <offer id="ISDD6DF35653" available="true">
 <url>https://b2b.isoft-shop.kz/ssd-nakopiteli/tproduct/630787108284-ssd-ssd-nakopitel-usb-1-tb-hiksemi-hs-es</url>
@@ -10055,6 +10066,17 @@
 <vendorCode>HAT3320-8T</vendorCode>
 <description>Жесткий диск, Synology, HAT3320-8T, 8 TB, HDD 3.5", SATA 6 Gb/s</description>
 </offer>
+<offer id="IS1556B8FABD" available="true">
+<url>https://b2b.isoft-shop.kz/zhestkie-diski/tproduct/891549776104-zhyostkii-disk-seagate-skyhawk-st10000ve</url>
+<price>345000</price>
+<currencyId>KZT</currencyId>
+<categoryId>958449305144</categoryId>
+<picture>https://static.tildacdn.com/tila3130-3265-4237-b938-663037373232/IS1556B8FABD_1.jpg</picture>
+<name>Жёсткий диск Seagate SkyHawk ST10000VE001, HDD 10Tb, SATA 6Gb/s, 3.5-inch, 256MB, 7200 RPM</name>
+<vendor>SEAGATE</vendor>
+<vendorCode>IS1556B8FABD</vendorCode>
+<description>Ёмкость 10 ТБ · Интерфейс SATA III · Форм-фактор 3.5″ · Скорость вращения 7200 об/мин · Класс ёмкости 10–12 ТБ</description>
+</offer>
 <offer id="IS17E967E509" available="true">
 <url>https://b2b.isoft-shop.kz/zhestkie-diski/tproduct/314133187724-zhyostkii-disk-sata-10000-gb-seagate-exo</url>
 <price>399000</price>
@@ -10173,6 +10195,17 @@
 <vendorCode>IS30D0D86ADF</vendorCode>
 <description>Ёмкость 1 ТБ · Интерфейс USB 3.2 · Класс ёмкости до 1 ТБ · Форм-фактор 2.5″</description>
 </offer>
+<offer id="IS35F5B97FB5" available="true">
+<url>https://b2b.isoft-shop.kz/zhestkie-diski/tproduct/614856737594-zhyostkii-disk-hdd-video-surveillance-to</url>
+<price>102000</price>
+<currencyId>KZT</currencyId>
+<categoryId>958449305144</categoryId>
+<picture>https://static.tildacdn.com/stor3834-3939-4030-b038-636463636135/6862be61472f0f887e521743d0de3e90.png</picture>
+<name>Жёсткий диск HDD Video Surveillance TOSHIBA S300 2TB SMR, 3.5-inch, 128MB, 5400RPM, SATA, TBW: 180</name>
+<vendor>Toshiba</vendor>
+<vendorCode>IS35F5B97FB5</vendorCode>
+<description>Ёмкость 2 ТБ · Интерфейс SATA · Форм-фактор 3.5″ · Скорость вращения 5400 об/мин · Класс ёмкости 1,2–2 ТБ</description>
+</offer>
 <offer id="IS36214FD339" available="true">
 <url>https://b2b.isoft-shop.kz/zhestkie-diski/tproduct/184004477044-zhyostkii-disk-synology-hat5320-4t</url>
 <price>312000</price>
@@ -10208,6 +10241,17 @@
 <vendor>SEAGATE</vendor>
 <vendorCode>IS3D11964E22</vendorCode>
 <description>Интерфейс SATA · Скорость вращения 5400 об/мин · Ёмкость 4 ТБ · Форм-фактор 3.5″</description>
+</offer>
+<offer id="IS3D93DF8B5B" available="true">
+<url>https://b2b.isoft-shop.kz/zhestkie-diski/tproduct/559135483684-zhyostkii-disk-hdd-video-surveillance-to</url>
+<price>127000</price>
+<currencyId>KZT</currencyId>
+<categoryId>958449305144</categoryId>
+<picture>https://static.tildacdn.com/tila3534-3234-4464-b038-313661376339/IS3D93DF8B5B_1.png</picture>
+<name>Жёсткий диск HDD Video Surveillance TOSHIBA S300 4TB SMR, 3.5-inch, 256MB, 5400RPM, SATA, TBW: 180</name>
+<vendor>Toshiba</vendor>
+<vendorCode>IS3D93DF8B5B</vendorCode>
+<description>Ёмкость 4 ТБ · Интерфейс SATA · Форм-фактор 3.5″ · Скорость вращения 5400 об/мин · Класс ёмкости 3–4 ТБ</description>
 </offer>
 <offer id="IS3FA29D28C6" available="true">
 <url>https://b2b.isoft-shop.kz/zhestkie-diski/tproduct/371340544754-zhyostkii-disk-toshiba-external-hard-dri</url>
@@ -10422,6 +10466,17 @@
 <vendor>SEAGATE</vendor>
 <vendorCode>IS7C41DE8271</vendorCode>
 <description>Интерфейс SATA · Скорость вращения 7200 об/мин · Ёмкость 2 ТБ</description>
+</offer>
+<offer id="IS7E3FFFB7A7" available="true">
+<url>https://b2b.isoft-shop.kz/zhestkie-diski/tproduct/830226557914-zhyostkii-disk-seagate-hdd-server-exos-7</url>
+<price>176000</price>
+<currencyId>KZT</currencyId>
+<categoryId>958449305144</categoryId>
+<picture>https://static.tildacdn.com/tild3938-6362-4536-b837-653734383339/ISC266279011_1.jpg</picture>
+<name>Жёсткий диск SEAGATE HDD Server Exos 7E10 512E/4kn (3.5-inch/ 2TB/ SAS 12Gb/s / 7200rpm)</name>
+<vendor>SEAGATE</vendor>
+<vendorCode>IS7E3FFFB7A7</vendorCode>
+<description>Интерфейс SAS · Скорость вращения 7200 об/мин · Форм-фактор 3.5″</description>
 </offer>
 <offer id="IS807B8693D6" available="true">
 <url>https://b2b.isoft-shop.kz/zhestkie-diski/tproduct/722566693184-zhyostkii-disk-dell-4tb-hard-drive-sata</url>
@@ -10839,6 +10894,17 @@
 <vendorCode>AP2TBAC533U-1</vendorCode>
 <description>Внешний жёсткий диск, Apacer, AC533, AP2TBAC533U-1, 2TB, 2.5", USB 3.2, Синий</description>
 </offer>
+<offer id="ISE0E314B4C1" available="true">
+<url>https://b2b.isoft-shop.kz/zhestkie-diski/tproduct/556355703494-zhyostkii-disk-seagate-skyhawk-ai-st2000</url>
+<price>620000</price>
+<currencyId>KZT</currencyId>
+<categoryId>958449305144</categoryId>
+<picture>https://static.tildacdn.com/tila3339-6164-4130-b261-643031303062/ISE0E314B4C1_1.jpg</picture>
+<name>Жёсткий диск Seagate SkyHawk AI ST20000VE003, HDD 20Tb, SATA 6Gb/s, 3.5-inch, 512MB, 7200 RPM</name>
+<vendor>SEAGATE</vendor>
+<vendorCode>ISE0E314B4C1</vendorCode>
+<description>Ёмкость 20 ТБ · Интерфейс SATA III · Форм-фактор 3.5″ · Скорость вращения 7200 об/мин · Класс ёмкости от 14 ТБ</description>
+</offer>
 <offer id="ISE3DF928478" available="true">
 <url>https://b2b.isoft-shop.kz/zhestkie-diski/tproduct/502804577314-zhyostkii-disk-sata-10000-gb-seagate-iro</url>
 <price>367000</price>
@@ -10919,6 +10985,17 @@
 <vendor>WESTERN DIGITAL</vendor>
 <vendorCode>ISF4A6050DA9</vendorCode>
 <description>Ёмкость 6 ТБ · Форм-фактор 3.5″ · Интерфейс SATA · Класс ёмкости 5–8 ТБ</description>
+</offer>
+<offer id="ISF7E824D388" available="true">
+<url>https://b2b.isoft-shop.kz/zhestkie-diski/tproduct/637083062484-zhyostkii-disk-seagate-skyhawk-ai-st2400</url>
+<price>680000</price>
+<currencyId>KZT</currencyId>
+<categoryId>958449305144</categoryId>
+<picture>https://static.tildacdn.com/tila3731-3136-4265-a336-323765393836/ISF7E824D388_1.jpg</picture>
+<name>Жёсткий диск Seagate SkyHawk AI ST24000VE002, HDD 24Tb, SATA 6Gb/s, 3.5-inch, 512MB, 7200 RPM</name>
+<vendor>SEAGATE</vendor>
+<vendorCode>ISF7E824D388</vendorCode>
+<description>Ёмкость 24 ТБ · Интерфейс SATA III · Форм-фактор 3.5″ · Скорость вращения 7200 об/мин · Класс ёмкости от 14 ТБ</description>
 </offer>
 <offer id="IS0032268923" available="true">
 <url>https://b2b.isoft-shop.kz/ibp-i-zashchita-pitaniya/tproduct/273283864494-ibp-cyberpower-plt1000elcdrt2u</url>
@@ -18643,6 +18720,17 @@
 <vendorCode>IS6F420C63C5</vendorCode>
 <description>Ёмкость 128 ГБ · Класс скорости C10, UHS-I, U1, V10 · Форм-фактор SDXC</description>
 </offer>
+<offer id="IS711731BD36" available="true">
+<url>https://b2b.isoft-shop.kz/karty-pamyati/tproduct/233182863434-karta-pamyati-sandisk-extreme-microsdxc</url>
+<price>21000</price>
+<currencyId>KZT</currencyId>
+<categoryId>668752067734</categoryId>
+<picture>https://static.tildacdn.com/tila6135-3065-4130-a666-643236383932/IS711731BD36_1.png</picture>
+<name>Карта памяти SANDISK Extreme microSDXC 128GB + SD Adapter + 1 year RescuePRO Deluxe up to 190MB/s &amp;amp; 90MB/s Read/Write SANDISK SANDISK EXTREME MICROSDXC 128GB + SD ADAPTER + 1 YEAR RESCUEPRO DELUXE UP TO 190MB/S &amp;amp; 90MB/S READ/WRITE SPEEDS A2 C10 V30 UHS-I U3</name>
+<vendor>SANDISK</vendor>
+<vendorCode>IS711731BD36</vendorCode>
+<description>Ёмкость 128 ГБ · Класс скорости C10, UHS-I, U3, V30, A2 · Форм-фактор microSDXC</description>
+</offer>
 <offer id="IS7565DCC6ED" available="true">
 <url>https://b2b.isoft-shop.kz/karty-pamyati/tproduct/951746371504-karta-pamyati-kingston-sdcg4256gbsp-canv</url>
 <price>46000</price>
@@ -18689,6 +18777,28 @@
 <vendor>Kingston</vendor>
 <vendorCode>IS7E1F1A9B47</vendorCode>
 <description>Ёмкость 64 ГБ · Класс скорости U3, V30, A2 · Форм-фактор microSDXC</description>
+</offer>
+<offer id="IS855B945E54" available="true">
+<url>https://b2b.isoft-shop.kz/karty-pamyati/tproduct/331937415144-karta-pamyati-sandisk-ultra-128gb-sdxc-m</url>
+<price>19000</price>
+<currencyId>KZT</currencyId>
+<categoryId>668752067734</categoryId>
+<picture>https://static.tildacdn.com/tila3030-3030-4531-a139-343632396664/IS855B945E54_1.jpg</picture>
+<name>Карта памяти SANDISK Ultra 128GB SDXC Memory Card 100MB/s</name>
+<vendor>SANDISK</vendor>
+<vendorCode>IS855B945E54</vendorCode>
+<description>Ёмкость 128 ГБ · Форм-фактор SDXC</description>
+</offer>
+<offer id="IS90DAC8A896" available="true">
+<url>https://b2b.isoft-shop.kz/karty-pamyati/tproduct/198877467154-karta-pamyati-sandisk-ultra-microsdxc-12</url>
+<price>15000</price>
+<currencyId>KZT</currencyId>
+<categoryId>668752067734</categoryId>
+<picture>https://static.tildacdn.com/tila3338-6438-4436-b133-656133653766/IS90DAC8A896_1.jpg</picture>
+<name>Карта памяти SANDISK Ultra microSDXC 128GB + SD Adapter 100MB/s Class 10 UHS-I</name>
+<vendor>SANDISK</vendor>
+<vendorCode>IS90DAC8A896</vendorCode>
+<description>Ёмкость 128 ГБ · Форм-фактор microSDXC · Класс скорости Class 10, UHS-I</description>
 </offer>
 <offer id="IS9D7D42F1DB" available="true">
 <url>https://b2b.isoft-shop.kz/karty-pamyati/tproduct/885213083314-karta-pamyati-apacer-ap128gedm1d05-r-128</url>
@@ -18844,6 +18954,17 @@
 <vendorCode>ISDB07983284</vendorCode>
 <description>Ёмкость 128 ГБ · Класс скорости U1, V10, A1 · Форм-фактор microSDXC</description>
 </offer>
+<offer id="ISE0DFA06A7A" available="true">
+<url>https://b2b.isoft-shop.kz/karty-pamyati/tproduct/933764892134-karta-pamyati-sandisk-extreme-go-microsd</url>
+<price>42000</price>
+<currencyId>KZT</currencyId>
+<categoryId>668752067734</categoryId>
+<picture>https://static.tildacdn.com/tila3135-3933-4565-b666-386263386434/ISE0DFA06A7A_1.png</picture>
+<name>Карта памяти SANDISK Extreme GO microSDHC UHS-I Card - 256GB</name>
+<vendor>SANDISK</vendor>
+<vendorCode>ISE0DFA06A7A</vendorCode>
+<description>Ёмкость 256 ГБ · Класс скорости UHS-I · Форм-фактор microSDHC</description>
+</offer>
 <offer id="ISE305F798E4" available="true">
 <url>https://b2b.isoft-shop.kz/karty-pamyati/tproduct/833551447644-karta-pamyati-apacer-ap128gmcsx10u7-ragc</url>
 <price>17000</price>
@@ -18880,6 +19001,39 @@
 <vendorCode>ISE82BA908C5</vendorCode>
 <description>Ёмкость 1 ТБ · Форм-фактор microSDXC · В комплекте Адаптер SD · Класс скорости U3, V30, A1</description>
 </offer>
+<offer id="ISEC4A0CA765" available="true">
+<url>https://b2b.isoft-shop.kz/karty-pamyati/tproduct/694029062224-karta-pamyati-sandisk-ultra-microsdhc-32</url>
+<price>8400</price>
+<currencyId>KZT</currencyId>
+<categoryId>668752067734</categoryId>
+<picture>https://static.tildacdn.com/tila3234-3430-4465-b534-356463356466/ISEC4A0CA765_1.jpg</picture>
+<name>Карта памяти SANDISK Ultra microSDHC 32GB + SD Adapter 100MB/s Class 10 UHS-I</name>
+<vendor>SANDISK</vendor>
+<vendorCode>ISEC4A0CA765</vendorCode>
+<description>Форм-фактор microSDHC · Ёмкость 32 ГБ · Класс скорости Class 10, UHS-I</description>
+</offer>
+<offer id="ISEE9D875F68" available="true">
+<url>https://b2b.isoft-shop.kz/karty-pamyati/tproduct/103061505364-karta-pamyati-kingston-128gb-microsdxc-c</url>
+<price>29000</price>
+<currencyId>KZT</currencyId>
+<categoryId>668752067734</categoryId>
+<picture>https://static.tildacdn.com/tila6633-6663-4430-b432-633666343064/ISEE9D875F68_1.png</picture>
+<name>Карта памяти KINGSTON 128GB microSDXC Canvas Go Plus Gen4 200R A2 U3 Single Pack w/o ADP SDCG4/128GBSP</name>
+<vendor>Kingston</vendor>
+<vendorCode>ISEE9D875F68</vendorCode>
+<description>Ёмкость 128 ГБ · Класс скорости U3, A2 · Форм-фактор microSDXC</description>
+</offer>
+<offer id="ISF13331248D" available="true">
+<url>https://b2b.isoft-shop.kz/karty-pamyati/tproduct/193783135754-karta-pamyati-sandisk-ultra-256gb-sdxc-m</url>
+<price>47000</price>
+<currencyId>KZT</currencyId>
+<categoryId>668752067734</categoryId>
+<picture>https://static.tildacdn.com/tila6439-3936-4238-b664-343262306331/ISF13331248D_1.jpg</picture>
+<name>Карта памяти SANDISK Ultra 256GB SDXC Memory Card 100MB/s</name>
+<vendor>SANDISK</vendor>
+<vendorCode>ISF13331248D</vendorCode>
+<description>Ёмкость 256 ГБ · Форм-фактор SDXC</description>
+</offer>
 <offer id="ISFACA1CD858" available="true">
 <url>https://b2b.isoft-shop.kz/karty-pamyati/tproduct/256622378874-karta-pamyati-apacer-ap64gedm1d05-r-64gb</url>
 <price>18000</price>
@@ -18891,6 +19045,17 @@
 <vendorCode>ISFACA1CD858</vendorCode>
 <description>Ёмкость 64 ГБ · Форм-фактор microSDXC · В комплекте Адаптер SD</description>
 </offer>
+<offer id="ISFC003CEB9D" available="true">
+<url>https://b2b.isoft-shop.kz/karty-pamyati/tproduct/208694992334-karta-pamyati-sandisk-extreme-go-microsd</url>
+<price>99000</price>
+<currencyId>KZT</currencyId>
+<categoryId>668752067734</categoryId>
+<picture>https://static.tildacdn.com/tila3963-3962-4665-b831-373866643365/ISFC003CEB9D_1.png</picture>
+<name>Карта памяти SANDISK Extreme GO microSDHC UHS-I Card - 512GB</name>
+<vendor>SANDISK</vendor>
+<vendorCode>ISFC003CEB9D</vendorCode>
+<description>Ёмкость 512 ГБ · Класс скорости UHS-I · Форм-фактор microSDHC</description>
+</offer>
 <offer id="IS0013AA74BE" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury/tproduct/891209921334-klaviatura-logitech-keys-to-go-blush-pin</url>
 <price>39000</price>
@@ -18901,6 +19066,17 @@
 <vendor>Logitech</vendor>
 <vendorCode>IS0013AA74BE</vendorCode>
 <description>Тип устройства клавиатура · Цвет Розовый</description>
+</offer>
+<offer id="IS0076F020AF" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury/tproduct/624709808164-klaviatura-mish-usb-defender-motion-c-97</url>
+<price>5100</price>
+<currencyId>KZT</currencyId>
+<categoryId>723843374454</categoryId>
+<picture>https://static.tildacdn.com/tila6136-3232-4561-b230-663962653934/IS0076F020AF_1.jpg</picture>
+<name>Клавиатура + мышь, USB, Defender Motion C-977 RU, White(45977)</name>
+<vendor>DEFENDER</vendor>
+<vendorCode>IS0076F020AF</vendorCode>
+<description>Тип устройства клавиатура</description>
 </offer>
 <offer id="IS0080B3224F" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury/tproduct/605862298454-klaviatura-usb-mchose-ace-68-white-ice-b</url>
@@ -18925,6 +19101,17 @@
 <vendor>MCHOSE</vendor>
 <vendorCode>IS00C41121E3</vendorCode>
 <description>Тип устройства клавиатура · Подключение проводное и беспроводное · Кнопок 98 · Тип клавиатуры механическая · Подсветка RGB · Раскладка русская/английская · Цвет Белый, черный</description>
+</offer>
+<offer id="IS0101DFC8C2" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury/tproduct/916717532894-klaviatura-mish-usb-defender-york-c-777</url>
+<price>4900</price>
+<currencyId>KZT</currencyId>
+<categoryId>723843374454</categoryId>
+<picture>https://static.tildacdn.com/tila6531-3336-4261-b633-393134323439/IS0101DFC8C2_1.jpg</picture>
+<name>Клавиатура + мышь, USB, Defender York C-777, black (45779)</name>
+<vendor>DEFENDER</vendor>
+<vendorCode>IS0101DFC8C2</vendorCode>
+<description>Тип устройства клавиатура</description>
 </offer>
 <offer id="IS02A5892644" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury/tproduct/423832728244-klaviatura-kbp70tklw-lorgar-kbp70tklw-wi</url>
@@ -19084,6 +19271,28 @@
 <vendorCode>IS11F786B1D9</vendorCode>
 <description>Тип устройства клавиатура · Материал Пластик · Цвет Чёрный · Подключение Проводное · Кнопок 104 · Тип клавиатуры мембранная · Подсветка RGB · Раскладка русская/английская</description>
 </offer>
+<offer id="IS1371B03FDC" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury/tproduct/408885961754-klaviatura-usb-defender-gk-172-ru-white</url>
+<price>4800</price>
+<currencyId>KZT</currencyId>
+<categoryId>723843374454</categoryId>
+<picture>https://static.tildacdn.com/tila3664-6537-4137-b031-343862333832/IS1371B03FDC_1.jpg</picture>
+<name>Клавиатура USB, Defender GK-172 RU, white, (45172)</name>
+<vendor>DEFENDER</vendor>
+<vendorCode>IS1371B03FDC</vendorCode>
+<description>Тип устройства клавиатура</description>
+</offer>
+<offer id="IS13A46A68F7" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury/tproduct/409303235364-klaviatura-usb-defender-wildfire-gk-213</url>
+<price>18000</price>
+<currencyId>KZT</currencyId>
+<categoryId>723843374454</categoryId>
+<picture>https://static.tildacdn.com/tila3236-6130-4030-a536-383666373162/IS13A46A68F7_1.jpg</picture>
+<name>Клавиатура USB, Defender Wildfire GK-213 RU, (45213)</name>
+<vendor>DEFENDER</vendor>
+<vendorCode>IS13A46A68F7</vendorCode>
+<description>Тип устройства клавиатура</description>
+</offer>
 <offer id="IS165E88E972" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury/tproduct/844762342484-klaviatura-genius-kb-117-104-knopki-usb</url>
 <price>3500</price>
@@ -19143,6 +19352,17 @@
 <vendor>Rapoo</vendor>
 <vendorCode>IS18A2E324FA</vendorCode>
 <description>Цвет Чёрный · Тип устройства комплект клавиатура и мышь · Кнопок 104 · Материал Алюминий · Раскладка русская/английская · Разрешение сенсора 3200 dpi</description>
+</offer>
+<offer id="IS1CFCCFC365" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury/tproduct/659135192514-klaviatura-usb-defender-wildfire-gk-213</url>
+<price>18000</price>
+<currencyId>KZT</currencyId>
+<categoryId>723843374454</categoryId>
+<picture>https://static.tildacdn.com/tila6432-6336-4138-b563-376465626462/IS1CFCCFC365_1.jpg</picture>
+<name>Клавиатура USB, Defender Wildfire GK-213 RU, (45214)</name>
+<vendor>DEFENDER</vendor>
+<vendorCode>IS1CFCCFC365</vendorCode>
+<description>Тип устройства клавиатура</description>
 </offer>
 <offer id="IS1E6397CF58" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury/tproduct/790365401464-logitech-klaviatura-k120-corded-keyboard</url>
@@ -19226,6 +19446,17 @@
 <vendorCode>IS234DF1138D</vendorCode>
 <description>Тип устройства клавиатура</description>
 </offer>
+<offer id="IS2367D5CD2F" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury/tproduct/878331828684-klaviatura-mish-usb-defender-nord-gs-959</url>
+<price>8200</price>
+<currencyId>KZT</currencyId>
+<categoryId>723843374454</categoryId>
+<picture>https://static.tildacdn.com/tila3736-6138-4232-b532-636631386431/IS2367D5CD2F_1.jpg</picture>
+<name>Клавиатура + мышь, USB, Defender Nord GS-959 RU, black (52959)</name>
+<vendor>DEFENDER</vendor>
+<vendorCode>IS2367D5CD2F</vendorCode>
+<description>Тип устройства клавиатура</description>
+</offer>
 <offer id="IS23AEF1807B" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury/tproduct/955656258194-klaviatura-apple-magic-keyboard-for-ipad</url>
 <price>254000</price>
@@ -19286,6 +19517,17 @@
 <vendorCode>IS274912DA9E</vendorCode>
 <description>Цвет Чёрный · Тип устройства клавиатура · Раскладка английская · Материал Металл, пластик · Подсветка RGB</description>
 </offer>
+<offer id="IS27D7846D30" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury/tproduct/762236189454-klaviatura-mish-usb-defender-columbia-c</url>
+<price>7800</price>
+<currencyId>KZT</currencyId>
+<categoryId>723843374454</categoryId>
+<picture>https://static.tildacdn.com/tila6631-3935-4465-b834-373163396237/IS27D7846D30_1.jpg</picture>
+<name>Клавиатура + мышь, USB, Defender COLUMBIA C-775 RU,No battery, wireless, black (45775)</name>
+<vendor>DEFENDER</vendor>
+<vendorCode>IS27D7846D30</vendorCode>
+<description>Тип устройства клавиатура · Подключение Беспроводное</description>
+</offer>
 <offer id="IS298089C984" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury/tproduct/124386915764-komplekt-besprovodnoi-logitech-mk220-kla</url>
 <price>11000</price>
@@ -19296,6 +19538,17 @@
 <vendor>Logitech</vendor>
 <vendorCode>IS298089C984</vendorCode>
 <description>Тип устройства комплект клавиатура и мышь · Подключение Беспроводное</description>
+</offer>
+<offer id="IS29E33DD631" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury/tproduct/935216116814-klaviatura-usb-defender-black-raven-gk-4</url>
+<price>14000</price>
+<currencyId>KZT</currencyId>
+<categoryId>723843374454</categoryId>
+<picture>https://static.tildacdn.com/tila3431-6661-4230-a333-346432313161/IS29E33DD631_1.jpg</picture>
+<name>Клавиатура USB, Defender Black Raven GK-417 RU, Silver, (45413)</name>
+<vendor>DEFENDER</vendor>
+<vendorCode>IS29E33DD631</vendorCode>
+<description>Тип устройства клавиатура · Подключение Проводное · Кнопок 63 · Тип клавиатуры механическая · Раскладка русская/английская</description>
 </offer>
 <offer id="IS2C06E1DAC7" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury/tproduct/577204494114-klaviatura-varmilo-minilo-classic-black</url>
@@ -19504,6 +19757,17 @@
 <vendorCode>IS332FDBD907</vendorCode>
 <description>Цвет Чёрный · Тип устройства клавиатура · Подключение Проводное · Подсветка есть · Раскладка русская/английская · Форм-фактор Полноразмерная</description>
 </offer>
+<offer id="IS3466DF406B" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury/tproduct/568002989364-klaviatura-usb-defender-ivory-gk-579-ru</url>
+<price>22000</price>
+<currencyId>KZT</currencyId>
+<categoryId>723843374454</categoryId>
+<picture>https://static.tildacdn.com/tila6430-3030-4966-b136-323530623238/IS3466DF406B_1.jpg</picture>
+<name>Клавиатура USB, Defender Ivory GK-579 RU, White, (45579)</name>
+<vendor>DEFENDER</vendor>
+<vendorCode>IS3466DF406B</vendorCode>
+<description>Тип устройства клавиатура</description>
+</offer>
 <offer id="IS3493AB29EF" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury/tproduct/640547691734-klaviatura-ducky-one-x-mini-wireless-wh</url>
 <price>62000</price>
@@ -19539,6 +19803,17 @@
 <vendor>Rapoo</vendor>
 <vendorCode>IS3A5739CA63</vendorCode>
 <description>Цвет Чёрный · Тип устройства клавиатура · Раскладка русская/английская · Материал Алюминий · Подсветка RGB · Тип клавиатуры механическая · Тип переключателей Blue Switch · Кнопок 104</description>
+</offer>
+<offer id="IS3A7352700E" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury/tproduct/937972826934-klaviatura-usb-defender-harpie-gk-401-ru</url>
+<price>12000</price>
+<currencyId>KZT</currencyId>
+<categoryId>723843374454</categoryId>
+<picture>https://static.tildacdn.com/tila3363-6533-4463-a133-376330643566/IS3A7352700E_1.jpg</picture>
+<name>Клавиатура USB, Defender Harpie GK-401 RU, White-Black, (45401)</name>
+<vendor>DEFENDER</vendor>
+<vendorCode>IS3A7352700E</vendorCode>
+<description>Тип устройства клавиатура</description>
 </offer>
 <offer id="IS3AB01FEA2F" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury/tproduct/928313466164-klaviatura-rapoo-v500pro</url>
@@ -19740,6 +20015,17 @@
 <vendor>Glorious</vendor>
 <vendorCode>IS470F294524</vendorCode>
 <description>Тип устройства клавиатура · Цвет Чёрный · Подсветка RGB · Форм-фактор Компактная</description>
+</offer>
+<offer id="IS48A0FC6D54" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury/tproduct/703785463594-klaviatura-bluetooth-redragon-flekact-pr</url>
+<price>47000</price>
+<currencyId>KZT</currencyId>
+<categoryId>723843374454</categoryId>
+<picture>https://static.tildacdn.com/tila3063-6230-4739-a135-383465336362/IS48A0FC6D54_1.jpg</picture>
+<name>Клавиатура Bluetooth, Redragon Flekact Pro, wireless, purple-white, (72616)</name>
+<vendor>REDRAGON</vendor>
+<vendorCode>IS48A0FC6D54</vendorCode>
+<description>Тип устройства клавиатура · Подключение Беспроводное</description>
 </offer>
 <offer id="IS48AD0C26AA" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury/tproduct/956666078244-klaviatura-usb-attack-shark-m36he-one-ha</url>
@@ -20259,6 +20545,17 @@
 <vendorCode>IS63E17B10A7</vendorCode>
 <description>Тип устройства клавиатура · Кнопок 104 · Раскладка русская/английская/казахская · Цвет Серый</description>
 </offer>
+<offer id="IS63EED7C73F" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury/tproduct/829535170284-klaviatura-mish-usb-defender-glion-c-123</url>
+<price>6300</price>
+<currencyId>KZT</currencyId>
+<categoryId>723843374454</categoryId>
+<picture>https://static.tildacdn.com/tila6532-3331-4132-a366-323963383834/IS63EED7C73F_1.jpg</picture>
+<name>Клавиатура + мышь, USB, Defender GLION C-123, black (45123)</name>
+<vendor>DEFENDER</vendor>
+<vendorCode>IS63EED7C73F</vendorCode>
+<description>Тип устройства клавиатура</description>
+</offer>
 <offer id="IS647A865AA3" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury/tproduct/152893196674-klaviatura-ajazz-ak820-max-magnetic-swit</url>
 <price>23000</price>
@@ -20332,6 +20629,17 @@
 <vendorCode>IS66B3F3B4A7</vendorCode>
 <description>Цвет Карбон · Тип устройства клавиатура · Подключение Проводное · Тип клавиатуры механическая · Раскладка русская/английская · Тип переключателей Tactile</description>
 </offer>
+<offer id="IS66F47D0316" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury/tproduct/601550445334-klaviatura-mish-garnitura-usb-defender-t</url>
+<price>16000</price>
+<currencyId>KZT</currencyId>
+<categoryId>723843374454</categoryId>
+<picture>https://static.tildacdn.com/tila6331-3865-4135-b239-313930323863/IS66F47D0316_1.jpg</picture>
+<name>Клавиатура + мышь + garnitura, USB, Defender Target MKP-350, 52350</name>
+<vendor>DEFENDER</vendor>
+<vendorCode>IS66F47D0316</vendorCode>
+<description>Тип устройства клавиатура · Подключение Проводное · Кнопок 104 · Тип клавиатуры мембранная · Раскладка русская/английская · Цвет Чёрный</description>
+</offer>
 <offer id="IS67F5099F8A" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury/tproduct/299175961014-klaviatura-vgn-v98pro-v2-31925-forest</url>
 <price>51000</price>
@@ -20356,6 +20664,28 @@
 <vendorCode>IS68227AE1ED</vendorCode>
 <description>Тип устройства клавиатура · Подсветка RGB · Цвет Розовый · Тип клавиатуры механическая · Тип переключателей Cherry MX Brown · Форм-фактор Компактная · Кнопок 67</description>
 </offer>
+<offer id="IS68470CA9E7" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury/tproduct/362493615834-klaviatura-usb-defender-hawk-gk-418-ru-b</url>
+<price>20000</price>
+<currencyId>KZT</currencyId>
+<categoryId>723843374454</categoryId>
+<picture>https://static.tildacdn.com/tila3466-3438-4730-b536-353635366365/IS68470CA9E7_1.jpg</picture>
+<name>Клавиатура USB, Defender Hawk GK-418 RU, black, (45419)</name>
+<vendor>DEFENDER</vendor>
+<vendorCode>IS68470CA9E7</vendorCode>
+<description>Тип устройства клавиатура</description>
+</offer>
+<offer id="IS68634227D6" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury/tproduct/123845203074-klaviatura-usb-defender-mechanoid-gk-581</url>
+<price>15000</price>
+<currencyId>KZT</currencyId>
+<categoryId>723843374454</categoryId>
+<picture>https://static.tildacdn.com/tila3863-6361-4661-b265-366435626339/IS68634227D6_1.jpg</picture>
+<name>Клавиатура USB, Defender Mechanoid GK-581 RU, black, (45581)</name>
+<vendor>DEFENDER</vendor>
+<vendorCode>IS68634227D6</vendorCode>
+<description>Тип устройства клавиатура</description>
+</offer>
 <offer id="IS68AA218757" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury/tproduct/199183664134-klaviatura-usb-defender-vexx-pro-gk-084</url>
 <price>20000</price>
@@ -20379,6 +20709,17 @@
 <vendor>VGN</vendor>
 <vendorCode>IS6975B2C562</vendorCode>
 <description>Тип устройства клавиатура · Тип клавиатуры механическая · Подсветка RGB · Цвет Голубой · Материал Пластик</description>
+</offer>
+<offer id="IS6976E5C75A" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury/tproduct/710370183614-klaviatura-usb-defender-neros-gk-147-ru</url>
+<price>4800</price>
+<currencyId>KZT</currencyId>
+<categoryId>723843374454</categoryId>
+<picture>https://static.tildacdn.com/tila6561-3632-4664-b832-386137373861/IS6976E5C75A_1.jpg</picture>
+<name>Клавиатура USB, Defender Neros GK-147 RU, (45147)</name>
+<vendor>DEFENDER</vendor>
+<vendorCode>IS6976E5C75A</vendorCode>
+<description>Тип устройства клавиатура</description>
 </offer>
 <offer id="IS6A661AD98F" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury/tproduct/651631893314-igrovaya-klaviatura-lenovo-legion-k500-r</url>
@@ -20600,6 +20941,17 @@
 <vendorCode>IS757598B155</vendorCode>
 <description>Тип устройства клавиатура · Цвет Чёрно-синий · Тип клавиатуры механическая · Подсветка RGB · Раскладка русская/английская · Форм-фактор Компактная</description>
 </offer>
+<offer id="IS75911C522C" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury/tproduct/310564640114-klaviatura-bluetooth-redragon-veigar-wir</url>
+<price>46000</price>
+<currencyId>KZT</currencyId>
+<categoryId>723843374454</categoryId>
+<picture>https://static.tildacdn.com/tila6433-6431-4562-b236-616630623762/IS75911C522C_1.jpg</picture>
+<name>Клавиатура Bluetooth, Redragon Veigar, wireless, (71476)</name>
+<vendor>REDRAGON</vendor>
+<vendorCode>IS75911C522C</vendorCode>
+<description>Тип устройства клавиатура · Подключение Беспроводное</description>
+</offer>
 <offer id="IS75CE173BBF" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury/tproduct/130107800524-klaviatura-canyon-keyboard-kb-w01-ru-wir</url>
 <price>6000</price>
@@ -20769,6 +21121,17 @@
 <vendorCode>IS8096BA1878</vendorCode>
 <description>Тип устройства клавиатура · Подсветка RGB · Цвет Белый · Форм-фактор Компактная</description>
 </offer>
+<offer id="IS80C666B2CE" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury/tproduct/985444176334-klaviatura-usb-defender-dark-knight-gk-0</url>
+<price>7500</price>
+<currencyId>KZT</currencyId>
+<categoryId>723843374454</categoryId>
+<picture>https://static.tildacdn.com/tila6163-3063-4466-a633-653064616238/IS80C666B2CE_1.jpg</picture>
+<name>Клавиатура USB, Defender Dark Knight GK-077 RU, black, (45078)</name>
+<vendor>DEFENDER</vendor>
+<vendorCode>IS80C666B2CE</vendorCode>
+<description>Тип устройства клавиатура · Подключение Проводное · Кнопок 104 · Тип клавиатуры мембранная · Раскладка русская/английская · Цвет Черный, белый</description>
+</offer>
 <offer id="IS817E48AC54" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury/tproduct/178584932634-klaviatura-bluetooth-aula-f108-pro-reape</url>
 <price>38000</price>
@@ -20878,6 +21241,17 @@
 <vendor>HyperX</vendor>
 <vendorCode>IS84F26E0811</vendorCode>
 <description>Тип устройства клавиатура · Подсветка RGB · Цвет Чёрный · Тип клавиатуры механическая · Тип переключателей HX Red · Форм-фактор Полноразмерная · Подключение Проводное · Раскладка русская/английская</description>
+</offer>
+<offer id="IS8507243DC1" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury/tproduct/241234520724-klaviatura-mish-usb-wireless-defender-mi</url>
+<price>7500</price>
+<currencyId>KZT</currencyId>
+<categoryId>723843374454</categoryId>
+<picture>https://static.tildacdn.com/tila3662-6137-4237-b737-306434623436/IS8507243DC1_1.jpg</picture>
+<name>Клавиатура + мышь, USB, wireless, Defender Milan C-992 RU, White, (45994)</name>
+<vendor>DEFENDER</vendor>
+<vendorCode>IS8507243DC1</vendorCode>
+<description>Тип устройства клавиатура · Подключение Беспроводное · Кнопок 104 · Тип клавиатуры мембранная · Раскладка русская/английская · Цвет Белый</description>
 </offer>
 <offer id="IS86064AF0C6" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury/tproduct/317765182294-klaviatura-usb-attack-shark-r98he-ice-sh</url>
@@ -21006,6 +21380,17 @@
 <vendorCode>IS8F1B021300</vendorCode>
 <description>Цвет Чёрный · Тип устройства клавиатура · Тип клавиатуры механическая · Тип переключателей Red Switch</description>
 </offer>
+<offer id="IS90885FC4D8" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury/tproduct/334225686554-klaviatura-usb-defender-mayhem-gk-360dl</url>
+<price>6200</price>
+<currencyId>KZT</currencyId>
+<categoryId>723843374454</categoryId>
+<picture>https://static.tildacdn.com/tila6438-3364-4538-a265-346435393965/IS90885FC4D8_1.jpg</picture>
+<name>Клавиатура USB, Defender Mayhem GK-360DL, black, (45360), RGB</name>
+<vendor>DEFENDER</vendor>
+<vendorCode>IS90885FC4D8</vendorCode>
+<description>Тип устройства клавиатура · Подключение Проводное · Кнопок 104 · Тип клавиатуры мембранная · Раскладка русская/английская · Цвет Чёрный · Подсветка RGB</description>
+</offer>
 <offer id="IS9191680333" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury/tproduct/872623325064-klaviatura-usb-defender-avenger-gk-412-r</url>
 <price>18000</price>
@@ -21056,6 +21441,17 @@
 <vendorCode>IS92E41DB36D</vendorCode>
 <description>Цвет Черный, серый, оранжевый · Тип устройства клавиатура · Подключение Проводное · Тип клавиатуры механическая · Подсветка RGB · Раскладка русская/английская · Кнопок 61</description>
 </offer>
+<offer id="IS93008940E2" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury/tproduct/303163613534-klaviatura-usb-defender-spark-gk-300l-rg</url>
+<price>4700</price>
+<currencyId>KZT</currencyId>
+<categoryId>723843374454</categoryId>
+<picture>https://static.tildacdn.com/tila6436-3034-4338-b764-366631666663/IS93008940E2_1.jpg</picture>
+<name>Клавиатура USB, Defender Spark GK-300L, RGB, black, (45300)</name>
+<vendor>DEFENDER</vendor>
+<vendorCode>IS93008940E2</vendorCode>
+<description>Тип устройства клавиатура · Подсветка RGB</description>
+</offer>
 <offer id="IS939E7D023B" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury/tproduct/337859789924-klaviatura-vgn-v98pro-v2-31918-twilight</url>
 <price>51000</price>
@@ -21102,6 +21498,17 @@
 <vendor>Razer</vendor>
 <vendorCode>IS97DD65B5AE</vendorCode>
 <description>Цвет Чёрный · Тип устройства клавиатура · Раскладка русская/английская · Тип клавиатуры механическая · Тип переключателей Yellow Switch · Кнопок 114 · Подключение Проводное</description>
+</offer>
+<offer id="IS97EFCAC06A" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury/tproduct/486022323574-klaviatura-mish-usb-defender-jakarta-c-8</url>
+<price>8100</price>
+<currencyId>KZT</currencyId>
+<categoryId>723843374454</categoryId>
+<picture>https://static.tildacdn.com/tila3631-3236-4235-b431-343738666666/IS97EFCAC06A_1.jpg</picture>
+<name>Клавиатура + мышь, USB, Defender JAKARTA C-805 RU, wireless, black (45804)</name>
+<vendor>DEFENDER</vendor>
+<vendorCode>IS97EFCAC06A</vendorCode>
+<description>Тип устройства клавиатура · Подключение Беспроводное</description>
 </offer>
 <offer id="IS98C643A09B" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury/tproduct/408431055664-klaviatura-lorgar-gaming-keyboard-kbp707</url>
@@ -21185,6 +21592,17 @@
 <vendorCode>IS9AFD43B512</vendorCode>
 <description>Цвет Чёрный · Тип устройства клавиатура · Подключение Проводное · Кнопок 104 · Тип клавиатуры мембранная · Подсветка есть · Материал Алюминиевый сплав</description>
 </offer>
+<offer id="IS9C02C00531" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury/tproduct/563257748244-klaviatura-usb-defender-element-hb-195-b</url>
+<price>4800</price>
+<currencyId>KZT</currencyId>
+<categoryId>723843374454</categoryId>
+<picture>https://static.tildacdn.com/tila3165-3966-4138-a164-653430376261/IS9C02C00531_1.jpg</picture>
+<name>Клавиатура USB, Defender Element HB-195, black, (45195)</name>
+<vendor>DEFENDER</vendor>
+<vendorCode>IS9C02C00531</vendorCode>
+<description>Тип устройства клавиатура</description>
+</offer>
 <offer id="IS9C9D396926" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury/tproduct/935841381394-klaviatura-usb-redragon-fizz-rt-mechanic</url>
 <price>36000</price>
@@ -21241,6 +21659,17 @@
 <vendor>XG</vendor>
 <vendorCode>IS9E307EDCB6</vendorCode>
 <description>Цвет Чёрный · Тип устройства клавиатура · Подключение Проводное · Кнопок 104 · Тип клавиатуры механическая · Подсветка RGB · Раскладка русская/английская</description>
+</offer>
+<offer id="IS9EADE67FD1" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury/tproduct/876816399104-klaviatura-mish-usb-defender-dacota-c270</url>
+<price>4600</price>
+<currencyId>KZT</currencyId>
+<categoryId>723843374454</categoryId>
+<picture>https://static.tildacdn.com/tila3436-3363-4662-a666-626561363963/IS9EADE67FD1_1.jpg</picture>
+<name>Клавиатура + мышь, USB, Defender Dacota C270 B, black (45270) Dacota B</name>
+<vendor>DEFENDER</vendor>
+<vendorCode>IS9EADE67FD1</vendorCode>
+<description>Тип устройства клавиатура</description>
 </offer>
 <offer id="ISA00AEBC08A" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury/tproduct/654038495484-klaviatura-lenovo-wireless-multi-mode-pr</url>
@@ -21339,6 +21768,17 @@
 <vendorCode>SK800U</vendorCode>
 <description>Клавиатура, Delux, SK800U, Ультратонкая, USB, Кол-во стандартных клавиш 104, 18 мультимедиа-клавиш, Размер: 451*188*18 мм., Длина кабеля 1,5 метра, Анг/Рус/Каз, Чёрный</description>
 </offer>
+<offer id="ISA5DED1771B" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury/tproduct/238453021744-klaviatura-usb-defender-dark-lord-gk-580</url>
+<price>5000</price>
+<currencyId>KZT</currencyId>
+<categoryId>723843374454</categoryId>
+<picture>https://static.tildacdn.com/tila6630-3361-4834-a662-376634646463/ISA5DED1771B_1.jpg</picture>
+<name>Клавиатура USB, Defender Dark Lord GK-580, black, (45580)</name>
+<vendor>DEFENDER</vendor>
+<vendorCode>ISA5DED1771B</vendorCode>
+<description>Тип устройства клавиатура</description>
+</offer>
 <offer id="ISA6384FCDC0" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury/tproduct/357370881984-klaviatura-logitech-mk270-wireless-combo</url>
 <price>20000</price>
@@ -21372,6 +21812,17 @@
 <vendor>ATTACK SHARK</vendor>
 <vendorCode>ISA878EB2580</vendorCode>
 <description>Тип устройства клавиатура · Кнопок 66 · Подсветка RGB · Тип переключателей Magnetic</description>
+</offer>
+<offer id="ISA88D4213B1" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury/tproduct/663090385764-klaviatura-usb-defender-legion-gk-010dl</url>
+<price>9600</price>
+<currencyId>KZT</currencyId>
+<categoryId>723843374454</categoryId>
+<picture>https://static.tildacdn.com/tila3437-3939-4734-b465-643763643532/ISA88D4213B1_1.jpg</picture>
+<name>Клавиатура USB, Defender Legion GK-010DL, black, (45010)</name>
+<vendor>DEFENDER</vendor>
+<vendorCode>ISA88D4213B1</vendorCode>
+<description>Тип устройства клавиатура</description>
 </offer>
 <offer id="ISA934314BA7" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury/tproduct/353549393454-klaviatura-usb-defender-hawk-gk-418-ru-w</url>
@@ -21534,6 +21985,17 @@
 <vendor>ATTACK SHARK</vendor>
 <vendorCode>ISB215BD8060</vendorCode>
 <description>Тип устройства клавиатура · Подключение Проводное · Цвет Чёрный · Форм-фактор Компактная · Тип клавиатуры механическая</description>
+</offer>
+<offer id="ISB2397A1F97" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury/tproduct/767814204784-klaviatura-mish-usb-defender-cerrato-c-9</url>
+<price>13000</price>
+<currencyId>KZT</currencyId>
+<categoryId>723843374454</categoryId>
+<picture>https://static.tildacdn.com/tila3162-3135-4633-b138-346631346462/ISB2397A1F97_1.jpg</picture>
+<name>Клавиатура + мышь, USB, Defender Cerrato C-978 RU, White, (45978)</name>
+<vendor>DEFENDER</vendor>
+<vendorCode>ISB2397A1F97</vendorCode>
+<description>Тип устройства клавиатура · Подключение Беспроводное · Кнопок 104 · Тип клавиатуры мембранная · Раскладка русская/английская · Цвет Белый</description>
 </offer>
 <offer id="ISB39F538259" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury/tproduct/456762577104-klaviatura-usb-attack-shark-r85-he-moon</url>
@@ -21832,6 +22294,17 @@
 <vendorCode>ISC4EC87D7C8</vendorCode>
 <description>Тип устройства клавиатура · Цвет Коричневый · Тип клавиатуры мембранная</description>
 </offer>
+<offer id="ISC591960E16" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury/tproduct/382305856364-klaviatura-mish-usbredragon-s136-bt24g-b</url>
+<price>39000</price>
+<currencyId>KZT</currencyId>
+<categoryId>723843374454</categoryId>
+<picture>https://static.tildacdn.com/tila3163-3162-4138-a362-373833313837/ISC591960E16_1.jpg</picture>
+<name>Клавиатура + мышь, USB,Redragon S136, BT/2.4G, Black (72158)</name>
+<vendor>REDRAGON</vendor>
+<vendorCode>ISC591960E16</vendorCode>
+<description>Тип устройства клавиатура · Подключение проводное и беспроводное · Кнопок 78 · Раскладка русская/английская · Цвет Чёрный</description>
+</offer>
 <offer id="ISC5FDEBA23E" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury/tproduct/705004502034-klaviatura-i-mish-genius-smart-km-8200-s</url>
 <price>11000</price>
@@ -21916,6 +22389,17 @@
 <vendor>Varmilo</vendor>
 <vendorCode>ISCBEE388393</vendorCode>
 <description>Тип устройства клавиатура · Материал Пластик · Цвет Чёрный · Тип клавиатуры механическая · Кнопок 108 · Подсветка RGB · Форм-фактор Полноразмерная · Тип переключателей Cherry MX Red</description>
+</offer>
+<offer id="ISCCFB52BF5F" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury/tproduct/985519671454-klaviatura-mish-usb-defender-line-c-511</url>
+<price>4300</price>
+<currencyId>KZT</currencyId>
+<categoryId>723843374454</categoryId>
+<picture>https://static.tildacdn.com/tila3933-3134-4364-b261-643663363662/ISCCFB52BF5F_1.jpg</picture>
+<name>Клавиатура + мышь, USB, Defender Line C-511, black (45511)</name>
+<vendor>DEFENDER</vendor>
+<vendorCode>ISCCFB52BF5F</vendorCode>
+<description>Тип устройства клавиатура</description>
 </offer>
 <offer id="ISCFD8BD2534" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury/tproduct/399995719194-igrovaya-klaviatura-asus-ra04-tuf-gaming</url>
@@ -22024,6 +22508,17 @@
 <vendor>ATTACK SHARK</vendor>
 <vendorCode>ISD2DC3F2120</vendorCode>
 <description>Тип устройства клавиатура · Кнопок 82 · Тип переключателей Magnetic · Подсветка RGB</description>
+</offer>
+<offer id="ISD314EFF3F5" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury/tproduct/665211812774-klaviatura-usb-defender-werewolf-gk-120d</url>
+<price>9600</price>
+<currencyId>KZT</currencyId>
+<categoryId>723843374454</categoryId>
+<picture>https://static.tildacdn.com/tila3363-6431-4364-b238-646136333038/ISD314EFF3F5_1.jpg</picture>
+<name>Клавиатура USB, Defender Werewolf GK-120DL, black, (45120)</name>
+<vendor>DEFENDER</vendor>
+<vendorCode>ISD314EFF3F5</vendorCode>
+<description>Тип устройства клавиатура</description>
 </offer>
 <offer id="ISD36258E74A" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury/tproduct/798150292324-klaviatura-ajazz-ak820-pro-gift-switch-b</url>
@@ -22255,6 +22750,17 @@
 <vendorCode>ISE1B0EF6522</vendorCode>
 <description>Цвет Чёрный · Тип устройства клавиатура · Материал Пластик · Подсветка RGB · Форм-фактор Полноразмерная · Тип клавиатуры механическая · Тип переключателей Cherry MX Brown · Кнопок 108</description>
 </offer>
+<offer id="ISE28D23B022" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury/tproduct/213415600224-klaviatura-usb-defender-raid-gk-778dl-ru</url>
+<price>8100</price>
+<currencyId>KZT</currencyId>
+<categoryId>723843374454</categoryId>
+<picture>https://static.tildacdn.com/tila3038-6531-4233-a163-653065356365/ISE28D23B022_1.jpg</picture>
+<name>Клавиатура USB, Defender RAID GK-778DL RU, black, (45778)</name>
+<vendor>DEFENDER</vendor>
+<vendorCode>ISE28D23B022</vendorCode>
+<description>Тип устройства клавиатура · Подключение Проводное · Кнопок 104 · Раскладка русская/английская · Цвет Чёрный</description>
+</offer>
 <offer id="ISE2D4F36F5D" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury/tproduct/708318578514-klaviatura-razer-huntsman-mini-purple-sw</url>
 <price>77000</price>
@@ -22339,6 +22845,28 @@
 <vendor>HyperX</vendor>
 <vendorCode>ISE84E68DC34</vendorCode>
 <description>Тип устройства клавиатура · Материал Металл, пластик · Цвет Чёрный · Тип клавиатуры механическая · Подсветка RGB · Тип переключателей Red Switch</description>
+</offer>
+<offer id="ISE86C51C28F" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury/tproduct/489818035244-klaviatura-mish-defender-triumph-c-99110</url>
+<price>4900</price>
+<currencyId>KZT</currencyId>
+<categoryId>723843374454</categoryId>
+<picture>https://static.tildacdn.com/tila3333-6130-4634-b866-623033393339/ISE86C51C28F_1.jpg</picture>
+<name>Клавиатура + мышь Defender Triumph C-991,104 клавиш, USB, black (45991)</name>
+<vendor>DEFENDER</vendor>
+<vendorCode>ISE86C51C28F</vendorCode>
+<description>Тип устройства клавиатура · Кнопок 104</description>
+</offer>
+<offer id="ISE96C0906E7" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury/tproduct/771054434354-klaviatura-mish-usb-wireless-defender-sk</url>
+<price>13000</price>
+<currencyId>KZT</currencyId>
+<categoryId>723843374454</categoryId>
+<picture>https://static.tildacdn.com/tila3164-6231-4338-b562-306234323838/ISE96C0906E7_1.jpg</picture>
+<name>Клавиатура + мышь, USB, wireless, Defender Skyline 895 Nano, white (45895)</name>
+<vendor>DEFENDER</vendor>
+<vendorCode>ISE96C0906E7</vendorCode>
+<description>Тип устройства клавиатура · Подключение Беспроводное</description>
 </offer>
 <offer id="ISEA7722D39A" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury/tproduct/775811515594-klaviatura-razer-blackwidow-v3-tenkeyles</url>
@@ -22534,6 +23062,17 @@
 <vendorCode>ISF2CE575BF6</vendorCode>
 <description>Форм-фактор TKL · В комплекте Клавиатура, руководство пользователя · Тип устройства клавиатура · Цвет Чёрный · Тип клавиатуры механическая · Раскладка английская · Тип переключателей Red Switch · Материал Металл, пластик · Подсветка RGB</description>
 </offer>
+<offer id="ISF3A5829804" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury/tproduct/338843494544-klaviatura-mish-wireless-defender-lima-c</url>
+<price>8700</price>
+<currencyId>KZT</currencyId>
+<categoryId>723843374454</categoryId>
+<picture>https://static.tildacdn.com/tila3737-3962-4536-a130-313231353261/ISF3A5829804_1.jpg</picture>
+<name>Клавиатура + мышь Wireless, Defender Lima C-993,104 клавиш, USB, black</name>
+<vendor>DEFENDER</vendor>
+<vendorCode>ISF3A5829804</vendorCode>
+<description>Тип устройства клавиатура · Подключение Беспроводное · Кнопок 104</description>
+</offer>
 <offer id="ISF5E1D5A6DB" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury/tproduct/937338156124-klaviatura-usb-attack-shark-x98-linear-s</url>
 <price>32000</price>
@@ -22544,6 +23083,17 @@
 <vendor>ATTACK SHARK</vendor>
 <vendorCode>ISF5E1D5A6DB</vendorCode>
 <description>Цвет Черный, желтый, синий · Тип устройства клавиатура · Подключение проводное и беспроводное · Тип клавиатуры механическая · Подсветка RGB · Раскладка русская/английская/казахская · Кнопок 102</description>
+</offer>
+<offer id="ISF5FD3AE6E4" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury/tproduct/232065395494-klaviatura-bluetooth-redragon-anubis-wir</url>
+<price>32000</price>
+<currencyId>KZT</currencyId>
+<categoryId>723843374454</categoryId>
+<picture>https://static.tildacdn.com/tila3633-6439-4139-b333-386333663065/ISF5FD3AE6E4_1.jpg</picture>
+<name>Клавиатура Bluetooth, Redragon Anubis, wireless, Black, (70505)</name>
+<vendor>REDRAGON</vendor>
+<vendorCode>ISF5FD3AE6E4</vendorCode>
+<description>Тип устройства клавиатура · Подключение Беспроводное</description>
 </offer>
 <offer id="ISF7F9CD1EEE" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury/tproduct/289917615974-klaviatura-i-mish-rapoo-x260s-x260s-blac</url>
@@ -27043,6 +27593,17 @@
 <vendorCode>IS33236CE55B</vendorCode>
 <description>Технология печати струйный · Цветность цветной · Тип устройства МФУ</description>
 </offer>
+<offer id="IS3460A3A6A0" available="true">
+<url>https://b2b.isoft-shop.kz/mfu-lazernye-cvetnye/tproduct/439608142524-mfu-hp-laserjet-m141w-7md74a</url>
+<price>98000</price>
+<currencyId>KZT</currencyId>
+<categoryId>910558779244</categoryId>
+<picture>https://static.tildacdn.com/tila3236-6561-4665-b736-396261626334/IS3460A3A6A0_1.png</picture>
+<name>МФУ HP LASERJET M141W 7MD74A</name>
+<vendor>HP</vendor>
+<vendorCode>IS3460A3A6A0</vendorCode>
+<description>МФУ HP LASERJET M141W 7MD74A (HP)</description>
+</offer>
 <offer id="IS36C8C68D70" available="true">
 <url>https://b2b.isoft-shop.kz/mfu/tproduct/970609566444-bazovii-modul-mfu-xerox-altalink-b8245b8</url>
 <price>5286000</price>
@@ -27574,6 +28135,17 @@
 <vendor>HP</vendor>
 <vendorCode>ISD3744096E3</vendorCode>
 <description>Тип устройства МФУ · Формат A4 · Разрешение печати 1200×1200 dpi · Интерфейсы USB 2.0, Ethernet, Wi-Fi · Класс скорости печати 13–25 стр/мин · Технология печати струйный · Цветность цветной</description>
+</offer>
+<offer id="ISD37547F73C" available="true">
+<url>https://b2b.isoft-shop.kz/mfu-lazernye-cvetnye/tproduct/662247549554-mfu-hp-2z627a-laserjet-pro-4103dw-printe</url>
+<price>205000</price>
+<currencyId>KZT</currencyId>
+<categoryId>910558779244</categoryId>
+<picture>https://static.tildacdn.com/tila3066-3338-4534-a361-336166663936/ISD37547F73C_1.jpg</picture>
+<name>МФУ HP 2Z627A LaserJet Pro 4103dw Printer (A4), Printer/Scanner/Copier/ADF, 1200 dpi, 40 ppm, 512 Mb, 1200 MHz, tray 100+250 pages</name>
+<vendor>HP</vendor>
+<vendorCode>ISD37547F73C</vendorCode>
+<description>МФУ HP 2Z627A LaserJet Pro 4103dw Printer (A4), Printer/Scanner/Copier/ADF, 1200 dpi, 40 ppm, 512 Mb, 1200 MHz, tray 100+250 pages (HP)</description>
 </offer>
 <offer id="ISD617A1DBE1" available="true">
 <url>https://b2b.isoft-shop.kz/mfu/tproduct/130210334324-mfu-xerox-b225dni</url>
@@ -34929,6 +35501,17 @@
 <vendorCode>IS27B5359096</vendorCode>
 <description>Диагональ 42,51″ · Разрешение 3840×2160 · Соотношение сторон 16:9 · Тип матрицы IPS · Угол обзора 178° · Яркость 350 кд/м² · Время отклика 5 мс · VESA 100×100 · Размер экрана 40–50″ · Частота обновления 60 Гц</description>
 </offer>
+<offer id="IS2A5163B64D" available="true">
+<url>https://b2b.isoft-shop.kz/monitory/tproduct/195487678624-monitor-asus-rog-strix-oled-xg27aqwmg-26</url>
+<price>402000</price>
+<currencyId>KZT</currencyId>
+<categoryId>929335537584</categoryId>
+<picture>https://static.tildacdn.com/tila6436-6132-4236-b430-656537393132/IS2A5163B64D_1.jpg</picture>
+<name>Монитор ASUS ROG Strix OLED XG27AQWMG 26.5-inch QHD(2560x1440x280Hz),1.5K:1,0.03ms,99.5% DCI-P3,DP,HDMIx2,HDR10</name>
+<vendor>ASUS</vendor>
+<vendorCode>IS2A5163B64D</vendorCode>
+<description>Время отклика 0,03 мс · Диагональ 26,5″ · Разрешение 2560×1440 · Тип матрицы OLED · Частота обновления 280 Гц · Размер экрана 24,5–26,5″</description>
+</offer>
 <offer id="IS2B1788E935" available="true">
 <url>https://b2b.isoft-shop.kz/monitory/tproduct/197318905304-monitor-asus-vg34wqml5a-va341500r219-qhd</url>
 <price>247000</price>
@@ -35155,6 +35738,17 @@
 <vendorCode>IS347E228422</vendorCode>
 <description>Диагональ 24,1″ · Разрешение 1920×1080 · Яркость 350 кд/м² · Время отклика 0,1 мс · Размер экрана 23–24″ · Частота обновления 610 Гц</description>
 </offer>
+<offer id="IS35A89EE864" available="true">
+<url>https://b2b.isoft-shop.kz/monitory/tproduct/960115753854-monitor-asus-vg27aq5f-ips27169-qhd-2560x</url>
+<price>147000</price>
+<currencyId>KZT</currencyId>
+<categoryId>929335537584</categoryId>
+<picture>https://static.tildacdn.com/tila3138-3436-4434-a535-363230346265/IS35A89EE864_1.jpg</picture>
+<name>Монитор ASUS VG27AQ5F IPS,27,16:9 QHD (2560x1440x320Hz),300cd/m2,1300:1,178/178,0.3ms,2HDMI,DP,Sp2W</name>
+<vendor>ASUS</vendor>
+<vendorCode>IS35A89EE864</vendorCode>
+<description>Время отклика 0,3 мс · Диагональ 27″ · Контрастность 1300:1 · Разрешение 2560×1440 · Соотношение сторон 16:9 · Тип матрицы IPS · Угол обзора 178° · Частота обновления 320 Гц · Яркость 300 кд/м² · Размер экрана 27–29″</description>
+</offer>
 <offer id="IS3613E98E89" available="true">
 <url>https://b2b.isoft-shop.kz/monitory/tproduct/919573609684-monitor-27-inch-asus-va279qg</url>
 <price>75000</price>
@@ -35169,6 +35763,17 @@
 <vendor>ASUS</vendor>
 <vendorCode>VA279QG</vendorCode>
 <description>Диагональ 27" · Разрешение 1920×1080 · Тип матрицы IPS · Партномер: VA279QG</description>
+</offer>
+<offer id="IS365BCAF3BE" available="true">
+<url>https://b2b.isoft-shop.kz/monitory/tproduct/583442339424-monitor-asus-proart-pa279cdv-27-inchqd-o</url>
+<price>547000</price>
+<currencyId>KZT</currencyId>
+<categoryId>929335537584</categoryId>
+<picture>https://static.tildacdn.com/tila3339-3636-4434-b530-306365373266/IS365BCAF3BE_1.jpg</picture>
+<name>Монитор ASUS ProArt PA279CDV 27-inch,QD-OLED,UHD(3840x2160x60Hz),250cd,5ms,99% DCI-P3,dE 2,USB-C PD 96W,HDR10,2xDP,2xHDMI</name>
+<vendor>ASUS</vendor>
+<vendorCode>IS365BCAF3BE</vendorCode>
+<description>Время отклика 5 мс · Диагональ 27″ · Разрешение 3840×2160 · Тип матрицы QD-OLED · Частота обновления 60 Гц · Яркость 250 кд/м² · Размер экрана 27–29″</description>
 </offer>
 <offer id="IS3844992E64" available="true">
 <url>https://b2b.isoft-shop.kz/monitory/tproduct/428465846054-monitor-lg-27gs60f-baruz-27-inchipsfhd18</url>
@@ -38251,6 +38856,17 @@
 <vendorCode>ISDE1844AFD2</vendorCode>
 <description>Разрешение 1920×1080 · Частота обновления 144 Гц · Диагональ 27″ · Тип матрицы IPS · Время отклика 1 мс · Яркость 300 кд/м² · Соотношение сторон 16:9 · VESA 100×100 · Размер экрана 27–29″</description>
 </offer>
+<offer id="ISDEB779185C" available="true">
+<url>https://b2b.isoft-shop.kz/monitory/tproduct/233527258984-monitor-asus-vg27aqml5f-ips27169-qhd-256</url>
+<price>215000</price>
+<currencyId>KZT</currencyId>
+<categoryId>929335537584</categoryId>
+<picture>https://static.tildacdn.com/tila3131-6631-4966-b534-366637623366/ISDEB779185C_1.jpg</picture>
+<name>Монитор ASUS VG27AQML5F IPS,27,16:9 QHD (2560x1440x320Hz),350cd/m2,1300:1,178/178,0.3ms,2HDMI,DP,Sp2W</name>
+<vendor>ASUS</vendor>
+<vendorCode>ISDEB779185C</vendorCode>
+<description>Время отклика 0,3 мс · Диагональ 27″ · Контрастность 1300:1 · Разрешение 2560×1440 · Соотношение сторон 16:9 · Тип матрицы IPS · Угол обзора 178° · Частота обновления 320 Гц · Яркость 350 кд/м² · Размер экрана 27–29″</description>
+</offer>
 <offer id="ISDF26FBCCB8" available="true">
 <url>https://b2b.isoft-shop.kz/monitory/tproduct/617587326814-monitor-241-inch-zowie-xl2586x-9hln8lbqb</url>
 <price>865000</price>
@@ -39968,6 +40584,17 @@
 <vendorCode>IS091D563F46</vendorCode>
 <description>Тип устройства мышь · Подключение Проводное · Тип сенсора Оптический · Цвет Чёрный · Разрешение сенсора 7200 dpi · Кнопок 6 · Гарантия 1 год · Длина кабеля 1,8 м · Назначение Игровая · Материал Пластик</description>
 </offer>
+<offer id="IS094410F53F" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/587842207034-mish-redragon-st4r-pro-optical-100-26000</url>
+<price>27000</price>
+<currencyId>KZT</currencyId>
+<categoryId>816235379434</categoryId>
+<picture>https://static.tildacdn.com/tila6339-3939-4365-a161-313833643230/IS094410F53F_1.jpg</picture>
+<name>Мышь Redragon ST4r Pro, Optical 100-26000 dpi, 2,4/BT/USB, Black,(72323)</name>
+<vendor>REDRAGON</vendor>
+<vendorCode>IS094410F53F</vendorCode>
+<description>Тип устройства мышь · Разрешение сенсора 26000 dpi · Тип сенсора Оптический · Цвет Чёрный</description>
+</offer>
 <offer id="IS098C65410F" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/417595196434-opticheskaya-besprovodnaya-mish-hp-2hu83</url>
 <price>7600</price>
@@ -39992,6 +40619,17 @@
 <vendorCode>IS0A0690DA1A</vendorCode>
 <description>Тип устройства мышь · Подключение Беспроводное · Тип сенсора Оптический · Цвет Чёрный · Разрешение сенсора 18000 dpi · Кнопок 6 · Гарантия 2 года · Назначение Игровая</description>
 </offer>
+<offer id="IS0A3B5373A9" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/266528065954-mish-redragon-st4r-pro-optical-100-26000</url>
+<price>23000</price>
+<currencyId>KZT</currencyId>
+<categoryId>816235379434</categoryId>
+<picture>https://static.tildacdn.com/tila3635-6134-4464-b266-343962303436/IS0A3B5373A9_1.jpg</picture>
+<name>Мышь Redragon ST4r Pro, Optical 100-26000 dpi, 2,4/BT/USB, Blue,(72267)</name>
+<vendor>REDRAGON</vendor>
+<vendorCode>IS0A3B5373A9</vendorCode>
+<description>Тип устройства мышь · Разрешение сенсора 26000 dpi · Тип сенсора Оптический · Цвет Синий</description>
+</offer>
 <offer id="IS0A4975B80A" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/974807199424-mish-manipulator-asussmarto-mouse-md200</url>
 <price>24000</price>
@@ -40006,6 +40644,17 @@
 <vendor>ASUS</vendor>
 <vendorCode>IS0A4975B80A</vendorCode>
 <description>Тип устройства мышь · Подключение Беспроводное · Цвет Чёрный · Гарантия 1 год</description>
+</offer>
+<offer id="IS0A5C18E6DC" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/485848324464-mish-redragon-griffin-wireless-optical-8</url>
+<price>19000</price>
+<currencyId>KZT</currencyId>
+<categoryId>816235379434</categoryId>
+<picture>https://static.tildacdn.com/tila3838-6265-4237-b266-313436383839/IS0A5C18E6DC_1.jpg</picture>
+<name>Мышь Redragon Griffin, wireless, Optical 8000 dpi, USB, (78069)</name>
+<vendor>REDRAGON</vendor>
+<vendorCode>IS0A5C18E6DC</vendorCode>
+<description>Тип устройства мышь · Подключение Беспроводное · Цвет Чёрный · Разрешение сенсора 8000 dpi · Тип сенсора Оптический · Назначение Игровая</description>
 </offer>
 <offer id="IS0ABCE226CF" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/262258400614-kompyuternaya-mish-delux-dlm-516ogb</url>
@@ -40192,6 +40841,17 @@
 <vendorCode>IS0EA81253B9</vendorCode>
 <description>Тип устройства мышь · Подключение Проводное · Тип сенсора Оптический · Цвет Чёрный · Разрешение сенсора 2000 dpi · Кнопок 6 · Гарантия 1 год · Длина кабеля 1,8 м · Назначение Игровая · Материал Пластик</description>
 </offer>
+<offer id="IS0F8083E9F0" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/203325638114-mish-defender-katana-gm-511-wireless-opt</url>
+<price>7400</price>
+<currencyId>KZT</currencyId>
+<categoryId>816235379434</categoryId>
+<picture>https://static.tildacdn.com/tila6439-3438-4865-b933-386266366438/IS0F8083E9F0_1.jpg</picture>
+<name>Мышь Defender Katana GM-511, Wireless, Optical 3200 dpi, 5 кнопок USB, black, (52511)</name>
+<vendor>DEFENDER</vendor>
+<vendorCode>IS0F8083E9F0</vendorCode>
+<description>Тип устройства мышь · Разрешение сенсора 3200 dpi · Тип сенсора Оптический · Цвет Чёрный · Подключение Беспроводное · Кнопок 5</description>
+</offer>
 <offer id="IS0FA10ABD2B" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/808686984174-mish-hp-z3700-blue-wireless-mouse-v0l81a</url>
 <price>7900</price>
@@ -40240,6 +40900,17 @@
 <vendor>DEFENDER</vendor>
 <vendorCode>IS0FF680AE0F</vendorCode>
 <description>Тип устройства мышь · Подключение Проводное · Цвет Чёрный</description>
+</offer>
+<offer id="IS1013C3AF82" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/734809846874-mish-defender-immortal-gm-421-usb-black</url>
+<price>13000</price>
+<currencyId>KZT</currencyId>
+<categoryId>816235379434</categoryId>
+<picture>https://static.tildacdn.com/tila6231-3363-4461-b564-366561616331/IS1013C3AF82_1.jpg</picture>
+<name>Мышь Defender Immortal GM-421, USB, black (52421)</name>
+<vendor>DEFENDER</vendor>
+<vendorCode>IS1013C3AF82</vendorCode>
+<description>Тип устройства мышь · Цвет Чёрный</description>
 </offer>
 <offer id="IS10180E2438" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/353845236364-mish-besprovodnaya-logitech-lift-graphit</url>
@@ -40934,6 +41605,17 @@
 <vendorCode>IS2C325D0621</vendorCode>
 <description>Тип устройства мышь · Подключение Проводное · Тип сенсора Оптический · Разрешение сенсора 35000 dpi · Гарантия 2 года · Назначение Игровая</description>
 </offer>
+<offer id="IS2C5E47CBB6" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/251989350594-mish-redragon-aatrox-optical-12400-dpi-u</url>
+<price>20000</price>
+<currencyId>KZT</currencyId>
+<categoryId>816235379434</categoryId>
+<picture>https://static.tildacdn.com/tila6331-6337-4565-a335-616534366136/IS2C5E47CBB6_1.jpg</picture>
+<name>Мышь Redragon Aatrox, Optical 12400 dpi, USB,black (71276)</name>
+<vendor>REDRAGON</vendor>
+<vendorCode>IS2C5E47CBB6</vendorCode>
+<description>Тип устройства мышь · Разрешение сенсора 12400 dpi · Тип сенсора Оптический · Цвет Чёрный</description>
+</offer>
 <offer id="IS2C9EC3237E" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/640007122914-mish-besprovodnaya-logitech-m330-silent</url>
 <price>17000</price>
@@ -40961,6 +41643,17 @@
 <vendor>Glorious</vendor>
 <vendorCode>IS2DD0A641E6</vendorCode>
 <description>Тип устройства мышь · Подключение Беспроводное · Тип сенсора Оптический · Цвет Чёрный · Разрешение сенсора 19000 dpi · Кнопок 6 · Гарантия 2 года · Назначение Игровая · Длина кабеля 2 м · Подсветка RGB</description>
+</offer>
+<offer id="IS2E22071477" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/833086214594-mish-defender-whisper-gm-209-usbblack-52</url>
+<price>9700</price>
+<currencyId>KZT</currencyId>
+<categoryId>816235379434</categoryId>
+<picture>https://static.tildacdn.com/tila3431-3335-4137-b631-366230396563/IS2E22071477_1.jpg</picture>
+<name>Мышь Defender Whisper GM-209, USB,Black (52209)</name>
+<vendor>DEFENDER</vendor>
+<vendorCode>IS2E22071477</vendorCode>
+<description>Тип устройства мышь · Цвет Чёрный</description>
 </offer>
 <offer id="IS2E57272857" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/121192606714-mish-defender-arcade-pro-gm-381-usb-whit</url>
@@ -41288,6 +41981,17 @@
 <vendorCode>KM-170</vendorCode>
 <description>Комплект Клавиатура + Мышь, Genius, KM-170, USB, Длина кабеля 150см, Рус/Англ/Каз, Чёрный</description>
 </offer>
+<offer id="IS372C2FF122" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/105239183144-mish-defender-optimum-mb-160b-usb-optica</url>
+<price>1600</price>
+<currencyId>KZT</currencyId>
+<categoryId>816235379434</categoryId>
+<picture>https://static.tildacdn.com/tila3538-6236-4130-b662-646539313532/IS372C2FF122_1.jpg</picture>
+<name>Мышь Defender Optimum MB-160B, USB, Optical 800 dpi, (52160), black</name>
+<vendor>DEFENDER</vendor>
+<vendorCode>IS372C2FF122</vendorCode>
+<description>Тип устройства мышь · Разрешение сенсора 800 dpi · Тип сенсора Оптический · Цвет Чёрный</description>
+</offer>
 <offer id="IS37453F0292" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/655677336244-mish-canyon-mouse-braver-gm-728-led-crys</url>
 <price>11000</price>
@@ -41325,6 +42029,17 @@
 <vendor>Rapoo</vendor>
 <vendorCode>IS37FD83B9B1</vendorCode>
 <description>Тип устройства мышь · Подключение Беспроводное · Тип сенсора Оптический · Цвет Синий · Разрешение сенсора 2400 dpi · Кнопок 7 · Гарантия 1 год · Подсветка Нет · Материал Пластик</description>
+</offer>
+<offer id="IS3810D278C3" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/141301577194-mish-redragon-k1ng-4k-pro-optical-100-26</url>
+<price>36000</price>
+<currencyId>KZT</currencyId>
+<categoryId>816235379434</categoryId>
+<picture>https://static.tildacdn.com/tila6634-6633-4134-b562-616461623037/IS3810D278C3_1.jpg</picture>
+<name>Мышь Redragon K1ng 4K Pro, Optical 100-26000 dpi, 2,4/BT/USB, White,(72212)</name>
+<vendor>REDRAGON</vendor>
+<vendorCode>IS3810D278C3</vendorCode>
+<description>Тип устройства мышь · Разрешение сенсора 26000 dpi · Тип сенсора Оптический · Цвет Белый</description>
 </offer>
 <offer id="IS3847EB43AA" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/894363422744-mish-mchose-a7-v2-ultra-plus-mc-a7v2-10</url>
@@ -42243,6 +42958,17 @@
 <vendorCode>IS573550B46B</vendorCode>
 <description>Тип устройства мышь · Тип сенсора Оптический · Цвет Чёрный · Назначение Игровая</description>
 </offer>
+<offer id="IS57861ACF53" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/770837867514-mish-defender-warlock-gm-709l-wireless-o</url>
+<price>11000</price>
+<currencyId>KZT</currencyId>
+<categoryId>816235379434</categoryId>
+<picture>https://static.tildacdn.com/tila3032-3638-4236-b938-656136363466/IS57861ACF53_1.jpg</picture>
+<name>Мышь Defender Warlock GM-709L, Wireless, Optical 800-2400 dpi, 5 кнопок USB, (52709)</name>
+<vendor>DEFENDER</vendor>
+<vendorCode>IS57861ACF53</vendorCode>
+<description>Тип устройства мышь · Разрешение сенсора 2400 dpi · Тип сенсора Оптический · Подключение Беспроводное · Кнопок 5</description>
+</offer>
 <offer id="IS57A3B34750" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/439572233994-kompyuternaya-mish-ajazz-aj179-apex-whit</url>
 <price>35000</price>
@@ -42813,6 +43539,17 @@
 <vendorCode>IS6E28BE0754</vendorCode>
 <description>Гарантия 2 года · Тип устройства мышь · Подключение Беспроводное · Тип сенсора Оптический · Кнопок 6 · Подсветка RGB · Цвет Чёрный · Разрешение сенсора 32000 dpi · Назначение Игровая</description>
 </offer>
+<offer id="IS703E13CCC6" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/180042822524-mish-defender-uran-gm-503-led-wireless-o</url>
+<price>6000</price>
+<currencyId>KZT</currencyId>
+<categoryId>816235379434</categoryId>
+<picture>https://static.tildacdn.com/tila6665-3832-4631-a331-313434643366/IS703E13CCC6_1.jpg</picture>
+<name>Мышь Defender Uran GM-503 LED, Wireless, Optical 3200 dpi, 8 кнопок USB, black, (52503)</name>
+<vendor>DEFENDER</vendor>
+<vendorCode>IS703E13CCC6</vendorCode>
+<description>Тип устройства мышь · Разрешение сенсора 3200 dpi · Тип сенсора Оптический · Цвет Чёрный · Подключение Беспроводное · Кнопок 8</description>
+</offer>
 <offer id="IS70DC295A5C" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/164667314904-mish-asus-p714-rog-keris-ii-wl-acewhtmsa</url>
 <price>91000</price>
@@ -42868,6 +43605,17 @@
 <vendor>Logitech</vendor>
 <vendorCode>IS712FDC813D</vendorCode>
 <description>Назначение Игровая · Тип устройства мышь</description>
+</offer>
+<offer id="IS721447A848" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/354489206074-mish-defender-kronos-gm-695-usb-400mah-1</url>
+<price>5900</price>
+<currencyId>KZT</currencyId>
+<categoryId>816235379434</categoryId>
+<picture>https://static.tildacdn.com/tila3962-6164-4765-b139-623235376334/IS721447A848_1.jpg</picture>
+<name>Мышь Defender Kronos GM-695, USB, 400mAh, 1600dpi, Black, (52695)</name>
+<vendor>DEFENDER</vendor>
+<vendorCode>IS721447A848</vendorCode>
+<description>Тип устройства мышь · Разрешение сенсора 1600 dpi · Цвет Чёрный</description>
 </offer>
 <offer id="IS7241B5538B" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/948754436864-kompyuternaya-mish-glorious-model-o-2-ma</url>
@@ -43043,6 +43791,17 @@
 <vendorCode>IS77548F7C79</vendorCode>
 <description>Гарантия 1 год · Тип устройства мышь · Цвет Чёрный · Разрешение сенсора 32000 dpi · Назначение Игровая</description>
 </offer>
+<offer id="IS7881267F41" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/820949704144-mish-defender-oneshot-gm-067-wireless-op</url>
+<price>7400</price>
+<currencyId>KZT</currencyId>
+<categoryId>816235379434</categoryId>
+<picture>https://static.tildacdn.com/tila3737-6630-4637-b233-393961633332/IS7881267F41_1.jpg</picture>
+<name>Мышь Defender Oneshot GM-067, Wireless, Optical 3200dpi, USB, (52067)</name>
+<vendor>DEFENDER</vendor>
+<vendorCode>IS7881267F41</vendorCode>
+<description>Тип устройства мышь · Разрешение сенсора 3200 dpi · Тип сенсора Оптический · Подключение Беспроводное</description>
+</offer>
 <offer id="IS78AE69F07D" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/895450601534-mish-canyon-7keys-gaming-24g-wireless-bl</url>
 <price>6900</price>
@@ -43109,6 +43868,17 @@
 <vendorCode>IS7B150BF355</vendorCode>
 <description>Подключение Беспроводное · Тип устройства мышь</description>
 </offer>
+<offer id="IS7B5ED22448" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/262409971234-mish-defender-stone-gm-551-usb-black-525</url>
+<price>9800</price>
+<currencyId>KZT</currencyId>
+<categoryId>816235379434</categoryId>
+<picture>https://static.tildacdn.com/tila6362-3433-4638-a561-636265323665/IS7B5ED22448_1.jpg</picture>
+<name>Мышь Defender Stone GM-551, USB, black (52551)</name>
+<vendor>DEFENDER</vendor>
+<vendorCode>IS7B5ED22448</vendorCode>
+<description>Тип устройства мышь · Цвет Чёрный</description>
+</offer>
 <offer id="IS7C0448F0D7" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/104036774634-mish-meetion-air-gw39-wireless-paw3395-2</url>
 <price>28000</price>
@@ -43119,6 +43889,17 @@
 <vendor>MEETION</vendor>
 <vendorCode>IS7C0448F0D7</vendorCode>
 <description>Тип устройства мышь · Разрешение сенсора 26000 dpi · Цвет Чёрный · Подключение Беспроводное · Кнопок 5 · Тип сенсора Оптический · Назначение Игровая</description>
+</offer>
+<offer id="IS7CE283FEE0" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/179224713474-mish-defender-stone-gm-551-usb-white-525</url>
+<price>9800</price>
+<currencyId>KZT</currencyId>
+<categoryId>816235379434</categoryId>
+<picture>https://static.tildacdn.com/tila6237-6565-4739-b666-323538393161/IS7CE283FEE0_1.jpg</picture>
+<name>Мышь Defender Stone GM-551, USB, white (52554)</name>
+<vendor>DEFENDER</vendor>
+<vendorCode>IS7CE283FEE0</vendorCode>
+<description>Тип устройства мышь · Цвет Белый</description>
 </offer>
 <offer id="IS7CFA3A0A17" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/531841220834-kompyuternaya-mish-hyperx-pulsefire-hast</url>
@@ -43828,6 +44609,17 @@
 <vendorCode>IS94A6ACB267</vendorCode>
 <description>Тип устройства мышь · Разрешение сенсора 3200 dpi · Цвет Коричневый · Подключение Беспроводное · Кнопок 9 · Тип сенсора Оптический · Гарантия 1 год · Материал Пластик · Подсветка Нет</description>
 </offer>
+<offer id="IS963E6CA493" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/650423600144-mish-defender-delta-mm-523-usb-black-525</url>
+<price>1900</price>
+<currencyId>KZT</currencyId>
+<categoryId>816235379434</categoryId>
+<picture>https://static.tildacdn.com/tila6137-3062-4664-b464-613561386561/IS963E6CA493_1.jpg</picture>
+<name>Мышь Defender Delta MM-523, USB, black (52523)</name>
+<vendor>DEFENDER</vendor>
+<vendorCode>IS963E6CA493</vendorCode>
+<description>Тип устройства мышь · Подключение Проводное · Цвет Чёрный · Тип сенсора Оптический · Длина кабеля 1,8 м</description>
+</offer>
 <offer id="IS96AFA148C8" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/670450893134-kompyuternaya-mish-rapoo-vt1-max</url>
 <price>24000</price>
@@ -44055,6 +44847,17 @@
 <vendorCode>IS9DEE4D282A</vendorCode>
 <description>Назначение Игровая · Подключение Беспроводное · Тип устройства мышь · Цвет Чёрный</description>
 </offer>
+<offer id="IS9E52D63615" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/206090562454-mish-defender-accura-mm-365-b-wireless-o</url>
+<price>3000</price>
+<currencyId>KZT</currencyId>
+<categoryId>816235379434</categoryId>
+<picture>https://static.tildacdn.com/tila3838-3235-4734-b766-653837626666/IS9E52D63615_1.jpg</picture>
+<name>Мышь Defender Accura MM-365 B, Wireless, Optical 800-1600 dpi, USB, (52365)</name>
+<vendor>DEFENDER</vendor>
+<vendorCode>IS9E52D63615</vendorCode>
+<description>Тип устройства мышь · Разрешение сенсора 1600 dpi · Тип сенсора Оптический · Подключение Беспроводное</description>
+</offer>
 <offer id="IS9EB455F7A4" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/442364091734-kompyuternaya-mish-genius-nx-7005-red</url>
 <price>4200</price>
@@ -44103,6 +44906,17 @@
 <vendor>Acer</vendor>
 <vendorCode>ISA180A61AC0</vendorCode>
 <description>Тип устройства мышь · Цвет Чёрный · Подключение Беспроводное · Тип сенсора Оптический · Разрешение сенсора 1000 dpi · Кнопок 3</description>
+</offer>
+<offer id="ISA1B3E6E00F" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/450077159474-mish-defender-forced-gm-020l-usb-optical</url>
+<price>4000</price>
+<currencyId>KZT</currencyId>
+<categoryId>816235379434</categoryId>
+<picture>https://static.tildacdn.com/tila3239-3266-4638-b864-393839393032/ISA1B3E6E00F_1.jpg</picture>
+<name>Мышь Defender Forced GM-020L, USB, Optical 800-3200 dpi, (52020), +bonus pad</name>
+<vendor>DEFENDER</vendor>
+<vendorCode>ISA1B3E6E00F</vendorCode>
+<description>Тип устройства мышь · Разрешение сенсора 3200 dpi · Тип сенсора Оптический</description>
 </offer>
 <offer id="ISA2688AB16E" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/304226149244-mish-apple-magic-mouse-white-multi-touch</url>
@@ -44559,6 +45373,17 @@
 <vendorCode>ISAF8D55DE2E</vendorCode>
 <description>Тип устройства мышь · Подключение Беспроводное · Тип сенсора Оптический · Цвет Чёрный · Разрешение сенсора 3200 dpi · Кнопок 7 · Гарантия 1 год · Назначение Игровая · Подсветка Нет</description>
 </offer>
+<offer id="ISAFA474F3C6" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/823946322044-mish-defender-glory-gm-514-optical-3200</url>
+<price>7300</price>
+<currencyId>KZT</currencyId>
+<categoryId>816235379434</categoryId>
+<picture>https://static.tildacdn.com/tila6435-6364-4430-b663-613536366138/ISAFA474F3C6_1.jpg</picture>
+<name>Мышь Defender Glory GM-514, Optical 3200 dpi, 7 кнопок, USB, white (52513)</name>
+<vendor>DEFENDER</vendor>
+<vendorCode>ISAFA474F3C6</vendorCode>
+<description>Тип устройства мышь · Разрешение сенсора 3200 dpi · Тип сенсора Оптический · Цвет Белый · Кнопок 7</description>
+</offer>
 <offer id="ISB0D343CE91" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/277435265854-mish-logitech-m90-corded-mouse-grey-usb</url>
 <price>3800</price>
@@ -44656,6 +45481,17 @@
 <vendor>Logitech</vendor>
 <vendorCode>ISB543810AFA</vendorCode>
 <description>Тип устройства мышь · Подключение Проводное · Тип сенсора Оптический · Цвет Чёрный · Разрешение сенсора 1000 dpi · Длина кабеля 1,8 м</description>
+</offer>
+<offer id="ISB5560AD6B9" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/884237416344-mish-defender-datum-mm-285-nano-b-usb-bl</url>
+<price>2600</price>
+<currencyId>KZT</currencyId>
+<categoryId>816235379434</categoryId>
+<picture>https://static.tildacdn.com/tila3134-3734-4230-a666-623533663864/ISB5560AD6B9_1.jpg</picture>
+<name>Мышь Defender Datum MM-285 Nano B, USB, black</name>
+<vendor>DEFENDER</vendor>
+<vendorCode>ISB5560AD6B9</vendorCode>
+<description>Тип устройства мышь · Цвет Чёрный</description>
 </offer>
 <offer id="ISB57FD3A304" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/209627314764-kompyuternaya-mish-hyperx-saga-black-a2p</url>
@@ -44772,6 +45608,17 @@
 <vendor>Rapoo</vendor>
 <vendorCode>ISB9DF19A13B</vendorCode>
 <description>Тип устройства мышь · Цвет Чёрный · Подключение Беспроводное · Тип сенсора Оптический · Кнопок 3 · Гарантия 1 год · Разрешение сенсора 1000 dpi</description>
+</offer>
+<offer id="ISBB5C8F25D3" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/914955086084-mish-redragon-k1ng-4k-pro-optical-100-26</url>
+<price>36000</price>
+<currencyId>KZT</currencyId>
+<categoryId>816235379434</categoryId>
+<picture>https://static.tildacdn.com/tila6263-3463-4436-a431-653638643162/ISBB5C8F25D3_1.jpg</picture>
+<name>Мышь Redragon K1ng 4K Pro, Optical 100-26000 dpi, 2,4/BT/USB, Black,(72211)</name>
+<vendor>REDRAGON</vendor>
+<vendorCode>ISBB5C8F25D3</vendorCode>
+<description>Тип устройства мышь · Разрешение сенсора 26000 dpi · Тип сенсора Оптический · Цвет Чёрный</description>
 </offer>
 <offer id="ISBCCDB21332" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/676986658344-mish-canyon-mouse-mw-26-wireless</url>
@@ -44978,6 +45825,17 @@
 <vendorCode>ISC67A175AF4</vendorCode>
 <description>Тип устройства мышь · Цвет Чёрный · Подключение Беспроводное · Тип сенсора Оптический · Кнопок 3 · Гарантия 1 год · Разрешение сенсора 1000 dpi</description>
 </offer>
+<offer id="ISC6F231937F" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/733906865344-mish-defender-effect-x-ms-095-wireless-o</url>
+<price>3800</price>
+<currencyId>KZT</currencyId>
+<categoryId>816235379434</categoryId>
+<picture>https://static.tildacdn.com/tila3262-3537-4135-a437-663135313864/ISC6F231937F_1.jpg</picture>
+<name>Мышь Defender Effect X MS-095, Wireless, Optical 1600 dpi, 6 кнопок, USB, black (52095)</name>
+<vendor>DEFENDER</vendor>
+<vendorCode>ISC6F231937F</vendorCode>
+<description>Тип устройства мышь · Разрешение сенсора 1600 dpi · Тип сенсора Оптический · Цвет Чёрный · Подключение Беспроводное · Кнопок 6</description>
+</offer>
 <offer id="ISC81AC1D393" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/906059148594-mish-manipulator-hp285-silent-wireless-m</url>
 <price>9400</price>
@@ -45054,6 +45912,17 @@
 <vendorCode>ISCA233E4E13</vendorCode>
 <description>Тип устройства мышь · Подключение Беспроводное · Тип сенсора Оптический · Цвет Розовый · Разрешение сенсора 2400 dpi · Кнопок 7 · Гарантия 1 год · Подсветка Нет · Материал Пластик</description>
 </offer>
+<offer id="ISCA4A901AE7" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/179989106194-mish-redragon-fyzy-optical-7200-dpi-usb</url>
+<price>20000</price>
+<currencyId>KZT</currencyId>
+<categoryId>816235379434</categoryId>
+<picture>https://static.tildacdn.com/tila3063-3233-4638-a237-643631353035/ISCA4A901AE7_1.jpg</picture>
+<name>Мышь Redragon Fyzy, Optical 7200 dpi, USB, (72153)</name>
+<vendor>REDRAGON</vendor>
+<vendorCode>ISCA4A901AE7</vendorCode>
+<description>Тип устройства мышь · Подключение Проводное · Цвет Чёрный · Разрешение сенсора 7200 dpi · Тип сенсора Оптический · Длина кабеля 1,5 м</description>
+</offer>
 <offer id="ISCA9D624BC0" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/201814752014-besprovodnoi-opticheskii-manipulyator-ac</url>
 <price>12000</price>
@@ -45065,6 +45934,17 @@
 <vendor>Acer</vendor>
 <vendorCode>ISCA9D624BC0</vendorCode>
 <description>Подключение Беспроводное · Тип устройства мышь · Тип сенсора Оптический · Цвет Чёрный</description>
+</offer>
+<offer id="ISCC13A185C7" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/341743284544-mish-defender-arga-gm-049-usb-3200dpi-15</url>
+<price>3700</price>
+<currencyId>KZT</currencyId>
+<categoryId>816235379434</categoryId>
+<picture>https://static.tildacdn.com/tila3761-6133-4265-b936-643466646234/ISCC13A185C7_1.jpg</picture>
+<name>Мышь Defender Arga GM-049, USB, 3200dpi, 1.5 м кабель, Black, (52049)</name>
+<vendor>DEFENDER</vendor>
+<vendorCode>ISCC13A185C7</vendorCode>
+<description>Тип устройства мышь · Подключение Проводное · Цвет Чёрный · Разрешение сенсора 3200 dpi · Тип сенсора Оптический · Длина кабеля 1,5 м</description>
 </offer>
 <offer id="ISCC4C938F0A" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/213249066734-kompyuternaya-mish-hyperx-saga-pro-black</url>
@@ -45320,6 +46200,17 @@
 <vendorCode>ISD45FAD536A</vendorCode>
 <description>Подключение Беспроводное · Тип устройства мышь · Цвет Серый</description>
 </offer>
+<offer id="ISD462108FBC" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/697627130114-mish-defender-doom-fighter-gm-260l-usb-o</url>
+<price>4900</price>
+<currencyId>KZT</currencyId>
+<categoryId>816235379434</categoryId>
+<picture>https://static.tildacdn.com/tila6464-6661-4437-a239-336333303739/ISD462108FBC_1.jpg</picture>
+<name>Мышь Defender Doom Fighter GM-260L, USB, Optical 3200 dpi, (52260), +bonus pad</name>
+<vendor>DEFENDER</vendor>
+<vendorCode>ISD462108FBC</vendorCode>
+<description>Тип устройства мышь · Разрешение сенсора 3200 dpi · Тип сенсора Оптический</description>
+</offer>
 <offer id="ISD495E3A21A" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/281804115584-mish-redragon-griffin-optical-7200-dpi-u</url>
 <price>13000</price>
@@ -45523,6 +46414,17 @@
 <vendor>Zowie</vendor>
 <vendorCode>ISDBEF370004</vendorCode>
 <description>Тип устройства мышь · Подключение Беспроводное · Тип сенсора Оптический · Цвет Чёрный · Разрешение сенсора 3200 dpi · Кнопок 7 · Гарантия 1 год · Назначение Игровая · Подсветка Нет</description>
+</offer>
+<offer id="ISDCAE9AEBF9" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/743832561574-mish-defender-glory-gm-514-optical-3200</url>
+<price>7500</price>
+<currencyId>KZT</currencyId>
+<categoryId>816235379434</categoryId>
+<picture>https://static.tildacdn.com/tila3234-3937-4136-b832-666337363937/ISDCAE9AEBF9_1.jpg</picture>
+<name>Мышь Defender Glory GM-514, Optical 3200 dpi, 7 кнопок, USB, black (52514)</name>
+<vendor>DEFENDER</vendor>
+<vendorCode>ISDCAE9AEBF9</vendorCode>
+<description>Тип устройства мышь · Подключение Беспроводное · Кнопок 7 · Цвет Чёрный · Разрешение сенсора 3200 dpi · Тип сенсора Оптический</description>
 </offer>
 <offer id="ISDCDBF6BB15" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/229180118454-mish-canyon-mouse-onclick-24-bt-black</url>
@@ -46378,6 +47280,17 @@
 <vendorCode>ISF9DC4AF5B9</vendorCode>
 <description>Подключение Беспроводное · Разрешение сенсора 1000 dpi · Тип устройства мышь · Тип сенсора Оптический · Цвет Красный</description>
 </offer>
+<offer id="ISFA00BDEF9A" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/975760283784-mish-defender-pandora-gm-502-wireless-op</url>
+<price>8500</price>
+<currencyId>KZT</currencyId>
+<categoryId>816235379434</categoryId>
+<picture>https://static.tildacdn.com/tila3335-3134-4630-a635-336339356435/ISFA00BDEF9A_1.jpg</picture>
+<name>Мышь Defender Pandora GM-502, Wireless, Optical 3200dpi, USB, white, (52502)</name>
+<vendor>DEFENDER</vendor>
+<vendorCode>ISFA00BDEF9A</vendorCode>
+<description>Тип устройства мышь · Разрешение сенсора 3200 dpi · Тип сенсора Оптический · Цвет Белый · Подключение Беспроводное</description>
+</offer>
 <offer id="ISFAA6AB463B" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/885391255194-kompyuternaya-mish-genius-nx-7000-red</url>
 <price>4000</price>
@@ -46585,6 +47498,17 @@
 <vendor>Jabra</vendor>
 <vendorCode>IS070B29509B</vendorCode>
 <description>Звучание Стерео · Тип устройства Гарнитура · Цвет Чёрный</description>
+</offer>
+<offer id="IS07ACF81B23" available="true">
+<url>https://b2b.isoft-shop.kz/naushniki/tproduct/243837318554-klaviatura-mousepadheadphonespk-usb-defe</url>
+<price>21000</price>
+<currencyId>KZT</currencyId>
+<categoryId>813446092544</categoryId>
+<picture>https://static.tildacdn.com/tila3035-6666-4335-b732-343165366334/IS07ACF81B23_1.jpg</picture>
+<name>Клавиатура + mouse+pad+headphone+spk, USB, Defender TOR MHP-127, 52127</name>
+<vendor>DEFENDER</vendor>
+<vendorCode>IS07ACF81B23</vendorCode>
+<description>Клавиатура + mouse+pad+headphone+spk, USB, Defender TOR MHP-127, 52127 (DEFENDER)</description>
 </offer>
 <offer id="IS07F4E779F3" available="true">
 <url>https://b2b.isoft-shop.kz/naushniki-i-garnitury/tproduct/474845443244-garnitura-hyperx-cloud-iii-gaming-headse</url>
@@ -47554,6 +48478,17 @@
 <vendor>Baseus</vendor>
 <vendorCode>IS595AB11CC7</vendorCode>
 <description>Тип устройства Наушники · Цвет Белый · Интерфейс USB-C</description>
+</offer>
+<offer id="IS5ABE3CA32B" available="true">
+<url>https://b2b.isoft-shop.kz/naushniki/tproduct/407672418064-klaviatura-mousepadheadphone-usb-defende</url>
+<price>17000</price>
+<currencyId>KZT</currencyId>
+<categoryId>813446092544</categoryId>
+<picture>https://static.tildacdn.com/tila6531-6637-4338-b731-313435383132/IS5ABE3CA32B_1.jpg</picture>
+<name>Клавиатура + mouse+pad+headphone, USB, Defender Singularity, MKP-118, (52118)</name>
+<vendor>DEFENDER</vendor>
+<vendorCode>IS5ABE3CA32B</vendorCode>
+<description>Клавиатура + mouse+pad+headphone, USB, Defender Singularity, MKP-118, (52118) (DEFENDER)</description>
 </offer>
 <offer id="IS5DA050F089" available="true">
 <url>https://b2b.isoft-shop.kz/naushniki-i-garnitury/tproduct/545135903464-naushniki-huawei-freeclip-2-t0027-white</url>
@@ -48725,6 +49660,17 @@
 <vendorCode>ISC02D974341</vendorCode>
 <description>Тип устройства Гарнитура · Цвет Чёрный · Длина кабеля 1,3 м</description>
 </offer>
+<offer id="ISC08040C3CF" available="true">
+<url>https://b2b.isoft-shop.kz/naushniki/tproduct/308242559604-klaviatura-mouseheadphone-usbredragon-s1</url>
+<price>25000</price>
+<currencyId>KZT</currencyId>
+<categoryId>813446092544</categoryId>
+<picture>https://static.tildacdn.com/tila6361-6231-4764-b034-323132393638/ISC08040C3CF_1.jpg</picture>
+<name>Клавиатура + mouse+headphone, USB,Redragon S137, Black (72335)</name>
+<vendor>REDRAGON</vendor>
+<vendorCode>ISC08040C3CF</vendorCode>
+<description>Цвет Чёрный</description>
+</offer>
 <offer id="ISC0F3CEE351" available="true">
 <url>https://b2b.isoft-shop.kz/naushniki-i-garnitury/tproduct/900181836694-naushniki-xiaomi-buds-5-pro-bt-titanium</url>
 <price>104000</price>
@@ -49847,6 +50793,17 @@
 <vendor>Dell</vendor>
 <vendorCode>IS0995CA120D</vendorCode>
 <description>Оперативная память 16 ГБ · Ёмкость 512 ГБ · Видеокарта Встроенная · Операционная система Windows 11 Pro · Семья ОС Windows 11 · Тип накопителя SSD · Накопитель 512 ГБ · Диагональ 14″ · Разрешение 1920×1080 · Тип матрицы IPS</description>
+</offer>
+<offer id="IS09AC750334" available="true">
+<url>https://b2b.isoft-shop.kz/noutbuki/tproduct/811475077464-noutbuk-asus-p5605caa-mb0260xu7-256h16g5</url>
+<price>938000</price>
+<currencyId>KZT</currencyId>
+<categoryId>293087419414</categoryId>
+<picture>https://static.tildacdn.com/tila3930-3165-4336-b139-343037666433/IS09AC750334_1.jpg</picture>
+<name>Ноутбук ASUS P5605CAA-MB0260X/U7 256H/16G/512GB PCIE G4/16.0 WUXGA 1920X1200 300nt/W11P/WiFi 6e/1080p FHD IR/1yw/KBD 90NX0AC1-M009W0</name>
+<vendor>ASUS</vendor>
+<vendorCode>IS09AC750334</vendorCode>
+<description>Ёмкость 512 ГБ · Диагональ 16″ · Разрешение 1920×1200 · Wi-Fi Wi-Fi 6E · Камера IR + FHD · Оперативная память 16 ГБ · Операционная система Windows 11 Pro · Процессор U7 256H · Линейка процессора Core Ultra 7 · Семья ОС Windows 11</description>
 </offer>
 <offer id="IS0A14430492" available="true">
 <url>https://b2b.isoft-shop.kz/noutbuki/tproduct/919457332284-noutbuk-asus-90nb19b3-m00tm0-vivobook-s1</url>
@@ -51538,6 +52495,17 @@
 <vendorCode>IS8510A19D6A</vendorCode>
 <description>Диагональ 16″ · Оперативная память 32 ГБ · Операционная система Windows 11 Pro · Процессор U7-265HX · Ёмкость 1 ТБ · Семья ОС Windows 11 · Линейка процессора Core Ultra 7 · Разрешение 1920×1080 · Видеокарта NVIDIA RTX PRO 2000 Blackwell · Тип памяти DDR5</description>
 </offer>
+<offer id="IS8542767DFE" available="true">
+<url>https://b2b.isoft-shop.kz/noutbuki/tproduct/506904930924-noutbuk-asus-b5406fma-u60223xc7-35032g51</url>
+<price>1084000</price>
+<currencyId>KZT</currencyId>
+<categoryId>293087419414</categoryId>
+<picture>https://static.tildacdn.com/tila6266-6466-4332-a161-666361376562/IS8542767DFE_1.jpg</picture>
+<name>Ноутбук ASUS B5406FMA-U60223X/C7 350/32G/512G PCIE G4/14 WUXGA 16:10 300nt/50WH/Wi-Fi 6E/W11P/1yw/Bl kbd KZ/FPS/FHD IR 90NX0AK1-M007U0</name>
+<vendor>ASUS</vendor>
+<vendorCode>IS8542767DFE</vendorCode>
+<description>Ёмкость 512 ГБ · Диагональ 14″ · Разрешение 1920×1200 · Wi-Fi Wi-Fi 6E · Камера IR + FHD · Оперативная память 32 ГБ · Операционная система Windows 11 Pro · Процессор C7 350 · Линейка процессора Core 7 · Семья ОС Windows 11</description>
+</offer>
 <offer id="IS875BC9C892" available="true">
 <url>https://b2b.isoft-shop.kz/noutbuki/tproduct/940239841714-noutbuk-asus-90nx0881-m03pr0-expertbook</url>
 <price>482000</price>
@@ -51703,6 +52671,28 @@
 <vendor>Dell</vendor>
 <vendorCode>IS938D4604D3</vendorCode>
 <description>Диагональ 16″ · Оперативная память 32 ГБ · Операционная система Windows 11 · Процессор AMD Ryzen AI 7 PRO 350 · Ёмкость 512 ГБ · Семья ОС Windows 11 · Линейка процессора Ryzen 7 · Тип накопителя SSD · Разрешение 1920×1200 · Видеокарта Radeon 860M</description>
+</offer>
+<offer id="IS95ADE2275A" available="true">
+<url>https://b2b.isoft-shop.kz/noutbuki/tproduct/592740402204-noutbuk-asus-b9406caa-th1636xux7-358h32g</url>
+<price>1846000</price>
+<currencyId>KZT</currencyId>
+<categoryId>293087419414</categoryId>
+<picture>https://static.tildacdn.com/tila3462-3434-4762-b364-666539656536/IS95ADE2275A_1.jpg</picture>
+<name>Ноутбук ASUS B9406CAA-TH1636X/UX7-358H/32GB D5/512G PCIE/WQXGA 2880x1800 TOUCH AG 600NT/1080p FHD IR/WiFi7/KBD BL KZ/3yw 90NX09J2-M01XC0</name>
+<vendor>ASUS</vendor>
+<vendorCode>IS95ADE2275A</vendorCode>
+<description>Ёмкость 512 ГБ · Разрешение 2880×1800 · Wi-Fi Wi-Fi 7 · Камера IR + FHD · Оперативная память 32 ГБ · Накопитель 512 ГБ</description>
+</offer>
+<offer id="IS9668148643" available="true">
+<url>https://b2b.isoft-shop.kz/noutbuki/tproduct/963579210494-noutbuk-dell-pro-14-pc14250-core-ultra-5</url>
+<price>833000</price>
+<currencyId>KZT</currencyId>
+<categoryId>293087419414</categoryId>
+<picture>https://static.tildacdn.com/tila6238-3563-4762-a335-613366636561/IS9668148643_1.jpg</picture>
+<name>Ноутбук Dell Pro 14 PC14250, Core Ultra 5 235U, 16 Gb, SSD, 512 Gb, 14-inch, 1920x1200, silver 210-BQHF, BTO120_PC14250_EMEA</name>
+<vendor>Dell</vendor>
+<vendorCode>IS9668148643</vendorCode>
+<description>Ёмкость 512 ГБ · Диагональ 14″ · Разрешение 1920×1200 · Камера IR + FHD · Оперативная память 16 ГБ · Операционная система Windows 11 · Процессор Intel Core Ultra 5 235U · Линейка процессора Core Ultra 5 · Семья ОС Windows 11 · Накопитель 512 ГБ</description>
 </offer>
 <offer id="IS9751E4C074" available="true">
 <url>https://b2b.isoft-shop.kz/noutbuki/tproduct/177356812994-noutbuk-asus-zenbook-duo-ux8407aa-sn153w</url>
@@ -52752,6 +53742,17 @@
 <vendorCode>ISDF4155D4AA</vendorCode>
 <description>Диагональ 14,5″ · Оперативная память 32 ГБ · Операционная система Windows 11 · Процессор Intel Core Ultra 7 255H · Ёмкость 1 ТБ · Семья ОС Windows 11 · Линейка процессора Core Ultra 7 · Тип накопителя SSD · Разрешение 3200×2000 · Видеокарта RTX 4050</description>
 </offer>
+<offer id="ISDF947958BB" available="true">
+<url>https://b2b.isoft-shop.kz/noutbuki/tproduct/277905584244-noutbuk-dell-pro-16-pc16250-bto105pc1625</url>
+<price>699000</price>
+<currencyId>KZT</currencyId>
+<categoryId>293087419414</categoryId>
+<picture>https://static.tildacdn.com/tila3264-3132-4563-b064-366536653336/ISDF947958BB_1.jpg</picture>
+<name>Ноутбук Dell Pro 16 PC16250 BTO105_PC16250_EMEA_210-BQHB, Core Ultra 5 235U, 16 Gb, SSD, 512 Gb, 16-inch, 1920x1200</name>
+<vendor>Dell</vendor>
+<vendorCode>ISDF947958BB</vendorCode>
+<description>Ёмкость 512 ГБ · Диагональ 16″ · Разрешение 1920×1200 · Оперативная память 16 ГБ · Операционная система Windows 11 · Линейка процессора Core Ultra 5 · Семья ОС Windows 11 · Подсветка клавиатуры есть · Тип памяти DDR5 · Процессор Intel Core Ultra 5 235U</description>
+</offer>
 <offer id="ISE00741A433" available="true">
 <url>https://b2b.isoft-shop.kz/noutbuki/tproduct/191880743684-noutbuk-asus-tuf-gaming-16-fx610jp-tu094</url>
 <price>1140000</price>
@@ -53601,6 +54602,17 @@
 <vendorCode>IS2FC138A29C</vendorCode>
 <description>Форм-фактор SO-DIMM · Оперативная память 8 ГБ · Тип памяти DDR4 · Частота 3200 МГц · Объём комплекта 8 ГБ · Модулей в комплекте 1</description>
 </offer>
+<offer id="IS301393CD94" available="true">
+<url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/677378215034-operativnaya-pamyat-dlya-noutbuka-apacer</url>
+<price>45000</price>
+<currencyId>KZT</currencyId>
+<categoryId>160131640904</categoryId>
+<picture>https://static.tildacdn.com/tila3433-6231-4462-b638-336335656564/IS5820CD595A_1.jpg</picture>
+<name>Оперативная память для ноутбука Apacer ES.08G2V.GNH</name>
+<vendor>Apacer</vendor>
+<vendorCode>IS301393CD94</vendorCode>
+<description>Оперативная память 8 ГБ · Тип памяти DDR4 · Частота 2666 МГц · Форм-фактор SO-DIMM · Модулей в комплекте 1</description>
+</offer>
 <offer id="IS3135EAE97C" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/539049138814-nabor-modulei-pamyati-agi-turbosprint-di</url>
 <price>351000</price>
@@ -53842,6 +54854,17 @@
 <vendor>Kingston</vendor>
 <vendorCode>IS55D1C41D91</vendorCode>
 <description>Оперативная память 16 ГБ · Тип памяти DDR5 · Форм-фактор DIMM · Объём 16 ГБ · Тайминги CL36 · Частота 5600 МГц</description>
+</offer>
+<offer id="IS5673BA81BB" available="true">
+<url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/145561873294-operativnaya-pamyat-dlya-noutbuka-apacer</url>
+<price>88000</price>
+<currencyId>KZT</currencyId>
+<categoryId>160131640904</categoryId>
+<picture>https://static.tildacdn.com/tila3433-6231-4462-b638-336335656564/IS5820CD595A_1.jpg</picture>
+<name>Оперативная память для ноутбука Apacer ES.16G2V.GNH</name>
+<vendor>Apacer</vendor>
+<vendorCode>IS5673BA81BB</vendorCode>
+<description>Форм-фактор SO-DIMM · Оперативная память 16 ГБ · Тип памяти DDR4 · Частота 2666 МГц · Модулей в комплекте 1</description>
 </offer>
 <offer id="IS5820CD595A" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/184893006894-operativnaya-pamyat-dlya-noutbuka-apacer</url>
@@ -54824,6 +55847,17 @@
 <vendor>PNY</vendor>
 <vendorCode>ISD86DF8A870</vendorCode>
 <description>Частота 5600 МГц · Тип памяти DDR5 · Оперативная память 16 ГБ · Форм-фактор DIMM · Модулей в комплекте 1 · Тайминги CL40</description>
+</offer>
+<offer id="ISDA0570D4F1" available="true">
+<url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/532013477624-operativnaya-pamyat-netac-basic-ddr4-320</url>
+<price>33000</price>
+<currencyId>KZT</currencyId>
+<categoryId>160131640904</categoryId>
+<picture>https://static.tildacdn.com/tild6663-6338-4861-b863-353831383261/ISDA0570D4F1_1.png</picture>
+<name>Оперативная память NETAC Basic DDR4-3200 8G C16</name>
+<vendor>NETAC</vendor>
+<vendorCode>ISDA0570D4F1</vendorCode>
+<description>Частота 3200 МГц · Тип памяти DDR4 · Объём 8 ГБ · Оперативная память 8 ГБ · Форм-фактор DIMM · Модулей в комплекте 1 · Тайминги CL16</description>
 </offer>
 <offer id="ISDB12267678" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/197370548924-operativnaya-pamyat-dell-memory-upgrade</url>
@@ -62627,6 +63661,17 @@
 <vendorCode>IS9634AF293F</vendorCode>
 <description>TDP 125 Вт · Сокет LGA1851 · Потоки 18 · Частота 3,3 ГГц · Класс частоты 3–3,9 ГГц · Класс потоков 14–18 · Количество ядер 6</description>
 </offer>
+<offer id="IS9874F5903C" available="true">
+<url>https://b2b.isoft-shop.kz/processory/tproduct/670294804564-protsessor-amd-2c4t-athlon-3000g-35ghz5m</url>
+<price>15000</price>
+<currencyId>KZT</currencyId>
+<categoryId>289503131194</categoryId>
+<picture>https://static.tildacdn.com/tila6466-3762-4231-a132-383036333662/IS9874F5903C_1.png</picture>
+<name>Процессор AMD 2C/4T Athlon 3000G (3.5GHz,5MB,35W,AM4) tray, with Radeon Vega 3 Graphics</name>
+<vendor>AMD</vendor>
+<vendorCode>IS9874F5903C</vendorCode>
+<description>Потоки 4 · Сокет AM4 · Частота 3,5 ГГц · Ядра 2 · Класс частоты 3–3,9 ГГц · Класс потоков до 8</description>
+</offer>
 <offer id="IS9AD233D793" available="true">
 <url>https://b2b.isoft-shop.kz/processory/tproduct/694354730874-protsessor-intel-core-ultra-5-245kf-4252</url>
 <price>112000</price>
@@ -64967,6 +66012,17 @@
 <vendorCode>IS2A552C48D4</vendorCode>
 <description>Форм-фактор Rack · Блок питания 1+1 550 Вт · Процессор Intel Xeon E-2356G · Оперативная память 16 ГБ · Тип памяти DDR4 · Накопитель 512 ГБ · Тип накопителя SSD</description>
 </offer>
+<offer id="IS4F1BCDCAEF" available="true">
+<url>https://b2b.isoft-shop.kz/servery/tproduct/224334320084-server-hpeml350-gen111xeon-gold55158c32t</url>
+<price>7469000</price>
+<currencyId>KZT</currencyId>
+<categoryId>983972211584</categoryId>
+<picture>https://static.tildacdn.com/tila3233-3835-4762-a137-633235626436/IS4F1BCDCAEF_1.jpg</picture>
+<name>Server HPE/ML350 Gen11/1/Xeon Gold/5515+(8C/32T 22.5MB)/3,2 GHz/2x32 Gb/MR408i-o/8SFF/2x480 Gb SSD RI/4x1GbE/2x 1000W Titanium P81779-425</name>
+<vendor>HPE</vendor>
+<vendorCode>IS4F1BCDCAEF</vendorCode>
+<description>Блок питания 2×1000 Вт · Накопитель 2×480 ГБ SSD</description>
+</offer>
 <offer id="IS55D6DA9175" available="true">
 <url>https://b2b.isoft-shop.kz/servery/tproduct/627501596704-server-hpeml30-gen111xeon6333p6c12t31-gh</url>
 <price>4429000</price>
@@ -65002,6 +66058,17 @@
 <vendorCode>IS8FAAC420FF</vendorCode>
 <description>Блок питания 1+1 2400 Вт · Процессор Intel Xeon 6520P · Оперативная память 64 ГБ · Тип памяти DDR5 · Накопитель 2 × SSD 960 ГБ · Форм-фактор Rack 2U</description>
 </offer>
+<offer id="ISB46A5685B8" available="true">
+<url>https://b2b.isoft-shop.kz/servery/tproduct/148137564584-server-hpeml30-gen111xeone-2414-4c4t-12m</url>
+<price>2320000</price>
+<currencyId>KZT</currencyId>
+<categoryId>983972211584</categoryId>
+<picture>https://static.tildacdn.com/tila6439-3365-4662-b666-623164623133/ISB46A5685B8_1.jpg</picture>
+<name>Server HPE/ML30 Gen11/1/Xeon/E-2414 (4C/4T 12Mb)/2,6 GHz/32 Gb/Intel VROC/4LFF NHP/2x1TB SATA HDD/4x1GbE/1 x 350W NHP P71385-425</name>
+<vendor>HPE</vendor>
+<vendorCode>ISB46A5685B8</vendorCode>
+<description>Блок питания 1×350 Вт</description>
+</offer>
 <offer id="ISF46B675FC3" available="true">
 <url>https://b2b.isoft-shop.kz/servery/tproduct/549216724734-server-altos-brainsphere-r380-f7-12sfflf</url>
 <price>13249000</price>
@@ -65012,6 +66079,17 @@
 <vendor>Acer</vendor>
 <vendorCode>ISF46B675FC3</vendorCode>
 <description>Блок питания 1+1 1200 Вт · Процессор Intel Xeon 6530 · Оперативная память 32 ГБ · Тип памяти DDR5 · Накопитель 2 × SSD 960 ГБ · Форм-фактор Rack</description>
+</offer>
+<offer id="ISF75AA904A4" available="true">
+<url>https://b2b.isoft-shop.kz/servery/tproduct/756866681714-server-hpeml30-gen111xeon6325p-4c8t-12mb</url>
+<price>3971000</price>
+<currencyId>KZT</currencyId>
+<categoryId>983972211584</categoryId>
+<picture>https://static.tildacdn.com/tila3064-3065-4236-b638-313238363766/ISF75AA904A4_1.jpg</picture>
+<name>Server HPE/ML30 Gen11/1/Xeon/6325P (4C/8T 12Mb)/3,5 GHz/32 Gb/8SFF/VROC/2x480Gb SSD RI/2x1GbE/1x1000W Titanium P87464-425</name>
+<vendor>HPE</vendor>
+<vendorCode>ISF75AA904A4</vendorCode>
+<description>Процессор Xeon 6325P · Блок питания 1×1000 Вт · Накопитель 2×480 ГБ SSD</description>
 </offer>
 <offer id="ISFE79C00B4C" available="true">
 <url>https://b2b.isoft-shop.kz/servery/tproduct/518848301574-server-altos-brainsphere-t15-f6-zbox-usr</url>
@@ -69060,6 +70138,17 @@
 <vendor>TP-Link</vendor>
 <vendorCode>ISA48A5160EB</vendorCode>
 <description>Тип устройства Коммутатор · Портов 24 · Скорость 10/100/1000 Мбит/с · Управление Неуправляемый · Размещение В стойку · Класс по числу портов 23–40 портов</description>
+</offer>
+<offer id="ISA51BC24B0F" available="true">
+<url>https://b2b.isoft-shop.kz/setevoe-oborudovanie/tproduct/917801371354-kommutator-hpearuba-instant-on-1830-24g</url>
+<price>102000</price>
+<currencyId>KZT</currencyId>
+<categoryId>737078043964</categoryId>
+<picture>https://static.tildacdn.com/tila3865-6263-4239-a330-663837636534/ISA51BC24B0F_1.jpg</picture>
+<name>Коммутатор HPE/Aruba Instant On 1830 24G 2SFP Switch JL812A#ABB</name>
+<vendor>HPE</vendor>
+<vendorCode>ISA51BC24B0F</vendorCode>
+<description>Слотов SFP 2</description>
 </offer>
 <offer id="ISA57202D7D3" available="true">
 <url>https://b2b.isoft-shop.kz/setevoe-oborudovanie/tproduct/402618821854-kommutator-huawei-s110-24t2sr</url>
@@ -75749,7 +76838,7 @@
 <name>Беспроводная точка доступа Hikvision DS-3WF3000S-EI-5AC/P</name>
 <vendor>Hikvision</vendor>
 <vendorCode>IS56D622DB39</vendorCode>
-<description>Wi-Fi Wi-Fi 5 · Диапазон частот 5 ГГц · Гарантия 1 год</description>
+<description>Wi-Fi Wi-Fi 5 · Диапазон частот 5 ГГц · Гарантия 1 год · Скорость Wi-Fi 867 Мбит/с</description>
 </offer>
 <offer id="IS56EF41D45E" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/766087411354-tochka-dostupa-mikrotik-sxtrampr11e-lte7</url>
@@ -77516,6 +78605,17 @@
 <vendor>Eaton</vendor>
 <vendorCode>IS7633849AEF</vendorCode>
 <description>Battery Eaton/9SX EBM Rack2U/36V/external 9SXEBM36R (Eaton)</description>
+</offer>
+<offer id="IS76D0D08D45" available="true">
+<url>https://b2b.isoft-shop.kz/shkafy-i-stoyki/tproduct/952208394704-lider-team-shkaf-napolnii-pixietech-42u</url>
+<price>285000</price>
+<currencyId>KZT</currencyId>
+<categoryId>667674530784</categoryId>
+<picture>https://static.tildacdn.com/tila3366-3663-4461-a363-646665363266/IS76D0D08D45_1.png</picture>
+<name>Lider Team Шкаф напольный Pixietech 42U 6008002000 мм PXT-20-426080-54, perforated door</name>
+<vendor>Lider Team</vendor>
+<vendorCode>IS76D0D08D45</vendorCode>
+<description>Габариты 600×800×2000 мм · Дверь Перфорированная · Исполнение Напольный · Типоразмер (U) 42U</description>
 </offer>
 <offer id="IS77903B019B" available="true">
 <url>https://b2b.isoft-shop.kz/shkafy-i-stoyki/tproduct/893058573164-shkaf-kommunikatsionnii-ship-601s6047241</url>

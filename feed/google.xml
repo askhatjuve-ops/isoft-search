@@ -2257,20 +2257,6 @@
 <g:product_type>SSD-накопители</g:product_type>
 </item>
 <item>
-<g:id>ISC167A34E38</g:id>
-<title>SAMSUNG PM1653 7.68TB Enterprise SSD, 2.5-inch, SAS 24Gb/s, TLC</title>
-<description>Ёмкость 7.68 ТБ · Форм-фактор 2.5″ · Интерфейс SAS</description>
-<link>https://b2b.isoft-shop.kz/ssd-nakopiteli/tproduct/990770561184-samsung-pm1653-768tb-enterprise-ssd-25-i</link>
-<g:image_link>https://static.tildacdn.com/tild6430-3139-4234-a663-323035643261/ISC167A34E38_1.png</g:image_link>
-<g:availability>in_stock</g:availability>
-<g:price>2587000 KZT</g:price>
-<g:brand>Samsung</g:brand>
-<g:condition>new</g:condition>
-<g:identifier_exists>no</g:identifier_exists>
-<g:google_product_category>Electronics &gt; Electronics Accessories &gt; Computer Components &gt; Storage Devices &gt; Hard Drives</g:google_product_category>
-<g:product_type>SSD-накопители</g:product_type>
-</item>
-<item>
 <g:id>ISC30AE1D76E</g:id>
 <title>Ssd SSD-накопитель Samsung 870 EVO 2000 ГБ SATA 2.5-inch MZ-77E2T0BW</title>
 <description>Ёмкость 2 ТБ · Интерфейс SATA · Скорость чтения 560 МБ/с · Скорость записи 530 МБ/с · Форм-фактор 2.5″</description>
@@ -12936,6 +12922,19 @@
 <g:product_type>ИБП</g:product_type>
 </item>
 <item>
+<g:id>IS2613E274B2</g:id>
+<title>ИБП APC/SMT3000RMI2UC LCD RM 2U 230V with SmartConnect/Smart/3 000 VA/2 700 W</title>
+<description>Мощность 3000 ВА / 2700 Вт · Класс мощности 3 кВА · Размещение Стоечный</description>
+<link>https://b2b.isoft-shop.kz/ibp-i-zashchita-pitaniya/tproduct/798091875324-ibp-apcsmt3000rmi2uc-lcd-rm-2u-230v-with</link>
+<g:image_link>https://static.tildacdn.com/tila3864-3737-4534-b638-346331626364/IS2613E274B2_1.jpg</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>835000 KZT</g:price>
+<g:brand>APC</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:product_type>ИБП</g:product_type>
+</item>
+<item>
 <g:id>IS265A5A2913</g:id>
 <title>ИБП Ippon Back Power Pro II 500, 500VA, 300ВТ, AVR 162-290В, 4хС13, управление по USB, RJ-45, LCD</title>
 <description>Тип устройства ИБП · Мощность 500 ВА / 300 Вт · Розеток 4 · Партномер: 1030299</description>
@@ -16274,19 +16273,6 @@
 <g:availability>in_stock</g:availability>
 <g:price>41000 KZT</g:price>
 <g:brand>CABLEXPERT</g:brand>
-<g:condition>new</g:condition>
-<g:identifier_exists>no</g:identifier_exists>
-<g:product_type>Кабель витая пара</g:product_type>
-</item>
-<item>
-<g:id>IS12B5B4DE85</g:id>
-<title>Кабель сетевой SHIP D225-P Cat.5e UTP 30В РЕ</title>
-<description>Категория кабеля Cat5e · Экранирование UTP</description>
-<link>https://b2b.isoft-shop.kz/kabel-vitaya-para/tproduct/870472213314-kabel-setevoi-ship-d225-p-cat5e-utp-30v</link>
-<g:image_link>https://static.tildacdn.com/stor6338-3434-4034-b733-366266613530/8f7d15c3ba364b18aba70d5dc4f6f1cd.jpg</g:image_link>
-<g:availability>in_stock</g:availability>
-<g:price>99000 KZT</g:price>
-<g:brand>Ship</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
 <g:product_type>Кабель витая пара</g:product_type>
@@ -19985,6 +19971,19 @@
 <g:product_type>Камеры видеонаблюдения</g:product_type>
 </item>
 <item>
+<g:id>ISBC5E69678F</g:id>
+<title>IP видеокамера Hikvision DS-TCG406-E(S)(12V/PoE)(2812)</title>
+<description>Тип устройства IP-камера</description>
+<link>https://b2b.isoft-shop.kz/videonablyudenie/tproduct/126540835134-ip-videokamera-hikvision-ds-tcg406-es12v</link>
+<g:image_link>https://static.tildacdn.com/tila3461-3164-4366-a235-396664306331/ISBC5E69678F_1.jpg</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>366000 KZT</g:price>
+<g:brand>Hikvision</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:product_type>Камеры видеонаблюдения</g:product_type>
+</item>
+<item>
 <g:id>ISBCA785E9B6</g:id>
 <title>IP видеокамера HiLook IPC-B120HA-LUC</title>
 <description>Партномер: IPC-B120HA-LUC</description>
@@ -20792,6 +20791,20 @@
 <g:product_type>Карты памяти</g:product_type>
 </item>
 <item>
+<g:id>IS108ACBA7E8</g:id>
+<title>Карта памяти SANDISK Extreme PRO microSDXC 64GB + SD Adapter + 2 years RescuePRO Deluxe up to 200MB/s &amp;amp; 90MB/s SANDISK SANDISK EXTREME PRO MICROSD</title>
+<description>Ёмкость 64 ГБ · Класс скорости C10, UHS-I, U3, V30, A2 · Форм-фактор microSDXC · В комплекте Адаптер SD, руководство по быстрому старту</description>
+<link>https://b2b.isoft-shop.kz/karty-pamyati/tproduct/221081646434-karta-pamyati-sandisk-extreme-pro-micros</link>
+<g:image_link>https://static.tildacdn.com/tila3532-3539-4665-b362-666237636135/IS108ACBA7E8_1.png</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>21000 KZT</g:price>
+<g:brand>SANDISK</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:google_product_category>Electronics &gt; Electronics Accessories &gt; Memory &gt; Flash Memory &gt; Memory Cards</g:google_product_category>
+<g:product_type>Карты памяти</g:product_type>
+</item>
+<item>
 <g:id>IS13C418E699</g:id>
 <title>Карта памяти Lexar 633X LMS0633032G-BNNNG 32GB без адаптера</title>
 <description>Ёмкость 32 ГБ · Форм-фактор microSDXC · Класс скорости C10, UHS-I, U1, V10, A1</description>
@@ -21237,6 +21250,20 @@
 <g:image_link>https://static.tildacdn.com/tila3338-6438-4436-b133-656133653766/IS90DAC8A896_1.jpg</g:image_link>
 <g:availability>in_stock</g:availability>
 <g:price>15000 KZT</g:price>
+<g:brand>SANDISK</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:google_product_category>Electronics &gt; Electronics Accessories &gt; Memory &gt; Flash Memory &gt; Memory Cards</g:google_product_category>
+<g:product_type>Карты памяти</g:product_type>
+</item>
+<item>
+<g:id>IS9BDD1637B1</g:id>
+<title>Карта памяти SANDISK Ultra microSDXC 64GB 100MB/s Class 10 UHS-I</title>
+<description>Ёмкость 64 ГБ · Класс скорости Class 10, UHS-I · Форм-фактор microSDXC</description>
+<link>https://b2b.isoft-shop.kz/karty-pamyati/tproduct/471093184984-karta-pamyati-sandisk-ultra-microsdxc-64</link>
+<g:image_link>https://static.tildacdn.com/tila3734-3239-4330-b665-386665316662/IS9BDD1637B1_1.jpg</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>12000 KZT</g:price>
 <g:brand>SANDISK</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -22821,22 +22848,6 @@
 <g:availability>in_stock</g:availability>
 <g:price>53000 KZT</g:price>
 <g:brand>Glorious</g:brand>
-<g:condition>new</g:condition>
-<g:identifier_exists>no</g:identifier_exists>
-<g:google_product_category>Electronics &gt; Electronics Accessories &gt; Computer Components &gt; Input Devices &gt; Keyboards</g:google_product_category>
-<g:product_type>Клавиатуры</g:product_type>
-</item>
-<item>
-<g:id>IS4986D6E314</g:id>
-<title>Клавиатура USB, Defender Doom Keeper GK-100DL, black, (45100)</title>
-<description>Цвет Чёрный · Тип устройства клавиатура · Подключение Проводное · Кнопок 114 · Тип клавиатуры мембранная · Раскладка русская/английская</description>
-<link>https://b2b.isoft-shop.kz/klaviatury/tproduct/521798127614-klaviatura-usb-defender-doom-keeper-gk-1</link>
-<g:image_link>https://static.tildacdn.com/tild3639-3164-4262-b463-663032306238/521798127614.jpg</g:image_link>
-<g:additional_image_link>https://static.tildacdn.com/tild6465-3634-4538-a231-633031636633/521798127614_2.jpg</g:additional_image_link>
-<g:additional_image_link>https://static.tildacdn.com/tild3131-6531-4236-b431-663766633233/521798127614.jpg</g:additional_image_link>
-<g:availability>in_stock</g:availability>
-<g:price>12000 KZT</g:price>
-<g:brand>DEFENDER</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
 <g:google_product_category>Electronics &gt; Electronics Accessories &gt; Computer Components &gt; Input Devices &gt; Keyboards</g:google_product_category>
@@ -27218,21 +27229,6 @@
 <g:product_type>Корпуса</g:product_type>
 </item>
 <item>
-<g:id>IS2430B48AE6</g:id>
-<title>Компьютерный корпус Deepcool CH160 WH без Б/П R-CH160-WHNGI0-G-1</title>
-<description>Форм-фактор Mini-ITX · Цвет Белый · Макс. длина видеокарты 305 мм · Макс. высота кулера 172 мм · Тип устройства Корпус · Гарантия 1 год · Интерфейс Type-C</description>
-<link>https://b2b.isoft-shop.kz/korpusa-i-bloki-pitaniya/tproduct/722182723494-kompyuternii-korpus-deepcool-ch160-wh-be</link>
-<g:image_link>https://static.tildacdn.com/stor3163-6562-4663-b166-623462386439/05303f1710cb81377ef66ebdb0ed22ef.jpg</g:image_link>
-<g:additional_image_link>https://static.tildacdn.com/tild3362-3366-4437-b766-666530373438/722182723494_1.jpg</g:additional_image_link>
-<g:additional_image_link>https://static.tildacdn.com/tild3239-3732-4032-a339-396335616634/722182723494_2.jpg</g:additional_image_link>
-<g:availability>in_stock</g:availability>
-<g:price>32000 KZT</g:price>
-<g:brand>Deepcool</g:brand>
-<g:condition>new</g:condition>
-<g:identifier_exists>no</g:identifier_exists>
-<g:product_type>Корпуса</g:product_type>
-</item>
-<item>
 <g:id>IS253FB58026</g:id>
 <title>Корпус Case ATX midi tower Antec, P20C, 3*120 fan, white</title>
 <description>Форм-фактор ATX · Цвет Белый · Тип устройства Корпус · Интерфейс USB 3.2 Gen 2 / Type-C · Материал Сталь, пластик, закаленное стекло · Макс. длина видеокарты 375 мм · Макс. высота кулера 170 мм</description>
@@ -28823,21 +28819,6 @@
 <g:product_type>Корпуса</g:product_type>
 </item>
 <item>
-<g:id>IS752E7073AF</g:id>
-<title>Компьютерный корпус Deepcool CG380 3F без Б/П R-CG380-BKAGM3-G</title>
-<description>Форм-фактор Micro-ATX · Цвет Чёрный · Макс. длина видеокарты 410 мм · Макс. высота кулера 176 мм · Тип устройства Корпус · Гарантия 1 год · Интерфейс Type-C</description>
-<link>https://b2b.isoft-shop.kz/korpusa-i-bloki-pitaniya/tproduct/589136579854-kompyuternii-korpus-deepcool-cg380-3f-be</link>
-<g:image_link>https://static.tildacdn.com/stor3536-6239-4165-b037-373430626433/8f303bad8e0379154a515a163e68d7f7.jpg</g:image_link>
-<g:additional_image_link>https://static.tildacdn.com/tild6162-3766-4635-b532-383664616430/589136579854_1.jpg</g:additional_image_link>
-<g:additional_image_link>https://static.tildacdn.com/tild3261-6438-4133-b365-393661316337/589136579854_2.jpg</g:additional_image_link>
-<g:availability>in_stock</g:availability>
-<g:price>30000 KZT</g:price>
-<g:brand>Deepcool</g:brand>
-<g:condition>new</g:condition>
-<g:identifier_exists>no</g:identifier_exists>
-<g:product_type>Корпуса</g:product_type>
-</item>
-<item>
 <g:id>IS76F1B6CF4F</g:id>
 <title>Корпус Case ATX HTPC SilverStone SST-ML03B</title>
 <description>Форм-фактор ATX · Цвет Чёрный · Тип устройства Корпус · Интерфейс USB 3.0 · Материал Сталь, пластик · Макс. высота кулера 70 мм</description>
@@ -29468,21 +29449,6 @@
 <g:availability>in_stock</g:availability>
 <g:price>32000 KZT</g:price>
 <g:brand>Jonsbo</g:brand>
-<g:condition>new</g:condition>
-<g:identifier_exists>no</g:identifier_exists>
-<g:product_type>Корпуса</g:product_type>
-</item>
-<item>
-<g:id>IS9D5533A515</g:id>
-<title>Компьютерный корпус Deepcool CG380 3F WH без Б/П R-CG380-WHAGM3-G</title>
-<description>Тип устройства Корпус · Цвет Белый · Форм-фактор Micro-ATX · Макс. длина видеокарты 410 мм · Макс. высота кулера 176 мм · Гарантия 1 год · Интерфейс Type-C</description>
-<link>https://b2b.isoft-shop.kz/korpusa-i-bloki-pitaniya/tproduct/158665846874-kompyuternii-korpus-deepcool-cg380-3f-wh</link>
-<g:image_link>https://static.tildacdn.com/stor3765-6137-4362-b037-626339316231/c2812fd539c9f4fb3fe391e9ba3059f8.jpg</g:image_link>
-<g:additional_image_link>https://static.tildacdn.com/tild3634-3539-4231-b130-373735663962/158665846874_1.jpg</g:additional_image_link>
-<g:additional_image_link>https://static.tildacdn.com/tild3838-3238-4830-b037-613261363338/158665846874_2.jpg</g:additional_image_link>
-<g:availability>in_stock</g:availability>
-<g:price>32000 KZT</g:price>
-<g:brand>Deepcool</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
 <g:product_type>Корпуса</g:product_type>
@@ -31879,20 +31845,6 @@
 <g:product_type>МФУ</g:product_type>
 </item>
 <item>
-<g:id>IS76EF2DE1E2</g:id>
-<title>МФУ струйное EPSON M3170</title>
-<description>Тип устройства МФУ · Партномер: C11CG92405</description>
-<link>https://b2b.isoft-shop.kz/mfu/tproduct/618119019804-mfu-struinoe-epson-m3170</link>
-<g:image_link>https://static.tildacdn.com/stor3035-6161-4635-b539-613935396635/68cda26f8a3f60a9c37005da031288e1.jpg</g:image_link>
-<g:additional_image_link>https://static.tildacdn.com/tild3761-6538-4933-b732-643730633465/618119019804_1.jpg</g:additional_image_link>
-<g:availability>in_stock</g:availability>
-<g:price>221000 KZT</g:price>
-<g:brand>Epson</g:brand>
-<g:condition>new</g:condition>
-<g:mpn>C11CG92405</g:mpn>
-<g:product_type>МФУ</g:product_type>
-</item>
-<item>
 <g:id>IS76F629B0BB</g:id>
 <title>Монохромное МФУ Xerox B105BI B105V_BI</title>
 <description>Тип устройства МФУ · Интерфейсы USB 2.0, Wi-Fi · Технология печати лазерный · Цветность ч/б · Скорость печати 20 стр/мин · Класс скорости печати до 22 стр/мин · Лотки 151 лист · Разрешение печати 1200×1200 dpi · Тип сканера Планшетный · Разрешение сканирования 1200×1200 dpi</description>
@@ -31929,6 +31881,19 @@
 <g:additional_image_link>https://static.tildacdn.com/tild3236-3265-4432-a136-333138323832/586567391454.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
 <g:price>2408000 KZT</g:price>
+<g:brand>Canon</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:product_type>МФУ</g:product_type>
+</item>
+<item>
+<g:id>IS78954EF199</g:id>
+<title>Цветное МФУ Canon Pixma G2410 2313C009AA</title>
+<description>Тип устройства МФУ · Формат A4 · Интерфейсы USB 2.0</description>
+<link>https://b2b.isoft-shop.kz/mfu-lazernye-cvetnye/tproduct/809352846174-tsvetnoe-mfu-canon-pixma-g2410-2313c009a</link>
+<g:image_link>https://static.tildacdn.com/tila6631-6132-4932-b463-303531303662/IS78954EF199_1.jpg</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>96000 KZT</g:price>
 <g:brand>Canon</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -39586,7 +39551,7 @@
 <g:additional_image_link>https://static.tildacdn.com/tild3239-6632-4038-b531-323834663132/448649981304_3.jpg</g:additional_image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild6463-3231-4038-b334-663566653264/448649981304_4.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>1579000 KZT</g:price>
+<g:price>1629000 KZT</g:price>
 <g:brand>APPLE</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -40153,6 +40118,20 @@
 <g:availability>in_stock</g:availability>
 <g:price>163000 KZT</g:price>
 <g:brand>Dell</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:google_product_category>Electronics &gt; Video &gt; Computer Monitors</g:google_product_category>
+<g:product_type>Мониторы</g:product_type>
+</item>
+<item>
+<g:id>IS0E044834DF</g:id>
+<title>Монитор ASUS VG27VH1B 27-inch VA, 16:9 FHD (1980x1080x165Hz),250cd/m2,3000:1,178/178,1ms,HDMI,VGA,Sp 2W,1500R,чёрный VG27VH1B_C</title>
+<description>Время отклика 1 мс · Диагональ 27″ · Контрастность 3000:1 · Разрешение 1920×1080 · Соотношение сторон 16:9 · Тип матрицы VA · Угол обзора 178° · Частота обновления 165 Гц · Яркость 250 кд/м² · Размер экрана 27–29″</description>
+<link>https://b2b.isoft-shop.kz/monitory/tproduct/183646041714-monitor-asus-vg27vh1b-27-inch-va-169-fhd</link>
+<g:image_link>https://static.tildacdn.com/tila6633-3565-4930-b062-656261323562/183646041714_1.jpg</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>131000 KZT</g:price>
+<g:brand>ASUS</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
 <g:google_product_category>Electronics &gt; Video &gt; Computer Monitors</g:google_product_category>
@@ -40988,21 +40967,6 @@
 <g:product_type>Мониторы</g:product_type>
 </item>
 <item>
-<g:id>IS2EECD97585</g:id>
-<title>Ноутбук LCD 27-inch Dell Alienware AW2725QF, 3840x2160 (F-IPS), 1ms, 600 cd/m2, (1000:1), DP/HDMI</title>
-<description>Диагональ 27″ · Разрешение 3840×2160 · Тип матрицы IPS · Время отклика 1 мс · Яркость 600 кд/м² · Контрастность 1000:1 · Размер экрана 27–29″</description>
-<link>https://b2b.isoft-shop.kz/monitory/tproduct/476392776244-noutbuk-lcd-27-inch-dell-alienware-aw272</link>
-<g:image_link>https://static.tildacdn.com/tild3162-6264-4463-a261-646632323963/476392776244.jpg</g:image_link>
-<g:additional_image_link>https://static.tildacdn.com/tild6265-6265-4964-b537-376631646536/476392776244.jpg</g:additional_image_link>
-<g:availability>in_stock</g:availability>
-<g:price>380000 KZT</g:price>
-<g:brand>Dell</g:brand>
-<g:condition>new</g:condition>
-<g:identifier_exists>no</g:identifier_exists>
-<g:google_product_category>Electronics &gt; Video &gt; Computer Monitors</g:google_product_category>
-<g:product_type>Мониторы</g:product_type>
-</item>
-<item>
 <g:id>IS2F2114DD5A</g:id>
 <title>Монитор LG 27G550B 27-inch/IPS/FHD/300Hz/1ms/HDMI-DP/UltraGear 27G550B-B.ARUZ</title>
 <description>Время отклика 1 мс · Диагональ 27″ · Разрешение 1920×1080 · Тип матрицы IPS · Частота обновления 300 Гц · Размер экрана 27–29″</description>
@@ -41677,6 +41641,20 @@
 <g:availability>in_stock</g:availability>
 <g:price>175000 KZT</g:price>
 <g:brand>LG</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:google_product_category>Electronics &gt; Video &gt; Computer Monitors</g:google_product_category>
+<g:product_type>Мониторы</g:product_type>
+</item>
+<item>
+<g:id>IS4B9BE2C9CF</g:id>
+<title>Монитор ASUS VP32UQ 31.5-inch IPS,16:9 UHD (3840x2160x60Hz),350cd/m2,1000:1,178/178,4ms,HDMI,DP,Sp2W,HDR10 VP32UQ_C</title>
+<description>Время отклика 4 мс · Диагональ 31,5″ · Контрастность 1000:1 · Разрешение 3840×2160 · Соотношение сторон 16:9 · Тип матрицы IPS · Угол обзора 178° · Частота обновления 60 Гц · Яркость 350 кд/м² · Размер экрана 31,5–32″</description>
+<link>https://b2b.isoft-shop.kz/monitory/tproduct/140930682994-monitor-asus-vp32uq-315-inch-ips169-uhd</link>
+<g:image_link>https://static.tildacdn.com/tila3431-3030-4732-a161-366635393937/140930682994_1.jpg</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>220000 KZT</g:price>
+<g:brand>ASUS</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
 <g:google_product_category>Electronics &gt; Video &gt; Computer Monitors</g:google_product_category>
@@ -48630,23 +48608,6 @@
 <g:product_type>Мыши</g:product_type>
 </item>
 <item>
-<g:id>IS338B97CEFC</g:id>
-<title>Мышь Acer OMR205, Wireless, Optical 1200 dpi, 3 button, 1AA, USB, Pink/beige</title>
-<description>Тип устройства мышь · Подключение Беспроводное · Тип сенсора Оптический · Цвет Комбинированный · Разрешение сенсора 1200 dpi · Кнопок 3</description>
-<link>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/356095979184-mish-acer-omr205-wireless-optical-1200-d</link>
-<g:image_link>https://static.tildacdn.com/tild6333-6538-4161-a233-646538353033/356095979184.jpg</g:image_link>
-<g:additional_image_link>https://static.tildacdn.com/tild6365-3464-4533-b735-376137303533/356095979184_2.jpg</g:additional_image_link>
-<g:additional_image_link>https://static.tildacdn.com/tild3761-3562-4561-b564-636566653932/356095979184_3.jpg</g:additional_image_link>
-<g:additional_image_link>https://static.tildacdn.com/tild3233-3635-4333-a133-356465383763/356095979184_4.jpg</g:additional_image_link>
-<g:availability>in_stock</g:availability>
-<g:price>7500 KZT</g:price>
-<g:brand>Acer</g:brand>
-<g:condition>new</g:condition>
-<g:identifier_exists>no</g:identifier_exists>
-<g:google_product_category>Electronics &gt; Electronics Accessories &gt; Computer Components &gt; Input Devices &gt; Mice &amp; Trackballs</g:google_product_category>
-<g:product_type>Мыши</g:product_type>
-</item>
-<item>
 <g:id>IS33A75B022A</g:id>
 <title>Мышь CANYON mouse MW-26, WIRELESS, PINK</title>
 <description>В комплекте Приёмник, кабель, кабель USB тип C · Тип устройства мышь · Гарантия 2 года · Цвет Розовый · Подключение Беспроводное · Кнопок 6</description>
@@ -49053,6 +49014,20 @@
 <g:availability>in_stock</g:availability>
 <g:price>2600 KZT</g:price>
 <g:brand>Delux</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:google_product_category>Electronics &gt; Electronics Accessories &gt; Computer Components &gt; Input Devices &gt; Mice &amp; Trackballs</g:google_product_category>
+<g:product_type>Мыши</g:product_type>
+</item>
+<item>
+<g:id>IS3E037C9456</g:id>
+<title>Мышь беспроводная Logitech M196 Bluetooth Mouse - ROSE - EMEA28i-935 910-007461</title>
+<description>Подключение Беспроводное · Тип устройства мышь</description>
+<link>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/343451279254-mish-besprovodnaya-logitech-m196-bluetoo</link>
+<g:image_link>https://static.tildacdn.com/tila6131-6265-4130-b831-656236393663/IS3E037C9456_1.png</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>5500 KZT</g:price>
+<g:brand>Logitech</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
 <g:google_product_category>Electronics &gt; Electronics Accessories &gt; Computer Components &gt; Input Devices &gt; Mice &amp; Trackballs</g:google_product_category>
@@ -50067,7 +50042,7 @@
 <g:additional_image_link>https://static.tildacdn.com/tild6366-3765-4539-b565-363232356434/396359171454_3.jpg</g:additional_image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild6663-6661-4433-b164-396432383264/396359171454_4.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>5300 KZT</g:price>
+<g:price>5400 KZT</g:price>
 <g:brand>Lenovo</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -57267,19 +57242,6 @@
 <g:product_type>Наушники и гарнитуры</g:product_type>
 </item>
 <item>
-<g:id>IS890CF781B0</g:id>
-<title>Наушники Redmi Buds 8 белые M2544E1</title>
-<description>Материал Пластик · Цвет Белый · Тип устройства Наушники</description>
-<link>https://b2b.isoft-shop.kz/naushniki-i-garnitury/tproduct/420886773124-naushniki-redmi-buds-8-belie-m2544e1</link>
-<g:image_link>https://static.tildacdn.com/tila3165-6635-4932-b438-636661386333/IS890CF781B0_1.jpg</g:image_link>
-<g:availability>in_stock</g:availability>
-<g:price>27000 KZT</g:price>
-<g:brand>Redmi</g:brand>
-<g:condition>new</g:condition>
-<g:identifier_exists>no</g:identifier_exists>
-<g:product_type>Наушники и гарнитуры</g:product_type>
-</item>
-<item>
 <g:id>IS8C6ECAF111</g:id>
 <title>Гарнитура беспроводная Logitech Zone Vibe 100 UC (Bluetooth) OFF белая 981-001219</title>
 <description>Тип устройства Гарнитура · Цвет Белый · Тип подключения Беспроводное</description>
@@ -57885,6 +57847,19 @@
 <g:availability>in_stock</g:availability>
 <g:price>132000 KZT</g:price>
 <g:brand>Jabra</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:product_type>Наушники и гарнитуры</g:product_type>
+</item>
+<item>
+<g:id>ISB21785025E</g:id>
+<title>Наушники Redmi Buds 8 зелёные M2544E1</title>
+<description>Тип устройства Наушники · Цвет Зелёный · Материал Пластик</description>
+<link>https://b2b.isoft-shop.kz/naushniki-i-garnitury/tproduct/496004746954-naushniki-redmi-buds-8-zelyonie-m2544e1</link>
+<g:image_link>https://static.tildacdn.com/tila6462-3836-4935-a537-356335333264/ISB21785025E_1.jpg</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>26000 KZT</g:price>
+<g:brand>Redmi</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
 <g:product_type>Наушники и гарнитуры</g:product_type>
@@ -62007,6 +61982,20 @@
 <g:product_type>Ноутбуки</g:product_type>
 </item>
 <item>
+<g:id>ISB4FCDFFA31</g:id>
+<title>Ноутбук MacBook Air APPLE, 15-INCH, SILVER, MODEL A3448, M5 CHIP WITH 10C CPU, 16GB, 1TB SSD STORAGE, TWO THUNDERBOLT 4 PORTS, TOUCH ID</title>
+<description>Ёмкость 1 ТБ · Оперативная память 16 ГБ · В комплекте Адаптер питания USB-C, кабель USB-C на MagSafe 3 (2 м) · Накопитель 1 ТБ · Процессор Apple M5 · Видеокарта Встроенная · Операционная система macOS · Диагональ 15,3″ · Разрешение 2880×1864 · Ёмкость батареи 66,5 Вт·ч</description>
+<link>https://b2b.isoft-shop.kz/noutbuki/tproduct/329430704844-noutbuk-macbook-air-apple-15-inch-silver</link>
+<g:image_link>https://static.tildacdn.com/tila3733-3165-4930-b732-356636376563/IS180C0F2F87_1.png</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>1270000 KZT</g:price>
+<g:brand>APPLE</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:google_product_category>Electronics &gt; Computers &gt; Laptops</g:google_product_category>
+<g:product_type>Ноутбуки</g:product_type>
+</item>
+<item>
 <g:id>ISB5239734B1</g:id>
 <title>Ноутбук HP E1SD2EA OmniBook 7 AeroNGAI 13-bg1013ci, 13.3-inch WUXGA(1920x1200) IPS, AMD Ryzen AI 7 350 up to 5,0Ghz 8Core, 16GB, 512GB, BKLT</title>
 <description>Bluetooth 5.3 · Wi-Fi Wi-Fi 6 · Диагональ 13,3″ · Камера IR + 5 Мп · Линейка процессора Ryzen 7 · Ёмкость 512 ГБ · Оперативная память 16 ГБ · Операционная система Windows 11 Home · Подсветка клавиатуры есть · Процессор AMD Ryzen AI 7 350</description>
@@ -62285,6 +62274,20 @@
 <g:image_link>https://static.tildacdn.com/tild3835-3266-4661-a266-343837383936/ISC524E1E900_1.png</g:image_link>
 <g:availability>in_stock</g:availability>
 <g:price>908000 KZT</g:price>
+<g:brand>APPLE</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:google_product_category>Electronics &gt; Computers &gt; Laptops</g:google_product_category>
+<g:product_type>Ноутбуки</g:product_type>
+</item>
+<item>
+<g:id>ISC5D67CF529</g:id>
+<title>Ноутбук 14-inch MacBook Pro: Apple M5 чип with 15 A3426, core CPU and 16-core GPU, 24GB, 1TB SSD - Space Black, 24GB, 1TB SSD - SPACE BLACK</title>
+<description>Ёмкость 1 ТБ · В комплекте Адаптер питания USB-C, кабель USB-C на MagSafe 3 (2 м) · Количество ядер процессора 15 · Оперативная память 24 ГБ · Процессор APPLE M5 PRO · Линейка процессора Apple M · Накопитель 1 ТБ · Операционная система macOS · Диагональ 14,2″ · Разрешение 3024×1964</description>
+<link>https://b2b.isoft-shop.kz/noutbuki/tproduct/610599465874-noutbuk-14-inch-macbook-pro-apple-m5-chi</link>
+<g:image_link>https://static.tildacdn.com/tila3637-6234-4638-b061-373130383130/ISC5D67CF529_1.png</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>1738000 KZT</g:price>
 <g:brand>APPLE</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -65071,6 +65074,20 @@
 <g:availability>in_stock</g:availability>
 <g:price>81000 KZT</g:price>
 <g:brand>Kingston</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:google_product_category>Electronics &gt; Electronics Accessories &gt; Memory &gt; RAM</g:google_product_category>
+<g:product_type>Оперативная память</g:product_type>
+</item>
+<item>
+<g:id>ISD1D8243048</g:id>
+<title>Оперативная память DIMM DDR5 64 GB 6000MHz G.Skill Trident Z5, F5-6000J3238G32GX2-TZ5K (2x32G), 32-38-38-96</title>
+<description>Оперативная память 64 ГБ · Модулей в комплекте 2 · Объём 64 ГБ · Тайминги 32-38-38-96 · Тип памяти DDR5 · Форм-фактор DIMM · Частота 6000 МГц</description>
+<link>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/544409513184-operativnaya-pamyat-dimm-ddr5-64-gb-6000</link>
+<g:image_link>https://static.tildacdn.com/tila3061-3132-4031-b331-623336346665/ISD1D8243048_1.jpg</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>771000 KZT</g:price>
+<g:brand>G.SKILL</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
 <g:google_product_category>Electronics &gt; Electronics Accessories &gt; Memory &gt; RAM</g:google_product_category>
@@ -69442,21 +69459,6 @@
 <g:product_type>Охлаждение</g:product_type>
 </item>
 <item>
-<g:id>ISEC6274C9F2</g:id>
-<title>Кулер с водяным охлаждением Deepcool SPARTACUS 420 R-SPT420-BKDSMP-G-1</title>
-<description>Форм-фактор 420 мм · Уровень шума 32,89 дБА · Подсветка ARGB · Интерфейс 4-pin PWM · Скорость вращения 500–2000 об/мин · Тип устройства Водяное охлаждение (СЖО) · Воздушный поток 112,5 CFM · Тип подшипника Гидравлический · Сокет 1851 / 1700 / AM5 / AM4 · TDP 350 Вт</description>
-<link>https://b2b.isoft-shop.kz/ohlazhdenie/tproduct/450715755264-kuler-s-vodyanim-ohlazhdeniem-deepcool-s</link>
-<g:image_link>https://static.tildacdn.com/stor6264-6438-4534-b630-323934646462/a65e570c555686d845fae2122f45c6be.jpg</g:image_link>
-<g:additional_image_link>https://static.tildacdn.com/tild3133-3837-4339-a462-386331626434/693996816864_1.jpg</g:additional_image_link>
-<g:additional_image_link>https://static.tildacdn.com/tild3332-6633-4139-a564-376665383133/450715755264_2.jpg</g:additional_image_link>
-<g:availability>in_stock</g:availability>
-<g:price>121000 KZT</g:price>
-<g:brand>Deepcool</g:brand>
-<g:condition>new</g:condition>
-<g:identifier_exists>no</g:identifier_exists>
-<g:product_type>Охлаждение</g:product_type>
-</item>
-<item>
 <g:id>ISEDE10F3800</g:id>
 <title>Кулер с водяным охлаждением 1STPLAYER MOTHRA MT360 BLACK</title>
 <description>Гарантия 1 год · Тип устройства Водяное охлаждение (СЖО) · Цвет Чёрный · Интерфейс 4-pin · Форм-фактор 360 мм · Скорость вращения 800–2500 об/мин · Воздушный поток 95,34 CFM · TDP 300 Вт · Количество вентиляторов 3 · Сокет AM4</description>
@@ -73067,22 +73069,6 @@
 <g:availability>in_stock</g:availability>
 <g:price>202000 KZT</g:price>
 <g:brand>Wanbo</g:brand>
-<g:condition>new</g:condition>
-<g:identifier_exists>no</g:identifier_exists>
-<g:google_product_category>Electronics &gt; Video &gt; Projectors</g:google_product_category>
-<g:product_type>Проекторы</g:product_type>
-</item>
-<item>
-<g:id>ISE208BB9D8F</g:id>
-<title>Проектор Xiaomi Smart Projector L1 Pro BHR9588EU</title>
-<description>Разрешение 1920×1080 · Класс яркости до 500 лм · Яркость 400 лм</description>
-<link>https://b2b.isoft-shop.kz/proektory-i-paneli/tproduct/927088488124-proektor-xiaomi-smart-projector-l1-pro-b</link>
-<g:image_link>https://static.tildacdn.com/stor3335-3861-4439-b966-373538336663/d834be5eff5f7a3d54b9d62ff97668ac.jpg</g:image_link>
-<g:additional_image_link>https://static.tildacdn.com/tild3634-6263-4661-b261-343931333966/927088488124_1.jpg</g:additional_image_link>
-<g:additional_image_link>https://static.tildacdn.com/tild3064-3765-4236-a236-333961356432/927088488124_2.jpg</g:additional_image_link>
-<g:availability>in_stock</g:availability>
-<g:price>223000 KZT</g:price>
-<g:brand>Xiaomi</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
 <g:google_product_category>Electronics &gt; Video &gt; Projectors</g:google_product_category>
@@ -78004,7 +77990,7 @@
 <link>https://b2b.isoft-shop.kz/setevoe-oborudovanie/tproduct/995698803254-kommutator-hp-enterprisearuba-instant-on</link>
 <g:image_link>https://static.tildacdn.com/tild3361-6636-4366-a465-623761383062/IS24E23394C3_1.jpg</g:image_link>
 <g:availability>in_stock</g:availability>
-<g:price>294000 KZT</g:price>
+<g:price>295000 KZT</g:price>
 <g:brand>HPE</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -85647,6 +85633,20 @@
 <g:availability>in_stock</g:availability>
 <g:price>1275000 KZT</g:price>
 <g:brand>SANC</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:google_product_category>Electronics &gt; Computers &gt; Desktop Computers</g:google_product_category>
+<g:product_type>Системные блоки</g:product_type>
+</item>
+<item>
+<g:id>IS322307EA3D</g:id>
+<title>Системный блок Pulser Core i7-14700F, 2.1 ГГц, B760, 32 ГБ ОЗУ, SSD 1 ТБ M.2, RTX 5060 Ti, 16 ГБ, без DVD, БП 750 Вт</title>
+<description>Ёмкость 1 ТБ · Оперативная память 32 ГБ · Накопитель 1 ТБ · Процессор Intel Core i7-14700F · Видеокарта RTX 5060 Ti · Блок питания 750 Вт · Тип накопителя SSD</description>
+<link>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/428634598724-sistemnii-blok-pulser-core-i7-14700f-21</link>
+<g:image_link>https://static.tildacdn.com/tila3932-3662-4033-b761-623733653937/428634598724_1.jpg</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>1409000 KZT</g:price>
+<g:brand>Pulser</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
 <g:google_product_category>Electronics &gt; Computers &gt; Desktop Computers</g:google_product_category>

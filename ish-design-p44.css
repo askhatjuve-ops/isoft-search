@@ -110,13 +110,14 @@ html.ishp44 body.sp-empty-cart #spBody,html.ishp44 body.sp-empty-cart #spTools{d
 #ishp44 .ishp44__tri .ishp44__f[hidden]{display:none}
 #ishp44 .ishp44__opt{font-style:normal;font-weight:400;color:#646B7D}
 @media screen and (max-width:900px){#ishp44 .ishp44__tri{grid-template-columns:1fr}}
-/* 03.11 вечер: одна форма списка в две колонки - слева «Позиции», справа «Куда прислать ответ» (поля и кнопка 2x2), согласие под правой; на телефоне без изменений */
+/* 03.11 вечер: одна форма списка в две колонки - слева «Позиции», справа «Куда прислать ответ» (поля и кнопка 2x2, согласие внутри), карточки одной высоты; на телефоне без изменений */
 @media screen and (min-width:901px){
-  #ishp44 .ishp44__wrap:has(.ishp44__grid_one){display:grid;grid-template-columns:1fr 1fr;column-gap:16px;align-items:start}
+  #ishp44 .ishp44__wrap:has(.ishp44__grid_one){display:grid;grid-template-columns:1fr 1fr;column-gap:16px;align-items:stretch}
   #ishp44 .ishp44__wrap:has(.ishp44__grid_one)>*{grid-column:1/-1}
-  #ishp44 .ishp44__wrap:has(.ishp44__grid_one)>.ishp44__list{grid-column:1;grid-row:span 2;margin-bottom:0}
+  #ishp44 .ishp44__wrap:has(.ishp44__grid_one)>.ishp44__list{grid-column:1;margin-bottom:0}
   #ishp44 .ishp44__wrap:has(.ishp44__grid_one)>.ishp44__grid_one{grid-column:2}
-  #ishp44 .ishp44__wrap:has(.ishp44__grid_one)>.ishp44__pd{grid-column:2}
+  #ishp44 .ishp44__grid_one{align-items:stretch}
+  #ishp44 .ishp44__grid_one #ishp44kp{align-content:start}
   /* поля и кнопка сеткой 2x2: телефон | почта / компания | кнопка */
   #ishp44 .ishp44__grid_one #ishp44kp{display:grid;grid-template-columns:1fr 1fr;column-gap:12px}
   #ishp44 .ishp44__grid_one #ishp44kp>*{grid-column:1/-1}

@@ -110,3 +110,10 @@ html.ishp44 body.sp-empty-cart #spBody,html.ishp44 body.sp-empty-cart #spTools{d
 #ishp44 .ishp44__tri .ishp44__f[hidden]{display:none}
 #ishp44 .ishp44__opt{font-style:normal;font-weight:400;color:#646B7D}
 @media screen and (max-width:900px){#ishp44 .ishp44__tri{grid-template-columns:1fr}}
+/* 03.11 вечер: одна форма списка узкая - 760px по центру, кнопка по тексту (на телефоне без изменений) */
+@media screen and (min-width:901px){
+  #ishp44 .ishp44__wrap:has(.ishp44__grid_one) .ishp44__list,
+  #ishp44 .ishp44__grid_one,
+  #ishp44 .ishp44__wrap:has(.ishp44__grid_one) .ishp44__pd{max-width:760px;margin-left:auto;margin-right:auto}
+  #ishp44 .ishp44__grid_one #ishp44kpB{display:inline-flex;width:auto;min-width:260px;padding:0 32px}
+}

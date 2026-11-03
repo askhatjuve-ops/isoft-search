@@ -1,4 +1,4 @@
-/* ish-design-p44.js  v3 (27.10.2026: пустая корзина = поле «Список позиций» + «Выбрать файл» + те же две карточки (КП: телефон и почта; счёт: БИН, почта, название); отдельной страницы /podbor больше нет, она переходит на /spec; список уходит в «Комментарий» родной формы строкой «Тема запроса: Подбор техники · Просили: КП|Счёт · Список: …»; v2: 26.10.2026: #kp=номер~позиции из ссылки PDF-КП -> пустая корзина Tilda заполняется этими позициями; v1)  П44 «КП и счёт просто» на /spec b2b.isoft-shop.kz
+/* ish-design-p44.js  v4 (03.11.2026: пустая корзина = ОДНА форма «Отправить список»: Позиции + Телефон, Почта, Компания (необязательно), одна кнопка; карточки «Получить КП» и «Нужен счёт» в пустой корзине убраны (счёт - только из корзины с выбранными товарами); уходит как прежде: родная форма Tilda, «Комментарий» = «Тема запроса: Подбор техники · Просили: список · Заявка С-… · Список: …»; v3 27.10.2026: пустая корзина = поле «Список позиций» + «Выбрать файл» + те же две карточки (КП: телефон и почта; счёт: БИН, почта, название); отдельной страницы /podbor больше нет, она переходит на /spec; список уходит в «Комментарий» родной формы строкой «Тема запроса: Подбор техники · Просили: КП|Счёт · Список: …»; v2: 26.10.2026: #kp=номер~позиции из ссылки PDF-КП -> пустая корзина Tilda заполняется этими позициями; v1)  П44 «КП и счёт просто» на /spec b2b.isoft-shop.kz
    Решение владельца 26.10: путь «КП и счёт» из карточки и корзины = «Ваш заказ» + телефон + [Получить КП] и ниже БИН + почта + [Выставить счёт].
    Без темы запроса, контактного лица, комментария, файла, списка текстом, вкладок «Счёт/КП» и галочки (вместо неё строка про политику).
    /podbor (27.10) ведёт сюда же: p4 делает переход, данные «Уточнить по товару» (sessionStorage ishp10_ask, ?code=, ?model=&art=) падают в поле списка.
@@ -116,8 +116,11 @@
         '<section class="ishp44__card" id="ishp44kp" aria-labelledby="ishp44kpH">' +
           '<h2 id="ishp44kpH">Получить КП</h2>' +
           '<p class="ishp44__lead" id="ishp44kpL">Коммерческое предложение в PDF откроется сразу.</p>' +
+          '<div class="ishp44__tri">' +
           '<label class="ishp44__f" for="ishp44ph"><span>Телефон</span><input id="ishp44ph" type="tel" inputmode="tel" autocomplete="tel" placeholder="+7 ___ ___ __ __" maxlength="17"></label>' +
           '<label class="ishp44__f" id="ishp44kpEmW" for="ishp44kpEm" hidden><span>Почта</span><input id="ishp44kpEm" type="email" inputmode="email" autocomplete="email" placeholder="name@company.kz"></label>' +
+          '<label class="ishp44__f" id="ishp44kpCoW" for="ishp44kpCo" hidden><span>Компания <i class="ishp44__opt">(необязательно)</i></span><input id="ishp44kpCo" type="text" autocomplete="organization" placeholder="ТОО «Название»"></label>' +
+          '</div>' +
           '<div class="ishp44__err" id="ishp44kpE" role="alert"></div>' +
           '<button type="button" class="ishp44__btn" id="ishp44kpB">Получить КП</button>' +
           '<div class="ishp44__ok" id="ishp44kpOk" hidden></div>' +
@@ -143,9 +146,13 @@
     var lm = listMode();
     var ls = q('#ishp44list'); if (ls) ls.hidden = !lm;
     var ew = q('#ishp44kpEmW'); if (ew) ew.hidden = !lm;
-    var ll = q('#ishp44listL'); if (ll) ll.textContent = 'Название, модель или артикул — по одной позиции в строке. Проработаем и ' + ISH_SLA.replyLc() + '.';
-    var kl = q('#ishp44kpL'); if (kl) kl.textContent = lm ? 'Подготовим коммерческое предложение по списку и пришлём на почту.' : 'Коммерческое предложение в PDF откроется сразу.';
-    var kbt = q('#ishp44kpB'); if (kbt) { var kw = lm ? 'Прислать список на КП' : 'Получить КП'; if (kbt.textContent !== kw) kbt.textContent = kw; }
+    var ll = q('#ishp44listL'); if (ll) ll.textContent = 'Название, модель или артикул — по одной позиции в строке.';
+    var cw = q('#ishp44kpCoW'); if (cw) cw.hidden = !lm;
+    var iv = q('#ishp44inv'); if (iv) iv.hidden = lm;           /* счёт - только из корзины с выбранными товарами */
+    var gr = q('#ishp44grid'); if (gr) gr.classList.toggle('ishp44__grid_one', lm);
+    var kh = q('#ishp44kpH'); if (kh) { var kt = lm ? 'Куда прислать ответ' : 'Получить КП'; if (kh.textContent !== kt) kh.textContent = kt; }
+    var kl = q('#ishp44kpL'); if (kl) kl.textContent = lm ? 'Проверим наличие и цены по каждой позиции и ' + ISH_SLA.replyLc() + ': что есть, что можно заменить, чего нет.' : 'Коммерческое предложение в PDF откроется сразу.';
+    var kbt = q('#ishp44kpB'); if (kbt) { var kw = lm ? 'Отправить список' : 'Получить КП'; if (kbt.textContent !== kw) kbt.textContent = kw; }
     var em0 = q('#ishp44empty'); if (em0) em0.hidden = !!(!lm || state.done);
     if (!t.it.length) { s.innerHTML = ''; }
     else if (state.done !== 'inv') s.innerHTML = '<span class="ishp44__sum-t">Итого по заказу</span><span class="ishp44__sum-n">' + t.it.length + ' поз. · ' + t.n + ' шт.</span>' +
@@ -207,44 +214,32 @@
     if (!txt && !fileVal()) { mark('ishp44tx', true); err('list', 'Напишите список позиций или приложите файл'); if (tx) tx.focus(); return null; }
     return txt;
   }
-  function listComment(kind, txt, num) {      /* одна строка: разбор заявки читает «Тема запроса» первой строкой комментария, переносы в списке он теряет */
+  function listComment(txt, num) {      /* одна строка: разбор заявки читает «Тема запроса» первой строкой комментария, переносы в списке он теряет */
     var one = txt.split(/\n+/).map(function (x) { return x.trim(); }).filter(Boolean).join(' / ').slice(0, 3000);
-    return 'Тема запроса: Подбор техники · Просили: ' + (kind === 'kp' ? 'КП' : 'счёт') + ' · Заявка ' + num + (one ? ' · Список: ' + one : ' · Список во вложенном файле');
+    return 'Тема запроса: Подбор техники · Просили: список · Заявка ' + num + (one ? ' · Список: ' + one : ' · Список во вложенном файле');
   }
-  function showListFin(kind, em) {
+  function showListFin(em) {
     var g = q('#ishp44grid'), f = q('#ishp44fin'), l = q('#ishp44list'); if (!f) return;
     state.done = 'list';
     if (g) g.hidden = true;
     if (l) l.hidden = true;
-    f.innerHTML = '<div class="ishp44__fin-ic" aria-hidden="true">✓</div><h2>Список принят</h2><p>Менеджер подберёт позиции и пришлёт ' + (kind === 'kp' ? 'КП' : 'счёт') + ' на <b>' + esc(em) + '</b>. ' + ISH_SLA.reply() + '. Если письма нет, проверьте папку «Спам» или позвоните ' + CT + '.</p>' +
+    f.innerHTML = '<div class="ishp44__fin-ic" aria-hidden="true">✓</div><h2>Список принят</h2><p>Проверим наличие и цены по каждой позиции и ' + ISH_SLA.replyLc() + ': что есть, что можно заменить, чего нет. Ответ придёт на <b>' + esc(em) + '</b>. Если письма нет, проверьте папку «Спам» или позвоните ' + CT + '.</p>' +
       '<a class="ishp44__btn ishp44__btn_ghost" href="/#catalog">Вернуться в каталог</a>';
     f.hidden = false; render();
   }
-  function listSend(kind) {
-    err('list', ''); err('kp', ''); err('inv', ''); mark('ishp44tx', false);
+  function listSend() {
+    err('list', ''); err('kp', ''); mark('ishp44tx', false);
     var txt = listCheck(); if (txt === null) return;
-    var num = kpNum(), vals;
-    if (kind === 'kp') {
-      mark('ishp44ph', false); mark('ishp44kpEm', false);
-      var ten = phone10(q('#ishp44ph').value), em = q('#ishp44kpEm').value.trim();
-      if (ten.length !== 10) { mark('ishp44ph', true); err('kp', 'Укажите телефон: +7 700 000 00 00'); q('#ishp44ph').focus(); return; }
-      if (!EMAIL.test(em)) { mark('ishp44kpEm', true); err('kp', 'Проверьте почту: адрес вида name@company.kz'); q('#ishp44kpEm').focus(); return; }
-      vals = { phone: ten, email: em, comment: listComment('kp', txt, num) };
-    } else {
-      ['ishp44bin', 'ishp44em', 'ishp44co'].forEach(function (i) { mark(i, false); });
-      var bin = digits(q('#ishp44bin').value), em2 = q('#ishp44em').value.trim(), co = q('#ishp44co').value.replace(/\s+/g, ' ').trim();
-      if (bin.length !== 12) { mark('ishp44bin', true); err('inv', 'БИН или ИИН — 12 цифр, сейчас ' + bin.length); q('#ishp44bin').focus(); return; }
-      if (!binOk(bin)) { mark('ishp44bin', true); err('inv', 'Проверьте БИН: последняя цифра не сходится'); q('#ishp44bin').focus(); return; }
-      if (!EMAIL.test(em2)) { mark('ishp44em', true); err('inv', 'Проверьте почту: адрес вида name@company.kz'); q('#ishp44em').focus(); return; }
-      if (co.length < 2) { mark('ishp44co', true); err('inv', 'Укажите название компании или ФИО: оно нужно для счёта'); q('#ishp44co').focus(); return; }
-      var t2 = phone10(q('#ishp44ph').value);
-      vals = { company: co, bin: bin, email: em2, phone: t2.length === 10 ? t2 : '', comment: listComment('inv', txt, num) };
-    }
-    var where = kind === 'kp' ? 'kp' : 'inv', em9 = vals.email;
+    var num = kpNum();
+    mark('ishp44ph', false); mark('ishp44kpEm', false);
+    var ten = phone10(q('#ishp44ph').value), em = q('#ishp44kpEm').value.trim(), co = q('#ishp44kpCo').value.replace(/\s+/g, ' ').trim().slice(0, 120);
+    if (ten.length !== 10) { mark('ishp44ph', true); err('kp', 'Укажите телефон: +7 700 000 00 00'); q('#ishp44ph').focus(); return; }
+    if (!EMAIL.test(em)) { mark('ishp44kpEm', true); err('kp', 'Проверьте почту: адрес вида name@company.kz'); q('#ishp44kpEm').focus(); return; }
+    var vals = { phone: ten, email: em, company: co, comment: listComment(txt, num) };
     busy(true); guardClear(false);
-    submit(kind, vals, function () {
-      busy(false); showListFin(kind, em9); track('ish_p44_list_' + (kind === 'kp' ? 'kp' : 'invoice'), { items: txt ? txt.split(/\n/).filter(function (x) { return x.trim(); }).length : 0, file: fileVal() ? 1 : 0 });
-    }, function (m) { busy(false); err(where, m || 'Не удалось отправить. Позвоните {CT}.'); });
+    submit('kp', vals, function () {
+      busy(false); showListFin(em); track('ish_p44_list', { items: txt ? txt.split(/\n/).filter(function (x) { return x.trim(); }).length : 0, file: fileVal() ? 1 : 0 });
+    }, function (m) { busy(false); err('kp', m || 'Не удалось отправить. Позвоните {CT}.'); });
   }
   function mark(id, bad) { var e = q('#' + id); if (e) { e.classList.toggle('ishp44__bad', !!bad); e.setAttribute('aria-invalid', bad ? 'true' : 'false'); } }
 
@@ -315,7 +310,7 @@
   function busy(on) { state.busy = on; render(); var b = q('#ishp44kpB'), c = q('#ishp44invB'); [b, c].forEach(function (x) { if (x) x.classList.toggle('ishp44__wait', on); }); }
 
   function doKp() {
-    if (listMode()) { listSend('kp'); return; }
+    if (listMode()) { listSend(); return; }
     err('kp', ''); mark('ishp44ph', false);
     var t = totals(); if (!t.it.length) { err('kp', 'В заказе нет позиций. Добавьте товар из каталога.'); return; }
     var ten = phone10(q('#ishp44ph').value);
@@ -349,7 +344,7 @@
   }
 
   function doInv() {
-    if (listMode()) { listSend('inv'); return; }
+    if (listMode()) return;      /* в пустой корзине карточки счёта нет */
     err('inv', ''); ['ishp44bin', 'ishp44em', 'ishp44co'].forEach(function (i) { mark(i, false); });
     var t = totals(); if (!t.it.length) { err('inv', 'В заказе нет позиций. Добавьте товар из каталога.'); return; }
     if (t.noPrice) { err('inv', 'Цену по этой позиции пришлём на почту в рабочее время.'); return; }
@@ -388,12 +383,13 @@
     ['ishp44em', 'ishp44co'].forEach(function (i) { q('#' + i).addEventListener('input', function () { mark(i, false); err('inv', ''); }); });
     q('#ishp44tx').addEventListener('input', function () { mark('ishp44tx', false); err('list', ''); });
     q('#ishp44kpEm').addEventListener('input', function () { mark('ishp44kpEm', false); err('kp', ''); });
+    q('#ishp44kpCo').addEventListener('input', function () { err('kp', ''); });
     q('#ishp44fb').addEventListener('click', fileOpen);
     q('#ishp44fx').addEventListener('click', fileDrop);
     askPrefill();
     q('#ishp44kpB').addEventListener('click', doKp);
     q('#ishp44invB').addEventListener('click', doInv);
-    [['ishp44ph', doKp], ['ishp44kpEm', doKp], ['ishp44bin', doInv], ['ishp44em', doInv], ['ishp44co', doInv]].forEach(function (x) {
+    [['ishp44ph', doKp], ['ishp44kpEm', doKp], ['ishp44kpCo', doKp], ['ishp44bin', doInv], ['ishp44em', doInv], ['ishp44co', doInv]].forEach(function (x) {
       q('#' + x[0]).addEventListener('keydown', function (e) { if (e.key === 'Enter') { e.preventDefault(); x[1](); } });
     });
     /* заголовок страницы: «Ваш заказ», лишние подписи убираем css; сам h1 меняем текстом */

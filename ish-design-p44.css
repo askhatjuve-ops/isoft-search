@@ -104,3 +104,9 @@ html.ishp44 body.sp-empty-cart #spBody,html.ishp44 body.sp-empty-cart #spTools{d
 #ishp44 .ishp44__file .ishp44__btn{width:auto;height:44px;flex:0 0 auto}
 #ishp44 .ishp44__fn{color:#646B7D;font-size:13.5px;min-width:0}
 #ishp44 .ishp44__x{border:0;background:none;color:#2B44C7;font:inherit;font-size:13.5px;text-decoration:underline;cursor:pointer;padding:4px}
+/* 03.11: пустая корзина - одна форма списка: телефон, почта, компания в ряд; карточка счёта скрыта js */
+#ishp44 .ishp44__grid_one{grid-template-columns:1fr}
+#ishp44 .ishp44__tri{display:grid;grid-template-columns:1fr 1fr 1fr;gap:0 12px}
+#ishp44 .ishp44__tri .ishp44__f[hidden]{display:none}
+#ishp44 .ishp44__opt{font-style:normal;font-weight:400;color:#646B7D}
+@media screen and (max-width:900px){#ishp44 .ishp44__tri{grid-template-columns:1fr}}

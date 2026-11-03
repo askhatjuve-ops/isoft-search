@@ -154,7 +154,7 @@
     var pd = q('.ishp44__pd'), pkc = q('#ishp44kp'), pwr = q('.ishp44__wrap');
     if (pd && pkc && pwr) { var pto = lm ? pkc : pwr; if (pd.parentNode !== pto) pto.appendChild(pd); }
     var kh = q('#ishp44kpH'); if (kh) { var kt = lm ? 'Куда прислать ответ' : 'Получить КП'; if (kh.textContent !== kt) kh.textContent = kt; }
-    var kl = q('#ishp44kpL'); if (kl) kl.textContent = lm ? 'Проверим наличие и цены по каждой позиции и ' + ISH_SLA.replyLc() + ': что есть, что можно заменить, чего нет.' : 'Коммерческое предложение в PDF откроется сразу.';
+    var kl = q('#ishp44kpL'); if (kl) kl.textContent = lm ? 'Пришлём цену и наличие по каждой позиции, а если чего-то нет — предложим замену.' : 'Коммерческое предложение в PDF откроется сразу.';
     var kbt = q('#ishp44kpB'); if (kbt) { var kw = lm ? 'Отправить список' : 'Получить КП'; if (kbt.textContent !== kw) kbt.textContent = kw; }
     var em0 = q('#ishp44empty'); if (em0) em0.hidden = !!(!lm || state.done);
     if (!t.it.length) { s.innerHTML = ''; }

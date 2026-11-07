@@ -306,6 +306,9 @@
   /* 07.11: заказ корзины без товаров сервер Tilda не принимает. Список из пустой корзины уходит одной служебной позицией
      с ценой 0 (сам список - как прежде в «Комментарии»). Ноутбук узнаёт её по названию (заявка_из_почты.py, ПОДБОР_ПОЗИЦИЯ). */
   var LIST_ITEM = 'Подбор по списку (позиции в комментарии)';
+  /* uid скрытого товара каталога «Подбор по списку…» (создаёт создать_подбор.py). Пока пусто - служебная строка уходит без uid, как раньше.
+     С 29.10 сервер Tilda сверяет позиции с каталогом по productuid (ответ unknown, productuid 0): без настоящего uid заказ отвергается. */
+  var LIST_UID = '680296054424', LIST_SKU = 'ISH-PODBOR-SPISOK', LIST_PRICE = 0;   /* LIST_PRICE: 0, а если каталог не берёт 0 - 1 (тогда сумма в письме 1 ₸) */
   function patchPay(tries) {      /* идемпотентно: обёртка помечена; зовём при загрузке и перед каждой отправкой */
     var tf = W.tildaForm;
     if (!tf || typeof tf.addPaymentInfoToForm !== 'function') { if ((tries || 0) < 60) setTimeout(function () { patchPay((tries || 0) + 1); }, 300); return; }
@@ -316,8 +319,11 @@
       try {
         var el = f && f.jquery ? f[0] : f, p = tf.tildapayment;
         if (W.__ishp44list && el && el.id === FID && p && (!p.products || !p.products.length)) {
-          p.products = [{ name: LIST_ITEM + (typeof W.__ishp44list === 'string' ? ' · ' + W.__ishp44list : ''), price: 0, quantity: 1, amount: 0 }];
-          p.amount = 0;
+          var it = { name: LIST_ITEM + (typeof W.__ishp44list === 'string' ? ' · ' + W.__ishp44list : ''), price: LIST_PRICE, quantity: 1, amount: LIST_PRICE };
+          if (LIST_UID) { it.uid = LIST_UID; it.gen_uid = LIST_UID; it.lid = LIST_UID; it.sku = LIST_SKU; }   /* поля как у настоящего товара корзины */
+          p.products = [it];
+          p.amount = LIST_PRICE;
+          p.prodamount = LIST_PRICE; p.prodamount_withdyndiscount = LIST_PRICE;
         }
       } catch (e) {}
       return r;

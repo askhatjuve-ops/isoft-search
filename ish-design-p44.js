@@ -1,4 +1,4 @@
-/* ish-design-p44.js  v4 (03.11.2026: пустая корзина = ОДНА форма «Отправить список»: Позиции + Телефон, Почта, Компания (необязательно), одна кнопка; карточки «Получить КП» и «Нужен счёт» в пустой корзине убраны (счёт - только из корзины с выбранными товарами); уходит как прежде: родная форма Tilda, «Комментарий» = «Тема запроса: Подбор техники · Просили: список · Заявка С-… · Список: …»; v3 27.10.2026: пустая корзина = поле «Список позиций» + «Выбрать файл» + те же две карточки (КП: телефон и почта; счёт: БИН, почта, название); отдельной страницы /podbor больше нет, она переходит на /spec; список уходит в «Комментарий» родной формы строкой «Тема запроса: Подбор техники · Просили: КП|Счёт · Список: …»; v2: 26.10.2026: #kp=номер~позиции из ссылки PDF-КП -> пустая корзина Tilda заполняется этими позициями; v1)  П44 «КП и счёт просто» на /spec b2b.isoft-shop.kz
+/* ish-design-p44.js  v5 (07.11.2026: заявки не терялись молча: ответ Tilda procces с message не OK = ошибка с телефоном, а не «Список принят»; список из пустой корзины уходит со служебной позицией «Подбор по списку» цена 0 - пустой заказ корзины сервер Tilda отвергает с 29.10; отправка ждёт, пока блок T123 переключит режим КП (БИН перестаёт быть обязательным), вместо 450 мс наугад; v4 03.11.2026: пустая корзина = ОДНА форма «Отправить список»: Позиции + Телефон, Почта, Компания (необязательно), одна кнопка; карточки «Получить КП» и «Нужен счёт» в пустой корзине убраны (счёт - только из корзины с выбранными товарами); уходит как прежде: родная форма Tilda, «Комментарий» = «Тема запроса: Подбор техники · Просили: список · Заявка С-… · Список: …»; v3 27.10.2026: пустая корзина = поле «Список позиций» + «Выбрать файл» + те же две карточки (КП: телефон и почта; счёт: БИН, почта, название); отдельной страницы /podbor больше нет, она переходит на /spec; список уходит в «Комментарий» родной формы строкой «Тема запроса: Подбор техники · Просили: КП|Счёт · Список: …»; v2: 26.10.2026: #kp=номер~позиции из ссылки PDF-КП -> пустая корзина Tilda заполняется этими позициями; v1)  П44 «КП и счёт просто» на /spec b2b.isoft-shop.kz
    Решение владельца 26.10: путь «КП и счёт» из карточки и корзины = «Ваш заказ» + телефон + [Получить КП] и ниже БИН + почта + [Выставить счёт].
    Без темы запроса, контактного лица, комментария, файла, списка текстом, вкладок «Счёт/КП» и галочки (вместо неё строка про политику).
    /podbor (27.10) ведёт сюда же: p4 делает переход, данные «Уточнить по товару» (sessionStorage ishp10_ask, ?code=, ?model=&art=) падают в поле списка.
@@ -238,7 +238,7 @@
     var ten = phone10(q('#ishp44ph').value), em = q('#ishp44kpEm').value.trim(), co = q('#ishp44kpCo').value.replace(/\s+/g, ' ').trim().slice(0, 120);
     if (ten.length !== 10) { mark('ishp44ph', true); err('kp', 'Укажите телефон: +7 700 000 00 00'); q('#ishp44ph').focus(); return; }
     if (!EMAIL.test(em)) { mark('ishp44kpEm', true); err('kp', 'Проверьте почту: адрес вида name@company.kz'); q('#ishp44kpEm').focus(); return; }
-    var vals = { phone: ten, email: em, company: co, comment: listComment(txt, num) };
+    var vals = { phone: ten, email: em, company: co, comment: listComment(txt, num), list: true, num: num };
     busy(true); guardClear(false);
     submit('kp', vals, function () {
       busy(false); showListFin(em); track('ish_p44_list', { items: txt ? txt.split(/\n/).filter(function (x) { return x.trim(); }).length : 0, file: fileVal() ? 1 : 0 });
@@ -268,15 +268,88 @@
     });
     return m.filter(function (x, i) { return m.indexOf(x) === i; }).slice(0, 2);
   }
+  /* 07.11: ответ сервера Tilda проверяем сами. Пустая корзина (с 29.10): forms.tildaapi.pro отвечает HTTP 200
+     {"message":"Temporary error. Please reload page and order make again."}, а tilda-forms (send -> onreadystatechange)
+     смотрит только objData.error: «message» не OK считает успехом, шлёт tildaform:aftersuccess и чистит корзину.
+     Клиент видел «Список принят», заявка терялась. Здесь ответ procces с message не OK превращаем в error до разбора
+     Tilda (своё свойство responseText у этого запроса): Tilda сама рисует ошибку и шлёт tildaform:aftererror, корзину
+     не трогает; наша панель показывает ошибку с телефоном. */
+  var BAD_MSG = 'Заявка не дошла: сервер не принял её.';
+  W.__ishp44resp = null;
+  (function () {
+    var X = W.XMLHttpRequest && W.XMLHttpRequest.prototype;
+    if (!X || X.__ishp44) return;
+    X.__ishp44 = 1;
+    var op = X.open, sd = X.send;
+    X.open = function (m, u) { try { this.__ishp44u = String(u || ''); } catch (e) {} return op.apply(this, arguments); };
+    X.send = function () {
+      var x = this;
+      if (/\/procces\/?(\?|$)/.test(x.__ishp44u || '')) {
+        var tildaH = x.onreadystatechange;      /* Tilda ставит обработчик до send: оборачиваем, чтобы проверить ответ раньше неё */
+        x.onreadystatechange = function () { check(); if (typeof tildaH === 'function') return tildaH.apply(this, arguments); };
+        var check = function () {
+          if (x.readyState !== 4 || x.__ishp44done) return;
+          x.__ishp44done = 1;
+          var t = '', j = null;
+          try { t = x.responseText || ''; } catch (e) {}
+          try { j = t.charAt(0) === '{' ? JSON.parse(t) : null; } catch (e) {}
+          var bad = !!(j && !j.error && j.message && j.message !== 'OK' && !j.needcaptcha && !j.redirectto);
+          if (x.status < 200 || x.status >= 400) return;   /* 5xx/408/429: Tilda сама повторит на запасной адрес или покажет ошибку */
+          W.__ishp44resp = { at: Date.now(), status: x.status, ok: !!(j && !j.error && !bad), captcha: !!(j && j.needcaptcha), msg: j ? String(j.error || j.message || '') : t.slice(0, 200) };
+          if (bad) { try { var s = JSON.stringify({ error: BAD_MSG + ' (' + String(j.message).slice(0, 120) + ')' }); Object.defineProperty(x, 'responseText', { configurable: true, get: function () { return s; } }); } catch (e) {} }
+          try { if (bad || (j && j.error)) track('ish_p44_send_fail', { msg: String(j.error || j.message).slice(0, 90) }); } catch (e) {}
+        };
+      }
+      return sd.apply(this, arguments);
+    };
+  })();
+  /* 07.11: заказ корзины без товаров сервер Tilda не принимает. Список из пустой корзины уходит одной служебной позицией
+     с ценой 0 (сам список - как прежде в «Комментарии»). Ноутбук узнаёт её по названию (заявка_из_почты.py, ПОДБОР_ПОЗИЦИЯ). */
+  var LIST_ITEM = 'Подбор по списку (позиции в комментарии)';
+  function patchPay(tries) {      /* идемпотентно: обёртка помечена; зовём при загрузке и перед каждой отправкой */
+    var tf = W.tildaForm;
+    if (!tf || typeof tf.addPaymentInfoToForm !== 'function') { if ((tries || 0) < 60) setTimeout(function () { patchPay((tries || 0) + 1); }, 300); return; }
+    if (tf.addPaymentInfoToForm.__ishp44) return;
+    var orig = tf.addPaymentInfoToForm;
+    var wrap = function (f) {
+      var r = orig.apply(this, arguments);
+      try {
+        var el = f && f.jquery ? f[0] : f, p = tf.tildapayment;
+        if (W.__ishp44list && el && el.id === FID && p && (!p.products || !p.products.length)) {
+          p.products = [{ name: LIST_ITEM + (typeof W.__ishp44list === 'string' ? ' · ' + W.__ishp44list : ''), price: 0, quantity: 1, amount: 0 }];
+          p.amount = 0;
+        }
+      } catch (e) {}
+      return r;
+    };
+    wrap.__ishp44 = 1;
+    tf.addPaymentInfoToForm = wrap;
+  }
+  patchPay(0);
+  function modeReady(m) {     /* блок T123 применяет режим своим таймером (раз в 0,7 с): ждём, пока БИН перестанет быть обязательным в КП */
+    var b = q('#spDoc [data-d="' + m + '"]'), F = form(), bin = F && q('[name^="БИН"]', F);
+    if (!b || b.getAttribute('aria-checked') !== 'true') return false;
+    if (m !== 'inv' && bin && bin.getAttribute('data-tilda-req') === '1') return false;
+    return true;
+  }
   function submit(kind, vals, onOk, onFail) {
     var f = form();
     if (!f) { onFail('Форма не загрузилась. Обновите страницу или позвоните {CT}.'); return; }
-    var done = false, timer;
-    function ok() { if (done) return; done = true; clearTimeout(timer); D.removeEventListener('tildaform:aftersuccess', h); onOk(); }
-    function h(e) { if (e.target && e.target.id === FID) ok(); }
+    var done = false, timer, t0 = Date.now(), m = kind === 'kp' ? 'kp' : 'inv';
+    function fin() { done = true; W.__ishp44list = 0; clearTimeout(timer); D.removeEventListener('tildaform:aftersuccess', h); }
+    function ok() { if (done) return; fin(); onOk(); }
+    function h(e) {
+      if (!(e.target && e.target.id === FID)) return;
+      var r = W.__ishp44resp;
+      if (r && r.at >= t0 && !r.ok) return;      /* сервер не принял: ошибку покажет watch ниже */
+      ok();
+    }
     D.addEventListener('tildaform:aftersuccess', h);
-    setMode(kind === 'kp' ? 'kp' : 'inv');
-    setTimeout(function () {
+    setMode(m);
+    var waited = 0;
+    (function wait() { if (!modeReady(m) && (waited += 100) < 3000) { setTimeout(wait, 100); return; } go(); })();
+    function go() {
+      W.__ishp44list = vals.list ? (vals.num || 1) : 0; if (vals.list) patchPay(99);
       var F = form(); if (!F) { onFail('Форма не загрузилась. Позвоните {CT}.'); return; }
       var set = function (sel, v) { var el = q(sel, F); if (el) setVal(el, v); };
       set('[name^="Компания"]', vals.company || PH_COMPANY);
@@ -294,11 +367,13 @@
         if (done) return;
         n++;
         var e = nativeErrors(F);
-        if (e.length && n > 2) { done = true; D.removeEventListener('tildaform:aftersuccess', h); onFail(e.join(' · ') + ' Не получается? Позвоните {CT}.'); return; }
-        if (n > 100) { done = true; D.removeEventListener('tildaform:aftersuccess', h); onFail('Нет ответа от сервера. Проверьте интернет и повторите или позвоните {CT}.'); return; }
+        var r = W.__ishp44resp;
+        if (r && r.at >= t0 && !r.ok) { fin(); onFail(BAD_MSG + ' Позвоните {CT} — примем заявку по телефону.'); return; }
+        if (e.length && n > 2) { fin(); onFail(e.join(' · ') + ' Не получается? Позвоните {CT}.'); return; }
+        if (n > (r && r.at >= t0 && r.captcha ? 1200 : 100)) { fin();   /* Tilda попросила капчу: человеку нужно время (до 5 мин) */ onFail('Нет ответа от сервера. Проверьте интернет и повторите или позвоните {CT}.'); return; }
         timer = setTimeout(watch, 250);
       })();
-    }, 450);
+    }
   }
 
   function pad2(n) { return (n < 10 ? '0' : '') + n; }

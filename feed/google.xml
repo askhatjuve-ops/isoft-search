@@ -1731,6 +1731,20 @@
 <g:product_type>SSD-накопители</g:product_type>
 </item>
 <item>
+<g:id>IS8527F52403</g:id>
+<title>Ssd SSD-накопитель SATA 512 GB Afox SD250-512GQN, SATA 6Gb/s</title>
+<description>Ёмкость 512 ГБ · Интерфейс SATA III</description>
+<link>https://b2b.isoft-shop.kz/ssd-nakopiteli/tproduct/328413744284-ssd-ssd-nakopitel-sata-512-gb-afox-sd250</link>
+<g:image_link>https://static.tildacdn.com/tila3761-3166-4133-a536-323436396635/IS8527F52403_1.jpg</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>49000 KZT</g:price>
+<g:brand>AFOX</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:google_product_category>Electronics &gt; Electronics Accessories &gt; Computer Components &gt; Storage Devices &gt; Hard Drives</g:google_product_category>
+<g:product_type>SSD-накопители</g:product_type>
+</item>
+<item>
 <g:id>IS87F8D548DD</g:id>
 <title>Твердотельный накопитель SSD Kingston SKC600/256G SATA III 2.5-inch</title>
 <description>SSD-накопитель Kingston SKC600/256G: Ёмкость 256 Гб · Интерфейс SATA · Форм-фактор 2.5″ · Скорость чтения 550 Мб/сек · Скорость записи 500 Мб/сек. Цена с НДС, безналичный расчёт для организаций.</description>
@@ -8215,7 +8229,7 @@
 <item>
 <g:id>ISA03FEF238A</g:id>
 <title>Видеокарта XFX Mercury AMD Radeon RX 9070XT OC Gaming Edition WHITE with RGB 16GB GDDR6, HDMI 3xDP</title>
-<description>Объём видеопамяти 16 ГБ · Графический процессор Radeon RX 9070 XT · Тип видеопамяти GDDR6 · Видеовыходы HDMI / DP x 3 · Серия видеокарты Radeon RX</description>
+<description>Видеовыходы HDMI / DP x 3 · Графический процессор Radeon RX 9070 XT · Объём видеопамяти 16 ГБ · Тип видеопамяти GDDR6 · Серия видеокарты Radeon RX</description>
 <link>https://b2b.isoft-shop.kz/videokarty/tproduct/139981951054-videokarta-xfx-mercury-amd-radeon-rx-907</link>
 <g:image_link>https://static.tildacdn.com/stor3961-3833-4230-b837-313163386230/7cf316e5da409e01022f9b74c8e97921.png</g:image_link>
 <g:availability>in_stock</g:availability>
@@ -8410,7 +8424,7 @@
 <item>
 <g:id>ISCF2C3C30C3</g:id>
 <title>Видеокарта Gigabyte (GV-R9070XTAORUS E-16GD) Radeon RX 9070 XT AORUS ELITE 16G</title>
-<description>Объём видеопамяти 16 ГБ · Графический процессор Radeon RX 9070 XT · Тип видеопамяти GDDR6 · Разрядность шины 256 бит · Видеовыходы HDMI x 2 / DP x 2 · Серия видеокарты Radeon RX</description>
+<description>Объём видеопамяти 16 ГБ · Графический процессор Radeon RX 9070 XT · Серия видеокарты Radeon RX · Разрядность шины 256 бит · Видеовыходы HDMI x 2 / DP x 2 · Тип видеопамяти GDDR6</description>
 <link>https://b2b.isoft-shop.kz/videokarty/tproduct/379272837324-videokarta-gigabyte-gv-r9070xtaorus-e-16</link>
 <g:image_link>https://static.tildacdn.com/stor6565-3731-4632-b864-633333646132/b189f1c96f829def43b7f311e57555a5.jpg</g:image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild3632-3631-4563-a330-376138663565/379272837324_1.jpg</g:additional_image_link>
@@ -9484,6 +9498,19 @@
 <g:additional_image_link>https://static.tildacdn.com/tild6665-3334-4731-b438-633635653836/630496202374_1.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
 <g:price>89000 KZT</g:price>
+<g:brand>Hikvision</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:product_type>Видеорегистраторы</g:product_type>
+</item>
+<item>
+<g:id>ISB55DEACD1E</g:id>
+<title>Сетевой видеорегистратор Hikvision DS-8632NXI-K8</title>
+<description>Тип устройства Сетевой видеорегистратор</description>
+<link>https://b2b.isoft-shop.kz/videoregistratory/tproduct/989947875874-setevoi-videoregistrator-hikvision-ds-86</link>
+<g:image_link>https://static.tildacdn.com/tila6663-3939-4161-b939-313038656164/ISB55DEACD1E_1.jpg</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>625000 KZT</g:price>
 <g:brand>Hikvision</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -14286,6 +14313,19 @@
 <g:product_type>ИБП</g:product_type>
 </item>
 <item>
+<g:id>ISAC91ED9626</g:id>
+<title>ИБП Eaton/9E/On-Line/2 000 VA/1 600 W 9E2000I</title>
+<description>Мощность 2000 ВА / 1600 Вт · Топология On-Line · Класс мощности 1–2,2 кВА</description>
+<link>https://b2b.isoft-shop.kz/ibp-i-zashchita-pitaniya/tproduct/725909383864-ibp-eaton9eon-line2-000-va1-600-w-9e2000</link>
+<g:image_link>https://static.tildacdn.com/tila3063-3364-4635-b638-346235623839/ISAC91ED9626_1.jpg</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>344000 KZT</g:price>
+<g:brand>Eaton</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:product_type>ИБП</g:product_type>
+</item>
+<item>
 <g:id>ISADA598E7E4</g:id>
 <title>ИБП Eaton 9SX1500I</title>
 <description>Интерфейс USB, RS-232 · Рабочая температура от 0 до 40 °С · Топология On-Line · Мощность 1500 ВА / 1350 Вт · Розеток 6 · Размещение Напольный · Класс мощности 1–2,2 кВА · Форма выходного сигнала Чистая синусоида · Время переключения 0 мс · Гарантия 2 года</description>
@@ -14504,7 +14544,7 @@
 <item>
 <g:id>ISBCFA61A4C7</g:id>
 <title>ИБП APC Smart-UPS SMT1000RMI2UC</title>
-<description>Мощность 1000 ВА / 700 Вт · Розеток 4 · Форма выходного сигнала Синусоида · Время переключения 10 мс · Топология Линейно-интерактивный · Размещение Стоечный · Цвет Чёрный · Класс мощности до 1 кВА · Рабочая температура от 0 до 40 °С</description>
+<description>Рабочая температура от 0 до 40 °С · Топология Линейно-интерактивный · Мощность 1000 ВА / 700 Вт · Розеток 4 · Размещение Стоечный · Класс мощности до 1 кВА · Форма выходного сигнала Синусоида · Время переключения 10 мс · Цвет Чёрный</description>
 <link>https://b2b.isoft-shop.kz/ibp-i-zashchita-pitaniya/tproduct/625785389464-ibp-apc-smart-ups-smt1000rmi2uc</link>
 <g:image_link>https://static.tildacdn.com/stor6539-6235-4661-a338-383135623130/c56a2f9b913c31d184c595c539f9f330.jpg</g:image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild6662-3132-4062-b438-663563636263/625785389464_1.jpg</g:additional_image_link>
@@ -19723,7 +19763,7 @@
 <item>
 <g:id>ISCAE8C01A8C</g:id>
 <title>IP видеокамера Dahua DH-IPC-HDBW2241RP-ZS-27135</title>
-<description>Тип устройства IP-камера · Разрешение камеры 2 МП · Тип корпуса Купольная</description>
+<description>Тип устройства IP-камера · Тип корпуса Купольная · Разрешение камеры 2 МП</description>
 <link>https://b2b.isoft-shop.kz/videonablyudenie/tproduct/467206477244-ip-videokamera-dahua-dh-ipc-hdbw2241rp-z</link>
 <g:image_link>https://static.tildacdn.com/stor3036-6362-4537-b134-623061653933/5a53aebb4e3efdd543ca2cb479674418.jpg</g:image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild3332-6264-4363-a163-383164383263/467206477244_1.jpg</g:additional_image_link>
@@ -30576,6 +30616,19 @@
 <g:product_type>МФУ</g:product_type>
 </item>
 <item>
+<g:id>IS143B6B4DCD</g:id>
+<title>Мфу PANTUM BM5100ADN (копир, принтер, цв. сканер) (чб., A4, 40ppm, 512MB, 1.2GHz, 60-200 г/м2, 1200x1200 dpi, макс. 100т мес., двухсторонняя печать, D</title>
+<description>Мфу PANTUM BM5100ADN (копир, принтер, цв. сканер) (чб., A4, 40ppm, 512MB, 1.2GHz, 60-200 г/м2, 1200x1200 dpi, макс. 100т мес., двухсторонняя печать, DADF (50 листов), USB-fdp, PCL5e/6, PostScript, USB 2.0, Ethernet 10/100/1000, Scan to E-mail (PC, FTP (PANTUM)</description>
+<link>https://b2b.isoft-shop.kz/mfu-lazernye-cvetnye/tproduct/361531618134-mfu-pantum-bm5100adn-kopir-printer-tsv-s</link>
+<g:image_link>https://static.tildacdn.com/tild3134-3637-4032-a261-393861353662/IS143B6B4DCD_1.png</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>162000 KZT</g:price>
+<g:brand>PANTUM</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:product_type>МФУ</g:product_type>
+</item>
+<item>
 <g:id>IS1454372B03</g:id>
 <title>Монохромное лазерное МФУ Canon imageRUNNER 2224N II</title>
 <description>Монохромное МФУ, Canon, imageRUNNER 2224N II, 7079C002AA, Лазерное, A3, 24 стр./мин., Подача 350 листов, Планшетный сканер (АПД DADF-D1 опционален), Сенсорный дисплей 3.5", 1.2 ГГц CPU, 1.5 ГБ RAM, USB 2.0, Ethernet 10/100, Wi-Fi</description>
@@ -31035,6 +31088,19 @@
 <g:image_link>https://static.tildacdn.com/stor6266-3335-4461-b336-666566383662/8e6602fc504450016f99f2175a54d9aa.jpg</g:image_link>
 <g:availability>in_stock</g:availability>
 <g:price>155000 KZT</g:price>
+<g:brand>HP</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:product_type>МФУ</g:product_type>
+</item>
+<item>
+<g:id>IS71EE319B7C</g:id>
+<title>МФУ HP 1F3Y2A Smart Tank 580 Wireless (A4), White with grey cover, Color Ink Printer/Scanner/Copier, 1200 dpi, 12/5 ppm, 980MHz, Duty 1000p</title>
+<description>МФУ HP 1F3Y2A Smart Tank 580 Wireless (A4), White with grey cover, Color Ink Printer/Scanner/Copier, 1200 dpi, 12/5 ppm, 980MHz, Duty 1000p (HP)</description>
+<link>https://b2b.isoft-shop.kz/mfu-lazernye-cvetnye/tproduct/581154521104-mfu-hp-1f3y2a-smart-tank-580-wireless-a4</link>
+<g:image_link>https://static.tildacdn.com/tila3166-3664-4236-a334-623334633336/IS71EE319B7C_1.jpg</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>107000 KZT</g:price>
 <g:brand>HP</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -35153,6 +35219,19 @@
 <g:product_type>Материнские платы</g:product_type>
 </item>
 <item>
+<g:id>IS0223DCA255</g:id>
+<title>Материнская плата MSI PRO B850M-P WIFI, Socket AM5, MATX, AMD B850 (DP+HDMI), 4DDR5, 1PCIx16, 3PCIx1</title>
+<description>Слотов памяти 4 · Сокет AM5 · Тип памяти DDR5 · Форм-фактор Micro-ATX · Чипсет B850</description>
+<link>https://b2b.isoft-shop.kz/materinskie-platy/tproduct/574455213274-materinskaya-plata-msi-pro-b850m-p-wifi</link>
+<g:image_link>https://static.tildacdn.com/tila3033-3866-4139-b461-643231643433/IS0223DCA255_1.jpg</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>104000 KZT</g:price>
+<g:brand>MSI</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:product_type>Материнские платы</g:product_type>
+</item>
+<item>
 <g:id>IS02A7ABF51B</g:id>
 <title>Материнская плата Gigabyte B760M D3HP</title>
 <description>Сокет LGA1700 · Тип памяти DDR5 · Чипсет B760 · Форм-фактор Micro-ATX · Слотов памяти 4 · Видеовыходы HDMI / VGA / DP · Разъёмов M.2 2 · Разъёмов SATA 4 · Интерфейс SATA / PCI-E 3.0 / PCI-E 4.0</description>
@@ -35223,6 +35302,19 @@
 <g:availability>in_stock</g:availability>
 <g:price>125000 KZT</g:price>
 <g:brand>Gigabyte</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:product_type>Материнские платы</g:product_type>
+</item>
+<item>
+<g:id>IS0B3EE1A67B</g:id>
+<title>Материнская плата ASUS ROG STRIX B550-F GAMING WI-FI II, Socket AM4, ATX, AMD B550 (HDMI+DP, GNIC), 4DDR4, 2PCIx16</title>
+<description>Тип памяти DDR4 · Форм-фактор ATX · Сокет AM4 · Чипсет B550 · Слотов памяти 4</description>
+<link>https://b2b.isoft-shop.kz/materinskie-platy/tproduct/800473226634-materinskaya-plata-asus-rog-strix-b550-f</link>
+<g:image_link>https://static.tildacdn.com/tila6139-3434-4565-a461-383131366633/IS0B3EE1A67B_1.jpg</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>117000 KZT</g:price>
+<g:brand>ASUS</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
 <g:product_type>Материнские платы</g:product_type>
@@ -35331,6 +35423,19 @@
 <g:product_type>Материнские платы</g:product_type>
 </item>
 <item>
+<g:id>IS0FCCF40017</g:id>
+<title>Материнская плата MSI Z790 GAMING PLUS WIFI, Socket1700, ATX, iZ790 (DP+HDMI), 4DDR5, PCIx16, PCIx1</title>
+<description>Слотов памяти 4 · Сокет LGA1700 · Тип памяти DDR5 · Форм-фактор ATX · Чипсет Z790</description>
+<link>https://b2b.isoft-shop.kz/materinskie-platy/tproduct/147455150604-materinskaya-plata-msi-z790-gaming-plus</link>
+<g:image_link>https://static.tildacdn.com/tila3136-3537-4763-b765-383430663733/IS0FCCF40017_1.jpg</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>130000 KZT</g:price>
+<g:brand>MSI</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:product_type>Материнские платы</g:product_type>
+</item>
+<item>
 <g:id>IS1223079A24</g:id>
 <title>Материнская плата Asus P13R-E 3PCIx8</title>
 <description>Сокет LGA1700 · Тип памяти DDR5 · Форм-фактор ATX · Слотов памяти 4 · Чипсет C266 · Видеовыходы VGA · Разъёмов M.2 2 · Разъёмов SATA 8</description>
@@ -35385,6 +35490,19 @@
 <g:availability>in_stock</g:availability>
 <g:price>70000 KZT</g:price>
 <g:brand>Gigabyte</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:product_type>Материнские платы</g:product_type>
+</item>
+<item>
+<g:id>IS15F8D64058</g:id>
+<title>Материнская плата ASUS TUF GAMING Z790-PLUS WIFI, Socket1700, ATX, iZ790 (DP+HDMI), 4DDR5, 2PCIx16, 2PCIx1, PCIx4</title>
+<description>Тип памяти DDR5 · Форм-фактор ATX · Сокет LGA1700 · Чипсет Z790 · Слотов памяти 4</description>
+<link>https://b2b.isoft-shop.kz/materinskie-platy/tproduct/935882999044-materinskaya-plata-asus-tuf-gaming-z790</link>
+<g:image_link>https://static.tildacdn.com/tila3065-3162-4662-b230-666537323763/IS15F8D64058_1.jpg</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>165000 KZT</g:price>
+<g:brand>ASUS</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
 <g:product_type>Материнские платы</g:product_type>
@@ -35530,6 +35648,19 @@
 <g:availability>in_stock</g:availability>
 <g:price>294000 KZT</g:price>
 <g:brand>Supermicro</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:product_type>Материнские платы</g:product_type>
+</item>
+<item>
+<g:id>IS24544BC4B1</g:id>
+<title>Материнская плата ASUS PRIME B760-PLUS D4, Socket1700, ATX, iB760 (VGA+DP+HDMI), 4DDR4, 2PCIx16, PCIx1</title>
+<description>Тип памяти DDR4 · Форм-фактор ATX · Сокет LGA1700 · Чипсет B760 · Слотов памяти 4</description>
+<link>https://b2b.isoft-shop.kz/materinskie-platy/tproduct/783739552304-materinskaya-plata-asus-prime-b760-plus</link>
+<g:image_link>https://static.tildacdn.com/tila6166-6234-4561-b063-623462383134/IS24544BC4B1_1.jpg</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>90000 KZT</g:price>
+<g:brand>ASUS</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
 <g:product_type>Материнские платы</g:product_type>
@@ -35744,6 +35875,19 @@
 <g:availability>in_stock</g:availability>
 <g:price>101000 KZT</g:price>
 <g:brand>Gigabyte</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:product_type>Материнские платы</g:product_type>
+</item>
+<item>
+<g:id>IS365C939099</g:id>
+<title>Материнская плата ASUS PRIME B650M-R, Socket AM5, MATX, AMD B650 (HDMI), 2DDR5, PCIx16</title>
+<description>Тип памяти DDR5 · Форм-фактор Micro-ATX · Сокет AM5 · Чипсет B650 · Слотов памяти 2</description>
+<link>https://b2b.isoft-shop.kz/materinskie-platy/tproduct/964948055944-materinskaya-plata-asus-prime-b650m-r-so</link>
+<g:image_link>https://static.tildacdn.com/tila3861-6635-4664-b136-643334623161/IS365C939099_1.jpg</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>73000 KZT</g:price>
+<g:brand>ASUS</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
 <g:product_type>Материнские платы</g:product_type>
@@ -36212,6 +36356,19 @@
 <g:product_type>Материнские платы</g:product_type>
 </item>
 <item>
+<g:id>IS5E0F4871CE</g:id>
+<title>Материнская плата ASUS TUF GAMING X870-PLUS WIFI, Socket AM5, ATX, AMD X870 (HDMI), 4DDR5, 2PCIx16</title>
+<description>Слотов памяти 4 · Сокет AM5 · Тип памяти DDR5 · Форм-фактор ATX · Чипсет X870</description>
+<link>https://b2b.isoft-shop.kz/materinskie-platy/tproduct/249904764734-materinskaya-plata-asus-tuf-gaming-x870</link>
+<g:image_link>https://static.tildacdn.com/tila3731-3165-4461-a137-393566633438/IS5E0F4871CE_1.jpg</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>191000 KZT</g:price>
+<g:brand>ASUS</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:product_type>Материнские платы</g:product_type>
+</item>
+<item>
 <g:id>IS5EFBF4C274</g:id>
 <title>Материнская плата Gigabyte H410M K 2.0</title>
 <description>Сокет LGA1200 · Тип памяти DDR4 · Чипсет H410 · Форм-фактор Micro-ATX · Слотов памяти 2 · Видеовыходы HDMI · Разъёмов M.2 1 · Разъёмов SATA 2 · Интерфейс SATA / PCI-E 3.0</description>
@@ -36500,6 +36657,19 @@
 <g:product_type>Материнские платы</g:product_type>
 </item>
 <item>
+<g:id>IS73C899BCAE</g:id>
+<title>Материнская плата Gigabyte B760 GAMING X DDR4 GEN5, Socket1700, ATX, iB760 (DP+HDMI), 4DDR4, 3PCIx16</title>
+<description>Слотов памяти 4 · Сокет LGA1700 · Тип памяти DDR4 · Форм-фактор ATX · Чипсет B760</description>
+<link>https://b2b.isoft-shop.kz/materinskie-platy/tproduct/587369493124-materinskaya-plata-gigabyte-b760-gaming</link>
+<g:image_link>https://static.tildacdn.com/tila6361-3666-4761-b839-303531363230/IS73C899BCAE_1.jpg</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>88000 KZT</g:price>
+<g:brand>Gigabyte</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:product_type>Материнские платы</g:product_type>
+</item>
+<item>
 <g:id>IS75810F6274</g:id>
 <title>Материнская плата ASUS ROG STRIX B860-G GAMING WIFI WIFI7</title>
 <description>Сокет LGA1851 · Чипсет B860 · Тип памяти DDR5 · Слотов памяти 4</description>
@@ -36605,6 +36775,19 @@
 <g:availability>in_stock</g:availability>
 <g:price>50000 KZT</g:price>
 <g:brand>Gigabyte</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:product_type>Материнские платы</g:product_type>
+</item>
+<item>
+<g:id>IS7B1663165E</g:id>
+<title>Материнская плата ASUS Main Board Desktop Socket AM5 AMD B850 Chipset 2 x DIMM slots, max. 128GB ASUS ASUS MAIN BOARD DESKTOP SOCKET AM5 AMD B850 CHIP</title>
+<description>Сокет AM5 · Тип памяти DDR5 · Форм-фактор Micro-ATX · Чипсет B850</description>
+<link>https://b2b.isoft-shop.kz/materinskie-platy/tproduct/226559681654-materinskaya-plata-asus-main-board-deskt</link>
+<g:image_link>https://static.tildacdn.com/tila6136-3037-4535-b233-306133336330/IS7B1663165E_1.png</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>58000 KZT</g:price>
+<g:brand>ASUS</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
 <g:product_type>Материнские платы</g:product_type>
@@ -37814,6 +37997,19 @@
 <g:product_type>Материнские платы</g:product_type>
 </item>
 <item>
+<g:id>ISD80A5B5EAF</g:id>
+<title>Материнская плата ASUS PRIME B760M-A WIFI D4, Socket1700, MATX, iB760 (DP+2HDMI), 4DDR4, 3PCIx16</title>
+<description>Тип памяти DDR4 · Форм-фактор Micro-ATX · Сокет LGA1700 · Чипсет B760 · Слотов памяти 4</description>
+<link>https://b2b.isoft-shop.kz/materinskie-platy/tproduct/710563927204-materinskaya-plata-asus-prime-b760m-a-wi</link>
+<g:image_link>https://static.tildacdn.com/tila3631-3766-4434-a461-383061636365/ISD80A5B5EAF_1.jpg</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>90000 KZT</g:price>
+<g:brand>ASUS</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:product_type>Материнские платы</g:product_type>
+</item>
+<item>
 <g:id>ISD9FE9849A4</g:id>
 <title>Материнская плата Gigabyte H610M S2H V3 DDR4</title>
 <description>Сокет LGA1700 · Тип памяти DDR4 · Чипсет H610 · Форм-фактор Micro-ATX · Слотов памяти 2 · Видеовыходы HDMI / VGA / DP x 2 · Разъёмов M.2 1 · Разъёмов SATA 4 · Интерфейс SATA / PCI-E 3.0</description>
@@ -37823,6 +38019,19 @@
 <g:availability>in_stock</g:availability>
 <g:price>43000 KZT</g:price>
 <g:brand>Gigabyte</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:product_type>Материнские платы</g:product_type>
+</item>
+<item>
+<g:id>ISDAD0E66BC8</g:id>
+<title>Материнская плата ASUS ROG STRIX B550-F GAMING, Socket AM4, ATX, AMD B550 (DP+HDMI), 4DDR4, 2PCIx16</title>
+<description>Слотов памяти 4 · Сокет AM4 · Тип памяти DDR4 · Форм-фактор ATX · Чипсет B550</description>
+<link>https://b2b.isoft-shop.kz/materinskie-platy/tproduct/506369670324-materinskaya-plata-asus-rog-strix-b550-f</link>
+<g:image_link>https://static.tildacdn.com/tila3537-6562-4430-b965-356465346365/ISDAD0E66BC8_1.jpg</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>119000 KZT</g:price>
+<g:brand>ASUS</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
 <g:product_type>Материнские платы</g:product_type>
@@ -38106,6 +38315,19 @@
 <g:availability>in_stock</g:availability>
 <g:price>397000 KZT</g:price>
 <g:brand>ASUS</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:product_type>Материнские платы</g:product_type>
+</item>
+<item>
+<g:id>ISF8F145E029</g:id>
+<title>Материнская плата Gigabyte B550M AORUS ELITE AX, Socket AM4, MATX, AMD B550 (DVI+HDM), 4DDR4, 1PCIx16,PCIx1</title>
+<description>Слотов памяти 4 · Сокет AM4 · Тип памяти DDR4 · Форм-фактор Micro-ATX · Чипсет B550</description>
+<link>https://b2b.isoft-shop.kz/materinskie-platy/tproduct/111326520174-materinskaya-plata-gigabyte-b550m-aorus</link>
+<g:image_link>https://static.tildacdn.com/tila6531-3035-4662-a464-623462653666/ISF8F145E029_1.jpg</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>80000 KZT</g:price>
+<g:brand>Gigabyte</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
 <g:product_type>Материнские платы</g:product_type>
@@ -43295,7 +43517,7 @@
 <item>
 <g:id>ISDF26FBCCB8</g:id>
 <title>Монитор 24.1-inch ZOWIE XL2586X+ 9H.LN8LB.QBE</title>
-<description>Диагональ 24,1″ · Разрешение 1920×1080 · Время отклика 0,5 мс · Яркость 320 кд/м² · Тип матрицы TN · Соотношение сторон 16:9 · VESA 100×100 · Контрастность 1000:1 · Угол обзора 178° · Размер экрана 23–24″</description>
+<description>Диагональ 24,1″ · Размер экрана 23–24″ · Разрешение 1920×1080 · Тип матрицы TN · Яркость 320 кд/м² · Контрастность 1000:1 · Соотношение сторон 16:9 · Угол обзора 178° · VESA 100×100 · Время отклика 0,5 мс</description>
 <link>https://b2b.isoft-shop.kz/monitory/tproduct/617587326814-monitor-241-inch-zowie-xl2586x-9hln8lbqb</link>
 <g:image_link>https://static.tildacdn.com/tila6561-6234-4963-b931-613736663961/ISDF26FBCCB8_1.jpg</g:image_link>
 <g:availability>in_stock</g:availability>
@@ -44233,6 +44455,20 @@
 <g:product_type>Моноблоки</g:product_type>
 </item>
 <item>
+<g:id>IS370D72DF7D</g:id>
+<title>Моноблок 24-inch iMac with Retina 4. A3590, 5K дисплей: Apple M6, CPU 12 ядер, GPU 12 ядер, 24GB, 512GB SSD - Silver, APPLE M6, 24GB, MODEL</title>
+<description>Количество ядер процессора 12 · Ёмкость 512 ГБ · Оперативная память 24 ГБ · Процессор Apple M6 · Линейка процессора Apple M</description>
+<link>https://b2b.isoft-shop.kz/monobloki/tproduct/449898636854-monoblok-24-inch-imac-with-retina-4-a359</link>
+<g:image_link>https://static.tildacdn.com/tila3132-6234-4662-b861-323364346238/IS370D72DF7D_1.png</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>1637000 KZT</g:price>
+<g:brand>APPLE</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:google_product_category>Electronics &gt; Computers &gt; Desktop Computers</g:google_product_category>
+<g:product_type>Моноблоки</g:product_type>
+</item>
+<item>
 <g:id>IS3AE9FEF5D6</g:id>
 <title>Моноблок HP D2GQ4EA All-in-One Desktop AI 27-cr2104ci PC</title>
 <description>Тип матрицы IPS · Процессор Intel Core Ultra 5 225U · Оперативная память 8 ГБ · Операционная система без ОС · Диагональ 27″ · Разрешение 1920×1080 · Wi-Fi Wi-Fi 6 · Bluetooth 5.3 · Камера IR + FHD · Количество ядер процессора 12</description>
@@ -44488,6 +44724,48 @@
 <g:product_type>Моноблоки</g:product_type>
 </item>
 <item>
+<g:id>IS85299D43DE</g:id>
+<title>Моноблок 24-inch iMac with Retina 4. A3589, 5K дисплей: Apple M6, CPU 10 ядер, GPU 10 ядер, 16GB, 256GB SSD - Green, APPLE M6, 16GB, MODEL</title>
+<description>Количество ядер процессора 10 · Ёмкость 256 ГБ · Оперативная память 16 ГБ · Процессор Apple M6 · Линейка процессора Apple M</description>
+<link>https://b2b.isoft-shop.kz/monobloki/tproduct/334941055494-monoblok-24-inch-imac-with-retina-4-a358</link>
+<g:image_link>https://static.tildacdn.com/tila3735-3864-4631-a332-626331336464/IS85299D43DE_1.png</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>1169000 KZT</g:price>
+<g:brand>APPLE</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:google_product_category>Electronics &gt; Computers &gt; Desktop Computers</g:google_product_category>
+<g:product_type>Моноблоки</g:product_type>
+</item>
+<item>
+<g:id>IS8C1C68D92E</g:id>
+<title>Моноблок 24-inch iMac with Retina 4. A3590, 5K дисплей: Apple M6, CPU 12 ядер, GPU 12 ядер, 16GB, 256GB SSD - Silver, APPLE M6, 16GB, MODEL</title>
+<description>Ёмкость 256 ГБ · Процессор Apple M6 · Оперативная память 16 ГБ · Количество ядер процессора 12 · Линейка процессора Apple M</description>
+<link>https://b2b.isoft-shop.kz/monobloki/tproduct/912583801324-monoblok-24-inch-imac-with-retina-4-a359</link>
+<g:image_link>https://static.tildacdn.com/tila3132-6234-4662-b861-323364346238/IS370D72DF7D_1.png</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>1325000 KZT</g:price>
+<g:brand>APPLE</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:google_product_category>Electronics &gt; Computers &gt; Desktop Computers</g:google_product_category>
+<g:product_type>Моноблоки</g:product_type>
+</item>
+<item>
+<g:id>IS8ED0178AB8</g:id>
+<title>Моноблок 24-inch iMac with Retina 4. A3590, 5K дисплей: Apple M6, CPU 12 ядер, GPU 12 ядер, 16GB, 512GB SSD - Blue, APPLE M6, 16GB, MODEL</title>
+<description>Ёмкость 512 ГБ · Процессор Apple M6 · Оперативная память 16 ГБ · Количество ядер процессора 12 · Линейка процессора Apple M</description>
+<link>https://b2b.isoft-shop.kz/monobloki/tproduct/783707104164-monoblok-24-inch-imac-with-retina-4-a359</link>
+<g:image_link>https://static.tildacdn.com/tila6461-3766-4364-b935-633863346630/IS8ED0178AB8_1.png</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>1481000 KZT</g:price>
+<g:brand>APPLE</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:google_product_category>Electronics &gt; Computers &gt; Desktop Computers</g:google_product_category>
+<g:product_type>Моноблоки</g:product_type>
+</item>
+<item>
 <g:id>IS90F8DB12F7</g:id>
 <title>Monoblock HP ODD/Graphics/256</title>
 <description>Процессор Core Ultra 5 · Оперативная память 16 Gb · Тип памяти DDR5 · Накопитель 512 ГБ · Тип накопителя M.2 PCIe SSD</description>
@@ -44675,6 +44953,20 @@
 <g:availability>in_stock</g:availability>
 <g:price>696000 KZT</g:price>
 <g:brand>Acer</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:google_product_category>Electronics &gt; Computers &gt; Desktop Computers</g:google_product_category>
+<g:product_type>Моноблоки</g:product_type>
+</item>
+<item>
+<g:id>ISCE46DF0F67</g:id>
+<title>Моноблок 24-inch iMac with Retina 4. A3589, 5K дисплей: Apple M6, CPU 10 ядер, GPU 10 ядер, 16GB, 256GB SSD - Blue, APPLE M6, 16GB, MODEL</title>
+<description>Ёмкость 256 ГБ · Процессор Apple M6 · Оперативная память 16 ГБ · Количество ядер процессора 10 · Линейка процессора Apple M</description>
+<link>https://b2b.isoft-shop.kz/monobloki/tproduct/810236005034-monoblok-24-inch-imac-with-retina-4-a358</link>
+<g:image_link>https://static.tildacdn.com/tila6461-3766-4364-b935-633863346630/IS8ED0178AB8_1.png</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>1169000 KZT</g:price>
+<g:brand>APPLE</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
 <g:google_product_category>Electronics &gt; Computers &gt; Desktop Computers</g:google_product_category>
@@ -51085,6 +51377,20 @@
 <g:product_type>Мыши</g:product_type>
 </item>
 <item>
+<g:id>ISBBDBBAAC87</g:id>
+<title>Беспроводная мышь SATECHI M1 Bluetooth - Space Gray SATECHI M1 BLUETOOTH WIRELESS MOUSE - SPACE GRAY</title>
+<description>Тип устройства мышь · Подключение Беспроводное</description>
+<link>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/846154772354-besprovodnaya-mish-satechi-m1-bluetooth</link>
+<g:image_link>https://static.tildacdn.com/tila3662-3734-4564-b866-623338326136/ISBBDBBAAC87_1.jpg</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>17000 KZT</g:price>
+<g:brand>SATECHI</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:google_product_category>Electronics &gt; Electronics Accessories &gt; Computer Components &gt; Input Devices &gt; Mice &amp; Trackballs</g:google_product_category>
+<g:product_type>Мыши</g:product_type>
+</item>
+<item>
 <g:id>ISBCCDB21332</g:id>
 <title>Мышь CANYON mouse MW-26, WIRELESS</title>
 <description>Тип устройства мышь · Цвет Фиолетовый · Подключение Беспроводное · Гарантия 2 года</description>
@@ -54196,7 +54502,7 @@
 <item>
 <g:id>IS5008DF05A3</g:id>
 <title>Гарнитура Jabra Evolve2 85 Link380a MS стерео чёрная 28599-999-999</title>
-<description>Интерфейс USB-A · Тип устройства Гарнитура · Цвет Чёрный · Звучание Стерео</description>
+<description>Тип устройства Гарнитура · Цвет Чёрный · Интерфейс USB-A · Звучание Стерео</description>
 <link>https://b2b.isoft-shop.kz/naushniki-i-garnitury/tproduct/425114057094-garnitura-jabra-evolve2-85-link380a-ms-s</link>
 <g:image_link>https://static.tildacdn.com/tild3638-6262-4632-a361-663234656165/IS5008DF05A3_1.jpg</g:image_link>
 <g:availability>in_stock</g:availability>
@@ -57451,7 +57757,7 @@
 <item>
 <g:id>IS35B34DB197</g:id>
 <title>Ноутбук 13-inch MacBook Air: Apple M5 A3449, CPU 10 ядер, GPU 10 ядер, 16GB, 1TB SSD - Sky Blue, 16GB, 1TB SSD - SKY BLUE, MODEL</title>
-<description>Диагональ 13,6″ · Разрешение 2560×1664 · Ёмкость 1 ТБ · Процессор Apple M5 · Оперативная память 16 ГБ · Накопитель 1 ТБ · Видеокарта Встроенная · Операционная система macOS · Тип матрицы IPS · Wi-Fi Wi-Fi 7</description>
+<description>Ёмкость 1 ТБ · В комплекте Адаптер питания USB-C, кабель USB-C на MagSafe 3 (2 м) · Оперативная память 16 ГБ · Количество ядер процессора 10 · Процессор Apple M5 · Накопитель 1 ТБ · Видеокарта Встроенная · Операционная система macOS · Диагональ 13,6″ · Разрешение 2560×1664</description>
 <link>https://b2b.isoft-shop.kz/noutbuki/tproduct/472681871824-noutbuk-13-inch-macbook-air-apple-m5-a34</link>
 <g:image_link>https://static.tildacdn.com/tild3835-3266-4661-a266-343837383936/ISC524E1E900_1.png</g:image_link>
 <g:availability>in_stock</g:availability>
@@ -58116,7 +58422,7 @@
 <item>
 <g:id>IS63D778FF2E</g:id>
 <title>Ноутбук APPL APPLE MACBOOK PRO, 14-INCH, SILVER, MODEL A3426, APPLE M5, 24GB, 1TB, SSD, HDMI, SDXC, MAGSAFE 3, TOUCH ID, XDR DISPLAY</title>
-<description>Диагональ 14,2″ · Разрешение 3024×1964 · Ёмкость 1 ТБ · Процессор APPLE M5 PRO · Оперативная память 24 ГБ · Накопитель 1 ТБ · Операционная система macOS · Wi-Fi Wi-Fi 7 · Ёмкость батареи 72,4 Вт·ч · Bluetooth 6.0</description>
+<description>Ёмкость 1 ТБ · Диагональ 14,2″ · Оперативная память 24 ГБ · Операционная система macOS · Линейка процессора Apple M · Процессор APPLE M5 PRO · Накопитель 1 ТБ · Разрешение 3024×1964 · Подсветка клавиатуры есть · Ёмкость батареи 72,4 Вт·ч</description>
 <link>https://b2b.isoft-shop.kz/noutbuki/tproduct/374748274664-noutbuk-appl-apple-macbook-pro-14-inch-s</link>
 <g:image_link>https://static.tildacdn.com/tild3763-3933-4638-a563-653631336339/IS63D778FF2E_1.png</g:image_link>
 <g:availability>in_stock</g:availability>
@@ -58945,6 +59251,20 @@
 <g:availability>in_stock</g:availability>
 <g:price>1014000 KZT</g:price>
 <g:brand>Dell</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:google_product_category>Electronics &gt; Computers &gt; Laptops</g:google_product_category>
+<g:product_type>Ноутбуки</g:product_type>
+</item>
+<item>
+<g:id>IS93D9C136AC</g:id>
+<title>Ноутбук Asus ExpertBook P1503CVA-S72532W 90NX0881-M03LB0, Core 7 240H, 16 Gb, PCIe NVMe SSD, 1024 Gb, GPU, 256 Mb, 15.6-inch, 1920x1080</title>
+<description>Диагональ 15,6″ · Разрешение 1920×1080 · Ёмкость 1 ТБ · Оперативная память 16 ГБ · Операционная система Windows 11 · Семья ОС Windows 11 · Линейка процессора Core 7</description>
+<link>https://b2b.isoft-shop.kz/noutbuki/tproduct/802757756504-noutbuk-asus-expertbook-p1503cva-s72532w</link>
+<g:image_link>https://static.tildacdn.com/tila6438-6538-4334-b638-373034353661/IS93D9C136AC_1.jpg</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>731000 KZT</g:price>
+<g:brand>ASUS</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
 <g:google_product_category>Electronics &gt; Computers &gt; Laptops</g:google_product_category>
@@ -60685,6 +61005,20 @@
 <g:availability>in_stock</g:availability>
 <g:price>721000 KZT</g:price>
 <g:brand>HP</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:google_product_category>Electronics &gt; Computers &gt; Laptops</g:google_product_category>
+<g:product_type>Ноутбуки</g:product_type>
+</item>
+<item>
+<g:id>ISFBB5D5C9D7</g:id>
+<title>Ноутбук Asus ProArt P16 H7606WR-SE077X 90NB17D1-M003U0, Ryzen AI 9, HX 370, 32 Gb, PCIe NVMe SSD, 1024 Gb, RTX 5070 Ti, 12 Gb, 16-inch</title>
+<description>Видеокарта RTX 5070 Ti · Диагональ 16″ · Ёмкость 1 ТБ · Оперативная память 32 ГБ · Операционная система Windows 11 · Разрешение 3840×2400 · Частота обновления 120 Гц · Линейка процессора Ryzen 9 · Семья ОС Windows 11</description>
+<link>https://b2b.isoft-shop.kz/noutbuki/tproduct/187614200764-noutbuk-asus-proart-p16-h7606wr-se077x-9</link>
+<g:image_link>https://static.tildacdn.com/tila3036-6266-4661-a630-303632323137/ISFBB5D5C9D7_1.jpg</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>2016000 KZT</g:price>
+<g:brand>ASUS</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
 <g:google_product_category>Electronics &gt; Computers &gt; Laptops</g:google_product_category>
@@ -67623,7 +67957,7 @@
 <item>
 <g:id>IS7F58B45876</g:id>
 <title>Патч Корд SHIP Cat.5e UTP LSZH RJ-45 2 м S3025BL0200-P</title>
-<description>Цвет синий · Длина кабеля 2 м · Категория кабеля Cat5e · Оболочка кабеля LSZH · Экранирование UTP</description>
+<description>Категория кабеля Cat5e · Оболочка кабеля LSZH · Экранирование UTP · Длина кабеля 2 м · Цвет синий</description>
 <link>https://b2b.isoft-shop.kz/patch-kordy/tproduct/331776390694-patch-kord-ship-cat5e-utp-lszh-rj-45-2-m</link>
 <g:image_link>https://static.tildacdn.com/stor3938-3630-4864-b437-356235376532/33fea8e067f6d57d254d23d71d239cb1.jpg</g:image_link>
 <g:availability>in_stock</g:availability>
@@ -68824,6 +69158,19 @@
 <g:product_type>Плоттеры</g:product_type>
 </item>
 <item>
+<g:id>ISD3A4600198</g:id>
+<title>Плоттер Широкоформатный принтер Canon imagePROGRAF TM-240 6242C003AA</title>
+<description>Плоттер Широкоформатный принтер Canon imagePROGRAF TM-240 6242C003AA (Canon)</description>
+<link>https://b2b.isoft-shop.kz/plottery/tproduct/553221651524-plotter-shirokoformatnii-printer-canon-i</link>
+<g:image_link>https://static.tildacdn.com/tila6265-6564-4432-b062-383964663634/ISD3A4600198_1.jpg</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>461000 KZT</g:price>
+<g:brand>Canon</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:product_type>Плоттеры</g:product_type>
+</item>
+<item>
 <g:id>ISDC4D50C267</g:id>
 <title>Плоттер Широкоформатный принтер Canon imagePROGRAF TM-350 6246C003AA</title>
 <description>Тип устройства Принтер · Формат A0 · Интерфейсы USB 2.0, Ethernet, Wi-Fi</description>
@@ -68975,6 +69322,19 @@
 <g:image_link>https://static.tildacdn.com/tild6166-6530-4239-b439-656162333939/IS5343228C83_1.jpg</g:image_link>
 <g:availability>in_stock</g:availability>
 <g:price>149000 KZT</g:price>
+<g:brand>HP</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:product_type>Принтеры</g:product_type>
+</item>
+<item>
+<g:id>IS54F234B5D5</g:id>
+<title>Принтер HP/Color Laser 150a/A4/18 ppm/600x600 dpi 4ZB94A#B19</title>
+<description>Принтер HP/Color Laser 150a/A4/18 ppm/600x600 dpi 4ZB94A#B19 (HP)</description>
+<link>https://b2b.isoft-shop.kz/printery-i-mfu/tproduct/336616104444-printer-hpcolor-laser-150aa418-ppm600x60</link>
+<g:image_link>https://static.tildacdn.com/tild6462-6462-4563-a332-626130663430/IS54F234B5D5_1.jpg</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>138000 KZT</g:price>
 <g:brand>HP</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -74826,6 +75186,19 @@
 <g:availability>in_stock</g:availability>
 <g:price>13000 KZT</g:price>
 <g:brand>TP-Link</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:product_type>Сетевое оборудование</g:product_type>
+</item>
+<item>
+<g:id>IS452EF3BBB8</g:id>
+<title>Smart L2 Gigabit PoE Switch Zyxel NebulaFlex GS1915-8EP, 8xRJ-45: 1G PoE+, 60W PoE budget, desktop, fanless GS1915-8EP-EU0101F</title>
+<description>Smart L2 Gigabit PoE Switch Zyxel NebulaFlex GS1915-8EP, 8xRJ-45: 1G PoE+, 60W PoE budget, desktop, fanless GS1915-8EP-EU0101F (Zyxel)</description>
+<link>https://b2b.isoft-shop.kz/setevoe-oborudovanie/tproduct/321875453164-smart-l2-gigabit-poe-switch-zyxel-nebula</link>
+<g:image_link>https://static.tildacdn.com/tila6263-3139-4439-b535-323664373364/IS452EF3BBB8_1.webp</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>71000 KZT</g:price>
+<g:brand>Zyxel</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
 <g:product_type>Сетевое оборудование</g:product_type>

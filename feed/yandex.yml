@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<yml_catalog date="2026-11-15 06:43">
+<yml_catalog date="2026-11-15 20:40">
 <shop>
 <name>iSoft</name>
 <company>iSoft</company>
@@ -6530,6 +6530,17 @@
 <vendor>INNO3D</vendor>
 <vendorCode>IS46DCDF6DAD</vendorCode>
 <description>Графический процессор GeForce RTX 5060</description>
+</offer>
+<offer id="IS4864D22F1C" available="true">
+<url>https://b2b.isoft-shop.kz/videokarty/tproduct/481305173944-videokarta-pny-nvidia-rtx-pro-4500-black</url>
+<price>3350000</price>
+<currencyId>KZT</currencyId>
+<categoryId>784666503994</categoryId>
+<picture>https://static.tildacdn.com/tila6335-6265-4464-a639-336533653231/IS4864D22F1C_1.png</picture>
+<name>Видеокарта PNY NVIDIA RTX PRO 4500 Blackwell Server Edition, Passive, PCI-Express x16 Gen 5.0, 32 GB GDDR6 ECC 384-bit, Single Slot</name>
+<vendor>PNY</vendor>
+<vendorCode>IS4864D22F1C</vendorCode>
+<description>Объём видеопамяти 32 ГБ · Разрядность шины 384 бит · Тип видеопамяти GDDR6</description>
 </offer>
 <offer id="IS4A1F077C7B" available="true">
 <url>https://b2b.isoft-shop.kz/videokarty/tproduct/703007001714-videokarta-sapphire-pure-amd-radeon-rx-9</url>
@@ -17497,6 +17508,17 @@
 <vendor>Apacer</vendor>
 <vendorCode>ISC035C2082C</vendorCode>
 <description>Ёмкость 64 ГБ · Форм-фактор microSDXC</description>
+</offer>
+<offer id="ISC53613FACA" available="true">
+<url>https://b2b.isoft-shop.kz/karty-pamyati/tproduct/559073897074-karta-pamyati-satechi-mobile-xr-hub-with</url>
+<price>16000</price>
+<currencyId>KZT</currencyId>
+<categoryId>668752067734</categoryId>
+<picture>https://static.tildacdn.com/tila3136-3737-4061-b536-623965373733/ISC53613FACA_1.png</picture>
+<name>Карта памяти SATECHI Mobile XR Hub with microSD</name>
+<vendor>SATECHI</vendor>
+<vendorCode>ISC53613FACA</vendorCode>
+<description>Форм-фактор microSD</description>
 </offer>
 <offer id="ISCEEEC5238A" available="true">
 <url>https://b2b.isoft-shop.kz/karty-pamyati/tproduct/856429550864-karta-pamyati-kingston-sdg4128gb-canvas</url>
@@ -38963,6 +38985,17 @@
 <vendorCode>IS3BA05F73F4</vendorCode>
 <description>Цвет Синий · Тип устройства мышь · Подключение Беспроводное · Кнопок 4 · Разрешение сенсора 1600 dpi · Тип сенсора Оптический</description>
 </offer>
+<offer id="IS3C107C5ABF" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/964203517014-besprovodnaya-mish-logitech-m170-seraya</url>
+<price>5400</price>
+<currencyId>KZT</currencyId>
+<categoryId>816235379434</categoryId>
+<picture>https://static.tildacdn.com/tila6165-3463-4565-a639-666430626131/IS3C107C5ABF_1.png</picture>
+<name>Беспроводная мышь LOGITECH M170 - серая LOGITECH M170 WIRELESS MOUSE - GREY</name>
+<vendor>Logitech</vendor>
+<vendorCode>IS3C107C5ABF</vendorCode>
+<description>Подключение Беспроводное · Тип устройства мышь · Цвет Серый</description>
+</offer>
 <offer id="IS3D0AA254F5" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/949661935664-mish-lorgar-gaming-mouse-msp80-pro-wired</url>
 <price>16000</price>
@@ -47282,6 +47315,17 @@
 <vendorCode>IS1CC638E2CD</vendorCode>
 <description>Ёмкость 1 ТБ · Диагональ 14″ · Оперативная память 32 ГБ · Операционная система Windows 11 Home · Разрешение 2880×1800 · Частота обновления 120 Гц · Линейка процессора Core Ultra 9 · Семья ОС Windows 11 · Тип памяти LPDDR5X · Процессор Intel Core Ultra 9 386H</description>
 </offer>
+<offer id="IS1D7344095E" available="true">
+<url>https://b2b.isoft-shop.kz/noutbuki/tproduct/969163035944-noutbuk-14-inch-macbook-pro-with-proled</url>
+<price>2952000</price>
+<currencyId>KZT</currencyId>
+<categoryId>293087419414</categoryId>
+<picture>https://static.tildacdn.com/tila6231-3766-4239-a233-363334613361/IS1D7344095E_1.png</picture>
+<name>Ноутбук 14-inch MacBook Pro with PROLED XDR дисплей: Apple M5 Max чип 18 A3375, core CPU and 32-core GPU, 36GB, 36GB, 2TB SSD - SILVER</name>
+<vendor>APPLE</vendor>
+<vendorCode>IS1D7344095E</vendorCode>
+<description>Количество ядер процессора 18 · Ёмкость 2 ТБ · Процессор Apple M5 Max · Линейка процессора Apple M</description>
+</offer>
 <offer id="IS1F527E0AC1" available="true">
 <url>https://b2b.isoft-shop.kz/noutbuki/tproduct/101136601194-noutbuk-asus-90nb17w1-m007c0-zenbook-a16</url>
 <price>1188000</price>
@@ -48189,6 +48233,17 @@
 <vendorCode>IS6C935C7508</vendorCode>
 <description>Процессор AMD Ryzen 7 260 · Оперативная память 16 ГБ · Ёмкость 512 ГБ · Операционная система Windows 11 · Линейка процессора Ryzen 7 · Семья ОС Windows 11 · Тип накопителя SSD · Накопитель 512 ГБ · Диагональ 18″ · Разрешение 1920×1080</description>
 </offer>
+<offer id="IS6CC7B87D1B" available="true">
+<url>https://b2b.isoft-shop.kz/noutbuki/tproduct/811463481504-noutbuk-14-inch-macbook-pro-with-proled</url>
+<price>1903000</price>
+<currencyId>KZT</currencyId>
+<categoryId>293087419414</categoryId>
+<picture>https://static.tildacdn.com/tila3233-6437-4334-a664-613130626633/IS6CC7B87D1B_1.png</picture>
+<name>Ноутбук 14-inch MacBook Pro with PROLED XDR дисплей: Apple M5 чип 15 A3468, core CPU and 16-core GPU, 24GB, 24GB, 1TB SSD - SILVER, MODEL</name>
+<vendor>APPLE</vendor>
+<vendorCode>IS6CC7B87D1B</vendorCode>
+<description>Количество ядер процессора 15 · Ёмкость 1 ТБ · Оперативная память 24 ГБ · Процессор APPLE M5 PRO · Линейка процессора Apple M</description>
+</offer>
 <offer id="IS6CDB0D21C2" available="true">
 <url>https://b2b.isoft-shop.kz/noutbuki/tproduct/763308830574-noutbuk-asus-vivobook-15-x1504ma-bq813w</url>
 <price>588000</price>
@@ -48696,6 +48751,17 @@
 <vendorCode>IS8C8C43ACB2</vendorCode>
 <description>Диагональ 16″ · Оперативная память 16 ГБ · Операционная система Ubuntu · Процессор Intel Core Ultra 7 255U · Ёмкость 512 ГБ · Семья ОС Linux · Линейка процессора Core Ultra 7 · Тип накопителя SSD · Разрешение 1920×1200 · Видеокарта Встроенная</description>
 </offer>
+<offer id="IS8E735AB423" available="true">
+<url>https://b2b.isoft-shop.kz/noutbuki/tproduct/824390461494-noutbuk-16-inch-macbook-pro-with-proled</url>
+<price>3543000</price>
+<currencyId>KZT</currencyId>
+<categoryId>293087419414</categoryId>
+<picture>https://static.tildacdn.com/tila6535-3631-4661-a535-363039393561/IS8E735AB423_1.png</picture>
+<name>Ноутбук 16-inch MacBook Pro with PROLED XDR дисплей: Apple M5 Max чип 18 A3376, core CPU and 40-core GPU, 48GB, 48GB, 2TB SSD - SILVER</name>
+<vendor>APPLE</vendor>
+<vendorCode>IS8E735AB423</vendorCode>
+<description>Количество ядер процессора 18 · Ёмкость 2 ТБ · Оперативная память 48 ГБ · Процессор Apple M5 Max · Линейка процессора Apple M</description>
+</offer>
 <offer id="IS8E8E46213F" available="true">
 <url>https://b2b.isoft-shop.kz/noutbuki/tproduct/257903640344-173-inch-noutbuk-msi-katana-17-hx-b14wfk</url>
 <price>972000</price>
@@ -48952,7 +49018,7 @@
 <name>Ноутбук Lenovo V15 G7 IWC, Core i3 304-1.5/512GB SSD/8GB/15.6-inch FHD/Win11</name>
 <vendor>Lenovo</vendor>
 <vendorCode>IS9AE5925A28</vendorCode>
-<description>Диагональ 15,6″ · Разрешение 1920×1080 · Ёмкость 512 ГБ · Процессор i3-304 · Оперативная память 8 ГБ · Операционная система Windows 11 · Семья ОС Windows 11 · Линейка процессора Core i3 / Core 3</description>
+<description>Диагональ 15,6″ · Ёмкость 512 ГБ · Оперативная память 8 ГБ · Операционная система Windows 11 · Процессор i3-304 · Разрешение 1920×1080 · Линейка процессора Core i3 / Core 3 · Семья ОС Windows 11</description>
 </offer>
 <offer id="IS9C805CF5EA" available="true">
 <url>https://b2b.isoft-shop.kz/noutbuki/tproduct/163822927364-noutbuk-hp-probook-4-g1i-d9uh8etbja-16-i</url>
@@ -49564,6 +49630,28 @@
 <vendor>ASUS</vendor>
 <vendorCode>90NR0KW8-M00DU0</vendorCode>
 <description>Ноутбук ASUS 90NR0KW8-M00DU0: Ноутбук линейки Asus ROG Strix G16. Процессор AMD Ryzen 9 8940HX. Оперативной памяти 16 ГБ. Накопитель SSD на 512 ГБ. Экран 16 дюймов, 2560×1600, матрица IPS, 300 Гц. Видеокарта дискретная: NVIDIA GeForce RTX 5060. Предустановлена Windows 11 Home.. Цена с НДС, безналичный расчёт для организаций.</description>
+</offer>
+<offer id="ISCB5A70148C" available="true">
+<url>https://b2b.isoft-shop.kz/noutbuki/tproduct/962457710644-noutbuk-16-inch-macbook-pro-with-proled</url>
+<price>2231000</price>
+<currencyId>KZT</currencyId>
+<categoryId>293087419414</categoryId>
+<picture>https://static.tildacdn.com/tila6538-3230-4939-b833-376562316235/ISCB5A70148C_1.png</picture>
+<name>Ноутбук 16-inch MacBook Pro with PROLED XDR дисплей: Apple M5 чип 18 A3469, core CPU and 20-core GPU, 24GB, 24GB, 1TB SSD - SPACE BLACK</name>
+<vendor>APPLE</vendor>
+<vendorCode>ISCB5A70148C</vendorCode>
+<description>Количество ядер процессора 18 · Ёмкость 1 ТБ · Оперативная память 24 ГБ · Процессор APPLE M5 PRO · Линейка процессора Apple M</description>
+</offer>
+<offer id="ISCB6F767C35" available="true">
+<url>https://b2b.isoft-shop.kz/noutbuki/tproduct/192676181544-noutbuk-14-inch-macbook-pro-with-proled</url>
+<price>1903000</price>
+<currencyId>KZT</currencyId>
+<categoryId>293087419414</categoryId>
+<picture>https://static.tildacdn.com/tila6161-3034-4539-a162-646438353438/ISCB6F767C35_1.png</picture>
+<name>Ноутбук 14-inch MacBook Pro with PROLED XDR дисплей: Apple M5 чип 15 A3468, core CPU and 16-core GPU, 24GB, 24GB, 1TB SSD - SPACE BLACK</name>
+<vendor>APPLE</vendor>
+<vendorCode>ISCB6F767C35</vendorCode>
+<description>Количество ядер процессора 15 · Ёмкость 1 ТБ · Оперативная память 24 ГБ · Процессор APPLE M5 PRO · Линейка процессора Apple M</description>
 </offer>
 <offer id="ISCBBC34FF9D" available="true">
 <url>https://b2b.isoft-shop.kz/noutbuki/tproduct/859052182544-noutbuk-macbook-air-apple-15-inch-silver</url>
@@ -50276,6 +50364,17 @@
 <vendor>Lenovo</vendor>
 <vendorCode>ISFC79B0EF4A</vendorCode>
 <description>Диагональ 16″ · Оперативная память 16 ГБ · Операционная система Windows 11 Pro · Процессор Intel Core Ultra 5 135H · Ёмкость 512 ГБ · Камера IR + FHD · Семья ОС Windows 11 · Линейка процессора Core Ultra 5 · Тип накопителя SSD · Разрешение 1920×1200</description>
+</offer>
+<offer id="ISFD859290E4" available="true">
+<url>https://b2b.isoft-shop.kz/noutbuki/tproduct/548528498294-noutbuk-14-inch-macbook-pro-with-proled</url>
+<price>2427000</price>
+<currencyId>KZT</currencyId>
+<categoryId>293087419414</categoryId>
+<picture>https://static.tildacdn.com/tila3233-6437-4334-a664-613130626633/IS6CC7B87D1B_1.png</picture>
+<name>Ноутбук 14-inch MacBook Pro with PROLED XDR дисплей: Apple M5 чип 18 A3468, core CPU and 20-core GPU, 48GB, 48GB, 1TB SSD - SILVER, MODEL</name>
+<vendor>APPLE</vendor>
+<vendorCode>ISFD859290E4</vendorCode>
+<description>Количество ядер процессора 18 · Ёмкость 1 ТБ · Оперативная память 48 ГБ · Процессор APPLE M5 PRO · Линейка процессора Apple M</description>
 </offer>
 <offer id="ISFE4E351A43" available="true">
 <url>https://b2b.isoft-shop.kz/noutbuki/tproduct/776163103354-noutbuk-asus-90nx0881-m03ps0-expertbook</url>
@@ -67083,6 +67182,17 @@
 <vendor>ASUS</vendor>
 <vendorCode>IS5528F6DB12</vendorCode>
 <description>Тип устройства Проводная сетевая карта · Интерфейс PCIe x8 · Скорость 10G · Скорость порта 10 Гбит/с</description>
+</offer>
+<offer id="IS56E2298278" available="true">
+<url>https://b2b.isoft-shop.kz/setevye-karty/tproduct/951150439334-setevaya-karta-satechi-slim-multiport-wi</url>
+<price>28000</price>
+<currencyId>KZT</currencyId>
+<categoryId>822913095254</categoryId>
+<picture>https://static.tildacdn.com/tila6335-6637-4231-b365-633732306137/IS56E2298278_1.png</picture>
+<name>Сетевая карта SATECHI Slim Multiport with Ethernet Adapter (Black)</name>
+<vendor>SATECHI</vendor>
+<vendorCode>IS56E2298278</vendorCode>
+<description>Сетевая карта SATECHI Slim Multiport with Ethernet Adapter (Black) (SATECHI)</description>
 </offer>
 <offer id="IS57B12703B8" available="true">
 <url>https://b2b.isoft-shop.kz/setevye-karty/tproduct/140186277054-setevaya-karta-besprovodnoi-adapter-d-li</url>

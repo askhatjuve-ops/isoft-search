@@ -62,7 +62,7 @@
 <item>
 <g:id>IS182A08D4E4</g:id>
 <title>IP телефон Grandstream GXP2170</title>
-<description>Модель GXP2170 · Тип устройства IP-телефон · PoE Есть · Скорость портов 1 Гбит/с (Gigabit) · Количество линий 12–16 линий · Диагональ 4,3″ · SIP-аккаунтов 6</description>
+<description>Модель GXP2170 · Тип устройства IP-телефон · PoE Есть · Скорость портов 1 Гбит/с (Gigabit) · Количество линий 12–16 линий · Диагональ 4,3″ · SIP-аккаунтов 6 · Bluetooth Есть</description>
 <link>https://b2b.isoft-shop.kz/konferenc-svyaz/tproduct/165574574304-ip-telefon-grandstream-gxp2170</link>
 <g:image_link>https://static.tildacdn.com/stor3636-3539-4332-a435-346163636630/fcb42cf0949c9e40464a92cded39933f.jpg</g:image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild3333-3263-4032-a466-353362616133/165574574304_1.jpg</g:additional_image_link>
@@ -327,7 +327,7 @@
 <item>
 <g:id>IS6835A9B00E</g:id>
 <title>IP телефон Grandstream GXP2160</title>
-<description>Модель GXP2160 · Тип устройства IP-телефон · PoE Есть · Скорость портов 1 Гбит/с (Gigabit) · Количество линий 6–8 линий · SIP-аккаунтов 6 · Диагональ 4,3″</description>
+<description>Модель GXP2160 · Тип устройства IP-телефон · PoE Есть · Скорость портов 1 Гбит/с (Gigabit) · Количество линий 6–8 линий · SIP-аккаунтов 6 · Диагональ 4,3″ · Bluetooth Есть</description>
 <link>https://b2b.isoft-shop.kz/konferenc-svyaz/tproduct/502301740974-ip-telefon-grandstream-gxp2160</link>
 <g:image_link>https://static.tildacdn.com/stor3934-3439-4463-b666-616336313031/1b583e95aa7d5faf8d5bbf5c1717f4f2.jpg</g:image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild3532-3235-4864-b632-646537663838/502301740974_1.jpg</g:additional_image_link>
@@ -4794,6 +4794,21 @@
 <g:product_type>Блоки питания</g:product_type>
 </item>
 <item>
+<g:id>IS4FEEA080A1</g:id>
+<title>Блок питания 1STPLAYER NGDP 1300W White Platinum NGDP-PLT-1300-WH-EU</title>
+<description>Форм-фактор ATX · Мощность 1300 Вт · Сертификат эффективности 80+ Platinum · Модульность Модульный · Цвет Белый · Версия ATX ATX 3.0 · Гарантия 10 лет · Класс мощности 1000–1300 Вт</description>
+<link>https://b2b.isoft-shop.kz/bloki-pitaniya/tproduct/230719027794-blok-pitaniya-1stplayer-ngdp-1300w-white</link>
+<g:image_link>https://static.tildacdn.com/stor3464-3865-4061-a138-633334313963/e8ab233996328a013b890f6d6de40e1c.jpg</g:image_link>
+<g:additional_image_link>https://static.tildacdn.com/tild6164-3330-4837-b036-363466376662/230719027794_1.jpg</g:additional_image_link>
+<g:additional_image_link>https://static.tildacdn.com/tild6361-3263-4931-b537-393962313666/230719027794_2.jpg</g:additional_image_link>
+<g:availability>in_stock</g:availability>
+<g:price>113000 KZT</g:price>
+<g:brand>1STPLAYER</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:product_type>Блоки питания</g:product_type>
+</item>
+<item>
 <g:id>IS504838D5B4</g:id>
 <title>Блок питания ATX Chieftec VITA SM3, BPX-850-C, 850W, 80Plus Bronze, ATX3.1</title>
 <description>Сертификат эффективности 80+ Bronze · Мощность 850 Вт · Класс мощности 700–850 Вт · Форм-фактор ATX · Версия ATX ATX 3.1</description>
@@ -5274,21 +5289,6 @@
 <g:availability>in_stock</g:availability>
 <g:price>23000 KZT</g:price>
 <g:brand>Deepcool</g:brand>
-<g:condition>new</g:condition>
-<g:identifier_exists>no</g:identifier_exists>
-<g:product_type>Блоки питания</g:product_type>
-</item>
-<item>
-<g:id>IS6B33086B6D</g:id>
-<title>Блок питания Gamemax VP 600W RGB M (Bronze) 2124-0550R0060</title>
-<description>Сертификат эффективности 80+ Bronze · Мощность 600 Вт · Класс мощности 550–650 Вт · Форм-фактор ATX · Цвет Чёрный · Гарантия 1 год</description>
-<link>https://b2b.isoft-shop.kz/bloki-pitaniya/tproduct/517446689014-blok-pitaniya-gamemax-vp-600w-rgb-m-bron</link>
-<g:image_link>https://static.tildacdn.com/stor6266-6237-4966-b438-313162333436/1ccd611dd98dd67f3d5322d0bc20b8a6.jpg</g:image_link>
-<g:additional_image_link>https://static.tildacdn.com/tild6434-6566-4032-b332-396133663361/517446689014_1.jpg</g:additional_image_link>
-<g:additional_image_link>https://static.tildacdn.com/tild3961-3132-4565-b933-376362663236/517446689014_2.jpg</g:additional_image_link>
-<g:availability>in_stock</g:availability>
-<g:price>25000 KZT</g:price>
-<g:brand>Gamemax</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
 <g:product_type>Блоки питания</g:product_type>
@@ -13888,6 +13888,19 @@
 <g:product_type>ИБП</g:product_type>
 </item>
 <item>
+<g:id>IS9A92896614</g:id>
+<title>ИБП APC/SRT1000RMXLI/Smart/On-Line/R-T/IEC/1 000 VA/1 000 W</title>
+<description>Мощность 1000 ВА / 1000 Вт · Топология On-Line · Класс мощности до 1 кВА · Размещение Стоечный</description>
+<link>https://b2b.isoft-shop.kz/ibp-i-zashchita-pitaniya/tproduct/696513142064-ibp-apcsrt1000rmxlismarton-liner-tiec1-0</link>
+<g:image_link>https://static.tildacdn.com/tila3462-3632-4534-a335-626435363031/IS9A92896614_1.jpg</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>654000 KZT</g:price>
+<g:brand>APC</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:product_type>ИБП</g:product_type>
+</item>
+<item>
 <g:id>IS9B8A69A15B</g:id>
 <title>ИБП Ippon Na-ion TAE 2000 2055084</title>
 <description>Топология On-Line · Мощность 2000 Вт · Розеток 4 · Размещение Напольный · Класс мощности 1–2,2 кВА</description>
@@ -19539,6 +19552,20 @@
 <g:product_type>Камеры видеонаблюдения</g:product_type>
 </item>
 <item>
+<g:id>ISCAE8C01A8C</g:id>
+<title>IP видеокамера Dahua DH-IPC-HDBW2241RP-ZS-27135</title>
+<description>Тип устройства IP-камера · Разрешение камеры 2 МП · Тип корпуса Купольная</description>
+<link>https://b2b.isoft-shop.kz/videonablyudenie/tproduct/467206477244-ip-videokamera-dahua-dh-ipc-hdbw2241rp-z</link>
+<g:image_link>https://static.tildacdn.com/stor3036-6362-4537-b134-623061653933/5a53aebb4e3efdd543ca2cb479674418.jpg</g:image_link>
+<g:additional_image_link>https://static.tildacdn.com/tild3332-6264-4363-a163-383164383263/467206477244_1.jpg</g:additional_image_link>
+<g:availability>in_stock</g:availability>
+<g:price>38000 KZT</g:price>
+<g:brand>Dahua</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:product_type>Камеры видеонаблюдения</g:product_type>
+</item>
+<item>
 <g:id>ISCC69D10D22</g:id>
 <title>Цилиндрическая видеокамера Dahua DH-HAC-B1A21P-0280B</title>
 <description>Партномер: DH-HAC-B1A21P-0280B</description>
@@ -20852,6 +20879,20 @@
 <g:availability>in_stock</g:availability>
 <g:price>47000 KZT</g:price>
 <g:brand>SANDISK</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:google_product_category>Electronics &gt; Electronics Accessories &gt; Memory &gt; Flash Memory &gt; Memory Cards</g:google_product_category>
+<g:product_type>Карты памяти</g:product_type>
+</item>
+<item>
+<g:id>ISF9CCEBE762</g:id>
+<title>Карта памяти KINGSTON 256GB microSDXC Canvas Select Plus Gen3 150MB/s A1 Card + Adapter SDCS3/256GB</title>
+<description>Ёмкость 256 ГБ · Класс скорости A1 · Форм-фактор microSDXC · В комплекте Адаптер SD</description>
+<link>https://b2b.isoft-shop.kz/karty-pamyati/tproduct/567991136984-karta-pamyati-kingston-256gb-microsdxc-c</link>
+<g:image_link>https://static.tildacdn.com/tila3132-3230-4437-b263-653465363336/ISF9CCEBE762_1.png</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>25000 KZT</g:price>
+<g:brand>Kingston</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
 <g:google_product_category>Electronics &gt; Electronics Accessories &gt; Memory &gt; Flash Memory &gt; Memory Cards</g:google_product_category>
@@ -26262,19 +26303,6 @@
 <g:product_type>Корпуса</g:product_type>
 </item>
 <item>
-<g:id>IS2430B48AE6</g:id>
-<title>Компьютерный корпус Deepcool CH160 WH без Б/П R-CH160-WHNGI0-G-1</title>
-<description>Интерфейс Type-C · Цвет Белый · Форм-фактор Mini-ITX · Гарантия 1 год · Тип устройства Корпус · Макс. высота кулера 172 мм · Макс. длина видеокарты 305 мм</description>
-<link>https://b2b.isoft-shop.kz/korpusa-i-bloki-pitaniya/tproduct/925956283524-kompyuternii-korpus-deepcool-ch160-wh-be</link>
-<g:image_link>https://static.tildacdn.com/tila3866-3764-4639-a237-623861373461/IS2430B48AE6_1.jpg</g:image_link>
-<g:availability>in_stock</g:availability>
-<g:price>29000 KZT</g:price>
-<g:brand>Deepcool</g:brand>
-<g:condition>new</g:condition>
-<g:identifier_exists>no</g:identifier_exists>
-<g:product_type>Корпуса</g:product_type>
-</item>
-<item>
 <g:id>IS253FB58026</g:id>
 <title>Корпус Case ATX midi tower Antec, P20C, 3*120 fan, white</title>
 <description>Форм-фактор ATX · Цвет Белый · Тип устройства Корпус · Интерфейс USB 3.2 Gen 2 / Type-C · Материал Сталь, пластик, закаленное стекло · Макс. длина видеокарты 375 мм · Макс. высота кулера 170 мм</description>
@@ -26342,21 +26370,6 @@
 <g:availability>in_stock</g:availability>
 <g:price>46000 KZT</g:price>
 <g:brand>Gamemax</g:brand>
-<g:condition>new</g:condition>
-<g:identifier_exists>no</g:identifier_exists>
-<g:product_type>Корпуса</g:product_type>
-</item>
-<item>
-<g:id>IS280F4932A6</g:id>
-<title>Компьютерный корпус Thermaltake View 390 TG белый без Б/П CA-11F-00M6WN-01</title>
-<description>Гарантия 1 год · Форм-фактор ATX · Цвет Белый · Тип устройства Корпус · Материал Сталь · Макс. длина видеокарты 460 мм · Макс. высота кулера 160 мм</description>
-<link>https://b2b.isoft-shop.kz/korpusa-i-bloki-pitaniya/tproduct/262622254284-kompyuternii-korpus-thermaltake-view-390</link>
-<g:image_link>https://static.tildacdn.com/tila6137-3830-4939-b563-323339343565/262622254284_1.jpg</g:image_link>
-<g:additional_image_link>https://static.tildacdn.com/tila3662-3738-4866-b938-356537623537/262622254284_2.jpg</g:additional_image_link>
-<g:additional_image_link>https://static.tildacdn.com/tila3630-3031-4630-b939-373663666265/262622254284_3.jpg</g:additional_image_link>
-<g:availability>in_stock</g:availability>
-<g:price>79000 KZT</g:price>
-<g:brand>Thermaltake</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
 <g:product_type>Корпуса</g:product_type>
@@ -29170,21 +29183,6 @@
 <g:product_type>Корпуса</g:product_type>
 </item>
 <item>
-<g:id>ISE0D0D2DDD6</g:id>
-<title>Компьютерный корпус Thermaltake View 600 TG Mint Strawberry без Б/П CA-11H-00FLWN-00</title>
-<description>Форм-фактор E-ATX · Макс. длина видеокарты 480 мм · Макс. высота кулера 195 мм · Тип устройства Корпус · Гарантия 1 год · Материал Сталь</description>
-<link>https://b2b.isoft-shop.kz/korpusa-i-bloki-pitaniya/tproduct/327565713584-kompyuternii-korpus-thermaltake-view-600</link>
-<g:image_link>https://static.tildacdn.com/stor6136-6166-4834-b935-633361613162/15eeeade0f926c7cd881c820fa9c7c1f.jpg</g:image_link>
-<g:additional_image_link>https://static.tildacdn.com/tild3130-3161-4533-b033-376235633535/327565713584_1.jpg</g:additional_image_link>
-<g:additional_image_link>https://static.tildacdn.com/tild3033-6138-4433-b365-366536343933/327565713584_2.jpg</g:additional_image_link>
-<g:availability>in_stock</g:availability>
-<g:price>76000 KZT</g:price>
-<g:brand>Thermaltake</g:brand>
-<g:condition>new</g:condition>
-<g:identifier_exists>no</g:identifier_exists>
-<g:product_type>Корпуса</g:product_type>
-</item>
-<item>
 <g:id>ISE24A4848D3</g:id>
 <title>Корпус Case ATX midi tower Wintek Tornado Pro, PS195-B-M TG, (без БП), Black</title>
 <description>Форм-фактор ATX · Тип устройства Корпус · Цвет Чёрный</description>
@@ -30104,6 +30102,19 @@
 <g:product_type>МФУ</g:product_type>
 </item>
 <item>
+<g:id>IS082791CF08</g:id>
+<title>МФУ HP 9YG09A LaserJet M236sdw (A4) Printer Scanner Copier/ADF</title>
+<description>Технология печати лазерный · Цветность ч/б · Тип устройства МФУ</description>
+<link>https://b2b.isoft-shop.kz/mfu/tproduct/644496898814-mfu-hp-9yg09a-laserjet-m236sdw-a4-printe</link>
+<g:image_link>https://static.tildacdn.com/tild3463-6565-4863-b635-633062623661/644496898814.jpg</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>160000 KZT</g:price>
+<g:brand>HP</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:product_type>МФУ</g:product_type>
+</item>
+<item>
 <g:id>IS0A4E25B9A4</g:id>
 <title>Мфу PANTUM CM420ADN 35ppm color (A3), RADF, 3-in-1(print, scan, copy), duplex, network</title>
 <description>Тип устройства МФУ · Цветность цветной · Формат A3 · Скорость печати 35 стр/мин · Класс скорости печати 33–35 стр/мин · Технология печати лазерный</description>
@@ -30390,6 +30401,19 @@
 <g:brand>Canon</g:brand>
 <g:condition>new</g:condition>
 <g:mpn>6354C009</g:mpn>
+<g:product_type>МФУ</g:product_type>
+</item>
+<item>
+<g:id>IS3460A3A6A0</g:id>
+<title>МФУ HP LASERJET M141W 7MD74A</title>
+<description>МФУ HP LASERJET M141W 7MD74A (HP)</description>
+<link>https://b2b.isoft-shop.kz/mfu/tproduct/550567568724-mfu-hp-laserjet-m141w-7md74a</link>
+<g:image_link>https://static.tildacdn.com/stor3662-6163-4662-a336-653564383830/0b19311b9e66a07fe502bcc0e1a4bdca.png</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>96000 KZT</g:price>
+<g:brand>HP</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
 <g:product_type>МФУ</g:product_type>
 </item>
 <item>
@@ -30790,19 +30814,6 @@
 <g:product_type>МФУ</g:product_type>
 </item>
 <item>
-<g:id>IS81249091B3</g:id>
-<title>Монохромное лазерное МФУ Canon I-S MF465dw II 7188C007AA</title>
-<description>Тип устройства МФУ · Цветность ч/б · Формат A4 · Скорость печати 40 стр/мин · Интерфейсы USB 2.0, Ethernet, Wi-Fi</description>
-<link>https://b2b.isoft-shop.kz/mfu/tproduct/665262549734-monohromnoe-lazernoe-mfu-canon-i-s-mf465</link>
-<g:image_link>https://static.tildacdn.com/tila3431-3934-4836-a261-323936343764/IS81249091B3_1.jpg</g:image_link>
-<g:availability>in_stock</g:availability>
-<g:price>235000 KZT</g:price>
-<g:brand>Canon</g:brand>
-<g:condition>new</g:condition>
-<g:identifier_exists>no</g:identifier_exists>
-<g:product_type>МФУ</g:product_type>
-</item>
-<item>
 <g:id>IS822936565E</g:id>
 <title>МФУ Epson XP-15000 Exp Photo, A3+, принтерсканер/копир, 5760x1440dpi, 29стр/мин, USB, C11CG43402</title>
 <description>Тип устройства МФУ · Формат A3+ · Скорость печати 29 стр/мин · Разрешение печати 5760×1440 dpi · Интерфейсы USB · Класс скорости печати от 26 стр/мин · Технология печати струйный · Цветность цветной</description>
@@ -30934,19 +30945,6 @@
 <g:product_type>МФУ</g:product_type>
 </item>
 <item>
-<g:id>ISA46589F43D</g:id>
-<title>Цветное МФУ Canon Pixma G3410 2315C009AA</title>
-<description>Тип устройства МФУ · Формат A4 · Интерфейсы USB 2.0, Wi-Fi</description>
-<link>https://b2b.isoft-shop.kz/mfu/tproduct/745719851504-tsvetnoe-mfu-canon-pixma-g3410-2315c009a</link>
-<g:image_link>https://static.tildacdn.com/tila3338-6530-4465-b665-323339343837/ISA46589F43D_1.jpg</g:image_link>
-<g:availability>in_stock</g:availability>
-<g:price>105000 KZT</g:price>
-<g:brand>Canon</g:brand>
-<g:condition>new</g:condition>
-<g:identifier_exists>no</g:identifier_exists>
-<g:product_type>МФУ</g:product_type>
-</item>
-<item>
 <g:id>ISA49B776194</g:id>
 <title>Цветное МФУ Lexmark CX951se 100S14894</title>
 <description>Тип устройства МФУ · Цветность цветной · Скорость печати 35 стр/мин · Класс скорости печати 33–35 стр/мин · Технология печати лазерный · Разрешение печати 1200×1200 dpi · Тип сканера Планшетный · Лотки 700 листов · Максимальная нагрузка 100 000 стр./мес · Рекомендуемая нагрузка 20 000 стр./мес</description>
@@ -31031,6 +31029,19 @@
 <g:image_link>https://static.tildacdn.com/stor3461-6332-4037-b132-616539393864/50ca8a6e42dd337e96e2be57303dd004.jpg</g:image_link>
 <g:availability>in_stock</g:availability>
 <g:price>182000 KZT</g:price>
+<g:brand>HP</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:product_type>МФУ</g:product_type>
+</item>
+<item>
+<g:id>ISC196371202</g:id>
+<title>МФУ HP LaserJet Pro M4103fdw Printer (A4) Scanner Copier Fax ADF 2Z629A</title>
+<description>МФУ HP LaserJet Pro M4103fdw Printer (A4) Scanner Copier Fax ADF 2Z629A (HP)</description>
+<link>https://b2b.isoft-shop.kz/mfu/tproduct/707279320614-mfu-hp-laserjet-pro-m4103fdw-printer-a4</link>
+<g:image_link>https://static.tildacdn.com/tila6233-3661-4434-b561-663630656665/ISC196371202_1.jpg</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>236000 KZT</g:price>
 <g:brand>HP</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -31234,19 +31245,6 @@
 <g:availability>in_stock</g:availability>
 <g:price>1177000 KZT</g:price>
 <g:brand>Lexmark</g:brand>
-<g:condition>new</g:condition>
-<g:identifier_exists>no</g:identifier_exists>
-<g:product_type>МФУ</g:product_type>
-</item>
-<item>
-<g:id>ISF0CD177CA3</g:id>
-<title>Цветное МФУ Canon Pixma G3470B 5805C009AA</title>
-<description>Тип устройства МФУ · Формат A4 · Интерфейсы USB 2.0, Wi-Fi</description>
-<link>https://b2b.isoft-shop.kz/mfu/tproduct/509813194844-tsvetnoe-mfu-canon-pixma-g3470b-5805c009</link>
-<g:image_link>https://static.tildacdn.com/tila3836-3733-4931-b662-656165303661/ISF0CD177CA3_1.jpg</g:image_link>
-<g:availability>in_stock</g:availability>
-<g:price>123000 KZT</g:price>
-<g:brand>Canon</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
 <g:product_type>МФУ</g:product_type>
@@ -33970,20 +33968,6 @@
 <g:product_type>Маршрутизаторы (роутеры)</g:product_type>
 </item>
 <item>
-<g:id>ISCCDBFF9039</g:id>
-<title>Беспроводной маршрутизатор Ubiquiti LAP-120</title>
-<description>Вид роутера Радиомост (наружный) · Скорость портов 1 Гбит/с (Gigabit) · Гарантия 1 год · Скорость 10/100/1000 Мбит/с · Диапазон частот 5 ГГц · Портов 1</description>
-<link>https://b2b.isoft-shop.kz/marshrutizatory/tproduct/224455444374-besprovodnoi-marshrutizator-ubiquiti-lap</link>
-<g:image_link>https://static.tildacdn.com/stor3334-3264-4466-a535-643236643561/aa70c7ba147573686b4b39069060af04.jpg</g:image_link>
-<g:availability>in_stock</g:availability>
-<g:price>55000 KZT</g:price>
-<g:brand>Ubiquiti</g:brand>
-<g:condition>new</g:condition>
-<g:identifier_exists>no</g:identifier_exists>
-<g:google_product_category>Electronics &gt; Networking &gt; Routers</g:google_product_category>
-<g:product_type>Маршрутизаторы (роутеры)</g:product_type>
-</item>
-<item>
 <g:id>ISCD3BA71F56</g:id>
 <title>Сетевое оборудование маршрутизатор MikroTik CME22-2n-BG77</title>
 <description>Вид роутера 4G/LTE роутер · Гарантия 1 год · Поколение Wi-Fi Wi-Fi 4 · Диапазон частот 2,4 ГГц · Wi-Fi 802.11b/g/n</description>
@@ -34716,6 +34700,23 @@
 <g:product_type>Маршрутизаторы (роутеры)</g:product_type>
 </item>
 <item>
+<g:id>IS00480111A5</g:id>
+<title>Материнская плата ASUS PRIME B850M-F WIFI, Socket AM5, mATX, AMD B850 (HDMI), 2DDR5, PCIx16</title>
+<description>Тип памяти DDR5 · Форм-фактор Micro-ATX · Сокет AM5 · Чипсет B850 · Слотов памяти 2</description>
+<link>https://b2b.isoft-shop.kz/materinskie-platy/tproduct/278103470974-materinskaya-plata-asus-prime-b850m-f-wi</link>
+<g:image_link>https://static.tildacdn.com/tila6437-3138-4639-b430-363563383839/278103470974_1.jpg</g:image_link>
+<g:additional_image_link>https://static.tildacdn.com/tila3739-6539-4432-b434-633334306236/278103470974_2.jpg</g:additional_image_link>
+<g:additional_image_link>https://static.tildacdn.com/tila3566-6636-4235-a536-653164666339/278103470974_3.jpg</g:additional_image_link>
+<g:additional_image_link>https://static.tildacdn.com/tila3364-6130-4263-b764-666539616538/278103470974_4.jpg</g:additional_image_link>
+<g:additional_image_link>https://static.tildacdn.com/tila6464-3237-4530-a636-313164646631/278103470974_5.jpg</g:additional_image_link>
+<g:availability>in_stock</g:availability>
+<g:price>99000 KZT</g:price>
+<g:brand>ASUS</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:product_type>Материнские платы</g:product_type>
+</item>
+<item>
 <g:id>IS01997C5439</g:id>
 <title>Материнская плата Gigabyte A520M S2H</title>
 <description>Сокет AM4 · Тип памяти DDR4 · Чипсет A520 · Форм-фактор Micro-ATX · Слотов памяти 2 · Видеовыходы HDMI / VGA / DVI · Разъёмов M.2 1 · Разъёмов SATA 4 · Интерфейс SATA / PCI-E 3.0</description>
@@ -35294,6 +35295,21 @@
 <g:additional_image_link>https://static.tildacdn.com/tild3534-6431-4166-a162-616263333631/634444476384.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
 <g:price>40000 KZT</g:price>
+<g:brand>Gigabyte</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:product_type>Материнские платы</g:product_type>
+</item>
+<item>
+<g:id>IS2DFE3076E3</g:id>
+<title>Материнская плата Gigabyte Z890 AORUS PRO ICE</title>
+<description>Тип памяти DDR5 · Форм-фактор ATX · Сокет LGA1851 · Интерфейс SATA / PCI-E 3.0 / PCI-E 4.0 / PCI-E 5.0 · Чипсет Z890 · Видеовыходы HDMI / USB Type-C Thunderbolt 4 x 2 · Слотов памяти 4 · Разъёмов M.2 5 · Разъёмов SATA 4</description>
+<link>https://b2b.isoft-shop.kz/materinskie-platy/tproduct/616763193344-materinskaya-plata-gigabyte-z890-aorus-p</link>
+<g:image_link>https://static.tildacdn.com/stor6262-3035-4531-b132-323764393862/38a2dfabf076d65a39a9e97fd44e1f4f.jpg</g:image_link>
+<g:additional_image_link>https://static.tildacdn.com/tild6536-6138-4532-b066-393534623432/616763193344.jpg</g:additional_image_link>
+<g:additional_image_link>https://static.tildacdn.com/tild3732-6635-4165-a466-616662613238/616763193344_2.jpg</g:additional_image_link>
+<g:availability>in_stock</g:availability>
+<g:price>247000 KZT</g:price>
 <g:brand>Gigabyte</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -36977,6 +36993,23 @@
 <g:additional_image_link>https://static.tildacdn.com/tild3866-6539-4331-a665-656238353033/303833196724.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
 <g:price>294000 KZT</g:price>
+<g:brand>ASUS</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:product_type>Материнские платы</g:product_type>
+</item>
+<item>
+<g:id>ISABB4D2860B</g:id>
+<title>Материнская плата ASUS ROG STRIX B850-A GAMING WIFI, Socket AM5, ATX, AMD B850 (DP/HDMI), 4DDR5, PCIx16</title>
+<description>Тип памяти DDR5 · Форм-фактор ATX · Сокет AM5 · Чипсет B850 · Слотов памяти 4</description>
+<link>https://b2b.isoft-shop.kz/materinskie-platy/tproduct/309299779484-materinskaya-plata-asus-rog-strix-b850-a</link>
+<g:image_link>https://static.tildacdn.com/tila6638-6331-4565-b536-646362363431/309299779484_1.jpg</g:image_link>
+<g:additional_image_link>https://static.tildacdn.com/tila3034-3932-4164-b735-363665633937/309299779484_2.jpg</g:additional_image_link>
+<g:additional_image_link>https://static.tildacdn.com/tila3335-3765-4430-a638-623430303865/309299779484_3.jpg</g:additional_image_link>
+<g:additional_image_link>https://static.tildacdn.com/tila3861-6662-4464-b231-336365646161/309299779484_4.jpg</g:additional_image_link>
+<g:additional_image_link>https://static.tildacdn.com/tila3832-3765-4331-b962-626137363763/309299779484_5.jpg</g:additional_image_link>
+<g:availability>in_stock</g:availability>
+<g:price>180000 KZT</g:price>
 <g:brand>ASUS</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -46730,7 +46763,7 @@
 <item>
 <g:id>IS3C107C5ABF</g:id>
 <title>Беспроводная мышь LOGITECH M170 - серая LOGITECH M170 WIRELESS MOUSE - GREY</title>
-<description>Подключение Беспроводное · Тип устройства мышь · Цвет Серый</description>
+<description>Тип устройства мышь · Подключение Беспроводное · Цвет Серый · Кнопок 3</description>
 <link>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/964203517014-besprovodnaya-mish-logitech-m170-seraya</link>
 <g:image_link>https://static.tildacdn.com/tila6165-3463-4565-a639-666430626131/IS3C107C5ABF_1.png</g:image_link>
 <g:availability>in_stock</g:availability>
@@ -55526,19 +55559,6 @@
 <g:product_type>Наушники и гарнитуры</g:product_type>
 </item>
 <item>
-<g:id>ISD24F38EEF0</g:id>
-<title>Наушники Redmi Buds 6 Night Black M2429E1</title>
-<description>Тип устройства Наушники · Материал Пластик · Цвет Чёрный · Тип подключения Беспроводное · Bluetooth 5.4</description>
-<link>https://b2b.isoft-shop.kz/naushniki-i-garnitury/tproduct/794136387874-naushniki-redmi-buds-6-night-black-m2429</link>
-<g:image_link>https://static.tildacdn.com/tila3363-6634-4761-b130-333436306162/ISD24F38EEF0_1.jpg</g:image_link>
-<g:availability>in_stock</g:availability>
-<g:price>22000 KZT</g:price>
-<g:brand>Redmi</g:brand>
-<g:condition>new</g:condition>
-<g:identifier_exists>no</g:identifier_exists>
-<g:product_type>Наушники и гарнитуры</g:product_type>
-</item>
-<item>
 <g:id>ISD28DBD88C2</g:id>
 <title>Гарнитура Razer Opus X - Green RZ04-03760400-R3M1</title>
 <description>Тип устройства Гарнитура · Цвет Зелёный · Тип подключения Беспроводное · Длина кабеля 0,5 м · Звучание Стерео</description>
@@ -57239,20 +57259,6 @@
 <g:product_type>Ноутбуки</g:product_type>
 </item>
 <item>
-<g:id>IS3C80370858</g:id>
-<title>Ноутбук HP ZBook Fury G1i 16 C88QBEA, Ultra 9 285HX for WWAN Fury 16-inch G1i, 1TB PCIe-5x4 2280 NVMe, 32GB (1x32GB) DDR5 5600 SODIMM Memory</title>
-<description>Диагональ 16″ · Оперативная память 32 ГБ · Операционная система Windows 11 Pro · Процессор Ultra 9 285HX · Ёмкость 1 ТБ · Камера IR + 5 Мп · Линейка процессора Core Ultra 9 · Тип накопителя SSD · Разрешение 2560×1600 · Видеокарта NVIDIA RTX PRO 3000</description>
-<link>https://b2b.isoft-shop.kz/noutbuki/tproduct/303781602294-noutbuk-hp-zbook-fury-g1i-16-c88qbea-ult</link>
-<g:image_link>https://static.tildacdn.com/tild3836-3734-4533-a235-653134366632/303781602294.jpg</g:image_link>
-<g:availability>in_stock</g:availability>
-<g:price>2577000 KZT</g:price>
-<g:brand>HP</g:brand>
-<g:condition>new</g:condition>
-<g:identifier_exists>no</g:identifier_exists>
-<g:google_product_category>Electronics &gt; Computers &gt; Laptops</g:google_product_category>
-<g:product_type>Ноутбуки</g:product_type>
-</item>
-<item>
 <g:id>IS3CF706BD3E</g:id>
 <title>Ноутбук Asus H7606WW-SE079X 90NB17F1-M00460</title>
 <description>Процессор AMD Ryzen AI 9 HX 370 · Оперативная память 32 ГБ · Ёмкость 1 ТБ · Видеокарта RTX 5080 · Операционная система Windows 11 · Линейка процессора Ryzen 9 · Семья ОС Windows 11 · Тип накопителя SSD · Накопитель 1024 ГБ · Диагональ 16″</description>
@@ -57970,7 +57976,7 @@
 <item>
 <g:id>IS6CC7B87D1B</g:id>
 <title>Ноутбук 14-inch MacBook Pro with PROLED XDR дисплей: Apple M5 чип 15 A3468, core CPU and 16-core GPU, 24GB, 24GB, 1TB SSD - SILVER, MODEL</title>
-<description>Количество ядер процессора 15 · Ёмкость 1 ТБ · Оперативная память 24 ГБ · Процессор APPLE M5 PRO · Линейка процессора Apple M</description>
+<description>Диагональ 14,2″ · Bluetooth 6.0 · Ёмкость 1 ТБ · Количество ядер процессора 15 · Оперативная память 24 ГБ · Процессор APPLE M5 PRO · Линейка процессора Apple M · Накопитель 1 ТБ · Видеокарта Встроенная · Операционная система macOS</description>
 <link>https://b2b.isoft-shop.kz/noutbuki/tproduct/811463481504-noutbuk-14-inch-macbook-pro-with-proled</link>
 <g:image_link>https://static.tildacdn.com/tila3233-6437-4334-a664-613130626633/IS6CC7B87D1B_1.png</g:image_link>
 <g:availability>in_stock</g:availability>
@@ -58928,7 +58934,7 @@
 <item>
 <g:id>IS9AE5925A28</g:id>
 <title>Ноутбук Lenovo V15 G7 IWC, Core i3 304-1.5/512GB SSD/8GB/15.6-inch FHD/Win11</title>
-<description>Диагональ 15,6″ · Ёмкость 512 ГБ · Оперативная память 8 ГБ · Операционная система Windows 11 · Процессор i3-304 · Разрешение 1920×1080 · Линейка процессора Core i3 / Core 3 · Семья ОС Windows 11</description>
+<description>Диагональ 15,6″ · Ёмкость 512 ГБ · Оперативная память 8 ГБ · Операционная система Windows 11 · Процессор Intel i3-304 · Разрешение 1920×1080 · Линейка процессора Core i3 / Core 3 · Семья ОС Windows 11 · Накопитель 512 ГБ</description>
 <link>https://b2b.isoft-shop.kz/noutbuki/tproduct/554623480714-noutbuk-lenovo-v15-g7-iwc-core-i3-304-15</link>
 <g:image_link>https://static.tildacdn.com/tila3139-6436-4235-a338-333666386264/554623480714_1.jpg</g:image_link>
 <g:additional_image_link>https://static.tildacdn.com/tila3637-6662-4336-b262-313864313962/554623480714_2.jpg</g:additional_image_link>
@@ -59701,7 +59707,7 @@
 <item>
 <g:id>ISCB5A70148C</g:id>
 <title>Ноутбук 16-inch MacBook Pro with PROLED XDR дисплей: Apple M5 чип 18 A3469, core CPU and 20-core GPU, 24GB, 24GB, 1TB SSD - SPACE BLACK</title>
-<description>Количество ядер процессора 18 · Ёмкость 1 ТБ · Оперативная память 24 ГБ · Процессор APPLE M5 PRO · Линейка процессора Apple M</description>
+<description>Диагональ 16,3″ · Bluetooth 6.0 · Ёмкость 1 ТБ · Количество ядер процессора 18 · Оперативная память 24 ГБ · Процессор APPLE M5 PRO · Линейка процессора Apple M · Накопитель 1 ТБ · Видеокарта Встроенная · Операционная система macOS</description>
 <link>https://b2b.isoft-shop.kz/noutbuki/tproduct/962457710644-noutbuk-16-inch-macbook-pro-with-proled</link>
 <g:image_link>https://static.tildacdn.com/tila6538-3230-4939-b833-376562316235/ISCB5A70148C_1.png</g:image_link>
 <g:availability>in_stock</g:availability>
@@ -59715,7 +59721,7 @@
 <item>
 <g:id>ISCB6F767C35</g:id>
 <title>Ноутбук 14-inch MacBook Pro with PROLED XDR дисплей: Apple M5 чип 15 A3468, core CPU and 16-core GPU, 24GB, 24GB, 1TB SSD - SPACE BLACK</title>
-<description>Количество ядер процессора 15 · Ёмкость 1 ТБ · Оперативная память 24 ГБ · Процессор APPLE M5 PRO · Линейка процессора Apple M</description>
+<description>Диагональ 14,2″ · Bluetooth 6.0 · Количество ядер процессора 15 · Ёмкость 1 ТБ · Оперативная память 24 ГБ · Процессор APPLE M5 PRO · Линейка процессора Apple M · Накопитель 1 ТБ · Видеокарта Встроенная · Операционная система macOS</description>
 <link>https://b2b.isoft-shop.kz/noutbuki/tproduct/192676181544-noutbuk-14-inch-macbook-pro-with-proled</link>
 <g:image_link>https://static.tildacdn.com/tila6161-3034-4539-a162-646438353438/ISCB6F767C35_1.png</g:image_link>
 <g:availability>in_stock</g:availability>
@@ -60606,7 +60612,7 @@
 <item>
 <g:id>ISFD859290E4</g:id>
 <title>Ноутбук 14-inch MacBook Pro with PROLED XDR дисплей: Apple M5 чип 18 A3468, core CPU and 20-core GPU, 48GB, 48GB, 1TB SSD - SILVER, MODEL</title>
-<description>Количество ядер процессора 18 · Ёмкость 1 ТБ · Оперативная память 48 ГБ · Процессор APPLE M5 PRO · Линейка процессора Apple M</description>
+<description>Диагональ 14,2″ · Bluetooth 6.0 · Ёмкость 1 ТБ · Количество ядер процессора 18 · Оперативная память 48 ГБ · Процессор APPLE M5 PRO · Линейка процессора Apple M · Накопитель 1 ТБ · Видеокарта Встроенная · Операционная система macOS</description>
 <link>https://b2b.isoft-shop.kz/noutbuki/tproduct/548528498294-noutbuk-14-inch-macbook-pro-with-proled</link>
 <g:image_link>https://static.tildacdn.com/tila3233-6437-4334-a664-613130626633/IS6CC7B87D1B_1.png</g:image_link>
 <g:availability>in_stock</g:availability>
@@ -61542,20 +61548,6 @@
 <g:product_type>Оперативная память</g:product_type>
 </item>
 <item>
-<g:id>IS8B5C20C098</g:id>
-<title>Оперативная память Apacer Panther RGB AH5U32G52C5229BAA-1 DDR5 32GB</title>
-<description>Оперативная память Apacer AH5U32G52C5229BAA-1: Тип памяти DDR5 · Объём 32 ГБ · Частота 5200 МГц · Форм-фактор DIMM · Модулей в комплекте 1. Цена с НДС, безналичный расчёт для организаций.</description>
-<link>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/443909472094-operativnaya-pamyat-apacer-panther-rgb-a</link>
-<g:image_link>https://static.tildacdn.com/stor6562-3166-4230-b534-316231363930/60085c98f38e2f043892a1db93efa80c.jpg</g:image_link>
-<g:availability>in_stock</g:availability>
-<g:price>282000 KZT</g:price>
-<g:brand>Apacer</g:brand>
-<g:condition>new</g:condition>
-<g:mpn>AH5U32G52C5229BAA-1</g:mpn>
-<g:google_product_category>Electronics &gt; Electronics Accessories &gt; Memory &gt; RAM</g:google_product_category>
-<g:product_type>Оперативная память</g:product_type>
-</item>
-<item>
 <g:id>IS8B884848F2</g:id>
 <title>Оперативная память DIMM DDR4 32 GB kit &amp;lt;3200MHz&amp;gt; G.Skill FlareX (AMD), F4-3200C16D-32GFX, (2x16GB), 16-18-18-38</title>
 <description>Модулей в комплекте 2 · Оперативная память 32 ГБ · Тайминги 16-18-18-38 · Тип памяти DDR4 · Форм-фактор DIMM · Частота 3200 МГц</description>
@@ -61977,20 +61969,6 @@
 <g:brand>Team_Group</g:brand>
 <g:condition>new</g:condition>
 <g:mpn>FF3D516G6000HC38A01</g:mpn>
-<g:google_product_category>Electronics &gt; Electronics Accessories &gt; Memory &gt; RAM</g:google_product_category>
-<g:product_type>Оперативная память</g:product_type>
-</item>
-<item>
-<g:id>ISB911C43C9A</g:id>
-<title>Оперативная память Apacer EL.08G2V.GNH</title>
-<description>Форм-фактор DIMM · Оперативная память 8 ГБ · Тип памяти DDR4 · Частота 2666 МГц · Модулей в комплекте 1</description>
-<link>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/278889505034-operativnaya-pamyat-apacer-el08g2vgnh</link>
-<g:image_link>https://static.tildacdn.com/tila6236-3363-4432-b637-643234333933/IS93176A32FD_1.jpg</g:image_link>
-<g:availability>in_stock</g:availability>
-<g:price>42000 KZT</g:price>
-<g:brand>Apacer</g:brand>
-<g:condition>new</g:condition>
-<g:identifier_exists>no</g:identifier_exists>
 <g:google_product_category>Electronics &gt; Electronics Accessories &gt; Memory &gt; RAM</g:google_product_category>
 <g:product_type>Оперативная память</g:product_type>
 </item>
@@ -63838,21 +63816,6 @@
 <g:availability>in_stock</g:availability>
 <g:price>2900 KZT</g:price>
 <g:brand>PCCOOLER</g:brand>
-<g:condition>new</g:condition>
-<g:identifier_exists>no</g:identifier_exists>
-<g:product_type>Охлаждение</g:product_type>
-</item>
-<item>
-<g:id>IS5D08D0FFB7</g:id>
-<title>Охлаждение Кулер для процессора Deepcool ICE EDGE MINI FS v2.0 DP-MCH2-IEMV2</title>
-<description>Форм-фактор 80 мм · Уровень шума 24,7 дБА · Интерфейс 3-pin · Скорость вращения 2200 об/мин · Тип устройства Кулер для процессора · Воздушный поток 25,13 CFM · Сокет 1851 / 1700 / 1200 / 1151 / AM5 / AM4 · TDP 95 Вт · Количество вентиляторов 1 · Гарантия 1 год</description>
-<link>https://b2b.isoft-shop.kz/ohlazhdenie/tproduct/998541218874-ohlazhdenie-kuler-dlya-protsessora-deepc</link>
-<g:image_link>https://static.tildacdn.com/stor3435-3533-4232-a665-613165386437/4a4be0c493cd2b9c0d5de08c613aad5c.jpg</g:image_link>
-<g:additional_image_link>https://static.tildacdn.com/tild3332-3462-4835-a364-313265363764/998541218874_1.jpg</g:additional_image_link>
-<g:additional_image_link>https://static.tildacdn.com/tild6662-6364-4362-a363-306239666336/998541218874_2.jpg</g:additional_image_link>
-<g:availability>in_stock</g:availability>
-<g:price>4200 KZT</g:price>
-<g:brand>Deepcool</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
 <g:product_type>Охлаждение</g:product_type>
@@ -69670,19 +69633,6 @@
 <g:product_type>Процессоры</g:product_type>
 </item>
 <item>
-<g:id>IS10891A83AC</g:id>
-<title>Процессор AMD Ryzen 5 5600X, 3.7GHz (Vermeer, 4.6), 6C/12T, (100-000000065), 3/32MB, 65W, AM4</title>
-<description>Сокет AM4 · Частота 3,7 ГГц · TDP 65 Вт · Потоки 12 · Ядра 6 · Класс частоты 3–3,9 ГГц · Класс потоков 10–12 · Кэш-память 32 МБ L3</description>
-<link>https://b2b.isoft-shop.kz/processory/tproduct/191302850424-protsessor-amd-ryzen-5-5600x-37ghz-verme</link>
-<g:image_link>https://static.tildacdn.com/tila3335-6137-4539-a466-653330366561/IS10891A83AC_1.jpg</g:image_link>
-<g:availability>in_stock</g:availability>
-<g:price>88000 KZT</g:price>
-<g:brand>AMD</g:brand>
-<g:condition>new</g:condition>
-<g:identifier_exists>no</g:identifier_exists>
-<g:product_type>Процессоры</g:product_type>
-</item>
-<item>
 <g:id>IS10C409F8E9</g:id>
 <title>Процессор Intel Core Ultra 5, 225F, LGA1851, 3.3GHz, 10C/10T, Cache L3 20Mb, no UHD, AT8076806771</title>
 <description>Процессор Intel AT8076806771: Сокет LGA1851 · Ядра 10 · Потоки 10 · Частота 3,3 ГГц. Цена с НДС, безналичный расчёт для организаций.</description>
@@ -69983,6 +69933,19 @@
 <g:availability>in_stock</g:availability>
 <g:price>244000 KZT</g:price>
 <g:brand>Intel</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:product_type>Процессоры</g:product_type>
+</item>
+<item>
+<g:id>IS4112622D76</g:id>
+<title>Процессор (CPU) AMD Ryzen 7 9800X3D 120W AM5 100-000001084</title>
+<description>TDP 120 Вт · Сокет AM5 · Количество ядер 8 · Потоки 16 · Частота 4,7 ГГц</description>
+<link>https://b2b.isoft-shop.kz/processory/tproduct/161169159744-protsessor-cpu-amd-ryzen-7-9800x3d-120w</link>
+<g:image_link>https://static.tildacdn.com/tila3338-3662-4236-b633-643136326234/IS4112622D76_1.jpg</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>262000 KZT</g:price>
+<g:brand>AMD</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
 <g:product_type>Процессоры</g:product_type>
@@ -70701,6 +70664,19 @@
 <g:availability>in_stock</g:availability>
 <g:price>144000 KZT</g:price>
 <g:brand>Intel</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:product_type>Процессоры</g:product_type>
+</item>
+<item>
+<g:id>ISEA5CB6813C</g:id>
+<title>Процессор AMD Ryzen 7 9800X3D, 4.7GHz (Granite Ridge, 5.2), 8C/16T, (100-000001084), 8/96MB, 120W,AM5</title>
+<description>TDP 120 Вт · Потоки 16 · Сокет AM5 · Частота 4,7 ГГц · Ядра 8 · Класс частоты от 4 ГГц · Класс потоков 14–18</description>
+<link>https://b2b.isoft-shop.kz/processory/tproduct/771109911724-protsessor-amd-ryzen-7-9800x3d-47ghz-gra</link>
+<g:image_link>https://static.tildacdn.com/tila6330-3966-4865-b566-333264646230/ISEA5CB6813C_1.jpg</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>289000 KZT</g:price>
+<g:brand>AMD</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
 <g:product_type>Процессоры</g:product_type>
@@ -81277,6 +81253,20 @@
 <g:product_type>Системные блоки</g:product_type>
 </item>
 <item>
+<g:id>IS06AB8BE0D3</g:id>
+<title>Системный блок Pulser Core i5-12400, 2.5 ГГц, H610, 16 ГБ ОЗУ, SSD 1 ТБ, без DVD, БП 400 Вт</title>
+<description>Ёмкость 1 ТБ · Оперативная память 16 ГБ · Блок питания 400 Вт</description>
+<link>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/761826515844-sistemnii-blok-pulser-core-i5-12400-25-g</link>
+<g:image_link>https://static.tildacdn.com/tila3266-3430-4532-a531-616132643263/761826515844_1.jpg</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>327000 KZT</g:price>
+<g:brand>Pulser</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:google_product_category>Electronics &gt; Computers &gt; Desktop Computers</g:google_product_category>
+<g:product_type>Системные блоки</g:product_type>
+</item>
+<item>
 <g:id>IS087EEDC1BA</g:id>
 <title>Системный блок Pulser Core i3-12100, 3.3 ГГц, H610, 8 ГБ ОЗУ, SSD 512 ГБ, без DVD, БП 400 Вт</title>
 <description>Оперативная память 8 ГБ · Процессор Intel Core i3-12100 · Линейка процессора Core i3 / Core 3 · Тип накопителя SSD · Ёмкость 512 ГБ · Блок питания 400 Вт · Накопитель 512 ГБ</description>
@@ -84222,7 +84212,7 @@
 <g:additional_image_link>https://static.tildacdn.com/tild3465-3138-4463-a432-356466356235/983070028294_1.jpg</g:additional_image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild6334-3665-4437-a665-336137336163/983070028294_2.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>12000 KZT</g:price>
+<g:price>11000 KZT</g:price>
 <g:brand>Planet</g:brand>
 <g:condition>new</g:condition>
 <g:mpn>WNAP-6308</g:mpn>
@@ -84236,7 +84226,7 @@
 <g:image_link>https://static.tildacdn.com/stor3139-3565-4437-b434-626535333664/89144fc500321c579991b805b1170e87.jpg</g:image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild6161-3639-4364-b637-303963616437/341154515294_1.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>51000 KZT</g:price>
+<g:price>48000 KZT</g:price>
 <g:brand>TP-Link</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -84249,7 +84239,7 @@
 <link>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/808840131734-tochka-dostupa-hpe-aruba-ap-303h-rw-unif</link>
 <g:image_link>https://static.tildacdn.com/tild6162-3830-4238-b264-393064366534/IS073ED1A696_1.png</g:image_link>
 <g:availability>in_stock</g:availability>
-<g:price>154000 KZT</g:price>
+<g:price>144000 KZT</g:price>
 <g:brand>HPE</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -84263,7 +84253,7 @@
 <g:image_link>https://static.tildacdn.com/stor3561-6337-4864-b833-333631343662/d8a26eff809e64f91ee354821ee3b8b9.jpg</g:image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild3939-6234-4239-b433-633838636163/508998690974_1.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>152000 KZT</g:price>
+<g:price>143000 KZT</g:price>
 <g:brand>Ubiquiti</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -84277,7 +84267,7 @@
 <g:image_link>https://static.tildacdn.com/stor3961-3539-4336-b030-383464383239/f5c536536944e275584d42fe835241d0.jpg</g:image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild3064-3836-4339-b433-366239633261/833612673764_1.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>76000 KZT</g:price>
+<g:price>71000 KZT</g:price>
 <g:brand>HUAWEI eKit</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -84291,7 +84281,7 @@
 <g:image_link>https://static.tildacdn.com/stor3561-3639-4363-b363-363730333338/5cbe8f38f1e95f04b1b512e9640c9c55.jpg</g:image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild3666-3638-4839-b638-316337326261/440292380414_1.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>436000 KZT</g:price>
+<g:price>410000 KZT</g:price>
 <g:brand>Ubiquiti</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -84304,7 +84294,7 @@
 <link>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/726995784484-besprovodnaya-tochka-dostupa-hikvision-d</link>
 <g:image_link>https://static.tildacdn.com/stor3937-3264-4734-b332-616239356531/fa5646058a4c4210aa6ebc33da84f809.jpg</g:image_link>
 <g:availability>in_stock</g:availability>
-<g:price>36000 KZT</g:price>
+<g:price>34000 KZT</g:price>
 <g:brand>Hikvision</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -84317,7 +84307,7 @@
 <link>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/264011537794-tochka-dostupa-mikrotik-ltap-2hndampr11e</link>
 <g:image_link>https://static.tildacdn.com/stor3366-3030-4535-b931-366661306166/aa498619e5dc27543a44f01dc08d43aa.jpg</g:image_link>
 <g:availability>in_stock</g:availability>
-<g:price>104000 KZT</g:price>
+<g:price>98000 KZT</g:price>
 <g:brand>MikroTik</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -84331,7 +84321,7 @@
 <g:image_link>https://static.tildacdn.com/stor3264-3363-4139-b232-336435373130/5973ba1b0c357dd9bdad44befbd59cfe.jpg</g:image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild3765-6630-4234-a330-643431653232/412181159254_1.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>42000 KZT</g:price>
+<g:price>39000 KZT</g:price>
 <g:brand>TP-Link</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -84344,7 +84334,7 @@
 <link>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/150617122374-besprovodnaya-tochka-dostupa-hikvision-d</link>
 <g:image_link>https://static.tildacdn.com/tila3266-6637-4265-b565-303232653337/IS18EAACDF06_1.jpg</g:image_link>
 <g:availability>in_stock</g:availability>
-<g:price>59000 KZT</g:price>
+<g:price>56000 KZT</g:price>
 <g:brand>Hikvision</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -84358,7 +84348,7 @@
 <g:image_link>https://static.tildacdn.com/stor3634-6565-4536-b963-313661316636/353fd02d5d7cdd0ceb14abd238750823.jpg</g:image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild3934-6234-4635-a235-636664656137/606348489854_1.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>148000 KZT</g:price>
+<g:price>139000 KZT</g:price>
 <g:brand>Ubiquiti</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -84373,7 +84363,7 @@
 <g:additional_image_link>https://static.tildacdn.com/tild3438-3964-4733-b732-346334633933/761544985734_1.jpg</g:additional_image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild6366-6333-4332-b730-613534343264/761544985734_2.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>76000 KZT</g:price>
+<g:price>72000 KZT</g:price>
 <g:brand>TP-Link</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -84389,7 +84379,7 @@
 <g:additional_image_link>https://static.tildacdn.com/tild6462-3338-4235-b439-303031353166/404729971064_2.jpg</g:additional_image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild3261-6230-4633-b466-376333393962/404729971064_3.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>270000 KZT</g:price>
+<g:price>251000 KZT</g:price>
 <g:brand>EnGenius Networks</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -84403,7 +84393,7 @@
 <g:image_link>https://static.tildacdn.com/stor6137-3537-4266-a261-326265356235/3dd9601ff71ed7d0c3523cedf1c42250.jpg</g:image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild3665-3237-4736-b239-373161323961/239629329154_1.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>23000 KZT</g:price>
+<g:price>22000 KZT</g:price>
 <g:brand>Hikvision</g:brand>
 <g:condition>new</g:condition>
 <g:mpn>DS-3WF0FA-2N/O</g:mpn>
@@ -84418,7 +84408,7 @@
 <g:additional_image_link>https://static.tildacdn.com/tild6661-3032-4139-b562-313235356635/298589138464_1.jpg</g:additional_image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild3462-6461-4362-b133-333561616236/298589138464_2.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>150000 KZT</g:price>
+<g:price>141000 KZT</g:price>
 <g:brand>Ubiquiti</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -84432,7 +84422,7 @@
 <g:image_link>https://static.tildacdn.com/stor3436-3139-4633-b261-356435633132/d402f37367c0d5d3f685d702bb6bb547.jpg</g:image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild3834-3434-4764-a439-383934613764/302440672084_1.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>62000 KZT</g:price>
+<g:price>59000 KZT</g:price>
 <g:brand>MikroTik</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -84447,7 +84437,7 @@
 <g:additional_image_link>https://static.tildacdn.com/tild6265-3535-4365-a531-636662393165/263211213884_1.jpg</g:additional_image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild3238-3639-4538-a464-613537386139/263211213884_2.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>159000 KZT</g:price>
+<g:price>149000 KZT</g:price>
 <g:brand>Grandstream</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -84461,7 +84451,7 @@
 <g:image_link>https://static.tildacdn.com/stor3665-3464-4565-b738-366539383932/cc7ea7f9704f044278d796b24312347b.jpg</g:image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild6264-3161-4533-b238-633633363539/968913933914_1.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>106000 KZT</g:price>
+<g:price>100000 KZT</g:price>
 <g:brand>MikroTik</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -84476,7 +84466,7 @@
 <g:additional_image_link>https://static.tildacdn.com/tild3262-3363-4634-a232-336632666135/355420199534_1.jpg</g:additional_image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild6261-6362-4163-b537-623465373566/355420199534_2.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>112000 KZT</g:price>
+<g:price>105000 KZT</g:price>
 <g:brand>HUAWEI eKit</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -84489,7 +84479,7 @@
 <link>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/274653634474-besprovodnaya-tochka-dostupa-ubiquiti-ua</link>
 <g:image_link>https://static.tildacdn.com/stor3833-3462-4266-a632-316230383061/7973e6b04db6d574c31264b9720ef2e2.jpg</g:image_link>
 <g:availability>in_stock</g:availability>
-<g:price>351000 KZT</g:price>
+<g:price>331000 KZT</g:price>
 <g:brand>Ubiquiti</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -84504,7 +84494,7 @@
 <g:additional_image_link>https://static.tildacdn.com/tild3335-6331-4734-b063-656638633963/346974726974_1.jpg</g:additional_image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild3730-3334-4930-b534-366262363132/346974726974_2.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>42000 KZT</g:price>
+<g:price>40000 KZT</g:price>
 <g:brand>H3C</g:brand>
 <g:condition>new</g:condition>
 <g:mpn>AOLYNK-UAP622G-AX15</g:mpn>
@@ -84519,7 +84509,7 @@
 <g:additional_image_link>https://static.tildacdn.com/tild3335-6331-4734-b063-656638633963/346974726974_1.jpg</g:additional_image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild3730-3334-4930-b534-366262363132/346974726974_2.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>36000 KZT</g:price>
+<g:price>34000 KZT</g:price>
 <g:brand>H3C</g:brand>
 <g:condition>new</g:condition>
 <g:mpn>AOLYNK-UAP522G-AC13</g:mpn>
@@ -84533,7 +84523,7 @@
 <g:image_link>https://static.tildacdn.com/stor3765-3139-4462-a639-336165323237/353bcf2263c3c84d1fde07edfb31e12b.jpg</g:image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild3261-3032-4337-a333-623038353566/515006428444_1.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>72000 KZT</g:price>
+<g:price>68000 KZT</g:price>
 <g:brand>Ubiquiti</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -84548,7 +84538,7 @@
 <g:additional_image_link>https://static.tildacdn.com/tild3534-3262-4039-a235-643764656362/946502534784_1.jpg</g:additional_image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild3062-6130-4439-b062-323736643965/946502534784_2.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>770000 KZT</g:price>
+<g:price>726000 KZT</g:price>
 <g:brand>Ubiquiti</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -84562,7 +84552,7 @@
 <g:image_link>https://static.tildacdn.com/stor6338-6332-4232-b339-313562663265/4cb28e9c44ea19a9a199b06d3c30f697.jpg</g:image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild3538-3165-4432-b638-663163656461/932030846454_1.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>42000 KZT</g:price>
+<g:price>39000 KZT</g:price>
 <g:brand>MikroTik</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -84575,7 +84565,7 @@
 <link>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/291919806744-besprovodnaya-tochka-dostupa-hikvision-d</link>
 <g:image_link>https://static.tildacdn.com/stor3761-3066-4530-a230-636239653436/c075840c4ebe793d334ee2a4d0f51dc6.jpg</g:image_link>
 <g:availability>in_stock</g:availability>
-<g:price>42000 KZT</g:price>
+<g:price>40000 KZT</g:price>
 <g:brand>Hikvision</g:brand>
 <g:condition>new</g:condition>
 <g:mpn>DS-3WF500T-EI-2N/P</g:mpn>
@@ -84588,7 +84578,7 @@
 <link>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/948721003504-besprovodnaya-tochka-dostupa-router-h3c</link>
 <g:image_link>https://static.tildacdn.com/stor6563-3033-4639-b932-333132336639/d1e1267348ab08e661f413857e4fe105.jpg</g:image_link>
 <g:availability>in_stock</g:availability>
-<g:price>67000 KZT</g:price>
+<g:price>63000 KZT</g:price>
 <g:brand>H3C</g:brand>
 <g:condition>new</g:condition>
 <g:mpn>EWP-WA6120</g:mpn>
@@ -84601,7 +84591,7 @@
 <link>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/761108681974-wi-fi-tochka-dostupa-tp-link-eap610-outd</link>
 <g:image_link>https://static.tildacdn.com/tila6262-3164-4263-b265-373437386364/IS3EA430D7E5_1.jpg</g:image_link>
 <g:availability>in_stock</g:availability>
-<g:price>127000 KZT</g:price>
+<g:price>119000 KZT</g:price>
 <g:brand>TP-Link</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -84615,7 +84605,7 @@
 <g:image_link>https://static.tildacdn.com/stor6334-6564-4162-a339-613130626665/fdc682dfb7724cb3c678063f105292a7.jpg</g:image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild3965-6436-4964-b932-396264626565/755891889854_1.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>100000 KZT</g:price>
+<g:price>94000 KZT</g:price>
 <g:brand>MikroTik</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -84630,7 +84620,7 @@
 <g:additional_image_link>https://static.tildacdn.com/tild6133-6231-4238-a666-393365333662/822316805064_1.jpg</g:additional_image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild6561-6132-4263-b031-313764616237/822316805064_2.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>51000 KZT</g:price>
+<g:price>49000 KZT</g:price>
 <g:brand>MikroTik</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -84644,7 +84634,7 @@
 <g:image_link>https://static.tildacdn.com/stor3833-6537-4235-a164-626564626534/492793eb7e49dd94a085642d3b7b94ba.jpg</g:image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild3863-3036-4733-a361-373264373332/495441371624_1.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>87000 KZT</g:price>
+<g:price>82000 KZT</g:price>
 <g:brand>TP-Link</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -84659,7 +84649,7 @@
 <g:additional_image_link>https://static.tildacdn.com/tild3263-3164-4137-b535-353764356262/683999878244_1.jpg</g:additional_image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild6439-3537-4631-b230-376133646633/683999878244_2.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>89000 KZT</g:price>
+<g:price>84000 KZT</g:price>
 <g:brand>TP-Link</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -84672,7 +84662,7 @@
 <link>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/450446098034-besprovodnaya-tochka-dostupa-router-h3c</link>
 <g:image_link>https://static.tildacdn.com/stor3062-3131-4433-a566-386433333765/ffc0d178e20b0690da47f381f3b4469a.jpg</g:image_link>
 <g:availability>in_stock</g:availability>
-<g:price>112000 KZT</g:price>
+<g:price>105000 KZT</g:price>
 <g:brand>H3C</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -84687,7 +84677,7 @@
 <g:additional_image_link>https://static.tildacdn.com/tild3339-3232-4236-b434-303931646331/732914952264_1.jpg</g:additional_image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild3465-6230-4735-b264-633761626338/732914952264_2.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>369000 KZT</g:price>
+<g:price>348000 KZT</g:price>
 <g:brand>Ubiquiti</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -84702,7 +84692,7 @@
 <g:additional_image_link>https://static.tildacdn.com/tild3534-6236-4737-b337-646338376139/879852454024_1.jpg</g:additional_image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild6138-6165-4065-b233-333266636563/879852454024_2.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>156000 KZT</g:price>
+<g:price>145000 KZT</g:price>
 <g:brand>HPE</g:brand>
 <g:condition>new</g:condition>
 <g:mpn>S1T37A</g:mpn>
@@ -84715,7 +84705,7 @@
 <link>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/887758064534-besprovodnaya-tochka-dostupa-router-h3c</link>
 <g:image_link>https://static.tildacdn.com/stor3765-3662-4335-b763-303938653034/d3869222cc9f1abfad3f50213a8132af.jpg</g:image_link>
 <g:availability>in_stock</g:availability>
-<g:price>103000 KZT</g:price>
+<g:price>97000 KZT</g:price>
 <g:brand>H3C</g:brand>
 <g:condition>new</g:condition>
 <g:mpn>EWP-WA6120X</g:mpn>
@@ -84728,7 +84718,7 @@
 <link>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/967349263714-besprovodnaya-tochka-dostupa-hikvision-d</link>
 <g:image_link>https://static.tildacdn.com/stor3638-3039-4130-b063-383262393038/d4b9ca9f63781dc11352b69a77ea963e.jpg</g:image_link>
 <g:availability>in_stock</g:availability>
-<g:price>41000 KZT</g:price>
+<g:price>39000 KZT</g:price>
 <g:brand>Hikvision</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -84741,7 +84731,7 @@
 <link>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/938635320484-tochka-dostupa-points-of-access-hpearuba</link>
 <g:image_link>https://static.tildacdn.com/tila3435-3734-4835-b763-323863373064/IS4E904BA907_1.jpg</g:image_link>
 <g:availability>in_stock</g:availability>
-<g:price>377000 KZT</g:price>
+<g:price>351000 KZT</g:price>
 <g:brand>HPE</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -84755,7 +84745,7 @@
 <g:image_link>https://static.tildacdn.com/stor3036-6462-4364-b630-613536653132/59c20bc816f172e16bf8620daf48904f.jpg</g:image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild3132-3931-4861-b135-316634333839/938613734954_1.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>70000 KZT</g:price>
+<g:price>66000 KZT</g:price>
 <g:brand>HUAWEI eKit</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -84769,7 +84759,7 @@
 <g:image_link>https://static.tildacdn.com/stor3839-3032-4330-a339-306563643365/3bc212fc8c480aa1bb070fb2104580a2.jpg</g:image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild6165-6132-4837-a262-353665333534/232763188894_1.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>87000 KZT</g:price>
+<g:price>82000 KZT</g:price>
 <g:brand>HUAWEI eKit</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -84783,7 +84773,7 @@
 <g:image_link>https://static.tildacdn.com/stor6437-6537-4465-a230-653936336631/df1ec0d76ca0e2f5afdf85ac94405adb.jpg</g:image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild3561-3561-4262-a537-313839653362/144801030904_1.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>199000 KZT</g:price>
+<g:price>187000 KZT</g:price>
 <g:brand>TP-Link</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -84797,7 +84787,7 @@
 <g:image_link>https://static.tildacdn.com/stor3061-6263-4435-b636-353231633465/7a2a32cb0cbeb60efe4ec0f5e7f2e5b1.jpg</g:image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild6464-3665-4366-a162-633931336134/925775768624_1.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>137000 KZT</g:price>
+<g:price>129000 KZT</g:price>
 <g:brand>TP-Link</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -84810,7 +84800,7 @@
 <link>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/486572884154-besprovodnaya-tochka-dostupa-hikvision-d</link>
 <g:image_link>https://static.tildacdn.com/stor6130-6535-4764-b537-396237656336/3a46830a54c8b6dc5a608169421f209a.jpg</g:image_link>
 <g:availability>in_stock</g:availability>
-<g:price>30000 KZT</g:price>
+<g:price>28000 KZT</g:price>
 <g:brand>Hikvision</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -84824,7 +84814,7 @@
 <g:image_link>https://static.tildacdn.com/stor6363-6437-4136-b165-303830396565/ac012d51f4c36ee55ef0ec2c845d3092.jpg</g:image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild3064-3161-4863-a330-363139306466/766087411354_1.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>69000 KZT</g:price>
+<g:price>65000 KZT</g:price>
 <g:brand>MikroTik</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -84840,7 +84830,7 @@
 <g:additional_image_link>https://static.tildacdn.com/tila3834-3939-4766-b537-386563663166/750520370784_1.jpg</g:additional_image_link>
 <g:additional_image_link>https://static.tildacdn.com/tila6631-3332-4535-b234-306333323933/750520370784_2.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>71000 KZT</g:price>
+<g:price>66000 KZT</g:price>
 <g:brand>Zyxel</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -84855,7 +84845,7 @@
 <g:additional_image_link>https://static.tildacdn.com/tild3130-6565-4664-a438-653938306463/692593001594_1.jpg</g:additional_image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild3536-6633-4430-b533-613833363931/692593001594_2.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>60000 KZT</g:price>
+<g:price>57000 KZT</g:price>
 <g:brand>H3C</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -84869,7 +84859,7 @@
 <g:image_link>https://static.tildacdn.com/stor3466-3764-4261-b361-386664326433/040aa761f13cd1f687474d3cf019cc65.jpg</g:image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild6631-3131-4934-a662-616166383465/418970754364_1.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>122000 KZT</g:price>
+<g:price>115000 KZT</g:price>
 <g:brand>Ubiquiti</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -84884,7 +84874,7 @@
 <g:additional_image_link>https://static.tildacdn.com/tild3432-6265-4639-b765-666131393363/298662779964_1.jpg</g:additional_image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild6330-3432-4234-b238-333439393136/298662779964_2.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>37000 KZT</g:price>
+<g:price>35000 KZT</g:price>
 <g:brand>TP-Link</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -84897,7 +84887,7 @@
 <link>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/314685389774-tochka-dostupa-hpearuba-instant-on-ap22</link>
 <g:image_link>https://static.tildacdn.com/tild3530-3539-4430-b530-313062616534/314685389774.jpg</g:image_link>
 <g:availability>in_stock</g:availability>
-<g:price>67000 KZT</g:price>
+<g:price>63000 KZT</g:price>
 <g:brand>HPE</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -84912,7 +84902,7 @@
 <g:additional_image_link>https://static.tildacdn.com/tild6130-6131-4432-a366-316337666339/839134820004_1.jpg</g:additional_image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild3339-3835-4630-b163-346666323235/839134820004_2.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>79000 KZT</g:price>
+<g:price>75000 KZT</g:price>
 <g:brand>MikroTik</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -84927,7 +84917,7 @@
 <g:additional_image_link>https://static.tildacdn.com/tild3431-6337-4038-b361-306334643162/210917312484_1.jpg</g:additional_image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild3739-6163-4133-a365-396636383861/210917312484_2.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>49000 KZT</g:price>
+<g:price>47000 KZT</g:price>
 <g:brand>TP-Link</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -84941,7 +84931,7 @@
 <g:image_link>https://static.tildacdn.com/stor3563-3139-4566-b630-633162666561/8200e44f6df982c09c203f0c16025e56.jpg</g:image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild6131-3662-4431-b738-336364613233/743819050414_1.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>84000 KZT</g:price>
+<g:price>79000 KZT</g:price>
 <g:brand>TP-Link</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -84956,7 +84946,7 @@
 <g:additional_image_link>https://static.tildacdn.com/tild3538-3037-4665-a432-326438356235/516734129814_1.jpg</g:additional_image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild6361-6463-4466-b438-303965396539/516734129814_2.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>258000 KZT</g:price>
+<g:price>243000 KZT</g:price>
 <g:brand>MikroTik</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -84970,7 +84960,7 @@
 <g:image_link>https://static.tildacdn.com/stor6634-3463-4364-b537-646166336665/6324867e24ffcb7f427ec2bbe90b1888.jpg</g:image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild6235-3534-4661-a265-663532663864/194088522394_1.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>64000 KZT</g:price>
+<g:price>60000 KZT</g:price>
 <g:brand>Grandstream</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -84985,7 +84975,7 @@
 <g:additional_image_link>https://static.tildacdn.com/tild3431-3763-4139-b035-323034633663/647704125494_1.jpg</g:additional_image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild3639-3338-4635-b132-356164303538/647704125494_2.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>57000 KZT</g:price>
+<g:price>54000 KZT</g:price>
 <g:brand>TP-Link</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -84999,7 +84989,7 @@
 <g:image_link>https://static.tildacdn.com/stor3865-3762-4633-b161-386537303265/5737bc10068e5cc153ec86ade50d330f.jpg</g:image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild6564-6461-4536-b066-353234373331/981767432164_1.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>82000 KZT</g:price>
+<g:price>77000 KZT</g:price>
 <g:brand>TP-Link</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -85014,7 +85004,7 @@
 <g:additional_image_link>https://static.tildacdn.com/tild3536-3137-4362-b638-663031393334/334417766664_1.jpg</g:additional_image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild3363-3263-4338-b765-303433656333/334417766664_2.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>41000 KZT</g:price>
+<g:price>38000 KZT</g:price>
 <g:brand>Grandstream</g:brand>
 <g:condition>new</g:condition>
 <g:mpn>GWN7605</g:mpn>
@@ -85030,7 +85020,7 @@
 <g:additional_image_link>https://static.tildacdn.com/tila3334-6536-4536-b034-303234653833/716085268754_1.jpg</g:additional_image_link>
 <g:additional_image_link>https://static.tildacdn.com/tila3337-6432-4062-b434-333634623731/716085268754_2.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>18000 KZT</g:price>
+<g:price>17000 KZT</g:price>
 <g:brand>TP-Link</g:brand>
 <g:condition>new</g:condition>
 <g:mpn>TL-WA801N</g:mpn>
@@ -85047,7 +85037,7 @@
 <g:additional_image_link>https://static.tildacdn.com/tild6430-3935-4931-a461-396337386164/425144696984_3.jpg</g:additional_image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild6363-3035-4138-a566-313265363636/425144696984_4.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>34000 KZT</g:price>
+<g:price>32000 KZT</g:price>
 <g:brand>Grandstream</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -85060,7 +85050,7 @@
 <link>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/902581282614-wi-fi-tochka-dostupa-tp-link-cpe710</link>
 <g:image_link>https://static.tildacdn.com/tila3939-6263-4461-b235-336231633735/IS6BB320170F_1.jpg</g:image_link>
 <g:availability>in_stock</g:availability>
-<g:price>69000 KZT</g:price>
+<g:price>61000 KZT</g:price>
 <g:brand>TP-Link</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -85075,7 +85065,7 @@
 <g:additional_image_link>https://static.tildacdn.com/tild6230-6433-4366-b463-643737383731/287420926204_1.jpg</g:additional_image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild3666-3035-4233-a165-343738396264/287420926204_2.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>69000 KZT</g:price>
+<g:price>65000 KZT</g:price>
 <g:brand>TP-Link</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -85089,7 +85079,7 @@
 <g:image_link>https://static.tildacdn.com/stor6231-3461-4237-b839-316435626166/db09452b6d1ddb76dc34f89023f5002c.jpg</g:image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild6164-6362-4630-b864-383862396535/488115299454_1.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>256000 KZT</g:price>
+<g:price>241000 KZT</g:price>
 <g:brand>HUAWEI eKit</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -85104,7 +85094,7 @@
 <g:additional_image_link>https://static.tildacdn.com/tild3563-3163-4530-a163-393830646665/473146634284_1.jpg</g:additional_image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild6531-3563-4339-b161-646238326434/473146634284_2.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>33000 KZT</g:price>
+<g:price>31000 KZT</g:price>
 <g:brand>TP-Link</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -85119,7 +85109,7 @@
 <g:additional_image_link>https://static.tildacdn.com/tild6630-3663-4035-a339-326332333862/969801761924_1.jpg</g:additional_image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild3565-3231-4437-b662-306238633935/969801761924_2.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>74000 KZT</g:price>
+<g:price>69000 KZT</g:price>
 <g:brand>Grandstream</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -85134,7 +85124,7 @@
 <g:additional_image_link>https://static.tildacdn.com/tild6365-6162-4565-a164-346630623430/647051730114_1.jpg</g:additional_image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild6161-6462-4266-b335-326630323334/647051730114_2.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>27000 KZT</g:price>
+<g:price>25000 KZT</g:price>
 <g:brand>MikroTik</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -85148,7 +85138,7 @@
 <g:image_link>https://static.tildacdn.com/tild3732-6435-4132-a164-313834336562/157989954144.jpg</g:image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild3236-3264-4831-a331-326136613163/157989954144_2.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>103000 KZT</g:price>
+<g:price>96000 KZT</g:price>
 <g:brand>TP-Link</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -85163,7 +85153,7 @@
 <g:additional_image_link>https://static.tildacdn.com/tild3361-6235-4930-b838-313130393538/787603917904_1.jpg</g:additional_image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild6435-6530-4638-b236-663534653531/787603917904_2.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>87000 KZT</g:price>
+<g:price>82000 KZT</g:price>
 <g:brand>TP-Link</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -85178,7 +85168,7 @@
 <g:additional_image_link>https://static.tildacdn.com/tild3865-6361-4435-a639-393430366230/299149682094_1.jpg</g:additional_image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild3462-3834-4461-a634-373437646431/299149682094_2.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>34000 KZT</g:price>
+<g:price>32000 KZT</g:price>
 <g:brand>TP-Link</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -85193,7 +85183,7 @@
 <g:additional_image_link>https://static.tildacdn.com/tild3265-3162-4735-a330-303832366632/619408233224_1.jpg</g:additional_image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild3931-3363-4433-b633-396439656266/619408233224_2.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>126000 KZT</g:price>
+<g:price>118000 KZT</g:price>
 <g:brand>TP-Link</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -85208,7 +85198,7 @@
 <g:additional_image_link>https://static.tildacdn.com/tild3562-3136-4366-b433-343632306365/640425398024_1.jpg</g:additional_image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild3334-6635-4233-a437-633738383664/640425398024_2.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>54000 KZT</g:price>
+<g:price>51000 KZT</g:price>
 <g:brand>HUAWEI eKit</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -85223,7 +85213,7 @@
 <g:additional_image_link>https://static.tildacdn.com/tild3330-6431-4533-b332-393839353863/509336927394_1.jpg</g:additional_image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild3535-3439-4239-a461-313331643036/509336927394_2.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>56000 KZT</g:price>
+<g:price>53000 KZT</g:price>
 <g:brand>MikroTik</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -85238,7 +85228,7 @@
 <g:additional_image_link>https://static.tildacdn.com/tild6134-3866-4637-a631-336133353632/376804807864_1.jpg</g:additional_image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild6230-3530-4166-b935-393263656635/376804807864_2.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>133000 KZT</g:price>
+<g:price>125000 KZT</g:price>
 <g:brand>Ubiquiti</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -85253,7 +85243,7 @@
 <g:additional_image_link>https://static.tildacdn.com/tild3036-6332-4363-a130-333232666166/397557938874_1.jpg</g:additional_image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild3636-3966-4538-a236-663665333564/397557938874_2.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>125000 KZT</g:price>
+<g:price>117000 KZT</g:price>
 <g:brand>TP-Link</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -85267,7 +85257,7 @@
 <g:image_link>https://static.tildacdn.com/stor3534-3864-4262-a165-343166303362/7e19478bb47f17d2b979e4473e13d7eb.jpg</g:image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild3065-6630-4633-b730-343865636431/309896696094_1.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>50000 KZT</g:price>
+<g:price>47000 KZT</g:price>
 <g:brand>H3C</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -85280,7 +85270,7 @@
 <link>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/921931473404-tochka-dostupa-huawei-ap162e-50087150</link>
 <g:image_link>https://static.tildacdn.com/stor3734-6561-4237-b362-306234363433/f7c64b30b1a0d68321f8f87592fc21da.png</g:image_link>
 <g:availability>in_stock</g:availability>
-<g:price>37000 KZT</g:price>
+<g:price>35000 KZT</g:price>
 <g:brand>Huawei</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -85293,7 +85283,7 @@
 <link>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/792262508914-tochka-dostupa-hpeinstant-on-ap21-rw-dua</link>
 <g:image_link>https://static.tildacdn.com/tild3866-6535-4265-a630-646133386464/792262508914.jpg</g:image_link>
 <g:availability>in_stock</g:availability>
-<g:price>50000 KZT</g:price>
+<g:price>47000 KZT</g:price>
 <g:brand>HPE</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -85306,7 +85296,7 @@
 <link>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/616339975454-besprovodnaya-tochka-dostupa-hikvision-d</link>
 <g:image_link>https://static.tildacdn.com/stor3466-6466-4365-b933-343839313665/aa40d0490dd0471ddb5fcc2d5d8e0071.jpg</g:image_link>
 <g:availability>in_stock</g:availability>
-<g:price>31000 KZT</g:price>
+<g:price>30000 KZT</g:price>
 <g:brand>Hikvision</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -85321,7 +85311,7 @@
 <g:additional_image_link>https://static.tildacdn.com/tild3265-3333-4831-b130-306566323130/883894575564_1.jpg</g:additional_image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild6631-3533-4535-a436-613230383538/883894575564_2.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>140000 KZT</g:price>
+<g:price>132000 KZT</g:price>
 <g:brand>MikroTik</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -85336,7 +85326,7 @@
 <g:additional_image_link>https://static.tildacdn.com/tild6163-3439-4062-b161-353864643839/853933010594_1.jpg</g:additional_image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild6361-3961-4937-b233-333266363666/853933010594_2.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>148000 KZT</g:price>
+<g:price>139000 KZT</g:price>
 <g:brand>HUAWEI eKit</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -85349,7 +85339,7 @@
 <link>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/516563123164-besprovodnaya-tochka-dostupa-router-h3c</link>
 <g:image_link>https://static.tildacdn.com/tila3766-3230-4665-a137-306564303837/IS8802327B77_1.jpg</g:image_link>
 <g:availability>in_stock</g:availability>
-<g:price>134000 KZT</g:price>
+<g:price>126000 KZT</g:price>
 <g:brand>H3C</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -85362,7 +85352,7 @@
 <link>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/415168480324-tochka-dostupa-mikrotik-rb912r-2nd-ltmam</link>
 <g:image_link>https://static.tildacdn.com/tild6133-3435-4661-a131-323931653464/IS89BEE440F6_1.jpg</g:image_link>
 <g:availability>in_stock</g:availability>
-<g:price>63000 KZT</g:price>
+<g:price>59000 KZT</g:price>
 <g:brand>MikroTik</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -85376,7 +85366,7 @@
 <g:image_link>https://static.tildacdn.com/stor3361-3761-4334-b864-616531633162/f976d427594b6e4498c8ae3da57facea.jpg</g:image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild6562-3766-4436-b230-303839323339/698576281804_1.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>73000 KZT</g:price>
+<g:price>69000 KZT</g:price>
 <g:brand>MikroTik</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -85393,7 +85383,7 @@
 <g:additional_image_link>https://static.tildacdn.com/tild3866-3236-4937-b531-313162363864/113047463944_1.jpg</g:additional_image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild3562-3361-4035-b930-646137633737/113047463944_2.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>201000 KZT</g:price>
+<g:price>187000 KZT</g:price>
 <g:brand>Ubiquiti</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -85408,7 +85398,7 @@
 <g:additional_image_link>https://static.tildacdn.com/tild3163-6432-4263-b965-373635373239/613701226914_1.jpg</g:additional_image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild3036-6635-4030-b232-663231613833/613701226914_2.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>113000 KZT</g:price>
+<g:price>107000 KZT</g:price>
 <g:brand>TP-Link</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -85422,7 +85412,7 @@
 <g:image_link>https://static.tildacdn.com/stor3461-3338-4430-b636-666530313130/c487398d6293d682fb5830ec70355642.jpg</g:image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild3631-3563-4362-a337-326265393266/650206639414_1.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>112000 KZT</g:price>
+<g:price>105000 KZT</g:price>
 <g:brand>Grandstream</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -85436,7 +85426,7 @@
 <g:image_link>https://static.tildacdn.com/stor3738-6464-4261-b564-316461393361/6816adac54cdcaa6bb786c702f60f97e.jpg</g:image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild3734-3035-4930-b536-663633366161/429416276254_1.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>65000 KZT</g:price>
+<g:price>61000 KZT</g:price>
 <g:brand>MikroTik</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -85451,7 +85441,7 @@
 <g:additional_image_link>https://static.tildacdn.com/tild3361-3336-4464-a332-386333396262/698816837164_1.jpg</g:additional_image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild6635-3631-4634-b339-663837623238/698816837164_2.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>67000 KZT</g:price>
+<g:price>63000 KZT</g:price>
 <g:brand>HUAWEI eKit</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -85465,7 +85455,7 @@
 <g:image_link>https://static.tildacdn.com/tild3464-6537-4237-a139-333139336564/366869275544.jpg</g:image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild6364-3037-4565-a634-396130646138/366869275544_2.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>392000 KZT</g:price>
+<g:price>365000 KZT</g:price>
 <g:brand>HPE</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -85480,7 +85470,7 @@
 <g:additional_image_link>https://static.tildacdn.com/tild3661-3236-4433-b237-396532366535/767112031404_1.jpg</g:additional_image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild3836-3431-4535-a131-333365393762/767112031404_2.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>176000 KZT</g:price>
+<g:price>166000 KZT</g:price>
 <g:brand>MikroTik</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -85494,7 +85484,7 @@
 <g:image_link>https://static.tildacdn.com/stor6637-3238-4638-b539-656364323638/6894bb3030a3116e3ed0e35526669f03.jpg</g:image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild3132-3136-4238-b564-666461343961/317776458344_1.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>55000 KZT</g:price>
+<g:price>52000 KZT</g:price>
 <g:brand>Grandstream</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -85508,7 +85498,7 @@
 <g:image_link>https://static.tildacdn.com/stor3063-3732-4134-b436-363366333436/fef53846f0ee9fc48001ef090279947b.jpg</g:image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild3665-3236-4837-b034-386632353337/455220642194_1.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>47000 KZT</g:price>
+<g:price>45000 KZT</g:price>
 <g:brand>H3C</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -85522,7 +85512,7 @@
 <g:image_link>https://static.tildacdn.com/stor3034-3838-4330-b433-313363313161/9ca9be47fe4823f47e903c5bf6156dfa.jpg</g:image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild3533-3062-4266-b832-376533643961/851707769544_1.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>76000 KZT</g:price>
+<g:price>72000 KZT</g:price>
 <g:brand>TP-Link</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -85537,7 +85527,7 @@
 <g:additional_image_link>https://static.tildacdn.com/tild6631-3131-4934-a662-616166383465/418970754364_1.jpg</g:additional_image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild3961-6462-4261-b464-303330333032/418970754364_2.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>134000 KZT</g:price>
+<g:price>126000 KZT</g:price>
 <g:brand>Ubiquiti</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -85552,7 +85542,7 @@
 <g:additional_image_link>https://static.tildacdn.com/tild3335-6331-4734-b063-656638633963/346974726974_1.jpg</g:additional_image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild3730-3334-4930-b534-366262363132/346974726974_2.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>53000 KZT</g:price>
+<g:price>50000 KZT</g:price>
 <g:brand>H3C</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -85566,7 +85556,7 @@
 <g:image_link>https://static.tildacdn.com/stor6438-3337-4263-b731-303133356464/19feca2a361bc20d636d2d4f8a333b29.jpg</g:image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild6637-3838-4664-b766-343462356137/983771187634_1.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>58000 KZT</g:price>
+<g:price>54000 KZT</g:price>
 <g:brand>Grandstream</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -85580,7 +85570,7 @@
 <g:image_link>https://static.tildacdn.com/stor6661-6463-4264-b338-613863313832/9357aab43a580226a4048b755e68d57c.jpg</g:image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild3962-3836-4862-b231-333735623335/508867059644_1.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>49000 KZT</g:price>
+<g:price>46000 KZT</g:price>
 <g:brand>Grandstream</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -85594,7 +85584,7 @@
 <g:image_link>https://static.tildacdn.com/stor3763-6637-4263-b964-636139653232/7fedbd5977f1915f8d6fa2d29ca212cc.jpg</g:image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild3538-3932-4261-b335-306665383935/332988594204_1.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>62000 KZT</g:price>
+<g:price>59000 KZT</g:price>
 <g:brand>MikroTik</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -85607,7 +85597,7 @@
 <link>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/786311429194-wi-fi-tochka-dostupa-tp-link-eap613</link>
 <g:image_link>https://static.tildacdn.com/tila3864-6566-4330-a164-303737363532/ISA3F27B07C7_1.jpg</g:image_link>
 <g:availability>in_stock</g:availability>
-<g:price>79000 KZT</g:price>
+<g:price>75000 KZT</g:price>
 <g:brand>TP-Link</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -85621,7 +85611,7 @@
 <g:image_link>https://static.tildacdn.com/stor3433-6366-4030-b663-376432393733/7e4d009d55712f67801d71a998927663.jpg</g:image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild6436-6232-4134-b865-653036373363/700971318124_1.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>694000 KZT</g:price>
+<g:price>653000 KZT</g:price>
 <g:brand>Ubiquiti</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -85634,7 +85624,7 @@
 <link>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/227273734824-tochka-dostupa-hpearuba-ap-503-rw-dual-r</link>
 <g:image_link>https://static.tildacdn.com/stor3530-3861-4239-b062-323333386136/964f56f386002b2a675975560e53a196.jpg</g:image_link>
 <g:availability>in_stock</g:availability>
-<g:price>185000 KZT</g:price>
+<g:price>172000 KZT</g:price>
 <g:brand>HPE</g:brand>
 <g:condition>new</g:condition>
 <g:mpn>R8M98A</g:mpn>
@@ -85649,7 +85639,7 @@
 <g:additional_image_link>https://static.tildacdn.com/tild3433-6332-4530-b331-393138363335/201229705294_1.jpg</g:additional_image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild6132-6437-4534-a639-623038656265/201229705294_2.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>152000 KZT</g:price>
+<g:price>143000 KZT</g:price>
 <g:brand>TP-Link</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -85663,7 +85653,7 @@
 <g:image_link>https://static.tildacdn.com/stor3963-3732-4966-b465-616434633136/a76f6d4a4d9933b8c82077c2cc01aa74.jpg</g:image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild3163-6530-4238-a361-663335663563/211743424584_1.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>66000 KZT</g:price>
+<g:price>62000 KZT</g:price>
 <g:brand>TP-Link</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -85678,7 +85668,7 @@
 <g:additional_image_link>https://static.tildacdn.com/tild3261-3437-4330-b835-333662353065/322740106034_1.jpg</g:additional_image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild6263-6261-4037-a466-616234663630/322740106034_2.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>304000 KZT</g:price>
+<g:price>286000 KZT</g:price>
 <g:brand>MikroTik</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -85692,7 +85682,7 @@
 <g:image_link>https://static.tildacdn.com/stor6139-3831-4532-b661-613535646565/e5c9461d9db88457ff9a2178a4cf9cf4.jpg</g:image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild6365-6633-4836-b232-393565336336/412162438184_1.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>57000 KZT</g:price>
+<g:price>54000 KZT</g:price>
 <g:brand>Grandstream</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -85707,7 +85697,7 @@
 <g:additional_image_link>https://static.tildacdn.com/tild6364-3566-4533-a664-326565663564/516219368584_2.jpg</g:additional_image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild3537-3935-4165-b033-663363363866/516219368584_3.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>51000 KZT</g:price>
+<g:price>48000 KZT</g:price>
 <g:brand>Zyxel</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -85720,7 +85710,7 @@
 <link>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/726368641264-besprovodnaya-tochka-dostupa-hikvision-d</link>
 <g:image_link>https://static.tildacdn.com/stor6339-3831-4039-a633-396135393636/f9203d306c2abc0a1af7e95775ffd3ea.jpg</g:image_link>
 <g:availability>in_stock</g:availability>
-<g:price>22000 KZT</g:price>
+<g:price>21000 KZT</g:price>
 <g:brand>Hikvision</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -85735,7 +85725,7 @@
 <g:additional_image_link>https://static.tildacdn.com/tild3532-3862-4334-b761-333732613230/998607547254_1.jpg</g:additional_image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild3739-3337-4233-b862-633563633036/998607547254_2.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>41000 KZT</g:price>
+<g:price>38000 KZT</g:price>
 <g:brand>MikroTik</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -85749,7 +85739,7 @@
 <g:image_link>https://static.tildacdn.com/stor6238-3434-4639-a235-616636616366/2820d66e284ee478851d72073e92d1b5.jpg</g:image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild3665-3237-4736-b239-373161323961/239629329154_1.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>113000 KZT</g:price>
+<g:price>106000 KZT</g:price>
 <g:brand>Hikvision</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -85763,7 +85753,7 @@
 <g:image_link>https://static.tildacdn.com/stor3962-3030-4265-a135-336338373639/75c4c6b4a70d53e9ff1a764392441e59.jpg</g:image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild3833-3534-4534-a637-636337303637/914846941654_1.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>72000 KZT</g:price>
+<g:price>68000 KZT</g:price>
 <g:brand>Ubiquiti</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -85777,7 +85767,7 @@
 <g:image_link>https://static.tildacdn.com/stor3430-3365-4666-b262-353030613831/a95e4d4b7dfdd2c25fa029e8ddf07ace.jpg</g:image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild3934-6166-4662-b063-366432643261/981749619364_1.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>119000 KZT</g:price>
+<g:price>112000 KZT</g:price>
 <g:brand>MikroTik</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -85791,7 +85781,7 @@
 <g:image_link>https://static.tildacdn.com/stor3963-3061-4635-b863-643735353737/1b37238dab7c1b15429550b32012b43c.jpg</g:image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild3064-6130-4463-b238-333937646235/763924599554_1.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>68000 KZT</g:price>
+<g:price>64000 KZT</g:price>
 <g:brand>Grandstream</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -85804,7 +85794,7 @@
 <link>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/859456113704-tochka-dostupa-hpe-instant-on-ap22d-s0j3</link>
 <g:image_link>https://static.tildacdn.com/tild6463-3132-4566-a631-396230313939/859456113704.jpg</g:image_link>
 <g:availability>in_stock</g:availability>
-<g:price>134000 KZT</g:price>
+<g:price>125000 KZT</g:price>
 <g:brand>HPE</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -85821,21 +85811,8 @@
 <g:additional_image_link>https://static.tildacdn.com/tila6539-3438-4137-a366-353635386666/167743349724_2.jpg</g:additional_image_link>
 <g:additional_image_link>https://static.tildacdn.com/tila3739-3230-4566-b337-633461643461/167743349724_3.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>68000 KZT</g:price>
+<g:price>64000 KZT</g:price>
 <g:brand>Zyxel</g:brand>
-<g:condition>new</g:condition>
-<g:identifier_exists>no</g:identifier_exists>
-<g:product_type>Точки доступа Wi-Fi</g:product_type>
-</item>
-<item>
-<g:id>ISB9A7E77E81</g:id>
-<title>Беспроводная точка доступа Ubiquiti U6-Enterprise</title>
-<description>Портов 1 · Wi-Fi 802.11a/b/g/n/ac/ax · Класс Wi-Fi AX10200</description>
-<link>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/349736609504-besprovodnaya-tochka-dostupa-ubiquiti-u6</link>
-<g:image_link>https://static.tildacdn.com/tila6665-3934-4836-b364-643434623836/ISB9A7E77E81_1.jpg</g:image_link>
-<g:availability>in_stock</g:availability>
-<g:price>205000 KZT</g:price>
-<g:brand>Ubiquiti</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
 <g:product_type>Точки доступа Wi-Fi</g:product_type>
@@ -85849,7 +85826,7 @@
 <g:additional_image_link>https://static.tildacdn.com/tild3736-3965-4930-a134-656434653962/559402270274_2.jpg</g:additional_image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild3166-3037-4438-b265-393338623330/559402270274_3.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>84000 KZT</g:price>
+<g:price>78000 KZT</g:price>
 <g:brand>Zyxel</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -85864,7 +85841,7 @@
 <g:additional_image_link>https://static.tildacdn.com/tild6465-3235-4861-a166-643735356462/134928258814_1.jpg</g:additional_image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild3439-3836-4166-a532-376432656238/134928258814_2.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>48000 KZT</g:price>
+<g:price>45000 KZT</g:price>
 <g:brand>Grandstream</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -85877,7 +85854,7 @@
 <link>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/923273471024-besprovodnaya-tochka-dostupa-hikvision-d</link>
 <g:image_link>https://static.tildacdn.com/stor6239-6463-4533-b433-626631376561/a63db9f2323ce8af9ccf1fbf8f56312b.jpg</g:image_link>
 <g:availability>in_stock</g:availability>
-<g:price>84000 KZT</g:price>
+<g:price>79000 KZT</g:price>
 <g:brand>Hikvision</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -85891,7 +85868,7 @@
 <g:image_link>https://static.tildacdn.com/stor3439-6237-4231-a465-383436316664/c1c63de29fc351aed9f9e2ebf11d5619.jpg</g:image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild6464-3633-4738-a162-313637643066/513092338434_1.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>95000 KZT</g:price>
+<g:price>90000 KZT</g:price>
 <g:brand>Grandstream</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -85906,7 +85883,7 @@
 <g:additional_image_link>https://static.tildacdn.com/tild3637-3664-4136-a266-643332666163/364690724374_1.jpg</g:additional_image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild3666-3738-4663-b531-613136383030/364690724374_2.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>107000 KZT</g:price>
+<g:price>101000 KZT</g:price>
 <g:brand>H3C</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -85919,7 +85896,7 @@
 <link>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/675476235174-besprovodnaya-tochka-dostupa-hikvision-d</link>
 <g:image_link>https://static.tildacdn.com/stor6463-3666-4861-b764-376566626365/8fcf8bafadad2ef068d26beb4fad7d10.jpg</g:image_link>
 <g:availability>in_stock</g:availability>
-<g:price>66000 KZT</g:price>
+<g:price>62000 KZT</g:price>
 <g:brand>Hikvision</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -85934,7 +85911,7 @@
 <g:additional_image_link>https://static.tildacdn.com/tild3230-3861-4461-b231-393335393334/951825567994_1.jpg</g:additional_image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild3265-6631-4165-b539-323462373135/951825567994_2.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>147000 KZT</g:price>
+<g:price>138000 KZT</g:price>
 <g:brand>MikroTik</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -85948,7 +85925,7 @@
 <g:image_link>https://static.tildacdn.com/stor3534-3437-4637-b162-653666636236/3e10690f877a1448b51b14d63988304a.jpg</g:image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild6564-6661-4336-b566-646238356561/372144487104_1.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>223000 KZT</g:price>
+<g:price>210000 KZT</g:price>
 <g:brand>Ubiquiti</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -85963,7 +85940,7 @@
 <g:additional_image_link>https://static.tildacdn.com/tild3365-3636-4164-a162-643862343339/404906647444_1.jpg</g:additional_image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild6462-3031-4661-a632-336334396634/404906647444_2.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>33000 KZT</g:price>
+<g:price>31000 KZT</g:price>
 <g:brand>TP-Link</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -85978,7 +85955,7 @@
 <g:additional_image_link>https://static.tildacdn.com/tild3137-3931-4238-a361-376237333265/715080394254_1.jpg</g:additional_image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild6531-6361-4237-b035-653030303462/715080394254_2.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>129000 KZT</g:price>
+<g:price>122000 KZT</g:price>
 <g:brand>MikroTik</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -85992,7 +85969,7 @@
 <g:image_link>https://static.tildacdn.com/stor3066-6631-4531-b436-613566636238/61f43e40bd50f3ea72b7a30f5458427e.jpg</g:image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild3536-3732-4330-b931-353663633333/428900428854_1.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>143000 KZT</g:price>
+<g:price>135000 KZT</g:price>
 <g:brand>Ubiquiti</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -86006,7 +85983,7 @@
 <g:image_link>https://static.tildacdn.com/stor6162-3763-4337-a238-306339663866/4be15d8d2b12423dee5f984cf83efe99.jpg</g:image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild3364-3836-4430-a638-306139623366/594068806814_1.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>48000 KZT</g:price>
+<g:price>45000 KZT</g:price>
 <g:brand>Grandstream</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -86021,7 +85998,7 @@
 <g:additional_image_link>https://static.tildacdn.com/tild3237-6361-4637-b263-323966623234/473083686134_1.jpg</g:additional_image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild3166-3338-4637-a264-333264346338/473083686134_2.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>127000 KZT</g:price>
+<g:price>119000 KZT</g:price>
 <g:brand>TP-Link</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -86035,7 +86012,7 @@
 <g:image_link>https://static.tildacdn.com/stor3761-6530-4539-a563-303962613631/4c040c68f994f013121982a6c99e1513.jpg</g:image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild3237-3462-4637-a461-643134306133/502959849354_1.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>48000 KZT</g:price>
+<g:price>45000 KZT</g:price>
 <g:brand>TP-Link</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -86050,7 +86027,7 @@
 <g:additional_image_link>https://static.tildacdn.com/tild6337-3438-4561-b466-373566643766/494560649264_1.jpg</g:additional_image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild3130-6139-4463-b433-626438333132/494560649264_2.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>103000 KZT</g:price>
+<g:price>97000 KZT</g:price>
 <g:brand>MikroTik</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -86063,7 +86040,7 @@
 <link>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/147862443654-tochka-dostupa-huawei-ap266-50087274</link>
 <g:image_link>https://static.tildacdn.com/stor3434-3731-4330-a265-623239393963/dd803800679174709c8a76f77cb44333.png</g:image_link>
 <g:availability>in_stock</g:availability>
-<g:price>53000 KZT</g:price>
+<g:price>50000 KZT</g:price>
 <g:brand>Huawei</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -86078,7 +86055,7 @@
 <g:additional_image_link>https://static.tildacdn.com/tild6531-6262-4366-b335-353764373433/450823406444_1.jpg</g:additional_image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild3531-3866-4162-a336-376661376531/450823406444_2.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>69000 KZT</g:price>
+<g:price>65000 KZT</g:price>
 <g:brand>MikroTik</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -86093,7 +86070,7 @@
 <g:additional_image_link>https://static.tildacdn.com/tild6438-3335-4664-b435-353535626330/530085116724_1.jpg</g:additional_image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild6634-3937-4465-a438-333239363238/530085116724_2.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>91000 KZT</g:price>
+<g:price>86000 KZT</g:price>
 <g:brand>Grandstream</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -86106,7 +86083,7 @@
 <link>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/577412277624-tochka-dostupa-huawei-ap263-50084981</link>
 <g:image_link>https://static.tildacdn.com/stor3266-3064-4132-a666-393334633531/aa3698ccfe26f09ce2997b9c0275a96b.jpg</g:image_link>
 <g:availability>in_stock</g:availability>
-<g:price>34000 KZT</g:price>
+<g:price>32000 KZT</g:price>
 <g:brand>Huawei</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -86120,7 +86097,7 @@
 <g:image_link>https://static.tildacdn.com/stor3833-6537-4235-a164-626564626534/492793eb7e49dd94a085642d3b7b94ba.jpg</g:image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild3863-3036-4733-a361-373264373332/495441371624_1.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>76000 KZT</g:price>
+<g:price>72000 KZT</g:price>
 <g:brand>TP-Link</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -86135,7 +86112,7 @@
 <g:additional_image_link>https://static.tildacdn.com/tild3539-3738-4261-a236-353931646533/262068568524_1.jpg</g:additional_image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild6465-3134-4264-b162-613362343332/262068568524_2.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>176000 KZT</g:price>
+<g:price>166000 KZT</g:price>
 <g:brand>MikroTik</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -86150,7 +86127,7 @@
 <g:additional_image_link>https://static.tildacdn.com/tild3061-6361-4838-a538-316132633937/657311457254_1.jpg</g:additional_image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild6466-3266-4164-b631-356533383934/657311457254_2.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>31000 KZT</g:price>
+<g:price>29000 KZT</g:price>
 <g:brand>MikroTik</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -86164,7 +86141,7 @@
 <g:image_link>https://static.tildacdn.com/stor6132-6265-4462-b938-393737646266/758a1cb753c8027e6834a803963a7982.jpg</g:image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild6631-3131-4934-a662-616166383465/418970754364_1.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>103000 KZT</g:price>
+<g:price>97000 KZT</g:price>
 <g:brand>Ubiquiti</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -86179,7 +86156,7 @@
 <g:additional_image_link>https://static.tildacdn.com/tild3630-3638-4932-b766-366536303861/800054808614_1.jpg</g:additional_image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild3739-3736-4266-a532-356565316634/800054808614_2.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>34000 KZT</g:price>
+<g:price>32000 KZT</g:price>
 <g:brand>Grandstream</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -86192,7 +86169,7 @@
 <link>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/820988334364-tochka-dostupa-ruijie-rg-ap840-i</link>
 <g:image_link>https://static.tildacdn.com/stor3636-6162-4461-b036-626664393464/56a6d27b26621035a8bf69f01e5ea5ca.jpg</g:image_link>
 <g:availability>in_stock</g:availability>
-<g:price>102000 KZT</g:price>
+<g:price>96000 KZT</g:price>
 <g:brand>Ruijie</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -86205,7 +86182,7 @@
 <link>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/297389676294-besprovodnaya-tochka-dostupa-router-h3c</link>
 <g:image_link>https://static.tildacdn.com/stor6538-3530-4238-b337-366539663766/b96b9a124af98b7b0d584fb39243c5e1.jpg</g:image_link>
 <g:availability>in_stock</g:availability>
-<g:price>107000 KZT</g:price>
+<g:price>101000 KZT</g:price>
 <g:brand>H3C</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -86219,7 +86196,7 @@
 <g:image_link>https://static.tildacdn.com/stor3138-6135-4065-b035-386433306235/41f9e449f483eff418c3552bfb044e09.jpg</g:image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild6661-3436-4433-b537-653637323330/300851245394_1.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>64000 KZT</g:price>
+<g:price>60000 KZT</g:price>
 <g:brand>Grandstream</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -86233,7 +86210,7 @@
 <g:image_link>https://static.tildacdn.com/stor3237-6238-4930-a561-373366373730/ddabe2b6fca8c83a3b7f5fe940467d5e.jpg</g:image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild6264-6234-4961-a533-396139653634/434741500914_1.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>37000 KZT</g:price>
+<g:price>35000 KZT</g:price>
 <g:brand>Hikvision</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -86247,7 +86224,7 @@
 <g:image_link>https://static.tildacdn.com/stor3439-3336-4565-a134-373838636439/1ce248caaddbe4b544b848a25ea0d761.jpg</g:image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild3362-6534-4362-b764-346439643563/918080181664_1.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>151000 KZT</g:price>
+<g:price>142000 KZT</g:price>
 <g:brand>Ubiquiti</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -86262,7 +86239,7 @@
 <g:additional_image_link>https://static.tildacdn.com/tild3032-3335-4739-a333-303237643264/771464277054_1.jpg</g:additional_image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild6136-3764-4936-b364-316439356634/771464277054_2.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>53000 KZT</g:price>
+<g:price>50000 KZT</g:price>
 <g:brand>TP-Link</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -86276,7 +86253,7 @@
 <g:image_link>https://static.tildacdn.com/tild3933-3536-4863-b634-656337313362/893331251874.jpg</g:image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild3539-3835-4539-b733-306333383963/893331251874_1.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>121000 KZT</g:price>
+<g:price>113000 KZT</g:price>
 <g:brand>HPE</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -86290,7 +86267,7 @@
 <g:image_link>https://static.tildacdn.com/stor3831-3563-4232-b037-666563366436/cd927ae093f0b3adb75709a7ed9c1690.jpg</g:image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild3439-3131-4235-b164-623563383661/299454838414_1.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>55000 KZT</g:price>
+<g:price>52000 KZT</g:price>
 <g:brand>MikroTik</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -86304,7 +86281,7 @@
 <g:image_link>https://static.tildacdn.com/stor6435-6561-4163-b266-326632663165/2ca0313b851d8f05e5804a561a5b68ab.jpg</g:image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild6336-3661-4564-b532-376562623135/578804099174_1.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>70000 KZT</g:price>
+<g:price>66000 KZT</g:price>
 <g:brand>TP-Link</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -86317,7 +86294,7 @@
 <link>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/764294112964-besprovodnaya-tochka-dostupa-hikvision-d</link>
 <g:image_link>https://static.tildacdn.com/stor6263-6566-4632-b739-313466646131/bd4b1bb5b298c297d3d0e86f7990893b.jpg</g:image_link>
 <g:availability>in_stock</g:availability>
-<g:price>56000 KZT</g:price>
+<g:price>53000 KZT</g:price>
 <g:brand>Hikvision</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -86330,7 +86307,7 @@
 <link>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/192122536414-tochka-dostupa-mikrotik-ltap-2hndampfg62</link>
 <g:image_link>https://static.tildacdn.com/stor3639-3863-4830-a638-643564346531/3d9a8acf5e27be0b2576ed92b236f9da.jpg</g:image_link>
 <g:availability>in_stock</g:availability>
-<g:price>150000 KZT</g:price>
+<g:price>142000 KZT</g:price>
 <g:brand>MikroTik</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -86345,7 +86322,7 @@
 <g:additional_image_link>https://static.tildacdn.com/tild6238-3137-4663-b435-333761623462/248574286204_1.jpg</g:additional_image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild6637-3030-4635-b632-663164663662/248574286204_2.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>48000 KZT</g:price>
+<g:price>45000 KZT</g:price>
 <g:brand>Grandstream</g:brand>
 <g:condition>new</g:condition>
 <g:mpn>GWN7661E</g:mpn>
@@ -86359,7 +86336,7 @@
 <g:image_link>https://static.tildacdn.com/stor6364-3765-4964-a662-373935663032/1009a398388a463644c0cd7a32af627e.jpg</g:image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild6637-3239-4464-b930-343032316336/152834858374_1.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>181000 KZT</g:price>
+<g:price>171000 KZT</g:price>
 <g:brand>TP-Link</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -86373,7 +86350,7 @@
 <g:image_link>https://static.tildacdn.com/stor6632-6161-4434-a633-363338633231/101110f5e3778e255e8e02ed4525b083.jpg</g:image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild6630-3533-4331-b932-303261343630/462389730324_1.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>26000 KZT</g:price>
+<g:price>24000 KZT</g:price>
 <g:brand>TP-Link</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -86387,7 +86364,7 @@
 <g:image_link>https://static.tildacdn.com/stor6466-3730-4438-a536-396462366537/1857b12464cfd60d89fa862437f64bd0.jpg</g:image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild3063-3131-4230-b932-643330306132/276112499284_1.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>133000 KZT</g:price>
+<g:price>125000 KZT</g:price>
 <g:brand>MikroTik</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -86401,7 +86378,7 @@
 <g:image_link>https://static.tildacdn.com/stor3031-6539-4339-b434-303330666561/a75e1e5969e4788ea8108c340585fb62.jpg</g:image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild3066-3661-4830-b562-386239653036/112201727424_1.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>55000 KZT</g:price>
+<g:price>52000 KZT</g:price>
 <g:brand>TP-Link</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -86415,7 +86392,7 @@
 <g:image_link>https://static.tildacdn.com/stor3630-6436-4736-b865-613565656637/19d27f8eac435c666d55accbf13ca267.jpg</g:image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild6361-3362-4263-b138-306461336466/154223230494_1.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>35000 KZT</g:price>
+<g:price>33000 KZT</g:price>
 <g:brand>TP-Link</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -86429,7 +86406,7 @@
 <g:image_link>https://static.tildacdn.com/stor3164-3162-4132-a430-326633653832/0e5608cf634a37330e9b3cf85962de97.jpg</g:image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild6466-3339-4431-a162-303238633339/718542314904_1.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>93000 KZT</g:price>
+<g:price>88000 KZT</g:price>
 <g:brand>HUAWEI eKit</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -86443,7 +86420,7 @@
 <g:image_link>https://static.tildacdn.com/stor3366-6566-4861-b036-663466386534/b39ae30ee1418eee59fe14e05f72a75a.jpg</g:image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild3364-3135-4466-a461-363737316334/440525911964_1.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>283000 KZT</g:price>
+<g:price>264000 KZT</g:price>
 <g:brand>TP-Link</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<yml_catalog date="2026-11-15 20:40">
+<yml_catalog date="2026-11-16 06:37">
 <shop>
 <name>iSoft</name>
 <company>iSoft</company>
@@ -115,7 +115,7 @@
 <name>IP телефон Grandstream GXP2170</name>
 <vendor>Grandstream</vendor>
 <vendorCode>IS182A08D4E4</vendorCode>
-<description>Модель GXP2170 · Тип устройства IP-телефон · PoE Есть · Скорость портов 1 Гбит/с (Gigabit) · Количество линий 12–16 линий · Диагональ 4,3″ · SIP-аккаунтов 6</description>
+<description>Модель GXP2170 · Тип устройства IP-телефон · PoE Есть · Скорость портов 1 Гбит/с (Gigabit) · Количество линий 12–16 линий · Диагональ 4,3″ · SIP-аккаунтов 6 · Bluetooth Есть</description>
 </offer>
 <offer id="IS187256DDF3" available="true">
 <url>https://b2b.isoft-shop.kz/kronshteyny-i-krepleniya/tproduct/112575353674-ip-telefon-grandstream-grp2612p</url>
@@ -342,7 +342,7 @@
 <name>IP телефон Grandstream GXP2160</name>
 <vendor>Grandstream</vendor>
 <vendorCode>IS6835A9B00E</vendorCode>
-<description>Модель GXP2160 · Тип устройства IP-телефон · PoE Есть · Скорость портов 1 Гбит/с (Gigabit) · Количество линий 6–8 линий · SIP-аккаунтов 6 · Диагональ 4,3″</description>
+<description>Модель GXP2160 · Тип устройства IP-телефон · PoE Есть · Скорость портов 1 Гбит/с (Gigabit) · Количество линий 6–8 линий · SIP-аккаунтов 6 · Диагональ 4,3″ · Bluetooth Есть</description>
 </offer>
 <offer id="IS6955D3A7A3" available="true">
 <url>https://b2b.isoft-shop.kz/kronshteyny-i-krepleniya/tproduct/993594985324-ip-telefon-grandstream-grp2602w</url>
@@ -4005,6 +4005,19 @@
 <vendorCode>IS4D4D218B13</vendorCode>
 <description>Мощность 600 Вт · Класс мощности 550–650 Вт · Форм-фактор ATX · Цвет Чёрный · Гарантия 2 года · Версия ATX ATX 2.x</description>
 </offer>
+<offer id="IS4FEEA080A1" available="true">
+<url>https://b2b.isoft-shop.kz/bloki-pitaniya/tproduct/230719027794-blok-pitaniya-1stplayer-ngdp-1300w-white</url>
+<price>113000</price>
+<currencyId>KZT</currencyId>
+<categoryId>893353989834</categoryId>
+<picture>https://static.tildacdn.com/stor3464-3865-4061-a138-633334313963/e8ab233996328a013b890f6d6de40e1c.jpg</picture>
+<picture>https://static.tildacdn.com/tild6164-3330-4837-b036-363466376662/230719027794_1.jpg</picture>
+<picture>https://static.tildacdn.com/tild6361-3263-4931-b537-393962313666/230719027794_2.jpg</picture>
+<name>Блок питания 1STPLAYER NGDP 1300W White Platinum NGDP-PLT-1300-WH-EU</name>
+<vendor>1STPLAYER</vendor>
+<vendorCode>IS4FEEA080A1</vendorCode>
+<description>Форм-фактор ATX · Мощность 1300 Вт · Сертификат эффективности 80+ Platinum · Модульность Модульный · Цвет Белый · Версия ATX ATX 3.0 · Гарантия 10 лет · Класс мощности 1000–1300 Вт</description>
+</offer>
 <offer id="IS504838D5B4" available="true">
 <url>https://b2b.isoft-shop.kz/bloki-pitaniya/tproduct/950671638234-blok-pitaniya-atx-chieftec-vita-sm3-bpx</url>
 <price>42000</price>
@@ -4425,19 +4438,6 @@
 <vendor>Deepcool</vendor>
 <vendorCode>IS693BD7070F</vendorCode>
 <description>Мощность 550 Вт · Класс мощности 550–650 Вт · Форм-фактор ATX · Цвет Чёрный · Гарантия 3 года · Версия ATX ATX 2.x</description>
-</offer>
-<offer id="IS6B33086B6D" available="true">
-<url>https://b2b.isoft-shop.kz/bloki-pitaniya/tproduct/517446689014-blok-pitaniya-gamemax-vp-600w-rgb-m-bron</url>
-<price>25000</price>
-<currencyId>KZT</currencyId>
-<categoryId>893353989834</categoryId>
-<picture>https://static.tildacdn.com/stor6266-6237-4966-b438-313162333436/1ccd611dd98dd67f3d5322d0bc20b8a6.jpg</picture>
-<picture>https://static.tildacdn.com/tild6434-6566-4032-b332-396133663361/517446689014_1.jpg</picture>
-<picture>https://static.tildacdn.com/tild3961-3132-4565-b933-376362663236/517446689014_2.jpg</picture>
-<name>Блок питания Gamemax VP 600W RGB M (Bronze) 2124-0550R0060</name>
-<vendor>Gamemax</vendor>
-<vendorCode>IS6B33086B6D</vendorCode>
-<description>Сертификат эффективности 80+ Bronze · Мощность 600 Вт · Класс мощности 550–650 Вт · Форм-фактор ATX · Цвет Чёрный · Гарантия 1 год</description>
 </offer>
 <offer id="IS6B98BD63BE" available="true">
 <url>https://b2b.isoft-shop.kz/bloki-pitaniya/tproduct/814593153874-blok-pitaniya-gamemax-vp-500s-standard-2</url>
@@ -11699,6 +11699,17 @@
 <vendorCode>PR1500ERTXL2U</vendorCode>
 <description>Полная мощность 1500 ВА, активная 1500 Вт. Вольт-амперы показывают габарит прибора, а подключаемую технику считают по ваттам из её паспорта: их сумма не должна превышать 1500 Вт. Такого запаса хватает серверу начального уровня вместе с коммутатором и дисковой полкой. Линейно-интерактивный тип: небольшие просадки и скачки в сети прибор выправляет сам, не трогая заряд, а на батарею техника переходит только когда свет пропал совсем. На выходе 10 розеток IEC C13. Разъём IEC C13 — стандартный вход системных блоков, серверов и сетевого оборудования; бытовая вилка в него не входит, техника подключается своим кабелем C13–C14. Внутри четыре батареи по 12 В на 9 А·ч. Стабилизатор напряжения, в спецификациях его обозначают AVR, держит выход в норме при входном от 159 до 288 В: пока сеть в этих границах, заряд батареи не расходуется. Управление идёт по USB и RS-232: по этому каналу сервер получает команду корректно завершить работу, пока заряд ещё есть. Аварийное отключение EPO выведено на отдельный вход. Сухие контакты передают тревогу во внешнюю систему. Телефонную линию и сетевой кабель заводят через разъёмы RJ-11 и RJ-45 — по ним скачок приходит так же, как по питанию, и защита их тоже прикрывает. Ставится в стандартную стойку 19 дюймов и занимает в ней 2U по высоте. Показания выводит ЖК-экран. Корпус чёрный. · Партномер: PR1500ERTXL2U</description>
 </offer>
+<offer id="IS9A92896614" available="true">
+<url>https://b2b.isoft-shop.kz/ibp-i-zashchita-pitaniya/tproduct/696513142064-ibp-apcsrt1000rmxlismarton-liner-tiec1-0</url>
+<price>654000</price>
+<currencyId>KZT</currencyId>
+<categoryId>622117808604</categoryId>
+<picture>https://static.tildacdn.com/tila3462-3632-4534-a335-626435363031/IS9A92896614_1.jpg</picture>
+<name>ИБП APC/SRT1000RMXLI/Smart/On-Line/R-T/IEC/1 000 VA/1 000 W</name>
+<vendor>APC</vendor>
+<vendorCode>IS9A92896614</vendorCode>
+<description>Мощность 1000 ВА / 1000 Вт · Топология On-Line · Класс мощности до 1 кВА · Размещение Стоечный</description>
+</offer>
 <offer id="IS9B8A69A15B" available="true">
 <url>https://b2b.isoft-shop.kz/ibp-i-zashchita-pitaniya/tproduct/499870016504-ibp-ippon-na-tae-2000-2055084</url>
 <price>236000</price>
@@ -16534,6 +16545,18 @@
 <vendorCode>ISC9B9F06EC8</vendorCode>
 <description>Тип устройства IP-камера</description>
 </offer>
+<offer id="ISCAE8C01A8C" available="true">
+<url>https://b2b.isoft-shop.kz/videonablyudenie/tproduct/467206477244-ip-videokamera-dahua-dh-ipc-hdbw2241rp-z</url>
+<price>38000</price>
+<currencyId>KZT</currencyId>
+<categoryId>593618245944</categoryId>
+<picture>https://static.tildacdn.com/stor3036-6362-4537-b134-623061653933/5a53aebb4e3efdd543ca2cb479674418.jpg</picture>
+<picture>https://static.tildacdn.com/tild3332-6264-4363-a163-383164383263/467206477244_1.jpg</picture>
+<name>IP видеокамера Dahua DH-IPC-HDBW2241RP-ZS-27135</name>
+<vendor>Dahua</vendor>
+<vendorCode>ISCAE8C01A8C</vendorCode>
+<description>Тип устройства IP-камера · Разрешение камеры 2 МП · Тип корпуса Купольная</description>
+</offer>
 <offer id="ISCC69D10D22" available="true">
 <url>https://b2b.isoft-shop.kz/videonablyudenie/tproduct/478120068264-tsilindricheskaya-videokamera-dahua-dh-h</url>
 <price>8400</price>
@@ -17614,6 +17637,17 @@
 <vendor>SANDISK</vendor>
 <vendorCode>ISF13331248D</vendorCode>
 <description>Ёмкость 256 ГБ · Форм-фактор SDXC</description>
+</offer>
+<offer id="ISF9CCEBE762" available="true">
+<url>https://b2b.isoft-shop.kz/karty-pamyati/tproduct/567991136984-karta-pamyati-kingston-256gb-microsdxc-c</url>
+<price>25000</price>
+<currencyId>KZT</currencyId>
+<categoryId>668752067734</categoryId>
+<picture>https://static.tildacdn.com/tila3132-3230-4437-b263-653465363336/ISF9CCEBE762_1.png</picture>
+<name>Карта памяти KINGSTON 256GB microSDXC Canvas Select Plus Gen3 150MB/s A1 Card + Adapter SDCS3/256GB</name>
+<vendor>Kingston</vendor>
+<vendorCode>ISF9CCEBE762</vendorCode>
+<description>Ёмкость 256 ГБ · Класс скорости A1 · Форм-фактор microSDXC · В комплекте Адаптер SD</description>
 </offer>
 <offer id="ISFACA1CD858" available="true">
 <url>https://b2b.isoft-shop.kz/karty-pamyati/tproduct/256622378874-karta-pamyati-apacer-ap64gedm1d05-r-64gb</url>
@@ -21959,17 +21993,6 @@
 <vendorCode>IS2314793EC0</vendorCode>
 <description>Тип устройства Корпус · Материал Сталь · Форм-фактор ATX · Макс. длина видеокарты 458 мм · Макс. высота кулера 180 мм · Гарантия 1 год · Интерфейс USB 3.0 / Type-C</description>
 </offer>
-<offer id="IS2430B48AE6" available="true">
-<url>https://b2b.isoft-shop.kz/korpusa-i-bloki-pitaniya/tproduct/925956283524-kompyuternii-korpus-deepcool-ch160-wh-be</url>
-<price>29000</price>
-<currencyId>KZT</currencyId>
-<categoryId>976729823024</categoryId>
-<picture>https://static.tildacdn.com/tila3866-3764-4639-a237-623861373461/IS2430B48AE6_1.jpg</picture>
-<name>Компьютерный корпус Deepcool CH160 WH без Б/П R-CH160-WHNGI0-G-1</name>
-<vendor>Deepcool</vendor>
-<vendorCode>IS2430B48AE6</vendorCode>
-<description>Интерфейс Type-C · Цвет Белый · Форм-фактор Mini-ITX · Гарантия 1 год · Тип устройства Корпус · Макс. высота кулера 172 мм · Макс. длина видеокарты 305 мм</description>
-</offer>
 <offer id="IS253FB58026" available="true">
 <url>https://b2b.isoft-shop.kz/korpusa-i-bloki-pitaniya/tproduct/683349290444-korpus-case-atx-midi-tower-antec-p20c-31</url>
 <price>54000</price>
@@ -22031,19 +22054,6 @@
 <vendor>Gamemax</vendor>
 <vendorCode>IS27F25174F2</vendorCode>
 <description>Форм-фактор Micro-ATX · Цвет Чёрный · Макс. длина видеокарты 400 мм · Макс. высота кулера 157 мм · Тип устройства Корпус · Гарантия 1 год · Материал Сталь</description>
-</offer>
-<offer id="IS280F4932A6" available="true">
-<url>https://b2b.isoft-shop.kz/korpusa-i-bloki-pitaniya/tproduct/262622254284-kompyuternii-korpus-thermaltake-view-390</url>
-<price>79000</price>
-<currencyId>KZT</currencyId>
-<categoryId>976729823024</categoryId>
-<picture>https://static.tildacdn.com/tila6137-3830-4939-b563-323339343565/262622254284_1.jpg</picture>
-<picture>https://static.tildacdn.com/tila3662-3738-4866-b938-356537623537/262622254284_2.jpg</picture>
-<picture>https://static.tildacdn.com/tila3630-3031-4630-b939-373663666265/262622254284_3.jpg</picture>
-<name>Компьютерный корпус Thermaltake View 390 TG белый без Б/П CA-11F-00M6WN-01</name>
-<vendor>Thermaltake</vendor>
-<vendorCode>IS280F4932A6</vendorCode>
-<description>Гарантия 1 год · Форм-фактор ATX · Цвет Белый · Тип устройства Корпус · Материал Сталь · Макс. длина видеокарты 460 мм · Макс. высота кулера 160 мм</description>
 </offer>
 <offer id="IS29AB03A054" available="true">
 <url>https://b2b.isoft-shop.kz/korpusa-i-bloki-pitaniya/tproduct/613501793524-kompyuternii-korpus-cougar-airface-eco-r</url>
@@ -24471,19 +24481,6 @@
 <vendorCode>ISDFDA7AA47A</vendorCode>
 <description>Тип устройства Корпус · Цвет Чёрный · Материал Сталь · Форм-фактор E-ATX · Макс. длина видеокарты 360 мм · Макс. высота кулера 185 мм · Гарантия 1 год · Интерфейс USB 3.2 / Type-C</description>
 </offer>
-<offer id="ISE0D0D2DDD6" available="true">
-<url>https://b2b.isoft-shop.kz/korpusa-i-bloki-pitaniya/tproduct/327565713584-kompyuternii-korpus-thermaltake-view-600</url>
-<price>76000</price>
-<currencyId>KZT</currencyId>
-<categoryId>976729823024</categoryId>
-<picture>https://static.tildacdn.com/stor6136-6166-4834-b935-633361613162/15eeeade0f926c7cd881c820fa9c7c1f.jpg</picture>
-<picture>https://static.tildacdn.com/tild3130-3161-4533-b033-376235633535/327565713584_1.jpg</picture>
-<picture>https://static.tildacdn.com/tild3033-6138-4433-b365-366536343933/327565713584_2.jpg</picture>
-<name>Компьютерный корпус Thermaltake View 600 TG Mint Strawberry без Б/П CA-11H-00FLWN-00</name>
-<vendor>Thermaltake</vendor>
-<vendorCode>ISE0D0D2DDD6</vendorCode>
-<description>Форм-фактор E-ATX · Макс. длина видеокарты 480 мм · Макс. высота кулера 195 мм · Тип устройства Корпус · Гарантия 1 год · Материал Сталь</description>
-</offer>
 <offer id="ISE24A4848D3" available="true">
 <url>https://b2b.isoft-shop.kz/korpusa-i-bloki-pitaniya/tproduct/671974175664-korpus-case-atx-midi-tower-wintek-tornad</url>
 <price>24000</price>
@@ -25273,6 +25270,17 @@
 <vendorCode>IS054BEF5863</vendorCode>
 <description>Тип устройства МФУ · Скорость печати 33 стр/мин · Интерфейсы USB</description>
 </offer>
+<offer id="IS082791CF08" available="true">
+<url>https://b2b.isoft-shop.kz/mfu/tproduct/644496898814-mfu-hp-9yg09a-laserjet-m236sdw-a4-printe</url>
+<price>160000</price>
+<currencyId>KZT</currencyId>
+<categoryId>910558779244</categoryId>
+<picture>https://static.tildacdn.com/tild3463-6565-4863-b635-633062623661/644496898814.jpg</picture>
+<name>МФУ HP 9YG09A LaserJet M236sdw (A4) Printer Scanner Copier/ADF</name>
+<vendor>HP</vendor>
+<vendorCode>IS082791CF08</vendorCode>
+<description>Технология печати лазерный · Цветность ч/б · Тип устройства МФУ</description>
+</offer>
 <offer id="IS0A4E25B9A4" available="true">
 <url>https://b2b.isoft-shop.kz/mfu/tproduct/907626022094-mfu-pantum-cm420adn-35ppm-color-a3-radf</url>
 <price>2250000</price>
@@ -25521,6 +25529,17 @@
 <vendor>Canon</vendor>
 <vendorCode>6354C009</vendorCode>
 <description>МФП Canon/i-SENSYS MF287dw/принтер/сканер/копир/A4/33,02 ppm/1200x1200 dpi · Партномер: 6354C009</description>
+</offer>
+<offer id="IS3460A3A6A0" available="true">
+<url>https://b2b.isoft-shop.kz/mfu/tproduct/550567568724-mfu-hp-laserjet-m141w-7md74a</url>
+<price>96000</price>
+<currencyId>KZT</currencyId>
+<categoryId>910558779244</categoryId>
+<picture>https://static.tildacdn.com/stor3662-6163-4662-a336-653564383830/0b19311b9e66a07fe502bcc0e1a4bdca.png</picture>
+<name>МФУ HP LASERJET M141W 7MD74A</name>
+<vendor>HP</vendor>
+<vendorCode>IS3460A3A6A0</vendorCode>
+<description>МФУ HP LASERJET M141W 7MD74A (HP)</description>
 </offer>
 <offer id="IS36C8C68D70" available="true">
 <url>https://b2b.isoft-shop.kz/mfu/tproduct/970609566444-bazovii-modul-mfu-xerox-altalink-b8245b8</url>
@@ -25863,17 +25882,6 @@
 <vendorCode>IS7C648FDDDC</vendorCode>
 <description>Тип устройства МФУ · Скорость печати 52 стр/мин · Цветность цветной · Технология печати лазерный · Формат A4 · Класс скорости печати от 50 стр/мин · Разрешение печати 1200×1200 dpi · Интерфейсы USB, Ethernet · Функции принтер, сканер, копир, факс</description>
 </offer>
-<offer id="IS81249091B3" available="true">
-<url>https://b2b.isoft-shop.kz/mfu/tproduct/665262549734-monohromnoe-lazernoe-mfu-canon-i-s-mf465</url>
-<price>235000</price>
-<currencyId>KZT</currencyId>
-<categoryId>910558779244</categoryId>
-<picture>https://static.tildacdn.com/tila3431-3934-4836-a261-323936343764/IS81249091B3_1.jpg</picture>
-<name>Монохромное лазерное МФУ Canon I-S MF465dw II 7188C007AA</name>
-<vendor>Canon</vendor>
-<vendorCode>IS81249091B3</vendorCode>
-<description>Тип устройства МФУ · Цветность ч/б · Формат A4 · Скорость печати 40 стр/мин · Интерфейсы USB 2.0, Ethernet, Wi-Fi</description>
-</offer>
 <offer id="IS822936565E" available="true">
 <url>https://b2b.isoft-shop.kz/mfu/tproduct/382568086874-mfu-epson-xp-15000-exp-photo-a3-printers</url>
 <price>416000</price>
@@ -25987,17 +25995,6 @@
 <vendorCode>ISA2E37A018B</vendorCode>
 <description>МФУ HP 8AF72A LaserJet M443nda Prntr (A3) Printer/Scanner/Copier/ADF, 1200 dpi, 25/13 ppm (A4/A3), 512 MB, 600 MHz, 100+250 tray, Duplex (HP)</description>
 </offer>
-<offer id="ISA46589F43D" available="true">
-<url>https://b2b.isoft-shop.kz/mfu/tproduct/745719851504-tsvetnoe-mfu-canon-pixma-g3410-2315c009a</url>
-<price>105000</price>
-<currencyId>KZT</currencyId>
-<categoryId>910558779244</categoryId>
-<picture>https://static.tildacdn.com/tila3338-6530-4465-b665-323339343837/ISA46589F43D_1.jpg</picture>
-<name>Цветное МФУ Canon Pixma G3410 2315C009AA</name>
-<vendor>Canon</vendor>
-<vendorCode>ISA46589F43D</vendorCode>
-<description>Тип устройства МФУ · Формат A4 · Интерфейсы USB 2.0, Wi-Fi</description>
-</offer>
 <offer id="ISA49B776194" available="true">
 <url>https://b2b.isoft-shop.kz/mfu/tproduct/351232263914-tsvetnoe-mfu-lexmark-cx951se-100s14894</url>
 <price>1546000</price>
@@ -26075,6 +26072,17 @@
 <vendor>HP</vendor>
 <vendorCode>ISBCD7CDBF51</vendorCode>
 <description>Формат A4 · Интерфейсы USB 2.0</description>
+</offer>
+<offer id="ISC196371202" available="true">
+<url>https://b2b.isoft-shop.kz/mfu/tproduct/707279320614-mfu-hp-laserjet-pro-m4103fdw-printer-a4</url>
+<price>236000</price>
+<currencyId>KZT</currencyId>
+<categoryId>910558779244</categoryId>
+<picture>https://static.tildacdn.com/tila6233-3661-4434-b561-663630656665/ISC196371202_1.jpg</picture>
+<name>МФУ HP LaserJet Pro M4103fdw Printer (A4) Scanner Copier Fax ADF 2Z629A</name>
+<vendor>HP</vendor>
+<vendorCode>ISC196371202</vendorCode>
+<description>МФУ HP LaserJet Pro M4103fdw Printer (A4) Scanner Copier Fax ADF 2Z629A (HP)</description>
 </offer>
 <offer id="ISC52B147E51" available="true">
 <url>https://b2b.isoft-shop.kz/mfu/tproduct/494692833944-mfu-hp-laserjet-pro-m236d-printerkopirsk</url>
@@ -26249,17 +26257,6 @@
 <vendor>Lexmark</vendor>
 <vendorCode>ISEFF604C036</vendorCode>
 <description>Тип устройства МФУ · Цветность цветной · Скорость печати 25 стр/мин · Класс скорости печати 25–29 стр/мин · Технология печати лазерный · Разрешение печати 1200×1200 dpi · Тип сканера Двусторонний автоподатчик документов · Лотки 700 листов · Максимальная нагрузка 100 000 стр./мес · Рекомендуемая нагрузка 20 000 стр./мес</description>
-</offer>
-<offer id="ISF0CD177CA3" available="true">
-<url>https://b2b.isoft-shop.kz/mfu/tproduct/509813194844-tsvetnoe-mfu-canon-pixma-g3470b-5805c009</url>
-<price>123000</price>
-<currencyId>KZT</currencyId>
-<categoryId>910558779244</categoryId>
-<picture>https://static.tildacdn.com/tila3836-3733-4931-b662-656165303661/ISF0CD177CA3_1.jpg</picture>
-<name>Цветное МФУ Canon Pixma G3470B 5805C009AA</name>
-<vendor>Canon</vendor>
-<vendorCode>ISF0CD177CA3</vendorCode>
-<description>Тип устройства МФУ · Формат A4 · Интерфейсы USB 2.0, Wi-Fi</description>
 </offer>
 <offer id="ISF839AEBD2A" available="true">
 <url>https://b2b.isoft-shop.kz/mfu/tproduct/681871122614-mfp-hp-europelaserjet-mfp-8601dnprinters</url>
@@ -28462,17 +28459,6 @@
 <vendorCode>ISCC6864DEBF</vendorCode>
 <description>Гарантия 1 год · Вид роутера Корпоративный / проводной · Поколение Wi-Fi Wi-Fi 5 · Wi-Fi 802.11a/b/g/n/ac</description>
 </offer>
-<offer id="ISCCDBFF9039" available="true">
-<url>https://b2b.isoft-shop.kz/marshrutizatory/tproduct/224455444374-besprovodnoi-marshrutizator-ubiquiti-lap</url>
-<price>55000</price>
-<currencyId>KZT</currencyId>
-<categoryId>424596428574</categoryId>
-<picture>https://static.tildacdn.com/stor3334-3264-4466-a535-643236643561/aa70c7ba147573686b4b39069060af04.jpg</picture>
-<name>Беспроводной маршрутизатор Ubiquiti LAP-120</name>
-<vendor>Ubiquiti</vendor>
-<vendorCode>ISCCDBFF9039</vendorCode>
-<description>Вид роутера Радиомост (наружный) · Скорость портов 1 Гбит/с (Gigabit) · Гарантия 1 год · Скорость 10/100/1000 Мбит/с · Диапазон частот 5 ГГц · Портов 1</description>
-</offer>
 <offer id="ISCD3BA71F56" available="true">
 <url>https://b2b.isoft-shop.kz/marshrutizatory/tproduct/229629185374-setevoe-oborudovanie-marshrutizator-mikr</url>
 <price>57000</price>
@@ -29064,6 +29050,21 @@
 <vendorCode>ISFCE1141EFE</vendorCode>
 <description>Гарантия 1 год · Вид роутера Wi-Fi роутер (дом/офис) · Скорость портов 2,5 Гбит/с · Поколение Wi-Fi Wi-Fi 7 · Класс Wi-Fi BE6500 · Wi-Fi 802.11be</description>
 </offer>
+<offer id="IS00480111A5" available="true">
+<url>https://b2b.isoft-shop.kz/materinskie-platy/tproduct/278103470974-materinskaya-plata-asus-prime-b850m-f-wi</url>
+<price>99000</price>
+<currencyId>KZT</currencyId>
+<categoryId>248907277044</categoryId>
+<picture>https://static.tildacdn.com/tila6437-3138-4639-b430-363563383839/278103470974_1.jpg</picture>
+<picture>https://static.tildacdn.com/tila3739-6539-4432-b434-633334306236/278103470974_2.jpg</picture>
+<picture>https://static.tildacdn.com/tila3566-6636-4235-a536-653164666339/278103470974_3.jpg</picture>
+<picture>https://static.tildacdn.com/tila3364-6130-4263-b764-666539616538/278103470974_4.jpg</picture>
+<picture>https://static.tildacdn.com/tila6464-3237-4530-a636-313164646631/278103470974_5.jpg</picture>
+<name>Материнская плата ASUS PRIME B850M-F WIFI, Socket AM5, mATX, AMD B850 (HDMI), 2DDR5, PCIx16</name>
+<vendor>ASUS</vendor>
+<vendorCode>IS00480111A5</vendorCode>
+<description>Тип памяти DDR5 · Форм-фактор Micro-ATX · Сокет AM5 · Чипсет B850 · Слотов памяти 2</description>
+</offer>
 <offer id="IS01997C5439" available="true">
 <url>https://b2b.isoft-shop.kz/materinskie-platy/tproduct/381267410534-materinskaya-plata-gigabyte-a520m-s2h</url>
 <price>42000</price>
@@ -29567,6 +29568,19 @@
 <vendor>Gigabyte</vendor>
 <vendorCode>IS2D6DCBEE81</vendorCode>
 <description>Форм-фактор ATX · Видеовыходы HDMI · Тип памяти DDR4 · Чипсет B450 · Слотов памяти 4 · Разъёмов M.2 1 · Разъёмов SATA 4 · Сокет AM4</description>
+</offer>
+<offer id="IS2DFE3076E3" available="true">
+<url>https://b2b.isoft-shop.kz/materinskie-platy/tproduct/616763193344-materinskaya-plata-gigabyte-z890-aorus-p</url>
+<price>247000</price>
+<currencyId>KZT</currencyId>
+<categoryId>248907277044</categoryId>
+<picture>https://static.tildacdn.com/stor6262-3035-4531-b132-323764393862/38a2dfabf076d65a39a9e97fd44e1f4f.jpg</picture>
+<picture>https://static.tildacdn.com/tild6536-6138-4532-b066-393534623432/616763193344.jpg</picture>
+<picture>https://static.tildacdn.com/tild3732-6635-4165-a466-616662613238/616763193344_2.jpg</picture>
+<name>Материнская плата Gigabyte Z890 AORUS PRO ICE</name>
+<vendor>Gigabyte</vendor>
+<vendorCode>IS2DFE3076E3</vendorCode>
+<description>Тип памяти DDR5 · Форм-фактор ATX · Сокет LGA1851 · Интерфейс SATA / PCI-E 3.0 / PCI-E 4.0 / PCI-E 5.0 · Чипсет Z890 · Видеовыходы HDMI / USB Type-C Thunderbolt 4 x 2 · Слотов памяти 4 · Разъёмов M.2 5 · Разъёмов SATA 4</description>
 </offer>
 <offer id="IS32D5F0C4EF" available="true">
 <url>https://b2b.isoft-shop.kz/materinskie-platy/tproduct/252656367364-materinskaya-plata-maxsun-challenger-b45</url>
@@ -31024,6 +31038,21 @@
 <vendor>ASUS</vendor>
 <vendorCode>ISAA6C7ED473</vendorCode>
 <description>Сокет LGA1200 · Тип памяти DDR4 · Слотов памяти 2 · Форм-фактор Mini-ITX · Чипсет C252 · Видеовыходы VGA · Разъёмов M.2 1</description>
+</offer>
+<offer id="ISABB4D2860B" available="true">
+<url>https://b2b.isoft-shop.kz/materinskie-platy/tproduct/309299779484-materinskaya-plata-asus-rog-strix-b850-a</url>
+<price>180000</price>
+<currencyId>KZT</currencyId>
+<categoryId>248907277044</categoryId>
+<picture>https://static.tildacdn.com/tila6638-6331-4565-b536-646362363431/309299779484_1.jpg</picture>
+<picture>https://static.tildacdn.com/tila3034-3932-4164-b735-363665633937/309299779484_2.jpg</picture>
+<picture>https://static.tildacdn.com/tila3335-3765-4430-a638-623430303865/309299779484_3.jpg</picture>
+<picture>https://static.tildacdn.com/tila3861-6662-4464-b231-336365646161/309299779484_4.jpg</picture>
+<picture>https://static.tildacdn.com/tila3832-3765-4331-b962-626137363763/309299779484_5.jpg</picture>
+<name>Материнская плата ASUS ROG STRIX B850-A GAMING WIFI, Socket AM5, ATX, AMD B850 (DP/HDMI), 4DDR5, PCIx16</name>
+<vendor>ASUS</vendor>
+<vendorCode>ISABB4D2860B</vendorCode>
+<description>Тип памяти DDR5 · Форм-фактор ATX · Сокет AM5 · Чипсет B850 · Слотов памяти 4</description>
 </offer>
 <offer id="ISADCBBC8637" available="true">
 <url>https://b2b.isoft-shop.kz/materinskie-platy/tproduct/119444994834-materinskaya-plata-gigabyte-w790-ai-top</url>
@@ -38994,7 +39023,7 @@
 <name>Беспроводная мышь LOGITECH M170 - серая LOGITECH M170 WIRELESS MOUSE - GREY</name>
 <vendor>Logitech</vendor>
 <vendorCode>IS3C107C5ABF</vendorCode>
-<description>Подключение Беспроводное · Тип устройства мышь · Цвет Серый</description>
+<description>Тип устройства мышь · Подключение Беспроводное · Цвет Серый · Кнопок 3</description>
 </offer>
 <offer id="IS3D0AA254F5" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/949661935664-mish-lorgar-gaming-mouse-msp80-pro-wired</url>
@@ -46227,17 +46256,6 @@
 <vendorCode>ISD144D14C1B</vendorCode>
 <description>Тип устройства Гарнитура · Цвет Чёрный · Назначение Игровое · Тип подключения Беспроводное</description>
 </offer>
-<offer id="ISD24F38EEF0" available="true">
-<url>https://b2b.isoft-shop.kz/naushniki-i-garnitury/tproduct/794136387874-naushniki-redmi-buds-6-night-black-m2429</url>
-<price>22000</price>
-<currencyId>KZT</currencyId>
-<categoryId>813446092544</categoryId>
-<picture>https://static.tildacdn.com/tila3363-6634-4761-b130-333436306162/ISD24F38EEF0_1.jpg</picture>
-<name>Наушники Redmi Buds 6 Night Black M2429E1</name>
-<vendor>Redmi</vendor>
-<vendorCode>ISD24F38EEF0</vendorCode>
-<description>Тип устройства Наушники · Материал Пластик · Цвет Чёрный · Тип подключения Беспроводное · Bluetooth 5.4</description>
-</offer>
 <offer id="ISD28DBD88C2" available="true">
 <url>https://b2b.isoft-shop.kz/naushniki-i-garnitury/tproduct/343637702814-garnitura-razer-opus-x-green-rz04-037604</url>
 <price>26000</price>
@@ -47645,17 +47663,6 @@
 <vendorCode>IS3C2631E4EB</vendorCode>
 <description>Диагональ 14″ · Камера IR + 5 Мп · Ёмкость 1 ТБ · Оперативная память 32 ГБ · Операционная система Windows 11 Pro · Линейка процессора Core Ultra 7 · Семья ОС Windows 11 · Процессор Intel Core Ultra 7 355 · Накопитель 1 ТБ · Разрешение 1920×1200</description>
 </offer>
-<offer id="IS3C80370858" available="true">
-<url>https://b2b.isoft-shop.kz/noutbuki/tproduct/303781602294-noutbuk-hp-zbook-fury-g1i-16-c88qbea-ult</url>
-<price>2577000</price>
-<currencyId>KZT</currencyId>
-<categoryId>293087419414</categoryId>
-<picture>https://static.tildacdn.com/tild3836-3734-4533-a235-653134366632/303781602294.jpg</picture>
-<name>Ноутбук HP ZBook Fury G1i 16 C88QBEA, Ultra 9 285HX for WWAN Fury 16-inch G1i, 1TB PCIe-5x4 2280 NVMe, 32GB (1x32GB) DDR5 5600 SODIMM Memory</name>
-<vendor>HP</vendor>
-<vendorCode>IS3C80370858</vendorCode>
-<description>Диагональ 16″ · Оперативная память 32 ГБ · Операционная система Windows 11 Pro · Процессор Ultra 9 285HX · Ёмкость 1 ТБ · Камера IR + 5 Мп · Линейка процессора Core Ultra 9 · Тип накопителя SSD · Разрешение 2560×1600 · Видеокарта NVIDIA RTX PRO 3000</description>
-</offer>
 <offer id="IS3CF706BD3E" available="true">
 <url>https://b2b.isoft-shop.kz/noutbuki/tproduct/151366074244-noutbuk-asus-h7606ww-se079x-90nb17f1-m00</url>
 <price>2367000</price>
@@ -48242,7 +48249,7 @@
 <name>Ноутбук 14-inch MacBook Pro with PROLED XDR дисплей: Apple M5 чип 15 A3468, core CPU and 16-core GPU, 24GB, 24GB, 1TB SSD - SILVER, MODEL</name>
 <vendor>APPLE</vendor>
 <vendorCode>IS6CC7B87D1B</vendorCode>
-<description>Количество ядер процессора 15 · Ёмкость 1 ТБ · Оперативная память 24 ГБ · Процессор APPLE M5 PRO · Линейка процессора Apple M</description>
+<description>Диагональ 14,2″ · Bluetooth 6.0 · Ёмкость 1 ТБ · Количество ядер процессора 15 · Оперативная память 24 ГБ · Процессор APPLE M5 PRO · Линейка процессора Apple M · Накопитель 1 ТБ · Видеокарта Встроенная · Операционная система macOS</description>
 </offer>
 <offer id="IS6CDB0D21C2" available="true">
 <url>https://b2b.isoft-shop.kz/noutbuki/tproduct/763308830574-noutbuk-asus-vivobook-15-x1504ma-bq813w</url>
@@ -49018,7 +49025,7 @@
 <name>Ноутбук Lenovo V15 G7 IWC, Core i3 304-1.5/512GB SSD/8GB/15.6-inch FHD/Win11</name>
 <vendor>Lenovo</vendor>
 <vendorCode>IS9AE5925A28</vendorCode>
-<description>Диагональ 15,6″ · Ёмкость 512 ГБ · Оперативная память 8 ГБ · Операционная система Windows 11 · Процессор i3-304 · Разрешение 1920×1080 · Линейка процессора Core i3 / Core 3 · Семья ОС Windows 11</description>
+<description>Диагональ 15,6″ · Ёмкость 512 ГБ · Оперативная память 8 ГБ · Операционная система Windows 11 · Процессор Intel i3-304 · Разрешение 1920×1080 · Линейка процессора Core i3 / Core 3 · Семья ОС Windows 11 · Накопитель 512 ГБ</description>
 </offer>
 <offer id="IS9C805CF5EA" available="true">
 <url>https://b2b.isoft-shop.kz/noutbuki/tproduct/163822927364-noutbuk-hp-probook-4-g1i-d9uh8etbja-16-i</url>
@@ -49640,7 +49647,7 @@
 <name>Ноутбук 16-inch MacBook Pro with PROLED XDR дисплей: Apple M5 чип 18 A3469, core CPU and 20-core GPU, 24GB, 24GB, 1TB SSD - SPACE BLACK</name>
 <vendor>APPLE</vendor>
 <vendorCode>ISCB5A70148C</vendorCode>
-<description>Количество ядер процессора 18 · Ёмкость 1 ТБ · Оперативная память 24 ГБ · Процессор APPLE M5 PRO · Линейка процессора Apple M</description>
+<description>Диагональ 16,3″ · Bluetooth 6.0 · Ёмкость 1 ТБ · Количество ядер процессора 18 · Оперативная память 24 ГБ · Процессор APPLE M5 PRO · Линейка процессора Apple M · Накопитель 1 ТБ · Видеокарта Встроенная · Операционная система macOS</description>
 </offer>
 <offer id="ISCB6F767C35" available="true">
 <url>https://b2b.isoft-shop.kz/noutbuki/tproduct/192676181544-noutbuk-14-inch-macbook-pro-with-proled</url>
@@ -49651,7 +49658,7 @@
 <name>Ноутбук 14-inch MacBook Pro with PROLED XDR дисплей: Apple M5 чип 15 A3468, core CPU and 16-core GPU, 24GB, 24GB, 1TB SSD - SPACE BLACK</name>
 <vendor>APPLE</vendor>
 <vendorCode>ISCB6F767C35</vendorCode>
-<description>Количество ядер процессора 15 · Ёмкость 1 ТБ · Оперативная память 24 ГБ · Процессор APPLE M5 PRO · Линейка процессора Apple M</description>
+<description>Диагональ 14,2″ · Bluetooth 6.0 · Количество ядер процессора 15 · Ёмкость 1 ТБ · Оперативная память 24 ГБ · Процессор APPLE M5 PRO · Линейка процессора Apple M · Накопитель 1 ТБ · Видеокарта Встроенная · Операционная система macOS</description>
 </offer>
 <offer id="ISCBBC34FF9D" available="true">
 <url>https://b2b.isoft-shop.kz/noutbuki/tproduct/859052182544-noutbuk-macbook-air-apple-15-inch-silver</url>
@@ -50374,7 +50381,7 @@
 <name>Ноутбук 14-inch MacBook Pro with PROLED XDR дисплей: Apple M5 чип 18 A3468, core CPU and 20-core GPU, 48GB, 48GB, 1TB SSD - SILVER, MODEL</name>
 <vendor>APPLE</vendor>
 <vendorCode>ISFD859290E4</vendorCode>
-<description>Количество ядер процессора 18 · Ёмкость 1 ТБ · Оперативная память 48 ГБ · Процессор APPLE M5 PRO · Линейка процессора Apple M</description>
+<description>Диагональ 14,2″ · Bluetooth 6.0 · Ёмкость 1 ТБ · Количество ядер процессора 18 · Оперативная память 48 ГБ · Процессор APPLE M5 PRO · Линейка процессора Apple M · Накопитель 1 ТБ · Видеокарта Встроенная · Операционная система macOS</description>
 </offer>
 <offer id="ISFE4E351A43" available="true">
 <url>https://b2b.isoft-shop.kz/noutbuki/tproduct/776163103354-noutbuk-asus-90nx0881-m03ps0-expertbook</url>
@@ -51111,17 +51118,6 @@
 <vendorCode>IS87A518F2F7</vendorCode>
 <description>Форм-фактор SO-DIMM · Оперативная память 8 ГБ · Тип памяти DDR5 · Объём 8 ГБ · Частота 5600 МГц · Модулей в комплекте 1</description>
 </offer>
-<offer id="IS8B5C20C098" available="true">
-<url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/443909472094-operativnaya-pamyat-apacer-panther-rgb-a</url>
-<price>282000</price>
-<currencyId>KZT</currencyId>
-<categoryId>160131640904</categoryId>
-<picture>https://static.tildacdn.com/stor6562-3166-4230-b534-316231363930/60085c98f38e2f043892a1db93efa80c.jpg</picture>
-<name>Оперативная память Apacer Panther RGB AH5U32G52C5229BAA-1 DDR5 32GB</name>
-<vendor>Apacer</vendor>
-<vendorCode>AH5U32G52C5229BAA-1</vendorCode>
-<description>Оперативная память Apacer AH5U32G52C5229BAA-1: Тип памяти DDR5 · Объём 32 ГБ · Частота 5200 МГц · Форм-фактор DIMM · Модулей в комплекте 1. Цена с НДС, безналичный расчёт для организаций.</description>
-</offer>
 <offer id="IS8B884848F2" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/722842279004-operativnaya-pamyat-dimm-ddr4-32-gb-kit</url>
 <price>173000</price>
@@ -51459,17 +51455,6 @@
 <vendor>Team_Group</vendor>
 <vendorCode>FF3D516G6000HC38A01</vendorCode>
 <description>Оперативная память Team_Group FF3D516G6000HC38A01: Тип памяти DDR5 · Объём 16 ГБ · Частота 6000 МГц. Цена с НДС, безналичный расчёт для организаций.</description>
-</offer>
-<offer id="ISB911C43C9A" available="true">
-<url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/278889505034-operativnaya-pamyat-apacer-el08g2vgnh</url>
-<price>42000</price>
-<currencyId>KZT</currencyId>
-<categoryId>160131640904</categoryId>
-<picture>https://static.tildacdn.com/tila6236-3363-4432-b637-643234333933/IS93176A32FD_1.jpg</picture>
-<name>Оперативная память Apacer EL.08G2V.GNH</name>
-<vendor>Apacer</vendor>
-<vendorCode>ISB911C43C9A</vendorCode>
-<description>Форм-фактор DIMM · Оперативная память 8 ГБ · Тип памяти DDR4 · Частота 2666 МГц · Модулей в комплекте 1</description>
 </offer>
 <offer id="ISB94E7DF170" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/600550785154-operativnaya-pamyat-corsair-ddr4-3200mhz</url>
@@ -53041,19 +53026,6 @@
 <vendor>PCCOOLER</vendor>
 <vendorCode>IS5C368EC3A4</vendorCode>
 <description>Форм-фактор 120 мм · Уровень шума 16,7–33,8 дБА · Интерфейс 4-pin · Скорость вращения 600–1850 об/мин · Тип устройства Вентилятор для корпуса · Воздушный поток 71,86 CFM · Тип подшипника Гидродинамический · Цвет Белый</description>
-</offer>
-<offer id="IS5D08D0FFB7" available="true">
-<url>https://b2b.isoft-shop.kz/ohlazhdenie/tproduct/998541218874-ohlazhdenie-kuler-dlya-protsessora-deepc</url>
-<price>4200</price>
-<currencyId>KZT</currencyId>
-<categoryId>831063569394</categoryId>
-<picture>https://static.tildacdn.com/stor3435-3533-4232-a665-613165386437/4a4be0c493cd2b9c0d5de08c613aad5c.jpg</picture>
-<picture>https://static.tildacdn.com/tild3332-3462-4835-a364-313265363764/998541218874_1.jpg</picture>
-<picture>https://static.tildacdn.com/tild6662-6364-4362-a363-306239666336/998541218874_2.jpg</picture>
-<name>Охлаждение Кулер для процессора Deepcool ICE EDGE MINI FS v2.0 DP-MCH2-IEMV2</name>
-<vendor>Deepcool</vendor>
-<vendorCode>IS5D08D0FFB7</vendorCode>
-<description>Форм-фактор 80 мм · Уровень шума 24,7 дБА · Интерфейс 3-pin · Скорость вращения 2200 об/мин · Тип устройства Кулер для процессора · Воздушный поток 25,13 CFM · Сокет 1851 / 1700 / 1200 / 1151 / AM5 / AM4 · TDP 95 Вт · Количество вентиляторов 1 · Гарантия 1 год</description>
 </offer>
 <offer id="IS5E5739FB62" available="true">
 <url>https://b2b.isoft-shop.kz/ohlazhdenie/tproduct/693996816864-kuler-s-vodyanim-ohlazhdeniem-deepcool-s</url>
@@ -58028,17 +58000,6 @@
 <vendorCode>IS0D7700022C</vendorCode>
 <description>Сокет AM5 · Потоки 12 · Частота 5,2 ГГц · Частота в турбо 5,1 ГГц · Количество ядер 6 · Класс частоты от 4 ГГц · Класс потоков 10–12</description>
 </offer>
-<offer id="IS10891A83AC" available="true">
-<url>https://b2b.isoft-shop.kz/processory/tproduct/191302850424-protsessor-amd-ryzen-5-5600x-37ghz-verme</url>
-<price>88000</price>
-<currencyId>KZT</currencyId>
-<categoryId>289503131194</categoryId>
-<picture>https://static.tildacdn.com/tila3335-6137-4539-a466-653330366561/IS10891A83AC_1.jpg</picture>
-<name>Процессор AMD Ryzen 5 5600X, 3.7GHz (Vermeer, 4.6), 6C/12T, (100-000000065), 3/32MB, 65W, AM4</name>
-<vendor>AMD</vendor>
-<vendorCode>IS10891A83AC</vendorCode>
-<description>Сокет AM4 · Частота 3,7 ГГц · TDP 65 Вт · Потоки 12 · Ядра 6 · Класс частоты 3–3,9 ГГц · Класс потоков 10–12 · Кэш-память 32 МБ L3</description>
-</offer>
 <offer id="IS10C409F8E9" available="true">
 <url>https://b2b.isoft-shop.kz/processory/tproduct/800372027314-protsessor-intel-core-ultra-5-225f-lga18</url>
 <price>83000</price>
@@ -58297,6 +58258,17 @@
 <vendor>Intel</vendor>
 <vendorCode>IS3F01FB9487</vendorCode>
 <description>Сокет FCLGA18W · Потоки 20 · Частота в турбо 5,3 ГГц · Класс потоков 20–24 · Кэш-память 30 МБ · Количество ядер 20</description>
+</offer>
+<offer id="IS4112622D76" available="true">
+<url>https://b2b.isoft-shop.kz/processory/tproduct/161169159744-protsessor-cpu-amd-ryzen-7-9800x3d-120w</url>
+<price>262000</price>
+<currencyId>KZT</currencyId>
+<categoryId>289503131194</categoryId>
+<picture>https://static.tildacdn.com/tila3338-3662-4236-b633-643136326234/IS4112622D76_1.jpg</picture>
+<name>Процессор (CPU) AMD Ryzen 7 9800X3D 120W AM5 100-000001084</name>
+<vendor>AMD</vendor>
+<vendorCode>IS4112622D76</vendorCode>
+<description>TDP 120 Вт · Сокет AM5 · Количество ядер 8 · Потоки 16 · Частота 4,7 ГГц</description>
 </offer>
 <offer id="IS41A81F5AC9" available="true">
 <url>https://b2b.isoft-shop.kz/processory/tproduct/708826838724-protsessor-cpu-intel-core-i5-processor-1</url>
@@ -58907,6 +58879,17 @@
 <vendor>Intel</vendor>
 <vendorCode>ISE52CD5D776</vendorCode>
 <description>Сокет FCLGA18W · Потоки 14 · Частота в турбо 5,2 ГГц · Класс потоков 14–18 · Кэш-память 24 МБ · Количество ядер 14</description>
+</offer>
+<offer id="ISEA5CB6813C" available="true">
+<url>https://b2b.isoft-shop.kz/processory/tproduct/771109911724-protsessor-amd-ryzen-7-9800x3d-47ghz-gra</url>
+<price>289000</price>
+<currencyId>KZT</currencyId>
+<categoryId>289503131194</categoryId>
+<picture>https://static.tildacdn.com/tila6330-3966-4865-b566-333264646230/ISEA5CB6813C_1.jpg</picture>
+<name>Процессор AMD Ryzen 7 9800X3D, 4.7GHz (Granite Ridge, 5.2), 8C/16T, (100-000001084), 8/96MB, 120W,AM5</name>
+<vendor>AMD</vendor>
+<vendorCode>ISEA5CB6813C</vendorCode>
+<description>TDP 120 Вт · Потоки 16 · Сокет AM5 · Частота 4,7 ГГц · Ядра 8 · Класс частоты от 4 ГГц · Класс потоков 14–18</description>
 </offer>
 <offer id="ISEAD852B5B1" available="true">
 <url>https://b2b.isoft-shop.kz/processory/tproduct/862617047464-protsessor-cpu-intel-core-ultra-7-proces</url>
@@ -67933,6 +67916,17 @@
 <vendorCode>IS051AA3B88D</vendorCode>
 <description>Форм-фактор Tower · Процессор Intel Core i7-14700F · Оперативная память 32 ГБ · Видеокарта GeForce RTX 5070 · Операционная система Windows 11 · Сертификат блока питания 80+ Gold · Порты 1× USB-C, 1× USB-A · Wi-Fi Wi-Fi 6E · Bluetooth 5.0 · Семья ОС Windows 11</description>
 </offer>
+<offer id="IS06AB8BE0D3" available="true">
+<url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/761826515844-sistemnii-blok-pulser-core-i5-12400-25-g</url>
+<price>327000</price>
+<currencyId>KZT</currencyId>
+<categoryId>763638053684</categoryId>
+<picture>https://static.tildacdn.com/tila3266-3430-4532-a531-616132643263/761826515844_1.jpg</picture>
+<name>Системный блок Pulser Core i5-12400, 2.5 ГГц, H610, 16 ГБ ОЗУ, SSD 1 ТБ, без DVD, БП 400 Вт</name>
+<vendor>Pulser</vendor>
+<vendorCode>IS06AB8BE0D3</vendorCode>
+<description>Ёмкость 1 ТБ · Оперативная память 16 ГБ · Блок питания 400 Вт</description>
+</offer>
 <offer id="IS087EEDC1BA" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/873834693614-sistemnii-blok-pulser-core-i3-12100-33-g</url>
 <price>231000</price>
@@ -70320,7 +70314,7 @@
 </offer>
 <offer id="IS00EF4C4846" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/983070028294-wi-fi-tochka-dostupa-planet-wnap-6308</url>
-<price>12000</price>
+<price>11000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor6331-3932-4230-b061-396436396534/64eaee526cd2483e9293ad7235fc926f.jpg</picture>
@@ -70333,7 +70327,7 @@
 </offer>
 <offer id="IS04BD9A77AA" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/341154515294-wi-fi-tochka-dostupa-tp-link-cpe510</url>
-<price>51000</price>
+<price>48000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3139-3565-4437-b434-626535333664/89144fc500321c579991b805b1170e87.jpg</picture>
@@ -70345,7 +70339,7 @@
 </offer>
 <offer id="IS073ED1A696" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/808840131734-tochka-dostupa-hpe-aruba-ap-303h-rw-unif</url>
-<price>154000</price>
+<price>144000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/tild6162-3830-4238-b264-393064366534/IS073ED1A696_1.png</picture>
@@ -70356,7 +70350,7 @@
 </offer>
 <offer id="IS077772985B" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/508998690974-besprovodnaya-tochka-dostupa-ubiquiti-u6</url>
-<price>152000</price>
+<price>143000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3561-6337-4864-b833-333631343662/d8a26eff809e64f91ee354821ee3b8b9.jpg</picture>
@@ -70368,7 +70362,7 @@
 </offer>
 <offer id="IS0AE73AE294" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/833612673764-tochka-dostupa-huawei-ap362e</url>
-<price>76000</price>
+<price>71000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3961-3539-4336-b030-383464383239/f5c536536944e275584d42fe835241d0.jpg</picture>
@@ -70380,7 +70374,7 @@
 </offer>
 <offer id="IS0BA612371F" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/440292380414-besprovodnaya-shirokopolosnaya-tochka-do</url>
-<price>436000</price>
+<price>410000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3561-3639-4363-b363-363730333338/5cbe8f38f1e95f04b1b512e9640c9c55.jpg</picture>
@@ -70392,7 +70386,7 @@
 </offer>
 <offer id="IS0EF297F042" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/726995784484-besprovodnaya-tochka-dostupa-hikvision-d</url>
-<price>36000</price>
+<price>34000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3937-3264-4734-b332-616239356531/fa5646058a4c4210aa6ebc33da84f809.jpg</picture>
@@ -70403,7 +70397,7 @@
 </offer>
 <offer id="IS0EFCACF987" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/264011537794-tochka-dostupa-mikrotik-ltap-2hndampr11e</url>
-<price>104000</price>
+<price>98000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3366-3030-4535-b931-366661306166/aa498619e5dc27543a44f01dc08d43aa.jpg</picture>
@@ -70414,7 +70408,7 @@
 </offer>
 <offer id="IS18853BA9E3" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/412181159254-tochka-dostupa-tp-linkcpe22024-ggts-300</url>
-<price>42000</price>
+<price>39000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3264-3363-4139-b232-336435373130/5973ba1b0c357dd9bdad44befbd59cfe.jpg</picture>
@@ -70426,7 +70420,7 @@
 </offer>
 <offer id="IS18EAACDF06" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/150617122374-besprovodnaya-tochka-dostupa-hikvision-d</url>
-<price>59000</price>
+<price>56000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/tila3266-6637-4265-b565-303232653337/IS18EAACDF06_1.jpg</picture>
@@ -70437,7 +70431,7 @@
 </offer>
 <offer id="IS1AA6D87376" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/606348489854-besprovodnaya-tochka-dostupa-ubiquiti-u7</url>
-<price>148000</price>
+<price>139000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3634-6565-4536-b963-313661316636/353fd02d5d7cdd0ceb14abd238750823.jpg</picture>
@@ -70449,7 +70443,7 @@
 </offer>
 <offer id="IS1AAA97ABB9" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/761544985734-wi-fi-tochka-dostupa-tp-link-eap225</url>
-<price>76000</price>
+<price>72000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3833-3539-4732-b563-653938386537/e493f904dc23136888cefdd9f2e6267b.jpg</picture>
@@ -70462,7 +70456,7 @@
 </offer>
 <offer id="IS1C3EB27F6B" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/404729971064-tochka-dostupa-engenius-networks-ecw526</url>
-<price>270000</price>
+<price>251000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3234-3133-4438-b863-303230336563/3d8774683ba8d0e266cd9f6229b41d54.jpg</picture>
@@ -70476,7 +70470,7 @@
 </offer>
 <offer id="IS1F9FAFA077" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/611152897624-besprovodnaya-tochka-dostupa-hikvision-d</url>
-<price>23000</price>
+<price>22000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor6137-3537-4266-a261-326265356235/3dd9601ff71ed7d0c3523cedf1c42250.jpg</picture>
@@ -70488,7 +70482,7 @@
 </offer>
 <offer id="IS29D594173A" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/298589138464-besprovodnaya-tochka-dostupa-ubiquiti-u6</url>
-<price>150000</price>
+<price>141000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor6263-6334-4432-a466-343532653166/c82e01cb4d197249aaca47d251a60cfe.jpg</picture>
@@ -70501,7 +70495,7 @@
 </offer>
 <offer id="IS2AE474C1A5" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/302440672084-tochka-dostupa-mikrotik-wapr-2ndampec200</url>
-<price>62000</price>
+<price>59000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3436-3139-4633-b261-356435633132/d402f37367c0d5d3f685d702bb6bb547.jpg</picture>
@@ -70513,7 +70507,7 @@
 </offer>
 <offer id="IS2B104C1198" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/263211213884-tochka-dostupa-grandstream-gwn7674</url>
-<price>159000</price>
+<price>149000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3763-3430-4465-b032-346438396331/6bfb5b72d0202396bd39ed8070a91ac1.jpg</picture>
@@ -70526,7 +70520,7 @@
 </offer>
 <offer id="IS2C4D583FA3" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/968913933914-tochka-dostupa-mikrotik-rbd25g-5hpacqd2h</url>
-<price>106000</price>
+<price>100000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3665-3464-4565-b738-366539383932/cc7ea7f9704f044278d796b24312347b.jpg</picture>
@@ -70538,7 +70532,7 @@
 </offer>
 <offer id="IS2C6D45CC00" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/355420199534-tochka-dostupa-huawei-ekitengine-ap263</url>
-<price>112000</price>
+<price>105000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3930-3731-4339-a139-626636393936/6a1fb36168b160300cfba04251d7e4fc.jpg</picture>
@@ -70551,7 +70545,7 @@
 </offer>
 <offer id="IS2F5C337B68" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/274653634474-besprovodnaya-tochka-dostupa-ubiquiti-ua</url>
-<price>351000</price>
+<price>331000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3833-3462-4266-a632-316230383061/7973e6b04db6d574c31264b9720ef2e2.jpg</picture>
@@ -70562,7 +70556,7 @@
 </offer>
 <offer id="IS3263D84DF4" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/654685625024-besprovodnaya-tochka-dostupa-h3c-aolynk</url>
-<price>42000</price>
+<price>40000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3164-3562-4135-a137-343163396661/491ffdd23764440f9fa725f65b533ab6.jpg</picture>
@@ -70575,7 +70569,7 @@
 </offer>
 <offer id="IS33AEF55693" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/226205386464-besprovodnaya-tochka-dostupa-h3c-aolynk</url>
-<price>36000</price>
+<price>34000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3463-6331-4533-b531-646264333230/676607218d778092c21bad592e407be2.jpg</picture>
@@ -70588,7 +70582,7 @@
 </offer>
 <offer id="IS35A0DBD0B7" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/515006428444-besprovodnaya-tochka-dostupa-ubiquiti-u6</url>
-<price>72000</price>
+<price>68000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3765-3139-4462-a639-336165323237/353bcf2263c3c84d1fde07edfb31e12b.jpg</picture>
@@ -70600,7 +70594,7 @@
 </offer>
 <offer id="IS3619C7E922" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/946502534784-besprovodnaya-tochka-dostupa-ubiquiti-ud</url>
-<price>770000</price>
+<price>726000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3232-3732-4636-b463-333166653764/57b07d7dd72ed129c404a4fc8509ce19.jpg</picture>
@@ -70613,7 +70607,7 @@
 </offer>
 <offer id="IS384E577B97" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/932030846454-tochka-dostupa-mikrotik-rbsxtsqg-5acd</url>
-<price>42000</price>
+<price>39000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor6338-6332-4232-b339-313562663265/4cb28e9c44ea19a9a199b06d3c30f697.jpg</picture>
@@ -70625,7 +70619,7 @@
 </offer>
 <offer id="IS39D5B6483E" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/291919806744-besprovodnaya-tochka-dostupa-hikvision-d</url>
-<price>42000</price>
+<price>40000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3761-3066-4530-a230-636239653436/c075840c4ebe793d334ee2a4d0f51dc6.jpg</picture>
@@ -70636,7 +70630,7 @@
 </offer>
 <offer id="IS3CECA00D1B" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/948721003504-besprovodnaya-tochka-dostupa-router-h3c</url>
-<price>67000</price>
+<price>63000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor6563-3033-4639-b932-333132336639/d1e1267348ab08e661f413857e4fe105.jpg</picture>
@@ -70647,7 +70641,7 @@
 </offer>
 <offer id="IS3EA430D7E5" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/761108681974-wi-fi-tochka-dostupa-tp-link-eap610-outd</url>
-<price>127000</price>
+<price>119000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/tila6262-3164-4263-b265-373437386364/IS3EA430D7E5_1.jpg</picture>
@@ -70658,7 +70652,7 @@
 </offer>
 <offer id="IS3F6E91325E" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/755891889854-tochka-dostupa-mikrotik-wapgr-5hacd2hnda</url>
-<price>100000</price>
+<price>94000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor6334-6564-4162-a339-613130626665/fdc682dfb7724cb3c678063f105292a7.jpg</picture>
@@ -70670,7 +70664,7 @@
 </offer>
 <offer id="IS3F8C449667" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/822316805064-tochka-dostupa-mikrotik-ec25-euampsxtsq</url>
-<price>51000</price>
+<price>49000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor6361-3538-4633-a539-303566363062/608b42c61fc2510f10d16291da3a9bf6.jpg</picture>
@@ -70683,7 +70677,7 @@
 </offer>
 <offer id="IS3FC338F99A" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/495441371624-wi-fi-tochka-dostupa-tp-link-eap215-brid</url>
-<price>87000</price>
+<price>82000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3833-6537-4235-a164-626564626534/492793eb7e49dd94a085642d3b7b94ba.jpg</picture>
@@ -70695,7 +70689,7 @@
 </offer>
 <offer id="IS4108908B16" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/683999878244-wi-fi-tochka-dostupa-tp-link-eap610</url>
-<price>89000</price>
+<price>84000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3237-6536-4530-a138-616565386161/2a9d5f7b491cd7a19ec3241b872bb0b5.jpg</picture>
@@ -70708,7 +70702,7 @@
 </offer>
 <offer id="IS435720D7ED" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/450446098034-besprovodnaya-tochka-dostupa-router-h3c</url>
-<price>112000</price>
+<price>105000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3062-3131-4433-a566-386433333765/ffc0d178e20b0690da47f381f3b4469a.jpg</picture>
@@ -70719,7 +70713,7 @@
 </offer>
 <offer id="IS472C648F29" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/732914952264-besprovodnaya-tochka-dostupa-ubiquiti-wa</url>
-<price>369000</price>
+<price>348000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor6361-3362-4666-a538-323236336632/7c36fe9e4e434666f44da7399efc3c7c.jpg</picture>
@@ -70732,7 +70726,7 @@
 </offer>
 <offer id="IS475032780E" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/879852454024-tochka-dostupa-hpearuba-instant-on-ap27</url>
-<price>156000</price>
+<price>145000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3631-3963-4164-b561-643435653634/fc462122347c2f8f9a455566182b760a.jpg</picture>
@@ -70745,7 +70739,7 @@
 </offer>
 <offer id="IS491E323419" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/887758064534-besprovodnaya-tochka-dostupa-router-h3c</url>
-<price>103000</price>
+<price>97000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3765-3662-4335-b763-303938653034/d3869222cc9f1abfad3f50213a8132af.jpg</picture>
@@ -70756,7 +70750,7 @@
 </offer>
 <offer id="IS4B0C1F039D" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/967349263714-besprovodnaya-tochka-dostupa-hikvision-d</url>
-<price>41000</price>
+<price>39000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3638-3039-4130-b063-383262393038/d4b9ca9f63781dc11352b69a77ea963e.jpg</picture>
@@ -70767,7 +70761,7 @@
 </offer>
 <offer id="IS4E904BA907" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/938635320484-tochka-dostupa-points-of-access-hpearuba</url>
-<price>377000</price>
+<price>351000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/tila3435-3734-4835-b763-323863373064/IS4E904BA907_1.jpg</picture>
@@ -70778,7 +70772,7 @@
 </offer>
 <offer id="IS4EADD060B7" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/938613734954-tochka-dostupa-huawei-ap265e</url>
-<price>70000</price>
+<price>66000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3036-6462-4364-b630-613536653132/59c20bc816f172e16bf8620daf48904f.jpg</picture>
@@ -70790,7 +70784,7 @@
 </offer>
 <offer id="IS518F2C9217" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/232763188894-tochka-dostupa-huawei-ap371</url>
-<price>87000</price>
+<price>82000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3839-3032-4330-a339-306563643365/3bc212fc8c480aa1bb070fb2104580a2.jpg</picture>
@@ -70802,7 +70796,7 @@
 </offer>
 <offer id="IS534F851DEE" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/144801030904-wi-fi-tochka-dostupa-tp-link-eap660-hd</url>
-<price>199000</price>
+<price>187000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor6437-6537-4465-a230-653936336631/df1ec0d76ca0e2f5afdf85ac94405adb.jpg</picture>
@@ -70814,7 +70808,7 @@
 </offer>
 <offer id="IS549EBBB47D" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/925775768624-wi-fi-tochka-dostupa-tp-link-eap650-outd</url>
-<price>137000</price>
+<price>129000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3061-6263-4435-b636-353231633465/7a2a32cb0cbeb60efe4ec0f5e7f2e5b1.jpg</picture>
@@ -70826,7 +70820,7 @@
 </offer>
 <offer id="IS56D622DB39" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/486572884154-besprovodnaya-tochka-dostupa-hikvision-d</url>
-<price>30000</price>
+<price>28000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor6130-6535-4764-b537-396237656336/3a46830a54c8b6dc5a608169421f209a.jpg</picture>
@@ -70837,7 +70831,7 @@
 </offer>
 <offer id="IS56EF41D45E" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/766087411354-tochka-dostupa-mikrotik-sxtrampr11e-lte7</url>
-<price>69000</price>
+<price>65000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor6363-6437-4136-b165-303830396565/ac012d51f4c36ee55ef0ec2c845d3092.jpg</picture>
@@ -70849,7 +70843,7 @@
 </offer>
 <offer id="IS585BBC8780" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/750520370784-tochka-dostupa-zyxel-nebulaflex-nwa50be</url>
-<price>71000</price>
+<price>66000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/tild3437-3464-4562-b337-353566326432/750520370784.jpg</picture>
@@ -70863,7 +70857,7 @@
 </offer>
 <offer id="IS59080D8D08" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/692593001594-besprovodnaya-tochka-dostupa-h3c-aolynk</url>
-<price>60000</price>
+<price>57000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3735-6438-4964-b932-663833363137/d772a4ce6d1fdd3b4a66a748af023f8b.jpg</picture>
@@ -70876,7 +70870,7 @@
 </offer>
 <offer id="IS5923FD560E" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/609548451074-besprovodnaya-tochka-dostupa-ubiquiti-u6</url>
-<price>122000</price>
+<price>115000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3466-3764-4261-b361-386664326433/040aa761f13cd1f687474d3cf019cc65.jpg</picture>
@@ -70888,7 +70882,7 @@
 </offer>
 <offer id="IS59EDB8E083" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/298662779964-wi-fi-tochka-dostupa-tp-link-cpe210</url>
-<price>37000</price>
+<price>35000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor6233-3737-4430-a630-653931303034/77f171d0ec0505edf551d523ebe21bff.jpg</picture>
@@ -70901,7 +70895,7 @@
 </offer>
 <offer id="IS5A886B0263" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/314685389774-tochka-dostupa-hpearuba-instant-on-ap22</url>
-<price>67000</price>
+<price>63000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/tild3530-3539-4430-b530-313062616534/314685389774.jpg</picture>
@@ -70912,7 +70906,7 @@
 </offer>
 <offer id="IS5BF7AEE002" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/839134820004-tochka-dostupa-mikrotik-lhg-5axd-xl</url>
-<price>79000</price>
+<price>75000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/tild6433-6131-4432-a537-613330656533/IS5BF7AEE002.jpg</picture>
@@ -70925,7 +70919,7 @@
 </offer>
 <offer id="IS5F0ECE5E1F" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/210917312484-wi-fi-tochka-dostupa-tp-link-tl-wa3001</url>
-<price>49000</price>
+<price>47000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3631-3237-4437-b662-633932323738/e7d83100d1000ffd55da0dbb8fc4edcb.jpg</picture>
@@ -70938,7 +70932,7 @@
 </offer>
 <offer id="IS5F60616862" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/743819050414-wi-fi-tochka-dostupa-tp-link-eap725-wall</url>
-<price>84000</price>
+<price>79000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3563-3139-4566-b630-633162666561/8200e44f6df982c09c203f0c16025e56.jpg</picture>
@@ -70950,7 +70944,7 @@
 </offer>
 <offer id="IS612C74DF8D" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/516734129814-tochka-dostupa-mikrotik-rblhg-5hpnd-xl4p</url>
-<price>258000</price>
+<price>243000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3630-6636-4532-b065-363732303338/392b9299cc7023e1f084bc6e4e5f2f83.jpg</picture>
@@ -70963,7 +70957,7 @@
 </offer>
 <offer id="IS637C6A18B4" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/194088522394-tochka-dostupa-grandstream-gwn7660elr</url>
-<price>64000</price>
+<price>60000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor6634-3463-4364-b537-646166336665/6324867e24ffcb7f427ec2bbe90b1888.jpg</picture>
@@ -70975,7 +70969,7 @@
 </offer>
 <offer id="IS642855C1D4" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/647704125494-wi-fi-tochka-dostupa-tp-link-eap235-wall</url>
-<price>57000</price>
+<price>54000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3335-3032-4237-a564-616234626463/9e28efd02f38b671b730fa037709ad9b.jpg</picture>
@@ -70988,7 +70982,7 @@
 </offer>
 <offer id="IS64EC0B0C92" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/981767432164-wi-fi-tochka-dostupa-tp-link-eap655-wall</url>
-<price>82000</price>
+<price>77000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3865-3762-4633-b161-386537303265/5737bc10068e5cc153ec86ade50d330f.jpg</picture>
@@ -71000,7 +70994,7 @@
 </offer>
 <offer id="IS65C04D7C44" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/334417766664-tochka-dostupa-grandstream-gwn7605</url>
-<price>41000</price>
+<price>38000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor6337-6539-4734-b033-623332323464/3585a50eb29d5bfad1722b438cfb948f.jpg</picture>
@@ -71013,7 +71007,7 @@
 </offer>
 <offer id="IS661CA3EE50" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/716085268754-tochka-dostupa-tp-link-tl-wa801n-1x10100</url>
-<price>18000</price>
+<price>17000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor6531-3566-4566-b834-363666643338/cd6e7fe8fb36cbab74702d3a1a882c10.jpg</picture>
@@ -71027,7 +71021,7 @@
 </offer>
 <offer id="IS6ACC7397D0" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/425144696984-tochka-dostupa-grandstream-gwn7604-indoo</url>
-<price>34000</price>
+<price>32000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/tild3233-6632-4030-b536-363333383665/IS6ACC7397D0.jpg</picture>
@@ -71042,7 +71036,7 @@
 </offer>
 <offer id="IS6BB320170F" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/902581282614-wi-fi-tochka-dostupa-tp-link-cpe710</url>
-<price>69000</price>
+<price>61000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/tila3939-6263-4461-b235-336231633735/IS6BB320170F_1.jpg</picture>
@@ -71053,7 +71047,7 @@
 </offer>
 <offer id="IS6BC895A54A" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/287420926204-wi-fi-tochka-dostupa-tp-link-eap615-wall</url>
-<price>69000</price>
+<price>65000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3735-6639-4435-b166-336666373363/55318a7f318a00d7531e89119e424ba2.jpg</picture>
@@ -71066,7 +71060,7 @@
 </offer>
 <offer id="IS6C6D95A60C" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/488115299454-tochka-dostupa-huawei-ap772e</url>
-<price>256000</price>
+<price>241000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor6231-3461-4237-b839-316435626166/db09452b6d1ddb76dc34f89023f5002c.jpg</picture>
@@ -71078,7 +71072,7 @@
 </offer>
 <offer id="IS6E75DDEADB" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/473146634284-wi-fi-tochka-dostupa-tp-link-eap110</url>
-<price>33000</price>
+<price>31000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor6634-3734-4330-a139-316435333331/92157e2c12ae2f03e8996ae218b387a2.jpg</picture>
@@ -71091,7 +71085,7 @@
 </offer>
 <offer id="IS72CA5859F5" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/969801761924-tochka-dostupa-grandstream-gwn7665</url>
-<price>74000</price>
+<price>69000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor6161-3938-4366-b161-396562616236/54c5b5cb12f84aa5fe0089ef2ac719b0.jpg</picture>
@@ -71104,7 +71098,7 @@
 </offer>
 <offer id="IS7817981BE7" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/647051730114-tochka-dostupa-mikrotik-rbsxtsq2nd</url>
-<price>27000</price>
+<price>25000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/tild6664-3865-4633-b961-376238396361/IS7817981BE7.jpg</picture>
@@ -71117,7 +71111,7 @@
 </offer>
 <offer id="IS7C23CA4C8E" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/157989954144-tochka-dostupa-tp-link-eap683</url>
-<price>103000</price>
+<price>96000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/tild3732-6435-4132-a164-313834336562/157989954144.jpg</picture>
@@ -71129,7 +71123,7 @@
 </offer>
 <offer id="IS7E6FF86D79" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/787603917904-wi-fi-tochka-dostupa-tp-link-eap245</url>
-<price>87000</price>
+<price>82000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor6361-3735-4439-b238-353134326236/25fd78bf8a770294c4773bd45861d43b.jpg</picture>
@@ -71142,7 +71136,7 @@
 </offer>
 <offer id="IS7FAABE581B" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/299149682094-wi-fi-tochka-dostupa-tp-link-tl-wa1201</url>
-<price>34000</price>
+<price>32000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor6630-3265-4866-b433-313761343262/4b7deb2017b2dd6a345b91921292e17d.jpg</picture>
@@ -71155,7 +71149,7 @@
 </offer>
 <offer id="IS7FE7CC317D" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/619408233224-wi-fi-tochka-dostupa-tp-link-eap620-hd</url>
-<price>126000</price>
+<price>118000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor6635-3932-4934-b935-363063643863/af94fedd19f5f84c6355ba1f459e9b27.jpg</picture>
@@ -71168,7 +71162,7 @@
 </offer>
 <offer id="IS806F3B52F2" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/640425398024-tochka-dostupa-huawei-ekitengine-ap160</url>
-<price>54000</price>
+<price>51000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor6133-3363-4635-b363-316331386463/bd13551f87ad27c616f55be18efbfeaa.jpg</picture>
@@ -71181,7 +71175,7 @@
 </offer>
 <offer id="IS8089157A79" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/509336927394-tochka-dostupa-mikrotik-wapg-5haxd2haxd</url>
-<price>56000</price>
+<price>53000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3231-6565-4630-b430-303531363537/ff616bae68962bed42a0e598a54b4eab.jpg</picture>
@@ -71194,7 +71188,7 @@
 </offer>
 <offer id="IS80D8C23692" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/376804807864-besprovodnaya-tochka-dostupa-ubiquiti-ua</url>
-<price>133000</price>
+<price>125000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor6335-3464-4533-b037-656164323836/94037c56b22263fdf76cb7ef80c55201.jpg</picture>
@@ -71207,7 +71201,7 @@
 </offer>
 <offer id="IS8104FE2720" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/397557938874-wi-fi-tochka-dostupa-tp-link-eap772</url>
-<price>125000</price>
+<price>117000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor6361-3234-4363-b765-653437656335/6051b070c41d273e29e7de2fc827a2ae.jpg</picture>
@@ -71220,7 +71214,7 @@
 </offer>
 <offer id="IS8285CA05DB" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/309896696094-besprovodnaya-tochka-dostupa-router-h3c</url>
-<price>50000</price>
+<price>47000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3534-3864-4262-a165-343166303362/7e19478bb47f17d2b979e4473e13d7eb.jpg</picture>
@@ -71232,7 +71226,7 @@
 </offer>
 <offer id="IS833F8D5152" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/921931473404-tochka-dostupa-huawei-ap162e-50087150</url>
-<price>37000</price>
+<price>35000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3734-6561-4237-b362-306234363433/f7c64b30b1a0d68321f8f87592fc21da.png</picture>
@@ -71243,7 +71237,7 @@
 </offer>
 <offer id="IS85CFC4C88C" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/792262508914-tochka-dostupa-hpeinstant-on-ap21-rw-dua</url>
-<price>50000</price>
+<price>47000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/tild3866-6535-4265-a630-646133386464/792262508914.jpg</picture>
@@ -71254,7 +71248,7 @@
 </offer>
 <offer id="IS85E8181DEB" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/616339975454-besprovodnaya-tochka-dostupa-hikvision-d</url>
-<price>31000</price>
+<price>30000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3466-6466-4365-b933-343839313665/aa40d0490dd0471ddb5fcc2d5d8e0071.jpg</picture>
@@ -71265,7 +71259,7 @@
 </offer>
 <offer id="IS8680A76CBC" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/883894575564-tochka-dostupa-mikrotik-rblhg5kit</url>
-<price>140000</price>
+<price>132000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor6466-3531-4332-a237-386230323562/345387800baa4fe7741ba52a798ef22c.jpg</picture>
@@ -71278,7 +71272,7 @@
 </offer>
 <offer id="IS87DF1BBA5E" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/853933010594-tochka-dostupa-huawei-ap771</url>
-<price>148000</price>
+<price>139000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor6330-3162-4234-b763-363536346236/344f3a6dd148829746168e7d5096eca2.jpg</picture>
@@ -71291,7 +71285,7 @@
 </offer>
 <offer id="IS8802327B77" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/516563123164-besprovodnaya-tochka-dostupa-router-h3c</url>
-<price>134000</price>
+<price>126000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/tila3766-3230-4665-a137-306564303837/IS8802327B77_1.jpg</picture>
@@ -71302,7 +71296,7 @@
 </offer>
 <offer id="IS89BEE440F6" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/415168480324-tochka-dostupa-mikrotik-rb912r-2nd-ltmam</url>
-<price>63000</price>
+<price>59000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/tild6133-3435-4661-a131-323931653464/IS89BEE440F6_1.jpg</picture>
@@ -71313,7 +71307,7 @@
 </offer>
 <offer id="IS8A64511220" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/698576281804-tochka-dostupa-mikrotik-rbsxtg-5hpacd-sa</url>
-<price>73000</price>
+<price>69000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3361-3761-4334-b864-616531633162/f976d427594b6e4498c8ae3da57facea.jpg</picture>
@@ -71325,7 +71319,7 @@
 </offer>
 <offer id="IS8C11D4440B" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/113047463944-tochka-dostupa-ubiquiti-unifi-u7-pro-max</url>
-<price>201000</price>
+<price>187000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/tild6130-3230-4131-b166-363165616634/113047463944.jpg</picture>
@@ -71340,7 +71334,7 @@
 </offer>
 <offer id="IS8D555B044F" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/613701226914-wi-fi-tochka-dostupa-tp-link-eap650</url>
-<price>113000</price>
+<price>107000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3538-3031-4438-b233-646439376532/beb646c4cc83bad1d827feaac000cd6e.jpg</picture>
@@ -71353,7 +71347,7 @@
 </offer>
 <offer id="IS8DD2E7A7E1" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/650206639414-tochka-dostupa-grandstream-gwn7664elr</url>
-<price>112000</price>
+<price>105000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3461-3338-4430-b636-666530313130/c487398d6293d682fb5830ec70355642.jpg</picture>
@@ -71365,7 +71359,7 @@
 </offer>
 <offer id="IS8EA020E24C" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/429416276254-tochka-dostupa-mikrotik-lhg-5axd</url>
-<price>65000</price>
+<price>61000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3738-6464-4261-b564-316461393361/6816adac54cdcaa6bb786c702f60f97e.jpg</picture>
@@ -71377,7 +71371,7 @@
 </offer>
 <offer id="IS8F2E2A6B6F" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/698816837164-tochka-dostupa-huawei-ekitengine-ap361</url>
-<price>67000</price>
+<price>63000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor6661-3835-4130-a263-623536363433/b8304492ada8f0d4eb69d300cc023f8f.jpg</picture>
@@ -71390,7 +71384,7 @@
 </offer>
 <offer id="IS906512CD0A" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/366869275544-tochka-dostupa-points-of-access-hpearuba</url>
-<price>392000</price>
+<price>365000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/tild3464-6537-4237-a139-333139336564/366869275544.jpg</picture>
@@ -71402,7 +71396,7 @@
 </offer>
 <offer id="IS90769BAACC" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/767112031404-besprovodnaya-tochka-dostupa-mikrotik-rb</url>
-<price>176000</price>
+<price>166000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor6633-6138-4364-b562-616137313430/c1bc143b4f9ad006d4dc48f66154ac40.jpg</picture>
@@ -71415,7 +71409,7 @@
 </offer>
 <offer id="IS95DEC424F0" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/317776458344-tochka-dostupa-grandstream-gwn7660</url>
-<price>55000</price>
+<price>52000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor6637-3238-4638-b539-656364323638/6894bb3030a3116e3ed0e35526669f03.jpg</picture>
@@ -71427,7 +71421,7 @@
 </offer>
 <offer id="IS97C60E1620" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/455220642194-besprovodnaya-tochka-dostupa-router-h3c</url>
-<price>47000</price>
+<price>45000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3063-3732-4134-b436-363366333436/fef53846f0ee9fc48001ef090279947b.jpg</picture>
@@ -71439,7 +71433,7 @@
 </offer>
 <offer id="IS98BAEE645A" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/851707769544-wi-fi-tochka-dostupa-tp-link-eap225-outd</url>
-<price>76000</price>
+<price>72000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3034-3838-4330-b433-313363313161/9ca9be47fe4823f47e903c5bf6156dfa.jpg</picture>
@@ -71451,7 +71445,7 @@
 </offer>
 <offer id="IS9BD6AF587E" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/418970754364-besprovodnaya-tochka-dostupa-ubiquiti-u7</url>
-<price>134000</price>
+<price>126000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3738-3764-4038-b964-326665393230/05c422166226e7af4a30eceb8e8f6136.jpg</picture>
@@ -71464,7 +71458,7 @@
 </offer>
 <offer id="IS9DFEEFC258" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/346974726974-besprovodnaya-tochka-dostupa-h3c-aolynk</url>
-<price>53000</price>
+<price>50000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3163-6532-4630-b461-303538643231/1f503387e79b07e982a615581567fcf9.jpg</picture>
@@ -71477,7 +71471,7 @@
 </offer>
 <offer id="IS9F5C2C0A6E" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/983771187634-tochka-dostupa-grandstream-gwn7630</url>
-<price>58000</price>
+<price>54000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor6438-3337-4263-b731-303133356464/19feca2a361bc20d636d2d4f8a333b29.jpg</picture>
@@ -71489,7 +71483,7 @@
 </offer>
 <offer id="IS9FB2F27D9F" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/508867059644-tochka-dostupa-grandstream-gwn7625</url>
-<price>49000</price>
+<price>46000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor6661-6463-4264-b338-613863313832/9357aab43a580226a4048b755e68d57c.jpg</picture>
@@ -71501,7 +71495,7 @@
 </offer>
 <offer id="ISA0DC380119" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/332988594204-tochka-dostupa-mikrotik-rbomnitikg-5hacd</url>
-<price>62000</price>
+<price>59000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3763-6637-4263-b964-636139653232/7fedbd5977f1915f8d6fa2d29ca212cc.jpg</picture>
@@ -71513,7 +71507,7 @@
 </offer>
 <offer id="ISA3F27B07C7" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/786311429194-wi-fi-tochka-dostupa-tp-link-eap613</url>
-<price>79000</price>
+<price>75000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/tila3864-6566-4330-a164-303737363532/ISA3F27B07C7_1.jpg</picture>
@@ -71524,7 +71518,7 @@
 </offer>
 <offer id="ISA409627F85" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/700971318124-besprovodnaya-tochka-dostupa-ubiquiti-u7</url>
-<price>694000</price>
+<price>653000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3433-6366-4030-b663-376432393733/7e4d009d55712f67801d71a998927663.jpg</picture>
@@ -71536,7 +71530,7 @@
 </offer>
 <offer id="ISA503924734" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/227273734824-tochka-dostupa-hpearuba-ap-503-rw-dual-r</url>
-<price>185000</price>
+<price>172000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3530-3861-4239-b062-323333386136/964f56f386002b2a675975560e53a196.jpg</picture>
@@ -71547,7 +71541,7 @@
 </offer>
 <offer id="ISA76790C72A" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/201229705294-wi-fi-tochka-dostupa-tp-link-eap670</url>
-<price>152000</price>
+<price>143000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3939-3636-4563-b565-373436336236/4297a33216d0bc577f33217166c07336.jpg</picture>
@@ -71560,7 +71554,7 @@
 </offer>
 <offer id="ISA978C79F56" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/211743424584-wi-fi-tochka-dostupa-tp-link-eap723</url>
-<price>66000</price>
+<price>62000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3963-3732-4966-b465-616434633136/a76f6d4a4d9933b8c82077c2cc01aa74.jpg</picture>
@@ -71572,7 +71566,7 @@
 </offer>
 <offer id="ISAA2EEDAFEC" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/322740106034-tochka-dostupa-mikrotik-rblhgg-5acd-xl4p</url>
-<price>304000</price>
+<price>286000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3338-3164-4762-a162-626361633737/4347599cda88460add2b8f6eb021fadb.jpg</picture>
@@ -71585,7 +71579,7 @@
 </offer>
 <offer id="ISACC108496C" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/412162438184-tochka-dostupa-grandstream-gwn7662</url>
-<price>57000</price>
+<price>54000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor6139-3831-4532-b661-613535646565/e5c9461d9db88457ff9a2178a4cf9cf4.jpg</picture>
@@ -71597,7 +71591,7 @@
 </offer>
 <offer id="ISADF0043B92" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/516219368584-tochka-dostupa-zyxel-nebulaflex-nwa50ax</url>
-<price>51000</price>
+<price>48000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/tild3730-3266-4066-a339-336533373235/516219368584.jpg</picture>
@@ -71610,7 +71604,7 @@
 </offer>
 <offer id="ISAE8529CA53" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/726368641264-besprovodnaya-tochka-dostupa-hikvision-d</url>
-<price>22000</price>
+<price>21000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor6339-3831-4039-a633-396135393636/f9203d306c2abc0a1af7e95775ffd3ea.jpg</picture>
@@ -71621,7 +71615,7 @@
 </offer>
 <offer id="ISB15B02190F" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/998607547254-tochka-dostupa-mikrotik-sxtsq-5axd</url>
-<price>41000</price>
+<price>38000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3432-3863-4162-a166-643366363531/eae499e22ac710c0be905cc5e085b512.jpg</picture>
@@ -71634,7 +71628,7 @@
 </offer>
 <offer id="ISB1C9E9D9EE" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/239629329154-besprovodnaya-tochka-dostupa-hikvision-d</url>
-<price>113000</price>
+<price>106000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor6238-3434-4639-a235-616636616366/2820d66e284ee478851d72073e92d1b5.jpg</picture>
@@ -71646,7 +71640,7 @@
 </offer>
 <offer id="ISB1CF8D34C2" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/914846941654-besprovodnaya-tochka-dostupa-ubiquiti-u7</url>
-<price>72000</price>
+<price>68000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3962-3030-4265-a135-336338373639/75c4c6b4a70d53e9ff1a764392441e59.jpg</picture>
@@ -71658,7 +71652,7 @@
 </offer>
 <offer id="ISB51E8ED0EC" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/981749619364-tochka-dostupa-mikrotik-l22ugs-5haxd2hax</url>
-<price>119000</price>
+<price>112000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3430-3365-4666-b262-353030613831/a95e4d4b7dfdd2c25fa029e8ddf07ace.jpg</picture>
@@ -71670,7 +71664,7 @@
 </offer>
 <offer id="ISB6AA7DBE61" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/763924599554-tochka-dostupa-grandstream-gwn7630lr</url>
-<price>68000</price>
+<price>64000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3963-3061-4635-b863-643735353737/1b37238dab7c1b15429550b32012b43c.jpg</picture>
@@ -71682,7 +71676,7 @@
 </offer>
 <offer id="ISB7C7B211A7" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/859456113704-tochka-dostupa-hpe-instant-on-ap22d-s0j3</url>
-<price>134000</price>
+<price>125000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/tild6463-3132-4566-a631-396230313939/859456113704.jpg</picture>
@@ -71693,7 +71687,7 @@
 </offer>
 <offer id="ISB8A266D67F" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/167743349724-tochka-dostupa-zyxel-nebulaflex-nwa90be</url>
-<price>68000</price>
+<price>64000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/tild3464-3338-4364-a437-303930646333/167743349724.jpg</picture>
@@ -71706,20 +71700,9 @@
 <vendorCode>ISB8A266D67F</vendorCode>
 <description>Wi-Fi Wi-Fi 7 · Скорость 2,5 Гбит/с · Класс скорости Wi-Fi 5000–6600 Мбит/с · Класс Wi-Fi BE5100</description>
 </offer>
-<offer id="ISB9A7E77E81" available="true">
-<url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/349736609504-besprovodnaya-tochka-dostupa-ubiquiti-u6</url>
-<price>205000</price>
-<currencyId>KZT</currencyId>
-<categoryId>669770887424</categoryId>
-<picture>https://static.tildacdn.com/tila6665-3934-4836-b364-643434623836/ISB9A7E77E81_1.jpg</picture>
-<name>Беспроводная точка доступа Ubiquiti U6-Enterprise</name>
-<vendor>Ubiquiti</vendor>
-<vendorCode>ISB9A7E77E81</vendorCode>
-<description>Портов 1 · Wi-Fi 802.11a/b/g/n/ac/ax · Класс Wi-Fi AX10200</description>
-</offer>
 <offer id="ISB9B20154AE" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/559402270274-tochka-dostupa-wi-fi-6-outdoor-access-po</url>
-<price>84000</price>
+<price>78000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/tild3239-6663-4238-a166-663337643732/559402270274.jpg</picture>
@@ -71732,7 +71715,7 @@
 </offer>
 <offer id="ISBB404CD1AE" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/134928258814-tochka-dostupa-grandstream-gwn7624</url>
-<price>48000</price>
+<price>45000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor6461-3061-4439-b236-363236353334/ad77fff3585352ad503ab1b0b2c481cf.jpg</picture>
@@ -71745,7 +71728,7 @@
 </offer>
 <offer id="ISBBD8F7640A" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/923273471024-besprovodnaya-tochka-dostupa-hikvision-d</url>
-<price>84000</price>
+<price>79000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor6239-6463-4533-b433-626631376561/a63db9f2323ce8af9ccf1fbf8f56312b.jpg</picture>
@@ -71756,7 +71739,7 @@
 </offer>
 <offer id="ISBCC755B3FA" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/513092338434-tochka-dostupa-grandstream-gwn7664lr</url>
-<price>95000</price>
+<price>90000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3439-6237-4231-a465-383436316664/c1c63de29fc351aed9f9e2ebf11d5619.jpg</picture>
@@ -71768,7 +71751,7 @@
 </offer>
 <offer id="ISBD03614F30" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/364690724374-besprovodnaya-tochka-dostupa-router-h3c</url>
-<price>107000</price>
+<price>101000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3566-3261-4463-a430-663865333630/912754bbb6a12a534f2ca42515673185.jpg</picture>
@@ -71781,7 +71764,7 @@
 </offer>
 <offer id="ISBD0D0B68EC" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/675476235174-besprovodnaya-tochka-dostupa-hikvision-d</url>
-<price>66000</price>
+<price>62000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor6463-3666-4861-b764-376566626365/8fcf8bafadad2ef068d26beb4fad7d10.jpg</picture>
@@ -71792,7 +71775,7 @@
 </offer>
 <offer id="ISBD47D72B3D" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/951825567994-tochka-dostupa-mikrotik-capgi-5haxd2haxd</url>
-<price>147000</price>
+<price>138000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3666-3337-4636-b739-363531353666/9a068647fc271365f89801834c61425d.jpg</picture>
@@ -71805,7 +71788,7 @@
 </offer>
 <offer id="ISC04ADB1CFD" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/372144487104-besprovodnaya-tochka-dostupa-ubiquiti-u7</url>
-<price>223000</price>
+<price>210000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3534-3437-4637-b162-653666636236/3e10690f877a1448b51b14d63988304a.jpg</picture>
@@ -71817,7 +71800,7 @@
 </offer>
 <offer id="ISC767E8F58C" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/404906647444-wi-fi-tochka-dostupa-tp-link-eap115</url>
-<price>33000</price>
+<price>31000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3963-6636-4539-a361-626666666164/3a4e53f9876f4bbd4f69798302203d71.jpg</picture>
@@ -71830,7 +71813,7 @@
 </offer>
 <offer id="ISCAB36F7001" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/715080394254-tochka-dostupa-mikrotik-ltap-2hndampfg62</url>
-<price>129000</price>
+<price>122000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3731-3932-4465-a633-336338343833/9453b9bb3bb63a557f8e7455ac109c67.jpg</picture>
@@ -71843,7 +71826,7 @@
 </offer>
 <offer id="ISCD0676E525" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/428900428854-besprovodnaya-tochka-dostupa-ubiquiti-ud</url>
-<price>143000</price>
+<price>135000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3066-6631-4531-b436-613566636238/61f43e40bd50f3ea72b7a30f5458427e.jpg</picture>
@@ -71855,7 +71838,7 @@
 </offer>
 <offer id="ISCFE6F4D214" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/594068806814-tochka-dostupa-grandstream-gwn7615</url>
-<price>48000</price>
+<price>45000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor6162-3763-4337-a238-306339663866/4be15d8d2b12423dee5f984cf83efe99.jpg</picture>
@@ -71867,7 +71850,7 @@
 </offer>
 <offer id="ISD0F17655A8" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/473083686134-wi-fi-tochka-dostupa-tp-link-eap623-outd</url>
-<price>127000</price>
+<price>119000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3765-6163-4734-a138-373532396239/61d6b178aaba74d9b5208d2ae10f5ce4.jpg</picture>
@@ -71880,7 +71863,7 @@
 </offer>
 <offer id="ISD1D7AEFD13" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/502959849354-wi-fi-tochka-dostupa-tp-link-cpe605</url>
-<price>48000</price>
+<price>45000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3761-6530-4539-a563-303962613631/4c040c68f994f013121982a6c99e1513.jpg</picture>
@@ -71892,7 +71875,7 @@
 </offer>
 <offer id="ISD22D26EFDD" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/494560649264-tochka-dostupa-mikrotik-rb911g-5hpnd-qrt</url>
-<price>103000</price>
+<price>97000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor6563-6138-4566-b030-663337363062/5951ccd6a6c94ce7a8e0e89ac562df03.jpg</picture>
@@ -71905,7 +71888,7 @@
 </offer>
 <offer id="ISD53E40302B" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/147862443654-tochka-dostupa-huawei-ap266-50087274</url>
-<price>53000</price>
+<price>50000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3434-3731-4330-a265-623239393963/dd803800679174709c8a76f77cb44333.png</picture>
@@ -71916,7 +71899,7 @@
 </offer>
 <offer id="ISD561BF22B9" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/450823406444-tochka-dostupa-mikrotik-rb911g-2hpnd-12s</url>
-<price>69000</price>
+<price>65000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor6132-3439-4635-a338-636134656264/4840cea89eb3284927b120aa9d024ae4.jpg</picture>
@@ -71929,7 +71912,7 @@
 </offer>
 <offer id="ISD7E0A3CF97" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/530085116724-tochka-dostupa-grandstream-gwn7664e</url>
-<price>91000</price>
+<price>86000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3765-6237-4532-a335-656635323931/15ee53492489ed39ace257415d6d36ef.jpg</picture>
@@ -71942,7 +71925,7 @@
 </offer>
 <offer id="ISD872B1AAEF" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/577412277624-tochka-dostupa-huawei-ap263-50084981</url>
-<price>34000</price>
+<price>32000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3266-3064-4132-a666-393334633531/aa3698ccfe26f09ce2997b9c0275a96b.jpg</picture>
@@ -71953,7 +71936,7 @@
 </offer>
 <offer id="ISD91C2ADCC7" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/763175191164-wi-fi-tochka-dostupa-tp-link-eap211-brid</url>
-<price>76000</price>
+<price>72000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3833-6537-4235-a164-626564626534/492793eb7e49dd94a085642d3b7b94ba.jpg</picture>
@@ -71965,7 +71948,7 @@
 </offer>
 <offer id="ISD962972636" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/262068568524-besprovodnaya-tochka-dostupa-mikrotik-ro</url>
-<price>176000</price>
+<price>166000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3865-6562-4635-b636-386135356163/81c4eaa37c2e2d189dbda3e3c7d5369f.jpg</picture>
@@ -71978,7 +71961,7 @@
 </offer>
 <offer id="ISD9DB4EF080" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/657311457254-tochka-dostupa-mikrotik-rbsxtsq5nd</url>
-<price>31000</price>
+<price>29000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor6338-6332-4232-b339-313562663265/4cb28e9c44ea19a9a199b06d3c30f697.jpg</picture>
@@ -71991,7 +71974,7 @@
 </offer>
 <offer id="ISDCD1629769" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/136029329694-besprovodnaya-tochka-dostupa-ubiquiti-ua</url>
-<price>103000</price>
+<price>97000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor6132-6265-4462-b938-393737646266/758a1cb753c8027e6834a803963a7982.jpg</picture>
@@ -72003,7 +71986,7 @@
 </offer>
 <offer id="ISDF083D02E0" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/800054808614-tochka-dostupa-grandstream-gwn7603</url>
-<price>34000</price>
+<price>32000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3035-3836-4561-b836-316431386166/1e88a21fe67d65cbdbdecd762b59318d.jpg</picture>
@@ -72016,7 +71999,7 @@
 </offer>
 <offer id="ISDF170A945A" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/820988334364-tochka-dostupa-ruijie-rg-ap840-i</url>
-<price>102000</price>
+<price>96000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3636-6162-4461-b036-626664393464/56a6d27b26621035a8bf69f01e5ea5ca.jpg</picture>
@@ -72027,7 +72010,7 @@
 </offer>
 <offer id="ISDFD697076E" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/297389676294-besprovodnaya-tochka-dostupa-router-h3c</url>
-<price>107000</price>
+<price>101000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor6538-3530-4238-b337-366539663766/b96b9a124af98b7b0d584fb39243c5e1.jpg</picture>
@@ -72038,7 +72021,7 @@
 </offer>
 <offer id="ISE048C948BE" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/300851245394-tochka-dostupa-grandstream-gwn7670</url>
-<price>64000</price>
+<price>60000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3138-6135-4065-b035-386433306235/41f9e449f483eff418c3552bfb044e09.jpg</picture>
@@ -72050,7 +72033,7 @@
 </offer>
 <offer id="ISE3274F7DA7" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/434741500914-besprovodnaya-tochka-dostupa-hikvision-d</url>
-<price>37000</price>
+<price>35000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3237-6238-4930-a561-373366373730/ddabe2b6fca8c83a3b7f5fe940467d5e.jpg</picture>
@@ -72062,7 +72045,7 @@
 </offer>
 <offer id="ISE342AF102E" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/918080181664-besprovodnaya-tochka-dostupa-ubiquiti-u7</url>
-<price>151000</price>
+<price>142000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3439-3336-4565-a134-373838636439/1ce248caaddbe4b544b848a25ea0d761.jpg</picture>
@@ -72074,7 +72057,7 @@
 </offer>
 <offer id="ISE57ED34194" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/771464277054-wi-fi-tochka-dostupa-tp-link-cpe610</url>
-<price>53000</price>
+<price>50000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3831-3462-4166-a264-666263623436/e7cccfcdbfaf3faa75e2afe80d93ea12.jpg</picture>
@@ -72087,7 +72070,7 @@
 </offer>
 <offer id="ISE626FCACE3" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/893331251874-tochka-dostupa-hpe-instant-on-ap22d-s1u7</url>
-<price>121000</price>
+<price>113000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/tild3933-3536-4863-b634-656337313362/893331251874.jpg</picture>
@@ -72099,7 +72082,7 @@
 </offer>
 <offer id="ISE7C20572B5" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/299454838414-tochka-dostupa-mikrotik-rbwapr-2nd</url>
-<price>55000</price>
+<price>52000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3831-3563-4232-b037-666563366436/cd927ae093f0b3adb75709a7ed9c1690.jpg</picture>
@@ -72111,7 +72094,7 @@
 </offer>
 <offer id="ISE7CA458CFE" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/578804099174-wi-fi-tochka-dostupa-tp-link-eap650-wall</url>
-<price>70000</price>
+<price>66000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor6435-6561-4163-b266-326632663165/2ca0313b851d8f05e5804a561a5b68ab.jpg</picture>
@@ -72123,7 +72106,7 @@
 </offer>
 <offer id="ISE895DBB593" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/764294112964-besprovodnaya-tochka-dostupa-hikvision-d</url>
-<price>56000</price>
+<price>53000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor6263-6566-4632-b739-313466646131/bd4b1bb5b298c297d3d0e86f7990893b.jpg</picture>
@@ -72134,7 +72117,7 @@
 </offer>
 <offer id="ISE9AADB6552" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/192122536414-tochka-dostupa-mikrotik-ltap-2hndampfg62</url>
-<price>150000</price>
+<price>142000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3639-3863-4830-a638-643564346531/3d9a8acf5e27be0b2576ed92b236f9da.jpg</picture>
@@ -72145,7 +72128,7 @@
 </offer>
 <offer id="ISEB8115298E" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/248574286204-tochka-dostupa-grandstream-gwn7661e</url>
-<price>48000</price>
+<price>45000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor6333-6461-4564-a161-386135316439/c5c243e765ca48f098e312c25188d9df.jpg</picture>
@@ -72158,7 +72141,7 @@
 </offer>
 <offer id="ISEF38108152" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/152834858374-wi-fi-tochka-dostupa-tp-link-eap773</url>
-<price>181000</price>
+<price>171000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor6364-3765-4964-a662-373935663032/1009a398388a463644c0cd7a32af627e.jpg</picture>
@@ -72170,7 +72153,7 @@
 </offer>
 <offer id="ISF048DEF434" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/462389730324-wi-fi-tochka-dostupa-tp-link-eap115-wall</url>
-<price>26000</price>
+<price>24000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor6632-6161-4434-a633-363338633231/101110f5e3778e255e8e02ed4525b083.jpg</picture>
@@ -72182,7 +72165,7 @@
 </offer>
 <offer id="ISF493D0C39F" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/276112499284-tochka-dostupa-mikrotik-rbwapgr-5hacd2hn</url>
-<price>133000</price>
+<price>125000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor6466-3730-4438-a536-396462366537/1857b12464cfd60d89fa862437f64bd0.jpg</picture>
@@ -72194,7 +72177,7 @@
 </offer>
 <offer id="ISF7145798C5" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/112201727424-wi-fi-tochka-dostupa-tp-link-eap223</url>
-<price>55000</price>
+<price>52000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3031-6539-4339-b434-303330666561/a75e1e5969e4788ea8108c340585fb62.jpg</picture>
@@ -72206,7 +72189,7 @@
 </offer>
 <offer id="ISF72A71B6CB" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/154223230494-wi-fi-tochka-dostupa-tp-link-eap110-outd</url>
-<price>35000</price>
+<price>33000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3630-6436-4736-b865-613565656637/19d27f8eac435c666d55accbf13ca267.jpg</picture>
@@ -72218,7 +72201,7 @@
 </offer>
 <offer id="ISF87C0FAA1B" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/718542314904-tochka-dostupa-huawei-ekitengine-ap271e</url>
-<price>93000</price>
+<price>88000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3164-3162-4132-a430-326633653832/0e5608cf634a37330e9b3cf85962de97.jpg</picture>
@@ -72230,7 +72213,7 @@
 </offer>
 <offer id="ISFF6055281C" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/440525911964-tochka-dostupa-tp-link-eap783</url>
-<price>283000</price>
+<price>264000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3366-6566-4861-b036-663466386534/b39ae30ee1418eee59fe14e05f72a75a.jpg</picture>

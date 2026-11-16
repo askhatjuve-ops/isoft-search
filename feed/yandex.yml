@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<yml_catalog date="2026-11-16 06:37">
+<yml_catalog date="2026-11-16 20:48">
 <shop>
 <name>iSoft</name>
 <company>iSoft</company>
@@ -4016,7 +4016,7 @@
 <name>Блок питания 1STPLAYER NGDP 1300W White Platinum NGDP-PLT-1300-WH-EU</name>
 <vendor>1STPLAYER</vendor>
 <vendorCode>IS4FEEA080A1</vendorCode>
-<description>Форм-фактор ATX · Мощность 1300 Вт · Сертификат эффективности 80+ Platinum · Модульность Модульный · Цвет Белый · Версия ATX ATX 3.0 · Гарантия 10 лет · Класс мощности 1000–1300 Вт</description>
+<description>Сертификат эффективности 80+ Platinum · Мощность 1300 Вт · Класс мощности 1000–1300 Вт · Форм-фактор ATX · Цвет Белый · Гарантия 10 лет · Версия ATX ATX 3.0 · Модульность Модульный</description>
 </offer>
 <offer id="IS504838D5B4" available="true">
 <url>https://b2b.isoft-shop.kz/bloki-pitaniya/tproduct/950671638234-blok-pitaniya-atx-chieftec-vita-sm3-bpx</url>
@@ -6552,6 +6552,17 @@
 <vendor>SAPPHIRE</vendor>
 <vendorCode>IS4A1F077C7B</vendorCode>
 <description>Видеовыходы HDMI / DP · Графический процессор Radeon RX 9070 XT · Объём видеопамяти 16 ГБ · Серия видеокарты Radeon RX</description>
+</offer>
+<offer id="IS4D98798D13" available="true">
+<url>https://b2b.isoft-shop.kz/videokarty/tproduct/476383167514-videokarta-pny-nvidia-rtx-pro-4000-black</url>
+<price>1917000</price>
+<currencyId>KZT</currencyId>
+<categoryId>784666503994</categoryId>
+<picture>https://static.tildacdn.com/tila6663-3565-4636-b930-316263396261/IS4D98798D13_1.png</picture>
+<name>Видеокарта PNY NVIDIA RTX PRO 4000 Blackwell OEM Version, PCI-Express x16 Gen 5.0 PNY PNY NVIDIA RTX PRO 4000 BLACKWELL OEM VERSION, PCI-EXPRESS X16 GEN 5.0, 24 GB GDDR7 ECC 192-BIT, 672 GB/S, 140W, FMHL SINGLE SLOT (11,2CM H X 24,1CM L), 4X DP 2.1B</name>
+<vendor>PNY</vendor>
+<vendorCode>IS4D98798D13</vendorCode>
+<description>Видеовыходы DP x 4 · Объём видеопамяти 24 ГБ · Разрядность шины 192 бит · Тип видеопамяти GDDR7</description>
 </offer>
 <offer id="IS53352AA8D4" available="true">
 <url>https://b2b.isoft-shop.kz/videokarty/tproduct/333631414074-videokarta-pny-nvidia-rtx-4500-pro-black</url>
@@ -16555,7 +16566,7 @@
 <name>IP видеокамера Dahua DH-IPC-HDBW2241RP-ZS-27135</name>
 <vendor>Dahua</vendor>
 <vendorCode>ISCAE8C01A8C</vendorCode>
-<description>Тип устройства IP-камера · Разрешение камеры 2 МП · Тип корпуса Купольная</description>
+<description>Тип устройства IP-камера · Тип корпуса Купольная · Разрешение камеры 2 МП</description>
 </offer>
 <offer id="ISCC69D10D22" available="true">
 <url>https://b2b.isoft-shop.kz/videonablyudenie/tproduct/478120068264-tsilindricheskaya-videokamera-dahua-dh-h</url>
@@ -23389,6 +23400,17 @@
 <vendorCode>IS8BDC00A417</vendorCode>
 <description>Форм-фактор ATX · Цвет Чёрный · Тип устройства Корпус · Интерфейс USB 3.2 Gen 2 / Type-C · Материал Сталь, закаленное стекло, пластик · Макс. длина видеокарты 360 мм · Макс. высота кулера 168 мм</description>
 </offer>
+<offer id="IS8D278066FC" available="true">
+<url>https://b2b.isoft-shop.kz/korpusa-i-bloki-pitaniya/tproduct/346053264954-kompyuternii-korpus-deepcool-cg530u-4f-b</url>
+<price>49000</price>
+<currencyId>KZT</currencyId>
+<categoryId>976729823024</categoryId>
+<picture>https://static.tildacdn.com/tila3061-3932-4034-a463-396537386561/IS8D278066FC_1.jpg</picture>
+<name>Компьютерный корпус Deepcool CG530U 4F без Б/П R-CG530U-BKAGA4-G</name>
+<vendor>Deepcool</vendor>
+<vendorCode>IS8D278066FC</vendorCode>
+<description>Тип устройства Корпус</description>
+</offer>
 <offer id="IS8D2914005A" available="true">
 <url>https://b2b.isoft-shop.kz/korpusa-i-bloki-pitaniya/tproduct/654183074054-kompyuternii-korpus-deepcool-cl6600-wh-b</url>
 <price>108000</price>
@@ -24323,6 +24345,17 @@
 <vendor>Formula V</vendor>
 <vendorCode>ISD4AB56F122</vendorCode>
 <description>Форм-фактор E-ATX · Цвет Чёрный · Макс. длина видеокарты 420 мм · Макс. высота кулера 182 мм · Тип устройства Корпус · Гарантия 1 год</description>
+</offer>
+<offer id="ISD7435017F6" available="true">
+<url>https://b2b.isoft-shop.kz/korpusa-i-bloki-pitaniya/tproduct/250130764774-kompyuternii-korpus-havn-hs-420-bk-bez-b</url>
+<price>117000</price>
+<currencyId>KZT</currencyId>
+<categoryId>976729823024</categoryId>
+<picture>https://static.tildacdn.com/tila3830-3032-4335-a539-336366373861/ISD7435017F6_1.jpg</picture>
+<name>Компьютерный корпус HAVN HS 420 BK без Б/П HVN-CA-HS420-06</name>
+<vendor>HAVN</vendor>
+<vendorCode>ISD7435017F6</vendorCode>
+<description>Тип устройства Корпус</description>
 </offer>
 <offer id="ISD793800178" available="true">
 <url>https://b2b.isoft-shop.kz/korpusa-i-bloki-pitaniya/tproduct/409003044784-kompyuternii-korpus-thermaltake-the-towe</url>
@@ -29063,7 +29096,7 @@
 <name>Материнская плата ASUS PRIME B850M-F WIFI, Socket AM5, mATX, AMD B850 (HDMI), 2DDR5, PCIx16</name>
 <vendor>ASUS</vendor>
 <vendorCode>IS00480111A5</vendorCode>
-<description>Тип памяти DDR5 · Форм-фактор Micro-ATX · Сокет AM5 · Чипсет B850 · Слотов памяти 2</description>
+<description>Слотов памяти 2 · Сокет AM5 · Тип памяти DDR5 · Форм-фактор Micro-ATX · Чипсет B850</description>
 </offer>
 <offer id="IS01997C5439" available="true">
 <url>https://b2b.isoft-shop.kz/materinskie-platy/tproduct/381267410534-materinskaya-plata-gigabyte-a520m-s2h</url>
@@ -29580,7 +29613,7 @@
 <name>Материнская плата Gigabyte Z890 AORUS PRO ICE</name>
 <vendor>Gigabyte</vendor>
 <vendorCode>IS2DFE3076E3</vendorCode>
-<description>Тип памяти DDR5 · Форм-фактор ATX · Сокет LGA1851 · Интерфейс SATA / PCI-E 3.0 / PCI-E 4.0 / PCI-E 5.0 · Чипсет Z890 · Видеовыходы HDMI / USB Type-C Thunderbolt 4 x 2 · Слотов памяти 4 · Разъёмов M.2 5 · Разъёмов SATA 4</description>
+<description>Сокет LGA1851 · Тип памяти DDR5 · Чипсет Z890 · Форм-фактор ATX · Слотов памяти 4 · Разъёмов M.2 5 · Разъёмов SATA 4 · Интерфейс SATA / PCI-E 3.0 / PCI-E 4.0 / PCI-E 5.0 · Видеовыходы HDMI / USB Type-C Thunderbolt 4 x 2</description>
 </offer>
 <offer id="IS32D5F0C4EF" available="true">
 <url>https://b2b.isoft-shop.kz/materinskie-platy/tproduct/252656367364-materinskaya-plata-maxsun-challenger-b45</url>
@@ -31052,7 +31085,7 @@
 <name>Материнская плата ASUS ROG STRIX B850-A GAMING WIFI, Socket AM5, ATX, AMD B850 (DP/HDMI), 4DDR5, PCIx16</name>
 <vendor>ASUS</vendor>
 <vendorCode>ISABB4D2860B</vendorCode>
-<description>Тип памяти DDR5 · Форм-фактор ATX · Сокет AM5 · Чипсет B850 · Слотов памяти 4</description>
+<description>Слотов памяти 4 · Сокет AM5 · Тип памяти DDR5 · Форм-фактор ATX · Чипсет B850</description>
 </offer>
 <offer id="ISADCBBC8637" available="true">
 <url>https://b2b.isoft-shop.kz/materinskie-platy/tproduct/119444994834-materinskaya-plata-gigabyte-w790-ai-top</url>
@@ -40592,6 +40625,17 @@
 <vendorCode>IS7933C5FC71</vendorCode>
 <description>Тип устройства мышь · Подключение Беспроводное · Тип сенсора Оптический · Цвет Чёрный · Разрешение сенсора 12000 dpi · Кнопок 6 · Гарантия 1 год · Назначение Игровая · Материал Пластик, резина</description>
 </offer>
+<offer id="IS79446A39CF" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/517605755024-mish-magic-mouse-black-multi-touch-surfa</url>
+<price>76000</price>
+<currencyId>KZT</currencyId>
+<categoryId>816235379434</categoryId>
+<picture>https://static.tildacdn.com/tila3761-6239-4764-b231-613163623566/IS79446A39CF_1.png</picture>
+<name>Мышь Magic Mouse - Black Multi-Touch Surface, модель A3204 APPLE MAGIC MOUSE - BLACK MULTI-TOUCH SURFACE, MODEL A3204</name>
+<vendor>APPLE</vendor>
+<vendorCode>IS79446A39CF</vendorCode>
+<description>Тип устройства мышь · Цвет Чёрный</description>
+</offer>
 <offer id="IS79A2918722" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/789332247694-kompyuternaya-mish-razer-viper-v3-pro-rz</url>
 <price>100000</price>
@@ -40845,6 +40889,17 @@
 <vendor>HyperX</vendor>
 <vendorCode>IS84F161B963</vendorCode>
 <description>Цвет Белый · Тип устройства мышь · Гарантия 2 года · Кнопок 6 · Подключение Беспроводное · Тип сенсора Оптический · Назначение Игровая · Разрешение сенсора 32000 dpi · Подсветка RGB</description>
+</offer>
+<offer id="IS850216BB6E" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/959366040354-mish-logitech-lift-bluetooth-vertical-er</url>
+<price>57000</price>
+<currencyId>KZT</currencyId>
+<categoryId>816235379434</categoryId>
+<picture>https://static.tildacdn.com/tila3038-6162-4261-b132-346632636162/IS850216BB6E_1.jpg</picture>
+<name>Мышь LOGITECH Lift Bluetooth Vertical Ergonomic Mouse - OFF-WHITE/PALE GREY</name>
+<vendor>Logitech</vendor>
+<vendorCode>IS850216BB6E</vendorCode>
+<description>Подключение Беспроводное · Тип устройства мышь · Цвет Белый</description>
 </offer>
 <offer id="IS859ED80250" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/177606434204-mish-xiaomi-wireless-mouse-comfort-editi</url>
@@ -53104,6 +53159,17 @@
 <vendor>1STPLAYER</vendor>
 <vendorCode>IS63BCE3C879</vendorCode>
 <description>Форм-фактор 360 мм · Уровень шума 32,9 дБА · Подсветка ARGB · Интерфейс 4-pin PWM · Скорость вращения 800–2000 об/мин · Тип устройства Водяное охлаждение (СЖО) · Воздушный поток 71,1 CFM · Тип подшипника Гидродинамический · Сокет 1851 / 1700 / 1200 / 1151 / 2066 / 2011 / 1366 / AM5 / AM4 · TDP 300 Вт</description>
+</offer>
+<offer id="IS643F5AE9B6" available="true">
+<url>https://b2b.isoft-shop.kz/ohlazhdenie/tproduct/101680197144-kuler-s-vodyanim-ohlazhdeniem-deepcool-l</url>
+<price>69000</price>
+<currencyId>KZT</currencyId>
+<categoryId>831063569394</categoryId>
+<picture>https://static.tildacdn.com/tila3365-3638-4365-a531-613238653766/IS643F5AE9B6_1.jpg</picture>
+<name>Кулер с водяным охлаждением Deepcool LQ360 ULTRA ARGB WH R-LQ360-WHASMC-G-1</name>
+<vendor>Deepcool</vendor>
+<vendorCode>IS643F5AE9B6</vendorCode>
+<description>Подсветка ARGB · Тип устройства Водяное охлаждение (СЖО) · Форм-фактор 360 мм</description>
 </offer>
 <offer id="IS64F85B3EE2" available="true">
 <url>https://b2b.isoft-shop.kz/ohlazhdenie/tproduct/986943105974-ohlazhdenie-water-cooler-gigabyte-aorus</url>
@@ -67925,7 +67991,7 @@
 <name>Системный блок Pulser Core i5-12400, 2.5 ГГц, H610, 16 ГБ ОЗУ, SSD 1 ТБ, без DVD, БП 400 Вт</name>
 <vendor>Pulser</vendor>
 <vendorCode>IS06AB8BE0D3</vendorCode>
-<description>Ёмкость 1 ТБ · Оперативная память 16 ГБ · Блок питания 400 Вт</description>
+<description>Блок питания 400 Вт · Ёмкость 1 ТБ · Оперативная память 16 ГБ</description>
 </offer>
 <offer id="IS087EEDC1BA" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/873834693614-sistemnii-blok-pulser-core-i3-12100-33-g</url>

@@ -4796,7 +4796,7 @@
 <item>
 <g:id>IS4FEEA080A1</g:id>
 <title>Блок питания 1STPLAYER NGDP 1300W White Platinum NGDP-PLT-1300-WH-EU</title>
-<description>Форм-фактор ATX · Мощность 1300 Вт · Сертификат эффективности 80+ Platinum · Модульность Модульный · Цвет Белый · Версия ATX ATX 3.0 · Гарантия 10 лет · Класс мощности 1000–1300 Вт</description>
+<description>Сертификат эффективности 80+ Platinum · Мощность 1300 Вт · Класс мощности 1000–1300 Вт · Форм-фактор ATX · Цвет Белый · Гарантия 10 лет · Версия ATX ATX 3.0 · Модульность Модульный</description>
 <link>https://b2b.isoft-shop.kz/bloki-pitaniya/tproduct/230719027794-blok-pitaniya-1stplayer-ngdp-1300w-white</link>
 <g:image_link>https://static.tildacdn.com/stor3464-3865-4061-a138-633334313963/e8ab233996328a013b890f6d6de40e1c.jpg</g:image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild6164-3330-4837-b036-363466376662/230719027794_1.jpg</g:additional_image_link>
@@ -7753,6 +7753,20 @@
 <g:availability>in_stock</g:availability>
 <g:price>654000 KZT</g:price>
 <g:brand>SAPPHIRE</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:google_product_category>Electronics &gt; Electronics Accessories &gt; Computer Components &gt; Video Cards &amp; Adapters</g:google_product_category>
+<g:product_type>Видеокарты</g:product_type>
+</item>
+<item>
+<g:id>IS4D98798D13</g:id>
+<title>Видеокарта PNY NVIDIA RTX PRO 4000 Blackwell OEM Version, PCI-Express x16 Gen 5.0 PNY PNY NVIDIA RTX PRO 4000 BLACKWELL OEM VERSION, PCI-EXPRESS X16 G</title>
+<description>Видеовыходы DP x 4 · Объём видеопамяти 24 ГБ · Разрядность шины 192 бит · Тип видеопамяти GDDR7</description>
+<link>https://b2b.isoft-shop.kz/videokarty/tproduct/476383167514-videokarta-pny-nvidia-rtx-pro-4000-black</link>
+<g:image_link>https://static.tildacdn.com/tila6663-3565-4636-b930-316263396261/IS4D98798D13_1.png</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>1917000 KZT</g:price>
+<g:brand>PNY</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
 <g:google_product_category>Electronics &gt; Electronics Accessories &gt; Computer Components &gt; Video Cards &amp; Adapters</g:google_product_category>
@@ -19554,7 +19568,7 @@
 <item>
 <g:id>ISCAE8C01A8C</g:id>
 <title>IP видеокамера Dahua DH-IPC-HDBW2241RP-ZS-27135</title>
-<description>Тип устройства IP-камера · Разрешение камеры 2 МП · Тип корпуса Купольная</description>
+<description>Тип устройства IP-камера · Тип корпуса Купольная · Разрешение камеры 2 МП</description>
 <link>https://b2b.isoft-shop.kz/videonablyudenie/tproduct/467206477244-ip-videokamera-dahua-dh-ipc-hdbw2241rp-z</link>
 <g:image_link>https://static.tildacdn.com/stor3036-6362-4537-b134-623061653933/5a53aebb4e3efdd543ca2cb479674418.jpg</g:image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild3332-6264-4363-a163-383164383263/467206477244_1.jpg</g:additional_image_link>
@@ -27919,6 +27933,19 @@
 <g:product_type>Корпуса</g:product_type>
 </item>
 <item>
+<g:id>IS8D278066FC</g:id>
+<title>Компьютерный корпус Deepcool CG530U 4F без Б/П R-CG530U-BKAGA4-G</title>
+<description>Тип устройства Корпус</description>
+<link>https://b2b.isoft-shop.kz/korpusa-i-bloki-pitaniya/tproduct/346053264954-kompyuternii-korpus-deepcool-cg530u-4f-b</link>
+<g:image_link>https://static.tildacdn.com/tila3061-3932-4034-a463-396537386561/IS8D278066FC_1.jpg</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>49000 KZT</g:price>
+<g:brand>Deepcool</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:product_type>Корпуса</g:product_type>
+</item>
+<item>
 <g:id>IS8D2914005A</g:id>
 <title>Компьютерный корпус Deepcool CL6600 WH без Б/П R-CL6600-WHNNA0-G</title>
 <description>Форм-фактор ATX · Цвет Белый · Макс. длина видеокарты 413 мм · Макс. высота кулера 175 мм · Тип устройства Корпус · Гарантия 1 год · Интерфейс Type-C</description>
@@ -28997,6 +29024,19 @@
 <g:availability>in_stock</g:availability>
 <g:price>38000 KZT</g:price>
 <g:brand>Formula V</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:product_type>Корпуса</g:product_type>
+</item>
+<item>
+<g:id>ISD7435017F6</g:id>
+<title>Компьютерный корпус HAVN HS 420 BK без Б/П HVN-CA-HS420-06</title>
+<description>Тип устройства Корпус</description>
+<link>https://b2b.isoft-shop.kz/korpusa-i-bloki-pitaniya/tproduct/250130764774-kompyuternii-korpus-havn-hs-420-bk-bez-b</link>
+<g:image_link>https://static.tildacdn.com/tila3830-3032-4335-a539-336366373861/ISD7435017F6_1.jpg</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>117000 KZT</g:price>
+<g:brand>HAVN</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
 <g:product_type>Корпуса</g:product_type>
@@ -34702,7 +34742,7 @@
 <item>
 <g:id>IS00480111A5</g:id>
 <title>Материнская плата ASUS PRIME B850M-F WIFI, Socket AM5, mATX, AMD B850 (HDMI), 2DDR5, PCIx16</title>
-<description>Тип памяти DDR5 · Форм-фактор Micro-ATX · Сокет AM5 · Чипсет B850 · Слотов памяти 2</description>
+<description>Слотов памяти 2 · Сокет AM5 · Тип памяти DDR5 · Форм-фактор Micro-ATX · Чипсет B850</description>
 <link>https://b2b.isoft-shop.kz/materinskie-platy/tproduct/278103470974-materinskaya-plata-asus-prime-b850m-f-wi</link>
 <g:image_link>https://static.tildacdn.com/tila6437-3138-4639-b430-363563383839/278103470974_1.jpg</g:image_link>
 <g:additional_image_link>https://static.tildacdn.com/tila3739-6539-4432-b434-633334306236/278103470974_2.jpg</g:additional_image_link>
@@ -35303,7 +35343,7 @@
 <item>
 <g:id>IS2DFE3076E3</g:id>
 <title>Материнская плата Gigabyte Z890 AORUS PRO ICE</title>
-<description>Тип памяти DDR5 · Форм-фактор ATX · Сокет LGA1851 · Интерфейс SATA / PCI-E 3.0 / PCI-E 4.0 / PCI-E 5.0 · Чипсет Z890 · Видеовыходы HDMI / USB Type-C Thunderbolt 4 x 2 · Слотов памяти 4 · Разъёмов M.2 5 · Разъёмов SATA 4</description>
+<description>Сокет LGA1851 · Тип памяти DDR5 · Чипсет Z890 · Форм-фактор ATX · Слотов памяти 4 · Разъёмов M.2 5 · Разъёмов SATA 4 · Интерфейс SATA / PCI-E 3.0 / PCI-E 4.0 / PCI-E 5.0 · Видеовыходы HDMI / USB Type-C Thunderbolt 4 x 2</description>
 <link>https://b2b.isoft-shop.kz/materinskie-platy/tproduct/616763193344-materinskaya-plata-gigabyte-z890-aorus-p</link>
 <g:image_link>https://static.tildacdn.com/stor6262-3035-4531-b132-323764393862/38a2dfabf076d65a39a9e97fd44e1f4f.jpg</g:image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild6536-6138-4532-b066-393534623432/616763193344.jpg</g:additional_image_link>
@@ -37001,7 +37041,7 @@
 <item>
 <g:id>ISABB4D2860B</g:id>
 <title>Материнская плата ASUS ROG STRIX B850-A GAMING WIFI, Socket AM5, ATX, AMD B850 (DP/HDMI), 4DDR5, PCIx16</title>
-<description>Тип памяти DDR5 · Форм-фактор ATX · Сокет AM5 · Чипсет B850 · Слотов памяти 4</description>
+<description>Слотов памяти 4 · Сокет AM5 · Тип памяти DDR5 · Форм-фактор ATX · Чипсет B850</description>
 <link>https://b2b.isoft-shop.kz/materinskie-platy/tproduct/309299779484-materinskaya-plata-asus-rog-strix-b850-a</link>
 <g:image_link>https://static.tildacdn.com/tila6638-6331-4565-b536-646362363431/309299779484_1.jpg</g:image_link>
 <g:additional_image_link>https://static.tildacdn.com/tila3034-3932-4164-b735-363665633937/309299779484_2.jpg</g:additional_image_link>
@@ -48708,6 +48748,20 @@
 <g:product_type>Мыши</g:product_type>
 </item>
 <item>
+<g:id>IS79446A39CF</g:id>
+<title>Мышь Magic Mouse - Black Multi-Touch Surface, модель A3204 APPLE MAGIC MOUSE - BLACK MULTI-TOUCH SURFACE, MODEL A3204</title>
+<description>Тип устройства мышь · Цвет Чёрный</description>
+<link>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/517605755024-mish-magic-mouse-black-multi-touch-surfa</link>
+<g:image_link>https://static.tildacdn.com/tila3761-6239-4764-b231-613163623566/IS79446A39CF_1.png</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>76000 KZT</g:price>
+<g:brand>APPLE</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:google_product_category>Electronics &gt; Electronics Accessories &gt; Computer Components &gt; Input Devices &gt; Mice &amp; Trackballs</g:google_product_category>
+<g:product_type>Мыши</g:product_type>
+</item>
+<item>
 <g:id>IS79A2918722</g:id>
 <title>Компьютерная мышь Razer Viper V3 Pro RZ01-05120100-R3G1</title>
 <description>Тип устройства мышь · Цвет Чёрный · Гарантия 2 года · Подключение Проводное · Тип сенсора Оптический · Разрешение сенсора 16000 dpi · Кнопок 8 · Назначение Игровая</description>
@@ -49016,6 +49070,20 @@
 <g:availability>in_stock</g:availability>
 <g:price>79000 KZT</g:price>
 <g:brand>HyperX</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:google_product_category>Electronics &gt; Electronics Accessories &gt; Computer Components &gt; Input Devices &gt; Mice &amp; Trackballs</g:google_product_category>
+<g:product_type>Мыши</g:product_type>
+</item>
+<item>
+<g:id>IS850216BB6E</g:id>
+<title>Мышь LOGITECH Lift Bluetooth Vertical Ergonomic Mouse - OFF-WHITE/PALE GREY</title>
+<description>Подключение Беспроводное · Тип устройства мышь · Цвет Белый</description>
+<link>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/959366040354-mish-logitech-lift-bluetooth-vertical-er</link>
+<g:image_link>https://static.tildacdn.com/tila3038-6162-4261-b132-346632636162/IS850216BB6E_1.jpg</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>57000 KZT</g:price>
+<g:brand>Logitech</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
 <g:google_product_category>Electronics &gt; Electronics Accessories &gt; Computer Components &gt; Input Devices &gt; Mice &amp; Trackballs</g:google_product_category>
@@ -63906,6 +63974,19 @@
 <g:availability>in_stock</g:availability>
 <g:price>46000 KZT</g:price>
 <g:brand>1STPLAYER</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:product_type>Охлаждение</g:product_type>
+</item>
+<item>
+<g:id>IS643F5AE9B6</g:id>
+<title>Кулер с водяным охлаждением Deepcool LQ360 ULTRA ARGB WH R-LQ360-WHASMC-G-1</title>
+<description>Подсветка ARGB · Тип устройства Водяное охлаждение (СЖО) · Форм-фактор 360 мм</description>
+<link>https://b2b.isoft-shop.kz/ohlazhdenie/tproduct/101680197144-kuler-s-vodyanim-ohlazhdeniem-deepcool-l</link>
+<g:image_link>https://static.tildacdn.com/tila3365-3638-4365-a531-613238653766/IS643F5AE9B6_1.jpg</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>69000 KZT</g:price>
+<g:brand>Deepcool</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
 <g:product_type>Охлаждение</g:product_type>
@@ -81255,7 +81336,7 @@
 <item>
 <g:id>IS06AB8BE0D3</g:id>
 <title>Системный блок Pulser Core i5-12400, 2.5 ГГц, H610, 16 ГБ ОЗУ, SSD 1 ТБ, без DVD, БП 400 Вт</title>
-<description>Ёмкость 1 ТБ · Оперативная память 16 ГБ · Блок питания 400 Вт</description>
+<description>Блок питания 400 Вт · Ёмкость 1 ТБ · Оперативная память 16 ГБ</description>
 <link>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/761826515844-sistemnii-blok-pulser-core-i5-12400-25-g</link>
 <g:image_link>https://static.tildacdn.com/tila3266-3430-4532-a531-616132643263/761826515844_1.jpg</g:image_link>
 <g:availability>in_stock</g:availability>

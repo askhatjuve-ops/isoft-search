@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<yml_catalog date="2026-11-17 06:52">
+<yml_catalog date="2026-11-17 20:52">
 <shop>
 <name>iSoft</name>
 <company>iSoft</company>
@@ -798,6 +798,17 @@
 <vendorCode>IS1A451E8F24</vendorCode>
 <description>Ёмкость 3,84 ТБ · Интерфейс SATA · Скорость чтения 560 МБ/с · Скорость записи 530 МБ/с</description>
 </offer>
+<offer id="IS1B4FB8A0A2" available="true">
+<url>https://b2b.isoft-shop.kz/ssd-nakopiteli/tproduct/972567967774-samsung-pm863a-480gb-enterprise-ssd-25-i</url>
+<price>264000</price>
+<currencyId>KZT</currencyId>
+<categoryId>615429773604</categoryId>
+<picture>https://static.tildacdn.com/tila6233-3939-4936-a433-333932306363/IS1B4FB8A0A2_1.jpg</picture>
+<name>SAMSUNG PM863a 480GB Enterprise SSD, 2.5-inch 7mm, SATA 6 Gb/s, Read/Write: 520/470 MB/s, Random Read/Write IOPS 99K/18K</name>
+<vendor>Samsung</vendor>
+<vendorCode>IS1B4FB8A0A2</vendorCode>
+<description>Форм-фактор 2.5″ · Ёмкость 480 ГБ · Интерфейс SATA III · Скорость чтения 520 МБ/с · Скорость записи 470 МБ/с</description>
+</offer>
 <offer id="IS1CFC0B9258" available="true">
 <url>https://b2b.isoft-shop.kz/ssd-nakopiteli/tproduct/341344918244-tverdotelnii-nakopitel-ssd-m2-2280-512gb</url>
 <price>68000</price>
@@ -848,6 +859,17 @@
 <vendor>Kingston</vendor>
 <vendorCode>IS2434758C29</vendorCode>
 <description>Ёмкость 2 ТБ · Форм-фактор M.2 2230 · Интерфейс PCI-E 4.0 · Скорость чтения 6000 МБ/с · Скорость записи 5000 МБ/с</description>
+</offer>
+<offer id="IS2703189303" available="true">
+<url>https://b2b.isoft-shop.kz/ssd-nakopiteli/tproduct/238645097554-netac-sa500-25-sataiii-3d-nand-ssd-256gb</url>
+<price>25000</price>
+<currencyId>KZT</currencyId>
+<categoryId>615429773604</categoryId>
+<picture>https://static.tildacdn.com/tila3932-3730-4563-a234-326234383735/ISF58935BCE5_1.jpg</picture>
+<name>NETAC SA500 2.5 SATAIII 3D NAND SSD 256GB, R/W up to 520/450MB/s</name>
+<vendor>NETAC</vendor>
+<vendorCode>IS2703189303</vendorCode>
+<description>Интерфейс SATA III · Ёмкость 256 ГБ · Скорость записи 450 МБ/с · Скорость чтения 520 МБ/с · Форм-фактор 2.5″</description>
 </offer>
 <offer id="IS288B24D04C" available="true">
 <url>https://b2b.isoft-shop.kz/ssd-nakopiteli/tproduct/278140035314-ssd-ssd-nakopitel-m2-pcie-512-gb-hiksemi</url>
@@ -906,6 +928,17 @@
 <vendor>HPE</vendor>
 <vendorCode>IS2D4141F0A4</vendorCode>
 <description>Ёмкость 960 ГБ · Интерфейс SAS</description>
+</offer>
+<offer id="IS2DE7BF7B22" available="true">
+<url>https://b2b.isoft-shop.kz/ssd-nakopiteli/tproduct/170286102724-netac-sa500-25-sataiii-3d-nand-ssd-1tb-r</url>
+<price>74000</price>
+<currencyId>KZT</currencyId>
+<categoryId>615429773604</categoryId>
+<picture>https://static.tildacdn.com/tila3833-6330-4334-a638-633030313964/ISDD471E5CC3_1.jpg</picture>
+<name>NETAC SA500 2.5 SATAIII 3D NAND SSD 1TB, R/W up to 530/475MB/s</name>
+<vendor>NETAC</vendor>
+<vendorCode>IS2DE7BF7B22</vendorCode>
+<description>Интерфейс SATA III · Ёмкость 1 ТБ · Скорость записи 475 МБ/с · Скорость чтения 530 МБ/с · Форм-фактор 2.5″</description>
 </offer>
 <offer id="IS2E67720561" available="true">
 <url>https://b2b.isoft-shop.kz/ssd-nakopiteli/tproduct/956980708494-tverdotelnii-nakopitel-teamgroup-g50-tm8</url>
@@ -1291,6 +1324,17 @@
 <vendorCode>IS68A7FC5DA2</vendorCode>
 <description>Ёмкость 1 ТБ · Интерфейс PCIe 5.0 · Скорость чтения 14800 МБ/с · Скорость записи 14000 МБ/с · Форм-фактор M.2</description>
 </offer>
+<offer id="IS6AA147292A" available="true">
+<url>https://b2b.isoft-shop.kz/ssd-nakopiteli/tproduct/343364635734-intel-ssd-d3-s4520-series-384tb-25in-sat</url>
+<price>1345000</price>
+<currencyId>KZT</currencyId>
+<categoryId>615429773604</categoryId>
+<picture>https://static.tildacdn.com/tila6663-6162-4233-a531-386335643231/IS6AA147292A_1.png</picture>
+<name>INTEL SSD D3-S4520 Series (3.84TB, 2.5in SATA 6Gb/s, 3D4, TLC) Generic Single Pack, MM# 99A0D6, EAN: 735858482691</name>
+<vendor>Intel</vendor>
+<vendorCode>IS6AA147292A</vendorCode>
+<description>Интерфейс SATA III · Ёмкость 3.84 ТБ · Форм-фактор 2.5″</description>
+</offer>
 <offer id="IS6B4BEF71DA" available="true">
 <url>https://b2b.isoft-shop.kz/ssd-nakopiteli/tproduct/321149298734-ssd-ssd-nakopitel-patriot-p300-512gb-m2</url>
 <price>56000</price>
@@ -1556,6 +1600,17 @@
 <vendorCode>IS8FCB981B42</vendorCode>
 <description>Ёмкость 1 ТБ · Форм-фактор M.2 · Интерфейс PCIE 4.0 X4 · Скорость чтения 7450 МБ/с · Скорость записи 6900 МБ/с</description>
 </offer>
+<offer id="IS9212FF48FA" available="true">
+<url>https://b2b.isoft-shop.kz/ssd-nakopiteli/tproduct/555086152004-intel-ssd-d3-s4610-series-240gb-25in-sat</url>
+<price>176000</price>
+<currencyId>KZT</currencyId>
+<categoryId>615429773604</categoryId>
+<picture>https://static.tildacdn.com/tila6663-6162-4233-a531-386335643231/IS6AA147292A_1.png</picture>
+<name>INTEL SSD D3-S4610 Series (240GB, 2.5in SATA 6Gb/s, 3D2, TLC) Generic Single Pack, MM# 963345, EAN: 735858362160</name>
+<vendor>Intel</vendor>
+<vendorCode>IS9212FF48FA</vendorCode>
+<description>Форм-фактор 2.5″ · Ёмкость 240 ГБ · Интерфейс SATA III</description>
+</offer>
 <offer id="IS937BD7762D" available="true">
 <url>https://b2b.isoft-shop.kz/ssd-nakopiteli/tproduct/168999806674-ssd-nakopitel-netac-nt01n600s-002t-s3x-2</url>
 <price>136000</price>
@@ -1718,6 +1773,17 @@
 <vendorCode>ISA9A1E37F5E</vendorCode>
 <description>SANDISK Fortnite portable SSD, Peely Edition,4x6 (SANDISK)</description>
 </offer>
+<offer id="ISAAD07C05F7" available="true">
+<url>https://b2b.isoft-shop.kz/ssd-nakopiteli/tproduct/261140559104-netac-nv3000-pcie-3-x4-m2-2280-nvme-3d-n</url>
+<price>31000</price>
+<currencyId>KZT</currencyId>
+<categoryId>615429773604</categoryId>
+<picture>https://static.tildacdn.com/tila6433-3161-4431-a636-393937363837/ISAAE48C3877_1.png</picture>
+<name>NETAC NV3000 PCIe 3 x4 M.2 2280 NVMe 3D NAND SSD 250GB, R/W up to 3000/1400MB/s, with heat sink</name>
+<vendor>NETAC</vendor>
+<vendorCode>ISAAD07C05F7</vendorCode>
+<description>Интерфейс NVME · Ёмкость 250 ГБ · Скорость записи 1400 МБ/с · Скорость чтения 3000 МБ/с · Форм-фактор M.2 2280</description>
+</offer>
 <offer id="ISAAE48C3877" available="true">
 <url>https://b2b.isoft-shop.kz/ssd-nakopiteli/tproduct/915110918974-netac-nv3000-pcie-3-x4-m2-2280-nvme-3d-n</url>
 <price>59000</price>
@@ -1754,6 +1820,17 @@
 <vendor>Kingston</vendor>
 <vendorCode>ISAD9B1B3EE5</vendorCode>
 <description>Ёмкость 1 ТБ · Скорость чтения 1050 МБ/с · Скорость записи 1000 МБ/с · Интерфейс Type-C</description>
+</offer>
+<offer id="ISB36E1A8D1F" available="true">
+<url>https://b2b.isoft-shop.kz/ssd-nakopiteli/tproduct/462821091164-netac-sa500-25-sataiii-3d-nand-ssd-128gb</url>
+<price>16000</price>
+<currencyId>KZT</currencyId>
+<categoryId>615429773604</categoryId>
+<picture>https://static.tildacdn.com/tila3932-3730-4563-a234-326234383735/ISF58935BCE5_1.jpg</picture>
+<name>NETAC SA500 2.5 SATAIII 3D NAND SSD 128GB, R/W up to 500/400MB/s</name>
+<vendor>NETAC</vendor>
+<vendorCode>ISB36E1A8D1F</vendorCode>
+<description>Интерфейс SATA III · Ёмкость 128 ГБ · Скорость записи 400 МБ/с · Скорость чтения 500 МБ/с · Форм-фактор 2.5″</description>
 </offer>
 <offer id="ISB7F1B59CDC" available="true">
 <url>https://b2b.isoft-shop.kz/ssd-nakopiteli/tproduct/950205348654-vneshnii-ssd-disk-kingston-512gb-dual-po</url>
@@ -1803,6 +1880,17 @@
 <vendorCode>ISBFE1E74662</vendorCode>
 <description>Интерфейс NVME · Форм-фактор M.2 2230</description>
 </offer>
+<offer id="ISC167A34E38" available="true">
+<url>https://b2b.isoft-shop.kz/ssd-nakopiteli/tproduct/745255698274-samsung-pm1653-768tb-enterprise-ssd-25-i</url>
+<price>2514000</price>
+<currencyId>KZT</currencyId>
+<categoryId>615429773604</categoryId>
+<picture>https://static.tildacdn.com/tild6430-3139-4234-a663-323035643261/ISC167A34E38_1.png</picture>
+<name>SAMSUNG PM1653 7.68TB Enterprise SSD, 2.5-inch, SAS 24Gb/s, TLC</name>
+<vendor>Samsung</vendor>
+<vendorCode>ISC167A34E38</vendorCode>
+<description>Форм-фактор 2.5″ · Ёмкость 7.68 ТБ · Интерфейс SAS</description>
+</offer>
 <offer id="ISC35B908F24" available="true">
 <url>https://b2b.isoft-shop.kz/ssd-nakopiteli/tproduct/811646820734-ssd-ssd-nakopitel-kingston-nv3-snv3s4000</url>
 <price>435000</price>
@@ -1851,6 +1939,17 @@
 <vendor>NETAC</vendor>
 <vendorCode>NT01N600S-001T-S3X</vendorCode>
 <description>SSD-накопитель NETAC NT01N600S-001T-S3X: Ёмкость 1000 ГБ. Цена с НДС, безналичный расчёт для организаций.</description>
+</offer>
+<offer id="ISD2B834F839" available="true">
+<url>https://b2b.isoft-shop.kz/ssd-nakopiteli/tproduct/766604350404-netac-z-slim-black-usb-32-gen-2-type-c-e</url>
+<price>30000</price>
+<currencyId>KZT</currencyId>
+<categoryId>615429773604</categoryId>
+<picture>https://static.tildacdn.com/tila6464-3262-4437-a239-636536333033/ISD2B834F839_1.png</picture>
+<name>NETAC Z SLIM Black USB 3.2 Gen 2 Type-C External SSD 250GB, R/W UP TO 550MB/480MB/S, WITH USB-C TO USB-A CABLE AND USB-A TO USB-C ADAPTER</name>
+<vendor>NETAC</vendor>
+<vendorCode>ISD2B834F839</vendorCode>
+<description>Ёмкость 250 ГБ · Интерфейс USB 3.2</description>
 </offer>
 <offer id="ISD3F0F7FDAC" available="true">
 <url>https://b2b.isoft-shop.kz/ssd-nakopiteli/tproduct/337965640774-ssd-nakopitel-kingston-sa400s37960g-sata</url>
@@ -1909,6 +2008,17 @@
 <vendor>NETAC</vendor>
 <vendorCode>ISD749E3F713</vendorCode>
 <description>Ёмкость 512 ГБ · Интерфейс NVME · Скорость записи 1950 МБ/с · Скорость чтения 2500 МБ/с · Форм-фактор M.2 2280</description>
+</offer>
+<offer id="ISD81971F975" available="true">
+<url>https://b2b.isoft-shop.kz/ssd-nakopiteli/tproduct/963230690464-samsung-pm983-960gb-data-center-ssd-25-i</url>
+<price>410000</price>
+<currencyId>KZT</currencyId>
+<categoryId>615429773604</categoryId>
+<picture>https://static.tildacdn.com/tila6561-6264-4233-b530-653734323066/ISD81971F975_1.jpg</picture>
+<name>SAMSUNG PM983 960GB Data Center SSD, 2.5-inch 7mm, PCIe Gen3 x4, Read/Write: 3200/1100 MB/s, Random Read/Write IOPS 400K/40K</name>
+<vendor>Samsung</vendor>
+<vendorCode>ISD81971F975</vendorCode>
+<description>Форм-фактор 2.5″ · Ёмкость 960 ГБ · Интерфейс PCIe Gen3 x4 · Скорость чтения 3200 МБ/с · Скорость записи 1100 МБ/с</description>
 </offer>
 <offer id="ISD8905748AC" available="true">
 <url>https://b2b.isoft-shop.kz/ssd-nakopiteli/tproduct/722311944094-ssd-ssd-nakopitel-usb-2-tb-hiksemi-hs-es</url>
@@ -2065,6 +2175,17 @@
 <vendor>Apacer</vendor>
 <vendorCode>AP1TBAS2280Q4U-1</vendorCode>
 <description>Твердотельный накопитель SSD, Apacer, AS2280Q4U AP1TBAS2280Q4U-1, 1TB, M.2 PCIe Gen4 x4, 7400/7000 МБ/с</description>
+</offer>
+<offer id="ISE2451FEB55" available="true">
+<url>https://b2b.isoft-shop.kz/ssd-nakopiteli/tproduct/683954858494-intel-ssd-d3-s4610-series-768tb-25in-sat</url>
+<price>1871000</price>
+<currencyId>KZT</currencyId>
+<categoryId>615429773604</categoryId>
+<picture>https://static.tildacdn.com/tila6663-6162-4233-a531-386335643231/IS6AA147292A_1.png</picture>
+<name>INTEL SSD D3-S4610 Series (7.68TB, 2.5in SATA 6Gb/s, 3D2, TLC) Generic Single Pack, MM# 964303, EAN: 735858376709</name>
+<vendor>Intel</vendor>
+<vendorCode>ISE2451FEB55</vendorCode>
+<description>Форм-фактор 2.5″ · Ёмкость 7.68 ТБ · Интерфейс SATA III</description>
 </offer>
 <offer id="ISE65B2120ED" available="true">
 <url>https://b2b.isoft-shop.kz/ssd-nakopiteli/tproduct/949591289224-transcend-500gb-25-inch-ssd-sata3-3d-tlc</url>
@@ -2267,6 +2388,17 @@
 <vendor>Gigabyte</vendor>
 <vendorCode>ISFB89D6758D</vendorCode>
 <description>Ёмкость 480 ГБ · Интерфейс SATA III</description>
+</offer>
+<offer id="ISFBB093EEE9" available="true">
+<url>https://b2b.isoft-shop.kz/ssd-nakopiteli/tproduct/321544395754-netac-nv2000-pcie-3-x4-m2-2280-nvme-3d-n</url>
+<price>33000</price>
+<currencyId>KZT</currencyId>
+<categoryId>615429773604</categoryId>
+<picture>https://static.tildacdn.com/tila3561-3635-4436-a338-346331323664/ISFBB093EEE9_1.jpg</picture>
+<name>NETAC NV2000 PCIe 3 x4 M.2 2280 NVMe 3D NAND SSD 256GB, R/W up to 2500/1000MB/s</name>
+<vendor>NETAC</vendor>
+<vendorCode>ISFBB093EEE9</vendorCode>
+<description>Интерфейс NVME · Ёмкость 256 ГБ · Скорость записи 1000 МБ/с · Скорость чтения 2500 МБ/с · Форм-фактор M.2 2280</description>
 </offer>
 <offer id="ISFF865EC8FC" available="true">
 <url>https://b2b.isoft-shop.kz/ssd-nakopiteli/tproduct/340288665324-ssd-ssd-nakopitel-m2-pcie-1-tb-western-d</url>
@@ -2506,6 +2638,17 @@
 <vendor>Kingston</vendor>
 <vendorCode>IS6548CBA1BF</vendorCode>
 <description>Ёмкость 256 ГБ · Интерфейс USB 3.2 · Материал Металл, пластик · Цвет Серебристый</description>
+</offer>
+<offer id="IS7041430E8B" available="true">
+<url>https://b2b.isoft-shop.kz/fleshki-i-karty-pamyati/tproduct/429294697764-fleshka-netac-usb-drive-u197-usb20-64gb</url>
+<price>3400</price>
+<currencyId>KZT</currencyId>
+<categoryId>672013402974</categoryId>
+<picture>https://static.tildacdn.com/tila6635-3533-4766-a236-623135383935/IS7041430E8B_1.jpg</picture>
+<name>Флешка NETAC USB Drive U197 USB2.0 64GB, retail version</name>
+<vendor>NETAC</vendor>
+<vendorCode>IS7041430E8B</vendorCode>
+<description>Интерфейс USB 2.0 · Ёмкость 64 ГБ</description>
 </offer>
 <offer id="IS75CDCC1A95" available="true">
 <url>https://b2b.isoft-shop.kz/fleshki-i-karty-pamyati/tproduct/831933011834-usb-nakopitel-kingston-dtduo3cg3256gb-25</url>
@@ -3545,7 +3688,7 @@
 <name>Блок питания GamerStorm PN850M R-PN850M-FC0B-WGEU</name>
 <vendor>Gamerstorm</vendor>
 <vendorCode>IS2E4A76AD58</vendorCode>
-<description>Форм-фактор ATX · Мощность 850 Вт · Сертификат эффективности 80+ Gold · Модульность Модульный · Цвет Чёрный · Версия ATX ATX 3.1 · Гарантия 10 лет</description>
+<description>Гарантия 10 лет · Мощность 850 Вт · Форм-фактор ATX · Сертификат эффективности 80+ Gold · Версия ATX ATX 3.1 · Модульность Модульный · Цвет Чёрный</description>
 </offer>
 <offer id="IS2E887C92E4" available="true">
 <url>https://b2b.isoft-shop.kz/bloki-pitaniya/tproduct/701178094944-blok-pitaniya-aerocool-vx-plus-stealth-4</url>
@@ -6264,6 +6407,17 @@
 <vendorCode>IS01A1DD3C01</vendorCode>
 <description>Видеовыходы HDMI / DP x 3 · Графический процессор Radeon RX 7600 · Объём видеопамяти 8 ГБ · Разрядность шины 128 бит · Тип видеопамяти GDDR6 · Серия видеокарты Radeon RX</description>
 </offer>
+<offer id="IS02313A9D42" available="true">
+<url>https://b2b.isoft-shop.kz/videokarty/tproduct/821743953504-videokarta-xfx-swift-amd-radeon-rx-9070</url>
+<price>393000</price>
+<currencyId>KZT</currencyId>
+<categoryId>784666503994</categoryId>
+<picture>https://static.tildacdn.com/tila6330-3837-4361-a162-313835313036/IS02313A9D42_1.png</picture>
+<name>Видеокарта XFX Swift AMD Radeon RX 9070 GRE Triple 90mm Fan Gaming, 12GB GDDR6 192bit, 2790MHz / 18Gbps, HDMI 3xDP, AMD RDNA 4 XFX XFX SWIFT AMD RADEON RX 9070 GRE TRIPLE 90MM FAN GAMING, 12GB GDDR6 192BIT, 2790MHZ / 18GBPS, HDMI 3XDP, AMD RDNA 4,3 FAN, 2 SLOT</name>
+<vendor>XFX</vendor>
+<vendorCode>IS02313A9D42</vendorCode>
+<description>Объём видеопамяти 12 ГБ · Графический процессор RADEON RX 9070 GRE · Тип видеопамяти GDDR6 · Разрядность шины 192 бит · Видеовыходы HDMI / DP x 3 · Серия видеокарты Radeon RX</description>
+</offer>
 <offer id="IS05C27611F0" available="true">
 <url>https://b2b.isoft-shop.kz/videokarty/tproduct/732064149624-videokarta-afox-radeon-rx-580-gaming-8gb</url>
 <price>108000</price>
@@ -6353,6 +6507,17 @@
 <vendor>Palit</vendor>
 <vendorCode>IS136EF98750</vendorCode>
 <description>Объём видеопамяти 16 ГБ · Графический процессор RTX 5060Ti · Серия видеокарты GeForce RTX 5000 · Разрядность шины 128 бит · Видеовыходы HDMI / DP x 3 · Тип видеопамяти GDDR7</description>
+</offer>
+<offer id="IS16E678EAF3" available="true">
+<url>https://b2b.isoft-shop.kz/videokarty/tproduct/470360844314-videokarta-inno3d-nvidia-geforce-rtx-508</url>
+<price>1122000</price>
+<currencyId>KZT</currencyId>
+<categoryId>784666503994</categoryId>
+<picture>https://static.tildacdn.com/tila6233-3462-4231-b035-653830366636/IS16E678EAF3_1.png</picture>
+<name>Видеокарта INNO3D NVIDIA GEFORCE RTX 5080 X3 16GB GDDR7 256bit, 2617 MHz / 30Gbps, 3x DP, 1x HDMI, 3 fan, 2 slot</name>
+<vendor>INNO3D</vendor>
+<vendorCode>IS16E678EAF3</vendorCode>
+<description>Объём видеопамяти 16 ГБ · Графический процессор GEFORCE RTX 5080 · Тип видеопамяти GDDR7 · Разрядность шины 256 бит · Видеовыходы HDMI / DP x 3 · Серия видеокарты GeForce RTX 5000</description>
 </offer>
 <offer id="IS1BBA587377" available="true">
 <url>https://b2b.isoft-shop.kz/videokarty/tproduct/875020421444-videokarta-dell-nvidia-rtx-2000-ada-gene</url>
@@ -8783,6 +8948,17 @@
 <vendorCode>ISFD8CC2CB6E</vendorCode>
 <description>Тип устройства Монитор домофона · Диагональ 4,3″ · Напряжение питания 12 В · Рабочая температура от -10 до 50 °C</description>
 </offer>
+<offer id="IS0545854833" available="true">
+<url>https://b2b.isoft-shop.kz/zhestkie-diski/tproduct/738977170834-zhyostkii-disk-seagate-hdd-server-exos-x</url>
+<price>547000</price>
+<currencyId>KZT</currencyId>
+<categoryId>958449305144</categoryId>
+<picture>https://static.tildacdn.com/tila6239-3339-4736-b937-646630393066/IS8E207709DD_1.jpg</picture>
+<name>Жёсткий диск SEAGATE HDD Server Exos X24 HDD 512E/4KN (3.5-inch/ 16TB/ SATA 6Gb/s / 7200rpm) ISE</name>
+<vendor>SEAGATE</vendor>
+<vendorCode>IS0545854833</vendorCode>
+<description>Интерфейс SATA III · Скорость вращения 7200 об/мин</description>
+</offer>
 <offer id="IS0752CF75B1" available="true">
 <url>https://b2b.isoft-shop.kz/zhestkie-diski/tproduct/488511981984-zhyostkii-disk-dell-8tb-hard-drive-sata</url>
 <price>540000</price>
@@ -9074,6 +9250,17 @@
 <vendorCode>IS40FEE78DCD</vendorCode>
 <description>Ёмкость 8 ТБ · Интерфейс SATA · Скорость вращения 7200 об/мин · Форм-фактор 3.5″ · Класс ёмкости 5–8 ТБ</description>
 </offer>
+<offer id="IS4232A20F16" available="true">
+<url>https://b2b.isoft-shop.kz/zhestkie-diski/tproduct/229802488524-zhyostkii-disk-hdd-server-toshiba-mg10-2</url>
+<price>495000</price>
+<currencyId>KZT</currencyId>
+<categoryId>958449305144</categoryId>
+<picture>https://static.tildacdn.com/tild3233-3664-4134-b236-336666656338/IS4232A20F16_1.png</picture>
+<name>Жёсткий диск HDD Server TOSHIBA MG10 20TB MAMR 512e, 3.5-inch, 512MB, 7200RPM, SAS, SKU: HDEA00SGEA51F</name>
+<vendor>Toshiba</vendor>
+<vendorCode>IS4232A20F16</vendorCode>
+<description>Интерфейс SAS · Скорость вращения 7200 об/мин · Ёмкость 20 ТБ · Форм-фактор 3.5″ · Класс ёмкости от 14 ТБ</description>
+</offer>
 <offer id="IS4301A7C77C" available="true">
 <url>https://b2b.isoft-shop.kz/zhestkie-diski/tproduct/888332662144-zhyostkii-disk-seagate-skyhawk-st2000vx0</url>
 <price>98000</price>
@@ -9111,6 +9298,17 @@
 <vendorCode>IS4823B12C8C</vendorCode>
 <description>Форм-фактор 3.5″ · Интерфейс SATA III · Скорость вращения 7200 об/мин · Ёмкость 30 ТБ</description>
 </offer>
+<offer id="IS4A1A3403A9" available="true">
+<url>https://b2b.isoft-shop.kz/zhestkie-diski/tproduct/598138343344-zhyostkii-disk-seagate-hdd-server-exos-x</url>
+<price>770000</price>
+<currencyId>KZT</currencyId>
+<categoryId>958449305144</categoryId>
+<picture>https://static.tildacdn.com/tila6565-3535-4561-a131-666461636661/IS4A1A3403A9_1.jpg</picture>
+<name>Жёсткий диск SEAGATE HDD Server Exos X24 512E/4KN (3.5-inch/ 24TB/ SATA 6Gb/s / 7200rpm) ISE</name>
+<vendor>SEAGATE</vendor>
+<vendorCode>IS4A1A3403A9</vendorCode>
+<description>Интерфейс SATA III · Скорость вращения 7200 об/мин</description>
+</offer>
 <offer id="IS4B31B40BDD" available="true">
 <url>https://b2b.isoft-shop.kz/zhestkie-diski/tproduct/882123168494-vneshnii-zhyostkii-disk-apacer-1tb-25-in</url>
 <price>74000</price>
@@ -9146,6 +9344,17 @@
 <vendor>Apacer</vendor>
 <vendorCode>IS517FD34D9D</vendorCode>
 <description>Ёмкость 2 ТБ · Интерфейс USB 3.1 · Форм-фактор 2.5″ · Класс ёмкости 1,2–2 ТБ</description>
+</offer>
+<offer id="IS51DDC817F5" available="true">
+<url>https://b2b.isoft-shop.kz/zhestkie-diski/tproduct/924328978804-zhyostkii-disk-hpemsa-144tb-sas-12g-ente</url>
+<price>1551000</price>
+<currencyId>KZT</currencyId>
+<categoryId>958449305144</categoryId>
+<picture>https://static.tildacdn.com/tila3539-3231-4766-b939-306565663936/IS51DDC817F5_1.jpg</picture>
+<name>Жёсткий диск HPE/MSA 14.4TB SAS 12G Enterprise 10K SFF (2.5in) M2 3‑year Warranty 6‑pack (6x2.4TB) HDD Bundle P88915-B25</name>
+<vendor>HPE</vendor>
+<vendorCode>IS51DDC817F5</vendorCode>
+<description>Форм-фактор 2.5″ · Ёмкость 14,4 ТБ · Интерфейс SAS · Класс ёмкости от 14 ТБ</description>
 </offer>
 <offer id="IS531D5CF948" available="true">
 <url>https://b2b.isoft-shop.kz/zhestkie-diski/tproduct/145846656304-zhyostkii-disk-huawei-l1-nlsas14t-w-14tb</url>
@@ -9847,7 +10056,7 @@
 <name>ИБП APC Back-UPS BX750MI-GR</name>
 <vendor>APC</vendor>
 <vendorCode>IS0FCDCA30AC</vendorCode>
-<description>Мощность 750 ВА / 410 Вт · Розеток 4 · Ёмкость батареи 12В/9Ач · Форма выходного сигнала Ступенчатая синусоида · Время переключения 10 мс · Топология Линейно-интерактивный · Размещение Напольный · Цвет Чёрный · Гарантия 2 года · Рабочая температура от 0 до 40 °С</description>
+<description>Цвет Чёрный · Мощность 750 ВА / 410 Вт · Гарантия 2 года · Рабочая температура от 0 до 40 °С · Топология Линейно-интерактивный · Розеток 4 · Размещение Напольный · Ёмкость батареи 12В/9Ач · Форма выходного сигнала Ступенчатая синусоида · Время переключения 10 мс</description>
 </offer>
 <offer id="IS12A8C8E94B" available="true">
 <url>https://b2b.isoft-shop.kz/ibp-i-zashchita-pitaniya/tproduct/562538733124-ibp-svc-pt-10k-lcd</url>
@@ -14717,7 +14926,7 @@
 </offer>
 <offer id="IS3D769132AF" available="true">
 <url>https://b2b.isoft-shop.kz/videonablyudenie/tproduct/703272003254-ip-videokamera-hikvision-ds-2cd2167g3-li</url>
-<price>98000</price>
+<price>140000</price>
 <currencyId>KZT</currencyId>
 <categoryId>593618245944</categoryId>
 <picture>https://static.tildacdn.com/stor3238-3330-4436-b336-346435313866/5eaa12cc31083afda49da4b6a7e1b4a2.jpg</picture>
@@ -15447,7 +15656,7 @@
 </offer>
 <offer id="IS7BDD16F309" available="true">
 <url>https://b2b.isoft-shop.kz/videonablyudenie/tproduct/103237232064-ip-videokamera-hikvision-ds-2cd2147g3-li</url>
-<price>89000</price>
+<price>121000</price>
 <currencyId>KZT</currencyId>
 <categoryId>593618245944</categoryId>
 <picture>https://static.tildacdn.com/stor3135-6536-4166-b062-623364353732/8489aa219f50dd9d04a1f8b823d893e0.jpg</picture>
@@ -15791,7 +16000,7 @@
 </offer>
 <offer id="IS97AE1449D7" available="true">
 <url>https://b2b.isoft-shop.kz/videonablyudenie/tproduct/951659956224-ip-videokamera-hikvision-ds-2cd2347g3-li</url>
-<price>85000</price>
+<price>121000</price>
 <currencyId>KZT</currencyId>
 <categoryId>593618245944</categoryId>
 <picture>https://static.tildacdn.com/stor6431-6438-4634-a334-663030386338/a55dac01a28c2036be56f685bdd67c16.jpg</picture>
@@ -17893,6 +18102,17 @@
 <vendorCode>IS21217F9A71</vendorCode>
 <description>Цвет Чёрный · Тип устройства клавиатура · Тип клавиатуры механическая · Тип переключателей Red Switch · Форм-фактор Компактная · Подсветка RGB · Материал Металл, пластик</description>
 </offer>
+<offer id="IS21B3866B1F" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury/tproduct/719657470624-klaviatura-magic-keyboard-russian-model</url>
+<price>76000</price>
+<currencyId>KZT</currencyId>
+<categoryId>723843374454</categoryId>
+<picture>https://static.tildacdn.com/tild6336-3730-4132-a663-656137386461/IS21B3866B1F_1.png</picture>
+<name>Клавиатура Magic Keyboard - Russian, модель A3203 APPLE MAGIC KEYBOARD - RUSSIAN, MODEL A3203</name>
+<vendor>APPLE</vendor>
+<vendorCode>IS21B3866B1F</vendorCode>
+<description>Тип устройства клавиатура</description>
+</offer>
 <offer id="IS234DF1138D" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury/tproduct/579569836374-klaviatura-mouse-usb-onvyx-omk18-ruslat</url>
 <price>4700</price>
@@ -17913,6 +18133,17 @@
 <name>Клавиатура + мышь, USB, Defender Nord GS-959 RU, black (52959)</name>
 <vendor>DEFENDER</vendor>
 <vendorCode>IS2367D5CD2F</vendorCode>
+<description>Тип устройства клавиатура</description>
+</offer>
+<offer id="IS23AEF1807B" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury/tproduct/900505984744-klaviatura-apple-magic-keyboard-for-ipad</url>
+<price>256000</price>
+<currencyId>KZT</currencyId>
+<categoryId>723843374454</categoryId>
+<picture>https://static.tildacdn.com/tild3261-6339-4666-a631-376163666635/IS23AEF1807B_1.png</picture>
+<name>Клавиатура APPLE Magic Keyboard for iPad Pro 11-inch (M5) - Russian - White, модель A2975 APPLE MAGIC KEYBOARD FOR IPAD PRO 11-INCH (M5) - RUSSIAN - WHITE, MODEL A2975</name>
+<vendor>APPLE</vendor>
+<vendorCode>IS23AEF1807B</vendorCode>
 <description>Тип устройства клавиатура</description>
 </offer>
 <offer id="IS23C64C3087" available="true">
@@ -18613,6 +18844,17 @@
 <vendor>AJAZZ</vendor>
 <vendorCode>IS53EE22AC3D</vendorCode>
 <description>Тип устройства клавиатура · Цвет Синий · Тип клавиатуры мембранная</description>
+</offer>
+<offer id="IS544CDC5D28" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury/tproduct/712963077234-klaviatura-magic-keyboard-with-touch-id</url>
+<price>151000</price>
+<currencyId>KZT</currencyId>
+<categoryId>723843374454</categoryId>
+<picture>https://static.tildacdn.com/tila3034-3266-4136-b861-653735396638/IS544CDC5D28_1.png</picture>
+<name>Клавиатура Magic Keyboard with Touch ID and Numeric Keypad for Mac models Apple silicon - Russian - Black Keys A3119</name>
+<vendor>APPLE</vendor>
+<vendorCode>IS544CDC5D28</vendorCode>
+<description>Тип устройства клавиатура</description>
 </offer>
 <offer id="IS54893732AB" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury/tproduct/595559842504-klaviatura-i-mish-asus-cw100-keyboardmou</url>
@@ -19647,6 +19889,17 @@
 <vendorCode>IS8D84BA37F0</vendorCode>
 <description>Тип устройства клавиатура · Тип клавиатуры механическая · Подсветка RGB · Цвет Розовый · Материал Пластик</description>
 </offer>
+<offer id="IS8E89CC57FA" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury/tproduct/393382284334-klaviatura-apple-magic-keyboard-for-ipad</url>
+<price>298000</price>
+<currencyId>KZT</currencyId>
+<categoryId>723843374454</categoryId>
+<picture>https://static.tildacdn.com/tila3730-3563-4137-b366-366139366439/IS8E89CC57FA_1.png</picture>
+<name>Клавиатура APPLE Magic Keyboard for iPad Pro 13 inch (M5) - Russian - Black, модель A2974 APPLE MAGIC KEYBOARD FOR IPAD PRO 13 INCH (M5) - RUSSIAN - BLACK, MODEL A2974</name>
+<vendor>APPLE</vendor>
+<vendorCode>IS8E89CC57FA</vendorCode>
+<description>Тип устройства клавиатура</description>
+</offer>
 <offer id="IS90885FC4D8" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury/tproduct/334225686554-klaviatura-usb-defender-mayhem-gk-360dl</url>
 <price>6200</price>
@@ -19859,6 +20112,17 @@
 <vendorCode>IS9C02C00531</vendorCode>
 <description>Тип устройства клавиатура</description>
 </offer>
+<offer id="IS9C7915099F" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury/tproduct/375753174354-klaviatura-apple-magic-keyboard-with-num</url>
+<price>98000</price>
+<currencyId>KZT</currencyId>
+<categoryId>723843374454</categoryId>
+<picture>https://static.tildacdn.com/tila3332-3335-4537-b132-373736373236/IS9C7915099F_1.png</picture>
+<name>Клавиатура APPLE Magic Keyboard with Numeric Keypad - Russian - Silver, модель A1843 APPLE MAGIC KEYBOARD WITH NUMERIC KEYPAD - RUSSIAN - SILVER, MODEL A1843</name>
+<vendor>APPLE</vendor>
+<vendorCode>IS9C7915099F</vendorCode>
+<description>Тип устройства клавиатура</description>
+</offer>
 <offer id="IS9C9D396926" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury/tproduct/935841381394-klaviatura-usb-redragon-fizz-rt-mechanic</url>
 <price>36000</price>
@@ -19951,6 +20215,17 @@
 <vendor>Lenovo</vendor>
 <vendorCode>ISA00AEBC08A</vendorCode>
 <description>Тип устройства клавиатура · Подключение Беспроводное · Раскладка русская/английская</description>
+</offer>
+<offer id="ISA0A2A918B4" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury/tproduct/554450946464-klaviatura-magic-keyboard-with-touch-id</url>
+<price>136000</price>
+<currencyId>KZT</currencyId>
+<categoryId>723843374454</categoryId>
+<picture>https://static.tildacdn.com/tila3936-6130-4263-b237-636538616462/ISA0A2A918B4_1.png</picture>
+<name>Клавиатура Magic Keyboard with Touch ID and Numeric Keypad for Mac models Apple silicon - Russian - White Keys A3119</name>
+<vendor>APPLE</vendor>
+<vendorCode>ISA0A2A918B4</vendorCode>
+<description>Тип устройства клавиатура</description>
 </offer>
 <offer id="ISA1AA0DFB03" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury/tproduct/220404094764-klaviatura-genius-slimstar-7230</url>
@@ -21029,6 +21304,17 @@
 <vendorCode>ISEB6C4C321F</vendorCode>
 <description>Тип устройства клавиатура · Кнопок 98 · Тип переключателей Magnetic · Подсветка RGB</description>
 </offer>
+<offer id="ISEB9E3C7E8F" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury/tproduct/496196116354-klaviatura-magic-keyboard-with-touch-id</url>
+<price>113000</price>
+<currencyId>KZT</currencyId>
+<categoryId>723843374454</categoryId>
+<picture>https://static.tildacdn.com/tila6635-3732-4233-a637-373264363831/ISEB9E3C7E8F_1.png</picture>
+<name>Клавиатура Magic Keyboard with Touch ID for Mac models Apple silicon - Russian A3118</name>
+<vendor>APPLE</vendor>
+<vendorCode>ISEB9E3C7E8F</vendorCode>
+<description>Тип устройства клавиатура</description>
+</offer>
 <offer id="ISECC6B08712" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury/tproduct/254789139914-klaviatura-usb-meetion-mk005-mechanical</url>
 <price>15000</price>
@@ -21714,6 +22000,17 @@
 <vendorCode>IS1CCC51DAE6</vendorCode>
 <description>Форм-фактор ATX · Тип устройства Корпус · Цвет Чёрный · Макс. длина видеокарты 415 мм</description>
 </offer>
+<offer id="IS1E35A38D0E" available="true">
+<url>https://b2b.isoft-shop.kz/korpusa-i-bloki-pitaniya/tproduct/670689781114-kompyuternii-korpus-havn-hs-420-vgpu-wh</url>
+<price>152000</price>
+<currencyId>KZT</currencyId>
+<categoryId>976729823024</categoryId>
+<picture>https://static.tildacdn.com/tila6238-3265-4162-a139-343830643963/IS1E35A38D0E_1.jpg</picture>
+<name>Компьютерный корпус HAVN HS 420 VGPU WH без Б/П HVN-CA-HS420-07</name>
+<vendor>HAVN</vendor>
+<vendorCode>IS1E35A38D0E</vendorCode>
+<description>Тип устройства Корпус</description>
+</offer>
 <offer id="IS1F21EF68C0" available="true">
 <url>https://b2b.isoft-shop.kz/korpusa-i-bloki-pitaniya/tproduct/720349878794-korpus-case-atx-midi-tower-corsair-icue</url>
 <price>78000</price>
@@ -22308,6 +22605,17 @@
 <vendorCode>IS4440DDEAE7</vendorCode>
 <description>Тип устройства Корпус · Цвет Чёрный · Макс. длина видеокарты 320 мм</description>
 </offer>
+<offer id="IS44D4CDC680" available="true">
+<url>https://b2b.isoft-shop.kz/korpusa-i-bloki-pitaniya/tproduct/929339552624-kompyuternii-korpus-havn-hs-420-vgpu-bk</url>
+<price>152000</price>
+<currencyId>KZT</currencyId>
+<categoryId>976729823024</categoryId>
+<picture>https://static.tildacdn.com/tila3035-6139-4064-b664-313234343939/IS44D4CDC680_1.jpg</picture>
+<name>Компьютерный корпус HAVN HS 420 VGPU BK без Б/П HVN-CA-HS420-08</name>
+<vendor>HAVN</vendor>
+<vendorCode>IS44D4CDC680</vendorCode>
+<description>Тип устройства Корпус</description>
+</offer>
 <offer id="IS460B76CBD1" available="true">
 <url>https://b2b.isoft-shop.kz/korpusa-i-bloki-pitaniya/tproduct/883769679154-kompyuternii-korpus-thermaltake-the-towe</url>
 <price>88000</price>
@@ -22532,6 +22840,17 @@
 <vendor>Thermaltake</vendor>
 <vendorCode>IS566B0F8DCD</vendorCode>
 <description>Форм-фактор ATX · Цвет Синий · Макс. длина видеокарты 400 мм · Макс. высота кулера 210 мм · Тип устройства Корпус · Гарантия 1 год · Интерфейс USB 3.0 / Type-C · Материал Сталь</description>
+</offer>
+<offer id="IS568E905BA3" available="true">
+<url>https://b2b.isoft-shop.kz/korpusa-i-bloki-pitaniya/tproduct/194981727994-kompyuternii-korpus-havn-bf-360-flow-whi</url>
+<price>106000</price>
+<currencyId>KZT</currencyId>
+<categoryId>976729823024</categoryId>
+<picture>https://static.tildacdn.com/tila6661-3831-4638-b134-366161343862/IS568E905BA3_1.jpg</picture>
+<name>Компьютерный корпус HAVN BF 360 Flow White без Б/П HVN-CA-BF360-03</name>
+<vendor>HAVN</vendor>
+<vendorCode>IS568E905BA3</vendorCode>
+<description>Тип устройства Корпус · Цвет Белый</description>
 </offer>
 <offer id="IS571B616F2A" available="true">
 <url>https://b2b.isoft-shop.kz/korpusa-i-bloki-pitaniya/tproduct/480891974494-kompyuternii-korpus-1stplayer-steampunk</url>
@@ -24385,6 +24704,17 @@
 <vendorCode>ISE3FD6DF98F</vendorCode>
 <description>Форм-фактор ATX · Цвет Чёрный · Макс. длина видеокарты 400 мм · Макс. высота кулера 160 мм · Тип устройства Корпус · Гарантия 1 год · Интерфейс USB 3.0</description>
 </offer>
+<offer id="ISE4C6DB0A02" available="true">
+<url>https://b2b.isoft-shop.kz/korpusa-i-bloki-pitaniya/tproduct/713827095034-kompyuternii-korpus-havn-bf-360-flow-bla</url>
+<price>106000</price>
+<currencyId>KZT</currencyId>
+<categoryId>976729823024</categoryId>
+<picture>https://static.tildacdn.com/tila3131-6362-4132-b866-613332353362/ISE4C6DB0A02_1.jpg</picture>
+<name>Компьютерный корпус HAVN BF 360 Flow Black без Б/П HVN-CA-BF360-04</name>
+<vendor>HAVN</vendor>
+<vendorCode>ISE4C6DB0A02</vendorCode>
+<description>Тип устройства Корпус · Цвет Чёрный</description>
+</offer>
 <offer id="ISE50A85FBE9" available="true">
 <url>https://b2b.isoft-shop.kz/korpusa-i-bloki-pitaniya/tproduct/354474393884-kompyuternii-korpus-aerocool-d520a-bk-v1</url>
 <price>39000</price>
@@ -25817,6 +26147,17 @@
 <vendorCode>B235V_DNI</vendorCode>
 <description>Монохромное МФУ, Xerox, B235DNI, B235V_DNI, Лазерное, А4, 34 стр./мин., Подача 251 лист, Односторонний автоподатчик документов, до 23 изобр./мин., Сенсорный дисплей 2.8", 1 ГГц CPU, 512 МБ RAM, USB 2.0, Ethernet 10/100, Wi-Fi</description>
 </offer>
+<offer id="IS93BB4683B2" available="true">
+<url>https://b2b.isoft-shop.kz/mfu-lazernye-cvetnye/tproduct/140895223794-mfu-pantum-m6550nw-kopir-printer-tsv-ska</url>
+<price>93000</price>
+<currencyId>KZT</currencyId>
+<categoryId>910558779244</categoryId>
+<picture>https://static.tildacdn.com/tild3437-6366-4664-a235-363636373763/IS93BB4683B2_1.jpg</picture>
+<name>Мфу PANTUM M6550NW (копир, принтер, цв. сканер) (чб., A4, 22ppm, 128MB, 600MHz, 60-163 г/м2, 1200x1200 dpi, макс. 20т мес., ADF (35 листов), GDI, USB 2.0, Ethernet 10/100, Wi-Fi, Scan to E-mail (PC, FTP)</name>
+<vendor>PANTUM</vendor>
+<vendorCode>IS93BB4683B2</vendorCode>
+<description>Мфу PANTUM M6550NW (копир, принтер, цв. сканер) (чб., A4, 22ppm, 128MB, 600MHz, 60-163 г/м2, 1200x1200 dpi, макс. 20т мес., ADF (35 листов), GDI, USB 2.0, Ethernet 10/100, Wi-Fi, Scan to E-mail (PC, FTP) (PANTUM)</description>
+</offer>
 <offer id="IS98B3785B83" available="true">
 <url>https://b2b.isoft-shop.kz/mfu/tproduct/832837433944-tsvetnoe-mfu-xerox-c325dni-c325vdni</url>
 <price>518000</price>
@@ -25907,6 +26248,17 @@
 <vendor>PANTUM</vendor>
 <vendorCode>ISACD356EB51</vendorCode>
 <description>Тип устройства МФУ · Цветность цветной · Формат A4 · Скорость печати 20 стр/мин · Класс скорости печати до 22 стр/мин · Технология печати лазерный · Интерфейсы USB 2.0, Wi-Fi</description>
+</offer>
+<offer id="ISB93C094A24" available="true">
+<url>https://b2b.isoft-shop.kz/mfu-lazernye-cvetnye/tproduct/334899383874-mfu-canoni-sensys-mf267dw-iiprinter-scan</url>
+<price>244000</price>
+<currencyId>KZT</currencyId>
+<categoryId>910558779244</categoryId>
+<picture>https://static.tildacdn.com/tila3130-6630-4234-b261-376138363336/ISB93C094A24_1.jpg</picture>
+<name>МФУ Canon/i-SENSYS MF267dw II/Printer-Scaner(ADF-50p.)-Copier/A4/28 ppm/1200x1200 dpi 5938C008</name>
+<vendor>Canon</vendor>
+<vendorCode>ISB93C094A24</vendorCode>
+<description>МФУ Canon/i-SENSYS MF267dw II/Printer-Scaner(ADF-50p.)-Copier/A4/28 ppm/1200x1200 dpi 5938C008 (Canon)</description>
 </offer>
 <offer id="ISBC88E0DAE5" available="true">
 <url>https://b2b.isoft-shop.kz/mfu/tproduct/639535013494-mfu-hp-smart-tank-720-a4-color-ink-print</url>
@@ -32009,6 +32361,17 @@
 <vendorCode>ISA7D7A6A416</vendorCode>
 <description>Комплектация Готовый (ОЗУ и накопитель в комплекте) · Процессор Intel Core i5-1350P · Оперативная память 8 ГБ · Ёмкость 250 ГБ · Линейка процессора Core i5 · Тип накопителя SSD · Накопитель 250 ГБ</description>
 </offer>
+<offer id="ISA9663B76F3" available="true">
+<url>https://b2b.isoft-shop.kz/mini-pk-i-rabochie-stancii/tproduct/772319432394-mini-pk-mac-mini-apple-m4-a3238-cpu-10-y</url>
+<price>566000</price>
+<currencyId>KZT</currencyId>
+<categoryId>322713034454</categoryId>
+<picture>https://static.tildacdn.com/tild6230-6335-4664-b563-353365376336/ISA9663B76F3_1.png</picture>
+<name>Мини-пк Mac mini: Apple M4 A3238, CPU 10 ядер, GPU 10 ядер, 16GB, 512GB SSD, 16GB, 512GB SSD, MODEL</name>
+<vendor>APPLE</vendor>
+<vendorCode>ISA9663B76F3</vendorCode>
+<description>Ёмкость 512 ГБ · Процессор Apple M4 · Оперативная память 16 ГБ · Количество ядер процессора 10</description>
+</offer>
 <offer id="ISB483511C82" available="true">
 <url>https://b2b.isoft-shop.kz/mini-pk-i-rabochie-stancii/tproduct/538135673924-mini-pk-asus-nuc-14pro-rnuc14rvhi300002i</url>
 <price>283000</price>
@@ -36552,6 +36915,17 @@
 <vendor>Acer</vendor>
 <vendorCode>DQ.BPREC.00A</vendorCode>
 <description>Моноблок линейки Acer Aspire. Процессор AMD Ryzen 5 7430U. Оперативной памяти 16 ГБ DDR4. Накопитель SSD на 512 ГБ. Экран 23,8 дюйма. Операционной системы в комплекте нет. · Партномер: DQ.BPREC.00A</description>
+</offer>
+<offer id="IS370D72DF7D" available="true">
+<url>https://b2b.isoft-shop.kz/monobloki/tproduct/339130964384-monoblok-24-inch-imac-with-retina-4-a359</url>
+<price>1637000</price>
+<currencyId>KZT</currencyId>
+<categoryId>692700299904</categoryId>
+<picture>https://static.tildacdn.com/tila3839-6563-4236-b761-633639373336/IS370D72DF7D_1.png</picture>
+<name>Моноблок 24-inch iMac with Retina 4. A3590, 5K дисплей: Apple M6, CPU 12 ядер, GPU 12 ядер, 24GB, 512GB SSD - Silver, APPLE M6, 24GB, MODEL</name>
+<vendor>APPLE</vendor>
+<vendorCode>IS370D72DF7D</vendorCode>
+<description>Ёмкость 512 ГБ · Оперативная память 24 ГБ · Линейка процессора Apple M · Количество ядер процессора 12 · Процессор Apple M6</description>
 </offer>
 <offer id="IS3AE9FEF5D6" available="true">
 <url>https://b2b.isoft-shop.kz/monobloki/tproduct/759549859114-monoblok-hp-d2gq4ea-all-in-one-desktop-a</url>
@@ -41360,6 +41734,17 @@
 <vendorCode>ISA1B3E6E00F</vendorCode>
 <description>Тип устройства мышь · Разрешение сенсора 3200 dpi · Тип сенсора Оптический</description>
 </offer>
+<offer id="ISA2688AB16E" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/764269141284-mish-magic-mouse-white-multi-touch-surfa</url>
+<price>60000</price>
+<currencyId>KZT</currencyId>
+<categoryId>816235379434</categoryId>
+<picture>https://static.tildacdn.com/tild3363-3863-4266-b734-323739313330/ISA2688AB16E_1.png</picture>
+<name>Мышь Magic Mouse - White Multi-Touch Surface, модель A3204 APPLE MAGIC MOUSE - WHITE MULTI-TOUCH SURFACE, MODEL A3204</name>
+<vendor>APPLE</vendor>
+<vendorCode>ISA2688AB16E</vendorCode>
+<description>Тип устройства мышь · Цвет Белый</description>
+</offer>
 <offer id="ISA275DFF086" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/424659034254-mish-manipulator-asusmd102-whitewireless</url>
 <price>16000</price>
@@ -43706,6 +44091,17 @@
 <vendorCode>IS026DDD95E1</vendorCode>
 <description>Тип устройства Гарнитура · Цвет Чёрный</description>
 </offer>
+<offer id="IS02D6F36ED5" available="true">
+<url>https://b2b.isoft-shop.kz/naushniki/tproduct/828286264844-naushniki-xiaomi-buds-6-pearl-white-m254</url>
+<price>66000</price>
+<currencyId>KZT</currencyId>
+<categoryId>813446092544</categoryId>
+<picture>https://static.tildacdn.com/tila6638-3762-4466-b736-383934656530/IS02D6F36ED5_1.jpg</picture>
+<name>Наушники Xiaomi Buds 6 Pearl White M2540E1</name>
+<vendor>Xiaomi</vendor>
+<vendorCode>IS02D6F36ED5</vendorCode>
+<description>Тип устройства Наушники · Цвет Белый</description>
+</offer>
 <offer id="IS050F4F21FA" available="true">
 <url>https://b2b.isoft-shop.kz/naushniki-i-garnitury/tproduct/780560182904-naushniki-tecno-freehear-1-ow01-grey</url>
 <price>25000</price>
@@ -45266,6 +45662,17 @@
 <vendorCode>IS90C67C2A4C</vendorCode>
 <description>Тип устройства Наушники · Материал Пластик · Цвет Чёрный</description>
 </offer>
+<offer id="IS910C098EDE" available="true">
+<url>https://b2b.isoft-shop.kz/naushniki/tproduct/244702631094-logitech-headset-pc-g321-white-24ghzbt-e</url>
+<price>35000</price>
+<currencyId>KZT</currencyId>
+<categoryId>813446092544</categoryId>
+<picture>https://static.tildacdn.com/tila3230-6334-4739-a432-386531356135/IS910C098EDE_1.png</picture>
+<name>LOGITECH HEADSET PC - G321 - WHITE - 2.4GHZ/BT - EMEA28i-935</name>
+<vendor>Logitech</vendor>
+<vendorCode>IS910C098EDE</vendorCode>
+<description>Цвет Белый · Тип подключения Беспроводное</description>
+</offer>
 <offer id="IS930822B06E" available="true">
 <url>https://b2b.isoft-shop.kz/naushniki-i-garnitury/tproduct/285645947564-garnitura-razer-barracuda-x-2022-mercury</url>
 <price>65000</price>
@@ -45527,6 +45934,17 @@
 <vendorCode>ISA7CCB37A29</vendorCode>
 <description>Тип устройства Наушники</description>
 </offer>
+<offer id="ISA933DAEB65" available="true">
+<url>https://b2b.isoft-shop.kz/naushniki/tproduct/385853227074-naushniki-xiaomi-buds-6-titan-gray-m2540</url>
+<price>66000</price>
+<currencyId>KZT</currencyId>
+<categoryId>813446092544</categoryId>
+<picture>https://static.tildacdn.com/tila3235-3936-4539-a539-343735346565/ISA933DAEB65_1.jpg</picture>
+<name>Наушники Xiaomi Buds 6 Titan Gray M2540E1</name>
+<vendor>Xiaomi</vendor>
+<vendorCode>ISA933DAEB65</vendorCode>
+<description>Тип устройства Наушники · Цвет Серый</description>
+</offer>
 <offer id="ISA998FE62C6" available="true">
 <url>https://b2b.isoft-shop.kz/naushniki-i-garnitury/tproduct/920357995184-naushniki-acer-nitro-headset-nhw310-71-s</url>
 <price>34000</price>
@@ -45756,6 +46174,17 @@
 <vendor>APPLE</vendor>
 <vendorCode>ISB631B3DEFF</vendorCode>
 <description>AirPods 5, модель A3531 A3532 A3530 APPLE AIRPODS 5, MODEL A3531 A3532 A3530 (APPLE)</description>
+</offer>
+<offer id="ISB6485F0266" available="true">
+<url>https://b2b.isoft-shop.kz/naushniki/tproduct/577640138774-besprovodnaya-igrovaya-garnitura-logitec</url>
+<price>49000</price>
+<currencyId>KZT</currencyId>
+<categoryId>813446092544</categoryId>
+<picture>https://static.tildacdn.com/tila3136-6364-4337-b135-336636386333/ISB6485F0266_1.png</picture>
+<name>Беспроводная игровая гарнитура LOGITECH G325 LIGHTSPEED - белая EMEA28i-935, NO LANG, RETAIL,2.4GHZ, NO LANG, RETAIL,2.4GHZ</name>
+<vendor>Logitech</vendor>
+<vendorCode>ISB6485F0266</vendorCode>
+<description>Назначение Игровое · Цвет Белый · Тип подключения Беспроводное</description>
 </offer>
 <offer id="ISB79957288E" available="true">
 <url>https://b2b.isoft-shop.kz/naushniki-i-garnitury/tproduct/586583491234-garnitura-razer-blackshark-v2-pro-2023-w</url>
@@ -46101,6 +46530,17 @@
 <vendorCode>ISD28DBD88C2</vendorCode>
 <description>Тип устройства Гарнитура · Цвет Зелёный · Тип подключения Беспроводное · Длина кабеля 0,5 м · Звучание Стерео</description>
 </offer>
+<offer id="ISD3527AE491" available="true">
+<url>https://b2b.isoft-shop.kz/naushniki/tproduct/457380180064-earpods-lightning-connector-model-a1748</url>
+<price>15000</price>
+<currencyId>KZT</currencyId>
+<categoryId>813446092544</categoryId>
+<picture>https://static.tildacdn.com/tila3662-6463-4634-a635-303666303730/ISD3527AE491_1.png</picture>
+<name>EarPods (Lightning Connector), модель A1748 APPLE EARPODS (LIGHTNING CONNECTOR), MODEL A1748</name>
+<vendor>APPLE</vendor>
+<vendorCode>ISD3527AE491</vendorCode>
+<description>EarPods (Lightning Connector), модель A1748 APPLE EARPODS (LIGHTNING CONNECTOR), MODEL A1748 (APPLE)</description>
+</offer>
 <offer id="ISD3D9E946B3" available="true">
 <url>https://b2b.isoft-shop.kz/naushniki-i-garnitury/tproduct/308081955524-garnitura-hyperx-cloud-mini-besprovodnay</url>
 <price>44000</price>
@@ -46294,6 +46734,28 @@
 <vendor>Huawei</vendor>
 <vendorCode>ISE4B48A433C</vendorCode>
 <description>Тип устройства Наушники · Материал Пластик · Цвет Чёрный · Тип подключения Беспроводное · Bluetooth 5.4</description>
+</offer>
+<offer id="ISE5463DF650" available="true">
+<url>https://b2b.isoft-shop.kz/naushniki/tproduct/343114051804-apple-earpods-usb-cmodel-a3046</url>
+<price>15000</price>
+<currencyId>KZT</currencyId>
+<categoryId>813446092544</categoryId>
+<picture>https://static.tildacdn.com/tila3737-6131-4236-b536-633430613866/ISE5463DF650_1.png</picture>
+<name>APPLE EarPods (USB-C),Model A3046</name>
+<vendor>APPLE</vendor>
+<vendorCode>ISE5463DF650</vendorCode>
+<description>Интерфейс USB-C</description>
+</offer>
+<offer id="ISE54CEE1CF0" available="true">
+<url>https://b2b.isoft-shop.kz/naushniki/tproduct/236248132214-naushniki-xiaomi-buds-6-graphite-black-m</url>
+<price>66000</price>
+<currencyId>KZT</currencyId>
+<categoryId>813446092544</categoryId>
+<picture>https://static.tildacdn.com/tila3864-3462-4130-b665-613836633533/ISE54CEE1CF0_1.jpg</picture>
+<name>Наушники Xiaomi Buds 6 Graphite Black M2540E1</name>
+<vendor>Xiaomi</vendor>
+<vendorCode>ISE54CEE1CF0</vendorCode>
+<description>Тип устройства Наушники · Цвет Чёрный</description>
 </offer>
 <offer id="ISE58136EBDC" available="true">
 <url>https://b2b.isoft-shop.kz/naushniki-i-garnitury/tproduct/176025979714-garnitura-hyperx-cloud-stinger-3-wired-p</url>
@@ -47233,6 +47695,28 @@
 <vendor>HP</vendor>
 <vendorCode>IS25BDA3425A</vendorCode>
 <description>Bluetooth 6.0 · Wi-Fi Wi-Fi 7 · Видеокарта Intel Graphics · Диагональ 14″ · Камера IR + 5 Мп · Линейка процессора Core Ultra 7 · Ёмкость 1 ТБ · Оперативная память 24 ГБ · Операционная система Windows 11 Home · Подсветка клавиатуры есть</description>
+</offer>
+<offer id="IS2A85D29CA2" available="true">
+<url>https://b2b.isoft-shop.kz/noutbuki/tproduct/901169294114-noutbuk-macbook-apple-air-13-inch-silver</url>
+<price>1385000</price>
+<currencyId>KZT</currencyId>
+<categoryId>293087419414</categoryId>
+<picture>https://static.tildacdn.com/tila3464-3430-4634-b035-333430383462/IS5657BBA09B_1.png</picture>
+<name>Ноутбук MacBook APPLE AIR, 13-INCH, SILVER, MODEL A3449, 32GB, 1TB, SSD, TWO THUNDERBOLT 4 PORTS, TOUCH ID, LIQUID RETINA DISPLAY</name>
+<vendor>APPLE</vendor>
+<vendorCode>IS2A85D29CA2</vendorCode>
+<description>Ёмкость 1 ТБ · Оперативная память 32 ГБ</description>
+</offer>
+<offer id="IS2B3A089635" available="true">
+<url>https://b2b.isoft-shop.kz/noutbuki/tproduct/261999679414-noutbuk-16-inch-macbook-pro-with-proled</url>
+<price>2231000</price>
+<currencyId>KZT</currencyId>
+<categoryId>293087419414</categoryId>
+<picture>https://static.tildacdn.com/tila3564-3664-4232-b962-633738333465/IS2B3A089635_1.png</picture>
+<name>Ноутбук 16-inch MacBook Pro with PROLED XDR дисплей: Apple M5 чип 18 A3469, core CPU and 20-core GPU, 24GB, 24GB, 1TB SSD - SILVER, MODEL</name>
+<vendor>APPLE</vendor>
+<vendorCode>IS2B3A089635</vendorCode>
+<description>Ёмкость 1 ТБ · Оперативная память 24 ГБ · Линейка процессора Apple M · Количество ядер процессора 18 · Процессор APPLE M5 PRO</description>
 </offer>
 <offer id="IS2C0FE485A8" available="true">
 <url>https://b2b.isoft-shop.kz/noutbuki/tproduct/260589453944-noutbuk-hp-hyperx-omen-15-gb0074ci-r7-26</url>
@@ -48644,6 +49128,17 @@
 <vendorCode>IS938D4604D3</vendorCode>
 <description>Диагональ 16″ · Оперативная память 32 ГБ · Операционная система Windows 11 · Процессор AMD Ryzen AI 7 PRO 350 · Ёмкость 512 ГБ · Семья ОС Windows 11 · Линейка процессора Ryzen 7 · Тип накопителя SSD · Разрешение 1920×1200 · Видеокарта Radeon 860M</description>
 </offer>
+<offer id="IS93D9C136AC" available="true">
+<url>https://b2b.isoft-shop.kz/noutbuki/tproduct/167276173724-noutbuk-asus-expertbook-p1503cva-s72532w</url>
+<price>731000</price>
+<currencyId>KZT</currencyId>
+<categoryId>293087419414</categoryId>
+<picture>https://static.tildacdn.com/tila6438-6538-4334-b638-373034353661/IS93D9C136AC_1.jpg</picture>
+<name>Ноутбук Asus ExpertBook P1503CVA-S72532W 90NX0881-M03LB0, Core 7 240H, 16 Gb, PCIe NVMe SSD, 1024 Gb, GPU, 256 Mb, 15.6-inch, 1920x1080</name>
+<vendor>ASUS</vendor>
+<vendorCode>IS93D9C136AC</vendorCode>
+<description>Ёмкость 1 ТБ · Диагональ 15,6″ · Оперативная память 16 ГБ · Операционная система Windows 11 · Разрешение 1920×1080 · Линейка процессора Core 7 · Семья ОС Windows 11</description>
+</offer>
 <offer id="IS95ADE2275A" available="true">
 <url>https://b2b.isoft-shop.kz/noutbuki/tproduct/592740402204-noutbuk-asus-b9406caa-th1636xux7-358h32g</url>
 <price>1722000</price>
@@ -49889,7 +50384,7 @@
 <name>Ноутбук 14-inch MacBook Pro: Apple M5 A3434, CPU 10 ядер, GPU 10 ядер, 24GB, 1TB SSD - Space Black, 24GB, 1TB SSD - SPACE BLACK, MODEL</name>
 <vendor>APPLE</vendor>
 <vendorCode>ISEEF3005638</vendorCode>
-<description>Диагональ 14,2″ · Разрешение 3024×1964 · Ёмкость 1 ТБ · Процессор Apple M5 · Оперативная память 24 ГБ · Накопитель 1 ТБ · Операционная система macOS · Wi-Fi Wi-Fi 6E · Ёмкость батареи 72,4 Вт·ч · Bluetooth 5.3</description>
+<description>Диагональ 14,2″ · Разрешение 3024×1964 · Ёмкость 1 ТБ · Оперативная память 24 ГБ · Операционная система macOS · Процессор Apple M5 · Накопитель 1 ТБ · Bluetooth 5.3 · Ёмкость батареи 72,4 Вт·ч · Wi-Fi Wi-Fi 6E</description>
 </offer>
 <offer id="ISEF8767BD50" available="true">
 <url>https://b2b.isoft-shop.kz/noutbuki/tproduct/117601690274-noutbuk-macbook-apple-air-15-inch-starli</url>
@@ -50820,7 +51315,7 @@
 <name>Оперативная память SAMSUNG 32GB DDR5 6400MHz CL52 ECC RDIMM 2Rx8</name>
 <vendor>Samsung</vendor>
 <vendorCode>IS85F0DB9094</vendorCode>
-<description>Тип памяти DDR5 · Частота 6400 МГц · Форм-фактор RDIMM · Оперативная память 32 ГБ · Объём 32 ГБ · Тайминги CL52</description>
+<description>Форм-фактор RDIMM · Оперативная память 32 ГБ · Объём 32 ГБ · Тайминги CL52 · Тип памяти DDR5 · Частота 6400 МГц</description>
 </offer>
 <offer id="IS874FDC89AF" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/298645327504-operativnaya-pamyat-dimm-ddr5-16-gb-6000</url>
@@ -51358,6 +51853,17 @@
 <vendor>PNY</vendor>
 <vendorCode>ISD86DF8A870</vendorCode>
 <description>Частота 5600 МГц · Тип памяти DDR5 · Оперативная память 16 ГБ · Форм-фактор DIMM · Модулей в комплекте 1 · Тайминги CL40</description>
+</offer>
+<offer id="ISDA0570D4F1" available="true">
+<url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/249606397834-operativnaya-pamyat-netac-basic-ddr4-320</url>
+<price>41000</price>
+<currencyId>KZT</currencyId>
+<categoryId>160131640904</categoryId>
+<picture>https://static.tildacdn.com/tild6663-6338-4861-b863-353831383261/ISDA0570D4F1_1.png</picture>
+<name>Оперативная память NETAC Basic DDR4-3200 8G C16</name>
+<vendor>NETAC</vendor>
+<vendorCode>ISDA0570D4F1</vendorCode>
+<description>Объём 8 ГБ · Тип памяти DDR4</description>
 </offer>
 <offer id="ISDB12267678" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/197370548924-operativnaya-pamyat-dell-memory-upgrade</url>
@@ -56593,6 +57099,7 @@
 <currencyId>KZT</currencyId>
 <categoryId>177508312494</categoryId>
 <picture>https://static.tildacdn.com/tila6530-3336-4164-a436-623735303265/ISF7EA2E48BB_1.jpg</picture>
+<picture>https://static.tildacdn.com/tila6662-6633-4162-b135-366431626637/ISE0082B7B9D_1.jpg</picture>
 <name>Патч-корд SHIP Cat.5e UTP LSZH RJ-45 0.3 м S3025BL0030-P</name>
 <vendor>Ship</vendor>
 <vendorCode>ISE0082B7B9D</vendorCode>
@@ -57129,6 +57636,28 @@
 <vendorCode>IS21A4B4581A</vendorCode>
 <description>Тип устройства Принтер · Технология печати струйный · Цветность цветной · Скорость печати 32 стр/мин</description>
 </offer>
+<offer id="IS3068FE05B6" available="true">
+<url>https://b2b.isoft-shop.kz/printery-i-mfu/tproduct/966909134904-tsvetnoi-lazernii-printer-canon-i-s-lbp6</url>
+<price>127000</price>
+<currencyId>KZT</currencyId>
+<categoryId>883275389424</categoryId>
+<picture>https://static.tildacdn.com/tila3533-3331-4435-b664-663834636237/IS3068FE05B6_1.jpg</picture>
+<name>Цветной лазерный принтер Canon I-S LBP646CDW 6929C007AA</name>
+<vendor>Canon</vendor>
+<vendorCode>IS3068FE05B6</vendorCode>
+<description>Цветной лазерный принтер Canon I-S LBP646CDW 6929C007AA (Canon)</description>
+</offer>
+<offer id="IS36AC73DF82" available="true">
+<url>https://b2b.isoft-shop.kz/printery-i-mfu/tproduct/465777119864-printer-lazernii-tsvetnoi-hp-t3u44a-colo</url>
+<price>1525000</price>
+<currencyId>KZT</currencyId>
+<categoryId>883275389424</categoryId>
+<picture>https://static.tildacdn.com/tila3836-3763-4661-b064-653065333133/IS36AC73DF82_1.png</picture>
+<name>Принтер лазерный цветной HP T3U44A Color LaserJet Enterprise M751dn Printer (A3) 1200 dpi 150.000, 41/26 ppm (A4/A3), 1.5 Gb, 1.2 Ghz, Duty</name>
+<vendor>HP</vendor>
+<vendorCode>IS36AC73DF82</vendorCode>
+<description>Принтер лазерный цветной HP T3U44A Color LaserJet Enterprise M751dn Printer (A3) 1200 dpi 150.000, 41/26 ppm (A4/A3), 1.5 Gb, 1.2 Ghz, Duty (HP)</description>
+</offer>
 <offer id="IS397408CBBB" available="true">
 <url>https://b2b.isoft-shop.kz/printery/tproduct/652093642494-tsvetnoi-printer-xerox-versalink-c7000n</url>
 <price>1174000</price>
@@ -57352,6 +57881,17 @@
 <vendor>HP</vendor>
 <vendorCode>ISC00E9E3330</vendorCode>
 <description>Тип устройства Принтер · Формат A4 · Интерфейсы USB, Wi-Fi, Bluetooth · Технология печати лазерный · Скорость печати 20 стр/мин · Разрешение печати 600×600 dpi</description>
+</offer>
+<offer id="ISC0DD272FB0" available="true">
+<url>https://b2b.isoft-shop.kz/printery-i-mfu/tproduct/293693107334-printer-lazernii-monohromnii-hp-laserjet</url>
+<price>73000</price>
+<currencyId>KZT</currencyId>
+<categoryId>883275389424</categoryId>
+<picture>https://static.tildacdn.com/tila3333-6165-4065-a534-343763643437/ISC0DD272FB0_1.png</picture>
+<name>Принтер лазерный монохромный HP LaserJet M111w 7MD68A</name>
+<vendor>HP</vendor>
+<vendorCode>ISC0DD272FB0</vendorCode>
+<description>Принтер лазерный монохромный HP LaserJet M111w 7MD68A (HP)</description>
 </offer>
 <offer id="ISC5391C72D3" available="true">
 <url>https://b2b.isoft-shop.kz/printery/tproduct/828896110334-printer-chekov-i-etiketok-xprinter-xp-36</url>
@@ -68732,6 +69272,17 @@
 <vendor>Synology</vendor>
 <vendorCode>DS725+</vendorCode>
 <description>Партномер: DS725+</description>
+</offer>
+<offer id="IS379D49F57A" available="true">
+<url>https://b2b.isoft-shop.kz/servery-i-shd/tproduct/578455701504-sistema-hraneniya-ubiquiti-unas-pro-eu-2</url>
+<price>424000</price>
+<currencyId>KZT</currencyId>
+<categoryId>168824029674</categoryId>
+<picture>https://static.tildacdn.com/tila6132-3533-4633-b739-346438363262/IS379D49F57A_1.png</picture>
+<name>Система хранения UBIQUITI UNAS-Pro-EU 2U UBIQUITI UBIQUITI UNAS-PRO-EU 2U RACK-MOUNT NAS WITH (7) 2.5/3.5" DRIVE BAYS AND 10 GBPS PERFORMANCE DESIGNED FOR LARGE-SCALE FILE STORAGE AND SHARING, (7) 2.5/3.5" HDD / SSD SUPPORT, 10G SFP+ UPLINK AND (1) GBE RJ45 PORT</name>
+<vendor>Ubiquiti</vendor>
+<vendorCode>IS379D49F57A</vendorCode>
+<description>Форм-фактор 2U</description>
 </offer>
 <offer id="IS3F3E1D2722" available="true">
 <url>https://b2b.isoft-shop.kz/servery-i-shd/tproduct/286216778944-sistema-hraneniya-diskovaya-polka-dlya-s</url>

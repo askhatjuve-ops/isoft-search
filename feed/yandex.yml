@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<yml_catalog date="2026-11-20 07:41">
+<yml_catalog date="2026-11-20 20:45">
 <shop>
 <name>iSoft</name>
 <company>iSoft</company>
@@ -6237,7 +6237,7 @@
 <name>Блок питания Gamemax GZ 850G Gold White 2121-0850B0053</name>
 <vendor>Gamemax</vendor>
 <vendorCode>ISDD4F131814</vendorCode>
-<description>Форм-фактор ATX · Мощность 850 Вт · Сертификат эффективности 80+ Gold · Цвет Белый · Версия ATX ATX 3.1 · Гарантия 1 год · Класс мощности 700–850 Вт</description>
+<description>Мощность 850 Вт · Форм-фактор ATX · Сертификат эффективности 80+ Gold · Версия ATX ATX 3.1 · Класс мощности 700–850 Вт · Цвет Белый · Гарантия 1 год</description>
 </offer>
 <offer id="ISDD99912D2E" available="true">
 <url>https://b2b.isoft-shop.kz/bloki-pitaniya/tproduct/158325190374-blok-pitaniya-aerocool-smart-g1-750-acpg</url>
@@ -6614,6 +6614,17 @@
 <vendorCode>ISFF4F78D828</vendorCode>
 <description>Сертификат эффективности 80+ Platinum · Мощность 1000 Вт · Форм-фактор ATX · Версия ATX ATX 3.1 · Класс мощности 1000–1300 Вт · Модульность Модульный</description>
 </offer>
+<offer id="IS001537E40B" available="true">
+<url>https://b2b.isoft-shop.kz/videokarty/tproduct/833261180504-videokarta-asus-video-card-nvidia-geforc</url>
+<price>326000</price>
+<currencyId>KZT</currencyId>
+<categoryId>784666503994</categoryId>
+<picture>https://static.tildacdn.com/tila3766-3431-4062-a336-663533633566/IS001537E40B_1.png</picture>
+<name>Видеокарта ASUS Video Card NVIDIA GeForce RTX 5060 614 TOPs PCI Express 5.0 8GB GDDR7 128 bit ASUS ASUS VIDEO CARD NVIDIA GEFORCE RTX 5060 614 TOPS PCI EXPRESS 5.0 8GB GDDR7 128 BIT DIGITAL MAX RESOLUTION 7680 X 4320 2.5 SLOT 550W HDMI NATIVE DISPLAYPORT</name>
+<vendor>ASUS</vendor>
+<vendorCode>IS001537E40B</vendorCode>
+<description>Объём видеопамяти 8 ГБ · Графический процессор GeForce RTX 5060 · Тип видеопамяти GDDR7 · Разрядность шины 128 бит · Видеовыходы HDMI / DP · Серия видеокарты GeForce RTX 5000</description>
+</offer>
 <offer id="IS01A1DD3C01" available="true">
 <url>https://b2b.isoft-shop.kz/videokarty/tproduct/330053199824-videokarta-xfx-speedster-swft-210-amd-ra</url>
 <price>240000</price>
@@ -6624,6 +6635,17 @@
 <vendor>XFX</vendor>
 <vendorCode>IS01A1DD3C01</vendorCode>
 <description>Видеовыходы HDMI / DP x 3 · Графический процессор Radeon RX 7600 · Объём видеопамяти 8 ГБ · Разрядность шины 128 бит · Тип видеопамяти GDDR6 · Серия видеокарты Radeon RX</description>
+</offer>
+<offer id="IS056FC92A5C" available="true">
+<url>https://b2b.isoft-shop.kz/videokarty/tproduct/503907394144-videokarta-asus-video-card-nvidia-rtx-50</url>
+<price>504000</price>
+<currencyId>KZT</currencyId>
+<categoryId>784666503994</categoryId>
+<picture>https://static.tildacdn.com/tila6162-6239-4161-b139-313532663636/IS056FC92A5C_1.png</picture>
+<name>Видеокарта ASUS Video Card NVidia RTX 5060TI 16 GB GDDR7 128 bit2407MHz/2602 MHz</name>
+<vendor>ASUS</vendor>
+<vendorCode>IS056FC92A5C</vendorCode>
+<description>Объём видеопамяти 16 ГБ · Тип видеопамяти GDDR7</description>
 </offer>
 <offer id="IS05C27611F0" available="true">
 <url>https://b2b.isoft-shop.kz/videokarty/tproduct/732064149624-videokarta-afox-radeon-rx-580-gaming-8gb</url>
@@ -6649,6 +6671,17 @@
 <vendorCode>IS06672638D7</vendorCode>
 <description>Видеовыходы HDMI / DVI · Графический процессор GT730 · Объём видеопамяти 2 ГБ · Разрядность шины 64 бит · Тип видеопамяти GDDR3 · Серия видеокарты GeForce GTX / GT</description>
 </offer>
+<offer id="IS0BD5AED1B1" available="true">
+<url>https://b2b.isoft-shop.kz/videokarty/tproduct/847966523934-videokarta-asus-video-card-amd-radeon-rx</url>
+<price>631000</price>
+<currencyId>KZT</currencyId>
+<categoryId>784666503994</categoryId>
+<picture>https://static.tildacdn.com/tila6566-3638-4131-a436-343236373937/IS0BD5AED1B1_1.png</picture>
+<name>Видеокарта ASUS Video Card AMD Radeon RX 9070 XT 16GB GDDR6 256-bit Digital Max Resolution 90YV0L70-M0NA00</name>
+<vendor>ASUS</vendor>
+<vendorCode>IS0BD5AED1B1</vendorCode>
+<description>Объём видеопамяти 16 ГБ · Графический процессор Radeon RX 9070 XT · Тип видеопамяти GDDR6 · Разрядность шины 256 бит · Видеовыходы HDMI / DP · Серия видеокарты Radeon RX</description>
+</offer>
 <offer id="IS0E93DF58FA" available="true">
 <url>https://b2b.isoft-shop.kz/videokarty/tproduct/965161078034-videokarta-palit-rtx3060-infinity-2-oc-1</url>
 <price>279000</price>
@@ -6661,6 +6694,17 @@
 <vendor>Palit</vendor>
 <vendorCode>IS0E93DF58FA</vendorCode>
 <description>Объём видеопамяти 12 ГБ · Графический процессор RTX 3060 · Серия видеокарты GeForce RTX 3000 · Разрядность шины 192 бит · Видеовыходы HDMI / DP x 3 · Тип видеопамяти GDDR6</description>
+</offer>
+<offer id="IS125B45960F" available="true">
+<url>https://b2b.isoft-shop.kz/videokarty/tproduct/554043145304-videokarta-asus-prime-geforce-rtx-5060-o</url>
+<price>331000</price>
+<currencyId>KZT</currencyId>
+<categoryId>784666503994</categoryId>
+<picture>https://static.tildacdn.com/tila3031-3065-4839-b230-643466383866/IS125B45960F_1.png</picture>
+<name>Видеокарта ASUS Prime GeForce RTX 5060 OC Edition 8GB GDDR7</name>
+<vendor>ASUS</vendor>
+<vendorCode>IS125B45960F</vendorCode>
+<description>Графический процессор GeForce RTX 5060 · Объём видеопамяти 8 ГБ · Тип видеопамяти GDDR7 · Серия видеокарты GeForce RTX 5000</description>
 </offer>
 <offer id="IS132F0516D4" available="true">
 <url>https://b2b.isoft-shop.kz/videokarty/tproduct/245508817514-videokarta-palit-geforce-rtx-3050-stormx</url>
@@ -6862,7 +6906,7 @@
 <name>Видеокарта PNY NVIDIA RTX PRO 4000 Blackwell OEM Version, PCI-Express x16 Gen 5.0 PNY PNY NVIDIA RTX PRO 4000 BLACKWELL OEM VERSION, PCI-EXPRESS X16 GEN 5.0, 24 GB GDDR7 ECC 192-BIT, 672 GB/S, 140W, FMHL SINGLE SLOT (11,2CM H X 24,1CM L), 4X DP 2.1B</name>
 <vendor>PNY</vendor>
 <vendorCode>IS4D98798D13</vendorCode>
-<description>Объём видеопамяти 24 ГБ · Тип видеопамяти GDDR7 · Разрядность шины 192 бит · Видеовыходы DP x 4</description>
+<description>Видеовыходы DP x 4 · Объём видеопамяти 24 ГБ · Разрядность шины 192 бит · Тип видеопамяти GDDR7</description>
 </offer>
 <offer id="IS53352AA8D4" available="true">
 <url>https://b2b.isoft-shop.kz/videokarty/tproduct/333631414074-videokarta-pny-nvidia-rtx-4500-pro-black</url>
@@ -7097,6 +7141,17 @@
 <vendorCode>IS8CF57F84C0</vendorCode>
 <description>Видеовыходы HDMI / DP · Графический процессор GeForce RTX 5060TI · Объём видеопамяти 16 ГБ · Разрядность шины 128 бит · Тип видеопамяти GDDR7 · Серия видеокарты GeForce RTX 5000</description>
 </offer>
+<offer id="IS8D3D8D6836" available="true">
+<url>https://b2b.isoft-shop.kz/videokarty/tproduct/968895401354-videokarta-asus-amd-radeon-rx-7600-8gb-g</url>
+<price>255000</price>
+<currencyId>KZT</currencyId>
+<categoryId>784666503994</categoryId>
+<picture>https://static.tildacdn.com/tila3663-6331-4535-a635-323130393465/IS8D3D8D6836_1.png</picture>
+<name>Видеокарта ASUS AMD Radeon RX 7600 8GB GDDR6 ASUS ASUS AMD RADEON RX 7600 8GB GDDR6 OC MODE: UP TO 2715 MHZ DEFAULT MODE: UP TO 2695 MHZ 128-BIT DIGITAL MAX RESOLUTION 7680 X 4320 YES X 1 (NATIVE HDMI 2.1)YES X 3 (NATIVE DISPLAYPORT 1.4A)HDCP SUPPORT YES (2.3)</name>
+<vendor>ASUS</vendor>
+<vendorCode>IS8D3D8D6836</vendorCode>
+<description>Объём видеопамяти 8 ГБ · Графический процессор Radeon RX 7600 · Тип видеопамяти GDDR6 · Разрядность шины 128 бит · Видеовыходы HDMI / DP · Серия видеокарты Radeon RX</description>
+</offer>
 <offer id="IS90FD17089A" available="true">
 <url>https://b2b.isoft-shop.kz/videokarty/tproduct/551154004154-videokarta-palit-rtx5060-infinity-2-oc-v</url>
 <price>317000</price>
@@ -7237,6 +7292,17 @@
 <vendor>MSI</vendor>
 <vendorCode>ISB2B089E1E8</vendorCode>
 <description>Видеовыходы HDMI / DP x 3 · Графический процессор RTX 5070 · Объём видеопамяти 12 ГБ · Разрядность шины 192 бит · Тип видеопамяти GDDR7 · Серия видеокарты GeForce RTX 5000</description>
+</offer>
+<offer id="ISB2C248D467" available="true">
+<url>https://b2b.isoft-shop.kz/videokarty/tproduct/908790698304-videokarta-asus-video-card-amd-radeon-rx</url>
+<price>611000</price>
+<currencyId>KZT</currencyId>
+<categoryId>784666503994</categoryId>
+<picture>https://static.tildacdn.com/tila3561-3666-4161-a366-633237343162/ISB2C248D467_1.png</picture>
+<name>Видеокарта ASUS Video Card AMD Radeon RX 9070 XT White 16GB GDDR6 2220 / 3230 , 2048sp, 32 RT-core, 128 bit, 2.5 slots ASUS ASUS VIDEO CARD AMD RADEON RX 9070 XT WHITE 16GB GDDR6 2220 / 3230,2048SP, 32 RT-CORE, 128 BIT, 2.5 SLOTS, 8 PIN, HDMI, DISPLAYPORT</name>
+<vendor>ASUS</vendor>
+<vendorCode>ISB2C248D467</vendorCode>
+<description>Объём видеопамяти 16 ГБ · Графический процессор Radeon RX 9070 XT · Тип видеопамяти GDDR6 · Разрядность шины 128 бит · Видеовыходы HDMI / DP · Серия видеокарты Radeon RX</description>
 </offer>
 <offer id="ISBD1248CF71" available="true">
 <url>https://b2b.isoft-shop.kz/videokarty/tproduct/796686396014-videokarta-amd-4-gb-ocpc-rx-6500-ocvarx6</url>
@@ -9242,6 +9308,17 @@
 <vendorCode>HAT3320-8T</vendorCode>
 <description>Жесткий диск, Synology, HAT3320-8T, 8 TB, HDD 3.5", SATA 6 Gb/s</description>
 </offer>
+<offer id="IS13D8BE2E13" available="true">
+<url>https://b2b.isoft-shop.kz/zhestkie-diski/tproduct/790559818964-zhyostkii-disk-seagate-hdd-server-exos-7</url>
+<price>272000</price>
+<currencyId>KZT</currencyId>
+<categoryId>958449305144</categoryId>
+<picture>https://static.tildacdn.com/tild3938-6362-4536-b837-653734383339/ISC266279011_1.jpg</picture>
+<name>Жёсткий диск SEAGATE HDD Server Exos 7E10 512E/4kn (3.5-inch/ 8TB/ SAS 12Gb/s / 7200rpm)</name>
+<vendor>SEAGATE</vendor>
+<vendorCode>IS13D8BE2E13</vendorCode>
+<description>Интерфейс SAS · Скорость вращения 7200 об/мин</description>
+</offer>
 <offer id="IS17E967E509" available="true">
 <url>https://b2b.isoft-shop.kz/zhestkie-diski/tproduct/314133187724-zhyostkii-disk-sata-10000-gb-seagate-exo</url>
 <price>353000</price>
@@ -9337,6 +9414,17 @@
 <vendorCode>IS2C83A8AF68</vendorCode>
 <description>Форм-фактор 3.5″ · Ёмкость 12 ТБ · Интерфейс SATA · Скорость вращения 7200 об/мин · Класс ёмкости 10–12 ТБ</description>
 </offer>
+<offer id="IS2CF5973DB3" available="true">
+<url>https://b2b.isoft-shop.kz/zhestkie-diski/tproduct/725474967724-zhyostkii-disk-western-digital-hdd-exter</url>
+<price>68000</price>
+<currencyId>KZT</currencyId>
+<categoryId>958449305144</categoryId>
+<picture>https://static.tildacdn.com/tila3537-3265-4435-a332-643465336236/IS2CF5973DB3_1.jpg</picture>
+<name>Жёсткий диск WESTERN DIGITAL HDD External WD My Passport (2TB, USB 3.2) Sky</name>
+<vendor>WESTERN DIGITAL</vendor>
+<vendorCode>IS2CF5973DB3</vendorCode>
+<description>Ёмкость 2 ТБ · Интерфейс USB 3.2 · Класс ёмкости 1,2–2 ТБ</description>
+</offer>
 <offer id="IS2F6BF29DB2" available="true">
 <url>https://b2b.isoft-shop.kz/zhestkie-diski/tproduct/781599621344-zhyostkii-disk-synology-hat5310-16t</url>
 <price>682000</price>
@@ -9358,6 +9446,17 @@
 <vendor>Toshiba</vendor>
 <vendorCode>IS30D0D86ADF</vendorCode>
 <description>Ёмкость 1 ТБ · Интерфейс USB 3.2 · Класс ёмкости до 1 ТБ · Форм-фактор 2.5″</description>
+</offer>
+<offer id="IS31E9C5632D" available="true">
+<url>https://b2b.isoft-shop.kz/zhestkie-diski/tproduct/551700343574-zhyostkii-disk-western-digital-hdd-exter</url>
+<price>68000</price>
+<currencyId>KZT</currencyId>
+<categoryId>958449305144</categoryId>
+<picture>https://static.tildacdn.com/tila3938-3965-4230-b830-316164386231/IS31E9C5632D_1.jpg</picture>
+<name>Жёсткий диск WESTERN DIGITAL HDD External WD My Passport (2TB, USB 3.2) Red</name>
+<vendor>WESTERN DIGITAL</vendor>
+<vendorCode>IS31E9C5632D</vendorCode>
+<description>Ёмкость 2 ТБ · Интерфейс USB 3.2 · Класс ёмкости 1,2–2 ТБ</description>
 </offer>
 <offer id="IS35F5B97FB5" available="true">
 <url>https://b2b.isoft-shop.kz/zhestkie-diski/tproduct/614856737594-zhyostkii-disk-hdd-video-surveillance-to</url>
@@ -9475,6 +9574,17 @@
 <vendor>Apacer</vendor>
 <vendorCode>AP1TBAC533B-1</vendorCode>
 <description>Внешний жёсткий диск, Apacer, AC533, AP1TBAC533B-1, 1TB, 2.5", USB 3.2, Черный</description>
+</offer>
+<offer id="IS4809E7299B" available="true">
+<url>https://b2b.isoft-shop.kz/zhestkie-diski/tproduct/208744773844-zhyostkii-disk-western-digital-hdd-exter</url>
+<price>317000</price>
+<currencyId>KZT</currencyId>
+<categoryId>958449305144</categoryId>
+<picture>https://static.tildacdn.com/tila3564-3266-4933-a334-383833653630/IS4809E7299B_1.jpg</picture>
+<name>Жёсткий диск WESTERN DIGITAL HDD External WD My Book (3.5-inch, 16TB, USB 3.0)</name>
+<vendor>WESTERN DIGITAL</vendor>
+<vendorCode>IS4809E7299B</vendorCode>
+<description>Ёмкость 16 ТБ · Интерфейс USB 3.0 · Форм-фактор 3.5″ · Класс ёмкости от 14 ТБ</description>
 </offer>
 <offer id="IS4823B12C8C" available="true">
 <url>https://b2b.isoft-shop.kz/zhestkie-diski/tproduct/102809815464-zhyostkii-disk-seagate-hdd-server-exos-m</url>
@@ -10080,7 +10190,7 @@
 <name>Жёсткий диск SEAGATE HDD External Expansion Portable (2.5-inch/2TB/ USB 3.0)</name>
 <vendor>SEAGATE</vendor>
 <vendorCode>ISEE00CAE6E0</vendorCode>
-<description>Форм-фактор 2.5″ · Ёмкость 2 ТБ · Интерфейс USB 3.0 · Класс ёмкости 1,2–2 ТБ</description>
+<description>Ёмкость 2 ТБ · Интерфейс USB 3.0 · Класс ёмкости 1,2–2 ТБ · Форм-фактор 2.5″</description>
 </offer>
 <offer id="ISEF155E34F9" available="true">
 <url>https://b2b.isoft-shop.kz/zhestkie-diski/tproduct/646246041144-vneshnii-zhyostkii-disk-apacer-2tb-25-in</url>
@@ -12130,7 +12240,7 @@
 <name>ИБП APC Smart-UPS SRT10KRMXLI</name>
 <vendor>APC</vendor>
 <vendorCode>ISA4983F7AFC</vendorCode>
-<description>Мощность 10000 ВА / 10000 Вт · Розеток 10 · Форма выходного сигнала Синусоида · Время переключения 0 мс · Топология On-Line · Размещение Стоечный · Цвет Чёрный · Типоразмер (U) 6U · Класс мощности 8–11 кВА · Рабочая температура от 0 до 40 °С</description>
+<description>Рабочая температура от 0 до 40 °С · Мощность 10000 ВА / 10000 Вт · Класс мощности 8–11 кВА · Топология On-Line · Размещение Стоечный · Время переключения 0 мс · Цвет Чёрный · Форма выходного сигнала Синусоида · Типоразмер (U) 6U · Розеток 10</description>
 </offer>
 <offer id="ISA58309590B" available="true">
 <url>https://b2b.isoft-shop.kz/ibp-i-zashchita-pitaniya/tproduct/349917501714-ibp-ippon-smart-power-pro-ii-1200-euro-1</url>
@@ -16017,7 +16127,7 @@
 <name>IP видеокамера Dahua DH-IPC-HDPW1431R1P-0280B</name>
 <vendor>Dahua</vendor>
 <vendorCode>IS91276E8152</vendorCode>
-<description>Тип устройства IP-камера · Фокусное расстояние 2,8 мм · Разрешение камеры 4 МП</description>
+<description>Тип устройства IP-камера · Разрешение камеры 4 МП · Фокусное расстояние 2,8 мм</description>
 </offer>
 <offer id="IS931B3960A7" available="true">
 <url>https://b2b.isoft-shop.kz/videonablyudenie/tproduct/346849050544-ip-kamera-tp-link-tapo-tc42</url>
@@ -16758,7 +16868,7 @@
 <name>IP видеокамера Dahua DH-IPC-HDBW2241RP-ZS-27135</name>
 <vendor>Dahua</vendor>
 <vendorCode>ISCAE8C01A8C</vendorCode>
-<description>Тип устройства IP-камера · Разрешение камеры 2 МП · Тип корпуса Купольная</description>
+<description>Тип устройства IP-камера · Тип корпуса Купольная · Разрешение камеры 2 МП</description>
 </offer>
 <offer id="ISCC69D10D22" available="true">
 <url>https://b2b.isoft-shop.kz/videonablyudenie/tproduct/478120068264-tsilindricheskaya-videokamera-dahua-dh-h</url>
@@ -17784,7 +17894,7 @@
 <name>Карта памяти Kingston SDCS3/1TB Canvas Select Plus A1 U3 V30 1TB</name>
 <vendor>Kingston</vendor>
 <vendorCode>ISE82BA908C5</vendorCode>
-<description>Форм-фактор microSDXC · Ёмкость 1 ТБ · Класс скорости U3, V30, A1 · В комплекте Адаптер SD</description>
+<description>Ёмкость 1 ТБ · Форм-фактор microSDXC · В комплекте Адаптер SD · Класс скорости U3, V30, A1</description>
 </offer>
 <offer id="ISE8CAEA982C" available="true">
 <url>https://b2b.isoft-shop.kz/karty-pamyati/tproduct/389318047734-karta-pamyati-lexar-blue-plus-lmsblpl032</url>
@@ -25966,6 +26076,17 @@
 <vendorCode>499M7A</vendorCode>
 <description>Тип устройства МФУ · Технология печати лазерный · Цветность ч/б · Партномер: 499M7A</description>
 </offer>
+<offer id="IS50F541D5ED" available="true">
+<url>https://b2b.isoft-shop.kz/mfu-lazernye-cvetnye/tproduct/216766221194-mfu-laser-printerscanercopier-canon-mf30</url>
+<price>171000</price>
+<currencyId>KZT</currencyId>
+<categoryId>910558779244</categoryId>
+<picture>https://static.tildacdn.com/tila3862-3665-4563-b630-623537386439/IS50F541D5ED_1.jpg</picture>
+<name>Мфу Laser printer/scaner/copier Canon MF3010, (A4, 600dpi, 64MB, 18ppm) + 2 Cartridge Canon 725</name>
+<vendor>Canon</vendor>
+<vendorCode>IS50F541D5ED</vendorCode>
+<description>Мфу Laser printer/scaner/copier Canon MF3010, (A4, 600dpi, 64MB, 18ppm) + 2 Cartridge Canon 725 (Canon)</description>
+</offer>
 <offer id="IS58089EE775" available="true">
 <url>https://b2b.isoft-shop.kz/mfu/tproduct/804160280804-mfu-laser-printerscanercopier-hp-laserje</url>
 <price>99000</price>
@@ -26266,7 +26387,7 @@
 <name>HP Color LaserJet Ent MFP M776dn Prntr T3U55A</name>
 <vendor>HP</vendor>
 <vendorCode>IS8C8107CEF3</vendorCode>
-<description>Технология печати лазерный · Цветность цветной · Тип устройства МФУ · Формат A3</description>
+<description>Тип устройства МФУ · Формат A3 · Технология печати лазерный · Цветность цветной</description>
 </offer>
 <offer id="IS8D40D9A81F" available="true">
 <url>https://b2b.isoft-shop.kz/mfu/tproduct/958302379624-monohromnoe-mfu-xerox-b235dni</url>
@@ -32520,7 +32641,7 @@
 <name>Монитор Samsung 27-inch ViewFinity S6 LS27D604UAIXCI</name>
 <vendor>Samsung</vendor>
 <vendorCode>IS0541B8EDDF</vendorCode>
-<description>Диагональ 27″ · Разрешение 2560×1440 · Частота обновления 100 Гц · Время отклика 5 мс · Яркость 350 кд/м² · Тип матрицы IPS · Соотношение сторон 16:9 · VESA 100×100 · Контрастность 1000:1 · Угол обзора 178°</description>
+<description>Диагональ 27″ · Разрешение 2560×1440 · Тип матрицы IPS · Частота обновления 100 Гц · Время отклика 5 мс · Яркость 350 кд/м² · Соотношение сторон 16:9 · Контрастность 1000:1 · Размер экрана 27–29″ · Угол обзора 178°</description>
 </offer>
 <offer id="IS05B1C2F495" available="true">
 <url>https://b2b.isoft-shop.kz/monitory/tproduct/656204109314-monitor-acer-ek221qj0bi-ek1-series-umwe1</url>
@@ -40941,6 +41062,17 @@
 <vendor>HP</vendor>
 <vendorCode>IS88EC691422</vendorCode>
 <description>Подключение Беспроводное · Тип устройства мышь</description>
+</offer>
+<offer id="IS895D06604B" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/244082783424-mish-magic-trackpad-white-multi-touch-su</url>
+<price>98000</price>
+<currencyId>KZT</currencyId>
+<categoryId>816235379434</categoryId>
+<picture>https://static.tildacdn.com/tila3931-6531-4565-b562-393734396332/IS895D06604B_1.png</picture>
+<name>Мышь Magic Trackpad - White Multi-Touch Surface, модель A3120 APPLE MAGIC TRACKPAD - WHITE MULTI-TOUCH SURFACE, MODEL A3120</name>
+<vendor>APPLE</vendor>
+<vendorCode>IS895D06604B</vendorCode>
+<description>Цвет Белый</description>
 </offer>
 <offer id="IS8966594DA5" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/769515135004-kompyuternaya-mish-steelseries-aerox-5-6</url>
@@ -49639,7 +49771,7 @@
 <name>Ноутбук APPLE MACBOOK AIR, 13-INCH, MIDNIGHT, MODEL A3449, M5 CHIP WITH 10C CPU, 16GB, 512GB, SSD, TWO THUNDERBOLT 4 PORTS, TOUCH ID</name>
 <vendor>APPLE</vendor>
 <vendorCode>ISAEDD757CC3</vendorCode>
-<description>Диагональ 13,6″ · Разрешение 2560×1664 · Ёмкость 512 ГБ · Процессор Apple M5 · Оперативная память 16 ГБ · Накопитель 512 ГБ · Видеокарта Встроенная · Операционная система macOS · Тип матрицы IPS · Wi-Fi Wi-Fi 7</description>
+<description>Ёмкость 512 ГБ · Количество ядер процессора 10 · Оперативная память 16 ГБ · Накопитель 512 ГБ · Видеокарта Встроенная · Операционная система macOS · Диагональ 13,6″ · Разрешение 2560×1664 · Ёмкость батареи 53,8 Вт·ч · Тип матрицы IPS</description>
 </offer>
 <offer id="ISAF68850F9D" available="true">
 <url>https://b2b.isoft-shop.kz/noutbuki/tproduct/266508769094-16-inch-noutbuk-asus-tuf-gaming-f16-fx60</url>
@@ -50788,6 +50920,17 @@
 <vendorCode>KF560C36BBE-8</vendorCode>
 <description>Оперативная память Kingston KF560C36BBE-8: Тип памяти DDR5 · Объём 8 ГБ · Частота 6000 МГц · Форм-фактор DIMM · Модулей в комплекте 1. Цена с НДС, безналичный расчёт для организаций.</description>
 </offer>
+<offer id="IS078B960E80" available="true">
+<url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/470554449004-operativnaya-pamyat-kingston-16gb-6000mt</url>
+<price>239000</price>
+<currencyId>KZT</currencyId>
+<categoryId>160131640904</categoryId>
+<picture>https://static.tildacdn.com/tila3861-6230-4236-b863-386261633462/IS078B960E80_1.png</picture>
+<name>Оперативная память KINGSTON 16GB 6000MT/s DDR5 CL30 DIMM FURY Beast White RGB EXPO</name>
+<vendor>Kingston</vendor>
+<vendorCode>IS078B960E80</vendorCode>
+<description>Объём 16 ГБ · Тайминги CL30 · Тип памяти DDR5 · Форм-фактор DIMM</description>
+</offer>
 <offer id="IS07C7AF578F" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/864003995214-operativnaya-pamyat-synology-d4eu02-16g</url>
 <price>1006000</price>
@@ -50988,6 +51131,17 @@
 <vendor>Kingston</vendor>
 <vendorCode>IS28D11678F3</vendorCode>
 <description>Форм-фактор DIMM · Оперативная память 32 ГБ · Тип памяти DDR4 · Объём 32 ГБ · Тайминги CL16 · Модулей в комплекте 2</description>
+</offer>
+<offer id="IS28E57F67CD" available="true">
+<url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/568811079964-operativnaya-pamyat-kingston-32gb-6000mt</url>
+<price>477000</price>
+<currencyId>KZT</currencyId>
+<categoryId>160131640904</categoryId>
+<picture>https://static.tildacdn.com/tila3730-3865-4337-b330-383836363964/IS28E57F67CD_1.png</picture>
+<name>Оперативная память KINGSTON 32GB 6000MT/s DDR5 CL30 DIMM (Kit of 2) FURY Beast White RGB EXPO KINGSTON KINGSTON 32GB 6000MT/S DDR5 CL30 DIMM (KIT OF 2) FURY BEAST WHITE RGB EXPO</name>
+<vendor>Kingston</vendor>
+<vendorCode>IS28E57F67CD</vendorCode>
+<description>Модулей в комплекте 2 · Объём 32 ГБ · Тайминги CL30 · Тип памяти DDR5 · Форм-фактор DIMM</description>
 </offer>
 <offer id="IS29097F9697" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/267533779784-operativnaya-pamyat-dimm-ddr4-16gb-3200m</url>
@@ -51273,6 +51427,17 @@
 <vendor>AGI</vendor>
 <vendorCode>IS53BD5FC7C3</vendorCode>
 <description>Оперативная память 16 ГБ · Тайминги CL40 · Тип памяти DDR5 · Форм-фактор SO-DIMM</description>
+</offer>
+<offer id="IS5561ED3063" available="true">
+<url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/394122021294-operativnaya-pamyat-kingston-16gb-6000mt</url>
+<price>220000</price>
+<currencyId>KZT</currencyId>
+<categoryId>160131640904</categoryId>
+<picture>https://static.tildacdn.com/tila3739-3665-4637-a335-373032623463/IS5561ED3063_1.jpg</picture>
+<name>Оперативная память KINGSTON 16GB 6000MT/s DDR5 CL36 DIMM FURY Beast White EXPO, EAN: 740617345865</name>
+<vendor>Kingston</vendor>
+<vendorCode>IS5561ED3063</vendorCode>
+<description>Объём 16 ГБ · Тайминги CL36 · Тип памяти DDR5 · Форм-фактор DIMM</description>
 </offer>
 <offer id="IS5673BA81BB" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/145561873294-operativnaya-pamyat-dlya-noutbuka-apacer</url>
@@ -51707,6 +51872,17 @@
 <vendorCode>IS8E4A7E8731</vendorCode>
 <description>Форм-фактор SO-DIMM · Оперативная память 8 ГБ · Объём 8 ГБ · Тайминги CL22 · Тип памяти DDR4 · Частота 3200 МГц</description>
 </offer>
+<offer id="IS8FF3AA6340" available="true">
+<url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/307019506244-operativnaya-pamyat-kingston-32gb-6000mt</url>
+<price>466000</price>
+<currencyId>KZT</currencyId>
+<categoryId>160131640904</categoryId>
+<picture>https://static.tildacdn.com/tila3165-3064-4663-a566-363831343039/IS8FF3AA6340_1.png</picture>
+<name>Оперативная память KINGSTON 32GB 6000MT/s DDR5 CL30 DIMM FURY Beast White EXPO</name>
+<vendor>Kingston</vendor>
+<vendorCode>IS8FF3AA6340</vendorCode>
+<description>Объём 32 ГБ · Тайминги CL30 · Тип памяти DDR5 · Форм-фактор DIMM</description>
+</offer>
 <offer id="IS90B2A595F6" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/854854241424-operativnaya-pamyat-kingston-dram-8gb-36</url>
 <price>74000</price>
@@ -51787,6 +51963,17 @@
 <vendorCode>IS9465BFB5B4</vendorCode>
 <description>Частота 6000 МГц · Тип памяти DDR5 · Оперативная память 16 ГБ · Форм-фактор DIMM · Тайминги CL30</description>
 </offer>
+<offer id="IS94DBD0EE09" available="true">
+<url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/925924965364-operativnaya-pamyat-dimm-ddr4-16-gb-3200</url>
+<price>80000</price>
+<currencyId>KZT</currencyId>
+<categoryId>160131640904</categoryId>
+<picture>https://static.tildacdn.com/tila6433-3961-4436-b539-643063643835/IS94DBD0EE09_1.jpg</picture>
+<name>Оперативная память DIMM DDR4 16 GB 3200MHz Hiksemi (Hikvision) Future, HSC416U32C2</name>
+<vendor>HIKSEMI</vendor>
+<vendorCode>IS94DBD0EE09</vendorCode>
+<description>Тип памяти DDR4 · Частота 3200 МГц · Форм-фактор DIMM · Объём 16 ГБ</description>
+</offer>
 <offer id="IS9548F82D37" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/618550183694-operativnaya-pamyat-corsair-ddr4-3200mhz</url>
 <price>49000</price>
@@ -51798,6 +51985,17 @@
 <vendor>CORSAIR</vendor>
 <vendorCode>IS9548F82D37</vendorCode>
 <description>Модулей в комплекте 1 · Оперативная память 8 ГБ · Тайминги 16-20-20-38 · Тип памяти DDR4 · Форм-фактор DIMM · Частота 3200 МГц</description>
+</offer>
+<offer id="IS96F33D3534" available="true">
+<url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/716719610044-operativnaya-pamyat-kingston-32gb-6000mt</url>
+<price>471000</price>
+<currencyId>KZT</currencyId>
+<categoryId>160131640904</categoryId>
+<picture>https://static.tildacdn.com/tila3636-3234-4536-b232-326635663366/IS96F33D3534_1.png</picture>
+<name>Оперативная память KINGSTON 32GB 6000MT/s DDR5 CL30 DIMM (Kit of 2) FURY Beast White EXPO KINGSTON KINGSTON 32GB 6000MT/S DDR5 CL30 DIMM (KIT OF 2) FURY BEAST WHITE EXPO</name>
+<vendor>Kingston</vendor>
+<vendorCode>IS96F33D3534</vendorCode>
+<description>Модулей в комплекте 2 · Объём 32 ГБ · Тайминги CL30 · Тип памяти DDR5 · Форм-фактор DIMM</description>
 </offer>
 <offer id="IS977A1025F9" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/801734808994-operativnaya-pamyat-dimm-ddr5-16-gb-5600</url>
@@ -54547,7 +54745,7 @@
 <name>Кулер с водяным охлаждением Deepcool LP240 WH R-LP240-WHMSMC-G-1</name>
 <vendor>Deepcool</vendor>
 <vendorCode>IS9D57A0B4F5</vendorCode>
-<description>Форм-фактор 240 мм · Сокет 1851 / 1700 / 1200 / 1151 / AM5 / AM4 · Интерфейс 4-pin PWM · Скорость вращения 600–2400 об/мин · Тип устройства Водяное охлаждение (СЖО) · TDP 280 Вт · Подсветка RGB · Уровень шума 38,71 дБА · Воздушный поток 72,04 CFM · Цвет Белый</description>
+<description>Форм-фактор 240 мм · Уровень шума 38,71 дБА · Подсветка RGB · Интерфейс 4-pin PWM · Скорость вращения 600–2400 об/мин · Тип устройства Водяное охлаждение (СЖО) · Воздушный поток 72,04 CFM · Тип подшипника Гидравлический · Сокет 1851 / 1700 / 1200 / 1151 / AM5 / AM4 · TDP 280 Вт</description>
 </offer>
 <offer id="IS9EAC92E2D6" available="true">
 <url>https://b2b.isoft-shop.kz/ohlazhdenie/tproduct/499062350054-ohlazhdenie-fan-for-case-12cm-wintek-i-1</url>
@@ -57709,7 +57907,7 @@
 <name>Патч Панель SHIP P197-24A</name>
 <vendor>Ship</vendor>
 <vendorCode>IS3DB8E12B0C</vendorCode>
-<description>Экранирование UTP · Высота в юнитах 1U · Количество портов 24</description>
+<description>Количество портов 24 · Высота в юнитах 1U · Экранирование UTP</description>
 </offer>
 <offer id="IS49CE1326BF" available="true">
 <url>https://b2b.isoft-shop.kz/patch-paneli/tproduct/405758743484-patch-panel-ship-p197-48a</url>
@@ -60215,7 +60413,7 @@
 <name>Розетка компьютерная Bticino KG4279C5E Living Now RJ45 cat.5e UTP 1 модуль черный</name>
 <vendor>Bticino</vendor>
 <vendorCode>ISAE59C33CBB</vendorCode>
-<description>Цвет чёрный · Категория кабеля Cat5e · Количество портов 1 · Тип разъёма RJ45 · Монтаж встраиваемая/модуль</description>
+<description>Категория кабеля Cat5e · Количество портов 1 · Монтаж встраиваемая/модуль · Тип разъёма RJ45 · Цвет чёрный</description>
 </offer>
 <offer id="ISAF537557D3" available="true">
 <url>https://b2b.isoft-shop.kz/rozetki-i-moduli/tproduct/974763216174-rozetka-kompyuternaya-dvoinaya-se-eph440</url>
@@ -61352,6 +61550,17 @@
 <vendor>Acer</vendor>
 <vendorCode>IS8FAAC420FF</vendorCode>
 <description>Блок питания 1+1 2400 Вт · Процессор Intel Xeon 6520P · Оперативная память 64 ГБ · Тип памяти DDR5 · Накопитель 2 × SSD 960 ГБ · Форм-фактор Rack 2U</description>
+</offer>
+<offer id="ISB46A5685B8" available="true">
+<url>https://b2b.isoft-shop.kz/servery/tproduct/974276816244-server-hpeml30-gen111xeone-2414-4c4t-12m</url>
+<price>2272000</price>
+<currencyId>KZT</currencyId>
+<categoryId>983972211584</categoryId>
+<picture>https://static.tildacdn.com/tila6439-3365-4662-b666-623164623133/ISB46A5685B8_1.jpg</picture>
+<name>Server HPE/ML30 Gen11/1/Xeon/E-2414 (4C/4T 12Mb)/2,6 GHz/32 Gb/Intel VROC/4LFF NHP/2x1TB SATA HDD/4x1GbE/1 x 350W NHP P71385-425</name>
+<vendor>HPE</vendor>
+<vendorCode>ISB46A5685B8</vendorCode>
+<description>Блок питания 1×350 Вт</description>
 </offer>
 <offer id="ISBF92680923" available="true">
 <url>https://b2b.isoft-shop.kz/servery/tproduct/239742461964-supermicro-assembled-server-based-on-sys</url>
@@ -69762,6 +69971,17 @@
 <vendorCode>ISE0280CBAA8</vendorCode>
 <description>Система хранения SEAGATE HDD Ironwolf pro NAS (3.5-inch/20TB/SATA/rmp 7200) (SEAGATE)</description>
 </offer>
+<offer id="ISE2E7309A65" available="true">
+<url>https://b2b.isoft-shop.kz/servery-i-shd/tproduct/100582105864-sistema-hraneniya-seagate-hdd-ironwolf-p</url>
+<price>276000</price>
+<currencyId>KZT</currencyId>
+<categoryId>168824029674</categoryId>
+<picture>https://static.tildacdn.com/tila3062-6162-4939-b237-323931353834/ISE2E7309A65_1.jpg</picture>
+<name>Система хранения SEAGATE HDD Ironwolf pro NAS (3.5-inch/8TB/SATA/rmp 7200)</name>
+<vendor>SEAGATE</vendor>
+<vendorCode>ISE2E7309A65</vendorCode>
+<description>Система хранения SEAGATE HDD Ironwolf pro NAS (3.5-inch/8TB/SATA/rmp 7200) (SEAGATE)</description>
+</offer>
 <offer id="ISE73BD71F6F" available="true">
 <url>https://b2b.isoft-shop.kz/servery-i-shd/tproduct/792110886454-sistema-hraneniya-zhyostkii-disk-sata-80</url>
 <price>296000</price>
@@ -72154,7 +72374,7 @@
 <name>Беспроводная точка доступа Ubiquiti U6-Enterprise</name>
 <vendor>Ubiquiti</vendor>
 <vendorCode>ISB9A7E77E81</vendorCode>
-<description>Wi-Fi 802.11a/b/g/n/ac/ax · Портов 1 · Класс Wi-Fi AX10200</description>
+<description>Портов 1 · Wi-Fi 802.11a/b/g/n/ac/ax · Класс Wi-Fi AX10200</description>
 </offer>
 <offer id="ISB9B20154AE" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/559402270274-tochka-dostupa-wi-fi-6-outdoor-access-po</url>

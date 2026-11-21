@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<yml_catalog date="2026-11-21 06:54">
+<yml_catalog date="2026-11-21 20:39">
 <shop>
 <name>iSoft</name>
 <company>iSoft</company>
@@ -1659,6 +1659,17 @@
 <vendorCode>SKC600/256G</vendorCode>
 <description>SSD-накопитель Kingston SKC600/256G: Ёмкость 256 Гб · Интерфейс SATA · Форм-фактор 2.5″ · Скорость чтения 550 Мб/сек · Скорость записи 500 Мб/сек. Цена с НДС, безналичный расчёт для организаций.</description>
 </offer>
+<offer id="IS8B97A3F821" available="true">
+<url>https://b2b.isoft-shop.kz/ssd-nakopiteli/tproduct/861693782704-ssd-nakopitel-teamgroup-nv5000-m2-pcie-4</url>
+<price>63000</price>
+<currencyId>KZT</currencyId>
+<categoryId>615429773604</categoryId>
+<picture>https://static.tildacdn.com/tila6638-3631-4263-b736-653937383033/IS8B97A3F821_1.jpg</picture>
+<name>SSD-накопитель TeamGroup NV5000 M.2 PCIe 4.0 SSD, 500Gb, 4500 MB/s 800 MB/s, TM8FGM500G0C101 Retail</name>
+<vendor>Team_Group</vendor>
+<vendorCode>IS8B97A3F821</vendorCode>
+<description>Форм-фактор M.2 · Ёмкость 500 ГБ</description>
+</offer>
 <offer id="IS8CA92A4A5D" available="true">
 <url>https://b2b.isoft-shop.kz/ssd-nakopiteli/tproduct/304834464424-ssd-nakopitel-agi-ai818-1tb-pcie-gen4-re</url>
 <price>106000</price>
@@ -2268,6 +2279,17 @@
 <vendor>COLORFUL</vendor>
 <vendorCode>ISE365E2CF90</vendorCode>
 <description>Ёмкость 256 ГБ · Интерфейс PCIE 3.0 X4 · Форм-фактор M.2</description>
+</offer>
+<offer id="ISE64BE7D03F" available="true">
+<url>https://b2b.isoft-shop.kz/ssd-nakopiteli/tproduct/957847790204-ssd-nakopitel-teamgroup-nv5000-m2-pcie-4</url>
+<price>114000</price>
+<currencyId>KZT</currencyId>
+<categoryId>615429773604</categoryId>
+<picture>https://static.tildacdn.com/tila6437-3536-4730-b966-393436343135/ISE64BE7D03F_1.jpg</picture>
+<name>SSD-накопитель TeamGroup NV5000 M.2 PCIe 4.0 SSD, 1000Gb, 4500 MB/s 1900 MB/s, M8FGM001T0C101 Retail TM8FGM001T0C101</name>
+<vendor>Team_Group</vendor>
+<vendorCode>ISE64BE7D03F</vendorCode>
+<description>Форм-фактор M.2 · Ёмкость 1 ТБ</description>
 </offer>
 <offer id="ISE65B2120ED" available="true">
 <url>https://b2b.isoft-shop.kz/ssd-nakopiteli/tproduct/949591289224-transcend-500gb-25-inch-ssd-sata3-3d-tlc</url>
@@ -6844,6 +6866,17 @@
 <vendorCode>NE7506TU19P1-GB2062M</vendorCode>
 <description>RTX5060Ti WHITE OC 8GB (4710562245660), (NE7506TU19P1-GB2062M), GDDR7, 128bit, 3-DP, HDMI, 291.9*116.6*41.3 мм, Цветная коробка</description>
 </offer>
+<offer id="IS790312FBD9" available="true">
+<url>https://b2b.isoft-shop.kz/videokarty/tproduct/989736005674-videokarta-gpu-nvidia16-gb-asus-rtx-5060</url>
+<price>576000</price>
+<currencyId>KZT</currencyId>
+<categoryId>784666503994</categoryId>
+<picture>https://static.tildacdn.com/tila3430-3032-4437-b538-666433666530/IS790312FBD9_1.jpg</picture>
+<name>Видеокарта GPU NVIDIA,16 GB, ASUS RTX 5060 Ti DUAL OC [DUAL-RTX5060TI-O16G], HDMI/3DP, GDDR7/128bit</name>
+<vendor>ASUS</vendor>
+<vendorCode>IS790312FBD9</vendorCode>
+<description>Объём видеопамяти 16 ГБ · Тип видеопамяти GDDR7 · Разрядность шины 128 бит · Видеовыходы HDMI / DP x 3</description>
+</offer>
 <offer id="IS79BB94E4C9" available="true">
 <url>https://b2b.isoft-shop.kz/videokarty/tproduct/736668330984-videokarta-gpu-nvidia16-gb-asus-rtx-5070</url>
 <price>939000</price>
@@ -11138,7 +11171,7 @@
 <name>ИБП SVC GT33-20KVA</name>
 <vendor>SVC</vendor>
 <vendorCode>IS609D26A90A</vendorCode>
-<description>Интерфейс RS-232 · Мощность 20000 ВА · Форма выходного сигнала Синусоида · Время переключения 0 мс · Топология On-Line · Цвет Чёрный · Гарантия 2 года · Рабочая температура от 0 до 40 °С</description>
+<description>Мощность 20000 ВА · Гарантия 2 года · Интерфейс RS-232 · Топология On-Line · Форма выходного сигнала Синусоида · Время переключения 0 мс · Цвет Чёрный · Рабочая температура от 0 до 40 °С</description>
 </offer>
 <offer id="IS64DF4B197F" available="true">
 <url>https://b2b.isoft-shop.kz/ibp-i-zashchita-pitaniya/tproduct/732445882814-ibp-apcbe1050g2-grback-ups1-050-va600-w</url>
@@ -12347,7 +12380,7 @@
 <name>ИБП SVC V-3000-F-LCD</name>
 <vendor>SVC</vendor>
 <vendorCode>ISC4F3CA9A4E</vendorCode>
-<description>Интерфейс USB · Мощность 3000 ВА / 1800 Вт · Розеток 4 · Ёмкость батареи 12В/7,5Ач х 4 · Форма выходного сигнала Ступенчатая синусоида · Время переключения 3 мс · Топология Линейно-интерактивный · Размещение Напольный · Цвет Чёрный · Гарантия 1 год</description>
+<description>Интерфейс USB · Рабочая температура от 0 до 40 °С · Топология Линейно-интерактивный · Мощность 3000 ВА / 1800 Вт · Розеток 4 · Размещение Напольный · Класс мощности 3 кВА · Форма выходного сигнала Ступенчатая синусоида · Время переключения 3 мс · Гарантия 1 год</description>
 </offer>
 <offer id="ISC6EB068068" available="true">
 <url>https://b2b.isoft-shop.kz/ibp-i-zashchita-pitaniya/tproduct/395023265664-ibp-apc-smart-ups-srtg15kxli</url>
@@ -20145,6 +20178,17 @@
 <vendorCode>ISA1BECA0727</vendorCode>
 <description>Цвет Чёрно-синий · Тип устройства клавиатура · Тип клавиатуры механическая · Тип переключателей Red Switch · Подсветка RGB · Раскладка русская/английская</description>
 </offer>
+<offer id="ISA301811524" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury/tproduct/822447897604-klaviatura-mchose-mechanical-keyboard-g7</url>
+<price>29000</price>
+<currencyId>KZT</currencyId>
+<categoryId>723843374454</categoryId>
+<picture>https://static.tildacdn.com/tila3261-3161-4936-a536-363731663263/ISA301811524_1.png</picture>
+<name>Клавиатура MCHOSE Mechanical Keyboard G75 Pro Matcha Latte Sw. - Arctic Snow</name>
+<vendor>MCHOSE</vendor>
+<vendorCode>ISA301811524</vendorCode>
+<description>Тип устройства клавиатура</description>
+</offer>
 <offer id="ISA3FF543648" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury/tproduct/119608844764-klaviatura-usb-gembird-kbw-g500l-bt24-gh</url>
 <price>25000</price>
@@ -20885,6 +20929,17 @@
 <vendorCode>ISD426D4D66F</vendorCode>
 <description>Тип устройства клавиатура · Подсветка RGB · Цвет Чёрный · Тип клавиатуры механическая · Форм-фактор Полноразмерная · Подключение Проводное · Раскладка русская/английская</description>
 </offer>
+<offer id="ISD467D4D66F" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury/tproduct/388314499094-klaviatura-mchose-magnetic-he-keyboard-a</url>
+<price>42000</price>
+<currencyId>KZT</currencyId>
+<categoryId>723843374454</categoryId>
+<picture>https://static.tildacdn.com/tila6565-3238-4163-b138-663432303565/ISD467D4D66F_1.png</picture>
+<name>Клавиатура MCHOSE Magnetic HE Keyboard Ace 75 Royal Steed Sw. - Midnight Purple</name>
+<vendor>MCHOSE</vendor>
+<vendorCode>ISD467D4D66F</vendorCode>
+<description>Тип устройства клавиатура</description>
+</offer>
 <offer id="ISD4B9C88A52" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury/tproduct/471603920604-klaviatura-ajazz-mk87-pro-litchi-switch</url>
 <price>41000</price>
@@ -21271,6 +21326,17 @@
 <vendor>HP</vendor>
 <vendorCode>ISEE468AD226</vendorCode>
 <description>Подключение Беспроводное · Тип устройства клавиатура</description>
+</offer>
+<offer id="ISEEDB4E79A6" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury/tproduct/177461306764-klaviatura-mchose-mechanical-keyboard-g7</url>
+<price>29000</price>
+<currencyId>KZT</currencyId>
+<categoryId>723843374454</categoryId>
+<picture>https://static.tildacdn.com/tila3664-3966-4532-b231-316466373030/ISEEDB4E79A6_1.png</picture>
+<name>Клавиатура MCHOSE Mechanical Keyboard G75 Pro Matcha Latte Sw. - Mist White</name>
+<vendor>MCHOSE</vendor>
+<vendorCode>ISEEDB4E79A6</vendorCode>
+<description>Тип устройства клавиатура</description>
 </offer>
 <offer id="ISEF61756B8A" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury/tproduct/220241850224-klaviatura-rapoo-v700rgb-v700rgb-alloy</url>
@@ -25712,6 +25778,17 @@
 <vendorCode>IS4C3CA9DEF2</vendorCode>
 <description>Тип устройства МФУ · Формат A3 · Интерфейсы USB, Ethernet · Технология печати лазерный · Цветность ч/б · Скорость печати 24 стр/мин · Класс скорости печати 25–29 стр/мин</description>
 </offer>
+<offer id="IS4E7ACEA131" available="true">
+<url>https://b2b.isoft-shop.kz/mfu-lazernye-cvetnye/tproduct/417559245904-mfu-struinoe-tsvetnoe-epson-l8160-c11cj2</url>
+<price>303000</price>
+<currencyId>KZT</currencyId>
+<categoryId>910558779244</categoryId>
+<picture>https://static.tildacdn.com/tila3464-3462-4636-b264-336564373031/IS4E7ACEA131_1.jpg</picture>
+<name>МФУ струйное цветное Epson L8160 C11CJ20404, А4, 32 стр/мин, 6цв, wIFI, Ethernet, Duplex, no ADF, Sdreader</name>
+<vendor>Epson</vendor>
+<vendorCode>IS4E7ACEA131</vendorCode>
+<description>МФУ струйное цветное Epson L8160 C11CJ20404, А4, 32 стр/мин, 6цв, wIFI, Ethernet, Duplex, no ADF, Sdreader (Epson)</description>
+</offer>
 <offer id="IS4ED03B23CD" available="true">
 <url>https://b2b.isoft-shop.kz/mfu/tproduct/197670360314-mfu-lazernoe-chb-hp-inc-3303fdn-499m7a-a</url>
 <price>268000</price>
@@ -25967,7 +26044,7 @@
 <name>Монохромное лазерное МФУ Canon I-S MF465dw II 7188C007AA</name>
 <vendor>Canon</vendor>
 <vendorCode>IS81249091B3</vendorCode>
-<description>Цветность ч/б · Тип устройства МФУ · Интерфейсы USB 2.0, Ethernet, Wi-Fi · Формат A4 · Скорость печати 40 стр/мин</description>
+<description>Тип устройства МФУ · Цветность ч/б · Формат A4 · Скорость печати 40 стр/мин · Интерфейсы USB 2.0, Ethernet, Wi-Fi</description>
 </offer>
 <offer id="IS822936565E" available="true">
 <url>https://b2b.isoft-shop.kz/mfu/tproduct/382568086874-mfu-epson-xp-15000-exp-photo-a3-printers</url>
@@ -32511,7 +32588,7 @@
 <name>Монитор 32-inch LG 32G600A-B</name>
 <vendor>LG</vendor>
 <vendorCode>IS12B02D899C</vendorCode>
-<description>Диагональ 32″ · Разрешение 2560×1440 · Частота обновления 180 Гц · Время отклика 1 мс · Яркость 250 кд/м² · Тип матрицы VA · Соотношение сторон 16:9 · Контрастность 1300:1 · Угол обзора 178° · Размер экрана 31,5–32″</description>
+<description>Диагональ 32″ · Разрешение 2560×1440 · Тип матрицы VA · Частота обновления 180 Гц · Время отклика 1 мс · Яркость 250 кд/м² · Соотношение сторон 16:9 · Угол обзора 178° · Размер экрана 31,5–32″ · Контрастность 1300:1</description>
 </offer>
 <offer id="IS12F7D785FD" available="true">
 <url>https://b2b.isoft-shop.kz/monitory/tproduct/292630814474-monitor-lenovo-p49w-30-63dbrat1eu-49-inc</url>
@@ -34936,7 +35013,7 @@
 <name>Монитор 32-inch LG 32U720A-B</name>
 <vendor>LG</vendor>
 <vendorCode>ISB71995BE85</vendorCode>
-<description>Диагональ 32″ · Разрешение 3840×2160 · Частота обновления 60 Гц · Время отклика 5 мс · Яркость 250 кд/м² · Тип матрицы VA · Соотношение сторон 16:9 · Контрастность 3000:1 · Угол обзора 178° · Размер экрана 31,5–32″</description>
+<description>Диагональ 32″ · Размер экрана 31,5–32″ · Разрешение 3840×2160 · Яркость 250 кд/м² · Соотношение сторон 16:9 · Контрастность 3000:1 · Угол обзора 178° · Тип матрицы VA · Частота обновления 60 Гц · Время отклика 5 мс</description>
 </offer>
 <offer id="ISB74692D7D8" available="true">
 <url>https://b2b.isoft-shop.kz/monitory/tproduct/740463617264-monitor-lg-27-inch-27gs65f-b</url>
@@ -38212,6 +38289,17 @@
 <vendorCode>IS2F65C3CFBA</vendorCode>
 <description>Тип устройства мышь · Подключение Беспроводное · Тип сенсора Оптический · Цвет Чёрный · Разрешение сенсора 1600 dpi · Кнопок 4</description>
 </offer>
+<offer id="IS2FEE2BE439" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/539322318524-igrovaya-mish-mchose-a7-v3-ultra-3955-tr</url>
+<price>42000</price>
+<currencyId>KZT</currencyId>
+<categoryId>816235379434</categoryId>
+<picture>https://static.tildacdn.com/tila6630-3462-4564-b966-643866316265/IS2FEE2BE439_1.png</picture>
+<name>Игровая мышь MCHOSE A7 V3 Ultra+ 3955 Tri-mode - Black Gold MCHOSE GAMING MOUSE A7 V3 ULTRA+ 3955 TRI-MODE - BLACK GOLD</name>
+<vendor>MCHOSE</vendor>
+<vendorCode>IS2FEE2BE439</vendorCode>
+<description>Назначение Игровая · Тип устройства мышь</description>
+</offer>
 <offer id="IS3037D0BE1A" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/982306717964-kompyuternaya-mish-razer-deathadder-v4-p</url>
 <price>108000</price>
@@ -39037,6 +39125,17 @@
 <vendorCode>IS4C47EDD162</vendorCode>
 <description>Подключение Беспроводное · Разрешение сенсора 32000 dpi · Тип устройства мышь · Тип сенсора Оптический · Цвет Белый · Гарантия 1 год · Назначение Игровая</description>
 </offer>
+<offer id="IS4C63880F0F" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/176143496014-igrovaya-mish-mchose-k7-v2-ultra-3955-tr</url>
+<price>44000</price>
+<currencyId>KZT</currencyId>
+<categoryId>816235379434</categoryId>
+<picture>https://static.tildacdn.com/tila6364-6132-4930-b637-386135633038/IS4C63880F0F_1.png</picture>
+<name>Игровая мышь MCHOSE K7 V2 Ultra+ 3955 Tri-mode - White Gold MCHOSE GAMING MOUSE K7 V2 ULTRA+ 3955 TRI-MODE - WHITE GOLD</name>
+<vendor>MCHOSE</vendor>
+<vendorCode>IS4C63880F0F</vendorCode>
+<description>Назначение Игровая · Тип устройства мышь</description>
+</offer>
 <offer id="IS4D4CBBBE6B" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/752078984034-kompyuternaya-mish-asus-proart-mouse-md3</url>
 <price>47000</price>
@@ -39220,6 +39319,17 @@
 <vendorCode>IS518C42F191</vendorCode>
 <description>Разрешение сенсора 800 dpi · Тип сенсора Оптический · Тип устройства мышь · Цвет Чёрный</description>
 </offer>
+<offer id="IS51B2E30E3D" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/106441656274-igrovaya-mish-mchose-k7-v2-ultra-3955-tr</url>
+<price>44000</price>
+<currencyId>KZT</currencyId>
+<categoryId>816235379434</categoryId>
+<picture>https://static.tildacdn.com/tila6333-3430-4666-a162-643865323533/IS51B2E30E3D_1.png</picture>
+<name>Игровая мышь MCHOSE K7 V2 Ultra+ 3955 Tri-mode - Black Gold MCHOSE GAMING MOUSE K7 V2 ULTRA+ 3955 TRI-MODE - BLACK GOLD</name>
+<vendor>MCHOSE</vendor>
+<vendorCode>IS51B2E30E3D</vendorCode>
+<description>Назначение Игровая · Тип устройства мышь</description>
+</offer>
 <offer id="IS51BB3CBAE0" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/568126958034-mish-logitech-m196-bluetooth-mouse-graph</url>
 <price>7100</price>
@@ -39234,6 +39344,17 @@
 <vendor>Logitech</vendor>
 <vendorCode>IS51BB3CBAE0</vendorCode>
 <description>В комплекте Руководство по быстрому старту · Тип устройства мышь · Гарантия 2 года · Цвет Серый · Подключение Беспроводное</description>
+</offer>
+<offer id="IS51F4BB21EC" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/222338035364-igrovaya-mish-mchose-a7-v3-ultra-3955-tr</url>
+<price>42000</price>
+<currencyId>KZT</currencyId>
+<categoryId>816235379434</categoryId>
+<picture>https://static.tildacdn.com/tila6631-3831-4666-b834-393839653961/IS51F4BB21EC_1.png</picture>
+<name>Игровая мышь MCHOSE A7 V3 Ultra+ 3955 Tri-mode - белая MCHOSE GAMING MOUSE A7 V3 ULTRA+ 3955 TRI-MODE - WHITE</name>
+<vendor>MCHOSE</vendor>
+<vendorCode>IS51F4BB21EC</vendorCode>
+<description>Назначение Игровая · Тип устройства мышь · Цвет Белый</description>
 </offer>
 <offer id="IS52227C6C50" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/625192311584-besprovodnaya-igrovaya-mish-lenovo-legio</url>
@@ -40023,6 +40144,17 @@
 <vendor>Logitech</vendor>
 <vendorCode>IS712FDC813D</vendorCode>
 <description>Назначение Игровая · Тип устройства мышь</description>
+</offer>
+<offer id="IS716B304FCE" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/309853820144-igrovaya-mish-mchose-k7-v2-pro-3950-tri</url>
+<price>41000</price>
+<currencyId>KZT</currencyId>
+<categoryId>816235379434</categoryId>
+<picture>https://static.tildacdn.com/tila3432-6564-4965-b436-653435393238/IS716B304FCE_1.png</picture>
+<name>Игровая мышь MCHOSE K7 V2 Pro+ 3950 Tri-mode - белая MCHOSE GAMING MOUSE K7 V2 PRO+ 3950 TRI-MODE - WHITE</name>
+<vendor>MCHOSE</vendor>
+<vendorCode>IS716B304FCE</vendorCode>
+<description>Назначение Игровая · Тип устройства мышь · Цвет Белый</description>
 </offer>
 <offer id="IS721447A848" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/354489206074-mish-defender-kronos-gm-695-usb-400mah-1</url>
@@ -41570,6 +41702,17 @@
 <vendor>Delux</vendor>
 <vendorCode>ISAC1D438A54</vendorCode>
 <description>Тип устройства мышь · Цвет Чёрный · Гарантия 1 год · Подключение Проводное · Тип сенсора Оптический · Разрешение сенсора 2400 dpi · Назначение Игровая</description>
+</offer>
+<offer id="ISAC35267CF3" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/951473646204-mish-canyon-mouse-fortnax-gm-636-rgb-9bu</url>
+<price>8700</price>
+<currencyId>KZT</currencyId>
+<categoryId>816235379434</categoryId>
+<picture>https://static.tildacdn.com/tila6437-6161-4539-a233-643365643537/ISAC35267CF3_1.png</picture>
+<name>Мышь CANYON mouse Fortnax GM-636 RGB 9buttons Wired Black</name>
+<vendor>CANYON</vendor>
+<vendorCode>ISAC35267CF3</vendorCode>
+<description>Тип устройства мышь · Подключение Проводное · Кнопок 9 · Цвет Чёрный</description>
 </offer>
 <offer id="ISAC7FF37C15" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/357537941744-mish-logitech-b170-wireless-mouse-black</url>
@@ -43422,6 +43565,17 @@
 <vendorCode>ISF9B4485476</vendorCode>
 <description>Комплект Клавиатура + Мышь, Genius, SLIMSTAR C126, Англ/Рус, USB, Длина кабеля 150см, Пластик, Чёрный</description>
 </offer>
+<offer id="ISF9BEAAC1AC" available="true">
+<url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/705890555664-mish-logitech-m650-signature-bluetooth-m</url>
+<price>29000</price>
+<currencyId>KZT</currencyId>
+<categoryId>816235379434</categoryId>
+<picture>https://static.tildacdn.com/tila3061-3364-4130-b639-376165373761/ISF9BEAAC1AC_1.png</picture>
+<name>Мышь LOGITECH M650 Signature Bluetooth Mouse - OFF-WHITE</name>
+<vendor>Logitech</vendor>
+<vendorCode>ISF9BEAAC1AC</vendorCode>
+<description>Тип устройства мышь · Подключение Беспроводное · Цвет Белый</description>
+</offer>
 <offer id="ISFA00BDEF9A" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/975760283784-mish-defender-pandora-gm-502-wireless-op</url>
 <price>8500</price>
@@ -43729,6 +43883,17 @@
 <vendor>Rapoo</vendor>
 <vendorCode>IS0DF6BD8082</vendorCode>
 <description>Тип устройства Гарнитура · Цвет Чёрный · Длина кабеля 1,2 м</description>
+</offer>
+<offer id="IS0E9CB4F1D8" available="true">
+<url>https://b2b.isoft-shop.kz/naushniki/tproduct/335373103604-igrovaya-garnitura-mchose-v9-turbo-tri-m</url>
+<price>54000</price>
+<currencyId>KZT</currencyId>
+<categoryId>813446092544</categoryId>
+<picture>https://static.tildacdn.com/tila3164-6430-4533-a466-376130623937/IS0E9CB4F1D8_1.png</picture>
+<name>Игровая гарнитура MCHOSE V9 Turbo Tri-mode - Berry Red + Charging Doc MCHOSE GAMING HEADSET V9 TURBO TRI-MODE - BERRY RED + CHARGING DOC</name>
+<vendor>MCHOSE</vendor>
+<vendorCode>IS0E9CB4F1D8</vendorCode>
+<description>Назначение Игровое · Цвет красный</description>
 </offer>
 <offer id="IS0ECFF274B2" available="true">
 <url>https://b2b.isoft-shop.kz/naushniki-i-garnitury/tproduct/926857254494-jabra-biz-2300-duo-usb-c-ms-2399-823-189</url>
@@ -45029,6 +45194,17 @@
 <vendorCode>IS721F29305D</vendorCode>
 <description>JABRA BIZ 1500 Duo, QD, NC, EMEA 1519-0154 (Jabra)</description>
 </offer>
+<offer id="IS76EE5BCF3B" available="true">
+<url>https://b2b.isoft-shop.kz/naushniki/tproduct/179764936474-igrovaya-garnitura-mchose-v9-turbo-tri-m</url>
+<price>54000</price>
+<currencyId>KZT</currencyId>
+<categoryId>813446092544</categoryId>
+<picture>https://static.tildacdn.com/tila3430-3837-4132-b432-343531346234/IS76EE5BCF3B_1.png</picture>
+<name>Игровая гарнитура MCHOSE V9 Turbo Tri-mode - Black Gold + Charging Doc MCHOSE GAMING HEADSET V9 TURBO TRI-MODE - BLACK GOLD + CHARGING DOC</name>
+<vendor>MCHOSE</vendor>
+<vendorCode>IS76EE5BCF3B</vendorCode>
+<description>Назначение Игровое</description>
+</offer>
 <offer id="IS779710FBA4" available="true">
 <url>https://b2b.isoft-shop.kz/naushniki-i-garnitury/tproduct/919473019054-garnitura-ajazz-ahm09-max-white-ahm09max</url>
 <price>21000</price>
@@ -45186,6 +45362,17 @@
 <vendor>Genius</vendor>
 <vendorCode>IS84F9662979</vendorCode>
 <description>Тип устройства Гарнитура · Цвет Зелёный · Длина кабеля 1,3 м</description>
+</offer>
+<offer id="IS856B76CC68" available="true">
+<url>https://b2b.isoft-shop.kz/naushniki/tproduct/704543710304-igrovaya-garnitura-mchose-v9-pro-tri-mod</url>
+<price>28000</price>
+<currencyId>KZT</currencyId>
+<categoryId>813446092544</categoryId>
+<picture>https://static.tildacdn.com/tila6330-3062-4365-b062-303736333638/IS856B76CC68_1.png</picture>
+<name>Игровая гарнитура MCHOSE V9 Pro Tri-mode Silver - белая MCHOSE GAMING HEADSET V9 PRO TRI-MODE SILVER - WHITE</name>
+<vendor>MCHOSE</vendor>
+<vendorCode>IS856B76CC68</vendorCode>
+<description>Назначение Игровое</description>
 </offer>
 <offer id="IS8669AF5F24" available="true">
 <url>https://b2b.isoft-shop.kz/naushniki-i-garnitury/tproduct/525492282364-naushniki-lenovo-legion-h600-wireless-ga</url>
@@ -45374,6 +45561,17 @@
 <vendor>Razer</vendor>
 <vendorCode>IS930822B06E</vendorCode>
 <description>Тип устройства Гарнитура · Цвет Белый · Длина кабеля 1,3 м · Интерфейс 3,5 мм</description>
+</offer>
+<offer id="IS9353CB52E2" available="true">
+<url>https://b2b.isoft-shop.kz/naushniki/tproduct/486549107284-igrovaya-garnitura-mchose-v9-turbo-tri-m</url>
+<price>54000</price>
+<currencyId>KZT</currencyId>
+<categoryId>813446092544</categoryId>
+<picture>https://static.tildacdn.com/tila6337-6265-4463-b338-353831383264/IS9353CB52E2_1.png</picture>
+<name>Игровая гарнитура MCHOSE V9 Turbo Tri-mode - Silver White + Charging Doc GAMING HEADSET V9 - +</name>
+<vendor>MCHOSE</vendor>
+<vendorCode>IS9353CB52E2</vendorCode>
+<description>Назначение Игровое</description>
 </offer>
 <offer id="IS93693A1F26" available="true">
 <url>https://b2b.isoft-shop.kz/naushniki-i-garnitury/tproduct/795508038704-jabra-evolve-30-ii-usb-ca-mono-ms-5393-8</url>
@@ -45979,6 +46177,17 @@
 <vendor>Logitech</vendor>
 <vendorCode>ISC16CCA91DE</vendorCode>
 <description>Тип устройства Гарнитура · Цвет Синий · Назначение Игровое</description>
+</offer>
+<offer id="ISC1D294ADAF" available="true">
+<url>https://b2b.isoft-shop.kz/naushniki/tproduct/767992803854-igrovaya-garnitura-mchose-v9-pro-tri-mod</url>
+<price>28000</price>
+<currencyId>KZT</currencyId>
+<categoryId>813446092544</categoryId>
+<picture>https://static.tildacdn.com/tila6339-3965-4031-a162-323635653931/ISC1D294ADAF_1.png</picture>
+<name>Игровая гарнитура MCHOSE V9 Pro Tri-mode Gunmetal - чёрная MCHOSE GAMING HEADSET V9 PRO TRI-MODE GUNMETAL - BLACK</name>
+<vendor>MCHOSE</vendor>
+<vendorCode>ISC1D294ADAF</vendorCode>
+<description>Назначение Игровое · Цвет Чёрный</description>
 </offer>
 <offer id="ISC260FB2DF5" available="true">
 <url>https://b2b.isoft-shop.kz/naushniki-i-garnitury/tproduct/213212863214-naushniki-soundcore-liberty-5-pro-black</url>
@@ -47729,7 +47938,7 @@
 <name>Ноутбук ASUS Zenbook 14 UX3480KA-U1161W 14-inch FHD+ 60Hz Ryzen AI 5 330 16GB 256GB Win11</name>
 <vendor>ASUS</vendor>
 <vendorCode>IS38522215D7</vendorCode>
-<description>Диагональ 14″ · Ёмкость 256 ГБ · Оперативная память 16 ГБ · Операционная система Windows 11 · Частота обновления 60 Гц · Семья ОС Windows 11 · Линейка процессора Ryzen 5</description>
+<description>Ёмкость 256 ГБ · Оперативная память 16 ГБ · Операционная система Windows 11 · Семья ОС Windows 11 · Линейка процессора Ryzen 5 · Диагональ 14″ · Частота обновления 60 Гц</description>
 </offer>
 <offer id="IS3879C6772F" available="true">
 <url>https://b2b.isoft-shop.kz/noutbuki/tproduct/752055698994-noutbuk-dellpro-14-plus-pb14250-bto105pb</url>
@@ -47768,7 +47977,7 @@
 <name>Ноутбук ASUS Zenbook 14 UX3480KA-U1095W 14-inch FHD+ 60Hz Ryzen AI 5 330 16GB 512GB Win11</name>
 <vendor>ASUS</vendor>
 <vendorCode>IS3CF3B7765C</vendorCode>
-<description>Диагональ 14″ · Ёмкость 512 ГБ · Оперативная память 16 ГБ · Операционная система Windows 11 · Частота обновления 60 Гц · Семья ОС Windows 11 · Линейка процессора Ryzen 5</description>
+<description>Ёмкость 512 ГБ · Оперативная память 16 ГБ · Операционная система Windows 11 · Семья ОС Windows 11 · Линейка процессора Ryzen 5 · Диагональ 14″ · Частота обновления 60 Гц</description>
 </offer>
 <offer id="IS3CF706BD3E" available="true">
 <url>https://b2b.isoft-shop.kz/noutbuki/tproduct/151366074244-noutbuk-asus-h7606ww-se079x-90nb17f1-m00</url>
@@ -48499,7 +48708,7 @@
 <name>Ноутбук MSI Modern 15 F1MG-1431XKZY 15.6-inch FHD 60Hz Core 5 120U 16GB 512GB DOS</name>
 <vendor>MSI</vendor>
 <vendorCode>IS70FA7D57C2</vendorCode>
-<description>Диагональ 15,6″ · Разрешение 1920×1080 · Ёмкость 512 ГБ · Оперативная память 16 ГБ · Операционная система без ОС · Частота обновления 60 Гц · Семья ОС Без ОС · Линейка процессора Core 5</description>
+<description>Диагональ 15,6″ · Ёмкость 512 ГБ · Оперативная память 16 ГБ · Операционная система без ОС · Разрешение 1920×1080 · Частота обновления 60 Гц · Линейка процессора Core 5 · Семья ОС Без ОС</description>
 </offer>
 <offer id="IS7213A2D005" available="true">
 <url>https://b2b.isoft-shop.kz/noutbuki/tproduct/221787971334-noutbuk-asus-tuf-gaming-a15-fa506ncg-hn4</url>
@@ -50267,6 +50476,17 @@
 <vendor>APPLE</vendor>
 <vendorCode>ISF97AF4CBFD</vendorCode>
 <description>Ёмкость 1 ТБ · Диагональ 13,6″ · Разрешение 2560×1664 · Видеокарта Встроенная · Оперативная память 16 ГБ · Операционная система macOS · Линейка процессора Apple M · Процессор Apple M5 · Накопитель 1 ТБ · Тип матрицы IPS</description>
+</offer>
+<offer id="ISFB6BFCDCC7" available="true">
+<url>https://b2b.isoft-shop.kz/noutbuki/tproduct/791092976614-noutbuk-asus-pm5406cka-ly1080xr5-33016g5</url>
+<price>693000</price>
+<currencyId>KZT</currencyId>
+<categoryId>293087419414</categoryId>
+<picture>https://static.tildacdn.com/tila6236-3831-4432-a233-373663323731/ISFB6BFCDCC7_1.jpg</picture>
+<name>Ноутбук ASUS PM5406CKA-LY1080X/R5 330/16G/512GB PCIE/14.0 WUXGA 1920X1080 300nt/W11P/WiFi 7/1080p FHD IR/1yw/BL KBD 90NX0971-M019M0</name>
+<vendor>ASUS</vendor>
+<vendorCode>ISFB6BFCDCC7</vendorCode>
+<description>Диагональ 14″ · Разрешение 1920×1080 · Ёмкость 512 ГБ · Процессор R5 330 · Оперативная память 16 ГБ · Операционная система Windows 11 Pro · Wi-Fi Wi-Fi 7 · Подсветка клавиатуры есть · Камера IR + FHD · Семья ОС Windows 11</description>
 </offer>
 <offer id="ISFBB5D5C9D7" available="true">
 <url>https://b2b.isoft-shop.kz/noutbuki/tproduct/187614200764-noutbuk-asus-proart-p16-h7606wr-se077x-9</url>
@@ -55378,7 +55598,7 @@
 <name>Охлаждение Кулер для процессора Deepcool AG400 BK ARGB V2 R-AG400-BKAMMN-GJD</name>
 <vendor>Deepcool</vendor>
 <vendorCode>ISF65E6BE437</vendorCode>
-<description>Форм-фактор 120 мм · Сокет 1851 / 1700 / 1200 / 1151 / AM5 / AM4 · Интерфейс 4-pin · Скорость вращения 500–2100 об/мин · Тип устройства Кулер для процессора · TDP 220 Вт · Подсветка ARGB · Уровень шума 31,6 дБА · Воздушный поток 75,89 CFM · Цвет Чёрный</description>
+<description>TDP 220 Вт · Форм-фактор 120 мм · Уровень шума 31,6 дБА · Интерфейс 4-pin · Количество вентиляторов 1 · Тип устройства Кулер для процессора · Воздушный поток 75,89 CFM · Цвет Чёрный · Гарантия 1 год · Тип подшипника Гидравлический</description>
 </offer>
 <offer id="ISF6F073EED4" available="true">
 <url>https://b2b.isoft-shop.kz/ohlazhdenie/tproduct/711724723034-ohlazhdenie-cooler-id-cooling-frozn-a410</url>
@@ -61714,6 +61934,17 @@
 <vendorCode>IS212E0BA9BE</vendorCode>
 <description>Тип устройства Коммутатор · Портов 24 · Скорость 10/100/1000 Мбит/с · Слотов SFP 4 · PoE Есть · Бюджет PoE 370 Вт · Уровень L3 · Управление Управляемый · Размещение В стойку · Класс по числу портов 23–40 портов</description>
 </offer>
+<offer id="IS228560277C" available="true">
+<url>https://b2b.isoft-shop.kz/setevoe-oborudovanie/tproduct/875608657704-mchose-magnetic-he-keyboard-ace-75-royal</url>
+<price>37000</price>
+<currencyId>KZT</currencyId>
+<categoryId>737078043964</categoryId>
+<picture>https://static.tildacdn.com/tila3562-3732-4464-b933-333865323662/IS228560277C_1.png</picture>
+<name>MCHOSE Magnetic HE Keyboard Ace 75 Royal Steed Switch - Navy Blue</name>
+<vendor>MCHOSE</vendor>
+<vendorCode>IS228560277C</vendorCode>
+<description>MCHOSE Magnetic HE Keyboard Ace 75 Royal Steed Switch - Navy Blue (MCHOSE)</description>
+</offer>
 <offer id="IS22B86D5A13" available="true">
 <url>https://b2b.isoft-shop.kz/setevoe-oborudovanie/tproduct/326275165364-kommutator-dahua-dh-chs4212-8gt-110</url>
 <price>130000</price>
@@ -62626,6 +62857,17 @@
 <vendor>TP-Link</vendor>
 <vendorCode>IS47F3E1EA7D</vendorCode>
 <description>Тип устройства Коммутатор · Портов 48 · Слотов SFP 4 · PoE Есть · Уровень L2+ · Класс по числу портов 41 и больше · Бюджет PoE 384 Вт</description>
+</offer>
+<offer id="IS4890A63052" available="true">
+<url>https://b2b.isoft-shop.kz/setevoe-oborudovanie/tproduct/171282345564-mchose-magnetic-he-keyboard-ace-75-berse</url>
+<price>36000</price>
+<currencyId>KZT</currencyId>
+<categoryId>737078043964</categoryId>
+<picture>https://static.tildacdn.com/tila3463-6361-4135-b034-646338666236/IS4890A63052_1.png</picture>
+<name>MCHOSE Magnetic HE Keyboard Ace 75 Berserker Switch - Moon Rock Gray</name>
+<vendor>MCHOSE</vendor>
+<vendorCode>IS4890A63052</vendorCode>
+<description>MCHOSE Magnetic HE Keyboard Ace 75 Berserker Switch - Moon Rock Gray (MCHOSE)</description>
 </offer>
 <offer id="IS48A0DDB495" available="true">
 <url>https://b2b.isoft-shop.kz/setevoe-oborudovanie/tproduct/601891824634-kommutator-tp-linkies210gpp10-port2-gbps</url>
@@ -68105,6 +68347,17 @@
 <vendor>SANC</vendor>
 <vendorCode>IS294E296C39</vendorCode>
 <description>Тип памяти DDR5 · Оперативная память 32 ГБ · Процессор AMD Ryzen 5 7500F · Линейка процессора Ryzen 5 · Тип накопителя SSD · Ёмкость 1 ТБ · Видеокарта RTX 5060 · Накопитель 1 ТБ · Операционная система без ОС · Блок питания 600 Вт</description>
+</offer>
+<offer id="IS31172A71B3" available="true">
+<url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/645011250714-sistemnii-blok-dell-optiplex-tower-7020</url>
+<price>447000</price>
+<currencyId>KZT</currencyId>
+<categoryId>763638053684</categoryId>
+<picture>https://static.tildacdn.com/tila6363-6663-4965-b833-373534313833/IS31172A71B3_1.jpg</picture>
+<name>Системный блок Dell OptiPlex Tower 7020 XCTO 210-BLDK_2, Core i3 12100, 8 Gb, M.2 PCIe SSD, 256 Gb</name>
+<vendor>Dell</vendor>
+<vendorCode>IS31172A71B3</vendorCode>
+<description>Ёмкость 256 ГБ · Оперативная память 8 ГБ · Операционная система Windows 11 · Форм-фактор Tower · Семья ОС Windows 11</description>
 </offer>
 <offer id="IS322307EA3D" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/428634598724-sistemnii-blok-pulser-core-i7-14700f-21</url>

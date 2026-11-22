@@ -19609,7 +19609,7 @@
 <item>
 <g:id>ISCAE8C01A8C</g:id>
 <title>IP видеокамера Dahua DH-IPC-HDBW2241RP-ZS-27135</title>
-<description>Тип устройства IP-камера · Разрешение камеры 2 МП · Тип корпуса Купольная</description>
+<description>Тип устройства IP-камера · Тип корпуса Купольная · Разрешение камеры 2 МП</description>
 <link>https://b2b.isoft-shop.kz/videonablyudenie/tproduct/467206477244-ip-videokamera-dahua-dh-ipc-hdbw2241rp-z</link>
 <g:image_link>https://static.tildacdn.com/stor3036-6362-4537-b134-623061653933/5a53aebb4e3efdd543ca2cb479674418.jpg</g:image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild3332-6264-4363-a163-383164383263/467206477244_1.jpg</g:additional_image_link>
@@ -38450,7 +38450,7 @@
 <item>
 <g:id>IS053FC5864D</g:id>
 <title>Монитор DELL Alienware 34 280Hz QD-OLED Gaming Monitor-AW3426DW/3440 x 1440/Quantum Dot OLED/21:9/178/178/1xDP, 2xHDMI, USB-A, USB-B, USB-C/3Ywr 210-B</title>
-<description>Разрешение 3440×1440 · Частота обновления 280 Гц · Тип матрицы QD-OLED · Соотношение сторон 21:9 · Угол обзора 178°</description>
+<description>Разрешение 3440×1440 · Соотношение сторон 21:9 · Тип матрицы QD-OLED · Угол обзора 178° · Частота обновления 280 Гц</description>
 <link>https://b2b.isoft-shop.kz/monitory/tproduct/176708746144-monitor-dell-alienware-34-280hz-qd-oled</link>
 <g:image_link>https://static.tildacdn.com/tila3334-3062-4430-b530-386262663163/IS053FC5864D_1.jpg</g:image_link>
 <g:additional_image_link>https://static.tildacdn.com/tila6332-3265-4537-b732-653035306531/IS053FC5864D_2.jpg</g:additional_image_link>
@@ -58795,6 +58795,20 @@
 <g:product_type>Ноутбуки</g:product_type>
 </item>
 <item>
+<g:id>IS87349DA2D1</g:id>
+<title>Ноутбук HP EliteBook 6 G1i 14, Core Ultra 7 255U, 16 Gb, PCIe NVMe SSD, 512 Gb, 256 Mb, 14-inch, 1920x1200, silver AV3Q3AV, 55720575</title>
+<description>Диагональ 14″ · Ёмкость 512 ГБ · Оперативная память 16 ГБ · Операционная система без ОС · Разрешение 1920×1200 · Линейка процессора Core Ultra 7 · Семья ОС Без ОС</description>
+<link>https://b2b.isoft-shop.kz/noutbuki/tproduct/766103979274-noutbuk-hp-elitebook-6-g1i-14-core-ultra</link>
+<g:image_link>https://static.tildacdn.com/tila3066-3562-4433-a233-656139656264/IS87349DA2D1_1.jpg</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>703000 KZT</g:price>
+<g:brand>HP</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:google_product_category>Electronics &gt; Computers &gt; Laptops</g:google_product_category>
+<g:product_type>Ноутбуки</g:product_type>
+</item>
+<item>
 <g:id>IS875BC9C892</g:id>
 <title>Ноутбук Asus 90NX0881-M03PR0 ExpertBook P1503CVAY-S73166W</title>
 <description>Диагональ 15,6″ · Оперативная память 16 ГБ · Операционная система Windows 11 Home · Процессор Intel Core 5 210H · Ёмкость 512 ГБ · Камера FHD · Линейка процессора Core 5 · Гарантия 1 год · Разрешение 1920×1080 · Видеокарта Intel Graphics</description>
@@ -63556,6 +63570,19 @@
 <g:product_type>Охлаждение</g:product_type>
 </item>
 <item>
+<g:id>IS2FF4143B71</g:id>
+<title>Охлаждение Fan for case, 12 см x 3, Lian Li G99.12SL1W3B.00, 250-2000rpm, black, 4pin</title>
+<description>Интерфейс 4-pin · Количество вентиляторов 3 · Скорость вращения 250–2000 об/мин · Тип устройства Комплект вентиляторов · Форм-фактор 120 мм</description>
+<link>https://b2b.isoft-shop.kz/ohlazhdenie/tproduct/131427301894-ohlazhdenie-fan-for-case-12-sm-x-3-lian</link>
+<g:image_link>https://static.tildacdn.com/tila6130-3661-4162-b238-303532663130/IS2FF4143B71_1.jpg</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>44000 KZT</g:price>
+<g:brand>LIAN LI</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:product_type>Охлаждение</g:product_type>
+</item>
+<item>
 <g:id>IS30753A6DA0</g:id>
 <title>Охлаждение Кулер для процессора Deepcool AG500 WH ARGB V2 R-AG500-WHAMMN-GJD</title>
 <description>Гарантия 1 год · Скорость вращения 300–1950 об/мин · Уровень шума 29,4 дБА · Подсветка ARGB · Интерфейс 4-pin PWM · Тип устройства Кулер для процессора · Форм-фактор 120 мм · Количество вентиляторов 1 · Воздушный поток 67,88 CFM · Сокет 1851 / 1700 / 1200 / 1151 / AM5 / AM4</description>
@@ -65842,6 +65869,19 @@
 <g:availability>in_stock</g:availability>
 <g:price>11000 KZT</g:price>
 <g:brand>1STPLAYER</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:product_type>Охлаждение</g:product_type>
+</item>
+<item>
+<g:id>ISBF624C77E3</g:id>
+<title>Охлаждение Fan for case, 12 см x 3, Lian Li G99.12RSLLCD1W3B.00, 300-2000rpm, 4pin</title>
+<description>Интерфейс 4-pin · Количество вентиляторов 3 · Скорость вращения 300–2000 об/мин · Тип устройства Комплект вентиляторов · Форм-фактор 120 мм</description>
+<link>https://b2b.isoft-shop.kz/ohlazhdenie/tproduct/492080730564-ohlazhdenie-fan-for-case-12-sm-x-3-lian</link>
+<g:image_link>https://static.tildacdn.com/tila6139-3634-4134-b536-333965616430/ISBF624C77E3_1.jpg</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>63000 KZT</g:price>
+<g:brand>LIAN LI</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
 <g:product_type>Охлаждение</g:product_type>
@@ -69294,7 +69334,7 @@
 <item>
 <g:id>IS54F234B5D5</g:id>
 <title>Принтер HP/Color Laser 150a/A4/18 ppm/600x600 dpi 4ZB94A#B19</title>
-<description>Технология печати лазерный · Цветность цветной · Тип устройства Принтер · Интерфейсы USB · Формат A4 · Скорость печати 18 стр/мин · Разрешение печати 600×600 dpi</description>
+<description>Тип устройства Принтер · Цветность цветной · Формат A4 · Скорость печати 18 стр/мин · Разрешение печати 600×600 dpi · Интерфейсы USB · Технология печати лазерный</description>
 <link>https://b2b.isoft-shop.kz/printery/tproduct/336616104444-printer-hpcolor-laser-150aa418-ppm600x60</link>
 <g:image_link>https://static.tildacdn.com/tild6462-6462-4563-a332-626130663430/IS54F234B5D5_1.jpg</g:image_link>
 <g:availability>in_stock</g:availability>
@@ -82255,7 +82295,7 @@
 <item>
 <g:id>IS926F045317</g:id>
 <title>Системный блок Pulser Core i5-10400, 2.9 ГГц, H410, 16 ГБ ОЗУ, SSD 512 ГБ, без DVD, БП 400 Вт</title>
-<description>Ёмкость 512 ГБ · Процессор Core i5-10400 · Оперативная память 16 ГБ · Блок питания 400 Вт · Линейка процессора Core i5</description>
+<description>Ёмкость 512 ГБ · Оперативная память 16 ГБ · Процессор Core i5-10400 · Линейка процессора Core i5 · Блок питания 400 Вт</description>
 <link>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/294766773024-sistemnii-blok-pulser-core-i5-10400-29-g</link>
 <g:image_link>https://static.tildacdn.com/tila3032-3334-4764-a634-653433313435/294766773024_1.jpg</g:image_link>
 <g:availability>in_stock</g:availability>
@@ -82668,7 +82708,7 @@
 <item>
 <g:id>ISE88D039B8C</g:id>
 <title>Системный блок Pulser Ryzen 7 9800X3D, 4.7 ГГц, X870, 32 ГБ ОЗУ, SSD 1 ТБ M.2, RTX 5070, 12 ГБ, без DVD, БП 850 Вт</title>
-<description>Ёмкость 1 ТБ · Оперативная память 32 ГБ · Видеокарта RTX 5070 · Блок питания 850 Вт</description>
+<description>Видеокарта RTX 5070 · Ёмкость 1 ТБ · Оперативная память 32 ГБ · Блок питания 850 Вт</description>
 <link>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/522734948184-sistemnii-blok-pulser-ryzen-7-9800x3d-47</link>
 <g:image_link>https://static.tildacdn.com/tila3134-6537-4731-b663-333530326339/522734948184_1.jpg</g:image_link>
 <g:additional_image_link>https://static.tildacdn.com/tila3863-3136-4537-a636-646530383238/522734948184_2.jpg</g:additional_image_link>

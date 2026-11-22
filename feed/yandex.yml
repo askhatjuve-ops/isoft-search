@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<yml_catalog date="2026-11-22 06:58">
+<yml_catalog date="2026-11-22 20:37">
 <shop>
 <name>iSoft</name>
 <company>iSoft</company>
@@ -16579,7 +16579,7 @@
 <name>IP видеокамера Dahua DH-IPC-HDBW2241RP-ZS-27135</name>
 <vendor>Dahua</vendor>
 <vendorCode>ISCAE8C01A8C</vendorCode>
-<description>Тип устройства IP-камера · Разрешение камеры 2 МП · Тип корпуса Купольная</description>
+<description>Тип устройства IP-камера · Тип корпуса Купольная · Разрешение камеры 2 МП</description>
 </offer>
 <offer id="ISCC69D10D22" available="true">
 <url>https://b2b.isoft-shop.kz/videonablyudenie/tproduct/478120068264-tsilindricheskaya-videokamera-dahua-dh-h</url>
@@ -32255,7 +32255,7 @@
 <name>Монитор DELL Alienware 34 280Hz QD-OLED Gaming Monitor-AW3426DW/3440 x 1440/Quantum Dot OLED/21:9/178/178/1xDP, 2xHDMI, USB-A, USB-B, USB-C/3Ywr 210-BWFN</name>
 <vendor>Dell</vendor>
 <vendorCode>IS053FC5864D</vendorCode>
-<description>Разрешение 3440×1440 · Частота обновления 280 Гц · Тип матрицы QD-OLED · Соотношение сторон 21:9 · Угол обзора 178°</description>
+<description>Разрешение 3440×1440 · Соотношение сторон 21:9 · Тип матрицы QD-OLED · Угол обзора 178° · Частота обновления 280 Гц</description>
 </offer>
 <offer id="IS0541B8EDDF" available="true">
 <url>https://b2b.isoft-shop.kz/monitory/tproduct/591727419244-monitor-samsung-27-inch-viewfinity-s6-ls</url>
@@ -48886,6 +48886,17 @@
 <vendorCode>IS8542767DFE</vendorCode>
 <description>Ёмкость 512 ГБ · Диагональ 14″ · Разрешение 1920×1200 · Wi-Fi Wi-Fi 6E · Камера IR + FHD · Оперативная память 32 ГБ · Операционная система Windows 11 Pro · Процессор C7 350 · Линейка процессора Core 7 · Семья ОС Windows 11</description>
 </offer>
+<offer id="IS87349DA2D1" available="true">
+<url>https://b2b.isoft-shop.kz/noutbuki/tproduct/766103979274-noutbuk-hp-elitebook-6-g1i-14-core-ultra</url>
+<price>703000</price>
+<currencyId>KZT</currencyId>
+<categoryId>293087419414</categoryId>
+<picture>https://static.tildacdn.com/tila3066-3562-4433-a233-656139656264/IS87349DA2D1_1.jpg</picture>
+<name>Ноутбук HP EliteBook 6 G1i 14, Core Ultra 7 255U, 16 Gb, PCIe NVMe SSD, 512 Gb, 256 Mb, 14-inch, 1920x1200, silver AV3Q3AV, 55720575</name>
+<vendor>HP</vendor>
+<vendorCode>IS87349DA2D1</vendorCode>
+<description>Диагональ 14″ · Ёмкость 512 ГБ · Оперативная память 16 ГБ · Операционная система без ОС · Разрешение 1920×1200 · Линейка процессора Core Ultra 7 · Семья ОС Без ОС</description>
+</offer>
 <offer id="IS875BC9C892" available="true">
 <url>https://b2b.isoft-shop.kz/noutbuki/tproduct/940239841714-noutbuk-asus-90nx0881-m03pr0-expertbook</url>
 <price>455000</price>
@@ -52745,6 +52756,17 @@
 <vendorCode>IS2EFEB0B8C5</vendorCode>
 <description>Гарантия 1 год · Скорость вращения 800–2000 об/мин · Уровень шума 32,9 дБА · Подсветка ARGB · Интерфейс 4-pin PWM · Тип устройства Водяное охлаждение (СЖО) · Форм-фактор 240 мм · Количество вентиляторов 2 · Воздушный поток 71,18 CFM · Сокет 1851 / 1700 / 1200 / 1151 / 2066 / 2011 / 1366 / AM5 / AM4</description>
 </offer>
+<offer id="IS2FF4143B71" available="true">
+<url>https://b2b.isoft-shop.kz/ohlazhdenie/tproduct/131427301894-ohlazhdenie-fan-for-case-12-sm-x-3-lian</url>
+<price>44000</price>
+<currencyId>KZT</currencyId>
+<categoryId>831063569394</categoryId>
+<picture>https://static.tildacdn.com/tila6130-3661-4162-b238-303532663130/IS2FF4143B71_1.jpg</picture>
+<name>Охлаждение Fan for case, 12 см x 3, Lian Li G99.12SL1W3B.00, 250-2000rpm, black, 4pin</name>
+<vendor>LIAN LI</vendor>
+<vendorCode>IS2FF4143B71</vendorCode>
+<description>Интерфейс 4-pin · Количество вентиляторов 3 · Скорость вращения 250–2000 об/мин · Тип устройства Комплект вентиляторов · Форм-фактор 120 мм</description>
+</offer>
 <offer id="IS30753A6DA0" available="true">
 <url>https://b2b.isoft-shop.kz/ohlazhdenie/tproduct/278780955224-ohlazhdenie-kuler-dlya-protsessora-deepc</url>
 <price>18000</price>
@@ -54727,6 +54749,17 @@
 <vendor>1STPLAYER</vendor>
 <vendorCode>ISBE2F6EE6E7</vendorCode>
 <description>Форм-фактор 120 мм · Уровень шума 27,8 дБА · Подсветка RGB · Скорость вращения 1200 об/мин · Тип устройства Вентилятор для корпуса · Воздушный поток 48,3 CFM · Количество вентиляторов 3 · Цвет Чёрный · Гарантия 1 год</description>
+</offer>
+<offer id="ISBF624C77E3" available="true">
+<url>https://b2b.isoft-shop.kz/ohlazhdenie/tproduct/492080730564-ohlazhdenie-fan-for-case-12-sm-x-3-lian</url>
+<price>63000</price>
+<currencyId>KZT</currencyId>
+<categoryId>831063569394</categoryId>
+<picture>https://static.tildacdn.com/tila6139-3634-4134-b536-333965616430/ISBF624C77E3_1.jpg</picture>
+<name>Охлаждение Fan for case, 12 см x 3, Lian Li G99.12RSLLCD1W3B.00, 300-2000rpm, 4pin</name>
+<vendor>LIAN LI</vendor>
+<vendorCode>ISBF624C77E3</vendorCode>
+<description>Интерфейс 4-pin · Количество вентиляторов 3 · Скорость вращения 300–2000 об/мин · Тип устройства Комплект вентиляторов · Форм-фактор 120 мм</description>
 </offer>
 <offer id="ISBFFED9D9FA" available="true">
 <url>https://b2b.isoft-shop.kz/ohlazhdenie/tproduct/192485744634-ohlazhdenie-kuler-dlya-protsessora-deepc</url>
@@ -57674,7 +57707,7 @@
 <name>Принтер HP/Color Laser 150a/A4/18 ppm/600x600 dpi 4ZB94A#B19</name>
 <vendor>HP</vendor>
 <vendorCode>IS54F234B5D5</vendorCode>
-<description>Технология печати лазерный · Цветность цветной · Тип устройства Принтер · Интерфейсы USB · Формат A4 · Скорость печати 18 стр/мин · Разрешение печати 600×600 dpi</description>
+<description>Тип устройства Принтер · Цветность цветной · Формат A4 · Скорость печати 18 стр/мин · Разрешение печати 600×600 dpi · Интерфейсы USB · Технология печати лазерный</description>
 </offer>
 <offer id="IS60FA0363C3" available="true">
 <url>https://b2b.isoft-shop.kz/printery/tproduct/221798625274-monohromnii-lazernii-printer-canon-i-s-l</url>
@@ -68680,7 +68713,7 @@
 <name>Системный блок Pulser Core i5-10400, 2.9 ГГц, H410, 16 ГБ ОЗУ, SSD 512 ГБ, без DVD, БП 400 Вт</name>
 <vendor>Pulser</vendor>
 <vendorCode>IS926F045317</vendorCode>
-<description>Ёмкость 512 ГБ · Процессор Core i5-10400 · Оперативная память 16 ГБ · Блок питания 400 Вт · Линейка процессора Core i5</description>
+<description>Ёмкость 512 ГБ · Оперативная память 16 ГБ · Процессор Core i5-10400 · Линейка процессора Core i5 · Блок питания 400 Вт</description>
 </offer>
 <offer id="IS92D0E9D68F" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/655483885554-sistemnii-blok-pulser-ryzen-5-3400g-37-g</url>
@@ -69008,7 +69041,7 @@
 <name>Системный блок Pulser Ryzen 7 9800X3D, 4.7 ГГц, X870, 32 ГБ ОЗУ, SSD 1 ТБ M.2, RTX 5070, 12 ГБ, без DVD, БП 850 Вт</name>
 <vendor>Pulser</vendor>
 <vendorCode>ISE88D039B8C</vendorCode>
-<description>Ёмкость 1 ТБ · Оперативная память 32 ГБ · Видеокарта RTX 5070 · Блок питания 850 Вт</description>
+<description>Видеокарта RTX 5070 · Ёмкость 1 ТБ · Оперативная память 32 ГБ · Блок питания 850 Вт</description>
 </offer>
 <offer id="ISE8A8269B2A" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/612434807494-sistemnii-blok-pulser-ryzen-5-3500x-36-g</url>

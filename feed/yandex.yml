@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<yml_catalog date="2026-11-21 20:39">
+<yml_catalog date="2026-11-22 06:45">
 <shop>
 <name>iSoft</name>
 <company>iSoft</company>
@@ -353,7 +353,7 @@
 </offer>
 <offer id="IS5AAD88971A" available="true">
 <url>https://b2b.isoft-shop.kz/kronshteyny-i-krepleniya/tproduct/344802870204-logitech-mounting-for-rally-ww</url>
-<price>161000</price>
+<price>163000</price>
 <currencyId>KZT</currencyId>
 <categoryId>878347274554</categoryId>
 <picture>https://static.tildacdn.com/tila3939-3838-4031-a161-366332613139/IS5AAD88971A_1.jpg</picture>
@@ -710,7 +710,7 @@
 </offer>
 <offer id="ISE1E09BD0C2" available="true">
 <url>https://b2b.isoft-shop.kz/kronshteyny-i-krepleniya/tproduct/641108970614-logitech-table-mount-for-rally-mic-pod-b</url>
-<price>65000</price>
+<price>66000</price>
 <currencyId>KZT</currencyId>
 <categoryId>878347274554</categoryId>
 <picture>https://static.tildacdn.com/tila3064-6262-4032-a539-663566613537/ISE1E09BD0C2_1.jpg</picture>
@@ -745,7 +745,7 @@
 </offer>
 <offer id="ISEDF38BB475" available="true">
 <url>https://b2b.isoft-shop.kz/kronshteyny-i-krepleniya/tproduct/186187905504-modul-mikrofonov-logitech-dlya-rally-989</url>
-<price>263000</price>
+<price>267000</price>
 <currencyId>KZT</currencyId>
 <categoryId>878347274554</categoryId>
 <picture>https://static.tildacdn.com/tila3466-6166-4666-b738-663937323436/ISEDF38BB475_1.jpg</picture>
@@ -782,7 +782,7 @@
 </offer>
 <offer id="IS0043EC49B1" available="true">
 <url>https://b2b.isoft-shop.kz/ssd-nakopiteli/tproduct/561528256904-samsung-pm897-384tb-data-center-ssd-25-i</url>
-<price>1655000</price>
+<price>1677000</price>
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/stor3331-3561-4030-b831-313561323934/b25d77c38e921c30947135d40d622bc5.png</picture>
@@ -888,7 +888,7 @@
 </offer>
 <offer id="IS0ED7872FF3" available="true">
 <url>https://b2b.isoft-shop.kz/ssd-nakopiteli/tproduct/614244627714-kingston-a400-240gb-ssd-25-inch-7mm-sata</url>
-<price>37000</price>
+<price>38000</price>
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/tila3166-3863-4934-a135-626262353234/IS0ED7872FF3_1.jpg</picture>
@@ -1075,7 +1075,7 @@
 </offer>
 <offer id="IS2DE7BF7B22" available="true">
 <url>https://b2b.isoft-shop.kz/ssd-nakopiteli/tproduct/170286102724-netac-sa500-25-sataiii-3d-nand-ssd-1tb-r</url>
-<price>75000</price>
+<price>76000</price>
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/tila3833-6330-4334-a638-633030313964/ISDD471E5CC3_1.jpg</picture>
@@ -1552,7 +1552,7 @@
 </offer>
 <offer id="IS7D825D1DBD" available="true">
 <url>https://b2b.isoft-shop.kz/ssd-nakopiteli/tproduct/849178002024-kingston-7680g-dc600m-mixed-use-25-inch</url>
-<price>2244000</price>
+<price>2275000</price>
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/tila3938-3730-4464-a431-623062346435/IS7D825D1DBD_1.png</picture>
@@ -1623,7 +1623,7 @@
 <name>Ssd SSD-накопитель Gigabyte G440E500G 500GB M.2 2280 PCIe 4.0x4</name>
 <vendor>Gigabyte</vendor>
 <vendorCode>IS83A938FBB6</vendorCode>
-<description>Форм-фактор M.2 2280 · Ёмкость 500 ГБ · Интерфейс PCIE 4.0 X4 · Скорость чтения 3600 МБ/с · Скорость записи 3000 МБ/с</description>
+<description>Ёмкость 500 ГБ · Интерфейс PCIE 4.0 X4 · Форм-фактор M.2 2280 · Скорость чтения 3600 МБ/с · Скорость записи 3000 МБ/с</description>
 </offer>
 <offer id="IS83F747A2B0" available="true">
 <url>https://b2b.isoft-shop.kz/ssd-nakopiteli/tproduct/494821217974-ssd-ssd-nakopitel-vnutrennii-gigabyte-gs</url>
@@ -1668,7 +1668,7 @@
 <name>SSD-накопитель TeamGroup NV5000 M.2 PCIe 4.0 SSD, 500Gb, 4500 MB/s 800 MB/s, TM8FGM500G0C101 Retail</name>
 <vendor>Team_Group</vendor>
 <vendorCode>IS8B97A3F821</vendorCode>
-<description>Форм-фактор M.2 · Ёмкость 500 ГБ</description>
+<description>Ёмкость 500 ГБ · Форм-фактор M.2 · Интерфейс PCIE 4.0</description>
 </offer>
 <offer id="IS8CA92A4A5D" available="true">
 <url>https://b2b.isoft-shop.kz/ssd-nakopiteli/tproduct/304834464424-ssd-nakopitel-agi-ai818-1tb-pcie-gen4-re</url>
@@ -1767,7 +1767,7 @@
 </offer>
 <offer id="IS9ABAFB69B0" available="true">
 <url>https://b2b.isoft-shop.kz/ssd-nakopiteli/tproduct/554788454074-intel-ssd-dc-p3600-series-800gb-25in-pci</url>
-<price>299000</price>
+<price>300000</price>
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/tila6132-3462-4331-b032-666135386665/IS9ABAFB69B0_1.jpg</picture>
@@ -1964,7 +1964,7 @@
 </offer>
 <offer id="ISBE5DB1E958" available="true">
 <url>https://b2b.isoft-shop.kz/ssd-nakopiteli/tproduct/172408578444-samsung-pm1643a-192tb-enterprise-ssd-25</url>
-<price>1063000</price>
+<price>1078000</price>
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/tila6231-3336-4765-a638-313664633033/ISBE5DB1E958_1.jpg</picture>
@@ -2104,7 +2104,7 @@
 </offer>
 <offer id="ISD81971F975" available="true">
 <url>https://b2b.isoft-shop.kz/ssd-nakopiteli/tproduct/963230690464-samsung-pm983-960gb-data-center-ssd-25-i</url>
-<price>414000</price>
+<price>420000</price>
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/tila6561-6264-4233-b530-653734323066/ISD81971F975_1.jpg</picture>
@@ -2211,7 +2211,7 @@
 </offer>
 <offer id="ISDD72B77848" available="true">
 <url>https://b2b.isoft-shop.kz/ssd-nakopiteli/tproduct/276294780194-samsung-pm9a3-384tb-data-center-ssd-25-i</url>
-<price>1418000</price>
+<price>1437000</price>
 <currencyId>KZT</currencyId>
 <categoryId>615429773604</categoryId>
 <picture>https://static.tildacdn.com/stor6461-3831-4363-b138-353762663938/9172a31bd3ed896740ecefd551c1cd3f.png</picture>
@@ -2289,7 +2289,7 @@
 <name>SSD-накопитель TeamGroup NV5000 M.2 PCIe 4.0 SSD, 1000Gb, 4500 MB/s 1900 MB/s, M8FGM001T0C101 Retail TM8FGM001T0C101</name>
 <vendor>Team_Group</vendor>
 <vendorCode>ISE64BE7D03F</vendorCode>
-<description>Форм-фактор M.2 · Ёмкость 1 ТБ</description>
+<description>Ёмкость 1 ТБ · Форм-фактор M.2 · Интерфейс PCIE 4.0</description>
 </offer>
 <offer id="ISE65B2120ED" available="true">
 <url>https://b2b.isoft-shop.kz/ssd-nakopiteli/tproduct/949591289224-transcend-500gb-25-inch-ssd-sata3-3d-tlc</url>
@@ -2723,7 +2723,7 @@
 </offer>
 <offer id="IS7041430E8B" available="true">
 <url>https://b2b.isoft-shop.kz/fleshki-i-karty-pamyati/tproduct/429294697764-fleshka-netac-usb-drive-u197-usb20-64gb</url>
-<price>3400</price>
+<price>3500</price>
 <currencyId>KZT</currencyId>
 <categoryId>672013402974</categoryId>
 <picture>https://static.tildacdn.com/tila6635-3533-4766-a236-623135383935/IS7041430E8B_1.jpg</picture>
@@ -3287,7 +3287,7 @@
 </offer>
 <offer id="IS00DB58074D" available="true">
 <url>https://b2b.isoft-shop.kz/bloki-pitaniya/tproduct/660004577004-blok-pitaniya-cougar-gaming-cougar-ges-8</url>
-<price>43000</price>
+<price>44000</price>
 <currencyId>KZT</currencyId>
 <categoryId>893353989834</categoryId>
 <picture>https://static.tildacdn.com/tild6233-3830-4931-a438-383035643163/813199849164.jpg</picture>
@@ -3465,19 +3465,6 @@
 <vendor>Zalman</vendor>
 <vendorCode>IS13BD410098</vendorCode>
 <description>Мощность 600 Вт · Класс мощности 550–650 Вт · Форм-фактор ATX · Цвет Чёрный · Гарантия 2 года</description>
-</offer>
-<offer id="IS1510F886C5" available="true">
-<url>https://b2b.isoft-shop.kz/bloki-pitaniya/tproduct/345648114254-blok-pitaniya-chieftec-smart-gps-650a8</url>
-<price>23000</price>
-<currencyId>KZT</currencyId>
-<categoryId>893353989834</categoryId>
-<picture>https://static.tildacdn.com/stor3930-3932-4935-b334-316630653536/0cf69eff19335e408a43f9e12c02ce3d.jpg</picture>
-<picture>https://static.tildacdn.com/tild3634-3336-4264-b361-303966353934/345648114254_1.jpg</picture>
-<picture>https://static.tildacdn.com/tild6566-3036-4136-a532-333038643864/345648114254_2.jpg</picture>
-<name>Блок питания Chieftec Smart GPS-650A8</name>
-<vendor>CHIEFTEC</vendor>
-<vendorCode>IS1510F886C5</vendorCode>
-<description>Мощность 650 Вт · Класс мощности 550–650 Вт · Форм-фактор ATX · Цвет Чёрный · Гарантия 2 года · Модульность Немодульный</description>
 </offer>
 <offer id="IS16BF5DDFC3" available="true">
 <url>https://b2b.isoft-shop.kz/bloki-pitaniya/tproduct/512196711114-blok-pitaniya-fsp-vita-gm-advan-1000gm-1</url>
@@ -6441,7 +6428,7 @@
 </offer>
 <offer id="IS001537E40B" available="true">
 <url>https://b2b.isoft-shop.kz/videokarty/tproduct/833261180504-videokarta-asus-video-card-nvidia-geforc</url>
-<price>329000</price>
+<price>334000</price>
 <currencyId>KZT</currencyId>
 <categoryId>784666503994</categoryId>
 <picture>https://static.tildacdn.com/tila3766-3431-4062-a336-663533633566/IS001537E40B_1.png</picture>
@@ -6452,7 +6439,7 @@
 </offer>
 <offer id="IS01A1DD3C01" available="true">
 <url>https://b2b.isoft-shop.kz/videokarty/tproduct/330053199824-videokarta-xfx-speedster-swft-210-amd-ra</url>
-<price>243000</price>
+<price>246000</price>
 <currencyId>KZT</currencyId>
 <categoryId>784666503994</categoryId>
 <picture>https://static.tildacdn.com/stor3862-3763-4861-a634-623832303965/dfb9f23d71650a607722489726296ef6.png</picture>
@@ -6463,7 +6450,7 @@
 </offer>
 <offer id="IS056FC92A5C" available="true">
 <url>https://b2b.isoft-shop.kz/videokarty/tproduct/503907394144-videokarta-asus-video-card-nvidia-rtx-50</url>
-<price>510000</price>
+<price>517000</price>
 <currencyId>KZT</currencyId>
 <categoryId>784666503994</categoryId>
 <picture>https://static.tildacdn.com/tila6162-6239-4161-b139-313532663636/IS056FC92A5C_1.png</picture>
@@ -6498,7 +6485,7 @@
 </offer>
 <offer id="IS0BD5AED1B1" available="true">
 <url>https://b2b.isoft-shop.kz/videokarty/tproduct/847966523934-videokarta-asus-video-card-amd-radeon-rx</url>
-<price>638000</price>
+<price>646000</price>
 <currencyId>KZT</currencyId>
 <categoryId>784666503994</categoryId>
 <picture>https://static.tildacdn.com/tila6566-3638-4131-a436-343236373937/IS0BD5AED1B1_1.png</picture>
@@ -6522,7 +6509,7 @@
 </offer>
 <offer id="IS125B45960F" available="true">
 <url>https://b2b.isoft-shop.kz/videokarty/tproduct/554043145304-videokarta-asus-prime-geforce-rtx-5060-o</url>
-<price>335000</price>
+<price>339000</price>
 <currencyId>KZT</currencyId>
 <categoryId>784666503994</categoryId>
 <picture>https://static.tildacdn.com/tila3031-3065-4839-b230-643466383866/IS125B45960F_1.png</picture>
@@ -6571,7 +6558,7 @@
 </offer>
 <offer id="IS16E678EAF3" available="true">
 <url>https://b2b.isoft-shop.kz/videokarty/tproduct/470360844314-videokarta-inno3d-nvidia-geforce-rtx-508</url>
-<price>1106000</price>
+<price>1122000</price>
 <currencyId>KZT</currencyId>
 <categoryId>784666503994</categoryId>
 <picture>https://static.tildacdn.com/tila6233-3462-4231-b035-653830366636/IS16E678EAF3_1.png</picture>
@@ -6702,7 +6689,7 @@
 </offer>
 <offer id="IS46DCDF6DAD" available="true">
 <url>https://b2b.isoft-shop.kz/videokarty/tproduct/934922172674-videokarta-inno3d-geforce-rtx-5060-twin</url>
-<price>325000</price>
+<price>329000</price>
 <currencyId>KZT</currencyId>
 <categoryId>784666503994</categoryId>
 <picture>https://static.tildacdn.com/stor6334-3932-4131-b566-313037643634/29187c8baf22b32b685c4416065c29a2.png</picture>
@@ -6713,7 +6700,7 @@
 </offer>
 <offer id="IS4A1F077C7B" available="true">
 <url>https://b2b.isoft-shop.kz/videokarty/tproduct/703007001714-videokarta-sapphire-pure-amd-radeon-rx-9</url>
-<price>627000</price>
+<price>636000</price>
 <currencyId>KZT</currencyId>
 <categoryId>784666503994</categoryId>
 <picture>https://static.tildacdn.com/tild3662-6663-4666-b038-666634636635/IS4A1F077C7B_1.png</picture>
@@ -6724,7 +6711,7 @@
 </offer>
 <offer id="IS4D98798D13" available="true">
 <url>https://b2b.isoft-shop.kz/videokarty/tproduct/476383167514-videokarta-pny-nvidia-rtx-pro-4000-black</url>
-<price>1891000</price>
+<price>1918000</price>
 <currencyId>KZT</currencyId>
 <categoryId>784666503994</categoryId>
 <picture>https://static.tildacdn.com/tila6663-3565-4636-b930-316263396261/IS4D98798D13_1.png</picture>
@@ -6735,7 +6722,7 @@
 </offer>
 <offer id="IS53352AA8D4" available="true">
 <url>https://b2b.isoft-shop.kz/videokarty/tproduct/333631414074-videokarta-pny-nvidia-rtx-4500-pro-black</url>
-<price>2890000</price>
+<price>2930000</price>
 <currencyId>KZT</currencyId>
 <categoryId>784666503994</categoryId>
 <picture>https://static.tildacdn.com/tild3032-3339-4130-a638-643932666665/IS53352AA8D4_1.png</picture>
@@ -6758,7 +6745,7 @@
 </offer>
 <offer id="IS589FE54F8B" available="true">
 <url>https://b2b.isoft-shop.kz/videokarty/tproduct/534380496214-videokarta-sapphire-pulse-amd-radeon-rx</url>
-<price>314000</price>
+<price>319000</price>
 <currencyId>KZT</currencyId>
 <categoryId>784666503994</categoryId>
 <picture>https://static.tildacdn.com/tila3061-6634-4561-b165-313235306530/IS589FE54F8B_1.png</picture>
@@ -6875,7 +6862,7 @@
 <name>Видеокарта GPU NVIDIA,16 GB, ASUS RTX 5060 Ti DUAL OC [DUAL-RTX5060TI-O16G], HDMI/3DP, GDDR7/128bit</name>
 <vendor>ASUS</vendor>
 <vendorCode>IS790312FBD9</vendorCode>
-<description>Объём видеопамяти 16 ГБ · Тип видеопамяти GDDR7 · Разрядность шины 128 бит · Видеовыходы HDMI / DP x 3</description>
+<description>Видеовыходы HDMI / DP x 3 · Объём видеопамяти 16 ГБ · Разрядность шины 128 бит · Тип видеопамяти GDDR7 · Графический процессор RTX 5060 Ti</description>
 </offer>
 <offer id="IS79BB94E4C9" available="true">
 <url>https://b2b.isoft-shop.kz/videokarty/tproduct/736668330984-videokarta-gpu-nvidia16-gb-asus-rtx-5070</url>
@@ -6918,7 +6905,7 @@
 </offer>
 <offer id="IS889D33802D" available="true">
 <url>https://b2b.isoft-shop.kz/videokarty/tproduct/713517123164-videokarta-sapphire-pulse-amd-radeon-rx</url>
-<price>388000</price>
+<price>393000</price>
 <currencyId>KZT</currencyId>
 <categoryId>784666503994</categoryId>
 <picture>https://static.tildacdn.com/tila6239-3361-4630-b163-373333313431/IS889D33802D_1.png</picture>
@@ -6942,7 +6929,7 @@
 </offer>
 <offer id="IS8A995DABE0" available="true">
 <url>https://b2b.isoft-shop.kz/videokarty/tproduct/588027183504-videokarta-xfx-swift-amd-radeon-rx-9060</url>
-<price>258000</price>
+<price>261000</price>
 <currencyId>KZT</currencyId>
 <categoryId>784666503994</categoryId>
 <picture>https://static.tildacdn.com/tila3135-6538-4533-a164-653037353539/IS8A995DABE0_1.png</picture>
@@ -6953,7 +6940,7 @@
 </offer>
 <offer id="IS8CF57F84C0" available="true">
 <url>https://b2b.isoft-shop.kz/videokarty/tproduct/532513202954-videokarta-asus-video-card-nvidia-geforc</url>
-<price>541000</price>
+<price>548000</price>
 <currencyId>KZT</currencyId>
 <categoryId>784666503994</categoryId>
 <picture>https://static.tildacdn.com/stor6166-3830-4435-b533-626561303733/3fb437c538573b2be935f41f2bdbf40f.png</picture>
@@ -6964,7 +6951,7 @@
 </offer>
 <offer id="IS8D3D8D6836" available="true">
 <url>https://b2b.isoft-shop.kz/videokarty/tproduct/968895401354-videokarta-asus-amd-radeon-rx-7600-8gb-g</url>
-<price>258000</price>
+<price>261000</price>
 <currencyId>KZT</currencyId>
 <categoryId>784666503994</categoryId>
 <picture>https://static.tildacdn.com/tila3663-6331-4535-a635-323130393465/IS8D3D8D6836_1.png</picture>
@@ -6986,7 +6973,7 @@
 </offer>
 <offer id="IS93F1DC3572" available="true">
 <url>https://b2b.isoft-shop.kz/videokarty/tproduct/913282037554-videokarta-sapphire-pulse-amd-radeon-rx</url>
-<price>314000</price>
+<price>319000</price>
 <currencyId>KZT</currencyId>
 <categoryId>784666503994</categoryId>
 <picture>https://static.tildacdn.com/tila3466-3736-4239-b961-363932346338/IS93F1DC3572_1.png</picture>
@@ -7058,7 +7045,7 @@
 </offer>
 <offer id="ISAB444C8034" available="true">
 <url>https://b2b.isoft-shop.kz/videokarty/tproduct/973624665104-videokarta-asus-nvidia-geforce-rtx-3050</url>
-<price>240000</price>
+<price>243000</price>
 <currencyId>KZT</currencyId>
 <categoryId>784666503994</categoryId>
 <picture>https://static.tildacdn.com/stor6236-6665-4630-b831-613539346632/2acc5fc0ca5f886e2bb8aabcc839e078.png</picture>
@@ -7093,7 +7080,7 @@
 </offer>
 <offer id="ISB0BE3A1090" available="true">
 <url>https://b2b.isoft-shop.kz/videokarty/tproduct/468305253884-videokarta-asus-video-card-nvidia-rtx-50</url>
-<price>546000</price>
+<price>553000</price>
 <currencyId>KZT</currencyId>
 <categoryId>784666503994</categoryId>
 <picture>https://static.tildacdn.com/tila6533-6433-4630-b566-353330626261/ISB0BE3A1090_1.png</picture>
@@ -7127,7 +7114,7 @@
 </offer>
 <offer id="ISB2C248D467" available="true">
 <url>https://b2b.isoft-shop.kz/videokarty/tproduct/908790698304-videokarta-asus-video-card-amd-radeon-rx</url>
-<price>617000</price>
+<price>626000</price>
 <currencyId>KZT</currencyId>
 <categoryId>784666503994</categoryId>
 <picture>https://static.tildacdn.com/tila3561-3666-4161-a366-633237343162/ISB2C248D467_1.png</picture>
@@ -7175,7 +7162,7 @@
 </offer>
 <offer id="ISC1721B1628" available="true">
 <url>https://b2b.isoft-shop.kz/videokarty/tproduct/875595977204-videokarta-sapphire-pulse-amd-radeon-rx</url>
-<price>627000</price>
+<price>636000</price>
 <currencyId>KZT</currencyId>
 <categoryId>784666503994</categoryId>
 <picture>https://static.tildacdn.com/tild3762-3639-4266-b831-653664336662/ISC1721B1628_1.png</picture>
@@ -7201,7 +7188,7 @@
 </offer>
 <offer id="ISC9D3B4B334" available="true">
 <url>https://b2b.isoft-shop.kz/videokarty/tproduct/870306769334-videokarta-xfx-swift-amd-radeon-rx-9070x</url>
-<price>617000</price>
+<price>626000</price>
 <currencyId>KZT</currencyId>
 <categoryId>784666503994</categoryId>
 <picture>https://static.tildacdn.com/stor3732-6564-4664-b662-633562666437/ccd5c5b98b48b34ad1dea96a32a9e478.png</picture>
@@ -7248,6 +7235,17 @@
 <vendor>Gigabyte</vendor>
 <vendorCode>ISD9921E8E75</vendorCode>
 <description>Объём видеопамяти 8 ГБ · Графический процессор RTX 5060 · Тип видеопамяти GDDR7 · Разрядность шины 128 бит · Видеовыходы HDMI / DP x 3 · Серия видеокарты GeForce RTX 5000</description>
+</offer>
+<offer id="ISDD170617DA" available="true">
+<url>https://b2b.isoft-shop.kz/videokarty/tproduct/514047015054-videokarta-gpu-nvidia-8-gb-gigabyte-rtx</url>
+<price>357000</price>
+<currencyId>KZT</currencyId>
+<categoryId>784666503994</categoryId>
+<picture>https://static.tildacdn.com/tila3063-6538-4333-b838-666538386639/ISDD170617DA_1.jpg</picture>
+<name>Видеокарта GPU NVIDIA, 8 GB, Gigabyte RTX 5060 WINDFORСE OC [GV-N5060WF2OC-8GD)</name>
+<vendor>Gigabyte</vendor>
+<vendorCode>ISDD170617DA</vendorCode>
+<description>Графический процессор RTX 5060 · Объём видеопамяти 8 ГБ · Серия видеокарты GeForce RTX 5000</description>
 </offer>
 <offer id="ISDDA1A2814F" available="true">
 <url>https://b2b.isoft-shop.kz/videokarty/tproduct/176379924984-videokarta-asus-dual-rtx5060ti-o8g-8gb-g</url>
@@ -7335,7 +7333,7 @@
 </offer>
 <offer id="ISF318AF62E7" available="true">
 <url>https://b2b.isoft-shop.kz/videokarty/tproduct/486569086734-videokarta-pny-nvidia-rtx-pro-2000-black</url>
-<price>913000</price>
+<price>925000</price>
 <currencyId>KZT</currencyId>
 <categoryId>784666503994</categoryId>
 <picture>https://static.tildacdn.com/stor3031-3038-4134-a637-633338373463/5d0c61a8ddaaa53d4b82398e228ce53e.png</picture>
@@ -7357,7 +7355,7 @@
 </offer>
 <offer id="ISFBFAB822F9" available="true">
 <url>https://b2b.isoft-shop.kz/videokarty/tproduct/463473943944-videokarta-sapphire-pure-amd-radeon-rx-9</url>
-<price>464000</price>
+<price>471000</price>
 <currencyId>KZT</currencyId>
 <categoryId>784666503994</categoryId>
 <picture>https://static.tildacdn.com/tild3138-3534-4535-a631-353732366237/ISFBFAB822F9_1.png</picture>
@@ -7368,7 +7366,7 @@
 </offer>
 <offer id="ISFDC256B849" available="true">
 <url>https://b2b.isoft-shop.kz/videokarty/tproduct/860702559044-videokarta-xfx-swift-amd-radeon-rx-9070x</url>
-<price>617000</price>
+<price>626000</price>
 <currencyId>KZT</currencyId>
 <categoryId>784666503994</categoryId>
 <picture>https://static.tildacdn.com/stor6432-3837-4164-b061-383132663466/88def395152ee27c3c14c58bf1002709.png</picture>
@@ -9068,7 +9066,7 @@
 </offer>
 <offer id="IS07E6C1A058" available="true">
 <url>https://b2b.isoft-shop.kz/zhestkie-diski/tproduct/867660808384-zhyostkii-disk-hdd-7e10-512e-4kn-seagate</url>
-<price>172000</price>
+<price>175000</price>
 <currencyId>KZT</currencyId>
 <categoryId>958449305144</categoryId>
 <picture>https://static.tildacdn.com/tild3438-3333-4162-b038-646564333135/314133187724.jpg</picture>
@@ -9080,7 +9078,7 @@
 </offer>
 <offer id="IS09DAC67248" available="true">
 <url>https://b2b.isoft-shop.kz/zhestkie-diski/tproduct/827524490664-zhyostkii-disk-western-digital-hdd-av-wd</url>
-<price>95000</price>
+<price>96000</price>
 <currencyId>KZT</currencyId>
 <categoryId>958449305144</categoryId>
 <picture>https://static.tildacdn.com/tila3562-3334-4534-a564-393234666638/IS09DAC67248_1.png</picture>
@@ -9140,7 +9138,7 @@
 </offer>
 <offer id="IS13D8BE2E13" available="true">
 <url>https://b2b.isoft-shop.kz/zhestkie-diski/tproduct/790559818964-zhyostkii-disk-seagate-hdd-server-exos-7</url>
-<price>262000</price>
+<price>266000</price>
 <currencyId>KZT</currencyId>
 <categoryId>958449305144</categoryId>
 <picture>https://static.tildacdn.com/tild3938-6362-4536-b837-653734383339/ISC266279011_1.jpg</picture>
@@ -9201,7 +9199,7 @@
 </offer>
 <offer id="IS1E27BD66C9" available="true">
 <url>https://b2b.isoft-shop.kz/zhestkie-diski/tproduct/337039862264-zhyostkii-disk-western-digital-hdd-serve</url>
-<price>572000</price>
+<price>580000</price>
 <currencyId>KZT</currencyId>
 <categoryId>958449305144</categoryId>
 <picture>https://static.tildacdn.com/stor3764-3130-4534-b130-666164356162/79efa4e0c8ffeb6373273a2350620374.png</picture>
@@ -9212,7 +9210,7 @@
 </offer>
 <offer id="IS24535D97B8" available="true">
 <url>https://b2b.isoft-shop.kz/zhestkie-diski/tproduct/569127001444-zhyostkii-disk-western-digital-hdd-exter</url>
-<price>57000</price>
+<price>58000</price>
 <currencyId>KZT</currencyId>
 <categoryId>958449305144</categoryId>
 <picture>https://static.tildacdn.com/tila6264-3666-4466-b265-633537343861/IS24535D97B8_1.png</picture>
@@ -9223,7 +9221,7 @@
 </offer>
 <offer id="IS2755BF6D14" available="true">
 <url>https://b2b.isoft-shop.kz/zhestkie-diski/tproduct/442572772374-zhyostkii-disk-hdd-7e10-512e-4kn-seagate</url>
-<price>163000</price>
+<price>165000</price>
 <currencyId>KZT</currencyId>
 <categoryId>958449305144</categoryId>
 <picture>https://static.tildacdn.com/tild3438-3333-4162-b038-646564333135/314133187724.jpg</picture>
@@ -9246,7 +9244,7 @@
 </offer>
 <offer id="IS2CF5973DB3" available="true">
 <url>https://b2b.isoft-shop.kz/zhestkie-diski/tproduct/725474967724-zhyostkii-disk-western-digital-hdd-exter</url>
-<price>65000</price>
+<price>66000</price>
 <currencyId>KZT</currencyId>
 <categoryId>958449305144</categoryId>
 <picture>https://static.tildacdn.com/tila3537-3265-4435-a332-643465336236/IS2CF5973DB3_1.jpg</picture>
@@ -9279,7 +9277,7 @@
 </offer>
 <offer id="IS31E9C5632D" available="true">
 <url>https://b2b.isoft-shop.kz/zhestkie-diski/tproduct/551700343574-zhyostkii-disk-western-digital-hdd-exter</url>
-<price>65000</price>
+<price>66000</price>
 <currencyId>KZT</currencyId>
 <categoryId>958449305144</categoryId>
 <picture>https://static.tildacdn.com/tila3938-3965-4230-b830-316164386231/IS31E9C5632D_1.jpg</picture>
@@ -9290,7 +9288,7 @@
 </offer>
 <offer id="IS35F5B97FB5" available="true">
 <url>https://b2b.isoft-shop.kz/zhestkie-diski/tproduct/614856737594-zhyostkii-disk-hdd-video-surveillance-to</url>
-<price>85000</price>
+<price>86000</price>
 <currencyId>KZT</currencyId>
 <categoryId>958449305144</categoryId>
 <picture>https://static.tildacdn.com/stor3834-3939-4030-b038-636463636135/6862be61472f0f887e521743d0de3e90.png</picture>
@@ -9336,7 +9334,7 @@
 </offer>
 <offer id="IS3D93DF8B5B" available="true">
 <url>https://b2b.isoft-shop.kz/zhestkie-diski/tproduct/559135483684-zhyostkii-disk-hdd-video-surveillance-to</url>
-<price>105000</price>
+<price>107000</price>
 <currencyId>KZT</currencyId>
 <categoryId>958449305144</categoryId>
 <picture>https://static.tildacdn.com/tila3534-3234-4464-b038-313661376339/IS3D93DF8B5B_1.png</picture>
@@ -9347,7 +9345,7 @@
 </offer>
 <offer id="IS3FA29D28C6" available="true">
 <url>https://b2b.isoft-shop.kz/zhestkie-diski/tproduct/371340544754-zhyostkii-disk-toshiba-external-hard-dri</url>
-<price>50000</price>
+<price>51000</price>
 <currencyId>KZT</currencyId>
 <categoryId>958449305144</categoryId>
 <picture>https://static.tildacdn.com/tild3235-3431-4639-a130-373836626563/371340544754.jpg</picture>
@@ -9359,7 +9357,7 @@
 </offer>
 <offer id="IS40FEE78DCD" available="true">
 <url>https://b2b.isoft-shop.kz/zhestkie-diski/tproduct/304182537644-zhyostkii-disk-hdd-video-surveillance-to</url>
-<price>230000</price>
+<price>233000</price>
 <currencyId>KZT</currencyId>
 <categoryId>958449305144</categoryId>
 <picture>https://static.tildacdn.com/tila3364-3334-4539-b731-666564653231/IS9D477C8FB8_1.png</picture>
@@ -9384,7 +9382,7 @@
 </offer>
 <offer id="IS44A310FEAA" available="true">
 <url>https://b2b.isoft-shop.kz/zhestkie-diski/tproduct/986676925044-zhyostkii-disk-seagate-hdd-external-one</url>
-<price>80000</price>
+<price>81000</price>
 <currencyId>KZT</currencyId>
 <categoryId>958449305144</categoryId>
 <picture>https://static.tildacdn.com/tila3231-3932-4434-b366-656163653633/IS44A310FEAA_1.png</picture>
@@ -9407,7 +9405,7 @@
 </offer>
 <offer id="IS4809E7299B" available="true">
 <url>https://b2b.isoft-shop.kz/zhestkie-diski/tproduct/208744773844-zhyostkii-disk-western-digital-hdd-exter</url>
-<price>306000</price>
+<price>310000</price>
 <currencyId>KZT</currencyId>
 <categoryId>958449305144</categoryId>
 <picture>https://static.tildacdn.com/tila3564-3266-4933-a334-383833653630/IS4809E7299B_1.jpg</picture>
@@ -9418,7 +9416,7 @@
 </offer>
 <offer id="IS4823B12C8C" available="true">
 <url>https://b2b.isoft-shop.kz/zhestkie-diski/tproduct/102809815464-zhyostkii-disk-seagate-hdd-server-exos-m</url>
-<price>739000</price>
+<price>750000</price>
 <currencyId>KZT</currencyId>
 <categoryId>958449305144</categoryId>
 <picture>https://static.tildacdn.com/tila6131-6233-4939-b039-356563386639/IS4823B12C8C_1.jpg</picture>
@@ -9466,7 +9464,7 @@
 </offer>
 <offer id="IS57E9D09C5A" available="true">
 <url>https://b2b.isoft-shop.kz/zhestkie-diski/tproduct/209492819184-zhyostkii-disk-seagate-hdd-desktop-barra</url>
-<price>99000</price>
+<price>101000</price>
 <currencyId>KZT</currencyId>
 <categoryId>958449305144</categoryId>
 <picture>https://static.tildacdn.com/tild3463-3036-4233-b562-623366383237/209492819184.jpg</picture>
@@ -9524,7 +9522,7 @@
 </offer>
 <offer id="IS7A14674045" available="true">
 <url>https://b2b.isoft-shop.kz/zhestkie-diski/tproduct/348933525884-zhyostkii-disk-seagate-hdd-skyhawk-35-in</url>
-<price>108000</price>
+<price>110000</price>
 <currencyId>KZT</currencyId>
 <categoryId>958449305144</categoryId>
 <picture>https://static.tildacdn.com/stor3633-6231-4462-b933-376166656164/be7291bb3929b6d70c8bb14416b29c5a.jpg</picture>
@@ -9535,7 +9533,7 @@
 </offer>
 <offer id="IS7E3FFFB7A7" available="true">
 <url>https://b2b.isoft-shop.kz/zhestkie-diski/tproduct/830226557914-zhyostkii-disk-seagate-hdd-server-exos-7</url>
-<price>147000</price>
+<price>149000</price>
 <currencyId>KZT</currencyId>
 <categoryId>958449305144</categoryId>
 <picture>https://static.tildacdn.com/tild3938-6362-4536-b837-653734383339/ISC266279011_1.jpg</picture>
@@ -9580,7 +9578,7 @@
 </offer>
 <offer id="IS85B5EB1123" available="true">
 <url>https://b2b.isoft-shop.kz/zhestkie-diski/tproduct/186120105084-zhyostkii-disk-seagate-hdd-server-exos-x</url>
-<price>346000</price>
+<price>351000</price>
 <currencyId>KZT</currencyId>
 <categoryId>958449305144</categoryId>
 <picture>https://static.tildacdn.com/tild3539-6236-4966-b065-326331643264/186120105084.jpg</picture>
@@ -9606,7 +9604,7 @@
 </offer>
 <offer id="IS8E207709DD" available="true">
 <url>https://b2b.isoft-shop.kz/zhestkie-diski/tproduct/322712735884-zhyostkii-disk-seagate-hdd-server-exos-x</url>
-<price>626000</price>
+<price>634000</price>
 <currencyId>KZT</currencyId>
 <categoryId>958449305144</categoryId>
 <picture>https://static.tildacdn.com/tila6239-3339-4736-b937-646630393066/IS8E207709DD_1.jpg</picture>
@@ -9651,7 +9649,7 @@
 </offer>
 <offer id="IS9D477C8FB8" available="true">
 <url>https://b2b.isoft-shop.kz/zhestkie-diski/tproduct/923374701604-zhyostkii-disk-hdd-video-surveillance-to</url>
-<price>300000</price>
+<price>304000</price>
 <currencyId>KZT</currencyId>
 <categoryId>958449305144</categoryId>
 <picture>https://static.tildacdn.com/tila3364-3334-4539-b731-666564653231/IS9D477C8FB8_1.png</picture>
@@ -9708,7 +9706,7 @@
 </offer>
 <offer id="ISB22B34232A" available="true">
 <url>https://b2b.isoft-shop.kz/zhestkie-diski/tproduct/252362428304-zhyostkii-disk-western-digital-hdd-exter</url>
-<price>63000</price>
+<price>64000</price>
 <currencyId>KZT</currencyId>
 <categoryId>958449305144</categoryId>
 <picture>https://static.tildacdn.com/tild3965-3865-4039-a136-303162613933/252362428304.jpg</picture>
@@ -9742,7 +9740,7 @@
 </offer>
 <offer id="ISBDEE4C988E" available="true">
 <url>https://b2b.isoft-shop.kz/zhestkie-diski/tproduct/265394830064-zhyostkii-disk-seagate-hdd-server-exos-7</url>
-<price>139000</price>
+<price>140000</price>
 <currencyId>KZT</currencyId>
 <categoryId>958449305144</categoryId>
 <picture>https://static.tildacdn.com/tild3938-6362-4536-b837-653734383339/ISC266279011_1.jpg</picture>
@@ -9902,7 +9900,7 @@
 </offer>
 <offer id="ISDBB5C02034" available="true">
 <url>https://b2b.isoft-shop.kz/zhestkie-diski/tproduct/123397316034-zhyostkii-disk-hdd-7e10-512n-seagate-hdd</url>
-<price>163000</price>
+<price>165000</price>
 <currencyId>KZT</currencyId>
 <categoryId>958449305144</categoryId>
 <picture>https://static.tildacdn.com/tild3438-3333-4162-b038-646564333135/314133187724.jpg</picture>
@@ -9926,7 +9924,7 @@
 </offer>
 <offer id="ISE9FEC60558" available="true">
 <url>https://b2b.isoft-shop.kz/zhestkie-diski/tproduct/913298041124-zhyostkii-disk-western-digital-hdd-exter</url>
-<price>90000</price>
+<price>91000</price>
 <currencyId>KZT</currencyId>
 <categoryId>958449305144</categoryId>
 <picture>https://static.tildacdn.com/tild6530-3530-4435-a636-613631646266/ISE9FEC60558_1.jpg</picture>
@@ -9937,7 +9935,7 @@
 </offer>
 <offer id="ISEE00CAE6E0" available="true">
 <url>https://b2b.isoft-shop.kz/zhestkie-diski/tproduct/610981919234-zhyostkii-disk-seagate-hdd-external-expa</url>
-<price>75000</price>
+<price>76000</price>
 <currencyId>KZT</currencyId>
 <categoryId>958449305144</categoryId>
 <picture>https://static.tildacdn.com/tila6562-3234-4336-a634-313538353739/ISEE00CAE6E0_1.png</picture>
@@ -11528,17 +11526,6 @@
 <vendorCode>IS83B99D3213</vendorCode>
 <description>Мощность 5000 ВА · Класс мощности 5–6 кВА</description>
 </offer>
-<offer id="IS84B627C798" available="true">
-<url>https://b2b.isoft-shop.kz/ibp-i-zashchita-pitaniya/tproduct/231947419364-ibp-eaton9eon-line2-000-va1-800-w-9e2000</url>
-<price>397000</price>
-<currencyId>KZT</currencyId>
-<categoryId>622117808604</categoryId>
-<picture>https://static.tildacdn.com/tila3765-3934-4265-b236-373830633036/IS84B627C798_1.jpg</picture>
-<name>ИБП Eaton/9E/On-Line/2 000 VA/1 800 W 9E2000IR</name>
-<vendor>Eaton</vendor>
-<vendorCode>IS84B627C798</vendorCode>
-<description>Мощность 2000 ВА / 1800 Вт · Топология On-Line · Класс мощности 1–2,2 кВА · Размещение Стоечный</description>
-</offer>
 <offer id="IS85A714D2A0" available="true">
 <url>https://b2b.isoft-shop.kz/ibp-i-zashchita-pitaniya/tproduct/643516396974-ibp-apcsrv2krilrk-with-rail-kit-batt-pac</url>
 <price>534000</price>
@@ -12070,17 +12057,6 @@
 <vendor>SVC</vendor>
 <vendorCode>V-650-L</vendorCode>
 <description>Тип устройства ИБП · Мощность 650 · Форма выходного сигнала Ступенчатая синусоида · Ёмкость батареи 12В/7.5Ач · Время переключения 3 мс · Партномер: V-650-L</description>
-</offer>
-<offer id="ISAC91ED9626" available="true">
-<url>https://b2b.isoft-shop.kz/ibp-i-zashchita-pitaniya/tproduct/725909383864-ibp-eaton9eon-line2-000-va1-600-w-9e2000</url>
-<price>331000</price>
-<currencyId>KZT</currencyId>
-<categoryId>622117808604</categoryId>
-<picture>https://static.tildacdn.com/tila3063-3364-4635-b638-346235623839/ISAC91ED9626_1.jpg</picture>
-<name>ИБП Eaton/9E/On-Line/2 000 VA/1 600 W 9E2000I</name>
-<vendor>Eaton</vendor>
-<vendorCode>ISAC91ED9626</vendorCode>
-<description>Мощность 2000 ВА / 1600 Вт · Топология On-Line · Класс мощности 1–2,2 кВА · Размещение Напольный</description>
 </offer>
 <offer id="ISADA598E7E4" available="true">
 <url>https://b2b.isoft-shop.kz/ibp-i-zashchita-pitaniya/tproduct/810766433944-ibp-eaton-9sx1500i</url>
@@ -13659,6 +13635,17 @@
 <vendor>ДКС</vendor>
 <vendorCode>IS0DCC747608</vendorCode>
 <description>Цвет Белый · Размер канала 40х17 мм · Тип канала мини-канал</description>
+</offer>
+<offer id="IS22AD9A4672" available="true">
+<url>https://b2b.isoft-shop.kz/kabel-kanaly-i-koroba/tproduct/441754127074-kabelnii-kanal-ruvinil-rkk-25h16</url>
+<price>600</price>
+<currencyId>KZT</currencyId>
+<categoryId>362160635844</categoryId>
+<picture>https://static.tildacdn.com/tila3139-3032-4435-a235-313630636662/IS22AD9A4672_1.jpg</picture>
+<name>Кабельный канал РУВИНИЛ РКК-25х16</name>
+<vendor>Ruvinil</vendor>
+<vendorCode>IS22AD9A4672</vendorCode>
+<description>Размер канала 25х16 мм · Тип канала кабель-канал · Цвет Белый</description>
 </offer>
 <offer id="IS2858262351" available="true">
 <url>https://b2b.isoft-shop.kz/kabel-kanaly-i-koroba/tproduct/258577660114-kabelnii-kanal-plastikovii-deluxe-60h40</url>
@@ -16576,6 +16563,18 @@
 <vendorCode>ISC9B9F06EC8</vendorCode>
 <description>Тип устройства IP-камера</description>
 </offer>
+<offer id="ISCAE8C01A8C" available="true">
+<url>https://b2b.isoft-shop.kz/videonablyudenie/tproduct/467206477244-ip-videokamera-dahua-dh-ipc-hdbw2241rp-z</url>
+<price>38000</price>
+<currencyId>KZT</currencyId>
+<categoryId>593618245944</categoryId>
+<picture>https://static.tildacdn.com/stor3036-6362-4537-b134-623061653933/5a53aebb4e3efdd543ca2cb479674418.jpg</picture>
+<picture>https://static.tildacdn.com/tild3332-6264-4363-a163-383164383263/467206477244_1.jpg</picture>
+<name>IP видеокамера Dahua DH-IPC-HDBW2241RP-ZS-27135</name>
+<vendor>Dahua</vendor>
+<vendorCode>ISCAE8C01A8C</vendorCode>
+<description>Тип устройства IP-камера · Разрешение камеры 2 МП · Тип корпуса Купольная</description>
+</offer>
 <offer id="ISCC69D10D22" available="true">
 <url>https://b2b.isoft-shop.kz/videonablyudenie/tproduct/478120068264-tsilindricheskaya-videokamera-dahua-dh-h</url>
 <price>8400</price>
@@ -17252,7 +17251,7 @@
 </offer>
 <offer id="IS5D04A9A702" available="true">
 <url>https://b2b.isoft-shop.kz/karty-pamyati/tproduct/117205946424-karta-pamyati-sandisk-extreme-pro-256gb</url>
-<price>58000</price>
+<price>59000</price>
 <currencyId>KZT</currencyId>
 <categoryId>668752067734</categoryId>
 <picture>https://static.tildacdn.com/tila3663-3161-4333-b137-313439613265/IS5D04A9A702_1.png</picture>
@@ -17323,7 +17322,7 @@
 </offer>
 <offer id="IS6E74A79B3C" available="true">
 <url>https://b2b.isoft-shop.kz/karty-pamyati/tproduct/704105728614-karta-pamyati-sandisk-extreme-pro-micros</url>
-<price>184000</price>
+<price>186000</price>
 <currencyId>KZT</currencyId>
 <categoryId>668752067734</categoryId>
 <picture>https://static.tildacdn.com/stor6536-6333-4635-a539-326637336165/7690f42b0cd1b1d9b4c796173a01de13.png</picture>
@@ -17382,7 +17381,7 @@
 </offer>
 <offer id="IS82782E27F9" available="true">
 <url>https://b2b.isoft-shop.kz/karty-pamyati/tproduct/854063302134-karta-pamyati-sandisk-extreme-microsdxc</url>
-<price>89000</price>
+<price>90000</price>
 <currencyId>KZT</currencyId>
 <categoryId>668752067734</categoryId>
 <picture>https://static.tildacdn.com/stor3036-6638-4939-a434-383838396161/55773ce40765dafd64d820f42df3027a.png</picture>
@@ -17613,7 +17612,7 @@
 </offer>
 <offer id="ISE9BB63FC39" available="true">
 <url>https://b2b.isoft-shop.kz/karty-pamyati/tproduct/239511865614-karta-pamyati-kingston-64gb-sdxc-canvas</url>
-<price>14000</price>
+<price>15000</price>
 <currencyId>KZT</currencyId>
 <categoryId>668752067734</categoryId>
 <picture>https://static.tildacdn.com/tila3462-6634-4633-a330-363061633161/ISE9BB63FC39_1.png</picture>
@@ -17646,7 +17645,7 @@
 </offer>
 <offer id="ISF9CCEBE762" available="true">
 <url>https://b2b.isoft-shop.kz/karty-pamyati/tproduct/567991136984-karta-pamyati-kingston-256gb-microsdxc-c</url>
-<price>25000</price>
+<price>26000</price>
 <currencyId>KZT</currencyId>
 <categoryId>668752067734</categoryId>
 <picture>https://static.tildacdn.com/tila3132-3230-4437-b263-653465363336/ISF9CCEBE762_1.png</picture>
@@ -17665,17 +17664,6 @@
 <vendor>Apacer</vendor>
 <vendorCode>ISFACA1CD858</vendorCode>
 <description>Ёмкость 64 ГБ · Форм-фактор microSDXC · В комплекте Адаптер SD</description>
-</offer>
-<offer id="IS0076F020AF" available="true">
-<url>https://b2b.isoft-shop.kz/klaviatury/tproduct/624709808164-klaviatura-mish-usb-defender-motion-c-97</url>
-<price>5100</price>
-<currencyId>KZT</currencyId>
-<categoryId>723843374454</categoryId>
-<picture>https://static.tildacdn.com/tila6136-3232-4561-b230-663962653934/IS0076F020AF_1.jpg</picture>
-<name>Клавиатура + мышь, USB, Defender Motion C-977 RU, White(45977)</name>
-<vendor>DEFENDER</vendor>
-<vendorCode>IS0076F020AF</vendorCode>
-<description>Тип устройства клавиатура</description>
 </offer>
 <offer id="IS0080B3224F" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury/tproduct/605862298454-klaviatura-usb-mchose-ace-68-white-ice-b</url>
@@ -22741,20 +22729,6 @@
 <vendorCode>IS4E760C84CC</vendorCode>
 <description>Форм-фактор E-ATX · Интерфейс USB 3.1 · Тип устройства Корпус · Цвет Белый</description>
 </offer>
-<offer id="IS4E90102FE3" available="true">
-<url>https://b2b.isoft-shop.kz/korpusa-i-bloki-pitaniya/tproduct/939454477004-korpus-case-atx-midi-tower-arctic-coolin</url>
-<price>100000</price>
-<currencyId>KZT</currencyId>
-<categoryId>976729823024</categoryId>
-<picture>https://static.tildacdn.com/tild6561-3934-4631-b565-306164656231/939454477004.jpg</picture>
-<picture>https://static.tildacdn.com/tild3964-3131-4330-a430-623162306235/939454477004_1.jpg</picture>
-<picture>https://static.tildacdn.com/tild3632-3838-4638-a634-633665316536/939454477004_2.jpg</picture>
-<picture>https://static.tildacdn.com/tild6464-3835-4934-b930-616666626538/939454477004_3.jpg</picture>
-<name>Корпус Case ATX midi tower Arctic Cooling Xtender ACPCC00015A, (без БП), black</name>
-<vendor>ARCTIC</vendor>
-<vendorCode>IS4E90102FE3</vendorCode>
-<description>Форм-фактор ATX · Цвет Чёрный · Тип устройства Корпус · Интерфейс USB 3.0 / Type-C · Материал Сталь, пластик, стекло · Макс. длина видеокарты 482 мм · Макс. высота кулера 171 мм</description>
-</offer>
 <offer id="IS4F3E8E8230" available="true">
 <url>https://b2b.isoft-shop.kz/korpusa-i-bloki-pitaniya/tproduct/142247900154-korpus-case-atx-midi-tower-cougar-cfv235</url>
 <price>72000</price>
@@ -25317,7 +25291,7 @@
 </offer>
 <offer id="ISE904939A8F" available="true">
 <url>https://b2b.isoft-shop.kz/kronshteyny-i-krepleniya/tproduct/516171770614-kronshtein-logitech-tv-mount-for-video-b</url>
-<price>142000</price>
+<price>144000</price>
 <currencyId>KZT</currencyId>
 <categoryId>867910086654</categoryId>
 <picture>https://static.tildacdn.com/tild3338-3964-4666-b434-346166326334/516171770614.jpg</picture>
@@ -25457,7 +25431,7 @@
 </offer>
 <offer id="IS18B6463E40" available="true">
 <url>https://b2b.isoft-shop.kz/mfu/tproduct/718523742534-mfu-pantum-bm2300w-22ppm-3-in-1print-sca</url>
-<price>102000</price>
+<price>104000</price>
 <currencyId>KZT</currencyId>
 <categoryId>910558779244</categoryId>
 <picture>https://static.tildacdn.com/tila6565-3363-4639-b431-653633663935/IS18B6463E40_1.png</picture>
@@ -25581,7 +25555,7 @@
 </offer>
 <offer id="IS2CDAA97FF9" available="true">
 <url>https://b2b.isoft-shop.kz/mfu/tproduct/120555002974-mfu-pantum-cm230adw-25ppm-color-mfp-a3-3</url>
-<price>1017000</price>
+<price>1031000</price>
 <currencyId>KZT</currencyId>
 <categoryId>910558779244</categoryId>
 <picture>https://static.tildacdn.com/tila3832-3462-4337-a134-373035386239/IS2CDAA97FF9_1.png</picture>
@@ -25779,7 +25753,7 @@
 <description>Тип устройства МФУ · Формат A3 · Интерфейсы USB, Ethernet · Технология печати лазерный · Цветность ч/б · Скорость печати 24 стр/мин · Класс скорости печати 25–29 стр/мин</description>
 </offer>
 <offer id="IS4E7ACEA131" available="true">
-<url>https://b2b.isoft-shop.kz/mfu-lazernye-cvetnye/tproduct/417559245904-mfu-struinoe-tsvetnoe-epson-l8160-c11cj2</url>
+<url>https://b2b.isoft-shop.kz/mfu/tproduct/417559245904-mfu-struinoe-tsvetnoe-epson-l8160-c11cj2</url>
 <price>303000</price>
 <currencyId>KZT</currencyId>
 <categoryId>910558779244</categoryId>
@@ -25787,7 +25761,7 @@
 <name>МФУ струйное цветное Epson L8160 C11CJ20404, А4, 32 стр/мин, 6цв, wIFI, Ethernet, Duplex, no ADF, Sdreader</name>
 <vendor>Epson</vendor>
 <vendorCode>IS4E7ACEA131</vendorCode>
-<description>МФУ струйное цветное Epson L8160 C11CJ20404, А4, 32 стр/мин, 6цв, wIFI, Ethernet, Duplex, no ADF, Sdreader (Epson)</description>
+<description>Тип устройства МФУ · Скорость печати 32 стр/мин</description>
 </offer>
 <offer id="IS4ED03B23CD" available="true">
 <url>https://b2b.isoft-shop.kz/mfu/tproduct/197670360314-mfu-lazernoe-chb-hp-inc-3303fdn-499m7a-a</url>
@@ -26035,17 +26009,6 @@
 <vendorCode>IS7D33762D80</vendorCode>
 <description>Формат A4 · Интерфейсы USB</description>
 </offer>
-<offer id="IS81249091B3" available="true">
-<url>https://b2b.isoft-shop.kz/mfu/tproduct/665262549734-monohromnoe-lazernoe-mfu-canon-i-s-mf465</url>
-<price>235000</price>
-<currencyId>KZT</currencyId>
-<categoryId>910558779244</categoryId>
-<picture>https://static.tildacdn.com/tila3431-3934-4836-a261-323936343764/IS81249091B3_1.jpg</picture>
-<name>Монохромное лазерное МФУ Canon I-S MF465dw II 7188C007AA</name>
-<vendor>Canon</vendor>
-<vendorCode>IS81249091B3</vendorCode>
-<description>Тип устройства МФУ · Цветность ч/б · Формат A4 · Скорость печати 40 стр/мин · Интерфейсы USB 2.0, Ethernet, Wi-Fi</description>
-</offer>
 <offer id="IS822936565E" available="true">
 <url>https://b2b.isoft-shop.kz/mfu/tproduct/382568086874-mfu-epson-xp-15000-exp-photo-a3-printers</url>
 <price>416000</price>
@@ -26100,7 +26063,7 @@
 <description>Тип устройства МФУ · Интерфейсы USB 3.0, Ethernet, Wi-Fi · Скорость печати 50 стр/мин · Разрешение печати 1200×1200 dpi · Технология печати лазерный · Формат A4 · Функции принтер, копир, факс</description>
 </offer>
 <offer id="IS8B15CA7FC8" available="true">
-<url>https://b2b.isoft-shop.kz/mfu/tproduct/725880911044-bazovii-modul-mfu-xerox-versalink-b71253</url>
+<url>https://b2b.isoft-shop.kz/printery-i-mfu/tproduct/725880911044-bazovii-modul-mfu-xerox-versalink-b71253</url>
 <price>1759000</price>
 <currencyId>KZT</currencyId>
 <categoryId>910558779244</categoryId>
@@ -26138,15 +26101,15 @@
 <description>Монохромное МФУ, Xerox, B235DNI, B235V_DNI, Лазерное, А4, 34 стр./мин., Подача 251 лист, Односторонний автоподатчик документов, до 23 изобр./мин., Сенсорный дисплей 2.8", 1 ГГц CPU, 512 МБ RAM, USB 2.0, Ethernet 10/100, Wi-Fi</description>
 </offer>
 <offer id="IS8FBC21F65F" available="true">
-<url>https://b2b.isoft-shop.kz/mfu-lazernye-cvetnye/tproduct/533317749674-mfu-lazernoe-tsvetnoe-hp-color-laser-178</url>
-<price>177000</price>
+<url>https://b2b.isoft-shop.kz/mfu/tproduct/533317749674-mfu-lazernoe-tsvetnoe-hp-color-laser-178</url>
+<price>178000</price>
 <currencyId>KZT</currencyId>
 <categoryId>910558779244</categoryId>
 <picture>https://static.tildacdn.com/tila3430-3966-4437-b562-653465353332/533317749674_1.jpg</picture>
 <name>МФУ лазерное цветное HP Color Laser 178nw 4ZB96A, ЧБ 18 стр/мин, цвет 4 стр/мин, 64 MB, USB 2.0, Ethernet, WIFI</name>
 <vendor>HP</vendor>
 <vendorCode>IS8FBC21F65F</vendorCode>
-<description>МФУ лазерное цветное HP Color Laser 178nw 4ZB96A, ЧБ 18 стр/мин, цвет 4 стр/мин, 64 MB, USB 2.0, Ethernet, WIFI (HP)</description>
+<description>Тип устройства МФУ</description>
 </offer>
 <offer id="IS98B3785B83" available="true">
 <url>https://b2b.isoft-shop.kz/mfu/tproduct/832837433944-tsvetnoe-mfu-xerox-c325dni-c325vdni</url>
@@ -26519,7 +26482,7 @@
 <name>Цветное МФУ Canon Pixma G3430 5989C009AA</name>
 <vendor>Canon</vendor>
 <vendorCode>ISFB22F962CD</vendorCode>
-<description>Тип устройства МФУ · Интерфейсы USB 2.0, Wi-Fi · Формат A4</description>
+<description>Тип устройства МФУ · Формат A4 · Интерфейсы USB 2.0, Wi-Fi</description>
 </offer>
 <offer id="ISFC0212DC42" available="true">
 <url>https://b2b.isoft-shop.kz/mfu/tproduct/613888427984-tsvetnoe-mfu-canon-pixma-g640-4620c009aa</url>
@@ -27854,7 +27817,7 @@
 </offer>
 <offer id="IS8A1E0656F7" available="true">
 <url>https://b2b.isoft-shop.kz/marshrutizatory/tproduct/665309211404-router-ubiquiti-unifi-cloud-gateway-ultr</url>
-<price>68000</price>
+<price>69000</price>
 <currencyId>KZT</currencyId>
 <categoryId>424596428574</categoryId>
 <picture>https://static.tildacdn.com/tild3834-3534-4634-b366-383134626461/665309211404.jpg</picture>
@@ -28873,7 +28836,7 @@
 </offer>
 <offer id="ISD96FEF1A59" available="true">
 <url>https://b2b.isoft-shop.kz/marshrutizatory/tproduct/555004306384-router-ubiquiti-unifi-cloud-gateway-max</url>
-<price>146000</price>
+<price>148000</price>
 <currencyId>KZT</currencyId>
 <categoryId>424596428574</categoryId>
 <picture>https://static.tildacdn.com/tild6335-3333-4565-b962-303233633439/555004306384.jpg</picture>
@@ -31227,17 +31190,6 @@
 <vendorCode>ISBA33F8BF55</vendorCode>
 <description>Чипсет X870 · Сокет AM5 · Тип памяти DDR5 · Форм-фактор ATX · Слотов памяти 4 · Интерфейс SATA / PCI-E 3.0 / PCI-E 4.0 / PCI-E 5.0 · Видеовыходы HDMI / USB Type-C x 2 · Разъёмов M.2 3 · Разъёмов SATA 4</description>
 </offer>
-<offer id="ISBB0536A042" available="true">
-<url>https://b2b.isoft-shop.kz/materinskie-platy/tproduct/119905124754-materinskaya-plata-asus-x870-max-gaming</url>
-<price>196000</price>
-<currencyId>KZT</currencyId>
-<categoryId>248907277044</categoryId>
-<picture>https://static.tildacdn.com/tild3332-6234-4630-b366-303866366632/ISBB0536A042_1.jpg</picture>
-<name>Материнская плата ASUS X870 MAX GAMING WIFI7 W, Socket AM5, ATX, AMD X870 (HDMI), 4DDR5, PCIx16</name>
-<vendor>ASUS</vendor>
-<vendorCode>ISBB0536A042</vendorCode>
-<description>Форм-фактор ATX · Сокет AM5 · Слотов памяти 4 · Тип памяти DDR5 · Чипсет X870 · Сеть 2,5 Гбит/с · Видеовыходы HDMI · Разъёмов M.2 3 · Разъёмов SATA 4</description>
-</offer>
 <offer id="ISBC0E89B1AB" available="true">
 <url>https://b2b.isoft-shop.kz/materinskie-platy/tproduct/146496542534-materinskaya-plata-asrock-h610m-hvsm2-r2</url>
 <price>36000</price>
@@ -31653,7 +31605,7 @@
 </offer>
 <offer id="ISE1669EA789" available="true">
 <url>https://b2b.isoft-shop.kz/materinskie-platy/tproduct/552585453644-materinskaya-plata-asus-main-board-deskt</url>
-<price>90000</price>
+<price>91000</price>
 <currencyId>KZT</currencyId>
 <categoryId>248907277044</categoryId>
 <picture>https://static.tildacdn.com/tild3233-6565-4235-a430-363631616539/ISE1669EA789_1.png</picture>
@@ -32076,17 +32028,6 @@
 <vendorCode>90AR00R2-M00050</vendorCode>
 <description>Процессор Core 3 · Партномер: 90AR00R2-M00050</description>
 </offer>
-<offer id="IS1C6A6FB2DE" available="true">
-<url>https://b2b.isoft-shop.kz/mini-pk-i-rabochie-stancii/tproduct/798165817164-mini-pk-apple-mac-studio-apple-m4-max-ch</url>
-<price>1579000</price>
-<currencyId>KZT</currencyId>
-<categoryId>322713034454</categoryId>
-<picture>https://static.tildacdn.com/tila3335-3362-4763-a336-376363366433/IS1C6A6FB2DE_1.png</picture>
-<name>Мини-пк APPLE Mac Studio: Apple M4 Max чип with 14‑core CPU, 32‑core GPU, 36GB, 512GB, модель A3143 APPLE MAC STUDIO: APPLE M4 MAX CHIP WITH 14‑CORE CPU, 32‑CORE GPU, 36GB, 512GB, MODEL A3143</name>
-<vendor>APPLE</vendor>
-<vendorCode>IS1C6A6FB2DE</vendorCode>
-<description>В комплекте Кабель питания · Количество ядер процессора 14 · Процессор Apple M4 · Видеокарта Встроенная · Операционная система macOS</description>
-</offer>
 <offer id="IS2DCFFFC461" available="true">
 <url>https://b2b.isoft-shop.kz/mini-pk-i-rabochie-stancii/tproduct/570500896034-mini-pk-nettop-acer-mini-pc-veriton-n472</url>
 <price>560000</price>
@@ -32294,6 +32235,18 @@
 <vendor>Lenovo</vendor>
 <vendorCode>IS041ED8D19B</vendorCode>
 <description>Время отклика 4 мс · Диагональ 27″ · Разрешение 1920×1080 · Соотношение сторон 16:9 · Тип матрицы IPS · Частота обновления 100 Гц · Яркость 300 кд/м² · Размер экрана 27–29″</description>
+</offer>
+<offer id="IS053FC5864D" available="true">
+<url>https://b2b.isoft-shop.kz/monitory/tproduct/176708746144-monitor-dell-alienware-34-280hz-qd-oled</url>
+<price>495000</price>
+<currencyId>KZT</currencyId>
+<categoryId>929335537584</categoryId>
+<picture>https://static.tildacdn.com/tila3334-3062-4430-b530-386262663163/IS053FC5864D_1.jpg</picture>
+<picture>https://static.tildacdn.com/tila6332-3265-4537-b732-653035306531/IS053FC5864D_2.jpg</picture>
+<name>Монитор DELL Alienware 34 280Hz QD-OLED Gaming Monitor-AW3426DW/3440 x 1440/Quantum Dot OLED/21:9/178/178/1xDP, 2xHDMI, USB-A, USB-B, USB-C/3Ywr 210-BWFN</name>
+<vendor>Dell</vendor>
+<vendorCode>IS053FC5864D</vendorCode>
+<description>Разрешение 3440×1440 · Частота обновления 280 Гц · Тип матрицы QD-OLED · Соотношение сторон 21:9 · Угол обзора 178°</description>
 </offer>
 <offer id="IS0541B8EDDF" available="true">
 <url>https://b2b.isoft-shop.kz/monitory/tproduct/591727419244-monitor-samsung-27-inch-viewfinity-s6-ls</url>
@@ -33891,7 +33844,7 @@
 <name>Монитор Lenovo 66EEGAC3EU Q24i-20 23.8-inch IPS/1920x1080/75Hz/AMD FreeSync/4ms/1000:1/3M:1/300nit/Lift 80mm/2 x HDMI 2.0/DP 1.4/2 x 3W</name>
 <vendor>Lenovo</vendor>
 <vendorCode>IS69FB946C5B</vendorCode>
-<description>Диагональ 23,8″ · Разрешение 1920×1080 · Частота обновления 75 Гц · Время отклика 4 мс · Яркость 300 кд/м² · Тип матрицы IPS · Контрастность 1000:1 · Размер экрана 23–24″</description>
+<description>Время отклика 4 мс · Диагональ 23,8″ · Контрастность 1000:1 · Разрешение 1920×1080 · Тип матрицы IPS · Частота обновления 75 Гц · Яркость 300 кд/м² · Размер экрана 23–24″</description>
 </offer>
 <offer id="IS6A25513FFB" available="true">
 <url>https://b2b.isoft-shop.kz/monitory/tproduct/534686122934-monitor-benq-interaktivnaya-panel-lcd-86</url>
@@ -36074,20 +36027,6 @@
 <vendor>HP</vendor>
 <vendorCode>ISEC6373299C</vendorCode>
 <description>Время отклика 5 мс · Диагональ 27″ · Тип матрицы IPS · Частота обновления 100 Гц · Яркость 250 кд/м² · Разрешение 1920×1080 · Соотношение сторон 16:9 · Контрастность 1000:1 · Угол обзора 178° · Размер экрана 27–29″</description>
-</offer>
-<offer id="ISED1160055A" available="true">
-<url>https://b2b.isoft-shop.kz/monitory/tproduct/563138027194-monitor-238-inch-aoc-24b3ha201-1920x1080</url>
-<price>47000</price>
-<currencyId>KZT</currencyId>
-<categoryId>929335537584</categoryId>
-<picture>https://static.tildacdn.com/tild6462-3966-4139-b536-626261383861/563138027194.jpg</picture>
-<picture>https://static.tildacdn.com/tild6134-6638-4435-b332-346235666134/563138027194.jpg</picture>
-<picture>https://static.tildacdn.com/tild6336-6161-4636-b637-373634353863/563138027194_2.jpg</picture>
-<picture>https://static.tildacdn.com/tild6231-3937-4565-b631-383031333163/563138027194_3.jpg</picture>
-<name>Монитор 23.8-inch AOC 24B3HA2/01, 1920x1080 IPS (LED), 1ms, 250 cd/m2, 1300:1, VGA/HDMI</name>
-<vendor>AOC</vendor>
-<vendorCode>ISED1160055A</vendorCode>
-<description>Время отклика 1 мс · Диагональ 23,8″ · Разрешение 1920×1080 · Тип матрицы IPS · Яркость 250 кд/м² · Размер экрана 23–24″ · Контрастность 1300:1</description>
 </offer>
 <offer id="ISED3ABDE4E0" available="true">
 <url>https://b2b.isoft-shop.kz/monitory/tproduct/291110723174-monitor-238-inch-sanc-m2442ph-v3-1920x10</url>
@@ -41712,7 +41651,7 @@
 <name>Мышь CANYON mouse Fortnax GM-636 RGB 9buttons Wired Black</name>
 <vendor>CANYON</vendor>
 <vendorCode>ISAC35267CF3</vendorCode>
-<description>Тип устройства мышь · Подключение Проводное · Кнопок 9 · Цвет Чёрный</description>
+<description>Цвет Чёрный · Тип устройства мышь · Кнопок 9 · Подключение Проводное · Длина кабеля 1,65 м</description>
 </offer>
 <offer id="ISAC7FF37C15" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/357537941744-mish-logitech-b170-wireless-mouse-black</url>
@@ -43159,19 +43098,6 @@
 <vendorCode>ISE9BBC4EE24</vendorCode>
 <description>Тип устройства мышь · Цвет Чёрный · Подключение Беспроводное · Кнопок 6 · Гарантия 2 года · Разрешение сенсора 26000 dpi · Длина кабеля 2 м · Подсветка RGB · Тип сенсора Оптический · Назначение Игровая</description>
 </offer>
-<offer id="ISEA969115E9" available="true">
-<url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/196105647564-kompyuternaya-mish-glorious-model-o-matt</url>
-<price>50000</price>
-<currencyId>KZT</currencyId>
-<categoryId>816235379434</categoryId>
-<picture>https://static.tildacdn.com/stor3262-3635-4465-a330-303761353735/cc5e421d3d107486a2d57c02f17ecc99.jpg</picture>
-<picture>https://static.tildacdn.com/tild3061-3161-4764-b931-653264633637/196105647564_1.jpg</picture>
-<picture>https://static.tildacdn.com/tild3937-3366-4238-a430-646536613630/196105647564_2.jpg</picture>
-<name>Компьютерная мышь Glorious Model O- Matte Black (GLO-MS-OMW-MB)</name>
-<vendor>Glorious</vendor>
-<vendorCode>ISEA969115E9</vendorCode>
-<description>Тип устройства мышь · Цвет Чёрный · Подключение Беспроводное · Кнопок 6 · Гарантия 2 года · Разрешение сенсора 19000 dpi · Длина кабеля 2 м · Подсветка RGB · Тип сенсора Оптический · Назначение Игровая</description>
-</offer>
 <offer id="ISEA9D33B939" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/584702755994-mish-acer-omr032-cherniikrasnii-optich-1</url>
 <price>5400</price>
@@ -43574,7 +43500,7 @@
 <name>Мышь LOGITECH M650 Signature Bluetooth Mouse - OFF-WHITE</name>
 <vendor>Logitech</vendor>
 <vendorCode>ISF9BEAAC1AC</vendorCode>
-<description>Тип устройства мышь · Подключение Беспроводное · Цвет Белый</description>
+<description>Подключение Беспроводное · Тип устройства мышь · Цвет Белый</description>
 </offer>
 <offer id="ISFA00BDEF9A" available="true">
 <url>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/975760283784-mish-defender-pandora-gm-502-wireless-op</url>
@@ -43885,7 +43811,7 @@
 <description>Тип устройства Гарнитура · Цвет Чёрный · Длина кабеля 1,2 м</description>
 </offer>
 <offer id="IS0E9CB4F1D8" available="true">
-<url>https://b2b.isoft-shop.kz/naushniki/tproduct/335373103604-igrovaya-garnitura-mchose-v9-turbo-tri-m</url>
+<url>https://b2b.isoft-shop.kz/naushniki-i-garnitury/tproduct/335373103604-igrovaya-garnitura-mchose-v9-turbo-tri-m</url>
 <price>54000</price>
 <currencyId>KZT</currencyId>
 <categoryId>813446092544</categoryId>
@@ -43893,7 +43819,7 @@
 <name>Игровая гарнитура MCHOSE V9 Turbo Tri-mode - Berry Red + Charging Doc MCHOSE GAMING HEADSET V9 TURBO TRI-MODE - BERRY RED + CHARGING DOC</name>
 <vendor>MCHOSE</vendor>
 <vendorCode>IS0E9CB4F1D8</vendorCode>
-<description>Назначение Игровое · Цвет красный</description>
+<description>Цвет красный · Тип устройства Гарнитура · Назначение Игровое</description>
 </offer>
 <offer id="IS0ECFF274B2" available="true">
 <url>https://b2b.isoft-shop.kz/naushniki-i-garnitury/tproduct/926857254494-jabra-biz-2300-duo-usb-c-ms-2399-823-189</url>
@@ -45195,7 +45121,7 @@
 <description>JABRA BIZ 1500 Duo, QD, NC, EMEA 1519-0154 (Jabra)</description>
 </offer>
 <offer id="IS76EE5BCF3B" available="true">
-<url>https://b2b.isoft-shop.kz/naushniki/tproduct/179764936474-igrovaya-garnitura-mchose-v9-turbo-tri-m</url>
+<url>https://b2b.isoft-shop.kz/naushniki-i-garnitury/tproduct/179764936474-igrovaya-garnitura-mchose-v9-turbo-tri-m</url>
 <price>54000</price>
 <currencyId>KZT</currencyId>
 <categoryId>813446092544</categoryId>
@@ -45203,7 +45129,7 @@
 <name>Игровая гарнитура MCHOSE V9 Turbo Tri-mode - Black Gold + Charging Doc MCHOSE GAMING HEADSET V9 TURBO TRI-MODE - BLACK GOLD + CHARGING DOC</name>
 <vendor>MCHOSE</vendor>
 <vendorCode>IS76EE5BCF3B</vendorCode>
-<description>Назначение Игровое</description>
+<description>Тип устройства Гарнитура · Назначение Игровое</description>
 </offer>
 <offer id="IS779710FBA4" available="true">
 <url>https://b2b.isoft-shop.kz/naushniki-i-garnitury/tproduct/919473019054-garnitura-ajazz-ahm09-max-white-ahm09max</url>
@@ -45364,7 +45290,7 @@
 <description>Тип устройства Гарнитура · Цвет Зелёный · Длина кабеля 1,3 м</description>
 </offer>
 <offer id="IS856B76CC68" available="true">
-<url>https://b2b.isoft-shop.kz/naushniki/tproduct/704543710304-igrovaya-garnitura-mchose-v9-pro-tri-mod</url>
+<url>https://b2b.isoft-shop.kz/naushniki-i-garnitury/tproduct/704543710304-igrovaya-garnitura-mchose-v9-pro-tri-mod</url>
 <price>28000</price>
 <currencyId>KZT</currencyId>
 <categoryId>813446092544</categoryId>
@@ -45372,7 +45298,7 @@
 <name>Игровая гарнитура MCHOSE V9 Pro Tri-mode Silver - белая MCHOSE GAMING HEADSET V9 PRO TRI-MODE SILVER - WHITE</name>
 <vendor>MCHOSE</vendor>
 <vendorCode>IS856B76CC68</vendorCode>
-<description>Назначение Игровое</description>
+<description>Тип устройства Гарнитура · Назначение Игровое</description>
 </offer>
 <offer id="IS8669AF5F24" available="true">
 <url>https://b2b.isoft-shop.kz/naushniki-i-garnitury/tproduct/525492282364-naushniki-lenovo-legion-h600-wireless-ga</url>
@@ -45563,7 +45489,7 @@
 <description>Тип устройства Гарнитура · Цвет Белый · Длина кабеля 1,3 м · Интерфейс 3,5 мм</description>
 </offer>
 <offer id="IS9353CB52E2" available="true">
-<url>https://b2b.isoft-shop.kz/naushniki/tproduct/486549107284-igrovaya-garnitura-mchose-v9-turbo-tri-m</url>
+<url>https://b2b.isoft-shop.kz/naushniki-i-garnitury/tproduct/486549107284-igrovaya-garnitura-mchose-v9-turbo-tri-m</url>
 <price>54000</price>
 <currencyId>KZT</currencyId>
 <categoryId>813446092544</categoryId>
@@ -45571,7 +45497,7 @@
 <name>Игровая гарнитура MCHOSE V9 Turbo Tri-mode - Silver White + Charging Doc GAMING HEADSET V9 - +</name>
 <vendor>MCHOSE</vendor>
 <vendorCode>IS9353CB52E2</vendorCode>
-<description>Назначение Игровое</description>
+<description>Тип устройства Гарнитура · Назначение Игровое</description>
 </offer>
 <offer id="IS93693A1F26" available="true">
 <url>https://b2b.isoft-shop.kz/naushniki-i-garnitury/tproduct/795508038704-jabra-evolve-30-ii-usb-ca-mono-ms-5393-8</url>
@@ -46179,7 +46105,7 @@
 <description>Тип устройства Гарнитура · Цвет Синий · Назначение Игровое</description>
 </offer>
 <offer id="ISC1D294ADAF" available="true">
-<url>https://b2b.isoft-shop.kz/naushniki/tproduct/767992803854-igrovaya-garnitura-mchose-v9-pro-tri-mod</url>
+<url>https://b2b.isoft-shop.kz/naushniki-i-garnitury/tproduct/767992803854-igrovaya-garnitura-mchose-v9-pro-tri-mod</url>
 <price>28000</price>
 <currencyId>KZT</currencyId>
 <categoryId>813446092544</categoryId>
@@ -46187,7 +46113,7 @@
 <name>Игровая гарнитура MCHOSE V9 Pro Tri-mode Gunmetal - чёрная MCHOSE GAMING HEADSET V9 PRO TRI-MODE GUNMETAL - BLACK</name>
 <vendor>MCHOSE</vendor>
 <vendorCode>ISC1D294ADAF</vendorCode>
-<description>Назначение Игровое · Цвет Чёрный</description>
+<description>Цвет Чёрный · Тип устройства Гарнитура · Назначение Игровое</description>
 </offer>
 <offer id="ISC260FB2DF5" available="true">
 <url>https://b2b.isoft-shop.kz/naushniki-i-garnitury/tproduct/213212863214-naushniki-soundcore-liberty-5-pro-black</url>
@@ -47312,7 +47238,7 @@
 <name>Ноутбук ASUS Zenbook 14 UX3480KA-U1092W 14-inch FHD+ 60Hz Ryzen AI 5 330 16GB 256GB Win11</name>
 <vendor>ASUS</vendor>
 <vendorCode>IS05290F565E</vendorCode>
-<description>Диагональ 14″ · Ёмкость 256 ГБ · Оперативная память 16 ГБ · Операционная система Windows 11 · Частота обновления 60 Гц · Семья ОС Windows 11 · Линейка процессора Ryzen 5</description>
+<description>Ёмкость 256 ГБ · Оперативная память 16 ГБ · Операционная система Windows 11 · Семья ОС Windows 11 · Линейка процессора Ryzen 5 · Диагональ 14″ · Частота обновления 60 Гц · Тип памяти LPDDR5X · Процессор AMD Ryzen AI 5 330 · Накопитель 256 ГБ</description>
 </offer>
 <offer id="IS07A74361AE" available="true">
 <url>https://b2b.isoft-shop.kz/noutbuki/tproduct/865093712994-noutbuk-mobile-workstation-dell-precisio</url>
@@ -47498,19 +47424,6 @@
 <vendorCode>IS10AB429A43</vendorCode>
 <description>Ёмкость 512 ГБ · Тип памяти DDR5 · Диагональ 15,6″ · Разрешение 1920×1080 · Видеокарта RTX 5050 · Оперативная память 16 ГБ · Операционная система без ОС · Частота обновления 144 Гц · Линейка процессора Core i5 · Семья ОС Без ОС</description>
 </offer>
-<offer id="IS116327C48B" available="true">
-<url>https://b2b.isoft-shop.kz/noutbuki/tproduct/830301384754-noutbuk-dell-16-premium-da16250-210-brts</url>
-<price>1863000</price>
-<currencyId>KZT</currencyId>
-<categoryId>293087419414</categoryId>
-<picture>https://static.tildacdn.com/tild3465-3734-4933-a231-303138626130/536792310804.jpg</picture>
-<picture>https://static.tildacdn.com/tild3165-3764-4337-a363-656533333761/650389889494.jpg</picture>
-<picture>https://static.tildacdn.com/tild3465-3430-4232-b162-613464636433/650389889494_2.jpg</picture>
-<name>Ноутбук Dell 16 Premium (DA16250) 210-BRTS_DA16250_ARLH_003, Core Ultra 7 255H, 16 Gb, PCIe NVMe SSD, 1024 Gb, RTX 5050 GDDR7, 8 Gb</name>
-<vendor>Dell</vendor>
-<vendorCode>IS116327C48B</vendorCode>
-<description>Процессор Intel Core Ultra 7 255H · Оперативная память 16 ГБ · Ёмкость 1 ТБ · Видеокарта RTX 5050 · Операционная система Windows 11 · Линейка процессора Core Ultra 7 · Семья ОС Windows 11 · Тип накопителя SSD · Накопитель 1024 ГБ · Диагональ 16,3″</description>
-</offer>
 <offer id="IS11896CF5A7" available="true">
 <url>https://b2b.isoft-shop.kz/noutbuki/tproduct/760048665094-noutbuk-asus-tuf-gaming-16-fx610jh-tu105</url>
 <price>870000</price>
@@ -47547,20 +47460,6 @@
 <vendor>APPLE</vendor>
 <vendorCode>IS11A407C150</vendorCode>
 <description>В комплекте Адаптер питания USB-C, кабель USB-C на MagSafe 3 (2 м) · Ёмкость 512 ГБ · Диагональ 13,6″ · Оперативная память 16 ГБ · Операционная система macOS · Разрешение 2560×1664 · Линейка процессора Apple M · Процессор Apple M5 · Накопитель 512 ГБ · Количество ядер процессора 10</description>
-</offer>
-<offer id="IS12353AD485" available="true">
-<url>https://b2b.isoft-shop.kz/noutbuki/tproduct/623316376594-noutbuk-dell-pro-16-pc16250-bto106pc1625</url>
-<price>804000</price>
-<currencyId>KZT</currencyId>
-<categoryId>293087419414</categoryId>
-<picture>https://static.tildacdn.com/tild3833-6239-4834-b965-343537663563/368960946504.jpg</picture>
-<picture>https://static.tildacdn.com/tild3930-3965-4830-a339-636164643363/623316376594_2.jpg</picture>
-<picture>https://static.tildacdn.com/tild6262-6561-4235-b333-376539396336/623316376594_3.jpg</picture>
-<picture>https://static.tildacdn.com/tild6166-3031-4535-a161-623436363363/623316376594_4.jpg</picture>
-<name>Ноутбук Dell Pro 16 PC16250 BTO106_PC16250_EMEA_210-BQHB, Core Ultra 5 235U, 32 Gb, SSD, 512 Gb, 16-inch, 1920x1200</name>
-<vendor>Dell</vendor>
-<vendorCode>IS12353AD485</vendorCode>
-<description>Процессор Intel Core Ultra 5 235U · Оперативная память 32 ГБ · Ёмкость 512 ГБ · Видеокарта Встроенная · Операционная система Windows 11 · Линейка процессора Core Ultra 5 · Семья ОС Windows 11 · Накопитель 512 ГБ · Диагональ 16″ · Разрешение 1920×1200</description>
 </offer>
 <offer id="IS12E93C4A45" available="true">
 <url>https://b2b.isoft-shop.kz/noutbuki/tproduct/544021867964-noutbuk-gigabyte-gaming-a18-wqxga-165hz</url>
@@ -47874,7 +47773,7 @@
 <name>Ноутбук MSI Prestige 14 Flip AI+ D3MTG-485KZY 14-inch FHD+ 120Hz Core Ultra X7 358H 32GB 1TB Win 11</name>
 <vendor>MSI</vendor>
 <vendorCode>IS35A6652A0B</vendorCode>
-<description>Диагональ 14″ · Ёмкость 1 ТБ · Оперативная память 32 ГБ · Операционная система Windows 11 · Частота обновления 120 Гц · Семья ОС Windows 11</description>
+<description>Ёмкость 1 ТБ · Оперативная память 32 ГБ · Операционная система Windows 11 · Семья ОС Windows 11 · Диагональ 14″ · Частота обновления 120 Гц · Тип памяти LPDDR5X · Накопитель 1 ТБ · Тип матрицы OLED</description>
 </offer>
 <offer id="IS35B34DB197" available="true">
 <url>https://b2b.isoft-shop.kz/noutbuki/tproduct/472681871824-noutbuk-13-inch-macbook-air-apple-m5-a34</url>
@@ -47938,7 +47837,7 @@
 <name>Ноутбук ASUS Zenbook 14 UX3480KA-U1161W 14-inch FHD+ 60Hz Ryzen AI 5 330 16GB 256GB Win11</name>
 <vendor>ASUS</vendor>
 <vendorCode>IS38522215D7</vendorCode>
-<description>Ёмкость 256 ГБ · Оперативная память 16 ГБ · Операционная система Windows 11 · Семья ОС Windows 11 · Линейка процессора Ryzen 5 · Диагональ 14″ · Частота обновления 60 Гц</description>
+<description>Ёмкость 256 ГБ · Оперативная память 16 ГБ · Операционная система Windows 11 · Семья ОС Windows 11 · Линейка процессора Ryzen 5 · Диагональ 14″ · Частота обновления 60 Гц · Тип памяти LPDDR5X · Процессор AMD Ryzen AI 5 330 · Накопитель 256 ГБ</description>
 </offer>
 <offer id="IS3879C6772F" available="true">
 <url>https://b2b.isoft-shop.kz/noutbuki/tproduct/752055698994-noutbuk-dellpro-14-plus-pb14250-bto105pb</url>
@@ -47977,7 +47876,7 @@
 <name>Ноутбук ASUS Zenbook 14 UX3480KA-U1095W 14-inch FHD+ 60Hz Ryzen AI 5 330 16GB 512GB Win11</name>
 <vendor>ASUS</vendor>
 <vendorCode>IS3CF3B7765C</vendorCode>
-<description>Ёмкость 512 ГБ · Оперативная память 16 ГБ · Операционная система Windows 11 · Семья ОС Windows 11 · Линейка процессора Ryzen 5 · Диагональ 14″ · Частота обновления 60 Гц</description>
+<description>Ёмкость 512 ГБ · Оперативная память 16 ГБ · Операционная система Windows 11 · Семья ОС Windows 11 · Линейка процессора Ryzen 5 · Диагональ 14″ · Частота обновления 60 Гц · Тип памяти LPDDR5X · Процессор AMD Ryzen AI 5 330 · Накопитель 512 ГБ</description>
 </offer>
 <offer id="IS3CF706BD3E" available="true">
 <url>https://b2b.isoft-shop.kz/noutbuki/tproduct/151366074244-noutbuk-asus-h7606ww-se079x-90nb17f1-m00</url>
@@ -48343,7 +48242,7 @@
 <name>Ноутбук ASUS Zenbook 14 UX3480AA-U1513W 14-inch FHD+ 60Hz Core Ultra 5 325 16GB 256GB Win11</name>
 <vendor>ASUS</vendor>
 <vendorCode>IS5FE7DED608</vendorCode>
-<description>Диагональ 14″ · Ёмкость 256 ГБ · Оперативная память 16 ГБ · Операционная система Windows 11 · Частота обновления 60 Гц · Семья ОС Windows 11 · Линейка процессора Core Ultra 5</description>
+<description>Ёмкость 256 ГБ · Оперативная память 16 ГБ · Операционная система Windows 11 · Семья ОС Windows 11 · Линейка процессора Core Ultra 5 · Диагональ 14″ · Частота обновления 60 Гц · Тип памяти LPDDR5X · Процессор Intel Core Ultra 5 325 · Накопитель 256 ГБ</description>
 </offer>
 <offer id="IS6018044DD8" available="true">
 <url>https://b2b.isoft-shop.kz/noutbuki/tproduct/589995592244-noutbuk-asus-90nx0ac1-m00650-expertbook</url>
@@ -48708,7 +48607,7 @@
 <name>Ноутбук MSI Modern 15 F1MG-1431XKZY 15.6-inch FHD 60Hz Core 5 120U 16GB 512GB DOS</name>
 <vendor>MSI</vendor>
 <vendorCode>IS70FA7D57C2</vendorCode>
-<description>Диагональ 15,6″ · Ёмкость 512 ГБ · Оперативная память 16 ГБ · Операционная система без ОС · Разрешение 1920×1080 · Частота обновления 60 Гц · Линейка процессора Core 5 · Семья ОС Без ОС</description>
+<description>Ёмкость 512 ГБ · Оперативная память 16 ГБ · Операционная система без ОС · Семья ОС Без ОС · Линейка процессора Core 5 · Диагональ 15,6″ · Частота обновления 60 Гц · Тип памяти DDR5 · Процессор Intel Core 5 120U · Накопитель 512 ГБ</description>
 </offer>
 <offer id="IS7213A2D005" available="true">
 <url>https://b2b.isoft-shop.kz/noutbuki/tproduct/221787971334-noutbuk-asus-tuf-gaming-a15-fa506ncg-hn4</url>
@@ -48950,7 +48849,7 @@
 <name>Ноутбук ASUS ROG Strix SCAR 18 G835LXG-TQ533W 240Hz Core Ultra 9 290HX Plus 32GB 1TB RTX5090 Win11</name>
 <vendor>ASUS</vendor>
 <vendorCode>IS850C280F30</vendorCode>
-<description>Диагональ 18″ · Разрешение 3840×2400 · Тип памяти DDR5 · Ёмкость 1 ТБ · Процессор Intel Core Ultra 9 290HX · Оперативная память 32 ГБ · Накопитель 1 ТБ · Видеокарта RTX 5090 · Операционная система Windows 11 · Частота обновления 240 Гц</description>
+<description>Ёмкость 1 ТБ · Видеокарта RTX 5090 · Оперативная память 32 ГБ · Операционная система Windows 11 · Частота обновления 240 Гц · Линейка процессора Core Ultra 9 · Семья ОС Windows 11 · Тип памяти DDR5 · Процессор Intel Core Ultra 9 290HX · Накопитель 1 ТБ</description>
 </offer>
 <offer id="IS8510A19D6A" available="true">
 <url>https://b2b.isoft-shop.kz/noutbuki/tproduct/873845353484-noutbuk-dell-pro-max-16-plus-mb16250-u7</url>
@@ -49029,7 +48928,7 @@
 <name>Ноутбук ASUS Zenbook 14 UX3480AA-U1420W 14-inch FHD+ 60Hz Core Ultra 7 355 16GB 512GB Win11</name>
 <vendor>ASUS</vendor>
 <vendorCode>IS89BD6EA323</vendorCode>
-<description>Диагональ 14″ · Ёмкость 512 ГБ · Оперативная память 16 ГБ · Операционная система Windows 11 · Частота обновления 60 Гц · Семья ОС Windows 11 · Линейка процессора Core Ultra 7</description>
+<description>Ёмкость 512 ГБ · Оперативная память 16 ГБ · Операционная система Windows 11 · Семья ОС Windows 11 · Линейка процессора Core Ultra 7 · Диагональ 14″ · Частота обновления 60 Гц · Тип памяти LPDDR5X · Процессор Intel Core Ultra 7 355 · Накопитель 512 ГБ</description>
 </offer>
 <offer id="IS8BE74AE5BF" available="true">
 <url>https://b2b.isoft-shop.kz/noutbuki/tproduct/534782485064-noutbuk-hp-hyperx-omen-15-gb0073ci-r5-24</url>
@@ -50111,7 +50010,7 @@
 </offer>
 <offer id="ISE40230A1F2" available="true">
 <url>https://b2b.isoft-shop.kz/noutbuki/tproduct/976428620204-noutbuk-asus-90nr0r61-m00270-tuf-gaming</url>
-<price>791000</price>
+<price>802000</price>
 <currencyId>KZT</currencyId>
 <categoryId>293087419414</categoryId>
 <picture>https://static.tildacdn.com/tild3133-6464-4239-b964-356166616133/191880743684.jpg</picture>
@@ -50121,7 +50020,7 @@
 <name>Ноутбук Asus 90NR0R61-M00270 TUF Gaming 16 FX610UH-TU044W, 16-inch WUXGA(1920x1200) IPS 144Hz, AMD Ryzen 7 260 up to 5,1Ghz (8C), 16GB</name>
 <vendor>ASUS</vendor>
 <vendorCode>ISE40230A1F2</vendorCode>
-<description>Диагональ 16″ · Разрешение 1920×1200 · Ёмкость 512 ГБ · Процессор AMD Ryzen 7 260 · Оперативная память 16 ГБ · Видеокарта RTX 5050 · Операционная система Windows 11 Home · Частота обновления 144 Гц · Тип матрицы IPS · Wi-Fi Wi-Fi 6</description>
+<description>Bluetooth 5.4 · Wi-Fi Wi-Fi 6 · Видеокарта RTX 5050 · Диагональ 16″ · Камера HD · Количество ядер процессора 8 · Линейка процессора Ryzen 7 · Ёмкость 512 ГБ · Оперативная память 16 ГБ · Операционная система Windows 11 Home</description>
 </offer>
 <offer id="ISE45896135A" available="true">
 <url>https://b2b.isoft-shop.kz/noutbuki/tproduct/637437024034-noutbuk-asus-90nx0871-m02na0-expertbook</url>
@@ -50486,7 +50385,7 @@
 <name>Ноутбук ASUS PM5406CKA-LY1080X/R5 330/16G/512GB PCIE/14.0 WUXGA 1920X1080 300nt/W11P/WiFi 7/1080p FHD IR/1yw/BL KBD 90NX0971-M019M0</name>
 <vendor>ASUS</vendor>
 <vendorCode>ISFB6BFCDCC7</vendorCode>
-<description>Диагональ 14″ · Разрешение 1920×1080 · Ёмкость 512 ГБ · Процессор R5 330 · Оперативная память 16 ГБ · Операционная система Windows 11 Pro · Wi-Fi Wi-Fi 7 · Подсветка клавиатуры есть · Камера IR + FHD · Семья ОС Windows 11</description>
+<description>Ёмкость 512 ГБ · Оперативная память 16 ГБ · Операционная система Windows 11 Pro · Семья ОС Windows 11 · Линейка процессора Ryzen 5 · Диагональ 14″ · Процессор R5 330 · Накопитель 512 ГБ · Разрешение 1920×1080 · Wi-Fi Wi-Fi 7</description>
 </offer>
 <offer id="ISFBB5D5C9D7" available="true">
 <url>https://b2b.isoft-shop.kz/noutbuki/tproduct/187614200764-noutbuk-asus-proart-p16-h7606wr-se077x-9</url>
@@ -50549,7 +50448,7 @@
 <name>Ноутбук MSI Prestige N16 Flip AI+ C1XMT-265KZY 16-inch UHD+ 120Hz NVIDIA RTX Spark N1X 128GB 2TB Win 11</name>
 <vendor>MSI</vendor>
 <vendorCode>ISFDF0678EFE</vendorCode>
-<description>Диагональ 16″ · Ёмкость 2 ТБ · Оперативная память 128 ГБ · Операционная система Windows 11 · Частота обновления 120 Гц · Семья ОС Windows 11</description>
+<description>Ёмкость 2 ТБ · Оперативная память 128 ГБ · Операционная система Windows 11 · Семья ОС Windows 11 · Диагональ 16″ · Частота обновления 120 Гц · Тип памяти LPDDR5X · Накопитель 2 ТБ · Тип матрицы OLED</description>
 </offer>
 <offer id="ISFE4E351A43" available="true">
 <url>https://b2b.isoft-shop.kz/noutbuki/tproduct/776163103354-noutbuk-asus-90nx0881-m03ps0-expertbook</url>
@@ -50624,7 +50523,7 @@
 </offer>
 <offer id="IS078B960E80" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/470554449004-operativnaya-pamyat-kingston-16gb-6000mt</url>
-<price>241000</price>
+<price>245000</price>
 <currencyId>KZT</currencyId>
 <categoryId>160131640904</categoryId>
 <picture>https://static.tildacdn.com/tila3861-6230-4236-b863-386261633462/IS078B960E80_1.png</picture>
@@ -50681,7 +50580,7 @@
 </offer>
 <offer id="IS0DDB2EDEFB" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/860638728264-operativnaya-pamyat-lexar-8gb-ddr5-5600m</url>
-<price>78000</price>
+<price>79000</price>
 <currencyId>KZT</currencyId>
 <categoryId>160131640904</categoryId>
 <picture>https://static.tildacdn.com/tila6239-3966-4739-b831-653138626534/IS0DDB2EDEFB_1.png</picture>
@@ -50781,7 +50680,7 @@
 </offer>
 <offer id="IS22F3D76084" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/278307810134-operativnaya-pamyat-kingston-dram-16gb-3</url>
-<price>167000</price>
+<price>168000</price>
 <currencyId>KZT</currencyId>
 <categoryId>160131640904</categoryId>
 <picture>https://static.tildacdn.com/tila6563-6465-4832-b937-386537326465/IS90B2A595F6_1.jpg</picture>
@@ -50825,7 +50724,7 @@
 </offer>
 <offer id="IS28D11678F3" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/480379702944-operativnaya-pamyat-kingston-dram-32gb-3</url>
-<price>315000</price>
+<price>317000</price>
 <currencyId>KZT</currencyId>
 <categoryId>160131640904</categoryId>
 <picture>https://static.tildacdn.com/tila3132-3736-4434-b064-373136353330/IS28D11678F3_1.jpg</picture>
@@ -50836,7 +50735,7 @@
 </offer>
 <offer id="IS28E57F67CD" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/568811079964-operativnaya-pamyat-kingston-32gb-6000mt</url>
-<price>482000</price>
+<price>489000</price>
 <currencyId>KZT</currencyId>
 <categoryId>160131640904</categoryId>
 <picture>https://static.tildacdn.com/tila3730-3865-4337-b330-383836363964/IS28E57F67CD_1.png</picture>
@@ -50915,7 +50814,7 @@
 </offer>
 <offer id="IS3857E09EC8" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/307099048714-operativnaya-pamyat-kingston-dram-32gb-4</url>
-<price>349000</price>
+<price>354000</price>
 <currencyId>KZT</currencyId>
 <categoryId>160131640904</categoryId>
 <picture>https://static.tildacdn.com/tila3339-6530-4265-b235-393165393637/IS3857E09EC8_1.jpg</picture>
@@ -50950,7 +50849,7 @@
 </offer>
 <offer id="IS39D2CAEF74" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/243566319944-operativnaya-pamyat-kingston-32gb-6400mt</url>
-<price>916000</price>
+<price>928000</price>
 <currencyId>KZT</currencyId>
 <categoryId>160131640904</categoryId>
 <picture>https://static.tildacdn.com/stor3766-6631-4664-a365-306566646530/38d7f85aa7a0d8f9f8d5a14d5130dc39.png</picture>
@@ -51030,7 +50929,7 @@
 </offer>
 <offer id="IS4A6DE8A584" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/582871744334-operativnaya-pamyat-corsair-vengeance-rg</url>
-<price>179000</price>
+<price>181000</price>
 <currencyId>KZT</currencyId>
 <categoryId>160131640904</categoryId>
 <picture>https://static.tildacdn.com/tila6431-6461-4164-b763-383664306363/IS4A6DE8A584_1.png</picture>
@@ -51064,7 +50963,7 @@
 </offer>
 <offer id="IS515864E416" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/758403752274-operativnaya-pamyat-kingston-dram-16gb-3</url>
-<price>135000</price>
+<price>136000</price>
 <currencyId>KZT</currencyId>
 <categoryId>160131640904</categoryId>
 <picture>https://static.tildacdn.com/tila6662-3433-4266-b934-363031666635/IS32F6EF49B0_1.png</picture>
@@ -51097,7 +50996,7 @@
 </offer>
 <offer id="IS5561ED3063" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/394122021294-operativnaya-pamyat-kingston-16gb-6000mt</url>
-<price>223000</price>
+<price>226000</price>
 <currencyId>KZT</currencyId>
 <categoryId>160131640904</categoryId>
 <picture>https://static.tildacdn.com/tila3739-3665-4637-a335-373032623463/IS5561ED3063_1.jpg</picture>
@@ -51275,7 +51174,7 @@
 </offer>
 <offer id="IS67FA3E1F50" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/899981403434-operativnaya-pamyat-corsair-ddr4-3200mhz</url>
-<price>83000</price>
+<price>84000</price>
 <currencyId>KZT</currencyId>
 <categoryId>160131640904</categoryId>
 <picture>https://static.tildacdn.com/tild6438-3762-4437-b034-326335666331/618550183694.jpg</picture>
@@ -51286,7 +51185,7 @@
 </offer>
 <offer id="IS6942E19DC7" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/529599065494-operativnaya-pamyat-kingston-64gb-5600mt</url>
-<price>1506000</price>
+<price>1527000</price>
 <currencyId>KZT</currencyId>
 <categoryId>160131640904</categoryId>
 <picture>https://static.tildacdn.com/tila6333-6535-4732-a535-396462613465/IS6942E19DC7_1.png</picture>
@@ -51319,7 +51218,7 @@
 </offer>
 <offer id="IS70C44ACAC8" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/231205996444-operativnaya-pamyat-kingston-dram-32gb-3</url>
-<price>334000</price>
+<price>335000</price>
 <currencyId>KZT</currencyId>
 <categoryId>160131640904</categoryId>
 <picture>https://static.tildacdn.com/tila3132-3736-4434-b064-373136353330/IS28D11678F3_1.jpg</picture>
@@ -51446,19 +51345,6 @@
 <vendorCode>IS85C83F4C87</vendorCode>
 <description>Тип памяти DDR4 · Оперативная память 32 ГБ · Форм-фактор UDIMM · Тайминги CL22</description>
 </offer>
-<offer id="IS874FDC89AF" available="true">
-<url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/298645327504-operativnaya-pamyat-dimm-ddr5-16-gb-6000</url>
-<price>248000</price>
-<currencyId>KZT</currencyId>
-<categoryId>160131640904</categoryId>
-<picture>https://static.tildacdn.com/tila3165-3933-4139-b564-633730366566/925689283304_1.jpg</picture>
-<picture>https://static.tildacdn.com/tila3330-3963-4631-b035-623765646264/925689283304_2.jpg</picture>
-<picture>https://static.tildacdn.com/tila3931-3163-4735-b932-323730393932/925689283304_3.jpg</picture>
-<name>Оперативная память DIMM DDR5 16 GB 6000MHz Kingston Fury Beast (AMD), KF560C30BBE-16, CL30</name>
-<vendor>Kingston</vendor>
-<vendorCode>IS874FDC89AF</vendorCode>
-<description>Частота 6000 МГц · Оперативная память 16 ГБ · Объём 16 ГБ · Тайминги CL30 · Тип памяти DDR5 · Форм-фактор DIMM</description>
-</offer>
 <offer id="IS879C746020" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/426037822384-operativnaya-pamyat-dlya-noutbuka-kingst</url>
 <price>87000</price>
@@ -51519,7 +51405,7 @@
 </offer>
 <offer id="IS8FF3AA6340" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/307019506244-operativnaya-pamyat-kingston-32gb-6000mt</url>
-<price>471000</price>
+<price>478000</price>
 <currencyId>KZT</currencyId>
 <categoryId>160131640904</categoryId>
 <picture>https://static.tildacdn.com/tila3165-3064-4663-a566-363831343039/IS8FF3AA6340_1.png</picture>
@@ -51576,7 +51462,7 @@
 </offer>
 <offer id="IS929BBA8EA1" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/493382222734-operativnaya-pamyat-corsair-ddr4-3200mhz</url>
-<price>179000</price>
+<price>181000</price>
 <currencyId>KZT</currencyId>
 <categoryId>160131640904</categoryId>
 <picture>https://static.tildacdn.com/tild3235-3862-4538-a338-663463663366/493382222734.jpg</picture>
@@ -51633,7 +51519,7 @@
 </offer>
 <offer id="IS96F33D3534" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/716719610044-operativnaya-pamyat-kingston-32gb-6000mt</url>
-<price>476000</price>
+<price>482000</price>
 <currencyId>KZT</currencyId>
 <categoryId>160131640904</categoryId>
 <picture>https://static.tildacdn.com/tila3636-3234-4536-b232-326635663366/IS96F33D3534_1.png</picture>
@@ -51945,7 +51831,7 @@
 </offer>
 <offer id="ISCB54CD7CDA" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/758004686754-operativnaya-pamyat-kingston-dram-16gb-5</url>
-<price>207000</price>
+<price>210000</price>
 <currencyId>KZT</currencyId>
 <categoryId>160131640904</categoryId>
 <picture>https://static.tildacdn.com/tild3364-3536-4935-a239-666261383130/ISCB54CD7CDA_1.png</picture>
@@ -51968,7 +51854,7 @@
 </offer>
 <offer id="ISD15145B83C" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/385581545224-operativnaya-pamyat-kingston-32gb-ddr5-5</url>
-<price>409000</price>
+<price>415000</price>
 <currencyId>KZT</currencyId>
 <categoryId>160131640904</categoryId>
 <picture>https://static.tildacdn.com/tila3235-3138-4264-b433-336339613830/385581545224_1.jpg</picture>
@@ -52145,7 +52031,7 @@
 </offer>
 <offer id="ISE958D51F52" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/980619319714-operativnaya-pamyat-kingston-48gb-5600mt</url>
-<price>652000</price>
+<price>661000</price>
 <currencyId>KZT</currencyId>
 <categoryId>160131640904</categoryId>
 <picture>https://static.tildacdn.com/tila6135-3134-4563-b030-333931323362/ISE958D51F52_1.png</picture>
@@ -52233,6 +52119,17 @@
 <vendor>Kingston</vendor>
 <vendorCode>ISF6E8AA2194</vendorCode>
 <description>Частота 3200 МГц · Тип памяти DDR4 · Оперативная память 8 ГБ · Форм-фактор DIMM · Тайминги CL22 · Модулей в комплекте 1</description>
+</offer>
+<offer id="ISFE4010DB6E" available="true">
+<url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/548114213204-komplekt-modulei-pamyati-kingston-fury-b</url>
+<price>384000</price>
+<currencyId>KZT</currencyId>
+<categoryId>160131640904</categoryId>
+<picture>https://static.tildacdn.com/tila3962-3465-4065-b262-613633653439/ISFE4010DB6E_1.jpg</picture>
+<name>Комплект модулей памяти Kingston FURY Beast RGB KF556C36BBEAK2-32 DDR5 32GB (2x16GB) 5600MHz</name>
+<vendor>Kingston</vendor>
+<vendorCode>ISFE4010DB6E</vendorCode>
+<description>Форм-фактор DIMM · Модулей в комплекте 2 · Объём 32 ГБ · Тип памяти DDR5 · Частота 5600 МГц · Оперативная память 32 ГБ</description>
 </offer>
 <offer id="IS01AFAB34F6" available="true">
 <url>https://b2b.isoft-shop.kz/ohlazhdenie/tproduct/491636072404-kuler-dlya-kompyuternogo-korpusa-thermal</url>
@@ -55072,19 +54969,6 @@
 <vendorCode>ISCAF1186FD0</vendorCode>
 <description>Тип устройства Прочее · Подсветка ARGB · Интерфейс PWM · Цвет Белый</description>
 </offer>
-<offer id="ISCBBFC7BBE4" available="true">
-<url>https://b2b.isoft-shop.kz/ohlazhdenie/tproduct/368078066654-kuler-dlya-kompyuternogo-korpusa-deepcoo</url>
-<price>4200</price>
-<currencyId>KZT</currencyId>
-<categoryId>831063569394</categoryId>
-<picture>https://static.tildacdn.com/stor3763-6264-4839-b064-633062376432/0f684c7f0d42bebec6d40028cf0d95a5.jpg</picture>
-<picture>https://static.tildacdn.com/tild3938-3133-4633-b461-313836373136/368078066654_1.jpg</picture>
-<picture>https://static.tildacdn.com/tild3964-3133-4431-b730-366530323139/368078066654_2.jpg</picture>
-<name>Кулер для компьютерного корпуса Deepcool CG580 FAN BK R-EDF120-BKAPP86-G-1</name>
-<vendor>Deepcool</vendor>
-<vendorCode>ISCBBFC7BBE4</vendorCode>
-<description>Тип устройства Вентилятор для корпуса · Подсветка ARGB · Форм-фактор 120 мм · Цвет Чёрный · Гарантия 1 год</description>
-</offer>
 <offer id="ISCCB6599EA9" available="true">
 <url>https://b2b.isoft-shop.kz/ohlazhdenie/tproduct/512214735404-ohlazhdenie-controller-arctic-fan-contro</url>
 <price>5600</price>
@@ -57769,6 +57653,17 @@
 <vendorCode>IS5343228C83</vendorCode>
 <description>Принтер цветной HP N4K99C OfficeJet 202 Mobile Printer (A4) (HP)</description>
 </offer>
+<offer id="IS54F234B5D5" available="true">
+<url>https://b2b.isoft-shop.kz/printery/tproduct/336616104444-printer-hpcolor-laser-150aa418-ppm600x60</url>
+<price>138000</price>
+<currencyId>KZT</currencyId>
+<categoryId>883275389424</categoryId>
+<picture>https://static.tildacdn.com/tild6462-6462-4563-a332-626130663430/IS54F234B5D5_1.jpg</picture>
+<name>Принтер HP/Color Laser 150a/A4/18 ppm/600x600 dpi 4ZB94A#B19</name>
+<vendor>HP</vendor>
+<vendorCode>IS54F234B5D5</vendorCode>
+<description>Технология печати лазерный · Цветность цветной · Тип устройства Принтер · Интерфейсы USB · Формат A4 · Скорость печати 18 стр/мин · Разрешение печати 600×600 dpi</description>
+</offer>
 <offer id="IS60FA0363C3" available="true">
 <url>https://b2b.isoft-shop.kz/printery/tproduct/221798625274-monohromnii-lazernii-printer-canon-i-s-l</url>
 <price>138000</price>
@@ -58389,7 +58284,7 @@
 </offer>
 <offer id="IS1C25397D26" available="true">
 <url>https://b2b.isoft-shop.kz/processory/tproduct/173496006084-protsessor-intel-core-i5-12600k-37ghz-20</url>
-<price>126000</price>
+<price>128000</price>
 <currencyId>KZT</currencyId>
 <categoryId>289503131194</categoryId>
 <picture>https://static.tildacdn.com/tila3234-3038-4263-a264-373234666531/IS617B531955_1.png</picture>
@@ -58714,7 +58609,7 @@
 </offer>
 <offer id="IS617B531955" available="true">
 <url>https://b2b.isoft-shop.kz/processory/tproduct/455205683894-protsessor-intel-core-i5-14600-up-to-520</url>
-<price>170000</price>
+<price>172000</price>
 <currencyId>KZT</currencyId>
 <categoryId>289503131194</categoryId>
 <picture>https://static.tildacdn.com/tila3234-3038-4263-a264-373234666531/IS617B531955_1.png</picture>
@@ -58780,7 +58675,7 @@
 </offer>
 <offer id="IS7E7A1B7939" available="true">
 <url>https://b2b.isoft-shop.kz/processory/tproduct/959068823004-protsessor-amd-ryzen-7-8c16t-5700x-3446g</url>
-<price>103000</price>
+<price>105000</price>
 <currencyId>KZT</currencyId>
 <categoryId>289503131194</categoryId>
 <picture>https://static.tildacdn.com/tila3037-3830-4365-a536-663161613464/IS7E7A1B7939_1.png</picture>
@@ -59008,7 +58903,7 @@
 </offer>
 <offer id="ISB8B5F67BBA" available="true">
 <url>https://b2b.isoft-shop.kz/processory/tproduct/455115999254-protsessor-amd-ryzen-9-1632t-9950x3d-43g</url>
-<price>425000</price>
+<price>431000</price>
 <currencyId>KZT</currencyId>
 <categoryId>289503131194</categoryId>
 <picture>https://static.tildacdn.com/stor3137-3938-4063-a362-643139343761/5d9af24a13245fc67e7c578a42deed3d.png</picture>
@@ -61176,7 +61071,7 @@
 </offer>
 <offer id="IS015F95F758" available="true">
 <url>https://b2b.isoft-shop.kz/setevoe-oborudovanie/tproduct/676150198424-netgear-28p-10g-smart-managed-pro-switch</url>
-<price>1533000</price>
+<price>1553000</price>
 <currencyId>KZT</currencyId>
 <categoryId>737078043964</categoryId>
 <picture>https://static.tildacdn.com/tild6438-3134-4964-a265-653563313538/676150198424.jpg</picture>
@@ -61334,7 +61229,7 @@
 </offer>
 <offer id="IS0B0851840B" available="true">
 <url>https://b2b.isoft-shop.kz/setevoe-oborudovanie/tproduct/960146991774-ubiquiti-unifi-switch-aggregation</url>
-<price>180000</price>
+<price>182000</price>
 <currencyId>KZT</currencyId>
 <categoryId>737078043964</categoryId>
 <picture>https://static.tildacdn.com/tild6131-6632-4532-b437-613063316661/960146991774.jpg</picture>
@@ -61762,7 +61657,7 @@
 </offer>
 <offer id="IS1A81B6FE41" available="true">
 <url>https://b2b.isoft-shop.kz/setevoe-oborudovanie/tproduct/112971045914-unifi-switch-ubiquiti-unifi-switch-enter</url>
-<price>907000</price>
+<price>919000</price>
 <currencyId>KZT</currencyId>
 <categoryId>737078043964</categoryId>
 <picture>https://static.tildacdn.com/tild3265-6431-4834-a630-383539613361/112971045914.jpg</picture>
@@ -61857,7 +61752,7 @@
 </offer>
 <offer id="IS1F97CEE3A7" available="true">
 <url>https://b2b.isoft-shop.kz/setevoe-oborudovanie/tproduct/808383229454-ubiquiti-unifi-switch-standard-48-poe</url>
-<price>432000</price>
+<price>437000</price>
 <currencyId>KZT</currencyId>
 <categoryId>737078043964</categoryId>
 <picture>https://static.tildacdn.com/tild3666-3661-4132-b330-393765323532/808383229454.jpg</picture>
@@ -63186,7 +63081,7 @@
 </offer>
 <offer id="IS552C23E13C" available="true">
 <url>https://b2b.isoft-shop.kz/setevoe-oborudovanie/tproduct/891572598824-ubiquiti-unifi-switch-pro-8-poe</url>
-<price>199000</price>
+<price>202000</price>
 <currencyId>KZT</currencyId>
 <categoryId>737078043964</categoryId>
 <picture>https://static.tildacdn.com/tild6464-3936-4866-b334-383664653764/891572598824.jpg</picture>
@@ -64490,7 +64385,7 @@
 </offer>
 <offer id="IS8CCC7BAC2A" available="true">
 <url>https://b2b.isoft-shop.kz/setevoe-oborudovanie/tproduct/927586942654-ubiquiti-unifi-uacc-poe-10g-eu-10g-poe-a</url>
-<price>25000</price>
+<price>26000</price>
 <currencyId>KZT</currencyId>
 <categoryId>737078043964</categoryId>
 <picture>https://static.tildacdn.com/tila6433-3366-4131-b662-366231656366/IS8CCC7BAC2A_1.png</picture>
@@ -65252,7 +65147,7 @@
 </offer>
 <offer id="ISABED166B04" available="true">
 <url>https://b2b.isoft-shop.kz/setevoe-oborudovanie/tproduct/593736798764-ubiquiti-unifi-switch-pro-xg-10-poe</url>
-<price>483000</price>
+<price>489000</price>
 <currencyId>KZT</currencyId>
 <categoryId>737078043964</categoryId>
 <picture>https://static.tildacdn.com/tild3339-3363-4662-b230-623661356530/593736798764.jpg</picture>
@@ -65787,17 +65682,6 @@
 <vendor>HiLook</vendor>
 <vendorCode>ISC3D7DF6113</vendorCode>
 <description>Коммутатор HiLook NS-0510MP-60 (HiLook)</description>
-</offer>
-<offer id="ISC537F24421" available="true">
-<url>https://b2b.isoft-shop.kz/setevoe-oborudovanie/tproduct/729146659814-power-switch-eatonats-30a-netpackklemmni</url>
-<price>809000</price>
-<currencyId>KZT</currencyId>
-<categoryId>737078043964</categoryId>
-<picture>https://static.tildacdn.com/tila3662-3039-4831-b364-636561636239/ISC537F24421_1.jpg</picture>
-<name>Power switch Eaton/ATS 30A Netpack/клеммный вход и выход EATS30N</name>
-<vendor>Eaton</vendor>
-<vendorCode>ISC537F24421</vendorCode>
-<description>Power switch Eaton/ATS 30A Netpack/клеммный вход и выход EATS30N (Eaton)</description>
 </offer>
 <offer id="ISC540801D45" available="true">
 <url>https://b2b.isoft-shop.kz/setevoe-oborudovanie/tproduct/168733053044-kommutator-zyxel-gs1200-5hp-gs1200-5hpv2</url>
@@ -66419,7 +66303,7 @@
 </offer>
 <offer id="ISE7C9C316C2" available="true">
 <url>https://b2b.isoft-shop.kz/setevoe-oborudovanie/tproduct/177286426694-unifi-switch-ubiquiti-unifi-switch-enter</url>
-<price>303000</price>
+<price>307000</price>
 <currencyId>KZT</currencyId>
 <categoryId>737078043964</categoryId>
 <picture>https://static.tildacdn.com/tild6236-6435-4738-b864-343631626330/177286426694.jpg</picture>
@@ -66988,7 +66872,7 @@
 </offer>
 <offer id="ISFD5B641D10" available="true">
 <url>https://b2b.isoft-shop.kz/setevoe-oborudovanie/tproduct/879977114214-ubiquiti-unifi-switch-pro-48</url>
-<price>397000</price>
+<price>402000</price>
 <currencyId>KZT</currencyId>
 <categoryId>737078043964</categoryId>
 <picture>https://static.tildacdn.com/tild6135-3461-4734-b761-383631623232/879977114214.jpg</picture>
@@ -67057,7 +66941,7 @@
 </offer>
 <offer id="ISFFCEB2A64F" available="true">
 <url>https://b2b.isoft-shop.kz/setevoe-oborudovanie/tproduct/733478537364-ubiquiti-unifi-switch-lite-8-poe</url>
-<price>76000</price>
+<price>77000</price>
 <currencyId>KZT</currencyId>
 <categoryId>737078043964</categoryId>
 <picture>https://static.tildacdn.com/tild3231-3332-4832-b665-303465306465/733478537364.jpg</picture>
@@ -67498,6 +67382,17 @@
 <vendor>D-Link</vendor>
 <vendorCode>IS57B12703B8</vendorCode>
 <description>Интерфейс USB 3.0 · Wi-Fi 802.11a/b/g/n/ac/ax</description>
+</offer>
+<offer id="IS5A84365610" available="true">
+<url>https://b2b.isoft-shop.kz/setevye-karty/tproduct/969378218914-setevaya-karta-usb-adapter-tp-link-arche</url>
+<price>14000</price>
+<currencyId>KZT</currencyId>
+<categoryId>822913095254</categoryId>
+<picture>https://static.tildacdn.com/tila3162-6264-4762-b031-353034343138/IS5A84365610_1.jpg</picture>
+<name>Сетевая карта USB-адаптер TP-Link Archer T3U Nano</name>
+<vendor>TP-Link</vendor>
+<vendorCode>IS5A84365610</vendorCode>
+<description>Интерфейс USB</description>
 </offer>
 <offer id="IS5ECCE35957" available="true">
 <url>https://b2b.isoft-shop.kz/setevye-karty/tproduct/856770393774-setevaya-karta-tp-link-tl-wn881nd</url>
@@ -67970,7 +67865,7 @@
 <name>Сетевая карта TP-Link TG-3468 PCIe</name>
 <vendor>TP-Link</vendor>
 <vendorCode>ISD1E355B912</vendorCode>
-<description>Интерфейс PCIe · Тип устройства Проводная сетевая карта · Скорость 10/100/1000 Мбит/с · Скорость порта 1 Гбит/с</description>
+<description>Тип устройства Проводная сетевая карта · Интерфейс PCIe · Скорость 10/100/1000 Мбит/с · Скорость порта 1 Гбит/с</description>
 </offer>
 <offer id="ISDC372CA327" available="true">
 <url>https://b2b.isoft-shop.kz/setevye-karty/tproduct/305512308474-setevoi-adapter-asus-usb-ac58</url>
@@ -68357,7 +68252,7 @@
 <name>Системный блок Dell OptiPlex Tower 7020 XCTO 210-BLDK_2, Core i3 12100, 8 Gb, M.2 PCIe SSD, 256 Gb</name>
 <vendor>Dell</vendor>
 <vendorCode>IS31172A71B3</vendorCode>
-<description>Ёмкость 256 ГБ · Оперативная память 8 ГБ · Операционная система Windows 11 · Форм-фактор Tower · Семья ОС Windows 11</description>
+<description>Ёмкость 256 ГБ · Форм-фактор Tower · Оперативная память 8 ГБ · Операционная система Windows 11 · Семья ОС Windows 11 · Тип памяти DDR5 · Процессор Intel Core i3-12100 · Накопитель 256 ГБ · Видеокарта Встроенная · Блок питания 180 Вт</description>
 </offer>
 <offer id="IS322307EA3D" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/428634598724-sistemnii-blok-pulser-core-i7-14700f-21</url>
@@ -68447,7 +68342,7 @@
 <name>Системный блок Pulser Ryzen 9 9950X3D, 4.3 ГГц, X870, 64 ГБ ОЗУ, SSD 2 ТБ M.2, RTX 5080, 16 ГБ, без DVD, БП 1000 Вт, Windows 11 Pro</name>
 <vendor>Pulser</vendor>
 <vendorCode>IS420E6B782B</vendorCode>
-<description>Ёмкость 2 ТБ · Процессор Ryzen 9 9950X3D · Оперативная память 64 ГБ · Видеокарта RTX 5080 · Операционная система Windows 11 Pro · Семья ОС Windows 11 · Линейка процессора Ryzen 9</description>
+<description>Ёмкость 2 ТБ · Оперативная память 64 ГБ · Операционная система Windows 11 Pro · Линейка процессора Ryzen 9 · Семья ОС Windows 11 · Процессор AMD Ryzen 9 9950X3D · Видеокарта RTX 5080 · Тип накопителя SSD · Блок питания 1000 Вт · Накопитель 2 ТБ</description>
 </offer>
 <offer id="IS42C8C821BB" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/242649574384-sistemnii-blok-acer-veriton-x2735g-sff-k</url>
@@ -68764,6 +68659,17 @@
 <vendorCode>IS8E1C16E04F</vendorCode>
 <description>Оперативная память 16 ГБ · Процессор AMD Ryzen 7 5700X · Линейка процессора Ryzen 7 · Тип накопителя SSD · Ёмкость 512 ГБ · Видеокарта RTX 5060 · Блок питания 700 Вт · Накопитель 512 ГБ</description>
 </offer>
+<offer id="IS926F045317" available="true">
+<url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/294766773024-sistemnii-blok-pulser-core-i5-10400-29-g</url>
+<price>250000</price>
+<currencyId>KZT</currencyId>
+<categoryId>763638053684</categoryId>
+<picture>https://static.tildacdn.com/tila3032-3334-4764-a634-653433313435/294766773024_1.jpg</picture>
+<name>Системный блок Pulser Core i5-10400, 2.9 ГГц, H410, 16 ГБ ОЗУ, SSD 512 ГБ, без DVD, БП 400 Вт</name>
+<vendor>Pulser</vendor>
+<vendorCode>IS926F045317</vendorCode>
+<description>Ёмкость 512 ГБ · Процессор Core i5-10400 · Оперативная память 16 ГБ · Блок питания 400 Вт · Линейка процессора Core i5</description>
+</offer>
 <offer id="IS92D0E9D68F" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/655483885554-sistemnii-blok-pulser-ryzen-5-3400g-37-g</url>
 <price>231000</price>
@@ -69079,6 +68985,19 @@
 <vendorCode>ISE6D644003D</vendorCode>
 <description>Оперативная память 8 ГБ · Операционная система Windows 11 · Процессор Intel Core i5-14400 · Ёмкость 512 ГБ · Семья ОС Windows 11 · Тип памяти DDR5 · Накопитель 512 ГБ · Порты 1× USB-C, 7× USB-A, HDMI · Форм-фактор Tower · Блок питания 180 Вт</description>
 </offer>
+<offer id="ISE88D039B8C" available="true">
+<url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/522734948184-sistemnii-blok-pulser-ryzen-7-9800x3d-47</url>
+<price>2277000</price>
+<currencyId>KZT</currencyId>
+<categoryId>763638053684</categoryId>
+<picture>https://static.tildacdn.com/tila3134-6537-4731-b663-333530326339/522734948184_1.jpg</picture>
+<picture>https://static.tildacdn.com/tila3863-3136-4537-a636-646530383238/522734948184_2.jpg</picture>
+<picture>https://static.tildacdn.com/tila3264-6165-4635-b639-353333633931/522734948184_3.jpg</picture>
+<name>Системный блок Pulser Ryzen 7 9800X3D, 4.7 ГГц, X870, 32 ГБ ОЗУ, SSD 1 ТБ M.2, RTX 5070, 12 ГБ, без DVD, БП 850 Вт</name>
+<vendor>Pulser</vendor>
+<vendorCode>ISE88D039B8C</vendorCode>
+<description>Ёмкость 1 ТБ · Оперативная память 32 ГБ · Видеокарта RTX 5070 · Блок питания 850 Вт</description>
+</offer>
 <offer id="ISE8A8269B2A" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/612434807494-sistemnii-blok-pulser-ryzen-5-3500x-36-g</url>
 <price>218000</price>
@@ -69172,7 +69091,7 @@
 </offer>
 <offer id="IS153BAEA7AA" available="true">
 <url>https://b2b.isoft-shop.kz/servery-i-shd/tproduct/396279109704-sistema-hraneniya-seagate-hdd-ironwolf-p</url>
-<price>221000</price>
+<price>224000</price>
 <currencyId>KZT</currencyId>
 <categoryId>168824029674</categoryId>
 <picture>https://static.tildacdn.com/tila6635-3439-4237-b762-373630656238/IS153BAEA7AA_1.png</picture>
@@ -69266,7 +69185,7 @@
 </offer>
 <offer id="IS379D49F57A" available="true">
 <url>https://b2b.isoft-shop.kz/servery-i-shd/tproduct/578455701504-sistema-hraneniya-ubiquiti-unas-pro-eu-2</url>
-<price>428000</price>
+<price>434000</price>
 <currencyId>KZT</currencyId>
 <categoryId>168824029674</categoryId>
 <picture>https://static.tildacdn.com/tila6132-3533-4633-b739-346438363262/IS379D49F57A_1.png</picture>
@@ -69484,7 +69403,7 @@
 </offer>
 <offer id="ISE0280CBAA8" available="true">
 <url>https://b2b.isoft-shop.kz/servery-i-shd/tproduct/852919541894-sistema-hraneniya-seagate-hdd-ironwolf-p</url>
-<price>683000</price>
+<price>693000</price>
 <currencyId>KZT</currencyId>
 <categoryId>168824029674</categoryId>
 <picture>https://static.tildacdn.com/stor3732-6138-4861-b833-646332333361/8d94b46038dffc9dc704e01a904644c6.jpg</picture>
@@ -69495,7 +69414,7 @@
 </offer>
 <offer id="ISE2E7309A65" available="true">
 <url>https://b2b.isoft-shop.kz/servery-i-shd/tproduct/100582105864-sistema-hraneniya-seagate-hdd-ironwolf-p</url>
-<price>279000</price>
+<price>282000</price>
 <currencyId>KZT</currencyId>
 <categoryId>168824029674</categoryId>
 <picture>https://static.tildacdn.com/tila3062-6162-4939-b237-323931353834/ISE2E7309A65_1.jpg</picture>
@@ -70593,7 +70512,7 @@
 </offer>
 <offer id="IS1C3EB27F6B" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/404729971064-tochka-dostupa-engenius-networks-ecw526</url>
-<price>245000</price>
+<price>248000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3234-3133-4438-b863-303230336563/3d8774683ba8d0e266cd9f6229b41d54.jpg</picture>
@@ -70653,7 +70572,7 @@
 <name>Точка доступа Grandstream GWN7674</name>
 <vendor>Grandstream</vendor>
 <vendorCode>IS2B104C1198</vendorCode>
-<description>Wi-Fi Wi-Fi 7 · PoE Есть · Гарантия 2 года · Скорость 10 Гбит/с · Класс скорости Wi-Fi от 9300 Мбит/с · Класс Wi-Fi BE21000 · Диапазон частот 2,4/5/6 ГГц · Тип устройства Точка доступа · Размещение Потолочная/настенная</description>
+<description>Тип устройства Точка доступа · Wi-Fi Wi-Fi 7 · PoE Есть · Гарантия 2 года · Скорость 10 Гбит/с · Класс скорости Wi-Fi от 9300 Мбит/с · Класс Wi-Fi BE21000 · Диапазон частот 2,4/5/6 ГГц · Размещение Потолочная/настенная · Исполнение Для помещений</description>
 </offer>
 <offer id="IS2C4D583FA3" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/968913933914-tochka-dostupa-mikrotik-rbd25g-5hpacqd2h</url>
@@ -70839,7 +70758,7 @@
 </offer>
 <offer id="IS475032780E" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/879852454024-tochka-dostupa-hpearuba-instant-on-ap27</url>
-<price>142000</price>
+<price>144000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3631-3963-4164-b561-643435653634/fc462122347c2f8f9a455566182b760a.jpg</picture>
@@ -70863,7 +70782,7 @@
 </offer>
 <offer id="IS4E904BA907" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/938635320484-tochka-dostupa-points-of-access-hpearuba</url>
-<price>344000</price>
+<price>348000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/tila3435-3734-4835-b763-323863373064/IS4E904BA907_1.jpg</picture>
@@ -71178,7 +71097,7 @@
 </offer>
 <offer id="IS7C23CA4C8E" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/157989954144-tochka-dostupa-tp-link-eap683</url>
-<price>94000</price>
+<price>95000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/tild3732-6435-4132-a164-313834336562/157989954144.jpg</picture>
@@ -71375,7 +71294,7 @@
 </offer>
 <offer id="IS8C11D4440B" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/113047463944-tochka-dostupa-ubiquiti-unifi-u7-pro-max</url>
-<price>183000</price>
+<price>185000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/tild6130-3230-4131-b166-363165616634/113047463944.jpg</picture>
@@ -71440,7 +71359,7 @@
 </offer>
 <offer id="IS906512CD0A" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/366869275544-tochka-dostupa-points-of-access-hpearuba</url>
-<price>357000</price>
+<price>362000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/tild3464-6537-4237-a139-333139336564/366869275544.jpg</picture>
@@ -71501,7 +71420,7 @@
 </offer>
 <offer id="IS9944674A41" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/255871122804-tochka-dostupa-mimosa-a5x-ef-49-64-ghz-8</url>
-<price>137000</price>
+<price>139000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/tila3833-3665-4436-b637-663531323962/IS9944674A41_1.jpg</picture>
@@ -71574,7 +71493,7 @@
 </offer>
 <offer id="ISA2CB4874A9" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/231979643944-tochka-dostupa-ubiquiti-unifi-wifi-7-acc</url>
-<price>130000</price>
+<price>132000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/tila6338-6166-4164-b530-646130636630/ISA2CB4874A9_1.png</picture>
@@ -72137,7 +72056,7 @@
 </offer>
 <offer id="ISE626FCACE3" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/893331251874-tochka-dostupa-hpe-instant-on-ap22d-s1u7</url>
-<price>111000</price>
+<price>112000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/tild3933-3536-4863-b634-656337313362/893331251874.jpg</picture>
@@ -72232,7 +72151,7 @@
 </offer>
 <offer id="ISF0F1EEC737" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/699858872774-tochka-dostupa-ubiquiti-unifi-enterprise</url>
-<price>425000</price>
+<price>431000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/tila6439-3233-4531-b565-666364336535/ISF0F1EEC737_1.png</picture>
@@ -72291,7 +72210,7 @@
 </offer>
 <offer id="ISFF6055281C" available="true">
 <url>https://b2b.isoft-shop.kz/tochki-dostupa/tproduct/440525911964-tochka-dostupa-tp-link-eap783</url>
-<price>258000</price>
+<price>261000</price>
 <currencyId>KZT</currencyId>
 <categoryId>669770887424</categoryId>
 <picture>https://static.tildacdn.com/stor3366-6566-4861-b036-663466386534/b39ae30ee1418eee59fe14e05f72a75a.jpg</picture>

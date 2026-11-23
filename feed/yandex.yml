@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<yml_catalog date="2026-11-22 20:37">
+<yml_catalog date="2026-11-23 06:36">
 <shop>
 <name>iSoft</name>
 <company>iSoft</company>
@@ -824,6 +824,18 @@
 <vendorCode>IS048F6CAE32</vendorCode>
 <description>Ёмкость 500 ГБ · Интерфейс NVME · Форм-фактор M.2 · Скорость чтения 4000 МБ/с · Скорость записи 3600 МБ/с</description>
 </offer>
+<offer id="IS08D36C7D08" available="true">
+<url>https://b2b.isoft-shop.kz/ssd-nakopiteli/tproduct/809640759464-ssd-ssd-nakopitel-sata-256-gb-colorful-s</url>
+<price>24000</price>
+<currencyId>KZT</currencyId>
+<categoryId>615429773604</categoryId>
+<picture>https://static.tildacdn.com/tila3165-6630-4166-a263-623538393931/809640759464_1.jpg</picture>
+<picture>https://static.tildacdn.com/tila6134-3861-4462-b164-393562663739/809640759464_2.jpg</picture>
+<name>Ssd SSD-накопитель SATA 256 GB Colorful SL500 256GB TLC, SATA 6Gb/s</name>
+<vendor>COLORFUL</vendor>
+<vendorCode>IS08D36C7D08</vendorCode>
+<description>Ёмкость 256 ГБ · Интерфейс SATA III</description>
+</offer>
 <offer id="IS090B91E364" available="true">
 <url>https://b2b.isoft-shop.kz/ssd-nakopiteli/tproduct/557227892704-tverdotelnii-nakopitel-ssd-kingston-fury</url>
 <price>198000</price>
@@ -1646,6 +1658,18 @@
 <vendor>AFOX</vendor>
 <vendorCode>IS8527F52403</vendorCode>
 <description>Ёмкость 512 ГБ · Интерфейс SATA III · Форм-фактор 2.5″ · Скорость чтения 500 МБ/с · Скорость записи 450 МБ/с</description>
+</offer>
+<offer id="IS86FBC7F0D4" available="true">
+<url>https://b2b.isoft-shop.kz/ssd-nakopiteli/tproduct/563444111034-ssd-ssd-nakopitel-sata-128-gb-colorful-s</url>
+<price>16000</price>
+<currencyId>KZT</currencyId>
+<categoryId>615429773604</categoryId>
+<picture>https://static.tildacdn.com/tila3430-6365-4263-a265-653333353438/563444111034_1.jpg</picture>
+<picture>https://static.tildacdn.com/tila6337-3830-4236-b061-336334623831/563444111034_2.jpg</picture>
+<name>Ssd SSD-накопитель SATA 128 GB Colorful SL300 128GB TLC, SATA 6Gb/s</name>
+<vendor>COLORFUL</vendor>
+<vendorCode>IS86FBC7F0D4</vendorCode>
+<description>Ёмкость 128 ГБ · Интерфейс SATA III</description>
 </offer>
 <offer id="IS87F8D548DD" available="true">
 <url>https://b2b.isoft-shop.kz/ssd-nakopiteli/tproduct/607296615264-tverdotelnii-nakopitel-ssd-kingston-skc6</url>
@@ -5912,19 +5936,6 @@
 <vendor>Deepcool</vendor>
 <vendorCode>ISD2C575ED92</vendorCode>
 <description>Мощность 700 Вт · Форм-фактор ATX · Версия ATX ATX 2.x · Класс мощности 700–850 Вт · Цвет Чёрный · Гарантия 3 года</description>
-</offer>
-<offer id="ISD3D253075C" available="true">
-<url>https://b2b.isoft-shop.kz/bloki-pitaniya/tproduct/145966774774-blok-pitaniya-1stplayer-steampunk-850w-g</url>
-<price>50000</price>
-<currencyId>KZT</currencyId>
-<categoryId>893353989834</categoryId>
-<picture>https://static.tildacdn.com/stor3665-3532-4531-b339-366164303163/4408fcd1865175240d3ecdcee62e4d3a.jpg</picture>
-<picture>https://static.tildacdn.com/tild3735-3539-4037-a434-616366623738/145966774774_1.jpg</picture>
-<picture>https://static.tildacdn.com/tild3332-6434-4535-a334-646361336164/145966774774_2.jpg</picture>
-<name>Блок питания 1STPLAYER STEAMPUNK 850W Gold PS-850SP</name>
-<vendor>1STPLAYER</vendor>
-<vendorCode>ISD3D253075C</vendorCode>
-<description>Мощность 850 Вт · Форм-фактор ATX · Сертификат эффективности 80+ Gold · Класс мощности 700–850 Вт · Модульность Модульный · Цвет Чёрный · Гарантия 7 лет</description>
 </offer>
 <offer id="ISD4B1FB5FA1" available="true">
 <url>https://b2b.isoft-shop.kz/bloki-pitaniya/tproduct/664272750134-blok-pitaniya-atx-wintek-wt-1000-m-1000w</url>
@@ -16568,18 +16579,6 @@
 <vendor>Dahua</vendor>
 <vendorCode>ISC9B9F06EC8</vendorCode>
 <description>Тип устройства IP-камера</description>
-</offer>
-<offer id="ISCAE8C01A8C" available="true">
-<url>https://b2b.isoft-shop.kz/videonablyudenie/tproduct/467206477244-ip-videokamera-dahua-dh-ipc-hdbw2241rp-z</url>
-<price>38000</price>
-<currencyId>KZT</currencyId>
-<categoryId>593618245944</categoryId>
-<picture>https://static.tildacdn.com/stor3036-6362-4537-b134-623061653933/5a53aebb4e3efdd543ca2cb479674418.jpg</picture>
-<picture>https://static.tildacdn.com/tild3332-6264-4363-a163-383164383263/467206477244_1.jpg</picture>
-<name>IP видеокамера Dahua DH-IPC-HDBW2241RP-ZS-27135</name>
-<vendor>Dahua</vendor>
-<vendorCode>ISCAE8C01A8C</vendorCode>
-<description>Тип устройства IP-камера · Тип корпуса Купольная · Разрешение камеры 2 МП</description>
 </offer>
 <offer id="ISCC69D10D22" available="true">
 <url>https://b2b.isoft-shop.kz/videonablyudenie/tproduct/478120068264-tsilindricheskaya-videokamera-dahua-dh-h</url>
@@ -31535,6 +31534,17 @@
 <vendorCode>ISD80A5B5EAF</vendorCode>
 <description>Форм-фактор Micro-ATX · Слотов памяти 4 · Сокет LGA1700 · Тип памяти DDR4 · Чипсет B760 · Видеовыходы HDMI x 2 / DP</description>
 </offer>
+<offer id="ISD859603CE8" available="true">
+<url>https://b2b.isoft-shop.kz/materinskie-platy/tproduct/265969750464-materinskaya-plata-asus-b650e-max-gaming</url>
+<price>106000</price>
+<currencyId>KZT</currencyId>
+<categoryId>248907277044</categoryId>
+<picture>https://static.tildacdn.com/tila6461-3936-4063-b266-343330393634/ISD859603CE8_1.jpg</picture>
+<name>Материнская плата ASUS B650E MAX GAMING WIFI, Socket AM5, ATX, AMD B650 (DP+HDMI), 4DDR5, PCIx16, PCIx1</name>
+<vendor>ASUS</vendor>
+<vendorCode>ISD859603CE8</vendorCode>
+<description>Слотов памяти 4 · Сокет AM5 · Тип памяти DDR5 · Форм-фактор ATX · Чипсет B650 · Сеть 2,5 Гбит/с · Видеовыходы HDMI / DP · Разъёмов M.2 3 · Разъёмов SATA 4</description>
+</offer>
 <offer id="ISD9FE9849A4" available="true">
 <url>https://b2b.isoft-shop.kz/materinskie-platy/tproduct/887019260624-materinskaya-plata-gigabyte-h610m-s2h-v3</url>
 <price>43000</price>
@@ -36532,6 +36542,21 @@
 <vendor>Acer</vendor>
 <vendorCode>DQ.BPREC.00A</vendorCode>
 <description>Моноблок линейки Acer Aspire. Процессор AMD Ryzen 5 7430U. Оперативной памяти 16 ГБ DDR4. Накопитель SSD на 512 ГБ. Экран 23,8 дюйма. Операционной системы в комплекте нет. · Партномер: DQ.BPREC.00A</description>
+</offer>
+<offer id="IS30F631647F" available="true">
+<url>https://b2b.isoft-shop.kz/monobloki/tproduct/708930335704-monoblok-barebone-all-in-one-sanc-c24006</url>
+<price>177000</price>
+<currencyId>KZT</currencyId>
+<categoryId>692700299904</categoryId>
+<picture>https://static.tildacdn.com/tila3530-6538-4136-a231-303666383033/708930335704_1.jpg</picture>
+<picture>https://static.tildacdn.com/tila3339-3438-4437-b930-653933303561/708930335704_2.jpg</picture>
+<picture>https://static.tildacdn.com/tila6433-3139-4436-a362-653336636437/708930335704_3.jpg</picture>
+<picture>https://static.tildacdn.com/tila6263-3439-4535-b666-323233633732/708930335704_4.jpg</picture>
+<picture>https://static.tildacdn.com/tila3736-6538-4333-b831-646433356637/708930335704_5.jpg</picture>
+<name>Моноблок Barebone All-in-One Sanc C2400661, 23.8-inch FHD IPS/MB Asus H610/SO-DIMM DDR4/WiFi5/M2/webcam,kb+mouse</name>
+<vendor>SANC</vendor>
+<vendorCode>IS30F631647F</vendorCode>
+<description>Диагональ 23,8″ · Тип матрицы IPS · Wi-Fi Wi-Fi 5</description>
 </offer>
 <offer id="IS3AE9FEF5D6" available="true">
 <url>https://b2b.isoft-shop.kz/monobloki/tproduct/759549859114-monoblok-hp-d2gq4ea-all-in-one-desktop-a</url>
@@ -48895,7 +48920,7 @@
 <name>Ноутбук HP EliteBook 6 G1i 14, Core Ultra 7 255U, 16 Gb, PCIe NVMe SSD, 512 Gb, 256 Mb, 14-inch, 1920x1200, silver AV3Q3AV, 55720575</name>
 <vendor>HP</vendor>
 <vendorCode>IS87349DA2D1</vendorCode>
-<description>Диагональ 14″ · Ёмкость 512 ГБ · Оперативная память 16 ГБ · Операционная система без ОС · Разрешение 1920×1200 · Линейка процессора Core Ultra 7 · Семья ОС Без ОС</description>
+<description>Тип памяти DDR5 · Диагональ 14″ · Ёмкость 512 ГБ · Оперативная память 16 ГБ · Операционная система без ОС · Разрешение 1920×1200 · Линейка процессора Core Ultra 7 · Семья ОС Без ОС · Процессор Intel Core Ultra 7 255U · Накопитель 512 ГБ</description>
 </offer>
 <offer id="IS875BC9C892" available="true">
 <url>https://b2b.isoft-shop.kz/noutbuki/tproduct/940239841714-noutbuk-asus-90nx0881-m03pr0-expertbook</url>
@@ -48963,7 +48988,7 @@
 </offer>
 <offer id="IS8C40314F63" available="true">
 <url>https://b2b.isoft-shop.kz/noutbuki/tproduct/505511438274-noutbuk-msi-modern-16s-g3mg-004xkz-ms-26</url>
-<price>528000</price>
+<price>532000</price>
 <currencyId>KZT</currencyId>
 <categoryId>293087419414</categoryId>
 <picture>https://static.tildacdn.com/stor3036-3936-4337-b038-303161636233/6a8eda487d10e7e55c9aad3aa4ba88e3.jpg</picture>
@@ -50790,7 +50815,7 @@
 </offer>
 <offer id="IS2EC869B78E" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/139348610994-operativnaya-pamyat-kingston-dram-16gb-3</url>
-<price>130000</price>
+<price>133000</price>
 <currencyId>KZT</currencyId>
 <categoryId>160131640904</categoryId>
 <picture>https://static.tildacdn.com/tila6165-3965-4561-b362-656135613232/IS2EC869B78E_1.png</picture>
@@ -51218,7 +51243,7 @@
 </offer>
 <offer id="IS6A9CC9CEBE" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/233146199084-operativnaya-pamyat-kingston-dram-16gb-6</url>
-<price>175000</price>
+<price>179000</price>
 <currencyId>KZT</currencyId>
 <categoryId>160131640904</categoryId>
 <picture>https://static.tildacdn.com/tila3035-3939-4138-b234-333561383632/IS6A9CC9CEBE_1.png</picture>
@@ -51737,6 +51762,17 @@
 <vendor>CORSAIR</vendor>
 <vendorCode>ISADFC8FE64E</vendorCode>
 <description>Оперативная память 32 ГБ · Тип памяти DDR5 · Модулей в комплекте 2 · Объём 32 ГБ · Форм-фактор DIMM · Частота 6400 МГц · Тайминги 32-40-40-84</description>
+</offer>
+<offer id="ISAFF64F72FC" available="true">
+<url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/150426309914-operativnaya-pamyat-kingston-16gb-6000mt</url>
+<price>241000</price>
+<currencyId>KZT</currencyId>
+<categoryId>160131640904</categoryId>
+<picture>https://static.tildacdn.com/tila3666-3932-4933-a332-653438663937/ISAFF64F72FC_1.jpg</picture>
+<name>Оперативная память KINGSTON 16GB 6000MT/s DDR5 CL30 DIMM FURY Beast Black EXPO</name>
+<vendor>Kingston</vendor>
+<vendorCode>ISAFF64F72FC</vendorCode>
+<description>Тип памяти DDR5 · Форм-фактор DIMM · Оперативная память 16 ГБ · Объём 16 ГБ · Тайминги CL30</description>
 </offer>
 <offer id="ISB9074D24BE" available="true">
 <url>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/178848864174-modul-pamyati-team-group-t-force-delta-r</url>
@@ -56765,17 +56801,6 @@
 <vendorCode>ISA8DDBBC8F0</vendorCode>
 <description>Категория кабеля Cat6 · Оболочка кабеля LSZH · Экранирование UTP · Длина кабеля 7,5 м · Цвет красный</description>
 </offer>
-<offer id="ISAAD79C7E8D" available="true">
-<url>https://b2b.isoft-shop.kz/patch-kordy/tproduct/286676491114-patch-kord-ship-cat6-utp-lszh-rj-45-20-m</url>
-<price>9000</price>
-<currencyId>KZT</currencyId>
-<categoryId>177508312494</categoryId>
-<picture>https://static.tildacdn.com/stor6430-6633-4166-b262-623662623134/59d46812e157ae3a1ab4124f45de4366.jpg</picture>
-<name>Патч Корд SHIP Cat.6 UTP LSZH RJ-45 20 м S6025BK2000-P</name>
-<vendor>Ship</vendor>
-<vendorCode>ISAAD79C7E8D</vendorCode>
-<description>Категория кабеля Cat6 · Оболочка кабеля LSZH · Экранирование UTP · Длина кабеля 20 м · Цвет чёрный</description>
-</offer>
 <offer id="ISB11AF9FCA9" available="true">
 <url>https://b2b.isoft-shop.kz/patch-kordy/tproduct/953630459564-cable-patch-cord-utp-5e-cat-2-m-cablexpe</url>
 <price>1100</price>
@@ -57700,7 +57725,7 @@
 </offer>
 <offer id="IS54F234B5D5" available="true">
 <url>https://b2b.isoft-shop.kz/printery/tproduct/336616104444-printer-hpcolor-laser-150aa418-ppm600x60</url>
-<price>138000</price>
+<price>141000</price>
 <currencyId>KZT</currencyId>
 <categoryId>883275389424</categoryId>
 <picture>https://static.tildacdn.com/tild6462-6462-4563-a332-626130663430/IS54F234B5D5_1.jpg</picture>
@@ -58283,7 +58308,7 @@
 </offer>
 <offer id="IS146EF08502" available="true">
 <url>https://b2b.isoft-shop.kz/processory/tproduct/721671099964-protsessor-intel-core-i7-12700kf-3650ghz</url>
-<price>139000</price>
+<price>144000</price>
 <currencyId>KZT</currencyId>
 <categoryId>289503131194</categoryId>
 <picture>https://static.tildacdn.com/stor3130-3565-4865-b732-353639363465/ffc5f9b3bcf73ed1ec5001f1b9590a62.jpg</picture>
@@ -61919,18 +61944,6 @@
 <vendor>Grandstream</vendor>
 <vendorCode>IS23D9EE1E53</vendorCode>
 <description>Тип устройства Коммутатор · Портов 8 · Скорость 10/100/1000 Мбит/с · PoE Есть · Управление Неуправляемый · Размещение Настольный · Класс по числу портов До 10 портов</description>
-</offer>
-<offer id="IS2440439975" available="true">
-<url>https://b2b.isoft-shop.kz/setevoe-oborudovanie/tproduct/381882660284-kommutator-d-link-dgs-1026mpb2a</url>
-<price>176000</price>
-<currencyId>KZT</currencyId>
-<categoryId>737078043964</categoryId>
-<picture>https://static.tildacdn.com/stor3131-6430-4961-b366-363161386263/22cae49a11db85373193af24a26de41d.jpg</picture>
-<picture>https://static.tildacdn.com/tild6663-3738-4832-b164-323533306361/381882660284_1.jpg</picture>
-<name>Коммутатор D-Link DGS-1026MP/B2A</name>
-<vendor>D-Link</vendor>
-<vendorCode>IS2440439975</vendorCode>
-<description>Тип устройства Коммутатор · Портов 24 · Скорость 10/100/1000 Мбит/с · PoE Есть · Бюджет PoE 370 Вт · Управление Неуправляемый · Размещение В стойку · Класс по числу портов 23–40 портов</description>
 </offer>
 <offer id="IS248EF3C234" available="true">
 <url>https://b2b.isoft-shop.kz/setevoe-oborudovanie/tproduct/265712451974-kommutator-tp-link-tl-sl1218p</url>
@@ -68288,6 +68301,17 @@
 <vendorCode>IS294E296C39</vendorCode>
 <description>Тип памяти DDR5 · Оперативная память 32 ГБ · Процессор AMD Ryzen 5 7500F · Линейка процессора Ryzen 5 · Тип накопителя SSD · Ёмкость 1 ТБ · Видеокарта RTX 5060 · Накопитель 1 ТБ · Операционная система без ОС · Блок питания 600 Вт</description>
 </offer>
+<offer id="IS2D9CC30DAA" available="true">
+<url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/685974075874-sistemnii-blok-pulser-core-i3-14100-35-g</url>
+<price>301000</price>
+<currencyId>KZT</currencyId>
+<categoryId>763638053684</categoryId>
+<picture>https://static.tildacdn.com/tila6632-6537-4438-a364-353539323631/685974075874_1.jpg</picture>
+<name>Системный блок Pulser Core i3-14100, 3.5 ГГц, H610, 16 ГБ ОЗУ, SSD 1 ТБ, без DVD, БП 400 Вт</name>
+<vendor>Pulser</vendor>
+<vendorCode>IS2D9CC30DAA</vendorCode>
+<description>Ёмкость 1 ТБ · Оперативная память 16 ГБ · Блок питания 400 Вт</description>
+</offer>
 <offer id="IS31172A71B3" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/645011250714-sistemnii-blok-dell-optiplex-tower-7020</url>
 <price>447000</price>
@@ -68713,7 +68737,7 @@
 <name>Системный блок Pulser Core i5-10400, 2.9 ГГц, H410, 16 ГБ ОЗУ, SSD 512 ГБ, без DVD, БП 400 Вт</name>
 <vendor>Pulser</vendor>
 <vendorCode>IS926F045317</vendorCode>
-<description>Ёмкость 512 ГБ · Оперативная память 16 ГБ · Процессор Core i5-10400 · Линейка процессора Core i5 · Блок питания 400 Вт</description>
+<description>Ёмкость 512 ГБ · Оперативная память 16 ГБ · Процессор Intel Core i5-10400 · Линейка процессора Core i5 · Блок питания 400 Вт · Тип накопителя SSD · Накопитель 512 ГБ</description>
 </offer>
 <offer id="IS92D0E9D68F" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/655483885554-sistemnii-blok-pulser-ryzen-5-3400g-37-g</url>
@@ -68918,6 +68942,19 @@
 <vendorCode>ISC334F642FE</vendorCode>
 <description>Оперативная память 16 ГБ · Процессор Intel Core i7-14700F · Тип накопителя SSD · Ёмкость 1 ТБ · Видеокарта RTX 5060 Ti · Блок питания 800 Вт · Накопитель 1 ТБ</description>
 </offer>
+<offer id="ISCA6E06065C" available="true">
+<url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/680652057954-sistemnii-blok-pulser-core-i7-14700f-21</url>
+<price>2306000</price>
+<currencyId>KZT</currencyId>
+<categoryId>763638053684</categoryId>
+<picture>https://static.tildacdn.com/tila6237-6232-4562-a262-383937386130/680652057954_1.jpg</picture>
+<picture>https://static.tildacdn.com/tila3865-3330-4862-a165-666266323637/680652057954_2.jpg</picture>
+<picture>https://static.tildacdn.com/tila6439-3233-4639-b834-656636623635/680652057954_3.jpg</picture>
+<name>Системный блок Pulser Core i7-14700F, 2.1 ГГц, Z790, 32 ГБ ОЗУ, SSD 1 ТБ M.2, RTX 5080, 16 ГБ, без DVD, БП 1000 Вт</name>
+<vendor>Pulser</vendor>
+<vendorCode>ISCA6E06065C</vendorCode>
+<description>Ёмкость 1 ТБ · Оперативная память 32 ГБ · Видеокарта RTX 5080 · Блок питания 1000 Вт</description>
+</offer>
 <offer id="ISCC173327CB" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/671790306004-platforma-rabochei-stantsii-supermicro-s</url>
 <price>1211000</price>
@@ -69041,7 +69078,7 @@
 <name>Системный блок Pulser Ryzen 7 9800X3D, 4.7 ГГц, X870, 32 ГБ ОЗУ, SSD 1 ТБ M.2, RTX 5070, 12 ГБ, без DVD, БП 850 Вт</name>
 <vendor>Pulser</vendor>
 <vendorCode>ISE88D039B8C</vendorCode>
-<description>Видеокарта RTX 5070 · Ёмкость 1 ТБ · Оперативная память 32 ГБ · Блок питания 850 Вт</description>
+<description>Видеокарта RTX 5070 · Ёмкость 1 ТБ · Оперативная память 32 ГБ · Блок питания 850 Вт · Процессор AMD Ryzen 7 9800X3D · Тип накопителя SSD · Накопитель 1 ТБ</description>
 </offer>
 <offer id="ISE8A8269B2A" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/612434807494-sistemnii-blok-pulser-ryzen-5-3500x-36-g</url>

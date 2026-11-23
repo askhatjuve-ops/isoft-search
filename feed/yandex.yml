@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<yml_catalog date="2026-11-23 06:36">
+<yml_catalog date="2026-11-23 20:45">
 <shop>
 <name>iSoft</name>
 <company>iSoft</company>
@@ -27012,7 +27012,7 @@
 </offer>
 <offer id="IS3B2BA534EF" available="true">
 <url>https://b2b.isoft-shop.kz/marshrutizatory/tproduct/526010215914-marshrutizator-tp-link-archer-ax3000</url>
-<price>42000</price>
+<price>49000</price>
 <currencyId>KZT</currencyId>
 <categoryId>424596428574</categoryId>
 <picture>https://static.tildacdn.com/stor3063-6131-4138-b934-663131663138/51c68c2cfd4bc8c5595d18001926a015.jpg</picture>
@@ -27486,7 +27486,7 @@
 </offer>
 <offer id="IS6A7D9BE2D9" available="true">
 <url>https://b2b.isoft-shop.kz/marshrutizatory/tproduct/769010741104-marshrutizator-tp-link-archer-ax1500</url>
-<price>30000</price>
+<price>35000</price>
 <currencyId>KZT</currencyId>
 <categoryId>424596428574</categoryId>
 <picture>https://static.tildacdn.com/stor3665-6138-4061-a530-653130636235/7d13ac5130c0f51ab1d3988311d020c6.jpg</picture>
@@ -29168,7 +29168,7 @@
 </offer>
 <offer id="ISF7B22804F9" available="true">
 <url>https://b2b.isoft-shop.kz/marshrutizatory/tproduct/147527528294-marshrutizator-tp-link-archer-ax5400</url>
-<price>63000</price>
+<price>75000</price>
 <currencyId>KZT</currencyId>
 <categoryId>424596428574</categoryId>
 <picture>https://static.tildacdn.com/stor3733-6130-4533-a665-383463396337/9e1a56a5e0f131c780d02fa8e2bed049.jpg</picture>
@@ -36556,7 +36556,7 @@
 <name>Моноблок Barebone All-in-One Sanc C2400661, 23.8-inch FHD IPS/MB Asus H610/SO-DIMM DDR4/WiFi5/M2/webcam,kb+mouse</name>
 <vendor>SANC</vendor>
 <vendorCode>IS30F631647F</vendorCode>
-<description>Диагональ 23,8″ · Тип матрицы IPS · Wi-Fi Wi-Fi 5</description>
+<description>Wi-Fi Wi-Fi 5 · Диагональ 23,8″ · Тип матрицы IPS</description>
 </offer>
 <offer id="IS3AE9FEF5D6" available="true">
 <url>https://b2b.isoft-shop.kz/monobloki/tproduct/759549859114-monoblok-hp-d2gq4ea-all-in-one-desktop-a</url>
@@ -68310,7 +68310,7 @@
 <name>Системный блок Pulser Core i3-14100, 3.5 ГГц, H610, 16 ГБ ОЗУ, SSD 1 ТБ, без DVD, БП 400 Вт</name>
 <vendor>Pulser</vendor>
 <vendorCode>IS2D9CC30DAA</vendorCode>
-<description>Ёмкость 1 ТБ · Оперативная память 16 ГБ · Блок питания 400 Вт</description>
+<description>Блок питания 400 Вт · Ёмкость 1 ТБ · Оперативная память 16 ГБ</description>
 </offer>
 <offer id="IS31172A71B3" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/645011250714-sistemnii-blok-dell-optiplex-tower-7020</url>
@@ -68953,7 +68953,7 @@
 <name>Системный блок Pulser Core i7-14700F, 2.1 ГГц, Z790, 32 ГБ ОЗУ, SSD 1 ТБ M.2, RTX 5080, 16 ГБ, без DVD, БП 1000 Вт</name>
 <vendor>Pulser</vendor>
 <vendorCode>ISCA6E06065C</vendorCode>
-<description>Ёмкость 1 ТБ · Оперативная память 32 ГБ · Видеокарта RTX 5080 · Блок питания 1000 Вт</description>
+<description>Блок питания 1000 Вт · Видеокарта RTX 5080 · Ёмкость 1 ТБ · Оперативная память 32 ГБ</description>
 </offer>
 <offer id="ISCC173327CB" available="true">
 <url>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/671790306004-platforma-rabochei-stantsii-supermicro-s</url>

@@ -2418,7 +2418,7 @@
 <item>
 <g:id>ISAAD07C05F7</g:id>
 <title>NETAC NV3000 PCIe 3 x4 M.2 2280 NVMe 3D NAND SSD 250GB, R/W up to 3000/1400MB/s, with heat sink</title>
-<description>Форм-фактор M.2 2280 · Ёмкость 250 ГБ · Интерфейс NVME · Скорость чтения 3000 МБ/с · Скорость записи 1400 МБ/с</description>
+<description>Ёмкость 250 ГБ · Форм-фактор M.2 2280 · Интерфейс NVME · Скорость записи 1400 МБ/с · Скорость чтения 3000 МБ/с · В комплекте Краткое руководство пользователя</description>
 <link>https://b2b.isoft-shop.kz/ssd-nakopiteli/tproduct/602350901234-netac-nv3000-pcie-3-x4-m2-2280-nvme-3d-n</link>
 <g:image_link>https://static.tildacdn.com/tila6433-3161-4431-a636-393937363837/ISAAE48C3877_1.png</g:image_link>
 <g:availability>in_stock</g:availability>
@@ -2665,6 +2665,20 @@
 <g:product_type>SSD-накопители</g:product_type>
 </item>
 <item>
+<g:id>ISC920F270BE</g:id>
+<title>Ssd SSD-накопитель M.2 PCIe 1 TB Patriot P300, P300P1TBM28, PCIe Gen3 x4</title>
+<description>Ёмкость 1 ТБ · Интерфейс PCIe Gen3 x4 · Форм-фактор M.2</description>
+<link>https://b2b.isoft-shop.kz/ssd-nakopiteli/tproduct/981852544084-ssd-ssd-nakopitel-m2-pcie-1-tb-patriot-p</link>
+<g:image_link>https://static.tildacdn.com/tila3932-3239-4134-b031-363932616531/ISC920F270BE_1.jpg</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>113000 KZT</g:price>
+<g:brand>Patriot</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:google_product_category>Electronics &gt; Electronics Accessories &gt; Computer Components &gt; Storage Devices &gt; Hard Drives</g:google_product_category>
+<g:product_type>SSD-накопители</g:product_type>
+</item>
+<item>
 <g:id>ISCE1312B446</g:id>
 <title>ADATA SD810 1TB USB3.2 Gen2x2 External SSD Silver</title>
 <description>Ёмкость 1 ТБ · Интерфейс USB 3.2</description>
@@ -2762,6 +2776,20 @@
 <g:availability>in_stock</g:availability>
 <g:price>102000 KZT</g:price>
 <g:brand>Kingston</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:google_product_category>Electronics &gt; Electronics Accessories &gt; Computer Components &gt; Storage Devices &gt; Hard Drives</g:google_product_category>
+<g:product_type>SSD-накопители</g:product_type>
+</item>
+<item>
+<g:id>ISD6F7DCACEC</g:id>
+<title>Ssd SSD-накопитель SATA 1 TB Afox SD250-1000GN, SATA 6Gb/s</title>
+<description>Ёмкость 1 ТБ · Интерфейс SATA III</description>
+<link>https://b2b.isoft-shop.kz/ssd-nakopiteli/tproduct/550270647724-ssd-ssd-nakopitel-sata-1-tb-afox-sd250-1</link>
+<g:image_link>https://static.tildacdn.com/tila3761-3166-4133-a536-323436396635/IS8527F52403_1.jpg</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>86000 KZT</g:price>
+<g:brand>AFOX</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
 <g:google_product_category>Electronics &gt; Electronics Accessories &gt; Computer Components &gt; Storage Devices &gt; Hard Drives</g:google_product_category>
@@ -11168,6 +11196,20 @@
 <g:product_type>Жёсткие диски</g:product_type>
 </item>
 <item>
+<g:id>IS0AD560280C</g:id>
+<title>Жёсткий диск Seagate Exos X16 ST16000NM002C 16TB SATA3</title>
+<description>Ёмкость 16 ТБ · Интерфейс SATA III · Класс ёмкости от 14 ТБ · Форм-фактор 3.5″ · Скорость вращения 7200 об/мин</description>
+<link>https://b2b.isoft-shop.kz/zhestkie-diski/tproduct/333774118484-zhyostkii-disk-seagate-exos-x16-st16000n</link>
+<g:image_link>https://static.tildacdn.com/tila6338-3465-4434-a632-396132613037/IS0AD560280C_1.jpg</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>519000 KZT</g:price>
+<g:brand>SEAGATE</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:google_product_category>Electronics &gt; Electronics Accessories &gt; Computer Components &gt; Storage Devices &gt; Hard Drives</g:google_product_category>
+<g:product_type>Жёсткие диски</g:product_type>
+</item>
+<item>
 <g:id>IS0DF6628A7B</g:id>
 <title>Жёсткий диск HDD Server TOSHIBA MG10 10TB CMR 512e, 3.5-inch, 512MB, 7200RPM, SATA, SKU: HDEB026GEA51F</title>
 <description>Ёмкость 10 ТБ · Интерфейс SATA · Скорость вращения 7200 об/мин · Форм-фактор 3.5″ · Класс ёмкости 10–12 ТБ</description>
@@ -11345,6 +11387,20 @@
 <g:product_type>Жёсткие диски</g:product_type>
 </item>
 <item>
+<g:id>IS2CB9BB786D</g:id>
+<title>Жёсткий диск SATA 6000 GB Seagate Exos, ST6000NM019B, 7200rpm, 256MB cache, SATA 6.0 Gb/s</title>
+<description>Ёмкость 6000 ГБ · Интерфейс SATA · Скорость вращения 7200 об/мин · Класс ёмкости 5–8 ТБ</description>
+<link>https://b2b.isoft-shop.kz/zhestkie-diski/tproduct/155815103244-zhyostkii-disk-sata-6000-gb-seagate-exos</link>
+<g:image_link>https://static.tildacdn.com/tila6166-3433-4031-a161-656166323966/IS38AF76375F_1.jpg</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>208000 KZT</g:price>
+<g:brand>SEAGATE</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:google_product_category>Electronics &gt; Electronics Accessories &gt; Computer Components &gt; Storage Devices &gt; Hard Drives</g:google_product_category>
+<g:product_type>Жёсткие диски</g:product_type>
+</item>
+<item>
 <g:id>IS2CF5973DB3</g:id>
 <title>Жёсткий диск WESTERN DIGITAL HDD External WD My Passport (2TB, USB 3.2) Sky</title>
 <description>Ёмкость 2 ТБ · Интерфейс USB 3.2 · Класс ёмкости 1,2–2 ТБ</description>
@@ -11504,7 +11560,7 @@
 <item>
 <g:id>IS41798BFFDE</g:id>
 <title>Жёсткий диск WESTERN DIGITAL HDD External WD My Passport (5TB, USB 3.2 Gen 1/USB 3.0 (USB 2.0 compatible)) Cobalt Blue</title>
-<description>Ёмкость 5 ТБ · Интерфейс USB 3.2 · Класс ёмкости 5–8 ТБ</description>
+<description>Ёмкость 5 ТБ · Интерфейс USB 3.2 · Класс ёмкости 5–8 ТБ · В комплекте Руководство по быстрому старту, кабель USB тип C</description>
 <link>https://b2b.isoft-shop.kz/zhestkie-diski/tproduct/588133276814-zhyostkii-disk-western-digital-hdd-exter</link>
 <g:image_link>https://static.tildacdn.com/tila3061-3565-4639-b935-643866643363/IS41798BFFDE_1.png</g:image_link>
 <g:availability>in_stock</g:availability>
@@ -11540,6 +11596,20 @@
 <g:image_link>https://static.tildacdn.com/tila6561-3165-4133-b538-346635363261/IS434386654A_1.jpg</g:image_link>
 <g:availability>in_stock</g:availability>
 <g:price>248000 KZT</g:price>
+<g:brand>SEAGATE</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:google_product_category>Electronics &gt; Electronics Accessories &gt; Computer Components &gt; Storage Devices &gt; Hard Drives</g:google_product_category>
+<g:product_type>Жёсткие диски</g:product_type>
+</item>
+<item>
+<g:id>IS435F6C6DCA</g:id>
+<title>Жёсткий диск SATA 8000 GB Seagate SkyHawk, ST8000VX010, 7200rpm, 256MB cache, SATA 6 Gb/s</title>
+<description>Ёмкость 8000 ГБ · Интерфейс SATA III · Скорость вращения 7200 об/мин · Класс ёмкости 5–8 ТБ</description>
+<link>https://b2b.isoft-shop.kz/zhestkie-diski/tproduct/298012163384-zhyostkii-disk-sata-8000-gb-seagate-skyh</link>
+<g:image_link>https://static.tildacdn.com/tila3039-3438-4562-a334-643238353333/IS435F6C6DCA_1.jpg</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>279000 KZT</g:price>
 <g:brand>SEAGATE</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -11942,7 +12012,7 @@
 <item>
 <g:id>ISA65E7E7010</g:id>
 <title>Жёсткий диск SEAGATE HDD External Expansion Desktop (3.5-inch/8TB/ USB 3.0)</title>
-<description>Ёмкость 8 ТБ · Интерфейс USB 3.0 · Класс ёмкости 5–8 ТБ</description>
+<description>Ёмкость 8 ТБ · Интерфейс USB 3.0 · Класс ёмкости 5–8 ТБ · Форм-фактор 3.5″</description>
 <link>https://b2b.isoft-shop.kz/zhestkie-diski/tproduct/470538911054-zhyostkii-disk-seagate-hdd-external-expa</link>
 <g:image_link>https://static.tildacdn.com/tila6430-3030-4235-b264-363765613437/ISA65E7E7010_1.png</g:image_link>
 <g:availability>in_stock</g:availability>
@@ -12187,7 +12257,7 @@
 <item>
 <g:id>ISCA7EE52064</g:id>
 <title>Жёсткий диск WESTERN DIGITAL HDD External WD Elements SE Portable (2.5-inch, 5TB, USB 3.0)</title>
-<description>Ёмкость 5 ТБ · Форм-фактор 2.5″ · Интерфейс USB 3.0 · Класс ёмкости 5–8 ТБ</description>
+<description>Ёмкость 5 ТБ · Интерфейс USB 3.0 · Класс ёмкости 5–8 ТБ · Форм-фактор 2.5″ · В комплекте Руководство по быстрому старту, кабель USB 3.0</description>
 <link>https://b2b.isoft-shop.kz/zhestkie-diski/tproduct/370644746284-zhyostkii-disk-western-digital-hdd-exter</link>
 <g:image_link>https://static.tildacdn.com/tila3861-6339-4330-a262-663036353062/ISCA7EE52064_1.png</g:image_link>
 <g:availability>in_stock</g:availability>
@@ -12402,7 +12472,7 @@
 <item>
 <g:id>ISF67978CC36</g:id>
 <title>Жёсткий диск WESTERN DIGITAL HDD External WD My Passport (5TB, USB 3.2 Gen 1/USB 3.0 (USB 2.0 compatible)) Onyx Black</title>
-<description>Ёмкость 5 ТБ · Интерфейс USB 3.2 · Класс ёмкости 5–8 ТБ</description>
+<description>Ёмкость 5 ТБ · Интерфейс USB 3.2 · Класс ёмкости 5–8 ТБ · В комплекте Руководство по быстрому старту, кабель USB тип C</description>
 <link>https://b2b.isoft-shop.kz/zhestkie-diski/tproduct/314747041684-zhyostkii-disk-western-digital-hdd-exter</link>
 <g:image_link>https://static.tildacdn.com/tila3961-6235-4065-b838-393834306166/ISF67978CC36_1.png</g:image_link>
 <g:availability>in_stock</g:availability>
@@ -12967,7 +13037,7 @@
 <g:additional_image_link>https://static.tildacdn.com/tila3236-6237-4034-a532-336635626231/296292466174_2.jpg</g:additional_image_link>
 <g:additional_image_link>https://static.tildacdn.com/tild6235-3330-4837-b836-383965646464/128180152094_2.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
-<g:price>65000 KZT</g:price>
+<g:price>80000 KZT</g:price>
 <g:brand>APC</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -17498,6 +17568,19 @@
 <g:product_type>Камеры видеонаблюдения</g:product_type>
 </item>
 <item>
+<g:id>IS149F7CEF76</g:id>
+<title>Поворотная видеокамера Dahua DH-IPC-PT2449C1-S-PV-PRO</title>
+<description>Тип устройства Поворотная камера · Тип корпуса Поворотная</description>
+<link>https://b2b.isoft-shop.kz/videonablyudenie/tproduct/894024582004-povorotnaya-videokamera-dahua-dh-ipc-pt2</link>
+<g:image_link>https://static.tildacdn.com/tila6132-3262-4639-a330-643037663265/IS149F7CEF76_1.jpg</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>96000 KZT</g:price>
+<g:brand>Dahua</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:product_type>Камеры видеонаблюдения</g:product_type>
+</item>
+<item>
 <g:id>IS169E97106E</g:id>
 <title>Поворотная видеокамера Dahua DH-IPC-PT1439H-PV</title>
 <description>Тип устройства Поворотная камера · Тип корпуса Поворотная</description>
@@ -18171,6 +18254,19 @@
 <g:additional_image_link>https://static.tildacdn.com/tild3030-6265-4132-b966-363938656665/940148947824_1.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
 <g:price>95000 KZT</g:price>
+<g:brand>Dahua</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:product_type>Камеры видеонаблюдения</g:product_type>
+</item>
+<item>
+<g:id>IS3FDA2E38BC</g:id>
+<title>Поворотная видеокамера Dahua DH-SD4E825MB-HNR-A-PV1</title>
+<description>Тип устройства Поворотная камера · Тип корпуса Поворотная · Разрешение камеры 8 МП · Дальность ИК-подсветки 100 м · Степень защиты IP67</description>
+<link>https://b2b.isoft-shop.kz/videonablyudenie/tproduct/188057302284-povorotnaya-videokamera-dahua-dh-sd4e825</link>
+<g:image_link>https://static.tildacdn.com/tila3563-3332-4037-b963-353935316236/IS3FDA2E38BC_1.jpg</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>535000 KZT</g:price>
 <g:brand>Dahua</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -20686,7 +20782,7 @@
 <item>
 <g:id>IS00481FF7BA</g:id>
 <title>Карта памяти ADATA MICROSDXC 64GB UHS-I CLASS10 RETAIL</title>
-<description>Форм-фактор microSDXC · Ёмкость 64 ГБ · Класс скорости Class 10, UHS-I</description>
+<description>Ёмкость 64 ГБ · Класс скорости Class 10, UHS-I · Форм-фактор microSDXC</description>
 <link>https://b2b.isoft-shop.kz/karty-pamyati/tproduct/709870289094-karta-pamyati-adata-microsdxc-64gb-uhs-i</link>
 <g:image_link>https://static.tildacdn.com/tila3732-6166-4763-b662-376635653764/IS00481FF7BA_1.jpg</g:image_link>
 <g:availability>in_stock</g:availability>
@@ -21265,7 +21361,7 @@
 <item>
 <g:id>ISB19F8A3AD8</g:id>
 <title>Карта памяти ADATA MICROSDXC 128GB UHS-I CLASS10 RETAIL W/1 ADAPTER</title>
-<description>Форм-фактор microSDXC · Ёмкость 128 ГБ · Класс скорости Class 10, UHS-I</description>
+<description>Ёмкость 128 ГБ · Класс скорости Class 10, UHS-I · Форм-фактор microSDXC</description>
 <link>https://b2b.isoft-shop.kz/karty-pamyati/tproduct/981870948984-karta-pamyati-adata-microsdxc-128gb-uhs</link>
 <g:image_link>https://static.tildacdn.com/tila6138-6539-4332-b364-376536363161/ISB19F8A3AD8_1.jpg</g:image_link>
 <g:availability>in_stock</g:availability>
@@ -31227,6 +31323,19 @@
 <g:product_type>МФУ</g:product_type>
 </item>
 <item>
+<g:id>IS57FC42592F</g:id>
+<title>Монохромное лазерное МФУ Canon I-S MF287DW 6354C009AA</title>
+<description>Тип устройства МФУ · Цветность ч/б · Формат A4 · Скорость печати 33 стр/мин · Интерфейсы USB 2.0, Ethernet, Wi-Fi</description>
+<link>https://b2b.isoft-shop.kz/mfu-lazernye-cvetnye/tproduct/681992458344-monohromnoe-lazernoe-mfu-canon-i-s-mf287</link>
+<g:image_link>https://static.tildacdn.com/tila3539-3832-4163-b365-656139303335/IS57FC42592F_1.jpg</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>208000 KZT</g:price>
+<g:brand>Canon</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:product_type>МФУ</g:product_type>
+</item>
+<item>
 <g:id>IS58089EE775</g:id>
 <title>Мфу Laser printer/scaner/copier HP LaserJet MFP M141a, A4, 600 dpi, 21ppm</title>
 <description>Тип устройства МФУ · Формат A4</description>
@@ -31925,6 +32034,19 @@
 <g:product_type>МФУ</g:product_type>
 </item>
 <item>
+<g:id>ISECB2DAB616</g:id>
+<title>МФУ HP 4ZB97A Color Laser 179fnw (A4) Printer/Scanner/Copier/Fax/ADF 600 dpi, 18/4 ppm, 800 MHz, 128 Mb, tray 150 pages, USB, Ethernet</title>
+<description>МФУ HP 4ZB97A Color Laser 179fnw (A4) Printer/Scanner/Copier/Fax/ADF 600 dpi, 18/4 ppm, 800 MHz, 128 Mb, tray 150 pages, USB, Ethernet (HP)</description>
+<link>https://b2b.isoft-shop.kz/mfu-lazernye-cvetnye/tproduct/602237473574-mfu-hp-4zb97a-color-laser-179fnw-a4-prin</link>
+<g:image_link>https://static.tildacdn.com/tila3864-3234-4164-b566-333463313464/ISECB2DAB616_1.png</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>198000 KZT</g:price>
+<g:brand>HP</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:product_type>МФУ</g:product_type>
+</item>
+<item>
 <g:id>ISEF27192723</g:id>
 <title>МФУ HP/LaserJet Enterprise M528dn/Printer-Scaner(ADF-40p.)-Copier/A4/43 ppm/1200x1200 dpi 1PV64A#B19</title>
 <description>Тип устройства МФУ · Технология печати лазерный · Формат A4 · Скорость печати 43 стр/мин · Разрешение печати 1200×1200 dpi · Интерфейсы USB, Ethernet · Функции принтер, сканер, копир, факс · Цветность ч/б</description>
@@ -32512,7 +32634,7 @@
 <item>
 <g:id>IS2D19A0093F</g:id>
 <title>Роутер Wi-Fi Asus 802.11ax (Wi-Fi 6), 3000 Mbps, 802.1X, WAN, 4xGigabit LAN, 1xDMZ + YANDEX 450</title>
-<description>Wi-Fi 802.11ax</description>
+<description>В комплекте Адаптер питания, руководство по быстрому старту, гарантийная карта, кабель LAN · Wi-Fi 802.11ax</description>
 <link>https://b2b.isoft-shop.kz/marshrutizatory/tproduct/260076053454-router-wi-fi-asus-80211ax-wi-fi-6-3000-m</link>
 <g:image_link>https://static.tildacdn.com/tila6439-3733-4236-a630-343334623861/IS2D19A0093F_1.png</g:image_link>
 <g:availability>in_stock</g:availability>
@@ -32526,7 +32648,7 @@
 <item>
 <g:id>IS2D5BD1302C</g:id>
 <title>Роутер ASUS 802.11be (Wi-Fi 7), 3600 Mbps, WAN, 3xGigabit LAN + YANDEX 450</title>
-<description>Wi-Fi 802.11be</description>
+<description>В комплекте Адаптер питания, руководство по быстрому старту, гарантийная карта, кабель LAN · Wi-Fi 802.11be</description>
 <link>https://b2b.isoft-shop.kz/marshrutizatory/tproduct/493990661824-router-asus-80211be-wi-fi-7-3600-mbps-wa</link>
 <g:image_link>https://static.tildacdn.com/tila6161-3562-4630-b839-623666356363/IS2D5BD1302C_1.png</g:image_link>
 <g:availability>in_stock</g:availability>
@@ -33153,7 +33275,7 @@
 <item>
 <g:id>IS5F96DA0F3D</g:id>
 <title>Роутер ASUS 802.11be (Wi-Fi 7), 6452 Mbps, 802.1X, WAN, 4x2.5 Gigabit LAN, 1xDMZ, 1xUSB + YANDEX 450</title>
-<description>Wi-Fi 802.11be</description>
+<description>В комплекте Адаптер питания, руководство по быстрому старту, гарантийная карта, кабель LAN · Wi-Fi 802.11be</description>
 <link>https://b2b.isoft-shop.kz/marshrutizatory/tproduct/457062564114-router-asus-80211be-wi-fi-7-6452-mbps-80</link>
 <g:image_link>https://static.tildacdn.com/tila3632-3563-4830-b062-353861633465/IS5F96DA0F3D_1.png</g:image_link>
 <g:availability>in_stock</g:availability>
@@ -39000,6 +39122,20 @@
 <g:product_type>Мониторы</g:product_type>
 </item>
 <item>
+<g:id>IS06E9A60DA1</g:id>
+<title>Монитор iiyama ProLite PLT2254M T2254MSC-B2AG 21.5-inch</title>
+<description>Диагональ 21,5″ · Размер экрана до 22″ · Разрешение 1920×1080 · Тип матрицы IPS · Частота обновления 120 Гц · Время отклика 4 мс · Яркость 300 кд/м² · Соотношение сторон 16:9 · Угол обзора 178° · VESA 100×100</description>
+<link>https://b2b.isoft-shop.kz/monitory/tproduct/310752075854-monitor-iiyama-prolite-plt2254m-t2254msc</link>
+<g:image_link>https://static.tildacdn.com/tila3132-3430-4863-a462-623165386162/IS06E9A60DA1_1.jpg</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>179000 KZT</g:price>
+<g:brand>iiyama</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:google_product_category>Electronics &gt; Video &gt; Computer Monitors</g:google_product_category>
+<g:product_type>Мониторы</g:product_type>
+</item>
+<item>
 <g:id>IS06FE87E69E</g:id>
 <title>Монитор LG 38WR85QC-W.ARUZ</title>
 <description>Диагональ 38″ · Разрешение 3840×1600 · Тип матрицы IPS · Частота обновления 144 Гц · Яркость 600 кд/м² · Соотношение сторон 21:9 · Размер экрана 34–38″</description>
@@ -40852,6 +40988,20 @@
 <g:availability>in_stock</g:availability>
 <g:price>100000 KZT</g:price>
 <g:brand>HP</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:google_product_category>Electronics &gt; Video &gt; Computer Monitors</g:google_product_category>
+<g:product_type>Мониторы</g:product_type>
+</item>
+<item>
+<g:id>IS67355AD779</g:id>
+<title>Монитор iiyama ProLite PL2255M T2255MSC-B1 21.5-inch</title>
+<description>Диагональ 21,5″ · Размер экрана до 22″ · Разрешение 1920×1080 · Тип матрицы IPS · Частота обновления 60 Гц · Время отклика 5 мс · Яркость 400 кд/м² · Соотношение сторон 16:9 · Угол обзора 178° · VESA 100×100</description>
+<link>https://b2b.isoft-shop.kz/monitory/tproduct/860533443614-monitor-iiyama-prolite-pl2255m-t2255msc</link>
+<g:image_link>https://static.tildacdn.com/tila3938-3332-4430-a363-336133636435/IS67355AD779_1.jpg</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>157000 KZT</g:price>
+<g:brand>iiyama</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
 <g:google_product_category>Electronics &gt; Video &gt; Computer Monitors</g:google_product_category>
@@ -43267,6 +43417,20 @@
 <g:product_type>Мониторы</g:product_type>
 </item>
 <item>
+<g:id>ISDF26FBCCB8</g:id>
+<title>Монитор 24.1-inch ZOWIE XL2586X+ 9H.LN8LB.QBE</title>
+<description>Диагональ 24,1″ · Размер экрана 23–24″ · Разрешение 1920×1080 · Тип матрицы TN · Яркость 320 кд/м² · Контрастность 1000:1 · Соотношение сторон 16:9 · Угол обзора 178° · VESA 100×100 · Время отклика 0,5 мс</description>
+<link>https://b2b.isoft-shop.kz/monitory/tproduct/889272350334-monitor-241-inch-zowie-xl2586x-9hln8lbqb</link>
+<g:image_link>https://static.tildacdn.com/tila6561-6234-4963-b931-613736663961/ISDF26FBCCB8_1.jpg</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>865000 KZT</g:price>
+<g:brand>Zowie</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:google_product_category>Electronics &gt; Video &gt; Computer Monitors</g:google_product_category>
+<g:product_type>Мониторы</g:product_type>
+</item>
+<item>
 <g:id>ISE01B19FF24</g:id>
 <title>Монитор Hikvision DS-D5043F3-1V0S 43-inch</title>
 <description>Диагональ 43″ · Размер экрана 40–50″</description>
@@ -45099,7 +45263,7 @@
 <item>
 <g:id>IS077D796C03</g:id>
 <title>Игровая мышь AULA Kunlun X5 беспроводная PAW3955 - Panda White AULA GAMING MOUSE KUNLUN X5 WIRELESS PAW3955 - PANDA WHITE</title>
-<description>Тип устройства мышь · Подключение Беспроводное · Назначение Игровая · Цвет Белый</description>
+<description>Назначение Игровая · Подключение Беспроводное · Тип устройства мышь · Цвет Белый</description>
 <link>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/887065532904-igrovaya-mish-aula-kunlun-x5-besprovodna</link>
 <g:image_link>https://static.tildacdn.com/tila3730-6264-4061-a163-333935653765/IS077D796C03_1.png</g:image_link>
 <g:availability>in_stock</g:availability>
@@ -45362,7 +45526,7 @@
 <item>
 <g:id>IS0C456B23A2</g:id>
 <title>Игровая мышь AULA Kunlun X5 беспроводная PAW3955 - чёрная AULA GAMING MOUSE KUNLUN X5 WIRELESS PAW3955 - BLACK</title>
-<description>Тип устройства мышь · Подключение Беспроводное · Назначение Игровая · Цвет Чёрный</description>
+<description>Назначение Игровая · Подключение Беспроводное · Тип устройства мышь · Цвет Чёрный</description>
 <link>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/887629388444-igrovaya-mish-aula-kunlun-x5-besprovodna</link>
 <g:image_link>https://static.tildacdn.com/tila3837-3734-4233-b730-333963313564/IS0C456B23A2_1.png</g:image_link>
 <g:availability>in_stock</g:availability>
@@ -51433,7 +51597,7 @@
 <item>
 <g:id>ISC96610FB2F</g:id>
 <title>Мышь LOGITECH Lift Bluetooth Vertical Ergonomic Mouse - ROSE/DARK ROSE</title>
-<description>Подключение Беспроводное · Тип устройства мышь</description>
+<description>Тип устройства мышь · Подключение Беспроводное · Кнопок 4</description>
 <link>https://b2b.isoft-shop.kz/klaviatury-i-myshi/tproduct/214776237634-mish-logitech-lift-bluetooth-vertical-er</link>
 <g:image_link>https://static.tildacdn.com/tila3933-3365-4464-b039-393665633235/ISC96610FB2F_1.png</g:image_link>
 <g:availability>in_stock</g:availability>
@@ -53196,7 +53360,7 @@
 <item>
 <g:id>IS0442F996E5</g:id>
 <title>Bluetooth-наушники Attack Shark L50 Pro, 20ohm, 53mm drivers, BT/2.4 GHz/3.5mm, Virtual 7.1, чёрные</title>
-<description>Цвет Чёрный · Интерфейс 3,5 мм · Тип подключения Беспроводное</description>
+<description>Интерфейс 3,5 мм · Тип устройства Наушники · Цвет Чёрный · Тип подключения Беспроводное</description>
 <link>https://b2b.isoft-shop.kz/naushniki/tproduct/445555551044-bluetooth-naushniki-attack-shark-l50-pro</link>
 <g:image_link>https://static.tildacdn.com/tila3665-3836-4163-a639-316637356563/IS0442F996E5_1.png</g:image_link>
 <g:availability>in_stock</g:availability>
@@ -53250,7 +53414,7 @@
 <item>
 <g:id>IS06D7D655C7</g:id>
 <title>Bluetooth-наушники Attack Shark G800, 32ohm, 20-20000Hz, 105±3dB, 1.0 м, BT/2.4 GHz/3.5mm, RGB,белые</title>
-<description>Цвет Белый · Интерфейс 3,5 мм · Тип подключения Беспроводное</description>
+<description>Интерфейс 3,5 мм · Тип устройства Наушники · Цвет Белый · Тип подключения Беспроводное</description>
 <link>https://b2b.isoft-shop.kz/naushniki/tproduct/539320986474-bluetooth-naushniki-attack-shark-g800-32</link>
 <g:image_link>https://static.tildacdn.com/tila3933-3838-4834-b266-363833653464/IS06D7D655C7_1.jpg</g:image_link>
 <g:availability>in_stock</g:availability>
@@ -53437,7 +53601,7 @@
 <item>
 <g:id>IS10535E9E05</g:id>
 <title>Bluetooth-наушники Attack Shark L90, 40mm drivers, BT/2.4 GHz/3.5mm, Virtual 7.1, RGB, белые</title>
-<description>Интерфейс 3,5 мм · Цвет Белый · Тип подключения Беспроводное</description>
+<description>Интерфейс 3,5 мм · Тип устройства Наушники · Цвет Белый · Тип подключения Беспроводное</description>
 <link>https://b2b.isoft-shop.kz/naushniki/tproduct/644801187134-bluetooth-naushniki-attack-shark-l90-40m</link>
 <g:image_link>https://static.tildacdn.com/tila6334-3537-4137-b766-353239326261/IS10535E9E05_1.jpg</g:image_link>
 <g:availability>in_stock</g:availability>
@@ -54989,7 +55153,7 @@
 <item>
 <g:id>IS7CCB90E85F</g:id>
 <title>Bluetooth-наушники Attack Shark L50 Pro, 20ohm, 53mm drivers, BT/2.4 GHz/3.5mm, Virtual 7.1, белые</title>
-<description>Цвет Белый · Интерфейс 3,5 мм · Тип подключения Беспроводное</description>
+<description>Интерфейс 3,5 мм · Тип устройства Наушники · Цвет Белый · Тип подключения Беспроводное</description>
 <link>https://b2b.isoft-shop.kz/naushniki/tproduct/141760001804-bluetooth-naushniki-attack-shark-l50-pro</link>
 <g:image_link>https://static.tildacdn.com/tila6266-3631-4833-b761-663232643835/IS7CCB90E85F_1.jpg</g:image_link>
 <g:availability>in_stock</g:availability>
@@ -58613,6 +58777,20 @@
 <g:product_type>Ноутбуки</g:product_type>
 </item>
 <item>
+<g:id>IS501FA17703</g:id>
+<title>Ноутбук APPLE MACBOOK AIR, 13-INCH, SILVER, MODEL A3449, M5 CHIP WITH 10C CPU, 16GB, 1TB, SSD, TWO THUNDERBOLT 4 PORTS, TOUCH ID</title>
+<description>Ёмкость 1 ТБ · Оперативная память 16 ГБ</description>
+<link>https://b2b.isoft-shop.kz/noutbuki/tproduct/556384355034-noutbuk-apple-macbook-air-13-inch-silver</link>
+<g:image_link>https://static.tildacdn.com/tila6432-6463-4961-b638-313832356564/IS6F11300441_1.png</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>1052000 KZT</g:price>
+<g:brand>APPLE</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:google_product_category>Electronics &gt; Computers &gt; Laptops</g:google_product_category>
+<g:product_type>Ноутбуки</g:product_type>
+</item>
+<item>
 <g:id>IS52A6689232</g:id>
 <title>Ноутбук ASUS TUF Gaming A18 FA808UH-S8058W 18-inch FHD+ 144Hz Ryzen 7 260 16GB 512GB RTX5050 Win11</title>
 <description>Процессор AMD Ryzen 7 260 · Оперативная память 16 ГБ · Ёмкость 512 ГБ · Видеокарта RTX 5050 · Операционная система Windows 11 · Линейка процессора Ryzen 7 · Семья ОС Windows 11 · Накопитель 512 ГБ · Диагональ 18″ · Разрешение 1920×1200</description>
@@ -58679,11 +58857,25 @@
 <item>
 <g:id>IS5657BBA09B</g:id>
 <title>Ноутбук 13-inch MacBook Air: Apple M5 A3449, CPU 10 ядер, GPU 8 ядер, 16GB, 512GB SSD - Silver, 16GB, 512GB SSD - SILVER, MODEL</title>
-<description>Ёмкость 512 ГБ · Количество ядер процессора 10 · Оперативная память 16 ГБ · Процессор Apple M5 · Линейка процессора Apple M</description>
+<description>Ёмкость 512 ГБ · В комплекте Адаптер питания USB-C, кабель USB-C на MagSafe 3 (2 м) · Wi-Fi Wi-Fi 7 · Количество ядер процессора 10 · Оперативная память 16 ГБ · Процессор Apple M5 · Линейка процессора Apple M · Накопитель 512 ГБ · Видеокарта Встроенная · Операционная система macOS</description>
 <link>https://b2b.isoft-shop.kz/noutbuki/tproduct/174915798374-noutbuk-13-inch-macbook-air-apple-m5-a34</link>
 <g:image_link>https://static.tildacdn.com/tila6432-6463-4961-b638-313832356564/IS6F11300441_1.png</g:image_link>
 <g:availability>in_stock</g:availability>
 <g:price>858000 KZT</g:price>
+<g:brand>APPLE</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:google_product_category>Electronics &gt; Computers &gt; Laptops</g:google_product_category>
+<g:product_type>Ноутбуки</g:product_type>
+</item>
+<item>
+<g:id>IS5658D63259</g:id>
+<title>Ноутбук MacBook APPLE AIR, 13-INCH, SKY BLUE, MODEL A3449, M5 CHIP WITH 10C CPU, 16GB, 1TB, SSD, TWO THUNDERBOLT 4 PORTS, TOUCH ID</title>
+<description>Ёмкость 1 ТБ · Оперативная память 16 ГБ</description>
+<link>https://b2b.isoft-shop.kz/noutbuki/tproduct/539916231654-noutbuk-macbook-apple-air-13-inch-sky-bl</link>
+<g:image_link>https://static.tildacdn.com/tild3835-3266-4661-a266-343837383936/ISC524E1E900_1.png</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>1052000 KZT</g:price>
 <g:brand>APPLE</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -58744,6 +58936,20 @@
 <g:availability>in_stock</g:availability>
 <g:price>2194000 KZT</g:price>
 <g:brand>ASUS</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:google_product_category>Electronics &gt; Computers &gt; Laptops</g:google_product_category>
+<g:product_type>Ноутбуки</g:product_type>
+</item>
+<item>
+<g:id>IS5D21A08D5E</g:id>
+<title>Ноутбук MacBook APPLE AIR, 15-INCH, MIDNIGHT, MODEL A3448, M5 CHIP WITH 10C CPU, 16GB, 512GB, SSD, TWO THUNDERBOLT 4 PORTS, TOUCH ID</title>
+<description>Ёмкость 512 ГБ · Оперативная память 16 ГБ</description>
+<link>https://b2b.isoft-shop.kz/noutbuki/tproduct/623898924644-noutbuk-macbook-apple-air-15-inch-midnig</link>
+<g:image_link>https://static.tildacdn.com/tila3335-6335-4033-b735-623130653766/IS5D21A08D5E_1.png</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>1038000 KZT</g:price>
+<g:brand>APPLE</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
 <g:google_product_category>Electronics &gt; Computers &gt; Laptops</g:google_product_category>
@@ -60346,6 +60552,20 @@
 <g:product_type>Ноутбуки</g:product_type>
 </item>
 <item>
+<g:id>ISB9B96217F2</g:id>
+<title>Ноутбук ASUS Vivobook 15 M1502NAQ-BQ026W 15.6-inch FHD 60Hz Ryzen 7 170 16GB 512GB Win11</title>
+<description>Тип памяти DDR5 · Диагональ 15,6″ · Ёмкость 512 ГБ · Оперативная память 16 ГБ · Операционная система Windows 11 · Процессор AMD Ryzen 7 170 · Разрешение 1920×1080 · Частота обновления 60 Гц · Линейка процессора Ryzen 7 · Семья ОС Windows 11</description>
+<link>https://b2b.isoft-shop.kz/noutbuki/tproduct/192084069824-noutbuk-asus-vivobook-15-m1502naq-bq026w</link>
+<g:image_link>https://static.tildacdn.com/tila3339-3064-4463-b035-333032383335/ISB9B96217F2_1.jpg</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>465000 KZT</g:price>
+<g:brand>ASUS</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:google_product_category>Electronics &gt; Computers &gt; Laptops</g:google_product_category>
+<g:product_type>Ноутбуки</g:product_type>
+</item>
+<item>
 <g:id>ISBEB4CA8B0D</g:id>
 <title>Ноутбук HP ProBook 4 G2i 14 E08ZFET, Intel Core Ultra 5 325, 16GB (1x 16GB) DDR5-5600, 512GB PCIe NVMe SSD, 14-inch, 5MP IR AI Camera</title>
 <description>Bluetooth 6.0 · Wi-Fi Wi-Fi 7 · Ёмкость батареи 56 Вт·ч · Диагональ 14″ · Камера IR + 5 Мп · Линейка процессора Core Ultra 5 · Ёмкость 512 ГБ · Оперативная память 16 ГБ · Операционная система Windows 11 Pro · Процессор Intel Core Ultra 5 325</description>
@@ -60658,7 +60878,7 @@
 <item>
 <g:id>ISCF0F225431</g:id>
 <title>Ноутбук MacBook APPLE AIR, 13-INCH, SKY BLUE, MODEL A3449, M5 CHIP WITH 10C CPU, 16GB, 512GB, SSD, TWO THUNDERBOLT 4 PORTS, TOUCH ID</title>
-<description>Ёмкость 512 ГБ · Оперативная память 16 ГБ</description>
+<description>Ёмкость 512 ГБ · В комплекте Адаптер питания USB-C, кабель USB-C на MagSafe 3 (2 м) · Wi-Fi Wi-Fi 7 · Количество ядер процессора 10 · Оперативная память 16 ГБ · Процессор Apple M5 · Накопитель 512 ГБ · Видеокарта Встроенная · Операционная система macOS · Диагональ 13,6″</description>
 <link>https://b2b.isoft-shop.kz/noutbuki/tproduct/196354836364-noutbuk-macbook-apple-air-13-inch-sky-bl</link>
 <g:image_link>https://static.tildacdn.com/tild3835-3266-4661-a266-343837383936/ISC524E1E900_1.png</g:image_link>
 <g:availability>in_stock</g:availability>
@@ -61914,6 +62134,20 @@
 <g:product_type>Оперативная память</g:product_type>
 </item>
 <item>
+<g:id>IS2DE5371289</g:id>
+<title>Оперативная память Apacer Panther AH5U16G60C6229BAA-1 DDR5 16GB</title>
+<description>Частота 6000 МГц · Тип памяти DDR5 · Объём 16 ГБ · Оперативная память 16 ГБ · Форм-фактор DIMM · Модулей в комплекте 1 · Тайминги CL38</description>
+<link>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/216838864944-operativnaya-pamyat-apacer-panther-ah5u1</link>
+<g:image_link>https://static.tildacdn.com/tila6633-3436-4330-b961-643635373632/IS2DE5371289_1.jpg</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>159000 KZT</g:price>
+<g:brand>Apacer</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:google_product_category>Electronics &gt; Electronics Accessories &gt; Memory &gt; RAM</g:google_product_category>
+<g:product_type>Оперативная память</g:product_type>
+</item>
+<item>
 <g:id>IS2EC869B78E</g:id>
 <title>Оперативная память KINGSTON DRAM 16GB 3200MT/s DDR4 CL20 SODIMM FURY Impact</title>
 <description>Форм-фактор SO-DIMM · Оперативная память 16 ГБ · Тип памяти DDR4 · Объём 16 ГБ · Тайминги CL20</description>
@@ -61958,7 +62192,7 @@
 <item>
 <g:id>IS350FFEC4A6</g:id>
 <title>Оперативная память ADATA Premier 32GB DDR5 5600 CL46 SO-DIMM</title>
-<description>Форм-фактор SO-DIMM · Объём 32 ГБ · Тайминги CL46 · Тип памяти DDR5</description>
+<description>Форм-фактор SO-DIMM · Оперативная память 32 ГБ · Объём 32 ГБ · Тайминги CL46 · Тип памяти DDR5</description>
 <link>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/404601347834-operativnaya-pamyat-adata-premier-32gb-d</link>
 <g:image_link>https://static.tildacdn.com/tila3366-3562-4331-b933-346339353333/IS350FFEC4A6_1.png</g:image_link>
 <g:availability>in_stock</g:availability>
@@ -62072,7 +62306,7 @@
 <item>
 <g:id>IS4261351CA3</g:id>
 <title>Оперативная память ADATA Premier 16GB DDR5 5600 CL46 U-DIMM</title>
-<description>Форм-фактор DIMM · Объём 16 ГБ · Тайминги CL46 · Тип памяти DDR5</description>
+<description>Форм-фактор DIMM · Оперативная память 16 ГБ · Объём 16 ГБ · Тайминги CL46 · Тип памяти DDR5</description>
 <link>https://b2b.isoft-shop.kz/operativnaya-pamyat/tproduct/220427616364-operativnaya-pamyat-adata-premier-16gb-d</link>
 <g:image_link>https://static.tildacdn.com/tila6633-3935-4836-b066-383537303037/IS4261351CA3_1.png</g:image_link>
 <g:availability>in_stock</g:availability>
@@ -69798,6 +70032,19 @@
 <g:product_type>Плоттеры</g:product_type>
 </item>
 <item>
+<g:id>ISF7303F4945</g:id>
+<title>Плоттер Широкоформатный принтер Canon imagePROGRAF TX-3200 6854C003AA</title>
+<description>Тип устройства Принтер · Формат A0+ · Интерфейсы USB 2.0, Ethernet, Wi-Fi · Ширина печати 36"</description>
+<link>https://b2b.isoft-shop.kz/plottery/tproduct/648150779474-plotter-shirokoformatnii-printer-canon-i</link>
+<g:image_link>https://static.tildacdn.com/tild6335-3265-4762-b234-326431636239/ISF7303F4945_1.jpg</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>2964000 KZT</g:price>
+<g:brand>Canon</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:product_type>Плоттеры</g:product_type>
+</item>
+<item>
 <g:id>IS077327A6BD</g:id>
 <title>Монохромный лазерный принтер Canon i-SENSYS LBP246dw II 7187C006AA</title>
 <description>Технология печати лазерный · Формат A4 · Скорость печати 40 стр/мин · Разрешение печати 1200×1200 dpi · Лотки 350 листов · Максимальная нагрузка 80 000 стр./мес · Рекомендуемая нагрузка 4 000 стр./мес · Тип устройства Принтер · Цветность ч/б · Класс скорости печати 26–45 стр/мин</description>
@@ -70117,6 +70364,19 @@
 <g:availability>in_stock</g:availability>
 <g:price>117000 KZT</g:price>
 <g:brand>Xerox</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:product_type>Принтеры</g:product_type>
+</item>
+<item>
+<g:id>ISAEC5262345</g:id>
+<title>Цветной лазерный принтер Canon I-S LBP647CDW 6929C001AA</title>
+<description>Тип устройства Принтер · Цветность цветной · Формат A4 · Скорость печати 25 стр/мин · Интерфейсы USB 2.0, Ethernet, Wi-Fi · Технология печати лазерный</description>
+<link>https://b2b.isoft-shop.kz/printery-i-mfu/tproduct/931733334314-tsvetnoi-lazernii-printer-canon-i-s-lbp6</link>
+<g:image_link>https://static.tildacdn.com/tila6636-6265-4435-b938-333965343838/ISAEC5262345_1.jpg</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>154000 KZT</g:price>
+<g:brand>Canon</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
 <g:product_type>Принтеры</g:product_type>
@@ -71417,6 +71677,19 @@
 <g:availability>in_stock</g:availability>
 <g:price>111000 KZT</g:price>
 <g:brand>Intel</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:product_type>Процессоры</g:product_type>
+</item>
+<item>
+<g:id>ISB3EBC2B4CE</g:id>
+<title>Процессор AMD Ryzen 5 7500F, 3.7GHz (Raphael, 5.0), 6C/12T, (100-000000597), 6/32MB, 65W, AM5</title>
+<description>TDP 65 Вт · Потоки 12 · Сокет AM5 · Частота 3,7 ГГц · Ядра 6 · Класс частоты 3–3,9 ГГц · Класс потоков 10–12</description>
+<link>https://b2b.isoft-shop.kz/processory/tproduct/592691232134-protsessor-amd-ryzen-5-7500f-37ghz-rapha</link>
+<g:image_link>https://static.tildacdn.com/tila3431-6332-4662-a230-636439663536/ISB3EBC2B4CE_1.jpg</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>89000 KZT</g:price>
+<g:brand>AMD</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
 <g:product_type>Процессоры</g:product_type>
@@ -73121,6 +73394,19 @@
 <g:image_link>https://static.tildacdn.com/stor6564-3664-4563-b832-313965303664/f1629ab1eeaff9e49b2e8e4580c1090a.jpg</g:image_link>
 <g:availability>in_stock</g:availability>
 <g:price>16000 KZT</g:price>
+<g:brand>Hikvision</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:product_type>СКУД и турникеты</g:product_type>
+</item>
+<item>
+<g:id>IS4AFB40F6EF</g:id>
+<title>Турникет Hikvision DS-K3G200LX-R/Dm55/adapter</title>
+<description>Тип устройства Турникет</description>
+<link>https://b2b.isoft-shop.kz/skud-i-turnikety/tproduct/996467727424-turniket-hikvision-ds-k3g200lx-rdm55adap</link>
+<g:image_link>https://static.tildacdn.com/tila3638-3232-4232-a366-363336663036/IS4AFB40F6EF_1.jpg</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>242000 KZT</g:price>
 <g:brand>Hikvision</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -79627,6 +79913,19 @@
 <g:product_type>Сетевое оборудование</g:product_type>
 </item>
 <item>
+<g:id>ISD10D055336</g:id>
+<title>Коммутатор BDCOM S1500-8T</title>
+<description>Управление Неуправляемый · Размещение Настольный · Портов 8</description>
+<link>https://b2b.isoft-shop.kz/setevoe-oborudovanie/tproduct/236656005234-kommutator-bdcom-s1500-8t</link>
+<g:image_link>https://static.tildacdn.com/tila3630-3834-4761-a538-636638356636/ISD10D055336_1.jpg</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>9500 KZT</g:price>
+<g:brand>BDCOM</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:product_type>Сетевое оборудование</g:product_type>
+</item>
+<item>
 <g:id>ISD13648CAF5</g:id>
 <title>Коммутатор Dahua DH-CHS4206-4ET-90</title>
 <description>Тип устройства Индустриальный коммутатор · Слотов SFP 2 · Портов 4 · Скорость 10/100 Мбит/с · Уровень L2 · Управление Управляемый · Класс по числу портов До 10 портов · PoE Есть</description>
@@ -80492,6 +80791,19 @@
 <g:availability>in_stock</g:availability>
 <g:price>83000 KZT</g:price>
 <g:brand>BDCOM</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:product_type>Сетевое оборудование</g:product_type>
+</item>
+<item>
+<g:id>ISF53E77CE1E</g:id>
+<title>Коммутатор Ubiquiti ES-48-500W</title>
+<description>Управление Управляемый · Скорость 10/100/1000 Мбит/с · Портов 48 · Уровень L2+</description>
+<link>https://b2b.isoft-shop.kz/setevoe-oborudovanie/tproduct/854159583444-kommutator-ubiquiti-es-48-500w</link>
+<g:image_link>https://static.tildacdn.com/tild3631-6232-4937-b832-613633383966/ISF53E77CE1E_1.jpg</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>523000 KZT</g:price>
+<g:brand>Ubiquiti</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
 <g:product_type>Сетевое оборудование</g:product_type>
@@ -82550,6 +82862,20 @@
 <g:product_type>Системные блоки</g:product_type>
 </item>
 <item>
+<g:id>IS4916E70660</g:id>
+<title>Системный блок Pulser Core i5-14400, 2.5 ГГц, H610, 16 ГБ ОЗУ, SSD 512 ГБ, без DVD, корпус ATX, БП 450 Вт</title>
+<description>Ёмкость 512 ГБ · Оперативная память 16 ГБ</description>
+<link>https://b2b.isoft-shop.kz/sistemnye-bloki/tproduct/991679485844-sistemnii-blok-pulser-core-i5-14400-25-g</link>
+<g:image_link>https://static.tildacdn.com/tila6666-3331-4661-b531-646230363261/IS4916E70660_1.jpg</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>295000 KZT</g:price>
+<g:brand>Pulser</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:google_product_category>Electronics &gt; Computers &gt; Desktop Computers</g:google_product_category>
+<g:product_type>Системные блоки</g:product_type>
+</item>
+<item>
 <g:id>IS499B9162CE</g:id>
 <title>Системный блок Pulser Core i3-12100, 3.3 ГГц, H610, 16 ГБ ОЗУ, SSD 512 ГБ M.2, без DVD, БП 400 Вт</title>
 <description>Оперативная память 16 ГБ · Процессор Intel Core i3-12100 · Линейка процессора Core i3 / Core 3 · Тип накопителя SSD · Ёмкость 512 ГБ · Блок питания 400 Вт · Накопитель 512 ГБ</description>
@@ -84316,6 +84642,20 @@
 <g:additional_image_link>https://static.tildacdn.com/tild6466-3339-4030-b361-353563653661/220307483084_2.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
 <g:price>300000 KZT</g:price>
+<g:brand>Samsung</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:google_product_category>Electronics &gt; Video &gt; Televisions</g:google_product_category>
+<g:product_type>Телевизоры</g:product_type>
+</item>
+<item>
+<g:id>IS04EC31F25F</g:id>
+<title>Телевизор SAMSUNG QE65QN90FAUXCE</title>
+<description>Диагональ 65″</description>
+<link>https://b2b.isoft-shop.kz/televizory/tproduct/539003091744-televizor-samsung-qe65qn90fauxce</link>
+<g:image_link>https://static.tildacdn.com/tila3264-6266-4038-b966-623562656563/IS04EC31F25F_1.jpg</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>2237000 KZT</g:price>
 <g:brand>Samsung</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -87244,6 +87584,19 @@
 <g:product_type>Шкафы и стойки</g:product_type>
 </item>
 <item>
+<g:id>IS27C4166193</g:id>
+<title>Шкаф коммуникационный SHIP 601S.6027.03.100 27U 600*1000*1400 мм</title>
+<description>Габариты 600×1000×1400 мм · Исполнение Напольный · Типоразмер (U) 27U</description>
+<link>https://b2b.isoft-shop.kz/shkafy-i-stoyki/tproduct/831034407594-shkaf-kommunikatsionnii-ship-601s6027031</link>
+<g:image_link>https://static.tildacdn.com/tila3932-3965-4932-b065-353837646631/ISBAB445BBC0_1.jpg</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>275000 KZT</g:price>
+<g:brand>Ship</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:product_type>Шкафы и стойки</g:product_type>
+</item>
+<item>
 <g:id>IS2872C54E96</g:id>
 <title>Шкаф коммуникационный настенный SHIP 5412.01.100 12U 570*450*635 мм</title>
 <description>Габариты 570×450×635 мм · Исполнение Настенный · Типоразмер (U) 12U</description>
@@ -87381,6 +87734,19 @@
 <g:image_link>https://static.tildacdn.com/stor6564-3137-4762-a561-356464346666/cc5b0a50f76685cfe91be4d2880c8ff8.jpg</g:image_link>
 <g:availability>in_stock</g:availability>
 <g:price>52000 KZT</g:price>
+<g:brand>Ship</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:product_type>Шкафы и стойки</g:product_type>
+</item>
+<item>
+<g:id>IS5486138624</g:id>
+<title>Шкаф коммуникационный SHIP 601S.6824.03.100 24U 600*800*1200 мм</title>
+<description>Габариты 600×800×1200 мм · Исполнение Напольный · Типоразмер (U) 24U</description>
+<link>https://b2b.isoft-shop.kz/shkafy-i-stoyki/tproduct/784546383064-shkaf-kommunikatsionnii-ship-601s6824031</link>
+<g:image_link>https://static.tildacdn.com/tila3932-3965-4932-b065-353837646631/ISBAB445BBC0_1.jpg</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>213000 KZT</g:price>
 <g:brand>Ship</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
@@ -87610,6 +87976,19 @@
 <g:product_type>Шкафы и стойки</g:product_type>
 </item>
 <item>
+<g:id>IS78AA96CD4C</g:id>
+<title>Шкаф коммуникационный настенный SHIP 5409.01.100 9U 570*450*500 мм</title>
+<description>Габариты 570×450×500 мм · Исполнение Настенный · Типоразмер (U) 9U</description>
+<link>https://b2b.isoft-shop.kz/shkafy-i-stoyki/tproduct/748706666894-shkaf-kommunikatsionnii-nastennii-ship-5</link>
+<g:image_link>https://static.tildacdn.com/tila3262-3934-4532-a566-393033316237/ISF3FEE7E4FB_1.jpg</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>57000 KZT</g:price>
+<g:brand>Ship</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:product_type>Шкафы и стойки</g:product_type>
+</item>
+<item>
 <g:id>IS78F65CDC9E</g:id>
 <title>Шкаф коммуникационный SHIP 601S.8042.03.100 42U 800*1000*2000 мм</title>
 <description>Габариты 800×1000×2000 мм · Исполнение Напольный · Типоразмер (U) 42U</description>
@@ -87774,6 +88153,32 @@
 <g:availability>in_stock</g:availability>
 <g:price>36000 KZT</g:price>
 <g:brand>Lider Team</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:product_type>Шкафы и стойки</g:product_type>
+</item>
+<item>
+<g:id>ISA6344AC072</g:id>
+<title>Шкаф коммуникационный настенный SHIP EW5412.100 12U 540*450*593 мм</title>
+<description>Габариты 540×450×593 мм · Исполнение Настенный · Типоразмер (U) 12U</description>
+<link>https://b2b.isoft-shop.kz/shkafy-i-stoyki/tproduct/183374616624-shkaf-kommunikatsionnii-nastennii-ship-e</link>
+<g:image_link>https://static.tildacdn.com/tila6536-6665-4131-b763-373035363966/ISA6344AC072_1.jpg</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>64000 KZT</g:price>
+<g:brand>Ship</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:product_type>Шкафы и стойки</g:product_type>
+</item>
+<item>
+<g:id>ISBAB445BBC0</g:id>
+<title>Шкаф коммуникационный SHIP 601S.6820.03.100 20U 600*800*1000 мм</title>
+<description>Габариты 600×800×1000 мм · Исполнение Напольный · Типоразмер (U) 20U</description>
+<link>https://b2b.isoft-shop.kz/shkafy-i-stoyki/tproduct/613641996584-shkaf-kommunikatsionnii-ship-601s6820031</link>
+<g:image_link>https://static.tildacdn.com/tila3932-3965-4932-b065-353837646631/ISBAB445BBC0_1.jpg</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>194000 KZT</g:price>
+<g:brand>Ship</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
 <g:product_type>Шкафы и стойки</g:product_type>
@@ -87955,6 +88360,19 @@
 <g:image_link>https://static.tildacdn.com/tila3363-3632-4235-a635-343930306335/ISD7B1E8F58F_1.jpg</g:image_link>
 <g:availability>in_stock</g:availability>
 <g:price>402000 KZT</g:price>
+<g:brand>Ship</g:brand>
+<g:condition>new</g:condition>
+<g:identifier_exists>no</g:identifier_exists>
+<g:product_type>Шкафы и стойки</g:product_type>
+</item>
+<item>
+<g:id>ISDB6F680409</g:id>
+<title>Шкаф коммуникационный настенный SHIP SC5409.11.100 9U 570*450*500 мм</title>
+<description>Габариты 570×450×500 мм · Исполнение Настенный · Типоразмер (U) 9U</description>
+<link>https://b2b.isoft-shop.kz/shkafy-i-stoyki/tproduct/467590555614-shkaf-kommunikatsionnii-nastennii-ship-s</link>
+<g:image_link>https://static.tildacdn.com/tila6564-3635-4166-b033-623634386162/ISE688A87425_1.jpg</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:price>54000 KZT</g:price>
 <g:brand>Ship</g:brand>
 <g:condition>new</g:condition>
 <g:identifier_exists>no</g:identifier_exists>
